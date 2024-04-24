@@ -2,7 +2,7 @@
 title: Submitting Content
 description: An overview of adding new pages to the Wiki
 published: true
-date: 2024-04-24T22:09:50.655Z
+date: 2024-04-24T23:07:06.017Z
 tags: meta
 editor: markdown
 dateCreated: 2024-04-24T20:11:12.024Z
@@ -15,8 +15,6 @@ The first step toward being able to submit content involves Gaining Access and p
 
 ### Signing Up
 The Modding Wiki uses Auth0 as a sign-in service, providing more security around your credentials, alerting you and/or preventing sing-up if your credentials are found to be compromised - prompting you to change your credentials. Auth0 ensures that we have no access to your login information, reducing risk in case of a security breach.
-
-[TODO: Screenshots of the Sign-up Process]
 
 Once you have an account, you'll have guest permissions, identical to before having been signed up. Guest permissions allow you to read any page on the Wiki. 
 
