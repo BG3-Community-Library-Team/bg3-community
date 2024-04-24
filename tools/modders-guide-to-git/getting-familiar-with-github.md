@@ -1,8 +1,8 @@
 ---
-title: 2B: Getting Familiar with Github
-description: A Modder's Guide to Git
+title: 3B: Getting Familiar with Github
+description: Get Acquainted with the Github UI
 published: true
-date: 2024-04-24T05:29:35.950Z
+date: 2024-04-24T05:33:13.561Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:16.503Z
