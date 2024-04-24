@@ -2,7 +2,7 @@
 title: 2. The Difference between Git and GitHub
 description: Learn about the difference between Git, the software, and GitHub, the website.
 published: true
-date: 2024-04-24T05:31:25.640Z
+date: 2024-04-24T05:44:20.823Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:22.458Z
@@ -36,4 +36,4 @@ Now that we understand what Git and GitHub are, let's dive into how to use them 
 
 ---
 
-[<img align="left" src="https://img.shields.io/static/v1?label=Previous&message=Getting+Started&color=blue&style=for-the-badge">](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/wiki/A-Modder's-Guide-to-Git)  [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Working+with+Repositories&color=2ea44f&style=for-the-badge">](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/wiki/_Modders-Guide-to-Git:-Working-with-Repositories)
+[<img align="left" src="https://img.shields.io/static/v1?label=Previous&message=Getting+Started&color=blue&style=for-the-badge">](/tools/modders-guide-to-git/getting-started)  [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Working+with+Repositories&color=2ea44f&style=for-the-badge">](/tools/modders-guide-to-git/git-and-github)
