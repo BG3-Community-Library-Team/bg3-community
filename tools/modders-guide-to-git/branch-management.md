@@ -1,11 +1,11 @@
 ---
-title: A Modder's Guide to Git
-description: Branch Management
+title: Branch Management
+description: A Modder's Guide to Git: 2
 published: true
-date: 2024-04-23T22:34:06.928Z
+date: 2024-04-24T05:27:35.700Z
 tags: git, github, workspace, organization
 editor: markdown
-dateCreated: 2024-04-23T22:34:04.842Z
+dateCreated: 2024-04-24T05:25:13.608Z
 ---
 
 # Branch Management
@@ -115,4 +115,5 @@ In this section, you learned about branches in Git, how to change branches and c
 
 ---
 
-[<img align="left" src="https://img.shields.io/badge/Previous-Working_With_repositories-blue?style=for-the-badge">](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/wiki/_Modders-Guide-to-Git:-Working-with-Repositories) [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Remote+Branch+Management&color=2ea44f&style=for-the-badge">](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/wiki/_Modders-Guide-to-Git:-Remote-Branch-Management)
+
+[<img align="left" src="https://img.shields.io/badge/Previous-Working_With_repositories-blue?style=for-the-badge">](/tools/modders-guide-to-git) [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Remote+Branch+Management&color=2ea44f&style=for-the-badge">](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/wiki/_Modders-Guide-to-Git:-Remote-Branch-Management)
