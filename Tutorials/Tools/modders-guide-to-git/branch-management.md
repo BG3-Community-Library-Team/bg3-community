@@ -2,17 +2,7 @@
 title: 4: Branch Management
 description: Learn how to handle different states of a codebase using Git
 published: true
-date: 2024-04-24T06:53:10.869Z
-tags: git, github, workspace, organization
-editor: markdown
-dateCreated: 2024-04-24T05:25:13.608Z
----
-
----
-title: 4: Branch Management
-description: Learn how to handle different states of a codebase using Git
-published: true
-date: 2024-04-24T05:38:48.427Z
+date: 2024-04-24T06:54:15.449Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:13.608Z
@@ -126,4 +116,4 @@ In this section, you learned about branches in Git, how to change branches and c
 ---
 
 
-[<img align="left" src="https://img.shields.io/badge/Previous-Working_With_repositories-blue?style=for-the-badge">](Tutorials/Ttools/modders-guide-to-git/working-with-repositories) [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Remote+Branch+Management&color=2ea44f&style=for-the-badge">](/Tutorials/Tools/modders-guide-to-git/remote-branch-management)
+[<img align="left" src="https://img.shields.io/badge/Previous-Working_With_repositories-blue?style=for-the-badge">](/Tutorials/Tools/modders-guide-to-git/working-with-repositories) [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Remote+Branch+Management&color=2ea44f&style=for-the-badge">](/Tutorials/Tools/modders-guide-to-git/remote-branch-management)
