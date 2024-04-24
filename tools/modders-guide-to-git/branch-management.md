@@ -1,8 +1,8 @@
 ---
-title: 3: Branch Management
-description: A Modder's Guide to Git
+title: 4: Branch Management
+description: Learn how to handle different states of a codebase using Git
 published: true
-date: 2024-04-24T05:29:07.878Z
+date: 2024-04-24T05:33:46.992Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:13.608Z
