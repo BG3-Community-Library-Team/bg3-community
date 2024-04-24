@@ -1,11 +1,11 @@
 ---
-title: A Modder's Guide to Git
-description: Getting Started
+title: 1. Getting Started
+description: Learn about what Version control is, and what tools you'll need to use for this guide.
 published: true
-date: 2024-04-23T22:34:06.928Z
+date: 2024-04-24T05:30:46.902Z
 tags: git, github, workspace, organization
 editor: markdown
-dateCreated: 2024-04-23T22:34:04.842Z
+dateCreated: 2024-04-24T05:25:19.425Z
 ---
 
 # Getting Started
