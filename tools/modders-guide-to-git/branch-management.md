@@ -2,7 +2,7 @@
 title: 4: Branch Management
 description: Learn how to handle different states of a codebase using Git
 published: true
-date: 2024-04-24T05:33:46.992Z
+date: 2024-04-24T05:38:48.427Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:13.608Z
@@ -60,7 +60,7 @@ What we just did was check for the status of our current branch. If no files hav
 
 This time, you'll see something like this:
 
-![An image of the output of the git status command, showing a new Untracked Files section containing the Test Text file that was added in the above steps](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/blob/main/WikiRes/Git/img/git%20status%202.PNG)
+![An image of the output of the git status command, showing a new Untracked Files section containing the Test Text file that was added in the above steps](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/raw/main/WikiRes/Git/img/git%20status%202.PNG)
 
 Similar to what we had before, but we can see a new section, "Untracked  files," containing our brand new `Test.txt` file. So what's an Untracked File? Well, we know that Git tracks changes to our codebase in Branches, but what if we haven't submitted any changes to our Branch? Those changes won't be tracked by Git. Those files need to first be **Added**, and then **Committed**. But what if instead of making a new file, we changed one? 
 
@@ -70,7 +70,7 @@ Similar to what we had before, but we can see a new section, "Untracked  files,"
 
 Now you'll see this:
 
-![An image of the output of the git status command, showing a new "Changes not staged for commit" section referencing Readme.md](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/blob/main/WikiRes/Git/img/git%20status%203.PNG)
+![An image of the output of the git status command, showing a new "Changes not staged for commit" section referencing Readme.md](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/raw/main/WikiRes/Git/img/git%20status%203.PNG)
 
 Yet another new section has appeared in our status: Changes not staged for **commit**. Files in this section are files that Git is already tracking, but changes have been made to them. In short, Untracked files are files that Git can see, but are not stored in Git. Files with changes that aren't staged for commit *are* already stored in Git, but Git sees that they have been changed. So how do we go about getting our new file tracked, and our modifications stored?
 
@@ -82,7 +82,7 @@ In the prompts we see above after inputting `git status`, Git told us a useful p
 
 We'll now see the "Changes not staged for commit" section has changed to "Changes to be committed". Readme.md is now green instead of Red. What happens if we do the same for "Test.txt", and input `git status` again?
 
-![The output of the Git Status command, with all changes ready to be comitted](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/blob/main/WikiRes/Git/img/git%20status%204.PNG)
+![The output of the Git Status command, with all changes ready to be comitted](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/raw/main/WikiRes/Git/img/git%20status%204.PNG)
 
 `Test.txt` is now inside the "Changes to be committed" section, and is also green.
 
@@ -95,11 +95,11 @@ You've seen this word thrown around quite a bit earlier. Now you finally get to 
 
 You'll be faced with this:
 
-![The VIM interface shown when using the git commit command](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/blob/main/WikiRes/Git/img/git%20commit.PNG)
+![The VIM interface shown when using the git commit command](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/raw/main/WikiRes/Git/img/git%20commit.PNG)
 
 This is probably the most challenging part of using Git. The default command line text editor it uses is called `vim`. Vim is powerful, fully-featured, and the exact opposite of user friendly, so I'll walk you through what to do here:
 
-<img align="right" alt="The VIM interface shown when using the git commit command, after following the above steps" src="https://github.com/BG3-Community-Library-Team/BG3-Community-Library/blob/main/WikiRes/Git/img/git%20commit%202.PNG">
+<img align="right" alt="The VIM interface shown when using the git commit command, after following the above steps" src="https://github.com/BG3-Community-Library-Team/BG3-Community-Library/raw/main/WikiRes/Git/img/git%20commit%202.PNG">
 
 1. Press the letter `i`.
 2. Type in a short, descriptive name of your changes.
@@ -116,4 +116,4 @@ In this section, you learned about branches in Git, how to change branches and c
 ---
 
 
-[<img align="left" src="https://img.shields.io/badge/Previous-Working_With_repositories-blue?style=for-the-badge">](/tools/modders-guide-to-git) [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Remote+Branch+Management&color=2ea44f&style=for-the-badge">](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/wiki/_Modders-Guide-to-Git:-Remote-Branch-Management)
+[<img align="left" src="https://img.shields.io/badge/Previous-Working_With_repositories-blue?style=for-the-badge">](/tools/modders-guide-to-git/working-with-repositories) [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Remote+Branch+Management&color=2ea44f&style=for-the-badge">](/tools/modders-guide-to-git/remote-branch-management)
