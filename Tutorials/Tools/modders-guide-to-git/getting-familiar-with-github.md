@@ -2,7 +2,7 @@
 title: 3B. Getting Familiar with Github
 description: Get Acquainted with the Github UI
 published: true
-date: 2024-04-24T05:43:03.162Z
+date: 2024-04-24T06:52:26.092Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:16.503Z
@@ -69,5 +69,5 @@ The link to the latest release will bring you to a new page, with links to the  
 ---
 <p align="center">
 
-[<img src="https://img.shields.io/badge/Back_To-Working_with_Repositories-orange?style=for-the-badge">](/tools/modders-guide-to-git/working-with-repositories)
+[<img src="https://img.shields.io/badge/Back_To-Working_with_Repositories-orange?style=for-the-badge">](/Tutorials/Tools/modders-guide-to-git/working-with-repositories)
 </p>
