@@ -2,7 +2,7 @@
 title: Submitting Content
 description: An overview of adding new pages to the Wiki
 published: true
-date: 2024-04-24T20:11:12.024Z
+date: 2024-04-24T21:49:55.909Z
 tags: meta
 editor: markdown
 dateCreated: 2024-04-24T20:11:12.024Z
@@ -22,7 +22,7 @@ Once you have an account, you'll have guest permissions, identical to before hav
 There are three ways to get this role.
 
 1. If you're part of the BG3 Modding Community Discord, send a message to ModMail requesting Contributor Access.
-2. If you're part of the BG3 Modding Communtiy Discord, Ping the @Admin role, requesting Contributor Access.
+2. If you're part of the BG3 Modding Community Discord, Ping the @Admin role, requesting Contributor Access.
 3. Otherwise, send an email to wiki@bg3.community, requesting Contributor Access.
 
 When requesting access, we'll need to know your Display Name so we grant access to the right person.
