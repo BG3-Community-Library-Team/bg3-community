@@ -2,7 +2,7 @@
 title: 3. Working with Repositories
 description: Learn the basics of using Git
 published: true
-date: 2024-04-24T05:45:24.733Z
+date: 2024-04-24T06:51:56.628Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:29.333Z
@@ -33,7 +33,7 @@ If you have the OS option to show hidden files enabled, you will also see that t
 Congratulations, you've created your first Git Repository! It's a little bit empty right now, but soon we'll show you how to make use of it. First, let's look at another option: Cloning a Repo.
 
 ## Cloning
-We've already created our own local repository, but what if we want to work with an existing Repo instead? This is where Github comes in. Follow [this link](https://github.com/BG3-Community-Library-Team/Sample-Template). It'll take you to our Sample Mod Template. 
+We've already created our own local repository, but what if we want to work with an existing Repo instead? This is where Github comes in. Follow [this link](https://github.com/BG3-Community-Library-Team/Sample-Template). It'll take you to the Community Library team's Sample Mod Template. 
 
 If you'd like to take a moment to get familiar with the GitHub UI, click this button:
 
@@ -41,7 +41,7 @@ If you'd like to take a moment to get familiar with the GitHub UI, click this bu
 
 <div style="text-align:center">
   
-[![Image](https://img.shields.io/badge/Check_Out-Getting_Familiar_with_GitHub-orange?style=for-the-badge)](/tools/modders-guide-to-git/getting-familiar-with-github)
+[![Image](https://img.shields.io/badge/Check_Out-Getting_Familiar_with_GitHub-orange?style=for-the-badge)](/Tutorials/Tools/modders-guide-to-git/getting-familiar-with-github)
 </div>
 
 ### Cloning The Repo
@@ -65,5 +65,5 @@ By this point, we understand the difference between Git and GitHub. We've learne
 
 ---
 
-[<img align="left" src="https://img.shields.io/badge/Previous-The_Difference_Between_Git_and_GitHub-blue?style=for-the-badge">](/tools/modders-guide-to-git/git-and-github) [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Branch+Management&color=2ea44f&style=for-the-badge">](/tools/modders-guide-to-git/branch-management)
+[<img align="left" src="https://img.shields.io/badge/Previous-The_Difference_Between_Git_and_GitHub-blue?style=for-the-badge">](/Tutorials/Tools/modders-guide-to-git/git-and-github) [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Branch+Management&color=2ea44f&style=for-the-badge">](/Tutorials/Tools/modders-guide-to-git/branch-management)
  
