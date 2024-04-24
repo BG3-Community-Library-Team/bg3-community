@@ -2,7 +2,7 @@
 title: 5. Remote Branch Management
 description: Learn how to handle pushing your code to Github
 published: true
-date: 2024-04-24T05:36:11.097Z
+date: 2024-04-24T06:53:43.165Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:26.244Z
@@ -68,4 +68,4 @@ In this section, we learned how to Fork a Repo. We also learned how to add SSH k
 
 ---
 
-[<img align="left" src="https://img.shields.io/badge/Previous-Branch_Management-blue?style=for-the-badge">](/tools/modders-guide-to-git/branch-management)
+[<img align="left" src="https://img.shields.io/badge/Previous-Branch_Management-blue?style=for-the-badge">](/Tutorials/Tools/modders-guide-to-git/branch-management)
