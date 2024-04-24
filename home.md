@@ -1,8 +1,8 @@
 ---
-title: Landing
+title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2024-04-23T22:32:30.140Z
+date: 2024-04-24T05:53:40.287Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
