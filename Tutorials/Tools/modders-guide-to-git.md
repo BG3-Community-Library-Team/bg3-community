@@ -2,7 +2,7 @@
 title: A Modder's Guide to Git
 description: A Primer on Version Control
 published: true
-date: 2024-04-24T05:49:51.994Z
+date: 2024-04-24T06:49:57.105Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:10.635Z
@@ -12,20 +12,20 @@ dateCreated: 2024-04-24T05:25:10.635Z
 Many mods for Baldur's Gate 3 are being uploaded on GitHub, and it's easy to see why that's the case: If you've looked through this repo, you can see everything that goes into the Community Library, without even needing to download it. Having a wiki attached means documentation is a step away, and reporting problems or requesting features is easy with the Issues tab. But how do you set it all up like this? What kind of technical know-how do you need? Why are other modders telling me to make a Pull Request, and how do I do that? These questions, and more, are what this guide aims to help you with.
 
 ## Table of Contents
-- [Getting Started](/tools/modders-guide-to-git/getting-started)
-- [The Difference between Git and GitHub](/tools/modders-guide-to-git/git-and-github)
+- [Getting Started](/Tutorials/Tools/modders-guide-to-git/getting-started)
+- [The Difference between Git and GitHub](/Tutorials/Tools/modders-guide-to-git/git-and-github)
    - Git
    - GitHub
 - [Working With Repositories](/tools/modders-guide-to-git/working-with-repositories)
    - Repositories
    - Initializing a Repository
    - Cloning a Repository
-   - [Getting Familiar with GitHub](/tools/modders-guide-to-git/getting-familiar-with-github) (Optional)
-- [Branch Management](/tools/modders-guide-to-git/branch-management)
+   - [Getting Familiar with GitHub](/Tutorials/Tools/modders-guide-to-git/getting-familiar-with-github) (Optional)
+- [Branch Management](/Tutorials/Tools/modders-guide-to-git/branch-management)
    - Branches
    - Checking Out/Creating a Branch
    - Adding and Committing Changes
-- [Remote Branch Management](/tools/modders-guide-to-git/remote-branch-management)
+- [Remote Branch Management](/Tutorials/Tools/modders-guide-to-git/remote-branch-management)
    - Forking
    - SSH Keys
    - Fetching and Pulling Changes
@@ -33,6 +33,6 @@ Many mods for Baldur's Gate 3 are being uploaded on GitHub, and it's easy to see
 
 <div align="right">
   
-   [<img align="right" src="https://img.shields.io/badge/Next-Getting_Started-2ea44f?style=for-the-badge">](/tools/modders-guide-to-git/getting-started)
+   [<img align="right" src="https://img.shields.io/badge/Next-Getting_Started-2ea44f?style=for-the-badge">](/Tutorials/Tools/modders-guide-to-git/getting-started)
 </div>
 
