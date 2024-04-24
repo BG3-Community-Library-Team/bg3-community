@@ -1,11 +1,11 @@
 ---
-title: A Modder's Guide to Git
-description: The Difference between Git and GitHub
+title: 2. The Difference between Git and GitHub
+description: Learn about the difference between Git, the software, and GitHub, the website.
 published: true
-date: 2024-04-23T22:34:06.928Z
+date: 2024-04-24T05:31:25.640Z
 tags: git, github, workspace, organization
 editor: markdown
-dateCreated: 2024-04-23T22:34:04.842Z
+dateCreated: 2024-04-24T05:25:22.458Z
 ---
 
 ## The Difference between Git and GitHub
