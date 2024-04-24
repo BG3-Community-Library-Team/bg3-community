@@ -2,7 +2,7 @@
 title: 1. Getting Started
 description: Learn about what Version control is, and what tools you'll need to use for this guide.
 published: true
-date: 2024-04-24T05:30:46.902Z
+date: 2024-04-24T05:46:40.020Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:19.425Z
@@ -22,4 +22,4 @@ Git is primarily handled via a Command Line Interface, though there are desktop 
 
 ---
 
-[<img align="right" src="https://img.shields.io/badge/Next-The_Difference_Between_Git_and_GitHub-2ea44f?style=for-the-badge">](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/wiki/_Modders-Guide-to-Git:-The-Difference-Between-Git-and-GitHub)
+[<img align="left" src="https://img.shields.io/static/v1?label=Previous&message=Table+of+Contents&color=blue&style=for-the-badge">](/tools/modders-guide-to-git) [<img align="right" src="https://img.shields.io/badge/Next-The_Difference_Between_Git_and_GitHub-2ea44f?style=for-the-badge">](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/wiki/_Modders-Guide-to-Git:-The-Difference-Between-Git-and-GitHub)
