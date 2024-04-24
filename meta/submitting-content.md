@@ -2,7 +2,7 @@
 title: Submitting Content
 description: An overview of adding new pages to the Wiki
 published: true
-date: 2024-04-24T21:49:55.909Z
+date: 2024-04-24T21:50:11.503Z
 tags: meta
 editor: markdown
 dateCreated: 2024-04-24T20:11:12.024Z
