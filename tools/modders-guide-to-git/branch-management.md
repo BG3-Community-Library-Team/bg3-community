@@ -1,8 +1,8 @@
 ---
-title: Branch Management
-description: A Modder's Guide to Git: 2
+title: 1: Branch Management
+description: A Modder's Guide to Git
 published: true
-date: 2024-04-24T05:27:35.700Z
+date: 2024-04-24T05:28:50.094Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:13.608Z
