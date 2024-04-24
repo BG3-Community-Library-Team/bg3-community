@@ -2,7 +2,7 @@
 title: 3. Working with Repositories
 description: Learn the basics of using Git
 published: true
-date: 2024-04-24T05:41:13.697Z
+date: 2024-04-24T05:45:24.733Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:29.333Z
@@ -65,6 +65,5 @@ By this point, we understand the difference between Git and GitHub. We've learne
 
 ---
 
-[<img align="left" src="https://img.shields.io/badge/Previous-The_Difference_Between_Git_and_GitHub-blue?style=for-the-badge">](/tools/modders-guide-to-git/git-and-github)
- [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Branch+Management&color=2ea44f&style=for-the-badge">](/tools/modders-guide-to-git/branch-management)
+[<img align="left" src="https://img.shields.io/badge/Previous-The_Difference_Between_Git_and_GitHub-blue?style=for-the-badge">](/tools/modders-guide-to-git/git-and-github) [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Branch+Management&color=2ea44f&style=for-the-badge">](/tools/modders-guide-to-git/branch-management)
  
