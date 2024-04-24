@@ -1,11 +1,11 @@
 ---
-title: A Modder's Guide to Git
-description: Remote Branch Management
+title: 5. Remote Branch Management
+description: Learn how to handle pushing your code to Github
 published: true
-date: 2024-04-23T22:34:06.928Z
+date: 2024-04-24T05:35:11.224Z
 tags: git, github, workspace, organization
 editor: markdown
-dateCreated: 2024-04-23T22:34:04.842Z
+dateCreated: 2024-04-24T05:25:26.244Z
 ---
 
 # Remote Branch Management
