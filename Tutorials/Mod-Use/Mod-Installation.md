@@ -2,7 +2,7 @@
 title: Mod-Installation
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-25T22:53:38.207Z
+date: 2024-04-25T22:55:39.500Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -55,4 +55,11 @@ Windows support zip files: all you need to do is right click, and click on "Extr
 
 Now you have BG3ModManager_Latest as a folder. 
 Delete the zip file, you no longer need it. 
+
+Move the folder to an area where you can remember it; for example on the desktop, or in the documents folder. 
+> 
+> It is important you do not extract it inside any folders related to BG3 as this is an external program. 
+Likewise do not put the folder into any steam, Larian Studios or BG3 related folders. 
+> Do not move the exe out of the folder either. It belongs in the folder and should never be removed. 
+{.is-warning}
 
