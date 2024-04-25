@@ -2,13 +2,13 @@
 title: Compatibility Framework Usage
 description: Quick guide to using Compatibility Framework
 published: true
-date: 2024-04-25T21:23:47.838Z
+date: 2024-04-25T21:24:07.457Z
 tags: se, script-extender, frameworks, compatibility
 editor: markdown
 dateCreated: 2024-04-25T20:56:58.092Z
 ---
 
-# Adding Subclass Compatibility
+# Utilizing Compatibility Framework
 
 ## Getting Started
 
