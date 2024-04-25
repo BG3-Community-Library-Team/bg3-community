@@ -2,7 +2,7 @@
 title: Unpacking Osiris Code
 description: Quick Overview on Unpacking Osiris Scripts
 published: true
-date: 2024-04-25T23:20:49.285Z
+date: 2024-04-25T23:21:51.926Z
 tags: osiris, scripting
 editor: markdown
 dateCreated: 2024-04-24T07:02:04.532Z
@@ -25,12 +25,12 @@ These files all have the same name, and are often changed in patches, so you'll 
 4. Click "Extract."
 
 <div class="row">
-<div class="col col-4">
-  
-If you navigate to that folder, you should see something like the folder on the right. It's recommended to open the folder in vscode, for a better understanding of how the files and their contents connect.
+  <div class="col col-4">
+
+  If you navigate to that folder, you should see something like the folder on the right. It's recommended to open the folder in vscode, for a better understanding of how the files and their contents connect.
 
 
-</div>
+  </div>
 	<div class="col col-8">  
     <img align="right" alt="A folder where the osiris script files have been extracted" src="/osidiv-extracted.png" />
   </div>
