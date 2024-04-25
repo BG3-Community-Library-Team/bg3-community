@@ -2,7 +2,7 @@
 title: Mod-Installation
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-25T22:51:01.170Z
+date: 2024-04-25T22:52:58.431Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -47,7 +47,9 @@ This will prompt a download. It will be a zip file.
 
 Now you need to extract the zip file. The zip file should be in your downloads folder ín file explore. 
 
-Windows support zip files: all you need to do is right click, and click on "Extract all" as shown below.
+Windows support zip files: all you need to do is right click, and click on "Extract all" and then press "Extract" in the menu as shown below.
 
 ![extract.png](/tutorials/extract.png =x450)
+
+![extraction.png](/tutorials/extraction.png)
 
