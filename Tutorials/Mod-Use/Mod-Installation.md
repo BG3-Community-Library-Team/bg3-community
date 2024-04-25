@@ -2,27 +2,28 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-25T23:22:16.558Z
+date: 2024-04-25T23:40:35.498Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
 ---
 
-Mod Installation
-> 
-> *This is a guide meant for Windows steam users and BG3MM. However, GOG users can use this guide as well; they just need to find the GOG equivalent of the Steam paths.*
-{.is-info}
+##  **Set up of BG3MM (Baldur's Gate 3 Mod Manager):**
 
 
-This guide will cover 3 things: 
+This guide will be split up in 3 parts to make it easier:
 
 1. How to set up BG3MM 
 2. How to install .pak files. 
 3. How to install manual/loose file mods (mods that do not come as .pak file but as folders). 
 
-##  **Set up of BG3MM (Baldur's Gate 3 Mod Manager):**
+> *This is a guide meant for Windows steam users and BG3MM. However, GOG users can use this guide as well; they just need to find the GOG equivalent of the Steam paths.*
+{.is-info}
 
-###### 1. Install BG3MM via github
+---
+
+
+## 1. Install BG3MM via github
 
 
 Link: https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.10.0
@@ -42,8 +43,7 @@ You will need to press on "BG3ModManager_Latest.zip" that is highlighted in red 
 
 This will prompt a download. It will be a zip file. 
 
-
-##### 2. Set BG3MM up correctly
+## 2. Set BG3MM up correctly
 
 Now you need to extract the zip file. The zip file should be in your downloads folder ín file explore. 
 
@@ -63,7 +63,7 @@ Likewise do not put the folder into any steam, Larian Studios or BG3 related fol
 > Do not move the exe out of the folder either. It belongs in the folder and should never be removed. 
 {.is-warning}
 
-##### 3. Configuring BG3MM. 
+## 3. Configuring BG3MM. 
 
 Open the folder "BG3ModManager_Latest". 
 And double click on the exe:
@@ -94,3 +94,20 @@ Here, you will need to make sure the highlighted areas "Game Data Path" and "Gam
 
 if not you will need to find where your game is installed. For steam, this is very easy: 
 
+Go to your steam library. 
+Right click on BG3, hover over "Manage" and click on "Browse local files". 
+
+![steam.png](/tutorials/steam.png)
+
+File explore should open up to this folder (called the root installation folder): 
+
+![bg3_folder.png](/tutorials/bg3_folder.png =x250)
+
+Click into the "Data" folder, and copy the path. Paste it into the "Game Data Path" in BG3MM, Settings, Preferences. It should be looking a lot like this which is depending on where you installed it:  
+
+`\SteamLibrary\steamapps\common\Baldurs Gate 3\Data`
+
+Click back, and click into the bin folder. Copy the path and paste it into the "Game Executable Path" in BG3MM, Settings, Preferences. 
+You will need to add \bg3.exe in the end: 
+
+`\SteamLibrary\steamapps\common\Baldurs Gate 3\bin\bg3.exe`
