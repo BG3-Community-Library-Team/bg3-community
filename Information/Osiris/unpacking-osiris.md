@@ -2,7 +2,7 @@
 title: Unpacking Osiris Code
 description: Quick Overview on Unpacking Osiris Scripts
 published: true
-date: 2024-04-25T23:14:51.750Z
+date: 2024-04-25T23:20:49.285Z
 tags: osiris, scripting
 editor: markdown
 dateCreated: 2024-04-24T07:02:04.532Z
@@ -17,7 +17,7 @@ The Osiris Scripts that handles just about everything relating to the game can b
 
 These files all have the same name, and are often changed in patches, so you'll want to check in any unpacked patch folders for their presence as well. To unpack these scripts, you'll need to utilize LSLib, going to the Story (OSI) tools section, and setting the Story/savegame and Goal Output path inputs.
 
-![osidiv-lslib-location.png](/osidiv-lslib-location.png)
+![The Story (OSI) tools tab of LSLib](/osidiv-lslib-location.png)
 
 1. Set the `Story/savegame file path` input field to the location of the story.div.osi file you wish to unpack.
 2. Click "Load."
@@ -32,6 +32,6 @@ If you navigate to that folder, you should see something like the folder on the 
 
 </div>
 	<div class="col col-8">  
-    <img align="right" alt="The VIM interface shown when using the git commit command, after following the above steps" src="/osidiv-extracted.png" />
+    <img align="right" alt="A folder where the osiris script files have been extracted" src="/osidiv-extracted.png" />
   </div>
 </div>
