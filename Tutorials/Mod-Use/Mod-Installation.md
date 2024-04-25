@@ -2,7 +2,7 @@
 title: Mod-Installation
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-25T22:52:58.431Z
+date: 2024-04-25T22:53:38.207Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -52,4 +52,7 @@ Windows support zip files: all you need to do is right click, and click on "Extr
 ![extract.png](/tutorials/extract.png =x450)
 
 ![extraction.png](/tutorials/extraction.png)
+
+Now you have BG3ModManager_Latest as a folder. 
+Delete the zip file, you no longer need it. 
 
