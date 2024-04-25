@@ -2,15 +2,13 @@
 title: Compatibility Framework Usage
 description: Quick guide to using Compatibility Framework
 published: true
-date: 2024-04-25T21:24:07.457Z
+date: 2024-04-25T21:31:20.978Z
 tags: se, script-extender, frameworks, compatibility
 editor: markdown
 dateCreated: 2024-04-25T20:56:58.092Z
 ---
 
 # Utilizing Compatibility Framework
-
-## Getting Started
 
 The Compatibility Framework(CF) makes it easy to provide compatibility between mods. There are two options:
 
