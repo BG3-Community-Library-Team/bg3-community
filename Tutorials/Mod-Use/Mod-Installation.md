@@ -2,7 +2,7 @@
 title: Mod-Installation
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-25T21:51:52.446Z
+date: 2024-04-25T22:15:08.213Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -22,7 +22,8 @@ This guide will cover 3 things:
 
 ##  **Set up of BG3MM (Baldur's Gate 3 Mod Manager):**
 
-1. Install BG3MM via github
+###### 1. Install BG3MM via github
+
 
 Link: https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.10.0
 Latest release: October 20, 2023. 
@@ -33,7 +34,15 @@ Version: 1.0.10.0
 {.is-info}
 
 
-You will see this when you open the link: 
+You will see this when you open the link:
+
 ![bg3mm.png](/tutorials/bg3mm.png =x650)
 
 You will need to press on "BG3ModManager_Latest.zip" that is highlighted in red in the bottom. 
+
+This will prompt a download. It will be a zip file. 
+
+
+##### 2. Set BG3MM up correctly
+
+
