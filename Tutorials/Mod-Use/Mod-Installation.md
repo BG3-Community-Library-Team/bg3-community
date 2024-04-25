@@ -2,7 +2,7 @@
 title: Mod-Installation
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-25T22:56:43.218Z
+date: 2024-04-25T23:12:16.698Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -65,4 +65,19 @@ Likewise do not put the folder into any steam, Larian Studios or BG3 related fol
 
 ##### 3. Configuring BG3MM. 
 
+Open the folder "BG3ModManager_Latest". 
+And double click on the exe:
 
+![bg3mm_exe.png](/tutorials/bg3mm_exe.png)
+
+Your BG3MM should look something like this: 
+
+![bg3mm_overview.png](/tutorials/bg3mm_overview.png =x460)
+
+
+> You will notice that there is two "mods" that are already installed. These are base files which got added in patch 5. They will get hidden next BG3MM update. 
+> They should be ignored, and not set to active and stay in the inactive section.
+> LaughingLeader has a way to hide them already, if needed (explanation below): https://raw.githubusercontent.com/LaughingLeader/BG3ModManager/master/src/GUI/Resources/IgnoredMods.json. 
+{.is-info}
+
+![ll_explanation.png](/tutorials/ll_explanation.png)
