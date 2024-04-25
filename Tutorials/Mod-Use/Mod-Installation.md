@@ -2,7 +2,7 @@
 title: Mod-Installation
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-25T21:22:45.095Z
+date: 2024-04-25T21:38:58.480Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -35,4 +35,7 @@ Version: 1.0.10.0
 
 You will see this when you open the link: 
 
-![bg3mm screenshot.png](/tutorials/bg3mm screenshot.png)
+![bg3mm_screenshot.png](/tutorials/bg3mm_screenshot.png =x650)
+
+
+You will need to press on "BG3ModManager_Latest.zip" that is in the bottom. 
