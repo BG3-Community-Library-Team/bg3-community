@@ -1,8 +1,8 @@
 ---
-title: Using Tag Framework
+title: Tag Framework Usage
 description: A Guide on making use of Tag Framework
 published: true
-date: 2024-04-25T22:49:40.411Z
+date: 2024-04-25T22:51:03.317Z
 tags: se, script-extender, frameworks, tags
 editor: markdown
 dateCreated: 2024-04-25T22:49:40.411Z
