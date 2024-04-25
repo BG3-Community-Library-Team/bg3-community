@@ -2,7 +2,7 @@
 title: Mod-Installation
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-25T22:55:39.500Z
+date: 2024-04-25T22:56:43.218Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -62,4 +62,7 @@ Move the folder to an area where you can remember it; for example on the desktop
 Likewise do not put the folder into any steam, Larian Studios or BG3 related folders. 
 > Do not move the exe out of the folder either. It belongs in the folder and should never be removed. 
 {.is-warning}
+
+##### 3. Configuring BG3MM. 
+
 
