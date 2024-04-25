@@ -2,14 +2,16 @@
 title: Using Inspiration Framework
 description: A guide on using Inspiration Framework to apply custom Inspiration Points
 published: true
-date: 2024-04-25T22:54:22.149Z
+date: 2024-04-25T22:56:28.239Z
 tags: se, script-extender, frameworks, inspiration, backgrounds
 editor: markdown
 dateCreated: 2024-04-25T22:54:22.149Z
 ---
 
 # Using Inspiration Framework
-Inspiration Framework makes it possible to for a mod author to easily register and complete custom background goals, whether they're for custom backgrounds or new goals for existing backgrounds. However, there's still a solid chunk of effort needed. This page will be a brief overview of how to utilize Inspiration Framework.
+Inspiration Points are notoriously difficult to set up for Custom Backgrounds - the code behind them for vanilla Backgrounds is hidden away in the story.div.osi, written entirely in Osiris code that we can't really directly edit at this time. Inspiration Framework allows you to leverage the game Databases in conjunction with Script Extenders Listeners to both register your custom background correctly, and mark goals as completed when certain conditions are met. 
+
+Effectively, this makes it possible to for a mod author to easily register and complete custom background goals, whether they're for custom backgrounds or new goals for existing backgrounds. However, there's still a solid chunk of effort needed. This page will be a brief overview of how to utilize Inspiration Framework.
 
 ## Mod Set-Up
 First thing's first, we need to set up our mod. Chances are, by the time you're looking Inspiration Framework, you have your mod set-up already, but just in case, these are the core files you'll need:
