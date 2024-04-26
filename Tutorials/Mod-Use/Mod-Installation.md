@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-26T00:32:30.094Z
+date: 2024-04-26T00:34:14.371Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -82,12 +82,13 @@ Your BG3MM should look something like this:
 
 ![ll_explanation.png](/tutorials/ll_explanation.png)
 
+---
+
 Now you need to make sure BG3MM is set up correctly. 
 First thing you need to do, is check your "Profile" and "Mod order" is set to "Public" and "Current": 
+If they are empty, this means you have not yet opened BG3 after installing. Just open BG3 to main menu, then close it again. Refresh in BG3MM: 
 
 ![profile_modorder1.png](/tutorials/profile_modorder1.png)
-
-If they are empty, this means you have not yet opened BG3 after installing. Just open BG3 to main menu, then close it again. Refresh in BG3MM: 
 
 ![refresh.png](/tutorials/refresh.png)
 
