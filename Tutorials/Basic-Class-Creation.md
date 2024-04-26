@@ -2,15 +2,14 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-04-26T20:37:14.615Z
+date: 2024-04-26T20:44:01.417Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
 ---
 
 # Introduction
-This guide is intended to help you create a class mod from start to finish alongside me. It may be slow at times but it's built that way since I'm slow :) Oddly enough, creating a class might be the best thing you can do to first dive into mod creation for baulders gate 3. I'm still learning, but it was a helpful way to start for a complete novice like me. I will only be covering what I say in the goals since this is to help people get started with class creation. BG3 has a wealth of options when it comes to modding and Larian did a great job making everything fairly modular, in my eyes at least. If you want to follow along with the mod I make in this tutorial from cloning the repo, the project dir is there.
-
+This guide is intended to help you create a basic class mod from start to finish.
 
 # Goals
 <details>
