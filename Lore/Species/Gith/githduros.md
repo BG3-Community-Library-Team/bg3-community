@@ -2,7 +2,7 @@
 title: Githdakeen
 description: All about the Githdakeen, Gith who now act as Bounty Hunters
 published: true
-date: 2024-04-26T23:30:35.810Z
+date: 2024-04-26T23:31:02.397Z
 tags: lore, species, gith, githdakeen
 editor: markdown
 dateCreated: 2024-04-26T23:28:14.565Z
