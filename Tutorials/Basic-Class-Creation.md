@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-04-26T20:51:58.926Z
+date: 2024-04-26T20:54:40.292Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -99,7 +99,7 @@ This guide is intended to help you create a basic class mod from start to finish
 # Setup for modding[⬆️](#goals)
 *<sub>Note that the mod I am creating in this example is called Quickster, for your reference.</sub>
 
-Let's take a look at the parent/root folder we made for our mod in [getting started](https://github.com/ghostboats/bg3_modders_guide/wiki/Getting-Started). In my case, Quickster. All of our mod files and folders will go in here. We will cover it when we get to it, but this folder will essentially be packed by our multitool to be used as our .pak file which we place in the mods folder for your game. We will only need a few folders and files to get a simple class mod running. The bulk of the files we will deal with are .lsx files which are basically xml files. As your mod gets more intricate, you will need to add more folders/files but the following should be all we need to get started making a class. Note the indentation on entries to indicate the file tree structure, ie. Localization folder has the English folder in it and so forth.
+Lets make a project folder for our mod. In this case, Quickster. All of our mod files and folders will go in here. We will cover it when we get to it, but this folder will essentially be packed by the multitool to be used as our .pak file which we place in the mods folder for your game. We will only need a few folders and files to get a simple class mod running. The bulk of the files we will deal with are .lsx files which are basically xml files. As your mod gets more intricate, you will need to add more folders/files but the following should be all we need to get started making a class. Note the indentation on entries to indicate the file tree structure, ie. Localization folder has the English folder in it and so forth.
 
 ## Mod folder setup
 * Localization : Starting off, we can make a folder called Localization inside your mod folder, in my case my folder called Quickster. This folder/subfolder will deal with your ingame text. For example, we will later include our class name and description, so it appears as so on the character creation screen.
