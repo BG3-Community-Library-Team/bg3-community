@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-26T00:37:25.764Z
+date: 2024-04-26T00:39:45.457Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -154,3 +154,6 @@ How to install Script Extender (SE)
 How to install Native Mod Loader, and related mods (WASD movement, Native Camera etc.)
 How to install Unique Tav 
 
+
+Made by: Maze 
+Credits to: Arrow, LaughingLeader, NellsRelo, Khbsd, Meowcat, Norbyte
