@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-26T00:58:20.272Z
+date: 2024-04-26T01:05:05.081Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -74,9 +74,9 @@ Your BG3MM should look something like this:
 ![bg3mm_overview.png](/tutorials/bg3mm_overview.png =x460)
 
 
-> You will notice that there is two "mods" that are already installed. These are base files which got added in patch 5. They will get hidden next BG3MM update. 
+> You will notice that there is two "mods" that are already installed. DiceSet_06 and Honour (both without mod authors) are base files which got added in patch 5. They will get hidden next BG3MM update. 
 > They should be ignored, and not set to active and stay in the inactive section.
-> LaughingLeader has a way to hide them already, if needed (explanation below): https://raw.githubusercontent.com/LaughingLeader/BG3ModManager/master/src/GUI/Resources/IgnoredMods.json. 
+> LaughingLeader has a way to hide them already, link from github (explanation below): https://raw.githubusercontent.com/LaughingLeader/BG3ModManager/master/src/GUI/Resources/IgnoredMods.json. 
 {.is-info}
 
 ![ll_explanation.png](/tutorials/ll_explanation.png)
