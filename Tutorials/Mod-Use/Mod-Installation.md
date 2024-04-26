@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-26T00:34:14.371Z
+date: 2024-04-26T00:37:25.764Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -86,20 +86,23 @@ Your BG3MM should look something like this:
 
 Now you need to make sure BG3MM is set up correctly. 
 First thing you need to do, is check your "Profile" and "Mod order" is set to "Public" and "Current": 
-If they are empty, this means you have not yet opened BG3 after installing. Just open BG3 to main menu, then close it again. Refresh in BG3MM: 
+
+If they are empty, this means you have not yet opened BG3 after installing. Just open BG3 to main menu, then close it again. 
+Refresh in BG3MM: 
 
 ![profile_modorder1.png](/tutorials/profile_modorder1.png)
 
-![refresh.png](/tutorials/refresh.png)
+![bg3mmrefresh.png](/tutorials/bg3mmrefresh.png)
 
-> Tip: If the Campaign displays "Gustavdev" then you are on BG3MM developer mode. Just go into settings, preferences, then under the tab "advanced", check off "Mod developer mode". Close BG3MM, and start it again. It should be fixed. 
-{.is-info}
 
 Profile should be public, as BG3 does not support multiple profiles. These can cause issues, and should not be tampered with.
 
 Mod order should be current. Some have made it work with having a new load order, or a custom load order but it can be one of the things contributing to the mods not showing up correctly or makes the game crash.
 
 *For more information about this, check out the baseline guide (link in the future when the guide is done)*
+
+> Tip: If the Campaign displays "Gustavdev" then you are on BG3MM developer mode. Just go into settings, preferences, then under the tab "advanced", check off "Mod developer mode". Close BG3MM, and start it again. It should be fixed. 
+{.is-info}
 
 ## 4. Checking the Preferences: 
 
