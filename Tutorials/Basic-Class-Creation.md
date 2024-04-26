@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-04-26T20:46:00.641Z
+date: 2024-04-26T20:49:21.795Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -13,7 +13,7 @@ This guide is intended to help you create a basic class mod from start to finish
 
 # Goals
 <details>
-<summary><a href="Setup for modding[⬆️]">Setup for modding</a></summary>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Basic-Class-Creation#setup-for-modding%EF%B8%8F">Setup for modding</a></summary>
 <ul>
       <li><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Class-Creation#mod-folder-setup">Mod folder setup</a></li>
 </li>
