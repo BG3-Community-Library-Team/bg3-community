@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-26T00:21:00.491Z
+date: 2024-04-26T00:21:52.686Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -100,7 +100,7 @@ If they are empty, this means you have not yet opened BG3 after installing. Just
 
 *For more information about this, check out the baseline guide (link in the future when the guide is done)*
 
-## Checking the Preferences: 
+## 4. Checking the Preferences: 
 
 After you have made sure Public and Mod order is set correctly, you will need to make sure the preferences are set correctly. 
 
@@ -114,7 +114,7 @@ It will open up a menu in BG3MM, which should look a lot like this:
 
 Here, you will need to make sure the highlighted areas "Game Data Path" and "Game Executable Path" something a like this. This will look different depending on where you have installed BG3. If there is nothing in these areas, close BG3MM, open the game to main menu and quit. Then open BG3MM, Settings, then preferences again and it should be fixed. 
 
-##### If your Game Data Path and Game Executable Path are empty or does not display the correct paths: 
+##### 4.1. If your Game Data Path and Game Executable Path are empty or does not display the correct paths: 
 
 if not you will need to find where your game is installed. For steam, this is very easy: 
 
