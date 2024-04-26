@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-26T00:40:37.150Z
+date: 2024-04-26T00:42:33.025Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -147,9 +147,11 @@ Example: C:\SteamLibrary\steamapps\common\Baldurs Gate 3\Data
 > It will also look slightly different as Steam and GOG installs the game differently however the princip is the same. 
 {.is-info}
 
-Now BG3MM is set up correctly, continue to (all of which are on To-Do): 
-How to install mods (pak files) 
-How to install manual/loose file mods (mods that are not pak files) 
+Now BG3MM is set up correctly, continue to the other 2 parts of this guide: (all of which are on To-Do): 
+Part 2: How to install mods (pak files) 
+Part 3: How to install manual/loose file mods (mods that are not pak files) 
+
+And other relevant guides: 
 How to install Script Extender (SE) 
 How to install Native Mod Loader, and related mods (WASD movement, Native Camera etc.)
 How to install Unique Tav 
