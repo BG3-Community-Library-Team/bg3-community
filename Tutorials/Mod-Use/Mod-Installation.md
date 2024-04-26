@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-26T00:50:42.567Z
+date: 2024-04-26T00:57:44.433Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -23,7 +23,7 @@ This guide will be split up in 3 parts to make it easier:
 ---
 
 
-## 1. Install BG3MM via github
+## 1. Download BG3MM via github
 
 
 Link: https://github.com/LaughingLeader/BG3ModManager/releases/latest
@@ -42,7 +42,7 @@ This will prompt a download. It will be a zip file.
 > Usually these will already be installed on your Windows system, but if you encounter problems with the usage of BG3MM, make sure you have .NET Framework 4.7.2 and NET. 7.0.13 installed. 
 {.is-info}
 
-## 2. Set BG3MM up correctly
+## 2. Install BG3MM
 
 Now you need to extract the zip file. The zip file should be in your downloads folder ín file explore. 
 
@@ -62,7 +62,7 @@ Likewise do not put the folder into any steam, Larian Studios or BG3 related fol
 > Do not move the exe out of the folder either. It belongs in the folder and should never be removed. 
 {.is-warning}
 
-## 3. Making sure BG3MM is set up correctly. 
+## 3. Configuration of BG3MM. 
 
 Open the folder "BG3ModManager_Latest". 
 And double click on the exe:
