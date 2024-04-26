@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-26T00:24:45.850Z
+date: 2024-04-26T00:25:27.489Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -26,7 +26,7 @@ This guide will be split up in 3 parts to make it easier:
 ## 1. Install BG3MM via github
 
 
-Link: https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.10.0
+Link: https://github.com/LaughingLeader/BG3ModManager/releases/latest
 Latest release: October 20, 2023. 
 Version: 1.0.10.0 
 
