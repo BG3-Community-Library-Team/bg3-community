@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-25T23:55:56.396Z
+date: 2024-04-26T00:21:00.491Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -63,7 +63,7 @@ Likewise do not put the folder into any steam, Larian Studios or BG3 related fol
 > Do not move the exe out of the folder either. It belongs in the folder and should never be removed. 
 {.is-warning}
 
-## 3. Configuring BG3MM. 
+## 3. Making sure BG3MM is set up correctly. 
 
 Open the folder "BG3ModManager_Latest". 
 And double click on the exe:
@@ -85,10 +85,26 @@ Your BG3MM should look something like this:
 Now you need to make sure BG3MM is set up correctly. 
 First thing you need to do, is check your "Profile" and "Mod order" is set to "Public" and "Current": 
 
+![profile_modorder1.png](/tutorials/profile_modorder1.png)
 
+If they are empty, this means you have not yet opened BG3 after installing. Just open BG3 to main menu, then close it again. Refresh in BG3MM: 
 
+![refresh.png](/tutorials/refresh.png)
 
-When you have opened BG3MM, and checked Profile and Mod order is set to "Public" and "Current", go to the top left, and click "settings", then "preferences": 
+> Tip: If the Campaign displays "Gustavdev" then you are on BG3MM developer mode. Just go into settings, preferences, then under the tab "advanced", check off "Mod developer mode". Close BG3MM, and start it again. It should be fixed. 
+{.is-info}
+
+*Profile should be public, as BG3 does not support multiple profiles. These can cause issues, and should not be tampered with. 
+
+*Mod order should be current. Some have made it work with having a new load order, or a custom load order but it can be one of the things contributing to the mods now showing up correctly or crashes.*
+
+*For more information about this, check out the baseline guide (link in the future when the guide is done)*
+
+## Checking the Preferences: 
+
+After you have made sure Public and Mod order is set correctly, you will need to make sure the preferences are set correctly. 
+
+Go to the left corner in the top, and click on settings, then preferences: 
 
 ![settings.png](/tutorials/settings.png)
 
@@ -127,5 +143,10 @@ Example: C:\SteamLibrary\steamapps\common\Baldurs Gate 3\Data
 > It will also look slightly different as Steam and GOG installs the game differently however the princip is the same. 
 {.is-info}
 
-
+Now BG3MM is set up correctly, continue to (all of which are on To-Do): 
+How to install mods (pak files) 
+How to install manual/loose file mods (mods that are not pak files) 
+How to install Script Extender (SE) 
+How to install Native Mod Loader, and related mods (WASD movement, Native Camera etc.)
+How to install Unique Tav 
 
