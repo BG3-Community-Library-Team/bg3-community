@@ -1,8 +1,8 @@
 ---
 title: Githtorai
 description: A Gith Subspecies, lost to time
-published: false
-date: 2024-04-26T22:24:28.712Z
+published: true
+date: 2024-04-26T22:24:42.280Z
 tags: lore, species, gith, githtorei
 editor: markdown
 dateCreated: 2024-04-26T22:19:49.370Z
