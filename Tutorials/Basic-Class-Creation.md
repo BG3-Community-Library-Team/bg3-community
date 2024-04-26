@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-04-26T20:54:40.292Z
+date: 2024-04-26T20:57:04.385Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -1428,6 +1428,6 @@ We have made a new action resource but right now it just floating around. Like e
 
 The only new thing I added was in Boosts. I added the Function ActionResource(). The first parameter is the name of my action resource, so SpeedForce. The second parameter is an int for how many of the resource you get. I want two charges, so I put 2. The last parameter is an into for the level. In my case I dont have a level restriction so I put 0. Thats pretty much all it takes to make an action resource. It may not mean much to you right now but when you make a spell you can refer to this action resource for its use costs. I can cover it better in my Spells section I will be making.
 
-I think thats it for classes for now. Will begin work on Spells section next most likely. If something class related is missing here, please let me know (message on discord is the best way)
+I think thats it for classes for now. If something class related is missing here or incorrect, please leave a comment.
 
 [Return to top](#Introduction)
