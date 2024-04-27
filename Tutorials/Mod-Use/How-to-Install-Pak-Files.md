@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: false
-date: 2024-04-27T03:47:33.504Z
+date: 2024-04-27T03:48:47.378Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -58,7 +58,7 @@ However, most of the time your Windows PC should support these type of files.
 There are a few ways to install the mod. This guide will outline two of these. 
 Just choose one of the ways; in the long run it does not matter much. 
 
-The mod will be downloaded as a zip, 7zip or rar file in most cases. 
+The mod will be downloaded as a zip, 7zip or rar files in most cases. 
 
 - 3.1 Extraction/double click and manually place it in the mods folder. 
 
