@@ -2,7 +2,7 @@
 title: Meta
 description: 
 published: true
-date: 2024-04-27T02:16:19.929Z
+date: 2024-04-27T02:16:44.004Z
 tags: meta
 editor: markdown
 dateCreated: 2024-04-23T22:37:44.186Z
@@ -12,5 +12,5 @@ dateCreated: 2024-04-23T22:37:44.186Z
 
 The meta section contains the following pages:
 
-- [Rules & Guidelines](meta/guidelines)
-- [Submitting Content](meta/submitting-content)
+- [Rules & Guidelines](guidelines)
+- [Submitting Content](submitting-content)
