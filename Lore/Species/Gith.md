@@ -2,7 +2,7 @@
 title: Gith
 description: An overview of the Gith species
 published: true
-date: 2024-04-27T09:31:00.764Z
+date: 2024-04-27T10:13:17.810Z
 tags: lore, species, gith, dark sun, spelljammer, planescape, forgotten realms
 editor: markdown
 dateCreated: 2024-04-26T22:12:05.114Z
