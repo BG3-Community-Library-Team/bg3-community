@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T03:24:49.100Z
+date: 2024-04-27T03:29:02.517Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -168,19 +168,24 @@ Improved UI is a mod that makes it so you can choose the modded options in chara
 
 Mod fixer is a mod that makes it so you can actually use the mods; you will get a naked durge harem instead of character creation if you do not have it. 
 Screenshot below; 
+
 ![nomodfixerpng.png](/tutorials/nomodfixerpng.png =x400)
 
 Mod fixer will also sometimes be baked into the mod you are installing, one popular mod is for example the mod Basket of Equipment. 
 In that case you do not necessarily need the mod fixer, as you will already have mod fixer because of that mod.
 
-You can see in BG3MM if the mod has mod fixer embedded into the mod. It will be a little notes icon.
+You can see in BG3MM if the mod has mod fixer embedded into the mod or the mod uses/needs Script Extender. 
 Highlighted below:
+
+The little notes icon is the mod fixer:
+
 ![modhasmodfixer.png](/tutorials/modhasmodfixer.png)
 
-The small yellow icon is an indicator that I have installed Script Extender.
+The yellow indicator is Script Extender: 
+
+![hasscriptextender.png](/tutorials/hasscriptextender.png)
 If you have a red indicator, it means you do not have Script Extender installed.
 See also: How to install Script Extender
-![hasscriptextender.png](/tutorials/hasscriptextender.png)
 
 ---
 Download and install them per method above untill you get to the part of making the mods active.
@@ -189,13 +194,15 @@ Download and install them per method above untill you get to the part of making 
 
 
 You will notice that the mods automatically went down to a new category called "overrides". 
-All mods that goes into overrides, are always enabled and should never be put in the load order. So therefore, leave them alone. 
+All mods that goes into overrides, are always enabled and should never be put in the load order. Leave them alone. 
 BG3MM will automatically know which mods should be there and when any mods goes into overrides, they should stay in overrides. 
 
 Remember to save or export order after refreshing/importing the mod. 
 
 Brown mods and overrides, such as Improved UI and mod fixer, cannot be disabled even if you make them inactive in BG3MM. 
-This is because they are overriding vanilla game files, and therefore will always be active. You will need to remove them completely from the mods folder (`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`) to disable them. 
+This is because they are overriding vanilla game files, and therefore will always be active. 
+You will need to remove them completely from the mods folder to disable them 
+(`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`) 
 
 
 ---
