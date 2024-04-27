@@ -2,11 +2,33 @@
 title: Gith
 description: An overview of the Gith species
 published: false
-date: 2024-04-26T22:12:05.114Z
+date: 2024-04-27T08:35:22.064Z
 tags: lore, species, gith
 editor: markdown
 dateCreated: 2024-04-26T22:12:05.114Z
 ---
 
-# Header
-Your content here
+# Gith
+The Gith comprise several factions of beings who have escaped Illithid control. Some lead lives as soldiers in a never-ending war, while others prefer a more chaotic monastical approach. All of them hate Mind Flayers with a passion, and most hate each other nearly as much. The various types of Gith are more akin to subgroups, rather than subspecies.
+
+## List of Subgroups
+
+|Name|Setting|Sourcebook|Author|Canonocity|Latest Edition|
+|----|-------|----------|------|----------|-------|
+|[Athasian Gith](gith/athasian-gith)|Dark Sun|Black Spine|Walter Baas, Dustin Browder, Tom Prusa, Jonathan Tweet|Confirmed|3e|
+|[Dakeen](gith/githdakeen)|--|Liber Bestarius|Matt Colville, Douglas Sun, Eden Studios|Partial|--|
+|[Forerunners](gith/forerunners)|Planewalker|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
+|[Githgagra](gith/githgagra)|Planewalker|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
+|[Githilid](gith/githilid)|Planewalker|Rrakkma: Legacy of Zerthimon|Brannon Hollingsworth, Torsten Bernhardt|Confirmed|3e|
+|[Githyanki](gith/githyanki)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
+|[Githximoi](gith/githximoi)|Planewalker|Rrakkma: Legacy of Zerthimon|Torsten Bernhardt|Confirmed|3e|
+|[Githzerai](gith/githzerai)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
+|[Pirates of Gith](gith/pirates-of-gith)|Spelljammer|Monstrous Manual|Charles Stross|Confirmed|2e AD&D|
+|[Zerth Freebooters](gith/zerth-freebooters)|Spelljammer|Beyond the Moons|Phil Smith|Confirmed|3e|
+
+## Notes on Canonocity
+Planewalker and the Beyond the Moons source for Spelljammer are sources that have been given WotC's blessing to continue the Planescape and Spelljammer settings^[1]^^[2]^
+
+### References
+1. [Planewalker FAQ](https://planewalker.com/faq/080101/planewalker-general-faq_.html#2), last updated *January 1st, 2008*
+2. [Beyond the Moon's About page](http://www.spelljammer.org/misc/about.html), last updated *August 25th, 2004*
