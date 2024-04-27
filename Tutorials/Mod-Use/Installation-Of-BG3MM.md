@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-27T03:31:25.370Z
+date: 2024-04-27T03:31:46.486Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -149,7 +149,7 @@ Example: C:\SteamLibrary\steamapps\common\Baldurs Gate 3\Data
 ## Other guides:
 
 Now BG3MM is set up correctly, continue to the other 2 parts of this guide: (all of which are on To-Do): 
-Part 2: How to install mods (pak files) 
+Part 2: How to install mods (Pak Files): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files
 Part 3: How to install manual/loose file mods (mods that are not pak files) 
 
 And other relevant guides: 
