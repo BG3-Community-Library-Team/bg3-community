@@ -2,7 +2,7 @@
 title: Guidelines
 description: Explainer on basic content and behavioral guidelines
 published: true
-date: 2024-04-27T01:48:18.158Z
+date: 2024-04-27T02:13:59.913Z
 tags: meta, rules, guidelines
 editor: markdown
 dateCreated: 2024-04-23T22:34:04.842Z
@@ -19,7 +19,7 @@ BG3 Modding Community is adamant about creating a safe, accessible place for mod
 
 3. No vandalism, trolling, harrassment, brigading, or advocating harm or death on others, whether they're users/contributors of the Wiki or not. This behavior is not tolerated.
 
-4. Respect authors' wishes. If an author does not want their content hosted on this Wiki, don't post it here in their stead. If an author doesn't want their content placed elsewhere, don't repost it. If an author wishes to remove their content from the wiki, they are welcome to.
+4. Respect authors' wishes. If an author does not want their content hosted on this Wiki, don't post it here in their stead. If an author doesn't want their content placed elsewhere, don't repost it. If an author wishes to remove their content from the wiki, they are welcome to. As this is a wiki, content is subject to be modified to keep things current.
 
 5. The BG3MC Wiki doesn't allow bot trawlers in order to curb AI indexing any hosted content. The Wiki is not a farm for AI to be trained on, please do not run other people's guides through AI such as ChatGPT.
 
