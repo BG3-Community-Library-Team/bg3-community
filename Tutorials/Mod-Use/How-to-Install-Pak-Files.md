@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T03:07:39.867Z
+date: 2024-04-27T03:14:19.153Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -145,8 +145,9 @@ See also: https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM
 
 ![activemod.png](/tutorials/activemod.png =x290)
 
-Now you need to press "export order" or "save order"
+Now you need to press "export order" or "save order". 
 Either one will do, you can do both but generally they will do the same thing. 
+Always export or save order when you add a mod, remove a mod, change the load order or make a mod inactive. 
 
 ![saveorder.png](/tutorials/saveorder.png)
 
@@ -175,6 +176,13 @@ Mod fixer is a mod that makes it so you can actually use the mods; you will get 
 Screenshot below; 
 ![nomodfixerpng.png](/tutorials/nomodfixerpng.png =x400)
 
+Mod fixer will also sometimes be baked into the mod you are installing, one popular mod is for example the mod Basket of Equipment. 
+In that case you do not necessarily need the mod fixer, as you will already have mod fixer because of that mod.
+
+You can see in BG3MM if the mod has mod fixer embedded into the mod. It will be a little notes icon.
+Highlighted below:
+![modhasmodfixer.png](/tutorials/modhasmodfixer.png)
+
 ---
 Download and install them per method above untill you get to the part of making the mods active.
 
@@ -183,7 +191,9 @@ Download and install them per method above untill you get to the part of making 
 
 You will notice that the mods automatically went down to a new category called "overrides". 
 All mods that goes into overrides, are always enabled and should never be put in the load order. So therefore, leave them alone. 
-BG3MM will automatically know which mods should be there. 
+BG3MM will automatically know which mods should be there and when any mods goes into overrides, they should stay in overrides. 
+
+Remember to save or export order after refreshing/importing the mod. 
 
 Brown mods, as Improved UI
 
