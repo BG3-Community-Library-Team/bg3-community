@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T02:36:39.524Z
+date: 2024-04-27T02:44:06.848Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -135,5 +135,12 @@ When this is done, it will return to BG3MM.
 
 ## 4. How to activate the mod
 
+Your BG3MM should look something like this: 
+
+![bg3mmwithmods.png](/tutorials/bg3mmwithmods.png =x600)
+
+To activate the mod, you will need to drag it over to the active side which is the left side.
+
+![activemod.png](/tutorials/activemod.png =x290)
 
 
