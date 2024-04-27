@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T01:55:41.354Z
+date: 2024-04-27T02:04:17.625Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -58,7 +58,6 @@ However, most of the time your Windows PC should support these type of files.
 There are a few ways to install the mod. This guide will outline two of these. 
 Just choose one of the ways; in the long run it does not matter much. 
 
-
 The mod will be downloaded as a zip, 7zip or rar file in most cases. 
 
 - 3.1 Extraction/double click and manually place it in the mods folder. 
@@ -72,7 +71,8 @@ Right click on it, and click "extract all"
 ![trashcan_extract.png](/tutorials/trashcan_extract.png =x400)
 
 
-Out will come a .pak file and maybe a few others file. Delete everything besides the .pak file as that is the only thing you need. 
+Out will come a folder or .pak file and maybe a few others files. If a folder comes out, go one folder deep until you find a .pak file. 
+Delete everything besides the .pak file as that is the only thing you need. 
 (Provided the mod description does not specify otherwise)
 
 > Tip: You can also double click on the zip, 7zip or rar file, and it will open up inside the zip file. No need for deleting anything in here. Just remember the .pak file is the only thing what you need, and ignore the rest.
@@ -89,10 +89,15 @@ It will open this folder:
 This is the mod folder. The folder path will always be: 
 `\Users\YourUserName\AppData\Local\Larian Studios\Baldur's Gate 3\Mods`
 
-This is something that is determined by Larians side. 
+This is something that is determined by Larian. 
+
+Now that you have opened the mods folder, just simply take the .pak file from your downloads folder or zip folder, and place it in the mods folder: 
+
+![movethemod.png](/tutorials/movethemod.png =x500)
+
+
 
 > In this folder, only .pak files are installed. 
 No folders, subfolders, json, readme's, txt, zip, 7zip, rar, etc files. 
 Only file type allowed in the mods folder are .pak files. 
 {.is-danger}
-
