@@ -2,7 +2,7 @@
 title: Dev Environment Set-up
 description: Guide to getting started creating mods
 published: true
-date: 2024-04-27T19:03:07.632Z
+date: 2024-04-27T19:06:28.078Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-27T19:03:07.632Z
@@ -66,7 +66,9 @@ This is an important tool to have when modding Baldur's Gate 3. It performs vari
 This simplifies the mod installation process. You can drag the .zip file of a mod into this program, and it will install it automatically for you. All you have to do is drag it from the inactive load order to the active load order, click Save, and click Export. You can also adjust the load order of your mods, which prevents conflicts and ensures functionality between mods that depend on other mods to function.
 
 ### [Git](https://git-scm.com/downloads/)
-Because we're using Github, Git is the preferred version control system for this project. If you don't have Git, we highly recommend it as a way to handle versioning and manage your code. It's a lifesaver. If you're making a mod without the Community Library, you don't *need* Git. But if you plan to upload your mod to Github regardless, it's still useful to have.
+> See [A Modder's Guide to Git](Tools/a-modders-guide-to-git) if you're new to the idea of Git or Version Control, or just want a refresher.
+
+Git is a useful way to keep track of different versions of your code. It allows you to easily store and backup your project at various states. If you don't have Git, we highly recommend it as a way to handle versioning and manage your code. It's a lifesaver.
 
 ### [Visual Studio Code](https://code.visualstudio.com/)
 Visual Studio Code(VSCode) or [VSCodium](https://vscodium.com/) is the preferred file editor for creating BG3 Mods:
