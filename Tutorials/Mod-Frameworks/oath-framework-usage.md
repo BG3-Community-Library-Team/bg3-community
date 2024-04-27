@@ -2,7 +2,7 @@
 title: Oath Framework Usage
 description: Learn how to utilize the Oath Framework for improved handling of Oathbreaking
 published: true
-date: 2024-04-27T18:26:12.159Z
+date: 2024-04-27T18:29:16.580Z
 tags: se, script-extender, frameworks, scripting
 editor: markdown
 dateCreated: 2024-04-27T18:26:12.159Z
@@ -197,6 +197,15 @@ Example:
 }
 ```
 
+> **A note on Flags**
+> There is no comprehensive list of flags in the game yet, but there are a few ways to find them.
+> - Community Library is in the process of [indexing flags](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/tree/main/CommunityLibrary/Mods/CommunityLibrary/ScriptExtender/Lua/IdDictionary/StaticData/Flags) for easy reference.
+> - `Shared`, `SharedDev`, `Gustav`, and `GustavDev` have a `Public/ModuleName/Flags` folder that you can search through manually.
+> - Unpacking `Mods/GustavDev/Story/story.div.osi` using [LSLib's](https://github.com/Norbyte/lslib/) story tools, and looking through the story goals.
+
+
+
+    
 ## Working with Script Extender
 Once your Custom Paladin Subclass has been registered, all that's left is listening for events that should cause an Oath to Break or Redeem, and then calling the Modify Oath API function.
 
@@ -384,14 +393,6 @@ Now that we have this set-up, adding additional Oath Break Events is much simple
 2. Add a new `Actions/FILENAME.lua`, replacing `FILENAME` with the `OF_Flags` entry's Key, which will perform the Oath Break/Redeem event.
 
 Be sure to add an entry to `Actions/_init.lua` for each new Action Function you create.
-
-## Flags
-
-There is no comprehensive list of flags in the game yet, but there are a few ways to find them.
-
-- Community Library is in the process of [indexing flags](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/tree/main/CommunityLibrary/Mods/CommunityLibrary/ScriptExtender/Lua/IdDictionary/StaticData/Flags) for easy reference.
-- `Shared`, `SharedDev`, `Gustav`, and `GustavDev` have a `Public/ModuleName/Flags` folder that you can search through manually.
-- Unpacking `Mods/GustavDev/Story/story.div.osi` using [LSLib's](https://github.com/Norbyte/lslib/) story tools, and looking through the story goals.
     
   </div>
 </div>
