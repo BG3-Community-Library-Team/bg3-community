@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-27T03:31:46.486Z
+date: 2024-04-27T03:35:30.889Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -13,7 +13,7 @@ dateCreated: 2024-04-25T01:54:07.278Z
 
 This guide will be split up in 3 parts to make it easier:
 
-1. How to set up BG3MM 
+1. How to set up BG3MM (this guide)
 2. How to install Mods (Pak files): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files
 3. How to install manual/loose file mods (mods that do not come as .pak file but as folders). 
 
