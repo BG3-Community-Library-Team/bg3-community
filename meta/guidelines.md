@@ -2,7 +2,7 @@
 title: Guidelines
 description: Explainer on basic content and behavioral guidelines
 published: true
-date: 2024-04-27T01:44:29.128Z
+date: 2024-04-27T01:45:17.679Z
 tags: meta, rules, guidelines
 editor: markdown
 dateCreated: 2024-04-23T22:34:04.842Z
@@ -23,3 +23,7 @@ BG3 Modding Community is adamant about creating a safe, accessible place for mod
 
 5. The BG3MC Wiki doesn't allow bot trawlers in order to curb AI indexing any hosted content. The Wiki is not a farm for AI to be trained on, please do not run other people's guides through AI such as ChatGPT.
 
+
+## Standard Practice
+
+[TODO: Fill this out]
