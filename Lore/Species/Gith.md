@@ -2,7 +2,7 @@
 title: Gith
 description: An overview of the Gith species
 published: true
-date: 2024-04-27T09:30:41.827Z
+date: 2024-04-27T09:31:00.764Z
 tags: lore, species, gith, dark sun, spelljammer, planescape, forgotten realms
 editor: markdown
 dateCreated: 2024-04-26T22:12:05.114Z
@@ -20,7 +20,7 @@ The Gith comprise several factions of beings who have escaped Illithid control. 
 |[Forerunners](forerunners)|Planescape|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
 |[Githgagra](githgagra)|Planescape|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
 |[Githilid](githilid)|Planescape|Rrakkma: Legacy of Zerthimon|Brannon Hollingsworth, Torsten Bernhardt|Confirmed|3e|
-|[Githtorai](lost-gith#githtorai)|--|--|Nathan Irving|Unconfirmed, Unlikely|--|
+|[Githtorai](lost-gith#githtorai)|--|--|Nathan Irving|Unlikely|--|
 |[Githvyrik](githvyrik)|Forgotten Realms|Dawn of Night|Paul S. Kemp|Confirmed|--|
 |[Githximoi](githximoi)|Planescape|Rrakkma: Legacy of Zerthimon|Torsten Bernhardt|Confirmed|3e|
 |[Githyanki](githyanki)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
