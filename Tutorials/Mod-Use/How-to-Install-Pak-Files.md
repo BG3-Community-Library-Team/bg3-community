@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T03:14:19.153Z
+date: 2024-04-27T03:18:14.336Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -195,6 +195,24 @@ BG3MM will automatically know which mods should be there and when any mods goes 
 
 Remember to save or export order after refreshing/importing the mod. 
 
-Brown mods, as Improved UI
+Brown mods and overrides, such as Improved UI and mod fixer, cannot be disabled even if you make them inactive in BG3MM. 
+This is because they are overriding vanilla game files, and therefore will always be active. You will need to remove them completely from the mods folder (`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`) to disable them. 
+
+
+---
+
+## Other relevant guides and credits
+
+How to install BG3MM, mods and manual/loose file mods series: 
+Part 1: https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM
+Part 3: How to install manual/loose file mods 
+
+How to install SE 
+How to install Native mod loader
+How to install Unique tav
+
+Made by: Maze 
+Credits: Arrow, LaughingLeader, Norbyte, Derk, NellsRelo 
+
 
 
