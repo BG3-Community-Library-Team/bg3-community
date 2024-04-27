@@ -2,7 +2,7 @@
 title: Gith'ilid
 description: The lesser-known Alhoon-bound Gith
 published: true
-date: 2024-04-26T23:59:43.193Z
+date: 2024-04-27T09:40:27.812Z
 tags: lore, species, gith, illithid, githilid
 editor: markdown
 dateCreated: 2024-04-26T22:15:51.294Z
@@ -10,7 +10,7 @@ dateCreated: 2024-04-26T22:15:51.294Z
 
 
 # Gith'ilid
-With sickly skin, sharp features, dark hair and simple clothing, you would easily assume them to be Githzerai touched by the Infernal. Their eyes are like "milky white orbs that reflect neither emotion not intent"^1^, and their chins are adorned with six braided, disguised tentacles, which can unbraid themselves and act as weapons in combat.
+With sickly skin, sharp features, dark hair and simple clothing, you would easily assume them to be Githzerai touched by the Infernal. Their eyes are like "milky white orbs that reflect neither emotion not intent"^[1]^, and their chins are adorned with six braided, disguised tentacles, which can unbraid themselves and act as weapons in combat.
 
 They are enthralled by renegade Alhoons - Mindflayer Necromancers that have severed their connection to the hive, and are born through a twisted variation of Ceromorphosis, forced upon fallen Illithid, known as Necromorphosis. They are capable of defensive Psionic abilities, and have a light immunity against telepathic attacks.
 
