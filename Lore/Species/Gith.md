@@ -2,7 +2,7 @@
 title: Gith
 description: An overview of the Gith species
 published: true
-date: 2024-04-27T08:46:35.753Z
+date: 2024-04-27T08:47:08.013Z
 tags: lore, species, gith, dark sun, spelljammer, planescape, forgotten realms
 editor: markdown
 dateCreated: 2024-04-26T22:12:05.114Z
@@ -15,17 +15,17 @@ The Gith comprise several factions of beings who have escaped Illithid control. 
 
 |Name|Setting|Sourcebook|Author|Canonocity|Latest Edition|
 |----|-------|----------|------|----------|-------|
-|[Athasian Gith](gith/athasian-gith)|Dark Sun|Black Spine|Walter Baas, Dustin Browder, Tom Prusa, Jonathan Tweet|Confirmed|3e|
-|[Dakeen](gith/githdakeen)|--|Liber Bestarius|Matt Colville, Douglas Sun, Eden Studios|Partial|--|
-|[Forerunners](gith/forerunners)|Planewalker|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
-|[Githgagra](gith/githgagra)|Planewalker|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
-|[Githilid](gith/githilid)|Planewalker|Rrakkma: Legacy of Zerthimon|Brannon Hollingsworth, Torsten Bernhardt|Confirmed|3e|
-|[Githvyrik](gith/githvyrik)|Forgotten Realms|Dawn of Night|Paul S. Kemp|Confirmed|--|
-|[Githximoi](gith/githximoi)|Planewalker|Rrakkma: Legacy of Zerthimon|Torsten Bernhardt|Confirmed|3e|
-|[Githyanki](gith/githyanki)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
-|[Githzerai](gith/githzerai)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
-|[Pirates of Gith](gith/pirates-of-gith)|Spelljammer|Monstrous Manual|Charles Stross|Confirmed|2e AD&D|
-|[Zerth Freebooters](gith/zerth-freebooters)|Spelljammer|Beyond the Moons|Phil Smith|Confirmed|3e|
+|[Athasian Gith](athasian-gith)|Dark Sun|Black Spine|Walter Baas, Dustin Browder, Tom Prusa, Jonathan Tweet|Confirmed|3e|
+|[Dakeen](githdakeen)|--|Liber Bestarius|Matt Colville, Douglas Sun, Eden Studios|Partial|--|
+|[Forerunners](forerunners)|Planewalker|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
+|[Githgagra](githgagra)|Planewalker|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
+|[Githilid](githilid)|Planewalker|Rrakkma: Legacy of Zerthimon|Brannon Hollingsworth, Torsten Bernhardt|Confirmed|3e|
+|[Githvyrik](githvyrik)|Forgotten Realms|Dawn of Night|Paul S. Kemp|Confirmed|--|
+|[Githximoi](githximoi)|Planewalker|Rrakkma: Legacy of Zerthimon|Torsten Bernhardt|Confirmed|3e|
+|[Githyanki](githyanki)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
+|[Githzerai](githzerai)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
+|[Pirates of Gith](pirates-of-gith)|Spelljammer|Monstrous Manual|Charles Stross|Confirmed|2e AD&D|
+|[Zerth Freebooters](zerth-freebooters)|Spelljammer|Beyond the Moons|Phil Smith|Confirmed|3e|
 
 ## Notes on Canonocity
 Planewalker and the Beyond the Moons source for Spelljammer are sources that have been given WotC's blessing to continue the Planescape and Spelljammer settings^[1]^^[2]^, and are effectively canonical sources. Given Githyanki and Githzerai are the only Gith subgroups referenced in 5e, the information on them will be more accurate.
