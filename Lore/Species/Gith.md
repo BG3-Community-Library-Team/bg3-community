@@ -2,7 +2,7 @@
 title: Gith
 description: An overview of the Gith species
 published: true
-date: 2024-04-27T09:19:26.404Z
+date: 2024-04-27T09:30:41.827Z
 tags: lore, species, gith, dark sun, spelljammer, planescape, forgotten realms
 editor: markdown
 dateCreated: 2024-04-26T22:12:05.114Z
@@ -17,12 +17,12 @@ The Gith comprise several factions of beings who have escaped Illithid control. 
 |----|-------|----------|------|----------|-------|
 |[Athasian Gith](athasian-gith)|Dark Sun|Black Spine|Walter Baas, Dustin Browder, Tom Prusa, Jonathan Tweet|Confirmed|3e|
 |[Dakeen (Githduros)](githdakeen)|--|Liber Bestarius|Matt Colville, Douglas Sun, tsadkiel , Eden Studios|No|--|
-|[Forerunners](forerunners)|Planewalker|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
-|[Githgagra](githgagra)|Planewalker|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
-|[Githilid](githilid)|Planewalker|Rrakkma: Legacy of Zerthimon|Brannon Hollingsworth, Torsten Bernhardt|Confirmed|3e|
+|[Forerunners](forerunners)|Planescape|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
+|[Githgagra](githgagra)|Planescape|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
+|[Githilid](githilid)|Planescape|Rrakkma: Legacy of Zerthimon|Brannon Hollingsworth, Torsten Bernhardt|Confirmed|3e|
 |[Githtorai](lost-gith#githtorai)|--|--|Nathan Irving|Unconfirmed, Unlikely|--|
 |[Githvyrik](githvyrik)|Forgotten Realms|Dawn of Night|Paul S. Kemp|Confirmed|--|
-|[Githximoi](githximoi)|Planewalker|Rrakkma: Legacy of Zerthimon|Torsten Bernhardt|Confirmed|3e|
+|[Githximoi](githximoi)|Planescape|Rrakkma: Legacy of Zerthimon|Torsten Bernhardt|Confirmed|3e|
 |[Githyanki](githyanki)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
 |[Githzada](lost-gith#githtorai#githzada)|--|Planeshifter|Fiend Games|Partial|3e|
 |[Githzerai](githzerai)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
