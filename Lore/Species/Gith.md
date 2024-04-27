@@ -2,7 +2,7 @@
 title: Gith
 description: An overview of the Gith species
 published: true
-date: 2024-04-27T10:50:54.434Z
+date: 2024-04-27T11:02:30.909Z
 tags: lore, species, gith, dark sun, spelljammer, planescape, forgotten realms
 editor: markdown
 dateCreated: 2024-04-26T22:12:05.114Z
@@ -28,7 +28,7 @@ The Gith comprise several factions of beings who have escaped Illithid control. 
 |[Githzada](lost-gith#githtorai#githzada)|--|Planeshifter|Fiend Games|Partial|3e|
 |[Githzerai](githzerai)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
 |[Pirates of Gith](pirates-of-gith)|Spelljammer|Monstrous Manual|Charles Stross|Confirmed|2e AD&D|
-|[Zerth Freebooters](zerth-freebooters)|Spelljammer|Beyond the Moons|Phil Smith|Confirmed|3e|
+|[Zerth Freebooters](githzerai#zerth-freebooters)|Spelljammer|Beyond the Moons|Phil Smith|Confirmed|3e|
 
 ## Notes on Canonocity
 Planewalker and the Beyond the Moons source for Spelljammer are sources that have been given WotC's blessing to continue the Planescape and Spelljammer settings^[2]^^[3]^, and are effectively canonical sources. Project Planeshifter fell through when Fiend Games closed their doors^[4]^, so while it could be considered canon, the Githzada never saw the light of day. Similarly, the Dakeen were originally written as Githduros, until it was confirmed Gith would not be added to the SRD, and were reworkds into the Dakeen. Given Githyanki and Githzerai are the only Gith subgroups referenced in 5e, the information on them will be more accurate.
