@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T02:04:17.625Z
+date: 2024-04-27T02:13:20.259Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -87,17 +87,27 @@ It will open this folder:
 ![modsfolder.png](/tutorials/modsfolder.png =x200)
 
 This is the mod folder. The folder path will always be: 
-`\Users\YourUserName\AppData\Local\Larian Studios\Baldur's Gate 3\Mods`
 
-This is something that is determined by Larian. 
+`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`
 
-Now that you have opened the mods folder, just simply take the .pak file from your downloads folder or zip folder, and place it in the mods folder: 
-
-![movethemod.png](/tutorials/movethemod.png =x500)
-
-
+This is something that is determined by Larian and cannot be changed.
 
 > In this folder, only .pak files are installed. 
-No folders, subfolders, json, readme's, txt, zip, 7zip, rar, etc files. 
-Only file type allowed in the mods folder are .pak files. 
-{.is-danger}
+> No folders, subfolders, json, readme's, txt, zip, 7zip, rar, etc files. 
+> Only file type allowed in the mods folder are .pak files. 
+{.is-warning}
+
+---
+
+Now that you have opened the mods folder, just simply take the .pak file from your downloads folder or zip folder, and place it in the mods folder as seen below in the two screenshots:
+
+![movethemod.png](/tutorials/movethemod.png =x450)
+
+---
+
+![movedthemod1.png](/tutorials/movedthemod1.png =x400)
+
+Now you have done that, then you just need to open BG3MM again and refresh it. 
+
+![refreshlonger.png](/tutorials/refreshlonger.png)
+
