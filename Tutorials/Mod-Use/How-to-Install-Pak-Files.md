@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T01:19:19.212Z
+date: 2024-04-27T01:48:09.561Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -55,6 +55,31 @@ However, most of the time your Windows PC should support these type of files.
 
 ## 3. Install the mod
 
-There are a few ways to install the mod. This guide will outline some of them, and explain the pros and the cons of them all. 
+There are a few ways to install the mod. This guide will outline two of these. 
+Just choose one of the ways; in the long run it does not matter much. 
+
+
 The mod will be downloaded as a zip, 7zip or rar file in most cases. 
+
+- 3.1 Extraction/double click and manually place it in the mods folder. 
+
+First you will see the mod in your downloads folder. 
+
+![trashcan_download.png](/tutorials/trashcan_download.png)
+
+Right click on it, and click "extract all"
+
+![trashcan_extract.png](/tutorials/trashcan_extract.png =x400)
+
+
+Out will come a .pak file and maybe a few others file. Delete everything besides the .pak file as that is the only thing you need. 
+(Provided the mod description does not specify otherwise)
+
+> Tip: You can also double click on the zip, 7zip or rar file, and it will open up inside the zip file. No need for deleting anything in here. Just remember the .pak file is the only thing what you need, and ignore the rest.
+{.is-info}
+
+When you have extracted it, open BG3MM, and click on "Mods folder" in the bar to the top, right beside "Shortcuts" as highlighted below: 
+
+![bg3mm_modsfolder.png](/tutorials/bg3mm_modsfolder.png)
+
 
