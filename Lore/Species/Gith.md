@@ -2,14 +2,14 @@
 title: Gith
 description: An overview of the Gith species
 published: true
-date: 2024-04-27T08:47:08.013Z
+date: 2024-04-27T08:48:00.232Z
 tags: lore, species, gith, dark sun, spelljammer, planescape, forgotten realms
 editor: markdown
 dateCreated: 2024-04-26T22:12:05.114Z
 ---
 
 # Gith
-The Gith comprise several factions of beings who have escaped Illithid control. Some lead lives as soldiers in a never-ending war, while others prefer a more chaotic monastical approach. All of them hate Mind Flayers with a passion, and most hate each other nearly as much. The various types of Gith are more akin to subgroups, rather than subspecies.
+The Gith comprise several factions of beings who have escaped Illithid control. Some lead lives as soldiers in a never-ending war, while others prefer a more chaotic monastical approach. All of them hate Mind Flayers with a passion^[1]^, and most hate each other nearly as much. The various types of Gith are more akin to subgroups, rather than subspecies.
 
 ## List of Subgroups
 
@@ -28,7 +28,7 @@ The Gith comprise several factions of beings who have escaped Illithid control. 
 |[Zerth Freebooters](zerth-freebooters)|Spelljammer|Beyond the Moons|Phil Smith|Confirmed|3e|
 
 ## Notes on Canonocity
-Planewalker and the Beyond the Moons source for Spelljammer are sources that have been given WotC's blessing to continue the Planescape and Spelljammer settings^[1]^^[2]^, and are effectively canonical sources. Given Githyanki and Githzerai are the only Gith subgroups referenced in 5e, the information on them will be more accurate.
+Planewalker and the Beyond the Moons source for Spelljammer are sources that have been given WotC's blessing to continue the Planescape and Spelljammer settings^[2]^^[3]^, and are effectively canonical sources. Given Githyanki and Githzerai are the only Gith subgroups referenced in 5e, the information on them will be more accurate.
 
 ### References
 1. Mordenkainen's Tome of Foes, *May 29th, 2018*
