@@ -2,7 +2,7 @@
 title: Gith
 description: An overview of the Gith species
 published: false
-date: 2024-04-27T08:39:08.624Z
+date: 2024-04-27T08:45:53.474Z
 tags: lore, species, gith, dark sun, spelljammer, planescape, forgotten realms
 editor: markdown
 dateCreated: 2024-04-26T22:12:05.114Z
@@ -20,8 +20,9 @@ The Gith comprise several factions of beings who have escaped Illithid control. 
 |[Forerunners](gith/forerunners)|Planewalker|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
 |[Githgagra](gith/githgagra)|Planewalker|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
 |[Githilid](gith/githilid)|Planewalker|Rrakkma: Legacy of Zerthimon|Brannon Hollingsworth, Torsten Bernhardt|Confirmed|3e|
-|[Githyanki](gith/githyanki)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
+|[Githvyrik](gith/githvyrik)|Forgotten Realms|Dawn of Night|Paul S. Kemp|Confirmed|--|
 |[Githximoi](gith/githximoi)|Planewalker|Rrakkma: Legacy of Zerthimon|Torsten Bernhardt|Confirmed|3e|
+|[Githyanki](gith/githyanki)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
 |[Githzerai](gith/githzerai)|Forgotten Realms|Mordekainen's Tome of Foes|Charles Stross|Confirmed|5e|
 |[Pirates of Gith](gith/pirates-of-gith)|Spelljammer|Monstrous Manual|Charles Stross|Confirmed|2e AD&D|
 |[Zerth Freebooters](gith/zerth-freebooters)|Spelljammer|Beyond the Moons|Phil Smith|Confirmed|3e|
