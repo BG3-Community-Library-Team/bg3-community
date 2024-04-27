@@ -1,8 +1,8 @@
 ---
 title: Pirates of Gith
 description: All about the Gith who became Astral Pirates
-published: false
-date: 2024-04-27T10:01:29.762Z
+published: true
+date: 2024-04-27T10:01:36.722Z
 tags: lore, species, gith, pirates
 editor: markdown
 dateCreated: 2024-04-26T23:32:24.528Z
