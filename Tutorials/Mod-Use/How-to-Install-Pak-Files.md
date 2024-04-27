@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T02:13:20.259Z
+date: 2024-04-27T02:36:39.524Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -78,6 +78,8 @@ Delete everything besides the .pak file as that is the only thing you need.
 > Tip: You can also double click on the zip, 7zip or rar file, and it will open up inside the zip file. No need for deleting anything in here. Just remember the .pak file is the only thing what you need, and ignore the rest.
 {.is-info}
 
+---
+
 When you have extracted it, open BG3MM, and click on "Mods folder" in the bar to the top, right beside "Shortcuts" as highlighted below: 
 
 ![bg3mm_modsfolder.png](/tutorials/bg3mm_modsfolder.png)
@@ -92,10 +94,6 @@ This is the mod folder. The folder path will always be:
 
 This is something that is determined by Larian and cannot be changed.
 
-> In this folder, only .pak files are installed. 
-> No folders, subfolders, json, readme's, txt, zip, 7zip, rar, etc files. 
-> Only file type allowed in the mods folder are .pak files. 
-{.is-warning}
 
 ---
 
@@ -103,11 +101,39 @@ Now that you have opened the mods folder, just simply take the .pak file from yo
 
 ![movethemod.png](/tutorials/movethemod.png =x450)
 
----
 
 ![movedthemod1.png](/tutorials/movedthemod1.png =x400)
 
-Now you have done that, then you just need to open BG3MM again and refresh it. 
+> In the mods folder it should always only have .pak files inside of it. 
+> No folders, subfolders, json, readme's, txt, zip, 7zip, rar, etc files. 
+> Having other file types, such as a folder, can lead to issues and the mods never actually get installed.
+{.is-warning}
+
+When you have done this, you will need to refresh in BG3MM: 
 
 ![refreshlonger.png](/tutorials/refreshlonger.png)
+
+
+---
+
+- 3.2: Use the import function in BG3MM
+
+Instead of extracting and manually place the .pak file inside of the mods folder, simply just open BG3MM. 
+Go to the top left, click on "Files" and then choose "Import mod". 
+
+![importmod.png](/tutorials/importmod.png)
+
+Find the mod in the downloads folder.
+
+![importmods11.png](/tutorials/importmods11.png =x500)
+
+
+When this is done, it will return to BG3MM.
+
+> This is an easier way, however you need to be aware that you will still need to check your mods folder (`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`) that it has not imported any folders, or excess files as the only files that should be in this folder are the .pak files. 
+{.is-info}
+
+## 4. How to activate the mod
+
+
 
