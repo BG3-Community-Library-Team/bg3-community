@@ -2,7 +2,7 @@
 title: Gith
 description: An overview of the Gith species
 published: false
-date: 2024-04-27T08:35:22.064Z
+date: 2024-04-27T08:37:32.902Z
 tags: lore, species, gith
 editor: markdown
 dateCreated: 2024-04-26T22:12:05.114Z
@@ -27,7 +27,7 @@ The Gith comprise several factions of beings who have escaped Illithid control. 
 |[Zerth Freebooters](gith/zerth-freebooters)|Spelljammer|Beyond the Moons|Phil Smith|Confirmed|3e|
 
 ## Notes on Canonocity
-Planewalker and the Beyond the Moons source for Spelljammer are sources that have been given WotC's blessing to continue the Planescape and Spelljammer settings^[1]^^[2]^
+Planewalker and the Beyond the Moons source for Spelljammer are sources that have been given WotC's blessing to continue the Planescape and Spelljammer settings^[1]^^[2]^, and are effectively canonical sources. Given Githyanki and Githzerai are the only Gith subgroups referenced in 5e, the information on them will be more accurate.
 
 ### References
 1. [Planewalker FAQ](https://planewalker.com/faq/080101/planewalker-general-faq_.html#2), last updated *January 1st, 2008*
