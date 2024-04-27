@@ -2,7 +2,7 @@
 title: Gith
 description: An overview of the Gith species
 published: false
-date: 2024-04-27T08:38:02.150Z
+date: 2024-04-27T08:39:08.624Z
 tags: lore, species, gith, dark sun, spelljammer, planescape, forgotten realms
 editor: markdown
 dateCreated: 2024-04-26T22:12:05.114Z
@@ -30,5 +30,6 @@ The Gith comprise several factions of beings who have escaped Illithid control. 
 Planewalker and the Beyond the Moons source for Spelljammer are sources that have been given WotC's blessing to continue the Planescape and Spelljammer settings^[1]^^[2]^, and are effectively canonical sources. Given Githyanki and Githzerai are the only Gith subgroups referenced in 5e, the information on them will be more accurate.
 
 ### References
-1. [Planewalker FAQ](https://planewalker.com/faq/080101/planewalker-general-faq_.html#2), last updated *January 1st, 2008*
-2. [Beyond the Moon's About page](http://www.spelljammer.org/misc/about.html), last updated *August 25th, 2004*
+1. Mordenkainen's Tome of Foes, *May 29th, 2018*
+2. [Planewalker FAQ](https://planewalker.com/faq/080101/planewalker-general-faq_.html#2), last updated *January 1st, 2008*
+3. [Beyond the Moon's About page](http://www.spelljammer.org/misc/about.html), last updated *August 25th, 2004*
