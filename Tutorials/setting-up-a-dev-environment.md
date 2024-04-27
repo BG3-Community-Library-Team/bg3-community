@@ -2,7 +2,7 @@
 title: Dev Environment Set-up
 description: Guide to getting started creating mods
 published: true
-date: 2024-04-27T21:16:45.212Z
+date: 2024-04-27T21:17:42.007Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-27T19:03:07.632Z
@@ -104,7 +104,7 @@ This simplifies the mod installation process. You can drag the .zip file of a mo
   <div class="col col-offset-1 col-10">
     
 ### [Git](https://git-scm.com/downloads/)
-> See [A Modder's Guide to Git](Tools/modders-guide-to-git) if you're new to the idea of Git or Version Control, or just want a refresher.
+> See [A Modder's Guide to Git](/Tutorials/Tools/modders-guide-to-git) if you're new to the idea of Git or Version Control, or just want a refresher.
 
 Git is a useful way to keep track of different versions of your code. It allows you to easily store and backup your project at various states. If you don't have Git, we highly recommend it as a way to handle versioning and manage your code. It's a lifesaver.
 
