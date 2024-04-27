@@ -2,7 +2,7 @@
 title: Pirates of Gith
 description: All about the Gith who became Astral Pirates
 published: true
-date: 2024-04-27T10:01:36.722Z
+date: 2024-04-27T10:06:04.039Z
 tags: lore, species, gith, pirates
 editor: markdown
 dateCreated: 2024-04-26T23:32:24.528Z
@@ -15,14 +15,16 @@ The Pirates of Gith diverged alongside Githyanki and Githzerai after freeing the
 Gith Pirates look nearly identical to Githyanki, but can be distinguished by their clothing and choice of weapons - preferring scimitar and cutlass, and wearing the garish clothing you would expect on a sea-bound Pirate.
 
 ## Society
-Considered to be among the most genocidal of Gith subgroups, the Pirates of Gith have a deep hatred not just of the Illithids, but also of the other Gith factions, particularly Githyanki. That said, the pirates are disparate, and there are a variety of Gith Pirate vessels with different approaches, and inter-pirate conflict is not uncommon.
+Considered to be among the most genocidal of Gith subgroups, the Pirates of Gith have a deep hatred not just of the Illithids, but also of the other Gith factions, particularly Githyanki. That said, the pirates are disparate, and there are a variety of Gith Pirate vessels with different approaches, and inter-pirate conflict is not uncommon. They speak a language distinct from other Gith languages, but often know Githyanki and Common as well.
 
-The pirates of Gith consider Vlaakith a betrayer. They're thought to align themselves with Gith, but claim several Deities, including Tiamat, to be abberations of their own original deities. They speak a language distinct from other Gith languages, but often know Githyanki and Common as well.
+The pirates Gith are thought to align themselves with Mother Gith, but claim several Deities, including Tiamat, to be abberations of their own original deities. There are accounts of a pirate known as The First Captain^[3]^, who discovered how to fly a Spelljammer without the aid of Illithids, and who had been freed by Mother Gith herself. This unnamed Gith Pirate accused both Zerthimon and Vlaakith of Treachery against Mother Gith after her death, and this feeling of betrayal of the Githzerai and Githyanki is consistent among most Gith Pirates.
 
 They are found all over Wildspace, but are rumored to converge in the Golarion system's Diaspora asteroid belt, having hollowed out several of the asteroids^[2]^. Historical records are not well-kept by Gith Pirate Captains, so most knowledge about them is rumor^[3]^.
 
-## Notable Factions
-- Clerics of Gith
+## Notable Pirates
+- The Clerics of Gith
+- The First Captain
+- Vilquar
 
 ### References
 1. [Pirate of Gith Statblock on Spelljammer.org](http://lost.spelljammer.org/ShatteredFractine/critters/monsters/pirateofgith.html), *2002*
