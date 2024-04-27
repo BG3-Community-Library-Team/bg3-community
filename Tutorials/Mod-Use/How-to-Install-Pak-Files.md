@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T03:18:14.336Z
+date: 2024-04-27T03:24:49.100Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -157,12 +157,6 @@ Or
 
 Done! Now you have installed your first mod! 
 
-> The small yellow icon is an indicator that I have installed Script Extender.
-> If you have a red indicator, it means you do not have Script Extender installed.
-> ![scriptextender.png](/tutorials/scriptextender.png)
-> See also: How to install Script Extender
-{.is-info}
-
 
 ## 5. Installing two of the most necessarry mods (mod fixer and Improved UI) when you use mods. Do not skip. Important.
 Improved UI by Djmr: https://www.nexusmods.com/baldursgate3/mods/366
@@ -182,6 +176,11 @@ In that case you do not necessarily need the mod fixer, as you will already have
 You can see in BG3MM if the mod has mod fixer embedded into the mod. It will be a little notes icon.
 Highlighted below:
 ![modhasmodfixer.png](/tutorials/modhasmodfixer.png)
+
+The small yellow icon is an indicator that I have installed Script Extender.
+If you have a red indicator, it means you do not have Script Extender installed.
+See also: How to install Script Extender
+![hasscriptextender.png](/tutorials/hasscriptextender.png)
 
 ---
 Download and install them per method above untill you get to the part of making the mods active.
