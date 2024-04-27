@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T02:44:06.848Z
+date: 2024-04-27T03:05:41.152Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -142,5 +142,43 @@ Your BG3MM should look something like this:
 To activate the mod, you will need to drag it over to the active side which is the left side.
 
 ![activemod.png](/tutorials/activemod.png =x290)
+
+Now you need to press "export order" or "save order"
+Either one will do, you can do both but generally they will do the same thing. 
+
+![saveorder.png](/tutorials/saveorder.png)
+
+Or
+
+![exportorder.png](/tutorials/exportorder.png)
+
+Done! Now you have installed your first mod! 
+
+> The small yellow icon is an indicator that I have installed Script Extender.
+> If you have a red indicator, it means you do not have Script Extender installed.
+> ![scriptextender.png](/tutorials/scriptextender.png)
+> See also: How to install Script Extender
+{.is-info}
+
+
+## 5. Installing two of the most necessarry mods (mod fixer and Improved UI) when you use mods. Do not skip. Important.
+Improved UI by Djmr: https://www.nexusmods.com/baldursgate3/mods/366
+Mod fixer by figs999: https://www.nexusmods.com/baldursgate3/mods/141
+
+These two are a requirement for many mods; especially mod fixer. 
+
+Improved UI is a mod that makes it so you can choose the modded options in character creation or the mirror if you have modded hair, faces, spells, subclasses, classes, feats. Without it you will not be able to scroll.
+
+Mod fixer is a mod that makes it so you can actually use the mods; you will get a naked durge harem instead of character creation if you do not have it. 
+Screenshot below; 
+![nomodfixerpng.png](/tutorials/nomodfixerpng.png =x400)
+
+---
+Download and install them per method above untill you get to the part of making the mods active.
+
+![overrides.png](/tutorials/overrides.png =x500)
+
+
+You will notice that the mods automatically went down to a new category called "overrides"
 
 
