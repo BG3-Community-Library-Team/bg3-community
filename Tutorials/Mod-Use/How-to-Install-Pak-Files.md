@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T03:05:41.152Z
+date: 2024-04-27T03:07:39.867Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -139,7 +139,9 @@ Your BG3MM should look something like this:
 
 ![bg3mmwithmods.png](/tutorials/bg3mmwithmods.png =x600)
 
-To activate the mod, you will need to drag it over to the active side which is the left side.
+To activate the mod, you will need to drag it over to the active side which is the left side. 
+Remember not to make DiceSet_06 and Honour active, and leave them in the right side of BG3MM
+See also: https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM
 
 ![activemod.png](/tutorials/activemod.png =x290)
 
@@ -179,6 +181,10 @@ Download and install them per method above untill you get to the part of making 
 ![overrides.png](/tutorials/overrides.png =x500)
 
 
-You will notice that the mods automatically went down to a new category called "overrides"
+You will notice that the mods automatically went down to a new category called "overrides". 
+All mods that goes into overrides, are always enabled and should never be put in the load order. So therefore, leave them alone. 
+BG3MM will automatically know which mods should be there. 
+
+Brown mods, as Improved UI
 
 
