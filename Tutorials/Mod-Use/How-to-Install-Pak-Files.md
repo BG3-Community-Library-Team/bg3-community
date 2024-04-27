@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T03:32:13.175Z
+date: 2024-04-27T03:32:58.911Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -210,7 +210,7 @@ You will need to remove them completely from the mods folder to disable them
 ## Other relevant guides and credits
 
 How to install BG3MM, mods and manual/loose file mods series: 
-Part 1: https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM
+Part 1: How to install BG3MM: https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM
 Part 3: How to install manual/loose file mods 
 
 How to install SE 
