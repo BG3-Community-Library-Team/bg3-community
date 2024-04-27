@@ -2,7 +2,7 @@
 title: Dev Environment Set-up
 description: Guide to getting started creating mods
 published: true
-date: 2024-04-27T19:11:08.538Z
+date: 2024-04-27T21:16:45.212Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-27T19:03:07.632Z
@@ -78,7 +78,7 @@ More information can be found in the [official SE Documentation](https://github.
   <div class="col col-offset-1 col-10">
     
 ## Useful Tools
-There are several
+Listed below are tools that will help you in creating mods.
 
   </div>
 </div>
