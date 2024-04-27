@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T00:49:12.642Z
+date: 2024-04-27T00:49:57.396Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -14,7 +14,7 @@ This is part 2 of the guide "How to install BG3MM and mods".
 First part: https://wiki.bg3.community/e/en/Tutorials/Mod-Use/Installation-Of-BG3MM
 
 > This guide is for Windows, Steam users and BG3MM users. 
-> However it will point out in the guide if there is an alternative way for, for example Vortex, Linus and Mac. 
+> However it will point out in the guide if there is an alternative way for Vortex.
 > GOG users is basically the same, provided you followed the first guide. 
 {.is-info}
 
