@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-04-27T01:11:14.622Z
+date: 2024-04-27T01:19:19.212Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -27,7 +27,7 @@ You will find a wide varity on there: https://www.nexusmods.com/baldursgate3
 You will need an account to download the mods, so make one before you move on with the guide. 
 If you have one, log in so you can download the mods. 
 
-> Remember to read the mod description! 
+> Remember to read the mod description of the mod you wish to download! 
 > The mod description outlines things such as: Installation, compatbility issues, load order (if it has a specific load order), other things you may wish to keep in mind such as bugs. 
 > A lot of issues can be prevented if you remember to the read the description!
 {.is-warning}
@@ -50,8 +50,11 @@ You will notice that there is a button called "Mod Manager Download" - do not us
 The mod will install as a zip or a 7zip file most of the time. Other times it can be as a .rar file which is almost the same as a zip file, so it is recommended to install 7zip (https://www.7-zip.org/) so that you are able to extract the mod from the archive (zip, 7zip, rars). 
 However, most of the time your Windows PC should support these type of files. 
 
-> Vortex users should use the mod manager download button and ignore rest of the guide. This may seem like the easy way out, but Vortex has it cons (bugs) in the long run and most modders recommend BG3MM. However if used correctly, and being aware of the bugs Vortex can be used for most mods. 
+> Vortex users should use the mod manager download button and ignore rest of the guide. This may seem like the easy way out, but Vortex has it cons (bugs) in the long run and most modders recommend BG3MM. However if used correctly, and being aware of the bugs, Vortex can be used for most mods. 
 {.is-info}
 
 ## 3. Install the mod
+
+There are a few ways to install the mod. This guide will outline some of them, and explain the pros and the cons of them all. 
+The mod will be downloaded as a zip, 7zip or rar file in most cases. 
 
