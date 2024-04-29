@@ -2,7 +2,7 @@
 title: Compatibility Framework Usage
 description: Quick guide to using Compatibility Framework
 published: true
-date: 2024-04-29T20:10:57.850Z
+date: 2024-04-29T20:11:14.146Z
 tags: se, script-extender, frameworks, compatibility
 editor: markdown
 dateCreated: 2024-04-25T20:56:58.092Z
@@ -110,7 +110,7 @@ Now you're all done! Be sure your mod loads earlier than `CompatibilityFramework
 >      subClassName = "English-localized name for your class (Optional)"
 >    },
 >  }
->``
+>```
 >
 > Be sure to define the additional subclasses UUID.
 {.is-warning}
