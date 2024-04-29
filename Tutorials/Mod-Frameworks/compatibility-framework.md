@@ -2,7 +2,7 @@
 title: Compatibility Framework Usage
 description: Quick guide to using Compatibility Framework
 published: true
-date: 2024-04-29T20:12:07.053Z
+date: 2024-04-29T20:12:24.329Z
 tags: se, script-extender, frameworks, compatibility
 editor: markdown
 dateCreated: 2024-04-25T20:56:58.092Z
@@ -46,7 +46,7 @@ Now copy the following into `CompatibilityFrameworkConfig.json`:
 
 ## Utilizing CF API Directly
 
-> If you are already using the JSON Configuration Method (*Recommended*), you don't need to do this. 
+> If you are already using the JSON Configuration Method (*Recommended*) mentioned above, you don't need to do this. 
 {.is-warning}
 
 To use the CF's API, be sure you have your mod [set up for the Script Extender](https://github.com/Norbyte/bg3se/blob/1e5009ea8bb619341bf394543bcfdb3c9ffe3a9f/API.md#getting-started). Adjacent to your `BootstrapClient.lua` and `BootstrapServer.lua` files, create a file titled `InitCompatabilityFramework.lua`. In your `BoostrapClient.lua` file, paste the following: 
