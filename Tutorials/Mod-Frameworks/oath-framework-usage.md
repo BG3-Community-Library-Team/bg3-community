@@ -2,7 +2,7 @@
 title: Oath Framework Usage
 description: Learn how to utilize the Oath Framework for improved handling of Oathbreaking
 published: true
-date: 2024-04-29T20:17:21.325Z
+date: 2024-04-29T20:21:01.791Z
 tags: se, script-extender, frameworks, scripting
 editor: markdown
 dateCreated: 2024-04-27T18:26:12.159Z
@@ -37,11 +37,14 @@ These links will help you further understand how to use Script Extender
 
     
 ## Basic Set-up
+
 You will need to make sure you have the following files set up:
-> 1. Your Class Tag (`Public/ModName/Tags/uuid.lsf.lsx`)
-> 2. Your Oathbreaking Class Tag (`Public/ModName/Tags/uuid.lsf.lsx`)
-> 3. Your Oathbreaker Event Flag (`Public/Shared/Flags/uuid.lsf.lsx`)
+
+> 1: Your Class Tag (`Public/ModName/Tags/uuid.lsf.lsx`)
+> 2: Your Oathbreaking Class Tag (`Public/ModName/Tags/uuid.lsf.lsx`)
+> 3: Your Oathbreaker Event Flag (`Public/Shared/Flags/uuid.lsf.lsx`)
 {.is-info}
+
 
 Replace `uuid` with a brand new UUID that will also be used in the file's UUID field.
 
@@ -193,9 +196,9 @@ Example:
 
 > **A note on Flags**
 > There is no comprehensive list of flags in the game yet, but there are a few ways to find them.
-> - Community Library is in the process of [indexing flags](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/tree/main/CommunityLibrary/Mods/CommunityLibrary/ScriptExtender/Lua/IdDictionary/StaticData/Flags) for easy reference.
-> - `Shared`, `SharedDev`, `Gustav`, and `GustavDev` have a `Public/ModuleName/Flags` folder that you can search through manually.
-> - Unpacking `Mods/GustavDev/Story/story.div.osi` using [LSLib's](https://github.com/Norbyte/lslib/) story tools, and looking through the story goals.
+> 1: Community Library is in the process of [indexing flags](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/tree/main/CommunityLibrary/Mods/CommunityLibrary/ScriptExtender/Lua/IdDictionary/StaticData/Flags) for easy reference.
+> 2:`Shared`, `SharedDev`, `Gustav`, and `GustavDev` have a `Public/ModuleName/Flags` folder that you can search through manually.
+> 3: Unpacking `Mods/GustavDev/Story/story.div.osi` using [LSLib's](https://github.com/Norbyte/lslib/) story tools, and looking through the story goals.
 {.is-info}
     
 ## Working with Script Extender
@@ -217,7 +220,7 @@ Mods/MODNAME/ScriptExtender/
 ```
 
 > From this point onward, we're going to assume the ScriptExtender/Lua folder to be our root folder.
-{.is-warning}
+{.is-info}
 
 By default, SE only looks at `BootstrapServer.lua.` We need to make sure that our scripts are getting loaded. SE has a a function, `Ext.Require()`, which does this for us.
 
@@ -246,7 +249,7 @@ SubclassTagId = "SUBCLASS_TAGNAME_your-subclass-tag-uuid-value"
 ### Defining your Listener
 
 > When you see `--` in any lua code, that means that anything on that line will be considered a comment, and won't be executed. It's great for notes.
-{.is-warning}
+{.is-info}
 
 Next, we need to watch for certain events to happen before our Oath Break/Redemption happens. 
 1/ In your `Listeners/FILENAME` file, add the following:
