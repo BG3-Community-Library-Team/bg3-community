@@ -2,32 +2,28 @@
 title: Oath Framework Usage
 description: Learn how to utilize the Oath Framework for improved handling of Oathbreaking
 published: true
-date: 2024-04-27T18:29:16.580Z
+date: 2024-04-29T20:17:21.325Z
 tags: se, script-extender, frameworks, scripting
 editor: markdown
 dateCreated: 2024-04-27T18:26:12.159Z
 ---
 
-<div class="row">
-	<div class="col col-12">
-    
+
 # Oath Framework Usage
 The Oath Framework is an API designed to allow Custom Paladin mods to take advantage of the Oathbreaking features of Baldur's Gate 3, while providing a unique way to Break their Oaths, separate from how Vanilla Paladins would. It also provides the capability for Redemption events, allowing a way to regain your oath without bribing the Oathbreaker Knight. In the future, it is also planned to add ways to allow Clerics and Warlocks to have similar functionality.
 
 Custom Paladin subclasses all run into the problem of having to piggy-back off of Vanilla Oathbreaking triggers. This is both due to the complexity of the game's Dialog/Flag/Tag system, and due to SE still seeming "scary" to some. While Oath Framework doesn't resolve the second piece, it does provide an easy configuration method to register your custom tags and flags for Paladins, as well as API functions that can be used to both Break and Redeem an Oath.
 
 This is a guide on on how to set up your mod to have custom Oath Breaking/Redemption events. This guide involves a bit of Lua know-how, but will attempt to explain the general set-up for the Lua.
-	</div>
-</div>
+
 <div class="row">
 	<div class="col col-4">
-    
+
   There are a couple common acronym's I'll be using:
-    
+   
 - Script Extender (SE)
 - Community Library (CL)
 - Oath Framework (OF)
-
   </div>
   <div class="col col-8">
 
@@ -38,12 +34,10 @@ These links will help you further understand how to use Script Extender
 
   </div>
 </div>
-<div class="row">
-	<div class="col col-12">
+
     
 ## Basic Set-up
 You will need to make sure you have the following files set up:
-
 > 1. Your Class Tag (`Public/ModName/Tags/uuid.lsf.lsx`)
 > 2. Your Oathbreaking Class Tag (`Public/ModName/Tags/uuid.lsf.lsx`)
 > 3. Your Oathbreaker Event Flag (`Public/Shared/Flags/uuid.lsf.lsx`)
@@ -202,9 +196,7 @@ Example:
 > - Community Library is in the process of [indexing flags](https://github.com/BG3-Community-Library-Team/BG3-Community-Library/tree/main/CommunityLibrary/Mods/CommunityLibrary/ScriptExtender/Lua/IdDictionary/StaticData/Flags) for easy reference.
 > - `Shared`, `SharedDev`, `Gustav`, and `GustavDev` have a `Public/ModuleName/Flags` folder that you can search through manually.
 > - Unpacking `Mods/GustavDev/Story/story.div.osi` using [LSLib's](https://github.com/Norbyte/lslib/) story tools, and looking through the story goals.
-
-
-
+{.is-info}
     
 ## Working with Script Extender
 Once your Custom Paladin Subclass has been registered, all that's left is listening for events that should cause an Oath to Break or Redeem, and then calling the Modify Oath API function.
@@ -393,6 +385,3 @@ Now that we have this set-up, adding additional Oath Break Events is much simple
 2. Add a new `Actions/FILENAME.lua`, replacing `FILENAME` with the `OF_Flags` entry's Key, which will perform the Oath Break/Redeem event.
 
 Be sure to add an entry to `Actions/_init.lua` for each new Action Function you create.
-    
-  </div>
-</div>
