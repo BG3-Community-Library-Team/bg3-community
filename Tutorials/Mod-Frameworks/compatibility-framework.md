@@ -2,7 +2,7 @@
 title: Compatibility Framework Usage
 description: Quick guide to using Compatibility Framework
 published: true
-date: 2024-04-25T21:31:20.978Z
+date: 2024-04-29T20:10:57.850Z
 tags: se, script-extender, frameworks, compatibility
 editor: markdown
 dateCreated: 2024-04-25T20:56:58.092Z
@@ -76,37 +76,41 @@ end
 
 What this does is, it checks if CF is installed by your user. If it is, it builds an object containing your Mod's UUID, your Subclass' UUID, the Parent Class, and a localized version of your Classes name. You'll need to make 4 changes here:
 
-***`AuthorSubclass`:*** Replace the part before the `=` with your username and the name of the subclass. Example: `FeriatHexblade`. These can be shortened.
+> ***`AuthorSubclass`:*** Replace the part before the `=` with your username and the name of the subclass. Example: `FeriatHexblade`. These can be shortened.
+> 
+> ***`modGuid`:*** Change the value to your Mod's `UUID` as defined in `meta.lsx`.
+>
+> ***`subClassGuid`:*** Change the value to your Subclasses `UUID` as defined in `ClassDescriptions.lsx`.
+>
+> ***`class`:*** This can be one of two things:
+> 1. The lower-case name of your classes Parent class. This will typically be one of the following: `barbarian`, `bard`, `cleric`, `druid`, `fighter`, `monk`, `paladin`, `ranger`, `rogue`, `sorcerer`, `warlock`, `wizard`.
+> 2. The UUID of the Progression at which the subclass options for the parent class become available.
+> 
+> ***`subClassName `:*** This field is optional. It will be used for a future sorting feature. Change the value to the English-localized name for your subclass.
+{.is-info}
 
-***`modGuid`:*** Change the value to your Mod's `UUID` as defined in `meta.lsx`.
-
-***`subClassGuid`:*** Change the value to your Subclasses `UUID` as defined in `ClassDescriptions.lsx`.
-
-***`class`:*** This can be one of two things:
-1. The lower-case name of your classes Parent class. This will typically be one of the following: `barbarian`, `bard`, `cleric`, `druid`, `fighter`, `monk`, `paladin`, `ranger`, `rogue`, `sorcerer`, `warlock`, `wizard`.
-2. The UUID of the Progression at which the subclass options for the parent class become available.
-
-***`subClassName `:*** This field is optional. It will be used for a future sorting feature. Change the value to the English-localized name for your subclass.
 
 Now you're all done! Be sure your mod loads earlier than `CompatibilityFramework`. 
 
-***Note***: If your mod has multiple subclasses within it, you'll want to add an additional object to your `subClasses` table, like so:
-
-```lua
-local subClasses = {
-    AuthorSubclassA = {
-      modGuid = modGuid,
-      subClassGuid = subClassAGuid,
-      class = "lowercase parent class name or uuid of the progression where you get the subclass choice",
-      subClassName = "English-localized name for your class (Optional)"
-    },
-    AuthorSubclassB = {
-      modGuid = modGuid,
-      subClassGuid = subClassBGuid,
-      class = "lowercase parent class name or uuid of the progression where you get the subclass choice",
-      subClassName = "English-localized name for your class (Optional)"
-    },
-  }
-```
-
-Be sure to define the additional subclasses UUID.
+> If your mod has multiple subclasses within it, you'll want to add an additional object to your `subClasses` table, like so:
+>
+>
+>```lua
+>local subClasses = {
+>    AuthorSubclassA = {
+>      modGuid = modGuid,
+>      subClassGuid = subClassAGuid,
+>      class = "lowercase parent class name or uuid of the progression where you get the subclass choice",
+>      subClassName = "English-localized name for your class (Optional)"
+>    },
+>    AuthorSubclassB = {
+>      modGuid = modGuid,
+>      subClassGuid = subClassBGuid,
+>      class = "lowercase parent class name or uuid of the progression where you get the subclass choice",
+>      subClassName = "English-localized name for your class (Optional)"
+>    },
+>  }
+>``
+>
+> Be sure to define the additional subclasses UUID.
+{.is-warning}
