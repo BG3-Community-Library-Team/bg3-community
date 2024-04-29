@@ -2,7 +2,7 @@
 title: Using Inspiration Framework
 description: A guide on using Inspiration Framework to apply custom Inspiration Points
 published: true
-date: 2024-04-25T22:56:28.239Z
+date: 2024-04-29T20:43:28.764Z
 tags: se, script-extender, frameworks, inspiration, backgrounds
 editor: markdown
 dateCreated: 2024-04-25T22:54:22.149Z
@@ -21,7 +21,8 @@ First thing's first, we need to set up our mod. Chances are, by the time you're 
 3. `Public/Tags/[TagId].lsf`
 
 ### Backgrounds.lsx
-_Note: This is unnecessary if you're just adding goals to vanilla backgrounds_
+> This is unnecessary if you're just adding goals to vanilla backgrounds_
+{.is-info}
 
 Here is where you define custom background entries. They'll look something like this:
 ```xml
@@ -42,7 +43,8 @@ Here is where you define custom background entries. They'll look something like 
 An important think to keep in mind is that Tag object - we'll need to create a custom Background Tag to get ourselves set up properly. For now, make sure you have a newly-generated UUID as the value for your tag. We'll get back to it later.
 
 ### BackgroundGoals.lsx
-_Note: Always required_
+> Always required
+{.is-warning}
 
 We'll need to define our Background Goals with the UUID of the relevant background and experience reward. We'll also need localization for the description and title, an amount of inspiration points to grant, and a reward level, plus a UUID to identify the goal. For more examples, see `GustavDev/Backgrounds/BackgroundGoals.lsx`
 
@@ -59,7 +61,8 @@ We'll need to define our Background Goals with the UUID of the relevant backgrou
 ```
 
 ### Tags
-_Note: This is unnecessary if you're just adding goals to vanilla backgrounds_
+> This is unnecessary if you're just adding goals to vanilla backgrounds
+{.is-info}
 
 Finally, we need our background tags. This file will need to be named after its UUID (which we generated in Backgrounds.lsx for that Tag object). This tag is how the underlying Larian code will find the background and its goals, so it's imperative that each background has a unique tag,
 
