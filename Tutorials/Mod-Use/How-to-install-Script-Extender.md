@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T11:31:27.549Z
+date: 2024-04-30T11:36:29.825Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -31,7 +31,7 @@ There are two ways on how to download script extender.
 
 As seen above screenshot, simply open BG3MM, then go up in the bar and press on "tools" and then press "Download and extract Script Extender". 
 
-##### 1.2 Second way is the little harder, but still easy way if you are not using BG3MM but is on linux, or using Vortex. 
+##### 1.2 Second way is the little harder, but still easy way if you are not using BG3MM but instead uses linux, or using Vortex. 
 
 First you will need to download it from Github: https://github.com/Norbyte/bg3se/releases/tag/updater-20240329
 Do not worry about the version on github. As it will be explained later in the guide, SE updates to the newest version when you launch the game.
