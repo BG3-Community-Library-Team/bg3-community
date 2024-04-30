@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T14:07:06.264Z
+date: 2024-04-30T14:30:33.534Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -106,6 +106,36 @@ Then click on the tab "Script Extender" and check off "Create Console".
 
 ##### 3.2. Create the ScriptExtenderSettings.json file yourself 
 
+Best way to do this, is to go inside your bin folder then click "create new" and choose txt file: 
+
+(The PC is in another language, however it will look the same but the words will be in your own language.)
+![newtxt.png](/tutorials/newtxt.png =x450)
+
+Now rename that txt as: `ScriptExtenderSettings.json` 
+This means remove the last txt in the file (you may need to have show file extensions on. I will show below how to do it on windows 11, otherwise if you do not know how to do it in your system, there are tons of guides on google): 
+
+![fileextension.png](/tutorials/fileextension.png =x470)
+
+It should end up looking like this:
+
+![jsonfile.png](/tutorials/jsonfile.png)
+
+When you have done that, you will need to open up the json file (right click, open with NotePad, VSCode or any other program that can open json files. NotePad should natively be on your Windows PC)
+You will need to paste this into the json file, and save it: 
+
+{
+  "CreateConsole": true
+}
+
+You should be able to use programs such as VSCode, NotePad++ or simply just notepad. I will show screenshots from both VSCode and Notepad to show how it may differ in looks but is still the same no matter which program you use: 
+
+VSCode: 
+
+![createconsolevscode.png](/tutorials/createconsolevscode.png)
+
+NotePad: 
+
+![notepadse.png](/tutorials/notepadse.png)
 
 
 > Check this guide out on how to use the console and getting started with using Script Extender for mod creation: https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted
@@ -142,7 +172,13 @@ If it does not, and you use BG3MM, simply open BG3MM, go to "settings", then "pr
 Then go into the tab "Script Extender" and check off "Enable achievements". 
 It may be checked on already. If that is the case, simply just uncheck it and check it again. 
 
-If you do not use BG3MM, you can go on Norbyte's Script Extender Readme and copy paste the command: `EnableAchievements true` into the ScriptExtenderSettings.json (look at the above, 3.2: how to create the ScriptExtenderSettings.json file for yourself.) 
+If you do not use BG3MM, you can go on Norbyte's Script Extender Readme and copy paste the command: 
+
+{
+  "EnableAchievements": true
+}
+
+Paste this into the ScriptExtenderSettings.json (look at the above, 3.2: how to create the ScriptExtenderSettings.json file for yourself.) 
 
 2: Camera Tweaks 
 Some have experienced issues with having SE and Camera Tweaks at the same time. 
@@ -165,6 +201,13 @@ Norbyte himself has also made a warning, which unfortunately gets suppressed by 
 
 (Screenshot) 
 
+You can check if you have the devel version by going into your bin folder and search for this file: 
+`ScriptExtenderUpdater.json`
+
+If you do have it, delete it. 
+
+It should not be confused with the console json file which is named: `ScriptExtenderSettings.json`
+
 > Devel version is for Norbyte and experienced mod authors only. Usually that is if a mod author is working on something using SE, and Norbyte personally tells the mod author "oh hey, this is on the devel version set to release in this update, so go on the devel version to use this function."
 {.is-warning}
 
@@ -174,7 +217,7 @@ Yes you do.
 Mod fixer prevents durge harem instead of character creation. 
 Mod fixer also prevents the issue of not being able to talk or interact with anything if you are in the middle of your playthrough. 
 
-"But I heard that Mod fixer has so many issues?" 
+*"But I heard that Mod fixer has so many issues?"*
 Yes but no. It is a complicated issue but Mod fixer is very essential but it is best used with SE. 
 
 ## Other relevant guides and credits:
