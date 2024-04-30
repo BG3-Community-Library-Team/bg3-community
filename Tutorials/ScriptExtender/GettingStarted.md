@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T19:30:12.033Z
+date: 2024-04-30T19:47:11.558Z
 tags: script extender
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -458,7 +458,45 @@ local spells = {
     }
 }
 
+_D(spells)
 ```
+
+
+`{`
+ &nbsp;    &nbsp; &nbsp; ` "fire" :`
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ` [`
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      `   "Fireball",`
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ` "Flame Strike",`
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ` "Wall of Fire"`
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  `    ],`
+  &nbsp;    &nbsp; &nbsp; `      "ice" :`
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `     [`
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     `     "Ice Storm",`
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        `   "Cone of Cold",`
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            ` "Freeze"`
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      `  ]`
+`}`
+
+
+
+```lua
+for element, spellList in pairs(spells) do
+    print(element, " spells:") 
+    for _, spell in ipairs(spellList) do
+        print(spell) 
+    end
+end
+```
+
+`ice      spells:`
+`Ice Storm`
+`Cone of Cold`
+`Freeze`
+
+`fire     spells:`
+`Fireball`
+`Flame Strike`
+`Wall of Fire`
 
 
 ###### Example 2
