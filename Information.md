@@ -2,7 +2,7 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2024-04-30T21:14:24.826Z
+date: 2024-04-30T21:19:11.481Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
@@ -20,3 +20,4 @@ This page is a list of all Informational resource sections.
 - [Sound](sound)
 - [Spells](spells)
 - [Textures](textures)
+{.links-list}
