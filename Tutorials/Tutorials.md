@@ -2,7 +2,7 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: false
-date: 2024-04-30T15:16:18.998Z
+date: 2024-04-30T15:58:26.190Z
 tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
@@ -74,7 +74,30 @@ Replace `ProjectFolder`, and `ProjectTitle` with the names of your mod's main fo
 For example, [Aether's Black Dye](https://www.nexusmods.com/baldursgate3/mods/1177)'s directory looks like this:
 `AethersBlackDye\Public\AethersBlackDye\Stats\Generated\TreasureTable.txt`
 
-Testing
+Next, place the code block below into the TreasureTable.txt file, and replace `I_GameObject_Stats_Name` with the "Stats" name you chose for your custom item, inside of your mod's root template, verifying that the "I_" prefix is also included.
+
+If you would like to increase the amout of an item you send, change the first number in the `new subtable` section to the amount you wish to ship.
+
+```txt
+new treasuretable "TUT_Chest_Potions"
+CanMerge 1
+new subtable "1,1"
+object category "I_GameObject_Stats_Name",1,0,0,0,0,0,0,0
+```
+
+<p align="center">
+  <img src="https://images2.imgbox.com/0f/a6/XOms11nH_o.png" />
+</p>
+
+In the example TreasureTable.txt file, one modded Black Dye, and ten vanilla Supply Packs will be shipped to the Tutorial Chest.
+```txt
+new treasuretable "TUT_Chest_Potions"
+CanMerge 1
+new subtable "1,1"
+object category "I_Aethers_Black_Dye",1,0,0,0,0,0,0,0
+new subtable "10,1"
+object category "I_OBJ_Camp_Pack",1,0,0,0,0,0,0,0
+```
 
 ## Vendor Inventories
 CLUTTER CLUTTER CLUTTER
@@ -88,8 +111,11 @@ Words
 </details>
 <details>
   <summary>Why you shouldn't use Vendor Inventories</summary>
-- Stops any chance of your mod being able to be uninstalled from the game once a playthrough has been started.
-- If you place your items in multiple vendor inventories, it will start to clutter and take up a lot of space in their inventories.
+While there are certainly pros to sending your items via Vendor Inventory lists, there are some downsides which can't be overlooked:
+
+- Sending items to your users via Trader Inventories will halt any chance of your mod being able to be uninstalled from the game once a playthrough has been started.
+- Installing multiple mods which send items via vendor inventories will cause vanilla items to spawn less frequently during the long rest item rotation.
+- This will lead to seeing the same modded items over and over again inside of different stores rather than new vanilla items.
 </details>
 
 ## Script Extender Console Command
