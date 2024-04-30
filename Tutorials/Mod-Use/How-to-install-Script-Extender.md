@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T11:21:57.725Z
+date: 2024-04-30T11:31:06.365Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -93,6 +93,10 @@ Then click on the tab "Script Extender" and check off "Create Console".
 
 
 
+> Check this guide out on how to use the console and getting started with using Script Extender for mod creation: https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted
+{.is-info}
+
+
 ## But I do not want SE to auto update for me because xyz? 
 
 It is generally not a good idea to roll back on a SE update or stop the updates for SE. Here is a few reasons why: 
@@ -141,9 +145,23 @@ Norbyte himself has also made a warning, which unfortunately gets surpressed by 
 
 (Screenshot) 
 
-Devel version is for Norbyte only, and if a mod author is working on something using SE, and Norbyte personally tells the mod author "oh hey, this is on the devel version set to release in this update, so go on the devel version." 
+> Devel version is for Norbyte only, and if a mod author is working on something using SE, and Norbyte personally tells the mod author "oh hey, this is on the devel version set to release in this update, so go on the devel version to use this function."
+{.is-warning}
 
 
+## Other relevant guides and credits:
+Using the console and using Script Extender for mod creation: https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted
 
+How to install BG3MM, mods and manual/loose file mods: 
+Part 1: How to install BG3MM: https://wiki.bg3.community/Tutorials/Mod-Use/Installation-Of-BG3MM
+Part 2: How to install pak files: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files
+Part 3: How to install loose file mods: On to do 
+
+How to do a fresh reinstall of SE: To do
+How to install Native Mod Loader and Native Mod Loader mods (Camera Tweaks, WASD Movement etc.) To do 
+How to install Unique Tav: To do 
+
+Made by: Maze 
+Credits: Satan, Norbyte, Kaz
 
  
