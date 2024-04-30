@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T11:37:47.313Z
+date: 2024-04-30T11:38:02.253Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -39,7 +39,7 @@ Do not worry about the version on github. As it will be explained later in the g
 When you open the page, scroll down and press the "BG3SE-Updater" as highlighted below. 
 (Screenshot) 
 
-> For Linux users, follow the guide on the github page instead of this of this guide.
+> For Linux users, follow the guide on the github page instead of this guide.
 {.is-info}
 
 
