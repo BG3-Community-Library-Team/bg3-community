@@ -2,7 +2,7 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: false
-date: 2024-04-30T09:45:16.583Z
+date: 2024-04-30T13:42:44.501Z
 tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
@@ -42,14 +42,46 @@ These mods were created with the purpose of showcasing multiple different use-ca
 * [Infinite Supply Packs](https://github.com/AtilioA/BG3-item-shipment-framework/wiki/Example-Mods#infinite-supply-packs) - This mod spawns a Heavy Supply Pack in the host's inventory when the player chooses to end the day and ISF detects that the player does not have any.
 
 ## Tutorial Chest
-Will be expanded upon.
+The "Tutorial Chest" is a Cartilaginous Chest located on the Nautiloid, in the tutorial of the game. It can be found in the room containing the "Eldritch Rune", just past Shadowheart's Mind Flayer Pod.
+
+This guide will show you how to create a Treasure Table, and place items into the Tutorial Chest.
+<details>
+  <summary>Why you should use the Tutorial Chest</summary>
+The Tutorial Chest offers a quick and easy way to ship items to your users, is a method that only takes a few minutes to set up, and is widely recognized as the standard way to ship items to users.
+
+- Users will have almost immediate access to your items during the Tutorial.
+- It functions for users who do not have access to the Script Extender, such as Mac and Linux users.
+</details>
+<details>
+  <summary>Why you shouldn't use the Tutorial Chest</summary>
+The modding community has been placing items into this tutorial chest as a crutch to easily distribute items to users since the game was in beta, due to there not being an easier alternative to give items directly to users at the time. This has led many custom item mods to use the Tutorial Chest for item shipment, and has caused issues such as:
+
+- If too many mods that use the chest are installed, it will take multiple seconds to open it, and cause lag due to engine limitations.
+- The chest is only located in the tutorial, leading to users being undable to accquire items from the chest after they've made it to Act 1. 
+- It is a requirement to use a Tutorial Chest Summoning mod if you wish to get an item from it after the tutorial.
+- If too many mods that use the Tutorial Chest are installed, the chest will become cluttered and hard to sort through.
+- There is no granularity or customization in the way you can utilize the Tutorial Chest, such as choosing when an item will spawn, or if there will be a cost to accquire the item.
+- If a user wishes to have multiple of an item found in the chest, authors must include multiple of the same item. Else users will have to use a Tutorial Chest Summoning mod to duplicate the chest.
+</details>
+
+### Getting Started
+
+Create a directory in your mod's main project folder which looks like this:
+`ProjectFolder\Public\ProjectTitle\Stats\Generated\TreasureTable.txt`
+
+Replace `ProjectFolder`, and `ProjectTitle` with the names of your mod's main folder directory, and the folder name you have assigned in your mod's `meta.lsx` file.
+
+For example, [Aether's Black Dye](https://www.nexusmods.com/baldursgate3/mods/1177)'s directory looks like this:
+`AethersBlackDye\Public\AethersBlackDye\Stats\Generated\TreasureTable.txt`
+
+Testing
 
 ## Vendor Inventories
-Will be expanded upon.
+CLUTTER CLUTTER CLUTTER
 
 ## Script Extender Console Command
-Will be expanded upon.
+You can also spawn in items with the [Script Extender Console](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender#h-3-how-to-install-the-console).
 
-Place the UUID/MapKey for the item between the quotes, and change the `1` to the amount of the item you would like recieve.
+Below is the console command to spawn an item into your own inventory, simply paste it into the SE Console, place the UUID/MapKey for the item you want between the quotes, and change the `1` to the amount of the item you would like recieve.
 
 `TemplateAddTo("", GetHostCharacter(), 1)`
