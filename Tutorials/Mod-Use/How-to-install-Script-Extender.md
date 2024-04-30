@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T11:52:04.152Z
+date: 2024-04-30T13:50:40.680Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -157,6 +157,14 @@ Norbyte himself has also made a warning, which unfortunately gets suppressed by 
 > Devel version is for Norbyte and experienced mod authors only. Usually that is if a mod author is working on something using SE, and Norbyte personally tells the mod author "oh hey, this is on the devel version set to release in this update, so go on the devel version to use this function."
 {.is-warning}
 
+## Now that I have Script Extender, do I still need Mod Fixer? 
+
+Yes you do. 
+Mod fixer prevents durge harem instead of character creation. 
+Mod fixer also prevents the issue of not being able to talk or interact with anything if you are in the middle of your playthrough. 
+
+"But I heard that Mod fixer has so many issues?" 
+Yes but no. It is a complicated issue but Mod fixer is very essential but it is best used with SE. 
 
 ## Other relevant guides and credits:
 Using the console and using Script Extender for mod creation: https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted
