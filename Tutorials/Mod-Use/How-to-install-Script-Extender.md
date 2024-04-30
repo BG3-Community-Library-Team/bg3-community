@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T11:02:35.918Z
+date: 2024-04-30T11:03:21.818Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -80,7 +80,7 @@ You will know if you have been successful if you open the game to main menu, and
 
 Depending on if you are using BG3MM or not, there are a few ways to enable the console. 
 
-##### 3.1 How to enable the console via BG3MM 
+##### 3.1. How to enable the console via BG3MM 
 
 Open "Settings", then "Preferences" in BG3MM. 
 (Screenshot) 
@@ -88,6 +88,10 @@ Open "Settings", then "Preferences" in BG3MM.
 Then click on the tab "Script Extender" and check off "Create Console". 
 
 (Screenshot)
+
+##### 3.2. Create the ScriptExtender.json file yourself 
+
+
 
 ## But I do not want SE to auto update for me because xyz? 
 
