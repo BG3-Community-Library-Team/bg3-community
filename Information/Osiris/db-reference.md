@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-04-30T23:09:15.868Z
+date: 2024-04-30T23:10:47.451Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -16,7 +16,7 @@ The below is a list of Osiris DB's, and their Parameters.
 ## Game Management
 
 |DB Name|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
-|=======|====================|===========|===========|===========|===========|===========|
+|-----|----|----|----|----|----|----|
 |DB_StoryReloaded|1|Integer as Boolean|--|--|--|--|
 |DB_InternScene_DeathHandled|2|?|Character UUID|--|--|--|
 |DB_SceneManager|2|Character UUID||--|--|--|
