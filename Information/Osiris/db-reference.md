@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-04-30T23:48:44.481Z
+date: 2024-04-30T23:51:22.507Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -67,12 +67,17 @@ The below is a list of Osiris DB's, and their Parameters.
 |-----|----|----|----|----|----|----|----|
 |DB_DialogName|?|2|?|?|--|--|--|
 |DB_DialogNPCs|?|3|?|UUID|?|--|--|
+|DB_OnDialogAttackRequested|?|3|Character UUID|Character UUID|Integer|--|--|
 
 ## Game Management
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_StoryReloaded|?|1|Integer as Boolean|--|--|--|--|
 |DB_NOOP|Hacky Osiris solution to dumb things|1|Integer|--|--|--|--|
+|DB_InternalGroup_Count|?|1|Integer|--|--|--|--|
+|DB_LogicOr|?|3|Integer|Integer|Integer|--|--|
+|DB_GLO_DieFlag|?|4|UUID|UUID|Integer|UUID|--|
+|DB_GLO_ItemInventoryLockFlag|
 
 ## Location
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
