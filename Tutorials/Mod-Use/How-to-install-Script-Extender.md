@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T11:03:21.818Z
+date: 2024-04-30T11:21:57.725Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -89,7 +89,7 @@ Then click on the tab "Script Extender" and check off "Create Console".
 
 (Screenshot)
 
-##### 3.2. Create the ScriptExtender.json file yourself 
+##### 3.2. Create the ScriptExtenderSettings.json file yourself 
 
 
 
@@ -105,7 +105,7 @@ Some mods will end up not working, as they are getting updated and ends up needi
 
 ## Compatibility issues
 
-You may be surprised, but SE does have a few compatbility issues. 
+You may be surprised, but SE does have a few compatbility issues, mainly with Native Mod Loader mods (not Native Mod Loader itself). 
 
 1: Achievements enabler on Nexus. 
 This is because SE by default has turned on achievements and those two will end up conflicting, and either SE or achievements enabler will end up being deactivated, and you may experience issues with getting achievements.
@@ -116,7 +116,33 @@ If it does not, and you use BG3MM, simply open BG3MM, go to "settings", then "pr
 (Screenshot)
 
 Then go into the tab "Script Extender" and check off "Enable achievements". 
-It may be checked on already, 
+It may be checked on already. If that is the case, simply just uncheck it and check it again. 
+
+If you do not use BG3MM, you can go on Norbyte's Script Extender Readme and copy paste the command: `EnableAchievements true` into the ScriptExtenderSettings.json (look at the above, 3.2: how to create the ScriptExtenderSettings.json file for yourself.) 
+
+2: Camera Tweaks 
+Some have experienced issues with having SE and Camera Tweaks at the same time. 
+Camera Tweaks have one temporary solution on their posts on Nexus: https://www.nexusmods.com/baldursgate3/mods/945?tab=posts
+
+For some it may work, for some it does not. It seems to be a hit and miss, and both creators are trying to make it work together.
+
+## I have heard Devel version will fix all my problems!!!! (NO, it will not!) 
+
+Fun fact, contrary to popular belief: Devel version is actually harmful to your game if you do not know how to use it, and will not fix your mod issues. 
+
+First and foremost, what is the devel version? 
+The Devel version is a branch of SE. However, think of it as early development branch of SE. Earlier than Alpha developments. This is because the devel version is the version where Norbyte tests functions, and develop functions that are going to be released in the next offical releases. 
+
+This means the devel version is very expiremental and if you, as a user, is playing the game while using the devel version, and Norbyte is testing Virtual Textures but accidently breaking them in the process, you can experience crashes, bugs such as weird textures on your tavs, companion etc, console not responding, console flashing red, spam in the console, spam in the game, game not responding, game not starting, and many more. 
+
+Most of the time, the devel version is a version behind the main release. For good reasons as this is a playground for testing. 
+
+Norbyte himself has also made a warning, which unfortunately gets surpressed by Improved UI: 
+
+(Screenshot) 
+
+Devel version is for Norbyte only, and if a mod author is working on something using SE, and Norbyte personally tells the mod author "oh hey, this is on the devel version set to release in this update, so go on the devel version." 
+
 
 
 
