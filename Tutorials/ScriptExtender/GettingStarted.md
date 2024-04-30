@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T16:51:49.029Z
+date: 2024-04-30T16:54:07.522Z
 tags: script extender
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -195,6 +195,10 @@ Then, after activating your SE console again, type `reset` in the console and pr
 Figure 19: The reset command
 
 This will reset the console and all loaded scripts, allowing you to see instant changes of your code.
+
+> Depending on your code, some changes will only apply when the Game session is loaded 
+> In that case simply reload the game (F8)
+{.is-info}
 
 ![](/tutorials/getting_started_with_se/gswse_20.png)
 
