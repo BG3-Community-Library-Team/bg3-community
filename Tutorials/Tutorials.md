@@ -2,8 +2,8 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: false
-date: 2024-04-30T09:44:23.233Z
-tags: tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
+date: 2024-04-30T09:45:16.583Z
+tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
 ---
