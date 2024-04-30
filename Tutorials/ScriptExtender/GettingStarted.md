@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T20:16:07.317Z
+date: 2024-04-30T20:20:48.514Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -578,28 +578,25 @@ print(astarionUUID)
 
 `S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255`
 
-Another example:
+This also means that when a variale is instantiated within one function, it is not known in any other functions
 
 ```lua
--- Function to get the UUID for a character based on their name
-function getCharacterUUID(characterName)
-    local uuidMap = {
-        Astarion = "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255",
-        Gale = "S_Player_Gale_d7c13742-bacd-460a-8f75-f964fe41f366"
-    }
-    return uuidMap[characterName]
+-- returns Shadowhearts UUID
+function getShartUUID()
+	local shartUUID = "S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679"
+  return shartUUID
 end
 
--- Retrieve UUIDs for both characters using the function
-local astarionUUID = getCharacterUUID("Astarion")
-local galeUUID = getCharacterUUID("Gale")
+-- prints Shadowhearts UUID
+function printShartUUID()
+	print(shartUUID)
+end
 
-print(astarionUUID)  -- Prints: S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255
-print(galeUUID)      -- Prints: S_Player_Gale_d7c13742-bacd-460a-8f75-f964fe41f366
+printShartUUID()
 
--- Trying to access uuidMap outside its scope will result in nil
-print(uuidMap)  -- nil
 ```
+
+`nil`
 
 - variable
 - function
