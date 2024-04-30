@@ -2,7 +2,7 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: false
-date: 2024-04-30T16:18:36.994Z
+date: 2024-04-30T16:25:27.294Z
 tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
@@ -88,9 +88,7 @@ new subtable "1,1"
 object category "I_GameObject_Stats_Name",1,0,0,0,0,0,0,0
 ```
 
-<p align="center">
   <img src="https://images2.imgbox.com/0f/a6/XOms11nH_o.png" />
-</p>
 
 In the example treasure table below, one modded Black Dye, and ten vanilla Supply Packs will be shipped to the Tutorial Chest.
 ```txt
