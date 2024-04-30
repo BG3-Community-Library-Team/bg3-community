@@ -2,10 +2,210 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T08:23:34.674Z
+date: 2024-04-30T09:21:56.129Z
 tags: script extender
 editor: ckeditor
 dateCreated: 2024-04-30T08:23:34.674Z
 -->
 
-<p>More content coming soon</p>
+<h1><span class="text-big"><strong>Getting started with Script Extender</strong></span></h1>
+<p>This tutorial covers the absolute basics for modders to start writing mods with Norbytes Script Extender.&nbsp;</p>
+<p>You can start this tutorial even with no knowledge about programming.</p>
+<p>This tutorial assumes that you know how to install mods and create them. So please familiarize yourself with those topic on the relevant wiki pages:</p>
+<ul>
+  <li><a href="https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files">How to install .pak files&nbsp;</a></li>
+</ul>
+<p>For further information, follow the links in <strong>Useful Resources </strong>on the bottom of this page that this guide is based on<strong>.</strong></p>
+<p>After reading this guide, feel free to follow the tutorial: <strong>Creating your First SE Mod (TBA)</strong></p>
+<h2><strong>0. Installing Script Extender</strong></h2>
+<p>The easiest way to install Script extender (SE) is by using the Baldur’s Gate 3 Mod Manager (BG3MM)&nbsp;&nbsp;</p>
+<p><a href="https://github.com/LaughingLeader/BG3ModManager/releases"><u>https://github.com/LaughingLeader/BG3ModManager/releases</u></a></p>
+<figure class="image image_resized" style="width:53.92%;"><img src="https://lh7-us.googleusercontent.com/kh-PKn8ADbNExFHssRdN3ZwpuBdeFwFqHgDoP7LJZUZOilN0mnNKcOiE4jXbzyECBmAJdm01IFPi7noHuO0jhDZFkgmI8oRecyRfE7XXPYqtxpFCfAtEeSumLuDUm00XHZrhNau6ZNmJbiMaTBEstco">
+  <figcaption>Figure 1: Installing Script Extender with the Baldurs's Gate 3 Mod Manager&nbsp;</figcaption>
+</figure>
+<p>Click “Tools” and “Download &amp; Extract the Script Extender” .&nbsp;</p>
+<p>Afterwards launch your game once and SE should install itself.</p>
+<p>If you cannot user BG3MM, download SE directly from github and follow the install instructions</p>
+<p><a href="https://github.com/Norbyte/bg3se/releases"><u>https://github.com/Norbyte/bg3se/releases</u></a></p>
+<p>&nbsp;</p>
+<h2><strong>1. Activating the Script Extender Console</strong></h2>
+<p>To be able to debug your mod and test your functions, the debug console is very useful.</p>
+<p>To activate the Script Extender console, you need a <i>ScriptExtenderSettings.json</i> file in your bin folder.&nbsp;</p>
+<p>The easiest way to get this file is with BG3MM</p>
+<figure class="image image_resized" style="width:55.03%;"><img src="https://lh7-us.googleusercontent.com/06oM1eidUKDnFk-kBwhSC0Ql3_YZMQopntV-4peuFMCsiq02M84cmrjjKdFgOxcDq1sJYOQGHgh6_kZ37ly8aj5O1lcp9Zi7HS7VqPb3Lj685m2qHKJVotbek7j5qUh8Ic0nPKvKc9kLI9aOifTZyh0">
+  <figcaption>Figure 2: Opening the settings for activating the Script Extender Console.</figcaption>
+</figure>
+<p>In BG3MM click “Settings” and “Open Preferences”. Another menu will open.</p>
+<figure class="image image_resized" style="width:61.29%;"><img src="https://lh7-us.googleusercontent.com/hMiFp1tEQLqTUEU6EWYCNrluAlZIm3pR9n73I3_r0_AAKZZLk46kiSgOr80cvsrnBRAKH8HsAtiVLbrMkEx-9S90Vjfig_IY9ZzPBVP9XFSQib8zVtXJq2FrG_Uiwd07fDN1WIYeUXhoSbTX1zINRdw">
+  <figcaption>Figure 3: Activating the Script Extender Console with the Baldur's Gate 3 Mod Manager</figcaption>
+</figure>
+<p>In this menu make sure to activate the setting “Create Console”.</p>
+<p>If you cannot use BG3MM, navigate to your <i>bin </i>folder&nbsp;</p>
+<figure class="image image_resized" style="width:61.68%;"><img src="https://lh7-us.googleusercontent.com/5tZaVx55jl3aylYBk3aFKYIhbrkJiAFw3mcRN7-6FOpCnaf3EfBRpcNwbz6DePeJa6K5ftQyUUzCfoK5aziJkkEh7_d9nM9zRjAS9auHw3abifXmatSQ8gSklTK-0zkNkpzSrBe51wEsF6XSKx-mIqk">
+  <figcaption>Figure 4: Navigating to the bin folder</figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="image image_resized" style="width:65.71%;"><img src="https://lh7-us.googleusercontent.com/dwCBQnvPfEXIaYIrOSND9i4C28hC_AZn3mrRu3g84ICyPHdNX5NfRwm89FG8zCwTrDeSp41M1nZGI8qaP573KsLkTzMdROgrCUVCHIPzMVTGBbPzNtJB1EdfhEDhunaL584eYLI6fA5-S-tnkqvaUx0">
+  <figcaption>Figure 5: Creating the ScriptExtenderSettings.json file</figcaption>
+</figure>
+<p>In your bin folder, create a file called <i>ScriptExtenderSettings.json</i></p>
+<p>Paste the following content in the file</p>
+<pre><code class="language-plaintext">{ &nbsp;
+
+"CreateConsole": true
+
+}</code></pre>
+<figure class="image image_resized" style="width:59.08%;"><img src="https://lh7-us.googleusercontent.com/9yEb3ZrFUz04fYu7n8XBWrk-ANexXGe_hbp_49SPCPzNT6_RpYBLkso6PIeWFV39CQnac4Zmvslcx2G-egM8E2kki7bfZPETVsmMblDDXhBgEFTbfXBWh3Ru3vQIvmF765w4UTkgqcH9VGpyUgwRwVM">
+  <figcaption>Figure 6: Then content of ScriptExtenderSettings.json</figcaption>
+</figure>
+<p>&nbsp;</p>
+<p>When you launch the game now, you should see a second window opening. This is the Script Extender console.</p>
+<figure class="image image_resized" style="width:57.61%;"><img src="https://lh7-us.googleusercontent.com/LeswDxdXyI4gNc4bfLY4Hlz2i2dXnyb1ogSWFOQO25yidO8ol5U5x6vxt8nuWulxRej9CiJk3IQgM1Djh0z03cgT4mn-G45drTxY6qSKnooKZfE-34ahsfLOd3ZN1jlzJJR8VnfSaOYQmzBq46QCbps">
+  <figcaption>Figure 7: The Script Extender cosole on game start.</figcaption>
+</figure>
+<p>If you see this window, it means you have successfully installed SE with console.</p>
+<p>&nbsp;</p>
+<h2><strong>2. Familiarizing yourself with the Script Extender Console</strong></h2>
+<p>To familiarize yourself with the usage of the SE console you can execute a few simple commands.</p>
+<p>These can all be found in the <strong>Useful Resources</strong> at the bottom of this tutorial.</p>
+<h3><strong>1. Load a save</strong></h3>
+<p>You can load either a new save or an existing one.</p>
+<p>When the save is loaded you should see some output in your console, telling you that the session has loaded and other debug statements depending on what kind of mods you have installed:</p>
+<figure class="image image_resized" style="width:78.54%;"><img src="https://lh7-us.googleusercontent.com/iR7etzru7qjtz99vhl43MuAvDLA6rMfl3hW2YTb-szUwM_mkMwCRW7ZFs-goNRw-LRDUZtA29WRr-qjT7E7UwnhZjQ0clNq36Z0qsEhmENRD9t27Ei_hMwOFBDUB0geN0Cdi1YnWrwyqPUhpEkQQWts">
+  <figcaption>Figure 8: An example of the Script Extender output when a save is loaded</figcaption>
+</figure>
+<h3><strong>2. Activate the input&nbsp;</strong></h3>
+<p>To be able to input commands into the console press enter once.</p>
+<p>If you have too much text on your console and you cannot see your input line, you can repeat this a few times until you can see the <i>S &gt;&gt;&nbsp;</i></p>
+<figure class="image image_resized" style="width:69.99%;"><img src="https://lh7-us.googleusercontent.com/QYtqY_84Nny8EeUPFTFzwi820yZ6LzxKsrUYgjnTUOMTcCVVdTcxgKqlYcKeeoQqh-DS7DJA7iwSm5UzYZ0Imj6zZJL4SW-tdXR_IfOj9kdphcgJVzGBKc0U608-PmNwpWZLO31cxUdSPndT_jo0y48">
+  <figcaption>Figure 9: An activated Script Extender console</figcaption>
+</figure>
+<h3><strong>3. Basic inputs</strong></h3>
+<p>Replicate the following steps to familiarize yourself with basic inputs into the SE console:</p>
+<p><strong>1. In the console enter the following command. This will print “Hello World” on the console:</strong></p>
+<pre><code class="language-plaintext">_P(“Hello World”)</code></pre>
+<figure class="image image_resized" style="width:29.06%;"><img src="https://lh7-us.googleusercontent.com/ktFR5G6vYetJeqyVYLznc8tmizLM-JMHag7C4esUa-aunS3F9hQsMYGYf9taLyHrsekRm-eS6f6cGGpcXINdu3q4ml7oopyIWRobEqSygFEXZigJZ5TjH7_D9BWZ-bshPhNVE9gKX2DRtWajxHckLDU">
+  <figcaption>Figure 10: Thhe output of _P("Hello World")</figcaption>
+</figure>
+<p><strong>2. Get the HostCharacter uuid (the character whose portrait is activated - here: Astarion):</strong></p>
+<pre><code class="language-plaintext">_P(Osi.GetHostCharacter())</code></pre>
+<p>This will print: <i>c7c13742-bacd-460a-8f65-f864fe41f255 </i>to your console</p>
+<figure class="image image_resized" style="width:51.86%;"><img src="https://lh7-us.googleusercontent.com/Ef3BwIjlS_T-hgQ3qzfhPUYihqQQoupRColMLaKHZHrTIasa2IBKtdXTBW-trPKG1xya76MIC6WPoAPPNKF4fCaWYO1oKyRC_Y9cut3Rp84lQWDmJYW19hpNEWoAFOCctj5QADY-NQKbgLX12PN30gw">
+  <figcaption>Figure 11: Printing Astarions uuid to the console when he is the active character</figcaption>
+</figure>
+<p>Now that you are familiar with entering commands in the console, it is time to create your workspace</p>
+<h2><strong>3. Creating your workspace</strong></h2>
+<p>Download the example workspace here: <a href="https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing">https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing</a></p>
+<p>And unpack it. Place it where you want to develop your mods. For example in your <i>Documents </i>folder on windows.</p>
+<p>You will also need an editor. I recommend VSCode or the Open Source alternative VSCodium:</p>
+<ul>
+  <li>VSCode: <a href="https://code.visualstudio.com/"><u>https://code.visualstudio.com/</u></a></li>
+  <li>VSCodium:<a href="https://vscodium.com/"><u>https://vscodium.com/</u></a></li>
+</ul>
+<p>Now you want to open your project.</p>
+<figure class="image image_resized" style="width:45.09%;"><img src="https://lh7-us.googleusercontent.com/y8Vrl86Pnz7b_oGasddrDJuk8zPeVnhq-xUO3FRRZUK5SeolwQOMQwoTOlCIEK9SLOsrV4YYnfSW7JbSBHvL6bmGNPsfn0zNqb3iRvxjPOFKa3BEEiN6LoiyVDF426_KsKdVXYFn0N1N_vpcu4uyTBg">
+  <figcaption>Figure 12: Opening a folder in VSCode</figcaption>
+</figure>
+<p>On Windows 11, right click the folder “MySEMod” after unzipping and click “Open with Code”.</p>
+<figure class="image image_resized" style="width:62.84%;"><img src="https://lh7-us.googleusercontent.com/ZTy0cD3-wymnkpEj99udh1241KM3oJA2nYy0WmwXiIT-Rz6IxFbFdDLKwXsxWppM-MdtATFrNvCieQvlG8KijOWSV7Wyzw0klGSYZx5XVLvxbFkaeSG6JrGDPMYzeRvDKyb6Vg8u8S1BiepaZcitoBw">
+  <figcaption>Figure 13: The VSCode workspace&nbsp;</figcaption>
+</figure>
+<p>This will open your folder in your editor. You will find a few files here already.&nbsp;</p>
+<p>Navigate to to <i>BootsrapServer.lua&nbsp;</i></p>
+<figure class="image image_resized" style="width:61.95%;"><img src="https://lh7-us.googleusercontent.com/tqoF0Aj51oHiApBmLQmI573TEnmElxHsqRPqrVNBQp00vwEVQpRKsnBmBv3XqxdExOTTzJuzfPpD6YXJsenAUk0YODbxn3ab2LD96nROVlldWv8W5XqIydpt5myyIbyayWM2pemVZs8w-kKx_wuLbrs">
+  <figcaption>Figure 14: Adding a print statement to BootstrapServer.lua</figcaption>
+</figure>
+<p>To make sure your mod is active in the game, we will add a print statement that will execute when the game loads.</p>
+<p>Afterwards, Pak the mod with a tool of your choice. Here we will use lslib.</p>
+<ul>
+  <li>LsLib: <a href="https://github.com/Norbyte/lslib/releases"><u>https://github.com/Norbyte/lslib/releases</u></a></li>
+  <li>Modder’s Multitool: <a href="https://github.com/ShinyHobo/BG3-Modders-Multitool/releases"><u>https://github.com/ShinyHobo/BG3-Modders-Multitool/releases</u></a></li>
+</ul>
+<p>Pak the folder with a tool of your choice</p>
+<figure class="image image_resized" style="width:62.07%;"><img src="https://lh7-us.googleusercontent.com/OZIQx8Cg7rml-UhA0qm3dYzoxrqQWLewDGxch5Z-bLDqvj0_ZBof9MLn--r0wwDUahBy6ln-aR1evQ6Rgv6Nbu2qdPvODuU43w_8AfAoY72vxGM2nArZQDosjYJg79Upc9iC3a6oBNiFjLD93C4VljY">
+  <figcaption>Figure 15: Paking the workspace with lslib</figcaption>
+</figure>
+<p>Add the generated .pak file to your Mods folder and acitvate it and save the load order with your mod manager.</p>
+<p>When you see your print statement on game startup, you have successfully loaded your mod.</p>
+<figure class="image"><img src="https://cdn.discordapp.com/attachments/1233113869497667684/1233155556643176488/image.png?ex=6631ffdb&amp;is=6630ae5b&amp;hm=a1853663ef6f46b46af9416710ac247d31b4161577405f4b0b9ea1cf963dc462&amp;=">
+  <figcaption>Figure 16: The print statement showing that your mod is active</figcaption>
+</figure>
+<p>If you are not able to see this statement, you likely missed one of the steps.</p>
+<h2><strong>4. Symlinking</strong></h2>
+<p>For you to not have to repack your mod every time you make a change, you can symlink your folders.</p>
+<p>The following instructions are for Windows. On Linux, simply use <code>ln -s &lt;workspace&gt; &lt;game files&gt;</code></p>
+<p>Becuase of the formatting of the wiki, the commands had to be placed on separate lines. When you input the commands, please make sure to write all in one line.</p>
+<p>The commands for copying can be seen below the code block. &nbsp;Please make sure to modify the commands for your username and place of your workspace and game.</p>
+<p>&nbsp;</p>
+<pre><code class="language-plaintext">// Public folder
+mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Public" 
+"C:\Users\YourUsername\Desktop\BG3 Modding\YourModName\Public"
+
+// For code 
+mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Mods" 
+"C:\Users\YourUserName\Desktop\BG3 Modding\YourModName\Mods"
+
+// Loca
+mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Localization\English\yourLoca.loca" 
+"C:\Users\YourUserName\Desktop\BG3 Modding\YourModName\English\YourLoca.loca"</code></pre>
+<p>&nbsp;</p>
+<p>mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Public" "C:\Users\YourUsername\Desktop\BG3 Modding\YourModName\Public"</p>
+<p>mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Mods" "C:\Users\YourUserName\Desktop\BG3 Modding\YourModName\Mods"</p>
+<p>mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Localization\English\yourLoca.loca" "C:\Users\YourUserName\Desktop\BG3 Modding\YourModName\English\YourLoca.loca"</p>
+<p>&nbsp;</p>
+<h2><strong>5. The Basics of Programming</strong></h2>
+<p>The following section is aimed towards people who have no programming knowledge.</p>
+<p>If you don't know what a function is, you might want to read through this. If you have worked with other programmig languages before, feel free to skip this section but make sure to read up on Lua syntax.</p>
+<p>&nbsp;</p>
+<p><span class="text-big">Author's note: The following sections are still Work In Progress. continue on <strong>9. Useful Resources</strong> for more information for now.</span></p>
+<p>&nbsp;</p>
+<h3>1. Order of execution</h3>
+<p>&nbsp;</p>
+<h3>2. Variables&nbsp;</h3>
+<p>&nbsp;</p>
+<h3>3. A very special data structure: tables</h3>
+<p>&nbsp;</p>
+<h3>4. Scope&nbsp;</h3>
+<p>&nbsp;</p>
+<h4>4.1 Variables</h4>
+<p>&nbsp;</p>
+<h4>4.2 Functions</h4>
+<p>&nbsp;</p>
+<h4>4.3 A brief introduction to metatables</h4>
+<p>&nbsp;</p>
+<h3>5. Functions</h3>
+<p>&nbsp;</p>
+<h3>6. If statements</h3>
+<p>&nbsp;</p>
+<h3>7. Loops</h3>
+<p>&nbsp;</p>
+<h3>8. Debugging using print statements</h3>
+<p>&nbsp;</p>
+<h2><strong>6. Osiris</strong></h2>
+<p>&nbsp;</p>
+<h3>1. Functions</h3>
+<p>&nbsp;</p>
+<h3>2. Events</h3>
+<p>&nbsp;</p>
+<h3>3. Using Listeners</h3>
+<p>&nbsp;</p>
+<h2><strong>7. Script Extender Functions</strong></h2>
+<p>&nbsp;</p>
+<h2><strong>8. Advanced Information</strong></h2>
+<p>&nbsp;</p>
+<h2><strong>9. Useful Resources</strong></h2>
+<p><strong><u>Norbyte</u></strong></p>
+<p>Norbytes search engine: <a href="https://bg3.norbyte.dev/"><u>https://bg3.norbyte.dev/</u></a></p>
+<p>Script Extender: <a href="https://github.com/Norbyte/bg3se/tree/main"><u>https://github.com/Norbyte/bg3se/tree/main</u></a></p>
+<p>SE API Documentation: <a href="https://github.com/Norbyte/bg3se/blob/main/Docs/API.md"><u>https://github.com/Norbyte/bg3se/blob/main/Docs/API.md</u></a></p>
+<p>SE IDE Helpers: <a href="https://github.com/Norbyte/bg3se/blob/main/BG3Extender/IdeHelpers/ExtIdeHelpers.lua"><u>https://github.com/Norbyte/bg3se/blob/main/BG3Extender/IdeHelpers/ExtIdeHelpers.lua</u></a></p>
+<p>LsLib: <a href="https://github.com/Norbyte/lslib"><u>https://github.com/Norbyte/lslib</u></a></p>
+<p><strong><u>FallenStar</u></strong></p>
+<p>FallenStar’s VSCode extension: <a href="https://marketplace.visualstudio.com/items?itemName=FallenStar.bg3-se-snippets"><u>https://marketplace.visualstudio.com/items?itemName=FallenStar.bg3-se-snippets</u></a></p>
+<p><strong><u>LaughingLeader</u></strong></p>
+<p>BG3MM: <a href="https://github.com/LaughingLeader/BG3ModManager"><u>https://github.com/LaughingLeader/BG3ModManager</u></a></p>
+<p>Osi functions: <a href="https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua"><u>https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua</u></a></p>
+<p>Osi Events: <a href="https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.Events.lua"><u>https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.Events.lua</u></a></p>
+<p><strong><u>Larian Studios</u></strong></p>
+<p>Osiris: <a href="https://docs.larian.game/Osiris"><u>https://docs.larian.game/Osiris</u></a></p>
+<p>&nbsp;</p>
