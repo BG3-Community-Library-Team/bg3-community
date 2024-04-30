@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-04-30T22:31:16.732Z
+date: 2024-04-30T22:35:12.797Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -12,9 +12,8 @@ dateCreated: 2024-04-24T07:11:52.508Z
 This page is a list of existing Tutorials.
 
 # Pages {.tabset}
-## General
-- [Modder's Guide to Git](General/modders-guide-to-git)
-- [Setting up a Development Environment](General/setting-up-a-dev-environment)
+## Subsections
+- [LIST:General Guides](General)
 - [LIST:Mod-Use](Mod-Use)
 {.links-list}
 
