@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T19:23:59.168Z
+date: 2024-04-30T19:30:12.033Z
 tags: script extender
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -438,10 +438,13 @@ print("Is Dragonborn part of creatures? ", creatures["Dragonborn"])
 
 #### 4\. Tables within tables
 
-Tables are very 
+Tables are very flexible and allow varied structuring. Below you can see two more examples.
+Note that because of the nested structure, our printMyTable function does not work anymore.
+Instead we can use `_D` to "dump" the whole table and write special loops for them.
 
 ###### Example 1
 
+```lua
 local spells = {
     ["fire"] = {
         "Fireball",
@@ -455,12 +458,31 @@ local spells = {
     }
 }
 
+```
 
 
 ###### Example 2
 
-- myEntry = {name = fijifjf, somethingElse = fhufhifh} 
-- tzhen put that in a table
+```lua
+local companion1 = {name = "Astarion", class = "Rogue"}
+local companion2 = {name = "Gale", class = "Wizard"}
+local companion3 = {name = "Karlach", class = "Barbarian"}
+
+local myParty = {companion1, companion2, companion3}
+
+_D(myParty)
+```
+
+`output`
+
+```lua
+
+for _,entry in pairs(myParty) do
+ 		print("Name = ", entry.name, " class = ", entry.class)
+end
+```
+
+`output`
 
 
 Please note that these are just some examples. Feel free to experiment and choose the type of table that fits your data
