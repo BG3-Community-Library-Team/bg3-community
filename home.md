@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2024-04-30T21:49:14.873Z
+date: 2024-04-30T22:00:27.857Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -15,15 +15,17 @@ This is the BG3 Modding Community Wiki. This space is a place where tutorials, r
 # Sections {.tabset}
 
 ## Navigation
-- [:blue_book: Information *A list of pages relating to information.*](/Information)
-- [:blue_book: Tutorials *A list of guides.*](/Tutorials)
+- [:blue_book: Information *A list of pages relating to information on Game content and modding practices.*](/Information)
+- [:orange_book: Lore *Pieces of Lore relating to the Forgotten Realms and related settings.*](/Lore)
+- [:green_book: Tools *Links and guides relating to tools for modding Baldur's Gate 3.*](/Lore)
+- [:closed_book: Tutorials *A list of guides for creating and playing with mods.*](/Tutorials)
 {.links-list}
 
 ## Meta
-- [:blue_book: Rules and Guidelines *A set of behavioral rules and common practices to follow when contributing or commenting on the Wiki.*](/meta/guidelines)
-- [:pen: Submitting Content *A guide on the process of submitting content to the Wiki.*](/meta/submitting-content)
-- [:warning: Privacy Policy](/meta/privacy-policy)
-- [:warning: Terms of Service](/meta/terms-of-service)
+- [:clipboard: Rules and Guidelines *A set of behavioral rules and common practices to follow when contributing or commenting on the Wiki.*](/meta/guidelines)
+- [:memo: Submitting Content *A guide on the process of submitting content to the Wiki.*](/meta/submitting-content)
+- [:bookmark_tabs: Privacy Policy](/meta/privacy-policy)
+- [:page_with_curl: Terms of Service](/meta/terms-of-service)
 {.links-list}
 
 
