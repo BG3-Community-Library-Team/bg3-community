@@ -2,7 +2,7 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: false
-date: 2024-04-30T13:42:44.501Z
+date: 2024-04-30T15:16:18.998Z
 tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
@@ -50,17 +50,17 @@ This guide will show you how to create a Treasure Table, and place items into th
 The Tutorial Chest offers a quick and easy way to ship items to your users, is a method that only takes a few minutes to set up, and is widely recognized as the standard way to ship items to users.
 
 - Users will have almost immediate access to your items during the Tutorial.
-- It functions for users who do not have access to the Script Extender, such as Mac and Linux users.
+- It functions for users who do not have access to the Script Extender, such as people who play on Mac.
 </details>
 <details>
   <summary>Why you shouldn't use the Tutorial Chest</summary>
 The modding community has been placing items into this tutorial chest as a crutch to easily distribute items to users since the game was in beta, due to there not being an easier alternative to give items directly to users at the time. This has led many custom item mods to use the Tutorial Chest for item shipment, and has caused issues such as:
 
 - If too many mods that use the chest are installed, it will take multiple seconds to open it, and cause lag due to engine limitations.
-- The chest is only located in the tutorial, leading to users being undable to accquire items from the chest after they've made it to Act 1. 
+- The chest is only located in the tutorial, leading to users being unable to acquire items from the chest after they've made it to Act 1. 
 - It is a requirement to use a Tutorial Chest Summoning mod if you wish to get an item from it after the tutorial.
 - If too many mods that use the Tutorial Chest are installed, the chest will become cluttered and hard to sort through.
-- There is no granularity or customization in the way you can utilize the Tutorial Chest, such as choosing when an item will spawn, or if there will be a cost to accquire the item.
+- There is no granularity or customization in the way you can utilize the Tutorial Chest, such as choosing when an item will spawn, or if there will be a cost to acquire the item.
 - If a user wishes to have multiple of an item found in the chest, authors must include multiple of the same item. Else users will have to use a Tutorial Chest Summoning mod to duplicate the chest.
 </details>
 
@@ -79,9 +79,22 @@ Testing
 ## Vendor Inventories
 CLUTTER CLUTTER CLUTTER
 
+<details>
+  <summary>Why you should use Vendor Inventories</summary>
+Words
+  
+- You can set a specific price that users pay to acquire your item.
+- The method is more lore, and roleplay friendly.
+</details>
+<details>
+  <summary>Why you shouldn't use Vendor Inventories</summary>
+- Stops any chance of your mod being able to be uninstalled from the game once a playthrough has been started.
+- If you place your items in multiple vendor inventories, it will start to clutter and take up a lot of space in their inventories.
+</details>
+
 ## Script Extender Console Command
 You can also spawn in items with the [Script Extender Console](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender#h-3-how-to-install-the-console).
 
-Below is the console command to spawn an item into your own inventory, simply paste it into the SE Console, place the UUID/MapKey for the item you want between the quotes, and change the `1` to the amount of the item you would like recieve.
-
 `TemplateAddTo("", GetHostCharacter(), 1)`
+
+Above is the console command to spawn an item into your own inventory, simply paste it into the SE Console, place the UUID/MapKey for the item you want between the quotes, and change the `1` to the amount of the item you would like recieve.
