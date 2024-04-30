@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2024-04-30T22:26:00.373Z
+date: 2024-04-30T22:38:34.178Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -47,28 +47,10 @@ This is the BG3 Modding Community Wiki. This space is a place where tutorials, r
 ## Tools
 
 ## Tutorials
-### Pages {.tabset}
-#### General
-- [Modder's Guide to Git](Tutorials/Tools/modders-guide-to-git)
-- [Setting up a Development Environment](Tutorials/setting-up-a-dev-environment)
-- [LIST:Mod-Use](Tutorials/Mod-Use)
-{.links-list}
-
-#### Classes
-- [Basic Class Creation](Tutorials/Basic-Class-Creation)
-{.links-list}
-
-#### Frameworks
-- [Compatibility Framework Usage](Tutorials/Mod-Frameworks/compatibility-framework)
-- [Oath Framework Usage](Tutorials/Mod-Frameworks/oath-framework-usage)
-- [Tag Framework Usage](Tutorials/Mod-Frameworks/using-tag-framework)
-- [Inspiration Framework Usage](Tutorials/Mod-Frameworks/using-inspiration-framework)
-{.links-list}
-
-#### Script Extender
-- [Getting Started with Script Extender](Tutorials/ScriptExtender/GettingStarted)
-{.links-list}
-
-#### Visual
-- [Creating a Hair Mod](Tutorials/Visual/Creating-A-Hair-Mod)
+- [LIST:General Guides *General Guides not specific to a single type of modding.*](Tutorials/General)
+- [LIST:Mod-Use *Guides relating to Mod Use, rather than Mod Development*](Tutorials/Mod-Use)
+- [LIST:Classes *Guides relating to Class Modding](Tutorials/Classes)
+- [LIST:Frameworks *Guides relating to using Framework mods*](Tutorials/Frameworks)
+- [LIST:Script Extender *Guides relating to using Script Extender*](Tutorials/ScriptExtender)
+- [LIST:Visual *Guides relating to Visual Modding*](Tutorials/Visual)
 {.links-list}
