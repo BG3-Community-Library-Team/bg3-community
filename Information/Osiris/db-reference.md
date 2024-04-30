@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-04-30T23:24:15.583Z
+date: 2024-04-30T23:29:05.072Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -13,18 +13,29 @@ The below is a list of Osiris DB's, and their Parameters.
 
 # Types {.tabset}
 
+## Character Management
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_Players|List of registered Player Character IDs|1|Character UUID|--|--|--|--|
+|DB_Avatars|List of registered Player Avatar Character IDs|1|Character UUID|--|--|--|--|
+|DB_PartyMembers|List of registered Party Member Character IDs|1|Character UUID|--|--|--|--|
+|DB_PredefinePartyPreset_Loaded|?|||||||
+
 ## Combat
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
+|DB_CombatFlee_BlockedFor|List of Characters for whom fleeing combat is blocked|1|Character UUID|--|--|--|--|
 |DB_CombatFlee_BlockedInLevel|List of levels where fleeing is blocked|1|String (Level Scenario ID)|--|--|--|--| 
 |DB_CombatFlee_LastResortTrigger|?|2|String (Level Scenario ID)|Start Point UUID|--|--|--|
 |DB_CombatFlee_MinimumDistanceToFlee|Minimum Distance (m) required to flee|1|Integer|--|--|--|--|
 |DB_CMB_StatusOnInit|?|2-4|UUID|String|Integer|UUID|--|
-|DB_DoNotChangeAttitudeAfterCombat|?|1|UUID|--|--|--|--|
+|DB_DoNotChangeAttitudeAfterCombat|Prevent attitude change on Character after combat.|1|UUID|--|--|--|--|
 |DB_CombatStarted|DB Boolean determining if Combat has Started|1|Integer as Boolean|--|--|--|--|
 |DB_Was_InCombat|?|2|UUID|?|--|--|--|
 |DB_SwitchedCombat|?|2|?|?|--|--|--|
 |DB_Is_InCombat|?|2|UUID|UUID|--|--|--|
+|DB_CMB_RoundCounter|?|2|UUID|Integer|--|--|--|
+|DB_Downed|List of Downed Characters|1|Character UUID|--|--|--|--|
 
 ## Game Management
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -35,7 +46,8 @@ The below is a list of Osiris DB's, and their Parameters.
 ## Location
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
-|DB_CurrentLevel|String ID of Current Level (Scenario)|1|String ID|||||
+|DB_CurrentLevel|String ID of Current Level (Scenario)|1|String ID|--|--|--|--|
+|DB_InCamp|List of Characters Currently in Camp|1|Character UUID|--|--|--|--|
 
 ## Origins
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -55,13 +67,6 @@ The below is a list of Osiris DB's, and their Parameters.
 |DB_GLO_PlayerCharactersSetup|?|||||||
 |DB_PredefinedStartOrigin|?|||||||
 
-
-## Party
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
-|-----|----|----|----|----|----|----|----|
-|DB_Players|List of registered Player Character IDs|1||||||
-|DB_Avatars|List of registered Player Avatar Character IDs|1||||||
-|DB_PredefinePartyPreset_Loaded|?|||||||
 
 ## Query Returns
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
