@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T19:07:46.652Z
+date: 2024-04-30T19:16:15.336Z
 tags: script extender
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -372,6 +372,11 @@ local myTable = {"Cheese", "Bread", "Wine"}
 `3 Wine`
 
 
+```lua
+print("The first entry in myTable is ", myTable[1])
+```
+`The first entry in myTable is   Cheese`
+
 ##### 1\. Maps
 
 
@@ -387,15 +392,39 @@ ORIGINS = {
 ```
 
 
-`1 Cheese`
-`2 Bread`
-`3 Wine`
+`Wyll            S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d`
+`Karlach         S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c`
+`Astarion                S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255`
+`Laezel          S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12`
+`ShadowHeart             S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679`
+`Gale            S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604`
+
+
+```lua
+print("Wylls UUID is ", ORIGINS["Wyll"])
+```
+
+`Wylls UUID is   S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d`
+
+
 
 ##### 1\. Sets
 
-- maps
+
 - sets
 
+```lua
+local creatures = {
+    ["Goblin"] = true,
+    ["Skeleton"] = true,
+    ["Elf"] = true
+    }
+```
+
+
+`Elf             true`
+`Goblin          true`
+`Skeleton         true`
 
 
 #### 4\. Tables within tables
