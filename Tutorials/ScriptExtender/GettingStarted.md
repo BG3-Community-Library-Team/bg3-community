@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T16:54:07.522Z
+date: 2024-04-30T19:07:46.652Z
 tags: script extender
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -201,14 +201,210 @@ This will reset the console and all loaded scripts, allowing you to see instant 
 {.is-info}
 
 ![](/tutorials/getting_started_with_se/gswse_20.png)
-
 ## **5\. The Basics of Programming**
 
 The following section is aimed towards people who have no programming knowledge.
 
 If you don't know what a function is, you might want to read through this. If you have worked with other programmig languages before, feel free to skip this section but make sure to read up on Lua syntax.
 
-Author's note: The following sections are still Work In Progress. continue on **9\. Useful Resources** for more information for now.
+> It is recommended to not only read this section but to follow along. 
+> Also try typing some of these commands instead of using copy and paste
+> to better familiarize yourself with them
+{.is-info}
+
+Use the example mod "MySEMod" to follow along by typing in "MyFirstSEScript.lua" and resetting the console to see the changes.
+
+### 1\. Order of execution
+
+Any script that you write will be executed from top to bottom.
+
+```lua
+print("Hello World")
+print("My name is YourName")
+```
+
+`
+Hello World`
+`My name is YourName
+`
+
+This means that anything you define and want to refer to has to be declared before you will use it
+
+```lua
+local myName = "YourName"
+print("My name is ", myName)
+```
+`My name is YourName`
+
+When you use a variable before you have defined it, the program won't know what to do with it
+
+```lua
+print("My name is ", myName)
+local myName = "YourName"
+```
+
+`My name is nil`
+
+
+> *nil* in Lua means *nothing*
+{.is-info}
+
+### 2\. Variables 
+
+You can use variables to refer to cerain values.
+This has many applications. For example in BG3 we often use unique IDs (UUIDs) to refer to characters, objects, items and more. 
+For you to not have to retype these same long strings and maybe make mistakes, we can use variables
+
+```lua
+local astarion = "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255"
+print("Astarions ID is ", astarion)
+```
+
+
+`Astarions ID is         S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255`
+
+> By default a value in Lua is global if you do not use the *local* keyword
+> In most cases you want your variables to be *local* 
+{.is-info}
+
+### 3\. A very special data structure: tables
+
+You might have heard of some data strucutres like "arrays" or "lists" before.
+In Lua we use a so called "table" for all of these instances.
+
+> Paste the following function at the top of your *MyFirstSEScript.lua*  so you can use it
+{.is-info}
+
+```lua
+local function printMyTable(table)
+    for x,y in pairs(table) do
+       print(x, " ", y)
+    end
+end
+
+```
+
+Example usage:
+```lua
+printMyTable(myTable)
+```
+
+> To see the changes in your tables, use the *printMyTable* function after every change!
+{.is-info}
+
+#### 1\. The basics
+
+You can create a new table by instantiating an empty one
+
+```lua
+local myTable = {}
+```
+
+` ` (empty output)
+
+You can also pre fill the table
+```lua
+local myTable = {"Cheese", "Bread", "Wine"}
+```
+`1 Cheese`
+`2 Bread`
+`3 Wine`
+
+You can add items to a table
+```lua
+table.insert(myTable, "Grapes")
+```
+
+`1 Cheese`
+`2 Bread`
+`3 Wine`
+`4 Grapes`
+
+You can delete the last item from a table
+
+```lua
+table.remove(myTable)
+```
+
+`1 Cheese`
+`2 Bread`
+`3 Wine`
+
+You can delete an item from a table based on its index (position)
+
+```lua
+table.remove(myTable, 1)
+```
+
+`1 Bread`
+`2 Wine`
+
+#### 2\. Iterating over a table
+
+To be able to access all components, we want to iterate over the tables.
+This is what we are doing in the *printMyTable *function.
+
+
+```lua
+for x,y in pairs(myTable) do
+	 print(x, " ", y)
+end
+```
+
+
+`1 Bread`
+`2 Wine`
+
+
+#### 3\. Different types of tables
+
+
+##### 1\. Arrays
+
+The tables in the example above can fir the description of an "array". They consist of an index and an entry
+
+
+```lua
+local myTable = {"Cheese", "Bread", "Wine"}
+```
+`1 Cheese`
+`2 Bread`
+`3 Wine`
+
+
+##### 1\. Maps
+
+
+```lua
+ORIGINS = {
+    ["Wyll"] = "S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d",
+    ["ShadowHeart"] = "S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679",
+    ["Laezel"] = "S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12",
+    ["Astarion"] = "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255",
+    ["Gale"] = "S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604",
+    ["Karlach"] = "S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c",
+}
+```
+
+
+`1 Cheese`
+`2 Bread`
+`3 Wine`
+
+##### 1\. Sets
+
+- maps
+- sets
+
+
+
+#### 4\. Tables within tables
+- tables in tables
+- myEntry = {name = fijifjf, somethingElse = fhufhifh} 
+- tzhen put that in a table
+
+
+Please note that these are just some examples. Feel free to experiment and choose the type of table that fits your data
 
 ### 1\. Order of execution
 
