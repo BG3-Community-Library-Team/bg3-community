@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-04-30T23:39:49.809Z
+date: 2024-04-30T23:43:19.259Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -12,6 +12,14 @@ dateCreated: 2024-04-30T23:08:53.092Z
 The below is a list of Osiris DB's, and their Parameters.
 
 # Types {.tabset}
+
+## Buried Treasures
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_TaggedItemTracker|?|2|UUID String|UUID|--|--|--|
+|DB_Shovel_ChestMoundType|Types of Chest Mounds|4|Integer|Integer|Mound UUID|Behavior UUID|--|
+|DB_ShovelArea|?|2|Object UUID|Object UUID|--|--|--|
+|DB_Shovelling_Mound|?|4|?|?|Object UUID|?|--|
 
 ## Character Management
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
