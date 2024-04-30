@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T19:47:11.558Z
+date: 2024-04-30T19:48:36.814Z
 tags: script extender
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -513,6 +513,22 @@ _D(myParty)
 
 `output`
 
+
+`[`
+     &nbsp;    &nbsp; &nbsp;  ` {`
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `    "class" : "Rogue",`
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     `  "name" : "Astarion"`
+   &nbsp;    &nbsp; &nbsp;   `  },`
+ &nbsp;    &nbsp; &nbsp;     `  {`
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    `    "class" : "Wizard",`
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        ` "name" : "Gale"`
+  &nbsp;    &nbsp; &nbsp;    `  },`
+ &nbsp;    &nbsp; &nbsp;   `    {`
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     `    "class" : "Barbarian",`
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       `  "name" : "Karlach"`
+    &nbsp;    &nbsp; &nbsp;    `}`
+`]`
+
 ```lua
 
 for _,entry in pairs(myParty) do
@@ -520,8 +536,9 @@ for _,entry in pairs(myParty) do
 end
 ```
 
-`output`
-
+`Name =  Astarion         class =        Rogue`
+`Name =  Gale     class =        Wizard`
+`Name =  Karlach  class =        Barbarian`
 
 Please note that these are just some examples. Feel free to experiment and choose the type of table that fits your data
 
