@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T20:44:56.396Z
+date: 2024-04-30T20:54:57.125Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -30,7 +30,6 @@ When you launch the game now, you should see a second window opening. This is th
 
 ![](https://lh7-us.googleusercontent.com/LeswDxdXyI4gNc4bfLY4Hlz2i2dXnyb1ogSWFOQO25yidO8ol5U5x6vxt8nuWulxRej9CiJk3IQgM1Djh0z03cgT4mn-G45drTxY6qSKnooKZfE-34ahsfLOd3ZN1jlzJJR8VnfSaOYQmzBq46QCbps)
 
-Figure 7: The Script Extender cosole on game start.
 
 If you see this window, it means you have successfully installed SE with console.
 
@@ -48,7 +47,6 @@ When the save is loaded you should see some output in your console, telling you 
 
 ![](https://lh7-us.googleusercontent.com/iR7etzru7qjtz99vhl43MuAvDLA6rMfl3hW2YTb-szUwM_mkMwCRW7ZFs-goNRw-LRDUZtA29WRr-qjT7E7UwnhZjQ0clNq36Z0qsEhmENRD9t27Ei_hMwOFBDUB0geN0Cdi1YnWrwyqPUhpEkQQWts)
 
-Figure 8: An example of the Script Extender output when a save is loaded
 
 ### **2\. Activate the input** 
 
@@ -58,7 +56,6 @@ If you have too much text on your console and you cannot see your input line, yo
 
 ![](https://lh7-us.googleusercontent.com/QYtqY_84Nny8EeUPFTFzwi820yZ6LzxKsrUYgjnTUOMTcCVVdTcxgKqlYcKeeoQqh-DS7DJA7iwSm5UzYZ0Imj6zZJL4SW-tdXR_IfOj9kdphcgJVzGBKc0U608-PmNwpWZLO31cxUdSPndT_jo0y48)
 
-Figure 9: An activated Script Extender console
 
 ### **3\. Basic inputs**
 
@@ -72,8 +69,6 @@ _P(“Hello World”)
 
 ![](https://lh7-us.googleusercontent.com/ktFR5G6vYetJeqyVYLznc8tmizLM-JMHag7C4esUa-aunS3F9hQsMYGYf9taLyHrsekRm-eS6f6cGGpcXINdu3q4ml7oopyIWRobEqSygFEXZigJZ5TjH7_D9BWZ-bshPhNVE9gKX2DRtWajxHckLDU)
 
-Figure 10: The output of \_P("Hello World")
-
 **2\. Get the HostCharacter uuid (the character whose portrait is activated - here: Astarion):**
 
 ```plaintext
@@ -84,7 +79,6 @@ This will print: *c7c13742-bacd-460a-8f65-f864fe41f255* to your console
 
 ![](https://lh7-us.googleusercontent.com/Ef3BwIjlS_T-hgQ3qzfhPUYihqQQoupRColMLaKHZHrTIasa2IBKtdXTBW-trPKG1xya76MIC6WPoAPPNKF4fCaWYO1oKyRC_Y9cut3Rp84lQWDmJYW19hpNEWoAFOCctj5QADY-NQKbgLX12PN30gw)
 
-Figure 11: Printing Astarions uuid to the console when he is the active character
 
 Now that you are familiar with entering commands in the console, it is time to create your workspace
 
@@ -103,13 +97,10 @@ Now you want to open your project.
 
 ![](https://lh7-us.googleusercontent.com/y8Vrl86Pnz7b_oGasddrDJuk8zPeVnhq-xUO3FRRZUK5SeolwQOMQwoTOlCIEK9SLOsrV4YYnfSW7JbSBHvL6bmGNPsfn0zNqb3iRvxjPOFKa3BEEiN6LoiyVDF426_KsKdVXYFn0N1N_vpcu4uyTBg)
 
-Figure 12: Opening a folder in VSCode
 
 On Windows 11, right click the folder “MySEMod” after unzipping and click “Open with Code”.
 
 ![](https://lh7-us.googleusercontent.com/ZTy0cD3-wymnkpEj99udh1241KM3oJA2nYy0WmwXiIT-Rz6IxFbFdDLKwXsxWppM-MdtATFrNvCieQvlG8KijOWSV7Wyzw0klGSYZx5XVLvxbFkaeSG6JrGDPMYzeRvDKyb6Vg8u8S1BiepaZcitoBw)
-
-Figure 13: The VSCode workspace 
 
 This will open your folder in your editor. You will find a few files here already. 
 
@@ -117,7 +108,6 @@ Navigate to to *BootstrapServer.lua* 
 
 ![](https://lh7-us.googleusercontent.com/tqoF0Aj51oHiApBmLQmI573TEnmElxHsqRPqrVNBQp00vwEVQpRKsnBmBv3XqxdExOTTzJuzfPpD6YXJsenAUk0YODbxn3ab2LD96nROVlldWv8W5XqIydpt5myyIbyayWM2pemVZs8w-kKx_wuLbrs)
 
-Figure 14: Adding a print statement to BootstrapServer.lua
 
 To make sure your mod is active in the game, we will add a print statement that will execute when the game loads.
 
@@ -130,7 +120,6 @@ Pak the folder with a tool of your choice
 
 ![](https://lh7-us.googleusercontent.com/OZIQx8Cg7rml-UhA0qm3dYzoxrqQWLewDGxch5Z-bLDqvj0_ZBof9MLn--r0wwDUahBy6ln-aR1evQ6Rgv6Nbu2qdPvODuU43w_8AfAoY72vxGM2nArZQDosjYJg79Upc9iC3a6oBNiFjLD93C4VljY)
 
-Figure 15: Paking the workspace with lslib
 
 Add the generated .pak file to your Mods folder and acitvate it and save the load order with your mod manager.
 
@@ -138,7 +127,6 @@ When you see your print statement on game startup, you have successfully loaded 
 
 ![](https://cdn.discordapp.com/attachments/1233113869497667684/1233155556643176488/image.png?ex=6631ffdb&is=6630ae5b&hm=a1853663ef6f46b46af9416710ac247d31b4161577405f4b0b9ea1cf963dc462&=)
 
-Figure 16: The print statement showing that your mod is active
 
 If you are not able to see this statement, you likely missed one of the steps.
 
@@ -180,19 +168,16 @@ To test whether your symlink has been succesfully created, you can change the pr
 
 ![](https://lh7-us.googleusercontent.com/tqoF0Aj51oHiApBmLQmI573TEnmElxHsqRPqrVNBQp00vwEVQpRKsnBmBv3XqxdExOTTzJuzfPpD6YXJsenAUk0YODbxn3ab2LD96nROVlldWv8W5XqIydpt5myyIbyayWM2pemVZs8w-kKx_wuLbrs)
 
-Figure 17: The print statement you have added previously
 
 Change it to something else so you can recognize the change
 
 ![](/tutorials/getting_started_with_se/gswse_18.png)
 
-Figure 18: Changed text for the print message
 
 Then, after activating your SE console again, type `reset` in the console and press enter
 
 ![](/tutorials/getting_started_with_se/gswse_19.png)
 
-Figure 19: The reset command
 
 This will reset the console and all loaded scripts, allowing you to see instant changes of your code.
 
@@ -661,6 +646,7 @@ print(karlach)
 
 `S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12`
 
+<span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>9. Useful Resources</strong> for more information</span>
 
 #### 4.2 Scope across files
 
