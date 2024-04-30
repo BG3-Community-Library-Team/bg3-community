@@ -2,8 +2,8 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T19:48:36.814Z
-tags: script extender
+date: 2024-04-30T20:16:07.317Z
+tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
 ---
@@ -545,9 +545,71 @@ Please note that these are just some examples. Feel free to experiment and choos
 
 ### 4\. Scope 
 
-#### 4.1 Variables
+As you have already learned in **1. Order of executions** your variables are not available everywhere in your program.
+The order of execution is not the only thing that defines this.
 
-#### 4.2 Functions
+#### 4.1 Scope within a file
+
+Within one file, a variable might be declared above its ussage but still not available.
+This happens when it is declared in its own *scope*
+
+```lua
+-- returns Astarions UUID
+function getAstarion()
+	local astarionUUID = "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255"
+  return astarionUUID
+end
+
+print(astarionUUID)
+
+```
+
+`nil`
+
+In this case `astarionUUID` is not known outside of its scope.
+If we want to access `astarionUUID` directly we can instantiate it outside of the scope of the function
+
+```lua
+
+local astarionUUID = "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255"
+print(astarionUUID)
+
+```
+
+`S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255`
+
+Another example:
+
+```lua
+-- Function to get the UUID for a character based on their name
+function getCharacterUUID(characterName)
+    local uuidMap = {
+        Astarion = "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255",
+        Gale = "S_Player_Gale_d7c13742-bacd-460a-8f75-f964fe41f366"
+    }
+    return uuidMap[characterName]
+end
+
+-- Retrieve UUIDs for both characters using the function
+local astarionUUID = getCharacterUUID("Astarion")
+local galeUUID = getCharacterUUID("Gale")
+
+print(astarionUUID)  -- Prints: S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255
+print(galeUUID)      -- Prints: S_Player_Gale_d7c13742-bacd-460a-8f75-f964fe41f366
+
+-- Trying to access uuidMap outside its scope will result in nil
+print(uuidMap)  -- nil
+```
+
+- variable
+- function
+
+- dont always make them global -> reuse names
+
+#### 4.2 Scope across files
+
+- variable 
+- function
 
 #### 4.3 A brief introduction to metatables
 
