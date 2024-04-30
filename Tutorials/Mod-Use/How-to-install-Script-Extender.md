@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T13:50:40.680Z
+date: 2024-04-30T14:07:06.264Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -27,9 +27,10 @@ There are two ways on how to download script extender.
 
 ##### 1.1 First is the easy way if you are using BG3MM: 
 
-(Screenshot)
+![bg3mmse.png](/tutorials/bg3mmse.png)
 
 As seen above screenshot, simply open BG3MM, then go up in the bar and press on "tools" and then press "Download and extract Script Extender". 
+Continue to step 3 after this. 
 
 ##### 1.2 Second way is the little harder, but still easy way if you are not using BG3MM but instead uses linux, or using Vortex. 
 
@@ -37,9 +38,10 @@ First you will need to download it from Github: https://github.com/Norbyte/bg3se
 Do not worry about the version on github. As it will be explained later in the guide, SE updates to the newest version when you launch the game.
 
 When you open the page, scroll down and press the "BG3SE-Updater" as highlighted below. 
-(Screenshot) 
 
-> For Linux users, follow the guide on the github page instead of this guide.
+![se.png](/tutorials/se.png)
+
+> For Linux users, follow the guide on Norbyte's github page (link above) instead of this guide.
 {.is-info}
 
 
@@ -65,7 +67,13 @@ Now just open the bin folder, and then you extract the "DWrite.dll" into the bin
 
 The DWrite.dll is essentially SE.
 
-(Screenshot)
+So it goes from this: 
+
+![movese.png](/tutorials/movese.png =x400)
+
+To this:
+
+![semoved.png](/tutorials/semoved.png)
 
 ## 2. Install Script Extender
 
@@ -78,7 +86,9 @@ This page will be updated if that happens.
 
 You will know if you have been successful if you open the game to main menu, and look at the bottom left and see "Script Extender version x built on date x" as you can see at the below screenshot: 
 
-(Screenshot) 
+![mainmenuse.png](/tutorials/mainmenuse.png =x500)
+
+For BG3MM to register you have installed Script Extender: Open game to main menu, close the game, and refresh in BG3MM. 
 
 ## 3. How to install the console 
 
@@ -87,11 +97,12 @@ Depending on if you are using BG3MM or not, there are a few ways to enable the c
 ##### 3.1. How to enable the console via BG3MM 
 
 Open "Settings", then "Preferences" in BG3MM. 
-(Screenshot) 
+
+![settings.png](/tutorials/settings.png)
 
 Then click on the tab "Script Extender" and check off "Create Console". 
 
-(Screenshot)
+![createconsole.png](/tutorials/createconsole.png =x350)
 
 ##### 3.2. Create the ScriptExtenderSettings.json file yourself 
 
