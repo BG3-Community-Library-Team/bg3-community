@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-04-30T23:45:03.922Z
+date: 2024-04-30T23:48:44.481Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -18,6 +18,10 @@ The below is a list of Osiris DB's, and their Parameters.
 |-----|----|----|----|----|----|----|----|
 |DB_AnubisConfigsOverrideStack|?|3|UUID|String|Integer|--|--|
 |DB_AnubisConfigs|?|2|Character UUID|String|--|--|--|
+|DB_AnubisConfigs_DelayAssignment|?|2|Character UUID|String|--|--|--|
+|DB_AnubisConfigOverride_NewConfig|?|3|Character UUID|String|Integer|--|--|
+|DB_AnubisConfigOverride_UpdatedConfig|?|1|Integer|--|--|--|--|
+|DB_AnubisConfigs_CharacterSavedStates|?|2|Character UUID|State|--|--|--|
 
 ## Buried Treasures
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
