@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T20:54:57.125Z
+date: 2024-04-30T20:56:48.472Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -539,7 +539,7 @@ The order of execution is not the only thing that defines this.
 
 #### 4.1 Scope within a file
 
-Within one file, a variable might be declared above its ussage but still not available.
+Within one file, a variable might be declared above its usage but still not available.
 This happens when it is declared in its own *scope*
 
 ```lua
