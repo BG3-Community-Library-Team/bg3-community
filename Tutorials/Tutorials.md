@@ -2,7 +2,7 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: false
-date: 2024-04-30T15:58:26.190Z
+date: 2024-04-30T16:18:01.232Z
 tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
@@ -31,9 +31,10 @@ To get your mod up and running with ISF, you can drag and drop its main folder i
 
 For further customization of the generated JSON file, you may consult the [ISF Wiki's Config Settings](https://github.com/AtilioA/BG3-item-shipment-framework/wiki/ISF-Config-Settings) page, as it will teach you what each setting does, and how they could be used for your mod.
 
-> **Default settings**: the default settings, also used by this generated JSON, will:
-> - Send a single copy of each item to all four possible mailboxes, and none directly to the host's inventory.
-> - Verify if an item exists in the player's party inventories, mailboxes, and perform an internal ISF check using ModVars.
+> **Default Settings:** The default settings, also used by this generated JSON, will:
+> * Send a single copy of each item to all four possible mailboxes, and none directly to the host's inventory.
+> * Verify if an item exists in the player's party inventories, mailboxes, and perform an internal ISF check using ModVars.
+<!-- {blockquote:.is-info} -->
 
 ### ISF Example Mods
 These mods were created with the purpose of showcasing multiple different use-cases for how the ISF might be utilized in mods. These links will redirect you to the Item Shipment Framework wiki, where each example mod's config settings get explained in detail.
@@ -58,20 +59,22 @@ The modding community has been placing items into this tutorial chest as a crutc
 
 - If too many mods that use the chest are installed, it will take multiple seconds to open it, and cause lag due to engine limitations.
 - The chest is only located in the tutorial, leading to users being unable to acquire items from the chest after they've made it to Act 1. 
-- It is a requirement to use a Tutorial Chest Summoning mod if you wish to get an item from it after the tutorial.
+- It is a requirement to use a tutorial chest summoning mod if you wish to get an item from it after the tutorial.
 - If too many mods that use the Tutorial Chest are installed, the chest will become cluttered and hard to sort through.
 - There is no granularity or customization in the way you can utilize the Tutorial Chest, such as choosing when an item will spawn, or if there will be a cost to acquire the item.
-- If a user wishes to have multiple of an item found in the chest, authors must include multiple of the same item. Else users will have to use a Tutorial Chest Summoning mod to duplicate the chest.
+- If a user wishes to have multiple of an item found in the chest, authors must include multiple of the same item. Else users will have to use a tutorial chest summoning mod to duplicate the chest.
 </details>
 
 ### Getting Started
 
 Create a directory in your mod's main project folder which looks like this:
+
 `ProjectFolder\Public\ProjectTitle\Stats\Generated\TreasureTable.txt`
 
-Replace `ProjectFolder`, and `ProjectTitle` with the names of your mod's main folder directory, and the folder name you have assigned in your mod's `meta.lsx` file.
+Replace `ProjectFolder`, and `ProjectTitle` with the names of your mod's main folder directory, and the folder name you have assigned in your mod's meta.lsx file.
 
 For example, [Aether's Black Dye](https://www.nexusmods.com/baldursgate3/mods/1177)'s directory looks like this:
+
 `AethersBlackDye\Public\AethersBlackDye\Stats\Generated\TreasureTable.txt`
 
 Next, place the code block below into the TreasureTable.txt file, and replace `I_GameObject_Stats_Name` with the "Stats" name you chose for your custom item, inside of your mod's root template, verifying that the "I_" prefix is also included.
@@ -89,7 +92,7 @@ object category "I_GameObject_Stats_Name",1,0,0,0,0,0,0,0
   <img src="https://images2.imgbox.com/0f/a6/XOms11nH_o.png" />
 </p>
 
-In the example TreasureTable.txt file, one modded Black Dye, and ten vanilla Supply Packs will be shipped to the Tutorial Chest.
+In the example treasure table below, one modded Black Dye, and ten vanilla Supply Packs will be shipped to the Tutorial Chest.
 ```txt
 new treasuretable "TUT_Chest_Potions"
 CanMerge 1
