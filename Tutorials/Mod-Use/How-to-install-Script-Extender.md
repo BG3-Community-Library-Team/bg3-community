@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T15:00:36.490Z
+date: 2024-04-30T15:01:09.435Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
