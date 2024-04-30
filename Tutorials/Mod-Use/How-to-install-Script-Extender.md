@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T11:31:06.365Z
+date: 2024-04-30T11:31:27.549Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -103,7 +103,7 @@ It is generally not a good idea to roll back on a SE update or stop the updates 
 
 When you stop the updates, you can very quickly get locked into one version only so when even you uninstall SE and reinstall it again, it cannot update. This causes issues if you update the game, and SE needs to update to be compatible with that game version. 
 
-To fix this, you will need to follow this guide: (Link to guide on how to do a clean/fresh reinstall of SE) 
+To fix this, you will need to follow this guide: (Link to guide on how to do a clean/fresh reinstall of SE, to do)
 
 Some mods will end up not working, as they are getting updated and ends up needing a later version of SE than what you have. This is a huge risk you will have to keep in mind. 
 
