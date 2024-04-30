@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T14:31:54.398Z
+date: 2024-04-30T15:00:36.490Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -167,7 +167,7 @@ You may end up not being able to start the game if you have both. To fix this, d
 
 If it does not, and you use BG3MM, simply open BG3MM, go to "settings", then "preferences" as highlighted below: 
 
-(Screenshot)
+![enableach.png](/tutorials/enableach.png =x400)
 
 Then go into the tab "Script Extender" and check off "Enable achievements". 
 It may be checked on already. If that is the case, simply just uncheck it and check it again. 
@@ -197,12 +197,8 @@ This means the devel version is very expiremental and if you, as a user, is play
 
 Most of the time, the devel version is a version behind the main release. For good reasons as this is a playground for testing. 
 
-Norbyte himself has also made a warning, which unfortunately gets suppressed by Improved UI: 
-
-(Screenshot) 
-
 You can check if you have the devel version by going into your bin folder and search for this file: 
-`ScriptExtenderUpdater.json`
+`ScriptExtenderUpdaterConfig.json`
 
 If you do have it, delete it. 
 
