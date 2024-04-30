@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T11:39:36.718Z
+date: 2024-04-30T11:40:33.202Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -145,7 +145,7 @@ This means the devel version is very expiremental and if you, as a user, is play
 
 Most of the time, the devel version is a version behind the main release. For good reasons as this is a playground for testing. 
 
-Norbyte himself has also made a warning, which unfortunately gets surpressed by Improved UI: 
+Norbyte himself has also made a warning, which unfortunately gets suppressed by Improved UI: 
 
 (Screenshot) 
 
