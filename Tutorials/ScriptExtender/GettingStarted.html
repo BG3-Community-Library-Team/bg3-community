@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T15:18:12.529Z
+date: 2024-04-30T16:49:42.527Z
 tags: script extender
 editor: ckeditor
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -93,6 +93,8 @@ dateCreated: 2024-04-30T08:23:34.674Z
 </figure>
 <p>If you are not able to see this statement, you likely missed one of the steps.</p>
 <h2><strong>4. Symlinking</strong></h2>
+<p>&nbsp;</p>
+<h3>1. Setting up the Symlink</h3>
 <p>For you to not have to repack your mod every time you make a change, you can symlink your folders.</p>
 <p>The following instructions are for Windows. On Linux, simply use <code>ln -s &lt;workspace&gt; &lt;game files&gt;</code></p>
 <p>Because of the formatting of the wiki, the commands had to be placed on separate lines. When you input the commands, please make sure to write all in one line.</p>
@@ -114,6 +116,22 @@ mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Loc
 <p>mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Mods" "C:\Users\YourUserName\Desktop\BG3 Modding\YourModName\Mods"</p>
 <p>mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Localization\English\yourLoca.loca" "C:\Users\YourUserName\Desktop\BG3 Modding\YourModName\English\YourLoca.loca"</p>
 <p>&nbsp;</p>
+<h3>2. Testing the symlink</h3>
+<p>To test whether your symlink has been succesfully created, you can change the print line we have created earlier while having a save loaded.</p>
+<figure class="image image_resized" style="width:53.32%;"><img src="https://lh7-us.googleusercontent.com/tqoF0Aj51oHiApBmLQmI573TEnmElxHsqRPqrVNBQp00vwEVQpRKsnBmBv3XqxdExOTTzJuzfPpD6YXJsenAUk0YODbxn3ab2LD96nROVlldWv8W5XqIydpt5myyIbyayWM2pemVZs8w-kKx_wuLbrs">
+  <figcaption>Figure 17: The print statement you have added previously</figcaption>
+</figure>
+<p>Change it to something else so you can recognize the change</p>
+<figure class="image image_resized" style="width:53.04%;"><img src="/tutorials/getting_started_with_se/gswse_18.png">
+  <figcaption>Figure 18: Changed text for the print message</figcaption>
+</figure>
+<p>Then, after activating your SE console again, type <code>reset</code> in the console and press enter</p>
+<figure class="image image_resized" style="width:20.35%;"><img src="/tutorials/getting_started_with_se/gswse_19.png">
+  <figcaption>Figure 19: The reset command</figcaption>
+</figure>
+<p>This will reset the console and all loaded scripts, allowing you to see instant changes of your code.</p>
+<figure class="image"><img src="/tutorials/getting_started_with_se/gswse_20.png"></figure>
+<h2>&nbsp;</h2>
 <h2><strong>5. The Basics of Programming</strong></h2>
 <p>The following section is aimed towards people who have no programming knowledge.</p>
 <p>If you don't know what a function is, you might want to read through this. If you have worked with other programmig languages before, feel free to skip this section but make sure to read up on Lua syntax.</p>
@@ -152,7 +170,15 @@ mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Loc
 <p>&nbsp;</p>
 <h2><strong>7. Script Extender Functions</strong></h2>
 <p>&nbsp;</p>
+<ul>
+  <li>Dumping</li>
+  <li>Basically go over the API and heavily credit it</li>
+</ul>
+<p>&nbsp;</p>
 <h2><strong>8. Advanced Information</strong></h2>
+<ul>
+  <li>IMGUI / Devel stuff?</li>
+</ul>
 <p>&nbsp;</p>
 <h2><strong>9. Useful Resources</strong></h2>
 <p><strong><u>Norbyte</u></strong></p>
