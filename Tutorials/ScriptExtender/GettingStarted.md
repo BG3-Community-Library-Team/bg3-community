@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T20:56:48.472Z
+date: 2024-04-30T20:57:33.325Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -567,7 +567,7 @@ print(astarionUUID)
 
 `S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255`
 
-This also means that when a variale is instantiated within one function, it is not known in any other functions
+This also means that when a variable is instantiated within one function, it is not known in any other functions
 
 ```lua
 -- returns Shadowhearts UUID
