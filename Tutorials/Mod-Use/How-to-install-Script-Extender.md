@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T11:50:58.636Z
+date: 2024-04-30T11:52:04.152Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -112,7 +112,7 @@ To fix this, you will need to follow this guide: (Link to guide on how to do a c
 Some mods will end up not working, as they are getting updated and ends up needing a later version of SE than what you have. This is a huge risk you will have to keep in mind. 
 
 > If you are worried about not being up to date on BG3 and you want SE to stay on the latest version for the patch you are on; Do not worry, SE will only update if you also update the game. 
-> So lets say BG3 updates, you did not update and Norbyte pushes out a new update for SE to make it compatible with the new update, then SE will stay on the version you are currently on as it detects you are not on the latest patch. 
+> So lets say BG3 updates, you did not update and Norbyte pushes out a new update for SE to make it compatible with the new update, then SE will stay on the version you are currently on as it detects you are not on the latest patch.
 {.is-info}
 
 
