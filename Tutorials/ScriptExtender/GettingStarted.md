@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T20:28:33.953Z
+date: 2024-04-30T20:33:34.283Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -641,10 +641,22 @@ print(getAstarion())
 `S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255`
 
 
-If one variable is 
-- example where it doesnt get overwritten
+If one variable is defined in the outer scope it will get overwritten if it is being reused.
 
-- one example where it gets overwritten
+```lua
+local karlach =  "S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c"
+
+function switchKarlachWithLaezel()
+	karlach = "S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12"
+end
+
+switchKarlachWithLaezel()
+
+print(karlach)
+```
+
+`S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12`
+
 
 #### 4.2 Scope across files
 
