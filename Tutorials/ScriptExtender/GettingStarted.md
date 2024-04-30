@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T20:34:26.183Z
+date: 2024-04-30T20:44:56.396Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -376,6 +376,10 @@ local myTable = {"Cheese", "Bread", "Wine"}
 print("The first entry in myTable is ", myTable[1])
 ```
 `The first entry in myTable is   Cheese`
+
+
+> In most programming languages we start counting at 0, but in Lua we start at 1
+{.is-info}
 
 ##### 1\. Maps
 
