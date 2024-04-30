@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T10:38:34.211Z
+date: 2024-04-30T10:40:42.696Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -47,7 +47,7 @@ When you have opened the steam library, right click on BG3 and hover over "manag
 
 ![steam.png](/tutorials/steam.png)
 
-It will open your "root installation" folder. 
+File explore will open your "root installation" folder. 
 
 It should look something like this: 
 
@@ -56,4 +56,7 @@ It should look something like this:
 > For GOG users, it may look a bit different. This is okay, and normal. 
 {.is-info}
 
+Now just open the bin folder, and then you extract the "DWrite.dll" into the bin folder, that is inside the zip folder you just downloaded. 
+
+(Screenshot)
  
