@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-04-30T23:23:11.356Z
+date: 2024-04-30T23:24:06.067Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -30,6 +30,7 @@ The below is a list of Osiris DB's, and their Parameters.
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_StoryReloaded|?|1|Integer as Boolean|--|--|--|--|
+|DB_NOOP|Hacky Osiris solution to dumb things|1|Integer|--|--|--|--|
 
 ## Location
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
