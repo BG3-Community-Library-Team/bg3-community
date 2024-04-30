@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-04-30T23:43:19.259Z
+date: 2024-04-30T23:45:03.922Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -12,6 +12,12 @@ dateCreated: 2024-04-30T23:08:53.092Z
 The below is a list of Osiris DB's, and their Parameters.
 
 # Types {.tabset}
+
+## Anubis Configs
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_AnubisConfigsOverrideStack|?|3|UUID|String|Integer|--|--|
+|DB_AnubisConfigs|?|2|Character UUID|String|--|--|--|
 
 ## Buried Treasures
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -100,7 +106,8 @@ The below is a list of Osiris DB's, and their Parameters.
 ## Query Returns
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
-|DB_QRYRTN_GetCharacterOwnerIfItemSummon|?|1|--|--|--|--|--|
+|DB_QRYRTN_AnubisConfigOverrideIndex|?|1|?|--|--|--|--|
+|DB_QRYRTN_GetCharacterOwnerIfItemSummon|?|1|?|--|--|--|--|
 |DB_QRYRTN_CombatFlee_FoundFleeWaypoint|?|3|Character UUID|UUID|?|--|--|
 
 ## Scenes
