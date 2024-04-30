@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T19:16:15.336Z
+date: 2024-04-30T19:23:59.168Z
 tags: script extender
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -411,8 +411,6 @@ print("Wylls UUID is ", ORIGINS["Wyll"])
 ##### 1\. Sets
 
 
-- sets
-
 ```lua
 local creatures = {
     ["Goblin"] = true,
@@ -426,20 +424,47 @@ local creatures = {
 `Goblin          true`
 `Skeleton         true`
 
+```lua
+print("Is Elf part of creatures? ", creatures["Elf"])
+print("Is Dragonborn part of creatures? ", creatures["Dragonborn"])
+``` 
+
+`Is Elf part of creatures?       true`
+`Is Dragonborn part of creatures?        nil`
+
+
+> In a lot of cases *nil* will give you the same result as *false*
+{.is-info}
 
 #### 4\. Tables within tables
-- tables in tables
+
+Tables are very 
+
+###### Example 1
+
+local spells = {
+    ["fire"] = {
+        "Fireball",
+        "Flame Strike",
+        "Wall of Fire"
+    },
+    ["ice"] = {
+        "Ice Storm",
+        "Cone of Cold",
+        "Freeze"
+    }
+}
+
+
+
+###### Example 2
+
 - myEntry = {name = fijifjf, somethingElse = fhufhifh} 
 - tzhen put that in a table
 
 
 Please note that these are just some examples. Feel free to experiment and choose the type of table that fits your data
 
-### 1\. Order of execution
-
-### 2\. Variables 
-
-### 3\. A very special data structure: tables
 
 ### 4\. Scope 
 
