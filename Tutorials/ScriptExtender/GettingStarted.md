@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T20:20:48.514Z
+date: 2024-04-30T20:27:16.517Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -582,26 +582,69 @@ This also means that when a variale is instantiated within one function, it is n
 
 ```lua
 -- returns Shadowhearts UUID
-function getShartUUID()
+function getShart()
 	local shartUUID = "S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679"
   return shartUUID
 end
 
 -- prints Shadowhearts UUID
-function printShartUUID()
+function printShart()
 	print(shartUUID)
 end
 
-printShartUUID()
+printShart()
 
 ```
 
 `nil`
 
-- variable
-- function
+It is accessible again when we declare it outside of the scope of the function
 
-- dont always make them global -> reuse names
+
+```lua
+local shartUUID = "S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679"
+
+-- prints Shadowhearts UUID
+function printShart()
+	print(shartUUID)
+end
+
+printShart()
+
+```
+
+`S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679`
+
+This also means that we can reuse names as long as they exist in different scopes
+
+```lua
+
+-- returns Shadowhearts UUIS
+function getShart()
+	local uuid = "S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679"
+  return  uuid
+end
+
+-- returns Astarions UUID
+function getAstarion()
+	local uuid = "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255"
+  return uuid
+end
+
+
+print(getShart())
+print(getAstarion())
+
+```
+
+`S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c67`
+`S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255`
+
+
+If one variable is 
+- example where it doesnt get overwritten
+
+- one example where it gets overwritten
 
 #### 4.2 Scope across files
 
