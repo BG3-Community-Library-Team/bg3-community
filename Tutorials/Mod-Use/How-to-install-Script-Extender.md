@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: false
-date: 2024-04-30T11:38:02.253Z
+date: 2024-04-30T11:39:36.718Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -149,7 +149,7 @@ Norbyte himself has also made a warning, which unfortunately gets surpressed by 
 
 (Screenshot) 
 
-> Devel version is for Norbyte only, and if a mod author is working on something using SE, and Norbyte personally tells the mod author "oh hey, this is on the devel version set to release in this update, so go on the devel version to use this function."
+> Devel version is for Norbyte and experienced mod authors only. Usually that is if a mod author is working on something using SE, and Norbyte personally tells the mod author "oh hey, this is on the devel version set to release in this update, so go on the devel version to use this function."
 {.is-warning}
 
 
