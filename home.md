@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2024-04-30T22:25:04.941Z
+date: 2024-04-30T22:26:00.373Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -49,26 +49,26 @@ This is the BG3 Modding Community Wiki. This space is a place where tutorials, r
 ## Tutorials
 ### Pages {.tabset}
 #### General
-- [Modder's Guide to Git](Tools/modders-guide-to-git)
-- [Setting up a Development Environment](setting-up-a-dev-environment)
-- [LIST:Mod-Use](Mod-Use)
+- [Modder's Guide to Git](Tutorials/Tools/modders-guide-to-git)
+- [Setting up a Development Environment](Tutorials/setting-up-a-dev-environment)
+- [LIST:Mod-Use](Tutorials/Mod-Use)
 {.links-list}
 
 #### Classes
-- [Basic Class Creation](Basic-Class-Creation)
+- [Basic Class Creation](Tutorials/Basic-Class-Creation)
 {.links-list}
 
 #### Frameworks
-- [Compatibility Framework Usage](Mod-Frameworks/compatibility-framework)
-- [Oath Framework Usage](Mod-Frameworks/oath-framework-usage)
-- [Tag Framework Usage](Mod-Frameworks/using-tag-framework)
-- [Inspiration Framework Usage](Mod-Frameworks/using-inspiration-framework)
+- [Compatibility Framework Usage](Tutorials/Mod-Frameworks/compatibility-framework)
+- [Oath Framework Usage](Tutorials/Mod-Frameworks/oath-framework-usage)
+- [Tag Framework Usage](Tutorials/Mod-Frameworks/using-tag-framework)
+- [Inspiration Framework Usage](Tutorials/Mod-Frameworks/using-inspiration-framework)
 {.links-list}
 
 #### Script Extender
-- [Getting Started with Script Extender](ScriptExtender/GettingStarted)
+- [Getting Started with Script Extender](Tutorials/ScriptExtender/GettingStarted)
 {.links-list}
 
 #### Visual
-- [Creating a Hair Mod](Visual/Creating-A-Hair-Mod)
+- [Creating a Hair Mod](Tutorials/Visual/Creating-A-Hair-Mod)
 {.links-list}
