@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T22:00:42.987Z
+date: 2024-05-01T22:11:21.683Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -834,13 +834,13 @@ In this case we name our parameter `companion`. You can use any name you like as
 local function printKarlachOrLaezel(companion)
 
 	if companion == "Karlach" then
-		print("S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c")
+		  print("S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c")
     
   elseif companion == "Laezel" then
  	 	print("S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12")
     
   else
-  	print("Not Karlach or Laezel")
+  	  print("Not Karlach or Laezel")
   end
 end
 
@@ -859,13 +859,13 @@ end
 local function printKarlachOrLaezel(companion)
 
 	if companion == "Karlach" then
-		print("S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c")
+		  print("S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c")
     
   elseif companion == "Laezel" then
  	 	print("S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12")
     
   else
-  	print("Not Karlach or Laezel")
+  	  print("Not Karlach or Laezel")
   end
 end
 
@@ -1236,6 +1236,11 @@ printArraylike(myTable)
 
 
 ### 8\. Debugging using print statements
+
+how to find
+- which line has the error? 
+- what do the error messages mean?
+- why might the lines not mean much? (eg: ) missing but actually wrong use of Listener
 
 ### 9\. A brief introduction to metatables
 
