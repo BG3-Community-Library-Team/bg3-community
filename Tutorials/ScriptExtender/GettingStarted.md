@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T16:16:24.915Z
+date: 2024-05-01T16:17:44.021Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1110,9 +1110,9 @@ end
 
 ```
 
-`Either x or y are 1` 
+`Either x or y are 1`  (wrong output!)
 
-Even though when reading the statement `if 1 == x or y then` out loud, it might seem like we are comparing both `x` and `y` to `1`, we are not. We are comparing `x` to `1` and checking if `y` somply exists. 
+Even though when reading the statement `if 1 == x or y then` out loud, it might seem like we are comparing both `x` and `y` to `1`, we are not. We are comparing `x` to `1` and checking if `y` simply exists. 
 
 Your variables always have to be compared to the desired value 
 
@@ -1127,9 +1127,8 @@ end
 
 ```
 
-` ` (empty output) 
+` ` (empty output - correct!) 
 
--- using multiple conditions in an if statement and the pitfalls (if x == y and z -> z is always true when it exists)
 
 -- elseif
 
