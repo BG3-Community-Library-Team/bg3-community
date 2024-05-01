@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T08:40:04.413Z
+date: 2024-05-01T08:45:44.549Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -104,7 +104,7 @@ On Windows 11, right click the folder “MySEMod” after unzipping and click �
 
 This will open your folder in your editor. You will find a few files here already. 
 
-Navigate to to *BootstrapServer.lua* 
+Navigate to to `BootstrapServer.lua`
 
 ![](https://lh7-us.googleusercontent.com/tqoF0Aj51oHiApBmLQmI573TEnmElxHsqRPqrVNBQp00vwEVQpRKsnBmBv3XqxdExOTTzJuzfPpD6YXJsenAUk0YODbxn3ab2LD96nROVlldWv8W5XqIydpt5myyIbyayWM2pemVZs8w-kKx_wuLbrs)
 
@@ -192,7 +192,7 @@ This will reset the console and all loaded scripts, allowing you to see instant 
 You might have already noticed that you can create multiple files in your workspace.
 This often helps to break down your project and make it easier to navigate. 
 Let us create a new file by right clicking on the folder "Server" and clicking "New File".
-We will name this file "MySecondSEScript.lua".
+We will name this file `MySecondSEScript.lua`.
 
 
 **Step 1:** Right click on "Server"
@@ -201,7 +201,7 @@ We will name this file "MySecondSEScript.lua".
 **Step 2:** Click "New File"
 ![gswse_22.png](/tutorials/getting_started_with_se/gswse_22.png =800x500)
 
-**Step 3:** Enter the name "MySecondSEScript.lua"
+**Step 3:** Enter the name `MySecondSEScript.lua`
 
 ![gswse_24.png](/tutorials/getting_started_with_se/gswse_24.png =800x500)
 
@@ -209,7 +209,7 @@ We will name this file "MySecondSEScript.lua".
 {.is-info}
 
 
-**Step 4:** Add the new file to *BootstrapServer.lua*
+**Step 4:** Add the new file to `BootstrapServer.lua`
 
 
 ![gswse_28.png](/tutorials/getting_started_with_se/gswse_28.png =800x400)
@@ -241,7 +241,7 @@ If you don't know what a function is, you might want to read through this. If yo
 > to better familiarize yourself with them
 {.is-info}
 
-Use the example mod "MySEMod" to follow along by typing in "MyFirstSEScript.lua" and resetting the console to see the changes.
+Use the example mod "MySEMod" to follow along by typing in `MyFirstSEScript.lua` and resetting the console to see the changes.
 
 ### 1\. Order of execution
 
@@ -301,7 +301,7 @@ print("Astarions ID is ", astarion)
 You might have heard of some data strucutres like "arrays" or "lists" before.
 In Lua we use a so called "table" for all of these instances.
 
-> Paste the following function at the top of your *MyFirstSEScript.lua*  so you can use it
+> Paste the following function at the top of your `MyFirstSEScript.lua`  so you can use it
 {.is-info}
 
 ```lua
@@ -318,7 +318,7 @@ Example usage:
 printMyTable(myTable)
 ```
 
-> To see the changes in your tables, use the *printMyTable* function after every change!
+> To see the changes in your tables, use the `printMyTable` function after every change!
 {.is-info}
 
 #### 1\. The basics
@@ -371,7 +371,7 @@ table.remove(myTable, 1)
 #### 2\. Iterating over a table
 
 To be able to access all components, we want to iterate over the tables.
-This is what we are doing in the *printMyTable *function.
+This is what we are doing in the `printMyTable` function.
 
 
 ```lua
@@ -693,12 +693,12 @@ print(karlach)
 
 #### 4.2 Scope across files
 
-if you have followed **5. Creating multiple files** then you have two files in your "Server". *MyFirsSEScript.lua* and *MySecondSEScript.lua*
+if you have followed **5. Creating multiple files** then you have two files in your "Server". `MyFirsSEScript.lua` and `MySecondSEScript.lua`
 
 Not all variables and functions that you create in one file will be visible in the other one.
 
 
-Create a variable in  *MyFirsSEScript.lua*
+Create a variable in  `MyFirsSEScript.lua`
 
 ```lua
 -- MyFirstSEScript.lua
@@ -706,7 +706,7 @@ Create a variable in  *MyFirsSEScript.lua*
 local gale =  "S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604"
 ```
 
-Try to access it in  *MySecondSEScript.lua*
+Try to access it in  `MySecondSEScript.lua`
 
 ```lua
 -- MySecondSEScript.lua
@@ -717,10 +717,10 @@ print(gale)
 `nil`
 
 
-Because of the *local* keyword, the variable is not accessible in other files.
-For that we have to make it a global variable by omitting the *local* keyword.
+Because of the `local` keyword, the variable is not accessible in other files.
+For that we have to make it a global variable by omitting the `local` keyword.
 
-Create a variable in  *MyFirsSEScript.lua*
+Create a variable in  `MyFirsSEScript.lua`
 
 ```lua
 -- MyFirstSEScript.lua
@@ -728,7 +728,7 @@ Create a variable in  *MyFirsSEScript.lua*
 Gale =  "S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604"
 ```
 
-Try to access it in  *MySecondSEScript.lua*
+Try to access it in  `MySecondSEScript.lua`
 
 ```lua
 -- MySecondSEScript.lua
@@ -744,7 +744,7 @@ print(Gale)
 The same rules appy to functions
 
 
-Create a function in  *MyFirsSEScript.lua*
+Create a function in  `MyFirsSEScript.lua`
 
 ```lua
 -- MyFirstSEScript.lua
@@ -754,7 +754,7 @@ local function getWyll()
 end
 ```
 
-Try to access it in  *MySecondSEScript.lua*
+Try to access it in  `MySecondSEScript.lua`
 
 ```lua
 -- MySecondSEScript.lua
@@ -769,7 +769,7 @@ print(getWyll())
 
 Here we have to make the function global as well to access it from other files
 
-Create a function in  *MyFirsSEScript.lua*
+Create a function in  `MyFirsSEScript.lua`
 
 ```lua
 -- MyFirstSEScript.lua
@@ -779,7 +779,7 @@ function GetWyll()
 end
 ```
 
-Try to access it in  *MySecondSEScript.lua*
+Try to access it in  `MySecondSEScript.lua`
 
 ```lua
 -- MySecondSEScript.lua
@@ -808,8 +808,8 @@ print(GetWyll())
 Lua is a very flexible language. Through its usage of tables multiple OOP concepts like Inheritance can be realized.
 Here we will talk about *Metatables* which is the Lua equivalent of *Objects*.
 
-For this section we will rename *MyFirstSEScript.lua* to *Main.lua* and 
-*MySecondSEScript.lua* to *Companion.lua*  , to better showcase this principle.
+For this section we will rename `MyFirstSEScript.lua` to `Main.lua` and 
+`MySecondSEScript.lua` to `Companion.lua`  , to better showcase this principle.
 
 
 
