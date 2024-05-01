@@ -2,7 +2,7 @@
 title: How to install manual/loose file mods
 description: 
 published: false
-date: 2024-05-01T02:06:38.773Z
+date: 2024-05-01T02:17:22.191Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-01T01:34:11.948Z
@@ -39,9 +39,30 @@ For Unique Tav which also have a loose file aspect, look through this guide inst
 
 Nexus Website: https://www.nexusmods.com/baldursgate3
 
-For this guide, Coven Elf tattoo and make up mod will be the example. 
+For this guide, Coven Elf tattoo and make up mod will be the example: https://www.nexusmods.com/baldursgate3/mods/1684?tab=description
 
 You will need to press on "manual download" as highlighted below. Do not press "download with mod manager" if there is such an option. That is for vortex and through a mod manager, which is not recommended with loose file mods. 
 
 ![firstmanualinstallpng.png](/tutorials/install_manual_mods/firstmanualinstallpng.png =x300)
+
+It should show up as a zip, 7zip or a rar file. In this case, it is a rar file. 
+
+Now extract it in your downloads folder: 
+
+![extract.png](/tutorials/install_manual_mods/extract.png =x250)
+
+![extraction.png](/tutorials/install_manual_mods/extraction.png)
+
+When you have done this, just delete the rar, zip or 7zip file. 
+
+You should now end up with a folder called the exact same as the zip, rar or 7zip file. It may also come out called "Generate", "Bin", "Data" or "Public". 
+
+If the folder is called the same thing as the file you just extracted, you need to go one folder deeper until you find either "Generated", "Public" or "Data" or "Bin". 
+
+"Generated" and "Public" act the same. 
+"Data" and "Bin" act the same as well. 
+
+Later on the guide, it will tell you what the differences are. 
+
+
 
