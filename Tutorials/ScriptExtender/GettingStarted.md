@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T20:41:06.221Z
+date: 2024-05-01T21:02:12.742Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1182,6 +1182,45 @@ end
 `3`
 `4`
 `5`
+
+We usually do not want to iterate for a set amount of loops, but base it on a table.
+using `#tableName` you can get the size of a table. 
+
+
+```lua
+
+local myTable =  {"Cheese", "Bread", "Wine"}
+
+for _,food in pairs(myTable) do
+	print(food)
+end
+
+```
+
+`Cheese`
+`Bread`
+`Wine`
+
+Of course you can also use this in a function
+
+```lua
+
+local myTable =  {"Cheese", "Bread", "Wine"}
+
+
+-- prints the content from an array like table
+local printArrylike(table)
+  for _,content in pairs(content) do
+    print(content)
+  end
+end
+
+```
+
+`Cheese`
+`Bread`
+`Wine`
+
 
 - nested loops
 
