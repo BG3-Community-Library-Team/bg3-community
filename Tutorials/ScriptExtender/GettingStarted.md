@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T07:48:48.386Z
+date: 2024-05-01T07:57:29.076Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -794,9 +794,24 @@ print(GetWyll())
 {.is-info}
 
 
+#### 4.3 A brief introduction to metatables
+
+
+
+
+> This section is about a slightly advanced topic. Feel free to skip it if it sounds too complicated.
+> It can be helpful to come back here when your projects grow in size since we discuss one concept of 
+> Object-Oriented-Programming (OOP) - read more here:  https://en.wikipedia.org/wiki/Object-oriented_programming
+{.is-warning}
+
+
+Lua is a very flexible language. Through its usage of tables multiple OOP concepts like Inheritance can be realized.
+
+
+
+
 <span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
 
-#### 4.3 A brief introduction to metatables
 
 ### 5\. Functions
 
