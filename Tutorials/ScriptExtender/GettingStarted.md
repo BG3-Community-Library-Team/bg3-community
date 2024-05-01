@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T15:53:12.770Z
+date: 2024-05-01T15:55:46.460Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -985,11 +985,25 @@ end
 > That is why "Astarion" evaluates to true
 {.is-info}
 
-`condition` has to evaluate to `false` for the code underneath the if statement to be executed.
+If `condition` evaluates to `false` then the code underneath the if statement is not executed.
 Here are some examples for conditions that evaluate to `false`
 
+```lua
 
-> In Lua, when a value does not exist, it will automatically evaluate to false
+if 0 == 1 then
+	print("0 is indeed equal to 1")
+end
+
+if nil then
+	print("Astarion exists")
+end
+```
+
+` ` (empty output)
+
+
+> In Lua, when a value does not exist, it will automatically evaluate to false.
+>  Since `nil` means nothing, our condition evaluates to false
 {.is-info}
 
 To be able to use your if statement flexibly, you do not want to predefine the condition
