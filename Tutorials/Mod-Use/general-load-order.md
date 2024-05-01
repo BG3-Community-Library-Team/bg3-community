@@ -1,0 +1,75 @@
+---
+title: General Load Order Guide
+description: Setting up a solid Load Order
+published: true
+date: 2024-05-01T03:29:26.549Z
+tags: moduse, mod use
+editor: markdown
+dateCreated: 2024-05-01T03:29:26.549Z
+---
+
+# General Load Order
+This guide will give a general overview of how to handle Mod Load Orders. It's not meant to be a strict prescription, but it will assist in ensuring your load order has minimal issues, and is easier to troubleshoot.
+
+> Do not load these entries:
+> - Honour.pak
+> - DiceSet_06.pak
+<!-- {blockquote:.is-danger} -->
+
+> A note on Mod Load Order: There are a lot of ways people reference the order in which mods load. You'll often hear things like:
+> - Higher/Lower on your Load Order
+> - Earlier/Later on your Load Order
+> - Biggest/Smallest Number
+> - Top/Bottom of your Load Order
+>
+> The most important think to be aware of is that the lower the number, the earlier a mod loads. To that end, I recommend talking about Load Order in terms of Early to Late loading mods, to clear up confusion. 0 is the Earliest mod to load, and mnods loaded later than other mods may overwrite the earlier mod's changes. 
+<!-- {blockquote:.is-info} -->
+
+
+
+### Early Loaders
+The first types of mods you shoul have on your list are Library mods and Single-Purpose SE mods.
+
+Library Mods are mods that are relied on by other mods. Examples include 5eSpells, Unlock Level Curve, Community Library, and Vlad's Grimoire.
+Single-purpose SE mods are mods that are standalone, and limited in scope. Examples include Loz's Autosave mods, and KvCampEvents.
+
+### New Items/Spells/Actions and Fixes
+Mods that provide playable actions, items, and dyes, and Mods that fix base-game content and/or affect general gameplay (ex. Concentration Failsafe, Shields Overhaul)
+
+### Expanded Content
+Mods provide new content to existing structures (ex. FeatsExtra, Metamagic Extended, WildMagicD100)
+
+> I recommend ordering these by type
+{.is-info}
+
+
+These types of mods also fall under this category:
+- Additional Feats
+- Additional Races/Subraces
+- Additional Classes
+- Additional Subclasses (organized by main class)
+
+### Visual Mods
+Mods that provide new visual options.
+
+> I recommend ordering these by type
+{.is-info}
+
+Examples of these include:
+- Skin/Hair/Eye Color mods
+- Custom Hairs
+- Custom Cosmetics
+- Custom Heads
+- Custom Dice
+
+### Late Loaders
+These types of mods should _always_ be near the bottom of your load order. They either overwrite existing content, or rely on the existence of other content.
+
+
+> Minor patches should go closer to their primary mods - like the WarlockUndead5eSpells patch should go next to WarlockUndead
+{.is-info}
+
+Examples of Late Loaders include:
+- Mods that consist only of Compatibility Framework insertions (so the Feat Every 2/3 levels - Compatibility Framework version, for example)
+- Major patch mods (ex. Patches for CC Races, Spell List Combiner, Compatibility Framework)
+- Compatibility Framework is last to load
