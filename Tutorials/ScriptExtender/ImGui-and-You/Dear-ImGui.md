@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-01T21:42:52.416Z
+date: 2024-05-01T22:27:34.040Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -131,18 +131,34 @@ For us to use it we need to add the ``AddText()`` function to our ``MyWindow`` o
 --AddText() requires a string as a parameter!
 MyWindow:AddText("Hello World")
 ```
-This will in return make use of the TreeParent class, which in this case is MyWindow and create a new StyledRenderable object within it called a Text, which is itself of the class ImguiHandle
 This should make your window say "Hello World"
 
 We can also make it in form of a button:
-
 
 ```lua
 --AddButton() requires a string as a parameter!
 MyWindow:AddButton("Hello World")
 ```
-MyWindow is the parent, we add a StyledRenderable to it which itself calls the function for a button ImguiHandle object to be added.
 This should make your window have a button which says "Hello World" on it.
+
+You may have done this by either editing the previous text to be a button or create a new line.
+
+If you did the latter you should notice that it is now listed underneath the previously created text.
+
+Try out a few others but skip AddTabbar(), AddTree(), AddGroup() and AddTable() for now, as making use of these is slightly more advanced.
+For some, you might see an error pop up in the ScriptExtender console.
+> If you are unsure on how to Debug these errors, check out the "Debugging using print statements" section within the ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) Guide.
+{.is-danger}
+
+
+## **4\. Taking tabs on Tabbars**
+
+
+
+Tabbars. If you ever used a internetbrowser like Chrome or Firefox before you know what Tabs are. 
+In ImGui its they are similar but we need to do a few specific things to make them work.
+
+First of all, to even be able to create a bunch of tabs, we first need to create a Tab Bar.
 
 
 
