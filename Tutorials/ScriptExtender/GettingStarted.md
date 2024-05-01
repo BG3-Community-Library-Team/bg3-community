@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T08:45:44.549Z
+date: 2024-05-01T08:52:12.565Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -823,9 +823,11 @@ For this section we will rename `MyFirstSEScript.lua` to `Main.lua` and
 {.is-info}
 
 
-in *Companion.lua*  we will now build a *Companion*
+in `Companion.lua`  we will now build a `Companion`
+First we have to create our metatable
 
 ```lua
+
 
 -- Companion.lua
 
@@ -834,9 +836,16 @@ in *Companion.lua*  we will now build a *Companion*
 Companion = {}
 Companion.__index = Companion
 
----@param name STRING
----@param healt int
----@parma class STRING
+```
+
+Now we have to decide what kind of components we need to give a companion when we create them
+
+
+```lua
+
+---@param name string
+---@param health int
+---@param class string
 function Companion:new(name, health, class)
     local instance = setmetatable({
         name = name,
@@ -846,36 +855,163 @@ function Companion:new(name, health, class)
     return instance
 end
 
+```
 
--- components of a companion
+If there are any additional components of a `Companion` we can add them now
 
-local name
-local health
-local class
+```lua
+-- constants (you could also make this global since you should never change this)
+
+local allowedClasses = {
+    Barbarian = true,
+    Bard = true,
+    Cleric = true,
+    Druid = true,
+    Fighter = true,
+    Monk = true,
+    Paladin = true,
+    Ranger = true,
+    Rogue = true,
+    Sorcerer = true,
+    Warlock = true,
+    Wizard = true
+}
+
+```
 
 
--- methods of a companion
+> For the simplicity of this example we do not check for allowed classes when creating a companion
+{.is-info}
+
+We also want to access the components of our `Companion` 
+
+```lua
+-- getters methods
+
+-- returns the companions name
+---@return name string
+function Companion:getName()
+    return self.name
+end
 
 
----@return integer bool
-local getCompanion()
+-- returns the companions health
+---@return health int
+function Companion:getHealth()
+    return self.health
+end
 
-local getCompanionName()
+-- returns the companions class
+---@return class string
+function Companion:getClass()
+    return self.class
+end
 
-local getCompanionHealth()
+```
 
-local getCompanionClass()
+And we want to modify our companions
+
+```lua
+
+-- methods for modifying companions
+
+-- increases the companions health
+---@param healAmount int    - the amount by what the companion should be healed
+function Companion:heal(healAmount)
+    -- We can only heal someone is the healAmount is larger than 0
+    if healAmount > 0 then 
+        self.health = self.health + healAmount
+        print(self.name , " has been healed for ", healAmount)
+        print("their health has increased to ", self.health)
+    else
+        print("Negative healAmounts are not allowed")
+    end
+end
 
 
-local healCompanion(companion, healAmount)
-local killCompanion(companion)
-
-
+-- changes the companions class
+---@param class string  - the new class of the companion 
+function Companion:respec(newClass)
+    -- check if the class is in allowedClasses
+    if allowedClasses[newClass] then
+        self.class = newClass
+        print(self.name, " has changed their class to ", self.class)
+    else 
+        print(newClass, " is not an allowed class")
+    end
+end
 
 
 
 ```
 
+
+
+-- Main.lua
+
+
+-- Creating a companion named Astarion
+local astarion = Companion:new("Astarion", 100, "Rogue")
+
+-- Creating another companion named Gale
+local gale = Companion:new("Gale", 120, "Wizard")
+
+-- Retrieving the companions' components
+print("Astarion - Name:", astarion:getName(), "Health:", astarion:getHealth(), "Class:", astarion:getClass())
+
+print("Gale - Name:", gale:getName(), "Health:", gale:getHealth(), "Class:", gale:getClass())
+
+
+-- Healing a companion
+print("Before healing, Astarion's health:", astarion:getHealth())
+astarion:heal(20)
+print("After healing, Astarion's health:", astarion:getHealth())
+
+-- Trying to heal a companion with negative health
+print("Before healing, Gale's health:", gale:getHealth())
+gale:heal(-50)
+print("After attempting negative healing, Gale's health:", gale:getHealth())
+
+-- Respeccing a companion to a legal class
+print("Astarion's class before respec:", astarion:getClass())
+astarion:respec("Paladin")
+print("Astarion's class after respec:", astarion:getClass())
+
+-- Respeccing a companion to an illegal class
+print("Gale's class before trying illegal respec:", gale:getClass())
+gale:respec("Necromancer")
+print("Gale's class after trying illegal respec:", gale:getClass())
+
+
+
+Astarion - Name:        Astarion        Health: 100     Class:  Rogue
+Gale - Name:    Gale    Health: 120     Class:  Wizard
+
+
+
+Before healing, Astarion's health:      100
+Astarion         has been healed for    20
+their health has increased to   120
+After healing, Astarion's health:       120
+
+
+
+Before healing, Gale's health:  120
+Negative healAmounts are not allowed
+After attempting negative healing, Gale's health:       120
+
+
+
+Astarion's class before respec: Rogue
+Astarion         has changed their class to     Paladin
+Astarion's class after respec:  Paladin
+
+
+
+
+Gale's class before trying illegal respec:      Wizard
+Necromancer      is not an allowed class
+Gale's class after trying illegal respec:       Wizard
 
 
 <span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
