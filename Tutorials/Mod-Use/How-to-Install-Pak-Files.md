@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: false
-date: 2024-05-01T05:21:10.433Z
+date: 2024-05-01T05:25:00.976Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -186,7 +186,7 @@ The yellow indicator is Script Extender:
 
 ![hasscriptextender.png](/tutorials/hasscriptextender.png)
 If you have a red indicator, it means you do not have Script Extender installed.
-See also: How to install Script Extender
+See also: How to install Script Extender: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender
 
 ---
 Download and install them per method above untill you get to the part of making the mods active.
