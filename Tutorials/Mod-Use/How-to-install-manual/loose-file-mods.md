@@ -2,7 +2,7 @@
 title: How to install manual/loose file mods
 description: 
 published: false
-date: 2024-05-01T01:34:11.948Z
+date: 2024-05-01T01:35:01.270Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-01T01:34:11.948Z
