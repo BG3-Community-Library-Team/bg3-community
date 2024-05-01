@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T08:57:33.718Z
+date: 2024-05-01T09:02:50.606Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -975,6 +975,8 @@ print("Gale - Name:", gale:getName(), "Health:", gale:getHealth(), "Class:", gal
 `Astarion - Name:        Astarion        Health: 100     Class:  Rogue`
 `Gale - Name:    Gale    Health: 120     Class:  Wizard`
 
+
+Healing the companions:
 ```lua
 -- Healing a companion
 print("Before healing, Astarion's health:", astarion:getHealth())
@@ -989,8 +991,14 @@ print("After attempting negative healing, Gale's health:", gale:getHealth())
 
 ```
 
-`Astarion - Name:        Astarion        Health: 100     Class:  Rogue`
-`Gale - Name:    Gale    Health: 120     Class:  Wizard`
+`Before healing, Astarion's health:      100`
+`Astarion         has been healed for    20`
+`their health has increased to   120`
+`After healing, Astarion's health:       120`
+
+`Before healing, Gale's health:  120`
+`Negative healAmounts are not allowed`
+`After attempting negative healing, Gale's health:       120`
 
 
 ```lua
