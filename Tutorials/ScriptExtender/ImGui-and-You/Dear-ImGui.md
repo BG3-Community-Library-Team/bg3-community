@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-01T20:23:33.433Z
+date: 2024-05-01T20:34:49.189Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -16,7 +16,7 @@ If you don't have any knowledge about SE please do visit the other pages first, 
 
 This tutorial assumes that you know how to install mods and create them. So please familiarize yourself with those topic on the relevant wiki pages:
 
-## 1\. File Structure  
+## 1\. Folder Structure  
 
 To have an easier time to differentiate between all of your mods scripts it is advised to think about where you want to put your ImGui scripts.
 
@@ -27,7 +27,7 @@ Meaning we might as well differentiate between them by creating an additional "C
 
 For the future, everything that has to do with ImGui itself will be within the "Client" folder and everything that has to do with the server will be in the "Server" folder.
 
-Don't forget to always add the scripts you are creating within the "Client" folder, to your BootstrapClient.lua script. Same way as the other Bootstrap script, just a different path.
+Don't forget to always add the scripts you are creating within the "Client" folder to your BootstrapClient.lua script. Same way as the other Bootstrap script, just a different path since the files will be within the "Client" folder.
 
 ## **2\. Your first window**
 
@@ -52,18 +52,17 @@ There is something, some people might not know about tho and those are "Regions"
 This will make your entire code section collapsable, which would not be a thing for ImGui since they don't count as functions which are naturally collapsable.
 So whenever you will work with a bigger section of your UI it is advised to make use of them.
 
-When the save is loaded you should see some output in your console, telling you that the session has loaded and other debug statements depending on what kind of mods you have installed:
 
-![](https://lh7-us.googleusercontent.com/iR7etzru7qjtz99vhl43MuAvDLA6rMfl3hW2YTb-szUwM_mkMwCRW7ZFs-goNRw-LRDUZtA29WRr-qjT7E7UwnhZjQ0clNq36Z0qsEhmENRD9t27Ei_hMwOFBDUB0geN0Cdi1YnWrwyqPUhpEkQQWts)
+### **2\. New File, new Me** 
+
+So you created your UI lua file and start with a clean slate.
+
+First thing we want to do is getting an actual first frame/window to work with.
+We do that by, of course, using ScriptExtender.
+
+If you followed the ScriptExtender guide, you should have an ExtIdeHelpers.lua file.
 
 
-### **2\. Activate the input** 
-
-To be able to input commands into the console press enter once.
-
-If you have too much text on your console and you cannot see your input line, you can repeat this a few times until you can see the *S >>* 
-
-![](https://lh7-us.googleusercontent.com/QYtqY_84Nny8EeUPFTFzwi820yZ6LzxKsrUYgjnTUOMTcCVVdTcxgKqlYcKeeoQqh-DS7DJA7iwSm5UzYZ0Imj6zZJL4SW-tdXR_IfOj9kdphcgJVzGBKc0U608-PmNwpWZLO31cxUdSPndT_jo0y48)
 
 
 ### **3\. Basic inputs**
