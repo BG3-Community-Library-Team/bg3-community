@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T08:52:12.565Z
+date: 2024-05-01T08:57:33.718Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -838,7 +838,8 @@ Companion.__index = Companion
 
 ```
 
-Now we have to decide what kind of components we need to give a companion when we create them
+Now we have to decide what kind of components we need to give a companion when we create them.
+We are simply going to choose *name*, *health* and *class*
 
 
 ```lua
@@ -857,7 +858,8 @@ end
 
 ```
 
-If there are any additional components of a `Companion` we can add them now
+If there are any additional components of a `Companion` we can add them now.
+Here I chose to add all classes in BG3 as a set like table.
 
 ```lua
 -- constants (you could also make this global since you should never change this)
@@ -945,10 +947,12 @@ end
 
 ```
 
+Now that our `Companion` class is done, we can use it in `Main.lua`. Below you can see a few examples but feel free to experiment.
 
+Creating the companions:
 
+```lua
 -- Main.lua
-
 
 -- Creating a companion named Astarion
 local astarion = Companion:new("Astarion", 100, "Rogue")
@@ -956,12 +960,22 @@ local astarion = Companion:new("Astarion", 100, "Rogue")
 -- Creating another companion named Gale
 local gale = Companion:new("Gale", 120, "Wizard")
 
+```
+
+Retrieving their components:
+
+```lua
 -- Retrieving the companions' components
 print("Astarion - Name:", astarion:getName(), "Health:", astarion:getHealth(), "Class:", astarion:getClass())
 
 print("Gale - Name:", gale:getName(), "Health:", gale:getHealth(), "Class:", gale:getClass())
 
 
+```
+`Astarion - Name:        Astarion        Health: 100     Class:  Rogue`
+`Gale - Name:    Gale    Health: 120     Class:  Wizard`
+
+```lua
 -- Healing a companion
 print("Before healing, Astarion's health:", astarion:getHealth())
 astarion:heal(20)
@@ -972,6 +986,14 @@ print("Before healing, Gale's health:", gale:getHealth())
 gale:heal(-50)
 print("After attempting negative healing, Gale's health:", gale:getHealth())
 
+
+```
+
+`Astarion - Name:        Astarion        Health: 100     Class:  Rogue`
+`Gale - Name:    Gale    Health: 120     Class:  Wizard`
+
+
+```lua
 -- Respeccing a companion to a legal class
 print("Astarion's class before respec:", astarion:getClass())
 astarion:respec("Paladin")
@@ -982,36 +1004,20 @@ print("Gale's class before trying illegal respec:", gale:getClass())
 gale:respec("Necromancer")
 print("Gale's class after trying illegal respec:", gale:getClass())
 
-
-
-Astarion - Name:        Astarion        Health: 100     Class:  Rogue
-Gale - Name:    Gale    Health: 120     Class:  Wizard
-
-
-
-Before healing, Astarion's health:      100
-Astarion         has been healed for    20
-their health has increased to   120
-After healing, Astarion's health:       120
-
-
-
-Before healing, Gale's health:  120
-Negative healAmounts are not allowed
-After attempting negative healing, Gale's health:       120
-
-
-
-Astarion's class before respec: Rogue
-Astarion         has changed their class to     Paladin
-Astarion's class after respec:  Paladin
+```
 
 
 
 
-Gale's class before trying illegal respec:      Wizard
-Necromancer      is not an allowed class
-Gale's class after trying illegal respec:       Wizard
+`Astarion's class before respec: Rogue`
+`Astarion         has changed their class to     Paladin`
+`Astarion's class after respec:  Paladin`
+
+
+
+`Gale's class before trying illegal respec:      Wizard`
+`Necromancer      is not an allowed class`
+`Gale's class after trying illegal respec:       Wizard`
 
 
 <span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
