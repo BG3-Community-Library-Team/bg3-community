@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-01T04:28:04.251Z
+date: 2024-05-01T04:31:45.816Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -94,6 +94,12 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_GLO_PaladinOathbreakerPath_WaitForDialog|?|1|Dialog Resource|--|--|--|--|
 |DB_GLO_OathbreakerKnight_StartFirstAppearanceWith|?|1|?|--|--|--|--|
 |DB_GLO_PaladinOathbreaker_Oathbreakers|List of Oathbreakers|1|Character UUID|--|--|--|--|
+|DB_GLO_PaladinOathbreaker_SinsAndCrimeTypes|Sins and Crime Types that can proc an Oath-break|1|Flag String ID|--|--|--|--|
+|DB_GLO_PaladinOathbreaker_GenericCrimes|Generic Crimes that can proc an Oath-break|1|Flag String ID|--|--|--|--|
+|DB_GLO_PaladinOathbreaker_ProtectedNPCs|List of protected NPCs relating to Oath Breaking|1|Character UUID|--|--|--|--|
+|DB_GLO_PaladinOathbreaker_SubclassTags|Link between Subclass Tag and Oath-Breaker Subclass Tag|2|Subclass Tag UUID|Oathbreaker Subclass Tag UUID|--|--|--|
+|DB_GLO_PaladinOathbreaker_SubclassOathBrokenFlags|Link between Subclass Tag and Oath Broken Flag UUID|2|Broken Oath Flag|Subclass Tag UUID|--|--|--|
+|DB_GLO_PaladinOathbreaker_EvilTags|Tags that prevent an Oath-break|1|Tag UUID|--|--|--|--|
 
 ## Combat
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
