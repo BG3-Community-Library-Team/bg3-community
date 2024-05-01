@@ -2,7 +2,7 @@
 title: How to install manual/loose file mods
 description: 
 published: false
-date: 2024-05-01T04:49:57.690Z
+date: 2024-05-01T04:50:42.689Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-01T01:34:11.948Z
@@ -247,5 +247,6 @@ General Loader order guide: https://wiki.bg3.community/en/Tutorials/Mod-Use/gene
 How to install Script Extender: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender
 Clean reinstall of Script Extender: On To-Do
 
-
+Made by: Maze
+Credits: LaughingLeader, Norbyte, Kaz, NellsRelo, Arrow, DefinitiveToast
 
