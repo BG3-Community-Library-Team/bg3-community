@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-01T00:04:18.298Z
+date: 2024-05-01T04:14:14.258Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -23,6 +23,11 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_AnubisConfigOverride_UpdatedConfig|?|1|Integer|--|--|--|--|
 |DB_AnubisConfigs_CharacterSavedStates|?|2|Character UUID|State|--|--|--|
 
+### Query Returns
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
+|-----|----|----|----|----|----|
+|DB_QRYRTN_AnubisConfigOverrideIndex|?|1|?|--|--|
+
 ## Buried Treasures
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
@@ -30,6 +35,21 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_Shovel_ChestMoundType|Types of Chest Mounds|4|Integer|Integer|Mound UUID|Behavior UUID|--|
 |DB_ShovelArea|?|2|Object UUID|Object UUID|--|--|--|
 |DB_Shovelling_Mound|?|4|?|?|Object UUID|?|--|
+
+## Character Creation
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_CharacterCreationDummy|?|Character UUID|--|--|--|--|
+|DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
+|DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
+|DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
+|DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
+|DB_TUT_CharacterCreation_InitialShown|?|1|Integer|--|--|--|--|
+
+### Query Returns
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
+|-----|----|----|----|----|----|
+|DB_QRYRTN_TUT_CharacterCreation_GetUserDummy|?|1|?|--|--|
 
 ## Character Management
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -45,7 +65,17 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_InCamp|List of Characters Currently in Camp|1|Character UUID|--|--|--|--|
 |DB_InDangerZone|List of Characters in a Danger Zone|2|Character UUID|?|--|--|--|
 |DB_InRegion|List of Characters currently in region|2|Character UUID|Region String ID|--|--|--|
+|DB_IsOrWasInParty|List of Characters that have been in Party|1|Character UUID|--|--|--|--|
 |DB_Dead|List of Dead Characters|1|Character UUID|--|--|--|--|
+|DB_PlayerSummons|List of Characters Summoned by Player|1|Character UUID|--|--|--|--|
+|DB_PartyFollowers|List of Party Followers|1|Character UUID|--|--|--|--|
+|DB_TutorialCompanion|List of Tutorial Companions|1|Character UUID|--|--|--|--|
+
+
+### Query Returns
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
+|-----|----|----|----|----|----|----|----|
+|DB_QRYRTN_GetCharacterOwnerIfItemSummon|?|1|?|--|--|
 
 ## Combat
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -71,14 +101,32 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_GLO_Combat_PermanentlyHostile|?|1|UUID|--|--|--|--|
 |DB_EnterCombatRequested|?|1|UUID String|--|--|--|--|
 
+### Query Returns
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
+|-----|----|----|----|----|----|
+|DB_QRYRTN_CombatFlee_FoundFleeWaypoint|?|3|Character UUID|UUID|?|
+
+## Crime
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_CRIME_WaitingForDialogStop|?|2|?|Integer|--|--|--|
+
 ## Dialog
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
-|DB_DialogName|?|2|?|?|--|--|--|
-|DB_DialogNPCs|?|3|?|UUID|?|--|--|
+|DB_AutomatedDialog|?|1|Integer|--|--|--|--|
+|DB_AutomatedDialogIsVB|?|1|Integer|--|--|--|--|
+|DB_DialogDeath|?|1|Character UUID|--|--|--|--|
+|DB_DialogEnding|?|2|DialogResource|Integer|--|--|--|
+|DB_DialogName|?|2|DialogResource|Integer|--|--|--|
+|DB_DialogNumPlayers|Amount of Players in a Dialog|2|Integer|Dialog Resource|--|--|--|
+|DB_DialogNumNPCs|Amount of NPCs in a Dialog|2|Integer|Dialog Resource|--|--|--|
+|DB_DialogNPCs|List of NPCs in a Dialog|2|Integer|Dialog Resource|--|--|--|
+|DB_DialogPlayers|List of Players in a Dialog|3|Integer|UUID String|?|--|--|
+|DB_DialogRequestFailed|?|2|DialogResource|Integer|--|--|--|
+|DB_DialogSpeakers|List of Spekaers in a Dialog|3|Integer|UUID String|?|--|--|
 |DB_OnDialogAttackRequested|?|3|Character UUID|Character UUID|Integer|--|--|
 |DB_InteractiveDialogSpeaker|?|2|Integer|?|--|--|--|
-|DB_DialogDeath|?|1|Character UUID|--|--|--|--|
 
 ## Game Management
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -89,7 +137,12 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_LogicOr|?|3|Integer|Integer|Integer|--|--|
 |DB_GLO_DieFlag|?|4|UUID|UUID|Integer|UUID|--|
 |DB_GLO_ItemInventoryLockFlag|?|3|UUID|UUID|UUID|--|--|
+|DB_GLO_SetupForAct_CurrentLevel|?|1|Level ID|--|--|--|--|
 |DB_IsEditor|(Non-functional) If in Editor Gamemode|1|Integer as Boolean|--|--|--|--|
+|DB_ZZZ_LevelLoaded|?|1|Level ID String|--|--|--|--|
+|DB_LevelLoadedOnce|?|1|Level ID String|--|--|--|--|
+|DB_LevelGameplayLoadedOnce_WaitForGameplay|?|1|String|--|--|--|--|
+|DB_CharacterCreationStarted|Has Character Creation Started?|1|?|--|--|--|--|
 
 ## Location
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -104,31 +157,21 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 ## Misc
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
+|DB_CustomUseItemResponse|?|3|Character UUID|?|Integer|--|--|
 
 ## Origins
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
-|DB_PredefinedStartOrigin|?|1|UUID|||||
-|DB_Origins_UnavailableForRandom|?|1|UUID|||||
-|DB_RandomizeStartOrigin|?|1|Integer|||||
-|DB_CharacterCreationStarted|?|1|Integer|||||
-|DB_Origins|List of Origin Character UUIDs|1|UUID|||||
-|DB_Origins_Random|?|1|UUID|||||
-|DB_RandomStartOrigin|?|1|UUID|||||
-|DB_CharacterCreation_FirstDummy|?|1|UUID|||||
-|DB_CharacterCreation_FirstDummy|?|1|UUID|||||
-|DB_CharacterCreation_FirstDummy|?|1|UUID|||||
-|DB_CharacterCreation_FirstDummy|?|1|UUID|||||
-|DB_ChosenOriginWaitingForTeleport|?|||||||
-|DB_GLO_PlayerCharactersSetup|?|||||||
-|DB_PredefinedStartOrigin|?|||||||
-
-## Query Returns
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
-|-----|----|----|----|----|----|----|----|
-|DB_QRYRTN_AnubisConfigOverrideIndex|?|1|?|--|--|--|--|
-|DB_QRYRTN_GetCharacterOwnerIfItemSummon|?|1|?|--|--|--|--|
-|DB_QRYRTN_CombatFlee_FoundFleeWaypoint|?|3|Character UUID|UUID|?|--|--|
+|DB_PredefinedStartOrigin|?|1|UUID|--|--|--|--|
+|DB_Origins_UnavailableForRandom|?|1|UUID|--|--|--|--|
+|DB_RandomizeStartOrigin|?|1|Integer|--|--|--|--|
+|DB_CharacterCreationStarted|?|1|Integer|--|--|--|--|
+|DB_Origins|List of Origin Character UUIDs|1|UUID|--|--|--|--|
+|DB_Origins_Random|?|1|UUID|--|--|--|--|
+|DB_RandomStartOrigin|?|1|UUID|--|--|--|--|
+|DB_ChosenOriginWaitingForTeleport|?|--|--|--|--|--|--|
+|DB_GLO_PlayerCharactersSetup|?|--|--|--|--|--|--|
+|DB_PredefinedStartOrigin|?|--|--|--|--|--|--|
 
 ## Scenes
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
