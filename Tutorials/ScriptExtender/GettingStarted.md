@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T16:27:59.549Z
+date: 2024-05-01T20:28:14.773Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1156,10 +1156,37 @@ end
 
 
 
-<span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
-
 
 ### 6\. Loops
+
+Another way to make our code more interactive is by the use of **loops** to repeat certain steps.
+You have already used in if you have followed **3. A very special data structure: tables** where we used the function `printMyTable`
+to iterate over a table.
+
+There are different types of loops. Here we mostly look at. We will only cover the `for loop` here.
+They will execute their body for a set amount of iterations.
+
+```lua
+
+-- prints the count from 1 to 5
+for i = 1,5 do
+	print(i)
+end
+
+```
+
+`1`
+`2`
+`3`
+`4`
+`5`
+
+- nested loops
+
+
+
+<span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
+
 
 ### 7\. Debugging using print statements
 
