@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T15:01:40.391Z
+date: 2024-05-01T15:13:47.069Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -801,7 +801,23 @@ print(GetWyll())
 {.is-info}
 
 
-#### 4.3 A brief introduction to metatables
+
+<span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
+
+
+### 4\. Functions
+
+
+
+
+### 5\. If statements
+
+### 6\. Loops
+
+### 7\. Debugging using print statements
+
+### 8\. A brief introduction to metatables
+
 
 
 
@@ -1033,18 +1049,6 @@ print("Gale's class after trying illegal respec:", gale:getClass())
 `Gale's class before trying illegal respec:      Wizard`
 `Necromancer      is not an allowed class`
 `Gale's class after trying illegal respec:       Wizard`
-
-
-<span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
-
-
-### 5\. Functions
-
-### 6\. If statements
-
-### 7\. Loops
-
-### 8\. Debugging using print statements
 
 ## **7\. Osiris**
 
