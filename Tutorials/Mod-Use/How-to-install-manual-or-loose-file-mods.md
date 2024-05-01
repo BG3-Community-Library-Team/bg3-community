@@ -2,7 +2,7 @@
 title: How to install manual/loose file mods
 description: 
 published: false
-date: 2024-05-01T02:17:22.191Z
+date: 2024-05-01T02:27:49.991Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-01T01:34:11.948Z
@@ -41,7 +41,9 @@ Nexus Website: https://www.nexusmods.com/baldursgate3
 
 For this guide, Coven Elf tattoo and make up mod will be the example: https://www.nexusmods.com/baldursgate3/mods/1684?tab=description
 
-You will need to press on "manual download" as highlighted below. Do not press "download with mod manager" if there is such an option. That is for vortex and through a mod manager, which is not recommended with loose file mods. 
+> You will need to press on "manual download" as highlighted below. Do not press "download with mod manager" if there is such an option. That is for vortex and through a mod manager, which is not recommended with loose file mods. 
+{.is-warning}
+
 
 ![firstmanualinstallpng.png](/tutorials/install_manual_mods/firstmanualinstallpng.png =x300)
 
@@ -55,14 +57,30 @@ Now extract it in your downloads folder:
 
 When you have done this, just delete the rar, zip or 7zip file. 
 
-You should now end up with a folder called the exact same as the zip, rar or 7zip file. It may also come out called "Generate", "Bin", "Data" or "Public". 
+You should now end up with a folder called the exact same as the zip, rar or 7zip file. 
+It may also come out called "Generate", "Bin", "Data" or "Public". 
 
 If the folder is called the same thing as the file you just extracted, you need to go one folder deeper until you find either "Generated", "Public" or "Data" or "Bin". 
 
-"Generated" and "Public" act the same. 
-"Data" and "Bin" act the same as well. 
+Like this: 
+![onefolderdeeper.png](/tutorials/install_manual_mods/onefolderdeeper.png)
+As you can see, I clicked into the "CovenElf - Tattoo and Makeup Collection-1684-v1-2-1-1694224111" and inside that folder, is the folder "Generated" which I need. D
+o not go deeper into the folder: you only need to move the first "Generated", "Public", "Bin" or "Data" folder you find. 
 
-Later on the guide, it will tell you what the differences are. 
+The difference between all of these are just where they go. 
+
+> "Generated" and "Public" act the same and goes in the same folder. 
+> "Data" and "Bin" act the same and goes into the same folder. 
+{.is-info}
 
 
+## Generated and Public folders - where do they go?
+
+When you have extracted the zip, rar or 7zip file and found either a "Generated" or a "Public" folder, you will need to find your data folder in another window of your file explore. 
+
+How to do this, you will need to go on Steam, then to your Library and then right click on BG3, hover over "Manage" and click "Browse local files": 
+
+![steam.png](/tutorials/steam.png)
+
+For GOG users, you will need to find the GOG equivalevant of the folders
 
