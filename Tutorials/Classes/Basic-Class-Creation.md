@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-01T20:39:17.561Z
+date: 2024-05-01T20:41:38.922Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -670,7 +670,7 @@ Great, we can load this up and see our class and all its glorious default settin
 If you scrolled through the ClassDescriptions.lsx (or some other files that have tags), you may have noticed that in the node for ClassDescription, after the attributes, we see another entry, children, which has its own sub nodes. We can see a node id called Tags in there. Tags are pretty important for connecting things in game to whatever you need, in this case a class. Basically using tags fills out your characters character sheet. This is important because the game will open up more options for you if your character is 'tagged' to get it, like say special dialogue for your new class should the tag appear as dialogue option.
 
 ## Make tag file
-We are going to want to start by making a folder called Tags and a .lsx file to go in it. The tags folder will be placed in your \Public\{mod_name}\ directory and the .lsx file should be a new unique uuid, I generated 35add446-b710-4ad1-8dbc-36f99aecc6d5. Lets drop some starter info into our tag file and go over it.
+We are going to want to start by making a folder called Tags and a .lsx file to go in it. The tags folder will be placed in your \Public\\{mod_name}\ directory and the .lsx file should be a new unique uuid, I generated 35add446-b710-4ad1-8dbc-36f99aecc6d5. Lets drop some starter info into our tag file and go over it.
 
 Quickster\Public\Quickster\Tags\35add446-b710-4ad1-8dbc-36f99aecc6d5.lsx
 ```
