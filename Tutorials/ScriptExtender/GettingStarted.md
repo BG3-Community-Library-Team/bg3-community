@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T21:54:15.981Z
+date: 2024-05-01T22:00:42.987Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -85,9 +85,12 @@ Now that you are familiar with entering commands in the console, it is time to c
 
 ## **3\. Creating your workspace**
 
-Download the example workspace here: [https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing](https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing)
 
-And unpack it. Place it where you want to develop your mods. For example in your *Documents* folder on windows.
+> This guide is using an example workspace! You will be able to better follow the tutorial by using it
+> Download the example workspace here: [https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing](https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing)
+{.is-warning}
+
+Download the example workspace linked above and unpack it. Place it where you want to develop your mods. For example in your *Documents* folder on windows.
 
 You will also need an editor. I recommend VSCode or the Open Source alternative VSCodium:
 
