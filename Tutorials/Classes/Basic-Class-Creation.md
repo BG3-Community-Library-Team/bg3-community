@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-01T06:07:36.642Z
+date: 2024-05-01T06:11:53.599Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -12,6 +12,7 @@ dateCreated: 2024-04-26T20:37:14.615Z
 This guide is intended to help you create a basic class mod from start to finish.
 
 # Goals
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <details>
 <summary><a href="https://wiki.bg3.community/en/Tutorials/Basic-Class-Creation#setup-for-modding%EF%B8%8F">Setup for modding</a></summary>
 <ul>
