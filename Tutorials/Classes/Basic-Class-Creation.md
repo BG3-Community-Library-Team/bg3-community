@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-01T06:17:43.723Z
+date: 2024-05-01T06:21:33.832Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -16,6 +16,29 @@ This guide is intended to help you create a basic class mod from start to finish
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @media (max-width: 768px) {
+        .sidebar {
+            width: 100%; /* Full width on small screens */
+            height: auto;
+        }
+        .content {
+            width: 100%; /* Full width on small screens */
+            padding: 10px;
+        }
+    }
+    /* Additional CSS for larger screens */
+    @media (min-width: 769px) {
+        .sidebar {
+            width: 25%; /* Example: sidebar takes 25% of the space */
+            float: left;
+        }
+        .content {
+            width: 75%; /* Main content takes the remaining space */
+            float: left;
+        }
+    }
+  </style>
 </head>
 <body>
 <details>
