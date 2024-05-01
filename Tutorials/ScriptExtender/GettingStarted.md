@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-04-30T21:07:25.363Z
+date: 2024-05-01T07:10:45.106Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -186,7 +186,22 @@ This will reset the console and all loaded scripts, allowing you to see instant 
 {.is-info}
 
 ![](/tutorials/getting_started_with_se/gswse_20.png)
-## **5\. The Basics of Programming**
+
+## **5\. Creating multiple files**
+
+You might have already noticed that you can create multiple files in your workspace.
+This often helps to break down your project and make it easier to navigate. 
+Let us create a new file by right clicking on the folder "Server" and clicking "New File".
+We will name this file "MySecondSEScript.lua".
+
+> All Lua scripts you want to create need to have the ending *.lua*
+{.is-info}
+
+
+> If you do not add your new file to the BootstrapServer.lua it and its contents will not be recognized
+{.is-warning}
+
+## **6\. The Basics of Programming**
 
 The following section is aimed towards people who have no programming knowledge.
 
@@ -646,12 +661,12 @@ print(karlach)
 
 `S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12`
 
-<span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>9. Useful Resources</strong> for more information</span>
 
 #### 4.2 Scope across files
 
-- variable 
-- function
+
+
+<span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
 
 #### 4.3 A brief introduction to metatables
 
@@ -663,7 +678,7 @@ print(karlach)
 
 ### 8\. Debugging using print statements
 
-## **6\. Osiris**
+## **7\. Osiris**
 
 ### 1\. Functions
 
@@ -671,16 +686,16 @@ print(karlach)
 
 ### 3\. Using Listeners
 
-## **7\. Script Extender Functions**
+## **8\. Script Extender Functions**
 
 -   Dumping
 -   Basically go over the API and heavily credit it
 
-## **8\. Advanced Information**
+## **9\. Advanced Information**
 
 -   IMGUI / Devel stuff?
 
-## **9\. Useful Resources**
+## **10\. Useful Resources**
 
 **_Norbyte_**
 
