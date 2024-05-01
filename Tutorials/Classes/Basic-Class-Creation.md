@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-01T21:57:36.469Z
+date: 2024-05-01T21:58:26.875Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -12,7 +12,92 @@ dateCreated: 2024-04-26T20:37:14.615Z
 This guide is intended to help you create a basic class mod from start to finish.
 
 # Goals
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#setup-for-modding%EF%B8%8F">Setup for modding</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#mod-folder-setup">Mod folder setup</a></li>
+</ul>
+</details>
 
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#create-the-most-basic-class-possible%EF%B8%8F">Create the most basic class possible</a></summary>
+<ul>
+    <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#classdescriptionslsx">ClassDescriptions.lsx</a></li>
+    <li>
+        <a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#progressionslsx">Progressions.lsx</a>
+        <ul>
+            <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#progressiondescriptionslsx">ProgressionDescriptions.lsx</a></li>
+        </ul>
+    </li>
+    <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#abilitydistributionpresetslsx">AbilityDistributionPresets.lsx</a></li>
+</ul>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#localizations%EF%B8%8F">Localizations</a></summary>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#pack-and-load-your-mod%EF%B8%8F">Pack and load your mod</a></summary>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#add-class-skillsproficiencies-and-bonus-ability-points%EF%B8%8F">Add class skills/proficiencies and bonus ability points</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#abilitieslsx">Abilities.lsx</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#abilitylistslsx">AbilityLists.lsx</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#skilllsx">Skills.lsx</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#skilllistlsx">SkillLists.lsx</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#linking">Linking</a></li>
+</ul>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#tags%EF%B8%8F">Tags</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#make-tag-file">Make a tag file</a></li>
+<li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#use-tag">Use Tag</a></li>
+</ul>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#Selectors%EF%B8%8F">Selectors</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#update-selector-attribute">Update selector attribute</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#passivelistslsx">PassiveLists.lsx</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#progressiondescriptionslsx-1">ProgressionDescriptions.lsx</a></li>
+</ul>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#boosts-and-passivesaddedremoved-progressionslsx%EF%B8%8F">Boosts and PassivesAdded/Removed (Progressions.lsx)</summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#boosts">Boosts</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#passivesaddedremoved">PassivesAdded/Removed</a></li>
+</ul>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#useful-testing-step%EF%B8%8F">USEFUL TESTING STEP</a></summary>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#subclasses%EF%B8%8F">Subclasses</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#make-a-subclass">Make a Subclass</a></li>
+</ul>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#action-resources%EF%B8%8F">Action Resources</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#create-an-action-resource">Create an action resource</a></li>
+</ul>
+</details>
+
+*<sub>If viewing on mobile, change to desktop view to avoid odd formatting</sub>
+# Setup for modding[⬆️](#goals)
+*<sub>Note that the mod I am creating in this example is called Quickster, for your reference.</sub>
 
 Lets make a project folder for our mod. In this case, Quickster. All of our mod files and folders will go in here. We will cover it when we get to it, but this folder will essentially be packed by the multitool to be used as our .pak file which we place in the mods folder for your game. We will only need a few folders and files to get a simple class mod running. The bulk of the files we will deal with are .lsx files which are basically xml files. As your mod gets more intricate, you will need to add more folders/files but the following should be all we need to get started making a class. Note the indentation on entries to indicate the file tree structure, ie. Localization folder has the English folder in it and so forth.
 
