@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: true
-date: 2024-05-01T01:51:34.824Z
+date: 2024-05-01T01:54:27.297Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -127,7 +127,7 @@ You will need to paste this into the json file, and save it:
   "CreateConsole": true
 }
 
-You should be able to use programs such as VSCode, NotePad++ or simply just notepad. I will show screenshots from both VSCode and Notepad to show how it may differ in looks but is still the same no matter which program you use: 
+You should be able to use programs such as VSCode, NotePad++ or simply just notepad. This guide will show screenshots from both VSCode and Notepad to show how it may differ in looks but is still the same no matter which program you use: 
 
 VSCode: 
 
