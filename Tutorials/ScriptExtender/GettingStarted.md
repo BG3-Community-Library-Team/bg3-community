@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T15:52:05.401Z
+date: 2024-05-01T15:53:12.770Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -976,9 +976,13 @@ if "Astarion" then
 end
 ```
 
+`1 is indeed equal to 1`
+
+`Astarion exists`
 
 
-> In Lua, when a value exists, it will automatically evaluate to true
+> In Lua, when a value exists, it will automatically evaluate to true.
+> That is why "Astarion" evaluates to true
 {.is-info}
 
 `condition` has to evaluate to `false` for the code underneath the if statement to be executed.
