@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: false
-date: 2024-05-01T04:59:15.457Z
+date: 2024-05-01T05:02:45.151Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
