@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-01T06:23:04.834Z
+date: 2024-05-01T06:25:11.503Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -379,7 +379,7 @@ Quickster\Public\Quickster\Progressions\Progressions.lsx
 ```
 
 ### ProgressionDescriptions.lsx
-Here is an interesting little file. You should skip this and come back to this later after you get further in the guide, maybe after you finish readhing subclasses). We dont technically need this file but I find it valuable since it helps display things our class gets during its progressions/level ups/character creation. I am going to add a quick ProgressionDescription entry to demonstrate what I mean. I will add an entry to show us getting spellslots in our class features on character creation. Lets make the file and add the following:
+Here is an interesting little file. You should skip this and come back to this later after you get further in the guide (maybe after you finish reading  the section on subclasses). We dont technically need this file but I find it valuable since it helps display things our class gets during its progressions/level ups/character creation. I am going to add a quick ProgressionDescription entry to demonstrate what I mean. I will add an entry to show us getting spellslots in our class features on character creation. Lets make the file and add the following:
 
 Quickster\Public\Quickster\Progressions\ProgressionDescriptions.lsx
 ```
