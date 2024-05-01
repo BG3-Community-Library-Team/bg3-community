@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T15:55:46.460Z
+date: 2024-05-01T16:04:51.772Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1008,6 +1008,42 @@ end
 
 To be able to use your if statement flexibly, you do not want to predefine the condition
 
+```lua
+
+local myNumber = 5
+
+if myNumber == 5 then
+	print("My number is 5")
+end
+
+```
+
+`My number is 5` 
+
+You can have your if statement in a function to make it even more flexible
+
+```lua
+
+local myFour = 4
+local myFive = 5
+
+-- prints "Yes" if the number is five, else prints "No"
+---@param number int
+local function isItFive(number)
+	if number == 5 then
+		print("Yes")
+    else
+  	    print("No")
+    end
+end
+
+isItFive(myFour)
+isItFive(myFive)
+
+```
+
+`No` 
+`Yes`
 
 -- using multiple conditions in an if statement and the pitfalls (if x == y and z -> z is always true when it exists)
 
