@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-01T06:27:16.501Z
+date: 2024-05-01T20:37:17.897Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -13,18 +13,18 @@ This guide is intended to help you create a basic class mod from start to finish
 
 # Goals
 <details>
-<summary><a href="https://wiki.bg3.community/en/Tutorials/Basic-Class-Creation#setup-for-modding%EF%B8%8F">Setup for modding</a></summary>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#setup-for-modding%EF%B8%8F">Setup for modding</a></summary>
 <ul>
-      <li><a href="https://wiki.bg3.community/en/Tutorials/Basic-Class-Creation#mod-folder-setup">Mod folder setup</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#mod-folder-setup">Mod folder setup</a></li>
 </li>
 </details>
 
 <details>
-<summary><a href="https://wiki.bg3.community/en/Tutorials/Basic-Class-Creation#create-the-most-basic-class-possible%EF%B8%8F">Create the most basic class possible</a></summary>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#create-the-most-basic-class-possible%EF%B8%8F">Create the most basic class possible</a></summary>
 <ul>
-    <li><a href="https://wiki.bg3.community/en/Tutorials/Basic-Class-Creation#classdescriptionslsx">ClassDescriptions.lsx</a></li>
+    <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#classdescriptionslsx">ClassDescriptions.lsx</a></li>
     <li>
-        <a href="https://wiki.bg3.community/en/Tutorials/Basic-Class-Creation#progressionslsx">Progressions.lsx</a>
+        <a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#progressionslsx">Progressions.lsx</a>
         <ul>
             <li><a href="https://wiki.bg3.community/en/Tutorials/Basic-Class-Creation#progressiondescriptionslsx">ProgressionDescriptions.lsx</a></li>
         </ul>
