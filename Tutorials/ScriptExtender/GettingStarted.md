@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T15:13:47.069Z
+date: 2024-05-01T15:19:53.747Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -807,6 +807,17 @@ print(GetWyll())
 
 ### 4\. Functions
 
+You can use fuctions when you have to execute the same code multiple times.
+This allows you to reuse your code without having to copy and paste it.
+You will be less likely to make mistakes and your code will be easier to maintain
+
+
+A function can be declared by usinf the keyword `function`. Then its name and parenthesis.
+Optionally you can also add parameters to your function.
+
+
+
+To call a function, simply type its name with the parenthesis. If you have added parameters for your function, then make sure to also include those.
 
 
 
