@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-01T04:14:14.258Z
+date: 2024-05-01T04:15:38.526Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -44,6 +44,8 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
 |DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
 |DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
+|DB_TUT_CharacterCreation_Started|?|1|Integer|--|--|--|--|
+|DB_TUT_CharacterCreation_IntroMovieFinished|?|1|Integer|--|--|--|--|
 |DB_TUT_CharacterCreation_InitialShown|?|1|Integer|--|--|--|--|
 
 ### Query Returns
