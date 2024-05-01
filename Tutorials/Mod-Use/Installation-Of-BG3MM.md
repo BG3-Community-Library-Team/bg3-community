@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-05-01T04:49:18.045Z
+date: 2024-05-01T04:53:59.337Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -148,14 +148,16 @@ Example: C:\SteamLibrary\steamapps\common\Baldurs Gate 3\Data
 
 ## Other guides:
 
-Now BG3MM is set up correctly, continue to the other 2 parts of this guide: (all of which are on To-Do): 
+Now BG3MM is set up correctly, continue to the other 2 parts of this guide
 Part 2: How to install mods (Pak Files): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files
-Part 3: How to install manual/loose file mods (mods that are not pak files) 
+Part 3: How to install manual/loose file mods (mods that are not pak files): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
 
 And other relevant guides: 
-How to install Script Extender (SE) 
-How to install Native Mod Loader, and related mods (WASD movement, Native Camera etc.)
-How to install Unique Tav 
+General Load order guide: https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order
+How to install Script Extender: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender
+Clean reinstall of Script Extender: To-Do
+How to install Native Mod Loader,WASD movement, Native Camera etc: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
+How to install Unique Tav: To-Do
 
 
 Made by: Maze 
