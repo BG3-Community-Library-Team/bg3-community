@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-01T20:34:49.189Z
+date: 2024-05-01T21:36:30.359Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -38,7 +38,7 @@ E.g. MyUI_Window.lua/MyUI_Logic.lua/MyUI_Events.lua/MyUI_Style.lua
 
 For a general introduction to ImGui this won't be necessary but its something to keep in mind depending on where you want to go with it.
 
-### **1\. What you need to consider**
+### **1\. Something to consider**
 
 UI scripts can quickly get out of hand if you are creating many sections within your window, so don't afraid to make use of comments to find your way around greater sections.
 For Lua i see some people using huge amounts of comment blocks, and thats fine if it helps them!
@@ -62,10 +62,103 @@ We do that by, of course, using ScriptExtender.
 
 If you followed the ScriptExtender guide, you should have an ExtIdeHelpers.lua file.
 
+Within it we can find (by Ctrl+F) "Ext_ClientImgui".
+Here we can see the very first function we can use.
+
+By typing:
+```lua
+Ext.IMGUI.NewWindow("My ImGui Window")
+```
+
+you have your very first window!
+
+### **3\. Making use of it**
+
+"Okay, so what now?" is something you'd probably think immediately when you notice you can't do anything with it, except collapsing its titlebar.
+
+To make use of it, we need to edit our first line and name it like you'd do with any other object:
+
+```lua
+MyWindow = Ext.IMGUI.NewWindow("My ImGui Window")
+```
+
+Now we have an object called "MyWindow".
+If you dump it with ```_D``` you may see some additional information already.
+
+and
+```lua
+_P(MyWindow.Label)
+```
+
+will print "My ImGui Window" since this is an element our new object has inside of it.
+
+## **3\. So, what can it do?**
+
+To learn about what is possible, we need to first look into our ExtIdeHelpers.lua file again.
+If you didn't move away from our last search within it you are already where we can find out more.
+If not, you might want to search for "Ext_ClientImgui" again.
+
+Now, last time we found out that we can make use of the Ext.IMGUI class with its function ``ǸewWindow()``.
+But in the same line we also learn something else. If you look to the right you'll see:
+
+```lua
+:ImguiHandle
+```
+If you now search for this word instead you will find:
+```lua
+@Class ImguiHandle
+```
+
+This means, that by using the function ``ǸewWindow()`` we are essentially creating a new object of the class "ImguiHandle".
+What you might notice when you look for further occurences of this word is that there are a lot of things that make use of this class.
+
+Continue going through the occurences until you find a block of ImguiHandles underneath a class called ``ExtuiTreeParent:ExtuiStyledRenderable``.
+
+![imguihandle.png](/tutorials/imgui_and_you/imguihandle.png)
+
+This is in essence, the class "ExtuiTreeParent" making use of the "ExtuiStyledRenderable" class, which has functions within it to create new objects of the ImguiHandle class.
+
+I'm explaining it like this because this guide will never be able to cover everything and this is instead a way for you to find your way through the ExtIdeHelpers.lua file to find out new stuff yourself. Or if you forget how a speficic function works, you will know how to look for it.
+
+## **4\. The basics**
+
+You created your first window, named it and also have a list of things to add.
+
+Lets say we start off with a simple Text (second last in the list from earlier).
+For us to use it we need to add the AddText() function to our MyWindow object with an ``:``
+
+```lua
+--AddText() requires a string as a parameter!
+MyWindow:AddText("Hello World")
+```
+
+This should make your window say "Hello World"
+
+We can also make it in form of a button:
 
 
+```lua
+--AddButton() requires a string as a parameter!
+MyWindow:AddButton("Hello World")
+```
 
-### **3\. Basic inputs**
+---
+---
+---
+---
+---
+---
+---
+--- Everything underneath these lines is just for me to copy/paste textlayout
+---
+---
+---
+---
+---
+---
+---
+
+
 
 Replicate the following steps to familiarize yourself with basic inputs into the SE console:
 
