@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T16:04:51.772Z
+date: 2024-05-01T16:16:24.915Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1044,6 +1044,90 @@ isItFive(myFive)
 
 `No` 
 `Yes`
+
+You can also check for something to `not` be true by using the `~=` operator
+
+
+```lua
+
+local myNumber = 0
+
+if myNumber ~= 5 then
+	print("My number is not 5")
+end
+
+```
+
+`My number is not 5` 
+
+You can also use multiple conditions in your statement to check if either one `or` another condition is true
+
+
+```lua
+
+local x = 0
+local y = 1
+
+if x == 1 or y == 1 then
+	print("Either x or y are 1")
+end
+
+```
+
+`Either x or y are 1` 
+
+You can also use multiple conditions in your statement to check if one `and` another condition are true
+
+
+```lua
+
+local x = 1
+local y = 1
+
+if x == 1 and y == 1 then
+	print("Both x and y are 1")
+end
+
+```
+
+`Both x and y are 1` 
+
+You can stack as many of these statements as you like.
+
+> Beware of a common pitfall when evaluating conditions!
+> Since the existence of a value is enough to have it evaluate to true
+> never forget to actually compare it to the desited value.
+{.is-warning}
+
+```lua
+
+local x = 0
+local y = 0
+
+if 1 == x or y then
+	print("Either x or y are 1")
+end
+
+```
+
+`Either x or y are 1` 
+
+Even though when reading the statement `if 1 == x or y then` out loud, it might seem like we are comparing both `x` and `y` to `1`, we are not. We are comparing `x` to `1` and checking if `y` somply exists. 
+
+Your variables always have to be compared to the desired value 
+
+```lua
+
+local x = 0
+local y = 0
+
+if 1 == x or 1 == y then
+	print("Either x or y are 1")
+end
+
+```
+
+` ` (empty output) 
 
 -- using multiple conditions in an if statement and the pitfalls (if x == y and z -> z is always true when it exists)
 
