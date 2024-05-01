@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T14:57:01.471Z
+date: 2024-05-01T15:01:40.391Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -143,25 +143,29 @@ Because of the formatting of the wiki, the commands had to be placed on separate
 
 The commands for copying can be seen below the code block.  Please make sure to modify the commands for your username and place of your workspace and game.
 
+> This command is executed in the windows terminal
+>  in the search bar type `cmd` and execute the program as administarator
+{.is-info}
+
 ```plaintext
 // Public folder
 mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Public" 
-"C:\Users\YourUsername\Desktop\BG3 Modding\YourModName\Public"
+"C:\Users\YourUsername\path\to\YourModName\Public"
 
 // For code 
 mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Mods" 
-"C:\Users\YourUserName\Desktop\BG3 Modding\YourModName\Mods"
+"C:\Users\YourUserName\path\to\YourModName\Mods"
 
 // Loca
 mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Localization\English\yourLoca.loca" 
-"C:\Users\YourUserName\Desktop\BG3 Modding\YourModName\English\YourLoca.loca"
+"C:\Users\YourUserName\path\to\YourModName\English\YourLoca.loca"
 ```
 
-mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Public" "C:\\Users\\YourUsername\\Desktop\\BG3 Modding\\YourModName\\Public"
+mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Public" "C:\\Users\\YourUsername\\path\\to\\YourModName\\Public"
 
-mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Mods" "C:\\Users\\YourUserName\\Desktop\\BG3 Modding\\YourModName\\Mods"
+mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Mods" "C:\\Users\\YourUserName\\path\\to\\YourModName\\Mods"
 
-mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Localization\\English\\yourLoca.loca" "C:\\Users\\YourUserName\\Desktop\\BG3 Modding\\YourModName\\English\\YourLoca.loca"
+mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Localization\\English\\yourLoca.loca" "C:\\Users\\YourUserName\\path\\to\\YourModName\\English\\YourLoca.loca"
 
 ### 2\. Testing the symlink
 
