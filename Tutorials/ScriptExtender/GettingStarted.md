@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T07:25:17.869Z
+date: 2024-05-01T07:26:46.304Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -195,13 +195,13 @@ Let us create a new file by right clicking on the folder "Server" and clicking "
 We will name this file "MySecondSEScript.lua".
 
 
-Step 1: Right click on "Server"
+**Step 1:** Right click on "Server"
 ![gswse_21.png](/tutorials/getting_started_with_se/gswse_21.png =800x500)
 
-Step 2: Click "New File"
+**Step 2:** Click "New File"
 ![gswse_22.png](/tutorials/getting_started_with_se/gswse_22.png =800x500)
 
-Step 3: Enter the name "MySecondSEScript.lua"
+**Step 3:** Enter the name "MySecondSEScript.lua"
 
 ![gswse_24.png](/tutorials/getting_started_with_se/gswse_24.png =800x500)
 
@@ -209,7 +209,7 @@ Step 3: Enter the name "MySecondSEScript.lua"
 {.is-info}
 
 
-Step 4: Add the new file to *BootstrapServer.lua*
+**Step 4:** Add the new file to *BootstrapServer.lua*
 
 
 ![gswse_28.png](/tutorials/getting_started_with_se/gswse_28.png =800x400)
@@ -218,13 +218,13 @@ Step 4: Add the new file to *BootstrapServer.lua*
 > If you do not add your new file to the BootstrapServer.lua it and its contents will not be recognized
 {.is-warning}
 
-Step 5: Enter some print statements to make sure you can see the difference
+**Step 5:** Enter some print statements to make sure you can see the difference
 
 
 ![gswse_26.png](/tutorials/getting_started_with_se/gswse_26.png)
 
 
-Step 6: reset the console to see the difference
+**Step 6:** reset the console to see the difference
 
 ![gswse_27.png](/tutorials/getting_started_with_se/gswse_27.png =800x100)
 
