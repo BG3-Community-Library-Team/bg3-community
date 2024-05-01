@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T07:57:29.076Z
+date: 2024-05-01T08:01:29.391Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -806,6 +806,10 @@ print(GetWyll())
 
 
 Lua is a very flexible language. Through its usage of tables multiple OOP concepts like Inheritance can be realized.
+Here we will talk about *Metatables* which is the Lua equivalent of *objects*.
+
+For this section we will rename *MyFirstSEScript.lue* to *Main.lua* and 
+*MySecondSEScript.lua* to *Companion.lua*  , to better showcase this principle.
 
 
 
