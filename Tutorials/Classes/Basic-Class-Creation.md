@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-01T21:35:02.735Z
+date: 2024-05-01T21:50:03.113Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
