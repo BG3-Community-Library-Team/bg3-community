@@ -2,8 +2,8 @@
 title: How to install Script Extender
 description: 
 published: true
-date: 2024-05-01T01:54:27.297Z
-tags: 
+date: 2024-05-01T01:56:06.129Z
+tags: se, script-extender, guide, installation, console, enable-console, devel
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
 ---
