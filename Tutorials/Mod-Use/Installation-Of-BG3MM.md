@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: false
-date: 2024-04-27T03:35:30.889Z
+date: 2024-05-01T04:49:18.045Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -32,7 +32,7 @@ Version: 1.0.10.0
 
 You will see this when you open the link:
 
-![bg3mm.png](/tutorials/bg3mm.png =x650)
+![bg3mm.png](/tutorials/bg3mm.png)
 
 You will need to press on "BG3ModManager_Latest.zip" that is highlighted in red in the bottom. 
 
@@ -48,7 +48,7 @@ Now you need to extract the zip file. The zip file should be in your downloads f
 
 Windows support zip files: all you need to do is right click, and click on "Extract all" and then press "Extract" in the menu as shown below.
 
-![extract.png](/tutorials/extract.png =x450)
+![extract.png](/tutorials/extract.png)
 
 ![extraction.png](/tutorials/extraction.png)
 
