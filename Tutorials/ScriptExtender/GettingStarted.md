@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T07:45:22.742Z
+date: 2024-05-01T07:48:48.386Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -767,10 +767,9 @@ print(getWyll())
 `bg3se::lua::State::LoadScript(): Failed to execute script: [string "MySEMod/Server/MySecondSEScript.lua"]:1: attempt to call a nil value (global 'getWyll')`
 
 
-Because of the *local* keyword, the variable is not accessible in other files.
-For that we have to make it a global variable by omitting the *local* keyword.
+Here we have to make the function global as well to access it from other files
 
-Create a variable in  *MyFirsSEScript.lua*
+Create a function in  *MyFirsSEScript.lua*
 
 ```lua
 -- MyFirstSEScript.lua
@@ -790,7 +789,8 @@ print(GetWyll())
 
 `S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d`
 
-> It is best practice to keep the content in your files separate most of the time
+> It is best practice to keep the content in your files separate most of the time.
+> Some content that will never change, like the ORIGIN UUIDs  you might want to keep global in a separate *Data* folder
 {.is-info}
 
 
