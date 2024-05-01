@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T15:49:10.015Z
+date: 2024-05-01T15:52:05.401Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -965,17 +965,33 @@ end
 `condition` has to evaluate to `true` for the code underneath the if statement to be executed.
 Here are some examples for conditions that evaluate to `true`
 
+```lua
+
+if 1 == 1 then
+	print("1 is indeed equal to 1")
+end
+
+if "Astarion" then
+	print("Astarion exists")
+end
+```
 
 
 
-`condition` has to evaluate to `true` for the code underneath the if statement to be executed.
+> In Lua, when a value exists, it will automatically evaluate to true
+{.is-info}
+
+`condition` has to evaluate to `false` for the code underneath the if statement to be executed.
 Here are some examples for conditions that evaluate to `false`
 
+
+> In Lua, when a value does not exist, it will automatically evaluate to false
+{.is-info}
 
 To be able to use your if statement flexibly, you do not want to predefine the condition
 
 
--- using multiple conditions in an if statement
+-- using multiple conditions in an if statement and the pitfalls (if x == y and z -> z is always true when it exists)
 
 -- elseif
 
