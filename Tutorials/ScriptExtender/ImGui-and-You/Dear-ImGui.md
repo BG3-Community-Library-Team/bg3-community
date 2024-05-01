@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-01T21:36:30.359Z
+date: 2024-05-01T21:42:52.416Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -125,13 +125,13 @@ I'm explaining it like this because this guide will never be able to cover every
 You created your first window, named it and also have a list of things to add.
 
 Lets say we start off with a simple Text (second last in the list from earlier).
-For us to use it we need to add the AddText() function to our MyWindow object with an ``:``
+For us to use it we need to add the ``AddText()`` function to our ``MyWindow`` object with an ``:``
 
 ```lua
 --AddText() requires a string as a parameter!
 MyWindow:AddText("Hello World")
 ```
-
+This will in return make use of the TreeParent class, which in this case is MyWindow and create a new StyledRenderable object within it called a Text, which is itself of the class ImguiHandle
 This should make your window say "Hello World"
 
 We can also make it in form of a button:
@@ -141,6 +141,10 @@ We can also make it in form of a button:
 --AddButton() requires a string as a parameter!
 MyWindow:AddButton("Hello World")
 ```
+MyWindow is the parent, we add a StyledRenderable to it which itself calls the function for a button ImguiHandle object to be added.
+This should make your window have a button which says "Hello World" on it.
+
+
 
 ---
 ---
