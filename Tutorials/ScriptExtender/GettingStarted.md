@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T15:19:53.747Z
+date: 2024-05-01T15:26:59.218Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -813,9 +813,60 @@ You will be less likely to make mistakes and your code will be easier to maintai
 
 
 A function can be declared by usinf the keyword `function`. Then its name and parenthesis.
-Optionally you can also add parameters to your function.
 
 
+```lua
+
+local function printAstarion()
+	print("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255")
+end
+
+```
+
+Optionally you can also add parameters to your function to make it more flexible.
+
+```lua
+
+local function printKarlachOrLaezel(companion)
+
+	if companion == "Karlach" then
+		print("S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c")
+    
+  elseif companion == "Laezel" then
+ 	 	print("S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12")
+    
+  else
+  	print("Not Karlach or Laezel")
+  end
+end
+
+```
+
+You might want to add some descriptions to your functions so you and other people know what it does, what input it takes and what it returns.
+
+```lua
+-- returns Astarions uuid
+---@return uuid string
+local function printAstarion()
+	print("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255")
+end
+
+---@param name string
+---@return uuid string
+local function printKarlachOrLaezel(companion)
+
+	if companion == "Karlach" then
+		print("S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c")
+    
+  elseif companion == "Laezel" then
+ 	 	print("S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12")
+    
+  else
+  	print("Not Karlach or Laezel")
+  end
+end
+
+```
 
 To call a function, simply type its name with the parenthesis. If you have added parameters for your function, then make sure to also include those.
 
