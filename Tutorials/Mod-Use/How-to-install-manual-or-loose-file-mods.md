@@ -2,7 +2,7 @@
 title: How to install manual/loose file mods
 description: 
 published: false
-date: 2024-05-01T04:52:01.115Z
+date: 2024-05-01T04:54:20.022Z
 tags: installation, loose-file-mods, manual-mods, manual, non-pak, verify, mods, how-to, bin, generated, data, public, folders, folder
 editor: markdown
 dateCreated: 2024-05-01T01:34:11.948Z
@@ -242,6 +242,7 @@ How to install BG3MM, mods and manual mods series:
 Part 1: How to install BG3MM: https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM
 Part 2: How to install Pak files: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files
 
+Other relevant guides:
 How to install Unique Tav: On To-Do
 General Loader order guide: https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order
 How to install Script Extender: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender
