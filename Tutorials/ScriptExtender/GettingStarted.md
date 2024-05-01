@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T07:26:46.304Z
+date: 2024-05-01T07:35:40.496Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -693,6 +693,39 @@ print(karlach)
 
 #### 4.2 Scope across files
 
+if you have followed **5. Creating multiple files** then you have two files in your "Server". *MyFirsSEScript.lua* and *MySecondSEScript.lua*
+
+Not all variables and functions that you create in one file will be visible in the other one.
+
+
+Create a variable in  *MyFirsSEScript.lua*
+
+```lua
+-- MyFirstSEScript.lua
+
+local gale =  "S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604"
+```
+
+Try to access it in  *MySecondSEScript.lua*
+
+```lua
+-- MySecondSEScript.lua
+
+print(gale)
+```
+
+`nil`
+
+
+Because of the *local* keyword, the variable is not accessible in other files.
+For that we have to make it a global variable by omitting the *local* keyword
+
+> Global variables and functions usually start with an uppercase letter
+{.is-info}
+
+
+> It is best practice to keep the content in your files separate most of the time
+{.is-info}
 
 
 <span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
