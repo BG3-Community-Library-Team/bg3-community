@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T15:44:07.321Z
+date: 2024-05-01T15:49:10.015Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -948,9 +948,39 @@ print(gale)
 `nil`
 
 
-<span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
-
 ### 5\. If statements
+
+For now we have written code that always executes the same way.
+To be able to make it more interactive we can use **flow statements** to change the way our code is executed. 
+First we will have a look at if statements.
+
+The general structure of an if statement is 
+
+```lua
+if condition then
+	-- Your code
+end
+```
+
+`condition` has to evaluate to `true` for the code underneath the if statement to be executed.
+Here are some examples for conditions that evaluate to `true`
+
+
+
+
+`condition` has to evaluate to `true` for the code underneath the if statement to be executed.
+Here are some examples for conditions that evaluate to `false`
+
+
+To be able to use your if statement flexibly, you do not want to predefine the condition
+
+
+-- using multiple conditions in an if statement
+
+-- elseif
+
+
+<span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
 
 
 ### 6\. Loops
