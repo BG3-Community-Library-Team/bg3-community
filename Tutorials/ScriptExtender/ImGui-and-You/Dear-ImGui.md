@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-01T20:13:22.396Z
+date: 2024-05-01T20:23:06.165Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -33,13 +33,24 @@ Don't forget to always add the scripts you are creating within the "Client" fold
 
 To start off, create a new .lua file within the "Client" folder.
 
-If you already know that the mod you are intending to create will be a bit larger it is advised to split your ui script into several parts. e.g. MyUI_Window.lua/MyUI_Logic.lua/MyUI_Events.lua/MyUI_Style.lua
+If you already know that the mod you are intending to create will be a bit larger it is advised to split your ui script into several parts.
+E.g. MyUI_Window.lua/MyUI_Logic.lua/MyUI_Events.lua/MyUI_Style.lua
 
-For a general introduction to it, this won't be necessary but its something to keep in mind depending on where you want to go with it.
+For a general introduction to ImGui this won't be necessary but its something to keep in mind depending on where you want to go with it.
 
-### **1\. **
+### **1\. What you need to consider**
 
-You can load either a new save or an existing one.
+UI scripts can quickly get out of hand if you are creating many sections within your window, so don't afraid to make use of comments to find your way around greater sections.
+For Lua i see some people using huge amounts of comment blocks, and thats fine if it helps them!
+There is something, some people might not know about tho and those are "Regions".
+
+```lua
+--#region Test
+	Your Code
+--#endregion
+```
+This will make your entire code section collapsable, which would not be a thing for ImGui since they don't count as functions which are naturally collapsable.
+So whenever you will work with a bigger section of your UI it is advised to make use of them.
 
 When the save is loaded you should see some output in your console, telling you that the session has loaded and other debug statements depending on what kind of mods you have installed:
 
