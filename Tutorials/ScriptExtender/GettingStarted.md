@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T07:35:40.496Z
+date: 2024-05-01T07:45:22.742Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -588,7 +588,7 @@ This happens when it is declared in its own *scope*
 
 ```lua
 -- returns Astarions UUID
-function getAstarion()
+local function getAstarion()
 	local astarionUUID = "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255"
   return astarionUUID
 end
@@ -615,13 +615,13 @@ This also means that when a variable is instantiated within one function, it is 
 
 ```lua
 -- returns Shadowhearts UUID
-function getShart()
+local function getShart()
 	local shartUUID = "S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679"
   return shartUUID
 end
 
 -- prints Shadowhearts UUID
-function printShart()
+local function printShart()
 	print(shartUUID)
 end
 
@@ -638,7 +638,7 @@ It is accessible again when we declare it outside of the scope of the function
 local shartUUID = "S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679"
 
 -- prints Shadowhearts UUID
-function printShart()
+local function printShart()
 	print(shartUUID)
 end
 
@@ -653,13 +653,13 @@ This also means that we can reuse names as long as they exist in different scope
 ```lua
 
 -- returns Shadowhearts UUIS
-function getShart()
+local function getShart()
 	local uuid = "S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679"
   return  uuid
 end
 
 -- returns Astarions UUID
-function getAstarion()
+local function getAstarion()
 	local uuid = "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255"
   return uuid
 end
@@ -679,7 +679,7 @@ If one variable is defined in the outer scope it will get overwritten if it is b
 ```lua
 local karlach =  "S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c"
 
-function switchKarlachWithLaezel()
+local function switchKarlachWithLaezel()
 	karlach = "S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12"
 end
 
@@ -718,11 +718,77 @@ print(gale)
 
 
 Because of the *local* keyword, the variable is not accessible in other files.
-For that we have to make it a global variable by omitting the *local* keyword
+For that we have to make it a global variable by omitting the *local* keyword.
 
-> Global variables and functions usually start with an uppercase letter
+Create a variable in  *MyFirsSEScript.lua*
+
+```lua
+-- MyFirstSEScript.lua
+
+Gale =  "S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604"
+```
+
+Try to access it in  *MySecondSEScript.lua*
+
+```lua
+-- MySecondSEScript.lua
+
+print(Gale)
+```
+
+`S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604`
+
+> Global variables and functions usually start with an uppercase letter to distinguish them form local ones
 {.is-info}
 
+The same rules appy to functions
+
+
+Create a function in  *MyFirsSEScript.lua*
+
+```lua
+-- MyFirstSEScript.lua
+
+local function getWyll()
+	return "S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d"
+end
+```
+
+Try to access it in  *MySecondSEScript.lua*
+
+```lua
+-- MySecondSEScript.lua
+
+print(getWyll())
+```
+
+
+
+`bg3se::lua::State::LoadScript(): Failed to execute script: [string "MySEMod/Server/MySecondSEScript.lua"]:1: attempt to call a nil value (global 'getWyll')`
+
+
+Because of the *local* keyword, the variable is not accessible in other files.
+For that we have to make it a global variable by omitting the *local* keyword.
+
+Create a variable in  *MyFirsSEScript.lua*
+
+```lua
+-- MyFirstSEScript.lua
+
+function GetWyll()
+	return "S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d"
+end
+```
+
+Try to access it in  *MySecondSEScript.lua*
+
+```lua
+-- MySecondSEScript.lua
+
+print(GetWyll())
+```
+
+`S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d`
 
 > It is best practice to keep the content in your files separate most of the time
 {.is-info}
