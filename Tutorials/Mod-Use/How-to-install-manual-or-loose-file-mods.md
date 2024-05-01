@@ -2,8 +2,8 @@
 title: How to install manual/loose file mods
 description: 
 published: false
-date: 2024-05-01T04:50:42.689Z
-tags: 
+date: 2024-05-01T04:52:01.115Z
+tags: installation, loose-file-mods, manual-mods, manual, non-pak, verify, mods, how-to, bin, generated, data, public, folders, folder
 editor: markdown
 dateCreated: 2024-05-01T01:34:11.948Z
 ---
