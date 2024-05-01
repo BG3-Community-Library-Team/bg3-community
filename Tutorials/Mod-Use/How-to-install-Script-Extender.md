@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: true
-date: 2024-04-30T15:01:48.243Z
+date: 2024-05-01T01:49:30.828Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -196,6 +196,10 @@ The Devel version is a branch of SE. However, think of it as early development b
 This means the devel version is very expiremental and if you, as a user, is playing the game while using the devel version, and Norbyte is testing Virtual Textures but accidently breaking them in the process, you can experience crashes, bugs such as weird textures on your tavs, companion etc, console not responding, console flashing red, spam in the console, spam in the game, game not responding, game not starting, and many more. 
 
 Most of the time, the devel version is a version behind the main release. For good reasons as this is a playground for testing. 
+
+Norbyte even created a warning but unfortunately it does get suppressed by mods such as Improved UI: 
+
+![sedevelwarning.png](/tutorials/sedevelwarning.png =x600)
 
 You can check if you have the devel version by going into your bin folder and search for this file: 
 `ScriptExtenderUpdaterConfig.json`
