@@ -2,14 +2,14 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-01T00:02:17.062Z
+date: 2024-05-01T00:02:27.874Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
 ---
 
 # Osiris DB Reference
-The below is a list of Osiris DB's, and their Parameters.
+The below is a (currently incomplete) list of Osiris DB's, and their Parameters.
 
 # Types {.tabset}
 
