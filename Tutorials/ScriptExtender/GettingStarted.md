@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T15:42:23.176Z
+date: 2024-05-01T15:44:07.321Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -951,6 +951,7 @@ print(gale)
 <span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
 
 ### 5\. If statements
+
 
 ### 6\. Loops
 
