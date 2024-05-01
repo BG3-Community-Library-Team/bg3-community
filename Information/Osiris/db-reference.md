@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-01T04:46:01.895Z
+date: 2024-05-01T04:50:01.414Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -213,6 +213,12 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_ChosenOriginWaitingForTeleport|?|--|--|--|--|--|--|
 |DB_GLO_PlayerCharactersSetup|?|--|--|--|--|--|--|
 |DB_PredefinedStartOrigin|?|--|--|--|--|--|--|
+
+## Plot (Spoilers)
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_GLO_Absolute_Entails|?|2|Flag UUID|Flag UUID|--|--|--|
+|DB_GLO_Absolute_TrueSoul|Character IDs that are True Souls|1|Character UUID|--|--|--|--|
 
 ## Scenes
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
