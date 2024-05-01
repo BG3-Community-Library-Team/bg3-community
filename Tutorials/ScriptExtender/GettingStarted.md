@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T07:13:35.073Z
+date: 2024-05-01T07:25:17.869Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -195,28 +195,40 @@ Let us create a new file by right clicking on the folder "Server" and clicking "
 We will name this file "MySecondSEScript.lua".
 
 
-![gswse_21.png](/tutorials/getting_started_with_se/gswse_21.png)
+Step 1: Right click on "Server"
+![gswse_21.png](/tutorials/getting_started_with_se/gswse_21.png =800x500)
 
-![gswse_22.png](/tutorials/getting_started_with_se/gswse_22.png)
+Step 2: Click "New File"
+![gswse_22.png](/tutorials/getting_started_with_se/gswse_22.png =800x500)
 
-![gswse_23.png](/tutorials/getting_started_with_se/gswse_23.png)
+Step 3: Enter the name "MySecondSEScript.lua"
 
-![gswse_24.png](/tutorials/getting_started_with_se/gswse_24.png)
-
-![gswse_25.png](/tutorials/getting_started_with_se/gswse_25.png)
-
-![gswse_26.png](/tutorials/getting_started_with_se/gswse_26.png)
-
-![gswse_26.png](/tutorials/getting_started_with_se/gswse_26.png)
-
-![gswse_27.png](/tutorials/getting_started_with_se/gswse_27.png)
+![gswse_24.png](/tutorials/getting_started_with_se/gswse_24.png =800x500)
 
 > All Lua scripts you want to create need to have the ending *.lua*
 {.is-info}
 
 
+Step 4: Add the new file to *BootstrapServer.lua*
+
+
+![gswse_28.png](/tutorials/getting_started_with_se/gswse_28.png =800x400)
+
+
 > If you do not add your new file to the BootstrapServer.lua it and its contents will not be recognized
 {.is-warning}
+
+Step 5: Enter some print statements to make sure you can see the difference
+
+
+![gswse_26.png](/tutorials/getting_started_with_se/gswse_26.png)
+
+
+Step 6: reset the console to see the difference
+
+![gswse_27.png](/tutorials/getting_started_with_se/gswse_27.png =800x100)
+
+
 
 ## **6\. The Basics of Programming**
 
