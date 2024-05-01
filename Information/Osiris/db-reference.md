@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-01T04:31:45.816Z
+date: 2024-05-01T04:43:53.184Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -77,7 +77,8 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 ### Query Returns
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
 |-----|----|----|----|----|----|----|----|
-|DB_QRYRTN_GetCharacterOwnerIfItemSummon|?|1|?|--|--|
+|DB_QRYRTN_GetCharacterOwnerIfItemSummon|Returns Owner if UUID corresponds to a summoned item|1|Character UUID|--|--|
+|DB_QRYRTN_CharacterGetOwnerOrSelf|Returns Owner or Queried Character UUID|1|Character UUID|--|--|
 
 ## Class-Specific
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -100,6 +101,11 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_GLO_PaladinOathbreaker_SubclassTags|Link between Subclass Tag and Oath-Breaker Subclass Tag|2|Subclass Tag UUID|Oathbreaker Subclass Tag UUID|--|--|--|
 |DB_GLO_PaladinOathbreaker_SubclassOathBrokenFlags|Link between Subclass Tag and Oath Broken Flag UUID|2|Broken Oath Flag|Subclass Tag UUID|--|--|--|
 |DB_GLO_PaladinOathbreaker_EvilTags|Tags that prevent an Oath-break|1|Tag UUID|--|--|--|--|
+|DB_GLO_PaladinOathbreaker_CrimesToReact|Crimes that will cause a reaction from characters for specific Paladin Oaths|3|Subclass Tag ID|Crime String ID|NPC Tag ID|--|--|
+|DB_GLO_PaladinOathbreaker_PotentialCrimeID|ID of Potential Oathbreaking Crime|1|Crime ID|--|--|--|--|
+|DB_GLO_PaladinOathbreaker_NotifyAfterDialogEnds|?|3|Dialog Resource|Integer|?|--|--|
+|DB_GLO_PaladinOathbreaker_ReactedToBreakingOath|?|1|Character UUID|--|--|--|--|
+|DB_GLO_PaladinOathbreaker_RedemptionFromOathbreaker|Character that's gained Redemption|1|Character UUID|--|--|--|--|
 
 ## Combat
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -186,6 +192,7 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_PermaDefeated|List of Permanently Defeated Characters|1|Character UUID|--|--|--|--|
 |DB_OffStage|?|1|Character UUID|--|--|--|--|
 |DB_DialogMoneyTransfer|?|3|Integer|Character UUID|Integer (Price)|--|--|
+|DB_ReportKiller|?|2|?|Tag UUID|--|--|--|
 
 ## Origins
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
