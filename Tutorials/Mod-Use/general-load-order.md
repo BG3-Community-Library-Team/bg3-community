@@ -2,7 +2,7 @@
 title: General Load Order Guide
 description: Setting up a solid Load Order
 published: true
-date: 2024-05-01T05:00:49.737Z
+date: 2024-05-01T05:16:47.634Z
 tags: moduse, mod use
 editor: markdown
 dateCreated: 2024-05-01T03:29:26.549Z
@@ -22,7 +22,7 @@ This guide will give a general overview of how to handle Mod Load Orders. It's n
 > - Biggest/Smallest Number
 > - Top/Bottom of your Load Order
 >
-> The most important think to be aware of is that the lower the number, the earlier a mod loads. To that end, I recommend talking about Load Order in terms of Early to Late loading mods, to clear up confusion. 0 is the Earliest mod to load, and mnods loaded later than other mods may overwrite the earlier mod's changes. 
+> The most important think to be aware of is that the lower the number, the earlier a mod loads. To that end, I recommend talking about Load Order in terms of Early to Late loading mods, to clear up confusion. 0 is the Earliest mod to load, and mods loaded later than other mods may overwrite the earlier mod's changes. 
 <!-- {blockquote:.is-info} -->
 
 ## Load Order Recommendations
