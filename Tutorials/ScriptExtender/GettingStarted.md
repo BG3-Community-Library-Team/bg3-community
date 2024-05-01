@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T21:09:49.273Z
+date: 2024-05-01T21:54:15.981Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -241,7 +241,7 @@ We will name this file `MySecondSEScript.lua`.
 
 The following section is aimed towards people who have no programming knowledge.
 
-If you don't know what a function is, you might want to read through this. If you have worked with other programmig languages before, feel free to skip this section but make sure to read up on Lua syntax.
+If you don't know what a function is, you might want to read through this. If you have worked with other programmig languages before, feel free to skip this section but make sure to read up on Lua syntax. Its syntax is very similar to `python`
 
 > It is recommended to not only read this section but to follow along. 
 > Also try typing some of these commands instead of using copy and paste
@@ -1327,6 +1327,7 @@ local allowedClasses = {
 {.is-info}
 
 We also want to access the components of our `Companion` 
+
 
 ```lua
 -- getters methods
