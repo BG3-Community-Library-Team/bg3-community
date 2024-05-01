@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T21:02:12.742Z
+date: 2024-05-01T21:09:49.273Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1209,11 +1209,14 @@ local myTable =  {"Cheese", "Bread", "Wine"}
 
 
 -- prints the content from an array like table
-local printArrylike(table)
-  for _,content in pairs(content) do
+local function printArraylike(table)
+  for _,content in pairs(table) do
     print(content)
   end
 end
+
+printArraylike(myTable)
+
 
 ```
 
