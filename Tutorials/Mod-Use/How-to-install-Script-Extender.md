@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: true
-date: 2024-05-01T01:50:16.028Z
+date: 2024-05-01T01:50:27.954Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -186,7 +186,7 @@ Camera Tweaks have one temporary solution on their posts on Nexus: https://www.n
 
 For some it may work, for some it does not. It seems to be a hit and miss, and both creators are trying to make it work together.
 
-## I have heard Devel version will fix all my problems!!!! (NO, it will not!) 
+## I have heard Devel version will fix all my problems!!!! (No, it will not!) 
 
 Fun fact, contrary to popular belief: Devel version is actually harmful to your game if you do not know how to use it, and will not fix your mod issues. 
 
