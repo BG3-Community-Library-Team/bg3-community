@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T16:17:44.021Z
+date: 2024-05-01T16:27:16.346Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1129,8 +1129,31 @@ end
 
 ` ` (empty output - correct!) 
 
+You are not simply restricted to one case with if statements. Using `elseif` you can check if multiple things are true
 
--- elseif
+```lua
+
+local x = 5
+
+if x == 1 then
+    print("x is 1")
+elseif x == 2 then
+    print("x is 2")
+elseif x == 3 then
+    print("x is 3")
+elseif x == 4 then
+    print("x is 4")
+elseif x == 5 then
+    print("x is 5")
+else
+    print("x is not between 1 and 5")
+end
+
+
+```
+
+`x is 5`
+
 
 
 <span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
