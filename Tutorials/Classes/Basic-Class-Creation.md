@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-01T20:55:09.155Z
+date: 2024-05-01T21:33:38.216Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -10,6 +10,22 @@ dateCreated: 2024-04-26T20:37:14.615Z
 
 # Introduction
 This guide is intended to help you create a basic class mod from start to finish.
+
+# Sections {.tabset}
+## Navigation
+- [:clipboard: Meta *Pages relating to the Wiki itself.*](/meta/guidelines)
+- [:blue_book: Information *A list of pages relating to information on Game content and modding practices.*](/Information)
+- [:orange_book: Lore *Pieces of Lore relating to the Forgotten Realms and related settings.*](/Lore)
+- [:green_book: Tools *Links and guides relating to tools for modding Baldur's Gate 3.*](/Tools)
+- [:closed_book: Tutorials *A list of guides for creating and playing with mods.*](/Tutorials)
+{.links-list}
+
+## Meta
+- [:clipboard: Rules and Guidelines *A set of behavioral rules and common practices to follow when contributing or commenting on the Wiki.*](/meta/guidelines)
+- [:memo: Submitting Content *A guide on the process of submitting content to the Wiki.*](/meta/submitting-content)
+- [:bookmark_tabs: Privacy Policy](/meta/privacy-policy)
+- [:page_with_curl: Terms of Service](/meta/terms-of-service)
+{.links-list}
 
 # Goals
 <details>
