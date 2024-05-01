@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-01T22:30:38.661Z
+date: 2024-05-01T22:30:55.638Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -152,8 +152,7 @@ For some, you might see an error pop up in the ScriptExtender console.
 
 
 ## **4\. Taking tabs on Tabbars**
-> If you don't want to make use of 
-{.is-info}
+
 
 
 
