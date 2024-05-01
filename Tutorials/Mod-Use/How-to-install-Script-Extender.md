@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: true
-date: 2024-05-01T01:56:06.129Z
+date: 2024-05-01T05:09:12.103Z
 tags: se, script-extender, guide, installation, console, enable-console, devel
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -226,10 +226,12 @@ Using the console and using Script Extender for mod creation: https://wiki.bg3.c
 How to install BG3MM, mods and manual/loose file mods: 
 Part 1: How to install BG3MM: https://wiki.bg3.community/Tutorials/Mod-Use/Installation-Of-BG3MM
 Part 2: How to install pak files: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files
-Part 3: How to install loose file mods: On to do 
+Part 3: How to install loose file mods: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
 
+Other guides:
+General load order guide: https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order
 How to do a fresh reinstall of SE: To do
-How to install Native Mod Loader and Native Mod Loader mods (Camera Tweaks, WASD Movement etc.) To do 
+How to install Native Mod Loader and Native Mod Loader mods (Camera Tweaks, WASD Movement etc.) https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
 How to install Unique Tav: To do 
 
 Made by: Maze 
