@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T15:26:59.218Z
+date: 2024-05-01T15:28:43.046Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -869,6 +869,24 @@ end
 ```
 
 To call a function, simply type its name with the parenthesis. If you have added parameters for your function, then make sure to also include those.
+
+```lua
+
+printAstarion()
+
+```
+
+` `
+
+```lua
+
+printKarlachOrLaezel("Karlach")
+printKarlachOrLaezel("Laezel")
+printKarlachOrLaezel("Gale")
+
+```
+
+` `
 
 
 
