@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T15:31:26.387Z
+date: 2024-05-01T15:42:23.176Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -802,9 +802,6 @@ print(GetWyll())
 
 
 
-<span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
-
-
 ### 4\. Functions
 
 You can use fuctions when you have to execute the same code multiple times.
@@ -812,7 +809,8 @@ This allows you to reuse your code without having to copy and paste it.
 You will be less likely to make mistakes and your code will be easier to maintain
 
 
-A function can be declared by usinf the keyword `function`. Then its name and parenthesis.
+A function can be declared by using the keyword `function`. Then its `name` and parenthesis `()`.
+It always has to end with `end`
 
 
 ```lua
@@ -824,6 +822,7 @@ end
 ```
 
 Optionally you can also add parameters to your function to make it more flexible.
+In this case `companion`
 
 ```lua
 
@@ -845,14 +844,13 @@ end
 You might want to add some descriptions to your functions so you and other people know what it does, what input it takes and what it returns.
 
 ```lua
--- returns Astarions uuid
----@return uuid string
+-- prints Astarions uuid
 local function printAstarion()
 	print("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255")
 end
 
+-- prints Karlachs or Laezels uuid. Else prints an error message
 ---@param name string
----@return uuid string
 local function printKarlachOrLaezel(companion)
 
 	if companion == "Karlach" then
@@ -868,7 +866,7 @@ end
 
 ```
 
-To call a function, simply type its name with the parenthesis. If you have added parameters for your function, then make sure to also include those.
+To call a function, simply type its name with the parenthesis.
 
 ```lua
 
@@ -877,6 +875,9 @@ printAstarion()
 ```
 
 `S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255`
+
+
+If you have added parameters for your function, then make sure to also include those.
 
 ```lua
 
@@ -890,6 +891,64 @@ printKarlachOrLaezel("Gale")
 `S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12`
 `Not Karlach or Laezel`
 
+
+
+Functions can also return values. You can save these return values in a variable to use later
+
+```lua
+
+
+-- returns Astarions uuid
+---@return uuid string
+local function getAstarion()
+	return "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255"
+end
+```
+
+```lua
+local astarion = getAstarion()
+
+print(astarion)
+```
+
+` S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255 ` 
+
+This also works for functions that take parameters
+
+
+```lua
+
+-- returns Karlachs or Laezels uuid. Else returns nil
+---@param name string
+local function getKarlachOrLaezel(companion)
+
+	if companion == "Karlach" then
+		return "S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c"
+    
+  elseif companion == "Laezel" then
+ 	 	return "S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12"
+
+  end
+end
+
+```
+
+```lua
+local karlach = getKarlachOrLaezel("Karlach")
+local laezel = getKarlachOrLaezel("Laezel")
+local gale = getKarlachOrLaezel("Gale")
+
+print(karlach)
+print(laezel)
+print(gale)
+```
+
+`S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c`
+`S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12`
+`nil`
+
+
+<span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
 
 ### 5\. If statements
 
