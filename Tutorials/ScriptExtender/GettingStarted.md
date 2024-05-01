@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T07:10:45.106Z
+date: 2024-05-01T07:13:35.073Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -193,6 +193,23 @@ You might have already noticed that you can create multiple files in your worksp
 This often helps to break down your project and make it easier to navigate. 
 Let us create a new file by right clicking on the folder "Server" and clicking "New File".
 We will name this file "MySecondSEScript.lua".
+
+
+![gswse_21.png](/tutorials/getting_started_with_se/gswse_21.png)
+
+![gswse_22.png](/tutorials/getting_started_with_se/gswse_22.png)
+
+![gswse_23.png](/tutorials/getting_started_with_se/gswse_23.png)
+
+![gswse_24.png](/tutorials/getting_started_with_se/gswse_24.png)
+
+![gswse_25.png](/tutorials/getting_started_with_se/gswse_25.png)
+
+![gswse_26.png](/tutorials/getting_started_with_se/gswse_26.png)
+
+![gswse_26.png](/tutorials/getting_started_with_se/gswse_26.png)
+
+![gswse_27.png](/tutorials/getting_started_with_se/gswse_27.png)
 
 > All Lua scripts you want to create need to have the ending *.lua*
 {.is-info}
