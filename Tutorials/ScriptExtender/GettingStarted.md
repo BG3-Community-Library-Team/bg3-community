@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T20:33:05.594Z
+date: 2024-05-01T20:41:06.221Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -822,7 +822,9 @@ end
 ```
 
 Optionally you can also add parameters to your function to make it more flexible.
-In this case `companion`
+
+Parameters allow you to add an input and reuse this input within a function. 
+In this case we name our parameter `companion`. You can use any name you like as long as it stays consistent within the function.
 
 ```lua
 
