@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-01T04:15:38.526Z
+date: 2024-05-01T04:28:04.251Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -79,6 +79,22 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |-----|----|----|----|----|----|----|----|
 |DB_QRYRTN_GetCharacterOwnerIfItemSummon|?|1|?|--|--|
 
+## Class-Specific
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_GLO_Spells_DivineInterventionSpells|List of Divine Intervention Spells|1|Spell ID|--|--|--|--|
+|DB_GLO_Spells_DominatedOwnerStatus|List of Statuses that fall under Dominated|2|Status ID|Status ID|--|--|--|
+|DB_GLO_Spells_TurnCharactersEvilStatuses|List of statuses that turn characters Evil|1|Status ID|--|--|--|--|
+|DB_GLO_PaladinOathbreaker_RedemptionPrice|Cost of Redemption at a given level|2|Integer (Level Number)|Integer (Price)|--|--|--|
+|DB_GLO_PaladinOathbreaker_LinkedDialogues|Linked Dialogs relating to Oathbreaker|1|Dialog Resource ID|--|--|--|--|
+|DB_GLO_PaladinOathbreakerPath_SelectedOathbreaker|List of Characters that have selected Oathbreaker|1|Character UUID|--|--|--|--|
+|DB_GLO_PaladinOathbreaker_CrimeID|?|2|Character UUID|Crime ID|--|--|--|
+|DB_GLO_PaladinOathbreakerPath_WaitForCrime|?|2|Character UUID|Crime ID|--|--|--|
+|DB_GLO_PaladinOathbreakerPath_KnightTalkedTo|List of Characters that have spoken to the Oathbreaker Knight|1|Character UUID|--|--|--|--|
+|DB_GLO_PaladinOathbreakerPath_WaitForDialog|?|1|Dialog Resource|--|--|--|--|
+|DB_GLO_OathbreakerKnight_StartFirstAppearanceWith|?|1|?|--|--|--|--|
+|DB_GLO_PaladinOathbreaker_Oathbreakers|List of Oathbreakers|1|Character UUID|--|--|--|--|
+
 ## Combat
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
@@ -145,6 +161,7 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_LevelLoadedOnce|?|1|Level ID String|--|--|--|--|
 |DB_LevelGameplayLoadedOnce_WaitForGameplay|?|1|String|--|--|--|--|
 |DB_CharacterCreationStarted|Has Character Creation Started?|1|?|--|--|--|--|
+|DB_ObjectCountHelper|?|3|UUID String|Flag String ID|?|--|--|
 
 ## Location
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -160,6 +177,9 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_CustomUseItemResponse|?|3|Character UUID|?|Integer|--|--|
+|DB_PermaDefeated|List of Permanently Defeated Characters|1|Character UUID|--|--|--|--|
+|DB_OffStage|?|1|Character UUID|--|--|--|--|
+|DB_DialogMoneyTransfer|?|3|Integer|Character UUID|Integer (Price)|--|--|
 
 ## Origins
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
