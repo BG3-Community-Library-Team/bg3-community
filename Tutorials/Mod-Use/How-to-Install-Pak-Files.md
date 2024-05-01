@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: false
-date: 2024-05-01T01:28:19.040Z
+date: 2024-05-01T04:57:12.171Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -211,11 +211,14 @@ You will need to remove them completely from the mods folder to disable them
 
 How to install BG3MM, mods and manual/loose file mods series: 
 Part 1: How to install BG3MM: https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM
-Part 3: How to install manual/loose file mods 
+Part 3: How to install manual/loose file mods: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
 
-How to install SE 
-How to install Native mod loader
-How to install Unique tav
+Other relevant guides: 
+General load order guide: https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order
+How to install Sript Extender: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender
+Clean reinstall of Script Extender: On To-Do
+How to install Native mod loader: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
+How to install Unique tav: On To-Do
 
 Made by: Maze 
 Credits: Arrow, LaughingLeader, Norbyte, Derk, NellsRelo, Meowcat
