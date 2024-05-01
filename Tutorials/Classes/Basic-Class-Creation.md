@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-01T20:41:38.922Z
+date: 2024-05-01T20:45:07.294Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -707,11 +707,12 @@ Quickster\Public\Quickster\Tags\35add446-b710-4ad1-8dbc-36f99aecc6d5.lsx
   </region>
 </save>
 ```
-
+ *<sub>Note the UUID used is the same as the one I generated for my file name</sub>
+  
 I have been trying to keep this section of the tutorial pretty isolated, in that I was mostly sticking to things in the shared.pak. I dont want to dive to much into it here but this next part regarding tags will be using the gustav.pak. If you arent too concerned about integrating your class with the game (getting custom dialog options, etc) you can definetly skip this section and head to [selectors](https://github.com/ghostboats/bg3_modders_guide/wiki/Class-Creation#Selectors%EF%B8%8F). Otherwise, I will only be covering the basics of tag usage here. You can get more indepth here (TODO add tag link).
 
 ## Use Tag
-Like I mentioned above, I want to add something unique for my class via its tag. Lets add a custom dialog option for the Quickster class for the cutscene at the beginning of the game, when the player clicks the brinepool with tadpoles in it. First we will need to located the file that handles the dialog of that scene. You can find this in the Gustav\Story\Dialogs\Tutorial\TUT_Start_Brinepool.lsj. Its a pretty big file so I dont want to post the whole thing here but lets start by recreating the file path in our project and copying that lsj file over to it. Starting from my main project folder I made the folders so I now have this path Quickster\Mods\Quickster\Story\Dialogs\Tutorial\TUT_Start_Brinepool.lsj. Lets start by moving to the bottom of the file. Typically we can see the initial message down here, as well as the dialog options we get from it. We should see 3 child nodes that are uuids. We want to add our own custom one in here, for our class. I generated the uuid of 3c243807-5db3-4172-93a0-0dad00d710f5 so i made a chile node for it.
+Like I mentioned above, I want to add something unique for my class via its tag. Lets add a custom dialog option for the Quickster class for the cutscene at the beginning of the game, when the player clicks the brinepool with tadpoles in it. First we will need to locate the file that handles the dialog of that scene. You can find this in the Gustav\Story\Dialogs\Tutorial\TUT_Start_Brinepool.lsj. Its a pretty big file so I dont want to post the whole thing here but lets start by recreating the file path in our project and copying that lsj file over to it. Starting from my main project folder I made the folders so I now have this path Quickster\Mods\Quickster\Story\Dialogs\Tutorial\TUT_Start_Brinepool.lsj. Lets start by moving to the bottom of the file. Typically we can see the initial message down here, as well as the dialog options we get from it. We should see 3 child nodes that are uuids. We want to add our own custom one in here, for our class. I generated the uuid of 3c243807-5db3-4172-93a0-0dad00d710f5 so i made a chile node for it.
 
 Quickster\Mods\Quickster\Story\Dialogs\Tutorial\TUT_Start_Brinepool.lsj
 ```
