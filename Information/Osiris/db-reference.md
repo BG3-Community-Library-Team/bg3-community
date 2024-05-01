@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-04-30T23:51:22.507Z
+date: 2024-05-01T00:02:17.062Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -37,7 +37,15 @@ The below is a list of Osiris DB's, and their Parameters.
 |DB_Players|List of registered Player Character IDs|1|Character UUID|--|--|--|--|
 |DB_Avatars|List of registered Player Avatar Character IDs|1|Character UUID|--|--|--|--|
 |DB_PartyMembers|List of registered Party Member Character IDs|1|Character UUID|--|--|--|--|
-|DB_PredefinePartyPreset_Loaded|?|||||||
+|DB_PredefinePartyPreset_Loaded|?|?|--|--|--|--|--|
+|DB_Following|Character that is following|2|Character UUID|?|--|--|--|
+|DB_CantAct|Character can perform actions|1|CCharacter UUID|--|--|--|--|
+|DB_IsArrested|List of Arrested Characters|2|?|Character UUID|--|--|--|
+|DB_InBlockedWaypointZone|List of Characters Currently in a Blocked Waypoint Zone|2|Character UUID|Region String|--|--|--|
+|DB_InCamp|List of Characters Currently in Camp|1|Character UUID|--|--|--|--|
+|DB_InDangerZone|List of Characters in a Danger Zone|2|Character UUID|?|--|--|--|
+|DB_InRegion|List of Characters currently in region|2|Character UUID|Region String ID|--|--|--|
+|DB_Dead|List of Dead Characters|1|Character UUID|--|--|--|--|
 
 ## Combat
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -61,6 +69,7 @@ The below is a list of Osiris DB's, and their Parameters.
 |DB_GLO_CombatFirstTurnStarted|?|1|?|--|--|--|--|
 |DB_GLO_Combat_TemporaryHostile|?|1|UUID|--|--|--|--|
 |DB_GLO_Combat_PermanentlyHostile|?|1|UUID|--|--|--|--|
+|DB_EnterCombatRequested|?|1|UUID String|--|--|--|--|
 
 ## Dialog
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -68,6 +77,8 @@ The below is a list of Osiris DB's, and their Parameters.
 |DB_DialogName|?|2|?|?|--|--|--|
 |DB_DialogNPCs|?|3|?|UUID|?|--|--|
 |DB_OnDialogAttackRequested|?|3|Character UUID|Character UUID|Integer|--|--|
+|DB_InteractiveDialogSpeaker|?|2|Integer|?|--|--|--|
+|DB_DialogDeath|?|1|Character UUID|--|--|--|--|
 
 ## Game Management
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -77,7 +88,8 @@ The below is a list of Osiris DB's, and their Parameters.
 |DB_InternalGroup_Count|?|1|Integer|--|--|--|--|
 |DB_LogicOr|?|3|Integer|Integer|Integer|--|--|
 |DB_GLO_DieFlag|?|4|UUID|UUID|Integer|UUID|--|
-|DB_GLO_ItemInventoryLockFlag|
+|DB_GLO_ItemInventoryLockFlag|?|3|UUID|UUID|UUID|--|--|
+|DB_IsEditor|(Non-functional) If in Editor Gamemode|1|Integer as Boolean|--|--|--|--|
 
 ## Location
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -85,14 +97,13 @@ The below is a list of Osiris DB's, and their Parameters.
 |DB_ActiveCamp|?|1|?|--|--|--|--|
 |DB_Camp|?|4|?|?|?|UUID|--|
 |DB_CurrentLevel|String ID of Current Level (Scenario)|1|String ID|--|--|--|--|
-|DB_InCamp|List of Characters Currently in Camp|1|Character UUID|--|--|--|--|
 |DB_WaypointInfo|?|4|?|?|?|?|--|
 |DB_WaypointUnlocked|List of Unlocked Waypoints|2|?|Character UUID|--|--|--|
+|DB_BlockedWaypointZone|List of Blocked Waypoints|1|Region String|--|--|--|--|
 
 ## Misc
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
-|DB_InDangerZone|?|2|Character UUID|?|--|--|--|
 
 ## Origins
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -126,3 +137,8 @@ The below is a list of Osiris DB's, and their Parameters.
 |PROC_SceneManager_HandleViolence|?|5|Integer as Boolean|?|?|String|?|
 |DB_InternScene_DeathHandled|?|2|?|Character UUID|--|--|--|
 |PROC_SceneInterrupted|?|5|Character UUID|UUID|?|String|--|
+
+## UI
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_InCharacterRespec|Characters respec'ing|2|UUID|String|--|--|--|
