@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-01T06:11:53.599Z
+date: 2024-05-01T06:17:43.723Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -12,7 +12,12 @@ dateCreated: 2024-04-26T20:37:14.615Z
 This guide is intended to help you create a basic class mod from start to finish.
 
 # Goals
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 <details>
 <summary><a href="https://wiki.bg3.community/en/Tutorials/Basic-Class-Creation#setup-for-modding%EF%B8%8F">Setup for modding</a></summary>
 <ul>
@@ -95,7 +100,8 @@ This guide is intended to help you create a basic class mod from start to finish
       <li><a href="https://wiki.bg3.community/en/Tutorials/Basic-Class-Creation#create-an-action-resource">Create an action resource</a></li>
 </ul>
 </details>
-
+</body>
+</html>
 
 # Setup for modding[⬆️](#goals)
 *<sub>Note that the mod I am creating in this example is called Quickster, for your reference.</sub>
