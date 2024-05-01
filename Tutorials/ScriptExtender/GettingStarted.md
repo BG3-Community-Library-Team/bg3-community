@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T20:29:58.287Z
+date: 2024-05-01T20:33:05.594Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -328,7 +328,7 @@ printMyTable(myTable)
 > To see the changes in your tables, use the `printMyTable` function after every change!
 {.is-info}
 
-#### 1\. The basics
+#### 3.1\. The basics
 
 You can create a new table by instantiating an empty one
 
@@ -375,7 +375,7 @@ table.remove(myTable, 1)
 `1 Bread`
 `2 Wine`
 
-#### 2\. Iterating over a table
+#### 3.2\. Iterating over a table
 
 To be able to access all components, we want to iterate over the tables.
 This is what we are doing in the `printMyTable` function.
@@ -392,10 +392,10 @@ end
 `2 Wine`
 
 
-#### 3\. Different types of tables
+#### 3.3\. Different types of tables
 
 
-##### 1\. Arrays
+##### 3.3.1\. Arrays
 
 The tables in the example above can fir the description of an "array". They consist of an index and an entry
 
@@ -417,7 +417,7 @@ print("The first entry in myTable is ", myTable[1])
 > In most programming languages we start counting at 0, but in Lua we start at 1
 {.is-info}
 
-##### 1\. Maps
+##### 3.3.2\. Maps
 
 
 ```lua
@@ -448,7 +448,7 @@ print("Wylls UUID is ", ORIGINS["Wyll"])
 
 
 
-##### 1\. Sets
+##### 3.3.3\. Sets
 
 
 ```lua
@@ -802,7 +802,7 @@ print(GetWyll())
 
 
 
-### 4\. Functions
+### 5\. Functions
 
 You can use fuctions when you have to execute the same code multiple times.
 This allows you to reuse your code without having to copy and paste it.
@@ -948,7 +948,7 @@ print(gale)
 `nil`
 
 
-### 5\. If statements
+### 6\. If statements
 
 For now we have written code that always executes the same way.
 To be able to make it more interactive we can use **flow statements** to change the way our code is executed. 
@@ -1157,7 +1157,7 @@ end
 
 
 
-### 6\. Loops
+### 7\. Loops
 
 Another way to make our code more interactive is by the use of **loops** to repeat certain steps.
 You have already used in if you have followed **3. A very special data structure: tables** where we used the function `printMyTable`
@@ -1188,9 +1188,9 @@ end
 <span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
 
 
-### 7\. Debugging using print statements
+### 8\. Debugging using print statements
 
-### 8\. A brief introduction to metatables
+### 9\. A brief introduction to metatables
 
 
 
