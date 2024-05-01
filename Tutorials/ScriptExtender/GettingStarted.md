@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T08:01:29.391Z
+date: 2024-05-01T08:40:04.413Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -806,11 +806,75 @@ print(GetWyll())
 
 
 Lua is a very flexible language. Through its usage of tables multiple OOP concepts like Inheritance can be realized.
-Here we will talk about *Metatables* which is the Lua equivalent of *objects*.
+Here we will talk about *Metatables* which is the Lua equivalent of *Objects*.
 
-For this section we will rename *MyFirstSEScript.lue* to *Main.lua* and 
+For this section we will rename *MyFirstSEScript.lua* to *Main.lua* and 
 *MySecondSEScript.lua* to *Companion.lua*  , to better showcase this principle.
 
+
+
+> **Note:** Make sure to also modify the script names in `BootstrapServer.lua`.
+> `Companion.lua` must be loaded before `Main.lua` since we use components of `Companion.lua` in `Main.lua`.
+>
+>```lua
+>Ext.Require("Server/Companion.lua")
+>Ext.Require("Server/Main.lua")
+>```
+{.is-info}
+
+
+in *Companion.lua*  we will now build a *Companion*
+
+```lua
+
+-- Companion.lua
+
+-- creating the metatable
+
+Companion = {}
+Companion.__index = Companion
+
+---@param name STRING
+---@param healt int
+---@parma class STRING
+function Companion:new(name, health, class)
+    local instance = setmetatable({
+        name = name,
+        health = health,
+        class = class
+    }, Companion)
+    return instance
+end
+
+
+-- components of a companion
+
+local name
+local health
+local class
+
+
+-- methods of a companion
+
+
+---@return integer bool
+local getCompanion()
+
+local getCompanionName()
+
+local getCompanionHealth()
+
+local getCompanionClass()
+
+
+local healCompanion(companion, healAmount)
+local killCompanion(companion)
+
+
+
+
+
+```
 
 
 
