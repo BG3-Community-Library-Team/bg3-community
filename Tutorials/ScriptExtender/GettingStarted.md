@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T09:03:47.710Z
+date: 2024-05-01T09:05:58.852Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -231,6 +231,8 @@ We will name this file `MySecondSEScript.lua`.
 
 
 ## **6\. The Basics of Programming**
+
+**// TODO - This has to be moved to a separate wiki page**
 
 The following section is aimed towards people who have no programming knowledge.
 
