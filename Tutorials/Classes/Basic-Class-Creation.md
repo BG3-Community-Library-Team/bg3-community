@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-01T21:58:26.875Z
+date: 2024-05-01T22:42:18.830Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -92,6 +92,13 @@ This guide is intended to help you create a basic class mod from start to finish
 <summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#action-resources%EF%B8%8F">Action Resources</a></summary>
 <ul>
       <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#create-an-action-resource">Create an action resource</a></li>
+</ul>
+</details>
+  
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#starting-equipment%EF%B8%8F">Starting Equipment</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#coming-soon">Coming soon</a></li>
 </ul>
 </details>
 
@@ -1109,7 +1116,7 @@ That should do it! Go load up your game and select your class. You should see a 
 Our class is really starting to come together. Lets add more to our class to fully flesh it out. This involved adding two/three more attributes to our Progressions.lsx, Boosts and PassivesAdded/Removed.
 
 ## Boosts
-Not to be confused with boosts from our data.txt file, boosts is an attribute added in our progressions to mark things our class should get off the bat at the progression, like maybe certain weapon proficiencies, different actions resources (sorcery points, etc), etc. If we load up our class right now, we see that we dont have any sort of proficiency in anything (excluding the start proficiencies we get from whatever race you picked)! We suck! No matter, lets get good. Remember our Progressions.lsx file? Lets add in our new attribute. We can add multiple entries at once, just separated by a ;.
+Boosts are for things our class should get, like maybe certain weapon proficiencies, different actions resources (sorcery points, etc), debuffs, buffs, ability changes, etc. You may remember we also applied boosts earler when we created the passives we selected on creation. Boosts can also be applied via spells/status. If we load up our class right now, we see that we dont have any sort of proficiency in anything (excluding the start proficiencies we get from whatever race you picked)! We suck! No matter, lets get good. Remember our Progressions.lsx file? Lets add in our new attribute. We can add multiple entries at once, just separated by a ;.
 
 Quickster\Public\Quickster\Progressions\Progressions.lsx
 ```
@@ -1140,7 +1147,7 @@ Lets cover two different attributes here that are fairly similar, PassivesAdded 
 
 Quickster\Public\Quickster\Progressions\Progressions.lsx
 ```
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
   <region id="Progressions">
@@ -1399,7 +1406,7 @@ Quickster\Public\Quickster\ActionResourceDefinitions\ActionResourceDefinitions.l
 
 We have made a new action resource but right now it just floating around. Like everything we have done, we need to link it to our class, more specifially our progression for our class. Lets go back to our progressions.lsx and take a look at our main class progression since I want it to be applied to the class as a whole and not a specific subclass like I did with my spell slots. Here is my progressions after I attach my newly made action resource to my class.
 
-
+Quickster\Public\Quickster\Progressions\Progressions.lsx
 ```
 ...
  <node id="Progression">
@@ -1427,7 +1434,75 @@ We have made a new action resource but right now it just floating around. Like e
 ...
 ```
 
-The only new thing I added was in Boosts. I added the Function ActionResource(). The first parameter is the name of my action resource, so SpeedForce. The second parameter is an int for how many of the resource you get. I want two charges, so I put 2. The last parameter is an into for the level. In my case I dont have a level restriction so I put 0. Thats pretty much all it takes to make an action resource. It may not mean much to you right now but when you make a spell you can refer to this action resource for its use costs. I can cover it better in my Spells section I will be making.
+The only new thing I added was in Boosts. I added the Function ActionResource(). The first parameter is the name of my action resource, so SpeedForce. The second parameter is an int for how many of the resource you get. I want two charges, so I put 2. The last parameter is an int for the level. In my case I dont have a level restriction so I put 0. Thats pretty much all it takes to make an action resource. It may not mean much to you right now but when you make a spell you can refer to this action resource for its use costs.
+  
+# Starting Equipment[⬆️](#goals)
+Running around Faerun naked is not advised. Most classes would want starting armor, weapon, and items. I wont cover creating new items here for this class so dont expect that below. Please look in the wiki for item creation guides for that.
+
+## Equipment.txt
+The game defines all starting gear in a file called Equipment.txt, which is found in the \Shared\Stats\Generated folder. Lets take a look at an entry or two.
+
+```
+new equipment "EQP_CC_Barbarian"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greataxe"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Shoes_Barbarian"
+add equipmentgroup
+add equipment entry "ARM_Barbarian"
+add equipmentgroup
+add equipment entry "WPN_Handaxe"
+add equipmentgroup
+add equipment entry "WPN_Handaxe"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+
+new equipment "EQP_CC_Bard"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Rapier"
+add equipmentgroup
+add equipment entry "WPN_HandCrossbow"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "ARM_Bard"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+```
+  
+*Still in progress, come back soon :)
+
+---
 
 I think thats it for classes for now. If something class related is missing here or incorrect, please leave a comment.
 
