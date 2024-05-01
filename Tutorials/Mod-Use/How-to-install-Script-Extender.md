@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: true
-date: 2024-05-01T01:50:35.121Z
+date: 2024-05-01T01:51:27.836Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -193,7 +193,7 @@ Fun fact, contrary to popular belief: Devel version is actually harmful to your 
 First and foremost, what is the devel version? 
 The Devel version is a branch of SE. However, think of it as early development branch of SE. Think of it as an earlier development than Alpha developments. This is because the devel version is the version where Norbyte tests functions, and develop functions that are going to be released in the next offical releases. 
 
-This means the devel version is very expiremental and if you, as a user, is playing the game while using the devel version, and Norbyte is testing Virtual Textures but accidently breaking them in the process, you can experience crashes, bugs such as weird textures on your tavs, companion etc, console not responding, console flashing red, spam in the console, spam in the game, game not responding, game not starting, and many more. 
+This means the devel version is very expiremental and if you, as a user, is playing the game while using the devel version, and Norbyte is testing Virtual Textures but accidently breaks them in the process, you can experience crashes, bugs such as weird textures on your tavs, companion etc, console not responding, console flashing red, spam in the console, spam in the game, game not responding, game not starting, and many more. 
 
 Most of the time, the devel version is a version behind the main release. For good reasons as this is a playground for testing. 
 
