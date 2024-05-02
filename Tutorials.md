@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-05-02T22:11:29.099Z
+date: 2024-05-02T22:13:21.486Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
