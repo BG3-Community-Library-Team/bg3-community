@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T09:39:42.896Z
+date: 2024-05-02T09:50:07.372Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -76,7 +76,12 @@ You've created your UI Lua script and are ready to roll.
 
 The first step is to get an actual frame or window to work with, which we achieve through ScriptExtender.
 
-If you've followed the ScriptExtender guide, you should have an ExtIdeHelpers.lua file. In it, locate "Ext_ClientImgui" (Ctrl+F is your friend). Here, you'll find the very first function we can utilize.
+If you've followed the ScriptExtender guide, you should have an ExtIdeHelpers.lua file.
+> Otherwise it can also be found [here](https://github.com/Norbyte/bg3se/blob/main/BG3Extender/IdeHelpers/ExtIdeHelpers.lua)
+{.is-info}
+
+
+In it, locate "Ext_ClientImgui" (Ctrl+F is your friend). Here, you'll find the very first function we can utilize.
 
 You will notice that it says:
 ```cpp
@@ -116,6 +121,10 @@ _P(MyWindow.Label)
 
 will print "My ImGui Window" since this is an element our new object has inside of it.
 
+> If it throws an error, you might need to dump it again first and see if that element is even on your object!
+{.is-danger}
+
+
 ## **3\. So, what can it do?**
 
 To explore its capabilities, let's revisit our ExtIdeHelpers.lua file.
@@ -136,7 +145,35 @@ This indicates that by using the function `NewWindow()`, we're essentially creat
 
 Continue scanning until you find a block of ImguiHandles underneath a class called `ExtuiTreeParent:ExtuiStyledRenderable`.
 
-![imguihandle.png](/tutorials/imgui_and_you/imguihandle.png)
+```cpp
+--- @class ExtuiTreeParent:ExtuiStyledRenderable
+--- @field AddBulletText fun(self:ExtuiTreeParent, a1:string):ImguiHandle
+--- @field AddButton fun(self:ExtuiTreeParent, a1:string):ImguiHandle
+--- @field AddCheckbox fun(self:ExtuiTreeParent, a1:string, a2:boolean?):ImguiHandle
+--- @field AddCollapsingHeader fun(self:ExtuiTreeParent, a1:string):ImguiHandle
+--- @field AddColorEdit fun(self:ExtuiTreeParent, a1:string, a2:vec3?):ImguiHandle
+--- @field AddColorPicker fun(self:ExtuiTreeParent, a1:string, a2:vec3?):ImguiHandle
+--- @field AddCombo fun(self:ExtuiTreeParent, a1:string):ImguiHandle
+--- @field AddDrag fun(self:ExtuiTreeParent, a1:string, a2:number?, a3:number?, a4:number?):ImguiHandle
+--- @field AddDragInt fun(self:ExtuiTreeParent, a1:string, a2:int32?, a3:int32?, a4:int32?):ImguiHandle
+--- @field AddDummy fun(self:ExtuiTreeParent, a1:number, a2:number):ImguiHandle
+--- @field AddGroup fun(self:ExtuiTreeParent, a1:string):ImguiHandle
+--- @field AddInputInt fun(self:ExtuiTreeParent, a1:string, a2:int32?):ImguiHandle
+--- @field AddInputScalar fun(self:ExtuiTreeParent, a1:string, a2:number?):ImguiHandle
+--- @field AddInputText fun(self:ExtuiTreeParent, a1:string, a2:string?):ImguiHandle
+--- @field AddNewLine fun(self:ExtuiTreeParent):ImguiHandle
+--- @field AddPopup fun(self:ExtuiTreeParent, a1:string):ImguiHandle
+--- @field AddRadioButton fun(self:ExtuiTreeParent, a1:string, a2:boolean?):ImguiHandle
+--- @field AddSeparator fun(self:ExtuiTreeParent):ImguiHandle
+--- @field AddSeparatorText fun(self:ExtuiTreeParent, a1:string):ImguiHandle
+--- @field AddSlider fun(self:ExtuiTreeParent, a1:string, a2:number?, a3:number?, a4:number?):ImguiHandle
+--- @field AddSliderInt fun(self:ExtuiTreeParent, a1:string, a2:int32?, a3:int32?, a4:int32?):ImguiHandle
+--- @field AddSpacing fun(self:ExtuiTreeParent):ImguiHandle
+--- @field AddTabBar fun(self:ExtuiTreeParent, a1:string):ImguiHandle
+--- @field AddTable fun(self:ExtuiTreeParent, a1:string, a2:uint32):ImguiHandle
+--- @field AddText fun(self:ExtuiTreeParent, a1:string):ImguiHandle
+--- @field AddTree fun(self:ExtuiTreeParent, a1:string):ImguiHandle
+```
 
 This block represents the class "ExtuiTreeParent" utilizing the "ExtuiStyledRenderable" class, which contains functions to create new objects of the ImguiHandle class.
 
@@ -150,22 +187,26 @@ Its essentially an object, making use of another object, to create a new object 
 
 You created your first window, named it and now also have a list of things to add.
 
-Lets say we start off with a simple Text (second from the last in the list you found earlier).
-For us to use it we need to add the ``AddText()`` function to our ``MyWindow`` object with an ``:``
+To start off, we begin by adding simple Text (Line 26 in the code block mentioned earlier).
+For this to work, we need to tell the ``MyWindow`` object to use the ``AddText()`` function with a ``:`` in between them.
 
 ```lua
---AddText() requires a string as a parameter!
+--Don't forget that AddText() requires a string as a parameter!
 MyWindow:AddText("Hello World")
 ```
-This should make your window say "Hello World"
+This should make your window have a text section which says "Hello World"
 
 We can also make it in form of a button:
 
 ```lua
---AddButton() requires a string as a parameter!
+--AddButton() also requires a string
 MyWindow:AddButton("Hello World")
 ```
 This should make your window have a button which says "Hello World" on it.
+
+> Always check what type of parameter a function you want to use requires.
+{.is-info}
+
 
 You may have done this by either editing the previous text to be a button or create a new line.
 
