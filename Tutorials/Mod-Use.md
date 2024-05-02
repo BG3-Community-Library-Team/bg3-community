@@ -2,7 +2,7 @@
 title: Mod Use
 description: Home page for tutorials on how to use mods.
 published: true
-date: 2024-05-02T17:02:18.685Z
+date: 2024-05-02T19:20:07.857Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-26T01:02:06.859Z
@@ -16,6 +16,6 @@ This page is a list of existing guides relating to the Installation and usage of
 - [General Load Order *Recommendations on how load orders work, and how to orders them*](general-load-order)
 - [Installing Script Extender *Getting Script Extender up and running*](How-to-install-Script-Extender)
 - [How to install manual/Loose Installation *Installing mods that won't be managed be a Mod Manager*](How-to-install-manual-or-loose-file-mods)
-- [How to install Pak files *Installing mods that will be managed be a Mod Manager*](How-to-Install-Pak-Files)
+- [How to install Pak files *Installing mods that will be managed by Mod Manager*](How-to-Install-Pak-Files)
 - [How to install BG3MM (BG3 Mod Manager) *Installing BG3 Mod Manager*](Installation-Of-BG3MM)
 {.links-list}
