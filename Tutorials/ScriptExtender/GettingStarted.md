@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T19:21:28.347Z
+date: 2024-05-02T19:32:53.403Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -185,21 +185,33 @@ You will find a few files here already. 
 
 Navigate to to `BootstrapServer.lua`
 
-![](https://lh7-us.googleusercontent.com/tqoF0Aj51oHiApBmLQmI573TEnmElxHsqRPqrVNBQp00vwEVQpRKsnBmBv3XqxdExOTTzJuzfPpD6YXJsenAUk0YODbxn3ab2LD96nROVlldWv8W5XqIydpt5myyIbyayWM2pemVZs8w-kKx_wuLbrs)
+
+![gswse_first_print.png](/tutorials/getting_started_with_se/gswse_first_print.png =600x200)
 
 
-To make sure your mod is active in the game, we will add a print statement that will execute when the game loads.
+To make sure your mod is active in the game, a print statement has been added that will execute when the game loads.
+
+Adding this print statement causes Script Extender to execute it upon loading the game, letting us know if the mod is active.
 
 
 
 ### 3.4 Packing your mod
 
-Afterwards, Pak the mod with a tool of your choice. Here we will use lslib.
+Afterwards, Pak the mod with a tool of your choice.
 
 -   LsLib: [_https://github.com/Norbyte/lslib/releases_](https://github.com/Norbyte/lslib/releases)
 -   Modder’s Multitool: [_https://github.com/ShinyHobo/BG3-Modders-Multitool/releases_](https://github.com/ShinyHobo/BG3-Modders-Multitool/releases)
 
-Pak the folder with a tool of your choice
+Here we will use lslib. The packing tool is called `converter.exe`
+Navigate to the correct tab `PAK/LSV Tools`
+
+
+
+![gswse_lslib.png](/tutorials/getting_started_with_se/gswse_lslib.png =800x400)
+
+Pak the folder with a tool of your choice in the sections `Create Package`
+
+
 
 ![](https://lh7-us.googleusercontent.com/OZIQx8Cg7rml-UhA0qm3dYzoxrqQWLewDGxch5Z-bLDqvj0_ZBof9MLn--r0wwDUahBy6ln-aR1evQ6Rgv6Nbu2qdPvODuU43w_8AfAoY72vxGM2nArZQDosjYJg79Upc9iC3a6oBNiFjLD93C4VljY)
 
