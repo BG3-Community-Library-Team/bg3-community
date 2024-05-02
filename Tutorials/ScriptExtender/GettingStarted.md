@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T11:58:13.978Z
+date: 2024-05-02T12:02:05.901Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -485,7 +485,7 @@ print("Is Dragonborn part of creatures? ", creatures["Dragonborn"])
 > In a lot of cases *nil* will give you the same result as *false*
 {.is-info}
 
-#### 4\. Tables within tables
+#### 3.4\. Tables within tables
 
 Tables are very flexible and allow varied structuring. Below you can see two more examples.
 Note that because of the nested structure, our printMyTable function does not work anymore.
@@ -1237,6 +1237,9 @@ printArraylike(myTable)
 `Bread`
 `Wine`
 
+
+As you have seen in **3.4. Tables within tables** we can *nest* tables.
+That mean swe can put a table within another table.
 
 - nested loops
 
