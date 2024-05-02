@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-01T22:16:57.465Z
+date: 2024-05-02T08:36:58.510Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1488,8 +1488,13 @@ print("Gale's class after trying illegal respec:", gale:getClass())
 
 ## **8\. Script Extender Functions**
 
+// TODO 
 -   Dumping
 -   Basically go over the API and heavily credit it
+- 	List some useful Ext functions, like \_D(Ext.Entity.Get(GetHostCharacter()).CharacterCreationAppearance) - maybe even in a separate wiki page
+- DB_Avatars, \_D(Osi.DB_Players:Get(nil))
+- Ext Listeners
+- link to imgui page here
 
 ## **9\. Advanced Information**
 
