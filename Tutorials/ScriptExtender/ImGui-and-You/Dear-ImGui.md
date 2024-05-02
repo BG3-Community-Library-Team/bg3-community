@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T15:18:05.522Z
+date: 2024-05-02T15:43:41.031Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -258,14 +258,51 @@ MyTabBar:AddTabItem()
 Remember to check what each function requires. AddTabItem() for instance requires a string so to actually have a name for our tab, lets do this:
 
 ```lua
-MyTabBar:AddTabItem("My Tab")
+MyTabBar:AddTabItem("My First Tab")
 ```
 
 You now have a tab an can add more!
 Simply repeat this line but with a different string parameter.
 
+### How to work with multiple tabs:
+
+Now that you've create your first TabItem or TabItems we need a way to decide upon which tab we are going to add more components to.
+
+You might see a pattern here, but yes, we just name them and make an object out of the earlier mentioned code-snippet.
+
+```lua
+MyTabOne = MyTabBar:AddTabItem("My First Tab")
+MyTabTwo = MyTabBar:AddTabItem("My Second Tab")
+```
+
+Based on all we've talked about before, how to add to a specific tab, might slowly become obvious now.
+
+If we want to add something to MyTabOne, we do so by typing
+
+```lua
+MyTabOne:SomeFunction()
+```
+
+If you want to add something to MyTabTwo, just use a function on MyTabTwo instead.
+
+And if we want to add something to the component we added to the Tab we name it again to be able to use it.
+
 
 ### **2.4.2\. Hiding Content: Collapsing Headers**
+
+CollapsingHeaders offer a nice way to organize and hide/reveal content in ImGui. 
+To begin, we'll need to introduce a CollapsingHeader into on of our objects.
+Which one we add components to is now entirely up to you.
+
+If you looked at the documentation of the ExtIdeHelpers.lua file, you might also already know how to add on if you look at how the function was named.
+Just like the oder ones, we will start with an ``:`` and type ``Add``, then the ``component`` we want to add.
+
+```lua
+:		Add		CollapsableHeader
+:AddCollapsableHeader()
+```
+
+We can accomplish this by instructing our window to employ the AddCollapsingHeader() function.
 
 ### **2.4.3\. Navigating with Trees**
 
