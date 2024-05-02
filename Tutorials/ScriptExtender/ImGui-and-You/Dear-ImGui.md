@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T08:03:01.053Z
+date: 2024-05-02T09:39:42.896Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -10,19 +10,24 @@ dateCreated: 2024-05-01T19:43:32.311Z
 
 # **Dear ImGui**
 
+This tutorial covers the integrationg of ImGui within mods using ScriptExtender.
 
-First and foremost, some general things about this tutorial:
+Before delving into the specifics, please note the following general points:
 
-- This tutorial assumes that you know how to install mods and create them. So please familiarize yourself with those topic on the relevant wiki pages:
+- This tutorial assumes that you know how to install mods and how to create them. If you are new to this, please familiarize yourself with them through other relevant Wiki pages:
 
-- This tutorial expects of you to have some basic understanding on working with ScriptExtender and covers the usage of ImGui. 
+- This tutorial expects of you to have some basic understanding on working with ScriptExtender. 
 
-- If you don't have any knowledge about SE please do visit the other pages first, like ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted)
+- If you don't have any knowledge about ScriptExtender please do visit the introductory pages first: ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted)
+
+- This Tutorial will get into parts of OOP (Object-Oriented-Programming). If you are not familiar with it, please visit Part 6.9 of ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) (A brief introduction to Metatables)
+
+> For testing purposes of this tutorial consider [setting up a symlink.](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking)
+{.is-info}
 
 
-
-## 1\. Folder Structure  
-
+## 1\. Workspace Structure  
+### **1.1\. Folders**
 To have an easier time to differentiate between all of your mods scripts it is advised to think about where you want to put your ImGui scripts.
 
 It should be noted that in addition to a BootstrapServer.lua script we'll also need a BootstrapClient.lua script, because the UI portion of it will be on a users client itself and not on the server.
@@ -32,58 +37,70 @@ Meaning we might as well differentiate between them by creating an additional "C
 
 For the future, everything that has to do with ImGui itself will be within the "Client" folder and everything that has to do with the server will be in the "Server" folder.
 
-> Don't forget to always add the scripts you are creating within the "Client" folder to your BootstrapClient.lua script. Same way as the other Bootstrap script, just a different path since the files will be within the "Client" folder.
+### **1.2\. Scripts**
+
+For a general introduction to ImGui this won't be necessary and you can just create a new .lua script within the "Client" folder, but its something to keep in mind depending on where you want to go with it.
+
+>For larger-scale mods, it's recommended to segment your UI script into multiple parts, such as MyUI_Window.lua, MyUI_Logic.lua, MyUI_Events.lua, and MyUI_Style.lua.
+While not essential for a basic ImGui introduction, this approach facilitates scalability and organization as your project evolves.
+{.is-info}
+
+![filestructure.png](/tutorials/imgui_and_you/filestructure.png)
+
+> Don't forget to always add the scripts you are creating within the "Client" folder to your BootstrapClient.lua script. You do this the way as with the other Bootstrap script, just a different path since the files will be within the "Client" folder. So `Ext.Require("Client/YourScript.lua")`
 {.is-warning}
 
+> If you were to use sub-folders within the "Client" folder it would go like this `Ext.Require("Client/YourFolder/YourScript.lua")`
+You do it the same way if you were to use sub-folders within your "Server" folder.
+{.is-info}
 
-## **2\. Your first window**
+### Something to consider in general
 
-To start off, create a new .lua file within the "Client" folder.
-
-If you already know that the mod you are intending to create will be a bit larger it is advised to split your ui script into several parts.
-E.g. MyUI_Window.lua/MyUI_Logic.lua/MyUI_Events.lua/MyUI_Style.lua
-
-For a general introduction to ImGui this won't be necessary but its something to keep in mind depending on where you want to go with it.
-
-### **1\. Something to consider**
-
-UI scripts can quickly get out of hand if you are creating many sections within your window, so don't afraid to make use of comments to find your way around greater sections.
-For Lua i see some people using huge amounts of comment blocks, and thats fine if it helps them!
-There is something, some people might not know about tho and those are "Regions".
+UI scripts can get overwhelming, especially when dealing with multiple sections within your window.
+Don't hesitate to use `--comments` liberally to navigate through larger sections.
+Some users employ extensive comment blocks for clarity, or some none at all and that's perfectly fine! Everyone should do it how they can differentiate between different sections best.
+However, there's another tool you might find useful: "Regions".
 
 ```lua
---#region Test
+--#region YourRegionTitle
 	Your Code
 --#endregion
 ```
-This will make your entire code section collapsable, which would not be a thing for ImGui since they don't count as functions which are naturally collapsable.
-So whenever you will work with a bigger section of your UI it is advised to make use of them.
+This will make an entire code section collapsable, which would normally not be a thing for ImGui since they don't count as functions which are naturally collapsable.
+So whenever you will work with a bigger section of your UI, utilizing regions might be beneficial to you.
 
 
-### **2\. New File, new Me** 
+## **3\. New File, New Me**
 
-So you created your UI lua file and start with a clean slate.
+You've created your UI Lua script and are ready to roll.
 
-First thing we want to do is getting an actual first frame/window to work with.
-We do that by, of course, using ScriptExtender.
+The first step is to get an actual frame or window to work with, which we achieve through ScriptExtender.
 
-If you followed the ScriptExtender guide, you should have an ExtIdeHelpers.lua file.
+If you've followed the ScriptExtender guide, you should have an ExtIdeHelpers.lua file. In it, locate "Ext_ClientImgui" (Ctrl+F is your friend). Here, you'll find the very first function we can utilize.
 
-Within it we can find (by Ctrl+F) "Ext_ClientImgui".
-Here we can see the very first function we can use.
+You will notice that it says:
+```cpp
+--- @class Ext_ClientIMGUI
+--- @field EnableDemo fun(a1:boolean)
+--- @field NewWindow fun(a1:string):ImguiHandle
+local Ext_ClientIMGUI = {}
+```
 
-By typing:
+Which means, the Ext_ClientIMGUI object is a class which has 2 fields available which are functions (fun). (You can even already see what  kind of arguments they require)
+
+So by typing:
 ```lua
-Ext.IMGUI.NewWindow("My ImGui Window")
+Ext.IMGUI.NewWindow("My ImGui Window") -- because the NewWindow function requires a "string" argument
 ```
 
 you have your very first window!
+And you will notice it says "My ImGui Window" in its title bar!
 
 ### **3\. Making use of it**
 
-"Okay, so what now?" is something you'd probably think immediately when you notice you can't do anything with it, except collapsing its titlebar.
+"Now what?" you may wonder as you stare at your window, unable to do much besides collapsing its title bar.
 
-To make use of it, we need to edit our first line and name it like you'd do with any other object:
+To put it to good use, let's edit our first line and name it like any other object:
 
 ```lua
 MyWindow = Ext.IMGUI.NewWindow("My ImGui Window")
@@ -101,12 +118,11 @@ will print "My ImGui Window" since this is an element our new object has inside 
 
 ## **3\. So, what can it do?**
 
-To learn about what is possible, we need to first look into our ExtIdeHelpers.lua file again.
-If you didn't move away from our last search within it you are already where we can find out more.
-If not, you might want to search for "Ext_ClientImgui" again.
+To explore its capabilities, let's revisit our ExtIdeHelpers.lua file.
 
-Now, last time we found out that we can make use of the Ext.IMGUI class with its function ``ǸewWindow()``.
-But in the same line we also learn something else. If you look to the right you'll see:
+If you're still in the same place as our last search, great! If not, search for "Ext_ClientImgui" again.
+
+Last time, we discovered that we can utilize the Ext.IMGUI class with its function `NewWindow()`. But there's more to it. If you look to the right, you'll see:
 
 ```lua
 :ImguiHandle
@@ -116,22 +132,25 @@ If you now search for this word instead you will find:
 @Class ImguiHandle
 ```
 
-This means, that by using the function ``ǸewWindow()`` we are essentially creating a new object of the class "ImguiHandle".
-What you might notice when you look for further occurences of this word is that there are a lot of things that make use of this class.
+This indicates that by using the function `NewWindow()`, we're essentially creating a new object of the class "ImguiHandle". As you look deeper into the file, you'll notice that many functions make use of this class.
 
-Continue going through the occurences until you find a block of ImguiHandles underneath a class called ``ExtuiTreeParent:ExtuiStyledRenderable``.
+Continue scanning until you find a block of ImguiHandles underneath a class called `ExtuiTreeParent:ExtuiStyledRenderable`.
 
 ![imguihandle.png](/tutorials/imgui_and_you/imguihandle.png)
 
-This is in essence, the class "ExtuiTreeParent" making use of the "ExtuiStyledRenderable" class, which has functions within it to create new objects of the ImguiHandle class.
+This block represents the class "ExtuiTreeParent" utilizing the "ExtuiStyledRenderable" class, which contains functions to create new objects of the ImguiHandle class.
 
-I'm explaining it like this because this guide will never be able to cover everything and this is instead a way for you to find your way through the ExtIdeHelpers.lua file to find out new stuff yourself. Or if you forget how a speficic function works, you will know how to look for it.
+Its essentially an object, making use of another object, to create a new object on itself. ("`self`")
+
+> It is explained like this because this guide won't cover everything, but it's a starting point for you to navigate the ExtIdeHelpers.lua file and discover new features on your own. If you ever forget how a specific function works, you'll know how to find it.
+{.is-info}
+
 
 ## **4\. The basics**
 
-You created your first window, named it and also have a list of things to add.
+You created your first window, named it and now also have a list of things to add.
 
-Lets say we start off with a simple Text (second last in the list from earlier).
+Lets say we start off with a simple Text (second from the last in the list you found earlier).
 For us to use it we need to add the ``AddText()`` function to our ``MyWindow`` object with an ``:``
 
 ```lua
