@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T18:40:20.058Z
+date: 2024-05-02T18:50:05.761Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -340,7 +340,7 @@ Below are some additional resources.
 
 
 
-## **XXX\. Useful Resources**
+## **3.0\. Useful Resources**
 
 **_Norbyte_**
 
