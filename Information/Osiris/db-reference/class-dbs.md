@@ -2,13 +2,14 @@
 title: Class DB Reference
 description: Osiris Class-Specific DBs
 published: true
-date: 2024-05-02T03:10:28.282Z
+date: 2024-05-02T16:31:31.558Z
 tags: osiris, db, classes, dbs
 editor: markdown
 dateCreated: 2024-05-02T03:10:28.282Z
 ---
 
-# Class-Specific
+# Class-Specific DBs
+The following DBs are ones that are Class-Specific.
 
 # {.tabset}
 ## Bard
