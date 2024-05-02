@@ -1,8 +1,8 @@
 ---
-title: Untitled Page
+title: Story DBs
 description: Osiris DBs that relate to Story Content
 published: true
-date: 2024-05-02T16:35:51.588Z
+date: 2024-05-02T21:43:26.579Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:35:51.588Z
