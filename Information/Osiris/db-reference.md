@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-02T02:36:53.900Z
+date: 2024-05-02T02:48:12.081Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -13,36 +13,8 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 
 # Types {.tabset}
 
-## Anubis Configs
-
-### Tabs {.tabset}
-
-#### Configs
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
-|-----|----|----|----|----|----|----|----|
-|DB_AnubisConfigsOverrideStack|?|3|UUID|String|Integer|--|--|
-|DB_AnubisConfigs|?|2|Character UUID|String|--|--|--|
-|DB_AnubisConfigs_DelayAssignment|?|2|Character UUID|String|--|--|--|
-|DB_AnubisConfigOverride_NewConfig|?|3|Character UUID|String|Integer|--|--|
-|DB_AnubisConfigOverride_UpdatedConfig|?|1|Integer|--|--|--|--|
-|DB_AnubisConfigs_CharacterSavedStates|?|2|Character UUID|State|--|--|--|
-
-#### Query Returns
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
-|-----|----|----|----|----|----|
-|DB_QRYRTN_AnubisConfigOverrideIndex|?|1|?|--|--|
-
-## Buried Treasures
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
-|-----|----|----|----|----|----|----|----|
-|DB_TaggedItemTracker|?|2|UUID String|UUID|--|--|--|
-|DB_Shovel_ChestMoundType|Types of Chest Mounds|4|Integer|Integer|Mound UUID|Behavior UUID|--|
-|DB_ShovelArea|?|2|Object UUID|Object UUID|--|--|--|
-|DB_Shovelling_Mound|?|4|?|?|Object UUID|?|--|
-
 ## Characters
 ### Tabs {.tabset}
-
 #### Character Creation
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
@@ -75,6 +47,8 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_PartyFollowers|List of Party Followers|1|Character UUID|--|--|--|--|
 |DB_TutorialCompanion|List of Tutorial Companions|1|Character UUID|--|--|--|--|
 |DB_DiedInCombat|List of Characters that Died in Combat|2|Character UUID|?|--|--|--|
+|DB_PermaDefeated|List of Permanently Defeated Characters|1|Character UUID|--|--|--|--|
+|DB_OffStage|?|1|Character UUID|--|--|--|--|
 
 #### Origins
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -203,6 +177,7 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_QRYRTN_CrimeIncapacitatedAssaultGetCrimeType|?|1|String Crime State ID|--|--|
 |DB_QRYRTN_InvestigateAssaultSourceAdvantage|?|1|Integer|--|--|
 
+
 ## Game Management
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
@@ -232,33 +207,41 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_BlockedWaypointZone|List of Blocked Waypoints|1|Region String|--|--|--|--|
 
 ## Misc
+### Tabs {.tabset}
+
+#### Buried Treasures
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_TaggedItemTracker|?|2|UUID String|UUID|--|--|--|
+|DB_Shovel_ChestMoundType|Types of Chest Mounds|4|Integer|Integer|Mound UUID|Behavior UUID|--|
+|DB_ShovelArea|?|2|Object UUID|Object UUID|--|--|--|
+|DB_Shovelling_Mound|?|4|?|?|Object UUID|?|--|
+#### Configs
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
+|-----|----|----|----|----|----|
+|DB_AnubisConfigsOverrideStack|?|3|UUID|String|Integer|
+|DB_AnubisConfigs|?|2|Character UUID|String|--|
+|DB_AnubisConfigs_DelayAssignment|?|2|Character UUID|String|--|
+|DB_AnubisConfigOverride_NewConfig|?|3|Character UUID|String|Integer|
+|DB_AnubisConfigOverride_UpdatedConfig|?|1|Integer|--|--|
+|DB_AnubisConfigs_CharacterSavedStates|?|2|Character UUID|State|--|
+
+#### Query Returns
+|DB Name|Description|# of Parameters|Parameter 1|
+|-----|----|----|----|
+|DB_QRYRTN_AnubisConfigOverrideIndex|?|1|?|
+
+#### Utilities
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_CustomUseItemResponse|?|3|Character UUID|?|Integer|--|--|
-|DB_PermaDefeated|List of Permanently Defeated Characters|1|Character UUID|--|--|--|--|
-|DB_OffStage|?|1|Character UUID|--|--|--|--|
 |DB_DialogMoneyTransfer|?|3|Integer|Character UUID|Integer (Price)|--|--|
 |DB_ReportKiller|?|2|?|Tag UUID|--|--|--|
 
+
 ## Story
 ### Tabs {.tabset}
-#### Scenes
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
-|-----|----|----|----|----|----|----|----|
-|DB_SceneManager|?|2|Character UUID|?|--|--|--|
-|PROC_SceneManager_HandleViolence|?|5|Integer as Boolean|?|?|String|?|
-|DB_InternScene_DeathHandled|?|2|?|Character UUID|--|--|--|
-|PROC_SceneInterrupted|?|5|Character UUID|UUID|?|String|--|
-
-#### Plot (Spoilers)
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
-|-----|----|----|----|----|----|----|----|
-|DB_GLO_Absolute_Entails|?|2|Flag UUID|Flag UUID|--|--|--|
-|DB_GLO_Absolute_TrueSoul|Character IDs that are True Souls|1|Character UUID|--|--|--|--|
-
-
-
-## Dialog
+#### Dialog
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_AutomatedDialog|?|1|Integer|--|--|--|--|
@@ -274,6 +257,20 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_DialogSpeakers|List of Spekaers in a Dialog|3|Integer|UUID String|?|--|--|
 |DB_OnDialogAttackRequested|?|3|Character UUID|Character UUID|Integer|--|--|
 |DB_InteractiveDialogSpeaker|?|2|Integer|?|--|--|--|
+
+#### Plot (Spoilers)
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_GLO_Absolute_Entails|?|2|Flag UUID|Flag UUID|--|--|--|
+|DB_GLO_Absolute_TrueSoul|Character IDs that are True Souls|1|Character UUID|--|--|--|--|
+
+#### Scenes
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_SceneManager|?|2|Character UUID|?|--|--|--|
+|PROC_SceneManager_HandleViolence|?|5|Integer as Boolean|?|?|String|?|
+|DB_InternScene_DeathHandled|?|2|?|Character UUID|--|--|--|
+|PROC_SceneInterrupted|?|5|Character UUID|UUID|?|String|--|
 
 ## UI
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
