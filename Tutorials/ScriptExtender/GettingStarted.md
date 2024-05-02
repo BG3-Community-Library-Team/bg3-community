@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T22:27:27.853Z
+date: 2024-05-02T22:39:22.969Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -383,8 +383,8 @@ We will name this file `MySecondSEScript.lua`.
 
 **Step 6:** reset the console to see the difference
 
-![gswse_27.png](/tutorials/getting_started_with_se/gswse_27.png =800x100)
 
+![gswse_both_loaded.png](/tutorials/getting_started_with_se/gswse_both_loaded.png)
 
 
 ## **6\. The Basics of Programming**
