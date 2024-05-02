@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-02T02:17:17.808Z
+date: 2024-05-02T02:28:35.411Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -81,9 +81,34 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_QRYRTN_CharacterGetOwnerOrSelf|Returns Owner or Queried Character UUID|1|Character UUID|--|--|
 
 ## Class-Specific
+
+### {.tabset}
+
+
+#### Bard
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_CRIME_MusicalPerformance_DC|?|2|Integer DC|Tag UUID Difficulty|--|--|--|
+|DB_CRIME_MusicalPerformance_Status|?|3|String Status|String Crime Type|String Event|--|--|
+|DB_Bard_InstrumentRootToSpell|?|2|UUID|String Instrument Suffix|--|--|--|
+|DB_CRIME_MusicalPerformance|?|3|?|Character UUID|String Crime Type|--|--|
+|DB_CRIME_MusicalPerformance_WaitForFlourishesToStop|?|1|?|--|--|--|--|
+|DB_CRIME_MusicalPerformance_Flourish|?|3|?|?|Character UUID|--|--|
+|DB_CRIME_MusicalPerformance_SoundNames|?|3|?|?|?|--|--|
+|DB_CRIME_MusicalPerformance_Listener|?|3|Integer|Character UUID|Character UUID|--|--|
+|DB_CRIME_MusicalPerformance_SoundStarted|?|2|Character UUID|String|--|--|--|
+|DB_CRIME_MusicalPerformance_Confronted|?|3|Integer|Character UUID|?|--|--|
+|DB_CRIME_MusicalPerformance_NPCIgnoring|?|3|Character UUID|String|String concatenatedString|--|--|
+|DB_CRIME_MusicalPerformance_NPCs|?|3|Integer|?|Character UUID|--|--|
+
+#### Cleric
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_GLO_Spells_DivineInterventionSpells|List of Divine Intervention Spells|1|Spell ID|--|--|--|--|
+
+#### Paladin
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
 |DB_GLO_Spells_DominatedOwnerStatus|List of Statuses that fall under Dominated|2|Status ID|Status ID|--|--|--|
 |DB_GLO_Spells_TurnCharactersEvilStatuses|List of statuses that turn characters Evil|1|Status ID|--|--|--|--|
 |DB_GLO_PaladinOathbreaker_RedemptionPrice|Cost of Redemption at a given level|2|Integer (Level Number)|Integer (Price)|--|--|--|
