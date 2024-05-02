@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T12:30:05.200Z
+date: 2024-05-02T12:56:06.382Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -10,17 +10,18 @@ dateCreated: 2024-05-01T19:43:32.311Z
 
 # **Dear ImGui**
 
-This tutorial covers the integrationg of ImGui within mods using ScriptExtender.
+This multi-part tutorial covers the integrationg of ImGui within mods using ScriptExtender.
+- Part 1 covers: Setup, First Steps and general creation of ImGui components.
+- Part 2 covers: Component logic
+- Part 3 covers: Events and how to use them
 
-Before delving into the specifics, please note the following general points:
+> Before going into the specifics, please note the following points:
+> - This tutorial assumes that you know how to install mods and how to create them. If you are new to this, please familiarize yourself with them through other relevant Wiki pages:
+> - This tutorial expects of you to have some basic understanding on working with ScriptExtender. 
+> - If you don't have any knowledge about ScriptExtender please do visit the introductory pages first: ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted)
+> - This Tutorial will get into parts of OOP (Object-Oriented-Programming). If you are not familiar with it, please visit Part 6.9 of ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) (A brief introduction to Metatables)
+{.is-warning}
 
-- This tutorial assumes that you know how to install mods and how to create them. If you are new to this, please familiarize yourself with them through other relevant Wiki pages:
-
-- This tutorial expects of you to have some basic understanding on working with ScriptExtender. 
-
-- If you don't have any knowledge about ScriptExtender please do visit the introductory pages first: ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted)
-
-- This Tutorial will get into parts of OOP (Object-Oriented-Programming). If you are not familiar with it, please visit Part 6.9 of ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) (A brief introduction to Metatables)
 
 > For testing purposes of this tutorial consider [setting up a symlink.](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking)
 Now whenever you add new lines of code, you can just reload your save to test the changes you've made.
@@ -48,7 +49,7 @@ While not essential for a basic ImGui introduction, this approach facilitates sc
 
 ![filestructure.png](/tutorials/imgui_and_you/filestructure.png)
 
-> Don't forget to always add the scripts you are creating within the "Client" folder to your BootstrapClient.lua script. You do this the way as with the other Bootstrap script, just a different path since the files will be within the "Client" folder. So `Ext.Require("Client/YourScript.lua")`
+> Don't forget to always add the scripts you are creating within the "Client" folder to your BootstrapClient.lua script. You do this the same way as with the other Bootstrap script, just a different path since the files will be within the "Client" folder. So `Ext.Require("Client/YourScript.lua")`
 {.is-warning}
 
 > If you were to use sub-folders within the "Client" folder it would go like this `Ext.Require("Client/YourFolder/YourScript.lua")`
@@ -72,7 +73,7 @@ So whenever you will work with a bigger section of your UI, utilizing regions mi
 
 
 ## **2\. New File, New Me**
-### **2.1\. Creating a window gaining information**
+### **2.1\. Creating a window and finding more information**
 
 
 You've created your UI Lua script and are ready to roll.
