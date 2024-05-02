@@ -1,8 +1,8 @@
 ---
-title: Location DBs
+title: Location DB Reference
 description: Osiris DBs that relate to Locations
 published: true
-date: 2024-05-02T16:33:41.366Z
+date: 2024-05-02T21:44:06.118Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:33:41.366Z
