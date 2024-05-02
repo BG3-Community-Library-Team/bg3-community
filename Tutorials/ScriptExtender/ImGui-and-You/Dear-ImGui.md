@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T15:43:41.031Z
+date: 2024-05-02T18:40:20.058Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -216,7 +216,7 @@ This should make your window have a button which says "Hello World" on it.
 
 You may have done this by either editing the previous text to be a button or create a new line.
 
-If you did the latter, you should notice that it is now listed underneath the previously created text.
+If you did the latter, you should notice that it is now listed underneath the previously created text as every new line you create gets added underneath the previous one. There are ways around this, which we will get into later.
 
 Try out a few others but skip ``AddTabbar()``, ``AddCollapsingHeader()``, ``AddTree()``, ``AddGroup()`` and ``AddTable()`` for now, as making use of these is slightly more advanced.
 For some, you might see an error pop up in the ScriptExtender console.
@@ -264,11 +264,14 @@ MyTabBar:AddTabItem("My First Tab")
 You now have a tab an can add more!
 Simply repeat this line but with a different string parameter.
 
+> TabItems are a function only available to TabBars, please make sure you only use functions that are available to a given class. You can check whats available via the ExtIdeHelpers.lua file.
+{.is-warning}
+
 ### How to work with multiple tabs:
 
-Now that you've create your first TabItem or TabItems we need a way to decide upon which tab we are going to add more components to.
+Now that you've created your first TabItem(s), we need a way to decide upon which tab we are going to add more components to.
 
-You might see a pattern here, but yes, we just name them and make an object out of the earlier mentioned code-snippet.
+You might see a pattern here, but yes, we just make them into their own separate objects by given them a name.
 
 ```lua
 MyTabOne = MyTabBar:AddTabItem("My First Tab")
@@ -285,33 +288,53 @@ MyTabOne:SomeFunction()
 
 If you want to add something to MyTabTwo, just use a function on MyTabTwo instead.
 
-And if we want to add something to the component we added to the Tab we name it again to be able to use it.
-
-
 ### **2.4.2\. Hiding Content: Collapsing Headers**
 
 CollapsingHeaders offer a nice way to organize and hide/reveal content in ImGui. 
 To begin, we'll need to introduce a CollapsingHeader into on of our objects.
 Which one we add components to is now entirely up to you.
 
-If you looked at the documentation of the ExtIdeHelpers.lua file, you might also already know how to add on if you look at how the function was named.
-Just like the oder ones, we will start with an ``:`` and type ``Add``, then the ``component`` we want to add.
+If you looked at the documentation of the ExtIdeHelpers.lua file, you might also already know how to add one if you look at how the function was named.
+Just like the other ones, we will start with an ``:`` ,type ``Add`` and then the ``component`` we want to add.
 
 ```lua
 :		Add		CollapsableHeader
 :AddCollapsableHeader()
 ```
 
-We can accomplish this by instructing our window to employ the AddCollapsingHeader() function.
+As before, if you give it a name it becoms its own object which you can add additional components to.
+Meaning, as soon as you start adding Texts, Buttons or other components, they will under the control of the header you created. So whenever you collapse it, they will vanish.
 
-### **2.4.3\. Navigating with Trees**
+If you did this to the first tab which still had other components which were added to the overall "MyWindow", you will notice that they will NOT collapse. Thats because they are attached to the window object and not the CollapsableHeader.
+If you added one to another tab, you can test this by adding other components to the tab itself and not to the header. This will result in the same outcome.
+
+Only components that are part of the CollapsableHeader hierarchy, will be hidden if you collapse it.
+Components on other Objects will not be hidden.
+Think about putting boxes within boxes within boxes or Matryoshka Dolls.
+Components you add to objects that are themselves within a CollapsableHeader will naturally be hidden as well since they are under the control an object which would get hidden.
+
+### **2.4.3\. Navigating through Trees**
+
+something about AddTree() usage
 
 ### **2.4.4\. Grouping Components**
 
+something about AddGroup() usage
+
 ### **2.4.5\. Organizing and Managing Data with Tables**
 
+something about AddTable() usage
+how tables are build and why every table needs to at least use AddRow() once
+how you determine columns and create cells
 
+## **2.5\. Transition into ImGui logic**
 
+Make yourself familiar with different UI structures you can build manually, because next we are going to talk about some logic you can add to buttons, checkboxes, etc.
+This may include sudden jumps between Part 2 and 3 because some stuff you can and might want to do will lead you to create links between the logic of a button itself and events you have to create to communicate with the server.
+
+So take some time and try to create a rough outline on what you might want your mod too look like so you are getting accustomed to quickly creating new ImGui objects and their components.
+
+Below are some additional resources.
 
 
 
