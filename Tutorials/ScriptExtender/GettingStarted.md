@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T18:48:49.997Z
+date: 2024-05-02T18:51:27.942Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -38,9 +38,7 @@ If you see this window, it means you have successfully installed SE with console
 
 To familiarize yourself with the usage of the SE console you can execute a few simple commands.
 
-These can all be found in the [10. Useful Resources](#10.-useful-resources) at the bottom of this tutorial.
-
-
+These can all be found in the [10. Useful Resources](#10.-useful-resources) at the bottom of this tutorial as [Osi functions](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) .
 
 ### **1\. Load a save**
 
