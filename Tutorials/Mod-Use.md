@@ -2,7 +2,7 @@
 title: Mod Use
 description: Home page for tutorials on how to use mods.
 published: true
-date: 2024-05-02T16:50:53.970Z
+date: 2024-05-02T16:58:39.861Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-26T01:02:06.859Z
@@ -15,4 +15,5 @@ This page is a list of existing guides relating to the Installation and usage of
 - [Establishing a Baseline *How to Remove mods and ease the Troubleshooting Process*](How-to-remove-mods)
 - [General Load Order *Recommendations on how load orders work, and how to orders them*](general-load-order)
 - [Installing Script Extender *Getting Script Extender up and running*](How-to-install-Script-Extender)
+- [Manual/Loose Installation *Installing mods that won't be managed be a Mod Manager*](How-to-install-manual-or-loose-file-mods)
 {.links-list}
