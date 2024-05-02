@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-01T04:50:01.414Z
+date: 2024-05-02T02:17:17.808Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -72,7 +72,7 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_PlayerSummons|List of Characters Summoned by Player|1|Character UUID|--|--|--|--|
 |DB_PartyFollowers|List of Party Followers|1|Character UUID|--|--|--|--|
 |DB_TutorialCompanion|List of Tutorial Companions|1|Character UUID|--|--|--|--|
-
+|DB_DiedInCombat|List of Characters that Died in Combat|2|Character UUID|?|--|--|--|
 
 ### Query Returns
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
@@ -142,9 +142,31 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_QRYRTN_CombatFlee_FoundFleeWaypoint|?|3|Character UUID|UUID|?|
 
 ## Crime
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
-|-----|----|----|----|----|----|----|----|
-|DB_CRIME_WaitingForDialogStop|?|2|?|Integer|--|--|--|
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|Parameter 6|Parameter 7|
+|-----|----|----|----|----|----|----|----|----|----|
+|DB_CRIME_WaitingForDialogStop|?|2|?|Integer|--|--|--|--|--|
+|DB_CRIME_FindSourceInvestigators|?|3|Integer|Integer|String Crime State Id|--|--|--|--|
+|DB_CRIME_SourceInvestigation_Discovered|?|3|Integer|Integer|String Crime State Id|--|--|--|--|
+|DB_CRIME_SourceInvestigation_NotDiscovered|?|3|Integer|Integer|String Crime State Id|--|--|--|--|
+|DB_CRIME_SourceInvestigationRollStealthFail|?|1|Integer|--|--|--|--|--|--|
+|DB_CRIME_AttackInvestigation_CrimeStoryActionLink|?|2|Integer|Integer|--|--|--|--|--|
+|DB_CRIME_AttackInvestigation_OriginalCrimeType|?|2|String Crime ID|String|--|--|--|--|--|
+|DB_Crime_IncapacitatedOriginalAssaultType|?|2|Integer|?|--|--|--|--|--|
+|DB_CRIME_InvestigateAssaultSourceLocation|?|7|String Crime ID|Character UUID|Integer X Coordinate|Integer Y Coordinate|Integer Z Coordinate|Character UUID|Integer|
+|DB_InvestigatingAssaultSource|?|2|String Crime ID|Character UUID|--|--|--|--|--|
+|DB_CRIME_AttackInvestigation_Attentive|?|1|Character UUID|--|--|--|--|--|--|
+|DB_CRIME_AttackInvestigation_HandledRoll|?|1|Integer|--|--|--|--|--|--|
+|DB_CRIME_SourceInvestigationRollStealthFail|?|1|Integer|--|--|--|--|--|--|
+|DB_CRIME_InvestigationCriminalLocation|?|4|String Crime ID|Integer  X Coordinate|Integer Y Coordinate|Integer Z Coordinate|--|--|--|
+|DB_CRIME_AssaultSourceMarker|?|2|String Crime ID|?|--|--|--|--|--|
+
+### Query Returns
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
+|-----|----|----|----|----|----|
+|DB_QRYRTN_CRIME_GetOriginalAttackCrime|?|1|?|--|--|
+|DB_QRYRTN_CRIME_GetAssaultMurderWithInvestigationVariant|?|1|?|--|--|
+|DB_QRYRTN_CrimeIncapacitatedAssaultGetCrimeType|?|1|String Crime State ID|--|--|
+|DB_QRYRTN_InvestigateAssaultSourceAdvantage|?|1|Integer|--|--|
 
 ## Dialog
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
