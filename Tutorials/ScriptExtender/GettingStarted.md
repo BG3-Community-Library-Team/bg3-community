@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T17:01:05.748Z
+date: 2024-05-02T17:58:56.047Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -19,7 +19,7 @@ This tutorial assumes that you know how to install mods and and Script Extender.
 -   [How to install .pak files](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files) 
 -   [Installing Script Extender and activating the console](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender)
 
-For further information, follow the links in **Useful Resources** on the bottom of this page that this guide is based on**.**
+For further information, follow the links in [10. Useful Resources](#10.-useful-resources)on the bottom of this page that this guide is based on
 
 After reading this guide, feel free to follow the tutorial: [**Creating your First SE Mod (TBA)**](https://wiki.bg3.community/en/Tutorials/ScriptExtender/creating_your_first_se_mod)
 
@@ -29,8 +29,8 @@ After reading this guide, feel free to follow the tutorial: [**Creating your Fir
 After following the guide  [How to install Script Extender](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender) and activating the console, ensure that the console works properly.  
 When you launch the game now, you should see a second window opening. This is the Script Extender console.
 
-![](https://lh7-us.googleusercontent.com/LeswDxdXyI4gNc4bfLY4Hlz2i2dXnyb1ogSWFOQO25yidO8ol5U5x6vxt8nuWulxRej9CiJk3IQgM1Djh0z03cgT4mn-G45drTxY6qSKnooKZfE-34ahsfLOd3ZN1jlzJJR8VnfSaOYQmzBq46QCbps)
 
+![gswse_console_startup.png](/tutorials/getting_started_with_se/gswse_console_startup.png)
 
 If you see this window, it means you have successfully installed SE with console.
 
@@ -38,7 +38,9 @@ If you see this window, it means you have successfully installed SE with console
 
 To familiarize yourself with the usage of the SE console you can execute a few simple commands.
 
-These can all be found in the **Useful Resources** at the bottom of this tutorial.
+These can all be found in the [10. Useful Resources](#10.-useful-resources) at the bottom of this tutorial.
+
+
 
 ### **1\. Load a save**
 
@@ -46,7 +48,8 @@ You can load either a new save or an existing one.
 
 When the save is loaded you should see some output in your console, telling you that the session has loaded and other debug statements depending on what kind of mods you have installed:
 
-![](https://lh7-us.googleusercontent.com/iR7etzru7qjtz99vhl43MuAvDLA6rMfl3hW2YTb-szUwM_mkMwCRW7ZFs-goNRw-LRDUZtA29WRr-qjT7E7UwnhZjQ0clNq36Z0qsEhmENRD9t27Ei_hMwOFBDUB0geN0Cdi1YnWrwyqPUhpEkQQWts)
+
+![gswse_game_loaded.png](/tutorials/getting_started_with_se/gswse_game_loaded.png)
 
 
 ### **2\. Activate the input** 
@@ -55,8 +58,8 @@ To be able to input commands into the console press enter once.
 
 If you have too much text on your console and you cannot see your input line, you can repeat this a few times until you can see the *S >>* 
 
-![](https://lh7-us.googleusercontent.com/QYtqY_84Nny8EeUPFTFzwi820yZ6LzxKsrUYgjnTUOMTcCVVdTcxgKqlYcKeeoQqh-DS7DJA7iwSm5UzYZ0Imj6zZJL4SW-tdXR_IfOj9kdphcgJVzGBKc0U608-PmNwpWZLO31cxUdSPndT_jo0y48)
 
+![gswse_input_ready.png](/tutorials/getting_started_with_se/gswse_input_ready.png)
 
 ### **3\. Basic inputs**
 
@@ -86,11 +89,14 @@ Now that you are familiar with entering commands in the console, it is time to c
 ## **3\. Creating your workspace**
 
 
+
 > This guide is using an example workspace! You will be able to better follow the tutorial by using it
 > Download the example workspace here: [https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing](https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing)
 {.is-warning}
 
-Download the example workspace linked above and unpack it. Place it where you want to develop your mods. For example in your *Documents* folder on windows.
+For this step, please close your game.
+Download the example workspace linked above and unpack it. Place it where you want to develop your mods. For example in your *Documents* folder on windows
+
 
 You will also need an editor. I recommend VSCode or the Open Source alternative VSCodium:
 
@@ -103,6 +109,21 @@ Now you want to open your project.
 
 
 On Windows 11, right click the folder “MySEMod” after unzipping and click “Open with Code”.
+
+> Windows 11 sometimes seems to not show this option at first.
+> If you do not see this option, follow the steps below instead.
+{.is-info}
+
+
+If you do not see that option, launch VSCode and open the unzipped workspace as a folder
+![gswse_open_file.png](/tutorials/getting_started_with_se/gswse_open_file.png)
+
+
+Navigate to where  you saved the folder and select it
+
+![gswe_open_file_2.png](/tutorials/getting_started_with_se/gswe_open_file_2.png)
+
+Now you should see your workspace.
 
 ![](https://lh7-us.googleusercontent.com/ZTy0cD3-wymnkpEj99udh1241KM3oJA2nYy0WmwXiIT-Rz6IxFbFdDLKwXsxWppM-MdtATFrNvCieQvlG8KijOWSV7Wyzw0klGSYZx5XVLvxbFkaeSG6JrGDPMYzeRvDKyb6Vg8u8S1BiepaZcitoBw)
 
@@ -1245,7 +1266,7 @@ That mean swe can put a table within another table.
 
 
 
-><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
+><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[10. Useful Resources](#10.-useful-resources)</strong> for more information</span>
 {.is-success}
 
 more information about lua: https://exercism.org/tracks/lua
@@ -1550,3 +1571,5 @@ Osiris: [_https://docs.larian.game/Osiris_](https://docs.larian.game/Osiris)
 **_Me_**
 
 Utils file: 
+
+Credits: Alithea Ancunin for some screenshots and proofreading 
