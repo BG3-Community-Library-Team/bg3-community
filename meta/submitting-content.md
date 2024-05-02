@@ -2,7 +2,7 @@
 title: Submitting Content
 description: An overview of adding new pages and content to the Wiki
 published: true
-date: 2024-04-26T13:22:20.632Z
+date: 2024-05-02T16:44:00.969Z
 tags: meta
 editor: markdown
 dateCreated: 2024-04-24T20:11:12.024Z
@@ -52,3 +52,9 @@ Now click Create in the top right corner. You have successfully created a new pa
 ### Editing Pages
 
 [TODO: The rest of the guide]
+
+## Tips & Tricks
+Getting used to using the editor can be tricky, but here are some handy tips to keep in mind:
+
+- Don't use spaces in Page/Folder Names - set them up as `page-or-folder-name`. 
+- When creating a folder, you should create a Page with the same name, to act as an index of the pages within the folder. The folder will take on the name of the Page as set in the Page settings
