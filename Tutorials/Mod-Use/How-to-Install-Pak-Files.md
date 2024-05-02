@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: false
-date: 2024-05-01T05:25:00.976Z
+date: 2024-05-02T01:31:04.486Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -158,6 +158,9 @@ Or
 
 Done! Now you have installed your first mod! 
 
+> You may get an error on the launcher, saying you have mods or corrupted files. That is normal, and just continue. It is just saying "HEY, you edited the files. If something is happening that is unintended, it is not our fault." 
+> You can safetly ignore this.
+{.is-info}
 
 ## 5. Installing two of the most necessarry mods (mod fixer and Improved UI) when you use mods. Do not skip. Important.
 Improved UI by Djmr: https://www.nexusmods.com/baldursgate3/mods/366
@@ -173,7 +176,9 @@ Screenshot below;
 ![nomodfixerpng.png](/tutorials/nomodfixerpng.png =x400)
 
 Mod fixer will also sometimes be baked into the mod you are installing, one popular mod is for example the mod Basket of Equipment. 
-In that case you do not necessarily need the mod fixer, as you will already have mod fixer because of that mod.
+In that case you do not necessarily need the mod fixer, as you will already have mod fixer because of that mod. 
+
+Sometimes when you use Mod Fixer, and not Improved UI, you may get an error: "Cannot create a working story". This means Mod Fixer is working. Press "OK" or ESC to just ignore it and keep moving on. 
 
 You can see in BG3MM if the mod has mod fixer embedded into the mod or the mod uses/needs Script Extender. 
 Highlighted below:
