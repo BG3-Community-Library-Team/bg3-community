@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T19:06:30.077Z
+date: 2024-05-02T19:13:16.681Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1575,11 +1575,28 @@ print("Gale's class after trying illegal respec:", gale:getClass())
 
 ### 1\. Functions
 
+> Work in Progress. For now refer to Osi Functions: [_https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua_](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua)
+{.is-info}
+
+
 ### 2\. Events
+
+> Work in Progress. For now refer to Osi Events: [_https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.Events.lua_](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.Events.lua)
+{.is-info}
+
 
 ### 3\. Using Listeners
 
+
+> Work in Progress. For now refer to SE API Documentation: [_https://github.com/Norbyte/bg3se/blob/main/Docs/API.md_](https://github.com/Norbyte/bg3se/blob/main/Docs/API.md)
+{.is-info}
+
+
 ## **8\. Script Extender Functions**
+
+
+> Work in Progress. For now refer to SE IDE Helpers: [_https://github.com/Norbyte/bg3se/blob/main/BG3Extender/IdeHelpers/ExtIdeHelpers.lua_](https://github.com/Norbyte/bg3se/blob/main/BG3Extender/IdeHelpers/ExtIdeHelpers.lua)
+{.is-info}
 
 // TODO 
 -   Dumping
