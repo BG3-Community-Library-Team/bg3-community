@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T20:52:24.433Z
+date: 2024-05-02T21:04:27.622Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -143,19 +143,19 @@ to see your installed `Extensions` and install new ones.
 
 ![gswse_extensions.png](/tutorials/getting_started_with_se/gswse_extensions.png)
 
-We will first install `BG3 Text Support` and `bg3_mod_helper`.
+We will first install `BG3 Text Support`, `bg3_mod_helper` and `BG3-SE-Snippets`.
 These can be installed by searching for them in the search bar.
 
 
 ![gswse_search_extension.png](/tutorials/getting_started_with_se/gswse_search_extension.png)
 
 Click on the desired `Extension` and a new tab will open. Here click `install`.
-Repeat this step for `bg3_mod_helper`
+Repeat this step for `bg3_mod_helper` and `BG3-SE-Snippets`
 
 ![gswse_install.png](/tutorials/getting_started_with_se/gswse_install.png)
 
-
-For our last extension we need to visit a website: https://marketplace.visualstudio.com/items?itemName=FallenStar.bg3-se-snippets
+If you were not able to find `BG3-SE-Snippets` in the `Extensions` follow the manual install below:
+Visit : https://marketplace.visualstudio.com/items?itemName=FallenStar.bg3-se-snippets
 
 Follow the commands listed under **installation**. You can also see specific instructions in the next images.
 First, copy the text `ext install FallenStar.bg3-se-snippets`
@@ -247,6 +247,7 @@ The following instructions are for Windows. On Linux, simply use `ln -s <workspa
 Because of the formatting of the wiki, the commands had to be placed on separate lines. When you input the commands, please make sure to write all in one line.
 
 The commands for copying can be seen below the code block.  Please make sure to **modify** the commands for your username and place of your workspace and game.
+A text editor like `Notepad` is recommended to do this.
 
 > This command is executed in the windows terminal
 >  in the search bar type `cmd` and execute the program as **administarator**
@@ -258,6 +259,12 @@ Type `cmd` in the windows search bar and execute the program as **administrator*
 
 Your console should open. This is where you will type your commands
 ![gswse_cmd2.png](/tutorials/getting_started_with_se/gswse_cmd2.png)
+
+
+> Using `cmd` in **administrator** mode allows a lot of control over your system.
+> Only execute commands here when you are certain what they will do
+{.is-warning}
+
 
 ```plaintext
 // Public folder
