@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T19:32:53.403Z
+date: 2024-05-02T19:43:10.273Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -260,6 +260,11 @@ mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Da
 mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Mods" "C:\\Users\\YourUserName\\path\\to\\YourModName\\Mods"
 
 mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Localization\\English\\yourLoca.loca" "C:\\Users\\YourUserName\\path\\to\\YourModName\\English\\YourLoca.loca"
+
+> To delete the symlink simply delete the linked folder in 
+> `\Steam\steamapps\common\Baldurs Gate 3\Data`
+{.is-info}
+
 
 ### 2\. Testing the symlink
 
