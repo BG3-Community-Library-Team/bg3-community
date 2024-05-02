@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T11:57:05.474Z
+date: 2024-05-02T12:24:49.019Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -108,21 +108,23 @@ And you will notice it says "My ImGui Window" in its title bar, thats why it req
 
 You may wonder about being unable to do much besides collapsing its title bar.
 
-To put it to good use, let's edit our first line and name it like any other object:
+We'll get to that, but there is some initial information we can gain from it.
+By editing our first line and name it like any other object:
 
 ```lua
 MyWindow = Ext.IMGUI.NewWindow("My ImGui Window")
 ```
 
-Now we have an object called "MyWindow".
-If you dump it with ```_D``` you may see some additional information already.
+Now we have an object called "MyWindow", which we ccan dump with ```_D```.
+You may see some additional information pop up in the console already.
+These are all components on our object, which we can read as well!
 
-and instead using
+Using
 ```lua
 _P(MyWindow.Label)
 ```
 
-will print "My ImGui Window" since "Label" is a component our new object.
+for instance, will print "My ImGui Window" since "Label" is a component our object.
 
 > If printing an object component ever throws an error it might be missing, if that happens, check with a dump if its even on your object!
 {.is-danger}
@@ -213,29 +215,27 @@ This should make your window have a button which says "Hello World" on it.
 
 You may have done this by either editing the previous text to be a button or create a new line.
 
-If you did the latter you should notice that it is now listed underneath the previously created text.
+If you did the latter, you should notice that it is now listed underneath the previously created text.
 
-Try out a few others but skip ``AddTabbar()``, ``AddTree()``, ``AddGroup()`` and ``AddTable()`` for now, as making use of these is slightly more advanced.
+Try out a few others but skip ``AddTabbar()``, ``AddCollapsingHeader()``, ``AddTree()``, ``AddGroup()`` and ``AddTable()`` for now, as making use of these is slightly more advanced.
 For some, you might see an error pop up in the ScriptExtender console.
-> If you are unsure on how to Debug these errors, check out the "Debugging" section within the ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) Guide.
+> If you're uncertain how to debug these errors, refer to the "Debugging" section within the ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) Guide.
 {.is-danger}
 
 
-## **2.4\. Advanced Elements**
+## **2.4\. Advanced Components**
 ### **2.4.1\. Taking tabs on TabBars**
 
-TabBars. If you ever used a internetbrowser like Chrome or Firefox before you know what Tabs are. 
-They are similar in ImGui but we need to do a few specific things to make them work.
+TabBars are akin to the tabs you find in internet browsers like Chrome or Firefox. However, adding them to our own window requires specific steps.
 
-First of all, to even be able to create a bunch of tabs, we first need to create a TabBar.
+To initiate multiple tabs, we first need to create a TabBar component.
 
 We can do that by making our window use the ``AddTabBar()`` function.
 ```lua
 MyWindow:AddTabBar()
 ```
-This creates an area where we can put our tabs in.
-If you wrote this down underneath what we tried prior, should also show up underneath it in your window!
-To fix that, we can just move this line up in the order of execution right after naming our window.
+This creates a designated area where tabs will be placed upon. If you've inserted this below the components we added earlier, it should also appear beneath them in your window.
+To fix that, we need to reorder them to make this line be above the others (Changing the order of execution)
 
 Since we need to add the tabs to the tabbar itself and now our window object, we now need to make our TabBar into a named object.
 
@@ -243,7 +243,38 @@ Since we need to add the tabs to the tabbar itself and now our window object, we
 MyTabBar = MyWindow:AddTabBar()
 ```
 
-Just like with our window, we can now add other elements to the tabbar.
+Just like with our window, we can now add other components to the tabbar.
+This will be a necessity whenever we want to do anything with a components we create on an object.
+
+Because only now, we can add a TabItem to our TabBar!
+
+How would one do this?
+Its quite simple, instead of adding to our MyWindow object, we now want to add to our MyTabBar object.
+
+```lua
+MyTabBar:AddTabItem()
+```
+Remember to check what each function requires. AddTabItem() for instance requires a string so to actually have a name for our tab, lets do this:
+
+```lua
+MyTabBar:AddTabItem("My Tab")
+```
+
+You now have a tab an can add more!
+Simply repeat this line but with a different string parameter.
+
+
+### **2.4.2\. Hiding Content: Collapsing Headers**
+
+### **2.4.3\. Navigating with Trees**
+
+### **2.4.4\. Grouping Components**
+
+### **2.4.5\. Organizing and Managing Data with Tables**
+
+
+
+
 
 
 ---
