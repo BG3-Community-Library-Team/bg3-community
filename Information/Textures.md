@@ -2,7 +2,7 @@
 title: Textures
 description: Basic breakdown on BG3 textures and image filetypes
 published: true
-date: 2024-04-30T22:05:31.980Z
+date: 2024-05-02T23:09:36.893Z
 tags: textures, general, basic
 editor: markdown
 dateCreated: 2024-04-25T03:13:14.974Z
@@ -11,8 +11,8 @@ dateCreated: 2024-04-25T03:13:14.974Z
 
 
 
-# List:Osiris
-This page is a list of existing informational documentation relating to Osiris.
+# List:Textures
+This page is a list of existing informational documentation relating to Textures.
 
 ## Pages
 - [BG3 Texture types](texture-types)
