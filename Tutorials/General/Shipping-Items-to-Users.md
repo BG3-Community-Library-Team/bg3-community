@@ -2,7 +2,7 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: false
-date: 2024-05-02T18:30:31.202Z
+date: 2024-05-02T18:31:30.702Z
 tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
@@ -126,6 +126,6 @@ To do: the rest of the owl
 ## Script Extender Console
 You can also spawn in items with the [Script Extender Console](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender#h-3-how-to-install-the-console), via a console command. However, this method is mostly useful for mod development, or testing of items, and should not be used to ship items to users.
 
-Below is the console command to spawn an item into your own inventory, simply paste it into the SE Console, place the UUID/MapKey for the item you want between the quotes, and change the `1` to the amount of the item you would like recieve.
-
 **Command:** `TemplateAddTo("", GetHostCharacter(), 1)`
+
+Above is the console command to spawn an item into your own inventory, simply paste it into the SE Console, place the UUID/MapKey for the item you want between the quotes, and change the `1` to the amount of the item you would like recieve.
