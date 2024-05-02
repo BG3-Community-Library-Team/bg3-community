@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T22:27:00.846Z
+date: 2024-05-02T22:27:27.853Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -170,11 +170,12 @@ paste `ext install FallenStar.bg3-se-snippets` into this field and press enter.
 This will automatically install this extension.
 
 
+![gswse_install_fallen.png](/tutorials/getting_started_with_se/gswse_install_fallen.png)
+
 >If you use VSCodium instead of VSCode you will have to manually install this extension
 {.is-info}
 
 
-![gswse_install_fallen.png](/tutorials/getting_started_with_se/gswse_install_fallen.png)
 
 
 
