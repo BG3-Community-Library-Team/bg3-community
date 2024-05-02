@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T21:58:17.511Z
+date: 2024-05-02T22:01:17.323Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -286,14 +286,11 @@ mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Da
 
 
 
-> To delete the symlink simply delete the linked folder in 
-> `\Steam\steamapps\common\Baldurs Gate 3\Data`
+
+> Want to use a tool that creates the links for you? 
+> Try [Link Shell Extension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html)
 {.is-info}
 
-
-Want to use a tool that creates the links for you? 
-
-Try [Link Shell Extension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html)
 
 ![gswe_focus_muffin.png](/tutorials/getting_started_with_se/gswe_focus_muffin.png =1100x900)
 <div style="margin-left: 300px;"> <i>Image created by Focus and kindly provided by Muffin </i> </div>
@@ -304,19 +301,21 @@ Try [Link Shell Extension](https://schinagl.priv.at/nt/hardlinkshellext/linkshel
 {.is-warning}
 
 
+> To delete the symlink simply delete the linked folder in 
+> `\Steam\steamapps\common\Baldurs Gate 3\Data`
+{.is-info}
+
+
 > An automated way of setting up your symlink might be provided in the future
 {.is-info}
 
 ### 2\. Verifying the symlink
 
-To test whether the symlink has been created in the correct space, click your newly created symlink
+To verify whether the symlink has been created in the correct space, click your newly created symlink
 in `Data`. This should lead you to your workspace folder. 
-You can see how symlinks interact with folders in the image below.
 
+If you see an error instead or a link to a subfolder, please repeat the steps in [4. Symlinking](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking) and make sure your **paths** are correct.
 
-
-
-https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html
 
 ### 3\. Testing the symlink
 
