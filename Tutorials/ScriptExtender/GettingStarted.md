@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T19:17:39.016Z
+date: 2024-05-02T19:21:28.347Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -388,8 +388,8 @@ print("Astarions ID is ", astarion)
 
 ### 3\. A very special data structure: tables
 
-You might have heard of some data strucutres like "arrays" or "lists" before.
-In Lua we use a so called "table" for all of these instances.
+You might have heard of some data strucutres like `arrays` or `lists` before.
+In Lua we use a so called `table` for all of these instances.
 
 > Paste the following function at the top of your `MyFirstSEScript.lua`  so you can use it
 {.is-info}
@@ -673,7 +673,7 @@ Please note that these are just some examples. Feel free to experiment and choos
 
 ### 4\. Scope 
 
-As you have already learned in **1. Order of executions** your variables are not available everywhere in your program.
+As you have already learned in [1. Order of executions](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-1-order-of-execution) your variables are not available everywhere in your program.
 The order of execution is not the only thing that defines this.
 
 #### 4.1 Scope within a file
@@ -788,7 +788,7 @@ print(karlach)
 
 #### 4.2 Scope across files
 
-if you have followed **5. Creating multiple files** then you have two files in your "Server". `MyFirsSEScript.lua` and `MySecondSEScript.lua`
+if you have followed [5. Creating multiple files](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-5-creating-multiple-files) then you have two files in your "Server". `MyFirsSEScript.lua` and `MySecondSEScript.lua`
 
 Not all variables and functions that you create in one file will be visible in the other one.
 
