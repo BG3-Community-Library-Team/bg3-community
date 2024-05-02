@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-02T02:29:37.958Z
+date: 2024-05-02T02:34:38.040Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -14,6 +14,10 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 # Types {.tabset}
 
 ## Anubis Configs
+
+### Tabs {.tabset}
+
+#### Configs
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_AnubisConfigsOverrideStack|?|3|UUID|String|Integer|--|--|
@@ -23,7 +27,7 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_AnubisConfigOverride_UpdatedConfig|?|1|Integer|--|--|--|--|
 |DB_AnubisConfigs_CharacterSavedStates|?|2|Character UUID|State|--|--|--|
 
-### Query Returns
+#### Query Returns
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
 |-----|----|----|----|----|----|
 |DB_QRYRTN_AnubisConfigOverrideIndex|?|1|?|--|--|
@@ -37,6 +41,9 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_Shovelling_Mound|?|4|?|?|Object UUID|?|--|
 
 ## Character Creation
+### Tabs {.tabset}
+
+#### Character Creation
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_CharacterCreationDummy|?|Character UUID|--|--|--|--|
@@ -48,12 +55,12 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_TUT_CharacterCreation_IntroMovieFinished|?|1|Integer|--|--|--|--|
 |DB_TUT_CharacterCreation_InitialShown|?|1|Integer|--|--|--|--|
 
-### Query Returns
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
-|-----|----|----|----|----|----|
-|DB_QRYRTN_TUT_CharacterCreation_GetUserDummy|?|1|?|--|--|
+#### Query Returns
+
 
 ## Character Management
+## Tabs {.tabset}
+#### Character Management
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_Players|List of registered Player Character IDs|1|Character UUID|--|--|--|--|
@@ -74,7 +81,7 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_TutorialCompanion|List of Tutorial Companions|1|Character UUID|--|--|--|--|
 |DB_DiedInCombat|List of Characters that Died in Combat|2|Character UUID|?|--|--|--|
 
-### Query Returns
+###$ Query Returns
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
 |-----|----|----|----|----|----|----|----|
 |DB_QRYRTN_GetCharacterOwnerIfItemSummon|Returns Owner if UUID corresponds to a summoned item|1|Character UUID|--|--|
@@ -83,8 +90,6 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 ## Class-Specific
 
 ### {.tabset}
-
-
 #### Bard
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
@@ -109,6 +114,7 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 #### Paladin
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
+|DB_Debug_GLO_PaladinOathbreaker_ForceOathbreaker|Force an Oath Break|1|Integer|--|--|
 |DB_GLO_Spells_DominatedOwnerStatus|List of Statuses that fall under Dominated|2|Status ID|Status ID|--|--|--|
 |DB_GLO_Spells_TurnCharactersEvilStatuses|List of statuses that turn characters Evil|1|Status ID|--|--|--|--|
 |DB_GLO_PaladinOathbreaker_RedemptionPrice|Cost of Redemption at a given level|2|Integer (Level Number)|Integer (Price)|--|--|--|
@@ -131,11 +137,6 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_GLO_PaladinOathbreaker_NotifyAfterDialogEnds|?|3|Dialog Resource|Integer|?|--|--|
 |DB_GLO_PaladinOathbreaker_ReactedToBreakingOath|?|1|Character UUID|--|--|--|--|
 |DB_GLO_PaladinOathbreaker_RedemptionFromOathbreaker|Character that's gained Redemption|1|Character UUID|--|--|--|--|
-
-##### Debug
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
-|-----|----|----|----|----|----|
-|DB_Debug_GLO_PaladinOathbreaker_ForceOathbreaker|Force an Oath Break|1|Integer|--|--|
 
 ## Combat
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
