@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-02T02:41:28.163Z
+date: 2024-05-02T02:50:00.305Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -1500,7 +1500,7 @@ data "Priority" "1"
 data "MinLevel" "1"
 data "Armor Class Ability" "Dexterity"
 ```
-*<sub>Not bothering to add camp clothes but make sure you place those below the armor you want equipped. Order matters I believe.</sub>
+*<sub>Not bothering to add camp clothes entires here but make sure you place those below the armor you want equipped. Order matters I believe.</sub>
   
 ### Object.txt
 I think at this point you get the idea. Im not going to worry about adding any new items but I will make sure that my class gets the initial scroll of revivify, keychain, alchemy pouch, and camp supplies backpack, which you will see when I create my actual Equipment.txt file below.
@@ -1573,21 +1573,19 @@ Quickster\Public\Quickster\Stats\Generated\Equipment.txt
 new equipment "EQP_CC_Quickster"
 add initialweaponset "Melee"
 add equipmentgroup
-add equipment entry "WPN_Greataxe"
+add equipment entry "WPN_Dagger"
+add equipmentgroup
+add equipment entry "WPN_HandCrossbow"
 add equipmentgroup
 add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "ARM_Robe_Body"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
-add equipmentgroup
-add equipment entry "ARM_Shoes_Barbarian"
-add equipmentgroup
-add equipment entry "ARM_Barbarian"
-add equipmentgroup
-add equipment entry "WPN_Handaxe"
-add equipmentgroup
-add equipment entry "WPN_Handaxe"
 add equipmentgroup
 add equipment entry "OBJ_Keychain"
 add equipmentgroup
@@ -1599,7 +1597,36 @@ add equipment entry "ARM_Camp_Shoes"
 add equipmentgroup
 add equipment entry "OBJ_Backpack_CampSupplies"
 ```
-*Still in progress, come back soon :)
+Nothing unexpected here I think. We have one more thing we need to do, link this equipment entry back to our class. To do that we will look at a file we havent touched in a while, ClassDescriptions.lsx.
+  
+##ClassDescriptions.lsx
+We only need to make a minor addition here, just one line. To assign a starting equipment to your class, you need to add the attribute `ClassEquipment` and make its value the same as the name of your equipment entry. So for quickster that would be EQP_CC_Quickster. Take a look.
+Quickster\Public\Quickster\ClassDescription\ClassDescription.lsx
+```
+...
+<node id="ClassDescription">
+  <attribute id="BaseHp" type="int32" value="6"/>
+  <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+  <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_Quickster"/>
+  <attribute id="Description" type="TranslatedString" handle="hc25377a0g8e44g4645g90c5gee05d6c5e31b" version="1"/>
+  <attribute id="DisplayName" type="TranslatedString" handle="heb6d4970g5238g4bb8ga932g9dd4357d61ed" version="1"/>
+  <attribute id="HpPerLevel" type="int32" value="4"/>
+  <attribute id="LearningStrategy" type="uint8" value="1"/>
+  <attribute id="Name" type="FixedString" value="Quickster"/>
+  <attribute id="PrimaryAbility" type="uint8" value="6"/>
+  <attribute id="ProgressionTableUUID" type="guid" value="b283c957-2267-484a-a6c0-f98479c55e53"/>
+  <attribute id="SoundClassType" type="FixedString" value="Paladin"/>
+  <attribute id="SpellCastingAbility" type="uint8" value="2"/>
+  <attribute id="UUID" type="guid" value="e7b0f304-da32-410e-9e58-6efea9272673"/>
+  <children>
+    <node id="Tags">
+      <attribute id="Object" type="guid" value="35add446-b710-4ad1-8dbc-36f99aecc6d5"/>
+    </node>
+  </children>
+</node>
+...
+```
+This should be all you need for now. If you load up your class now, you should see that your class spawns with the specified equipment.
 
 ---
 
