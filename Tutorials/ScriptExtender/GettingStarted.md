@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T12:52:56.269Z
+date: 2024-05-02T15:31:01.425Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1248,7 +1248,7 @@ That mean swe can put a table within another table.
 ><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>10. Useful Resources</strong> for more information</span>
 {.is-success}
 
-
+more information about lua: https://exercism.org/tracks/lua
 
 ### 8\. Debugging using print statements
 
