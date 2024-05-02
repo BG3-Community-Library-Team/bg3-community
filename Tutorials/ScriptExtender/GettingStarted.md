@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T18:51:27.942Z
+date: 2024-05-02T18:52:43.275Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -42,7 +42,7 @@ These can all be found in the [10. Useful Resources](#10.-useful-resources) at t
 
 ### **1\. Load a save**
 
-You can load either a new save or an existing one.
+You can either start a new game or load an existing save.
 
 When the save is loaded you should see some output in your console, telling you that the session has loaded and other debug statements depending on what kind of mods you have installed:
 
