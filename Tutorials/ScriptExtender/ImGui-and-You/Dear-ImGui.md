@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T12:56:06.382Z
+date: 2024-05-02T15:18:05.522Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -10,7 +10,7 @@ dateCreated: 2024-05-01T19:43:32.311Z
 
 # **Dear ImGui**
 
-This multi-part tutorial covers the integrationg of ImGui within mods using ScriptExtender.
+This multi-part tutorial covers the integration of ImGui using ScriptExtender.
 - Part 1 covers: Setup, First Steps and general creation of ImGui components.
 - Part 2 covers: Component logic
 - Part 3 covers: Events and how to use them
@@ -131,9 +131,9 @@ for instance, will print "My ImGui Window" since "Label" is a component our obje
 {.is-danger}
 
 
-## **2.2\. What can it do?**
+## **2.2\. What is possible?**
 
-To explore its capabilities, let's revisit our ExtIdeHelpers.lua file.
+To explore everything thats possible, let's revisit our ExtIdeHelpers.lua file.
 
 If you're still in the same place as our last search, great! If not, search for "Ext_ClientImgui" again.
 
