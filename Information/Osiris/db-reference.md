@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-02T02:55:50.314Z
+date: 2024-05-02T02:58:44.865Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -92,6 +92,7 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_CRIME_MusicalPerformance_TossCoin|?|2|Character UUID|Character UUID|--|--|--|
 |DB_CRIME_MusicalPerformanceSpell|?|2|String Crime ID|String Spell ID|--|--|--|
 |DB_CRIME_BardNPCPerformingWithPlayers|Bard NPCs performing with Players|3|Character UUID|?|?|--|--|
+|DB_Bard_InstrumentRootToSpell|?|2|UUID|String Spell ID|--|--|--|
 
 #### Cleric
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
