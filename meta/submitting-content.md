@@ -2,7 +2,7 @@
 title: Submitting Content
 description: An overview of adding new pages and content to the Wiki
 published: true
-date: 2024-05-02T16:46:50.627Z
+date: 2024-05-02T16:47:53.862Z
 tags: meta
 editor: markdown
 dateCreated: 2024-04-24T20:11:12.024Z
@@ -58,5 +58,6 @@ Getting used to using the editor can be tricky, but here are some handy tips to 
 
 - Don't use spaces in Page/Folder Names - set them up as `page-or-folder-name`. 
 - When creating a folder, you should create a Page with the same name, to act as an index of the pages within the folder. The folder will take on the name of the Page as set in the Page settings
+- When adding a page, make sure it's linked on the relevant Folder Page, as above
 - When creating tabs using `{.tabset}`, you can include tabs within tabs.
 - When trying to set up lists in a Styled Blockquote, add this beneath the blockquote: `<!-- {blockquote:.is-info} -->`
