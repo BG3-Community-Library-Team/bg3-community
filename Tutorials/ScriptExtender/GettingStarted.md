@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T19:43:10.273Z
+date: 2024-05-02T20:52:24.433Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -22,6 +22,12 @@ This tutorial assumes that you know how to install mods and and Script Extender.
 For further information, follow the links in [10. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources) on the bottom of this page that this guide is based on
 
 After reading this guide, feel free to follow the tutorial: [**Creating your First SE Mod (TBA)**](https://wiki.bg3.community/en/Tutorials/ScriptExtender/creating_your_first_se_mod)
+
+
+> If you are having trouble following this guide, feel free to join the DBTR discord linked [here](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources) for assistance
+> DBTR is a community discord. Keep in mind that everyone that may help you is a volunteer. Please read and follow the server rules.
+{.is-success}
+
 
 
 ## 1\. Ensure you have activated the Script Extender Console  
@@ -227,19 +233,31 @@ If you are not able to see this statement, you likely missed one of the steps.
 
 ## **4\. Symlinking**
 
+For you to not have to repack your mod every time you make a change, you can symlink your folders.
+While symlinking is optional, it is highly recommended. 
+However you can follow this guide without this step.
+This will require you to exit the game, repack your mod and relaunch the game after you have made changes to see their effects.
+
 ### 1\. Setting up the Symlink
 
-For you to not have to repack your mod every time you make a change, you can symlink your folders.
+
 
 The following instructions are for Windows. On Linux, simply use `ln -s <workspace> <game files>`
 
 Because of the formatting of the wiki, the commands had to be placed on separate lines. When you input the commands, please make sure to write all in one line.
 
-The commands for copying can be seen below the code block.  Please make sure to modify the commands for your username and place of your workspace and game.
+The commands for copying can be seen below the code block.  Please make sure to **modify** the commands for your username and place of your workspace and game.
 
 > This command is executed in the windows terminal
->  in the search bar type `cmd` and execute the program as administarator
+>  in the search bar type `cmd` and execute the program as **administarator**
 {.is-info}
+
+
+Type `cmd` in the windows search bar and execute the program as **administrator**
+![gswse_admin.png](/tutorials/getting_started_with_se/gswse_admin.png)
+
+Your console should open. This is where you will type your commands
+![gswse_cmd2.png](/tutorials/getting_started_with_se/gswse_cmd2.png)
 
 ```plaintext
 // Public folder
@@ -255,18 +273,35 @@ mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Loc
 "C:\Users\YourUserName\path\to\YourModName\English\YourLoca.loca"
 ```
 
-mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Public" "C:\\Users\\YourUsername\\path\\to\\YourModName\\Public"
+mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Public" "C:\\Users\\YourUsername\\path\\to\\YourModName\\Public
 
 mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Mods" "C:\\Users\\YourUserName\\path\\to\\YourModName\\Mods"
 
 mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Localization\\English\\yourLoca.loca" "C:\\Users\\YourUserName\\path\\to\\YourModName\\English\\YourLoca.loca"
 
+
+
+
 > To delete the symlink simply delete the linked folder in 
 > `\Steam\steamapps\common\Baldurs Gate 3\Data`
 {.is-info}
 
+> An automated way of setting up ypur symlink will be provided in the future
+{.is-info}
 
-### 2\. Testing the symlink
+
+### 2\. Verifying the symlink
+
+To test wether the symlink has been created in the correct space 
+
+
+
+> Still stuck? Here are some other resources that explain this step differently
+> https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki/3.-Symlink
+{.is-warning}
+
+
+### 3\. Testing the symlink
 
 To test whether your symlink has been succesfully created, you can change the print line we have created earlier while having a save loaded.
 
@@ -1660,8 +1695,16 @@ Osi Events: [_https://github.com/LaughingLeader/BG3ModdingTools/blob/master/gene
 
 Osiris: [_https://docs.larian.game/Osiris_](https://docs.larian.game/Osiris)
 
+**_DBTR Discord_**
+
+[Down by the river](https://discord.com/channels/766962323037749248/1233113869497667684/1235679160425381888)
+
 **_Me_**
 
 Utils file: 
 
-Credits: Alithea Ancunin for some screenshots and proofreading 
+Credits: 
+
+*Alithea Ancunin* for screenshots and proofreading 
+*Chip Chocolate, Legendary Muffin for a multitude* of resources and his knowledge
+*ImmortalRD, Schroedingercat and Chip Chocolate, Legendary Muffin* for the [tutorial for Symlinking & Mass File Conversion for hot-testing your mods](https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki)
