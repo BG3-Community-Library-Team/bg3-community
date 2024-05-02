@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T10:01:38.577Z
+date: 2024-05-02T10:06:36.280Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -95,7 +95,7 @@ Which means, the Ext_ClientIMGUI object is a class which has 2 fields available 
 
 So by typing:
 ```lua
-Ext.IMGUI.NewWindow("My ImGui Window") -- because the NewWindow function requires a "string" argument
+Ext.IMGUI.NewWindow("My ImGui Window") -- Yes, Ext_ClientIMGUI is used as Ext.IMGUI
 ```
 
 you have your very first window!
@@ -103,7 +103,7 @@ And you will notice it says "My ImGui Window" in its title bar!
 
 ### **3.1\. How to read**
 
-"Now what?" you may wonder as you stare at your window, unable to do much besides collapsing its title bar.
+You may wonder about being unable to do much besides collapsing its title bar.
 
 To put it to good use, let's edit our first line and name it like any other object:
 
@@ -114,14 +114,14 @@ MyWindow = Ext.IMGUI.NewWindow("My ImGui Window")
 Now we have an object called "MyWindow".
 If you dump it with ```_D``` you may see some additional information already.
 
-and
+and instead using
 ```lua
 _P(MyWindow.Label)
 ```
 
-will print "My ImGui Window" since this is an element our new object has inside of it.
+will print "My ImGui Window" since "Label" is an element our new object.
 
-> If it throws an error, you might need to dump it again first and see if that element is even on your object!
+> If printing of an objects element throws an error it might be missing, if that happens, check with a dump if its on your object!
 {.is-danger}
 
 
