@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-01T22:42:18.830Z
+date: 2024-05-02T02:41:28.163Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -1437,10 +1437,76 @@ Quickster\Public\Quickster\Progressions\Progressions.lsx
 The only new thing I added was in Boosts. I added the Function ActionResource(). The first parameter is the name of my action resource, so SpeedForce. The second parameter is an int for how many of the resource you get. I want two charges, so I put 2. The last parameter is an int for the level. In my case I dont have a level restriction so I put 0. Thats pretty much all it takes to make an action resource. It may not mean much to you right now but when you make a spell you can refer to this action resource for its use costs.
   
 # Starting Equipment[⬆️](#goals)
-Running around Faerun naked is not advised. Most classes would want starting armor, weapon, and items. I wont cover creating new items here for this class so dont expect that below. Please look in the wiki for item creation guides for that.
+Running around Faerun naked is not advised. Most classes would want starting armor, weapon, and objects. Lets get started with giving a class a weapon as well as some armor and objects, which gets defined in the file Equipment.txt. Equipment.txt references items found in files inside the Shared\Stats\Generated\Data folder so lets start with that. I will be giving the class existing ingame items. I wont cover creating new items here for this class so dont expect that below. Please look in the wiki for item creation guides for that.
 
+## Data Folder Files
+Before we even take a look at the games equipment file, you should get an idea of what items your class will need. Everything your class will reference in its equipment entry can be found in the Data folder as I mentioned above. Specifically, the ones we are concerned about are Weapon.txt, Armor.txt, and Object.txt, at least in the base game. Unless im mistaken, all files in the Data folder could be merged into one file or mixed around. The base game has them seperated for clarity I believe. Its just easier to view it seperated like this but as long as your entry for something in the Data folder has the correct type (ex. `type "Armor"`) to demonstrate what type that entry is, it could all be the same file, mixed, etc and given whatever name(s) you see fit (i think). Data types for weapons, armors, objects arent to crazy unless you want to get wild with boosts so lets just look at some entries for the three that will be added to quickster. (Remember that since these entries exists in the base game, its not like we need to make these data entries. Im only including them below for reference) Data files go far beyond just items though, so check the wiki if you want more information on them.
+
+### Weapon.txt
+Lets take a look at an entry I plan to give the class.
+```
+new entry "WPN_Dagger"
+type "Weapon"
+using "_BaseWeapon"
+data "RootTemplate" "569b0f3d-abcd-4b01-aaf0-979091288163"
+data "Damage Type" "Piercing"
+data "Damage" "1d4"
+data "ValueScale" "0.5"
+data "Weight" "0.45"
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_PiercingThrust)"
+data "Weapon Group" "SimpleMeleeWeapon"
+data "Weapon Properties" "Finesse;Light;Thrown;Melee;Dippable"
+data "Proficiency Group" "Daggers;SimpleWeapons"
+  
+new entry "WPN_HandCrossbow"
+type "Weapon"
+using "_BaseWeapon"
+data "RootTemplate" "a5d843ab-c3af-4e60-a925-bb2e15828938"
+data "Damage Type" "Piercing"
+data "Damage" "1d6"
+data "Damage Range" "3000"
+data "WeaponRange" "1500"
+data "ValueLevel" "3"
+data "Weight" "0.9"
+data "Slot" "Ranged Main Weapon"
+data "Projectile" "ff93ba9c-124c-454e-ac8c-436c136bcef2"
+data "BoostsOnEquipMainHand" "UnlockSpell(Projectile_PiercingShot);UnlockSpell(Projectile_MobileShooting)"
+data "Weapon Group" "MartialRangedWeapon"
+data "Weapon Properties" "Ammunition;Loading;Light;Dippable"
+data "Proficiency Group" "HandCrossbows;MartialWeapons"
+```
+  
+### Armor.txt
+Lets take a look at some entries I plan to give the class.
+```
+new entry "ARM_Boots_Leather"
+type "Armor"
+using "_Foot"
+data "RootTemplate" "969bab00-b269-46a5-a7e9-dd4887814719"
+data "ValueLevel" "1"
+data "ArmorType" "Leather"
+
+new entry "ARM_Robe_Body"
+type "Armor"
+using "_Body"
+data "RootTemplate" "168b9099-19f5-44e4-b55c-e64ceb60b71f"
+data "ArmorClass" "10"
+data "ValueUUID" "4c5217d8-0232-4592-9e32-2fd729123f53"
+data "ValueScale" "0.8"
+data "Weight" "1.8"
+data "MinAmount" "1"
+data "MaxAmount" "1"
+data "Priority" "1"
+data "MinLevel" "1"
+data "Armor Class Ability" "Dexterity"
+```
+*<sub>Not bothering to add camp clothes but make sure you place those below the armor you want equipped. Order matters I believe.</sub>
+  
+### Object.txt
+I think at this point you get the idea. Im not going to worry about adding any new items but I will make sure that my class gets the initial scroll of revivify, keychain, alchemy pouch, and camp supplies backpack, which you will see when I create my actual Equipment.txt file below.
+  
 ## Equipment.txt
-The game defines all starting gear in a file called Equipment.txt, which is found in the \Shared\Stats\Generated folder. Lets take a look at an entry or two.
+The game defines all starting gear for all entities in a file called Equipment.txt, which is found in the \Shared\Stats\Generated folder. Lets take a look at an entry or two.
 
 ```
 new equipment "EQP_CC_Barbarian"
@@ -1499,7 +1565,40 @@ add equipment entry "ARM_Camp_Shoes"
 add equipmentgroup
 add equipment entry "OBJ_Backpack_CampSupplies"
 ```
-  
+
+Here we can see entries for the Barbarian and and Bard respectively, as we can tell from their entry name. You can see the names of things in here are somewhat similar to the items we looks through earlier that we wanted to add to our class. Lets make a Equipment.txt file and add in a equipment entry for our class.
+
+Quickster\Public\Quickster\Stats\Generated\Equipment.txt
+```
+new equipment "EQP_CC_Quickster"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greataxe"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Shoes_Barbarian"
+add equipmentgroup
+add equipment entry "ARM_Barbarian"
+add equipmentgroup
+add equipment entry "WPN_Handaxe"
+add equipmentgroup
+add equipment entry "WPN_Handaxe"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+```
 *Still in progress, come back soon :)
 
 ---
