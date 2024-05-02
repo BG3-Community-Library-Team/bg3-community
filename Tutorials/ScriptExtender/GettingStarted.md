@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T19:03:51.104Z
+date: 2024-05-02T19:06:30.077Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -38,7 +38,7 @@ If you see this window, it means you have successfully installed SE with console
 
 To familiarize yourself with the usage of the SE console you can execute a few simple commands.
 
-These can all be found in the [10. Useful Resources](#10.-useful-resources) at the bottom of this tutorial as [Osi functions](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) .
+These can all be found in the [Useful Resources](#useful-resources) at the bottom of this tutorial as [Osi functions](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) .
 
 ### **1\. Load a save**
 
@@ -1324,7 +1324,7 @@ That mean swe can put a table within another table.
 
 
 
-><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[10. Useful Resources](#10.-useful-resources)</strong> for more information</span>
+><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[Useful Resources](#useful-resources)</strong> for more information</span>
 {.is-success}
 
 more information about lua: https://exercism.org/tracks/lua
