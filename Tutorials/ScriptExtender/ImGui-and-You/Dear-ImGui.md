@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T09:50:07.372Z
+date: 2024-05-02T10:01:38.577Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -101,7 +101,7 @@ Ext.IMGUI.NewWindow("My ImGui Window") -- because the NewWindow function require
 you have your very first window!
 And you will notice it says "My ImGui Window" in its title bar!
 
-### **3\. Making use of it**
+### **3.1\. How to read**
 
 "Now what?" you may wonder as you stare at your window, unable to do much besides collapsing its title bar.
 
@@ -125,7 +125,7 @@ will print "My ImGui Window" since this is an element our new object has inside 
 {.is-danger}
 
 
-## **3\. So, what can it do?**
+## **4\. What can it do?**
 
 To explore its capabilities, let's revisit our ExtIdeHelpers.lua file.
 
@@ -183,7 +183,7 @@ Its essentially an object, making use of another object, to create a new object 
 {.is-info}
 
 
-## **4\. The basics**
+## **5\. The basics**
 
 You created your first window, named it and now also have a list of things to add.
 
