@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T19:13:16.681Z
+date: 2024-05-02T19:16:21.043Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -19,7 +19,7 @@ This tutorial assumes that you know how to install mods and and Script Extender.
 -   [How to install .pak files](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files) 
 -   [Installing Script Extender and activating the console](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender)
 
-For further information, follow the links in [Useful Resources](#useful-resources) on the bottom of this page that this guide is based on
+For further information, follow the links in [10. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#useful-resources) on the bottom of this page that this guide is based on
 
 After reading this guide, feel free to follow the tutorial: [**Creating your First SE Mod (TBA)**](https://wiki.bg3.community/en/Tutorials/ScriptExtender/creating_your_first_se_mod)
 
@@ -38,7 +38,7 @@ If you see this window, it means you have successfully installed SE with console
 
 To familiarize yourself with the usage of the SE console you can execute a few simple commands.
 
-These can all be found in the [Useful Resources](#useful-resources) at the bottom of this tutorial as [Osi functions](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) .
+These can all be found in the [10.Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#useful-resources) at the bottom of this tutorial as [Osi functions](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) .
 
 ### **1\. Load a save**
 
@@ -1324,7 +1324,7 @@ That mean swe can put a table within another table.
 
 
 
-><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[Useful Resources](#useful-resources)</strong> for more information</span>
+><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[10. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#useful-resources)</strong> for more information</span>
 {.is-success}
 
 more information about lua: https://exercism.org/tracks/lua
@@ -1613,7 +1613,7 @@ https://discord.com/channels/98922182746329088/1228009824017453147 (ask for perm
 
 -   IMGUI / Devel stuff?
 
-## Useful Resources
+## 10. Useful Resources
 
 **_Norbyte_**
 
