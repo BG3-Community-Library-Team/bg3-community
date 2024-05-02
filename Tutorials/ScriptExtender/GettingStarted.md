@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T09:45:44.244Z
+date: 2024-05-02T11:58:13.978Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -782,8 +782,10 @@ print(getWyll())
 
 `bg3se::lua::State::LoadScript(): Failed to execute script: [string "MySEMod/Server/MySecondSEScript.lua"]:1: attempt to call a nil value (global 'getWyll')`
 
+Here you got your first intended error message. This is because we try to call the function `getWyll()` but `MySecondSeScript.lua` doesn't know how to access it.
 
-Here we have to make the function global as well to access it from other files
+
+Again we have to make the function global as well to access it from other files
 
 Create a function in  `MyFirsSEScript.lua`
 
@@ -813,7 +815,7 @@ print(GetWyll())
 
 ### 5\. Functions
 
-// TODO: Explain : and . (Calling the function with itself as the first parameter) -> Maybe something for 8. Using Script Extender Functions instead?  Might fit in the mettables section
+// TODO: Explain : and . (Calling the function with itself as the first parameter) -> Maybe something for 8. Using Script Extender Functions instead?  Might fit in the metables section
 
 You can use fuctions when you have to execute the same code multiple times.
 This allows you to reuse your code without having to copy and paste it.
