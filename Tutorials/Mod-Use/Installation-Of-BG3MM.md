@@ -1,8 +1,8 @@
 ---
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
-published: false
-date: 2024-05-01T04:54:28.180Z
+published: true
+date: 2024-05-02T16:50:30.467Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -153,6 +153,7 @@ Part 2: How to install mods (Pak Files): https://wiki.bg3.community/en/Tutorials
 Part 3: How to install manual/loose file mods (mods that are not pak files): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
 
 And other relevant guides: 
+How to remove mods from BG3 (Troubleshooting guide): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods
 General Load order guide: https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order
 How to install Script Extender: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender
 Clean reinstall of Script Extender: To-Do
