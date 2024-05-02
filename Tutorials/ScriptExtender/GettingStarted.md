@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T22:39:22.969Z
+date: 2024-05-02T22:40:42.579Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -237,7 +237,7 @@ If you are not able to see this statement, you likely missed one of the steps.
 Every time you make a change to your mod, you have to exit the game, repack your mod, and launch the game again to see the effect.
 Symlinking is optional, although highly recommended, as it allows you conveniently avoid the aforementioned steps aka hot load your mod.
 
-### 1\. Setting up the Symlink
+### 4.1\. Setting up the Symlink
 
 
 The following instructions are for Windows. On Linux, simply use `ln -s <workspace> <game files>`
@@ -311,7 +311,7 @@ mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Da
 > An automated way of setting up your symlink might be provided in the future
 {.is-info}
 
-### 2\. Verifying the symlink
+### 4.2\. Verifying the symlink
 
 To verify whether the symlink has been created in the correct space, click your newly created symlink
 in `Data`. This should lead you to your workspace folder. 
@@ -319,7 +319,7 @@ in `Data`. This should lead you to your workspace folder.
 If you see an error instead or a link to a subfolder, please repeat the steps in [4. Symlinking](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking) and make sure your **paths** are correct.
 
 
-### 3\. Testing the symlink
+### 4.3\. Testing the symlink
 
 To test whether your symlink has been succesfully created, you can change the print line we have created earlier while having a save loaded.
 
