@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T18:16:21.455Z
+date: 2024-05-02T18:40:35.919Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -105,6 +105,7 @@ You will also need an editor. I recommend VSCode or the Open Source alternative 
 
 Download the example workspace linked above and unpack/unzip it.
 
+### 3.1 Opening your workspace
 
 
 ![](https://lh7-us.googleusercontent.com/y8Vrl86Pnz7b_oGasddrDJuk8zPeVnhq-xUO3FRRZUK5SeolwQOMQwoTOlCIEK9SLOsrV4YYnfSW7JbSBHvL6bmGNPsfn0zNqb3iRvxjPOFKa3BEEiN6LoiyVDF426_KsKdVXYFn0N1N_vpcu4uyTBg)
@@ -129,7 +130,59 @@ Now you should see your workspace.
 
 ![](https://lh7-us.googleusercontent.com/ZTy0cD3-wymnkpEj99udh1241KM3oJA2nYy0WmwXiIT-Rz6IxFbFdDLKwXsxWppM-MdtATFrNvCieQvlG8KijOWSV7Wyzw0klGSYZx5XVLvxbFkaeSG6JrGDPMYzeRvDKyb6Vg8u8S1BiepaZcitoBw)
 
-This will open your folder in your editor. You will find a few files here already. 
+### 3.2 Installing Extensions
+
+We will now install a few `Extensions` which will make creating mods a lot easier.
+For this click the `Extensions` button on the left. This will open a tab which allows you
+to see your installed `Extensions` and install new ones.
+
+![gswse_extensions.png](/tutorials/getting_started_with_se/gswse_extensions.png)
+
+We will first install `BG3 Text Support` and `bg3_mod_helper`.
+These can be installed by searching for them in the search bar.
+
+
+![gswse_search_extension.png](/tutorials/getting_started_with_se/gswse_search_extension.png)
+
+Click on the desired `Extension` and a new tab will open. Here click `install`.
+Repeat this step for `bg3_mod_helper`
+
+![gswse_install.png](/tutorials/getting_started_with_se/gswse_install.png)
+
+
+For our last extension we need to visit a website: https://marketplace.visualstudio.com/items?itemName=FallenStar.bg3-se-snippets
+
+Follow the commands listed under **installation**. You can also see specific instructions in the next images.
+First, copy the text `ext install FallenStar.bg3-se-snippets`
+
+![gswse_fallen.png](/tutorials/getting_started_with_se/gswse_fallen.png)
+
+Then open VSCode again and press `Ctrl+P`
+This will open a small search window on the top
+![gswse_ctrlp.png](/tutorials/getting_started_with_se/gswse_ctrlp.png)
+
+paste `ext install FallenStar.bg3-se-snippets` into this field and press enter.
+This will automatically install this extension.
+
+
+>If you use VSCodium instead of BSCode you will have to manually install this extension
+{.is-info}
+
+
+![gswse_install_fallen.png](/tutorials/getting_started_with_se/gswse_install_fallen.png)
+
+
+
+### 3.3 Adding your first line
+
+Now navigate back to your explorer by clicking `Explorer`.
+You will find a few files here already. 
+
+
+
+![gswse_explorer.png](/tutorials/getting_started_with_se/gswse_explorer.png)
+
+
 
 Navigate to to `BootstrapServer.lua`
 
@@ -137,6 +190,10 @@ Navigate to to `BootstrapServer.lua`
 
 
 To make sure your mod is active in the game, we will add a print statement that will execute when the game loads.
+
+
+
+### 3.4 Packing your mod
 
 Afterwards, Pak the mod with a tool of your choice. Here we will use lslib.
 
