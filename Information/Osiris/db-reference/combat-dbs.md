@@ -2,13 +2,14 @@
 title: Combat DB Reference
 description: Osiris DBs relating to Combat
 published: true
-date: 2024-05-02T03:11:43.018Z
+date: 2024-05-02T16:31:11.451Z
 tags: osiris, db, dbs, combat
 editor: markdown
 dateCreated: 2024-05-02T03:11:16.182Z
 ---
 
-# Combat
+# Combat DBs
+The following DBs are ones that relate specifically to Combat.
 
 # {.tabset}
 ## Combat
