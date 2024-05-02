@@ -1,8 +1,8 @@
 ---
 title: How to install manual/loose file mods
 description: 
-published: false
-date: 2024-05-01T04:54:38.843Z
+published: true
+date: 2024-05-02T16:48:51.848Z
 tags: installation, loose-file-mods, manual-mods, manual, non-pak, verify, mods, how-to, bin, generated, data, public, folders, folder
 editor: markdown
 dateCreated: 2024-05-01T01:34:11.948Z
@@ -193,6 +193,8 @@ You can click further into the "NativeMods" folder and see which NativeMods you 
 
 ## How to uninstall loose file mods
 
+Here is a guide for uninstalling all mods in your game (loose/manual file mods are also covered): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods
+
 If you want to uninstall any loose file mods, you will need to find the corresponding files again. 
 
 For example if you installed a tattoo mod, where you needed to move the "Generated" folder into the "Data" folder, go to your data folder and delete the "Generated" folder. 
@@ -243,6 +245,7 @@ Part 1: How to install BG3MM: https://wiki.bg3.community/en/Tutorials/Mod-Use/In
 Part 2: How to install Pak files: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files
 
 Other relevant guides:
+How to remove mods from BG3 (Troubleshooting guide): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods
 How to install Unique Tav: On To-Do
 General Loader order guide: https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order
 How to install Script Extender: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender
