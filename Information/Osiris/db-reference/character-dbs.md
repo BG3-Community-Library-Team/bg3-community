@@ -2,13 +2,15 @@
 title: Character DB Reference
 description: Osiris Character DBs
 published: true
-date: 2024-05-02T03:08:57.566Z
+date: 2024-05-02T16:31:49.606Z
 tags: osiris, db, characters, character creation
 editor: markdown
 dateCreated: 2024-05-02T03:08:57.566Z
 ---
 
-# Characters
+# Characters DBs
+The following DBs are ones that relate specifically to Characters.
+
 # Tabs {.tabset}
 ## Character Creation
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
