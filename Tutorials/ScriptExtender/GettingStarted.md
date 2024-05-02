@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T18:40:35.919Z
+date: 2024-05-02T18:43:17.074Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -113,8 +113,9 @@ Download the example workspace linked above and unpack/unzip it.
 
 On Windows 11, right click the folder “MySEMod” after unzipping and click “Open with Code”.
 
-> Windows 11 sometimes seems to not show this option at first.
-> If you do not see this option, follow the steps below instead.
+> If you did not specify in the installation of VSCode that "Open with Code" 
+> should be added to the context menu in windows, you will not see this option.
+> In this case follow the steps below instead.
 {.is-info}
 
 
