@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T22:45:05.105Z
+date: 2024-05-02T22:46:54.500Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -46,7 +46,7 @@ To familiarize yourself with the usage of the SE console you can execute a few s
 
 These can all be found in the [10.Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources) at the bottom of this tutorial as [Osi functions](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) .
 
-### **1\. Load a save**
+### **2.1\. Load a save**
 
 You can either start a new game or load an existing save.
 
@@ -56,7 +56,7 @@ When the save is loaded you should see some output in your console, telling you 
 ![gswse_game_loaded.png](/tutorials/getting_started_with_se/gswse_game_loaded.png)
 
 
-### **2\. Activate the input** 
+### **2.2\. Activate the input** 
 
 To be able to input commands into the console press enter once.
 
@@ -65,7 +65,7 @@ If you have too much text on your console and you cannot see your input line, yo
 
 ![gswse_input_ready.png](/tutorials/getting_started_with_se/gswse_input_ready.png)
 
-### **3\. Basic inputs**
+### **2.3\. Basic inputs**
 
 Replicate the following steps to familiarize yourself with basic inputs into the SE console:
 
