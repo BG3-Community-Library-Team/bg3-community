@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T09:36:49.972Z
+date: 2024-05-02T09:41:55.735Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -401,7 +401,7 @@ end
 
 ##### 3.3.1\. Arrays
 
-The tables in the example above can fir the description of an "array". They consist of an index and an entry
+The tables in the example above can fit the description of an "array". They consist of an index and an entry
 
 
 ```lua
@@ -423,6 +423,8 @@ print("The first entry in myTable is ", myTable[1])
 
 ##### 3.3.2\. Maps
 
+We can also create "map-like" tables. These consist of "key - value" pairs. 
+The` key ` in this case is the entry on the left. The `value` is the entry on the right next to it.  When we know the `key` we can immediately retrieve the `value`.
 
 ```lua
 ORIGINS = {
@@ -454,6 +456,9 @@ print("Wylls UUID is ", ORIGINS["Wyll"])
 
 ##### 3.3.3\. Sets
 
+The last tabel structure we will mention is a "set-like" table.
+Sets are used to store unique items. That means duplicates are not allowed.
+Here we can quickly look up if something exists in our set. For that, we set the entries to `true`.
 
 ```lua
 local creatures = {
