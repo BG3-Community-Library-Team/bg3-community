@@ -2,15 +2,15 @@
 title: Crime DBs
 description: Osiris Databases relating to Crimes
 published: true
-date: 2024-05-02T03:05:44.902Z
+date: 2024-05-02T03:06:22.398Z
 tags: osiris, crime, db
 editor: markdown
 dateCreated: 2024-05-02T03:05:44.902Z
 ---
 
-## Crime
-### {.tabset}
-#### General
+# Crime
+# {.tabset}
+## General
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|Parameter 6|Parameter 7|
 |-----|----|----|----|----|----|----|----|----|----|
 |DB_CRIME_WaitingForDialogStop|?|2|?|Integer|--|--|--|--|--|
@@ -29,12 +29,12 @@ dateCreated: 2024-05-02T03:05:44.902Z
 |DB_CRIME_InvestigationCriminalLocation|?|4|String Crime ID|Integer  X Coordinate|Integer Y Coordinate|Integer Z Coordinate|--|--|--|
 |DB_CRIME_AssaultSourceMarker|?|2|String Crime ID|?|--|--|--|--|--|
 
-#### Camp
+## Camp
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|Parameter 6|Parameter 7|
 |-----|----|----|----|----|----|----|----|----|----|
 |DB_CRIME_OriginTeam_AnnoyedReaction|?|2|Integer|String|--|--|--|--|--|
 
-#### Query Returns
+## Query Returns
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
 |-----|----|----|----|----|----|
 |DB_QRYRTN_CRIME_GetOriginalAttackCrime|?|1|?|--|--|
