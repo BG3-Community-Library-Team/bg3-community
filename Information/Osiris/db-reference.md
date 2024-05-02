@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-02T02:28:35.411Z
+date: 2024-05-02T02:29:37.958Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -132,7 +132,7 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_GLO_PaladinOathbreaker_ReactedToBreakingOath|?|1|Character UUID|--|--|--|--|
 |DB_GLO_PaladinOathbreaker_RedemptionFromOathbreaker|Character that's gained Redemption|1|Character UUID|--|--|--|--|
 
-### Debug
+##### Debug
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
 |-----|----|----|----|----|----|
 |DB_Debug_GLO_PaladinOathbreaker_ForceOathbreaker|Force an Oath Break|1|Integer|--|--|
