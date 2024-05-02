@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T21:07:05.405Z
+date: 2024-05-02T21:09:11.813Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -299,7 +299,7 @@ mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Da
 
 ### 2\. Verifying the symlink
 
-To test wether the symlink has been created in the correct space:
+To test whether the symlink has been created in the correct space:
 
 
 
@@ -335,7 +335,7 @@ This will reset the console and all loaded scripts, allowing you to see instant 
 
 ## **5\. Creating multiple files**
 
-Wether you created a symlink or not, you can create multiple files in your workspace 
+Whether you created a symlink or not, you can create multiple files in your workspace 
 to help break down your project and for easier navigation.
 Let us create a new file by right clicking on the folder "Server" and clicking "New File".
 We will name this file `MySecondSEScript.lua`.
