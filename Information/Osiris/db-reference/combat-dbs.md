@@ -2,12 +2,15 @@
 title: Combat DB Reference
 description: Osiris DBs relating to Combat
 published: true
-date: 2024-05-02T03:11:16.182Z
+date: 2024-05-02T03:11:43.018Z
 tags: osiris, db, dbs, combat
 editor: markdown
 dateCreated: 2024-05-02T03:11:16.182Z
 ---
 
+# Combat
+
+# {.tabset}
 ## Combat
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
@@ -32,7 +35,7 @@ dateCreated: 2024-05-02T03:11:16.182Z
 |DB_GLO_Combat_PermanentlyHostile|?|1|UUID|--|--|--|--|
 |DB_EnterCombatRequested|?|1|UUID String|--|--|--|--|
 
-### Query Returns
+## Query Returns
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
 |-----|----|----|----|----|----|
 |DB_QRYRTN_CombatFlee_FoundFleeWaypoint|?|3|Character UUID|UUID|?|
