@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-02T02:34:38.040Z
+date: 2024-05-02T02:36:36.146Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -40,7 +40,7 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_ShovelArea|?|2|Object UUID|Object UUID|--|--|--|
 |DB_Shovelling_Mound|?|4|?|?|Object UUID|?|--|
 
-## Character Creation
+## Characters
 ### Tabs {.tabset}
 
 #### Character Creation
@@ -55,11 +55,6 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_TUT_CharacterCreation_IntroMovieFinished|?|1|Integer|--|--|--|--|
 |DB_TUT_CharacterCreation_InitialShown|?|1|Integer|--|--|--|--|
 
-#### Query Returns
-
-
-## Character Management
-## Tabs {.tabset}
 #### Character Management
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
@@ -81,7 +76,21 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_TutorialCompanion|List of Tutorial Companions|1|Character UUID|--|--|--|--|
 |DB_DiedInCombat|List of Characters that Died in Combat|2|Character UUID|?|--|--|--|
 
-###$ Query Returns
+#### Origins
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_PredefinedStartOrigin|?|1|UUID|--|--|--|--|
+|DB_Origins_UnavailableForRandom|?|1|UUID|--|--|--|--|
+|DB_RandomizeStartOrigin|?|1|Integer|--|--|--|--|
+|DB_CharacterCreationStarted|?|1|Integer|--|--|--|--|
+|DB_Origins|List of Origin Character UUIDs|1|UUID|--|--|--|--|
+|DB_Origins_Random|?|1|UUID|--|--|--|--|
+|DB_RandomStartOrigin|?|1|UUID|--|--|--|--|
+|DB_ChosenOriginWaitingForTeleport|?|--|--|--|--|--|--|
+|DB_GLO_PlayerCharactersSetup|?|--|--|--|--|--|--|
+|DB_PredefinedStartOrigin|?|--|--|--|--|--|--|
+
+#### Query Returns
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
 |-----|----|----|----|----|----|----|----|
 |DB_QRYRTN_GetCharacterOwnerIfItemSummon|Returns Owner if UUID corresponds to a summoned item|1|Character UUID|--|--|
@@ -194,23 +203,6 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_QRYRTN_CrimeIncapacitatedAssaultGetCrimeType|?|1|String Crime State ID|--|--|
 |DB_QRYRTN_InvestigateAssaultSourceAdvantage|?|1|Integer|--|--|
 
-## Dialog
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
-|-----|----|----|----|----|----|----|----|
-|DB_AutomatedDialog|?|1|Integer|--|--|--|--|
-|DB_AutomatedDialogIsVB|?|1|Integer|--|--|--|--|
-|DB_DialogDeath|?|1|Character UUID|--|--|--|--|
-|DB_DialogEnding|?|2|DialogResource|Integer|--|--|--|
-|DB_DialogName|?|2|DialogResource|Integer|--|--|--|
-|DB_DialogNumPlayers|Amount of Players in a Dialog|2|Integer|Dialog Resource|--|--|--|
-|DB_DialogNumNPCs|Amount of NPCs in a Dialog|2|Integer|Dialog Resource|--|--|--|
-|DB_DialogNPCs|List of NPCs in a Dialog|2|Integer|Dialog Resource|--|--|--|
-|DB_DialogPlayers|List of Players in a Dialog|3|Integer|UUID String|?|--|--|
-|DB_DialogRequestFailed|?|2|DialogResource|Integer|--|--|--|
-|DB_DialogSpeakers|List of Spekaers in a Dialog|3|Integer|UUID String|?|--|--|
-|DB_OnDialogAttackRequested|?|3|Character UUID|Character UUID|Integer|--|--|
-|DB_InteractiveDialogSpeaker|?|2|Integer|?|--|--|--|
-
 ## Game Management
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
@@ -248,33 +240,39 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_DialogMoneyTransfer|?|3|Integer|Character UUID|Integer (Price)|--|--|
 |DB_ReportKiller|?|2|?|Tag UUID|--|--|--|
 
-## Origins
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
-|-----|----|----|----|----|----|----|----|
-|DB_PredefinedStartOrigin|?|1|UUID|--|--|--|--|
-|DB_Origins_UnavailableForRandom|?|1|UUID|--|--|--|--|
-|DB_RandomizeStartOrigin|?|1|Integer|--|--|--|--|
-|DB_CharacterCreationStarted|?|1|Integer|--|--|--|--|
-|DB_Origins|List of Origin Character UUIDs|1|UUID|--|--|--|--|
-|DB_Origins_Random|?|1|UUID|--|--|--|--|
-|DB_RandomStartOrigin|?|1|UUID|--|--|--|--|
-|DB_ChosenOriginWaitingForTeleport|?|--|--|--|--|--|--|
-|DB_GLO_PlayerCharactersSetup|?|--|--|--|--|--|--|
-|DB_PredefinedStartOrigin|?|--|--|--|--|--|--|
-
-## Plot (Spoilers)
+## Story
+### Tabs {.tabset}
+#### Plot (Spoilers)
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_GLO_Absolute_Entails|?|2|Flag UUID|Flag UUID|--|--|--|
 |DB_GLO_Absolute_TrueSoul|Character IDs that are True Souls|1|Character UUID|--|--|--|--|
 
-## Scenes
+#### Scenes
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_SceneManager|?|2|Character UUID|?|--|--|--|
 |PROC_SceneManager_HandleViolence|?|5|Integer as Boolean|?|?|String|?|
 |DB_InternScene_DeathHandled|?|2|?|Character UUID|--|--|--|
 |PROC_SceneInterrupted|?|5|Character UUID|UUID|?|String|--|
+
+
+## Dialog
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_AutomatedDialog|?|1|Integer|--|--|--|--|
+|DB_AutomatedDialogIsVB|?|1|Integer|--|--|--|--|
+|DB_DialogDeath|?|1|Character UUID|--|--|--|--|
+|DB_DialogEnding|?|2|DialogResource|Integer|--|--|--|
+|DB_DialogName|?|2|DialogResource|Integer|--|--|--|
+|DB_DialogNumPlayers|Amount of Players in a Dialog|2|Integer|Dialog Resource|--|--|--|
+|DB_DialogNumNPCs|Amount of NPCs in a Dialog|2|Integer|Dialog Resource|--|--|--|
+|DB_DialogNPCs|List of NPCs in a Dialog|2|Integer|Dialog Resource|--|--|--|
+|DB_DialogPlayers|List of Players in a Dialog|3|Integer|UUID String|?|--|--|
+|DB_DialogRequestFailed|?|2|DialogResource|Integer|--|--|--|
+|DB_DialogSpeakers|List of Spekaers in a Dialog|3|Integer|UUID String|?|--|--|
+|DB_OnDialogAttackRequested|?|3|Character UUID|Character UUID|Integer|--|--|
+|DB_InteractiveDialogSpeaker|?|2|Integer|?|--|--|--|
 
 ## UI
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
