@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-04-30T22:35:12.797Z
+date: 2024-05-02T22:11:29.099Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -13,25 +13,10 @@ This page is a list of existing Tutorials.
 
 # Pages {.tabset}
 ## Subsections
-- [LIST:General Guides](General)
-- [LIST:Mod-Use](Mod-Use)
-{.links-list}
-
-## Classes
-- [Basic Class Creation](Classes/Basic-Class-Creation)
-{.links-list}
-
-## Frameworks
-- [Compatibility Framework Usage](Mod-Frameworks/compatibility-framework)
-- [Oath Framework Usage](Mod-Frameworks/oath-framework-usage)
-- [Tag Framework Usage](Mod-Frameworks/using-tag-framework)
-- [Inspiration Framework Usage](Mod-Frameworks/using-inspiration-framework)
-{.links-list}
-
-## Script Extender
-- [Getting Started with Script Extender](ScriptExtender/GettingStarted)
-{.links-list}
-
-## Visual
-- [Creating a Hair Mod](Visual/Creating-A-Hair-Mod)
+- [General Guides *General-Purpose Guides*](General)
+- [Mod-Use *A List of Guides for Using and Troubleshooting Mods*](Mod-Use)
+- [Classes *A List of Class Mod Tutorials](Classes)
+- [Frameworks *A List of Mod Framework Tutorials*](Mod-Frameworks)
+- [Script Extender *A List of Script Extender Tutorials*](ScriptExtender)
+- [Visual *A List of Visual Mod Tutorials*](Visual)
 {.links-list}
