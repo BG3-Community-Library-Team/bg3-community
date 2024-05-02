@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T08:36:58.510Z
+date: 2024-05-02T08:50:24.765Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1495,6 +1495,9 @@ print("Gale's class after trying illegal respec:", gale:getClass())
 - DB_Avatars, \_D(Osi.DB_Players:Get(nil))
 - Ext Listeners
 - link to imgui page here
+
+
+https://discord.com/channels/98922182746329088/1228009824017453147 (ask for permission to post - original author is not clear)
 
 ## **9\. Advanced Information**
 
