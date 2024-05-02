@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T11:55:41.018Z
+date: 2024-05-02T11:57:05.474Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -122,9 +122,9 @@ and instead using
 _P(MyWindow.Label)
 ```
 
-will print "My ImGui Window" since "Label" is an element our new object.
+will print "My ImGui Window" since "Label" is a component our new object.
 
-> If printing an object element ever throws an error it might be missing, if that happens, check with a dump if its even on your object!
+> If printing an object component ever throws an error it might be missing, if that happens, check with a dump if its even on your object!
 {.is-danger}
 
 
