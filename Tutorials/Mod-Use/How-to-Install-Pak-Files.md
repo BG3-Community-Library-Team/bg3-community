@@ -1,8 +1,8 @@
 ---
 title: How to install Pak Files
 description: 
-published: false
-date: 2024-05-02T01:31:04.486Z
+published: true
+date: 2024-05-02T16:49:46.497Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -210,7 +210,6 @@ This is because they are overriding vanilla game files, and therefore will alway
 You will need to remove them completely from the mods folder to disable them 
 (`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`) 
 
-
 ---
 
 ## Other relevant guides and credits
@@ -220,6 +219,7 @@ Part 1: How to install BG3MM: https://wiki.bg3.community/en/Tutorials/Mod-Use/In
 Part 3: How to install manual/loose file mods: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
 
 Other relevant guides: 
+How to remove mods from BG3 (Troubleshooting guide): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods
 General load order guide: https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order
 How to install Sript Extender: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender
 Clean reinstall of Script Extender: On To-Do
