@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T22:40:42.579Z
+date: 2024-05-02T22:45:05.105Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -242,16 +242,12 @@ Symlinking is optional, although highly recommended, as it allows you convenient
 
 The following instructions are for Windows. On Linux, simply use `ln -s <workspace> <game files>`
 
-The commands for copying can be seen below the code block.  Please make sure to **modify** the commands for your username and place of your workspace and game.
-A text editor like `Notepad` is recommended to do this.
-
->Because of the formatting of the wiki, the commands had to be placed on separate lines. 
->When you input the commands, please make sure to write all in one line.
+>Due to wiki formatting, the commands had to be divided in separate lines. 
+> When you input the commands, please make sure to write all in one line.
 {.is-info}
 
 
-This command is executed in the windows terminal
-in the search bar type `cmd` and execute the program as **administarator**
+This command is executed in the windows terminal. Type `cmd` in the search bar and execute the program as **administarator**
 
 Type `cmd` in the windows search bar and execute the program as **administrator**
 ![gswse_admin.png](/tutorials/getting_started_with_se/gswse_admin.png)
@@ -260,9 +256,15 @@ Your console should open. This is where you will type your commands
 ![gswse_cmd2.png](/tutorials/getting_started_with_se/gswse_cmd2.png)
 
 
+
 > Using `cmd` in **administrator** mode allows a lot of control over your system.
 > Only execute commands here when you are certain what they will do
 {.is-warning}
+
+
+The commands for copying are found in the code block below. Please make sure to modify the commands, accordingly to your username, and direction of your workspace as well as your game.
+A text editor like `Notepad` is recommended to do this.
+
 
 
 ```plaintext
@@ -278,13 +280,6 @@ mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Mod
 mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Localization\English\yourLoca.loca" 
 "C:\Users\YourUserName\path\to\YourModName\English\YourLoca.loca"
 ```
-
-mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Public" "C:\\Users\\YourUsername\\path\\to\\YourModName\\Public
-
-mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Mods" "C:\\Users\\YourUserName\\path\\to\\YourModName\\Mods"
-
-mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Data\\Localization\\English\\yourLoca.loca" "C:\\Users\\YourUserName\\path\\to\\YourModName\\English\\YourLoca.loca"
-
 
 
 
@@ -1723,6 +1718,6 @@ Utils file:
 
 Credits: 
 
-*Alithea Ancunin* for screenshots and proofreading 
+*Alithea Ancunin* for screenshots, writing and proofreading 
 *Chip Chocolate, Legendary Muffin for a multitude* of resources and his knowledge
 *ImmortalRD, Schroedingercat and Chip Chocolate, Legendary Muffin* for the [tutorial for Symlinking & Mass File Conversion for hot-testing your mods](https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki)
