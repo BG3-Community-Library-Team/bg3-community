@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T17:58:56.047Z
+date: 2024-05-02T18:04:26.980Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -89,21 +89,23 @@ Now that you are familiar with entering commands in the console, it is time to c
 ## **3\. Creating your workspace**
 
 
+>  For the next steps, please close your game.
+{.is-info}
+
 
 > This guide is using an example workspace! You will be able to better follow the tutorial by using it
 > Download the example workspace here: [https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing](https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing)
 {.is-warning}
 
-For this step, please close your game.
-Download the example workspace linked above and unpack it. Place it where you want to develop your mods. For example in your *Documents* folder on windows
+
+You will also need an editor. I recommend VSCode or the Open Source alternative VSCodium:  
+  -   VSCode: [_https://code.visualstudio.com/_](https://code.visualstudio.com/)
+  -   VSCodium:[_https://vscodium.com/_](https://vscodium.com/)
 
 
-You will also need an editor. I recommend VSCode or the Open Source alternative VSCodium:
+Download the example workspace linked above and unpack/unzip it.
 
--   VSCode: [_https://code.visualstudio.com/_](https://code.visualstudio.com/)
--   VSCodium:[_https://vscodium.com/_](https://vscodium.com/)
 
-Now you want to open your project.
 
 ![](https://lh7-us.googleusercontent.com/y8Vrl86Pnz7b_oGasddrDJuk8zPeVnhq-xUO3FRRZUK5SeolwQOMQwoTOlCIEK9SLOsrV4YYnfSW7JbSBHvL6bmGNPsfn0zNqb3iRvxjPOFKa3BEEiN6LoiyVDF426_KsKdVXYFn0N1N_vpcu4uyTBg)
 
