@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T21:09:11.813Z
+date: 2024-05-02T21:58:17.511Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -233,13 +233,10 @@ If you are not able to see this statement, you likely missed one of the steps.
 
 ## **4\. Symlinking**
 
-For you to not have to repack your mod every time you make a change, you can symlink your folders.
-While symlinking is optional, it is highly recommended. 
-However you can follow this guide without this step.
-This will require you to exit the game, repack your mod and relaunch the game after you have made changes to see their effects.
+Every time you make a change to your mod, you have to exit the game, repack your mod, and launch the game again to see the effect.
+Symlinking is optional, although highly recommended, as it allows you conveniently avoid the aforementioned steps aka hot load your mod.
 
 ### 1\. Setting up the Symlink
-
 
 
 The following instructions are for Windows. On Linux, simply use `ln -s <workspace> <game files>`
@@ -293,20 +290,33 @@ mklink /D "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\Da
 > `\Steam\steamapps\common\Baldurs Gate 3\Data`
 {.is-info}
 
-> An automated way of setting up ypur symlink will be provided in the future
-{.is-info}
 
+Want to use a tool that creates the links for you? 
 
-### 2\. Verifying the symlink
+Try [Link Shell Extension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html)
 
-To test whether the symlink has been created in the correct space:
-
+![gswe_focus_muffin.png](/tutorials/getting_started_with_se/gswe_focus_muffin.png =1100x900)
+<div style="margin-left: 300px;"> <i>Image created by Focus and kindly provided by Muffin </i> </div>
 
 
 > Still stuck? Here are some other resources that explain this step differently
-> https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki/3.-Symlink
+> [Tutorial for Symlinking & Mass File Conversion for hot-testing your mods](https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki/3.-Symlink)
 {.is-warning}
 
+
+> An automated way of setting up your symlink might be provided in the future
+{.is-info}
+
+### 2\. Verifying the symlink
+
+To test whether the symlink has been created in the correct space, click your newly created symlink
+in `Data`. This should lead you to your workspace folder. 
+You can see how symlinks interact with folders in the image below.
+
+
+
+
+https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html
 
 ### 3\. Testing the symlink
 
