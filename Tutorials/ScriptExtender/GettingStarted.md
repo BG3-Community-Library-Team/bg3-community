@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T08:50:24.765Z
+date: 2024-05-02T09:36:49.972Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -808,6 +808,8 @@ print(GetWyll())
 
 ### 5\. Functions
 
+// TODO: Explain : and . (Calling the function with itself as the first parameter) -> Maybe something for 8. Using Script Extender Functions instead?  Might fit in the mettables section
+
 You can use fuctions when you have to execute the same code multiple times.
 This allows you to reuse your code without having to copy and paste it.
 You will be less likely to make mistakes and your code will be easier to maintain
@@ -1532,3 +1534,7 @@ Osi Events: [_https://github.com/LaughingLeader/BG3ModdingTools/blob/master/gene
 **_Larian Studios_**
 
 Osiris: [_https://docs.larian.game/Osiris_](https://docs.larian.game/Osiris)
+
+**_Me_**
+
+Utils file: 
