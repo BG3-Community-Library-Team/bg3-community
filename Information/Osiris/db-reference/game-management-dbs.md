@@ -2,7 +2,7 @@
 title: Utility DB Reference
 description: DBs that seem to be more for general utility
 published: true
-date: 2024-05-02T16:28:42.073Z
+date: 2024-05-02T16:36:40.041Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:28:42.073Z
@@ -42,6 +42,11 @@ dateCreated: 2024-05-02T16:28:42.073Z
 |DB_AnubisConfigOverride_NewConfig|?|3|Character UUID|String|Integer|
 |DB_AnubisConfigOverride_UpdatedConfig|?|1|Integer|--|--|
 |DB_AnubisConfigs_CharacterSavedStates|?|2|Character UUID|State|--|
+
+## UI
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_InCharacterRespec|Characters respec'ing|2|UUID|String|--|--|--|
 
 ## Query Returns
 |DB Name|Description|# of Parameters|Parameter 1|
