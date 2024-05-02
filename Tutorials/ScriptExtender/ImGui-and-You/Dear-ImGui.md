@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T10:45:42.200Z
+date: 2024-05-02T11:55:41.018Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -23,6 +23,7 @@ Before delving into the specifics, please note the following general points:
 - This Tutorial will get into parts of OOP (Object-Oriented-Programming). If you are not familiar with it, please visit Part 6.9 of ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) (A brief introduction to Metatables)
 
 > For testing purposes of this tutorial consider [setting up a symlink.](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking)
+Now whenever you add new lines of code, you can just reload your save to test the changes you've made.
 {.is-info}
 
 
@@ -70,7 +71,9 @@ This will make an entire code section collapsable, which would normally not be a
 So whenever you will work with a bigger section of your UI, utilizing regions might be beneficial to you.
 
 
-## **3\. New File, New Me**
+## **2\. New File, New Me**
+### **2.1\. Creating a window gaining information**
+
 
 You've created your UI Lua script and are ready to roll.
 
@@ -99,9 +102,9 @@ Ext.IMGUI.NewWindow("My ImGui Window") -- Yes, Ext_ClientIMGUI is used as Ext.IM
 ```
 
 you have your very first window!
-And you will notice it says "My ImGui Window" in its title bar!
+And you will notice it says "My ImGui Window" in its title bar, thats why it required a string as an input!
 
-### **3.1\. How to read**
+### **2.1.1\. How to read**
 
 You may wonder about being unable to do much besides collapsing its title bar.
 
@@ -121,11 +124,11 @@ _P(MyWindow.Label)
 
 will print "My ImGui Window" since "Label" is an element our new object.
 
-> If printing of an objects element throws an error it might be missing, if that happens, check with a dump if its on your object!
+> If printing an object element ever throws an error it might be missing, if that happens, check with a dump if its even on your object!
 {.is-danger}
 
 
-## **4\. What can it do?**
+## **2.2\. What can it do?**
 
 To explore its capabilities, let's revisit our ExtIdeHelpers.lua file.
 
@@ -183,7 +186,7 @@ Its essentially an object, making use of another object, to create a new object 
 {.is-info}
 
 
-## **5\. The basics**
+## **2.3\. The basics**
 
 You created your first window, named it and now also have a list of things to add.
 
@@ -212,22 +215,35 @@ You may have done this by either editing the previous text to be a button or cre
 
 If you did the latter you should notice that it is now listed underneath the previously created text.
 
-Try out a few others but skip AddTabbar(), AddTree(), AddGroup() and AddTable() for now, as making use of these is slightly more advanced.
+Try out a few others but skip ``AddTabbar()``, ``AddTree()``, ``AddGroup()`` and ``AddTable()`` for now, as making use of these is slightly more advanced.
 For some, you might see an error pop up in the ScriptExtender console.
-> If you are unsure on how to Debug these errors, check out the "Debugging using print statements" section within the ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) Guide.
+> If you are unsure on how to Debug these errors, check out the "Debugging" section within the ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) Guide.
 {.is-danger}
 
 
-## **4\. Taking tabs on Tabbars**
+## **2.4\. Advanced Elements**
+### **2.4.1\. Taking tabs on TabBars**
 
+TabBars. If you ever used a internetbrowser like Chrome or Firefox before you know what Tabs are. 
+They are similar in ImGui but we need to do a few specific things to make them work.
 
+First of all, to even be able to create a bunch of tabs, we first need to create a TabBar.
 
+We can do that by making our window use the ``AddTabBar()`` function.
+```lua
+MyWindow:AddTabBar()
+```
+This creates an area where we can put our tabs in.
+If you wrote this down underneath what we tried prior, should also show up underneath it in your window!
+To fix that, we can just move this line up in the order of execution right after naming our window.
 
-Tabbars. If you ever used a internetbrowser like Chrome or Firefox before you know what Tabs are. 
-In ImGui its they are similar but we need to do a few specific things to make them work.
+Since we need to add the tabs to the tabbar itself and now our window object, we now need to make our TabBar into a named object.
 
-First of all, to even be able to create a bunch of tabs, we first need to create a Tab Bar.
+```lua
+MyTabBar = MyWindow:AddTabBar()
+```
 
+Just like with our window, we can now add other elements to the tabbar.
 
 
 ---
