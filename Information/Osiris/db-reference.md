@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-02T02:48:12.081Z
+date: 2024-05-02T02:55:50.314Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -76,6 +76,7 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 #### Bard
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
+|DB_CRIME_MusicalPerformance_DEBUG_QuickPerformanceTimer|DEBUG Quick Performance Timer|1|Integer|--|--|--|--|
 |DB_CRIME_MusicalPerformance_DC|?|2|Integer DC|Tag UUID Difficulty|--|--|--|
 |DB_CRIME_MusicalPerformance_Status|?|3|String Status|String Crime Type|String Event|--|--|
 |DB_Bard_InstrumentRootToSpell|?|2|UUID|String Instrument Suffix|--|--|--|
@@ -88,6 +89,9 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_CRIME_MusicalPerformance_Confronted|?|3|Integer|Character UUID|?|--|--|
 |DB_CRIME_MusicalPerformance_NPCIgnoring|?|3|Character UUID|String|String concatenatedString|--|--|
 |DB_CRIME_MusicalPerformance_NPCs|?|3|Integer|?|Character UUID|--|--|
+|DB_CRIME_MusicalPerformance_TossCoin|?|2|Character UUID|Character UUID|--|--|--|
+|DB_CRIME_MusicalPerformanceSpell|?|2|String Crime ID|String Spell ID|--|--|--|
+|DB_CRIME_BardNPCPerformingWithPlayers|Bard NPCs performing with Players|3|Character UUID|?|?|--|--|
 
 #### Cleric
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -120,6 +124,11 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_GLO_PaladinOathbreaker_NotifyAfterDialogEnds|?|3|Dialog Resource|Integer|?|--|--|
 |DB_GLO_PaladinOathbreaker_ReactedToBreakingOath|?|1|Character UUID|--|--|--|--|
 |DB_GLO_PaladinOathbreaker_RedemptionFromOathbreaker|Character that's gained Redemption|1|Character UUID|--|--|--|--|
+
+#### Query Returns
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
+|-----|----|----|----|----|----|
+|DB_QRY_RTN_Bard_GetPerformSpell|Returns Perform Spell|1|String Spell ID|--|--|
 
 ## Combat
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -237,7 +246,7 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |DB_CustomUseItemResponse|?|3|Character UUID|?|Integer|--|--|
 |DB_DialogMoneyTransfer|?|3|Integer|Character UUID|Integer (Price)|--|--|
 |DB_ReportKiller|?|2|?|Tag UUID|--|--|--|
-
+|DB_Helper_GetAnyRandomPositionInArea_Result|?|3|Integer X Coordinate|Integer Y Coordinate|Integer Z Coordinate|--|--|
 
 ## Story
 ### Tabs {.tabset}
