@@ -2,7 +2,7 @@
 title: Osiris Database Reference
 description: Detailed list of all Osiris Databases in the BG3 Code
 published: true
-date: 2024-05-02T02:36:36.146Z
+date: 2024-05-02T02:36:53.900Z
 tags: reference, osiris
 editor: markdown
 dateCreated: 2024-04-30T23:08:53.092Z
@@ -242,12 +242,6 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 
 ## Story
 ### Tabs {.tabset}
-#### Plot (Spoilers)
-|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
-|-----|----|----|----|----|----|----|----|
-|DB_GLO_Absolute_Entails|?|2|Flag UUID|Flag UUID|--|--|--|
-|DB_GLO_Absolute_TrueSoul|Character IDs that are True Souls|1|Character UUID|--|--|--|--|
-
 #### Scenes
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
@@ -255,6 +249,13 @@ The below is a (currently incomplete) list of Osiris DBs, and their Parameters.
 |PROC_SceneManager_HandleViolence|?|5|Integer as Boolean|?|?|String|?|
 |DB_InternScene_DeathHandled|?|2|?|Character UUID|--|--|--|
 |PROC_SceneInterrupted|?|5|Character UUID|UUID|?|String|--|
+
+#### Plot (Spoilers)
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_GLO_Absolute_Entails|?|2|Flag UUID|Flag UUID|--|--|--|
+|DB_GLO_Absolute_TrueSoul|Character IDs that are True Souls|1|Character UUID|--|--|--|--|
+
 
 
 ## Dialog
