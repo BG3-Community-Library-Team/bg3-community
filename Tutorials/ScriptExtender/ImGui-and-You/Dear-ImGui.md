@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-01T22:49:06.186Z
+date: 2024-05-02T08:03:01.053Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -10,11 +10,16 @@ dateCreated: 2024-05-01T19:43:32.311Z
 
 # **Dear ImGui**
 
-This tutorial expects of you to have some basic understanding on working with ScriptExtender and covers the usage of ImGui. 
 
-If you don't have any knowledge about SE please do visit the other pages first, like ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted)
+First and foremost, some general things about this tutorial:
 
-This tutorial assumes that you know how to install mods and create them. So please familiarize yourself with those topic on the relevant wiki pages:
+- This tutorial assumes that you know how to install mods and create them. So please familiarize yourself with those topic on the relevant wiki pages:
+
+- This tutorial expects of you to have some basic understanding on working with ScriptExtender and covers the usage of ImGui. 
+
+- If you don't have any knowledge about SE please do visit the other pages first, like ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted)
+
+
 
 ## 1\. Folder Structure  
 
@@ -23,11 +28,13 @@ To have an easier time to differentiate between all of your mods scripts it is a
 It should be noted that in addition to a BootstrapServer.lua script we'll also need a BootstrapClient.lua script, because the UI portion of it will be on a users client itself and not on the server.
 Meaning we might as well differentiate between them by creating an additional "Client" folder, next to the one you might already have, called "Server".
 
-![]![screenshot_2024-05-01_at_22-01-12_doll_mods_doll_scriptextender_at_main_·_rlyskiz_doll.png](/tutorials/imgui_and_you/screenshot_2024-05-01_at_22-01-12_doll_mods_doll_scriptextender_at_main_·_rlyskiz_doll.png)
+![screenshot_2024-05-01_at_22-01-12_doll_mods_doll_scriptextender_at_main_·_rlyskiz_doll.png](/tutorials/imgui_and_you/screenshot_2024-05-01_at_22-01-12_doll_mods_doll_scriptextender_at_main_·_rlyskiz_doll.png)
 
 For the future, everything that has to do with ImGui itself will be within the "Client" folder and everything that has to do with the server will be in the "Server" folder.
 
-Don't forget to always add the scripts you are creating within the "Client" folder to your BootstrapClient.lua script. Same way as the other Bootstrap script, just a different path since the files will be within the "Client" folder.
+> Don't forget to always add the scripts you are creating within the "Client" folder to your BootstrapClient.lua script. Same way as the other Bootstrap script, just a different path since the files will be within the "Client" folder.
+{.is-warning}
+
 
 ## **2\. Your first window**
 
