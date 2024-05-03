@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T17:28:35.830Z
+date: 2024-05-03T17:30:01.592Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1510,6 +1510,23 @@ Now the issue is `Failed to execute script` . This means the code we wrote is at
 `[string "Scribe/BootstrapServer.lua"]:5: attempt to call a nil value (global 'myMiftake')`
 We have an issue in line 5 where we call a `nil value`, something that doesn't exist.
 If you are observant you can spot that here we made a small typo. Instead of calling `myMistake` we called `MyMiftake` which doesn't exist.
+
+`myMiftake("Astarion")`
+
+Let us fix this typo
+
+```lua
+
+local function myMistake(num1, num2)
+	print("num1" + num_2)
+end
+
+myMistake("Astarion")
+
+```
+`bg3se::lua::State::LoadScript(): Failed to execute script: [string "Scribe/BootstrapServer.lua"]:2: attempt to perform arithmetic on a string value`
+
+
 
 
 We can already get a lot of information
