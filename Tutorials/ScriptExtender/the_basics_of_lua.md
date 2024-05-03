@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: false
-date: 2024-05-03T20:06:34.563Z
+date: 2024-05-03T20:07:41.697Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -521,7 +521,7 @@ print(karlach)
 
 ### 5.2 Scope across files
 
-if you have followed [5. Creating multiple files](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-5-creating-multiple-files) then you have two files in your "Server". `MyFirsSEScript.lua` and `MySecondSEScript.lua`
+if you have followed [5. Creating multiple files](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-5-creating-multiple-files) from [Getting started with Script Extender](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) then you have two files in your "Server". `MyFirsSEScript.lua` and `MySecondSEScript.lua`
 
 Not all variables and functions that you create in one file will be visible in the other one.
 
