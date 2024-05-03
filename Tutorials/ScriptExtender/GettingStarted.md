@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T20:16:09.789Z
+date: 2024-05-03T20:17:44.553Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -19,12 +19,12 @@ This tutorial assumes that you know how to install mods and and Script Extender.
 -   [How to install .pak files](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files) 
 -   [Installing Script Extender and activating the console](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender)
 
-For further information, follow the links in [10. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources) on the bottom of this page that this guide is based on
+For further information, follow the links in [09. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-9-useful-resources) on the bottom of this page that this guide is based on
 
 After reading this guide, feel free to follow the tutorial: [**Creating your First SE Mod (TBA)**](https://wiki.bg3.community/en/Tutorials/ScriptExtender/creating_your_first_se_mod)
 
 
-> If you are having trouble following this guide, feel free to join the DBTR discord linked [here](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources) for assistance
+> If you are having trouble following this guide, feel free to join the DBTR discord linked [here](hhttps://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-9-useful-resources) for assistance
 > DBTR is a community discord. Keep in mind that everyone that may help you is a volunteer. Please read and follow the server rules.
 {.is-success}
 
@@ -44,7 +44,7 @@ If you see this window, it means you have successfully installed SE with console
 
 To familiarize yourself with the usage of the SE console you can execute a few simple commands.
 
-These can all be found in the [10.Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources) at the bottom of this tutorial as [Osi functions](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) .
+These can all be found in the [09.Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-9-useful-resources) at the bottom of this tutorial as [Osi functions](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) .
 
 ### **2.1\. Load a save**
 
