@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T16:19:49.313Z
+date: 2024-05-03T16:20:53.604Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1442,18 +1442,16 @@ printNestedTable(foodTable)
 ```
 
 
-Gorgonzola
-Cheddar
-Brie
-Black Bread
-Whole Grain Bread
-Rye Bread
-Merlot
-Chardonnay
-Cabernet Sauvignon
+`Gorgonzola`
+`Cheddar`
+`Brie`
+`Black Bread`
+`Whole Grain Bread`
+`Rye Bread`
+`Merlot`
+`Chardonnay`
+`Cabernet Sauvignon`
 
-
-- nested loops
 
 
 
