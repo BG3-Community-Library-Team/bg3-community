@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: false
-date: 2024-05-03T19:42:03.419Z
+date: 2024-05-03T19:51:11.934Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -11,7 +11,15 @@ dateCreated: 2024-05-01T15:05:08.014Z
 # The Basics of Lua
 
 
-// TODO - add something about commenting out code
+> This tutorial can be completed without using the game.
+> However it is recommended to use it as part of your workspace
+> as this allows you to get used to SE
+{.is-info}
+
+> Don't know why you might want to look at this page?
+> Check out [Getting started with Script Extender](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted)
+{.is-warning}
+
 
 For modding Baldur's Gate we use the programming language `Lua`
 
@@ -26,7 +34,7 @@ If you don't know what a function is, you might want to read through this. If yo
 
 Use the example mod "MySEMod" to follow along by typing in `MyFirstSEScript.lua` and resetting the console to see the changes.
 
-### 1\. Order of execution
+## 1\. Order of execution
 
 Any script that you write will be executed from top to bottom.
 
@@ -61,6 +69,9 @@ local myName = "YourName"
 > *nil* in Lua means *nothing*
 {.is-info}
 
+
+2. Comments
+// TODO - add something about commenting out code
 ### 2\. Variables 
 
 You can use variables to refer to cerain values.
@@ -1598,3 +1609,11 @@ print("Gale's class after trying illegal respec:", gale:getClass())
 > Visit exercism: https://exercism.org/tracks/lua
 {.is-info}
 
+Credits: 
+
+*Alithea Ancunín* for screenshots, writing and proofreading 
+*Cerberry* for screenshots, ideas and feedback
+*Chip Chocolate, Legendary Muffin for a multitude* of resources and his knowledge
+*ImmortalRD, Schroedingercat and Chip Chocolate, Legendary Muffin* for the [tutorial for Symlinking & Mass File Conversion for hot-testing your mods](https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki)
+*Skiz* for bravely enduring and suffering through this journey with me
+*BG3 Modding Communiry Discord* for answering my questions
