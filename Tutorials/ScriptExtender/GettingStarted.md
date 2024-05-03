@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T08:42:36.084Z
+date: 2024-05-03T16:19:49.313Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1417,6 +1417,41 @@ printArraylike(myTable)
 
 As you have seen in **3.4. Tables within tables** we can *nest* tables.
 That mean swe can put a table within another table.
+To retrieve the values in these `nested tables` we can use  `nested loops`
+
+
+```lua 
+
+local cheeseTable = {"Gorgonzola", "Cheddar", "Brie"}
+local breadTable = {"Black Bread", "Whole Grain Bread", "Rye Bread"}
+local wineTable = {"Merlot", "Chardonnay", "Cabernet Sauvignon"}
+
+local foodTable =  {myCheeseTable, myBreadTable, myWineTable}
+
+
+-- prints the content from a table that contains tables
+local function printNestedTable(nestedTable)
+  for _,table in pairs(nestedTable) do
+    for _,content in pairs(table) do
+    print(content)
+  end
+end
+
+printNestedTable(foodTable)
+
+```
+
+
+Gorgonzola
+Cheddar
+Brie
+Black Bread
+Whole Grain Bread
+Rye Bread
+Merlot
+Chardonnay
+Cabernet Sauvignon
+
 
 - nested loops
 
