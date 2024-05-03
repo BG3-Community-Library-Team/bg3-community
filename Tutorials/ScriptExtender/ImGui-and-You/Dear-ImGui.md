@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-03T12:01:59.804Z
+date: 2024-05-03T12:16:24.467Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -363,9 +363,17 @@ someButton4:AddGroup("MyOtherGroup")
 
 ### **2.4.5\. Organizing and Managing Data with Tables**
 
-If your've worked with ScriptExtender before you might already use them in a way, here we are going to visualize them!
+If you've worked with ScriptExtender before you might already use them in a way, here we are going to visualize them!
 
+To create a table we do something else here because a table requires an additional parameter.
+The additional parameter controls how much columns your table will have. So if you want your table to have 5 columns, you need to type:
 
+```lua
+myTable = parentObject:AddTable("Something", 5)
+```
+
+If you try updating your UI by reloading your save, you will notice there is nothing really there and you don't see any rows or columns.
+Thats because for the rows at least, we have to add them seperately
 
 
 ## **2.5\. Transition into ImGui Logic**
