@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T18:11:16.624Z
+date: 2024-05-03T18:42:09.909Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1616,20 +1616,52 @@ We will go over how to use `print` statements to debug our code.
 
 ```lua
 
-
 local function isAstarion(uuid)
- if uuid == "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255"
- 		return 1
- else
- 		return 0
- end
-
-
+    if uuid == "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255" then
+            return 1
+    else
+            return 0
+    end
+end
+   
+   
 if isAstarion("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255") == true then
-	 print("Astarion found")
+    print("Astarion found")
 end
 
 ``` 
+
+` ` (empty output)
+
+We expect `"Astarion found"` to be printed but instead we get nothing so we don't know where to start looking for mistakes.
+Let's start by adding an `else` statement to our `if statement`. 
+Right now we get no output, but we suspect that the `if statement` evaluates to false which leads to the `print` statement not being executed.
+
+```lua
+
+local function isAstarion(uuid)
+    if uuid == "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255" then
+            return 1
+    else
+            return 0
+    end
+end
+   
+   
+if isAstarion("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255") == true then
+    print("Astarion found")
+else
+   print("Astarion not found")
+end
+```
+
+`Astarion not found`
+
+Now we know for certain that the issue is in the evaluation of our `if statement`.
+We expect it to evaluate to true but it does not.
+
+Let's go further and gave a look at our function `isAstarion(uuid)`
+and add some `print` statements here as well.
 
 
 - example: wrong usage of if (testing if "String" )
