@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T21:49:17.402Z
+date: 2024-05-03T22:04:22.611Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -451,6 +451,8 @@ Osiris is a programming language used by Larian Studios.[[1]](https://wiki.bg3.c
 
 Here we will introduce a few functions from LaughingLeaders [Osi.lua](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) file. We will go over how wo call the functions and how to use their output.
 
+#### 6.1.1\. Osi.GetHostCharacter()
+
 Here we will introduce one of the most important functions for testing.
 ```Osi.GetHostCharacter()``` will return the ```UUID``` of the currently selected character
 ```lua
@@ -467,7 +469,9 @@ _D(Osi.GetHostCharacter())
 
 `"c7c13742-bacd-460a-8f65-f864fe41f255"`
 
-Our first example will be adding gold to a character
+#### 6.1.2\. Osi.AddGold()
+
+Our next example will be adding gold to a character
 
 ```
 ---@param inventoryHolder GUIDSTRING
@@ -483,8 +487,33 @@ Osi.AddGold(Osi.GetHostCharacter(), 999)
 ```
 ![gswse_poor.png](/tutorials/getting_started_with_se/gswse_poor.png)
 
+<div style="margin-left: 130px;"> <span style="font-size: xx-large;">&darr;</span> </div>
+
 
 ![gswse_rich.png](/tutorials/getting_started_with_se/gswse_rich.png)
+
+#### 6.1.3\. Osi.GetApprovalRating()
+
+We can not only execute functions that lead to changes in the game, we can also use them to get information.
+
+```lua
+---@param ratingOwner CHARACTER
+---@param ratedCharacter CHARACTER
+---@return integer rating
+function Osi.GetApprovalRating(ratingOwner, ratedCharacter) end
+```
+Here we will select out Tav so they will be the `host character` for the `ratedCharacter`.
+For the `ratingOwner` we will choose Astarion. His UUID is `"S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255"` 
+
+Since here we  `Get` a value we want to dump it again to see the output.
+
+```lua
+
+_D(Osi.GetApprovalRating("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255", Osi.GetHostCharacter())) 
+
+```
+
+`1` (standard approval)
 
 ### 6.2\. Events
 
