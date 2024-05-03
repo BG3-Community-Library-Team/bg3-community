@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-03T23:07:46.174Z
+date: 2024-05-03T23:09:54.158Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -20,8 +20,10 @@ As this is going to be a big guide, here are the things it will cover:
  - Compatibility 
  - How to switch tattoo and makeup mods 
  - How to make other loose file mods compatible with Unique Tav 
+ 	- Makeup and tattoo mods that have not been optimised for Unique Tav 
+  - Other loose file mods such as boring tieflings, smooth body etc. 
  - General usage
  - Common issues and user errors 
  	- How to fix them 
-  
+ - Other information
   
