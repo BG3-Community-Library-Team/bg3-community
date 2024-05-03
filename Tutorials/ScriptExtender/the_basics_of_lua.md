@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: false
-date: 2024-05-03T20:07:41.697Z
+date: 2024-05-03T20:09:15.088Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -626,8 +626,6 @@ print(GetWyll())
 
 
 ## 6\. Functions
-
-// TODO: Explain : and . (Calling the function with itself as the first parameter) -> Maybe something for 8. Using Script Extender Functions instead?  Might fit in the metables section
 
 You can use fuctions when you have to execute the same code multiple times.
 This allows you to reuse your code without having to copy and paste it.
