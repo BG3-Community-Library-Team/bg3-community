@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: false
-date: 2024-05-03T19:51:11.934Z
+date: 2024-05-03T19:56:26.774Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -70,9 +70,9 @@ local myName = "YourName"
 {.is-info}
 
 
-2. Comments
+## 2. Comments
 // TODO - add something about commenting out code
-### 2\. Variables 
+## 3. Variables 
 
 You can use variables to refer to cerain values.
 This has many applications. For example in BG3 we often use unique IDs (UUIDs) to refer to characters, objects, items and more. 
@@ -90,7 +90,7 @@ print("Astarions ID is ", astarion)
 > In most cases you want your variables to be *local* 
 {.is-info}
 
-### 3\. A very special data structure: tables
+## 4. A very special data structure: tables
 
 You might have heard of some data strucutres like `arrays` or `lists` before.
 In Lua we use a so called `table` for all of these instances.
@@ -115,7 +115,7 @@ printMyTable(myTable)
 > To see the changes in your tables, use the `printMyTable` function after every change!
 {.is-info}
 
-#### 3.1\. The basics
+### 4.1. The basics
 
 You can create a new table by instantiating an empty one
 
@@ -162,7 +162,7 @@ table.remove(myTable, 1)
 `1 Bread`
 `2 Wine`
 
-#### 3.2\. Iterating over a table
+### 4.2\. Iterating over a table
 
 To be able to access all components, we want to iterate over the tables.
 This is what we are doing in the `printMyTable` function.
@@ -179,10 +179,10 @@ end
 `2 Wine`
 
 
-#### 3.3\. Different types of tables
+### 4.3\. Different types of tables
 
 
-##### 3.3.1\. Arrays
+#### 4.3.1\. Arrays
 
 The tables in the example above can fit the description of an "array". They consist of an index and an entry
 
@@ -204,7 +204,7 @@ print("The first entry in myTable is ", myTable[1])
 > In most programming languages we start counting at 0, but in Lua we start at 1
 {.is-info}
 
-##### 3.3.2\. Maps
+#### 4.3.2\. Maps
 
 We can also create "map-like" tables. These consist of "key - value" pairs. 
 The` key ` in this case is the entry on the left. The `value` is the entry on the right next to it.  When we know the `key` we can immediately retrieve the `value`.
@@ -237,7 +237,7 @@ print("Wylls UUID is ", ORIGINS["Wyll"])
 
 
 
-##### 3.3.3\. Sets
+#### 4.3.3\. Sets
 
 The last tabel structure we will mention is a "set-like" table.
 Sets are used to store unique items. That means duplicates are not allowed.
@@ -268,13 +268,13 @@ print("Is Dragonborn part of creatures? ", creatures["Dragonborn"])
 > In a lot of cases *nil* will give you the same result as *false*
 {.is-info}
 
-#### 3.4\. Tables within tables
+### 4.4\. Tables within tables
 
 Tables are very flexible and allow varied structuring. Below you can see two more examples.
 Note that because of the nested structure, our printMyTable function does not work anymore.
 Instead we can use `_D` to "dump" the whole table and write special loops for them.
 
-###### Example 1
+#### Example 1
 
 ```lua
 local spells = {
@@ -331,7 +331,7 @@ end
 `Wall of Fire`
 
 
-###### Example 2
+#### Example 2
 
 ```lua
 local companion1 = {name = "Astarion", class = "Rogue"}
@@ -375,7 +375,7 @@ end
 Please note that these are just some examples. Feel free to experiment and choose the type of table that fits your data
 
 
-### 4\. Scope 
+## 5\. Scope 
 
 As you have already learned in [1. Order of executions](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-1-order-of-execution) your variables are not available everywhere in your program.
 The order of execution is not the only thing that defines this.
