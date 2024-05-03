@@ -2,7 +2,7 @@
 title: The Lost Gith
 description: A Gith Subspecies, lost to time
 published: true
-date: 2024-05-03T19:55:53.486Z
+date: 2024-05-03T19:56:33.941Z
 tags: lore, species, gith, githtorai, githzada, lost-information
 editor: markdown
 dateCreated: 2024-04-26T22:19:49.370Z
@@ -18,7 +18,6 @@ There was at one point information on the Githtorai mentioned in the Mystara Rea
 The Githzada were an offshoot of the peoples enslaved by the Illithids. They were created by Fiend Games for a planned Project: Planeshifter, however Fiend Games closed up shop before releasing anything more than some titles and a preview article in Gaming Frontiers, Premiere Issue 00^[3]^.
 
 This variation of Gith found refuge on a planet of dwarves, and quickly became allies. These dwarves "were masters of steam technology and other advanced forms of engineering^4^. The dwarves shared this knowledge with the Githzada, who quickly took to the technology and aimed it toward warfare. With the intent to enslave the Illithids, they fused together their Psionic abilities and the Firearms they learned to create. Over time, their mastery of engineering and hunger for vengeance has led them on a similar path as the Githyanki: They will destroy anything that gets in their way.
-
 
 ### References
 
