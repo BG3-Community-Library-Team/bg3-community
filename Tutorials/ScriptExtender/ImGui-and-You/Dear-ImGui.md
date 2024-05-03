@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-03T11:30:29.723Z
+date: 2024-05-03T12:01:59.804Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -20,7 +20,7 @@ This multi-part tutorial covers the integration of ImGui using ScriptExtender.
 > - This tutorial expects of you to have some basic understanding on working with ScriptExtender. 
 > - If you don't have any knowledge about ScriptExtender please do visit the introductory pages first: ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted)
 > - This Tutorial will get into parts of OOP (Object-Oriented-Programming). If you are not familiar with it, please visit Part 6.9 of ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) (A brief introduction to Metatables)
->> - This tutorial is meant to be read from top to bottom since it is explained as you go along with it. New topics build upon those before, so if you skip ahead, some stuff might not make sense to you.
+>> - This tutorial is meant to be read from top to bottom since it is explained as you go along with it. New topics build upon those before, so if you skip ahead, some stuff might not make sense to you. Its not going to give you fish, it will teach you how to fish.
 {.is-warning}
 
 
