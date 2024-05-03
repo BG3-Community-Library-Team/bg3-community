@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: false
-date: 2024-05-03T20:06:04.709Z
+date: 2024-05-03T20:06:34.563Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -406,7 +406,7 @@ Please note that these are just some examples. Feel free to experiment and choos
 
 ## 5\. Scope 
 
-As you have already learned in [1. Order of executions](https://wiki.bg3.community/Tutorials/ScriptExtender/the_basics_of_lua#h-5-scope) your variables are not available everywhere in your program.
+As you have already learned in [1. Order of executions](https://wiki.bg3.community/Tutorials/ScriptExtender/the_basics_of_lua#h-1-order-of-execution) your variables are not available everywhere in your program.
 The order of execution is not the only thing that defines this.
 
 ### 5.1 Scope within a file
