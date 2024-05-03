@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: false
-date: 2024-05-03T19:58:53.414Z
+date: 2024-05-03T20:03:52.614Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -32,7 +32,7 @@ If you don't know what a function is, you might want to read through this. If yo
 > to better familiarize yourself with them
 {.is-info}
 
-Use the example mod "MySEMod" to follow along by typing in `MyFirstSEScript.lua` and resetting the console to see the changes.
+Use the example mod "MySEMod" to follow along by typing in `MyFirstSEScript.lua` from [Getting started with Script Extender](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) and resetting the console to see the changes.
 
 ## 1\. Order of execution
 
@@ -71,7 +71,36 @@ local myName = "YourName"
 
 
 ## 2. Comments
-// TODO - add something about commenting out code
+
+You can also add lines to your script that don't do anything. These are `comments`
+You can type them by adding two consecutive dashes `--` before your text.
+
+```lua
+
+-- myVariable is 5
+local myVariable = 5
+
+-- prints myVariable
+print(myVariable)
+
+```
+
+`5`
+
+You can also use comments to `comment out` lines you temporarily want to disable
+
+```
+-- myVariable is 5
+local myVariable = 5
+
+
+-- prints myVariable
+-- print(myVariable)
+
+```
+
+` ` (empty output)
+
 ## 3. Variables 
 
 You can use variables to refer to cerain values.
