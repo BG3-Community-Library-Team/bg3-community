@@ -2,7 +2,7 @@
 title: Script Extender
 description: List of Script Extender Tutorials
 published: true
-date: 2024-05-02T22:12:26.528Z
+date: 2024-05-03T16:22:46.899Z
 tags: tutorial, se, script-extender, scripting, script extender, tutorials
 editor: markdown
 dateCreated: 2024-05-02T22:10:41.890Z
@@ -13,4 +13,6 @@ This page is a list of existing Tutorials relating to Script Extender.
 
 ## Pages
 - [Getting Started with Script Extender](GettingStarted)
+- [The Basics of LUA](the_basics_of_lua)
+- [Creating your First SE MOD](creating_your_first_se_mod)
 {.links-list}
