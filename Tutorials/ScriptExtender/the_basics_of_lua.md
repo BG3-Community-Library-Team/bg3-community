@@ -2,16 +2,15 @@
 title: The Basics of Lua
 description: 
 published: false
-date: 2024-05-03T19:02:34.298Z
+date: 2024-05-03T19:42:03.419Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
 ---
 
-## **6\. The Basics of Programming**
+# The Basics of Lua
 
 
-**// TODO - This has to be moved to a separate wiki page**
 // TODO - add something about commenting out code
 
 For modding Baldur's Gate we use the programming language `Lua`
