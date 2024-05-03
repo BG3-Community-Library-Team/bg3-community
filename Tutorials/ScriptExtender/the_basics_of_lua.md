@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: false
-date: 2024-05-03T19:56:26.774Z
+date: 2024-05-03T19:58:53.414Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -380,7 +380,7 @@ Please note that these are just some examples. Feel free to experiment and choos
 As you have already learned in [1. Order of executions](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-1-order-of-execution) your variables are not available everywhere in your program.
 The order of execution is not the only thing that defines this.
 
-#### 4.1 Scope within a file
+### 5.1 Scope within a file
 
 Within one file, a variable might be declared above its usage but still not available.
 This happens when it is declared in its own *scope*
@@ -490,7 +490,7 @@ print(karlach)
 `S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12`
 
 
-#### 4.2 Scope across files
+### 5.2 Scope across files
 
 if you have followed [5. Creating multiple files](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-5-creating-multiple-files) then you have two files in your "Server". `MyFirsSEScript.lua` and `MySecondSEScript.lua`
 
@@ -596,7 +596,7 @@ print(GetWyll())
 
 
 
-### 5\. Functions
+## 6\. Functions
 
 // TODO: Explain : and . (Calling the function with itself as the first parameter) -> Maybe something for 8. Using Script Extender Functions instead?  Might fit in the metables section
 
@@ -746,7 +746,7 @@ print(gale)
 `nil`
 
 
-### 6\. If statements
+## 7\. If statements
 
 For now we have written code that always executes the same way.
 To be able to make it more interactive we can use **flow statements** to change the way our code is executed. 
@@ -955,7 +955,7 @@ end
 
 
 
-### 7\. Loops
+## 8\. Loops
 
 Another way to make our code more interactive is by the use of **loops** to repeat certain steps.
 You have already used in if you have followed **3. A very special data structure: tables** where we used the function `printMyTable`
@@ -1058,10 +1058,10 @@ printNestedTable(foodTable)
 `Chardonnay`
 `Cabernet Sauvignon`
 
-### 8\. Debugging
+## 9\. Debugging
 
 
-#### 8.1 Debugging using error output
+### 9.1 Debugging using error output
 
 
 While following this guide you likely already ran into a few errors.
@@ -1202,7 +1202,7 @@ myMistake(5, 4)
 
 Seems like we were able to succesfully debug our code with the help of errors!
 
-#### 8.2 Debugging using print statements
+### 9.2 Debugging using print statements
 
 However, mistakes aren't always this obvious. Sometimes our code is "valid"
 but we still do not get the desired output.
@@ -1372,7 +1372,7 @@ end
 `Astarion found` 
 
 
-### 9\. A brief introduction to metatables
+## 10\. A brief introduction to metatables
 
 > This section is about a slightly advanced topic. Feel free to skip it if it sounds too complicated.
 > It can be helpful to come back here when your projects grow in size since we discuss one concept of 
@@ -1609,11 +1609,3 @@ print("Gale's class after trying illegal respec:", gale:getClass())
 > Visit exercism: https://exercism.org/tracks/lua
 {.is-info}
 
-Credits: 
-
-*Alithea Ancunín* for screenshots, writing and proofreading 
-*Cerberry* for screenshots, ideas and feedback
-*Chip Chocolate, Legendary Muffin for a multitude* of resources and his knowledge
-*ImmortalRD, Schroedingercat and Chip Chocolate, Legendary Muffin* for the [tutorial for Symlinking & Mass File Conversion for hot-testing your mods](https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki)
-*Skiz* for bravely enduring and suffering through this journey with me
-*BG3 Modding Communiry Discord* for answering my questions
