@@ -2,7 +2,7 @@
 title: Textures
 description: Basic breakdown on BG3 textures and image filetypes
 published: true
-date: 2024-05-02T23:09:36.893Z
+date: 2024-05-03T01:48:59.470Z
 tags: textures, general, basic
 editor: markdown
 dateCreated: 2024-04-25T03:13:14.974Z
