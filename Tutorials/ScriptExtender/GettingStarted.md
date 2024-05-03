@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T18:42:09.909Z
+date: 2024-05-03T18:58:47.011Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1603,9 +1603,6 @@ myMistake(5, 4)
 
 Seems like we were able to succesfully debug our code with the help of errors!
 
-><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[10. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources)</strong> for more information</span>
-{.is-success}
-
 #### 8.2 Debugging using print statements
 
 However, mistakes aren't always this obvious. Sometimes our code is "valid"
@@ -1618,9 +1615,9 @@ We will go over how to use `print` statements to debug our code.
 
 local function isAstarion(uuid)
     if uuid == "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255" then
-            return 1
+        return 1
     else
-            return 0
+        return 0
     end
 end
    
@@ -1641,9 +1638,9 @@ Right now we get no output, but we suspect that the `if statement` evaluates to 
 
 local function isAstarion(uuid)
     if uuid == "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255" then
-            return 1
+        return 1
     else
-            return 0
+        return 0
     end
 end
    
@@ -1664,18 +1661,119 @@ Let's go further and gave a look at our function `isAstarion(uuid)`
 and add some `print` statements here as well.
 
 
-- example: wrong usage of if (testing if "String" )
+```lua
 
-how to find
-- which line has the error? 
-- what do the error messages mean?
-- why might the lines not mean much? (eg: ) missing but actually wrong use of Listener
+local function isAstarion(uuid)
+    if uuid == "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255" then
+    		print(uuid ," is Astarion")
+    		return 1
+    else
+    	  print(uuid ," is not Astarion")
+        return 0
+    end
+end
+   
+   
+if isAstarion("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255") == true then
+    print("Astarion found")
+else
+   print("Astarion not found")
+end
+```
+
+
+` S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255   is Astarion`
+`Astarion not found `
+
+Our function `isAstarion()` works and returns the correct value, but our `if statement`
+evaluates to false, so there must be a mistake in how we compare the result.
+
+Let us add another statement so we can directly compare.
+
+
+```lua
+
+local function isAstarion(uuid)
+    if uuid == "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255" then
+    		print(uuid ," is Astarion")
+        print("returning 1")
+    		return 1
+    else
+    	  print(uuid ," is not Astarion")
+        return 0
+    end
+end
+   
+   
+if isAstarion("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255") == true then
+    print("Astarion found")
+else
+   print("Astarion not found")
+   print(isAstarion("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255"), " is not the same as  ", true)
+end
+```
+
+
+`S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255   is Astarion` 
+` returning 1`
+` Astarion not found`
+` S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255   is Astarion`
+`returning 1`
+`1        is not the same as     true`
+
+Here we can see our mistake. In `isAstarion(uuid)` we return `0` or `1` but in our `if statement` we check whether something is `true`. 
+We have to change our `if statement` to reflect the correct return values of the function `isAstarion(uuid)`
+
+
+```lua
+
+local function isAstarion(uuid)
+    if uuid == "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255" then
+    		print(uuid ," is Astarion")
+        print("returning 1")
+    		return 1
+    else
+    	  print(uuid ," is not Astarion")
+        return 0
+    end
+end
+   
+   
+if isAstarion("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255") == 1 then
+    print("Astarion found")
+else
+   print("Astarion not found")
+   print(isAstarion("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255"), " is not the same as  ", true)
+end
+```
+
+`S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255   is Astarion`
+`returning 1 `
+`Astarion found` 
+
+Now we get the correct output.
+We can delete, or comment out our print statement so they don't clutter up our console.
+
+```lua
+
+local function isAstarion(uuid)
+    if uuid == "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255" then
+    		return 1
+    else
+        return 0
+    end
+end
+   
+   
+if isAstarion("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255") == 1 then
+    print("Astarion found")
+end
+```
+
+`Astarion found` 
+
 
 ### 9\. A brief introduction to metatables
-
-
-
-
 
 > This section is about a slightly advanced topic. Feel free to skip it if it sounds too complicated.
 > It can be helpful to come back here when your projects grow in size since we discuss one concept of 
@@ -1915,6 +2013,12 @@ print("Gale's class after trying illegal respec:", gale:getClass())
 
 
 ## **7\. Osiris**
+
+
+><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[10. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources)</strong> for more information</span>
+{.is-success}
+
+
 
 ### 1\. Functions
 
