@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T21:42:53.656Z
+date: 2024-05-03T21:49:17.402Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -467,6 +467,24 @@ _D(Osi.GetHostCharacter())
 
 `"c7c13742-bacd-460a-8f65-f864fe41f255"`
 
+Our first example will be adding gold to a character
+
+```
+---@param inventoryHolder GUIDSTRING
+---@param amount integer
+function Osi.AddGold(inventoryHolder, amount) end
+```
+
+Here we can use `Osi.GetHostCharacter` for the `inventoryHolder` since we know that it returns a `UUID`. 
+For the second argument we need an `integer` , that is a non-decimal number.
+
+```lua
+Osi.AddGold(Osi.GetHostCharacter(), 999)
+```
+![gswse_poor.png](/tutorials/getting_started_with_se/gswse_poor.png)
+
+
+![gswse_rich.png](/tutorials/getting_started_with_se/gswse_rich.png)
 
 ### 6.2\. Events
 
