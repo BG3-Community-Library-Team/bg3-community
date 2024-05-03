@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T21:20:28.331Z
+date: 2024-05-03T21:42:53.656Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -437,16 +437,35 @@ Only by adding this line will SE know to load the new file. Else it will be igno
 
 
 
-><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[10. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources)</strong> for more information</span>
-{.is-success}
-
-
-Osiris is a programming language used by Larian Studios.[[1]](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references). Using Norbyte's Script Extender we can interact with Baldur's Gate 3 and manipulate it in a tremendous manner.[[2]](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references). Here we will have a look at a few simple examples. Specifically Osi.lua[[3]](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references) and Osi.Events[[4]](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references) provided by LaughingLeader[[5]](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references)  
+Osiris is a programming language used by Larian Studios.[[1]](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references). Using Norbyte's Script Extender we can interact with Baldur's Gate 3 and manipulate it in a tremendous manner.[[2]](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references). Here we will have a look at a few simple examples. Specifically Osi.lua[[3]](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references) and Osi.Events[[4]](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references) provided by LaughingLeader[[5]](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references). There are many more functions, but here we focus on the basics.   
 
 ### 6.1\. Functions
 
 > Work in Progress. For now refer to Osi Functions: [_https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua_](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua)
 {.is-info}
+
+
+><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[9. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources)</strong> for more information</span>
+{.is-success}
+
+
+Here we will introduce a few functions from LaughingLeaders [Osi.lua](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) file. We will go over how wo call the functions and how to use their output.
+
+Here we will introduce one of the most important functions for testing.
+```Osi.GetHostCharacter()``` will return the ```UUID``` of the currently selected character
+```lua
+---@return CHARACTER character
+function Osi.GetHostCharacter() end
+```
+
+Here it is being called while Astarion is selected.
+Since it returns a `UUID` we want to dump the return value with `_D` so we can see the output.
+
+```lua
+_D(Osi.GetHostCharacter())
+```
+
+`"c7c13742-bacd-460a-8f65-f864fe41f255"`
 
 
 ### 6.2\. Events
