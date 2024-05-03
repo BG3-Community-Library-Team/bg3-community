@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2024-05-03T01:28:21.117Z
+date: 2024-05-03T01:46:37.547Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -21,27 +21,29 @@ Secondly it is important to note that the types of compression are different (us
 
 Bg3 has ultimately two 'styles' of rendering - 'Skin' and 'Hardsurface' for lack of better wording
 
-For skin the formats are as follows:
+The formats are as follows:
 
-- For Non-Dragonborn
+---
 
-1. CLEA 
+- For Non-Dragonborn Skin
 
-	~BC3/DXT5~ ~Linear~
+	1. CLEA 
+
+	*~BC3/DXT5~ ~Linear~*
 	C - Curvature/Cavity map - RED channel
   L - Lips  - GRN channel
 	E - Eyebrows - BLU channel
   A - Ambient occlusion - ALPHA channel
 
-2. NM 
+	2. NM 
 
-	~BC3/DXT5~ ~Linear~
+	*~BC3/DXT5~ ~Linear~*
 	RED channel - UNUSED BY BG3 ENGINE STORED IN ALPHA
   GRN channel - Y Axis Normals
   BLU channel - Z Axis Normals
   ALPHA channel - X Axis Normals
 
-3. HMVY
+	3. HMVY
 
 	*~BC1/DXT1~ ~Linear~*
 	H - Hemoglobin - RED channel
@@ -49,7 +51,7 @@ For skin the formats are as follows:
   V - Veins - BLU channel
   Y - Yellowing - ALPHA channel
 
-4. MSK (CancelMSK)
+	4. MSK (CancelMSK)
 
 	*~BC1/DXT1~ ~Linear~*
 	RED channel - Non-Skin amount (Nails/Horns usually)
@@ -57,24 +59,72 @@ For skin the formats are as follows:
   BLU channel - Mucous (Lips/tear lines)
 
 
-- For Dragonborn
+---
 
-1. CLEA
 
-2. NM
 
-3. HMVY
 
-4. MSK (DMSK)
+- For Dragonborn Skin
+
+
+	1. CLEA
+
+	*~BC3/DXT5~ ~Linear~*
+	C - Curvature/Cavity map - RED channel
+  L - Lips  - GRN channel
+	E - Eyebrows - BLU channel
+  A - Ambient occlusion - ALPHA channel
+  
+	2. NM
+
+	*~BC3/DXT5~ ~Linear~*
+	RED channel - UNUSED BY BG3 ENGINE STORED IN ALPHA
+  GRN channel - Y Axis Normals
+  BLU channel - Z Axis Normals
+  ALPHA channel - X Axis Normals
+  
+	3. HMVY
+
+	*~BC3/DXT5~ ~Linear~*
+	H - Hemoglobin - RED channel
+  M - Melanin - GRN channel
+  V - Veins - BLU channel
+  Y - Yellowing - ALPHA channel
+
+	4. MSK (DMSK)
    
-5. MSK (AccentMSK)
+	5. MSK (AccentMSK)
     
-The hardsurface formats however, are:
+      
+---
 
-1. BM
-		1.aaa
-2. NM
+- For Hard Surface Objects
 
-3. PM
+	1. BM (Either full color *or* B/W)
 
-4. MSK (MSKColor/MSKcloth)
+	~BC3/DXT5~ ~Linear~?
+	RED channel - Intensity of Red
+  GRN channel - Intensity of Green
+  BLU channel - Intensity of Blue
+  ALPHA channel - EMPTY
+
+	2. NM
+
+	~BC3/DXT5~ ~Linear~?
+	RED channel - UNUSED BY BG3 ENGINE STORED IN ALPHA
+  GRN channel - Y Axis Normals
+  BLU channel - Z Axis Normals
+  ALPHA channel - X Axis Normals
+
+	3. PM
+
+	~BC3/DXT5~ ~Linear~?
+	RED channel - Metallic Intensity
+  GRN channel - Roughness Amount
+  BLU channel - Ambient Occlusion (Baked in shadows)
+
+
+	4. MSK (MSKColor/MSKcloth)
+
+	~BC3/DXT5~ ~Linear~?
+	Channel makeup is largely irrelevant, Colored mask for segments of different material colors
