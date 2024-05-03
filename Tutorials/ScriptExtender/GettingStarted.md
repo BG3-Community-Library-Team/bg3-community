@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T17:43:11.186Z
+date: 2024-05-03T17:50:46.719Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1567,14 +1567,45 @@ myMistake(5)
 
 ```
 
+`bg3se::lua::State::LoadScript(): Failed to execute script: [string "Scribe/BootstrapServer.lua"]:2: attempt to perform arithmetic on a nil value (global 'num_2')`
+
+This time we get the error `attempt to perform arithmetic on a nil value (global 'num_2')`
+This means `num2` does not exist. And indeed we do not pass a second argument when calling the function
+
+`myMistake(5)` -> `myMistake(5, 4)`
+
+```lua
+
+local function myMistake(num1, num2)
+	print(num1 + num_2)
+end
+
+myMistake(5, 4)
+
+```
+
+`bg3se::lua::State::LoadScript(): Failed to execute script: [string "Scribe/BootstrapServer.lua"]:2: attempt to perform arithmetic on a nil value (global 'num_2')`
+
+We still get the same error message as before. We know that we pass a number as `num2`, so we need to check the function. 
+It looks like we mistakenly used `num2` as the name of the parameter but later in the print statement we used `num_2`
+
+`print(num1 + num_2)` -> `print(num1 + num2)`
 
 
+```lua
 
-We can already get a lot of information
+local function myMistake(num1, num2)
+	print(num1 + num2)
+end
 
+myMistake(5, 4)
 
+```
 
-- Typos, wrong type of parameters, wrong amount of parameter inputs, wrong syntax. null pointer exception
+`9`
+
+Seems like we were able to succesfully debug our code with the help of errors!
+
 
 
 #### 8.2 Debugging using print statements
