@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T22:04:22.611Z
+date: 2024-05-03T22:15:16.890Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -514,6 +514,36 @@ _D(Osi.GetApprovalRating("S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255
 ```
 
 `1` (standard approval)
+
+#### 6.1.4\. Osi.UseSpell()
+
+We can also do more proactive actions with these functions.
+Here we will cast a spell.
+
+
+```lua
+---@overload fun(caster:GUIDSTRING, spellID:string, target:GUIDSTRING)
+---@param caster GUIDSTRING
+---@param spellID string
+---@param target GUIDSTRING
+---@param target2 GUIDSTRING
+function Osi.UseSpell(caster, spellID, target, target2) end
+```
+This function can be `overloaded`. This means that we can execute it with another set of parameters than listed. We can either use `caster, spellID, target, target2` or `caster, spellID, target`.
+We are only interested in hitting one target right now so we will use the second option.
+
+We will use our `Tav` to hit `Astarion` with `Eldritch Blast`
+
+```lua
+Osi.UseSpell(Osi.GetHostCharacter(), "Projectile_EldritchBlast" , "S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255")
+```
+
+![gswse_violence.png](/tutorials/getting_started_with_se/gswse_violence.png =500x300)
+
+> Want to try out more spells? Use https://bg3.norbyte.dev/search?q=type%3Aspell
+> to look up their names
+{.is-info}
+
 
 ### 6.2\. Events
 
