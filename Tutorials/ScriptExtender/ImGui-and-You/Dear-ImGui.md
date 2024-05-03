@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-03T12:16:24.467Z
+date: 2024-05-03T12:40:29.805Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -11,9 +11,10 @@ dateCreated: 2024-05-01T19:43:32.311Z
 # **Dear ImGui**
 
 This multi-part tutorial covers the integration of ImGui using ScriptExtender.
-- Part 1 covers: Setup, First Steps and general creation of ImGui components.
+- Part 1 covers: Setup, First Steps and general creation of ImGui objects.
 - Part 2 covers: Component logic
 - Part 3 covers: Events and how to use them
+- Part 4 covers: Styling of ImGui objects
 
 > Before going into the specifics, please note the following points:
 > - This tutorial assumes that you know how to install mods and how to create them. If you are new to this, please familiarize yourself with them through other relevant Wiki pages:
@@ -373,13 +374,43 @@ myTable = parentObject:AddTable("Something", 5)
 ```
 
 If you try updating your UI by reloading your save, you will notice there is nothing really there and you don't see any rows or columns.
-Thats because for the rows at least, we have to add them seperately
+Thats because, for the rows at least, we have to add them seperately. Columns aren't visible to us because we don't have any data in them and/or didn't style them yet.
+
+Now that we have a table we can add a row:
+
+```lua
+tableRow1 = myTable:AddRow()
+```
+
+> You need to do this for every new row you require, while also having to name each one if you want to add data to them.
+> 
+{.is-info}
+
+We have a grid of rows and columns now.
+If you've ever worked with a spreadsheet before, you may think that we can already go ahead and add data now, but thats only kind of right.
+
+For ImGui, now that we have rows, we need to manually add cells before adding anything else.
+Since these cells are only for us to add another component to, we don't need to name them themselves.
+Instead we can just combine it with some text or a button we want to add to the row.
+
+```lua
+myTableButton = tableRow1:AddCell():AddButton("Click me!")
+myTableText = tableRow1:AddCell():AddText("Don't click me!")
+```
+
+Keep in mind that each cell we create, advances along the available columns. Meaning the first cell is within the first column, the second cell within the second column and so on.
+{.is-info}
+
+> If you do reach your maximum amount of columns, nothing stops you from creating more cells, they just won't be visible.
+> Here you then want to create a new row, and populate this one instead.
+{.is-warning}
+
 
 
 ## **2.5\. Transition into ImGui Logic**
 
 Make yourself familiar with different UI structures you can build manually, because next we are going to talk about some logic you can add to buttons, checkboxes, etc.
-This may include sudden jumps between Part 2 and 3 because some stuff you can and might want to do will lead you to create links between the logic of a button itself and events you have to create to communicate with the server.
+This may include sudden jumps between the remaining parts because some stuff you can and might want to do will lead you to create links between the logic of a button itself and events you have to create to communicate with the server to even making a button that changes some styling options.
 
 So take some time and try to create a rough outline on what you might want your mod too look like so you are getting accustomed to quickly creating new ImGui objects and their components.
 
