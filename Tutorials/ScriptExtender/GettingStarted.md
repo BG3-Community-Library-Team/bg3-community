@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T16:20:53.604Z
+date: 2024-05-03T16:22:17.281Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1458,8 +1458,6 @@ printNestedTable(foodTable)
 ><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[10. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources)</strong> for more information</span>
 {.is-success}
 
-more information about lua: https://exercism.org/tracks/lua
-
 ### 8\. Debugging using print statements
 
 how to find
@@ -1701,6 +1699,14 @@ print("Gale's class after trying illegal respec:", gale:getClass())
 `Gale's class before trying illegal respec:      Wizard`
 `Necromancer      is not an allowed class`
 `Gale's class after trying illegal respec:       Wizard`
+
+
+
+> Want to practive more Lua? 
+> Visit exercism: https://exercism.org/tracks/lua
+{.is-info}
+
+
 
 ## **7\. Osiris**
 
