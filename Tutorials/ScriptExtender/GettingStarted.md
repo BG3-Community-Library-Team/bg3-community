@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T16:44:30.094Z
+date: 2024-05-03T17:25:38.626Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -417,8 +417,11 @@ We will name this file `MySecondSEScript.lua`.
 
 ## **6\. The Basics of Programming**
 
+
 **// TODO - This has to be moved to a separate wiki page**
 // TODO - add something about commenting out code
+
+For modding Baldur's Gate we use the programming language `Lua`
 
 The following section is aimed towards people who have no programming knowledge.
 
@@ -1452,7 +1455,10 @@ printNestedTable(foodTable)
 `Chardonnay`
 `Cabernet Sauvignon`
 
-### 8\. Debugging using print statements
+### 8\. Debugging
+
+
+#### 8.1 Debugging using error output
 
 ><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[10. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources)</strong> for more information</span>
 {.is-success}
@@ -1463,7 +1469,7 @@ These are shown in red on the console:
 
 ![gswse_error.png](/tutorials/getting_started_with_se/gswse_error.png)
 
-We will go over how to use `print` statements to debug our code.
+
 For this we will write some code that will throw an errror:
 
 
@@ -1476,17 +1482,44 @@ myMiftake("Astarion")
 
 ```
 
-`bg3se::lua::State::LoadScript(): Failed to parse script: [string "MySEMod/BootstrapServer.lua"]:4: 'end' expected (to close 'function' at line 1) near <eof>`
+`bg3se::lua::State::LoadScript(): Failed to parse script: [string "MySEMod/MyFirstSEScript.lua"]:4: 'end' expected (to close 'function' at line 1) near <eof>`
+
 
 Here we get the error message `Failed to parse script`.
-This means that we already made a mistake with writing our script regardless of the input
+This means that we already made a mistake with writing our script regardless of the input.
+If like me you started writing at `line 1` you will find the mistake in the same line as well.
+
+`[string "MySEMod/MyFirstSEScript.lua"]:4:` shows us that the issue is in `MyFirstSEScript.lua` in line `4`.
+
+` 'end' expected  (to close 'function' at line 1)` shows us what the errror is. 
+We forgot to close the function we start in line `1` with an `end`. So let's add this
+
+```lua
+
+local function myMistake(num1, num2)
+	print("num1" + num_2)
+end
+
+myMiftake("Astarion")
+
+```
+
+
+
+
+We can already get a lot of information
+
 
 
 - Typos, wrong type of parameters, wrong amount of parameter inputs, wrong syntax. null pointer exception
 
 
+#### 8.2 Debugging using print statements
+
 However, mistakes aren't always this obvious. Sometimes our code is "valid"
 but we still do not get the desired output.
+
+We will go over how to use `print` statements to debug our code.
 
 - example: wrong usage of if (testing if "String" )
 
