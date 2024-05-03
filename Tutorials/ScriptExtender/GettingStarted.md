@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T20:51:38.776Z
+date: 2024-05-03T20:52:01.261Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -433,7 +433,7 @@ Only by adding this line will SE know to load the new file. Else it will be igno
 {.is-success}
 
 
-Osiris is a programming language used by Larian Studios.[1](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references). Using Norbyte's Script Extender we can interact with Baldur's Gate 3 and manipulate it in a tremendous manner.[2](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references)
+Osiris is a programming language used by Larian Studios.[[1]](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references). Using Norbyte's Script Extender we can interact with Baldur's Gate 3 and manipulate it in a tremendous manner.[[2]](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references)
 
 ### 6.1\. Functions
 
