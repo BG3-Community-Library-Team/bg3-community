@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: false
-date: 2024-05-03T20:03:52.614Z
+date: 2024-05-03T20:05:16.113Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
