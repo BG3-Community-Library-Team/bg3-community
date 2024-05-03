@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T08:20:27.920Z
+date: 2024-05-03T08:42:36.084Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -238,7 +238,7 @@ Every time you make a change to your mod, you have to exit the game, repack your
 Symlinking is optional, although highly recommended, as it allows you conveniently avoid the aforementioned steps aka hot load your mod.
 
 > If this sounds too complicated, you can also move your workspace into the `Mods` folder in `Data`. 
-> For this follow  
+> For this follow  [4.2\. Alternative to symlinking: Move your project to the Mods folder](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-42-alternative-to-symlinking-move-your-project-to-the-mods-folder)
 {.is-success}
 
 
@@ -318,10 +318,31 @@ mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Loc
 
 ### 4.2\. Alternative to symlinking: Move your project to the Mods folder
 
+
+You can also move your project to the `Mods` folder in `Data` instead if you were not able to symlink your folders.
+
+
+`C:\SteamLibrary\steamapps\common\Baldurs Gate 3\Data\Mods\MySEMod`
+
+in the example below, where you can see the full path to the script it is:
+
+`D:\SteamLibrary\steamapps\common\Baldurs Gate 3\Data\Mods\CBR_Hugs`
+
+
+![gswse_mods_path.png](/tutorials/getting_started_with_se/gswse_mods_path.png)
+
+
+> Note that this symlink is for your scripts. If you want to include **.loca** or **.txt** / **.gr2** files
+> They need to be placed in a `Localization` and `Public` folder respectively.
+> For this follow the guide [How to install manual/loose file mods](https://wiki.bg3.community/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods)
+{.is-info}
+
+
 ### 4.3\. Verifying the symlink
 
 To verify whether the symlink has been created in the correct space, click your newly created symlink
 in `Data`. This should lead you to your workspace folder. 
+
 
 If you see an error instead or a link to a subfolder, please repeat the steps in [4. Symlinking](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking) and make sure your **paths** are correct.
 
@@ -1731,5 +1752,8 @@ Utils file:
 Credits: 
 
 *Alithea Ancunin* for screenshots, writing and proofreading 
+*Cerberry* for screenshots, ideas and feedback
 *Chip Chocolate, Legendary Muffin for a multitude* of resources and his knowledge
 *ImmortalRD, Schroedingercat and Chip Chocolate, Legendary Muffin* for the [tutorial for Symlinking & Mass File Conversion for hot-testing your mods](https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki)
+*Skiz* for bravely enduring and suffering through this journey with me
+*BG3 Modding Communiry Discord* for answering my questions
