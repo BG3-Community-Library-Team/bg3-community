@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T17:32:24.984Z
+date: 2024-05-03T17:43:11.186Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -394,10 +394,14 @@ We will name this file `MySecondSEScript.lua`.
 {.is-info}
 
 
-**Step 4:** Add the new file to `BootstrapServer.lua`
+**Step 4:** Add the new file to `BootstrapServer.lua` by adding the line
+
+`Ext.Require("Server/MySecondSEScript.lua")`
+
+Only by adding this line will SE know to load the new file. Else it will be ignored.
 
 
-![gswse_28.png](/tutorials/getting_started_with_se/gswse_28.png =800x400)
+![gswse_28.png](/tutorials/getting_started_with_se/gswse_28.png =900x400)
 
 
 > If you do not add your new file to the BootstrapServer.lua it and its contents will not be recognized
@@ -1532,6 +1536,39 @@ The next error is `attempt to perform arithmetic on a string value` in line `2`
 We mistakenly used `"num1"` instead of `num1`, so we cannot perform additions.
 
 `print("num1" + num_2)` ->  `print(num1 + num_2)`
+
+
+```lua
+
+local function myMistake(num1, num2)
+	print(num1 + num_2)
+end
+
+myMistake("Astarion")
+
+```
+
+`bg3se::lua::State::LoadScript(): Failed to execute script: [string "Scribe/BootstrapServer.lua"]:2: attempt to perform arithmetic on a string value (local 'num1')`
+
+Here we have another `attempt to perform arithmetic on a string value` but this time we have some more additional information `(local 'num1')`
+This means that the parameter we pass to this function `num1` is a string but we cannot perform additions on strings. 
+So let us change that
+
+`myMistake("Astarion")` ->  `myMistake(5)`
+
+
+```lua
+
+local function myMistake(num1, num2)
+	print(num1 + num_2)
+end
+
+myMistake(5)
+
+```
+
+
+
 
 We can already get a lot of information
 
