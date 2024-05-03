@@ -1,8 +1,8 @@
 ---
 title: Subclass Creation For An Existing Class
 description: 
-published: false
-date: 2024-05-03T05:51:18.259Z
+published: true
+date: 2024-05-03T05:51:58.504Z
 tags: tutorial, subclasses
 editor: markdown
 dateCreated: 2024-05-03T05:26:42.090Z
