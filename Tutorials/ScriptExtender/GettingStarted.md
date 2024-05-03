@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-02T22:50:24.913Z
+date: 2024-05-03T08:03:25.205Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -262,8 +262,13 @@ Your console should open. This is where you will type your commands
 {.is-warning}
 
 
-The commands for copying are found in the code block below. Please make sure to modify the commands, accordingly to your username, and direction of your workspace as well as your game.
+The commands for copying are found in the code block below. Please make sure to modify the commands, accordingly to your username, and direction of your workspace as well as your game. 
 A text editor like `Notepad` is recommended to do this.
+
+> The folders **Mods**, **Public** and **Localization** do not exist in a Vanilla game. They will be created by the symlink.
+> If they already exist because you installed **loose files** mods, please delete them first, else the command will throw an error.
+{.is-info}
+
 
 
 
