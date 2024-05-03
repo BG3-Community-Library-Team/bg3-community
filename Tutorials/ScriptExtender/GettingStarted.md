@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T17:53:59.225Z
+date: 2024-05-03T17:55:41.086Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1464,9 +1464,6 @@ printNestedTable(foodTable)
 
 #### 8.1 Debugging using error output
 
-><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[10. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources)</strong> for more information</span>
-{.is-success}
-
 
 While following this guide you likely already ran into a few errors.
 These are shown in red on the console:
@@ -1606,7 +1603,8 @@ myMistake(5, 4)
 
 Seems like we were able to succesfully debug our code with the help of errors!
 
-
+><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[10. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources)</strong> for more information</span>
+{.is-success}
 
 #### 8.2 Debugging using print statements
 
