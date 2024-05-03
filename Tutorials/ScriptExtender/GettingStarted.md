@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T21:07:15.849Z
+date: 2024-05-03T21:09:20.485Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -531,3 +531,7 @@ Credits:
 
 [1] Osiris: A scripting language by Larian https://docs.larian.game/Osiris_Overview
 [2] Norbyte's Script Extender: An API that allows Lua/Osiris scripting for Baldur's gate 3 https://github.com/Norbyte/bg3se
+[3] Osi.lua: Osiris calls provided by LaughingLeader https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua
+[4] Osi.Events: Osiris events provided by LaughingLeader https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.Events.lua
+[5] LaughingLeader: Github link https://github.com/LaughingLeader
+
