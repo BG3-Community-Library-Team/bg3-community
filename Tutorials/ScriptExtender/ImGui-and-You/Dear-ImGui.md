@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: true
-date: 2024-05-03T21:21:03.301Z
+date: 2024-05-03T21:22:09.046Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -12,9 +12,9 @@ dateCreated: 2024-05-01T19:43:32.311Z
 
 This multi-part tutorial covers the integration of ImGui using ScriptExtender.
 - Part 1 covers: Setup, First Steps and general creation of ImGui objects.
-- Part 2 covers: Component logic
-- Part 3 covers: Events and how to use them
-- Part 4 covers: Styling of ImGui objects
+- Part 2 covers: [NotYetReleased] Component logic
+- Part 3 covers: [NotYetReleased] Events and how to use them
+- Part 4 covers: [NotYetReleased] Styling of ImGui objects
 
 > Before going into the specifics, please note the following points:
 > - This tutorial assumes that you know how to install mods and how to create them. If you are new to this, please familiarize yourself with them through other relevant Wiki pages:
