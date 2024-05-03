@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T16:41:31.065Z
+date: 2024-05-03T16:44:30.094Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1472,12 +1472,14 @@ For this we will write some code that will throw an errror:
 local function myMistake(num1, num2)
 	print("num1" + num_2)
 
-
-
 myMiftake("Astarion")
 
 ```
 
+`bg3se::lua::State::LoadScript(): Failed to parse script: [string "MySEMod/BootstrapServer.lua"]:4: 'end' expected (to close 'function' at line 1) near <eof>`
+
+Here we get the error message `Failed to parse script`.
+This means that we already made a mistake with writing our script regardless of the input
 
 
 - Typos, wrong type of parameters, wrong amount of parameter inputs, wrong syntax. null pointer exception
