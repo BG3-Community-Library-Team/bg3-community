@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T22:15:16.890Z
+date: 2024-05-03T22:22:53.272Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -441,14 +441,6 @@ Osiris is a programming language used by Larian Studios.[[1]](https://wiki.bg3.c
 
 ### 6.1\. Functions
 
-> Work in Progress. For now refer to Osi Functions: [_https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua_](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua)
-{.is-info}
-
-
-><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[9. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources)</strong> for more information</span>
-{.is-success}
-
-
 Here we will introduce a few functions from LaughingLeaders [Osi.lua](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) file. We will go over how wo call the functions and how to use their output.
 
 #### 6.1.1\. Osi.GetHostCharacter()
@@ -545,18 +537,21 @@ Osi.UseSpell(Osi.GetHostCharacter(), "Projectile_EldritchBlast" , "S_Player_Asta
 {.is-info}
 
 
-### 6.2\. Events
+
+### 6.2\. Events and Listeners
+
+><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[9. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources)</strong> for more information</span>
+{.is-success}
+
 
 > Work in Progress. For now refer to Osi Events: [_https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.Events.lua_](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.Events.lua)
 {.is-info}
 
 
-### 6.3\. Using Listeners
-
-
 > Work in Progress. For now refer to SE API Documentation: [_https://github.com/Norbyte/bg3se/blob/main/Docs/API.md_](https://github.com/Norbyte/bg3se/blob/main/Docs/API.md)
 {.is-info}
 
+For more interactivity we can use `Listeners`
 
 ## **7\. Script Extender Functions**
 
