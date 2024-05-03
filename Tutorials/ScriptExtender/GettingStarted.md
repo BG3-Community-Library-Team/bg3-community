@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T21:17:42.721Z
+date: 2024-05-03T21:18:31.237Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -93,7 +93,7 @@ Now that you are familiar with entering commands in the console, it is time to c
 
 > Only want to execute a few commands on the console and not interested in creating a mod?
 > You can stop here if you are following another guide or jump to 
-> [6.Osiris](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#references) for a few examples
+> [6.Osiris](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#h-6-osiris) for a few examples
 {.is-warning}
 
 
