@@ -2,7 +2,7 @@
 title: Subclass Creation For An Existing Class
 description: 
 published: false
-date: 2024-05-03T05:26:42.090Z
+date: 2024-05-03T05:51:18.259Z
 tags: tutorial, subclasses
 editor: markdown
 dateCreated: 2024-05-03T05:26:42.090Z
@@ -17,28 +17,26 @@ When we create a class, most of what we do is new. A new parent classdescription
 </details>
 
 <details>
-<summary><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Class-Modification#setup-for-modding%EF%B8%8F">Setup For Modding</a></summary>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Subclass_Creation_For_An_Existing_Class#setup-for-modding%EF%B8%8F">Setup For Modding</a></summary>
 <ul>
-      <li><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Class-Modification#mod-folder-setup">Mod Folder Setup</a></li>
-      <li><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Class-Modification#holder">Holder</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Subclass_Creation_For_An_Existing_Class#mod-folder-setup">Mod Folder Setup</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Subclass_Creation_For_An_Existing_Class#holder">Holder</a></li>
 </ul>
 </details>
 
 <details>
-<summary><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Class-Modification#make-a-new-subclass-for-an-existing-class%EF%B8%8F">Make a new subclass for an existing class</a></summary>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Subclass_Creation_For_An_Existing_Class#make-a-new-subclass-for-an-existing-class%EF%B8%8F">Make a new subclass for an existing class</a></summary>
 <ul>
-    <li><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Class-Modification#classdescriptionslsx">ClassDescriptions.lsx</a></li>
+    <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Subclass_Creation_For_An_Existing_Class#classdescriptionslsx">ClassDescriptions.lsx</a></li>
     <li>
-        <a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Class-Modification#progressionslsx">Progressions.lsx</a>
+        <a href="https://wiki.bg3.community/en/Tutorials/Classes/Subclass_Creation_For_An_Existing_Class#progressionslsx">Progressions.lsx</a>
     </li>
 </ul>
 </details>
 
 # Disclaimer[⬆️](#goals)
-
+If you create a class, everything you do will be new. You wouldnt have to worry about your class mod having clashing progressions or anything like that with other mods. But this clearly wont apply to subclasses for existing ingame classes. If you create a subclass for the paladin and another person creates a different subclass for the paladin as well, those two mods will be in conflict. Think of it like this, when you make a new subclass you need to edit the classes progression, but if someone else has another mod affecting the same class, its not like either of you could account for the other persons subclass additions in their progressions. Two mods can not alter the same progression in this way without crashing (I think?). If you intend to share your mod, it is advised you take a look at [NellsRelo's BG3-Compatibility-Framework](https://github.com/BG3-Community-Library-Team/BG3-Compatibility-Framework) and learn how to integrate it with your mod. The [github wiki](https://github.com/BG3-Community-Library-Team/BG3-Compatibility-Framework/wiki) for it would be a good place to start.
 # Setup For Modding[⬆️](#goals)
-*<sub>If you haven't taken a look at [getting started](https://github.com/ghostboats/bg3_modders_guide/wiki/Getting-Started), I highly suggest you do so you have the same environment setup as I do.</sub>
-
 Lets set up our initial folder for our mod. All of our mod files and folders will go in here. We will cover it when we get to it, but this folder will essentially be packed by our multitool to be used as our .pak file which we place in the mods folder for your game. We will only need a few folders and files to get a simple item mod running. The bulk of the files we will deal with are .lsx files which are basically xml files. As your mod gets more intricate, you will need to add more folders/files but the following should be all we need to get started editing an item. Note the indentation on entries to indicate the file tree structure, ie. Localization folder has the English folder in it and so forth.
 
 ## Mod folder setup
@@ -58,10 +56,10 @@ Lets set up our initial folder for our mod. All of our mod files and folders wil
 *<sub>If you are unsure about how to make the xml or lsx files, just open a text document and click save as. On the save as menu, change the "Save as type" option to "All types" and change the file name to your mod name. When you convert via the converter app, make sure you specify the file name and extension</sub>
 
 # Make a new subclass for an existing class[⬆️](#goals)
-Im assuming you have already read my class creation guide for creating new classes. I will try to keep it simple but if something isnt clicking I may have glossed over something that I already covered in that guide. Anyways, if you did read it, you will remember that when we made our class Quickster, we worked heavily with the file ClassDescriptions.lsx and Progressions.lsx. As you may have guessed, we will be doing the same here albeit a bit differently since we are modify something that exists, not creating from scratch.
+While not required, it would be helpful to read the [Basic Class Creation](https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation) guide to have some background. This guide will try to keep it simple but if something isnt clicking I may have glossed over something that is already covered in that guide. Anyways, if you did read it, you will remember that when we made our class Quickster, we worked heavily with the file ClassDescriptions.lsx and Progressions.lsx. As you may have guessed, we will be doing the same here albeit a bit differently since we are modify something that exists, not creating from scratch.
 ## ClassDescriptions.lsx
-When making the quickster mod, you may remember that we added an entire new entry in ClassDescriptions.lsx. We actually dont need to do that for this. You would think that since we are editing the Paladin class, we need to add in the Paladin classdescription entry. We actually don't! There is nothing in the base ClassDescription that relates to subclasses for that class. However, there is one thing we do need to grab, the UUID for the Paladin class. I will include it here for simplicity but obviously you will need to get the UUID of whatever class you are editing. The Paladin class UUID is ff4d9497-023c-434a-bd14-82fc367e991c. We will need this for the entry we do plan on adding into our ClassDescription file, the actual subclass we intend to add.
-You may have already added a subclass already if you followed my guide but the major difference between the class entries and subclasses is that subclasses have a parentguid attribute that refers back to the main class of the subclass, which is why we needed the paladin one. Lets make a ClassDescription node for my subclass using the Paladin uuid as a parent guid.
+When making the quickster mod, you may remember that we added an entire new entry in ClassDescriptions.lsx. We actually dont need to do that for this. You would think that since we are editing the Paladin class, we need to add in the Paladin classdescription entry. We actually don't! There is nothing in the base ClassDescription that relates to subclasses for that class. However, there is one thing we do need to grab, the UUID for the Paladin class. I will include it here for simplicity but obviously you will need to get the UUID of whatever class you are editing. The Paladin class UUID is ff4d9497-023c-434a-bd14-82fc367e991c. We will need this for the entry we plan on adding into our ClassDescription file, this entry being the actual subclass node.
+The major difference between the class entries and subclasses is that subclasses have a parentguid attribute that refers back to the main class of the subclass, which is why we needed the paladin one. Lets make a ClassDescription node for the subclass using the Paladin uuid as a parent guid.
 
 PaladinOfTheCosmicOrder\Public\PaladinOfTheCosmicOrder\ClassDescriptions\ClassDescriptions.lsx
 ```
@@ -94,10 +92,10 @@ PaladinOfTheCosmicOrder\Public\PaladinOfTheCosmicOrder\ClassDescriptions\ClassDe
 ...
 ```
 
-Nothing too wild here if you already have followed my class creation guide. You can note that I used the Paladin UUID for the ParentGuid and made sure to add the corresponding new uuids for the subclasses uuid and its progressiontable, as well as new handles. I mostly include this part in the guid so you can see that even though we are modifying the Paladin class, we don't need to port over the entire Paladin entry. We only bring over to our mod whatever is new (this subclass entry) and whatever we intend to alter (which you will see in Progressions below).
+The most important thing here is that I used the Paladin UUID for the ParentGuid and made sure to add the corresponding new uuids for the subclasses uuid and its progressiontable, as well as new handles. I mostly included this part in the guide so you can see that even though we are modifying the Paladin class, we don't need to port over the entire Paladin entry. We only bring over to our mod whatever is new (this subclass entry) and whatever we intend to alter (which you will see in Progressions below).
 
 ## Progressions.lsx
-As I'm sure you recall, progressions are essentially whatever our class (or subclass) gets on Character Creation and level ups. Remember how I said we didn't need to add the node for the Paladin in ClassDescriptions.lsx? I said the reason was because we aren't changing anything in that entry, i.e. nothing in the node refers to subclasses for the class. However, progression entries do refer to subclasses, specifically at the levels the class gets the subclass option. Lets look at the base Paladin progression, specifically the level 1 progression (CC) since thats when the class chooses subclasses.
+Progressions are essentially whatever our class (or subclass) gets on Character Creation and level ups. Remember how I said we didn't need to add the node for the Paladin in ClassDescriptions.lsx? I said the reason was because we aren't changing anything in that entry, i.e. nothing in the node refers to subclasses for the class. However, progression entries do refer to subclasses, specifically at the levels the class gets the subclass option. Lets look at the base level 1 progression (CC) for the Paladin since thats when the paladin class chooses subclasses.
 ```
 ...
 <node id="Progression">
@@ -156,7 +154,7 @@ PaladinOfTheCosmicOrder\Public\PaladinOfTheCosmicOrder\Progressions\Progressions
 ...
 ```
 
-Remember the uuid that goes here the one I generated for uuid in my classdescriptions node for the subclass. Note that I retained all the other information in the file, including the subclasses that exist already. Also, lets not forget to add our actual progression node for our subclass. Quick and easy, dont forget to use the progressiontableid you generated in classdescriptions. Here is the whole file.
+Remember the uuid that goes here the one I generated for uuid in my classdescriptions node for the subclass. Note that I retained all the other information in the file, including the subclasses that exist already. Lets not forget to add our actual progression node for our subclass. Quick and easy, dont forget to use the progressiontableid you generated in classdescriptions. Here is the whole file.
 
 PaladinOfTheCosmicOrder\Public\PaladinOfTheCosmicOrder\Progressions\Progressions.lsx
 ```
