@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T19:10:12.925Z
+date: 2024-05-03T20:09:13.695Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -999,7 +999,6 @@ print(GetWyll())
 
 ### 5\. Functions
 
-// TODO: Explain : and . (Calling the function with itself as the first parameter) -> Maybe something for 8. Using Script Extender Functions instead?  Might fit in the metables section
 
 You can use fuctions when you have to execute the same code multiple times.
 This allows you to reuse your code without having to copy and paste it.
@@ -2052,6 +2051,9 @@ print("Gale's class after trying illegal respec:", gale:getClass())
 - DB_Avatars, \_D(Osi.DB_Players:Get(nil))
 - Ext Listeners
 - link to imgui page here
+
+
+// TODO: Explain : and . (Calling the function with itself as the first parameter) -> Maybe something for 8. Using Script Extender Functions instead?  Might fit in the metables section
 
 
 https://discord.com/channels/98922182746329088/1228009824017453147 (ask for permission to post - original author is not clear)
