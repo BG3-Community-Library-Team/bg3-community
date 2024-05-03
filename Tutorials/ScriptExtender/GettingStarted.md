@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T18:58:47.011Z
+date: 2024-05-03T19:10:12.925Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -2100,7 +2100,7 @@ Utils file:
 
 Credits: 
 
-*Alithea Ancunin* for screenshots, writing and proofreading 
+*Alithea Ancunín* for screenshots, writing and proofreading 
 *Cerberry* for screenshots, ideas and feedback
 *Chip Chocolate, Legendary Muffin for a multitude* of resources and his knowledge
 *ImmortalRD, Schroedingercat and Chip Chocolate, Legendary Muffin* for the [tutorial for Symlinking & Mass File Conversion for hot-testing your mods](https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki)
