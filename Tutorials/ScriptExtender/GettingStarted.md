@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T22:22:53.272Z
+date: 2024-05-03T22:28:38.444Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -551,7 +551,7 @@ Osi.UseSpell(Osi.GetHostCharacter(), "Projectile_EldritchBlast" , "S_Player_Asta
 > Work in Progress. For now refer to SE API Documentation: [_https://github.com/Norbyte/bg3se/blob/main/Docs/API.md_](https://github.com/Norbyte/bg3se/blob/main/Docs/API.md)
 {.is-info}
 
-For more interactivity we can use `Listeners`
+For more interactivity we can use `Listeners`. If you followed [3.2 Installing Extensions](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#h-32-installing-extensions) then you should have `BG3-SE-Snippets` installed. This will allow you to autocomplete listeners. Else you can build them yourself.
 
 ## **7\. Script Extender Functions**
 
