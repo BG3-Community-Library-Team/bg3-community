@@ -1,8 +1,8 @@
 ---
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
-published: false
-date: 2024-05-03T21:20:28.229Z
+published: true
+date: 2024-05-03T21:21:03.301Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
