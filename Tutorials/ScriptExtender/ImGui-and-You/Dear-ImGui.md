@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-03T11:09:34.063Z
+date: 2024-05-03T11:30:29.723Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -363,9 +363,10 @@ someButton4:AddGroup("MyOtherGroup")
 
 ### **2.4.5\. Organizing and Managing Data with Tables**
 
-something about AddTable() usage
-how tables are build and why every table needs to at least use AddRow() once
-how you determine columns and create cells
+If your've worked with ScriptExtender before you might already use them in a way, here we are going to visualize them!
+
+
+
 
 ## **2.5\. Transition into ImGui Logic**
 
