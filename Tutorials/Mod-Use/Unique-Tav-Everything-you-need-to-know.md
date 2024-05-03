@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-03T23:50:38.235Z
+date: 2024-05-03T23:56:38.355Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -42,7 +42,7 @@ You will also need [Trips' Old Shader Pack](https://www.nexusmods.com/baldursgat
 
 #### How to install the Pak main file
 
-When you have downloaded both Trips' Old Shader Pack and the main pak file from Unique Tav, you will need to import them into BG3MM/vortex.
+When you have downloaded both Trips' Old Shader Pack and the main pak file from Unique Tav, you will need to import the pak main file and Trips' Old Shaderpack into BG3MM/vortex.
 If in BG3MM, remember to put the mod into the active side and "save/export order". 
 If you do not know how to install a pak file, follow the guide on [How-to-Install-Pak-Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
 
@@ -58,6 +58,10 @@ For example like this:
 
 If you are using other mods such as [Eyes of Beholder](https://www.nexusmods.com/baldursgate3/mods/315) or [Astralities' Glow Eyes](https://www.nexusmods.com/baldursgate3/mods/4964) you will need to have a certain load order. The load order is found at the bottom of Unique Tav's description, however it will be posted here as well.
 
+> Trips' Old Shader pack will be in the overrides section of BG3MM and likely locked in Vortex. 
+> Leave those there. Everytime BG3MM puts a mod in the overrides, it is for a reson and that is because they override base game files. 
+> As Trips' Old Shaderpack is also brown and an override, you cannot disable/make it inactive without deleting it from your mods folder (`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`)
+{.is-info}
 
 
 #### How to install the Data main file
