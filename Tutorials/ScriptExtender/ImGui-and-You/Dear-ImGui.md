@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: false
-date: 2024-05-02T18:53:55.097Z
+date: 2024-05-03T11:09:34.063Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -295,7 +295,7 @@ CollapsingHeaders offer a nice way to organize and hide/reveal content in ImGui.
 To begin, we'll need to introduce a CollapsingHeader into on of our objects.
 Which one we add components to is now entirely up to you.
 
-If you looked at the documentation of the ExtIdeHelpers.lua file, you might also already know how to add one if you look at how the function was named.
+If you have looked at the documentation of the ExtIdeHelpers.lua file, you might also already know how to add one if you look at how the function was named.
 Just like the other ones, we will start with an ``:`` ,type ``Add`` and then the ``component`` we want to add.
 
 ```lua
@@ -303,24 +303,63 @@ Just like the other ones, we will start with an ``:`` ,type ``Add`` and then the
 :AddCollapsableHeader()
 ```
 
-As before, if you give it a name it becoms its own object which you can add additional components to.
-Meaning, as soon as you start adding Texts, Buttons or other components, they will under the control of the header you created. So whenever you collapse it, they will vanish.
+Just like before, assigning it a name turns it into its own object, enabling you to add additional components to it. Consequently, any components added to the header will be under its control and will disappear when collapsed.
 
-If you did this to the first tab which still had other components which were added to the overall "MyWindow", you will notice that they will NOT collapse. Thats because they are attached to the window object and not the CollapsableHeader.
-If you added one to another tab, you can test this by adding other components to the tab itself and not to the header. This will result in the same outcome.
+However, if you added components to the first tab, which were attached to the overall "MyWindow" object, you'd notice they won't collapse. This is because they are associated with the window object and not the Collapsing Header. Conversely, if you added components to another tab, you could test this by adding additional components directly to the tab itself, resulting in a similar outcome.
 
-Only components that are part of the CollapsableHeader hierarchy, will be hidden if you collapse it.
-Components on other Objects will not be hidden.
-Think about putting boxes within boxes within boxes or Matryoshka Dolls.
-Components you add to objects that are themselves within a CollapsableHeader will naturally be hidden as well since they are under the control an object which would get hidden.
+> Only components that are part of the CollapsableHeader hierarchy, will be hidden if you collapse it.
+> Components on other Objects will not be hidden.
+{.is-info}
+
 
 ### **2.4.3\. Navigating through Trees**
 
-something about AddTree() usage
+A tree is essentially like the directory sidebar you find within your file browser on your PC.
+It has a root and from there a tree grows with different leaves.
+
+This is a simplified structure on what a tree can look like.
+```
+RootName
+|->FirstTreeItem
+|->SecondTreeItem
+|->ThirdTreeItem
+	|->ThirdTreeItem/Leaves
+|->FourthTreeItem
+	
+```
+
+To create one, we need to decide where to add it. Whether to a tab or perhaps a Collapsing Header is entirely your choice. For explanation purposes, we will call it "parentObject":
+
+```lua
+treeRoot = parentObject:AddTree("Name it whatever you want")
+firstItem = treeRoot:AddText("FirstTreeItem")
+secondItem = treeRoot:AddText("SecondTreeItem")
+thirdItem = treeRoot:AddText("ThirdTreeItem")
+fourthItem = treeRoot:AddText("FourthTreeItem")
+
+leavesThrItem = thirdItem:AddText("Leaves")
+```
 
 ### **2.4.4\. Grouping Components**
 
-something about AddGroup() usage
+Groups are like regions we covered in the beginning, just that they don't actually comment out code.
+Instead they "Group" multiple objects together.
+
+Normally in ImGui you'd use ``BeginGroup()`` and ``EndGroup()``. With ScriptExtender however we only need to use ``:AddGroup()`` and give the group a name within its parameter so every object using it, will get grouped together.
+If you look for it in the ExtIdeHelpers.lua file you will notice that there is nothing else you can do with it once you add it. Its simply there to add an identifier for ImGui to know which objects to group up correctly.
+
+```lua
+someButton = parentObject:AddButton()
+
+someButton2 = parentObject:AddButton()
+someButton2:AddGroup("MyGroup")
+someButton3 = parentObject:AddButton()
+someButton3:AddGroup("MyGroup")
+
+someButton4 = parentObject:AddButton()
+someButton4:AddGroup("MyOtherGroup")
+
+```
 
 ### **2.4.5\. Organizing and Managing Data with Tables**
 
@@ -328,7 +367,7 @@ something about AddTable() usage
 how tables are build and why every table needs to at least use AddRow() once
 how you determine columns and create cells
 
-## **2.5\. Transition into ImGui logic**
+## **2.5\. Transition into ImGui Logic**
 
 Make yourself familiar with different UI structures you can build manually, because next we are going to talk about some logic you can add to buttons, checkboxes, etc.
 This may include sudden jumps between Part 2 and 3 because some stuff you can and might want to do will lead you to create links between the logic of a button itself and events you have to create to communicate with the server.
