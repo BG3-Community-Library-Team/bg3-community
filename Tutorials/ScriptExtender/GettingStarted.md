@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T16:22:17.281Z
+date: 2024-05-03T16:41:31.065Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -1452,13 +1452,41 @@ printNestedTable(foodTable)
 `Chardonnay`
 `Cabernet Sauvignon`
 
-
-
+### 8\. Debugging using print statements
 
 ><span style="font-size:24px;">Authors's note: This guide is still a work in progress. Please see <strong>[10. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-10-useful-resources)</strong> for more information</span>
 {.is-success}
 
-### 8\. Debugging using print statements
+
+While following this guide you likely already ran into a few errors.
+These are shown in red on the console:
+
+![gswse_error.png](/tutorials/getting_started_with_se/gswse_error.png)
+
+We will go over how to use `print` statements to debug our code.
+For this we will write some code that will throw an errror:
+
+
+```lua
+
+local function myMistake(num1, num2)
+	print("num1" + num_2)
+
+
+
+myMiftake("Astarion")
+
+```
+
+
+
+- Typos, wrong type of parameters, wrong amount of parameter inputs, wrong syntax. null pointer exception
+
+
+However, mistakes aren't always this obvious. Sometimes our code is "valid"
+but we still do not get the desired output.
+
+- example: wrong usage of if (testing if "String" )
 
 how to find
 - which line has the error? 
