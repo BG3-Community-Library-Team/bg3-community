@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-03T23:48:41.595Z
+date: 2024-05-03T23:50:38.235Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -44,12 +44,19 @@ You will also need [Trips' Old Shader Pack](https://www.nexusmods.com/baldursgat
 
 When you have downloaded both Trips' Old Shader Pack and the main pak file from Unique Tav, you will need to import them into BG3MM/vortex.
 If in BG3MM, remember to put the mod into the active side and "save/export order". 
-If in Vortex, remember to deploy and fix the load order after. 
+If you do not know how to install a pak file, follow the guide on [How-to-Install-Pak-Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
+
+If in Vortex, remember to deploy and fix the load order after according to the guide below.
 
 #### Load order in BG3MM/Vortex
 
 Unique Tav should be relatively low on your load order, but above any patches you have.
-If you are using other mods such as [Eyes of Beholder](https://www.nexusmods.com/baldursgate3/mods/315) or [Astralities' Glow Eyes](https://www.nexusmods.com/baldursgate3/mods/4964) you will need to have a certain load order. The load order is found at the bottom of Unique Tav's description, however it will be posted here as well 
+
+For example like this: 
+
+
+
+If you are using other mods such as [Eyes of Beholder](https://www.nexusmods.com/baldursgate3/mods/315) or [Astralities' Glow Eyes](https://www.nexusmods.com/baldursgate3/mods/4964) you will need to have a certain load order. The load order is found at the bottom of Unique Tav's description, however it will be posted here as well.
 
 
 
