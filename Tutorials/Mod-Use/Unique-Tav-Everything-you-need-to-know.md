@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T04:36:42.412Z
+date: 2024-05-04T04:38:01.902Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -260,7 +260,7 @@ How to view file extension on Windows 11:
 
 Some mods, such as [CovenElf's Tattoo and Makeup Collection (v1.2 Update)](https://www.nexusmods.com/baldursgate3/mods/1684) is not optimised for Unique Tav. This means you will need to be a little more hands on than above. 
 
-You will do the exact same as above: download, extract the mod in your downloads folder, and find the "Generated" folder in the mod you downloaded. When you find the "Generated" folder, you will need to keep going to find the end files. The files should be in the folder called "Resources". These end files should look like this: 
+You will do the exact same as [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods): download, extract the mod in your downloads folder, and find the "Generated" folder in the mod you downloaded. When you find the "Generated" folder, you will need to keep going to find the end files. The files should be in the folder called "Resources". These end files should look like this: 
 
 ![endfiles.png](/tutorials/unique_tav/endfiles.png)
 
