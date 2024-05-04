@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T17:58:27.376Z
+date: 2024-05-04T18:02:58.881Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -163,6 +163,13 @@ Navigate to where  you saved the folder and select it
 Now you should see the `MYSEMOD` folder in your editor. This is your workspace.
 
 ![](https://lh7-us.googleusercontent.com/ZTy0cD3-wymnkpEj99udh1241KM3oJA2nYy0WmwXiIT-Rz6IxFbFdDLKwXsxWppM-MdtATFrNvCieQvlG8KijOWSV7Wyzw0klGSYZx5XVLvxbFkaeSG6JrGDPMYzeRvDKyb6Vg8u8S1BiepaZcitoBw)
+
+
+> If you are planning on using this workspace as a template for a mod you want to publish
+> you want to change the names and handle uuid in the `meta.lsx` file.
+> More information in [Dev Environment Set-up](https://wiki.bg3.community/Tutorials/General/setting-up-a-dev-environment)
+{.is-info}
+
 
 ### 3.2 Installing Extensions
 
