@@ -2,13 +2,13 @@
 title: ImGui Logic Lab
 description: Handling ImGui Component Logic
 published: false
-date: 2024-05-04T12:54:28.697Z
+date: 2024-05-04T13:20:42.782Z
 tags: script-extender, script extender, imgui, ui, interface, scriptextender, buttons, logic, components, dear imgui
 editor: markdown
 dateCreated: 2024-05-04T12:54:28.697Z
 ---
 
-# **Dear ImGui**
+# **Dear ImGui - Logic Lab**
 
 This multi-part tutorial covers the integration of ImGui using ScriptExtender.
 - Part 1 covers: [Setup, First Steps and general creation of ImGui objects.](/Tutorials/ScriptExtender/ImGui-and-You/Dear-ImGui)
@@ -21,7 +21,7 @@ This multi-part tutorial covers the integration of ImGui using ScriptExtender.
 > - This tutorial expects of you to have some basic understanding on working with ScriptExtender. 
 > - If you don't have any knowledge about ScriptExtender please do visit the introductory pages first: ["Getting Started with Script Extender"](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted)
 > - This Tutorial will get into parts of OOP (Object-Oriented-Programming). If you are not familiar with it, please visit ["The Basics of LUA"](https://wiki.bg3.community/Tutorials/ScriptExtender/the_basics_of_lua#h-10-a-brief-introduction-to-metatables) (A brief introduction to Metatables)
->> - This tutorial is meant to be read from top to bottom since it is explained as you go along with it. New topics build upon those before, so if you skip ahead, some stuff might not make sense to you. Its not going to give you fish, it will teach you how to fish.
+>> - This tutorial is meant to be read from top to bottom, since it is explained as you go along with it. New topics build upon those before, so if you skip ahead, some stuff might not make sense to you. Its not going to give you fish, it will teach you how to fish.
 {.is-warning}
 
 
@@ -61,8 +61,8 @@ But to move on, we still have a bunch of other things to cover.
 
 ### **1.2\. OnChange**
 
-OnChange is a bit different to OnClick, as it is used in ImGui objects like a Checkmark .
-Instead of a trigger, its a toggle.
+OnChange is a bit different to OnClick, as it is used in ImGui objects which you can register a change on, like a checkmark, sliders or a colorpicker.
+For checkmarks, whenever you click it, it gets checked and unchecked, this is a change we can register.
 
 ```lua
 MyCheckmark.OnChange = function()
@@ -70,9 +70,31 @@ MyCheckmark.OnChange = function()
 end
 ```
 
-This now triggers whenever there is a change, so everytime you click it, since it always switches from checked to not checked and vice versa.
-To actually make a toggle out of this, we have to make use of the second component of the 
+This now triggers whenever there is a change.
+To actually make a toggle out of this, we have to make use of the second component of the ExtuiCheckmark class, called ``Checked``
 
+```lua
+MyCheckmark.OnChange = function()
+	  print("Change registered!")
+    if MyCheckmark.Checked == true then
+        print("Checked")
+    else
+        print("Unchecked")
+    end
+end
+```
+
+Now you have a checkmark thats actually a toggle.
+
+
+
+---
+---
+---
+--- everything under here is just for me to copypaste for formating
+---
+---
+---
 
 
 
