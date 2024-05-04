@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T03:21:35.806Z
+date: 2024-05-04T03:30:40.232Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -308,10 +308,25 @@ Most of the time, Body Tattoo's will come ready with a "Generated" folder to put
 
 For example, Unique Tav's own optional file "Tattoo varient" does not come with a "Generated" folder, but rather each individual tattoo in their own folder. 
 
-You need to do as above, download and extract the body tattoo you wish.
+You need to do as above, download and extract the body tattoo you wish. Then find the end file from the mod you downloaded: 
 
+![bodytattoo.png](/tutorials/unique_tav/bodytattoo.png)
 
+Then you find the Unique Tav folder where the body tattoo's are placed: 
+`\SteamLibrary\steamapps\common\Baldurs Gate 3\Data\Generated\Public\Shared\Assets\unique_tav\BODY\TATTOO`
 
+![utbodytattopng.png](/tutorials/unique_tav/utbodytattopng.png)
+
+No need to rename the file, as all body tattoo's automatically should be named the same. 
+So all you need to do, is to drag the downloaded body tattoo into Unique Tav's folder "TATTOO": 
+
+![utbodytattoomove.png](/tutorials/unique_tav/utbodytattoomove.png)
+
+You will need to replace again: 
+
+![bodytattooreplace.png](/tutorials/unique_tav/bodytattooreplace.png)
+
+When you have done so, you have successfully changed the body tattoo. 
 
 ## How to make other loose file mods compatible with Unique Tav 
 
