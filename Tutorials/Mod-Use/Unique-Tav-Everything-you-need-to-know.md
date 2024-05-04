@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:38:41.276Z
+date: 2024-05-04T21:39:38.599Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -31,7 +31,7 @@ As this is going to be a big guide, here are the things it will cover:
 	- [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-for-unique-tav)
 1. [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
 1. [General usage such as changing tattoo colors](#general-usage-such-as-changing-tattoo-colors)
-1. [Other information](#other-information)
+1. [Other guides and credits](#other-guides-and-credits)
 
 ## How to install unique Tav
 Installing unique Tav, it is recommended to not use Vortex but use BG3MM and install the data part as a loose file mod, simply because of how complex this mod is. If you use Vortex, install the pak file as normal and then follow [How to install the Data main file](#how-to-install-the-data-main-file)
@@ -496,4 +496,4 @@ Under these you will see a lot of visual nodes, but you will focus on these thre
                 
 When you have done your edits, remember to save and then pak the file. Replace the pak in your mods folder, save/export order and you should see the effect take place. 
 
-## Other information
+## Other iguides and credits
