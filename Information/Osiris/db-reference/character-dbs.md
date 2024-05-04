@@ -2,7 +2,7 @@
 title: Character DB Reference
 description: Osiris Character DBs
 published: true
-date: 2024-05-02T16:51:41.759Z
+date: 2024-05-04T20:21:47.176Z
 tags: osiris, db, characters, character creation
 editor: markdown
 dateCreated: 2024-05-02T03:08:57.566Z
@@ -31,6 +31,7 @@ The following DBs are ones that relate specifically to Characters.
 |DB_Players|List of registered Player Character IDs|1|Character UUID|--|--|--|--|
 |DB_Avatars|List of registered Player Avatar Character IDs|1|Character UUID|--|--|--|--|
 |DB_PartyMembers|List of registered Party Member Character IDs|1|Character UUID|--|--|--|--|
+|DB_HiddenCharacters|?|2|Character UUID|?|--|--|--|
 |DB_PredefinePartyPreset_Loaded|?|?|--|--|--|--|--|
 |DB_Following|Character that is following|2|Character UUID|?|--|--|--|
 |DB_CantAct|Character can perform actions|1|CCharacter UUID|--|--|--|--|
