@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T04:38:56.907Z
+date: 2024-05-04T04:40:47.872Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -375,7 +375,7 @@ Under these you will see a lot of visual nodes, but you will focus on these thre
 									<attribute id="Value" type="float" value="0" />
 								</node>
 
-"Reflectence" controls the intensity. If you have it at 0, it will not be enabled and not be metallic. More than 0 enables it. From 0-2 controls how intense the metallicness will be.
+"Reflectance" controls the intensity. If you have it at 0, it will not be enabled and not be metallic. More than 0 enables it. From 0-2 controls how intense the metallicness will be.
 
 								<node id="ScalarParameters">
 									<attribute id="Color" type="bool" value="False" />
