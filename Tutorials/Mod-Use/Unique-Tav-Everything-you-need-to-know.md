@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:19:51.265Z
+date: 2024-05-04T21:22:34.469Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -32,7 +32,7 @@ As this is going to be a big guide, here are the things it will cover:
 1. [Other information](#other-information)
 
 ## How to install unique Tav
-Installing unique Tav, it is recommended to not use Vortex but use BG3MM and install the data part as a loose file mod, simply because of how complex this mod is. If you use Vortex, install the pak file as normal and then follow [how to install the data main file](#how-to-install-the-data-main-file-in-unique-tav).
+Installing unique Tav, it is recommended to not use Vortex but use BG3MM and install the data part as a loose file mod, simply because of how complex this mod is. If you use Vortex, install the pak file as normal and then follow [How to install the Data main file](#how-to-install-the-data-main-file)
 
 The first thing you need to do is go to [Unique Tav's mod page](https://www.nexusmods.com/baldursgate3/mods/2754) and download both main files.
 You will also need [Trips' Old Shader Pack](https://www.nexusmods.com/baldursgate3/mods/4752).
