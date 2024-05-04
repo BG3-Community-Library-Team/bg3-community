@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T04:33:41.329Z
+date: 2024-05-04T04:35:09.499Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -384,6 +384,8 @@ Under these you will see a lot of visual nodes, but you will focus on these thre
 									<attribute id="Parameter" type="FixedString" value="Reflectance" />
 									<attribute id="Value" type="float" value="0.6" />
 								</node>
+                
+When you have done your edits, remember to save and then pak the file. Replace the pak in your mods folder, save/export order and you should see the effect take place. 
 
 ## Common issues, user errors and how to fix them
 
