@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-05-04T22:06:24.535Z
+date: 2024-05-04T22:07:45.676Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -22,8 +22,8 @@ This is part 2 of the guide "How to install Mods in BG3".
 
 ## 1. Find the mod you wish to install
 
-Best website for mods is nexus. 
-You will find a wide varity on there: https://www.nexusmods.com/baldursgate3
+Best website for mods is [Nexus](https://www.nexusmods.com/baldursgate3)
+You will find a wide varity on there.
 
 You will need an account to download the mods, so make one before you move on with the guide. 
 If you have one, log in so you can download the mods. 
