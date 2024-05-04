@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T00:29:13.603Z
+date: 2024-05-04T00:34:32.970Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -32,7 +32,6 @@ As this is going to be a big guide, here are the things it will cover:
 
 
 ## How to install unique Tav
-
 Installing unique Tav, it is recommended to not use Vortex but use BG3MM and install the data part as a loose file mod, simply because of how complex this mod is. If you use Vortex, install the pak file as normal and then follow [how to install the data main file](#how-to-install-the-data-main-file-in-unique-tav).
 
 The first thing you need to do is go to [Unique Tav's mod page](https://www.nexusmods.com/baldursgate3/mods/2754) and download both main files.
@@ -51,12 +50,14 @@ If you do not know how to install a pak file, follow the guide on [How-to-Instal
 
 If in Vortex, remember to deploy and fix the load order after according to the guide below.
 
-> Trips' Old Shader pack will be in the overrides section of BG3MM and likely locked in Vortex. 
-> Leave those there. Everytime BG3MM puts a mod in the overrides, it is for a reson and that is because they override base game files. 
-> As Trips' Old Shaderpack is also brown and an override, you cannot disable/make it inactive without deleting it from your mods folder (`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`)
-{.is-info}
-
 #### Load order in BG3MM/Vortex
+
+Trips' Old Shader pack will be in the overrides section of BG3MM and likely locked in Vortex. 
+Leave those there. Everytime BG3MM puts a mod in the overrides, it is for a reson and that is because they override base game files. As Trips' Old Shaderpack is also brown and an override, you cannot disable/make it inactive without deleting it from your mods folder (`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`)
+
+It should look something like this in BG3MM: 
+
+![tripsshaders.png](/tutorials/unique_tav/tripsshaders.png)
 
 Unique Tav should be relatively low on your load order, which means it should be below any heads and cosmetic mods you may have, but above any patches you may have. Technically it can be below any patches you have, but this way it makes sure the patches override Unique Tav if any of them have to. The lower a mod is on the load order, the more it will override if it can override some of the above mods.
 
@@ -109,4 +110,6 @@ So all in all for Unique tav with Eyes of Beholder and Glow eyes, low on your lo
 {.is-warning}
 
 #### How to install the Data main file
+
+
   
