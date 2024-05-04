@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T20:57:24.146Z
+date: 2024-05-04T20:58:57.203Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -14,7 +14,7 @@ This is a guide that will cover all of [Unique Tav](https://www.nexusmods.com/ba
 What is Unique Tav? Unique Tav is a mod that functions as a tool for a lot of mod users and mod creators, where they can customize their character a lot more than you would have been able to in vanilla BG3. For example you need unique tav for body tattoo's.
 
 If you are a beginner to modding BG3, it is recommended you stick with the beginning of this guide. 
-The beginning is how to install unique tav and compatbility. 
+The beginning is how to install unique tav, compatiblity and common errors. 
 
 If you are an experienced user, there will be a lot of useful information in this guide, however take a look at [Kartoffel's YouTube Video](https://www.youtube.com/watch?v=g67eTrz9fWg) about Unique Tav.
 
@@ -24,11 +24,11 @@ As this is going to be a big guide, here are the things it will cover:
   	- [Load order in BG3MM/Vortex](#load-order-in-bg3mm/vortex)
   	- [How to install the Data main file](#how-to-install-the-data-main-file)
 1. [Compatibility](#compatibility)
+1. [Common issues, user errors and how to fix them](#common-issues,-user-errors-and-how-to-fix-them)
 1. [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods)
 	- [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-forunique-tav)
 1. [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
 1. [General usage such as changing tattoo colors](#general-usage-such-as-changing-tattoo-colors)
-1. [Common issues, user errors and how to fix them](#common-issues,-user-errors-and-how-to-fix-them)
 1. [Other information](#other-information)
 
 
@@ -210,6 +210,7 @@ How to do that can be found in this section: [How to make other loose file mods 
 > For users, this will look like the same mod, however internally they handle things differently. (See mod description of Kaz Virtual Tav - Custom Appearance System)
 {.is-info}
 
+## Common issues, user errors and how to fix them
 
 ## How to switch tattoo and makeup mods 
 
@@ -466,7 +467,5 @@ Under these you will see a lot of visual nodes, but you will focus on these thre
 								</node>
                 
 When you have done your edits, remember to save and then pak the file. Replace the pak in your mods folder, save/export order and you should see the effect take place. 
-
-## Common issues, user errors and how to fix them
 
 ## Other information
