@@ -2,7 +2,7 @@
 title: Combat DB Reference
 description: Osiris DBs relating to Combat
 published: true
-date: 2024-05-02T16:31:11.451Z
+date: 2024-05-04T20:12:59.034Z
 tags: osiris, db, dbs, combat
 editor: markdown
 dateCreated: 2024-05-02T03:11:16.182Z
@@ -12,6 +12,13 @@ dateCreated: 2024-05-02T03:11:16.182Z
 The following DBs are ones that relate specifically to Combat.
 
 # {.tabset}
+## Globals
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_GLO_CombatFirstTurnStarted|?|1|?|--|--|--|--|
+|DB_GLO_Combat_TemporaryHostile|?|1|UUID|--|--|--|--|
+|DB_GLO_Combat_PermanentlyHostile|?|1|UUID|--|--|--|--|
+
 ## Combat
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
@@ -31,10 +38,8 @@ The following DBs are ones that relate specifically to Combat.
 |DB_CMB_RoundCounter|?|2|UUID|Integer|--|--|--|
 |DB_Downed|List of Downed Characters|1|Character UUID|--|--|--|--|
 |DB_CantTalk_IgnoreStatusesCombat|?|1|UUID|--|--|--|--|
-|DB_GLO_CombatFirstTurnStarted|?|1|?|--|--|--|--|
-|DB_GLO_Combat_TemporaryHostile|?|1|UUID|--|--|--|--|
-|DB_GLO_Combat_PermanentlyHostile|?|1|UUID|--|--|--|--|
 |DB_EnterCombatRequested|?|1|UUID String|--|--|--|--|
+|DB_CombatReact_AD_OnTurn|?|3|UUID|UUID|Integer|--|--|
 
 ## Query Returns
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
