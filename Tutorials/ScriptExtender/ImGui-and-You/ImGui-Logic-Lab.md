@@ -2,7 +2,7 @@
 title: ImGui Logic Lab
 description: Handling ImGui Component Logic
 published: false
-date: 2024-05-04T13:23:19.466Z
+date: 2024-05-04T15:42:16.466Z
 tags: script-extender, script extender, imgui, ui, interface, scriptextender, buttons, logic, components, dear imgui
 editor: markdown
 dateCreated: 2024-05-04T12:54:28.697Z
@@ -86,6 +86,27 @@ end
 
 Now you have a checkmark thats actually a toggle.
 
+If it were a slider we can actually check for a value:
+```lua
+MySlider.OnChange = function()
+	_P("Slider value: " .. MySlider.Value)
+end
+```
+
+This will print the sliders value on every change to it.
+
+## 2\. Advanced Logic to manipulate other objects
+
+Now that you are able to create buttons and other stuff to interact with, we can do a little bit more than before!
+
+In this section we go into a few of those to learn about how you can make ImGui objects interact with each other.
+
+### **2.1\. Changing values**
+
+Values of objects can range from there only strings being allowed to integers to full on tables.
+Whats allowed on a specific object you are working with, you got to check via the ExtIdeHelpers.lua file.
+
+As a small introduction to it, lets say we we create a button that changes the name of another.
 
 
 ---
