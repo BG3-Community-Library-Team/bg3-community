@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:39:38.599Z
+date: 2024-05-04T21:40:31.224Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -496,4 +496,4 @@ Under these you will see a lot of visual nodes, but you will focus on these thre
                 
 When you have done your edits, remember to save and then pak the file. Replace the pak in your mods folder, save/export order and you should see the effect take place. 
 
-## Other iguides and credits
+## Other guides and credits
