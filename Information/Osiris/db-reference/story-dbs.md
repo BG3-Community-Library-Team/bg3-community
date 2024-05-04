@@ -2,7 +2,7 @@
 title: Story DB Reference
 description: Osiris DBs that relate to Story Content
 published: true
-date: 2024-05-04T20:36:25.653Z
+date: 2024-05-04T20:38:37.659Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:35:51.588Z
@@ -41,6 +41,8 @@ The following DBs relate to the Story.
 |-----|----|----|----|----|----|----|----|
 |DB_GLO_Absolute_Entails|?|2|Flag UUID|Flag UUID|--|--|--|
 |DB_GLO_Absolute_TrueSoul|Character IDs that are True Souls|1|Character UUID|--|--|--|--|
+|DB_Act1a_MainQuestFallback_BlockTeleport|?|1|String ID|--|--|--|--|
+|DB_Act1a_MainQuestFallback_MizoraIntroTriggers|?|1|Flag ID|--|--|--|--|
 |DB_MOO_Bazaar_Pilgrims|?|3|Character UUID|String ID|?|--|--|
 |DB_MOO_InfernalVendor_AddingTemplateToPlayer|?|2|Item ID|Character UUID|--|--|--|
 |DB_GLO_BloodElixirs_BloodDrawTarget|?|3|String UUID|Character UUID|?|--|--|
