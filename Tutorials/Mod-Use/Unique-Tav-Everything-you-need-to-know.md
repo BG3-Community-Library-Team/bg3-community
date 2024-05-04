@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-03T23:56:38.355Z
+date: 2024-05-03T23:59:59.171Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -51,10 +51,12 @@ If in Vortex, remember to deploy and fix the load order after according to the g
 #### Load order in BG3MM/Vortex
 
 Unique Tav should be relatively low on your load order, but above any patches you have.
+Low means the higher number in both Vortex and BG3MM. 
+Higher on the load order means the lowest number in BG3MM and Vortex.
 
 For example like this: 
 
-
+![uniquetavloadorder.png](/tutorials/unique_tav/uniquetavloadorder.png)
 
 If you are using other mods such as [Eyes of Beholder](https://www.nexusmods.com/baldursgate3/mods/315) or [Astralities' Glow Eyes](https://www.nexusmods.com/baldursgate3/mods/4964) you will need to have a certain load order. The load order is found at the bottom of Unique Tav's description, however it will be posted here as well.
 
