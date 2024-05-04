@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T01:55:18.684Z
+date: 2024-05-04T01:55:54.051Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -29,7 +29,7 @@ As this is going to be a big guide, here are the things it will cover:
 1. [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
 1. [General usage such as changing tattoo colors](#general-usage-such-as-changing-tattoo-colors)
 1. [Common issues, user errors and how to fix them](#common-issues,-user-errors-and-how-to-fix-them)
-1. [Other information](#common-information)
+1. [Other information](#other-information)
 
 
 ## How to install unique Tav
