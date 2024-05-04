@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:32:24.282Z
+date: 2024-05-04T21:33:42.797Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -21,7 +21,7 @@ If you are an experienced user, there will be a lot of useful information in thi
 As this is going to be a big guide, here are the things it will cover:
 1. [How to install Unique Tav](#how-to-install-unique-tav)
 	- [How to install the Pak file](#how-to-install-the-pak-main-file)
-  	- [Load order in BG3MM/Vortex](#load-order-in-bg3mm/vortex)
+  	- [Load order in BG3MM and Vortex](#load-order-in-bg3mm-and-vortex)
   	- [How to install the Data main file](#how-to-install-the-data-main-file)
 1. [Compatibility](#compatibility)
 1. [Common issues and how to fix them](#common-issues-and-how-to-fix-them)
@@ -50,7 +50,7 @@ If you do not know how to install a pak file, follow the guide on [How-to-Instal
 
 If in Vortex, remember to deploy and fix the load order after according to the guide below.
 
-## Load order in BG3MM/Vortex
+## Load order in BG3MM and Vortex
 
 Trips' Old Shader pack will be in the overrides section of BG3MM and likely locked in Vortex. 
 Leave those there. Everytime BG3MM puts a mod in the overrides, it is for a reson and that is because they override base game files. As Trips' Old Shaderpack is also brown and an override, you cannot disable/make it inactive without deleting it from your mods folder (`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`)
