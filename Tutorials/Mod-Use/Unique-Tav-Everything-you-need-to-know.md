@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T02:49:00.461Z
+date: 2024-05-04T03:09:52.040Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -254,7 +254,7 @@ Remember: you can only have one face tattoo and one body tattoo, not two at the 
 
 How to view file extension on Windows 11: 
 
-![fileextension.png](/tutorials/fileextension.png =x600)
+![fileextension.png](/tutorials/fileextension.png =x500)
 
 #### Makeup, face tattoo mods
 
@@ -267,6 +267,40 @@ You will do the exact same as above: download, extract the mod in your downloads
 Now you need to find the Unique Tav version of these files. 
 Go into your Data folder, then "Generated". 
 Follow this path: `\SteamLibrary\steamapps\common\Baldurs Gate 3\Data\Generated\Public\Shared\Assets\unique_tav\FACE`
+
+You should see three files: 
+
+![facetattoo.png](/tutorials/unique_tav/facetattoo.png)
+
+You will now need to replace some names and file extensions. 
+
+First you copy Unique Tav's version of the face tatto (`Skin_Atlas_Head_SHR_Tattoo_A_MSK.DDS`) and replace the name on the newly downloaded face tattoo in your downloads folder. 
+
+For example CovenElf's (or the mod you downloaded) face tattoo goes from: `Skin_Atlas_Head_SHR_Tattoo_A_MSK1.dds` to `Skin_Atlas_Head_SHR_Tattoo_A_MSK.DDS`
+
+When you have renamed the new version to Unique Tav's version, drag the renamed file into the Unique Tav's "FACE" folder: 
+
+![renameandreplace.png](/tutorials/unique_tav/renameandreplace.png)
+
+After this, you will need to replace the file: 
+
+![sayyestoreplace.png](/tutorials/unique_tav/sayyestoreplace.png)
+
+Now you do the same with the makeup mod, So the file name goes from: `Skin_Atlas_Head_SHR_Makeup_A_MSK2.dds` to `Skin_Atlas_Head_SHR_Makeup_A_MSK.DDS`
+
+Drag the newly renamed file into Unique Tav's "FACE" folder: 
+
+![makeupreplacee.png](/tutorials/unique_tav/makeupreplacee.png)
+
+And then you say yes to replace again: 
+
+![sayyestoreplace.png](/tutorials/unique_tav/sayyestoreplace.png)
+
+When you have done this, you're good to go and have installed the new MakeUp or Face Tattoo mod. 
+
+> Make sure you replace the last .dds with .DDS as otherwise Unique Tav will not be able to properly use it. 
+{.is-info}
+
 
 #### Body tattoo's that does not have the folder "Generated"
 
