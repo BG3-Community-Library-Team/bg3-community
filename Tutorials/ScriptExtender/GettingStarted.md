@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T17:04:16.080Z
+date: 2024-05-04T17:05:01.422Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -77,7 +77,7 @@ _P(“Hello World”)
 ![](https://lh7-us.googleusercontent.com/ktFR5G6vYetJeqyVYLznc8tmizLM-JMHag7C4esUa-aunS3F9hQsMYGYf9taLyHrsekRm-eS6f6cGGpcXINdu3q4ml7oopyIWRobEqSygFEXZigJZ5TjH7_D9BWZ-bshPhNVE9gKX2DRtWajxHckLDU)
 
 
-**2\. Add an item to your inventory:**
+**2\. Add an item to your inventory - Here: 10 Bars of Soap:**
 
 ` TemplateAddTo("d32a68ff-3b6a-4d83-b0c4-0a2c44b93ea9", GetHostCharacter(), 10) `
 
