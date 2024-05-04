@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: true
-date: 2024-05-04T21:53:52.887Z
+date: 2024-05-04T21:54:18.493Z
 tags: se, script-extender, guide, installation, console, enable-console, devel
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -221,7 +221,8 @@ Mod fixer also prevents the issue of not being able to talk or interact with any
 Yes but no. It is a complicated issue but Mod fixer is very essential but it is best used with SE. 
 
 ## Other relevant guides and credits:
-[Getting Started with SE for mod creation](/Tutorials/ScriptExtender/GettingStarted)
+- [Getting Started with SE for mod creation](/Tutorials/ScriptExtender/GettingStarted)
+- SE Fresh Install (On-To-Do)
 
 How to install BG3MM, pak files and loose/manual mods series: 
 - [Part 1: Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
