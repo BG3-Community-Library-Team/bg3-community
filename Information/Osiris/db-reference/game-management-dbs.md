@@ -2,7 +2,7 @@
 title: Utility DB Reference
 description: DBs that seem to be more for general utility
 published: true
-date: 2024-05-02T16:36:40.041Z
+date: 2024-05-04T20:09:06.554Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:28:42.073Z
@@ -14,6 +14,7 @@ dateCreated: 2024-05-02T16:28:42.073Z
 ## Utility
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
+|DB_OnlyOnce|?|1|String Flag ID|--|--|--|--|
 |DB_StoryReloaded|?|1|Integer as Boolean|--|--|--|--|
 |DB_NOOP|Hacky Osiris solution to dumb things|1|Integer|--|--|--|--|
 |DB_InternalGroup_Count|?|1|Integer|--|--|--|--|
