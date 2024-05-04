@@ -2,7 +2,7 @@
 title: Location DB Reference
 description: Osiris DBs that relate to Locations
 published: true
-date: 2024-05-04T20:43:38.499Z
+date: 2024-05-04T20:51:46.276Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:33:41.366Z
@@ -21,6 +21,7 @@ The following DBs are ones that relate to Location.
 |DB_WaypointInfo|?|4|?|?|?|?|--|
 |DB_WaypointUnlocked|List of Unlocked Waypoints|2|?|Character UUID|--|--|--|
 |DB_BlockedWaypointZone|List of Blocked Waypoints|1|Region String|--|--|--|--|
+|DB_GLO_LevelSwap_Blocked|?|1|String|--|--|--|--|
 
 ## Buried Treasures
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
