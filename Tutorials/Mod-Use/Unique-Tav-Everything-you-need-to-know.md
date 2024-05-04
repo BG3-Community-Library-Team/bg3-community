@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2024-05-04T22:16:16.329Z
+date: 2024-05-04T22:16:57.411Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -506,7 +506,7 @@ When you have done your edits, remember to save and then pak the file. Replace t
 How to install BG3MM, pak files and loose/manual mods series: 
 - [Part 1: Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
 - [Part 2: How to Install Pak Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
-- [Part 3: How-to install manual or loose file-mods](/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods)
+- [Part 3: How to install manual or loose file-mods](/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods)
 
 Other relevant guides: 
 - [General load order guide](/Tutorials/Mod-Use/general-load-order)
