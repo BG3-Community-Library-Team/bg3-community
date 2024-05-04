@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T11:39:45.271Z
+date: 2024-05-04T13:30:49.077Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -380,6 +380,13 @@ This will reset the console and all loaded scripts, allowing you to see instant 
 
 ![](/tutorials/getting_started_with_se/gswse_20.png)
 
+
+> It has been reported that [Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool) might get stuck during the indexing step 
+> in case symlinked folders are present. 
+> If this is an issue for you, simply remove the symlink and create it again after the indexing is done.
+{.is-info}
+
+
 ## **5\. Creating multiple files**
 
 Whether you created a symlink or not, you can create multiple files in your workspace 
@@ -631,6 +638,7 @@ Credits:
 *Cerberry* for screenshots, ideas and feedback
 *Chip Chocolate, Legendary Muffin for a multitude* of resources and his knowledge
 *ImmortalRD, Schroedingercat and Chip Chocolate, Legendary Muffin* for the [tutorial for Symlinking & Mass File Conversion for hot-testing your mods](https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki)
+*Padme4000* for reporting the conflict between MMT and symlinks
 *simosas* for his millions of useful functions and good company.
 *Skiz* for bravely enduring and suffering through this journey with me
 *BG3 Modding Communiry Discord* for answering my questions
