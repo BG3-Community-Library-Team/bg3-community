@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T01:07:23.094Z
+date: 2024-05-04T01:43:42.935Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -24,12 +24,11 @@ As this is going to be a big guide, here are the things it will cover:
   	- [Load order in BG3MM/Vortex](#load-order-in-bg3mm/vortex)
   	- [How to install the Data main file](#how-to-install-the-data-main-file)
 1. [Compatibility](#compatibility)
-1. How to switch tattoo and makeup mods 
-1. How to make other loose file mods compatible with Unique Tav 
-	- Makeup and tattoo mods that have not been optimised for Unique Tav 
-1. Other loose file mods such as boring tieflings, smooth body etc. 
+1. [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods)
+	- [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-forunique-tav)
+1. [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
 1. General usage such as changing tattoo colors
-1. [Common issues and user errors](#common-issues-and-user-errors)
+1. [Common issues, user errors and how to fix them](#common-issues,-user-errors-and-how-to-fix-them)
 1. Other information
 
 
@@ -44,7 +43,7 @@ You will also need [Trips' Old Shader Pack](https://www.nexusmods.com/baldursgat
 > Mac players will likely have an issue because of Trips' Old Shader Pack but the mod cannot function correctly without it. 
 {.is-warning}
 
-#### How to install the Pak main file
+## How to install the Pak main file
 
 When you have downloaded both Trips' Old Shader Pack and the main pak file from Unique Tav, you will need to import the pak main file and Trips' Old Shaderpack into BG3MM/vortex.
 If in BG3MM, remember to put the mod into the active side and "save/export order". 
@@ -52,7 +51,7 @@ If you do not know how to install a pak file, follow the guide on [How-to-Instal
 
 If in Vortex, remember to deploy and fix the load order after according to the guide below.
 
-#### Load order in BG3MM/Vortex
+## Load order in BG3MM/Vortex
 
 Trips' Old Shader pack will be in the overrides section of BG3MM and likely locked in Vortex. 
 Leave those there. Everytime BG3MM puts a mod in the overrides, it is for a reson and that is because they override base game files. As Trips' Old Shaderpack is also brown and an override, you cannot disable/make it inactive without deleting it from your mods folder (`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`)
@@ -111,8 +110,10 @@ So all in all for Unique tav with Eyes of Beholder and Glow eyes, low on your lo
 > Only one preset from Eyes of beholder at a time as the mod page specifically says the presets will be incompatible with each other. 
 {.is-warning}
 
-#### How to install the Data main file
+## How to install the Data main file
 
+> For this section it is better you install it manually, and follow this section. This is because it can be a bit harder to customize the mod later, and make sure the mod is installed correctly.
+{.is-info}
 
 For this part you will need to find your data folder. Your data folder is located here: `\SteamLibrary\steamapps\common\Baldurs Gate 3\Data`
 
@@ -154,14 +155,64 @@ And then it becomes like this:
 
 When you have done this, installed the pak file and Trips Old Shader Pack, then you have now installed Unique Tav correctly. 
 
-If you have issues then go to [Common issues and user errors](#common-issues-and-user-errors)
+If you have issues then go to [Common issues, user errors and how to fix them](#common-issues,-user-errors-and-how-to-fix-them)
 
-> For this section, it is better you do not use Vortex as this is a mod that can be customized, but you cannot do that as easily if you install it through Vortex. 
+> If your Tav has a blue body, it is because you missed [Trips' Old Shader Pack](https://www.nexusmods.com/baldursgate3/mods/4752)
+{.is-danger}
+
+
+## Compatibility 
+
+A few words about compatibility
+
+- Heads
+
+Heads will need Unique Tav support and Eyes of Beholder support if you use that as well. 
+Most of the modders have different main files of their head mods. You will need to take the one marked clearly for "Unique Tav", or "Unique Tav + Eyes of Beholder" for example: 
+
+![heads.png](/tutorials/unique_tav/heads.png =x400)
+
+Some heads do have built in support for Unique Tav, such as [New Character Creation Presets WIP By Toarie](https://www.nexusmods.com/baldursgate3/mods/205)
+
+You will need to read mod description and posts for compabitility
+
+- Races
+
+Races are not supported by default, and it is something you may need a patch for. 
+There are a few patches on Nexus for Unique Tav, so it will depend on which race you have downloaded. 
+
+- Good mods to have for compatibility with Unique Tav 
+
+A mod that is good, even without Unique Tav is [Patches for CC Mods (Races Hairs Heads Cosmetic and such) by Padme4000](https://www.nexusmods.com/baldursgate3/mods/353)
+
+This mod covers a lot, which is why it is split up in different uploads. Overall it patches different mods so they can be used together without any issues. Remember to read the mod description to get an overview of what it does. 
+
+- Tatto's and makeup 
+
+All tattoo and makeup mods can be compatible with Unique Tav. 
+Some of them have been optimised for Unique tav from the get go by the mod author themselves, however some may not have been optimised for Unique Tav, which in case you will need to look through [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods) and [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-forunique-tav)
+
+
+> However, for now you can only have one makeup, one tattoo and one body tattoo at all times when using Unique Tav.
+> So you cannot install two face tattoo's, you will need to choose one. Same with body and makeup mods.
 {.is-info}
 
-#### Compatibility 
 
-#### Common issues and user errors 
+- Other loose file mods such as Boring Tieflings and smooth body
+
+This is basically the same as above. 
+The mods can be made compatible, but it requires renaming and moving some files around. 
+How to do that can be found in this section: [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
+
+
+
+## How to switch tattoo and makeup mods 
+
+## Makeup and tattoo mods that have not been optimised for Unique Tav 
+
+## How to make other loose file mods compatible with Unique Tav 
+
+## Common issues, user errors and how to fix them
 
 
 
