@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:25:01.403Z
+date: 2024-05-04T21:26:34.781Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -24,7 +24,7 @@ As this is going to be a big guide, here are the things it will cover:
   	- [Load order in BG3MM/Vortex](#load-order-in-bg3mm/vortex)
   	- [How to install the Data main file](#how-to-install-the-data-main-file)
 1. [Compatibility](#compatibility)
-1. [Common issues, user errors and how to fix them](#common-issues,-user-errors-and-how-to-fix-them)
+1. [Common issues and how to fix them](#common-issues-and-how-to-fix-them)
 1. [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods)
 	- [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-forunique-tav)
 1. [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
@@ -209,7 +209,7 @@ How to do that can be found in this section: [How to make other loose file mods 
 > For users, this will look like the same mod, however internally they handle things differently. (See mod description of Kaz Virtual Tav - Custom Appearance System)
 {.is-info}
 
-## Common issues, user errors and how to fix them
+## Common issues and how to fix them
 
 #### Invisible body:
 
