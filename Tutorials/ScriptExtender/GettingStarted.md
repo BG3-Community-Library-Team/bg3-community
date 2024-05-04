@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T17:21:18.714Z
+date: 2024-05-04T17:26:43.094Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -213,19 +213,20 @@ This will automatically install this extension.
 Now navigate back to your explorer by clicking `Explorer`.
 You will find a few files here already. 
 
-
-
 ![gswse_explorer.png](/tutorials/getting_started_with_se/gswse_explorer.png)
 
 
 
 Navigate to to `BootstrapServer.lua`
 
+![gswse_bootstrapserver.png](/tutorials/getting_started_with_se/gswse_bootstrapserver.png)
+
+
+To make sure your mod is active in the game, add a print statement that will execute when the game loads.
 
 ![gswse_first_print.png](/tutorials/getting_started_with_se/gswse_first_print.png =600x200)
 
 
-To make sure your mod is active in the game, add a print statement that will execute when the game loads.
 
 Adding this print statement causes Script Extender to execute it upon loading the game, letting us know if the mod is active.
 
