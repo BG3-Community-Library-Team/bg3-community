@@ -2,7 +2,7 @@
 title: Story DB Reference
 description: Osiris DBs that relate to Story Content
 published: true
-date: 2024-05-04T20:35:45.208Z
+date: 2024-05-04T20:36:25.653Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:35:51.588Z
@@ -29,6 +29,7 @@ The following DBs relate to the Story.
 |DB_OnDialogAttackRequested|?|3|Character UUID|Character UUID|Integer|--|--|
 |DB_InteractiveDialogSpeaker|?|2|Integer|?|--|--|--|
 |DB_OriginMayLeaveDialog|?|2|Character ID|Flag ID|--|--|--|
+|DB_Dialogs_StartDatingDialog|?|1|Flag ID|--|--|--|--|
 
 ## Functionality
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
