@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2024-05-04T22:10:37.637Z
+date: 2024-05-04T22:16:16.329Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -53,7 +53,7 @@ You will also need [Trips' Old Shader Pack](https://www.nexusmods.com/baldursgat
 
 When you have downloaded both Trips' Old Shader Pack and the main pak file from Unique Tav, you will need to import the pak main file and Trips' Old Shaderpack into BG3MM/vortex.
 If in BG3MM, remember to put the mod into the active side and "save/export order". 
-If you do not know how to install a pak file, follow the guide on [How-to-Install-Pak-Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
+If you do not know how to install a pak file, follow the guide on [How to Install Pak Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
 
 If in Vortex, remember to deploy and fix the load order after according to the guide below.
 
