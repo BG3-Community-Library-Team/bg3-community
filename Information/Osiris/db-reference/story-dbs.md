@@ -2,7 +2,7 @@
 title: Story DB Reference
 description: Osiris DBs that relate to Story Content
 published: true
-date: 2024-05-04T20:48:36.690Z
+date: 2024-05-04T20:57:12.952Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:35:51.588Z
@@ -31,6 +31,11 @@ The following DBs relate to the Story.
 |DB_OriginMayLeaveDialog|?|2|Character ID|Flag ID|--|--|--|
 |DB_Dialogs_StartDatingDialog|?|1|Flag ID|--|--|--|--|
 |DB_CantTalk|Characters that can't Talk|1|Character UUID|--|--|--|--|
+
+## Durge (Spoilers)
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_Camp_DarkUrge_ButlerDream|?|1|Dialog/Flag ID|--|--|--|--|
 
 ## Functionality
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
