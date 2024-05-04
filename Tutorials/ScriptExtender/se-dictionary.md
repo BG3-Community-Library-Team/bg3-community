@@ -2,7 +2,7 @@
 title: Script Extender Dictionary
 description: Explanations of common words and phrases
 published: false
-date: 2024-05-04T17:38:15.760Z
+date: 2024-05-04T17:41:01.161Z
 tags: script-extender, script extender
 editor: markdown
 dateCreated: 2024-05-04T17:30:47.577Z
