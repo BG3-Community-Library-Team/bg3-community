@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T00:52:53.230Z
+date: 2024-05-04T01:00:01.873Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -114,6 +114,7 @@ So all in all for Unique tav with Eyes of Beholder and Glow eyes, low on your lo
 
 #### How to install the Data main file
 
+
 For this part you will need to find your data folder. Your data folder is located here: `\SteamLibrary\steamapps\common\Baldurs Gate 3\Data`
 
 You can use steam to find the data folder. GOG users will need to find the equivalent to steam folders. 
@@ -144,8 +145,18 @@ Now you need to go one folder deeper in the folder named "Unique tav data", so y
 
 ![generateduniquetav.png](/tutorials/unique_tav/generateduniquetav.png)
 
+When you have found the Generated folder, you will need to drag it into the "Data" folder you found before. 
+Like this: 
+![utmovegenerated.png](/tutorials/unique_tav/utmovegenerated.png)
 
+And then it becomes like this:
 
+![utmovedthegen.png](/tutorials/unique_tav/utmovedthegen.png)
+
+When you have done this, installed the pak file and Trips Old Shader Pack, then you have now installed Unique Tav correctly. 
+
+> For this section, it is better you do not use Vortex as this is a mod that can be customized, but you cannot do that as easily if you install it through Vortex. 
+{.is-info}
 
 
 
