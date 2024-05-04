@@ -2,7 +2,7 @@
 title: Story DB Reference
 description: Osiris DBs that relate to Story Content
 published: true
-date: 2024-05-04T20:02:11.498Z
+date: 2024-05-04T20:07:48.639Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:35:51.588Z
@@ -33,6 +33,9 @@ The following DBs relate to the Story.
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_GLO_BloodElixirs_RacialElixirTemplates|Links Item & Tag ID for reward for giving blood to Araj Oblodra.|3|Tag ID|Item ID|?|--|--|
+|DB_MOO_InfernalVendor_AddingTemplateToPlayer|?|2|Item ID|Character UUID|--|--|--|
+|DB_GLO_BloodElixirs_BloodDrawTarget|?|3|String UUID|Character UUID|?|--|--|
+|DB_MOO_InfernalVendor_CharacterSellBlood|?|1|Character UUID|--|--|--|--|
 
 ## Plot (Spoilers)
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
