@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T04:38:01.902Z
+date: 2024-05-04T04:38:56.907Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -16,7 +16,7 @@ What is Unique Tav? Unique Tav is a mod that functions as a tool for a lot of mo
 If you are a beginner to modding BG3, it is recommended you stick with the beginning of this guide. 
 The beginning is how to install unique tav and compatbility. 
 
-If you are an experienced user, there will be a lot of useful information in this guide, however take a look at [Kartoffel's YouTube Video](https://www.youtube.com/watch?v=g67eTrz9fWg) Unique Tav.
+If you are an experienced user, there will be a lot of useful information in this guide, however take a look at [Kartoffel's YouTube Video](https://www.youtube.com/watch?v=g67eTrz9fWg) about Unique Tav.
 
 As this is going to be a big guide, here are the things it will cover:
 1. [How to install Unique Tav](#how-to-install-unique-tav)
