@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-03T22:35:13.933Z
+date: 2024-05-04T11:39:45.271Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -576,6 +576,14 @@ https://discord.com/channels/98922182746329088/1228009824017453147 (ask for perm
 ## **8\. Advanced Information**
 
 -   IMGUI / Devel stuff?
+
+
+> Done reading? 
+> [Create your first SE Mod with me](https://wiki.bg3.community/Tutorials/ScriptExtender/creating_your_first_se_mod) [TBA]
+{.is-success}
+
+
+
 
 ## 9. Useful Resources
 
