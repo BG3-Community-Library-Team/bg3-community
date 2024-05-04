@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T16:30:01.825Z
+date: 2024-05-04T17:04:16.080Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -70,19 +70,39 @@ Replicate the following steps to familiarize yourself with basic inputs into the
 
 **1\. In the console enter the following command. This will print “Hello World” on the console:**
 
-```plaintext
+`
 _P(“Hello World”)
-```
+`
 
 ![](https://lh7-us.googleusercontent.com/ktFR5G6vYetJeqyVYLznc8tmizLM-JMHag7C4esUa-aunS3F9hQsMYGYf9taLyHrsekRm-eS6f6cGGpcXINdu3q4ml7oopyIWRobEqSygFEXZigJZ5TjH7_D9BWZ-bshPhNVE9gKX2DRtWajxHckLDU)
 
+
+**2\. Add an item to your inventory:**
+
+` TemplateAddTo("d32a68ff-3b6a-4d83-b0c4-0a2c44b93ea9", GetHostCharacter(), 10) `
+
+
+![gswse_tempateadd.png](/tutorials/getting_started_with_se/gswse_tempateadd.png)
+
+> You will not see any print statement this time.
+> Instead check your characters inventory
+{.is-warning}
+
+
+![gswse_pre_soap.png](/tutorials/getting_started_with_se/gswse_pre_soap.png =600x300)
+<div style="margin-left: 250px;"> <span style="font-size: xx-large;">&darr;</span> </div>
+
+![gswse_post_soap.png](/tutorials/getting_started_with_se/gswse_post_soap.png =600x300)
+
 **2\. Get the HostCharacter uuid (the character whose portrait is activated - here: Astarion):**
 
-```plaintext
+`
 _P(Osi.GetHostCharacter())
-```
+`
 
 This will print: *c7c13742-bacd-460a-8f65-f864fe41f255* to your console
+
+You will need this command quite often to easily access your character so it's useful to keep it in mind!
 
 ![](https://lh7-us.googleusercontent.com/Ef3BwIjlS_T-hgQ3qzfhPUYihqQQoupRColMLaKHZHrTIasa2IBKtdXTBW-trPKG1xya76MIC6WPoAPPNKF4fCaWYO1oKyRC_Y9cut3Rp84lQWDmJYW19hpNEWoAFOCctj5QADY-NQKbgLX12PN30gw)
 
