@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T00:25:52.974Z
+date: 2024-05-04T00:29:13.603Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -58,7 +58,8 @@ If in Vortex, remember to deploy and fix the load order after according to the g
 
 #### Load order in BG3MM/Vortex
 
-Unique Tav should be relatively low on your load order, which means it should be below any heads and cosmetic mods you may have, but above any patches you may have.
+Unique Tav should be relatively low on your load order, which means it should be below any heads and cosmetic mods you may have, but above any patches you may have. Technically it can be below any patches you have, but this way it makes sure the patches override Unique Tav if any of them have to. The lower a mod is on the load order, the more it will override if it can override some of the above mods.
+
 Low means the higher number in both Vortex and BG3MM. 
 Higher on the load order means the lowest number in BG3MM and Vortex.
 
@@ -86,9 +87,7 @@ The load order has It would look something like this:
 
 ![eyesofbeholder.png](/tutorials/unique_tav/eyesofbeholder.png =x120)
 
-This example has Eyes of Beholder, but it will be the exact same load order just with Glow eyes patch from Unique Tav and Glow eyes main file and preset from Glow eyes. 
-
-Example with Astralities' Glow Eyes and Unique Tav patches: 
+This example has Eyes of Beholder, but it will be the exact same load order just with Glow eyes patch from Unique Tav and just without a preset from Glow eyes. It should look something like this:
 
 ![gloweyesloadoeder.png](/tutorials/unique_tav/gloweyesloadoeder.png =x110)
 
@@ -108,8 +107,6 @@ So all in all for Unique tav with Eyes of Beholder and Glow eyes, low on your lo
 > Remember Astralities' Glow Eyes and Eyes of Beholder are incompatible. They will override each other, so you will need to choose one or the other, and not both. 
 > Only one preset from Eyes of beholder at a time as the mod page specifically says the presets will be incompatible with each other. 
 {.is-warning}
-
-
 
 #### How to install the Data main file
   
