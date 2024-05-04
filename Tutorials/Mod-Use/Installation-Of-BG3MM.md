@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: true
-date: 2024-05-02T19:20:56.068Z
+date: 2024-05-04T22:09:31.657Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -13,9 +13,9 @@ dateCreated: 2024-04-25T01:54:07.278Z
 
 This guide will be split up in 3 parts to make it easier:
 
-1. How to set up BG3MM (this guide)
-2. How to install Mods (Pak files): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files
-3. How to install manual/loose file mods (mods that do not come as .pak file but as folders): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
+- [Part 1: Installation Of BG3MM (this guide)](/Tutorials/Mod-Use/Installation-Of-BG3MM) 
+- [Part 2: How to Install Pak Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
+- [Part 3: How-to install manual or loose file-mods](/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods)
 
 > *This is a guide meant for Windows steam users and BG3MM. However, GOG users can use this guide as well; they just need to find the GOG equivalent of the Steam paths.*
 {.is-info}
@@ -148,17 +148,17 @@ Example: C:\SteamLibrary\steamapps\common\Baldurs Gate 3\Data
 
 ## Other guides:
 
-Now BG3MM is set up correctly, continue to the other 2 parts of this guide
-Part 2: How to install mods (Pak Files): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files
-Part 3: How to install manual/loose file mods (mods that are not pak files): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
+How to install BG3MM, pak files and loose/manual mods series: 
+- [Part 1: Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
+- [Part 2: How to Install Pak Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
+- [Part 3: How-to install manual or loose file-mods](/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods)
 
-And other relevant guides: 
-How to remove mods from BG3 (Troubleshooting guide): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods
-General Load order guide: https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order
-How to install Script Extender: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender
-Clean reinstall of Script Extender: To-Do
-How to install Native Mod Loader,WASD movement, Native Camera etc: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
-How to install Unique Tav: To-Do
+Other relevant guides: 
+- [General load order guide](/Tutorials/Mod-Use/general-load-order)
+- [Unique Tav & Everything you need to know](/Tutorials/Mod-Use/Unique-Tav-Everything-you-need-to-know)
+- [How to remove mods/troubleshooting guide](/Tutorials/Mod-Use/How-to-remove-mods)
+- [How to install Script Extender](/Tutorials/Mod-Use/How-to-install-Script-Extender)
+- SE Fresh Install (On-To-Do)
 
 
 Made by: Maze 
