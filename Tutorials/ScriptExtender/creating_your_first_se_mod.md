@@ -2,7 +2,7 @@
 title: Creating your first SE Mod
 description: A follow along tutorial for creating your first Script Extender Mod that stops companions from returning to their tent when in camp. Optional toggleable version
 published: false
-date: 2024-05-04T11:31:03.361Z
+date: 2024-05-04T11:36:17.136Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T14:54:45.494Z
@@ -41,11 +41,16 @@ This tutorial is based on **Alithea Ancunín's** implementation of [Please Stay]
 
 ## 3. Writing the code
 
+### 3.1 Defining your Constants
+
 ```lua
 -- variables
 
 FLAG_IN_CAMP = "161b7223-039d-4ebe-986f-1dcd9a66733f"
 ```
+
+### 3.2 Writing your Methods
+
 
 ```lua
 -- methods
@@ -71,6 +76,7 @@ end
 
 ```
 
+### 3.3 Making your Code Event-driven
 
 
 ## 4. Interdiscipline: Using stats file in conjunction with SE
@@ -127,7 +133,11 @@ data "ToggleOffFunctors" "RemoveStatus(STAY_STILL_STATUS)"
 
 
 
-### 4.4 Using SE to Handle the Stats
+## 5. Using SE to Handle the Stats
+
+
+
+### 5.1 Adding the Passives to the Party
 
 
 ```lua
@@ -141,6 +151,7 @@ function addPassive(character, passive)
 end
 
 ```
+
 
 ```lua
 
@@ -166,6 +177,10 @@ end)
 
 ```
 
+### 5.2 Responding to the Passive being Toggled On
+
+
+
 
 ```lua
 -- Stops the partymember from moving if "Stay Still" is activated and they are teleported to camp
@@ -180,7 +195,6 @@ end)
 
 ```
 
-
 ```lua
 
 -- Stops the partymember from moving if "Stay Still" is activated and they are already in camp
@@ -191,6 +205,10 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(character, sta
 end)
 
 ```
+
+### 5.3 Responding to the Passive being Toggled Off
+
+
 
 
 ```lua
