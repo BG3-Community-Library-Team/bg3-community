@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T17:55:06.662Z
+date: 2024-05-04T17:58:27.376Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -655,7 +655,7 @@ Utils file:
 
 Credits: 
 
-*Alithea Ancunín* for screenshots, writing and proofreading 
+[*Alithea Ancunín*](https://next.nexusmods.com/profile/AlitheaAncunin/about-me) for screenshots, writing and proofreading 
 *Cerberry* for screenshots, ideas and feedback
 *Chip Chocolate, Legendary Muffin for a multitude* of resources and his knowledge
 *ImmortalRD, Schroedingercat and Chip Chocolate, Legendary Muffin* for the [tutorial for Symlinking & Mass File Conversion for hot-testing your mods](https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki)
