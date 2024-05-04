@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T17:18:49.814Z
+date: 2024-05-04T17:21:18.714Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -159,7 +159,8 @@ Navigate to where  you saved the folder and select it
 
 ![gswe_open_file_2.png](/tutorials/getting_started_with_se/gswe_open_file_2.png)
 
-Now you should see your workspace.
+
+Now you should see the `MYSEMOD` folder in your editor. This is your workspace.
 
 ![](https://lh7-us.googleusercontent.com/ZTy0cD3-wymnkpEj99udh1241KM3oJA2nYy0WmwXiIT-Rz6IxFbFdDLKwXsxWppM-MdtATFrNvCieQvlG8KijOWSV7Wyzw0klGSYZx5XVLvxbFkaeSG6JrGDPMYzeRvDKyb6Vg8u8S1BiepaZcitoBw)
 
