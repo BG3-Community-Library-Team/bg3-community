@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2024-05-04T22:25:54.439Z
+date: 2024-05-04T23:17:45.247Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -189,7 +189,7 @@ You will need to read mod description and posts for compabitility
 
 Modded races are not supported by default, and it is something you may need a patch for. 
 There are a few patches on Nexus for Unique Tav, so it will depend on which race you have downloaded. 
-Nothing bad will happen if you do not have a patch, but you will just not be able to use body tatto's etc, 
+Nothing bad will happen if you do not have a patch, but you will just not be able to use body tattos etc, 
 
 - Good mods to have for compatibility with Unique Tav 
 
@@ -197,7 +197,7 @@ A mod that is good, even without Unique Tav is [Patches for CC Mods (Races Hairs
 
 This mod covers a lot, which is why it is split up in different uploads. Overall it patches different mods so they can be used together without any issues. Remember to read the mod description to get an overview of what it does. 
 
-- Tatto's and makeup 
+- Tattos and makeup 
 
 All tattoo and makeup mods can be compatible with Unique Tav. 
 Some of them have been optimised for Unique tav from the get go by the mod author themselves, however some may not have been optimised for Unique Tav, which in case you will need to look through [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods) and [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-for-unique-tav)
@@ -491,7 +491,7 @@ Under these you will see a lot of visual nodes, but you will focus on these thre
 									<attribute id="Value" type="fvec3" value="1 0 0" />
 								</node>
 
-"TattooMetalNess" controls if the tatto's are metallic or not. 0 means they are not, 1 means they are. 
+"TattooMetalNess" controls if the tattos are metallic or not. 0 means they are not, 1 means they are. 
 							
               <node id="ScalarParameters">
 									<attribute id="Color" type="bool" value="False" />
