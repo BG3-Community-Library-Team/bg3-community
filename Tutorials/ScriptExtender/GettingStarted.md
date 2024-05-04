@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T17:47:36.114Z
+date: 2024-05-04T17:54:09.621Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -243,8 +243,7 @@ Here we will use lslib. The packing tool is called `ConverterApp.exe`
 Navigate to the correct tab `PAK/LSV Tools`
 
 
-
-![gswse_lslib.png](/tutorials/getting_started_with_se/gswse_lslib.png =800x400 x)
+![gswse_lslib_censored.png](/tutorials/getting_started_with_se/gswse_lslib_censored.png =800x400)
 
 Pak the folder with a tool of your choice in the sections `Create Package`
 
