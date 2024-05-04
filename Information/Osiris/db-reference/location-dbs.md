@@ -2,7 +2,7 @@
 title: Location DB Reference
 description: Osiris DBs that relate to Locations
 published: true
-date: 2024-05-04T20:35:09.933Z
+date: 2024-05-04T20:37:33.851Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:33:41.366Z
@@ -46,4 +46,5 @@ The following DBs are ones that relate to Location.
 |DB_CAMP_GoblinHuntCelebration_SexScenes|?|3|Flag ID|Flag ID|Character UUID|--|--|
 |DB_CampNight_Requirement_Dating|?|2|Flag ID|Character ID|--|--|--|
 |DB_CampNight_CRD|?|4|Flag ID|Character ID|Flag ID|UUID|--|
-|DB_Dialogs_StartDatingDialog|?|1|Flag ID|--|--|--|--|
+|DB_CampNight_IVB|?|4|Flag ID|Flag ID|Character ID|UUID|--|
+|DB_CampNight_SoloDream|?|3|Flag ID|Character ID|Flag ID|--|--|
