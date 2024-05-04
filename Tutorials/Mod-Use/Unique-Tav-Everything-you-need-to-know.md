@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T01:43:42.935Z
+date: 2024-05-04T01:53:09.808Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -27,9 +27,9 @@ As this is going to be a big guide, here are the things it will cover:
 1. [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods)
 	- [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-forunique-tav)
 1. [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
-1. General usage such as changing tattoo colors
+1. [General usage such as changing tattoo colors](#general-usage-such-as-changing-tattoo-colors)
 1. [Common issues, user errors and how to fix them](#common-issues,-user-errors-and-how-to-fix-them)
-1. Other information
+1. [Other information](#common-information)
 
 
 ## How to install unique Tav
@@ -204,6 +204,10 @@ This is basically the same as above.
 The mods can be made compatible, but it requires renaming and moving some files around. 
 How to do that can be found in this section: [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
 
+> All of this is the same for [Kaz Virtual Tav - Custom Appearance System](https://www.nexusmods.com/baldursgate3/mods/8912)
+> Patches will work the same, and how to handle it will work the same. 
+> For users, this will look like the same mod, however internally they handle things differently. (See mod description of Kaz Virtual Tav - Custom Appearance System)
+{.is-info}
 
 
 ## How to switch tattoo and makeup mods 
@@ -212,8 +216,11 @@ How to do that can be found in this section: [How to make other loose file mods 
 
 ## How to make other loose file mods compatible with Unique Tav 
 
+## General usage such as changing tattoo colors
+
 ## Common issues, user errors and how to fix them
 
+## Other information
 
 
 
