@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:34:50.948Z
+date: 2024-05-04T21:37:44.853Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -25,6 +25,7 @@ As this is going to be a big guide, here are the things it will cover:
   	- [How to install the Data main file](#how-to-install-the-data-main-file)
 1. [Compatibility](#compatibility)
 1. [Common issues and how to fix them](#common-issues-and-how-to-fix-them)
+	- [Invislbe body](#invisible-body)
 1. [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods)
 	- [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-for-unique-tav)
 1. [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
@@ -211,7 +212,7 @@ How to do that can be found in this section: [How to make other loose file mods 
 
 ## Common issues and how to fix them
 
-#### Invisible body:
+#### Invisible body
 
 If your Tav has an invisible body, you need to check if you have installed the pak file correctly. Look through [How to install the Pak file](#how-to-install-the-pak-main-file)
 
