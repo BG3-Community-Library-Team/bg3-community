@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T02:31:03.559Z
+date: 2024-05-04T02:31:10.637Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -246,8 +246,6 @@ Remember: you can only have one face tattoo and one body tattoo, not two at the 
 >
 > If you had a face tattoo before you installed Unique Tav, you need to delete it before installing a new one. Otherwise you may not see any modded face tattoo's at all in the mirror or character creation.
 {.is-warning}
-
-- Makeup mod
 
 ## Makeup and tattoo mods that have not been optimised for Unique Tav 
 
