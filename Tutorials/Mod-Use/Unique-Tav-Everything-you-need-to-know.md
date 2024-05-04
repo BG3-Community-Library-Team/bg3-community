@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T02:00:56.629Z
+date: 2024-05-04T02:31:03.559Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -212,6 +212,42 @@ How to do that can be found in this section: [How to make other loose file mods 
 
 
 ## How to switch tattoo and makeup mods 
+
+You will first need to find a face tattoo, makeup mod or a body tattoo mod to download. The mod used in this guide is [Mari's makeup](https://www.nexusmods.com/baldursgate3/mods/4201)
+
+Go under files, then you will need to download the one that specifies it is for Unique Tav. You will need to download via manual download. 
+
+![maridownload.png](/tutorials/unique_tav/maridownload.png =x370)
+
+When you have downloaded it, you will need to extract it. 
+
+![maridownloaded.png](/tutorials/unique_tav/maridownloaded.png)
+
+![mariextractt.png](/tutorials/unique_tav/mariextractt.png)
+
+When you have extracted it, delete the zip file and go one folder deeper, until you find the "Generated" folder. 
+
+![generatedmari.png](/tutorials/unique_tav/generatedmari.png)
+
+Now you need to drag it into your Data folder (`\SteamLibrary\steamapps\common\Baldurs Gate 3\Data`). Make sure not to drag it on top of other folders. 
+
+![marimovedgen.png](/tutorials/unique_tav/marimovedgen.png)
+
+Now this will come up: 
+
+![sayyestoreplace.png](/tutorials/unique_tav/sayyestoreplace.png)
+
+It is important you say "Replace the file in the destination" as otherwise the change will not happen, as you did not replace the file it needed to replace. 
+
+When you have done this, you have now replaced either a body or a face tattoo. 
+Remember: you can only have one face tattoo and one body tattoo, not two at the same time. 
+
+> You will notice you already have a "Generated" in your Data folder, which is how it is supposed to be. The new "Generated" folder will replace either a singular file or a few files in the data "Generated" folder as seen above. Do not worry, it will not replace the whole "Generated" folder.
+>
+> If you had a face tattoo before you installed Unique Tav, you need to delete it before installing a new one. Otherwise you may not see any modded face tattoo's at all in the mirror or character creation.
+{.is-warning}
+
+- Makeup mod
 
 ## Makeup and tattoo mods that have not been optimised for Unique Tav 
 
