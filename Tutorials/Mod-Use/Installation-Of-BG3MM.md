@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: true
-date: 2024-05-04T22:09:31.657Z
+date: 2024-05-04T22:09:43.023Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -159,7 +159,6 @@ Other relevant guides:
 - [How to remove mods/troubleshooting guide](/Tutorials/Mod-Use/How-to-remove-mods)
 - [How to install Script Extender](/Tutorials/Mod-Use/How-to-install-Script-Extender)
 - SE Fresh Install (On-To-Do)
-
 
 Made by: Maze 
 Credits to: Arrow, LaughingLeader, NellsRelo, Khbsd, Meowcat, Norbyte
