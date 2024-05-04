@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T01:02:11.682Z
+date: 2024-05-04T01:05:02.322Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -23,13 +23,13 @@ As this is going to be a big guide, here are the things it will cover:
 	- [How to install the Pak file](#how-to-install-the-pak-main-file)
   	- [Load order in BG3MM/Vortex](#load-order-in-bg3mm/vortex)
   	- [How to install the Data main file](#how-to-install-the-data-main-file)
-1. Compatibility 
+1. [Compatibility](#compatibility)
 1. How to switch tattoo and makeup mods 
 1. How to make other loose file mods compatible with Unique Tav 
 	- Makeup and tattoo mods that have not been optimised for Unique Tav 
 1. Other loose file mods such as boring tieflings, smooth body etc. 
 1. General usage such as changing tattoo colors
-1. Common issues and user errors 
+1. [Common issues and user errors](#common-issues-and-user-errors)
 	- How to fix them 
 1. Other information
 
@@ -155,12 +155,14 @@ And then it becomes like this:
 
 When you have done this, installed the pak file and Trips Old Shader Pack, then you have now installed Unique Tav correctly. 
 
+If you have issues then go to this part of the guide: 
+
 > For this section, it is better you do not use Vortex as this is a mod that can be customized, but you cannot do that as easily if you install it through Vortex. 
 {.is-info}
 
+#### Compatibility 
 
-
-
+#### Common issues and user errors 
 
 
 
