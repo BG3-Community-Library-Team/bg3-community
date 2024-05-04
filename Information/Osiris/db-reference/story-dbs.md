@@ -2,7 +2,7 @@
 title: Story DB Reference
 description: Osiris DBs that relate to Story Content
 published: true
-date: 2024-05-04T20:38:37.659Z
+date: 2024-05-04T20:42:39.002Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:35:51.588Z
@@ -55,3 +55,8 @@ The following DBs relate to the Story.
 |PROC_SceneManager_HandleViolence|?|5|Integer as Boolean|?|?|String|?|
 |DB_InternScene_DeathHandled|?|2|?|Character UUID|--|--|--|
 |PROC_SceneInterrupted|?|5|Character UUID|UUID|?|String|--|
+
+## Query Returns
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|
+|-----|----|----|----|----|----|----|----|
+|DB_QRYRTN_Camp_GetPreferredPlayerForDialogs|Returns Preferred Dialog Character for Camp|1|Character UUID|--|--|
