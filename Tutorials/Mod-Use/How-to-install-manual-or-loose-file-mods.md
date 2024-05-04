@@ -2,7 +2,7 @@
 title: How to install manual/loose file mods
 description: 
 published: true
-date: 2024-05-04T21:57:28.945Z
+date: 2024-05-04T22:01:19.829Z
 tags: installation, loose-file-mods, manual-mods, manual, non-pak, verify, mods, how-to, bin, generated, data, public, folders, folder
 editor: markdown
 dateCreated: 2024-05-01T01:34:11.948Z
@@ -11,9 +11,9 @@ dateCreated: 2024-05-01T01:34:11.948Z
 # How to install manual/loose file mods
 
 This is part 3 and the final part on how to install BG3MM, mods and loose file mods. 
+- [Part 1: Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
+- [Part 2: How to Install Pak Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
 
-Part 1: How to install BG3MM: https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM
-Part 2; How to install Pak files: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files
 
 ## What is loose/manual mods? 
 
@@ -40,9 +40,11 @@ For Unique Tav which also have a loose file aspect, look through this guide inst
 
 ## Find and download the mod you wish to install from Nexus
 
-Nexus Website: https://www.nexusmods.com/baldursgate3
+- [Nexus Website](https://www.nexusmods.com/baldursgate3)
 
-For this guide, Coven Elf tattoo and make up mod will be the example: https://www.nexusmods.com/baldursgate3/mods/1684?tab=description
+
+For this guide, [CovenElf Tattoo and Makeup Mod](https://www.nexusmods.com/baldursgate3/mods/1684?tab=description) will be the example.
+
 
 > You will need to press on "manual download" as highlighted below. Do not press "download with mod manager" if there is such an option. That is for vortex and through a mod manager, which is not recommended with loose file mods. 
 {.is-warning}
@@ -139,7 +141,7 @@ When you have found this folder, download the mod you wanted.
 ---
 
 
-This guide uses the Native Mod Loader as an example: https://www.nexusmods.com/baldursgate3/mods/944
+This guide uses [The Native Mod Loader](https://www.nexusmods.com/baldursgate3/mods/944) as an example:
 
 First click on the manual download: 
 
