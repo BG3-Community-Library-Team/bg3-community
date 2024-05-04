@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T16:26:35.934Z
+date: 2024-05-04T16:30:01.825Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -12,14 +12,11 @@ dateCreated: 2024-04-30T08:23:34.674Z
 
 This tutorial covers the absolute basics for modders to start writing mods with [Norbytes Script Extender](https://github.com/Norbyte/bg3se/tree/main). 
 
-You can start this tutorial even with no knowledge about programming.
-
-This tutorial assumes that you know how to install mods and and Script Extender. So please familiarize yourself with those topic on the relevant wiki pages:
+No prior knowledge about programming is required; however, please familiarize yourself with how to install mods and Script Extender:
 
 -   [How to install .pak files](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files) 
 -   [Installing Script Extender and activating the console](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender)
 
-For further information, follow the links in [09. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-9-useful-resources) on the bottom of this page that this guide is based on
 
 After reading this guide, feel free to follow the tutorial: [**Creating your First SE Mod (TBA)**](https://wiki.bg3.community/en/Tutorials/ScriptExtender/creating_your_first_se_mod)
 
@@ -27,6 +24,8 @@ After reading this guide, feel free to follow the tutorial: [**Creating your Fir
 > If you are having trouble following this guide, feel free to join the DBTR discord linked [here](hhttps://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-9-useful-resources) for assistance
 > DBTR is a community discord. Keep in mind that everyone that may help you is a volunteer. Please read and follow the server rules.
 {.is-success}
+
+You can find further information linked under [09. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-9-useful-resources) on the bottom of this page.
 
 
 
