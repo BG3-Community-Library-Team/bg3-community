@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T04:35:09.499Z
+date: 2024-05-04T04:35:28.480Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -339,7 +339,7 @@ When you have done so, you have successfully changed the body tattoo.
 You will need a few programs for this. 
 
 - You will need either multitool or Lslib to unpack the pak and pack the pak again
-- You will need NotePad++ or VSCode to open the unpacked pak 
+- You will need NotePad++ or VSCode to open the unpacked pak and make edits
 
 > Which pak you will open up depends on if you use Eyes of Beholder or Astralities' Glow Eyes as well. 
 > If you use either of those two, you will need to open up Eyes of Beholder or Astralities' Glow Eyes. 
