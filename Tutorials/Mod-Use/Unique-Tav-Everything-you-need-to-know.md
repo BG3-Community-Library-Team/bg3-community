@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T01:55:54.051Z
+date: 2024-05-04T02:00:56.629Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -180,6 +180,7 @@ You will need to read mod description and posts for compabitility
 
 Modded races are not supported by default, and it is something you may need a patch for. 
 There are a few patches on Nexus for Unique Tav, so it will depend on which race you have downloaded. 
+Nothing bad will happen if you do not have a patch, but you will just not be able to use body tatto's etc, 
 
 - Good mods to have for compatibility with Unique Tav 
 
@@ -221,8 +222,3 @@ How to do that can be found in this section: [How to make other loose file mods 
 ## Common issues, user errors and how to fix them
 
 ## Other information
-
-
-
-
-  
