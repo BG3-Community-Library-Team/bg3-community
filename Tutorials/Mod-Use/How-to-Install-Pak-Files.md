@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-05-04T22:04:04.174Z
+date: 2024-05-04T22:06:06.010Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -11,8 +11,8 @@ dateCreated: 2024-04-27T00:49:12.642Z
 # How to install .Pak files via BG3MM
 
 This is part 2 of the guide "How to install Mods in BG3". 
-Part 1: How to install BG3MM: https://wiki.bg3.community/e/en/Tutorials/Mod-Use/Installation-Of-BG3MM
-Part 3: How to install manual/loose file mods: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
+- [Part 1: Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
+- [Part 3: How to install manual or loose file mods](/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods)
 
 > This guide is for Windows, Steam users and BG3MM users. 
 > However it will point out in the guide if there is an alternative way for Vortex.
@@ -163,8 +163,9 @@ Done! Now you have installed your first mod!
 {.is-info}
 
 ## 5. Installing two of the most necessarry mods (mod fixer and Improved UI) when you use mods. Do not skip. Important.
-Improved UI by Djmr: https://www.nexusmods.com/baldursgate3/mods/366
-Mod fixer by figs999: https://www.nexusmods.com/baldursgate3/mods/141
+- [Improved UI by Djmr](https://www.nexusmods.com/baldursgate3/mods/366)
+- [Mod Fixer by figs999](https://www.nexusmods.com/baldursgate3/mods/141)
+
 
 These two are a requirement for many mods; especially mod fixer. 
 
@@ -216,7 +217,6 @@ You will need to remove them completely from the mods folder to disable them
 
 How to install BG3MM, pak files and loose/manual mods series: 
 - [Part 1: Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
-- [Part 2: How to Install Pak Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
 - [Part 3: How to install manual or loose file mods](/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods)
 
 Other relevant guides: 
