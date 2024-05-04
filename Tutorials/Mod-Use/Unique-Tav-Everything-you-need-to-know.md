@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T00:36:36.101Z
+date: 2024-05-04T00:52:53.230Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -113,6 +113,46 @@ So all in all for Unique tav with Eyes of Beholder and Glow eyes, low on your lo
 {.is-warning}
 
 #### How to install the Data main file
+
+For this part you will need to find your data folder. Your data folder is located here: `\SteamLibrary\steamapps\common\Baldurs Gate 3\Data`
+
+You can use steam to find the data folder. GOG users will need to find the equivalent to steam folders. 
+
+Go into your steam, then library. Right click on BG3, then hover over "Manage" and click on "Browse local files": 
+
+![steam.png](/tutorials/steam.png)
+
+Then File explore should open this folder: 
+
+![bg3folder.png](/tutorials/install_manual_mods/bg3folder.png)
+
+When you have done that, make sure you have downloaded the data main file from Unique Tav's main page.
+When you have downloaded the data main file, it should come in a 7z file. 
+Extract the file in your downloads folder: 
+
+![uniquetavextract.png](/tutorials/unique_tav/uniquetavextract.png)
+
+![extractuniquetavs.png](/tutorials/unique_tav/extractuniquetavs.png)
+
+This process may take a hot minute.
+
+When you have extracted the mod in your folder, there should be a folder called "unique tav data" and a bunch of numbers.
+Delete the 7z file, you no longer need it. 
+Now you need to go one folder deeper in the folder named "Unique tav data", so you find the folder named generated: 
+
+![folderuniquetav.png](/tutorials/unique_tav/folderuniquetav.png)
+
+![generateduniquetav.png](/tutorials/unique_tav/generateduniquetav.png)
+
+
+
+
+
+
+
+
+
+
 
 
   
