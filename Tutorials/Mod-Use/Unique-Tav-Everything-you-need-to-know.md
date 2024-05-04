@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T01:00:01.873Z
+date: 2024-05-04T01:01:58.098Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -79,11 +79,11 @@ Then under the "optional files".
 
 ![eyesofbeholderpatch.png](/tutorials/unique_tav/eyesofbeholderpatch.png =x490)
 
-(Astralities does have a patch under her own Astralities' Glow Eyes mod. Both are fine and can be used, just use one of them). 
-
 **Or**
 
 ![gloweyespatch.png](/tutorials/unique_tav/gloweyespatch.png =x490)
+
+Astralities does have a patch under her own Astralities' Glow Eyes mod. Both are fine and can be used, just use one of them.
 
 Remember not to choose both as Astralities' Glow Eyes and Eyes of Beholder are incompatible.
 
