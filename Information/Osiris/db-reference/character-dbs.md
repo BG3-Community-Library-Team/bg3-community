@@ -2,7 +2,7 @@
 title: Character DB Reference
 description: Osiris Character DBs
 published: true
-date: 2024-05-04T20:21:47.176Z
+date: 2024-05-04T20:45:36.619Z
 tags: osiris, db, characters, character creation
 editor: markdown
 dateCreated: 2024-05-02T03:08:57.566Z
@@ -69,3 +69,4 @@ The following DBs are ones that relate specifically to Characters.
 |-----|----|----|----|----|----|----|----|
 |DB_QRYRTN_GetCharacterOwnerIfItemSummon|Returns Owner if UUID corresponds to a summoned item|1|Character UUID|--|--|
 |DB_QRYRTN_CharacterGetOwnerOrSelf|Returns Owner or Queried Character UUID|1|Character UUID|--|--|
+|DB_QRYRTN_GetBestAvatarForCompanion|Returns best avatar for a given companion|2|Character UUID|Avatar UUID|--|
