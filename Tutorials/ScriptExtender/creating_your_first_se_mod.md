@@ -2,7 +2,7 @@
 title: Creating your first SE Mod
 description: A follow along tutorial for creating your first Script Extender Mod that stops companions from returning to their tent when in camp. Optional toggleable version
 published: false
-date: 2024-05-04T11:27:38.202Z
+date: 2024-05-04T11:29:16.054Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T14:54:45.494Z
@@ -93,6 +93,75 @@ data "ToggleOffFunctors" "RemoveStatus(STAY_STILL_STATUS)"
 </contentList>
 
 ```
+
+
+
+### 4.4 Using SE to Handle the Stats
+
+
+```lua
+
+-- Adds the "Stay in Camp" toggle to each partymember
+Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(_, _)
+    _P("LevelGameplayStarted")
+
+    local party = Osi.DB_PartyMembers:Get(nil)
+    for i = #party, 1, -1 do
+        addPassive(party[i][1],"STAY_STILL_PASSIVE")
+    end
+
+end)
+```
+
+
+```lua
+
+-- Adds the "Stay in Camp" toggle to a partymember added during gameplay
+Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "after", function(character)
+    addPassive(character,"STAY_STILL_PASSIVE")
+end)
+
+```
+
+
+```lua
+-- Stops the partymember from moving if "Stay Still" is activated and they are teleported to camp
+Ext.Osiris.RegisterListener("TeleportedToCamp", 1, "after", function(character)
+    _P("Teleported to camp")  
+    if Osi.HasPassive(character, "STAY_STILL_PASSIVE") == 1 then
+        _P("character has ", "STAY_STILL_PASSIVE")
+        stopMoving(character)
+    end
+end)
+
+
+```
+
+
+```lua
+
+-- Stops the partymember from moving if "Stay Still" is activated and they are already in camp
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(character, status, _, _)
+    if status == "STAY_STILL_STATUS" then
+		stopMoving(character)
+	end
+end)
+
+```
+
+
+```lua
+
+-- Allows the partymember to move again if "Stay Still" is deactivated
+Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function (character, status, _, _)
+	if status == "STAY_STILL_STATUS" then
+		startMoving(character)
+	end
+end)
+
+
+```
+
 
 
 ![yfsem_workspace_structure_final.png](/tutorials/your_first_se_mod/yfsem_workspace_structure_final.png)
