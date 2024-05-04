@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:26:34.781Z
+date: 2024-05-04T21:27:21.430Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -154,7 +154,7 @@ And then it becomes like this:
 
 When you have done this, installed the pak file and Trips Old Shader Pack, then you have now installed Unique Tav correctly. 
 
-If you have issues then go to [Common issues, user errors and how to fix them](#common-issues,-user-errors-and-how-to-fix-them)
+If you have issues then go to [Common issues and how to fix them](#common-issues-and-how-to-fix-them)
 
 > If your Tav has a blue body, it is because you missed [Trips' Old Shader Pack](https://www.nexusmods.com/baldursgate3/mods/4752)
 {.is-danger}
