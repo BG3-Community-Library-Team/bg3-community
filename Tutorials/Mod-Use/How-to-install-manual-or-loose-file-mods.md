@@ -2,7 +2,7 @@
 title: How to install manual/loose file mods
 description: 
 published: true
-date: 2024-05-02T16:48:51.848Z
+date: 2024-05-04T21:57:28.945Z
 tags: installation, loose-file-mods, manual-mods, manual, non-pak, verify, mods, how-to, bin, generated, data, public, folders, folder
 editor: markdown
 dateCreated: 2024-05-01T01:34:11.948Z
@@ -193,7 +193,7 @@ You can click further into the "NativeMods" folder and see which NativeMods you 
 
 ## How to uninstall loose file mods
 
-Here is a guide for uninstalling all mods in your game (loose/manual file mods are also covered): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods
+Here is a guide for uninstalling all mods in your game (loose/manual file mods are also covered): [How to install manual or loose file mods](/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods)
 
 If you want to uninstall any loose file mods, you will need to find the corresponding files again. 
 
@@ -240,16 +240,16 @@ Then a new window will pop up. Click on "Installed files" and then "Verify integ
 When the process is done, you have verifed the game and the missing files has been replaced. 
 
 ## Other relevant guides and credits: 
-How to install BG3MM, mods and manual mods series: 
-Part 1: How to install BG3MM: https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM
-Part 2: How to install Pak files: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files
+How to install BG3MM, pak files and loose/manual mods series: 
+- [Part 1: Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
+- [Part 2: How to Install Pak Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
 
-Other relevant guides:
-How to remove mods from BG3 (Troubleshooting guide): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods
-How to install Unique Tav: On To-Do
-General Loader order guide: https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order
-How to install Script Extender: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender
-Clean reinstall of Script Extender: On To-Do
+Other relevant guides: 
+- [General load order guide](/Tutorials/Mod-Use/general-load-order)
+- [Unique Tav & Everything you need to know](/Tutorials/Mod-Use/Unique-Tav-Everything-you-need-to-know)
+- [How to remove mods/troubleshooting guide](/Tutorials/Mod-Use/How-to-remove-mods)
+- [How to install Script Extender](/Tutorials/Mod-Use/How-to-install-Script-Extender)
+- SE Fresh Install (On-To-Do)
 
 Made by: Maze
 Credits: LaughingLeader, Norbyte, Kaz, NellsRelo, Arrow, DefinitiveToast
