@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:04:00.245Z
+date: 2024-05-04T21:06:15.048Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -224,6 +224,14 @@ Unique Tav needs to be placed relatively low on the load order.
 If it is none of those things, check if you installed the data main file correctly. Look through [How to install the Data main file](#how-to-install-the-data-main-file)
 
 #### Blue body
+
+If you have a blue body, it is because you are missing [Trips' Old Shader Pack](https://www.nexusmods.com/baldursgate3/mods/4752). 
+
+Remember this mod is a must! It is a requirement. Sadly, if you have a mac you may encounter issues when you use this mod. 
+
+This was not an requirement before Patch 5, which changed a lot of textures and how they work. 
+
+#### My body/face tattoo's or makeup does not show up 
 
 
 ## How to switch tattoo and makeup mods 
