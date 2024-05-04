@@ -1,9 +1,9 @@
 ---
 title: Unique Tav: Everything you need to know
 description: 
-published: false
-date: 2024-05-04T21:51:04.527Z
-tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
+published: true
+date: 2024-05-04T22:10:37.637Z
+tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
 ---
