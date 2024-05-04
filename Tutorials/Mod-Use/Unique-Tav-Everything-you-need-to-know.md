@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T03:09:52.040Z
+date: 2024-05-04T03:21:35.806Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -298,11 +298,20 @@ And then you say yes to replace again:
 
 When you have done this, you're good to go and have installed the new MakeUp or Face Tattoo mod. 
 
-> Make sure you replace the last .dds with .DDS as otherwise Unique Tav will not be able to properly use it. 
+> Note: Some modded tattoo's does not work on modded faces and it will instead show the vanilla tattoo's. Unfortunately there is not fix to this, other than report a bug to the mod creator of the modded face. 
 {.is-info}
 
 
 #### Body tattoo's that does not have the folder "Generated"
+
+Most of the time, Body Tattoo's will come ready with a "Generated" folder to put into the Data folder. However, sometimes that may not be the case. 
+
+For example, Unique Tav's own optional file "Tattoo varient" does not come with a "Generated" folder, but rather each individual tattoo in their own folder. 
+
+You need to do as above, download and extract the body tattoo you wish.
+
+
+
 
 ## How to make other loose file mods compatible with Unique Tav 
 
