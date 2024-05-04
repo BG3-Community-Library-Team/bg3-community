@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: true
-date: 2024-05-03T21:22:09.046Z
+date: 2024-05-04T16:07:29.085Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -333,12 +333,12 @@ To create one, we need to decide where to add it. Whether to a tab or perhaps a 
 
 ```lua
 treeRoot = parentObject:AddTree("Name it whatever you want")
-firstItem = treeRoot:AddText("FirstTreeItem")
-secondItem = treeRoot:AddText("SecondTreeItem")
-thirdItem = treeRoot:AddText("ThirdTreeItem")
-fourthItem = treeRoot:AddText("FourthTreeItem")
+firstItem = treeRoot:AddTree("FirstTreeItem")
+secondItem = treeRoot:AddTree("SecondTreeItem")
+thirdItem = treeRoot:AddTree("ThirdTreeItem")
+fourthItem = treeRoot:AddTree("FourthTreeItem")
 
-leavesThrItem = thirdItem:AddText("Leaves")
+leavesThrItem = thirdItem:AddTree("Leaves")
 ```
 
 ### **2.4.4\. Grouping Components**
