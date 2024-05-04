@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T17:05:15.173Z
+date: 2024-05-04T17:15:43.952Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -68,7 +68,7 @@ If you have too much text on your console and you cannot see your input line, yo
 
 Replicate the following steps to familiarize yourself with basic inputs into the SE console:
 
-**1\. In the console enter the following command. This will print “Hello World” on the console:**
+#### 2.3.1\. In the console enter the following command. This will print “Hello World” on the console:
 
 `
 _P(“Hello World”)
@@ -77,7 +77,7 @@ _P(“Hello World”)
 ![](https://lh7-us.googleusercontent.com/ktFR5G6vYetJeqyVYLznc8tmizLM-JMHag7C4esUa-aunS3F9hQsMYGYf9taLyHrsekRm-eS6f6cGGpcXINdu3q4ml7oopyIWRobEqSygFEXZigJZ5TjH7_D9BWZ-bshPhNVE9gKX2DRtWajxHckLDU)
 
 
-**2\. Add an item to your inventory - Here: 10 Bars of Soap:**
+#### 2.3.2\. Add an item to your inventory - Here: 10 Bars of Soap:
 
 ` TemplateAddTo("d32a68ff-3b6a-4d83-b0c4-0a2c44b93ea9", GetHostCharacter(), 10) `
 
@@ -94,7 +94,8 @@ _P(“Hello World”)
 
 ![gswse_post_soap.png](/tutorials/getting_started_with_se/gswse_post_soap.png =600x300)
 
-**3\. Get the HostCharacter uuid (the character whose portrait is activated - here: Astarion):**
+
+#### 2.3.3\. Get the HostCharacter uuid (the character whose portrait is activated - here: Astarion):
 
 `
 _P(Osi.GetHostCharacter())
