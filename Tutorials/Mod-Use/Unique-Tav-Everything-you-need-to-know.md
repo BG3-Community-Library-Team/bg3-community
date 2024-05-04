@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T00:06:51.934Z
+date: 2024-05-04T00:11:39.292Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -51,6 +51,11 @@ If you do not know how to install a pak file, follow the guide on [How-to-Instal
 
 If in Vortex, remember to deploy and fix the load order after according to the guide below.
 
+> Trips' Old Shader pack will be in the overrides section of BG3MM and likely locked in Vortex. 
+> Leave those there. Everytime BG3MM puts a mod in the overrides, it is for a reson and that is because they override base game files. 
+> As Trips' Old Shaderpack is also brown and an override, you cannot disable/make it inactive without deleting it from your mods folder (`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`)
+{.is-info}
+
 #### Load order in BG3MM/Vortex
 
 Unique Tav should be relatively low on your load order, but above any patches you have.
@@ -61,9 +66,11 @@ For example like this:
 
 ![uniquetavloadorder.png](/tutorials/unique_tav/uniquetavloadorder.png)
 
-If you are using other mods such as [Eyes of Beholder](https://www.nexusmods.com/baldursgate3/mods/315) or [Astralities' Glow Eyes](https://www.nexusmods.com/baldursgate3/mods/4964) you will need the patches from Unique Tav as well.
+If you are using other mods such as [Eyes of Beholder](https://www.nexusmods.com/baldursgate3/mods/315) or [Astralities' Glow Eyes](https://www.nexusmods.com/baldursgate3/mods/4964) you will need the patches from Unique Tav as well. It will be under "files" on Unique Tav's Nexus Page, then under "optional files":
 
+![files.png](/tutorials/unique_tav/files.png)
 
+Then under the "optional files". 
 
 The load order has It would look something like this: 
 
@@ -71,10 +78,15 @@ The load order has It would look something like this:
 
 This example has Eyes of Beholder, but it will be the exact same load order just with Glow eyes patch from Unique Tav and Glow eyes main file and preset from Glow eyes. 
 
-> Trips' Old Shader pack will be in the overrides section of BG3MM and likely locked in Vortex. 
-> Leave those there. Everytime BG3MM puts a mod in the overrides, it is for a reson and that is because they override base game files. 
-> As Trips' Old Shaderpack is also brown and an override, you cannot disable/make it inactive without deleting it from your mods folder (`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`)
-{.is-info}
+Example with Astralities' Glow Eyes and Unique Tav patches: 
+
+
+
+
+> Remember Astralities' Glow Eyes and Eyes of Beholder are incompatible. They will override each other, so you will need to choose one or the other, and not both. 
+> Only one preset from one mod at the time. 
+{.is-warning}
+
 
 
 #### How to install the Data main file
