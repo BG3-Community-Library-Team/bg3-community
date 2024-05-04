@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T00:11:39.292Z
+date: 2024-05-04T00:25:52.974Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -58,7 +58,7 @@ If in Vortex, remember to deploy and fix the load order after according to the g
 
 #### Load order in BG3MM/Vortex
 
-Unique Tav should be relatively low on your load order, but above any patches you have.
+Unique Tav should be relatively low on your load order, which means it should be below any heads and cosmetic mods you may have, but above any patches you may have.
 Low means the higher number in both Vortex and BG3MM. 
 Higher on the load order means the lowest number in BG3MM and Vortex.
 
@@ -72,19 +72,41 @@ If you are using other mods such as [Eyes of Beholder](https://www.nexusmods.com
 
 Then under the "optional files". 
 
+![eyesofbeholderpatch.png](/tutorials/unique_tav/eyesofbeholderpatch.png =x490)
+
+(Astralities does have a patch under her own Astralities' Glow Eyes mod. Both are fine and can be used, just use one of them). 
+
+**Or**
+
+![gloweyespatch.png](/tutorials/unique_tav/gloweyespatch.png =x490)
+
+Remember not to choose both as Astralities' Glow Eyes and Eyes of Beholder are incompatible.
+
 The load order has It would look something like this: 
 
-![eyesofbeholder.png](/tutorials/unique_tav/eyesofbeholder.png)
+![eyesofbeholder.png](/tutorials/unique_tav/eyesofbeholder.png =x120)
 
 This example has Eyes of Beholder, but it will be the exact same load order just with Glow eyes patch from Unique Tav and Glow eyes main file and preset from Glow eyes. 
 
 Example with Astralities' Glow Eyes and Unique Tav patches: 
 
+![gloweyesloadoeder.png](/tutorials/unique_tav/gloweyesloadoeder.png =x110)
 
+So all in all for Unique tav with Eyes of Beholder and Glow eyes, low on your load order below any head mods and above your patches. 
 
+<kbd>**Load order with Eyes of Beholder:**</kbd>
+- Unique Tav main file 
+- Eyes of Beholder Main File 
+- Eyes of Beholder Preset
+- Unique Tav Eyes of Beholder patch 
+
+<kbd> **Load order with Astralities' Glow Eyes:** </kbd>
+- Unique Tav 
+- Astralities' Glow Eyes main file 
+- Unique Tav Glow Eyes patch
 
 > Remember Astralities' Glow Eyes and Eyes of Beholder are incompatible. They will override each other, so you will need to choose one or the other, and not both. 
-> Only one preset from one mod at the time. 
+> Only one preset from Eyes of beholder at a time as the mod page specifically says the presets will be incompatible with each other. 
 {.is-warning}
 
 
