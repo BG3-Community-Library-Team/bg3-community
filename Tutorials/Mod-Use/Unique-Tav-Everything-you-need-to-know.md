@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T03:30:40.232Z
+date: 2024-05-04T03:41:05.999Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -331,6 +331,14 @@ When you have done so, you have successfully changed the body tattoo.
 ## How to make other loose file mods compatible with Unique Tav 
 
 ## General usage such as changing tattoo colors
+
+> This is for advanced users as this requires opening up a pak and repacking it again
+{.is-warning}
+
+
+You will need a few programs for this. 
+
+Either multitool or Lslib to unpack the pak
 
 ## Common issues, user errors and how to fix them
 
