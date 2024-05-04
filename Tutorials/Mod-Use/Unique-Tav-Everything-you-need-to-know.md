@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:06:15.048Z
+date: 2024-05-04T21:13:39.326Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -25,6 +25,9 @@ As this is going to be a big guide, here are the things it will cover:
   	- [How to install the Data main file](#how-to-install-the-data-main-file)
 1. [Compatibility](#compatibility)
 1. [Common issues, user errors and how to fix them](#common-issues,-user-errors-and-how-to-fix-them)
+	- [Invisible body](#invisible-body)
+ 	 - [Blue body](#blue-body)
+   - [My body/face tattoo's or makeup does not show up](#my-body/face-tattoo's-or-makeup-does-not-show-up)
 1. [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods)
 	- [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-forunique-tav)
 1. [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
@@ -233,6 +236,11 @@ This was not an requirement before Patch 5, which changed a lot of textures and 
 
 #### My body/face tattoo's or makeup does not show up 
 
+Make sure you do not have any other tatto or makeup mods installed. These will likely be outside of the Unique Tav folders in "Generated" in your Data folder. 
+
+If it does not work, try moving your "Generated" folder from your data folder, reinstall the data main file from Unique Tav, and the make/tattoo mod you want. 
+
+Look here through these two to properly install face/body tattoo's and make up mods: [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods) and [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-forunique-tav)
 
 ## How to switch tattoo and makeup mods 
 
