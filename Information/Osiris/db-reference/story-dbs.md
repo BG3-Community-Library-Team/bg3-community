@@ -2,7 +2,7 @@
 title: Story DB Reference
 description: Osiris DBs that relate to Story Content
 published: true
-date: 2024-05-02T21:43:46.953Z
+date: 2024-05-04T20:02:11.498Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:35:51.588Z
@@ -28,6 +28,11 @@ The following DBs relate to the Story.
 |DB_DialogSpeakers|List of Spekaers in a Dialog|3|Integer|UUID String|?|--|--|
 |DB_OnDialogAttackRequested|?|3|Character UUID|Character UUID|Integer|--|--|
 |DB_InteractiveDialogSpeaker|?|2|Integer|?|--|--|--|
+
+## Functionality
+|DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
+|-----|----|----|----|----|----|----|----|
+|DB_GLO_BloodElixirs_RacialElixirTemplates|Links Item & Tag ID for reward for giving blood to Araj Oblodra.|3|Tag ID|Item ID|?|--|--|
 
 ## Plot (Spoilers)
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
