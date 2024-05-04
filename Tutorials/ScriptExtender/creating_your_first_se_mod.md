@@ -2,7 +2,7 @@
 title: Creating your first SE Mod
 description: A follow along tutorial for creating your first Script Extender Mod that stops companions from returning to their tent when in camp. Optional toggleable version
 published: false
-date: 2024-05-04T11:26:38.208Z
+date: 2024-05-04T11:27:38.202Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T14:54:45.494Z
@@ -36,9 +36,6 @@ This tutorial is based on **Alithea Ancunín's** implementation of [Please Stay]
 
 - change the meta file
 - create all the files
-
-
-
 
 
 
@@ -76,6 +73,27 @@ data "ToggleOffFunctors" "RemoveStatus(STAY_STILL_STATUS)"
 
 
 ```
+
+
+### 4.3 Localization File
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+    <!-- Toggle for entity to stay still in camp -->
+
+    <content contentuid="h03652d052f114f8ebbc10bc2602cddc835e7" version="1">Stay still in Camp</content>
+    <content contentuid="h31d5cb6c31ed4d198231d44624caf7c59f5b" version="1">When this is active, the companion will not move back to their tent while in camp</content>
+
+    <!-- Passive Applied to entity when it is standing still -->
+
+    <content contentuid="h38fc0213b20a4412bf0f223aeda5a7e974a9" version="1">Standing still</content>
+    <content contentuid="hd5dfdb8b7aa34a808f628362b0f04fa8884a" version="1">Entity will not move back to Camp</content>
+</contentList>
+
+```
+
 
 ![yfsem_workspace_structure_final.png](/tutorials/your_first_se_mod/yfsem_workspace_structure_final.png)
 
