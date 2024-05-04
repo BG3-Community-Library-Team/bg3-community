@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T04:40:47.872Z
+date: 2024-05-04T20:57:24.146Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -330,6 +330,84 @@ When you have done so, you have successfully changed the body tattoo.
 
 ## How to make other loose file mods compatible with Unique Tav 
 
+#### Loose files that changes companions, head replacers, or adds clothes in the game
+
+These files does not need to be made Unique Tav compatible. 
+You can follow [How to install manual or loose file mods](/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods)
+
+#### Other loose file mods such as texture mods 
+
+These mods include mods such as [Boring Tieflings](https://www.nexusmods.com/baldursgate3/mods/2228) and [Smooth and muscular Githyanki F Body](https://www.nexusmods.com/baldursgate3/mods/1902). 
+There are tons of other mods out there like these, so instead of going through them all, this guide will show how to make Boring Tieflings compatible with Unique Tav. 
+This method will apply to all other loose file mods that needs to be made compatible (mostly texture mods) with Unique Tav. 
+
+> For this part, you will need to have "file extension" on. This guide will show how to put that on in Windows 11. If you have Windows 10, it may be a bit different: [How to view file extension for windows 7, 8 and 10](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/How-to-enable-hidden-file-extensions-in-Windows.html)
+{.is-warning}
+
+How to view file extension on Windows 11: 
+
+![fileextension.png](/tutorials/fileextension.png =x500)
+
+You will first need to download the mod via manual download from Nexus, and extract the mod inside your downloads folder. 
+
+![boringtief.png](/tutorials/unique_tav/boringtief.png)
+
+![extractboringtief.png](/tutorials/unique_tav/extractboringtief.png)
+
+Then you will to find the end files in the extracted folder in your downloads folder. 
+You can also delete the zip, rar or 7z file because you no longer need it. 
+
+![boringtiefendfiles.png](/tutorials/unique_tav/boringtiefendfiles.png)
+
+When you have found the end files, you will need to find your data folder, then the "Generated" in your data folder. 
+
+![generatedfolder.png](/tutorials/unique_tav/generatedfolder.png)
+
+When you have found this, you will need to find the corresponding files. Now, if you have downloaded a mod like Smooth body for Githyanki, this will take some time, because you will need to find every single corresponding file and then you will need to renmame and replace the files. 
+
+This guide will show you this is done. 
+
+As seen in the previous screenshot of Boring Tieflings, I decided to download Boring Tieflings for females. 
+I will now need to go into the "Generated" folder in my data folder, and find the Tieflings section. You do this by following the folders in Unique Tav. 
+
+Since I choose a tiefling texture mod, I will need to go into the folder called "TIF", and then choose the folder named "Female" because I choose a mod for the female tiefling textures. 
+
+![tiffoldeer.png](/tutorials/unique_tav/tiffoldeer.png)
+
+![tieflingfemalefolder.png](/tutorials/unique_tav/tieflingfemalefolder.png)
+
+You should now see a folder like this: 
+
+![femaletiffolderpng.png](/tutorials/unique_tav/femaletiffolderpng.png)
+
+Now you go back to the end files from before, and compare the files: 
+
+![boringtiefendfiles.png](/tutorials/unique_tav/boringtiefendfiles.png)
+
+From comparing, I know the Unique Tav version of "`TIF_F_NKD_Body_A.gr2`" is "`UNIQUE_TIF_F_NKD_BODY_A.GR2`"
+I also know the Unique Tav version of "`TIF_F_Tail_A.GR2`" is "`UNIQUE_TIF_F_NKD_Tail_A.GR2`"
+
+I will now need to rename the Boring Tiefling files to the Unique Tav version. 
+When I have done that, I will need to drag the new files into the Unique Tav Tiefling Female section like this: 
+
+![renametif.png](/tutorials/unique_tav/renametif.png)
+
+![movetiftotif.png](/tutorials/unique_tav/movetiftotif.png)
+
+You will need to replace the files as shown below: 
+
+![tifreplace.png](/tutorials/unique_tav/tifreplace.png)
+
+When you have done this for all of the files, you are done and have made the mod compatible and installed the mod. 
+Yes, you will need to do this for all of the files.
+
+> This method works for all texture mods that replaces textures on your own Tav (character). 
+> TLDR: Find the corresponding files in Unique Tav folders, and rename the texture mods you downloaded to Unique Tav's version, and replace the Unique Tav's version with the newly renamed texture files.
+>
+> You will need to change the file extensions, to be uppercase rather than lower case!
+{.is-info}
+
+
 ## General usage such as changing tattoo colors
 
 
@@ -340,12 +418,14 @@ You will need a few programs for this.
 
 - You will need either multitool or Lslib to unpack the pak and pack the pak again
 - You will need NotePad++ or VSCode to open the unpacked pak and make edits
-
+> 
 > Which pak you will open up depends on if you use Eyes of Beholder or Astralities' Glow Eyes as well. 
 > If you use either of those two, you will need to open up Eyes of Beholder or Astralities' Glow Eyes. 
 > If you do not use either of those, then you need to open up and edit Unique Tav itself. 
 > This is because Eyes of Beholder or Glow Eyes overrides Unique Tav, so editing Unique Tav will not yield any results.
-{.is-warning}
+{.is-info}
+
+
 
 When you have opened up the pak, you will need to edit for the individual race or subrace. So for example, if you play a tiefling, you would need to edit one of the tieflings subraces, and then you will further need to find the body type as well. Each race has their own section under "PAK_CharacterVisuals": 
 
