@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:30:28.790Z
+date: 2024-05-04T21:31:36.543Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -190,7 +190,7 @@ This mod covers a lot, which is why it is split up in different uploads. Overall
 - Tatto's and makeup 
 
 All tattoo and makeup mods can be compatible with Unique Tav. 
-Some of them have been optimised for Unique tav from the get go by the mod author themselves, however some may not have been optimised for Unique Tav, which in case you will need to look through [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods) and [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-forunique-tav)
+Some of them have been optimised for Unique tav from the get go by the mod author themselves, however some may not have been optimised for Unique Tav, which in case you will need to look through [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods) and [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-for-unique-tav)
 
 
 > However, for now you can only have one makeup, one tattoo and one body tattoo at all times when using Unique Tav.
