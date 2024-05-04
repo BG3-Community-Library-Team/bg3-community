@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:48:51.318Z
+date: 2024-05-04T21:51:04.527Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -33,6 +33,10 @@ As this is going to be a big guide, here are the things it will cover:
 1. [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
 1. [General usage such as changing tattoo colors](#general-usage-such-as-changing-tattoo-colors)
 1. [Other guides and credits](#other-guides-and-credits)
+
+> All information, other than "General usage" will apply to [Kaz Virtual Tav - Custom Appearance System](https://www.nexusmods.com/baldursgate3/mods/8912) as well. The mod is a work in progress, so when it has been updated a bit more it will have a full guide as well on how to use it.
+{.is-info}
+
 
 ## How to install unique Tav
 Installing unique Tav, it is recommended to not use Vortex but use BG3MM and install the data part as a loose file mod, simply because of how complex this mod is. If you use Vortex, install the pak file as normal and then follow [How to install the Data main file](#how-to-install-the-data-main-file)
