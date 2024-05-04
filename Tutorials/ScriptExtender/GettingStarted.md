@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T17:15:43.952Z
+date: 2024-05-04T17:18:49.814Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -117,7 +117,6 @@ Now that you are familiar with entering commands in the console, it is time to c
 {.is-warning}
 
 
-
 ## **3\. Creating your workspace**
 
 
@@ -125,9 +124,10 @@ Now that you are familiar with entering commands in the console, it is time to c
 {.is-info}
 
 
-> This guide is using an example workspace! You will be able to better follow the tutorial by using it
-> Download the example workspace here: [https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing](https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing)
+>This guide uses the example workspace found here: https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing
+>Using it will make it easier to follow the tutorial.
 {.is-warning}
+
 
 
 You will also need an editor. I recommend VSCode or the Open Source alternative VSCodium:  
