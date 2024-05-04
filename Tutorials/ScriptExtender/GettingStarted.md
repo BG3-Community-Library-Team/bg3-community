@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T17:26:43.094Z
+date: 2024-05-04T17:44:16.045Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -239,7 +239,7 @@ Afterwards, Pak the mod with a tool of your choice.
 -   LsLib: [_https://github.com/Norbyte/lslib/releases_](https://github.com/Norbyte/lslib/releases)
 -   Modder’s Multitool: [_https://github.com/ShinyHobo/BG3-Modders-Multitool/releases_](https://github.com/ShinyHobo/BG3-Modders-Multitool/releases)
 
-Here we will use lslib. The packing tool is called `converter.exe`
+Here we will use lslib. The packing tool is called `ConverterApp.exe`
 Navigate to the correct tab `PAK/LSV Tools`
 
 
