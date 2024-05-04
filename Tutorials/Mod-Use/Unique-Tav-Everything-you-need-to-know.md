@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2024-05-04T22:20:59.963Z
+date: 2024-05-04T22:24:26.853Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -17,6 +17,8 @@ If you are a beginner to modding BG3, it is recommended you stick with the begin
 The beginning is how to install unique tav, compatiblity and common errors. 
 
 If you are an experienced user, there will be a lot of useful information in this guide, however take a look at [Kartoffel's YouTube Video](https://www.youtube.com/watch?v=g67eTrz9fWg) about Unique Tav.
+
+If you are super advanced and want to add custom heads etc, look through [Super advanced super custom Unique Tav guide by Kartoffel](https://www.nexusmods.com/baldursgate3/articles/380)
 
 As this is going to be a big guide, here are the things it will cover:
 1. [How to install Unique Tav](#how-to-install-unique-tav)
