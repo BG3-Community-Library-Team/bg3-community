@@ -2,7 +2,7 @@
 title: How to install Pak Files
 description: 
 published: true
-date: 2024-05-02T16:49:46.497Z
+date: 2024-05-04T22:04:04.174Z
 tags: bg3mm, guide, installation, moduse
 editor: markdown
 dateCreated: 2024-04-27T00:49:12.642Z
@@ -214,17 +214,18 @@ You will need to remove them completely from the mods folder to disable them
 
 ## Other relevant guides and credits
 
-How to install BG3MM, mods and manual/loose file mods series: 
-Part 1: How to install BG3MM: https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM
-Part 3: How to install manual/loose file mods: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
+How to install BG3MM, pak files and loose/manual mods series: 
+- [Part 1: Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
+- [Part 2: How to Install Pak Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
+- [Part 3: How to install manual or loose file mods](/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods)
 
 Other relevant guides: 
-How to remove mods from BG3 (Troubleshooting guide): https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods
-General load order guide: https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order
-How to install Sript Extender: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender
-Clean reinstall of Script Extender: On To-Do
-How to install Native mod loader: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
-How to install Unique tav: On To-Do
+- [General load order guide](/Tutorials/Mod-Use/general-load-order)
+- [Unique Tav & Everything you need to know](/Tutorials/Mod-Use/Unique-Tav-Everything-you-need-to-know)
+- [How to remove mods/troubleshooting guide](/Tutorials/Mod-Use/How-to-remove-mods)
+- [How to install Script Extender](/Tutorials/Mod-Use/How-to-install-Script-Extender)
+- SE Fresh Install (On-To-Do)
+
 
 Made by: Maze 
 Credits: Arrow, LaughingLeader, Norbyte, Derk, NellsRelo, Meowcat
