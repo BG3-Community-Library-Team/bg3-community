@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T03:45:46.424Z
+date: 2024-05-04T04:33:41.329Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -341,8 +341,49 @@ You will need a few programs for this.
 - You will need either multitool or Lslib to unpack the pak and pack the pak again
 - You will need NotePad++ or VSCode to open the unpacked pak 
 
-Which pak you will open up depends on 
+> Which pak you will open up depends on if you use Eyes of Beholder or Astralities' Glow Eyes as well. 
+> If you use either of those two, you will need to open up Eyes of Beholder or Astralities' Glow Eyes. 
+> If you do not use either of those, then you need to open up and edit Unique Tav itself. 
+> This is because Eyes of Beholder or Glow Eyes overrides Unique Tav, so editing Unique Tav will not yield any results.
+{.is-warning}
 
+When you have opened up the pak, you will need to edit for the individual race or subrace. So for example, if you play a tiefling, you would need to edit one of the tieflings subraces, and then you will further need to find the body type as well. Each race has their own section under "PAK_CharacterVisuals": 
+
+![pak.png](/tutorials/unique_tav/pak.png)
+
+For example, if you wish to edit the tattoo color and metallics of body type 1, female, of asmodeus tiefling then search for "female" under "tieflings.lsf.lsx" (ctrl + f in VSCode), and you will find: "Tieflings_Female_Asmodeus_Player_Dev_fecb40db-3672-480a-a1d4-4439ffb031cd". If you want the strong body type, you search for female and choose the strong version, "Tieflings_Female_Asmodeus_Player_Strong_7abd78c4-41cc-4910-aaf2-4e06fd314303". 
+
+Under these you will see a lot of visual nodes, but you will focus on these three under the body, race and subrace you want to edit: 
+
+"BodyTattooColor" controls the tattoo color. You will need to replace "1 0 0" with a sRBG color you find on google or via multitool color picker. 
+
+								<node id="Vector3Parameters">
+									<attribute id="Color" type="bool" value="False" />
+									<attribute id="Custom" type="bool" value="True" />
+									<attribute id="Enabled" type="bool" value="True" />
+									<attribute id="Parameter" type="FixedString" value="BodyTattooColor" />
+									<attribute id="Value" type="fvec3" value="1 0 0" />
+								</node>
+
+"TattooMetalNess" controls if the tatto's are metallic or not. 0 means they are not, 1 means they are. 
+							
+              <node id="ScalarParameters">
+									<attribute id="Color" type="bool" value="False" />
+									<attribute id="Custom" type="bool" value="True" />
+									<attribute id="Enabled" type="bool" value="True" />
+									<attribute id="Parameter" type="FixedString" value="TattooMetalness" />
+									<attribute id="Value" type="float" value="0" />
+								</node>
+
+"Reflectence" controls the intensity. If you have it at 0, it will not be enabled and not be metallic. More than 0 enables it. From 0-2 controls how intense the metallicness will be.
+
+								<node id="ScalarParameters">
+									<attribute id="Color" type="bool" value="False" />
+									<attribute id="Custom" type="bool" value="True" />
+									<attribute id="Enabled" type="bool" value="False" />
+									<attribute id="Parameter" type="FixedString" value="Reflectance" />
+									<attribute id="Value" type="float" value="0.6" />
+								</node>
 
 ## Common issues, user errors and how to fix them
 
