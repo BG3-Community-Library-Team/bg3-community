@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2024-05-02T18:10:03.605Z
+date: 2024-05-04T19:51:57.338Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
