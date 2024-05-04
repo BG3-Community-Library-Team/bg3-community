@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2024-05-04T22:16:57.411Z
+date: 2024-05-04T22:20:28.391Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -28,6 +28,7 @@ As this is going to be a big guide, here are the things it will cover:
 	- [Invislbe body](#invisible-body)
  	 - [Blue body](#blue-body)
    - [Tattoo or makeup mods does not work correctly](#tattoo-or-makeup-mods-does-not-work-correctly) 
+   - [Five naked characters on my screen](#five-naked-characters-on-my-screen?) 
 1. [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods)
 	- [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-for-unique-tav)
 1. [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
@@ -244,6 +245,15 @@ Make sure you do not have any other tatto or makeup mods installed. These will l
 If it does not work, try moving your "Generated" folder from your data folder, reinstall the data main file from Unique Tav, and the make/tattoo mod you want. 
 
 Look here through these two to properly install face/body tattoo's and make up mods: [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods) and [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-for-unique-tav)
+
+#### Five naked characters on my screen?
+
+If you see this: 
+
+![nomodfixerpng.png](/tutorials/nomodfixerpng.png =x400)
+
+This means you have not installed mod fixer. 
+Mod fixer is a requirement for almost all mods
 
 ## How to switch tattoo and makeup mods 
 
