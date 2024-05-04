@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: true
-date: 2024-05-01T05:09:12.103Z
+date: 2024-05-04T21:53:52.887Z
 tags: se, script-extender, guide, installation, console, enable-console, devel
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -221,18 +221,17 @@ Mod fixer also prevents the issue of not being able to talk or interact with any
 Yes but no. It is a complicated issue but Mod fixer is very essential but it is best used with SE. 
 
 ## Other relevant guides and credits:
-Using the console and using Script Extender for mod creation: https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted
+[Getting Started with SE for mod creation](/Tutorials/ScriptExtender/GettingStarted)
 
-How to install BG3MM, mods and manual/loose file mods: 
-Part 1: How to install BG3MM: https://wiki.bg3.community/Tutorials/Mod-Use/Installation-Of-BG3MM
-Part 2: How to install pak files: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files
-Part 3: How to install loose file mods: https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
+How to install BG3MM, pak files and loose/manual mods series: 
+- [Part 1: Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
+- [Part 2: How to Install Pak Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
+- [Part 3: How-to install manual or loose file-mods](/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods)
 
-Other guides:
-General load order guide: https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order
-How to do a fresh reinstall of SE: To do
-How to install Native Mod Loader and Native Mod Loader mods (Camera Tweaks, WASD Movement etc.) https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods
-How to install Unique Tav: To do 
+Other relevant guides: 
+- [General load order guide](/Tutorials/Mod-Use/general-load-order)
+- [How to remove mods/troubleshooting guide](/Tutorials/Mod-Use/How-to-remove-mods)
+- [Unique Tav & Everything you need to know](/Tutorials/Mod-Use/Unique-Tav-Everything-you-need-to-know)
 
 Made by: Maze 
 Credits: Satan, Norbyte, Kaz
