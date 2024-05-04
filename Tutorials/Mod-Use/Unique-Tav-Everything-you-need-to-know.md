@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:33:42.797Z
+date: 2024-05-04T21:34:50.948Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -215,7 +215,7 @@ How to do that can be found in this section: [How to make other loose file mods 
 
 If your Tav has an invisible body, you need to check if you have installed the pak file correctly. Look through [How to install the Pak file](#how-to-install-the-pak-main-file)
 
-It may also be a load order issue, which in that case look through [Load order in BG3MM/Vortex](#load-order-in-bg3mm/vortex). 
+It may also be a load order issue, which in that case look through [Load order in BG3MM and Vortex](#load-order-in-bg3mm-and-vortex). 
 
 Remember: High on the load order means the lowest number (0, 1, 2, etc) in BG3MM/Vortex and low on the load order means the highest number (depending on mods, 50, 51, etc). 
 Unique Tav needs to be placed relatively low on the load order. 
