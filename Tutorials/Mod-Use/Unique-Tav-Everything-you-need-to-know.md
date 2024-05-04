@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-03T23:59:59.171Z
+date: 2024-05-04T00:06:51.934Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -12,6 +12,8 @@ dateCreated: 2024-05-03T22:55:56.961Z
 
 This is a guide that will cover all of [Unique Tav](https://www.nexusmods.com/baldursgate3/mods/2754)
 What is Unique Tav? Unique Tav is a mod that functions as a tool for a lot of mod users and mod creators, where they can customize their character a lot more than you would have been able to in vanilla BG3. For example you need unique tav for body tattoo's.
+
+If you are an experienced user, there will be some useful information in this guide, however take a look at [Kartoffel's YouTube Video](https://www.youtube.com/watch?v=g67eTrz9fWg) Unique Tav.
 
 As this is going to be a big guide, here are the things it will cover:
 1. [How to install Unique Tav](#how-to-install-unique-tav)
@@ -27,6 +29,7 @@ As this is going to be a big guide, here are the things it will cover:
 1. Common issues and user errors 
 	- How to fix them 
 1. Other information
+
 
 ## How to install unique Tav
 
@@ -58,7 +61,15 @@ For example like this:
 
 ![uniquetavloadorder.png](/tutorials/unique_tav/uniquetavloadorder.png)
 
-If you are using other mods such as [Eyes of Beholder](https://www.nexusmods.com/baldursgate3/mods/315) or [Astralities' Glow Eyes](https://www.nexusmods.com/baldursgate3/mods/4964) you will need to have a certain load order. The load order is found at the bottom of Unique Tav's description, however it will be posted here as well.
+If you are using other mods such as [Eyes of Beholder](https://www.nexusmods.com/baldursgate3/mods/315) or [Astralities' Glow Eyes](https://www.nexusmods.com/baldursgate3/mods/4964) you will need the patches from Unique Tav as well.
+
+
+
+The load order has It would look something like this: 
+
+![eyesofbeholder.png](/tutorials/unique_tav/eyesofbeholder.png)
+
+This example has Eyes of Beholder, but it will be the exact same load order just with Glow eyes patch from Unique Tav and Glow eyes main file and preset from Glow eyes. 
 
 > Trips' Old Shader pack will be in the overrides section of BG3MM and likely locked in Vortex. 
 > Leave those there. Everytime BG3MM puts a mod in the overrides, it is for a reson and that is because they override base game files. 
