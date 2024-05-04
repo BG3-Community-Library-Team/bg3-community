@@ -2,7 +2,7 @@
 title: ImGui Logic Lab
 description: Handling ImGui Component Logic
 published: false
-date: 2024-05-04T13:20:42.782Z
+date: 2024-05-04T13:23:19.466Z
 tags: script-extender, script extender, imgui, ui, interface, scriptextender, buttons, logic, components, dear imgui
 editor: markdown
 dateCreated: 2024-05-04T12:54:28.697Z
