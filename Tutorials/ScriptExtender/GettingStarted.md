@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T13:30:49.077Z
+date: 2024-05-04T16:26:35.934Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -10,7 +10,7 @@ dateCreated: 2024-04-30T08:23:34.674Z
 
 # **Getting started with Script Extender**
 
-This tutorial covers the absolute basics for modders to start writing mods with Norbytes Script Extender. 
+This tutorial covers the absolute basics for modders to start writing mods with [Norbytes Script Extender](https://github.com/Norbyte/bg3se/tree/main). 
 
 You can start this tutorial even with no knowledge about programming.
 
