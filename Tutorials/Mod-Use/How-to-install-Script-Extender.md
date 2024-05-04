@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: true
-date: 2024-05-04T21:54:18.493Z
+date: 2024-05-04T21:55:09.412Z
 tags: se, script-extender, guide, installation, console, enable-console, devel
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -138,7 +138,7 @@ NotePad:
 ![notepadse.png](/tutorials/notepadse.png)
 
 
-> Check this guide out on how to use the console and getting started with using Script Extender for mod creation: https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted
+> Check this guide out on how to use the console and getting started with using Script Extender for mod creation: [Getting Started with SE for mod creation](/Tutorials/ScriptExtender/GettingStarted)
 {.is-info}
 
 
