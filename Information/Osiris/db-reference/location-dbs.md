@@ -2,7 +2,7 @@
 title: Location DB Reference
 description: Osiris DBs that relate to Locations
 published: true
-date: 2024-05-04T20:51:46.276Z
+date: 2024-05-04T20:52:22.885Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:33:41.366Z
@@ -52,3 +52,4 @@ The following DBs are ones that relate to Location.
 |DB_CampNight_Completed|?|1|Flag ID|--|--|--|--|
 |DB_Camp_ForceNextLongRest|?|1|Integer|--|--|--|--|
 |DB_GLO_DaisyUnlocked|?|1|Integer|--|--|--|--|
+|DB_CampfireMoment_FixedPlayer|?|2|Flag ID|Character UID|--|--|--|
