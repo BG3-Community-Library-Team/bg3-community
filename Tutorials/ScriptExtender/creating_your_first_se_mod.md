@@ -2,7 +2,7 @@
 title: Creating your first SE Mod
 description: A follow along tutorial for creating your first Script Extender Mod that stops companions from returning to their tent when in camp. Optional toggleable version
 published: false
-date: 2024-05-04T11:29:16.054Z
+date: 2024-05-04T11:31:03.361Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T14:54:45.494Z
@@ -40,6 +40,37 @@ This tutorial is based on **Alithea Ancunín's** implementation of [Please Stay]
 
 
 ## 3. Writing the code
+
+```lua
+-- variables
+
+FLAG_IN_CAMP = "161b7223-039d-4ebe-986f-1dcd9a66733f"
+```
+
+```lua
+-- methods
+
+---@param character GUIDSTRING     - the character who will stop moving in camp
+function stopMoving(character)
+    if Osi.GetFlag(FLAG_IN_CAMP, character) == 1 then
+        Osi.ClearFlag(FLAG_IN_CAMP, character)  
+    end
+end
+```
+
+```lua
+
+---@param character GUIDSTRING     - the character who will start moving again in camp
+function startMoving(character)
+    if Osi.GetFlag(FLAG_IN_CAMP, character) == 0 then
+        Osi.SetFlag(FLAG_IN_CAMP, character)
+    end
+end
+
+
+
+```
+
 
 
 ## 4. Interdiscipline: Using stats file in conjunction with SE
@@ -98,6 +129,18 @@ data "ToggleOffFunctors" "RemoveStatus(STAY_STILL_STATUS)"
 
 ### 4.4 Using SE to Handle the Stats
 
+
+```lua
+
+---@param character GUIDSTRING     - the character receiving the passive
+---@return passive - string         - the passive being added to the character
+function addPassive(character, passive)
+    if Osi.HasPassive(character, passive) == 0 then
+        Osi.AddPassive(character, passive)
+    end
+end
+
+```
 
 ```lua
 
