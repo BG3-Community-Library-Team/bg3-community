@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T02:32:46.132Z
+date: 2024-05-04T02:49:00.461Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -248,6 +248,27 @@ Remember: you can only have one face tattoo and one body tattoo, not two at the 
 {.is-warning}
 
 ## Makeup and tattoo mods that have not been optimised for Unique Tav 
+
+> For this part, you will need to have "file extension" on. This guide will show how to put that on in Windows 11. If you have Windows 10, it may be a bit different: [How to view file extension for windows 7, 8 and 10](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/How-to-enable-hidden-file-extensions-in-Windows.html)
+{.is-warning}
+
+How to view file extension on Windows 11: 
+
+![fileextension.png](/tutorials/fileextension.png =x600)
+
+#### Makeup, face tattoo mods
+
+Some mods, such as [CovenElf's Tattoo and Makeup Collection (v1.2 Update)](https://www.nexusmods.com/baldursgate3/mods/1684) is not optimised for Unique Tav. This means you will need to be a little more hands on than above. 
+
+You will do the exact same as above: download, extract the mod in your downloads folder, and find the "Generated" folder in the mod you downloaded. When you find the "Generated" folder, you will need to keep going to find the end files. The files should be in the folder called "Resources". These end files should look like this: 
+
+![endfiles.png](/tutorials/unique_tav/endfiles.png)
+
+Now you need to find the Unique Tav version of these files. 
+Go into your Data folder, then "Generated". 
+Follow this path: `\SteamLibrary\steamapps\common\Baldurs Gate 3\Data\Generated\Public\Shared\Assets\unique_tav\FACE`
+
+#### Body tattoo's that does not have the folder "Generated"
 
 ## How to make other loose file mods compatible with Unique Tav 
 
