@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: false
-date: 2024-05-04T21:13:39.326Z
+date: 2024-05-04T21:18:44.272Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -27,13 +27,11 @@ As this is going to be a big guide, here are the things it will cover:
 1. [Common issues, user errors and how to fix them](#common-issues,-user-errors-and-how-to-fix-them)
 	- [Invisible body](#invisible-body)
  	 - [Blue body](#blue-body)
-   - [My body/face tattoo's or makeup does not show up](#my-body/face-tattoo's-or-makeup-does-not-show-up)
 1. [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods)
 	- [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-forunique-tav)
 1. [How to make other loose file mods compatible with Unique Tav](#how-to-make-other-loose-file-mods-compatible-with-unique-tav)
 1. [General usage such as changing tattoo colors](#general-usage-such-as-changing-tattoo-colors)
 1. [Other information](#other-information)
-
 
 ## How to install unique Tav
 Installing unique Tav, it is recommended to not use Vortex but use BG3MM and install the data part as a loose file mod, simply because of how complex this mod is. If you use Vortex, install the pak file as normal and then follow [how to install the data main file](#how-to-install-the-data-main-file-in-unique-tav).
@@ -234,7 +232,7 @@ Remember this mod is a must! It is a requirement. Sadly, if you have a mac you m
 
 This was not an requirement before Patch 5, which changed a lot of textures and how they work. 
 
-#### My body/face tattoo's or makeup does not show up 
+#### Tattoos or makeup mods does not work
 
 Make sure you do not have any other tatto or makeup mods installed. These will likely be outside of the Unique Tav folders in "Generated" in your Data folder. 
 
