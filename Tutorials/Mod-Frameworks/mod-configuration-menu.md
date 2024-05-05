@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed documentation for integrating mods with it
 published: true
-date: 2024-05-05T22:44:33.453Z
+date: 2024-05-05T22:46:34.745Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -177,7 +177,7 @@ MCM performs validation checks when:
 - Blueprint validation:
   - Loading blueprints from the `MCM_blueprint.json`;
 - Settings validation:
-  - Loading settings from a JSON file (e.g., switching between profiles);
+  - Loading settings from a JSON file (+ e.g., switching between profiles);
   - Setting values programmatically through the API (TODO, effectively same as below);
   - Processing user input from the UI (TODO, effectively same as above);
 
