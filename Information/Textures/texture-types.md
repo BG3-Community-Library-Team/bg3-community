@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2024-05-05T03:29:26.965Z
+date: 2024-05-05T03:30:37.807Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -25,7 +25,7 @@ The formats are as follows:
 
 ---
 
-### Non-Dgb
+## Non-Dgb
  - For Non-Dragonborn Skin
 
 	1. CLEA 
@@ -64,7 +64,7 @@ The formats are as follows:
 
 
 
-### Dgb
+## Dgb
 - For Dragonborn Skin
 
 
@@ -98,7 +98,7 @@ The formats are as follows:
     
       
 ---
-### Objects
+## Objects
 - For Hard Surface Objects
 
 	1. BM (Either full color *or* B/W)
