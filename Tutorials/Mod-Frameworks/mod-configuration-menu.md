@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed documentation for integrating mods with it
 published: true
-date: 2024-05-05T22:46:34.745Z
+date: 2024-05-05T22:47:15.996Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
