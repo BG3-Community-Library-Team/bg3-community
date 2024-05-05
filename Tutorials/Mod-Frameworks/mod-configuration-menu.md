@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed documentation for integrating mods with it
 published: true
-date: 2024-05-05T22:50:17.650Z
+date: 2024-05-05T22:50:58.689Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -72,7 +72,7 @@ The `MCM_blueprint.json` file is how you specify your mod's configuration defini
 
 The MCM Schema dictates how you should structure your blueprint file. In this wiki, you can find it here: [mcm_meta_schema.json](/tutorials/frameworks/mcm_meta_schema.json)
 
-This schema file can be used to validate your `MCM_blueprint.json` file, as it tries to enforce the intended structure of the MCM Schema in your blueprint file, ensuring that it is correctly formatted and adheres to the schema.
+This schema file can be used to validate your `MCM_blueprint.json` file, as it will help enforcing the intended structure of the MCM Schema in your blueprint file, ensuring that it is correctly formatted and adheres to the schema.
 
 **Although not mandatory, it is very recommended that you set it up, as you can easily validate your blueprint files** using VSCode by adding this JSON schema entry to your settings:
 
