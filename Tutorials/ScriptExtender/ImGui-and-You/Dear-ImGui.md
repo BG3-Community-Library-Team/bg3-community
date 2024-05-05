@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: true
-date: 2024-05-04T16:07:29.085Z
+date: 2024-05-05T06:42:06.494Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -316,16 +316,18 @@ However, if you added components to the first tab, which were attached to the ov
 ### **2.4.3\. Navigating through Trees**
 
 A tree is essentially like the directory sidebar you find within your file browser on your PC.
-It has a root and from there a tree grows with different leaves.
+It has a root and from there a tree grows with different branches and leaves.
 
 This is a simplified structure on what a tree can look like.
 ```
 RootName
-|->FirstTreeItem
-|->SecondTreeItem
-|->ThirdTreeItem
-	|->ThirdTreeItem/Leaves
-|->FourthTreeItem
+|->Tree 1
+|->Tree 2
+|->Tree 3
+	|->Tree 3.1
+  |->Tree 3.2
+  	|->Tree 3.2.1
+|->Tree 4
 	
 ```
 
@@ -333,12 +335,15 @@ To create one, we need to decide where to add it. Whether to a tab or perhaps a 
 
 ```lua
 treeRoot = parentObject:AddTree("Name it whatever you want")
-firstItem = treeRoot:AddTree("FirstTreeItem")
-secondItem = treeRoot:AddTree("SecondTreeItem")
-thirdItem = treeRoot:AddTree("ThirdTreeItem")
-fourthItem = treeRoot:AddTree("FourthTreeItem")
+tree1 = treeRoot:AddTree("Tree 1")
+tree2 = treeRoot:AddTree("Tree 2")
+tree3 = treeRoot:AddTree("Tree 3")
+tree4 = treeRoot:AddTree("Tree 4")
 
-leavesThrItem = thirdItem:AddTree("Leaves")
+tree31 = tree3:AddTree("Tree 3.1")
+tree32 = tree3:AddTree("Tree 3.2")
+
+tree321 = tree32:AddTree("Tree 3.2.1")
 ```
 
 ### **2.4.4\. Grouping Components**
