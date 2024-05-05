@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed documentation for integrating mods with it
 published: true
-date: 2024-05-05T22:38:49.986Z
+date: 2024-05-05T22:44:33.453Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -48,10 +48,10 @@ Below are listed some nice features that MCM provides to mod authors:
 
 First, let's establish some concepts that are important to understand MCM. These will be used throughout the documentation:
 
-> - **Setting**: A **single configuration option** that can be set by the user.
-> - **Config/Configuration/Settings**: All the possible settings; the **entire set of settings** for a mod.
-> - **Blueprint**: Defines the **structure of a mod's configuration for MCM** to use (with a `MCM_blueprint.json` file).
-> - **MCM Schema**: Dictates the **structure of the blueprint**/configuration definition; the 'metaschema'.
+>**Setting**: A **single configuration option** that can be set by the user.
+>**Config/Configuration/Settings**: All the possible settings; the **entire set of settings** for a mod.
+>**Blueprint**: Defines the **structure of a mod's configuration for MCM** to use (with a `MCM_blueprint.json` file).
+>**MCM Schema**: Dictates the **structure of the blueprint**/configuration definition; the 'metaschema'.
 {.is-info}
 
 ## Integrating MCM into your mod
@@ -110,17 +110,13 @@ Within each tab, you can define either `Sections` or a list of `Settings`. Secti
 
 Again, having the schema file set up in your IDE will help you write the blueprint file correctly, without having to guess the structure or wonder if you're missing something.
 
->[!TIP]
 > If your [mod is symlinked](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking 'Symlinking mods tutorial'), you can try out changes to your mod's blueprint in-game by using `reset` in the console without having to restart the game every time you make a change to the blueprint file.
+{.is-info}
 
-> [!TIP]
+
 > For examples of mods that use MCM, you can check:
->
-> - [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/MCM-integration/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
-> - B
-> - C
-> - D
-> - E
+> [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/MCM-integration/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
+{.is-success}
 
 ---
 
@@ -152,8 +148,9 @@ Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
 end)
 ```
 
-> [!TIP]
-> Allow global usage of `MCMAPI` by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`. Otherwise, prepend `Mods.BG3MCM` to all API calls.
+> Allow global usage of `MCMAPI` by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`. 
+> Otherwise, prepend `Mods.BG3MCM` to all API calls.
+{.is-info}
 
 ### Inserting custom UI elements
 
@@ -168,8 +165,8 @@ Mods.BG3MCM:IMGUIAPI:InsertModMenuTab(ModuleUUID, "Inserted tab", function(tabHe
 end)
 ```
 
-> [!NOTE]
 > You can define an entire tab's content - not just a widget - and call the `InsertModMenuTab` function to insert it into the MCM window, below your mod's tab.
+{.is-info}
 
 ### How validation works
 
@@ -184,13 +181,12 @@ MCM performs validation checks when:
   - Setting values programmatically through the API (TODO, effectively same as below);
   - Processing user input from the UI (TODO, effectively same as above);
 
-> [!NOTE]
->
-> - Settings not present in the blueprint will be removed from the settings JSON file;
-> - Invalid settings values will be replaced with their respective default value as specified in the blueprint;
-> - New settings are automatically introduced to the settings JSON file when new settings are added to the schema;
-> - Therefore, mod authors can safely add or remove settings from the blueprint without worrying about inconsistencies in the settings JSON file.
 
+>• Settings not present in the blueprint will be removed from the settings JSON file;
+>• Invalid settings values will be replaced with their respective default value as specified in the blueprint;
+>• New settings are automatically introduced to the settings JSON file when new settings are added to the schema;
+>Therefore, mod authors can safely add or remove settings from the blueprint without worrying about inconsistencies in the settings JSON file.
+{.is-success}
 ### Localization support
 
 In your blueprint, you can define localization handles for various elements of the configuration, including:
@@ -212,8 +208,7 @@ This is achieved through the use of "handles" - unique identifiers that can be u
 },
 ```
 
-> [!NOTE]
->
-> - These handles should have been listed in a loca file in your mod;
-> - If handles are provided and their content can be retrieved, the localized string will be used instead of the usual name/description/tooltip;
-> - If the handle is not found, the usual string will be used.
+> These handles should have been listed in a loca file in your mod;
+> • If handles are provided and their content can be retrieved, the localized string will be used instead of the usual name/description/tooltip;
+> • If the handle is not found, the usual string will be used.
+{.is-info}
