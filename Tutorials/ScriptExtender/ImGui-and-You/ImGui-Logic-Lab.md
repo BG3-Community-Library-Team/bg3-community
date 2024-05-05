@@ -2,7 +2,7 @@
 title: ImGui Logic Lab
 description: Handling ImGui Component Logic
 published: false
-date: 2024-05-05T08:13:05.790Z
+date: 2024-05-05T08:15:58.845Z
 tags: script-extender, script extender, imgui, ui, interface, scriptextender, buttons, logic, components, dear imgui
 editor: markdown
 dateCreated: 2024-05-04T12:54:28.697Z
@@ -135,12 +135,15 @@ MyButton.OnClick = function()
 end
 ```
 
-### **2.2\. Manipulating Stylistic Choices
+### **2.2\. Manipulating Stylistic Choices**
 
-This section will get into editing stylistic choices.
-If you are not familar with whats available for styling your ImGui objects, please do check out part 4 of this tutorial.
+> This section will get into editing stylistic choices.
+> If you are not familar with whats available for styling your ImGui objects, please do check out part 4 of this tutorial.
+{.is-info}
 
 Now that you know how to execute functions with the push of a button, we can use this to change how the window is build up in general.
+
+
 
 ---
 ---
