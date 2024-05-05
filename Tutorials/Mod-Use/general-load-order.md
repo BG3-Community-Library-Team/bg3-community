@@ -2,14 +2,14 @@
 title: General Load Order Guide
 description: Setting up a solid Load Order
 published: true
-date: 2024-05-05T21:13:05.473Z
+date: 2024-05-05T21:14:46.475Z
 tags: moduse, mod use
 editor: markdown
 dateCreated: 2024-05-01T03:29:26.549Z
 ---
 
 # General Load Order
-This guide will give a general overview of how to handle Mod Load Orders. It's not meant to be a strict prescription, but it will assist in ensuring your load order has minimal issues, and is easier to troubleshoot. If playing in Multiplayer, it's important to note that you must have the exact same mods and load order as the other player, including mods listed in the inactive pane or loose-file mods, or you may run into problems.
+This guide will give a general overview of how to handle Mod Load Orders. It's not meant to be a strict prescription, but it will assist in ensuring your load order has minimal issues, and is easier to troubleshoot. **If playing in Multiplayer**, it's important to note that you must have the exact same mods and load order as the other player, including mods listed in the inactive pane or loose-file mods, or you may run into problems.
 
 > Do not load these entries:
 > - Honour.pak
