@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-04T18:10:39.526Z
+date: 2024-05-05T07:53:10.050Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -397,6 +397,12 @@ Change it to something else so you can recognize the change
 
 Then, after activating your SE console again, type `reset` in the console and press enter
 
+
+> You can only utilize the reset statement if you either symlinked your folder or moved it into `Data`
+> Else you need to repack your Mod so see changes.
+{.is-info}
+
+
 ![](/tutorials/getting_started_with_se/gswse_19.png)
 
 
@@ -460,6 +466,10 @@ Only by adding this line will SE know to load the new file. Else it will be igno
 
 
 ![gswse_both_loaded.png](/tutorials/getting_started_with_se/gswse_both_loaded.png)
+
+> You can only utilize the reset statement if you either symlinked your folder or moved it into `Data`
+> Else you need to repack your Mod so see changes.
+{.is-info}
 
 
 
