@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2024-05-05T03:23:57.881Z
+date: 2024-05-05T03:26:13.591Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -14,7 +14,7 @@ The engine Baldur's Gate 3 runs on uses various texture 'formats' while utilizin
 
 First and foremost it is important to disclose the difference between 'format' and the *actual* file type that the textures are saved as - *all* textures outside of **Virtual Textures** are various types of .DDS (DirectDrawSurface) files. When we say format, we mean exclusively to refer to how the game *engine* interprets the data stored in the .DDS file. This is usually denoted in the name of the file (EX: '_HMVY.DDS' or '_NM.DDS') however it is possible to determine by other methods. 
 
-Secondly it is important to note that the types of compression are different (usually*) dependant on what the texture is being used for. (Insert link to Compression writeup here :) )
+Secondly it is important to note that the types of compression are different (usually*) dependant on what the texture is being used for. ([Insert link to Compression writeup here :)](/Information/Textures/compression))
 <sup>*I say 'usually' as many textures share the same compression type but this is not guaranteed</sup>
 
 ## Texture Formats:
