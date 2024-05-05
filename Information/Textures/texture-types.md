@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2024-05-05T03:30:37.807Z
+date: 2024-05-05T03:33:46.997Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -38,7 +38,7 @@ The formats are as follows:
 
 	2. NM 
 
-	*~BC3/DXT5~ ~Linear~*
+	*~Format:~* *~BC3/DXT5~ ~Linear~*
 	RED channel - UNUSED BY BG3 ENGINE STORED IN ALPHA
   GRN channel - Y Axis Normals
   BLU channel - Z Axis Normals
