@@ -2,7 +2,7 @@
 title: ImGui Logic Lab
 description: Handling ImGui Component Logic
 published: false
-date: 2024-05-04T15:42:16.466Z
+date: 2024-05-05T08:13:05.790Z
 tags: script-extender, script extender, imgui, ui, interface, scriptextender, buttons, logic, components, dear imgui
 editor: markdown
 dateCreated: 2024-05-04T12:54:28.697Z
@@ -30,8 +30,11 @@ Now whenever you add new lines of code, you can just reload your save to test th
 {.is-info}
 
 
-## 1\. Basic Component Logic
-Welcome back, to start off with we will be going through some general things you can do with a few components and later give you a list which object type can even use specific functions.
+## 1\. Introduction to Basic Component Logic
+Welcome back!
+To start off, we will be dealing with component logic now, so if you followed the earlier setup guide, you can use your yourfile_Logic.lua now to not make the file you used for creating ImGui objects unreadable.
+
+In this Part we will go through some general things you can do with a few components and later give you a list which object type can even use specific functions.
 
 Except for the general creation of ImGui objects, handling logic/events and styling of them works hand in hand with each other. So this part may mention and link to specific sections of other parts of this tutorial to give you a better idea on what we are doing.
 
@@ -95,7 +98,7 @@ end
 
 This will print the sliders value on every change to it.
 
-## 2\. Advanced Logic to manipulate other objects
+## 2\. Editing other ImGui objects
 
 Now that you are able to create buttons and other stuff to interact with, we can do a little bit more than before!
 
@@ -108,6 +111,36 @@ Whats allowed on a specific object you are working with, you got to check via th
 
 As a small introduction to it, lets say we we create a button that changes the name of another.
 
+Since Labels (their text) or Values (for sliders for instance) are all components on the object itself we can call them with ``myobject.mycomponent``.
+
+```lua
+MyButton.OnClick = function()
+	MyOtherButton.Label = "New Text"
+end
+```
+
+Here is an example of how you can update a text object depending on a sliders value automatically.
+```lua
+MySlider.OnChange = function()
+	MyText.Label = MySlider.Value
+end
+```
+
+You can also combine this by creating a button which sets the sliders value to a specific amount.
+Here we add 10 to the current value with the push of a button.
+
+```lua
+MyButton.OnClick = function()
+	MySlider.Value = MySlider.Value + 10
+end
+```
+
+### **2.2\. Manipulating Stylistic Choices
+
+This section will get into editing stylistic choices.
+If you are not familar with whats available for styling your ImGui objects, please do check out part 4 of this tutorial.
+
+Now that you know how to execute functions with the push of a button, we can use this to change how the window is build up in general.
 
 ---
 ---
