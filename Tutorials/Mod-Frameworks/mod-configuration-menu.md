@@ -1,0 +1,219 @@
+---
+title: Mod Configuration Menu
+description: Brief MCM overview + detailed documentation for integrating mods with it
+published: true
+date: 2024-05-05T22:37:40.947Z
+tags: mcm,mod configuration menu,settings,config,configuration,se settings,se configuration,mod configuration,mod settings,
+editor: markdown
+dateCreated: 2024-05-05T22:37:40.947Z
+---
+
+# Mod Configuration Menu	
+
+Baldur's Gate 3 Mod Configuration Menu (`BG3MCM` or MCM) is a mod that provides an in-game UI to enable players to intuitively manage mod settings as defined by mod authors. It supports various setting types, including integers, floats, checkboxes, text inputs, combos/dropdowns, radio buttons, sliders, drags, and color pickers.
+
+This documentation is aimed at mod authors who want to integrate their mods with MCM. If you are a player looking to use MCM to configure mods, please refer to the [Nexus Mods page](https://www.nexusmods.com/baldursgate3/mods/9162 'MCM on Nexus Mods') for instructions. This documentation provides a thorough guide on the concepts behind MCM, the features it provides to mod authors, and how to integrate MCM into your mod. You can also use the table of contents below to navigate to a desired section.
+
+## Table of Contents
+
+- [Overview](#overview)
+  - [Table of Contents](#table-of-contents)
+  - [Features for modders](#features-for-modders)
+  - [Concepts](#concepts)
+  - [Integrating MCM into your mod](#integrating-mcm-into-your-mod)
+    - [Defining a blueprint](#defining-a-blueprint)
+    - [The MCM Schema](#the-mcm-schema)
+    - [Using values from MCM](#using-values-from-mcm)
+    - [Inserting custom UI elements](#inserting-custom-ui-elements)
+    - [How validation works](#how-validation-works)
+    - [Localization support](#localization-support)
+
+## Features for modders
+
+Below are listed some nice features that MCM provides to mod authors:
+
+- **Easy to use**: MCM provides a simple and intuitive way to define your mod's settings. Integrating MCM into your mod only requires creating a simple blueprint JSON file and replacing a few lines of code;
+- **UI without writing client-side code**: MCM handles the UI for you, so you don't have to write any client-side code or learn the IMGUI API to display your mod's settings, since IMGUI is only available on the client-side.
+- **Simplifies settings management**: MCM takes care of saving and loading your mod's settings, so you don't have to build an entire configuration system to manage JSON files;
+- **Minimizes user error**: MCM handles the UI and validation of settings, reducing the risk of user error when configuring your mod, and encouraging them to do so safely. It skips the need for manual editing of configuration files, which is a great source of error;
+- **Instant saving and loading**: Unlike the traditional way of handling settings, MCM-integrated mods update settings in real-time as they are changed, without requiring save reloads;
+- **Validation checks**: MCM runs dozens of validation checks to ensure that your blueprint for integration was correctly written, while providing detailed error messages if something is wrong. It also validates the settings' values at runtime to ensure that they respect the defined constraints, which is especially useful if JSON settings files were manually edited, something that is supported by MCM;
+- **Supports bespoke UI injection**: MCM allows you to inject your own UI elements into the MCM UI, so you could even have a mix of MCM-generated UI and your own custom UI in the the same. This is useful when your mod has customized features largely unrelated to configuration;
+- **Doesn't clutter UI**: MCM centralizes settings for all mods that use it, so you don't have to worry about cluttering players' screens with yet another IMGUI window, thinking when should it initialize, activate, or even about keybindings - and possible conflicts thereof - for showing such windows.
+- **Robustness**: MCM has more than 50 automated tests aiming to ensure that it works as expected, edge cases are handled, and errors are gracefully reported without halting the framework or game;
+- **Multiple profiles**: MCM has support for creating, saving, loading, and deleting multiple configuration profiles, which is useful for mod authors to separate their testing configurations while developing mods;
+- **Localization support**: MCM supports localization for mod settings, allowing you to optionally provide translations for different languages.
+
+## Concepts
+
+First, let's establish some concepts that are important to understand MCM. These will be used throughout the documentation:
+
+> - **Setting**: A **single configuration option** that can be set by the user.
+> - **Config/Configuration/Settings**: All the possible settings; the **entire set of settings** for a mod.
+> - **Blueprint**: Defines the **structure of a mod's configuration for MCM** to use (with a `MCM_blueprint.json` file).
+> - **MCM Schema**: Dictates the **structure of the blueprint**/configuration definition; the 'metaschema'.
+{.is-info}
+
+## Integrating MCM into your mod
+
+Mod authors need to integrate their mods with the MCM for their settings to appear in the UI. The subsections below go in detail about this process, but it is essentially done in two steps:
+
+  1. Define the blueprint JSON file for your mod's settings and place it alongside your mod's `meta.lsx` file. It's also recommended to define BG3MCM as a dependency in your meta.lsx file. [Example of listing a dependency in a meta.lsx file](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/46822bb0a8af4db524fd1ccb6f8a277724f5630c/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/meta.lsx#L16 'Auto Send Food To Camp');
+  2. Replace your mod's logic for reading/writing settings with calls to the MCM API, using the setting's ID as defined in the blueprint.
+
+The `MCM_blueprint.json` file is how you specify your mod's configuration definition; this JSON file will define how your settings are to be structured, what are their names, defaults, etc., allowing for automatic generation of a user-friendly interface and validation of user-set values.
+
+### Defining a blueprint
+
+> **Recap**: a blueprint is a JSON file that defines the structure of your mod's configuration settings. It is used by MCM to generate the UI and validate the settings. It should be named `MCM_blueprint.json` and placed alongside your mod's `meta.lsx` file.
+{.is-info}
+
+### The MCM Schema
+
+The MCM Schema dictates how you should structure your blueprint file.
+
+With the copy of this project/mod, you should also receive a JSON schema file named `mcm_meta_schema.json` that you can use to validate your `MCM_blueprint.json` file. This schema file tries to enforce the intended structure of the MCM Schema in your blueprint file, ensuring that it is correctly formatted and adheres to the schema.
+
+**Although not mandatory, it is very recommended that you set it up, as you can easily validate your blueprint files** using VSCode by adding this JSON schema entry to your settings:
+
+```json
+"json.schemas": [
+    {
+        "fileMatch": [
+            "MCM_schema*.json"
+        ],
+        "url": "path/to/mcm_meta_schema.json"
+    }
+],
+```
+
+Replace `url` with the `mcm_meta_schema.json` file path (e.g. could be where you place IDEHelpers or Osi.lua files). This should supposedly work with a URL, but I couldn't get it to work with any JSON schema URL, so I just use the local path.
+
+Here are the main components of the MCM schema:
+
+- **Organizational structure**: The schema defines a hierarchical organization using `Tabs` and `Sections`:
+  - `Tabs`: Serve as top-level organizational units in the MCM menu. Each tab can exclusively contain either `Sections` or standalone `Settings`.
+    - `Sections`: Sub-divisions within tabs to group related settings.
+
+  - **`Settings`**:
+    - `Id`: A unique string identifier for each setting, similar to a variable name in your code; used to reference the setting programmatically.
+    - `Name`: The readable name of the setting as to be displayed in the MCM menu.
+    - `Type`: Defines the data type and ultimately the UI representation of the setting, with supported types including `int`, `float`, `checkbox`, `text`, `enum`, `radio`, `slider_int`, `slider_float`, `drag_int`, `drag_float`, `color_picker`, `color_edit`;
+    - `Default`: Specifies the initial value of the setting used during initialization or when a reset is needed. Supports various data types (`integer`, `number`, `boolean`, `string`, `object`, `null`) depending on the setting type.
+    - `Description` and `Tooltip`: Textual explanations of the setting's purpose and usage, where `Description` is visible below the setting's widget and `Tooltip` appears on hover. It is required to have at least one of these.
+    - `Options`: Additional parameters that tailor the setting's behavior, applicable to certain types like `enum`, `radio`, sliders and drags. This includes:
+      - `Choices`: The options to be made available for `enum` and `radio` types.
+      - `Min` and `Max`: Boundary values for types such as `slider`/`drag`.
+
+Thus, the main content of the blueprint is defined in the `Tabs` and `Settings` properties. You'll need to include at least one of these - either a list of tabs, or a list of standalone settings.
+Within each tab, you can define either `Sections` or a list of `Settings`. Sections provide a way to group related settings together under a header. Each setting has an `Id`, `Name`, `Type`, `Default` value, and at least a `Tooltip` or a `Description`. Each setting `Id` must be unique across the entire blueprint, and that is validated by one of the many validation checks MCM performs.
+
+Again, having the schema file set up in your IDE will help you write the blueprint file correctly, without having to guess the structure or wonder if you're missing something.
+
+>[!TIP]
+> If your [mod is symlinked](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking 'Symlinking mods tutorial'), you can try out changes to your mod's blueprint in-game by using `reset` in the console without having to restart the game every time you make a change to the blueprint file.
+
+> [!TIP]
+> For examples of mods that use MCM, you can check:
+>
+> - [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/MCM-integration/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
+> - B
+> - C
+> - D
+> - E
+
+---
+
+### Using values from MCM
+
+After setting up the blueprint, mod authors can access the values set by the player through the MCM API from anywhere in their mod's code.
+
+```lua
+-- Get the value of a setting with the ID "MySetting"
+local mySettingValue = Mods.BG3MCM:MCMAPI:GetSettingValue("MySetting", ModuleUUID)
+
+-- Set the value of a setting
+Mods.BG3MCM:MCMAPI:SetSettingValue("MySetting", newValue, ModuleUUID)
+```
+
+You can also listen to changes to settings values by listening to net messages like this:
+
+```lua
+Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
+    local data = Ext.Json.Parse(payload)
+    if not data or data.modGUID ~= ModuleUUID or not data.settingId then
+        return
+    end
+
+    if data.settingId == "debug_level" then
+        _D("Setting debug level to " .. data.value)
+        ASFTCPrinter.DebugLevel = data.value
+    end
+end)
+```
+
+> [!TIP]
+> Allow global usage of `MCMAPI` by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`. Otherwise, prepend `Mods.BG3MCM` to all API calls.
+
+### Inserting custom UI elements
+
+MCM allows mod authors to insert custom UI elements into the MCM UI. This can be done using the `InsertModMenuTab` function from MCM's `IMGUIAPI`:
+
+```lua
+Mods.BG3MCM:IMGUIAPI:InsertModMenuTab(ModuleUUID, "Inserted tab", function(tabHeader)
+    local myCustomWidget = tabHeader:AddButton("My custom widget")
+    myCustomWidget.OnClick = function()
+        _D("My custom widget was clicked!")
+    end
+end)
+```
+
+> [!NOTE]
+> You can define an entire tab's content - not just a widget - and call the `InsertModMenuTab` function to insert it into the MCM window, below your mod's tab.
+
+### How validation works
+
+Validation is divided into two main categories: blueprint validation and settings validation. Blueprint validation ensures that the blueprint JSON file is correctly formatted and adheres to the MCM schema. Settings validation, on the other hand, ensures that the settings values are valid and respect the constraints defined in the blueprint.
+
+MCM performs validation checks when:
+
+- Blueprint validation:
+  - Loading blueprints from the `MCM_blueprint.json`;
+- Settings validation:
+  - Loading settings from a JSON file (e.g., switching between profiles);
+  - Setting values programmatically through the API (TODO, effectively same as below);
+  - Processing user input from the UI (TODO, effectively same as above);
+
+> [!NOTE]
+>
+> - Settings not present in the blueprint will be removed from the settings JSON file;
+> - Invalid settings values will be replaced with their respective default value as specified in the blueprint;
+> - New settings are automatically introduced to the settings JSON file when new settings are added to the schema;
+> - Therefore, mod authors can safely add or remove settings from the blueprint without worrying about inconsistencies in the settings JSON file.
+
+### Localization support
+
+In your blueprint, you can define localization handles for various elements of the configuration, including:
+
+- Tab names and descriptions
+- Section names
+- Setting names, descriptions, and tooltips
+- Enum/radio choice labels
+
+This is achieved through the use of "handles" - unique identifiers that can be used to look up the localized strings, just like in the vanilla game. For every element that you can put a string in the blueprint, you can use a handle by adding a `Handles` object in the same level as the element, like this:
+
+```json
+{
+    "TabId": "myTab",
+    "TabName": "My tab default display name",
+    "Handles": {
+        "NameHandle": "h3b019e17g75fcg48ccg8063g4de5bfcc7792"
+    }
+},
+```
+
+> [!NOTE]
+>
+> - These handles should have been listed in a loca file in your mod;
+> - If handles are provided and their content can be retrieved, the localized string will be used instead of the usual name/description/tooltip;
+> - If the handle is not found, the usual string will be used.
