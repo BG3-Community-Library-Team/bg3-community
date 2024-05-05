@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed documentation for integrating mods with it
 published: true
-date: 2024-05-05T22:50:58.689Z
+date: 2024-05-05T22:55:15.326Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -70,7 +70,7 @@ The `MCM_blueprint.json` file is how you specify your mod's configuration defini
 
 ### The MCM Schema
 
-The MCM Schema dictates how you should structure your blueprint file. In this wiki, you can find it here: [mcm_meta_schema.json](/tutorials/frameworks/mcm_meta_schema.json)
+The MCM Schema dictates how you should structure your blueprint file. In this wiki, you can find it here: [mcm_meta_schema.json](/tutorials/frameworks/mcm_meta_schema.json), but it is recommended to [get it from GitHub](https://github.com/AtilioA/BG3-MCM/blob/main/.vscode/schema.json)
 
 This schema file can be used to validate your `MCM_blueprint.json` file, as it will help enforcing the intended structure of the MCM Schema in your blueprint file, ensuring that it is correctly formatted and adheres to the schema.
 
