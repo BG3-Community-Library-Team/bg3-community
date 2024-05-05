@@ -2,7 +2,7 @@
 title: Story DB Reference
 description: Osiris DBs that relate to Story Content
 published: true
-date: 2024-05-04T20:57:12.952Z
+date: 2024-05-05T00:31:02.799Z
 tags: reference, osiris, db, dbs
 editor: markdown
 dateCreated: 2024-05-02T16:35:51.588Z
@@ -53,6 +53,7 @@ The following DBs relate to the Story.
 |DB_MOO_InfernalVendor_AddingTemplateToPlayer|?|2|Item ID|Character UUID|--|--|--|
 |DB_GLO_BloodElixirs_BloodDrawTarget|?|3|String UUID|Character UUID|?|--|--|
 |DB_MOO_InfernalVendor_CharacterSellBlood|?|1|Character UUID|--|--|--|--|
+|DB_Camp_AvatarAstarionBiteFailRecognized|?|1|Character UUID
 
 ## Scenes
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
