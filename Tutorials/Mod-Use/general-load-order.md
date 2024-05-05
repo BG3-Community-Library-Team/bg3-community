@@ -2,18 +2,19 @@
 title: General Load Order Guide
 description: Setting up a solid Load Order
 published: true
-date: 2024-05-01T05:16:47.634Z
+date: 2024-05-05T21:13:05.473Z
 tags: moduse, mod use
 editor: markdown
 dateCreated: 2024-05-01T03:29:26.549Z
 ---
 
 # General Load Order
-This guide will give a general overview of how to handle Mod Load Orders. It's not meant to be a strict prescription, but it will assist in ensuring your load order has minimal issues, and is easier to troubleshoot.
+This guide will give a general overview of how to handle Mod Load Orders. It's not meant to be a strict prescription, but it will assist in ensuring your load order has minimal issues, and is easier to troubleshoot. If playing in Multiplayer, it's important to note that you must have the exact same mods and load order as the other player, including mods listed in the inactive pane or loose-file mods, or you may run into problems.
 
 > Do not load these entries:
 > - Honour.pak
 > - DiceSet_06.pak
+> These files are from the base game itself, but show up in BG3MM. They should stay in the Inactive Mods pane.
 <!-- {blockquote:.is-danger} -->
 
 > A note on Mod Load Order: There are a lot of ways people reference the order in which mods load. You'll often hear things like:
@@ -22,7 +23,7 @@ This guide will give a general overview of how to handle Mod Load Orders. It's n
 > - Biggest/Smallest Number
 > - Top/Bottom of your Load Order
 >
-> The most important think to be aware of is that the lower the number, the earlier a mod loads. To that end, I recommend talking about Load Order in terms of Early to Late loading mods, to clear up confusion. 0 is the Earliest mod to load, and mods loaded later than other mods may overwrite the earlier mod's changes. 
+> The most important thing to be aware of is that the lower the number, the earlier a mod loads. To that end, I recommend talking about Load Order in terms of Early to Late loading mods, to clear up confusion. 0 is the Earliest mod to load, and mods loaded later than other mods may overwrite the earlier mod's changes. 
 <!-- {blockquote:.is-info} -->
 
 ## Load Order Recommendations
@@ -74,4 +75,3 @@ Examples of Late Loaders include:
 - Mods that consist only of Compatibility Framework insertions (so the Feat Every 2/3 levels - Compatibility Framework version, for example)
 - Major patch mods (ex. Patches for CC Races, Spell List Combiner, Compatibility Framework)
 - Compatibility Framework is last to load
-
