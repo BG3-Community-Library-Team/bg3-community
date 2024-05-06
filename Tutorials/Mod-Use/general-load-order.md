@@ -2,7 +2,7 @@
 title: General Load Order Guide
 description: Setting up a solid Load Order
 published: true
-date: 2024-05-06T03:32:50.603Z
+date: 2024-05-06T03:39:02.020Z
 tags: moduse, mod use
 editor: markdown
 dateCreated: 2024-05-01T03:29:26.549Z
@@ -62,7 +62,7 @@ These types of mods also fall under this category:
 
 Example:
 
-![example3.png](/tutorials/loadorder/example3.png)
+![classsubclassrace.png](/tutorials/loadorder/classsubclassrace.png =x860)
 
 ## 4. Visual Mods
 Visual mods can technically go anywhere in the load order, but I've found having them load just before Late Loaders to be the most reliable.
@@ -92,7 +92,7 @@ Examples of Late Loaders include:
 - Major patch mods (ex. Patches for CC Races, Spell List Combiner, Compatibility Framework)
 - Compatibility Framework is last to load
 
-![5example.png](/tutorials/loadorder/5example.png =x700)
+![patches1.png](/tutorials/loadorder/patches1.png)
 
 ## Example of load order as a whole
 
