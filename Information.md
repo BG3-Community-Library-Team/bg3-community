@@ -2,7 +2,7 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2024-05-03T16:30:16.613Z
+date: 2024-05-06T15:54:56.087Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
@@ -16,6 +16,7 @@ This page is a list of all Informational resource sections.
 - [Icons](Icons)
 - [Lua](Lua)
 - [Meshes](Meshes)
+- [Notable NPCs](Notable-NPCs)
 - [Osiris](Osiris)
 - [Sound](Sound)
 - [Spells](Spells)
