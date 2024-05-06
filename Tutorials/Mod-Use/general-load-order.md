@@ -2,7 +2,7 @@
 title: General Load Order Guide
 description: Setting up a solid Load Order
 published: true
-date: 2024-05-05T21:17:16.407Z
+date: 2024-05-06T03:28:31.410Z
 tags: moduse, mod use
 editor: markdown
 dateCreated: 2024-05-01T03:29:26.549Z
@@ -36,8 +36,15 @@ The first types of mods you shoul have on your list are Library mods and Single-
 Library Mods are mods that are relied on by other mods. Examples include 5eSpells, Unlock Level Curve, Community Library, and Vlad's Grimoire.
 Single-purpose SE mods are mods that are standalone, and limited in scope. Examples include Loz's Autosave mods, and KvCampEvents, as well as most Frameworks.
 
+Example:
+![example1.png](/tutorials/loadorder/example1.png =x700)
+
 ## 2. New Items/Spells/Actions and Fixes
 Next up are mods that provide playable actions, items, and dyes, and Mods that fix base-game content and/or affect general gameplay (ex. Concentration Failsafe, Shields Overhaul) should go next. Often these will rely on Early Loaders, or are mods that are expected to get overridden or referenced by other mods as well.
+
+Example: 
+![example2.png](/tutorials/loadorder/example2.png)
+
 
 ## 3. Expanded Content
 The third chunk of mods you should place in your order are those that provide new content to existing structures (ex. FeatsExtra, Metamagic Extended, WildMagicD100)
@@ -52,6 +59,10 @@ These types of mods also fall under this category:
 - Additional Classes
 - Additional Subclasses (organized by main class)
 
+Example:
+
+![example3.png](/tutorials/loadorder/example3.png)
+
 ## 4. Visual Mods
 Visual mods can technically go anywhere in the load order, but I've found having them load just before Late Loaders to be the most reliable.
 
@@ -65,6 +76,10 @@ Examples of these include:
 - Custom Heads
 - Custom Dice
 
+Examples:
+![example4.png](/tutorials/loadorder/example4.png =x800)
+![4example.png](/tutorials/loadorder/4example.png =x805)
+
 ## 5. Late Loaders
 These types of mods should _always_ be near the bottom of your load order. They either overwrite existing content, or rely on the existence of other content.
 
@@ -75,3 +90,9 @@ Examples of Late Loaders include:
 - Mods that consist only of Compatibility Framework insertions (so the Feat Every 2/3 levels - Compatibility Framework version, for example)
 - Major patch mods (ex. Patches for CC Races, Spell List Combiner, Compatibility Framework)
 - Compatibility Framework is last to load
+
+![5example.png](/tutorials/loadorder/5example.png =x700)
+
+## Example of load order as a whole
+
+![exampleloadorder.png](/tutorials/loadorder/exampleloadorder.png)
