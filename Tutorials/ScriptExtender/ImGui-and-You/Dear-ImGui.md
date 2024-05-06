@@ -2,7 +2,7 @@
 title: Dear ImGui
 description: This is a page to guide you through using ImGui with ScriptExtender
 published: true
-date: 2024-05-05T08:23:40.670Z
+date: 2024-05-06T17:23:38.668Z
 tags: script-extender, script extender, imgui, gui, ui
 editor: markdown
 dateCreated: 2024-05-01T19:43:32.311Z
@@ -329,7 +329,7 @@ RootName
 |->Tree 2
 |->Tree 3
 	|->Tree 3.1
-  |->Tree 3.2
+	|->Tree 3.2
   	|->Tree 3.2.1
 |->Tree 4
 	
