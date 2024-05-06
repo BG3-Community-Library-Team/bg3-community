@@ -2,7 +2,7 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: false
-date: 2024-05-06T15:13:35.979Z
+date: 2024-05-06T15:17:11.920Z
 tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
@@ -47,12 +47,16 @@ The "Tutorial Chest" is a Cartilaginous Chest located on the Nautiloid, in the t
 
 This guide will show you how to create a Treasure Table, and place items into the Tutorial Chest.
 
-> **Why you should use the Tutorial Chest:** The Tutorial Chest offers a quick and easy way to ship items to your users, is a method that only takes a few minutes to set up, and is widely recognized as the standard way to ship items to users. 
+> **Why you should use the Tutorial Chest:**
+> 
+> The Tutorial Chest offers a quick and easy way to ship items to your users, is a method that only takes a few minutes to set up, and is widely recognized as the standard way to ship items to users. 
 > * Users will have almost immediate access to your items during the Tutorial.
 > * It functions for users who do not have access to the Script Extender, such as people who play on Mac.
 <!-- {blockquote:.is-success} -->
 
-> **Why you shouldn't use the Tutorial Chest:** The modding community has been placing items into this tutorial chest as a crutch to easily distribute items to users since the game was in beta, due to there not being an easier alternative to give items directly to users at the time. This has led many custom item mods to use the Tutorial Chest for item shipment, and has caused issues such as:
+> **Why you shouldn't use the Tutorial Chest:**
+> 
+> The modding community has been placing items into this tutorial chest as a crutch to easily distribute items to users since the game was in beta, due to there not being an easier alternative to give items directly to users at the time. This has led many custom item mods to use the Tutorial Chest for item shipment, and has caused issues such as:
 > * If too many mods that use the chest are installed, it will take multiple seconds to open it, and cause lag due to engine limitations.
 > * The chest is only located in the tutorial, leading to users being unable to acquire items from the chest after they've made it to Act 1. 
 > * It is a requirement to use a tutorial chest summoning mod if you wish to get an item from it after the tutorial.
@@ -108,7 +112,9 @@ This guide will show you how to place new items into the Treasure Table of any V
 > * You can lock your items behind a price paywall, which means users will need to earn enough coin to use your item.
 <!-- {blockquote:.is-success} -->
 
-> **Why you shouldn't use Vendor Inventories:**: While there are certainly meaningful pros to sending your items via Vendor Inventory lists, there are some downsides which can't be overlooked: 
+> **Why you shouldn't use Vendor Inventories:**
+> 
+> While there are certainly meaningful pros to sending your items via Vendor Inventory lists, there are some downsides which can't be overlooked: 
 > * Sending items to your users via Trader Inventories will halt any chance of your mod being able to be uninstalled from the game once a playthrough has been started.
 > * Installing multiple mods which send items via vendor inventories will cause vanilla items to spawn less frequently during the long rest item rotation.
 > * This will lead to seeing the same modded items over and over again inside of different stores rather than new vanilla items.
