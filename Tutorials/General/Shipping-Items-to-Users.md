@@ -2,7 +2,7 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: false
-date: 2024-05-06T14:23:55.541Z
+date: 2024-05-06T15:13:35.979Z
 tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
@@ -46,24 +46,20 @@ These mods were created with the purpose of showcasing multiple different use-ca
 The "Tutorial Chest" is a Cartilaginous Chest located on the Nautiloid, in the tutorial of the game. It can be found in the room containing the "Eldritch Rune", just past Shadowheart's Mind Flayer Pod.
 
 This guide will show you how to create a Treasure Table, and place items into the Tutorial Chest.
-<details>
-  <summary>Why you should use the Tutorial Chest</summary>
-The Tutorial Chest offers a quick and easy way to ship items to your users, is a method that only takes a few minutes to set up, and is widely recognized as the standard way to ship items to users.
 
-- Users will have almost immediate access to your items during the Tutorial.
-- It functions for users who do not have access to the Script Extender, such as people who play on Mac.
-</details>
-<details>
-  <summary>Why you shouldn't use the Tutorial Chest</summary>
-The modding community has been placing items into this tutorial chest as a crutch to easily distribute items to users since the game was in beta, due to there not being an easier alternative to give items directly to users at the time. This has led many custom item mods to use the Tutorial Chest for item shipment, and has caused issues such as:
+> **Why you should use the Tutorial Chest:** The Tutorial Chest offers a quick and easy way to ship items to your users, is a method that only takes a few minutes to set up, and is widely recognized as the standard way to ship items to users. 
+> * Users will have almost immediate access to your items during the Tutorial.
+> * It functions for users who do not have access to the Script Extender, such as people who play on Mac.
+<!-- {blockquote:.is-success} -->
 
-- If too many mods that use the chest are installed, it will take multiple seconds to open it, and cause lag due to engine limitations.
-- The chest is only located in the tutorial, leading to users being unable to acquire items from the chest after they've made it to Act 1. 
-- It is a requirement to use a tutorial chest summoning mod if you wish to get an item from it after the tutorial.
-- If too many mods that use the Tutorial Chest are installed, the chest will become cluttered and hard to sort through.
-- There is no granularity or customization in the way you can utilize the Tutorial Chest, such as choosing when an item will spawn, or if there will be a cost to acquire the item.
-- If a user wishes to have multiple of an item found in the chest, authors must include multiple of the same item. Else users will have to use a tutorial chest summoning mod to duplicate the chest.
-</details>
+> **Why you shouldn't use the Tutorial Chest:** The modding community has been placing items into this tutorial chest as a crutch to easily distribute items to users since the game was in beta, due to there not being an easier alternative to give items directly to users at the time. This has led many custom item mods to use the Tutorial Chest for item shipment, and has caused issues such as:
+> * If too many mods that use the chest are installed, it will take multiple seconds to open it, and cause lag due to engine limitations.
+> * The chest is only located in the tutorial, leading to users being unable to acquire items from the chest after they've made it to Act 1. 
+> * It is a requirement to use a tutorial chest summoning mod if you wish to get an item from it after the tutorial.
+> * If too many mods that use the Tutorial Chest are installed, the chest will become cluttered and hard to sort through.
+> * There is no granularity or customization in the way you can utilize the Tutorial Chest, such as choosing when an item will spawn, or if there will be a cost to acquire the item.
+> * If a user wishes to have multiple of an item found in the chest, authors must include multiple of the same item. Else users will have to use a tutorial chest summoning mod to duplicate the chest.
+<!-- {blockquote:.is-danger} -->
 
 ### Getting Started
 
@@ -105,25 +101,47 @@ Vendors, Merchants, Shops, Traders - whichever name you like to call these NPCs 
 
 This guide will show you how to place new items into the Treasure Table of any Vendor in the game.
 
-<details>
-  <summary>Why you should use Vendor Inventories</summary>
-Words
-  
-- You can set a specific price that users pay to acquire your item.
-- The method is more lore, and roleplay friendly.
-</details>
-<details>
-  <summary>Why you shouldn't use Vendor Inventories</summary>
-While there are certainly pros to sending your items via Vendor Inventory lists, there are some downsides which can't be overlooked:
 
-- Sending items to your users via Trader Inventories will halt any chance of your mod being able to be uninstalled from the game once a playthrough has been started.
-- Installing multiple mods which send items via vendor inventories will cause vanilla items to spawn less frequently during the long rest item rotation.
-- This will lead to seeing the same modded items over and over again inside of different stores rather than new vanilla items.
-</details>
+> **Why you should use Vendor Inventories:**
+> * You can set a specific price that users pay to acquire your item.
+> * The method is more lore, and roleplay friendly.
+> * You can lock your items behind a price paywall, which means users will need to earn enough coin to use your item.
+<!-- {blockquote:.is-success} -->
+
+> **Why you shouldn't use Vendor Inventories:**: While there are certainly meaningful pros to sending your items via Vendor Inventory lists, there are some downsides which can't be overlooked: 
+> * Sending items to your users via Trader Inventories will halt any chance of your mod being able to be uninstalled from the game once a playthrough has been started.
+> * Installing multiple mods which send items via vendor inventories will cause vanilla items to spawn less frequently during the long rest item rotation.
+> * This will lead to seeing the same modded items over and over again inside of different stores rather than new vanilla items.
+<!-- {blockquote:.is-danger} -->
 
 ### Getting Started
 
-Please refer back to the 
+Adding new items to Vendor inventories functions identically to adding new items to the Tutorial chest. Because of this, please refer back to the [Tutorial Chest](https://wiki.bg3.community/en/Tutorials/General/Shipping-Items-to-Users#tutorial-chest) section of this page, to learn how to create a `TreasureTable.txt` file for your mod.
+
+After you have created a new treasure table file, you'll need to paste the code block below into it. Afterwards, replace `1st_Trader_Treasuretable` with the treasure table of the Vendor you wish to place new items into. Then, replace `I_GameObject_Stats_Name` with the "Stats" name of your chosen item. You can find a picture showcasing how to find the "Stats" name for an item also in the Tutorial Chest section of this page.
+
+```txt
+new treasuretable "1st_Trader_Treasuretable"
+CanMerge 1
+new subtable "1,1"
+object category "I_GameObject_Stats_Name",1,0,0,0,0,0,0,0
+```
+
+In the example treasure table below, one modded Black Dye is being sent to Arron, and ten vanilla Supply Packs will be shipped to Dammon.
+
+```txt
+new treasuretable "DEN_Entrance_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_Aethers_Black_Dye",1,0,0,0,0,0,0,0
+
+new treasuretable "DEN_Weaponsmith_Trade"
+CanMerge 1
+new subtable "10,1"
+object category "I_OBJ_Camp_Pack",1,0,0,0,0,0,0,0
+```
+
+To find the treasure table for a specific Vendor, please visit the Notable NPCs page's Vendors section, found on this wiki. 
 ## Script Extender Console
 You can also spawn in items with the [Script Extender Console](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender#h-3-how-to-install-the-console), via a console command. However, this method is mostly useful for mod development, or testing of items, and should not be used to ship items to users.
 
