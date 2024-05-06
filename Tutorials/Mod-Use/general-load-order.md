@@ -2,7 +2,7 @@
 title: General Load Order Guide
 description: Setting up a solid Load Order
 published: true
-date: 2024-05-06T03:28:31.410Z
+date: 2024-05-06T03:32:01.652Z
 tags: moduse, mod use
 editor: markdown
 dateCreated: 2024-05-01T03:29:26.549Z
@@ -42,9 +42,10 @@ Example:
 ## 2. New Items/Spells/Actions and Fixes
 Next up are mods that provide playable actions, items, and dyes, and Mods that fix base-game content and/or affect general gameplay (ex. Concentration Failsafe, Shields Overhaul) should go next. Often these will rely on Early Loaders, or are mods that are expected to get overridden or referenced by other mods as well.
 
-Example: 
+Examples: 
 ![example2.png](/tutorials/loadorder/example2.png)
 
+![exampleoof2.png](/tutorials/loadorder/exampleoof2.png =x855)
 
 ## 3. Expanded Content
 The third chunk of mods you should place in your order are those that provide new content to existing structures (ex. FeatsExtra, Metamagic Extended, WildMagicD100)
