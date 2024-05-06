@@ -2,7 +2,7 @@
 title: General
 description: A List of General-purpose Tutorials
 published: true
-date: 2024-05-04T18:15:27.840Z
+date: 2024-05-06T17:07:39.982Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T22:32:48.795Z
@@ -13,7 +13,7 @@ This page is a list of existing general Tutorials.
 
 ## Pages
 - [A Modder's Guide to Git](modders-guide-to-git)
+- [Creating a meta.lsx file](creating_meta)
 - [Setting up a Dev Environment](setting-up-a-dev-environment)
 - [Shipping Items to Users](Shipping-Items-to-Users)
-- [Creating a meta.lsx file](creating_meta)
 {.links-list}
