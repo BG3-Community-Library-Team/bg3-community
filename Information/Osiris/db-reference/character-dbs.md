@@ -2,7 +2,7 @@
 title: Character DB Reference
 description: Osiris Character DBs
 published: true
-date: 2024-05-07T00:43:38.387Z
+date: 2024-05-07T01:13:20.649Z
 tags: osiris, db, characters, character creation
 editor: markdown
 dateCreated: 2024-05-02T03:08:57.566Z
@@ -17,13 +17,10 @@ The following DBs are ones that relate specifically to Characters.
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_CharacterCreationDummy|List of Character Creation Dummy UUIDs|Character UUID|--|--|--|--|
-|DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
-|DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
-|DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
-|DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
-|DB_TUT_CharacterCreation_Started|?|1|Integer|--|--|--|--|
-|DB_TUT_CharacterCreation_IntroMovieFinished|?|1|Integer|--|--|--|--|
-|DB_TUT_CharacterCreation_InitialShown|?|1|Integer|--|--|--|--|
+|DB_CharacterCreation_FirstDummy|First Character Creation Dummy (not in use)|1|UUID|--|--|--|--|
+|DB_TUT_CharacterCreation_Started|Returns if Character Creation has started|1|Integer as Boolean|--|--|--|--|
+|DB_TUT_CharacterCreation_IntroMovieFinished|Returns if Intro Movie has been shown|1|Integer as Boolean|--|--|--|--|
+|DB_TUT_CharacterCreation_InitialShown|?|1|Integer as Boolean|--|--|--|--|
 
 ## Character Management
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
@@ -32,7 +29,7 @@ The following DBs are ones that relate specifically to Characters.
 |DB_Avatars|List of registered Player Avatar Character IDs|1|Character UUID|--|--|--|--|
 |DB_PartyMembers|List of registered Party Member Character IDs|1|Character UUID|--|--|--|--|
 |DB_HiddenCharacters|?|2|Character UUID|?|--|--|--|
-|DB_PredefinePartyPreset_Loaded|?|?|--|--|--|--|--|
+|DB_PredefinePartyPreset_Loaded|?|1|?|--|--|--|--|
 |DB_Following|Character that is following|2|Character UUID|?|--|--|--|
 |DB_CantAct|Character can perform actions|1|CCharacter UUID|--|--|--|--|
 |DB_IsArrested|List of Arrested Characters|2|?|Character UUID|--|--|--|
@@ -47,14 +44,14 @@ The following DBs are ones that relate specifically to Characters.
 |DB_TutorialCompanion|List of Tutorial Companions|1|Character UUID|--|--|--|--|
 |DB_DiedInCombat|List of Characters that Died in Combat|2|Character UUID|?|--|--|--|
 |DB_PermaDefeated|List of Permanently Defeated Characters|1|Character UUID|--|--|--|--|
-|DB_OffStage|?|1|Character UUID|--|--|--|--|
+|DB_OffStage|List of Characters UUIDs that should always be available|1|Character UUID|--|--|--|--|
 |DB_PartOfTheTeam|Characters that are Part of the Team|1|Character UUID|--|--|--|--|
 
 ## Origins
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
 |DB_PredefinedStartOrigin|?|1|UUID|--|--|--|--|
-|DB_Origins_UnavailableForRandom|?|1|UUID|--|--|--|--|
+|DB_Origins_UnavailableForRandom|List of Origin Character IDs that cannot be Randomized|1|UUID|--|--|--|--|
 |DB_RandomizeStartOrigin|?|1|Integer|--|--|--|--|
 |DB_CharacterCreationStarted|?|1|Integer|--|--|--|--|
 |DB_Origins|List of Origin Character UUIDs|1|UUID|--|--|--|--|
