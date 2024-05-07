@@ -2,7 +2,7 @@
 title: Character DB Reference
 description: Osiris Character DBs
 published: true
-date: 2024-05-04T20:45:36.619Z
+date: 2024-05-07T00:43:38.387Z
 tags: osiris, db, characters, character creation
 editor: markdown
 dateCreated: 2024-05-02T03:08:57.566Z
@@ -16,7 +16,7 @@ The following DBs are ones that relate specifically to Characters.
 ## Character Creation
 |DB Name|Description|# of Parameters|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Parameter 5|
 |-----|----|----|----|----|----|----|----|
-|DB_CharacterCreationDummy|?|Character UUID|--|--|--|--|
+|DB_CharacterCreationDummy|List of Character Creation Dummy UUIDs|Character UUID|--|--|--|--|
 |DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
 |DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
 |DB_CharacterCreation_FirstDummy|?|1|UUID|--|--|--|--|
