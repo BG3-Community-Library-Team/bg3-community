@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-08T09:16:43.956Z
+date: 2024-05-08T09:18:19.793Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -52,3 +52,5 @@ This guide is broken down into two section like I mentioned above. Users of the 
 -- If a UUID/handle is highlighted when generating a UUID/handle, it will replace the entry with whatever was generated.
 -- Generate a UUID/Handle using the keystrokes control+shift+U and control+shift+H respectively. 
 -- When handles are generated, if a xml file exists, it will add the newly created handle in the xml as well![genhandle-ezgif.com-optimize.gif](/tutorials/bg3-mod-helper/genhandle-ezgif.com-optimize.gif)
+
+2) File Convertions (lsx<>lsf, xml<>loca)
