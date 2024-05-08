@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-08T09:20:30.454Z
+date: 2024-05-08T09:40:28.134Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -11,9 +11,9 @@ dateCreated: 2024-04-25T01:43:35.054Z
 # BG3 Mod Helper - A VSCod(e/ium) Extension
 <br>
 
-### CURRENT RELEASE
-- Github (Coming soon)
-- Vscode marketplace (Coming soon)
+### Files
+- [Github (source code)](https://github.com/ghostboats/bg3_mod_helper)
+- [Vscode marketplace](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper)
 
 Create by ghostboats and khbsd, this vscode extension is designed to help mod authors speed up their mod creation workflows. The extension has multiple useful utilities that include but are not limited to:
 - Mod Packing
