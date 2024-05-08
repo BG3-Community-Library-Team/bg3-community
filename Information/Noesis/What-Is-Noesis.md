@@ -1,8 +1,8 @@
 ---
 title: What is Noesis
 description: An explanation to what Noesis is for the uninitiated
-published: false
-date: 2024-05-08T19:15:44.788Z
+published: true
+date: 2024-05-08T19:28:18.143Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-08T19:15:44.788Z
