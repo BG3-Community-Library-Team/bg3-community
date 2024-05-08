@@ -2,7 +2,7 @@
 title: Icon Creation
 description: Apply icons to your items, passives, skills, spells, etc. (Does not include class/subclass icons)
 published: true
-date: 2024-05-08T06:57:38.478Z
+date: 2024-05-08T06:58:34.061Z
 tags: tutorial, icons, icon, atlas
 editor: markdown
 dateCreated: 2024-05-08T06:50:52.688Z
@@ -381,7 +381,3 @@ and just like that, we can now see out icon in CC and ingame locations that aren
 ![image](https://github.com/ghostboats/bg3_modders_guide/assets/106226990/94bc918f-b237-4de8-b6f9-baa940015c6d)
 
 ![image](https://github.com/ghostboats/bg3_modders_guide/assets/106226990/6de99891-f0de-4193-80f2-026ce802c983)
-
-
-
-*I've simplified the atlas creation process in my vs code extension which really helps make the icon process at bit easier. If you download it [here](https://www.nexusmods.com/baldursgate3/mods/6574/) from nexus or searching it in views->extensions->bg3, you will be able to convert pngs to dds and vice versa, resize pngs/dds images to correct sizes required for the game, as well as autogenerate your atlas with your icons on them and its corresponding atlas map for it.
