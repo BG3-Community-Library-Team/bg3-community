@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-08T22:03:41.091Z
+date: 2024-05-08T22:18:28.606Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -74,7 +74,10 @@ Let's go through each settings option.
 - **Hover: Max Files:** Enter a number into the field to limit the amount of entries returns when looking for uuid/handles to display via hover, for visibility.
 - **Hover: Show Path:** Not working and will probably be removed in future, dont worry about this. Probably leave it checked but it shouldnt do anything.
 - **Launch Continue Game:** Toggle this do exactly as stated, launch the game with continue game flag so it will auto start your last save instead of waiting at the game menu.
-- **Lslib Path:**
+- **Lslib Path:** Previously this setting was for supplying the path to divine.exe. The extension has since grown and can leverage lslib directly. You will need to supply the path to your lslib. Typically this will be something like this C:\Users\ghostboats\Desktop\ExportTool-v1.19.5\Packed.
+- **Max Cache Size:** Integer value field. Caching is used to reduce lag and stop hover information from re-searching when hovering over already hovered uuids/handles which makes its position in the hover box shift around and hard to read. Typically you wont need to adjust this setting.
+- **Mod Destination Path:** This field is for supplying the path to the Mods folder for baulder gate 3. When you pack your mod with the extension, it will get set to this folder so you want to point it straigh to the mods folder for the game. For most people this will typically be C:/Users/{username}/AppData/Local/Larian Studios/Baldur's Gate 3/Mods, just make sure to replace username with your actual name.
+- **Root Mod Path:** This field is a bit unique. We actually do not want to touch this setting. When we open a folder in vscode, the extension will automatically populate this field with your current workspace folder. In User settings, it should be blank and you should not enter anything here. If you want to confirm your root mod was correctly auto set, change to the Workspace settings tab and take a look. 
 
 ## Features and Usage
 ### 1. **UUID/Handle Creation and Display**
