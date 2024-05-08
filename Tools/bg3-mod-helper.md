@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-08T09:52:43.740Z
+date: 2024-05-08T20:29:54.841Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -37,7 +37,7 @@ This guide is broken down into two section like I mentioned above. Users of the 
 
 # Mod Authors Guide
 
-## Download/Installation
+## Download Guide
 ##### Download via VS Code
 1) Open VS Code
 2) Click on the "View" tab on the top ribbon
@@ -45,6 +45,14 @@ This guide is broken down into two section like I mentioned above. Users of the 
 4) In the "Search Extensions in Marketplace" search box that has just opened, enter bg3
 5) Click "Install" on the correct extension (bg3_mod_helper)
 ![installextension-ezgif.com-optimize.gif](/tutorials/bg3-mod-helper/installextension-ezgif.com-optimize.gif)
+
+## Setup Extension Settings
+After installing the extension, you will most likely see a message like this:
+![error_message_on_start.png](/tutorials/bg3-mod-helper/error_message_on_start.png)
+There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extensions settings. There are a few ways to get to these settings, with the following being the easiest. 
+1) Click on "File" in the top ribbon in vscode
+2) Click on "Preferences" > "Settings"
+3) Search for `bg3` in the settings search bar
 
 ## Features and Usage
 1) **UUID/Handle Creation and Display**
