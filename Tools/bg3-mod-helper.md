@@ -2,14 +2,24 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-08T22:00:54.485Z
+date: 2024-05-08T22:02:43.119Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
 ---
 
 # BG3 Mod Helper - A VSCod(e/ium) Extension
-<br>
+Created by ghostboats and khbsd, this VSCode extension is designed to help mod authors speed up their mod creation workflows. The extension has multiple useful utilities that include but are not limited to:
+- **Mod Packing**
+- **UUID/Handle Generation**
+- **UUID Mapping**
+- **LSX/XML/LOCA/ETC File Conversions**
+- **Generate Mod Templates**
+- **And More!**
+
+While the extension is still receiving regular updates, it's at a stable point where it can be very useful to mod authors and save them a lot of time. It is built off the philosophy of being able to mod without having to tab out as often while requiring as few clicks as possible to get the job done. It has saved us a lot of time, and I hope it can do the same for you!
+
+> **Goal:** The goal of this wiki is twofold: provide documentation for users of the extension and developers who may wish to contribute/fork their own version.
 
 ## Table of Contents
 1. [File Locations](#file-locations)
@@ -22,18 +32,6 @@ dateCreated: 2024-04-25T01:43:35.054Z
 ### File Locations 📂
 - [Github (source code)](https://github.com/ghostboats/bg3_mod_helper)
 - [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper)
-
-Created by ghostboats and khbsd, this VSCode extension is designed to help mod authors speed up their mod creation workflows. The extension has multiple useful utilities that include but are not limited to:
-- **Mod Packing**
-- **UUID/Handle Generation**
-- **UUID Mapping**
-- **LSX/XML/LOCA/ETC File Conversions**
-- **Generate Mod Templates**
-- **And More!**
-
-While the extension is still receiving regular updates, it's at a stable point where it can be very useful to mod authors and save them a lot of time. It is built off the philosophy of being able to mod without having to tab out as often while requiring as few clicks as possible to get the job done. It has saved us a lot of time, and I hope it can do the same for you!
-
-> **Goal:** The goal of this wiki is twofold: provide documentation for users of the extension and developers who may wish to contribute or fork their own version.
 
 ### Requirements 🛠️
 - [Visual Studio Code](https://code.visualstudio.com/)
