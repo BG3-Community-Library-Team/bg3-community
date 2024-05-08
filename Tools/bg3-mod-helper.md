@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-08T20:29:54.841Z
+date: 2024-05-08T20:58:27.958Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -11,58 +11,82 @@ dateCreated: 2024-04-25T01:43:35.054Z
 # BG3 Mod Helper - A VSCod(e/ium) Extension
 <br>
 
-### File Locations
+## Table of Contents
+1. [File Locations](#file-locations)
+2. [Requirements](#requirements)
+3. [Mod Authors Guide](#mod-authors-guide)
+   1. [Download Guide](#download-guide)
+   2. [Setup Extension Settings](#setup-extension-settings)
+4. [Features and Usage](#features-and-usage)
+
+### File Locations 📂
 - [Github (source code)](https://github.com/ghostboats/bg3_mod_helper)
-- [Vscode marketplace](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper)
+- [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper)
 
-Create by ghostboats and khbsd, this vscode extension is designed to help mod authors speed up their mod creation workflows. The extension has multiple useful utilities that include but are not limited to:
-- Mod Packing
-- UUID/Handle generation
-- UUID Mapping
-- LSX/XML/LOCA/ETC File Conversions
-- Generate mod templates
-- And then some
+Created by ghostboats and khbsd, this VSCode extension is designed to help mod authors speed up their mod creation workflows. The extension has multiple useful utilities that include but are not limited to:
+- **Mod Packing**
+- **UUID/Handle Generation**
+- **UUID Mapping**
+- **LSX/XML/LOCA/ETC File Conversions**
+- **Generate Mod Templates**
+- **And More!**
 
-While the extension is still recieving regular updates, it's at a stable point where it can be very useful to mod authors and save them alot of time. It is built off the philosopy of being able to mod without having to tab out as often while requiring as little clicks as possible to get the job done. It has saved us alot of time and I hope it can do the same for you! The goal of this section of the the wiki is two fold: Provide documentation for users of the extension and provide documentation for developers who may wish to contribute or fork their own version.
+While the extension is still receiving regular updates, it's at a stable point where it can be very useful to mod authors and save them a lot of time. It is built off the philosophy of being able to mod without having to tab out as often while requiring as few clicks as possible to get the job done. It has saved us a lot of time, and I hope it can do the same for you!
 
-# Requirements
+> **Goal:** The goal of this wiki is twofold: provide documentation for users of the extension and developers who may wish to contribute or fork their own version.
+
+### Requirements 🛠️
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [LSLib](https://github.com/Norbyte/lslib/releases)
-- Python (for working with icon's/dss's/png's)
+- Python (for working with icons/dss's/png's)
 
-> Previous versions of the extension required direct use of divine.exe. This has since been replaced and you will need [LSLib](https://github.com/Norbyte/lslib/releases) and make sure the old path that pointed to divine.exe now points the directory containing your lslib
-<!-- {blockquote:.is-info} -->
-
-This guide is broken down into two section like I mentioned above. Users of the extension only need to continue ahead. If you wish to work with the extension directly to make your own personal edits or just understand what is going on under the hood, please jump here (adding link later).
+> **Note:** Previous versions of the extension required direct use of `divine.exe`. This has since been replaced with [LSLib](https://github.com/Norbyte/lslib/releases). Make sure your path now points to the directory containing `lslib`.
 
 # Mod Authors Guide
 
 ## Download Guide
-##### Download via VS Code
-1) Open VS Code
-2) Click on the "View" tab on the top ribbon
-3) Click on "Extensions"
-4) In the "Search Extensions in Marketplace" search box that has just opened, enter bg3
-5) Click "Install" on the correct extension (bg3_mod_helper)
+There are several ways to download the extension, but below is the easiest method.
+1. Open VS Code
+2. Click on the "View" tab on the top ribbon
+3. Click on "Extensions"
+4. In the "Search Extensions in Marketplace" search box, enter `bg3`
+5. Click "Install" on the correct extension (bg3_mod_helper)
+
 ![installextension-ezgif.com-optimize.gif](/tutorials/bg3-mod-helper/installextension-ezgif.com-optimize.gif)
 
 ## Setup Extension Settings
 After installing the extension, you will most likely see a message like this:
+
 ![error_message_on_start.png](/tutorials/bg3-mod-helper/error_message_on_start.png)
-There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extensions settings. There are a few ways to get to these settings, with the following being the easiest. 
-1) Click on "File" in the top ribbon in vscode
-2) Click on "Preferences" > "Settings"
-3) Search for `bg3` in the settings search bar
+
+There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extension's settings. There are a few ways to get to these settings, with the following being the easiest:
+1. Click on "File" in the top ribbon in VSCode
+2. Click on "Preferences" > "Settings"
+3. Search for `bg3` in the settings search bar
+
+You should be seeing something like this (settings seem to move around):
+![settings.png](/tutorials/bg3-mod-helper/settings.png)
+
+Before we actually look at any of the settings we need to understand the difference between User settings and Workspace settings in vscode. In the picture above showing the settings, we can see an option for User and Workspace. User settings persist over vscode windows. Workspace settings are for that specific vscode window. This distinction is important because of how the extension handles paths for you. You will understand more as you go though each setting option below but understanding this distinction is important, especially for Root Mod Path.
+
+Let's go through each settings option.
+- **Auto Launch On Pack:** Toggle this setting to do exactly as the name implies. If you pack your mod with the extension while this is toggled, your game will launch upon packing.
+- **Excluded Files:** Enter in full paths to files that you wish to not have converted when the mod is packed. This is done to avoid creation of non essential files (creation of meta.lsf or ClassDescriptions.lsx, etc). These files wont affect your work but do clutter up your space so adding them to excluded can be valuable to avoid the clutter. The fastest way to add an item to the list is to simply right click on a file in your file tree in vscode and select copy path. At the moment, the entered path is very specific. Ensure a lowercase drive letter and you use /. ie c:/Users/ghostboats/Desktop/Squire/Public/Squire/ClassDescriptions/ClassDescriptions.lsx
+- **Hover: Enabled:** Toggle this to turn the uuid/handle hover information (users say it can be too much and obstruct the page, an alternative solution would be below)
+- **Hover: Max Files:** Enter a number into the field to limit the amount of entries returns when looking for uuid/handles to display via hover, for visibility.
 
 ## Features and Usage
-1) **UUID/Handle Creation and Display**
--- Right click on an open editor to generate a UUID or handle at that location
--- If a UUID/handle is highlighted when generating a UUID/handle, it will replace the entry with whatever was generated.
--- Generate a UUID/Handle using the keystrokes control+shift+U and control+shift+H respectively. 
--- When handles are generated, if a xml file exists, it will add the newly created handle in the xml as well![genhandle-ezgif.com-optimize.gif](/tutorials/bg3-mod-helper/genhandle-ezgif.com-optimize.gif)
+### 1. **UUID/Handle Creation and Display**
+- Right-click on an open editor to generate a UUID or handle at that location.
+- If a UUID/handle is highlighted when generating a UUID/handle, it will replace the entry with whatever was generated.
+- Generate a UUID/Handle using the keystrokes `control+shift+U` and `control+shift+H`, respectively.
+- When handles are generated, if an XML file exists, it will add the newly created handle to the XML as well.
 
-2) **File Conversions (lsx<>lsf, xml<>loca)**
--- Open a custom webview tab where users can manage converting lsx,lsf,loca,xml,etc files
--- Quick convert options in data provider dropdown
--- Single file conversion via right click menu from file tree
--- Auto convert files on pack including exclusion list managed in extension settings
+![genhandle-ezgif.com-optimize.gif](/tutorials/bg3-mod-helper/genhandle-ezgif.com-optimize.gif)
+
+### 2. **File Conversions (lsx<>lsf, xml<>loca)**
+- Open a custom webview tab where users can manage converting lsx, lsf, loca, xml, etc., files.
+- Quick convert options in the data provider dropdown.
+- Single file conversion via right-click menu from file tree.
+- Auto-convert files on pack, including an exclusion list managed in the extension's settings.
+
