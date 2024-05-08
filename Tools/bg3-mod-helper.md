@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-08T22:02:43.119Z
+date: 2024-05-08T22:03:41.091Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -73,7 +73,8 @@ Let's go through each settings option.
 - **Hover: Enabled:** Toggle this to turn the uuid/handle hover information (users say it can be too much and obstruct the page, an alternative solution would be below)
 - **Hover: Max Files:** Enter a number into the field to limit the amount of entries returns when looking for uuid/handles to display via hover, for visibility.
 - **Hover: Show Path:** Not working and will probably be removed in future, dont worry about this. Probably leave it checked but it shouldnt do anything.
-- **Launch Continue Game:** Toggle this do exactly as stated, launch the game with continue game flag so it will auto start your last save instead of waiting at the game menu. 
+- **Launch Continue Game:** Toggle this do exactly as stated, launch the game with continue game flag so it will auto start your last save instead of waiting at the game menu.
+- **Lslib Path:**
 
 ## Features and Usage
 ### 1. **UUID/Handle Creation and Display**
