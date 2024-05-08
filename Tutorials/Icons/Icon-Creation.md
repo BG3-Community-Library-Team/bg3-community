@@ -2,7 +2,7 @@
 title: Icon Creation
 description: Apply icons to your items, passives, skills, spells, etc. (Does not include class/subclass icons)
 published: true
-date: 2024-05-08T06:56:13.469Z
+date: 2024-05-08T06:57:38.478Z
 tags: tutorial, icons, icon, atlas
 editor: markdown
 dateCreated: 2024-05-08T06:50:52.688Z
@@ -50,9 +50,7 @@ This guide is intended to help you create and work with different types of icons
 </details>
 
 # Setup For Modding[⬆️](#goals)
-*<sub>If you haven't taken a look at [getting started](https://github.com/ghostboats/bg3_modders_guide/wiki/Getting-Started), I highly suggest you do so you have the same environment setup as I do.</sub>
-
-Lets set up our initial folder for our mod. Im going to breeze through this section as I have covered standard folder structure multiple times now for other guides and more importantly, we need to setup a bit more here initially to have stuff to add icons to if that makes sense. I will be creating a generic class mod with probably some spells/passives so I have something to apply my icons to. Note the indentation on entries to indicate the file tree structure, ie. Localization folder has the English folder in it and so forth.
+Lets set up our initial folder for our mod. I will be creating a generic class mod with  some spells/passives so I have something to apply my icons to. Note the indentation on entries to indicate the file tree structure, ie. Localization folder has the English folder in it and so forth.
 
 ## Mod folder setup
 * Localization : Starting off, we can make a folder called Localization inside your mod folder, in my case my folder called PaladinOfTheCosmicOrder. This folder/subfolder will deal with your ingame text. For example, we will later edit the name and description of the skill we use for the icon, so it appears as so on the character creation screen. (I guess for icons you don't need this folder but its good to just keep things standard, most mods should contain a localization folder.)
