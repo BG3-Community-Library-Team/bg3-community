@@ -2,7 +2,7 @@
 title: Icon Creation
 description: Apply icons to your items, passives, skills, spells, etc. (Does not include class/subclass icons)
 published: true
-date: 2024-05-08T06:58:34.061Z
+date: 2024-05-08T07:05:25.495Z
 tags: tutorial, icons, icon, atlas
 editor: markdown
 dateCreated: 2024-05-08T06:50:52.688Z
@@ -180,7 +180,7 @@ data "TargetEffect" "1dcca477-79be-4e15-bb70-8680a6dc49e5"
 
 *Dont forget to link your uuids and handles folks!
 
-I did these 4 files really fast but if you followed my other guides it shouldn't be too confusing. I don't want to cover it anyways since this guide focuses on icons, not spells or passives to a class. If you want to see that, go view the class guide I have uploaded. Anyways, we now passives/spells that we can attach an icon to. At the moment since I copied everything from oath of ancients and just changed handles, uuids, and names, we still have the oath of ancients icons for those things. Let's finally get started with altering icons.
+I did these 4 files really fast but the bulk of it is not important to us anyways. We now have passives/spells that we can attach an icon to. Since I copied everything from oath of ancients and just changed handles, uuids, and names, I still have the oath of ancients icons for those things. Let's finally get started with altering icons.
 
 
 # Apply Icons[⬆️](#goals)
