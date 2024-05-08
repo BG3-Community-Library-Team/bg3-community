@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-08T09:41:49.267Z
+date: 2024-05-08T09:44:55.252Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -30,12 +30,12 @@ While the extension is still recieving regular updates, it's at a stable point w
 - [LSLib](https://github.com/Norbyte/lslib/releases)
 - Python (for working with icon's/dss's/png's)
 
-> Previous versions of the extension required direct use of divine.exe. This has since been replaced and you will simply need [LSLib](https://github.com/Norbyte/lslib/releases)
+> Previous versions of the extension required direct use of divine.exe. This has since been replaced and you will need [LSLib](https://github.com/Norbyte/lslib/releases) and make sure the old path that pointed to divine.exe now points the directory containing your lslib
 <!-- {blockquote:.is-info} -->
 
 This guide is broken down into two section like I mentioned above. Users of the extension only need to continue ahead. If you wish to work with the extension directly to make your own personal edits or just understand what is going on under the hood, please jump here (adding link later).
 
-# Extension Users Guide
+# Mod Authors Guide
 
 ## Download/Installation
 ##### Download via VS Code
