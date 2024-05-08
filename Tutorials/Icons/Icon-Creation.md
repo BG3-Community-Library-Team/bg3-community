@@ -2,7 +2,7 @@
 title: Icon Creation
 description: Apply icons to your items, passives, skills, spells, etc. (Does not include class/subclass icons)
 published: true
-date: 2024-05-08T06:54:56.300Z
+date: 2024-05-08T06:56:13.469Z
 tags: tutorial, icons, icon, atlas
 editor: markdown
 dateCreated: 2024-05-08T06:50:52.688Z
@@ -13,39 +13,39 @@ This guide is intended to help you create and work with different types of icons
 
 # Goals
 <details>
-<summary><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Class-Modification#setup-for-modding%EF%B8%8F">Setup For Modding</a></summary>
+<summary><a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#setup-for-modding%EF%B8%8F">Setup For Modding</a></summary>
 <ul>
-      <li><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Icon-Creation#mod-folder-setup">Mod Folder Setup</a></li>
-      <li><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Icon-Creation#flesh-out-paladinofthecosmicorder-for-icon-addition">Flesh out PaladinOfTheCosmicOrder for icon addition</a></li>
+      <li><a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#mod-folder-setup">Mod Folder Setup</a></li>
+      <li><a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#flesh-out-paladinofthecosmicorder-for-icon-addition">Flesh out PaladinOfTheCosmicOrder for icon addition</a></li>
 </ul>
 </details>
 
 <details>
-<summary><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Icon-Creation#apply-icons%EF%B8%8F">Apply Icons</a></summary>
+<summary><a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#apply-icons%EF%B8%8F">Apply Icons</a></summary>
 <ul>
-    <li><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Icon-Creation#tooltip-icons">Tooltip Icons</a></li>
+    <li><a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#tooltip-icons">Tooltip Icons</a></li>
     <li>
-        <a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Icon-Creation#controller-icons">Controller Icons</a>
+        <a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#controller-icons">Controller Icons</a>
     </li>
 </ul>
 </details>
 
 <details>
-<summary><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Icon-Creation#add-a-controller-icon%EF%B8%8F">Add a controller icon</a></summary>
+<summary><a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#add-a-controller-icon%EF%B8%8F">Add a controller icon</a></summary>
 <ul>
-    <li><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Icon-Creation#skill-icons">Skill Icons</a></li>
+    <li><a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#skill-icons">Skill Icons</a></li>
     <li>
-        <a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Icon-Creation#item-icons">Item Icons</a>
+        <a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#item-icons">Item Icons</a>
     </li>
 </ul>
 </details>
 
 <details>
-<summary><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Icon-Creation#add-a-hotbar-icon%EF%B8%8F">Add a hotbar icon</a></summary>
+<summary><a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#add-a-hotbar-icon%EF%B8%8F">Add a hotbar icon</a></summary>
 <ul>
-    <li><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Icon-Creation#icon-atlas">Icon Atlas</a></li>
-    <li><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Icon-Creation#icon-atlas-map">Icon Atlas Map</a></li>
-    <li><a href="https://github.com/ghostboats/bg3_modders_guide/wiki/Icon-Creation#_mergedlsx">_merged.lsx</a></li>
+    <li><a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#icon-atlas">Icon Atlas</a></li>
+    <li><a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#icon-atlas-map">Icon Atlas Map</a></li>
+    <li><a href="https://wiki.bg3.community/Tutorials/Icons/Icon-Creation#_mergedlsx">_merged.lsx</a></li>
 </ul>
 </details>
 
