@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-08T02:44:41.541Z
+date: 2024-05-08T07:39:02.135Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -15,7 +15,7 @@ dateCreated: 2024-04-25T01:43:35.054Z
 - Github (Coming soon)
 - Vscode marketplace (Coming soon)
 
-This vscode extension is designed to help mod authors speed up their mod creation workflows. The extension has multiple useful utilities that include but are not limited to:
+Create by ghostboats and khbsd, this vscode extension is designed to help mod authors speed up their mod creation workflows. The extension has multiple useful utilities that include but are not limited to:
 - Mod Packing
 - UUID/Handle generation
 - UUID Mapping
@@ -34,7 +34,9 @@ The following are required for image/icon related actions but the extension will
 
 > Previous versions of the extension required direct use of divine.exe. This has since been replaced and you will simply need [LSLib](https://github.com/Norbyte/lslib/releases)
 <!-- {blockquote:.is-info} -->
-<p>ghostboats and I (khbsd) made this extension with love. On this page we'll go into its features, explanations of the machinations behind functions, and quirks that we've been unable to iron out.</p>
 
-# Goals
+This guide is broken down into two section like I mentioned above. Users of the extension only need to continue ahead. If you wish to work with the extension directly to make your own personal edits or just understand what is going on under the hood, please jump here (adding link later).
+
+# Extension Users Guide
+
 
