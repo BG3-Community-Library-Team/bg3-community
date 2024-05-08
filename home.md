@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2024-05-06T16:36:15.780Z
+date: 2024-05-08T19:57:48.443Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -35,6 +35,7 @@ This is the BG3 Modding Community Wiki. This space is a place where tutorials, r
 - [Icons *Information relating to Icons*](Information/Icons)
 - [Lua *Information relating to LUA Scripting*](Information/Lua)
 - [Meshes *Information relating to Meshes*](Information/Meshes)
+- [Noesis *Information relating to the Noesis UI Framework*](Information/Noesis)
 - [Notable NPCs *Information relating to NPCs*](Information/Notable-NPCs)
 - [Osiris *Information relating to Osiris*](Information/Osiris)
 - [Sound *Information relating to Sound*](Information/Sound)
