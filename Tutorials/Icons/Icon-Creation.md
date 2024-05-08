@@ -2,14 +2,14 @@
 title: Icon Creation
 description: Apply icons to your items, passives, skills, spells, etc. (Does not include class/subclass icons)
 published: true
-date: 2024-05-08T07:08:34.808Z
+date: 2024-05-08T07:10:20.054Z
 tags: tutorial, icons, icon, atlas
 editor: markdown
 dateCreated: 2024-05-08T06:50:52.688Z
 ---
 
 # Introduction
-This guide is intended to help you create and work with different types of icons in the game. Alot of this was learned from [Loz's guide that he posted on discord](https://discord.com/channels/98922182746329088/1161812332721209354) and is a much more concise and quick way to learn about icons then here so I suggest you check it out. Loz also includes not only file templates to use for this but background pngs thats match standard ones in the game that will help with your icon creation journey. This tutorial will show you how to add icons by following along as I apply icons to various skills/spells/passives for the class Paladin Of The Cosmic Order. 
+This guide is intended to help you create and work with different types of icons in the game. It will have you follow along as I add icons to my own mod. Alot of this was learned from [Loz's guide that he posted on discord](https://discord.com/channels/98922182746329088/1161812332721209354) and is a much more concise and quick way to learn about icons then here so I suggest you check it out. Loz also includes not only file templates to use for this but background pngs thats match standard ones in the game that will help with your icon creation journey. This tutorial will show you how to add icons by following along as I apply icons to various skills/spells/passives for the class Paladin Of The Cosmic Order. 
 
 # Goals
 <details>
