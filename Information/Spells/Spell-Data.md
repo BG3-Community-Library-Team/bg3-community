@@ -2,7 +2,7 @@
 title: Spell Data
 description: Information on the components of a Spell Data block.
 published: true
-date: 2024-05-10T19:34:55.239Z
+date: 2024-05-10T19:35:47.197Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-10T17:43:59.384Z
@@ -178,6 +178,8 @@ Example: `Example Here`
 
 ### Additional Effects
 I will include a brief summary of some additional visual effect components here.
+
+{.links-list}
 
 #### ToggleOnEffect
 This is for toggles, and the visual that will play when the ability or spell is toggled on.
