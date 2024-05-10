@@ -2,7 +2,7 @@
 title: Spells/StatData
 description: Information relating to Spells/StatData
 published: true
-date: 2024-05-03T16:29:52.850Z
+date: 2024-05-10T17:47:01.554Z
 tags: items, information, spells, statuses, txt
 editor: markdown
 dateCreated: 2024-05-03T16:29:52.850Z
@@ -12,6 +12,7 @@ dateCreated: 2024-05-03T16:29:52.850Z
 This page is a list of existing informational documentation relating to StatData.
 
 ## Pages
-Nothing here yet
+[Spell Data](https://wiki.bg3.community/en/Information/Spells/Spell-Data)
 
 {.links-list}
+
