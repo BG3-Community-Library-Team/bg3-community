@@ -2,7 +2,7 @@
 title: Spell Data
 description: Information on the components of a Spell Data block.
 published: true
-date: 2024-05-10T19:13:10.441Z
+date: 2024-05-10T19:34:55.239Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-10T17:43:59.384Z
@@ -11,14 +11,9 @@ dateCreated: 2024-05-10T17:43:59.384Z
 # Spell Data
 This article will break down the components found in the spell files. These files can be found in `Public\ModOrGame\Stats\Generated\Data\filename.txt`. It will always be a `.txt` file.
 
-## New Entry
-This is the ID of the spell itself, which is referred to by progressions, class descriptions or other methods.
-Example: `new entry "Projectile_Fireball_4"`
+- [New Entry](https://wiki.bg3.community/en/Information/Spells/Spell-Data/New-Entry)
 
-## Type
-This data is referred to by the game engine to determine what preset information the new entry will have access to.
-
-Example: `type "SpellData"`
+- [Type](https://wiki.bg3.community/en/Information/Spells/Spell-Data/Type)
 
 ## Spell Type
 This entry dictates the type of spell data to use, from the Type section. There are varying types, which can be found [here](Link Here).
