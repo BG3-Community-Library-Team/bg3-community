@@ -2,7 +2,7 @@
 title: Name & Description
 description: Defining DisplayName and Description entries
 published: true
-date: 2024-05-10T20:08:08.243Z
+date: 2024-05-10T20:09:48.300Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-10T20:08:08.243Z
@@ -21,4 +21,4 @@ This is the same format and purpose as the Display Name section, used to show a 
 
 Example: `data "Description" "h3eb67ecegab30g4ce5g9f9fg1686128828b0;4"`
 
-You can find additional information on descriptions and extra parameters [Here](Information/Spells/Spell-Data/Name-Description/Description-Info).
+You can find additional information on descriptions and extra parameters [Here](Information/Spells/Spell-Data/Name-Description/Additional-Info).
