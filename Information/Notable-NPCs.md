@@ -2,7 +2,7 @@
 title: Notable NPCs
 description: This page goes over notable non-player characters, and includes information on them such as their UUIDs, TreasureTables, and other potentially useful information.
 published: true
-date: 2024-05-10T19:25:29.863Z
+date: 2024-05-10T19:25:38.705Z
 tags: treasuretables, npc, npc uuid, charactervisuals
 editor: markdown
 dateCreated: 2024-05-06T15:52:32.115Z
