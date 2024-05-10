@@ -2,7 +2,7 @@
 title: Spell Data
 description: Information on the components of a Spell Data block.
 published: true
-date: 2024-05-10T19:35:47.197Z
+date: 2024-05-10T19:36:15.563Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-10T17:43:59.384Z
@@ -11,6 +11,7 @@ dateCreated: 2024-05-10T17:43:59.384Z
 # Spell Data
 This article will break down the components found in the spell files. These files can be found in `Public\ModOrGame\Stats\Generated\Data\filename.txt`. It will always be a `.txt` file.
 
+## Pages
 - [New Entry](https://wiki.bg3.community/en/Information/Spells/Spell-Data/New-Entry)
 
 - [Type](https://wiki.bg3.community/en/Information/Spells/Spell-Data/Type)
