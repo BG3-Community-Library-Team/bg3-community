@@ -2,7 +2,7 @@
 title: Notable NPCs
 description: This page goes over notable non-player characters, and includes information on them such as their UUIDs, TreasureTables, and other potentially useful information.
 published: true
-date: 2024-05-10T18:42:06.587Z
+date: 2024-05-10T19:25:29.863Z
 tags: treasuretables, npc, npc uuid, charactervisuals
 editor: markdown
 dateCreated: 2024-05-06T15:52:32.115Z
@@ -68,68 +68,150 @@ This is the Human Merchant form of Ethel which exists in the Druid Grove. Two ot
 - TreasureTable: `DEN_Ethel`
 
 **Dammon**
-- IsGlobal: ``
-- DisplayName: ``
-- CharacterVisualResourceID: ``
-- MapKey: ``
-- TreasureTable: ``
+- IsGlobal: `True`
+- DisplayName: `h377c9b04g9458g4588g88abg91eb6208ca8e`
+- CharacterVisualResourceID: `0a737d97-4fbc-7878-7f13-4181a918a4ae`
+- MapKey: `e2ad06ec-8034-479a-9f69-b86faea6dc79`
+- TreasureTable: `DEN_Weaponsmith_Trade`
 
 **Mattis**
-- IsGlobal: ``
-- DisplayName: ``
-- CharacterVisualResourceID: ``
-- MapKey: ``
-- TreasureTable: ``
+- IsGlobal: `True`
+- DisplayName: `h1d88b784ge677g492cgab6eg109b1e483294`
+- CharacterVisualResourceID: `1865504e-b107-0fcb-8ffc-cffb66ff0d23`
+- MapKey: `e1fda08b-45d4-41db-84b5-20e9931ba5af`
+- TreasureTable: `DEN_Thieflings_Pickpocket_Trade`
 
 **Mol**
-- IsGlobal: ``
-- DisplayName: ``
-- CharacterVisualResourceID: ``
-- MapKey: ``
-- TreasureTable: ``
+- IsGlobal: `True`
+- DisplayName: `hbb29ccfegfc36g41c0gace7g76536f874145`
+- CharacterVisualResourceID: `6e8ab435-82e4-cb9d-b328-6b848c0591a4`
+- MapKey: `c8ab1ca6-96bb-467e-91c9-af87bc4d3925`
+- TreasureTable: `DEN_Mol`
 
 ### Goblin Camp
 
-Glomp
-Grat
-Roah Moonglow
+**Glomp the looter**
+
+This character appears after Goblin Hunt Celebration if Minthara was persuaded to spare player's life. All goblins in the camp are removed (gone to Moonrise), and there is only this one looting trader with one-liner dialog explaining the situation to players.
+- IsGlobal: `False`
+- DisplayName: `h95a49772g0258g4b07g93c4g313eac39819a`
+- CharacterVisualResourceID: `a38d0890-cc5e-b375-fa2f-47a500c45afe`
+- MapKey: `5e3467b4-9186-4ab2-81b8-cf379bcbd982`
+- TreasureTable: `GOB_AftermathTrader`
+
+**Grat the Trader**
+- IsGlobal: `False`
+- DisplayName: `hef2c6badg674ag4cb1g99bfg4b9bc5911136`
+- CharacterVisualResourceID: `305c0e07-5765-b54b-c640-2cc1a1e98007`
+- MapKey: `3c9f9d17-835c-46bf-929d-240e3b4adb55`
+- TreasureTable: `GOB_Festivities_Trader`
+
+**Roah Moonglow**
+- IsGlobal: `True`
+- DisplayName: `hbb469472g2186g420cg9541g155a65015097`
+- CharacterVisualResourceID: `a628c36e-f247-1f7a-ed16-e7532a7425ce`
+- MapKey: `646936f3-8d8d-484e-9361-cd1ed484c615`
+- TreasureTable: `GOB_Quartermaster`
 
 ### Grymforge
 
-Kith
-Greymon
+**Stonemason Kith**
+- IsGlobal: `False`
+- DisplayName: `h20ec5d2eg6765g433fg88ecgafeb6a192253`
+- CharacterVisualResourceID: `2195182e-11b0-ee12-f9c6-97f3b245430d`
+- MapKey: `d09aecce-fad1-4aa8-9c40-c370a0ac8835`
+- TreasureTable: `UND_KC_Trader_Utility`
+
+**Corsair Greymon**
+- IsGlobal: `False`
+- DisplayName: `h6bd0859eg4c73g4be3g9c6agc785da86b25f`
+- CharacterVisualResourceID: `57cb5c27-bc91-16ed-932d-87251e377f8e`
+- MapKey: `473ae3b0-d8e9-428d-9129-bbffe449b8ec`
+- TreasureTable: `UND_KC_Trader_Weapons`
 
 ### Rosymorn Monastery Trail
 
-Esther
+**Lady Esther**
+- IsGlobal: `True`
+- DisplayName: `hab1e8c01g6541g42ebg9ecage96e83537ceb`
+- CharacterVisualResourceID: `a35d9680-f87e-a99e-cc80-f405b0df4aa2`
+- MapKey: `5f4048ba-72ef-43c2-9528-1c9a12f3f82f`
+- TreasureTable: `CRE_Expeditioner_Trade` and `CRE_Expeditioner_Magic_Trade`
 
 ### The Risen Road
 
-Brem
-Cyrel
+**Brem**
+- IsGlobal: `False`
+- DisplayName: `h3c2bb649gc16eg4e44g862ag7ec125997261`
+- CharacterVisualResourceID: `16669f72-2bea-f944-6019-0d69baf2e40a`
+- MapKey: `8f63a70b-93e1-4841-8dea-b1f1542fd3c1`
+- TreasureTable: `PLA_ZhentarimTrader_Common`
+
+**Cyrel**
+- IsGlobal: `False`
+- DisplayName: `h70b03f99ga4b0g418cg8378gb4f443f132c7`
+- CharacterVisualResourceID: `b3391b20-54db-14f5-b40d-f60617a97c6a`
+- MapKey: `bf6a657e-091c-43e5-b18a-a2ca7ca7e511`
+- TreasureTable: `PLA_Tollhouse_SuppliesTrader`
 
 ## Act 2
 
 ### Gauntlet of Shar
 
-Hoarding Merregon
+**Hoarding Merregon**
+
+WARNING: This character uses the same CharacterVisualResourceID as all Merregons, if you would like to edit their appearance, please give them a unique CharacterVisualResourceID.
+- IsGlobal: `False`
+- DisplayName: `haac4d0f1g535ag4ebfgb438g58421d93fe31`
+- CharacterVisualResourceID: `cca48494-c9ca-d9e6-d6ec-c10f818dc56d`
+- MapKey: `fbbf364f-5da0-4d60-86e4-ecf68da8fb25`
+- TreasureTable: `SHA_MerregonTrader`
 
 ### House of Healing
 
-Sister Lidwin
+**Sister Lidwin**
+- IsGlobal: `False`
+- DisplayName: `h71683060gda9fg4daegbb13ge3f275b4439e`
+- CharacterVisualResourceID: `68fb3f7e-0203-09ee-5189-1191543dd048`
+- MapKey: `64198bb1-d575-4b7b-bcf9-0c58d24020f1`
+- TreasureTable: `TWN_Hospital_CorpseTender`
 
 ### Last Light Inn
 
-Barcus
-Dammon
-Mattis
-Talli
+**Dammon**
+
+This character appears in multiple acts, and uses the same technical information across all appearances. Please refer to a previous act to find information about them.
+
+**Mattis**
+
+This character appears in multiple acts, and uses the same technical information across all appearances. Please refer to a previous act to find information about them.
+
+**Quartermaster Talli**
+- IsGlobal: `False`
+- DisplayName: `h1607efe4g2ae3g473egad16gcb7720fe8380`
+- CharacterVisualResourceID: `eb0fc566-0586-70fd-6046-8e9e19714642`
+- MapKey: `f769815c-d437-4a45-9ae4-aebd53ec8f7c`
+- TreasureTable: `HAV_HarperQuarterMaster` and `HAV_HarperQuarterMaster_Magic_Trade`
 
 ### Moonrise Towers
 
-Araj Oblodra
-Lann Tarv
-Roah Moonglow
+**Araj Oblodra**
+- IsGlobal: `True`
+- DisplayName: `h452cf8ffg777ag4928gb74egda9ae19413dc`
+- CharacterVisualResourceID: `4963cb0e-05db-5932-71d1-9fe5aef10bdb`
+- MapKey: `511c9413-25fe-449c-a81d-4b09bc20745a`
+- TreasureTable: `MOO_InfernalTrader_Trade`
+
+**Lann Tarv**
+- IsGlobal: `False`
+- DisplayName: `h11e67bafg2d78g4a93g95fagbb3468f1c8da`
+- CharacterVisualResourceID: `ddac66c6-7328-bb31-54c3-51f536d15990`
+- MapKey: `8cb1cace-ef98-4387-8b76-2e8efc5cfe89`
+- TreasureTable: `MOO_BugBearvendor_Trade`
+
+**Roah Moonglow**
+
+This character appears in multiple acts, and uses the same technical information across all appearances. Please refer to a previous act to find information about them.
 
 ## Act 3
 
