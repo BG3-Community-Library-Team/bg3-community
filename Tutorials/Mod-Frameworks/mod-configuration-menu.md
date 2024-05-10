@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-10T03:36:22.222Z
+date: 2024-05-10T03:41:31.453Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -154,10 +154,10 @@ end)
 
 ### Inserting custom UI elements
 
-MCM allows mod authors to insert custom UI elements into the MCM UI. This can be done using the `InsertModMenuTab` function from MCM's `MCMIMGUIAPI`:
+MCM allows mod authors to insert custom UI elements into the MCM UI. This can be done using the `InsertModMenuTab` function from MCM's `IMGUIAPI`:
 
 ```lua
-Mods.BG3MCM.MCMIMGUIAPI:InsertModMenuTab(ModuleUUID, "Inserted tab", function(tabHeader)
+Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "Inserted tab", function(tabHeader)
     local myCustomWidget = tabHeader:AddButton("My custom widget")
     myCustomWidget.OnClick = function()
         _D("My custom widget was clicked!")
