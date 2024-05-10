@@ -2,7 +2,7 @@
 title: Spell Data
 description: Information on the components of a Spell Data block.
 published: true
-date: 2024-05-10T19:52:12.846Z
+date: 2024-05-10T20:22:00.475Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-10T17:43:59.384Z
@@ -23,6 +23,13 @@ This article will break down the components found in the spell files. These file
 - [Trajectories](/Information/Spells/Spell-Data/Trajectories)
 - [Icon](/Information/Spells/Spell-Data/Icons)
 - [Name & Description](/Information/Spells/Spell-Data/Name-Description)
+- [Tooltip Entries](/Information/Spells/Spell-Data/Tooltip-Entries)
+- [Sound](/Information/Spells/Spell-Data/Sound)
+- [Use Costs](/Information/Spells/Spell-Data/Use-Costs)
+- [Spell Animations](/Information/Spells/Spell-Data/Spell-Animations)
+- [Spell Flags](/Information/Spells/Spell-Data/Spell-Flags)
+- [Visual Effects](/Information/Spells/Spell-Data/Visual-Effects)
+- 
 {.links-list}
 
 
@@ -33,44 +40,15 @@ This article will break down the components found in the spell files. These file
 
 
 
-## Target Conditions
-This data is intended for spells meant to have additional conditions for the target of the spell. 
 
-Example: `data "TargetConditions" "Character() and not Dead()"`
 
-In this case, the target must be a "Living" target, and not dead. More information on Target conditions can be found [here](Link Here).
 
-## Trajectories
-This particular information is referencing spells that often contain moving parts, whether it be the character, target, or visual effects. More information on the application of Trajectories can be found [here](Link Here).
 
-Example: `data "Trajectories" "3d34f1ca-7e7e-4ee7-ad2b-704079f4a19f"`
 
-The GUID in the information refers to a Root Template entry, which will dictate both the path of the spell and in some cases, the visual effects as well.
 
-## Icon
-This tells the game the icon to use for this spell. More information about icons can be found [here](https://wiki.bg3.community/en/Information/Icons).
 
-Example: `data "Icon" "GenericIcon_Intent_Utility"`
 
-## Display Name
-This information will reference a handle id or `hid`, and it's version, which can be found in the [Localization](link here) file. This is intended to give the spell a visual name in the tooltip when hovered over in game.
 
-Example: `data "DisplayName" "h95ec602eg6ae5g48ebg9fefge3d164860911;2"`
-
-## Description
-This is the same format and purpose as the Display Name section, usually used to give a more detailed description along with the display name, of the spell. You can find additional information on descriptions and extra parameters [Here](Link Here).
-
-Example: `data "Description" "h3eb67ecegab30g4ce5g9f9fg1686128828b0;4"`
-
-## Tooltip Damage List/Attack Save/Status Apply/ et al.
-This data is usually a list of entries to add to the tooltip when hovered, that often give a visual breakdown of spell saving throws and success roll outcomes.
-
-Examples:
-`data "TooltipDamageList" "DealDamage(1d4),Force)"`
-`data "TooltipAttackSave" "RangedSpellAttack"`
-`data "TooltipStatusApply" "ApplyStatus(FRIGHTENED, 100, 1)"`
-
-You can find a more detailed list of the tooltip entries and descriptions [here](Link Here).
 
 ## Sound
 These entries will tell the spell what sounds to play at specific points of the spell, if they are not dictaed elsewhere. They are usually in the string id format. These will come in five types:
