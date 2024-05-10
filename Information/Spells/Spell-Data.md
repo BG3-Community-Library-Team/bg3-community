@@ -2,7 +2,7 @@
 title: Spell Data
 description: Information on the components of a Spell Data block.
 published: true
-date: 2024-05-10T19:36:15.563Z
+date: 2024-05-10T19:38:29.213Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-10T17:43:59.384Z
@@ -13,13 +13,10 @@ This article will break down the components found in the spell files. These file
 
 ## Pages
 - [New Entry](https://wiki.bg3.community/en/Information/Spells/Spell-Data/New-Entry)
-
 - [Type](https://wiki.bg3.community/en/Information/Spells/Spell-Data/Type)
+- [Spell Type](https://wiki.bg3.community/en/Information/Spells/Spell-Data/Spell-Type)
 
-## Spell Type
-This entry dictates the type of spell data to use, from the Type section. There are varying types, which can be found [here](Link Here).
-
-Example: `data "SpellType" "Projectile"`
+{.links-list}
 
 ## AI Flags
 This determines specific factors on what the AI can and cannot do if an NPC has this spell.
@@ -180,7 +177,7 @@ Example: `Example Here`
 ### Additional Effects
 I will include a brief summary of some additional visual effect components here.
 
-{.links-list}
+
 
 #### ToggleOnEffect
 This is for toggles, and the visual that will play when the ability or spell is toggled on.
