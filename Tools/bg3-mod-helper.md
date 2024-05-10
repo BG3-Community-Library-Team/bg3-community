@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-10T19:42:18.589Z
+date: 2024-05-10T19:45:41.938Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -19,7 +19,7 @@ Created by ghostboats and khbsd, this VSCode extension is designed to help mod a
 
 While the extension is still receiving regular updates, it's at a stable point where it can be very useful to mod authors and save them a lot of time. It is built off the philosophy of being able to mod without having to tab out as often while requiring as few clicks as possible to get the job done. It has saved us a lot of time, and I hope it can do the same for you!
 
-> **Goal:** The goal of this wiki is twofold: provide documentation for users of the extension and developers who may wish to contribute/fork their own version.
+> **Goal:** The goal of this wiki is twofold: provide documentation for [mod authors](#mod-authors-guide) and developers who may wish to contribute/fork their own version.
 
 ## Table of Contents
 1. [File Locations](#file-locations)
