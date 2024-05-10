@@ -2,7 +2,7 @@
 title: Spells/StatData
 description: Information relating to Spells/StatData
 published: true
-date: 2024-05-10T17:47:44.192Z
+date: 2024-05-10T18:03:30.870Z
 tags: items, information, spells, statuses, txt
 editor: markdown
 dateCreated: 2024-05-03T16:29:52.850Z
