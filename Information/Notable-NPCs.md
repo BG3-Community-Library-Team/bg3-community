@@ -2,7 +2,7 @@
 title: Notable NPCs
 description: This page goes over notable non-player characters, and includes information on them such as their UUIDs, TreasureTables, and other potentially useful information.
 published: true
-date: 2024-05-10T19:55:57.512Z
+date: 2024-05-10T19:56:34.090Z
 tags: treasuretables, npc, npc uuid, charactervisuals
 editor: markdown
 dateCreated: 2024-05-06T15:52:32.115Z
@@ -180,7 +180,7 @@ WARNING: This character uses the same CharacterVisualResourceID as all Merregons
 
 **Barcus Wroot**
 
-This character exists in both the Level files, and the Character RootTemplates. I have not yet tested to see which IDs are used for the NPC found in game, so I will simply list them both.
+This character exists in both the Level files, and the Character RootTemplates. It haas not yet been tested to see which IDs are used for the NPC found in game, so both variations for each are listed here.
 - IsGlobal: `True`
 - DisplayName: `h113f0c55g3c94g4e09gafa7gfbcfa8651183` or `70ae8d80-2961-6927-58d9-2e8afad176cd`
 - CharacterVisualResourceID: `a94eb64e-fbcf-8786-bdaa-9db2cf51c148` or `h29b894bcg6d9cg4d63ga57bg52cf4f8a28bf`
