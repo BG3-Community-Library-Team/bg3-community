@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-10T03:41:31.453Z
+date: 2024-05-10T03:44:34.716Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -167,6 +167,11 @@ end)
 
 > You can define an entire tab's content - not just a widget - and call the `InsertModMenuTab` function to insert it into the MCM window, inside the space dedicated for your mod.
 {.is-info}
+
+### Listening to MCM events
+
+> TODO
+{.is-note}
 
 ### How validation works
 
