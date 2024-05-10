@@ -2,7 +2,7 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: true
-date: 2024-05-10T01:23:55.730Z
+date: 2024-05-10T01:42:02.807Z
 tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
@@ -11,7 +11,7 @@ dateCreated: 2024-04-30T09:43:22.722Z
 # Shipping Items to Users
 After you have spent the time to create a shiny new item, or even if you'd like to use a specific item from the vanilla game, you've probably wondered how to actually ship that item to your users. This guide will showcase four ways to do so, two of which utilizing systems that are available in the base-game, and two which utilize the Script Extender.
 
-However you end up shipping items to your users, it is recommended to create a custom container to house all of those items. Not only will it make it more efficient for updating your mod down the line, but it also makes it more convenient for users, and their inventories to stay organized. You can find a guide for how to create custom items here[TODO: port container template guide to the wiki], as well as custom container templates here: [Aether's Container Templates](https://www.nexusmods.com/baldursgate3/mods/8418)
+However you end up shipping items to your users, it is recommended to create a custom container to house all of those items. Not only will it make it more efficient for updating your mod down the line, but it also makes it more convenient for users, and their inventories to stay organized. You can find a guide for how to create custom containers here on the wiki[TODO: port container template guide to the wiki], as well as custom container templates here: [Aether's Container Templates](https://www.nexusmods.com/baldursgate3/mods/8418)
 
 ## Item Shipment Framework
 The [Item Shipment Framework](https://www.nexusmods.com/baldursgate3/mods/8295) (ISF for short) is a script extender based mod, which allows mod authors to **directly ship vanilla or modded items into the camp chest or host's inventory**. It aims to provide a superior alternative to the Tutorial Chest and Vendor Inventory item shipment approaches.
