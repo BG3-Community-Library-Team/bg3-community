@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-10T19:46:26.098Z
+date: 2024-05-10T19:48:35.787Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -80,7 +80,7 @@ Let's go through each settings option.
 - **Root Mod Path:** This field is a bit unique. We actually do not want to touch this setting. When we open a folder in vscode, the extension will automatically populate this field with your current workspace folder. In User settings, it should be blank and you should not enter anything here. If you want to confirm your root mod was correctly auto set, change to the Workspace settings tab and take a look. 
 
 ## Features and Usage
-### 1. **UUID/Handle Creation and Display**
+### 1. **UUID/Handle Creation**
 - Right-click on an open editor to generate a UUID or handle at that location.
 - If a UUID/handle is highlighted when generating a UUID/handle, it will replace the entry with whatever was generated.
 - Generate a UUID/Handle using the keystrokes `control+shift+U` and `control+shift+H`, respectively.
