@@ -2,7 +2,7 @@
 title: Spell Data
 description: Information on the components of a Spell Data block.
 published: true
-date: 2024-05-10T19:11:51.507Z
+date: 2024-05-10T19:13:10.441Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-10T17:43:59.384Z
@@ -113,7 +113,7 @@ These entries will tell the spell what sounds to play at specific points of the 
 - PrepareLoopSound: This sound will play continuously while you idle the preparation of a spell, during target selection.
 - CastSound: This sound is played the moment the spell is cast.
 - TargetSound: This sound is played the moment the spell connects with it's intended target.
-- VocalComponentSound: This is usually a soundbit that is played during the overall casting of the player, intended to fuction like a "Vocal Component" of a spell.
+- VocalComponentSound: This is usually a soundbit that is played during the overall casting of the player, intended as a specialized sound, paired with the spell flag "HasVerbalComponent".
 
 Example: `data "CastSound" "Action_Cast_VampireBite"`
 
