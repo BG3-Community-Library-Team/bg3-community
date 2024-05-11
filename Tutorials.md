@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-05-11T16:49:04.961Z
+date: 2024-05-11T16:53:23.725Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -19,6 +19,7 @@ This page is a list of existing Tutorials.
 - [Frameworks *A List of Mod Framework Tutorials*](Mod-Frameworks)
 - [Items *A List of Item Tutorials*](Items)
 - [Script Extender *A List of Script Extender Tutorials*](ScriptExtender)
+- [Sound *A List of Sound Tutorials*](Sound)
 - [Visual *A List of Visual Mod Tutorials*](Visual)
 - [Icons *A List of Icon Mod Tutorials*](Icons)
 {.links-list}
