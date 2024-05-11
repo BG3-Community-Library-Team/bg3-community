@@ -2,7 +2,7 @@
 title: Adding and Positioning Items in the World
 description: This guide covers coding an item to show up in the world and how to position and reposition it
 published: true
-date: 2024-05-11T07:32:24.137Z
+date: 2024-05-11T07:38:34.506Z
 tags: items, add items, position items, rotate items, levels, physical
 editor: markdown
 dateCreated: 2024-05-11T07:32:24.137Z
@@ -33,7 +33,7 @@ The first command you want to run is: `_P(Osi.GetRegion(GetHostCharacter()))`
 This should print the region that you are in, for example: `WLD_Main_A` would be returned if you were in the main camp for Act 1. Save this somewhere, it will be the same name of the Level's data file you'll be adding to.
 
 The next command to run is: `_P(Osi.GetPosition(GetHostCharacter()))`
-This will return an X, Y, and Z coordinate (in that order), for the position your character is standing. Example: `-661.3025 0.5996 -199.6891`. Be sure to also save this somewhere.
+This will return an X, Y, and Z coordinate (in that order), for the position your character is standing. Example: `-661.3397, 0.5986, -199.6469`. Be sure to also save this somewhere.
 > Note, the coordinates will not have any commas between them, only a single space. 
 However, when you enter them later into Script Extender, you will put commas between them.
 {.is-info}
