@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-10T03:44:34.716Z
+date: 2024-05-11T15:54:14.010Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -148,9 +148,17 @@ Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
 end)
 ```
 
-> Allow global usage of `MCMAPI` by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`. 
-> Otherwise, prepend `Mods.BG3MCM` to all API calls.
-{.is-info}
+#### Reducing verbiage
+You can allow global usage of `MCMAPI` by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`. 
+Likewise, you can define a global function such as this early in your scripts:
+```lua
+function MCMGet(settingID)
+    return Mods.BG3MCM.MCMAPI:GetSettingValue(settingID, ModuleUUID)
+end
+-- Now, get values by calling MCMGet("setting_id")
+```
+Otherwise, prepend `Mods.BG3MCM` to all API calls.
+
 
 ### Inserting custom UI elements
 
@@ -170,8 +178,35 @@ end)
 
 ### Listening to MCM events
 
-> TODO
-{.is-note}
+MCM uses a set of channels to communicate between the client and server. Some of these can be useful for mod authors to listen to, as they can use this to update their mod's behavior based on changes from MCM, such as when a setting is saved:
+
+`MCM_Saved_Setting`: fired whenever a setting value is saved by MCM, to be written to the settings JSON file. The payload contains the setting ID and the new value. Example usage:
+```lua
+-- In your MCM-integrated mod's code
+Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
+    local data = Ext.Json.Parse(payload)
+    if not data or data.modGUID ~= ModuleUUID or not data.settingId then
+        return
+    end
+
+    if data.settingId == "debug_level" then
+        _D("Setting debug level to " .. data.value)
+        MyMod.DebugLevel = data.value
+    end
+end)
+```
+
+Here are some other events that can be listened to:
+- `MCM_Setting_Reset`: Fired when a setting is reset to its default value.
+- Profile-related events:
+	- `MCM_Server_Created_Profile`: Fired when a new profile is created.
+	- `MCM_Server_Set_Profile`: Fired when a profile is set as the active one.
+	- `MCM_Server_Deleted_Profile`: Fired when a profile is deleted.
+- Other events:
+	- `MCM_Mod_Tab_Added`: Fired when a mod inserts a custom tab into the MCM UI.
+
+> Always verify the `modGUID` in the payload to confirm that the event pertains to the mod of interest (typically your own, which you have global access to via `ModuleUUID`).
+{.is-warning}
 
 ### How validation works
 
