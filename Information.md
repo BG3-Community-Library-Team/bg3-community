@@ -2,7 +2,7 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2024-05-08T19:37:33.563Z
+date: 2024-05-11T02:15:52.406Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
@@ -14,6 +14,7 @@ This page is a list of all Informational resource sections.
 ## Pages
 - [Basic](Basic)
 - [Icons](Icons)
+- [Items](Items)
 - [Lua](Lua)
 - [Meshes](Meshes)
 - [Noesis](/Information/Noesis)
