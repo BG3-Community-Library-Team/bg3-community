@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-12T20:50:26.480Z
+date: 2024-05-12T22:51:46.162Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -70,7 +70,7 @@ The `MCM_blueprint.json` file is how you specify your mod's configuration defini
 
 ### The MCM Schema
 
-The MCM Schema dictates how you should structure your blueprint file. In this wiki, you can find it here: [mcm_meta_schema.json](/tutorials/frameworks/mcm_meta_schema.json), but it is recommended to [get it from GitHub](https://github.com/AtilioA/BG3-MCM/blob/main/.vscode/schema.json).
+The MCM Schema dictates how you should structure your blueprint file, and you can [get it from GitHub](https://github.com/AtilioA/BG3-MCM/blob/main/.vscode/schema.json).
 
 This schema file can be used to validate your `MCM_blueprint.json` file, as it will help enforcing the intended structure of the MCM Schema in your blueprint file, ensuring that it is correctly formatted and adheres to the schema.
 
@@ -78,16 +78,16 @@ This schema file can be used to validate your `MCM_blueprint.json` file, as it w
 
 ```json
 "json.schemas": [
-    {
-        "fileMatch": [
-            "MCM_schema*.json"
-        ],
-        "url": "path/to/mcm_meta_schema.json"
-    }
+  {
+    "fileMatch": [
+      "MCM_blueprint*.json"
+    ],
+    "url": "https://raw.githubusercontent.com/AtilioA/BG3-MCM/main/.vscode/schema.json"
+  }
 ],
 ```
 
-Replace `url` with the `mcm_meta_schema.json` file path (e.g. could be where you place IDEHelpers or Osi.lua files). This should supposedly work with a URL, but I couldn't get it to work with any JSON schema URL, so I just use the local path.
+Alternatively, you could replace `url` with the schema JSON file path (e.g. could be where you place IDEHelpers or Osi.lua files). It should work with the URL though, and this way you'll always have an up-to-date schema.
 
 Here are the main components of the MCM schema:
 
@@ -116,6 +116,8 @@ Again, having the schema file set up in your IDE will help you write the bluepri
 
 > For examples of mods that use MCM, you can check:
 > [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/MCM-integration/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
+> [Smart Autosaving](https://github.com/AtilioA/BG3-smart-autosaving/blob/main/Smart%20Autosaving/Mods/SmartAutosaving/MCM_blueprint.json)
+> [
 {.is-success}
 
 ---
