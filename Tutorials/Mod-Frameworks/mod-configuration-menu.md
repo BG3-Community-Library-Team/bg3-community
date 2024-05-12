@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-11T15:54:14.010Z
+date: 2024-05-12T20:50:26.480Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -126,10 +126,10 @@ After setting up the blueprint, mod authors can access the values set by the pla
 
 ```lua
 -- Get the value of a setting with the ID "MySetting"
-local mySettingValue = Mods.BG3MCM:MCMAPI:GetSettingValue("MySetting", ModuleUUID)
+local mySettingValue = Mods.BG3MCM.MCMAPI:GetSettingValue("MySetting", ModuleUUID)
 
 -- Set the value of a setting
-Mods.BG3MCM:MCMAPI:SetSettingValue("MySetting", newValue, ModuleUUID)
+Mods.BG3MCM.MCMAPI:SetSettingValue("MySetting", newValue, ModuleUUID)
 ```
 
 You can also listen to changes to settings values by listening to net messages like this:
