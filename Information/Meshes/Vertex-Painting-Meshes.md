@@ -2,7 +2,7 @@
 title: Vertex Painting Meshes
 description: 
 published: true
-date: 2024-05-12T00:47:00.201Z
+date: 2024-05-12T00:48:27.587Z
 tags: meshes
 editor: markdown
 dateCreated: 2024-04-28T17:39:51.157Z
@@ -20,5 +20,10 @@ You should now see a new color attribute on the non color mesh with the vertex c
 Then there should be two entries in Color Attributes, the old one with nothing (delete it), and the new one.
 
 ![transfervertcol.gif](/information/meshes/transfervertcol.gif)
+
+> 
+> If the two meshes you are transferring between are significantly different, you will probably need to clean up the vertex paint manually, as any blurred edges will end up sticking to the ground in game.
+{.is-info}
+
 
 [TODO: Pictures]
