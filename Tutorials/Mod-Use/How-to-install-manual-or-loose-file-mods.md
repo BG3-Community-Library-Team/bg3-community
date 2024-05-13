@@ -2,7 +2,7 @@
 title: How to install manual/loose file mods
 description: 
 published: true
-date: 2024-05-13T19:52:10.251Z
+date: 2024-05-13T19:52:45.490Z
 tags: installation, loose-file-mods, manual-mods, manual, non-pak, verify, mods, how-to, bin, generated, data, public, folders, folder
 editor: markdown
 dateCreated: 2024-05-01T01:34:11.948Z
@@ -266,6 +266,6 @@ Other relevant guides:
 - [How to install Script Extender](/Tutorials/Mod-Use/How-to-install-Script-Extender)
 - SE Fresh Install (On-To-Do)
 
-Made by: Maze
-Credits: LaughingLeader, Norbyte, Kaz, NellsRelo, Arrow, DefinitiveToast, Aetherpoint
+Made by: Maze, Aetherpoint
+Credits: LaughingLeader, Norbyte, Kaz, NellsRelo, Arrow, DefinitiveToast
 
