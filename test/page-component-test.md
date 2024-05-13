@@ -1,8 +1,8 @@
 ---
-title: Untitled Page
+title: Species Lore Layout Test
 description: 
 published: true
-date: 2024-05-13T23:18:29.164Z
+date: 2024-05-13T23:20:51.204Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T23:17:55.295Z
@@ -27,10 +27,10 @@ They cooperate with other races in Wildspace, but try to stick to themselves, fo
 [Image Here]
     
 ### Tabs {.tabset}
-#### Racial Information
-#### Stats
+#### Statblocks
 #### Appearances
-#### Mods
+#### Relevant Mods
+[Followers of Zerthimon](https://www.nexusmods.com/baldursgate3/mods/3460) by Kaz
   </div>
 </div>
 <div class="row">
