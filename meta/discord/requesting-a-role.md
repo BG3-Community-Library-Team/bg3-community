@@ -2,7 +2,7 @@
 title: Requesting a Wiki Role
 description: 
 published: true
-date: 2024-05-13T20:34:18.375Z
+date: 2024-05-13T20:35:20.646Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T20:18:04.427Z
@@ -11,7 +11,7 @@ dateCreated: 2024-05-13T20:18:04.427Z
 # Requesting Discord Roles
 The BG3 Modding Community Discord server has a few roles that can be requested.
 
-To request a role in the Discord server, please send a message Modmail to using the following templates:
+To request a role in the Discord server, please send a message to Modmail using one of the following templates:
 
 ## Wiki Modmail Template
 The following template was provided by [Aetherpoint](https://next.nexusmods.com/profile/Aetherpoint). 
