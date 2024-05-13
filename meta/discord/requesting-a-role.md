@@ -2,17 +2,19 @@
 title: Requesting a Wiki Role
 description: 
 published: true
-date: 2024-05-13T20:29:59.013Z
+date: 2024-05-13T20:34:18.375Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T20:18:04.427Z
 ---
 
 # Requesting Discord Roles
-The Discord server has a few roles that can be requested.
+The BG3 Modding Community Discord server has a few roles that can be requested.
 
-## Wiki
-To request the Wiki contributor role in the BG3 Modding Community Discord server, please send a message Modmail to using the following template, provided by [Aetherpoint](https://next.nexusmods.com/profile/Aetherpoint). 
+To request a role in the Discord server, please send a message Modmail to using the following templates:
+
+## Wiki Modmail Template
+The following template was provided by [Aetherpoint](https://next.nexusmods.com/profile/Aetherpoint). 
 
 ```md
 Write a preamble here, explaining why you think you should have the Wiki Contributor Role.
@@ -24,7 +26,7 @@ Title of the future page you wish to contribute to the wiki.
 [Page name which you have edited](link to the page you have edited) - An explanation for what you have edited on this page.
 ```
 
-### Wiki Mod Mail Example
+### Wiki Modmail Example
 ```md
 Hiyaaaa, I've finally created two pages, plan to make two more, and have done large edits to a third page.
 ### New Pages
