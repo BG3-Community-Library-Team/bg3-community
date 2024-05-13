@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-13T22:06:10.326Z
+date: 2024-05-13T22:06:20.236Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -52,7 +52,7 @@ showing such windows.
 >
 > • ***Multiple profiles***: MCM has support for creating, saving, loading, and deleting multiple configuration profiles, which is useful for mod authors to separate their testing configurations while developing mods;
 >
-> • ***Localization support***: MCM supports localization for mod settings, allowing you to optionally provide translations for different languages.
+> • ***Localization support***: MCM supports localizing mod settings, allowing you to optionally provide translations for different languages.
 {.is-success}
 
 ## Concepts
