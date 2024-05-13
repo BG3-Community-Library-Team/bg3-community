@@ -2,7 +2,7 @@
 title: Species Lore Layout Test
 description: 
 published: true
-date: 2024-05-13T23:20:51.204Z
+date: 2024-05-13T23:59:02.958Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T23:17:55.295Z
@@ -25,7 +25,10 @@ They cooperate with other races in Wildspace, but try to stick to themselves, fo
     
 # Details
 [Image Here]
-    
+Caption
+
+---
+
 ### Tabs {.tabset}
 #### Statblocks
 #### Appearances
