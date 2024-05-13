@@ -2,7 +2,7 @@
 title: How to install manual/loose file mods
 description: 
 published: true
-date: 2024-05-04T22:01:19.829Z
+date: 2024-05-13T19:50:19.614Z
 tags: installation, loose-file-mods, manual-mods, manual, non-pak, verify, mods, how-to, bin, generated, data, public, folders, folder
 editor: markdown
 dateCreated: 2024-05-01T01:34:11.948Z
@@ -14,29 +14,42 @@ This is part 3 and the final part on how to install BG3MM, mods and loose file m
 - [Part 1: Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
 - [Part 2: How to Install Pak Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
 
+See [Unique Tav guide & everything you need to know](/Tutorials/Mod-Use/Unique-Tav-Everything-you-need-to-know), for specific instructions on how to install that mod.
 
-## What is loose/manual mods? 
+## What are loose/manual mods?
 
-What is loose file mods? Loose file mods are mods that are not managed by a mod manager. This can for example be tattoo mods or make up mods. You can identify them with coming in a zip, 7zip or rar and when you extract them they typically have folders which can be named; "Data", "Bin", "Public", "Generated". 
-When you open these folders, it will typically be a bunch of folders ending with different files such as DDS or other files. Meaning, these will not end in files that are ".pak" files. 
+Loose file mods are mods which get placed into the **Root Directory** of Baldur's Gate 3, and typically come packaged inside of a `.7z`, `.zip`, or `.rar` file. They will be shipped to users in one of two ways, either with the **Bin**, or **Data** folder as the top directory, or multiple other folders such as **Generated**, **Public**, **Scripts**, **Video**, etc. as the top directory.
 
-These folders shouold not be put in the mods folder (`%localAppData%/Larian Studios/Baldur's Gate 3/Mods`) but instead the data or the bin folder in your root installation folder (`\SteamLibrary\steamapps\common\Baldurs Gate 3`)
+If the loose file mod you're downloading comes packaged with the **Bin**, or **Data** folders as their main directory, they must be placed into the **Root Directory**, which is listed below.
 
-However Vortex can manage them, but it is not a good idea as there are potential risk such as Vortex putting the folders and files in a wrong place which can but is not limited to these bugs: 
+If the loose file mod you're downloading comes with the other folders listed above, such as the **Generated**, or **Public** folders, they must be placed into the **Data Folder**, which is listed below.
 
-BG3 crashing
-BG3 not responding
-BG3 not opening
-Weird textures
-Mods not working correctly
-Mods not showing up
-Mods having compatbility issues when there should be none etc. 
+**Root Directory Locations:**
+- Steam: `Steam\steamapps\common\Baldur's Gate 3`
+- GOG: `GOG Galaxy\Games\Baldur's Gate 3`
 
-This is where this guides comes in to provide information with how to install these manually. 
-For Unique Tav which also have a loose file aspect, look through this guide instead: (On To-Do)
+**Data Folder Locations:**
+- Steam: `Steam\steamapps\common\Baldur's Gate 3\Data`
+- GOG: `GOG Galaxy\Games\Baldur's Gate 3\Data`
 
-> For GOG users, you will need to find the GOG equivalevant of the Steam folders and it may look different to what is shown in this guide
-{.is-info}
+**Please verify** that you are **NOT** installing loose file mods into your Mods folder, which is used to load `.pak` file mods, and not loose file mods.
+- Mods Folder: `C:\Users\USERNAME\AppData\Local\Larian Studios\Baldur's Gate 3\Mods`
+
+---
+
+> **VORTEX MOD MANAGER**
+>
+> While Vortex can manage loose file mods, it was **NOT** created specifically for Baldur's Gate 3, and using it could lead to substantial issues, such as the manager placing mods into incorrect directories. Which could lead to:
+> - BG3 crashing
+> - BG3 not responding
+> - BG3 not opening
+> - Weird textures
+> - Mods not working correctly
+> - Mods not showing up
+> - Mods having compatbility issues when there should be none etc.
+> 
+> It is recommended to use the [**Baldur's Gate 3 Mod Manager**](/Tutorials/Mod-Use/Installation-Of-BG3MM) to install `.pak` file mods, and to **manually install all Loose File mods**.
+<!-- {blockquote:.is-danger} -->
 
 ## Find and download the mod you wish to install from Nexus
 
@@ -254,5 +267,5 @@ Other relevant guides:
 - SE Fresh Install (On-To-Do)
 
 Made by: Maze
-Credits: LaughingLeader, Norbyte, Kaz, NellsRelo, Arrow, DefinitiveToast
+Credits: LaughingLeader, Norbyte, Kaz, NellsRelo, Arrow, DefinitiveToast, Aetherpoint
 
