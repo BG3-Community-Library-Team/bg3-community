@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-12T22:52:38.428Z
+date: 2024-05-13T22:06:10.326Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -31,18 +31,29 @@ This documentation is aimed at mod authors who want to integrate their mods with
 ## Features for modders
 
 Below are listed some nice features that MCM provides to mod authors:
-
-- **Easy to use**: MCM provides a simple and intuitive way to define your mod's settings. Integrating MCM into your mod only requires creating a simple blueprint JSON file and replacing a few lines of code;
-- **UI without writing client-side code**: MCM handles the UI for you, so you don't have to write any client-side code or learn the IMGUI API to display your mod's settings, since IMGUI is only available on the client-side.
-- **Simplifies settings management**: MCM takes care of saving and loading your mod's settings, so you don't have to build an entire configuration system to manage JSON files;
-- **Minimizes user error**: MCM handles the UI and validation of settings, reducing the risk of user error when configuring your mod, and encouraging them to do so safely. It skips the need for manual editing of configuration files, which is a great source of error;
-- **Instant saving and loading**: Unlike the traditional way of handling settings, MCM-integrated mods update settings in real-time as they are changed, without requiring save reloads;
-- **Validation checks**: MCM runs dozens of validation checks to ensure that your blueprint for integration was correctly written, while providing detailed error messages if something is wrong. It also validates the settings' values at runtime to ensure that they respect the defined constraints, which is especially useful if JSON settings files were manually edited, something that is supported by MCM;
-- **Supports bespoke UI injection**: MCM allows you to inject your own UI elements into the MCM UI, so you could even have a mix of MCM-generated UI and your own custom UI in the the same. This is useful when your mod has customized features largely unrelated to configuration;
-- **Doesn't clutter UI**: MCM centralizes settings for all mods that use it, so you don't have to worry about cluttering players' screens with yet another IMGUI window, thinking when should it initialize, activate, or even about keybindings - and possible conflicts thereof - for showing such windows.
-- **Robustness**: MCM has more than 50 automated tests aiming to ensure that it works as expected, edge cases are handled, and errors are gracefully reported without halting the framework or game;
-- **Multiple profiles**: MCM has support for creating, saving, loading, and deleting multiple configuration profiles, which is useful for mod authors to separate their testing configurations while developing mods;
-- **Localization support**: MCM supports localization for mod settings, allowing you to optionally provide translations for different languages.
+> • ***Easy to use***: MCM provides a simple and intuitive way to define your mod's settings. Integrating MCM into your mod only requires creating a simple blueprint JSON file and replacing a few lines of code;
+>
+> • ***UI without writing client-side code***: MCM handles the UI for you, so you don't have to write any client-side code or learn the IMGUI API to display your mod's settings, since IMGUI is only available on the client-side.
+>
+> • ***Simplifies settings management***: MCM takes care of saving and loading your mod's settings, so you don't have to build an entire configuration system to manage JSON files;
+>
+> • ***Instant saving and loading***: Unlike the traditional way of handling settings, MCM-integrated mods update settings in real-time as they are changed, without requiring save reloads;
+>
+> • ***Minimizes user error***: MCM handles the UI and validation of settings, reducing the risk of user error when configuring your mod, and encouraging them to do so safely. It skips the need for manual editing of configuration files, which is a great source of error;
+>
+> • ***Validation checks***: MCM runs dozens of validation checks to ensure that your blueprint for integration was correctly written, while >providing detailed error messages if something is wrong. It also validates the settings' values at runtime to ensure that they respect the defined constraints, which is especially useful if JSON settings files were manually edited, something that is supported by MCM;
+>
+> • ***Supports bespoke UI injection***: MCM allows you to inject your own UI elements into the MCM UI, so you could even have a mix of MCM-generated UI and your own custom UI in the the same. This is useful when your mod has customized features largely unrelated to configuration;
+>
+> • ***Doesn't clutter UI***: MCM centralizes settings for all mods that use it, so you don't have to worry about cluttering players' screens >with yet another IMGUI window, thinking when should it initialize, activate, or even about keybindings - and possible conflicts thereof - for 
+showing such windows.
+>
+> • ***Robustness***: MCM has more than 50 automated tests aiming to ensure that it works as expected, edge cases are handled, and errors are gracefully reported without halting the framework or game;
+>
+> • ***Multiple profiles***: MCM has support for creating, saving, loading, and deleting multiple configuration profiles, which is useful for mod authors to separate their testing configurations while developing mods;
+>
+> • ***Localization support***: MCM supports localization for mod settings, allowing you to optionally provide translations for different languages.
+{.is-success}
 
 ## Concepts
 
