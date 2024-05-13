@@ -2,7 +2,7 @@
 title: How to install manual/loose file mods
 description: 
 published: true
-date: 2024-05-13T19:50:19.614Z
+date: 2024-05-13T19:52:10.251Z
 tags: installation, loose-file-mods, manual-mods, manual, non-pak, verify, mods, how-to, bin, generated, data, public, folders, folder
 editor: markdown
 dateCreated: 2024-05-01T01:34:11.948Z
@@ -18,7 +18,7 @@ See [Unique Tav guide & everything you need to know](/Tutorials/Mod-Use/Unique-T
 
 ## What are loose/manual mods?
 
-Loose file mods are mods which get placed into the **Root Directory** of Baldur's Gate 3, and typically come packaged inside of a `.7z`, `.zip`, or `.rar` file. They will be shipped to users in one of two ways, either with the **Bin**, or **Data** folder as the top directory, or multiple other folders such as **Generated**, **Public**, **Scripts**, **Video**, etc. as the top directory.
+Loose file mods are mods which get placed into the **Root Directory** of Baldur's Gate 3, and typically come packaged inside of a `.7z`, `.zip`, or `.rar` file. They will be shipped to users in one of two ways, either with the **Bin**, and **Data** folder as the top directory, or multiple other folders such as **Generated**, **Public**, **Scripts**, **Video**, etc. as the top directory.
 
 If the loose file mod you're downloading comes packaged with the **Bin**, or **Data** folders as their main directory, they must be placed into the **Root Directory**, which is listed below.
 
