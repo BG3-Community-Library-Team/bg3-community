@@ -2,7 +2,7 @@
 title: Githzerai
 description: All about the Githzerai
 published: true
-date: 2024-05-14T00:18:11.074Z
+date: 2024-05-14T00:18:24.540Z
 tags: lore, species, gith, githzerai
 editor: markdown
 dateCreated: 2024-04-27T11:01:49.443Z
@@ -23,7 +23,7 @@ They cooperate with other races in Wildspace, but try to stick to themselves, fo
   </div>
   <div class="col-3">
     
-# Details
+### Details
 [Image Here]
 *Caption*
 
