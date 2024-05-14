@@ -2,7 +2,7 @@
 title: Requesting a Wiki Role
 description: 
 published: true
-date: 2024-05-13T20:35:20.646Z
+date: 2024-05-14T16:30:49.825Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T20:18:04.427Z
@@ -13,9 +13,22 @@ The BG3 Modding Community Discord server has a few roles that can be requested.
 
 To request a role in the Discord server, please send a message to Modmail using one of the following templates:
 
-## Wiki Modmail Template
-The following template was provided by [Aetherpoint](https://next.nexusmods.com/profile/Aetherpoint). 
+## Verified Mod Author
+**Modmail Template**
 
+Please include these two things in your message to Modmail, when requesting the Verified Mod Author Role.
+- A sentence explaining who you are, and a request for the Verified Mod Author role.
+- A link to one of your mods, or the account which you host all of your mods.
+
+**Modmail Example**
+```md
+Hello! I'm Aetherpoint, and I believe I should have the Verified Mod Author role, as I've created and uploaded a mod to the Nexus!
+
+https://next.nexusmods.com/profile/Aetherpoint/mods
+```
+
+## Wiki Contributor
+**Modmail Template**
 ```md
 Write a preamble here, explaining why you think you should have the Wiki Contributor Role.
 ### New Pages
@@ -25,8 +38,7 @@ Title of the future page you wish to contribute to the wiki.
 ### Edits
 [Page name which you have edited](link to the page you have edited) - An explanation for what you have edited on this page.
 ```
-
-### Wiki Modmail Example
+**Modmail Example**
 ```md
 Hiyaaaa, I've finally created two pages, plan to make two more, and have done large edits to a third page.
 ### New Pages
