@@ -2,7 +2,7 @@
 title: Requesting a Wiki Role
 description: 
 published: true
-date: 2024-05-14T16:30:49.825Z
+date: 2024-05-14T16:54:12.895Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T20:18:04.427Z
@@ -25,6 +25,22 @@ Please include these two things in your message to Modmail, when requesting the 
 Hello! I'm Aetherpoint, and I believe I should have the Verified Mod Author role, as I've created and uploaded a mod to the Nexus!
 
 https://next.nexusmods.com/profile/Aetherpoint/mods
+```
+
+## Verified Screenarcher
+**Modmail Template**
+
+Please include these two things in your message to Modmail, when requesting the Verified Verified Screenarcher Role.
+- A sentence explaining who you are, the screenshots you've taken, and a request for the Verified Screenarcher role.
+- A link to one of your screenshots in the screen-archery channel, or the website which you host screenshots. 
+
+Do not send the photos directly to Modmail, only include links to the photos.
+
+**Modmail Example**
+```md
+Hi there! I'm Aetherpoint, and I've sent quite a few screenshots to the screen-archery channel, is it okay if I get the Verified Screenarcher role?
+
+Here is the link to a couple of photos I've sent to the channel: https://discord.com/channels/1211056047784198186/1239975764405780633/1239983583909908490
 ```
 
 ## Wiki Contributor
