@@ -1,8 +1,8 @@
 ---
 title: Discord
 description: A list of pages related to the BG3 Modding Community Discord server.
-published: false
-date: 2024-05-14T17:01:53.533Z
+published: true
+date: 2024-05-14T17:02:14.700Z
 tags: discord
 editor: markdown
 dateCreated: 2024-05-14T17:01:53.533Z
