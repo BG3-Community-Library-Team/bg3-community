@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2024-05-11T16:49:55.211Z
+date: 2024-05-14T17:06:25.747Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -28,6 +28,7 @@ This is the BG3 Modding Community Wiki. This space is a place where tutorials, r
 - [:memo: Submitting Content *A guide on the process of submitting content to the Wiki.*](/meta/submitting-content)
 - [:bookmark_tabs: Privacy Policy](/meta/privacy-policy)
 - [:page_with_curl: Terms of Service](/meta/terms-of-service)
+- [:speech_balloon: Discord *A list of pages related to the BG3 Modding Community Discord server.*](/meta/discord)
 {.links-list}
 
 ## Information
