@@ -2,7 +2,7 @@
 title: Species Lore Layout Test
 description: 
 published: true
-date: 2024-05-13T23:59:02.958Z
+date: 2024-05-14T00:00:48.281Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T23:17:55.295Z
@@ -29,6 +29,10 @@ Caption
 
 ---
 
+> This species is **Not** in the base game.
+{.is-info}
+
+    
 ### Tabs {.tabset}
 #### Statblocks
 #### Appearances
