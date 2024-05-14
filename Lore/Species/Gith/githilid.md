@@ -2,7 +2,7 @@
 title: Gith'ilid
 description: The lesser-known Alhoon-bound Gith
 published: true
-date: 2024-05-14T00:05:52.034Z
+date: 2024-05-14T00:12:50.902Z
 tags: lore, species, gith, illithid, githilid
 editor: markdown
 dateCreated: 2024-04-26T22:15:51.294Z
@@ -44,6 +44,20 @@ Gith'ilid inject enzymes into fallen Illithid, which create eggs upon the Mind F
     
 ### Tabs {.tabset}
 #### Statblocks
+
+|Stat|Value|
+|:--|--:|
+|**AC**|5|
+|**Movement**|12|
+|**Alignment**|Lawful Evil|
+|**STR**||
+|**DEX**||
+|**CON**||
+|**INT**|17-18|
+|**WIS**||
+|**CHA**||
+{.dense}
+    
 #### Relevant Mods
 None
   </div>
