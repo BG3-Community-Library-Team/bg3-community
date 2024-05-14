@@ -2,7 +2,7 @@
 title: Species Lore Layout Test
 description: 
 published: true
-date: 2024-05-14T00:00:48.281Z
+date: 2024-05-14T00:01:24.298Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T23:17:55.295Z
@@ -35,7 +35,6 @@ Caption
     
 ### Tabs {.tabset}
 #### Statblocks
-#### Appearances
 #### Relevant Mods
 [Followers of Zerthimon](https://www.nexusmods.com/baldursgate3/mods/3460) by Kaz
   </div>
