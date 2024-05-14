@@ -2,14 +2,14 @@
 title: Gith'ilid
 description: The lesser-known Alhoon-bound Gith
 published: true
-date: 2024-05-14T00:15:50.449Z
+date: 2024-05-14T00:16:19.103Z
 tags: lore, species, gith, illithid, githilid
 editor: markdown
 dateCreated: 2024-04-26T22:15:51.294Z
 ---
 
 <div class="row">
-	<div class="col-8">
+	<div class="col-9">
     
 # Gith'ilid
 With sickly skin, sharp features, dark hair and simple clothing, you would easily assume them to be Githzerai touched by the Infernal. Their eyes are like "milky white orbs that reflect neither emotion not intent"^[1]^, and their chins are adorned with six braided, disguised tentacles, which can unbraid themselves and act as weapons in combat.
@@ -27,7 +27,7 @@ They are hated by Illithid, Githzerai, and Githyanki alike - these have been rec
 Gith'ilid inject enzymes into fallen Illithid, which create eggs upon the Mind Flayer's death. Upon bringing the eggs to their Alhoon, the tadpoles within the eggs manipulated with negative energy. The tadpoles are then transformed into young Githilid.
 
   </div>
-  <div class="col-4">
+  <div class="col-3">
     
 # Details
 ![Image of a Githilid Rogue entering a door at night](/lore/species/gith/githilid.jpg)
