@@ -2,7 +2,7 @@
 title: Gith'ilid
 description: The lesser-known Alhoon-bound Gith
 published: true
-date: 2024-05-14T00:12:50.902Z
+date: 2024-05-14T00:14:52.379Z
 tags: lore, species, gith, illithid, githilid
 editor: markdown
 dateCreated: 2024-04-26T22:15:51.294Z
@@ -57,6 +57,19 @@ Gith'ilid inject enzymes into fallen Illithid, which create eggs upon the Mind F
 |**WIS**||
 |**CHA**||
 {.dense}
+
+#### Abilities
+**Attacks**
+- Claws (1d6+2)
+- Tentacles (1d8+2)
+
+**Psionics**
+- Adrenaline Control
+- Ejection
+- Synaptic Static
+- Psionic Inflation
+- Psionic Sense
+    
     
 #### Relevant Mods
 None
