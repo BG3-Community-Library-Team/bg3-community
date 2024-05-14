@@ -2,7 +2,7 @@
 title: Gith'ilid
 description: The lesser-known Alhoon-bound Gith
 published: true
-date: 2024-05-14T00:05:00.623Z
+date: 2024-05-14T00:05:52.034Z
 tags: lore, species, gith, illithid, githilid
 editor: markdown
 dateCreated: 2024-04-26T22:15:51.294Z
@@ -51,7 +51,6 @@ None
 <div class="row">
 
   <div class="col-12">
----
 
 ## References
 1. [Planewalker Codex: Gith'ilid](https://web.archive.org/web/20040417141356/http://www.planewalker.com/codex/githilid.shtml)
