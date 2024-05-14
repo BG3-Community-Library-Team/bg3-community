@@ -2,7 +2,7 @@
 title: Requesting a Wiki Role
 description: 
 published: true
-date: 2024-05-14T16:54:12.895Z
+date: 2024-05-14T19:41:50.545Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T20:18:04.427Z
@@ -20,7 +20,7 @@ Please include these two things in your message to Modmail, when requesting the 
 - A sentence explaining who you are, and a request for the Verified Mod Author role.
 - A link to one of your mods, or the account which you host all of your mods.
 
-**Modmail Example**
+**Template Example**
 ```md
 Hello! I'm Aetherpoint, and I believe I should have the Verified Mod Author role, as I've created and uploaded a mod to the Nexus!
 
@@ -36,7 +36,7 @@ Please include these two things in your message to Modmail, when requesting the 
 
 Do not send the photos directly to Modmail, only include links to the photos.
 
-**Modmail Example**
+**Template Example**
 ```md
 Hi there! I'm Aetherpoint, and I've sent quite a few screenshots to the screen-archery channel, is it okay if I get the Verified Screenarcher role?
 
@@ -54,7 +54,7 @@ Title of the future page you wish to contribute to the wiki.
 ### Edits
 [Page name which you have edited](link to the page you have edited) - An explanation for what you have edited on this page.
 ```
-**Modmail Example**
+**Template Example**
 ```md
 Hiyaaaa, I've finally created two pages, plan to make two more, and have done large edits to a third page.
 ### New Pages
