@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-14T23:31:18.843Z
+date: 2024-05-15T21:52:06.827Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -49,6 +49,8 @@ Below are listed some nice features that MCM provides to mod authors:
 showing such windows.
 >
 > • ***Robustness***: MCM has more than 50 automated tests aiming to ensure that it works as expected, edge cases are handled, and errors are gracefully reported without halting the framework or game;
+>
+> • ***UI agnostic***: MCM was designed to be first and foremost a standalone configuration manager. This means that even if support for IMGUI were to be removed, MCM would still function correctly. 
 >
 > • ***Multiple profiles***: MCM has support for creating, saving, loading, and deleting multiple configuration profiles, which is useful for mod authors to separate their testing configurations while developing mods;
 >
