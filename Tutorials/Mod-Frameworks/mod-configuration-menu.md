@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-15T21:54:43.305Z
+date: 2024-05-15T21:55:14.814Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -43,7 +43,7 @@ Below are listed some nice features that MCM provides to mod authors:
 >
 > • ***Validation checks***: MCM runs dozens of validation checks to ensure that your blueprint for integration was correctly written, while providing detailed error messages if something is wrong. It also validates the settings' values at runtime to ensure that they respect the defined constraints, which is especially useful if JSON settings files were manually edited, something that is supported by MCM;
 >
-> • ***Supports bespoke UI injection***: MCM allows you to inject your own UI elements into the MCM UI, so you could even have a mix of MCM-generated UI and your own custom UI in the the same. This is useful when your mod has customized features largely unrelated to configuration;
+> • ***Supports bespoke UI injection***: MCM allows you to inject your own UI elements into the MCM UI, so you could even have a mix of MCM-generated UI and your own custom UI in the same od. This is useful when your mod has customized features largely unrelated to configuration;
 >
 > • ***Doesn't clutter UI***: MCM centralizes settings for all mods that use it, so you don't have to worry about cluttering players' screens with yet another IMGUI window, thinking when should it initialize, activate, or even about keybindings - and possible conflicts thereof - for  showing such windows.
 >
