@@ -2,7 +2,7 @@
 title: Gith
 description: An overview of the Gith species
 published: true
-date: 2024-05-16T18:05:20.117Z
+date: 2024-05-16T18:05:30.371Z
 tags: lore, species, gith, dark sun, spelljammer, planescape, forgotten realms
 editor: markdown
 dateCreated: 2024-04-26T22:12:05.114Z
@@ -15,7 +15,7 @@ The Gith comprise several factions of beings who have escaped Illithid control. 
 
 |Name|Setting|Sourcebook|Author|Canonocity|Latest Edition|
 |----|-------|----------|------|----------|-------|
-|[Athasian Gith](athasian-gith)|Dark Sun|Black Spine|Walter Baas, Dustin Browder, Tom Prusa, Jonathan Tweet|Confirmed|AD&D|
+|[Athasian Gith](athasian-gith)|Dark Sun|Black Spine|Walter Baas, Dustin Browder, Tom Prusa, Jonathan Tweet|Confirmed|AD&D 2e|
 |[Dakeen (Githduros)](githduros)|--|Liber Bestarius|Matt Colville, Douglas Sun, tsadkiel , Eden Studios|No|--|
 |[Duthka'Gith](duthka-gith)|Forgotten Realms|Polyhedron #159 - Rise of the Githyanki|Christopher Perkins|Confirmed|4e|
 |[Forerunners](forerunners)|Planescape|Rrakkma: Legacy of Zerthimon|Phil Smith|Confirmed|3e|
