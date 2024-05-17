@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-17T16:03:57.718Z
+date: 2024-05-17T16:06:12.546Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -27,7 +27,8 @@ This documentation is aimed at mod authors who want to integrate their mods with
     - [Inserting custom UI elements](#inserting-custom-ui-elements)
     - [How validation works](#how-validation-works)
     - [Localization support](#localization-support)
-
+  - [MCM demo](#mcm-demo)
+  
 ## Features for mod authors
 
 Below are listed some nice features that MCM provides to mod authors:
@@ -269,3 +270,7 @@ This is achieved through the use of "handles" - unique identifiers that can be u
 > • If handles are provided and their content can be retrieved, the localized string will be used instead of the usual name/description/tooltip;
 > • If the handle is not found, the usual string will be used.
 {.is-info}
+
+## MCM demo
+
+WIP: this demo will showcase every widget and also some use cases: listening to settings changes & other events, custom UI, custom UI + config
