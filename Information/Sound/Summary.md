@@ -2,7 +2,7 @@
 title: BG3 Sound System Summary
 description: Breaking down audio structure, software, and events
 published: true
-date: 2024-05-17T23:21:24.765Z
+date: 2024-05-17T23:24:03.657Z
 tags: audio, sound, wwise, events
 editor: markdown
 dateCreated: 2024-05-07T04:18:43.686Z
@@ -73,14 +73,15 @@ data "TargetSound" "Spell_Impact_Buff_Blur_L1to3" // Plays when the spell impact
 There is also a Vocal Component to go with `VerbalIntent`
 ```c
 data "VocalComponentSound" "Vocal_Component_Disadvantage"
-data "VerbalIntent" "Buff" 
+data "VerbalIntent" "Buff" // Not 100% sure if this affects the actual speech
 data "SpellFlags" "HasVerbalComponent" // Make sure this flag is on your spell if you want the verbal sound with it
 ```
 
 [Vocal Component Sounds](https://bg3.norbyte.dev/search?q=Vocal_Component_*+type%3Asound)
+[Verbal Intent Options](https://bg3.norbyte.dev/search?q=VerbalIntent+type%3Aenumeration)
 
 And finally a control for the loudness
-```
+```c
 data "SpellSoundMagnitude" "Big" // Small, Normal, Big, None
 ```
 
