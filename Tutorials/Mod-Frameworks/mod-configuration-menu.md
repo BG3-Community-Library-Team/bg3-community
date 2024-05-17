@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-15T22:42:55.919Z
+date: 2024-05-17T16:01:04.343Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -45,11 +45,14 @@ Below are listed some nice features that MCM provides to mod authors:
 >
 > • ***Supports bespoke UI injection***: MCM allows you to inject your own UI elements into the MCM UI, so you could even have a mix of MCM-generated UI and your own custom UI in the same mod. This is useful when your mod has customized features largely unrelated to configuration;
 >
+> • **Cross-mod settings access**: The unified config approach promoted by MCM allows for straightforward access to settings from other mods, as arbitrary implementations are mostly eliminated, facilitating compatibility and interoperability.
+>
 > • ***Doesn't clutter UI***: MCM centralizes settings for all mods that use it, so you don't have to worry about cluttering players' screens with yet another IMGUI window, thinking when should it initialize, activate, or even about keybindings - and possible conflicts thereof - for  showing such windows.
 >
 > • ***Robustness***: MCM has more than 50 automated tests aiming to ensure that it works as expected, edge cases are handled, and errors are gracefully reported without halting the framework or game;
 >
 > • ***UI agnostic***: MCM was designed to be, first and foremost, a standalone configuration manager. This means that even if support for IMGUI were to be entirely removed or replaced, the underlying structure of MCM would still function correctly;
+	> • This also means that **users who can't see the IMGUI window will still have MCM working as a config manager**.
 >
 > • ***Multiple profiles***: MCM has support for creating, saving, loading, and deleting multiple configuration profiles, which is useful for mod authors to separate their testing configurations while developing mods;
 >
