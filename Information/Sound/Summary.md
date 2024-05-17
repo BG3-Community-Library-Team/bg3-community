@@ -2,7 +2,7 @@
 title: BG3 Sound System Summary
 description: Breaking down audio structure, software, and events
 published: true
-date: 2024-05-07T04:18:43.686Z
+date: 2024-05-17T23:21:24.765Z
 tags: audio, sound, wwise, events
 editor: markdown
 dateCreated: 2024-05-07T04:18:43.686Z
@@ -40,6 +40,8 @@ Very important 3D sounds that require a high degree of precision get routed to a
 - Voice components
 - Instrument components
 
+![bus_structure.png](/information/sound/bus_structure.png)
+
 ## Wwise
 Wwise is software for editing interactive media in video games, developed by Audiokinetic. This is the software that Larian uses for mixing audio in BG3. 
 
@@ -52,10 +54,60 @@ In Wwise, Larian sound engineers have created **events** to play one or many sou
 
 There is some information you can derive from looking at the data for audio events, but since you cannot replace the fields it isn't much help to modders that are looking to edit those sounds or create new ones.
 
+## Spells Sound System
+The four phases of spell casting (when it comes to sounds) are "prepare", "loop", "cast", "impact". 
+Prepare and Loop go together, as they are played prior to the spell being cast.
+Cast is when the spell actually happens.
+Impact is when the spell makes contact with the target (ally, enemy, ground, object, etc)
+
+![spells_breakdown.png](/information/sound/spells_breakdown.png)
+
+Data for sounds in Spells
+```c
+data "PrepareSound" "Spell_Prepare_Buff_Gen_L1to3" // Initially played at beginning of Prepare phase
+data "PrepareLoopSound" "Spell_Prepare_Buff_Gen_L1to3_01_Loop" // Loops after PrepareSound, continues looping until CastSound
+data "CastSound" "Spell_Cast_Buff_Blur_L1to3" // Plays when the spell is cast
+data "TargetSound" "Spell_Impact_Buff_Blur_L1to3" // Plays when the spell impacts an object, character, ally etc
+```
+
+There is also a Vocal Component to go with `VerbalIntent`
+```c
+data "VocalComponentSound" "Vocal_Component_Disadvantage"
+data "VerbalIntent" "Buff" 
+data "SpellFlags" "HasVerbalComponent" // Make sure this flag is on your spell if you want the verbal sound with it
+```
+
+[Vocal Component Sounds](https://bg3.norbyte.dev/search?q=Vocal_Component_*+type%3Asound)
+
+And finally a control for the loudness
+```
+data "SpellSoundMagnitude" "Big" // Small, Normal, Big, None
+```
+
+## Status Sound System
+Data sounds in a status
+```c
+data "SoundStart" "Misc_Status_AbsorbElementsActive_Start" // Plays when the status is first applied.
+data "SoundLoop" "Misc_Status_AbsorbElementsActive_MO" // Plays on a loop throughout the status
+data "SoundStop" "Misc_Status_AbsorbElementsActive_End" // Plays when the status is removed.
+```
+
+There is also a Vocal component for statuses. 
+```c
+data "SoundVocalStart" "NONE" // Plays when the status is first applied.
+data "SoundVocalLoop" "LAUGHTERMANIACAL" // Plays on a loop throughout the status
+data "SoundVocalEnd" "RECOVER" // Plays when the status is removed.
+```
+[Types of Vocal Start](https://bg3.norbyte.dev/search?q=SoundVocalType+type%3Aenumeration)
+
 ## Adding sounds to BG3
 Currently (as of May 6, 2024) there is not a way to add new soundbanks or audio files to BG3. 
 The only option is to replace existing sound files (.wew format) so that an event plays your replaced track in place of the original. 
-See [this](haventmadeityet) guide for extracting and identifying sound files.
+See [this](/Tutorials/Sound/Replace-Sound) guide for extracting and identifying sound files.
 
 ## Future for Audio Modding
 We are hopeful that official Larian mod tools:tm: will add support for adding audio files/events.
+
+## Resources
+[Wwise Up On Air | Mixing Baldur’s Gate 3 with Wwise](https://www.youtube.com/watch?v=LlaRuoT15kc&t=3351s) 
+[Baldur's Gate 3: An Audio Technical Deep Dive | GDC 2024](https://www.youtube.com/watch?v=hr8zuW_z7-A)
