@@ -2,7 +2,7 @@
 title: Changing Character Visuals
 description: A tutorial on how to change any non-Tav character appearance.
 published: false
-date: 2024-05-13T01:04:29.106Z
+date: 2024-05-18T22:11:20.645Z
 tags: visual, tutorial, vscode
 editor: ckeditor
 dateCreated: 2024-05-13T01:04:29.106Z
@@ -19,12 +19,12 @@ dateCreated: 2024-05-13T01:04:29.106Z
       <li>For converting lsf files to lsx and vice versa.</li>
     </ul>
   </li>
-  <li><a href="https://code.visualstudio.com/">VSCode</a> or <a href="https://notepad-plus-plus.org/">Notepad++</a>
+  <li><a href="https://code.visualstudio.com/">VSCode</a>
     <ul>
       <li>For editing code files.</li>
     </ul>
   </li>
-  <li><a href="https://colorjs.io/apps/picker/srgb-linear">Linear sRGB color picker</a>
+  <li><a href="https://facelessuser.github.io/coloraide/demos/colorpicker.html">ColorAide Color Picker</a>
     <ul>
       <li>For generating sRGB colour values.</li>
     </ul>
@@ -33,21 +33,30 @@ dateCreated: 2024-05-13T01:04:29.106Z
 <h2>Outlining Your Strategy</h2>
 <ul>
   <li>Creating a .pak folder</li>
-  <li>Write down the needed changes</li>
+  <li>Writing down the needed changes and finding the necessary UUIDs</li>
   <li>Extracting all necessary .lsf files for reference</li>
-  <li>Create a new _merged with all the needed changes</li>
-  <li>Package the folder</li>
+  <li>Creating a new _merged with all the changed UUIDs</li>
+  <li>Packaging the folder</li>
 </ul>
 <h2>Prelude</h2>
 <p>The CharacterVisuals is responsible for assigned visuals such as hair, eye colour, armour…etc. This is required to make changes to characters that doesn't replace the original object, but to switch the objects instead.</p>
 <p>As an example, Astarion uses the 13082f1f-d9ea-be63-ba1a-a5c682123e02 UUID in the hair parameter, which references the HAIR_HUM_M_Astarion.GR2.</p>
 <p>As a reference, you can search up <a href="https://wiki.bg3.community/en/Information/Notable-NPCs">Notable NPCs</a> and take a look at their visual resource.</p>
 <h2>File Setup</h2>
-<p>To create a .pak folder for this mod.</p>
+<p>To create a .pak folder for this mod, you can use this blank template here.</p>
 <h2>CharacterVisuals</h2>
 <p>The [PAK]_CharacterVisuals lsf (Filename<i>: _</i>merged) includes visuals of all non-Tav characters in game, one can find most characters by searching up their names. In some cases the character can be referred to by another name, such as Minthara being referred to as “DrowCommander”.</p>
 <p>After finding the intended character, you must create a new _merged.lsf that includes the character's visual resources. Some characters have multiple visual resources (accounting for multiple appearances) so make sure you have every visual resource in game for that character.</p>
 <p>You must copy and paste all the parameters, even the ones you do not want to edit, as removing any parameter will cause the object to not load in at all. This means that any other mod that edits the same character will likely conflict by default.</p>
+<h2>UUIDS</h2>
+<p>You can trace Character Creation preset objects through their name in game. If one wants to find the UUID for Skintone:Warm Tone 9:</p>
+<ol>
+  <li>Search up “Warm Tone 9” in the Multi-Tool and open the english.loca</li>
+  <li>Search “Warm Tone 9” in the english.loca file until you find the DisplayName UUID “h94c0aa00g98c3g4114ga186g7d02ce6cb8c4”</li>
+  <li>Search the UUID in the index to find its original file, which is CharacterCreationSkinColors.lsf.</li>
+  <li>Search in CharacterCreationSkinColors.lsf the UUID until you find it's node, in which you find the MaterialPresetUUID which is what mostly is required.</li>
+  <li>If further is needed, you can search its UUID to pinpoint the original file of the object with its assigned materials.</li>
+</ol>
 <h2>Parameters</h2>
 <p>Each parameter is responsible for assigning the object to a character:</p>
 <h3>MaterialPresets&nbsp;</h3>
@@ -73,7 +82,7 @@ dateCreated: 2024-05-13T01:04:29.106Z
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;attribute id="MaterialPresetResource" type="FixedString" value="UUID" /&gt;</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/node&gt;</p>
 <h3>ScalarParameters/VectorParameters</h3>
-<h4>Body</h4>
+<h4>Overlay</h4>
 <p>Freckles Amount (<i>Nominal Value 0.00</i>)</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;node id="ScalarParameters"&gt;</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;attribute id="Color" type="bool" value="False" /&gt;</p>
@@ -269,3 +278,24 @@ dateCreated: 2024-05-13T01:04:29.106Z
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/node&gt;</p>
 <h2>Walkthrough</h2>
 <h2>Finalising</h2>
+<p>After finishing editing the .lsx, it's time to convert it back to .lsf with the LSLib Tookilt.</p>
+<p>Import the mod to ModManager, and all changes should be visible in game.</p>
+<h2>Troubleshooting</h2>
+<ol>
+  <li><strong>My changes aren't showing up</strong>
+    <ul>
+      <li>Make sure you copied all existing nodes from the game correctly to the file, any missing nodes or misalignment in the code can make it fail to work.</li>
+      <li>Sometimes the character might have a unique .lsf of their faces (Which is most case with Origin Characters but can happen with others) check if the character has a unique .lsf.</li>
+    </ul>
+  </li>
+  <li><strong>The hair/eye…etc. are showing up as untextured</strong>
+    <ul>
+      <li>This is due to an incorrectly pasted UUID, double check if your UUID is fully copied with no spaces between the quotation marks.</li>
+    </ul>
+  </li>
+  <li><strong>The hair/horns/armour is not correctly fitted.</strong>
+    <ul>
+      <li>There are multiple meshes for multiple objects, either pinpoint the exact race/gender mesh for your character or find the closest approximation (Masc Tiefling can use Human Meshes for example)</li>
+    </ul>
+  </li>
+</ol>
