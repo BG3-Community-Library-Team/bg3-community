@@ -2,8 +2,8 @@
 title: Image-Editing-Tools
 description: A list of image editing tools and information on them
 published: true
-date: 2024-05-19T12:32:58.632Z
-tags: 
+date: 2024-05-19T12:35:43.564Z
+tags: tools, textures, image editing
 editor: markdown
 dateCreated: 2024-05-19T12:32:58.632Z
 ---
