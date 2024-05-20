@@ -2,7 +2,7 @@
 title: Using Sound Events to Narrow Down Source Files
 description: A tutorial on how to use Audio Events from a Sounds merged.lsf to group sound files in a SoundBank
 published: true
-date: 2024-05-20T21:03:15.145Z
+date: 2024-05-20T21:04:24.499Z
 tags: tutorials, audio, sound
 editor: markdown
 dateCreated: 2024-05-20T20:34:45.294Z
@@ -12,7 +12,7 @@ BG3 Soundbanks have very little rhyme or reason as to their contents. Rather tha
 
 Here is an example of one of that file's Sound Events:
 
-```plaintext
+```xml
 <node id="Resource">
 	<attribute id="DisplayName" type="LSString" value="" />
 	<attribute id="Duration" type="float" value="8.300573" />
@@ -41,7 +41,7 @@ Now let's open up VOCALS.bnk.xml. You can find instructions for converting this 
 
 This file is *very* large! Use the search function with your copied SoundEventID and you will find only one result, though, a CAkEvent object:
 
-```plaintext
+```xml
 <obj na="CAkEvent" ix="17401">
    <fld ty="u8" na="eHircType" va="4" vf="0x04 [Event]"/>
    <fld ty="u32" na="dwSectionSize" va="13" vf="0x0D"/>
@@ -62,7 +62,7 @@ This file is *very* large! Use the search function with your copied SoundEventID
 
 From here, we need the ulActionID(s). Some events will have only one, others will have multiple. We want to search the document for both these IDs until we find a "CAkActionPlay" object, which in this case we got from searching for the Event's second ulActionID, `"1017479151"`:
 
-```plaintext
+```xml
 <obj na="CAkActionPlay" ix="17400">
    <fld ty="u8" na="eHircType" va="3" vf="0x03 [Action]"/>
    <fld ty="u32" na="dwSectionSize" va="22" vf="0x16"/>
@@ -96,7 +96,7 @@ What we want from the CAkActionPlay is the “idExt,” here, `"254604354"`. Thi
 
 What we find is multiple different types of matches, but the ones we need are the "DirectParentID" of various "CAkSwitchCntr" sections. I like to add notes to the first line of each of these containers for better organization, of the original SoundEvent name we started with back in the merged.lsf(x). For this tutorial, that's `<!-- "BGClickReaction_ReptAction_MoveTo" -->`. From here, scroll down to the `<obj na="Children">` line.
 
-```plaintext
+```xml
 <obj na="CAkSwitchCntr" ix="8217"> <!-- "BGClickReaction_ReptAction_MoveTo" -->
    <fld ty="u8" na="eHircType" va="6" vf="0x06 [Switch Container]"/>
    <fld ty="u32" na="dwSectionSize" va="148" vf="0x94"/>
@@ -253,7 +253,7 @@ What we find is multiple different types of matches, but the ones we need are th
 
 We can see there are three “Children” listed. Different CAkSwitchCntr entries will have different numbers of ulChildID's. Take these and search for them, we're now looking for where the matches are the DirectParentID of one of two objects: either a "CAkRanSeqCntr" or a "CAkSound," depending on the complexity of the event's variations. For this event, there's three variations, so we get "CAkRanSeqCntr" results, like this one below. If your results for your seatch are DirectParentIDs of a CAkSound, skip this next step.
 
-```plaintext
+```xml
 <obj na="CAkRanSeqCntr" ix="8127">
    <fld ty="u8" na="eHircType" va="5" vf="0x05 [Random/Sequence Container]"/>
    <fld ty="u32" na="dwSectionSize" va="318" vf="0x13E"/>
@@ -467,8 +467,8 @@ We can see there are three “Children” listed. Different CAkSwitchCntr entrie
 
 Now we'll search for the CAkRanSeqCntr's children, where finally one of the matches will be the ulID of a CAkSound event. You might also find CAkSound events using their DirectParentIDs from a CAkSwitchCntr's Children entries, depending on what kind of event you're saearching, but once you've got to the CAkSound, all that matters is its “sourceID.” This is the name of the actual .wem file the code points to.
 
-```plaintext
-<obj na="CAkSound" ix="8106"> Voice 1/7b
+```xml
+<obj na="CAkSound" ix="8106">
    <fld ty="u8" na="eHircType" va="2" vf="0x02 [Sound]"/>
    <fld ty="u32" na="dwSectionSize" va="66" vf="0x42"/>
    <fld ty="sid" na="ulID" va="119788967"/>
