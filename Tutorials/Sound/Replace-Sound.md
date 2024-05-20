@@ -2,7 +2,7 @@
 title: Replacing in-game Sound
 description: This is a guide for how to replace sound files (voices, sound effects, music) in game
 published: true
-date: 2024-05-11T22:26:34.997Z
+date: 2024-05-20T18:04:59.696Z
 tags: audio, sound, music, voice
 editor: markdown
 dateCreated: 2024-05-11T22:26:34.997Z
@@ -105,15 +105,32 @@ You should see `.cache` and a bunch of other directories, open `.cache`.
 Then continue browsing until you get to your `.wem` file (should be -> Windows -> SFX)
 The last thing to note here is that Wwise added some junk to your filename, make sure to rename it. It needs to match 1-to-1 with the source `.wem` file.
 ![converted-wem-location.png](/tutorials/sound/converted-wem-location.png)
-
 So now that it has the right name, copy it, and we're going to place it in a specific location.
+
+## Placing files
+
+### Packing
+You can place the file in your mod workspace so that the audio files get packed up and distributed to the user.
+Sounds would go here:
+`MySweetMod\Public\Shared\Assets\Sound\`
+
+### Manually
+You could instead place the file manually
 `SteamLibrary\steamapps\common\Baldurs Gate 3\Data\Public\Shared\Assets\Sound\379124917.wem"`
 
-> I believe voice lines go in `Data\Mods\Gustav\Localization\English\Soundbanks\` but I haven't personally tested it. It's different for voice lines than it is for Sounds/Music.
+# Voice Replacement
+Most of this guide is geared towards sounds. Voices are a little different.
+> I believe voice lines go in `Data\Mods\Gustav\Localization\English\Soundbanks\` but I haven't personally tested it. 
+It's different for voice lines than it is for Sounds/Music.
 {.is-info}
 
+## Voice Reference
+A nexus user named [tealrabbit19](https://next.nexusmods.com/profile/tealrabbit19/about-me?gameId=3474) has taken the liberty of compiling a massive [organized list](https://docs.google.com/document/d/1Tsbmxgesvy20OhAT1n9dXdK6XBxWMwnnTz83CZoQqWU) of voice lines and their filenames.
 
-Afaik, there isn't a way to bundle them up as a .pak yet.
+
+# Examples of Audio Replacements
+[Audio and Voice Replacer GUIDE HOW TO TUTORIAL](https://www.nexusmods.com/baldursgate3/mods/8240)
+[Siggi's Tav Voice 8 Dark Urge Point-and-Click Dialogue Fixer](https://www.nexusmods.com/baldursgate3/mods/9499)
 
 # Conclusion
 You should be able to replace music, sound effects, and voice clips now. 
