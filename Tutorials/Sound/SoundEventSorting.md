@@ -2,7 +2,7 @@
 title: Using Sound Events to Narrow Down Source Files
 description: A tutorial on how to use Audio Events from a Sounds merged.lsf to group sound files in a SoundBank
 published: true
-date: 2024-05-20T21:04:24.499Z
+date: 2024-05-20T21:09:37.092Z
 tags: tutorials, audio, sound
 editor: markdown
 dateCreated: 2024-05-20T20:34:45.294Z
@@ -14,24 +14,24 @@ Here is an example of one of that file's Sound Events:
 
 ```xml
 <node id="Resource">
-	<attribute id="DisplayName" type="LSString" value="" />
-	<attribute id="Duration" type="float" value="8.300573" />
-	<attribute id="GMSoundCategory" type="int8" value="0" />
-	<attribute id="GMSubSection" type="LSString" value="" />
-	<attribute id="ID" type="FixedString" value="40a08c44-c740-a693-ba33-7a4e4743c367" />
-	<attribute id="Internal" type="bool" value="True" />
-	<attribute id="Localized" type="bool" value="False" />
-	<attribute id="MaxDistance" type="float" value="-1" />
-	<attribute id="Name" type="LSString" value="BGClickReaction_ReptAction_MoveTo" />
-	<attribute id="Preload" type="bool" value="False" />
-	<attribute id="SoundBank" type="FixedString" value="VOCALS" />
-	<attribute id="SoundCategory" type="int8" value="0" />
-	<attribute id="SoundCodec" type="int8" value="7" />
-	<attribute id="SoundEvent" type="FixedString" value="BGClickReaction_ReptAction_MoveTo" />
-	<attribute id="SoundEventID" type="uint32" value="1053678736" />
-	<attribute id="SoundEventUUID" type="guid" value="2856fe7c-ec95-4cbc-a640-79b855885b6f" />
-	<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Sound/VOCALS.bnk" />
-	<attribute id="_OriginalFileVersion_" type="int64" value="144115196665790668" />
+    <attribute id="DisplayName" type="LSString" value="" />
+    <attribute id="Duration" type="float" value="8.300573" />
+    <attribute id="GMSoundCategory" type="int8" value="0" />
+    <attribute id="GMSubSection" type="LSString" value="" />
+    <attribute id="ID" type="FixedString" value="40a08c44-c740-a693-ba33-7a4e4743c367" />
+    <attribute id="Internal" type="bool" value="True" />
+    <attribute id="Localized" type="bool" value="False" />
+    <attribute id="MaxDistance" type="float" value="-1" />
+    <attribute id="Name" type="LSString" value="BGClickReaction_ReptAction_MoveTo" />
+    <attribute id="Preload" type="bool" value="False" />
+    <attribute id="SoundBank" type="FixedString" value="VOCALS" />
+    <attribute id="SoundCategory" type="int8" value="0" />
+    <attribute id="SoundCodec" type="int8" value="7" />
+    <attribute id="SoundEvent" type="FixedString" value="BGClickReaction_ReptAction_MoveTo" />
+    <attribute id="SoundEventID" type="uint32" value="1053678736" />
+    <attribute id="SoundEventUUID" type="guid" value="2856fe7c-ec95-4cbc-a640-79b855885b6f" />
+    <attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Sound/VOCALS.bnk" />
+    <attribute id="_OriginalFileVersion_" type="int64" value="144115196665790668" />
 </node>
 ```
 
@@ -57,7 +57,7 @@ This file is *very* large! Use the search function with your copied SoundEventID
      </obj>
     </lst>
    </obj>
-  </obj>
+</obj>
 ```
 
 From here, we need the ulActionID(s). Some events will have only one, others will have multiple. We want to search the document for both these IDs until we find a "CAkActionPlay" object, which in this case we got from searching for the Event's second ulActionID, `"1017479151"`:
@@ -89,7 +89,7 @@ From here, we need the ulActionID(s). Some events will have only one, others wil
      <fld ty="u32" na="bankType" va="0" vf="0x0000 [None]"/>
     </obj>
    </obj>
-  </obj>
+</obj>
 ```
 
 What we want from the CAkActionPlay is the “idExt,” here, `"254604354"`. This is the next term we need to search the soundbank for.
@@ -248,7 +248,7 @@ What we find is multiple different types of matches, but the ones we need are th
      </obj>
     </lst>
    </obj>
-  </obj>
+</obj>
 ```
 
 We can see there are three “Children” listed. Different CAkSwitchCntr entries will have different numbers of ulChildID's. Take these and search for them, we're now looking for where the matches are the DirectParentID of one of two objects: either a "CAkRanSeqCntr" or a "CAkSound," depending on the complexity of the event's variations. For this event, there's three variations, so we get "CAkRanSeqCntr" results, like this one below. If your results for your seatch are DirectParentIDs of a CAkSound, skip this next step.
