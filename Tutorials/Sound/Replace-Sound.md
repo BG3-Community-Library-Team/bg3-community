@@ -2,7 +2,7 @@
 title: Replacing in-game Sound
 description: This is a guide for how to replace sound files (voices, sound effects, music) in game
 published: true
-date: 2024-05-20T18:04:59.696Z
+date: 2024-05-20T18:54:03.209Z
 tags: audio, sound, music, voice
 editor: markdown
 dateCreated: 2024-05-11T22:26:34.997Z
@@ -120,12 +120,12 @@ You could instead place the file manually
 
 # Voice Replacement
 Most of this guide is geared towards sounds. Voices are a little different.
-> I believe voice lines go in `Data\Mods\Gustav\Localization\English\Soundbanks\` but I haven't personally tested it. 
-It's different for voice lines than it is for Sounds/Music.
+> Story voice lines such as location and quest remarks and dialogue go in `Data\Mods\Gustav\Localization\English\Soundbanks\`. 
+It's different for voice lines than it is for Sounds/Music and repeated voice lines, such as point & click reaction dialogue.
 {.is-info}
 
 ## Voice Reference
-A nexus user named [tealrabbit19](https://next.nexusmods.com/profile/tealrabbit19/about-me?gameId=3474) has taken the liberty of compiling a massive [organized list](https://docs.google.com/document/d/1Tsbmxgesvy20OhAT1n9dXdK6XBxWMwnnTz83CZoQqWU) of voice lines and their filenames.
+A nexus user named [tealrabbit19](https://next.nexusmods.com/profile/tealrabbit19/about-me?gameId=3474) has taken the liberty of compiling a massive [organized list](https://docs.google.com/document/d/1Tsbmxgesvy20OhAT1n9dXdK6XBxWMwnnTz83CZoQqWU) of point & click voice lines and their filenames for all player voice options and party members.
 
 
 # Examples of Audio Replacements
