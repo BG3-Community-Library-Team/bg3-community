@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-21T21:29:57.572Z
+date: 2024-05-21T21:30:07.174Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -74,7 +74,7 @@ After installing the extension, you will most likely see a message like this:
 
 There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extension's settings. I cover that [below](#setup-extension-settings) but first lets properly get a workspace set up so you can utilize all the features of the extension.
 
-The extension is designed to lauch right when you start vscode
+The extension is designed to launch right when you start vscode
 
 ## Setup Extension Settings
 As I mentioned, if it is your first time using the extension (or perhaps some error on loadup which could be other unrelated issues) you may see the image below when you install and open up vscode or a workspace.
