@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-21T21:16:25.242Z
+date: 2024-05-21T21:29:57.572Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -28,8 +28,9 @@ While the extension is still receiving regular updates, it's at a stable point w
 3. [Mod Authors Guide](#mod-authors-guide)
 	1. [Limitations](#limitations)
 	2. [Download Guide](#download-guide)
-	3. [Setup Extension Settings](#setup-extension-settings)
-	4. [Features and Usage](#features-and-usage)
+  3. [Getting Started](#getting-started)
+	4. [Setup Extension Settings](#setup-extension-settings)
+	5. [Features and Usage](#features-and-usage)
 
 ### File Locations 📂
 - [Github (source code)](https://github.com/ghostboats/bg3_mod_helper)
@@ -49,6 +50,7 @@ Nothing is perfect, lets get the rough stuff out of the way before we start to p
 - Unable to edit pngs/dds in vscode (can resize, convert, generate atlas texture, and apply backgrounds to transparent pngs though)
 - Buggy when having other folders within your workspace
 - Buggy when using multiple vscode windows (need to confirm)
+- Possible lag due to file size (need to confirm)
 
 <sub>Being on this list doesnt guarentee that it will or will not be possible in the future. Just that it is unlikely</sub>
 
@@ -65,9 +67,17 @@ There are several ways to download the extension, but below is the easiest metho
 > It is recommended that restart vscode after installing. In fact, you should restart vscode everytime you change your workspace for ensurance.
 {.is-warning}
 
+## Getting Started
+After installing the extension, you will most likely see a message like this:
+
+![error_message_on_start.png](/tutorials/bg3-mod-helper/error_message_on_start.png)
+
+There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extension's settings. I cover that [below](#setup-extension-settings) but first lets properly get a workspace set up so you can utilize all the features of the extension.
+
+The extension is designed to lauch right when you start vscode
 
 ## Setup Extension Settings
-After installing the extension, you will most likely see a message like this:
+As I mentioned, if it is your first time using the extension (or perhaps some error on loadup which could be other unrelated issues) you may see the image below when you install and open up vscode or a workspace.
 
 ![error_message_on_start.png](/tutorials/bg3-mod-helper/error_message_on_start.png)
 
