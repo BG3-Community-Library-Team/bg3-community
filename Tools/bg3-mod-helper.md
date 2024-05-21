@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-21T21:33:59.482Z
+date: 2024-05-21T21:35:05.786Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -64,7 +64,7 @@ There are several ways to download the extension, but below is the easiest metho
 
 ![installextension-ezgif.com-optimize.gif](/tutorials/bg3-mod-helper/installextension-ezgif.com-optimize.gif)
 
-> It is recommended that restart vscode after installing. In fact, you should restart vscode everytime you change your workspace for ensurance.
+> It is recommended that you restart vscode after installing. In fact, you should restart vscode everytime you change your workspace for ensurance.
 {.is-warning}
 
 ## Getting Started
