@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-10T19:54:53.989Z
+date: 2024-05-21T21:16:25.242Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -10,9 +10,10 @@ dateCreated: 2024-04-25T01:43:35.054Z
 
 # BG3 Mod Helper - A VSCod(e/ium) Extension
 Created by ghostboats and khbsd, this VSCode extension is designed to help mod authors speed up their mod creation workflows. The extension has multiple useful utilities that include but are not limited to:
-- **Mod Packing**
+- **Mod Packing/Unpacking**
 - **UUID/Handle Generation**
 - **UUID Mapping**
+- **Handle Management**
 - **LSX/XML/LOCA/ETC File Conversions**
 - **Generate Mod Templates**
 - **And More!**
@@ -25,9 +26,10 @@ While the extension is still receiving regular updates, it's at a stable point w
 1. [File Locations](#file-locations)
 2. [Requirements](#requirements)
 3. [Mod Authors Guide](#mod-authors-guide)
-   1. [Download Guide](#download-guide)
-   2. [Setup Extension Settings](#setup-extension-settings)
-	 3. [Features and Usage](#features-and-usage)
+	1. [Limitations](#limitations)
+	2. [Download Guide](#download-guide)
+	3. [Setup Extension Settings](#setup-extension-settings)
+	4. [Features and Usage](#features-and-usage)
 
 ### File Locations 📂
 - [Github (source code)](https://github.com/ghostboats/bg3_mod_helper)
@@ -36,11 +38,19 @@ While the extension is still receiving regular updates, it's at a stable point w
 ### Requirements 🛠️
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [LSLib](https://github.com/Norbyte/lslib/releases)
-- Python (for working with icons/dss's/png's)
 
-> **Note:** Previous versions of the extension required direct use of `divine.exe`. This has since been replaced with [LSLib](https://github.com/Norbyte/lslib/releases). Make sure your path now points to the directory containing `lslib`.
+> **Note:** Previous versions of the extension required direct use of `divine.exe`. This has since been replaced with [LSLib](https://github.com/Norbyte/lslib/releases). Make sure your path now points to the directory containing `lslib`. Likewise, previouse versions of the extension required python and the image
 
 # Mod Authors Guide
+
+## Limitations
+Nothing is perfect, lets get the rough stuff out of the way before we start to possibly save you time incase this extension is not what you are looking for.
+- Unable to work with multiple workspaces in one vscode window
+- Unable to edit pngs/dds in vscode (can resize, convert, generate atlas texture, and apply backgrounds to transparent pngs though)
+- Buggy when having other folders within your workspace
+- Buggy when using multiple vscode windows (need to confirm)
+
+<sub>Being on this list doesnt guarentee that it will or will not be possible in the future. Just that it is unlikely</sub>
 
 ## Download Guide
 There are several ways to download the extension, but below is the easiest method.
@@ -51,6 +61,10 @@ There are several ways to download the extension, but below is the easiest metho
 5. Click "Install" on the correct extension (bg3_mod_helper)
 
 ![installextension-ezgif.com-optimize.gif](/tutorials/bg3-mod-helper/installextension-ezgif.com-optimize.gif)
+
+> It is recommended that restart vscode after installing. In fact, you should restart vscode everytime you change your workspace for ensurance.
+{.is-warning}
+
 
 ## Setup Extension Settings
 After installing the extension, you will most likely see a message like this:
