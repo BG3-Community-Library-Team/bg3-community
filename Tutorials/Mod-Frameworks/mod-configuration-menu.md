@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-22T12:34:40.196Z
+date: 2024-05-22T12:35:58.414Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -108,9 +108,9 @@ Alternatively, you could replace `url` with the schema JSON file path (e.g. coul
 > Having the schema file set up in your IDE will help you write the blueprint file correctly, without having to guess the structure or wonder if you're missing something. A few minor features, such as `ModName` (to replace the string used for your mod's name) are only documented by the JSON schema.
 {.is-info}
 
-Following are the main components of the MCM schema. Don't stress over this too much, the schema file will guide you when writing JSONs.
+Following are the main components of the MCM schema. Don't stress over this too much, the schema file will guide you when writing blueprints.
 
-- **Organizational structure**: The schema defines a hierarchical organization using `Tabs` and `Sections`:
+- **Organizational structure**: the MCM Schema defines a hierarchical organization using `Tabs` and `Sections`:
   - `Tabs`: Serve as top-level organizational units in the MCM menu. Each tab can exclusively contain either `Sections` or standalone `Settings`.
     - `Sections`: Sub-divisions within tabs to group related settings.
 
@@ -127,6 +127,7 @@ Following are the main components of the MCM schema. Don't stress over this too 
 Thus, the main content of the blueprint is defined in the `Tabs` and `Settings` properties. You'll need to include at least one of these - either a list of tabs, or a list of standalone settings.
 Within each tab, you can define either `Sections` or a list of `Settings`. Sections provide a way to group related settings together under a header. Each setting has an `Id`, `Name`, `Type`, `Default` value, and at least a `Tooltip` or a `Description`. Each setting `Id` must be unique across the entire blueprint, and that is validated by one of the many validation checks MCM performs.
 
+Future versions might make this structure less strict, allowing nesting tabs inside sections and vice-versa.
 
 
 > If your [mod is symlinked](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking 'Symlinking mods tutorial'), you can try out changes to your mod's blueprint in-game by using `reset` in the console without having to restart the game every time you make a change to the blueprint file.
