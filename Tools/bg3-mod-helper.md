@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T20:11:44.179Z
+date: 2024-05-22T20:25:42.702Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -173,4 +173,5 @@ I will cover most of what these do below but some information about the data pro
 *<sub>Look for `Excluded Files` in the settings to add files to exclude when auto coverting via packing. Look for `Auto Launch On Pack` to launch game right away after packing, chains well with the `Launch Continue Game` setting.</sub>
 
 ### 4. **PNG/DDS Manipulation**
-- When selecting a png
+- Convert PNG files to DDS files (and vice versa) by right clicking on a file in the file tree and selecting `Convert To  DDS` or `Convert To PNG`.
+--When converting an atlas texture, it will correctly convert the PNG to dds, not DDS
