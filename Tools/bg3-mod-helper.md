@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T20:25:42.702Z
+date: 2024-05-22T20:53:09.263Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -175,3 +175,8 @@ I will cover most of what these do below but some information about the data pro
 ### 4. **PNG/DDS Manipulation**
 - Convert PNG files to DDS files (and vice versa) by right clicking on a file in the file tree and selecting `Convert To  DDS` or `Convert To PNG`.
 --When converting an atlas texture, it will correctly convert the PNG to dds, not DDS
+- Resize PNG/DDS files by right clicking on a PNG/DDS file and hovering over `Resize Image`. Four options will appear:
+--`Resize Image Custom` which will prompt the user to select a length and width (make them the same please)
+--`Resize Image to Controller (144x144)`
+--`Resize Image to Hotbar (64x64)`
+--`Resize Image to Tooltip (380x380)`
