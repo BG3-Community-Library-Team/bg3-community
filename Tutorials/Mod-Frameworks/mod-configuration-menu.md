@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-22T12:41:56.428Z
+date: 2024-05-22T12:48:41.335Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -105,10 +105,10 @@ This schema file can be used to **write and validate** your `MCM_blueprint.json`
   }
 ],
 ```
+*Alternatively, you could replace `url` with the schema JSON file path (e.g. could be where you place IDEHelpers or Osi.lua files). It should work with the URL though, and this way you'll always have an up-to-date schema.
 
-3. This might require a Reload Window or just reopening your editor, but you're done don't need to do this again. The schema will be always up-to-date with MCM releases.
+3. This might require a Reload Window or just reopening your editor, but you're done! You won't need to do this again, and the schema file will be always up-to-date with MCM releases.
 
-Alternatively, you could replace `url` with the schema JSON file path (e.g. could be where you place IDEHelpers or Osi.lua files). It should work with the URL though, and this way you'll always have an up-to-date schema.
 
 > Having the schema file set up in your IDE will help you write the blueprint file correctly, without having to guess the structure or wonder if you're missing something. A few minor features, such as `ModName` (to replace the string used for your mod's name) are only documented by the JSON schema.
 {.is-info}
@@ -140,6 +140,7 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 
 
 > For examples of mods that use MCM, you can check:
+> [MCM Demo (WIP)](https://github.com/AtilioA/BG3-MCM/blob/308141a5c1b1e91d87440f066a62a4f2b9f41e55/Mod%20Configuration%20Menu/Mods/BG3MCM/MCM_blueprint.json) - showcases all input types, tab insertion and a bit of client/server communication
 > [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/MCM-integration/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
 > [Smart Autosaving](https://github.com/AtilioA/BG3-smart-autosaving/blob/main/Smart%20Autosaving/Mods/SmartAutosaving/MCM_blueprint.json)
 > [Preemptively Label Containers](https://github.com/AtilioA/BG3-preemptively-label-containers/blob/main/Preemptively%20Label%20Containers/Mods/PreemptivelyLabelContainers/MCM_blueprint.json)
