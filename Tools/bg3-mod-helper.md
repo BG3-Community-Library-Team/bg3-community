@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T21:07:40.962Z
+date: 2024-05-22T22:08:19.796Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -161,18 +161,26 @@ I will cover most of what these do below but some information about the data pro
 *<sub>Look for `Excluded Files` in the settings to add files to exclude. Can also right click on a file and click `Add to Conversion Exclusion List` or `Remove from Conversion Exclusion List`</sub>
 
 ### 3. **Pack/Unpack Mods**
-- Open a custom webview tab where users can manage packing and unpacking related features (webview in development, quick actions currently working though)
+- Open a custom webview tab where users can manage packing and unpacking related features (webview in development, quick actions currently working though).
 - Can also quick pack/unpack without the packaging tool by clicking the dropdown arrow on `Pack/Unpacking Tool` to display quick options regarding packing such as `Pack Mod` and `Unpack Mod`.
 - `Pack Mod` performs a number a background checks.
---Ensures a meta exists and will prompt you to create one if not
---Converts all non excluded .lsx and .xml files for you automatically
---Will move the newly made .pak to the games Mods folder
---Can autolaunch game after packing if settings are enabled (disabled at the meowment)
+--Ensures a meta exists and will prompt you to create one if not.
+--Converts all non excluded .lsx and .xml files for you automatically.
+--Will move the newly made .pak to the games Mods folder.
+--Can autolaunch game after packing if settings are enabled (disabled at the meowment).
 
 <br>
 *<sub>Look for `Excluded Files` in the settings to add files to exclude when auto coverting via packing. Look for `Auto Launch On Pack` to launch game right away after packing, chains well with the `Launch Continue Game` setting.</sub>
 
-### 4. **PNG/DDS Manipulation**
+### 4. **UUID/Handle Hover Information**
+- Hover over UUIDs/handles in your files to see hoverable boxes which display all your related UUIDs/handles in your workspace. It breaks it down by the following per entry found:
+--The entire line the UUID/handle is found on, starting at the first whitespace occurance.
+--The file that line is found in. If you click it, it will open the file in the editor at that line for quick access.
+
+<br>
+*<sub>Look for `Hover: Enabled` in the settings to disable the hover feature of the extension to avoid visual clutter if you see fit. Look for `Hover: Max Files` for a better solution as it will limit the amount of files returned to help with visual clarity. Look for `Max Cache Size` if you are dealing with lag issues.</sub>
+
+### 5. **PNG/DDS Manipulation**
 - Convert PNG files to DDS files (and vice versa) by right clicking on a file in the file tree and selecting `Convert To  DDS` or `Convert To PNG`.
 --When converting an atlas texture, it will correctly convert the PNG to dds, not DDS
 - Resize PNG/DDS files by right clicking on a PNG/DDS file and hovering over `Resize Image`. Four options will appear:
