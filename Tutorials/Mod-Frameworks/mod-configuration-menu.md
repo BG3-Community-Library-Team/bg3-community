@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-22T12:35:58.414Z
+date: 2024-05-22T12:41:56.428Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -92,6 +92,9 @@ This schema file can be used to **write and validate** your `MCM_blueprint.json`
 
 **Although not mandatory, it is extremely recommended that you set it up, as you can easily validate your blueprint files** using VSCode by adding this JSON schema entry to your settings:
 
+1. Press F1, type and select 'Open User Settings (JSON)'
+2. Copy the following and paste inside the main object of the JSON you just opened:
+
 ```json
 "json.schemas": [
   {
@@ -102,6 +105,8 @@ This schema file can be used to **write and validate** your `MCM_blueprint.json`
   }
 ],
 ```
+
+3. This might require a Reload Window or just reopening your editor, but you're done don't need to do this again. The schema will be always up-to-date with MCM releases.
 
 Alternatively, you could replace `url` with the schema JSON file path (e.g. could be where you place IDEHelpers or Osi.lua files). It should work with the URL though, and this way you'll always have an up-to-date schema.
 
@@ -127,7 +132,7 @@ Following are the main components of the MCM schema. Don't stress over this too 
 Thus, the main content of the blueprint is defined in the `Tabs` and `Settings` properties. You'll need to include at least one of these - either a list of tabs, or a list of standalone settings.
 Within each tab, you can define either `Sections` or a list of `Settings`. Sections provide a way to group related settings together under a header. Each setting has an `Id`, `Name`, `Type`, `Default` value, and at least a `Tooltip` or a `Description`. Each setting `Id` must be unique across the entire blueprint, and that is validated by one of the many validation checks MCM performs.
 
-Future versions might make this structure less strict, allowing nesting tabs inside sections and vice-versa.
+Future versions of MCM might make this structure less strict, allowing nesting tabs inside sections and vice-versa.
 
 
 > If your [mod is symlinked](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking 'Symlinking mods tutorial'), you can try out changes to your mod's blueprint in-game by using `reset` in the console without having to restart the game every time you make a change to the blueprint file.
