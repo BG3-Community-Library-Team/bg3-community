@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T00:59:38.594Z
+date: 2024-05-22T14:19:05.927Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -50,7 +50,8 @@ Nothing is perfect, lets get the rough stuff out of the way before we start to p
 - Unable to edit pngs/dds in vscode (can resize, convert, generate atlas texture, and apply backgrounds to transparent pngs though)
 - Buggy when having other folders within your workspace
 - Buggy when using multiple vscode windows (need to confirm)
-- Possible lag due to file size (need to confirm)
+- Possible lag due to folder/file size (need to confirm)
+- No references to base game uuids/handles (coming soon?)
 
 <sub>Being on this list doesnt guarentee that it will or will not be possible in the future. Just that it is unlikely</sub>
 
@@ -71,6 +72,9 @@ There are several ways to download the extension, but below is the easiest metho
 After installing the extension, you will most likely see a message like this:
 
 ![error_message_on_start.png](/tutorials/bg3-mod-helper/error_message_on_start.png)
+or this:
+![no_workspace_set.png](/tutorials/bg3-mod-helper/no_workspace_set.png)
+in the bottom right of vscode, especially if this is your first time using the extension.
 
 There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extension's settings. I cover that [below](#setup-extension-settings) but first lets properly get a workspace set up so you can utilize all the features of the extension. The extension is designed to launch right when you start vscode (once you have installed).
 
@@ -82,12 +86,16 @@ The key working with the extension is setting up a workspace. There are a few di
 0) Optional but recommend you close all other vscode windows
 1) Open a new vscode window and make sure no previous workspace is open. Your explorer tab should have options like this picture. You will need to press "Open Folder"
 ![blank_workspace.png](/tutorials/bg3-mod-helper/blank_workspace.png)
-2) 
+2) The extension is designed to have what would be the "Shared" folder as your mods workspace. So when you select Open Folder, you should select a the folder that contains your Localization, Mods, and Public folder.
 
 ## Setup Extension Settings
 As I mentioned, if it is your first time using the extension (or perhaps some error on loadup which could be other unrelated issues) you may see the image below when you install and open up vscode or a workspace.
 
 ![error_message_on_start.png](/tutorials/bg3-mod-helper/error_message_on_start.png)
+or possible this message instead:
+![no_workspace_set.png](/tutorials/bg3-mod-helper/no_workspace_set.png)
+
+Both error messages relate to settings, the first is suggesting the path your lslib in the settings may be off while the latter is suggesting something is wrong with your workspace, ie rootmodpath setting.
 
 There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extension's settings. There are a few ways to get to these settings, with the following being the easiest:
 1. Click on "File" in the top ribbon in VSCode
