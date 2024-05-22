@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T16:25:34.783Z
+date: 2024-05-22T16:27:42.407Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -132,7 +132,7 @@ While the extension has many other capabilities and shortcuts, the best way to a
 ![data_providerr.png](/tutorials/bg3-mod-helper/data_providerr.png)
 I will cover most of what these do below but some information about the data provider in general:
 - If you see a `>` before an option, such as Pack/Unpacking Tool, it means that button does multiple things. If you press the text of the button it will do its main action, typically open up some sort of webview to work with that tool/process. Your other option would be to hit the `>`, revealing a dropdown list of quick options you can do without access the more intensive main action.
-- If you see (in development) next to an option, it is clearly in development. Expect issues with these and please dont reach out regarding errors when using. Its expected in development.
+- If you see `(in development)` next to an option, it is clearly in development. Expect issues with these and please dont reach out regarding errors when using. Its expected in development.
 
 > -If you dont see the cardboard box, you dont have the extension installed correctly or something is corrupted.
 > -If none of the options are available when you click the data provider (it will say something like nothing to display), something failed on load up of the extension. It could be a number of things but the firs thing to check would be the make sure all the paths you have provided in settings are correct and that you do have lslib downloaded.
