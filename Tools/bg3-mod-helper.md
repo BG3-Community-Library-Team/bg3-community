@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T22:54:48.157Z
+date: 2024-05-22T22:59:06.145Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -33,6 +33,7 @@ While the extension is still receiving regular updates, it's at a stable point w
 	3. [Getting Started](#getting-started)
 	4. [Setup Extension Settings](#setup-extension-settings)
 	5. [Features and Usage](#features-and-usage)
+4. [Developers Guide](#developers-guide)
 
 ### File Locations 📂
 - [Github (source code)](https://github.com/ghostboats/bg3_mod_helper)
@@ -210,3 +211,8 @@ I will cover most of what these do below but here is each current option and a v
 --VERY LIMITED WHILE STILL GETTING FUNCTION INFORMATION
 - Autocomplete for data entries
 --VERY VERY LIMITED
+
+
+# Developers Guide
+Coming soon
+![nodders-nodding.gif](/tutorials/bg3-mod-helper/nodders-nodding.gif)
