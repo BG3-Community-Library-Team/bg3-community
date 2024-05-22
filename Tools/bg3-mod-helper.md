@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T22:50:18.609Z
+date: 2024-05-22T22:54:48.157Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -205,6 +205,7 @@ I will cover most of what these do below but here is each current option and a v
 
 ## 6. **Other Actions**
 - Generate BG3 related template files (ClassDescriptions.lsx, etc) quickly by right clicking in the file tree and clicking `Create BG3 File` or press `Control + 1` which will give the user a dropdown of files templates to make.
+- Open online export tools (BG3 Search Engine, LSX Validator and Stats Validator) in a vscode tab by right clicking in an open editor and hovering over `Export Tools` and select the relevant option.
 - Hovering over BG3 related functions will provide information on them
 --VERY LIMITED WHILE STILL GETTING FUNCTION INFORMATION
 - Autocomplete for data entries
