@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T14:34:59.818Z
+date: 2024-05-22T14:40:27.373Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -90,7 +90,7 @@ The key working with the extension is setting up a workspace. There are a few di
 2) The extension is designed to have what would be the "Shared" folder as your mods workspace. So when you select `Open Folder`, you should select the folder that contains your Localization, Mods, and Public folder as your workspace folder. You should see the message below if you have opened up your workspace correctly (and have your settings set up which I cover in the section below)
 ![no_workspace_set.png](/tutorials/bg3-mod-helper/workspace_set.png)
 
-  > VSCODE QUICK TIP: In Windows, you can pin vscode to your taskbar and simply right click on it. This will give you the option to open previously opened workspaces right away or open an empty workspace. Also, it is possible to add an `Open with Code` option when right clicking a folder on your desktop (or anywhere) to instantly open and add a folder to vscode. Its useful to learn these methods should you swap between mod folders alot. More info and possible steps [here.](https://stackoverflow.com/questions/37306672/visual-studio-code-open-with-code-does-not-appear-after-right-clicking-a-folde)
+> VSCODE QUICK TIP: In Windows, you can pin vscode to your taskbar and simply right click on it. This will give you the option to open previously opened workspaces right away or open an empty workspace. Also, it is possible to add an `Open with Code` option when right clicking a folder on your desktop (or anywhere) to instantly open and add a folder to vscode. Its useful to learn these methods should you swap between mod folders alot. More info and possible steps [here.](https://stackoverflow.com/questions/37306672/visual-studio-code-open-with-code-does-not-appear-after-right-clicking-a-folde)
 {.is-info}
 
 ## Setup Extension Settings
