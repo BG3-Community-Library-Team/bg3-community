@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T15:16:13.649Z
+date: 2024-05-22T16:23:43.849Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -127,17 +127,28 @@ Let's go through each settings option.
 - **Game Install Location:** The path to your `Baulders Gate 3` folder (C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3). This is used to launch the game from vscode.
 
 ## Features and Usage
+### 0. **The Data Provider**
+While the extension has many other capabilities and shortcuts, the best way to access the features of the extension are to use the data provider. Im sure when you first installed the extension you noticed the little box on the far left (given you havent moved around your vscode ui). Clicking it opens up the data provider, which is a quick one stop shop for alot of (but not all) the main functionality of the extension.
+![data_providerr.png](/tutorials/bg3-mod-helper/data_providerr.png)
+I will cover most of what these do below but some information about the data provider in general:
+- If you see a `>` before an option, such as Pack/Unpacking Tool, it means that button does multiple things. If you press the text of the button it will do its main action, typically open up some sort of webview to work with that tool/process. Your other option would be to hit the `>`, revealing a dropdown list of quick options you can do without access the more intensive main action.
+- If you see (in development) next to an option, it is clearly in development. Expect issues with these and please dont reach out regarding errors when using. Its expected in development.
+
+> -If you dont see the cardboard box, you dont have the extension installed correctly or something is corrupted.
+> -If none of the options are available when you click the data provider (it will say something like nothing to display), something failed on load up of the extension. It could be a number of things but the firs thing to check would be the make sure all the paths you have provided in settings are correct and that you do have lslib downloaded.
+{.is-warning}
+
+
 ### 1. **UUID/Handle Creation**
 - Right-click on an open editor to open a right click menu and click "Generate UUID" or "Generate Handle" to generate a uuid or handle respectivly at that location.
 -- If a UUID/handle is highlighted when generating a UUID/handle, it will replace the entry with whatever was generated.
 -- Generate a UUID/Handle using the keystrokes `control+shift+U` and `control+shift+H`, respectively.
 -- When handles are generated, if an XML file exists, it will add the newly created handle to the XML as well.
-
-![genhandle-ezgif.com-optimize.gif](/tutorials/bg3-mod-helper/genhandle-ezgif.com-optimize.gif)
+*<sub>Use the `Add Handles To All Locas` setting to apply the newly created handle to all your loca files should you have multiple. Otherwise you will be prompted to select which files to insert to</sub>
 
 ### 2. **File Conversions (lsx<>lsf, xml<>loca)**
-- Open a custom webview tab where users can manage converting lsx, lsf, loca, xml, etc., files.
-- Quick convert options in the data provider dropdown.
+- Open a custom webview tab where users can manage converting lsx, lsf, loca, xml, etc., files. by clicking on `Conversion Tool` in the data provider.
+- Can also quick convert without the converter tab by clicking the dropdown arrow on `Conversion Tools` to display quick options regarding conversion such as `Convert all XML to LOCA` or `Convert all LSX to LSF`.
 - Single file conversion via right-click menu from file tree.
-- Auto-convert files on pack, including an exclusion list managed in the extension's settings.
+- Auto-convert files when packing, including an exclusion list managed in the extension's settings.
 
