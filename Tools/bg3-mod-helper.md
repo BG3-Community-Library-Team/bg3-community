@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T18:26:29.307Z
+date: 2024-05-22T19:53:17.053Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -146,6 +146,8 @@ I will cover most of what these do below but some information about the data pro
 - If a UUID/handle is highlighted when generating a UUID/handle, it will replace the entry with whatever was generated.
 - Generate a UUID/Handle using the keystrokes `control+shift+U` and `control+shift+H`, respectively.
 - When handles are generated, if an XML file exists, it will add the newly created handle to the XML as well.
+
+<br>
 *<sub>Use the `Add Handles To All Locas` setting to apply the newly created handle to all your loca files should you have multiple. Otherwise you will be prompted to select which files to insert to</sub>
 
 ### 2. **File Conversions (lsx<>lsf, xml<>loca)**
@@ -154,12 +156,18 @@ I will cover most of what these do below but some information about the data pro
 - Can also quick convert without the converter tab by clicking the dropdown arrow on `Conversion Tools` to display quick options regarding conversion such as `Convert all XML to LOCA` or `Convert all LSX to LSF`.
 - Single file conversion via right-click menu from file tree.
 - Auto-convert files when packing, including an exclusion list managed in the extension's settings.
+
+<br>
 *<sub>Look for `Excluded Files` in the settings to add files to exclude. Can also right click on a file and click `Add to Conversion Exclusion List` or `Remove from Conversion Exclusion List`</sub>
 
 ### 3. **Pack/Unpack Mods**
 - Open a custom webview tab where users can manage packing and unpacking related features (webview in development, quick actions currently working though)
 - Can also quick pack/unpack without the packaging tool by clicking the dropdown arrow on `Pack/Unpacking Tool` to display quick options regarding packing such as `Pack Mod` and `Unpack Mod`.
-- `Pack Mod` performs a number a background checks
+- `Pack Mod` performs a number a background checks.
 --Ensures a meta exists and will prompt you to create one if not
 --Converts all non excluded .lsx and .xml files for you automatically
 --Will move the newly made .pak to the games Mods folder
+--Can autolaunch game after packing if settings are enabled (disabled at the meowment)
+
+<br>
+*<sub>Look for `Excluded Files` in the settings to add files to exclude when auto coverting via packing. Look for `Auto Launch On Pack` to launch game right away after packing, chains well with the `Launch Continue Game` setting.</sub>
