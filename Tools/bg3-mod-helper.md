@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T14:47:59.999Z
+date: 2024-05-22T15:04:24.260Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -108,12 +108,12 @@ There are a few quick setup steps that the extension requires to be in a working
 3. Search for `bg3` in the settings search bar
 
 You should be seeing something like this (settings seem to move around):
-
+![settings.png](/tutorials/bg3-mod-helper/settings.png)
 
 Before we actually look at any of the settings we need to understand the difference between User settings and Workspace settings in vscode. In the picture above showing the settings, we can see an option for User and Workspace. User settings persist over vscode windows. Workspace settings are for that specific vscode window. This distinction is important because of how the extension handles paths for you. You will understand more as you go though each setting option below but understanding this distinction is important, especially for Root Mod Path.
 
 Let's go through each settings option.
-- **Auto Launch On Pack:** Toggle this setting to do exactly as the name implies. If you pack your mod with the extension while this is toggled, your game will launch upon packing.
+- **Auto Launch On Pack:** Toggle this setting to do exactly as the name implies. If you pack your mod with the extension while this is toggled, your game will launch upon packing (disabled at the momemnt, just hit launch game in data provider).
 - **Excluded Files:** Enter in full paths to files that you wish to not have converted when the mod is packed. This is done to avoid creation of non essential files (creation of meta.lsf or ClassDescriptions.lsx, etc). These files wont affect your work but do clutter up your space so adding them to excluded can be valuable to avoid the clutter. The fastest way to add an item to the list is to simply right click on a file in your file tree in vscode and select the new menu option added by the extension which says "Add to Conversion Exclusion List". At the moment, the entered path is very specific. Ensure a lowercase drive letter and you use /. ie c:/Users/ghostboats/Desktop/Squire/Public/Squire/ClassDescriptions/ClassDescriptions.lsx
 - **Hover: Enabled:** Toggle this to turn the uuid/handle hover information (users say it can be too much and obstruct the page, an alternative solution would be below)
 - **Hover: Max Files:** Enter a number into the field to limit the amount of entries returns when looking for uuid/handles to display via hover, for visibility.
