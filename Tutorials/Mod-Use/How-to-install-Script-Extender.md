@@ -2,7 +2,7 @@
 title: How to install Script Extender
 description: 
 published: true
-date: 2024-05-04T21:55:38.290Z
+date: 2024-05-22T17:26:54.923Z
 tags: se, script-extender, guide, installation, console, enable-console, devel
 editor: markdown
 dateCreated: 2024-04-30T09:59:44.829Z
@@ -103,6 +103,8 @@ Open "Settings", then "Preferences" in BG3MM.
 Then click on the tab "Script Extender" and check off "Create Console". 
 
 ![createconsole.png](/tutorials/createconsole.png =x350)
+
+You can also check the 'Log Runtime' option to have the logs written to a text file. This allows you to easily store/review the logs outside of the console and after the game has been closed.
 
 ##### 3.2. Create the ScriptExtenderSettings.json file yourself 
 
