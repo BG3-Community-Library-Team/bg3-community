@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-21T12:48:20.638Z
+date: 2024-05-22T12:34:40.196Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -88,7 +88,7 @@ The `MCM_blueprint.json` file is how you specify your mod's configuration defini
 
 The MCM Schema dictates how you should structure your blueprint file, and you can [get it from GitHub](https://github.com/AtilioA/BG3-MCM/blob/main/.vscode/schema.json).
 
-This schema file can be used to validate your `MCM_blueprint.json` file, as it will help enforcing the intended structure of the MCM Schema in your blueprint file, ensuring that it is correctly formatted and adheres to the schema.
+This schema file can be used to **write and validate** your `MCM_blueprint.json` file, as it will help enforcing the intended structure of the MCM Schema in your blueprint file, ensuring that it is correctly formatted and adheres to the schema.
 
 **Although not mandatory, it is extremely recommended that you set it up, as you can easily validate your blueprint files** using VSCode by adding this JSON schema entry to your settings:
 
@@ -105,7 +105,10 @@ This schema file can be used to validate your `MCM_blueprint.json` file, as it w
 
 Alternatively, you could replace `url` with the schema JSON file path (e.g. could be where you place IDEHelpers or Osi.lua files). It should work with the URL though, and this way you'll always have an up-to-date schema.
 
-Here are the main components of the MCM schema:
+> Having the schema file set up in your IDE will help you write the blueprint file correctly, without having to guess the structure or wonder if you're missing something. A few minor features, such as `ModName` (to replace the string used for your mod's name) are only documented by the JSON schema.
+{.is-info}
+
+Following are the main components of the MCM schema. Don't stress over this too much, the schema file will guide you when writing JSONs.
 
 - **Organizational structure**: The schema defines a hierarchical organization using `Tabs` and `Sections`:
   - `Tabs`: Serve as top-level organizational units in the MCM menu. Each tab can exclusively contain either `Sections` or standalone `Settings`.
@@ -124,7 +127,7 @@ Here are the main components of the MCM schema:
 Thus, the main content of the blueprint is defined in the `Tabs` and `Settings` properties. You'll need to include at least one of these - either a list of tabs, or a list of standalone settings.
 Within each tab, you can define either `Sections` or a list of `Settings`. Sections provide a way to group related settings together under a header. Each setting has an `Id`, `Name`, `Type`, `Default` value, and at least a `Tooltip` or a `Description`. Each setting `Id` must be unique across the entire blueprint, and that is validated by one of the many validation checks MCM performs.
 
-Again, having the schema file set up in your IDE will help you write the blueprint file correctly, without having to guess the structure or wonder if you're missing something. A few minor features, such as `ModName` (to replace the string used for your mod's name) are only documented by the JSON schema.
+
 
 > If your [mod is symlinked](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking 'Symlinking mods tutorial'), you can try out changes to your mod's blueprint in-game by using `reset` in the console without having to restart the game every time you make a change to the blueprint file.
 {.is-info}
