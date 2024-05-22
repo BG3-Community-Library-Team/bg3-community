@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T20:53:09.263Z
+date: 2024-05-22T21:07:40.962Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -180,3 +180,4 @@ I will cover most of what these do below but some information about the data pro
 --`Resize Image to Controller (144x144)`
 --`Resize Image to Hotbar (64x64)`
 --`Resize Image to Tooltip (380x380)`
+- If you have a PNG image with a transparent background that you plan to use as an icon in the game, you can add a background to to it by right clicking on the PNG in the file tree and clicking `Add Icon Background` which will prompt the user to select from multiple in game backgrounds or a custom one if you have one to supply.
