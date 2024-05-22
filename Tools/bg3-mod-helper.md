@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T16:41:21.157Z
+date: 2024-05-22T16:55:20.875Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -155,3 +155,7 @@ I will cover most of what these do below but some information about the data pro
 - Single file conversion via right-click menu from file tree.
 - Auto-convert files when packing, including an exclusion list managed in the extension's settings.
 *<sub>Look for `Excluded Files` in the settings to add files to exclude. Can also right click on a file and click `Add to Conversion Exclusion List` or `Remove from Conversion Exclusion List`</sub>
+
+### 3. **Pack/Unpack Mods**
+- Open a custom webview tab where users can manage packing and unpacking related features (webview in development, quick actions currently working though)
+-Can also quick pack/unpack without the packaging tool by clicking the dropdown arrow on `Pack/Unpacking Tool`.
