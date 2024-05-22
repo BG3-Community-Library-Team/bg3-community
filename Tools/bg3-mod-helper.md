@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T16:29:20.128Z
+date: 2024-05-22T16:41:21.157Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -143,14 +143,15 @@ I will cover most of what these do below but some information about the data pro
 
 ### 1. **UUID/Handle Creation**
 - Right-click on an open editor to open a right click menu and click "Generate UUID" or "Generate Handle" to generate a uuid or handle respectivly at that location.
--- If a UUID/handle is highlighted when generating a UUID/handle, it will replace the entry with whatever was generated.
--- Generate a UUID/Handle using the keystrokes `control+shift+U` and `control+shift+H`, respectively.
--- When handles are generated, if an XML file exists, it will add the newly created handle to the XML as well.
+- If a UUID/handle is highlighted when generating a UUID/handle, it will replace the entry with whatever was generated.
+- Generate a UUID/Handle using the keystrokes `control+shift+U` and `control+shift+H`, respectively.
+- When handles are generated, if an XML file exists, it will add the newly created handle to the XML as well.
 *<sub>Use the `Add Handles To All Locas` setting to apply the newly created handle to all your loca files should you have multiple. Otherwise you will be prompted to select which files to insert to</sub>
 
 ### 2. **File Conversions (lsx<>lsf, xml<>loca)**
 - Open a custom webview tab where users can manage converting lsx, lsf, loca, xml, etc., files. by clicking on `Conversion Tool` in the data provider.
+![conversion_tab.png](/tutorials/bg3-mod-helper/conversion_tab.png)
 - Can also quick convert without the converter tab by clicking the dropdown arrow on `Conversion Tools` to display quick options regarding conversion such as `Convert all XML to LOCA` or `Convert all LSX to LSF`.
 - Single file conversion via right-click menu from file tree.
 - Auto-convert files when packing, including an exclusion list managed in the extension's settings.
-
+*<sub>Look for `Excluded Files` in the settings to add files to exclude. Can also right click on a file and click `Add to Conversion Exclusion List` or `Remove from Conversion Exclusion List`</sub>
