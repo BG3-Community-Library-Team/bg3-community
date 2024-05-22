@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T16:55:20.875Z
+date: 2024-05-22T18:26:29.307Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -158,4 +158,8 @@ I will cover most of what these do below but some information about the data pro
 
 ### 3. **Pack/Unpack Mods**
 - Open a custom webview tab where users can manage packing and unpacking related features (webview in development, quick actions currently working though)
--Can also quick pack/unpack without the packaging tool by clicking the dropdown arrow on `Pack/Unpacking Tool`.
+- Can also quick pack/unpack without the packaging tool by clicking the dropdown arrow on `Pack/Unpacking Tool` to display quick options regarding packing such as `Pack Mod` and `Unpack Mod`.
+- `Pack Mod` performs a number a background checks
+--Ensures a meta exists and will prompt you to create one if not
+--Converts all non excluded .lsx and .xml files for you automatically
+--Will move the newly made .pak to the games Mods folder
