@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T14:40:27.373Z
+date: 2024-05-22T14:46:41.556Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -108,7 +108,7 @@ There are a few quick setup steps that the extension requires to be in a working
 3. Search for `bg3` in the settings search bar
 
 You should be seeing something like this (settings seem to move around):
-![settings.png](/tutorials/bg3-mod-helper/settings.png)
+![settings.png](/tutorials/bg3-mod-helper/settingsv2.png)
 
 Before we actually look at any of the settings we need to understand the difference between User settings and Workspace settings in vscode. In the picture above showing the settings, we can see an option for User and Workspace. User settings persist over vscode windows. Workspace settings are for that specific vscode window. This distinction is important because of how the extension handles paths for you. You will understand more as you go though each setting option below but understanding this distinction is important, especially for Root Mod Path.
 
