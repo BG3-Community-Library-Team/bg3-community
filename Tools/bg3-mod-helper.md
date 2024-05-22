@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T22:08:19.796Z
+date: 2024-05-22T22:33:16.477Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -132,13 +132,23 @@ Let's go through each settings option.
 ### 0. **The Data Provider**
 While the extension has many other capabilities and shortcuts, the best way to access the features of the extension are to use the data provider. Im sure when you first installed the extension you noticed the little box on the far left (given you havent moved around your vscode ui). Clicking it opens up the data provider, which is a quick one stop shop for alot of (but not all) the main functionality of the extension.
 ![data_providerr.png](/tutorials/bg3-mod-helper/data_providerr.png)
-I will cover most of what these do below but some information about the data provider in general:
-- If you see a `>` before an option, such as Pack/Unpacking Tool, it means that button does multiple things. If you press the text of the button it will do its main action, typically open up some sort of webview to work with that tool/process. Your other option would be to hit the `>`, revealing a dropdown list of quick options you can do without access the more intensive main action.
-- If you see `(in development)` next to an option, it is clearly in development. Expect issues with these and please dont reach out regarding errors when using. Its expected in development.
 
-> -If you dont see the cardboard box, you dont have the extension installed correctly or something is corrupted.
-> -If none of the options are available when you click the data provider (it will say something like nothing to display), something failed on load up of the extension. It could be a number of things but the firs thing to check would be the make sure all the paths you have provided in settings are correct and that you do have lslib downloaded.
-{.is-warning}
+> - If you see a `>` before an option, such as Pack/Unpacking Tool, it means that button does multiple things. If you press the text of the button it will do its main action, typically open up some sort of webview to work with that tool/process. Your other option would be to hit the `>`, revealing a dropdown list of quick options you can do without access the more intensive main action.
+> - If you see `(in development)` next to an option, it is clearly in development. Expect issues with these and please dont reach out regarding errors when using. Its expected in development.
+> - If you dont see the cardboard box, you dont have the extension installed correctly or something is corrupted.
+> - If none of the options are available when you click the data provider (it will say something like nothing to display), something failed on load up of the extension. It could be a number of things but the firs thing to check would be the make sure all the paths you have provided in settings are correct and that you do have lslib downloaded.
+{.is-info}
+
+I will cover most of what these do below but here is each current option and a very quick breakdown
+- **Pack/Unpacking Tool :** Allows the user to pack their current workspace mod and unpack mods (duh). Has quick actions only at the moment.
+- **Converstion Tool :** Open a webview tab which allows the user to handle conversion related features regarding lsx and loca files. Has quick actions.
+- **Launch Game :** Launch the game directly from vscode
+- **Generate Folder Structure :** Lets the user quickly deploy mod templates. Only class mod templates working at the moment.
+- **Atlas Generator :** By supplying a folder of correctly sized PNGs, the user can generate a PNG that can then be right click converted to a dds to use as a atlas texture file.
+- **Version Generator :** Open a webview tab which allows the user to quickly generate a version number for their meta, as well as quickly apply it to your meta file.
+- **Rotation Tool :** Dont worry about this one for now.
+- **DDS Viewer :** In development still but opens a webview that shows information about all the dds files in your workspace. While in development, it is only search for dds files in the `Mods` folder so please place your dds files in there temporarily if you wish to test and use while this tool is in development.
+- **Debug Command :** Dont press this please, I use this for development -Ghostboats
 
 
 ### 1. **UUID/Handle Creation**
