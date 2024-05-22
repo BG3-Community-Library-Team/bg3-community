@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: an extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T22:33:16.477Z
+date: 2024-05-22T22:36:44.142Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -148,7 +148,10 @@ I will cover most of what these do below but here is each current option and a v
 - **Version Generator :** Open a webview tab which allows the user to quickly generate a version number for their meta, as well as quickly apply it to your meta file.
 - **Rotation Tool :** Dont worry about this one for now.
 - **DDS Viewer :** In development still but opens a webview that shows information about all the dds files in your workspace. While in development, it is only search for dds files in the `Mods` folder so please place your dds files in there temporarily if you wish to test and use while this tool is in development.
-- **Debug Command :** Dont press this please, I use this for development -Ghostboats
+- **Debug Command :** "Dont press this please, I use this for development"- Ghostboats
+
+> I understand reading is annoying and you may not want to read this all especially since it is very long and simple for extra clarity. If there is one thing you should understand if you dont care about some of the shortcuts and other features is the data provider. It will always house the most powerful features of the tool and it would be a waste to not use them if you have this extension and/or make baulders gate 3 mods.
+{.is-danger}
 
 
 ### 1. **UUID/Handle Creation**
