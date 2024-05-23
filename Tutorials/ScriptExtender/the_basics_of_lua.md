@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: true
-date: 2024-05-23T12:12:06.219Z
+date: 2024-05-23T12:13:32.309Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -988,7 +988,7 @@ Another way to make our code more interactive is by the use of **loops** to repe
 You have already used in if you have followed **3. A very special data structure: tables** where we used the function `printMyTable`
 to iterate over a table.
 
-There are different types of loops. Here we mostly look at. We will only cover the `for loop` here.
+There are different types of loops. We will only cover the `for loop` here.
 They will execute their body for a set amount of iterations.
 
 ```lua
