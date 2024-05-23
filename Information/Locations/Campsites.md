@@ -2,12 +2,13 @@
 title: Campsite Locations
 description: Reference sheet for finding and referring to camp locations
 published: true
-date: 2024-05-23T13:48:14.618Z
+date: 2024-05-23T13:48:37.127Z
 tags: locations, camp
 editor: markdown
 dateCreated: 2024-05-23T13:37:19.252Z
 ---
 
+# Campsite Locations
 There are 17 individual campsites located throughout the game. You access each one based on your Tav's location when you "Go to Camp."
 If you want to add something to camp, you have to add it to each of the five levels, respective to the camp's location.
 
