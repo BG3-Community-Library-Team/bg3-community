@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-23T01:46:11.548Z
+date: 2024-05-23T01:47:59.481Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -168,7 +168,7 @@ I will cover most of what these do below, but here is each current setting and a
 - **DDS Viewer:** In development still but opens a webview that shows information about all the dds files in your workspace. While in development, it is only search for dds files in the `Mods` folder so please place your dds files in there temporarily if you wish to test and use while this tool is in development.
 - **Debug Command:** "Don't press this please, I use this for development"- Ghostboats
 
-> I hear you saying "reading is annoying!" and "I don't want to read all this".
+> I hear you saying "reading is annoying!" and "I don't want to read all this."
 ***Too bad.***
 The one thing you should get comfy with, even if you ~~stupidly~~ don't care about some of the shortcuts and other features, is the data provider. It will always house the most powerful features of the tool and it would be ~~stupid~~ a waste not to use them.
 {.is-danger}
