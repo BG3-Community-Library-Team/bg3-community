@@ -2,14 +2,14 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-22T23:03:40.173Z
+date: 2024-05-23T00:48:03.637Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
 ---
 
 # BG3 Mod Helper - A VSCod(e/ium) Extension
-Created by ghostboats and khbsd, this VSCode extension is designed to help mod authors speed up their mod creation workflows. The extension has multiple useful utilities that include but are not limited to:
+Created by ghostboats and khbsd, this VSCod(e/ium) extension is designed to help mod authors speed up their mod creation workflows. The extension has multiple useful utilities that include but are not limited to:
 - **Mod Packing/Unpacking**
 - **UUID/Handle Generation**
 - **UUID Mapping**
@@ -20,7 +20,10 @@ Created by ghostboats and khbsd, this VSCode extension is designed to help mod a
 
 If you are comfortable with initial setup and just want to see what the extension can do, please jump to [here.](#features-and-usage)
 
-While the extension is still receiving regular updates, it's at a stable point where it can be very useful to mod authors and save them a lot of time. It is built off the philosophy of being able to mod without having to tab out as often while requiring as few clicks as possible to get the job done. It has saved us a lot of time, and I hope it can do the same for you!
+While the extension is still receiving regular updates, it's very functional, and has lots of tools and tricks useful to mod authors. It is built off the philosophy of "Few clicks, few tabs" ie, being able to mod without having to tab out as often and requiring as few clicks as possible to get the job done. It has saved us a lot of time, and I hope it can do the same for you!
+
+> While I use "VSCode" in this article, it is in the marketplace for both VSCode and VSCodium :catyes:
+{.is-info}
 
 > **Goal:** The goal of this wiki is twofold: provide documentation for [mod authors](#mod-authors-guide) and [developers (coming soon)](#) who may wish to contribute/fork their own version.
 
@@ -48,15 +51,15 @@ While the extension is still receiving regular updates, it's at a stable point w
 # Mod Authors Guide
 
 ## Limitations
-Nothing is perfect, lets get the rough stuff out of the way before we start to possibly save you time incase this extension is not what you are looking for.
-- Unable to work with multiple workspaces in one vscode window
-- Unable to edit pngs/dds in vscode (can resize, convert, generate atlas texture, and apply backgrounds to transparent pngs though)
+Nothing is perfect, let's get the rough stuff out of the way before we start to possibly save you time incase this extension is not what you are looking for.
+- Unable to work with multiple workspaces in one VSCode window
+- Unable to edit pngs/dds in VSCode (can resize, convert, generate atlas texture, and apply backgrounds to transparent pngs though)
 - Buggy when having other folders within your workspace
-- Buggy when using multiple vscode windows (need to confirm)
+- Buggy when using multiple VSCode windows (need to confirm)
 - Possible lag due to folder/file size (need to confirm)
 - No references to base game uuids/handles (coming soon?)
 
-<sub>Being on this list doesnt guarentee that it will or will not be possible in the future. Just that it is unlikely</sub>
+<sub>Being on this list doesn't guarentee that it will or will not be possible in the future. Just that it is unlikely</sub>
 
 ## Download Guide
 There are several ways to download the extension, but below is the easiest method.
@@ -68,7 +71,7 @@ There are several ways to download the extension, but below is the easiest metho
 
 ![installextension-ezgif.com-optimize.gif](/tutorials/bg3-mod-helper/installextension-ezgif.com-optimize.gif)
 
-> It is recommended that you restart vscode after installing. In fact, you should restart vscode everytime you change your workspace for ensurance.
+> It is recommended that you restart VSCode after installing. In fact, you should restart VSCode everytime you change your workspace for ensurance.
 {.is-warning}
 
 ## Getting Started
@@ -77,27 +80,27 @@ After installing the extension, you will most likely see a message like this:
 ![error_message_on_start.png](/tutorials/bg3-mod-helper/error_message_on_start.png)
 or this:
 ![no_workspace_set.png](/tutorials/bg3-mod-helper/no_workspace_set.png)
-in the bottom right of vscode, especially if this is your first time using the extension.
+in the bottom right of VSCode, especially if this is your first time using the extension.
 
-There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extension's settings. I cover that [below](#setup-extension-settings) but first lets properly get a workspace set up so you can utilize all the features of the extension. The extension is designed to launch right when you start vscode (once you have installed).
+There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extension's settings. I cover that [below](#setup-extension-settings), but first let's get a proper workspace set up so you can utilize all the features of the extension. The extension is designed to launch right when you start VSCode (once you have installed).
 
-> While the extension doesnt do anything while sitting in the background, it is technically always on. This shouldnt hinder your other non modding projects but its just good practice to disable or delete the extension if you dont plan on using it anymore or not for a while.
+> While the extension doesn't do anything while sitting in the background, it is technically always on. This shouldn't hinder your other non modding projects but it's good practice to disable or delete any extension if you don't plan on using it for a while.
 {.is-info}
 
 
 The key working with the extension is setting up a workspace. There are a few different ways to do it but here is the simplest and safest.
 
-0) Optional but recommended you close all other vscode windows.
-1) Open a new vscode window and make sure no previous workspace is open. Your explorer tab should have options like this picture. You will need to press `Open Folder`.
+0) Optional but recommended: close all other VSCode windows.
+1) Open a new VSCode window and make sure no previous workspace is open. Your explorer tab should have options like this picture. You will need to press `Open Folder`.
 ![blank_workspace.png](/tutorials/bg3-mod-helper/blank_workspace.png)
 2) The extension is designed to have what would be the "Shared" folder as your mods workspace. So when you select `Open Folder`, you should select the folder that contains your Localization, Mods, and Public folder as your workspace folder. You should see the message below if you have opened up your workspace correctly (and have your settings set up which I cover in the section below)
 ![no_workspace_set.png](/tutorials/bg3-mod-helper/workspace_set.png)
 
-> VSCODE QUICK TIP: In Windows, you can pin vscode to your taskbar and simply right click on it. This will give you the option to open previously opened workspaces right away or open an empty workspace. Also, it is possible to add an `Open with Code` option when right clicking a folder on your desktop (or anywhere) to instantly open and add a folder to vscode. Its useful to learn these methods should you swap between mod folders alot. More info and possible steps [here.](https://stackoverflow.com/questions/37306672/visual-studio-code-open-with-code-does-not-appear-after-right-clicking-a-folde)
+> VSCODE QUICK TIP: In Windows, you can pin VSCode to your taskbar and simply right click on it. This will give you the option to open previously opened workspaces right away or open an empty workspace. Also, it is possible to add an `Open with Code` option when right clicking a folder on your desktop (or anywhere) to instantly open and add a folder to VSCode. It's useful to learn these methods should you swap between mod folders a lot. More info and possible steps [here.](https://stackoverflow.com/questions/37306672/visual-studio-code-open-with-code-does-not-appear-after-right-clicking-a-folde)
 {.is-info}
 
 ## Setup Extension Settings
-As I mentioned, if it is your first time using the extension (or perhaps some error on loadup which could be other unrelated issues) you may see the image below when you install and open up vscode or a workspace.
+As I mentioned, if it's your first time starting the extension (or if you have an error on startup which could be unrelated) you may see the image below when you open up VSCode or a workspace.
 
 ![error_message_on_start.png](/tutorials/bg3-mod-helper/error_message_on_start.png)
 or possibly this message instead:
@@ -113,11 +116,11 @@ There are a few quick setup steps that the extension requires to be in a working
 You should be seeing something like this (settings seem to move around):
 ![settings.png](/tutorials/bg3-mod-helper/settings.png)
 
-Before we actually look at any of the settings we need to understand the difference between User settings and Workspace settings in vscode. In the picture above showing the settings, we can see an option for User and Workspace. User settings persist over vscode windows. Workspace settings are for that specific vscode window. This distinction is important because of how the extension handles paths for you. You will understand more as you go though each setting option below but understanding this distinction is important, especially for Root Mod Path.
+Before we actually look at any of the settings we need to understand the difference between User settings and Workspace settings in VSCode. In the picture above showing the settings, we can see an option for User and Workspace. User settings persist over VSCode windows. Workspace settings are for that specific VSCode window. This distinction is important because of how the extension handles paths for you. You will understand more as you go though each setting option below but understanding this distinction is important, especially for Root Mod Path.
 
 Let's go through each settings option.
 - **Auto Launch On Pack:** Toggle this setting to do exactly as the name implies. If you pack your mod with the extension while this is toggled, your game will launch upon packing (disabled at the momemnt, just hit launch game in data provider).
-- **Excluded Files:** Enter in full paths to files that you wish to not have converted when the mod is packed. This is done to avoid creation of non essential files. These files wont affect your work but do clutter up your space so adding them to excluded can be valuable to avoid the clutter. The fastest way to add an item to the list is to simply right click on a file in your file tree in vscode and select the new menu option added by the extension which says "Add to Conversion Exclusion List". At the moment, the entered path is very specific. Ensure a lowercase drive letter and you use /. ie c:/Users/ghostboats/Desktop/Squire/Public/Squire/ClassDescriptions/ClassDescriptions.lsx 
+- **Excluded Files:** Enter in full paths to files that you wish to not have converted when the mod is packed. This is done to avoid creation of non essential files. These files wont affect your work but do clutter up your space so adding them to excluded can be valuable to avoid the clutter. The fastest way to add an item to the list is to simply right click on a file in your file tree in VSCode and select the new menu option added by the extension which says "Add to Conversion Exclusion List". At the moment, the entered path is very specific. Ensure a lowercase drive letter and you use /. ie c:/Users/ghostboats/Desktop/Squire/Public/Squire/ClassDescriptions/ClassDescriptions.lsx 
 <sub>Certain files/folders are automatically excluded, like meta.lsx</sub>
 - **Hover: Enabled:** Toggle this to turn the uuid/handle hover information (users say it can be too much and obstruct the page, an alternative solution would be below)
 - **Hover: Max Files:** Enter a number into the field to limit the amount of entries returns when looking for uuid/handles to display via hover, for visibility.
@@ -126,12 +129,12 @@ Let's go through each settings option.
 - **Lslib Path:** Previously this setting was for supplying the path to divine.exe. The extension has since grown and can leverage lslib directly. You will need to supply the path to your lslib. Typically this will be something like this C:\Users\ghostboats\Desktop\ExportTool-v1.19.5\Packed.
 - **Max Cache Size:** Integer value field. Caching is used to reduce lag and stop hover information from re-searching when hovering over already hovered uuids/handles which makes its position in the hover box shift around and hard to read. Typically you wont need to adjust this setting.
 - **Mod Destination Path:** This field is for supplying the path to the Mods folder for baulder gate 3. When you pack your mod with the extension, it will get set to this folder so you want to point it straigh to the mods folder for the game. For most people this will typically be C:/Users/{username}/AppData/Local/Larian Studios/Baldur's Gate 3/Mods, just make sure to replace username with your actual name.
-- **Root Mod Path:** This field is a bit unique. We actually do not want to touch this setting. When we open a folder in vscode, the extension will automatically populate this field with your current workspace folder. In User settings, it should be blank and you should not enter anything here. If you want to confirm your root mod was correctly auto set, change to the Workspace settings tab and take a look.
-- **Game Install Location:** The path to your `Baulders Gate 3` folder (C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3). This is used to launch the game from vscode.
+- **Root Mod Path:** This field is a bit unique. We actually do not want to touch this setting. When we open a folder in VSCode, the extension will automatically populate this field with your current workspace folder. In User settings, it should be blank and you should not enter anything here. If you want to confirm your root mod was correctly auto set, change to the Workspace settings tab and take a look.
+- **Game Install Location:** The path to your `Baulders Gate 3` folder (C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3). This is used to launch the game from VSCode.
 
 ## Features and Usage
 ### 0. **The Data Provider**
-While the extension has many other capabilities and shortcuts, the best way to access the features of the extension are to use the data provider. Im sure when you first installed the extension you noticed the little box on the far left (given you havent moved around your vscode ui). Clicking it opens up the data provider, which is a quick one stop shop for alot of (but not all) the main functionality of the extension.
+While the extension has many other capabilities and shortcuts, the best way to access the features of the extension are to use the data provider. Im sure when you first installed the extension you noticed the little box on the far left (given you havent moved around your VSCode ui). Clicking it opens up the data provider, which is a quick one stop shop for alot of (but not all) the main functionality of the extension.
 ![data_providerr.png](/tutorials/bg3-mod-helper/data_providerr.png)
 
 > - If you see a `>` before an option, such as Pack/Unpacking Tool, it means that button does multiple things. If you press the text of the button it will do its main action, typically open up some sort of webview to work with that tool/process. Your other option would be to hit the `>`, revealing a dropdown list of quick options you can do without access the more intensive main action.
@@ -143,7 +146,7 @@ While the extension has many other capabilities and shortcuts, the best way to a
 I will cover most of what these do below but here is each current option and a very quick breakdown
 - **Pack/Unpacking Tool :** Allows the user to pack their current workspace mod and unpack mods (duh). Has quick actions only at the moment.
 - **Converstion Tool :** Open a webview tab which allows the user to handle conversion related features regarding lsx and loca files. Has quick actions.
-- **Launch Game :** Launch the game directly from vscode
+- **Launch Game :** Launch the game directly from VSCode
 - **Generate Folder Structure :** Lets the user quickly deploy mod templates. Only class mod templates working at the moment.
 - **Atlas Generator :** By supplying a folder of correctly sized PNGs, the user can generate a PNG that can then be right click converted to a dds to use as a atlas texture file.
 - **Version Generator :** Open a webview tab which allows the user to quickly generate a version number for their meta, as well as quickly apply it to your meta file.
@@ -206,7 +209,7 @@ I will cover most of what these do below but here is each current option and a v
 
 ## 6. **Other Actions**
 - Generate BG3 related template files (ClassDescriptions.lsx, etc) quickly by right clicking in the file tree and clicking `Create BG3 File` or press `Control + 1` which will give the user a dropdown of files templates to make.
-- Open online export tools (BG3 Search Engine, LSX Validator and Stats Validator) in a vscode tab by right clicking in an open editor and hovering over `Export Tools` and select the relevant option.
+- Open online export tools (BG3 Search Engine, LSX Validator and Stats Validator) in a VSCode tab by right clicking in an open editor and hovering over `Export Tools` and select the relevant option.
 - Hovering over BG3 related functions will provide information on them
 --VERY LIMITED WHILE STILL GETTING FUNCTION INFORMATION
 - Autocomplete for data entries
