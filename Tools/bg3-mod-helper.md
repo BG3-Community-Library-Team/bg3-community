@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-23T00:56:51.519Z
+date: 2024-05-23T00:57:01.836Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -105,6 +105,7 @@ As I mentioned, **you better have been listening**, if it's your first time star
 This error means `LSLib.dll` isn't in the folder in your settings. 
 ![error_message_on_start.png](/tutorials/bg3-mod-helper/error_message_on_start.png)
 
+This error means there's something wrong with your **Root Mod Path**.
 ![no_workspace_set.png](/tutorials/bg3-mod-helper/no_workspace_set.png)
 
 
