@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-23T00:57:01.836Z
+date: 2024-05-23T01:04:54.212Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -108,21 +108,24 @@ This error means `LSLib.dll` isn't in the folder in your settings.
 This error means there's something wrong with your **Root Mod Path**.
 ![no_workspace_set.png](/tutorials/bg3-mod-helper/no_workspace_set.png)
 
-
 There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extension's settings. There are a few ways to get to these settings, with the following being the easiest:
 1. Click on "File" in the top ribbon in VSCode
-2. Click on "Preferences" > "Settings"
+2. Click on "Preferences" and then "Settings"
 3. Search for `bg3` in the settings search bar
 
 You should be seeing something like this (settings seem to move around):
 ![settings.png](/tutorials/bg3-mod-helper/settings.png)
 
-Before we actually look at any of the settings we need to understand the difference between User settings and Workspace settings in VSCode. In the picture above showing the settings, we can see an option for User and Workspace. User settings persist over VSCode windows. Workspace settings are for that specific VSCode window. This distinction is important because of how the extension handles paths for you. You will understand more as you go though each setting option below but understanding this distinction is important, especially for Root Mod Path.
+Before we actually look at any of the settings we need to understand the difference between User settings and Workspace settings in VSCode. In the picture above, we can see options for User and Workspace. User settings persist across multiple VSCode windows. Workspace settings are for that specific VSCode window. This distinction is important because of how the extension handles paths for you. Things will make more sense as you go though each setting option below, but understanding this distinction is important, especially for Root Mod Path.
 
 Let's go through each settings option.
 - **Auto Launch On Pack:** Toggle this setting to do exactly as the name implies. If you pack your mod with the extension while this is toggled, your game will launch upon packing (disabled at the momemnt, just hit launch game in data provider).
 - **Excluded Files:** Enter in full paths to files that you wish to not have converted when the mod is packed. This is done to avoid creation of non essential files. These files wont affect your work but do clutter up your space so adding them to excluded can be valuable to avoid the clutter. The fastest way to add an item to the list is to simply right click on a file in your file tree in VSCode and select the new menu option added by the extension which says "Add to Conversion Exclusion List". At the moment, the entered path is very specific. Ensure a lowercase drive letter and you use /. ie c:/Users/ghostboats/Desktop/Squire/Public/Squire/ClassDescriptions/ClassDescriptions.lsx 
-<sub>Certain files/folders are automatically excluded, like meta.lsx</sub>
+
+<br>
+> Certain files/folders are automatically excluded, like meta.lsx
+{.is-info}
+
 - **Hover: Enabled:** Toggle this to turn the uuid/handle hover information (users say it can be too much and obstruct the page, an alternative solution would be below)
 - **Hover: Max Files:** Enter a number into the field to limit the amount of entries returns when looking for uuid/handles to display via hover, for visibility.
 - **Hover: Show Path:** Not working and will probably be removed in future, dont worry about this. Probably leave it checked but it shouldnt do anything.
