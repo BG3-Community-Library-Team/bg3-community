@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: true
-date: 2024-05-23T12:06:57.953Z
+date: 2024-05-23T12:12:06.219Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -921,7 +921,7 @@ You can stack as many of these statements as you like.
 
 > Beware of a common pitfall when evaluating conditions!
 > Since the existence of a value is enough to have it evaluate to true
-> never forget to actually compare it to the desited value.
+> never forget to actually compare it to the desired value.
 {.is-warning}
 
 ```lua
