@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-23T01:04:54.212Z
+date: 2024-05-23T01:05:07.875Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -122,7 +122,8 @@ Let's go through each settings option.
 - **Auto Launch On Pack:** Toggle this setting to do exactly as the name implies. If you pack your mod with the extension while this is toggled, your game will launch upon packing (disabled at the momemnt, just hit launch game in data provider).
 - **Excluded Files:** Enter in full paths to files that you wish to not have converted when the mod is packed. This is done to avoid creation of non essential files. These files wont affect your work but do clutter up your space so adding them to excluded can be valuable to avoid the clutter. The fastest way to add an item to the list is to simply right click on a file in your file tree in VSCode and select the new menu option added by the extension which says "Add to Conversion Exclusion List". At the moment, the entered path is very specific. Ensure a lowercase drive letter and you use /. ie c:/Users/ghostboats/Desktop/Squire/Public/Squire/ClassDescriptions/ClassDescriptions.lsx 
 
-<br>
+<br> 
+
 > Certain files/folders are automatically excluded, like meta.lsx
 {.is-info}
 
