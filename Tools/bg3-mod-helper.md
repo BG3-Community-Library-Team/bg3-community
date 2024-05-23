@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-23T00:48:03.637Z
+date: 2024-05-23T00:56:51.519Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -46,7 +46,7 @@ While the extension is still receiving regular updates, it's very functional, an
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [LSLib](https://github.com/Norbyte/lslib/releases)
 
-> **Note:** Previous versions of the extension required direct use of `divine.exe`. This has since been replaced with [LSLib](https://github.com/Norbyte/lslib/releases). Make sure your path now points to the directory containing `lslib`. Likewise, previouse versions of the extension required python and some external modules (ImageMagick, PIL, etc). This has ll been removed and only the above is required
+> **Note:** Previous versions of the extension required direct use of `divine.exe`. This has since been replaced with [LSLib](https://github.com/Norbyte/lslib/releases). Make sure your path now points to the directory containing `lslib`. Likewise, previous versions of the extension required python and some external modules (ImageMagick, PIL, etc). This has been removed and only the `lslib` folder is required.
 
 # Mod Authors Guide
 
@@ -59,7 +59,7 @@ Nothing is perfect, let's get the rough stuff out of the way before we start to 
 - Possible lag due to folder/file size (need to confirm)
 - No references to base game uuids/handles (coming soon?)
 
-<sub>Being on this list doesn't guarentee that it will or will not be possible in the future. Just that it is unlikely</sub>
+<sub>Being on this list doesn't guarantee that it will or will not be possible in the future. Just that it is unlikely.</sub>
 
 ## Download Guide
 There are several ways to download the extension, but below is the easiest method.
@@ -71,11 +71,11 @@ There are several ways to download the extension, but below is the easiest metho
 
 ![installextension-ezgif.com-optimize.gif](/tutorials/bg3-mod-helper/installextension-ezgif.com-optimize.gif)
 
-> It is recommended that you restart VSCode after installing. In fact, you should restart VSCode everytime you change your workspace for ensurance.
+> It is recommended that you restart VSCode after installing. In fact, you should restart VSCode everytime you change your workspace.
 {.is-warning}
 
 ## Getting Started
-After installing the extension, you will most likely see a message like this:
+After installing the extension, you will see a message like this:
 
 ![error_message_on_start.png](/tutorials/bg3-mod-helper/error_message_on_start.png)
 or this:
@@ -100,13 +100,13 @@ The key working with the extension is setting up a workspace. There are a few di
 {.is-info}
 
 ## Setup Extension Settings
-As I mentioned, if it's your first time starting the extension (or if you have an error on startup which could be unrelated) you may see the image below when you open up VSCode or a workspace.
+As I mentioned, **you better have been listening**, if it's your first time starting the extension (or if you have an error on startup which could be unrelated) you may see the image below when you open up VSCode or a workspace.
 
+This error means `LSLib.dll` isn't in the folder in your settings. 
 ![error_message_on_start.png](/tutorials/bg3-mod-helper/error_message_on_start.png)
-or possibly this message instead:
+
 ![no_workspace_set.png](/tutorials/bg3-mod-helper/no_workspace_set.png)
 
-Both error messages relate to settings, the first is suggesting the path your lslib in the settings may be off while the latter is suggesting something is wrong with your workspace, ie rootmodpath setting.
 
 There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extension's settings. There are a few ways to get to these settings, with the following being the easiest:
 1. Click on "File" in the top ribbon in VSCode
