@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-23T01:28:21.451Z
+date: 2024-05-23T01:33:39.041Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -59,7 +59,8 @@ Nothing is perfect, let's get the rough stuff out of the way before we start to 
 - Possible lag due to folder/file size (need to confirm)
 - No references to base game uuids/handles (coming soon?)
 
-<sub>Being on this list doesn't guarantee that it will or will not be possible in the future. Just that it is unlikely.</sub>
+> Being on this list doesn't guarantee that it will or will not be possible in the future. Just that it is unlikely.
+{.is-info}
 
 ## Download Guide
 There are several ways to download the extension, but below is the easiest method.
@@ -86,7 +87,6 @@ There are a few quick setup steps that the extension requires to be in a working
 
 > While the extension doesn't do anything while sitting in the background, it is technically always on. This shouldn't hinder your other non modding projects but it's good practice to disable or delete any extension if you don't plan on using it for a while.
 {.is-info}
-
 
 The key working with the extension is setting up a workspace. There are a few different ways to do it but here is the simplest and safest.
 
@@ -122,8 +122,6 @@ Let's go through each settings option.
 - **Auto Launch On Pack:** Toggle this setting to do exactly as the name implies. If you pack your mod with the extension while this is toggled, your game will launch upon packing (disabled at the momemnt, just hit launch game in data provider).
 - **Excluded Files:** Enter in full paths to files that you wish to not have converted when the mod is packed. This is done to avoid creation of non essential files. These files wont affect your work but do clutter up your space so adding them to excluded can be valuable to avoid the clutter. The fastest way to add an item to the list is to simply right click on a file in your file tree in VSCode and select the new menu option added by the extension which says "Add to Conversion Exclusion List". At the moment, the entered path is very specific. Ensure a lowercase drive letter and you use /. ie c:/Users/ghostboats/Desktop/Squire/Public/Squire/ClassDescriptions/ClassDescriptions.lsx 
 
-<br> 
-
 > Certain files/folders are automatically excluded, like meta.lsx
 {.is-info}
 
@@ -142,40 +140,51 @@ Let's go through each settings option.
 While the extension has many other capabilities and shortcuts, the best way to access the features of the extension are to use the data provider. Im sure when you first installed the extension you noticed the little box on the far left (given you havent moved around your VSCode ui). Clicking it opens up the data provider, which is a quick one stop shop for alot of (but not all) the main functionality of the extension.
 ![data_providerr.png](/tutorials/bg3-mod-helper/data_providerr.png)
 
-> - If you see a `>` before an option, such as Pack/Unpacking Tool, it means that button does multiple things. If you press the text of the button it will do its main action, typically open up some sort of webview to work with that tool/process. Your other option would be to hit the `>`, revealing a dropdown list of quick options you can do without access the more intensive main action.
-> - If you see `(in development)` next to an option, it is clearly in development. Expect issues with these and please dont reach out regarding errors when using. Its expected in development.
-> - If you dont see the cardboard box, you dont have the extension installed correctly or something is corrupted.
-> - If none of the options are available when you click the data provider (it will say something like nothing to display), something failed on load up of the extension. It could be a number of things but the firs thing to check would be the make sure all the paths you have provided in settings are correct and that you do have lslib downloaded.
+# Some important notes:
+
+> If you see a `>` before an option, such as Pack/Unpacking Tool, it means that button does multiple things. If you press the text of the button it will do its main action, typically open up some sort of webview to work with that tool/process. Your other option would be to hit the `>`, revealing a dropdown list of quick options you can do without access the more intensive main action.
 {.is-info}
 
-I will cover most of what these do below but here is each current option and a very quick breakdown
-- **Pack/Unpacking Tool :** Allows the user to pack their current workspace mod and unpack mods (duh). Has quick actions only at the moment.
-- **Converstion Tool :** Open a webview tab which allows the user to handle conversion related features regarding lsx and loca files. Has quick actions.
-- **Launch Game :** Launch the game directly from VSCode
-- **Generate Folder Structure :** Lets the user quickly deploy mod templates. Only class mod templates working at the moment.
-- **Atlas Generator :** By supplying a folder of correctly sized PNGs, the user can generate a PNG that can then be right click converted to a dds to use as a atlas texture file.
-- **Version Generator :** Open a webview tab which allows the user to quickly generate a version number for their meta, as well as quickly apply it to your meta file.
-- **Rotation Tool :** Dont worry about this one for now.
-- **DDS Viewer :** In development still but opens a webview that shows information about all the dds files in your workspace. While in development, it is only search for dds files in the `Mods` folder so please place your dds files in there temporarily if you wish to test and use while this tool is in development.
-- **Debug Command :** "Dont press this please, I use this for development"- Ghostboats
+> If you see `(in development)` next to an option, it is clearly in development. Expect issues with these and please don't bother me with errors that pop up. It is known, `dear user`.
+{.is-info}
 
-> I hear you saying "reading is annoying!" and "I don't want to read all this". Too bad. 
-<br>
-Just kidding! The one thing you should get comfy with, even if you don't care about some of the shortcuts and other features, is the data provider. It will always house the most powerful features of the tool and it would be ~~stupid~~ a waste not to use them.
+> If you don't see the cardboard box, you don't have the extension installed correctly or something is corrupted.
+{.is-info}
+
+> If none of the options are available when you click the data provider (it will say something like nothing to display), something failed when the extension loaded up. It could be a number of things but the first thing to check would be the make sure all the paths you have provided in settings are correct and that you do have lslib downloaded.
+{.is-info}
+
+---
+
+
+I will cover most of what these do below, but here is each current setting and a very quick breakdown of what they are.
+- **Pack/Unpacking Tool:** Allows the user to pack their current workspace mod and unpack mods (duh). Has quick actions only at the moment.
+- **Converstion Tool:** Open a webview tab which allows the user to handle conversion related features regarding lsx and loca files. Has quick actions.
+- **Launch Game:** Launch the game directly from VSCode
+- **Generate Folder Structure :** Lets the user quickly deploy mod templates. Only class mod templates working at the moment.
+- **Atlas Generator:** By supplying a folder of correctly sized PNGs, the user can generate a PNG that can then be right click converted to a dds to use as a atlas texture file.
+- **Version Generator:** Open a webview tab which allows the user to quickly generate a version number for their meta, as well as quickly apply it to your meta file.
+- **Rotation Tool:** Dont worry about this one for now.
+- **DDS Viewer:** In development still but opens a webview that shows information about all the dds files in your workspace. While in development, it is only search for dds files in the `Mods` folder so please place your dds files in there temporarily if you wish to test and use while this tool is in development.
+- **Debug Command:** "Don't press this please, I use this for development"- Ghostboats
+
+> I hear you saying "reading is annoying!" and "I don't want to read all this".
+***Too bad.***
+The one thing you should get comfy with, even if you ~~stupidly~~ don't care about some of the shortcuts and other features, is the data provider. It will always house the most powerful features of the tool and it would be ~~stupid~~ a waste not to use them.
 {.is-danger}
 
 
 ### 1. **UUID/Handle Creation**
 
 - Right-click on an open editor to access the context menu, or press F1 and choose "Generate UUID" or "Generate Handle" to insert a UUID or handle at the cursor's location.
-- When generating handles, if a loca XML file exists, the newly created handle will be added to the XML automatically. *Tip: you can easily create one with [Create BG3 File](https://wiki.bg3.community/Tools/bg3-mod-helper#h-6-other-actions)*.
 - If text is selected when generating a UUID or handle, the selected text will be replaced with the generated value. For handles, the selected text will be used as the handle's context if local XML files exist.
 - All this functionality also supports multiple cursors.
 - You can also generate a UUID or handle using the default keystrokes Ctrl+Shift+U and Ctrl+Shift+H, respectively.
+- When handles are generated, if an XML file exists, it will add the newly created handle to the XML. *Tip: you can easily create one with [Create BG3 File](https://wiki.bg3.community/Tools/bg3-mod-helper#h-6-other-actions)*. Handle-y!
 
 
-> The setting `Add Handles To All Locas` is enabled by default to apply the newly created handle to all your loca files should you have multiple. If unchecked, you will be prompted to select which files to insert to.
-{.is-info}
+> Use the `Add Handles To All Locas` setting to apply the newly created handle to all your loca files should you have multiple. Otherwise, you will be prompted to select which files to insert the handle in.
+
 
 ### 2. **File Conversions (lsx<>lsf, xml<>loca)**
 - Open a custom webview tab where users can manage converting lsx, lsf, loca, xml, etc., files. by clicking on `Conversion Tool` in the data provider.
@@ -184,8 +193,8 @@ Just kidding! The one thing you should get comfy with, even if you don't care ab
 - Single file conversion via right-click menu from file tree.
 - Auto-convert files when packing, including an exclusion list managed in the extension's settings.
 
-<br>
-*<sub>Look for `Excluded Files` in the settings to add files to exclude. Can also right click on a file and click `Add to Conversion Exclusion List` or `Remove from Conversion Exclusion List`</sub>
+>Look for `Excluded Files` in the settings to add files to exclude. You can also right click on a file and click `Add to Conversion Exclusion List` or `Remove from Conversion Exclusion List`.
+
 
 ### 3. **Pack/Unpack Mods**
 - Open a custom webview tab where users can manage packing and unpacking related features (webview in development, quick actions currently working though).
@@ -196,16 +205,16 @@ Just kidding! The one thing you should get comfy with, even if you don't care ab
 --Will move the newly made .pak to the games Mods folder.
 --Can autolaunch game after packing if settings are enabled (disabled at the meowment).
 
-<br>
-*<sub>Look for `Excluded Files` in the settings to add files to exclude when auto coverting via packing. Look for `Auto Launch On Pack` to launch game right away after packing, chains well with the `Launch Continue Game` setting.</sub>
+
+> Look for `Auto Launch On Pack` to launch game right away after packing, chains well with the `Launch Continue Game` setting.
 
 ### 4. **UUID/Handle Hover Information**
 - Hover over UUIDs/handles in your files to see hoverable boxes which display all your related UUIDs/handles in your workspace. It breaks it down by the following per entry found:
 --The entire line the UUID/handle is found on, starting at the first whitespace occurance.
 --The file that line is found in. If you click it, it will open the file in the editor at that line for quick access.
 
-<br>
-*<sub>Look for `Hover: Enabled` in the settings to disable the hover feature of the extension to avoid visual clutter if you see fit. Look for `Hover: Max Files` for a better solution as it will limit the amount of files returned to help with visual clarity. Look for `Max Cache Size` if you are dealing with lag issues.</sub>
+
+> Look for `Hover: Enabled` in the settings to disable the hover feature of the extension to avoid visual clutter if you see fit. Look for `Hover: Max Files` for a better solution as it will limit the amount of files returned to help with visual clarity. Look for `Max Cache Size` if you are dealing with lag issues.
 
 ### 5. **PNG/DDS Manipulation**
 - Convert PNG files to DDS files (and vice versa) by right clicking on a file in the file tree and selecting `Convert To  DDS` or `Convert To PNG`.
@@ -226,6 +235,6 @@ Just kidding! The one thing you should get comfy with, even if you don't care ab
 --VERY VERY LIMITED
 
 
-# Developers Guide
-Coming soon
+# Developer's Guide
+Coming soon, you heathens.
 ![nodders-nodding.gif](/tutorials/bg3-mod-helper/nodders-nodding.gif)
