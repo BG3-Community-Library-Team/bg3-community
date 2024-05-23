@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: true
-date: 2024-05-03T20:10:11.946Z
+date: 2024-05-23T12:04:05.162Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -89,7 +89,7 @@ print(myVariable)
 
 You can also use comments to `comment out` lines you temporarily want to disable
 
-```
+```lua
 -- myVariable is 5
 local myVariable = 5
 
