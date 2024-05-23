@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-23T01:47:59.481Z
+date: 2024-05-23T02:31:21.865Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -18,7 +18,7 @@ Created by ghostboats and khbsd, this VSCod(e/ium) extension is designed to help
 - **Generate Mod Templates**
 - **And More!**
 
-If you are comfortable with initial setup and just want to see what the extension can do, please jump to [here.](#features-and-usage)
+If all of this sounds gouda, and you are comfortable with initial setup and just want to see what the extension can do, please jump to [here.](#features-and-usage)
 
 While the extension is still receiving regular updates, it's very functional, and has lots of tools and tricks useful to mod authors. It is built off the philosophy of "Few clicks, few tabs" ie, being able to mod without having to tab out as often and requiring as few clicks as possible to get the job done. It has saved us a lot of time, and I hope it can do the same for you!
 
