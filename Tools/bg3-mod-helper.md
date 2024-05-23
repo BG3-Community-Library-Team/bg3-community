@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-23T01:44:24.961Z
+date: 2024-05-23T01:46:11.548Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -133,7 +133,7 @@ Let's go through each settings option.
 - **Max Cache Size:** Integer value field. Caching is used to reduce lag and stop hover information from re-searching when hovering over already hovered uuids/handles which makes its position in the hover box shift around and hard to read. Typically you wont need to adjust this setting.
 - **Mod Destination Path:** This field is for supplying the path to the Mods folder for baulder gate 3. When you pack your mod with the extension, it will get set to this folder so you want to point it straigh to the mods folder for the game. For most people this will typically be C:/Users/{username}/AppData/Local/Larian Studios/Baldur's Gate 3/Mods, just make sure to replace username with your actual name.
 - **Root Mod Path:** This field is a bit unique. We actually do not want to touch this setting. When we open a folder in VSCode, the extension will automatically populate this field with your current workspace folder. In User settings, it should be blank and you should not enter anything here. If you want to confirm your root mod was correctly auto set, change to the Workspace settings tab and take a look.
-- **Game Install Location:** The path to your `Balders Gate 3` folder (C:\Program Files (x86)\Steam\steamapps\common\Baldur's Gate 3). This is used to launch the game from VSCode.
+- **Game Install Location:** The path to your `Baldur's Gate 3` install folder (C:\Program Files (x86)\Steam\steamapps\common\Baldur's Gate 3). This is used to launch the game from VSCode.
 
 ## Features and Usage
 ### 0. **The Data Provider**
