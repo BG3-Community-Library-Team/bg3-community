@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: true
-date: 2024-05-23T12:13:32.309Z
+date: 2024-05-23T12:16:05.721Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -1008,6 +1008,26 @@ end
 
 We usually do not want to iterate for a set amount of loops, but base it on a table.
 using `#tableName` you can get the size of a table. 
+
+
+
+```lua
+
+local myTable =  {"Cheese", "Bread", "Wine"}
+
+for i=1,#myTable do
+	print(myTable[i])
+end
+
+```
+
+`Cheese`
+`Bread`
+`Wine`
+
+
+
+You can also iterate over the table without directly accessing its indeces
 
 
 ```lua
