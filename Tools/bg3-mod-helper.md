@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-23T01:27:05.760Z
+date: 2024-05-23T01:27:33.537Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -174,8 +174,7 @@ Just kidding! The one thing you should get comfy with, even if you don't care ab
 - You can also generate a UUID or handle using the default keystrokes Ctrl+Shift+U and Ctrl+Shift+H, respectively.
 
 
-<br>
->Use the `Add Handles To All Locas` setting to apply the newly created handle to all your loca files should you have multiple. Otherwise you will be prompted to select which files to insert to
+> Use the `Add Handles To All Locas` setting to apply the newly created handle to all your loca files should you have multiple. Otherwise you will be prompted to select which files to insert to
 {.is-info}
 
 ### 2. **File Conversions (lsx<>lsf, xml<>loca)**
