@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-23T01:23:11.746Z
+date: 2024-05-23T01:25:49.822Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -166,11 +166,12 @@ Just kidding! The one thing you should get comfy with, even if you don't care ab
 
 
 ### 1. **UUID/Handle Creation**
-- Right-click on an open editor to open a right click menu or press F1 and pick "Generate UUID" or "Generate Handle" to generate a uuid or handle respectively at that location.
-- When handles are generated, if an XML file exists, it will add the newly created handle to the XML as well. Handle-y!
-- If text is selected when generating a UUID/handle, it will replace the selected text with whatever was generated; if it's a handle, the selection will be used for the handle's context if loca XML files exist. 
-- All this also applies when using multiple cursors
-- You may also generate a UUID/Handle using the keystrokes `control+shift+U` and `control+shift+H`, respectively, by default.
+
+- Right-click on an open editor to access the context menu, or press F1 and choose "Generate UUID" or "Generate Handle" to insert a UUID or handle at the cursor's location.
+- When generating handles, if a loca XML file exists, the newly created handle will be added to the XML automatically. *Tip: you can easily create one with [Create BG3 File](https://wiki.bg3.community/Tools/bg3-mod-helper#h-6-other-actions)*
+- If text is selected when generating a UUID or handle, the selected text will be replaced with the generated value. For handles, the selected text will be used as the handle's context if local XML files exist.
+- All this functionality also supports multiple cursors.
+- You can also generate a UUID or handle using the default keystrokes Ctrl+Shift+U and Ctrl+Shift+H, respectively.
 
 
 <br>
