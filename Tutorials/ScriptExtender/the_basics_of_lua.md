@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: true
-date: 2024-05-23T12:04:05.162Z
+date: 2024-05-23T12:06:57.953Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -300,7 +300,7 @@ print("Is Dragonborn part of creatures? ", creatures["Dragonborn"])
 ### 4.4\. Tables within tables
 
 Tables are very flexible and allow varied structuring. Below you can see two more examples.
-Note that because of the nested structure, our printMyTable function does not work anymore.
+Note that because of the nested structure, our `printMyTable` function does not work anymore.
 Instead we can use `_D` to "dump" the whole table and write special loops for them.
 
 #### Example 1
