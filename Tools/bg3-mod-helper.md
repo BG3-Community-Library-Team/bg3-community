@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-05-23T01:10:40.928Z
+date: 2024-05-23T01:12:08.562Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -167,12 +167,13 @@ Just kidding! The one thing you should get comfy with, even if you don't care ab
 
 ### 1. **UUID/Handle Creation**
 - Right-click on an open editor to open a right click menu and click "Generate UUID" or "Generate Handle" to generate a uuid or handle respectivly at that location.
-- If a UUID/handle is highlighted when generating a UUID/handle, it will replace the entry with whatever was generated.
+- If a UUID/handle is highlighted when generating a UUID/handle, it will replace the highlighted text with whatever was generated.
 - Generate a UUID/Handle using the keystrokes `control+shift+U` and `control+shift+H`, respectively.
-- When handles are generated, if an XML file exists, it will add the newly created handle to the XML as well.
+- When handles are generated, if an XML file exists, it will add the newly created handle to the XML as well. Handle-y!
 
 <br>
-*<sub>Use the `Add Handles To All Locas` setting to apply the newly created handle to all your loca files should you have multiple. Otherwise you will be prompted to select which files to insert to</sub>
+>Use the `Add Handles To All Locas` setting to apply the newly created handle to all your loca files should you have multiple. Otherwise you will be prompted to select which files to insert to
+{.is-info}
 
 ### 2. **File Conversions (lsx<>lsf, xml<>loca)**
 - Open a custom webview tab where users can manage converting lsx, lsf, loca, xml, etc., files. by clicking on `Conversion Tool` in the data provider.
