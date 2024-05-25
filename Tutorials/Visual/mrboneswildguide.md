@@ -2,8 +2,8 @@
 title: Making Custom BG3 Head Armatures
 description: aka Mr Bones Wild Guide
 published: false
-date: 2024-05-25T10:39:57.934Z
-tags: head, skeleton, piercings, bones
+date: 2024-05-25T11:03:25.831Z
+tags: tutorial, blender, head, skeleton, piercings, bones, armature
 editor: markdown
 dateCreated: 2024-05-25T09:33:53.534Z
 ---
@@ -109,7 +109,7 @@ Find the _Base.dae in the directory on the left, and right click to Export, and 
 ---
 ## Importing to Blender:
 
-I like to set these up in their own Collections, so I will add them like so:
+For organization, I like to set these up in their own Collections. I will add them like so:
 
 ![5_collections-setup.png](/tutorials/custom_head_armatures/5_collections-setup.png)
 
@@ -130,6 +130,10 @@ I like to set these up in their own Collections, so I will add them like so:
 **To import the _Base.dae**, use Blender’s default Collada importer, default settings:
 
 ![8_import-base-dae.png](/tutorials/custom_head_armatures/8_import-base-dae.png)
+
+> It is important to use the basic Collada importer here instead of the BG3 plugin, as doing so will import the base with an unusably large dummy_root bone and most likely result in a broken custom armature.
+{.is-warning}
+
 
 … go ahead and apply transforms to that as well:
 
@@ -340,4 +344,9 @@ Here are the GR2 optionsI have selected by default in case (under Show GR2 Optio
 > 
 > Well, aside from tweaking the placements of piercings/beards to get them just right. Hotloading the _Base.GR2 as a loose file is very useful for doing this while keeping the game running.
 {.is-success}
+
+> **Note about SkeletonBanks**
+> when putting together the merged.lsx for your head, it's a good idea to grab the whole SkeletonBank from the head merged you used for the base, instead of re-using from a template. Incongruencies seem like they can cause issues like wonky eyes or even invisible heads.
+{.is-info}
+
 
