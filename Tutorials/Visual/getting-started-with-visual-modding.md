@@ -2,7 +2,7 @@
 title: Getting Started with Visual Modding
 description: Covers the basics of setting up the needed tools
 published: false
-date: 2024-05-25T21:45:52.839Z
+date: 2024-05-25T21:51:08.404Z
 tags: hair, visual, guide, head, beginner, armor
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -164,4 +164,8 @@ Valid options:
 
 ## Tools: Other useful things
 
+[BG3 Search Engine](https://bg3.norbyte.dev/search)
+- Fast online search tool useful for searching the game files
 
+
+...finish this later i am tired
