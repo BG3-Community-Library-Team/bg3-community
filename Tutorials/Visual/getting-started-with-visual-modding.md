@@ -2,7 +2,7 @@
 title: Getting Started with Visual Modding
 description: Covers the basics of setting up the needed tools
 published: false
-date: 2024-05-25T20:38:16.238Z
+date: 2024-05-25T20:56:29.891Z
 tags: hair, visual, guide, head, beginner, armor
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -146,5 +146,12 @@ Download and install the same way we did the BG3/DOS2 Collada Exporter.
 There aren't any specific add-on preferences to set here, and once installed you should see this in the Outliner under Object properties (yellow square):
 
 ![blenderhelpers-outliner.png](/tutorials/getting_started_visual/blenderhelpers-outliner.png)
+
+Some notes about common settings:
+- **Export Order**: for exports with multiple meshes, the order of them needs to be set starting with 1. This order will be replicated in your VisualBank and is important for having the correct materials on the correct meshes.
+- **LOD Level**: LODs are less resource intensive/lower quality version of the same mesh intended to be loaded in the further zoomed out the game camera is. Most modders choose to delete all LODs but 0 (the highest quality). For this it is important to set the LOD Distance to 0m.
+- **LOD Distance**: The max distance the mesh loads with before the lower quality LOD loads in. I.e. 
+  - LOD0 set to 6m: highest quality, working mesh. Will be loaded in until after 6m.
+  - LOD1 set to 12m: next lower quality, will load in after 6m. If there is a LOD3 it will load in after 12m.
 
 
