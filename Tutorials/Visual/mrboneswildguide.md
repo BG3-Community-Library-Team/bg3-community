@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures
 description: aka Mr Bones Wild Guide
 published: true
-date: 2024-05-25T11:08:46.783Z
+date: 2024-05-25T12:47:28.978Z
 tags: tutorial, blender, head, skeleton, piercings, bones, armature
 editor: markdown
 dateCreated: 2024-05-25T09:33:53.534Z
@@ -16,12 +16,12 @@ dateCreated: 2024-05-25T09:33:53.534Z
 - [Overview](#overview)
   - [Table of Contents](#table-of-contents)
   - [Tools you need](#tools-you-need)
-  - [Setup](#setup)
-  - [Importing to Blender](#importing-to-blender)
-  - [Preparing the Skeleton](#preparing-the-skeleton)
-  - [Adjusting the Skeleton](#adjusting-the-skeleton)
-  - [Final Touches](#final-touches)
-  - [Exporting](#exporting)
+  - [Setup](#1.-setup)
+  - [Importing to Blender](#2.-importing-to-blender)
+  - [Preparing the Skeleton](#3.-preparing-the-skeleton)
+  - [Adjusting the Skeleton](#4.-adjusting-the-skeleton)
+  - [Final Touches](#5.-final-touches)
+  - [Exporting](#6.-exporting)
 
 ## Tools you need:
 > 
@@ -53,7 +53,7 @@ If it seems like I’m going between a lot of different plugins and tools instea
 
 ---
 
-## Setup:
+## 1. Setup:
 
 It’s good to first get the items we need before you start. So, we already have your edited head in Blender like so:
 
@@ -61,7 +61,7 @@ It’s good to first get the items we need before you start. So, we already have
 
 
 
-### 1) Collecting Assets
+### 1.1) Collecting Assets
 
 We can use the Multitool to find and grab what we need (it’s handy to toggle the search refine to .gr2 only):
 
@@ -78,7 +78,7 @@ We can use the Multitool to find and grab what we need (it’s handy to toggle t
 Extract these but keep them as GR2 and put them in a working folder (wherever, it’s just handy to have all in one place).
 
 
-### 2) LSLIB conversion
+### 1.2) LSLIB conversion
 
 Now we open LSLIB to convert the _Base.GR2 to .dae
 
@@ -89,7 +89,7 @@ Remember to turn off X-flip meshes.
 ![3_lslib-convert.png](/tutorials/custom_head_armatures/3_lslib-convert.png)
 
 
-### 3) Noesis conversion
+### 1.3) Noesis conversion
 
 And now we open Noesis to convert this .dae to .fbx (we will need both)
 
@@ -107,14 +107,14 @@ Find the _Base.dae in the directory on the left, and right click to Export, and 
 
 
 ---
-## Importing to Blender:
+## 2. Importing to Blender:
 
 For organization, I like to set these up in their own Collections. I will add them like so:
 
 ![5_collections-setup.png](/tutorials/custom_head_armatures/5_collections-setup.png)
 
 
-### 1) Importing the vanilla head
+### 2.1) Importing the vanilla head
 
 **To import the vanilla head .GR2**, use the BG3/DOS2 plugin, default settings:
 
@@ -125,7 +125,7 @@ For organization, I like to set these up in their own Collections. I will add th
 ![7_vanilla-head-setup.png](/tutorials/custom_head_armatures/7_vanilla-head-setup.png)
 
 
-### 2) Importing the DAE base
+### 2.2) Importing the DAE base
 
 **To import the _Base.dae**, use Blender’s default Collada importer, default settings:
 
@@ -140,7 +140,7 @@ For organization, I like to set these up in their own Collections. I will add th
 ![9_apply-transforms.png](/tutorials/custom_head_armatures/9_apply-transforms.png)
 
 
-### 3) Importing the FBX base
+### 2.3) Importing the FBX base
 
 **To import the _Base.fbx**, use Blender’s default FBX importer. Default settings EXCEPT scale at 100 instead of 1:
 
@@ -152,7 +152,7 @@ It’s going to import looking like this. It’s normal. Just apply transforms h
 
 
 ---
-## Preparing the Skeleton:
+## 3. Preparing the Skeleton:
 
 We finally use the Armature Tool! It can be found on the little vertical tabs between the viewport and outliner.
 
@@ -177,17 +177,17 @@ Now we can hit “Prepare Skeleton”. If all goes well, it should appear that n
 
 
 ---
-## Adjusting the Skeleton:
+## 4. Adjusting the Skeleton:
 
 For this next step we need to prepare the head meshes a bit.
 
-### 1) Vanilla head prep
+### 4.1) Vanilla head prep
 
 **For the vanilla head mesh**, select the Head, Mouth, and Eyes submeshes and with the cursor in the viewport, Ctrl+J to join them. You can rename if you wish.
 
 ![13_join-head-meshes-vanilla.png](/tutorials/custom_head_armatures/13_join-head-meshes-vanilla.png)
 
-### 2) Custom head prep
+### 4.2) Custom head prep
 
 **For our edited head**, we can first hide all submeshes but Head, Mouth, and Eyes. Then, select these and with the cursor in viewport: Shirt+D then Esc to duplicate, then Ctrl+J to join these duplicates. You can rename this one as well. I like to hide the rest of the submeshes at this point.
 
@@ -209,7 +209,7 @@ So now all which is visible is:
 {.is-warning}
 
 
-### 3) Adjusting the skeleton
+### 4.3) Adjusting the skeleton
 
 Now we plug the components into the Adjust Skeleton part like so:
 
@@ -222,7 +222,7 @@ This is what mine looks like after adjusting (not much different):
 ![16_skele-adjusted.png](/tutorials/custom_head_armatures/16_skele-adjusted.png)
 
 
-## Final Touches:
+## 5. Final Touches:
 
 The tool has adjusted the main head bones to the new facial geometry for us. If we want we could just leave it at that and use it already. BUT, the tool does not adjust the piercing or beard bones*. This we do by hand but it’s fairly easy.
 
@@ -250,7 +250,7 @@ It’s a lot of bones, so to make it easier to edit we can (in object mode as we
 
 Let’s now do some cleanup to make sure the internal bones are placed right. If they are off you could get cutscene weirdness like piercings flying off or very comical expressions (even for Tav).
 
-### 1) The base bones, the gesture bones, and the wrinkle bones.
+### 5.1) The base bones, the gesture bones, and the wrinkle bones.
 
 
 > if any of these are drastically out of place it could cause: much difficulty getting beards to fit, also piercings/beards which look fine except in some cutscenes where they fly off, or some very exaggerated facial expressions.
@@ -307,7 +307,7 @@ After this it should look something like this, with all of those 9 bones stacked
 
 ![24_root-bones-correct.png](/tutorials/custom_head_armatures/24_root-bones-correct.png)
 
-### 2) Piercings and beards
+### 5.2) Piercings and beards
 
 For these just try to move them so that the base ball of the bone is somewhat flush with the surface where you want the piercing/beard to sit. It’s a bit of trial and error but here’s a general visual for face bones: (side note for beards, keep in mind that some of Trips’ accessories use beard bones to attach piercings to: beard_smileline1_ r/l for dimple, beard_upper_lip_m for medusa.)
 
@@ -322,7 +322,7 @@ For these just try to move them so that the base ball of the bone is somewhat fl
 
 
 
-## Exporting:
+## 6. Exporting:
 
 First, in object mode click “Return bones to layer 0” *(Note for Blender 4+ this is no longer an option and is fine to ignore this step)*.
 
