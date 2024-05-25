@@ -2,7 +2,7 @@
 title: Getting Started with Visual Modding
 description: Covers the basics of setting up the needed tools
 published: false
-date: 2024-05-25T21:51:08.404Z
+date: 2024-05-25T21:59:22.497Z
 tags: hair, visual, guide, head, beginner, armor
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -136,30 +136,12 @@ Some notes about common settings:
   - LOD1 set to 12m: next lower quality, will load in after 6m. If there is a LOD3 it will load in after 12m.
 
 
-## Tools: Text Editing
+## Tools: Text Editing / File structure stuff
 #### oh no
+> 
+> This section is covered pretty well over on the [Setting up a Dev Environment](/Tutorials/General/setting-up-a-dev-environment) page.
+{.is-info}
 
-As it currently stands we need some basic coding/structure to load our assets in. Staring at xml is bad enough and we don't to punish ourselves further by using default Notepad.
-
-Valid options: 
-- [VSCode](https://code.visualstudio.com/), [VSCodium](https://vscodium.com/)
-	- **Pros**: Quite a few available extensions (some even BG3 specific) to make your life easier
-  - **Cons**: Can initially look a bit complicated/daunting
-- [Notepad++](https://notepad-plus-plus.org/)
-	- **Pros**: Simple
-  - **Cons**: Fewer plugins, in particular game specific ones
-
-
-### Some useful VSCod(e/ium) extensions
-- [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper)
-	- new extension aiming to help BG3 mod authors with their workflow. Some QOL goodies include:
-	- Generating mod file structure
-  - UID and Handle generation 
-  - File conversions, packing + unpacking
-- [BG3 GUID infos](https://marketplace.visualstudio.com/items?itemName=FallenStar.bg3guidinfos)
-  - shows UUID info upon hovering
-- [XML Support](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)
-  - small QOL syntax stuff when working with lsx files
 
 
 ## Tools: Other useful things
