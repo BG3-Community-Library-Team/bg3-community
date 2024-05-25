@@ -2,7 +2,7 @@
 title: Getting Started with Visual Modding
 description: Covers the basics of setting up the needed tools
 published: false
-date: 2024-05-25T20:56:29.891Z
+date: 2024-05-25T21:45:52.839Z
 tags: hair, visual, guide, head, beginner, armor
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -18,34 +18,15 @@ What it won't cover is what happens after the initial set up, i.e. the creation 
 
 ## Tools overview
 
-> These are just listed here for quick reference. A step-by-step guide to set up follows below.
->
->maybe do something else with this
-{.is-success}
+> This first part covers the installation of a few core tools needed to get you up and running.
+> Includes:
+> - LSLIB
+> - Modder's Multitool
+> - Blender and core related add-ons
+> - VSCod(e/ium) and some useful extensions
 
 
-Tools for finding/extracting game assets:
-- [LSLIB](https://github.com/Norbyte/lslib)
-- [Modder's Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool)
-
-Tools for 2D/3D editing:
-- [Blender](https://www.blender.org/), plugins:
-  - [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter)
-  - [LaughingLeader's Blender Helpers](https://github.com/LaughingLeader/laughingleader_blender_helpers)
-- [Gimp](https://www.gimp.org/), [Paint.net](https://www.getpaint.net/index.html), Photoshop, etc.
-
-Tools for mod file setup:
-- [VSCode](https://code.visualstudio.com/), plugins:
-  - [XML Support](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)
-  - [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper)
-  - [BG3 GUID infos](https://marketplace.visualstudio.com/items?itemName=FallenStar.bg3guidinfos)
-  - [Bracket Select](https://marketplace.visualstudio.com/items?itemName=chunsen.bracket-select)
-
-Other useful things:
-- [BG3 Search Engine](https://bg3.norbyte.dev/search)
-
-
-## LSLIB
+## Tools: LSLIB
 
 > [LSLIB](https://github.com/Norbyte/lslib/releases)
 > use latest beta release
@@ -59,7 +40,7 @@ Other useful things:
 ### Initial setup
 To download, head over to Releases and grab the latest ExportTool zip. For those unfamiliar with Github, the releases will look like this. Just grab the zip and (if you need it) the .NET dependency via the link.
 
-![2024-05-25_15_39_51.png](/tutorials/getting_started_visual/2024-05-25_15_39_51.png)
+![lslib-release.png](/tutorials/getting_started_visual/lslib-release.png)
 
 You can install/extract this where you want your modding utilities to be. 
 
@@ -75,7 +56,7 @@ At the moment there isn't too much to set up, a few notes:
 - For most purposes you will want to have X-flip meshes turned OFF (default is on)
 
 
-## Modder's Multitool
+## Tools: Modder's Multitool
 
 > [Modder's Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool/releases)
 > use latest release
@@ -94,7 +75,7 @@ For most cases you DO NOT need to mass unpack any game files. What you will want
 ![mmt.png](/tutorials/getting_started_visual/mmt.png)
 
 
-## Blender
+## Tools: Blender
 
 > [Blender](https://www.blender.org/)
 > as of this writing most plugins will function with v4+ and can be used safely. Using at least v3.6+ is recommended.
@@ -153,5 +134,34 @@ Some notes about common settings:
 - **LOD Distance**: The max distance the mesh loads with before the lower quality LOD loads in. I.e. 
   - LOD0 set to 6m: highest quality, working mesh. Will be loaded in until after 6m.
   - LOD1 set to 12m: next lower quality, will load in after 6m. If there is a LOD3 it will load in after 12m.
+
+
+## Tools: Text Editing
+#### oh no
+
+As it currently stands we need some basic coding/structure to load our assets in. Staring at xml is bad enough and we don't to punish ourselves further by using default Notepad.
+
+Valid options: 
+- [VSCode](https://code.visualstudio.com/), [VSCodium](https://vscodium.com/)
+	- **Pros**: Quite a few available extensions (some even BG3 specific) to make your life easier
+  - **Cons**: Can initially look a bit complicated/daunting
+- [Notepad++](https://notepad-plus-plus.org/)
+	- **Pros**: Simple
+  - **Cons**: Fewer plugins, in particular game specific ones
+
+
+### Some useful VSCod(e/ium) extensions
+- [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper)
+	- new extension aiming to help BG3 mod authors with their workflow. Some QOL goodies include:
+	- Generating mod file structure
+  - UID and Handle generation 
+  - File conversions, packing + unpacking
+- [BG3 GUID infos](https://marketplace.visualstudio.com/items?itemName=FallenStar.bg3guidinfos)
+  - shows UUID info upon hovering
+- [XML Support](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)
+  - small QOL syntax stuff when working with lsx files
+
+
+## Tools: Other useful things
 
 
