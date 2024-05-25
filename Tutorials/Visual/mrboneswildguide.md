@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures
 description: aka Mr Bones Wild Guide
 published: true
-date: 2024-05-25T11:03:56.635Z
+date: 2024-05-25T11:08:46.783Z
 tags: tutorial, blender, head, skeleton, piercings, bones, armature
 editor: markdown
 dateCreated: 2024-05-25T09:33:53.534Z
@@ -44,7 +44,7 @@ This guide assumes you have already installed these items and have a general ide
 If it seems like I’m going between a lot of different plugins and tools instead of just using one for everything, it’s because this whole process is rather sensitive to how things are imported/exported and I’ve had the most consistent results this way.   
 
 
-> *It is important to make sure you have the latest beta version of LSLIB and that you set up the path to its updated divine.exe in the blender exporter plugin settings.
+> *Make sure you have the latest beta version of LSLIB and that you set up the path to its updated divine.exe in the blender exporter plugin settings.
 {.is-warning}
 
 
@@ -171,6 +171,8 @@ Now we can hit “Prepare Skeleton”. If all goes well, it should appear that n
 > This “Ready for BG3” is now a skeleton which can be edited. If your custom head is just a port of another vanilla head to a different race (and thus has the same features aside from ears), you don’t even need to do the “Adjust Skeleton”. In that case just skip the next step and go to **[Final Touches](#heading=h.jhqko1auqhjl)**. 
 > 
 > If you wish, you can duplicate this “base fbx” Collection to have a fresh backup on hand in case things go awry or you want to quickly redo. You can also hide the Ready armature(s) for the moment to better see the next step.
+{.is-success}
+
 
 
 
@@ -203,7 +205,7 @@ So now all which is visible is:
 
 
 
-> **It’s important that each of these has had Transforms applied. If you aren’t sure if you have done so earlier, do it again to be safe.**
+> It’s important that each of these has had Transforms applied. If you aren’t sure if you have done so earlier, do it again to be safe.**
 {.is-warning}
 
 
