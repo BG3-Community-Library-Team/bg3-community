@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-05-25T01:50:43.596Z
+date: 2024-05-25T02:13:33.372Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -283,4 +283,5 @@ This is achieved through the use of "handles" - unique identifiers that can be u
 
 ## MCM demo
 
-WIP: this demo will showcase every widget and also some use cases: listening to settings changes & other events, custom UI, custom UI + config
+This demo showcases the different types of settings options that can be created (all of them as of v1.5.0). The demo also shows how to insert custom UI elements into the menu and how to listen and react to MCM events:
+[MCM Demo.zip](/tutorials/frameworks/mcm/mcm_demo.zip)
