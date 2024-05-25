@@ -2,7 +2,7 @@
 title: Getting Started with Visual Modding
 description: Covers the basics of setting up the needed tools
 published: false
-date: 2024-05-25T14:10:25.729Z
+date: 2024-05-25T15:05:07.268Z
 tags: hair, visual, guide, head, beginner, armor
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -13,7 +13,7 @@ Looking to get into modding game assets like heads, hair, armor, etc.?
 
 This guide will try to focus on setting up the basics needed to get started. The focus is currently primarily on working with 3D assets.
 
-What it won't cover is whatever you want to do after the initial set up, i.e. the creation of visuals mods. These will be on their own pages, a list of which listed at the end of this guide.
+What it won't cover is what happens after the initial set up, i.e. the creation of visuals mods. These will be on their own pages, a list of which listed at the end of this guide.
 
 
 ## Tools overview
@@ -54,7 +54,8 @@ Other useful things:
 > (TODO: create/link page here on how to use various LSLIB functions)
 {.is-info}
 
-First, download the latest ExportTool zip file and make sure you have the listed .NET dependency first (linked on the release).
+### Initial setup
+To download, head over to Releases and grab the latest ExportTool zip. For those unfamiliar with Github, the releases will look like this. Just grab the zip and (if you need it) the .NET dependency via the link.
 
 ![2024-05-25_15_39_51.png](/tutorials/getting_started_visual/2024-05-25_15_39_51.png)
 
@@ -73,4 +74,40 @@ At the moment there isn't too much to set up, a few notes:
 
 
 ## Modder's Multitool
+
+> [Modder's Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool/releases)
+> use latest release
+{.is-success}
+
+> MMT is another way to unpak/pak game files and mods. Additionally it is used for indexing these game files for searching.
+{.is-info}
+
+### Initial Setup
+Same as with LSLIB, download from releases.
+
+Instructions for installation and configuration can also be found on the Github page [here](https://github.com/ShinyHobo/BG3-Modders-Multitool/wiki/Installation).
+
+For most cases you DO NOT need to mass unpack any game files. What you will want to do is index them so that you can use the "Search Index" option later.
+
+![mmt.png](/tutorials/getting_started_visual/mmt.png)
+
+
+## Blender
+
+> [Blender](https://www.blender.org/)
+> as of this writing most plugins will function with v4+ and can be used safely. Using at least v3.6+ is recommended.
+>
+>Note: you may have multiple versions installed on your PC
+{.is-success}
+
+> Blender is a free 3D modeling/animation software. Using plugins made for BG3 we can import/export GR2 files and edit them.
+{.is-info}
+
+### Important BG3 plugins
+
+[BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter)
+- This is a necessary plugin to import/export the games extracted GR2 files
+- Requires LSLIB and setting a path to it in its settings
+
+
 
