@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures
 description: aka Mr Bones Wild Guide
 published: true
-date: 2024-05-25T12:52:21.638Z
+date: 2024-05-25T22:00:38.747Z
 tags: tutorial, blender, head, skeleton, piercings, bones, armature
 editor: markdown
 dateCreated: 2024-05-25T09:33:53.534Z
@@ -179,7 +179,7 @@ For this next step we need to prepare the head meshes a bit.
 
 ### 4.2) Custom head prep
 
-**For our edited head**, we can first hide all submeshes but Head, Mouth, and Eyes. Then, select these and with the cursor in viewport: Shirt+D then Esc to duplicate, then Ctrl+J to join these duplicates. You can rename this one as well. I like to hide the rest of the submeshes at this point.
+**For our edited head**, we can first hide all submeshes but Head, Mouth, and Eyes. Then, select these and with the cursor in viewport: Shift+D then Esc to duplicate, then Ctrl+J to join these duplicates. You can rename this one as well. I like to hide the rest of the submeshes at this point.
 
 ![14_join-head-meshes-edited.png](/tutorials/custom_head_armatures/14_join-head-meshes-edited.png)
 
