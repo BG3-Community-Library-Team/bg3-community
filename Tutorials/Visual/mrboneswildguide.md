@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures
 description: aka Mr Bones Wild Guide
 published: true
-date: 2024-05-25T12:47:28.978Z
+date: 2024-05-25T12:48:36.821Z
 tags: tutorial, blender, head, skeleton, piercings, bones, armature
 editor: markdown
 dateCreated: 2024-05-25T09:33:53.534Z
@@ -16,12 +16,12 @@ dateCreated: 2024-05-25T09:33:53.534Z
 - [Overview](#overview)
   - [Table of Contents](#table-of-contents)
   - [Tools you need](#tools-you-need)
-  - [Setup](#1.-setup)
-  - [Importing to Blender](#2.-importing-to-blender)
-  - [Preparing the Skeleton](#3.-preparing-the-skeleton)
-  - [Adjusting the Skeleton](#4.-adjusting-the-skeleton)
-  - [Final Touches](#5.-final-touches)
-  - [Exporting](#6.-exporting)
+  - [Setup](#setup)
+  - [Importing to Blender](#importing-to-blender)
+  - [Preparing the Skeleton](#preparing-the-skeleton)
+  - [Adjusting the Skeleton](#adjusting-the-skeleton)
+  - [Final Touches](#final-touches)
+  - [Exporting](#exporting)
 
 ## Tools you need:
 > 
