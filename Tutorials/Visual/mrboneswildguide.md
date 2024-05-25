@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures
 description: aka Mr Bones Wild Guide
 published: false
-date: 2024-05-25T09:33:53.534Z
+date: 2024-05-25T09:40:06.064Z
 tags: head, skeleton, piercings, bones
 editor: markdown
 dateCreated: 2024-05-25T09:33:53.534Z
@@ -23,7 +23,7 @@ dateCreated: 2024-05-25T09:33:53.534Z
 [Final Touches](#finaltouches)
 [Exporting](#exporting)
 
-# Tools you need:
+## Tools you need:
 
 - Blender 3.6+ with these plugins:
 
@@ -48,7 +48,7 @@ If it seems like I’m going between a lot of different plugins and tools instea
 *Also disclaimer: not an expert, and there are more ways than one to do this; many roads leading to Rome and all that.*
 
 
-# Setup:
+## Setup:
 
 It’s good to first get the items we need before you start. So, we already have your edited head in Blender like so:
 
@@ -100,7 +100,7 @@ Find the _Base.dae in the directory on the left, and right click to Export, and 
 
 
 
-# Importing to Blender:
+## Importing to Blender:
 
 I like to set these up in their own Collections, so I will add them like so:
 
@@ -137,7 +137,7 @@ It’s going to import looking like this. It’s normal. Just apply transforms h
 ![10b_fbx-example.png](/tutorials/custom_head_armatures/10b_fbx-example.png)
 
 
-# Preparing the Skeleton:
+## Preparing the Skeleton:
 
 We finally use the Armature Tool! It can be found on the little vertical tabs between the viewport and outliner.
 
@@ -160,7 +160,7 @@ Now we can hit “Prepare Skeleton”. If all goes well, it should appear that n
 
 
 
-# Adjusting the Skeleton:
+## Adjusting the Skeleton:
 
 For this next step we need to prepare the head meshes a bit.
 
@@ -205,7 +205,7 @@ This is what mine looks like after adjusting (not much different):
 ![16_skele-adjusted.png](/tutorials/custom_head_armatures/16_skele-adjusted.png)
 
 
-# Final Touches:
+## Final Touches:
 
 The tool has adjusted the main head bones to the new facial geometry for us. If we want we could just leave it at that and use it already. BUT, the tool does not adjust the piercing or beard bones*. This we do by hand but it’s fairly easy.
 
@@ -307,7 +307,7 @@ For these just try to move them so that the base ball of the bone is somewhat fl
 
 
 
-# Exporting:
+## Exporting:
 
 First, in object mode click “Return bones to layer 0” *(Note for Blender 4+ this is no longer an option and is fine to ignore this step)*.
 
