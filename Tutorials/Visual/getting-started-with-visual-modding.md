@@ -2,7 +2,7 @@
 title: Getting Started with Visual Modding
 description: Covers the basics of setting up the needed tools
 published: false
-date: 2024-05-25T15:05:07.268Z
+date: 2024-05-25T16:46:04.552Z
 tags: hair, visual, guide, head, beginner, armor
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -109,5 +109,5 @@ For most cases you DO NOT need to mass unpack any game files. What you will want
 - This is a necessary plugin to import/export the games extracted GR2 files
 - Requires LSLIB and setting a path to it in its settings
 
-
+First, download 
 
