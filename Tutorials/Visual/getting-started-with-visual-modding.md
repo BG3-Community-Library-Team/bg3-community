@@ -2,7 +2,7 @@
 title: Getting Started with Visual Modding
 description: Covers the basics of setting up the needed tools
 published: false
-date: 2024-05-25T16:46:04.552Z
+date: 2024-05-25T20:38:16.238Z
 tags: hair, visual, guide, head, beginner, armor
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -19,6 +19,8 @@ What it won't cover is what happens after the initial set up, i.e. the creation 
 ## Tools overview
 
 > These are just listed here for quick reference. A step-by-step guide to set up follows below.
+>
+>maybe do something else with this
 {.is-success}
 
 
@@ -103,11 +105,46 @@ For most cases you DO NOT need to mass unpack any game files. What you will want
 > Blender is a free 3D modeling/animation software. Using plugins made for BG3 we can import/export GR2 files and edit them.
 {.is-info}
 
+Once we have Blender installed, it's time to get some core plugins.
+
 ### Important BG3 plugins
 
-[BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter)
-- This is a necessary plugin to import/export the games extracted GR2 files
-- Requires LSLIB and setting a path to it in its settings
+#### BG3/DOS2 Collada Exporter
+> [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter)
+> - This is a necessary plugin to import/export the games extracted GR2 files
+> - Requires LSLIB and setting a path to it in its settings
+{.is-info}
 
-First, download 
+
+First, download zip from Github, located here:
+
+![bg3plugin-gh.png](/tutorials/getting_started_visual/bg3plugin-gh.png)
+
+Now go into Blender, Edit -> Preferences -> Add-ons -> ...Install
+
+![blender-install-addon.png](/tutorials/getting_started_visual/blender-install-addon.png)
+
+Find the .zip you downloaded:
+
+![blender-install-addon-2.png](/tutorials/getting_started_visual/blender-install-addon-2.png)
+
+And hit Install Add-on. It should now appear in the list of Add-ons. 
+Now we need to edit its preferences. Expand the Add-on and enter here the path to the divine.exe inside your LSLIB directory.
+
+![blender-bg3plugin-prefs.png](/tutorials/getting_started_visual/blender-bg3plugin-prefs.png)
+
+If you wish you can tick "Convert to GR2 by Default" (otherwise it will always default to .dae export).
+
+#### LaughingLeader Blender Helpers
+> [LaughingLeader's Blender Helpers](https://github.com/LaughingLeader/laughingleader_blender_helpers)
+> - Necessary plugin for settings involved with export (i.e. Export Order of meshes, LOD Level/Distance, and some options for mesh type)
+> - Github page says for Blender 2.79 but it can be used with current versions
+{.is-info}
+
+
+Download and install the same way we did the BG3/DOS2 Collada Exporter.
+There aren't any specific add-on preferences to set here, and once installed you should see this in the Outliner under Object properties (yellow square):
+
+![blenderhelpers-outliner.png](/tutorials/getting_started_visual/blenderhelpers-outliner.png)
+
 
