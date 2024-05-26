@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-26T20:04:05.648Z
+date: 2024-05-26T20:05:50.821Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -133,7 +133,7 @@ Creating a class or a mod in general typically involves creating multiple .lsx f
 *<sub>You can either open files individually with some editor or just open the whole folder we created (on the desktop (bg3_mods) in [getting started](https://github.com/ghostboats/bg3_modders_guide/wiki/Getting-Started)), in visual studio code. If you wanted to match me so its easier to follow along, I did the latter and opened up the folder bg_mods. 
 ## ClassDescription.lsx
 Lets get started with ClassDescription.lsx since its the best jumping off point imo. We will start by opening up our mod folder in visual studio and navigating to the ClassDescription.lsx file we created. Lets take a look at a entry in the Shared.pak ClassDescription.lsx file for reference on how to start our ClassDescription.lsx:
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
     <version major="4" minor="0" revision="9" build="314"/>
@@ -206,7 +206,7 @@ As I said before, we are only going to concern ourselves with the most basic stu
 
                                
 Quickster\Public\Quickster\ClassDescription\ClassDescription.lsx
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
@@ -250,7 +250,7 @@ TODO EXPLAIN VERSION INFORMAION. FOR NOW I ADVISE YOU MAKE YOUR VERSION MAJOR SO
 Here is how my file looks after doing all the above:
 
 Quickster\Public\Quickster\ClassDescription\ClassDescription.lsx
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
     <version major="4" minor="3" revision="0" build="333"/>
@@ -281,7 +281,7 @@ That should be it for now. Remember this is the barebone skeleton of a class jus
 
 ## Progressions.lsx
 Navigate to the Progressions folder and open up Progressions.lsx. Lets look at the Progressions.lsx in the games Shared.pak:
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
     <version major="4" minor="0" revision="9" build="328"/>
@@ -336,7 +336,7 @@ Navigate to the Progressions folder and open up Progressions.lsx. Lets look at t
 The Progressions.lsx is a bit more intimidating imo but nothing you cant handle superstar 👍 Progression tables are used to basically give your class whatever things (passives, subclass selection, spell slots, etc) it needs when it levels up, or progresses. While you dont need to add all of these things, your class does require a level 1 progression to make it past the character creation page since its basically a level 1 level up menu. It will make more sense when we get more complex with it. Lets trim the fat again. Here is what we want to start with:
 
 Quickster\Public\Quickster\Progressions\Progressions.lsx
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
     <version major="4" minor="3" revision="0" build="333"/>
@@ -365,7 +365,7 @@ Quickster\Public\Quickster\Progressions\Progressions.lsx
 Here is how my file looks after doing all the above:
 
 Quickster\Public\Quickster\Progressions\Progressions.lsx
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
     <version major="4" minor="3" revision="0" build="333"/>
@@ -389,7 +389,7 @@ Quickster\Public\Quickster\Progressions\Progressions.lsx
 Here is an interesting little file. You should skip this and come back to this later after you get further in the guide (maybe after you finish reading  the section on subclasses). We dont technically need this file but I find it valuable since it helps display things our class gets during its progressions/level ups/character creation. I am going to add a quick ProgressionDescription entry to demonstrate what I mean. I will add an entry to show us getting spellslots in our class features on character creation. Lets make the file and add the following:
 
 Quickster\Public\Quickster\Progressions\ProgressionDescriptions.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="0" revision="4" build="444"/>
@@ -422,7 +422,7 @@ Someone more well versed in this could probably explain it better but essentiall
 This is the standard description required to get spellslots showing on CC. Make a new UUID for each description, they dont get used anywhere except for here. Take your progression table uuid for your class and drop it in both entries for ProgressionTableId. I generated new handles for the first entry but I used the handles from the base game for the second entry. We added this progressiondescription but we dont have the actual progression to add the spellslots on level. Lets go back to our progressions and make the update we need. I came back to add this section again after so my progressions has been fleshed out alot more. For understanding how to get the spell slots to appear in CC, you need to look at the passives attribute and the boosts attibute.
 
 Quickster\Public\Quickster\Progressions\Progressions.lsx
-```
+```xml
 ...
 <node id="Progression">
   <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ActionResource(SpeedForce,2,0);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma)"/>
@@ -456,7 +456,7 @@ Again, I cover progressiondescriptions.lsx very fast here. More below when I add
 The last file we need to touch. The AbilityDistributionPresets file is meant to set up your classes starting ability points. Let's grab an entry in the game data that we can copy and paste to our AbilityDistributionPresets.lsx. The entry is pretty self explanatory, just set the ability points how you want for your class. I set mine below. Remember the classUUID we generated before in ClassDescriptions.lsx? Make sure to put that for your ClassUUID here as well as generate another UUID for this AbilityDistributionPreset (less detail on repetitive stuff as we go along since I'm assuming you are following this guide from the beginning). 
 
 Quickster\Public\Quickster\CharacterCreationPresets\AbilityDistributionPresets.lsx
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
     <version major="4" minor="3" revision="0" build="333"/>
@@ -484,7 +484,7 @@ Quickster\Public\Quickster\CharacterCreationPresets\AbilityDistributionPresets.l
 
 If we were to load up our class right now, we would see a generic skull icon where our class is and some weird text, I think a bunch of ?'s since we haven't added any text to be displayed for our class and its description (and the icon but I will cover that later TODO). Do you remember earlier in our ClassDescriptions.lsx, we generated two handles? We need to put those to use. Inside that Localization/English folder, create your localization file for your mod, so for me Quickster.loca.xml. When you pack your mod, it should convert to a loca file. Let's take a look at my xml file.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
 	<content contentuid="heb6d4970g5238g4bb8ga932g9dd4357d61ed" version="1">Quickster</content>
