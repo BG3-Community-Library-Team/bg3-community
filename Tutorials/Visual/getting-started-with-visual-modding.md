@@ -1,15 +1,15 @@
 ---
-title: Getting Started with Visual Modding
+title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
-published: false
-date: 2024-05-26T12:46:03.373Z
-tags: hair, visual, guide, head, beginner, armor
+published: true
+date: 2024-05-26T12:51:27.710Z
+tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
 ---
 
-# WIP Getting Started with Visual Modding
-Looking to get into modding game assets like heads, hair, armor, etc.? 
+# WIP Getting Started with 3D Modding
+Looking to get into modding game assets like heads, hair, armor, weapons, etc.? 
 
 This guide will try to focus on setting up the basics needed to get started. The focus is currently primarily on working with 3D assets.
 
@@ -22,7 +22,7 @@ What it won't cover is what happens after the initial set up, i.e. the creation 
 > 	- Useful references
 >   - Searching the files
 > - **Next steps**
-> 	- Links to specific guides regarding how to proceed after initial setup
+> 	- Links to specific guides regarding how to proceed, depending on what area you would like to mod.
 
 ## Tools
 ### Tools Overview
@@ -183,7 +183,7 @@ Some notes about common settings:
 
 ## Next Steps
 
-So now we have the basics set up to start some modding. If you're thinking "that's great, now what" then below you'll find some pages regarding the specifics of modding these particular things.
+So now we have the basics set up to start some modding. If you're thinking "that's great, now what" then below you'll find links to pages detailing how to mod these things.
 
 ### Creating Hair Mods
 ...WIP
@@ -192,6 +192,9 @@ So now we have the basics set up to start some modding. If you're thinking "that
 ...WIP
 
 ### Creating Armor Mods
+...WIP
+
+### Creating Weapon Mods
 ...WIP
 
 ### Creating Accessories Mods
