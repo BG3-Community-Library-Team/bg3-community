@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-26T19:57:57.126Z
+date: 2024-05-26T20:04:05.648Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -534,7 +534,7 @@ Lets grab an entry from an existing Abilities.lsx entry and modify it for our us
 Here is how my file looks after doing all the above:
 
 Quickster\Public\Quickster\DefaultValues\Abilities.lsx
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
     <version major="4" minor="3" revision="0" build="333"/>
@@ -564,7 +564,7 @@ Did you load up your game all excited to see your new preselected options for ab
 Here is how my file looks after doing all the above:
 
 Quickster\Public\Quickster\Lists\AbilityLists.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
@@ -595,7 +595,7 @@ Lets grab an entry from an existing Skills.lsx entry and modify it for our use. 
 
 Here is how my file looks after doing all the above:
 Quickster\Public\Quickster\DefaultValues\Skills.lsx
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
     <version major="4" minor="3" revision="0" build="333"/>
@@ -625,7 +625,7 @@ Like Abilities.lsx and AbilityLists.lsx, we need to create a SkillLists.lsx for 
 Here is how my file looks after doing all the above:
 
 Quickster\Public\Quickster\Lists\SkillLists.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
@@ -646,7 +646,7 @@ Quickster\Public\Quickster\Lists\SkillLists.lsx
 We have created our files but we dont have anything that refers to them. Our progressions.lsx determines what sort of stuff we see upon character creation/levelups. Since we need to see this menu for bonus ability points when our character is created, we need this tied to our level one progression. Open up our progressions file we made before. I will cover this more later (TODO link), but we need to add a selector in our progressions table. Below you can see how I did it, but make sure to include your uuid's that you made for AbilityLists.lsx and SkillLists.lsx, not mine.
 
 Quickster\Public\Quickster\Progressions\Progressions.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
@@ -680,7 +680,7 @@ If you scrolled through the ClassDescriptions.lsx (or some other files that have
 We are going to want to start by making a folder called Tags and a .lsx file to go in it. The tags folder will be placed in your \Public\\{mod_name}\ directory and the .lsx file should be a new unique uuid, I generated 35add446-b710-4ad1-8dbc-36f99aecc6d5. Lets drop some starter info into our tag file and go over it.
 
 Quickster\Public\Quickster\Tags\35add446-b710-4ad1-8dbc-36f99aecc6d5.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
@@ -722,7 +722,7 @@ I have been trying to keep this section of the tutorial pretty isolated, in that
 Like I mentioned above, I want to add something unique for my class via its tag. Lets add a custom dialog option for the Quickster class for the cutscene at the beginning of the game, when the player clicks the brinepool with tadpoles in it. First we will need to locate the file that handles the dialog of that scene. You can find this in the Gustav\Story\Dialogs\Tutorial\TUT_Start_Brinepool.lsj. Its a pretty big file so I dont want to post the whole thing here but lets start by recreating the file path in our project and copying that lsj file over to it. Starting from my main project folder I made the folders so I now have this path Quickster\Mods\Quickster\Story\Dialogs\Tutorial\TUT_Start_Brinepool.lsj. Lets start by moving to the bottom of the file. Typically we can see the initial message down here, as well as the dialog options we get from it. We should see 3 child nodes that are uuids. We want to add our own custom one in here, for our class. I generated the uuid of 3c243807-5db3-4172-93a0-0dad00d710f5 so i made a child node for it.
 
 Quickster\Mods\Quickster\Story\Dialogs\Tutorial\TUT_Start_Brinepool.lsj
-```
+```json
 ...
 "Tags" : [ {} ],
 "UUID" : {"type" : "FixedString", "value" : "720e1070-fc2a-4262-85a3-7b288992af64"},
@@ -752,7 +752,7 @@ Quickster\Mods\Quickster\Story\Dialogs\Tutorial\TUT_Start_Brinepool.lsj
 Now that we have a possible new dialoug option set in place there, we need to add the actual details of that dialog option. It looks like each dialog piece needs a section in the TUT_Start_Brinepool.lsj, so lets add in a section for the uuid we just added.
 
 Quickster\Mods\Quickster\Story\Dialogs\Tutorial\TUT_Start_Brinepool.lsj
-```
+```json
 ...
 {
 	"AllowNodeGrouping" : {"type" : "bool", "value" : true},
@@ -938,7 +938,7 @@ Yeah, this thing is bulky. Lets keep it simple. You can see that the uuid I gene
 Going over all this code is something I will cover later like I said. For now, lets just get a working example of a dialog option being available only for our class. Lets take a closer look at the TaggedTexts entry in our lines we added above, which is where we want to add information about the tag we want associated with that dialog piece. We entered the text that appears in here but now we need to add the tag associated with that text, otherwise anyone can see it. Inside TaggedTexts, we can see `"Rules" : [ {} ],`. Our tag information needs to go into here. 
 
 Quickster\Mods\Quickster\Story\Dialogs\Tutorial\TUT_Start_Brinepool.lsj
-```
+```json
 ...
 "Rules" : [
    {
@@ -972,7 +972,7 @@ Selectors are found in our progressions.lsx files. We have already implemented a
 As I mentioned, there are different selector functions, but we are focusing on SelectPassives(). Like all selectors, we will need to generate a UUID for this as well as fill in the other parameters. I mentioned it in passing above but this UUID is actually the UUID of a list, in this case a list of passives. SelectPassives()'s selectors takes 3 parameters (TODO as far as i know). In this order they are UUID of the list of passives, the amount of options you can select from that list, and the name you use to link to a file we go over later [ProgressionDescriptions.lsx](https://github.com/ghostboats/bg3_modders_guide/wiki/Class-Creation#progressiondescriptionslsx). Look at my file below for an example after I added them in.
 
 Quickster\Public\Quickster\Progressions\Progressions.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
@@ -1007,7 +1007,7 @@ If you have been following along, you might have noticed the pattern, at least f
 Here is how my file looks after doing all the above:
 
 Quickster\Public\Quickster\Lists\PassiveLists.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
@@ -1042,7 +1042,7 @@ Earlier, I mentioned how [SelectPassives](https://github.com/ghostboats/bg3_modd
 Here is how my file looks after doing all the above:
 
 Quickster\Public\Quickster\Progressions\ProgressionsDescriptions.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
@@ -1119,7 +1119,7 @@ Our class is really starting to come together. Lets add more to our class to ful
 Boosts are for things our class should get, like maybe certain weapon proficiencies, different actions resources (sorcery points, etc), debuffs, buffs, ability changes, etc. You may remember we also applied boosts earler when we created the passives we selected on creation. Boosts can also be applied via spells/status. If we load up our class right now, we see that we dont have any sort of proficiency in anything (excluding the start proficiencies we get from whatever race you picked)! We suck! No matter, lets get good. Remember our Progressions.lsx file? Lets add in our new attribute. We can add multiple entries at once, just separated by a ;.
 
 Quickster\Public\Quickster\Progressions\Progressions.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
@@ -1146,7 +1146,7 @@ Quickster\Public\Quickster\Progressions\Progressions.lsx
 Lets cover two different attributes here that are fairly similar, PassivesAdded and PassivesRemoved. As the name implies these are passives effects our character will be receiving upon levelup (or removing in the case of PassivesRemoved). Okay, I will admit a bit of confusion on my part here. Boosts to me seems very similar to passives to me so its a bit odd that we dont see these passives being added straight to boosts. It seems like boosts handles things more specific to your class, for example editing basic features for my class like what weapons it can use, what sort of resources will this class use, etc falls into boosts while passives will refer to passives found in Passive.txt, which we cover right after this. You may be wondering when should you use this over putting a SelectPassives() or AddPassives() in a selector and just add the passive that way. I have no idea what is better practice. But to me it makes more sense to only use SelectPassives() in the selector if you need to select an option obviously but if you want to just give something to your class, dont use addpassives() in selectors. Just add it into PassivesAdded attribute. Also I think the bigger reason to use PassivesAdded attribute is when you arent using a passive list but just trying to add a singe passive, like I am in this case. Anyways, lets start by adding in our passive we want our class to get at level 1.
 
 Quickster\Public\Quickster\Progressions\Progressions.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
