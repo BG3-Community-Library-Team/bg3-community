@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-26T19:56:27.029Z
+date: 2024-05-26T19:57:57.126Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -1192,7 +1192,7 @@ At this point, covering new attribute/data options is some what pointless since 
  
 * **Conditions** : Specifies if the the passive should run. If StatFunctorsContext is what the passive is waiting for the activate, the condition is like making sure that once our passive triggers, we check if our condition is met which means the passive will work in this case. We have alot of checks, lets look at a bit of the beginning: "(context.HasContextFlag(StatsFunctorContext.OnCast) and ExtraAttackSpellCheck() and HasUseCosts('ActionPoint', true) and not ...". We can see first we are looking at our first StatFunctorContext, OnCast. It is checking if our context for this passive being triggered is OnCast as well as checking via the function ExtraAttackSpellCheck() which most likely checks if we have used a extra attack already (perhaps from multiclassing) and we check if we have an action point, and then we check if something is not but I cut off at that point as I think you get it. You can see grouped calls within parathenses but basically everything is just a chain of and statements.
 
-* **StatFunctors** : What actually happens if our conditions are met. Lets take a look at this somewhat complex entry. `IF(context.HasContextFlag(StatsFunctorContext.OnCast)):ApplyStatus(SELF,EXTRA_ATTACK_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus...`. First we check what StatFunctorContext parameter was called, so in this case if we were triggered from OnCast, we look for the :, what is after that is what will happen so in this case we apply a status to ourselves that gives an extra attack. After that we see a ; which indicated the start of a new statement, ie we are looking at what happens when OnStatusRemoved is called.
+* **StatFunctors** : What actually happens if our conditions are met. Lets take a look at this somewhat complex entry. `IF( context.HasContextFlag( StatsFunctorContext.OnCast)):ApplyStatus( SELF, EXTRA_ATTACK_Q, 100, 1);IF( context.HasContextFlag( StatsFunctorContext.OnStatusRemoved)):ApplyStatus...`. First we check what StatFunctorContext parameter was called, so in this case if we were triggered from OnCast, we look for the :, what is after that is what will happen so in this case we apply a status to ourselves that gives an extra attack. After that we see a ; which indicated the start of a new statement, ie we are looking at what happens when OnStatusRemoved is called.
 
 Like I mentioned, I have added a fairly complex entry for a passive to help show how we can format our entries correctly. Not all of our entries will look this bizarre but this is a good way to demonstrate how we can be triggering off multiple things and then how we process those triggers since we can have something different happen based of the trigger.
 
