@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-26T20:05:50.821Z
+date: 2024-05-26T20:08:16.540Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -1208,7 +1208,7 @@ Here we are, the final section of this basic class creation guide. The reason I 
 Lets make our way back to the ClassDescriptions.lsx, where we first entered our Quickster class. Here it is again for reference since its been a minute.
 
 Quickster\Public\Quickster\ClassDescription\ClassDescription.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
@@ -1242,7 +1242,7 @@ Quickster\Public\Quickster\ClassDescription\ClassDescription.lsx
 
 Subclasses follow the similar rules as a normal class when we define them in ClassDescriptions. They get their own node for ClassDescription. Lets take a look, it will look quite similar to above. Lets add two subclasses for our class that we can choose at character creation.
 Quickster\Public\Quickster\ClassDescription\ClassDescription.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
@@ -1311,7 +1311,7 @@ Make sure you generate UUID's and handles where needed and fix your Name as well
 Since im not to concerned about fleshing out my subclasses (since this is a tutorial and alot of what I would cover in making a subclass is essentially the same as making a class), I only intend to make a simple progression to show how a subclass progression entry is formatted. Much of what is entered is the same as a normal class progression as you will see. Here is my new progressions.lsx file after adding in subclass progressions for my main class.
 
 Quickster\Public\Quickster\Progressions\Progressions.lsx
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="3" revision="0" build="333"/>
@@ -1381,7 +1381,7 @@ Okay I intended to stop after subclasses but there is one more optional thing to
 We should start by making a new folder and file inside it. Inside the Public/{Mod Name}/ (so for me Public/Quickster/), you will want to make a folder called ActionResourceDefinitions and inside that make a file called ActionResourceDefinitions.lsx. Lets take a look at an entry I made for my class and go over it.
 
 Quickster\Public\Quickster\ActionResourceDefinitions\ActionResourceDefinitions.lsx
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
     <version major="4" minor="3" revision="0" build="333"/>
@@ -1407,7 +1407,7 @@ Quickster\Public\Quickster\ActionResourceDefinitions\ActionResourceDefinitions.l
 We have made a new action resource but right now it just floating around. Like everything we have done, we need to link it to our class, more specifially our progression for our class. Lets go back to our progressions.lsx and take a look at our main class progression since I want it to be applied to the class as a whole and not a specific subclass like I did with my spell slots. Here is my progressions after I attach my newly made action resource to my class.
 
 Quickster\Public\Quickster\Progressions\Progressions.lsx
-```
+```xml
 ...
  <node id="Progression">
   <attribute id="Boosts" type="LSString" value="ActionResource(SpeedForce,2,0);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons)"/>
@@ -1602,7 +1602,7 @@ Nothing unexpected here I think. We have one more thing we need to do, link this
 ##ClassDescriptions.lsx
 We only need to make a minor addition here, just one line. To assign a starting equipment to your class, you need to add the attribute `ClassEquipment` and make its value the same as the name of your equipment entry. So for quickster that would be EQP_CC_Quickster. Take a look.
 Quickster\Public\Quickster\ClassDescription\ClassDescription.lsx
-```
+```xml
 ...
 <node id="ClassDescription">
   <attribute id="BaseHp" type="int32" value="6"/>
