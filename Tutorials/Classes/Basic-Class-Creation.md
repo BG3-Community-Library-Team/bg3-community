@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-14T06:28:37.599Z
+date: 2024-05-26T19:43:14.516Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -70,7 +70,7 @@ This guide is intended to help you create a basic class mod from start to finish
 </details>
 
 <details>
-<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#boosts-and-passivesaddedremoved-progressionslsx%EF%B8%8F">Boosts and PassivesAdded/Removed (Progressions.lsx)</summary>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#boosts-and-passivesaddedremoved-progressionslsx%EF%B8%8F">Boosts and PassivesAdded/Removed (Progressions.lsx)</a></summary>
 <ul>
       <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#boosts">Boosts</a></li>
       <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#passivesaddedremoved">PassivesAdded/Removed</a></li>
