@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-26T19:51:40.398Z
+date: 2024-05-26T19:56:27.029Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -12,7 +12,95 @@ dateCreated: 2024-04-26T20:37:14.615Z
 This guide is intended to help you create a basic class mod from start to finish.
 
 # Goals
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#setup-for-modding%EF%B8%8F">Setup for modding</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#mod-folder-setup">Mod folder setup</a></li>
+</ul>
+</details>
 
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#create-the-most-basic-class-possible%EF%B8%8F">Create the most basic class possible</a></summary>
+<ul>
+    <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#classdescriptionslsx">ClassDescriptions.lsx</a></li>
+    <li>
+        <a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#progressionslsx">Progressions.lsx</a>
+        <ul>
+            <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#progressiondescriptionslsx">ProgressionDescriptions.lsx</a></li>
+        </ul>
+    </li>
+    <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#abilitydistributionpresetslsx">AbilityDistributionPresets.lsx</a></li>
+</ul>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#localizations%EF%B8%8F">Localizations</a></summary>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#pack-and-load-your-mod%EF%B8%8F">Pack and load your mod</a></summary>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#add-class-skillsproficiencies-and-bonus-ability-points%EF%B8%8F">Add class skills/proficiencies and bonus ability points</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#abilitieslsx">Abilities.lsx</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#abilitylistslsx">AbilityLists.lsx</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#skilllsx">Skills.lsx</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#skilllistlsx">SkillLists.lsx</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#linking">Linking</a></li>
+</ul>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#tags%EF%B8%8F">Tags</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#make-tag-file">Make a tag file</a></li>
+<li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#use-tag">Use Tag</a></li>
+</ul>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#Selectors%EF%B8%8F">Selectors</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#update-selector-attribute">Update selector attribute</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#passivelistslsx">PassiveLists.lsx</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#progressiondescriptionslsx-1">ProgressionDescriptions.lsx</a></li>
+</ul>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#boosts-and-passivesaddedremoved-progressionslsx%EF%B8%8F">Boosts and PassivesAdded/Removed (Progressions.lsx)</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#boosts">Boosts</a></li>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#passivesaddedremoved">PassivesAdded/Removed</a></li>
+</ul>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#useful-testing-step%EF%B8%8F">USEFUL TESTING STEP</a></summary>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#subclasses%EF%B8%8F">Subclasses</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#make-a-subclass">Make a Subclass</a></li>
+</ul>
+</details>
+
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#action-resources%EF%B8%8F">Action Resources</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#create-an-action-resource">Create an action resource</a></li>
+</ul>
+</details>
+  
+<details>
+<summary><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#starting-equipment%EF%B8%8F">Starting Equipment</a></summary>
+<ul>
+      <li><a href="https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation#coming-soon">Coming soon</a></li>
+</ul>
+</details>
 
 *<sub>If viewing on mobile, change to desktop view to avoid odd formatting</sub>
 # Setup for modding[⬆️](#goals)
@@ -1104,7 +1192,7 @@ At this point, covering new attribute/data options is some what pointless since 
  
 * **Conditions** : Specifies if the the passive should run. If StatFunctorsContext is what the passive is waiting for the activate, the condition is like making sure that once our passive triggers, we check if our condition is met which means the passive will work in this case. We have alot of checks, lets look at a bit of the beginning: "(context.HasContextFlag(StatsFunctorContext.OnCast) and ExtraAttackSpellCheck() and HasUseCosts('ActionPoint', true) and not ...". We can see first we are looking at our first StatFunctorContext, OnCast. It is checking if our context for this passive being triggered is OnCast as well as checking via the function ExtraAttackSpellCheck() which most likely checks if we have used a extra attack already (perhaps from multiclassing) and we check if we have an action point, and then we check if something is not but I cut off at that point as I think you get it. You can see grouped calls within parathenses but basically everything is just a chain of and statements.
 
-* **StatFunctors** : What actually happens if our conditions are met. Lets take a look at this somewhat complex entry. "IF(context.HasContextFlag(StatsFunctorContext.OnCast)):ApplyStatus(SELF,EXTRA_ATTACK_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus...". First we check what StatFunctorContext parameter was called, so in this case if we were triggered from OnCast, we look for the :, what is after that is what will happen so in this case we apply a status to ourselves that gives an extra attack. After that we see a ; which indicated the start of a new statement, ie we are looking at what happens when OnStatusRemoved is called.
+* **StatFunctors** : What actually happens if our conditions are met. Lets take a look at this somewhat complex entry. `IF(context.HasContextFlag(StatsFunctorContext.OnCast)):ApplyStatus(SELF,EXTRA_ATTACK_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus...`. First we check what StatFunctorContext parameter was called, so in this case if we were triggered from OnCast, we look for the :, what is after that is what will happen so in this case we apply a status to ourselves that gives an extra attack. After that we see a ; which indicated the start of a new statement, ie we are looking at what happens when OnStatusRemoved is called.
 
 Like I mentioned, I have added a fairly complex entry for a passive to help show how we can format our entries correctly. Not all of our entries will look this bizarre but this is a good way to demonstrate how we can be triggering off multiple things and then how we process those triggers since we can have something different happen based of the trigger.
 
