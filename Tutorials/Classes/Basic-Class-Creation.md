@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-26T20:38:23.369Z
+date: 2024-05-26T20:41:49.262Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -102,7 +102,6 @@ This guide is intended to help you create a basic class mod from start to finish
 </ul>
 </details>
 
-*<sub>If viewing on mobile, change to desktop view to avoid odd formatting</sub>
 # Setup for modding[⬆️](#goals)
 *<sub>Note that the mod I am creating in this example is called Quickster, for your reference.</sub>
 
@@ -1064,12 +1063,12 @@ Quickster\Public\Quickster\Progressions\ProgressionsDescriptions.lsx
 
 ## Passive.txt
 As our mod grows, we have to make sure we structure our project/mod folder and its subdirectories correctly. Before we start the next step take a moment to make a few folders. Inside our {mod_name}\Public\{mod_name} folder, we need to make a folder called Stats which has a folder called Generated in it. Inside Generated we want to make a folder called Data. And finally, inside that Data folder, we want to make a file called Passive.txt. Your data folder will be used for actions and effects you want characters to use/have. Things like interrupts, passives, spells, etc. You also probably noticed its not a xml/lsx file. This is the first text file we are looking at and its format is different from the lsx as expected. It simply contains entries, a type (in this case PassiveData), and data fields. In our PassiveLists.lsx, we gave our list two passives, Quickster_GottaRun and Quickster_LongJump so I will make an entry for each of them, like this:
-```
+```cpp
 new entry "Quickster_GottaRun"
 type "PassiveData"
 ```
 and
-```
+```cpp
 new entry "Quickster_LongJump"
 type "PassiveData"
 ```
@@ -1092,7 +1091,7 @@ I repeated this for my second entry but tailored to that passive. This meant add
 Here is how my file looks after doing all the above:
 
 Quickster\Public\Quickster\Stats\Generated\Data\Passive.txt
-```
+```cpp
 new entry "Quickster_GottaRun"
 type "PassiveData"
 data "DisplayName" "hc2cce261g6b48g4d12g8b06g8edacb8f5dea"
