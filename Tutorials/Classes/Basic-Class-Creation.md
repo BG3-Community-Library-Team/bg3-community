@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-26T20:36:36.420Z
+date: 2024-05-26T20:38:23.369Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -1172,7 +1172,7 @@ Quickster\Public\Quickster\Progressions\Progressions.lsx
 Here we can see that I added a new attribute, PassivesAdded and I gave it the value Quickster_Zoomies, which I will need to use when making our entry in our Passive.txt file, like we did before for LongJump and GottaRun. Previously since we were creating a passive list that we wanted players to choose from, we had to create some extra files like PassiveLists.lsx. In this case since its just a single passive that will automatically get added to our class, we dont need to add as much abstraction. PassivesRemoved isnt something I have used but I assume it works the same way in reverse. In our example for the quickster mod, I added Quickster_Zoomies, at level 1. But lets say at level 2 we need to replace this passive with a new one, idk maybe like an upgrading passive. This would mean we want to remove Quickster_Zoomies, in which case we would simply use the PassivesRemoved and refer to Quickster_Zoomies. Anyways, lets make this passive a bit more complex. Here is my entry in Passive.txt for Quickster_Zoomies. 
  
 Quickster\Public\Quickster\Stats\Generated\Data\Passive.txt
-```
+```cpp
 new entry "Quickster_Zoomies"
 type "PassiveData"
 data "DisplayName" "hcf90a672g10deg4b3egad4fg9094c6ac6224;1"
@@ -1452,7 +1452,7 @@ Before we even take a look at the games equipment file, you should get an idea o
 
 ### Weapon.txt
 Lets take a look at an entry I plan to give the class.
-```
+```cpp
 new entry "WPN_Dagger"
 type "Weapon"
 using "_BaseWeapon"
@@ -1486,7 +1486,7 @@ data "Proficiency Group" "HandCrossbows;MartialWeapons"
   
 ### Armor.txt
 Lets take a look at some entries I plan to give the class.
-```
+```cpp
 new entry "ARM_Boots_Leather"
 type "Armor"
 using "_Foot"
@@ -1516,7 +1516,7 @@ I think at this point you get the idea. Im not going to worry about adding any n
 ## Equipment.txt
 The game defines all starting gear for all entities in a file called Equipment.txt, which is found in the \Shared\Stats\Generated folder. Lets take a look at an entry or two.
 
-```
+```cpp
 new equipment "EQP_CC_Barbarian"
 add initialweaponset "Melee"
 add equipmentgroup
@@ -1577,7 +1577,7 @@ add equipment entry "OBJ_Backpack_CampSupplies"
 Here we can see entries for the Barbarian and and Bard respectively, as we can tell from their entry name. You can see the names of things in here are somewhat similar to the items we looks through earlier that we wanted to add to our class. Lets make a Equipment.txt file and add in a equipment entry for our class.
 
 Quickster\Public\Quickster\Stats\Generated\Equipment.txt
-```
+```cpp
 new equipment "EQP_CC_Quickster"
 add initialweaponset "Melee"
 add equipmentgroup
