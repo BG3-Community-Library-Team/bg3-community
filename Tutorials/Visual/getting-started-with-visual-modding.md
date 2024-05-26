@@ -2,7 +2,7 @@
 title: Getting Started with Visual Modding
 description: Covers the basics of setting up the needed tools
 published: false
-date: 2024-05-26T12:13:45.695Z
+date: 2024-05-26T12:46:03.373Z
 tags: hair, visual, guide, head, beginner, armor
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -13,7 +13,7 @@ Looking to get into modding game assets like heads, hair, armor, etc.?
 
 This guide will try to focus on setting up the basics needed to get started. The focus is currently primarily on working with 3D assets.
 
-What it won't cover is what happens after the initial set up, i.e. the creation of visuals mods. These will be on their own pages, a list of which listed at the end of this guide.
+What it won't cover is what happens after the initial set up, i.e. the creation of head/hair/armour/etc. mods. These will be on their own pages, a list of which listed at the end of this guide.
 
 ### Overview of Guide
 > - **Tools**
@@ -41,7 +41,7 @@ What it won't cover is what happens after the initial set up, i.e. the creation 
 > use latest beta release
 {.is-success}
 
-> LSLIB is used for many things. Unpacking game/mod paks, converting various game file formats, creating paks, etc. 
+> LSLIB is used for many things. Unpacking game/mod paks, converting between various game file formats and editable ones, creating paks, creating virtual textures, etc. 
 > 
 > (TODO: create/link page here on how to use various LSLIB functions)
 {.is-info}
@@ -71,7 +71,7 @@ At the moment there isn't too much to set up, a few notes:
 > use latest release
 {.is-success}
 
-> MMT is another way to unpak/pak game files and mods. Additionally it is used for indexing these game files for searching.
+> MMT is another way to unpak/pak game files and mods. Additionally it is used for indexing these game files for searching and extracting.
 {.is-info}
 
 ### Initial Setup
@@ -92,7 +92,7 @@ For most cases you DO NOT need to mass unpack any game files. What you will want
 >Note: you may have multiple versions installed on your PC
 {.is-success}
 
-> Blender is a free 3D modeling/animation software. Using plugins made for BG3 we can import/export GR2 files and edit them.
+> Blender is a free 3D modeling/animation software. Using plugins made for BG3 we can import/export the game's GR2 files and edit them.
 {.is-info}
 
 Once we have Blender installed, it's time to get some core plugins.
@@ -167,4 +167,32 @@ Some notes about common settings:
 
 ## Finding Assets
 
-...finish this later i am tired
+### References
+- References regarding Head, Hair, Beard, Body, Horns, etc. found [here](/Information/Meshes)
+	- Includes in-game names, file names, icons, and relevant UUIDs.
+
+### Searching
+
+- Using [BG3 Search Engine](https://bg3.norbyte.dev/search)
+
+- Using Modder's Multitool
+
+
+...WIP
+
+
+## Next Steps
+
+So now we have the basics set up to start some modding. If you're thinking "that's great, now what" then below you'll find some pages regarding the specifics of modding these particular things.
+
+### Creating Hair Mods
+...WIP
+
+### Creating Head Mods
+...WIP
+
+### Creating Armor Mods
+...WIP
+
+### Creating Accessories Mods
+...WIP
