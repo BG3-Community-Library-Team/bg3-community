@@ -2,21 +2,30 @@
 title: Getting Started with Visual Modding
 description: Covers the basics of setting up the needed tools
 published: false
-date: 2024-05-25T21:59:22.497Z
+date: 2024-05-26T12:13:45.695Z
 tags: hair, visual, guide, head, beginner, armor
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
 ---
 
-# Getting Started with Visual Modding
+# WIP Getting Started with Visual Modding
 Looking to get into modding game assets like heads, hair, armor, etc.? 
 
 This guide will try to focus on setting up the basics needed to get started. The focus is currently primarily on working with 3D assets.
 
 What it won't cover is what happens after the initial set up, i.e. the creation of visuals mods. These will be on their own pages, a list of which listed at the end of this guide.
 
+### Overview of Guide
+> - **Tools**
+> 	- Download and setup of main tools needed to extract, import, and edit assets
+> - **Finding assets**
+> 	- Useful references
+>   - Searching the files
+> - **Next steps**
+> 	- Links to specific guides regarding how to proceed after initial setup
 
-## Tools overview
+## Tools
+### Tools Overview
 
 > This first part covers the installation of a few core tools needed to get you up and running.
 > Includes:
@@ -88,10 +97,10 @@ For most cases you DO NOT need to mass unpack any game files. What you will want
 
 Once we have Blender installed, it's time to get some core plugins.
 
-### Important BG3 plugins
+### Important BG3 Plugins
 
-#### BG3/DOS2 Collada Exporter
-> [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter)
+#### [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter)
+
 > - This is a necessary plugin to import/export the games extracted GR2 files
 > - Requires LSLIB and setting a path to it in its settings
 {.is-info}
@@ -116,8 +125,8 @@ Now we need to edit its preferences. Expand the Add-on and enter here the path t
 
 If you wish you can tick "Convert to GR2 by Default" (otherwise it will always default to .dae export).
 
-#### LaughingLeader Blender Helpers
-> [LaughingLeader's Blender Helpers](https://github.com/LaughingLeader/laughingleader_blender_helpers)
+#### [LaughingLeader's Blender Helpers](https://github.com/LaughingLeader/laughingleader_blender_helpers)
+
 > - Necessary plugin for settings involved with export (i.e. Export Order of meshes, LOD Level/Distance, and some options for mesh type)
 > - Github page says for Blender 2.79 but it can be used with current versions
 {.is-info}
@@ -135,19 +144,27 @@ Some notes about common settings:
   - LOD0 set to 6m: highest quality, working mesh. Will be loaded in until after 6m.
   - LOD1 set to 12m: next lower quality, will load in after 6m. If there is a LOD3 it will load in after 12m.
 
+### Other Useful Plugins
 
-## Tools: Text Editing / File structure stuff
+- [Padme4000's Blender Add-ons](https://www.nexusmods.com/baldursgate3/mods/346)
+	- Includes add-ons for setting head export order, creating LODs, transferring normalmaps, and easy setting of transforms.
+- [BG3 Armature Tools](https://www.nexusmods.com/baldursgate3/mods/464)
+	- Tools for creating custom head skeletons for modded heads - tutorial for making these found [here](/Tutorials/Visual/mrboneswildguide)
+- [Outfit Builder](https://www.nexusmods.com/baldursgate3/mods/3683)
+	- Refit armours via shapekeys (requires shapekeyed body meshes - tutorial for making these found LINK HERE)
+- [Mesh Data Transfer](https://mmemoli.gumroad.com/l/tOKEh)
+	- Tool for transferring mesh data from a source mesh to a target mesh.
+- [Volno's Texture Toolbox](https://www.nexusmods.com/baldursgate3/mods/4310)
+	- not a plugin per se but a shader set useful for rendering an approximation of textures in Blender.
+
+
+## Tools: Text Editing / Mod Structure Stuff
 #### oh no
 > 
 > This section is covered pretty well over on the [Setting up a Dev Environment](/Tutorials/General/setting-up-a-dev-environment) page.
 {.is-info}
 
 
-
-## Tools: Other useful things
-
-[BG3 Search Engine](https://bg3.norbyte.dev/search)
-- Fast online search tool useful for searching the game files
-
+## Finding Assets
 
 ...finish this later i am tired
