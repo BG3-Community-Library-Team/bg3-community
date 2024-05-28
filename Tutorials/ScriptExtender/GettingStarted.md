@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-28T17:15:15.758Z
+date: 2024-05-28T17:24:46.839Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -299,7 +299,7 @@ Your console should open. This is where you will type your commands
 
 
 > Using `cmd` in **administrator** mode allows a lot of control over your system.
-> Only execute commands here when you are certain what they will do
+> Only execute commands here when you are certain about what they will do.
 {.is-warning}
 
 
