@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-05T08:05:03.929Z
+date: 2024-05-28T17:15:15.758Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -271,7 +271,7 @@ If you are not able to see this statement, you likely missed one of the steps.
 ## **4\. Symlinking**
 
 Every time you make a change to your mod, you have to exit the game, repack your mod, and launch the game again to see the effect.
-Symlinking is optional, although highly recommended, as it allows you conveniently avoid the aforementioned steps aka hot load your mod.
+Symlinking is optional, although **highly recommended**, as it allows you conveniently avoid the aforementioned steps and hot reload your mod.
 
 > If this sounds too complicated, you can also move your workspace into the `Mods` folder in `Data`. 
 > For this follow  [4.2\. Alternative to symlinking: Move your project to the Mods folder](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-42-alternative-to-symlinking-move-your-project-to-the-mods-folder)
