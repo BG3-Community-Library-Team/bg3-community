@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-05-28T17:24:46.839Z
+date: 2024-06-02T19:50:13.348Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -21,7 +21,7 @@ No prior knowledge about programming is required; however, please familiarize yo
 After reading this guide, feel free to follow the tutorial: [**Creating your First SE Mod (TBA)**](https://wiki.bg3.community/en/Tutorials/ScriptExtender/creating_your_first_se_mod)
 
 
-> If you are having trouble following this guide, feel free to join the DBTR discord linked [here](hhttps://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-9-useful-resources) for assistance
+> If you are having trouble following this guide, feel free to join the DBTR discord linked [here](https://discord.com/channels/1211056047784198186/1211069415605538887/1246912213646835843)
 > DBTR is a community discord. Keep in mind that everyone that may help you is a volunteer. Please read and follow the server rules.
 {.is-success}
 
