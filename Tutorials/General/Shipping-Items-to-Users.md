@@ -2,16 +2,16 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: true
-date: 2024-06-11T08:18:49.727Z
+date: 2024-06-11T09:17:09.825Z
 tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
 ---
 
 # Shipping Items to Users
-After you have spent the time to create a shiny new item, or even if you'd like to use a specific item from the vanilla game, you've probably wondered how to actually ship that item to your users. This guide will showcase four ways to do so, two of which utilizing systems that are available in the base-game, and two which utilize the Script Extender.
+After you have spent the time to create a shiny new item, or even if you'd like to use a specific item from the vanilla game, you've probably wondered how to actually ship that item to your users. This guide will showcase four ways to do so, two of which utilize systems that are available in the base-game, and two which utilize the Script Extender.
 
-However you end up shipping items to your users, it is recommended to create a custom container to house all of those items. Not only will it make it more efficient for updating your mod down the line, but it also makes it more convenient for users, and their inventories to stay organized. You can find a guide for how to create custom containers here on the wiki[TODO: port container template guide to the wiki], as well as custom container templates here: [Aether's Container Templates](https://www.nexusmods.com/baldursgate3/mods/8418)
+However you end up shipping items to your users, it is recommended to create a custom container to house all of those items. Not only will it make it more efficient for updating your mod down the line, it also makes it more convenient for users, and keeps their inventories organized. You can find a guide for how to create custom containers here on the wiki[TODO: port container template guide to the wiki], as well as custom container templates here: [Aether's Container Templates](https://www.nexusmods.com/baldursgate3/mods/8418)
 
 ## Item Shipment Framework
 The [Item Shipment Framework](https://www.nexusmods.com/baldursgate3/mods/8295) (ISF for short) is a script extender based mod, which allows mod authors to **directly ship vanilla or modded items into the camp chest or host's inventory**. It aims to provide a superior alternative to the Tutorial Chest and Vendor Inventory item shipment approaches.
@@ -66,14 +66,14 @@ This guide will show you how to create a Treasure Table, and place items into th
 
 > **Why you should use the Tutorial Chest:**
 > 
-> The Tutorial Chest offers a quick and easy way to ship items to your users, is a method that only takes a few minutes to set up, and is widely recognized as the standard way to ship items to users. 
+> The Tutorial Chest offers a quick and easy way to ship items to your users. It is a method that only takes a few minutes to set up, and is widely recognized as the standard way to ship items to users. 
 > * Users will have almost immediate access to your items during the Tutorial.
 > * It functions for users who do not have access to the Script Extender, such as people who play on Mac.
 <!-- {blockquote:.is-success} -->
 
 > **Why you shouldn't use the Tutorial Chest:**
 > 
-> The modding community has been placing items into this tutorial chest as a crutch to easily distribute items to users since the game was in beta, due to there not being an easier alternative to give items directly to users at the time. This has led many custom item mods to use the Tutorial Chest for item shipment, and has caused issues such as:
+> The modding community has been placing items into this tutorial chest as a crutch to easily distribute items to users since the game was in beta, due to there not being an easier alternative to give items directly to users at the time. This has led many custom item mods to use the Tutorial Chest for item shipment, which could cause issues such as:
 > * If too many mods that use the chest are installed, it will take multiple seconds to open it, and cause lag due to engine limitations.
 > * The chest is only located in the tutorial, leading to users being unable to acquire items from the chest after they've made it to Act 1. 
 > * It is a requirement to use a tutorial chest summoning mod if you wish to get an item from it after the tutorial.
@@ -125,13 +125,13 @@ This guide will show you how to place new items into the Treasure Table of any V
 
 > **Why you should use Vendor Inventories:**
 > * You can set a specific price that users pay to acquire your item.
-> * The method is more lore, and roleplay friendly.
-> * You can lock your items behind a price paywall, which means users will need to earn enough coin to use your item.
+> * The method is lore and roleplay friendly.
+> * You can lock your items behind a paywall, requiring users to earn enough coin to access and use your item.
 <!-- {blockquote:.is-success} -->
 
 > **Why you shouldn't use Vendor Inventories:**
 > 
-> While there are certainly meaningful pros to sending your items via Vendor Inventory lists, there are some downsides which can't be overlooked: 
+> While there are certainly meaningful pros to sending your items via Vendor Inventory lists, there are some significant downsides which can't be overlooked: 
 > * Sending items to your users via Trader Inventories will halt any chance of your mod being able to be uninstalled from the game once a playthrough has been started.
 > * Installing multiple mods which send items via vendor inventories will cause vanilla items to spawn less frequently during the long rest item rotation.
 > * This will lead to seeing the same modded items over and over again inside of different stores rather than new vanilla items.
@@ -141,7 +141,7 @@ This guide will show you how to place new items into the Treasure Table of any V
 
 Adding new items to Vendor inventories functions identically to adding new items to the Tutorial chest. Because of this, please refer back to the [Tutorial Chest](https://wiki.bg3.community/en/Tutorials/General/Shipping-Items-to-Users#tutorial-chest) section of this page, to learn how to create a `TreasureTable.txt` file for your mod.
 
-After you have created a new treasure table file, you'll need to paste the code block below into it. Afterwards, replace `1st_Trader_Treasuretable` with the treasure table of the Vendor you wish to place new items into. Then, replace `I_GameObject_Stats_Name` with the "Stats" name of your chosen item. You can find a picture showcasing how to find the "Stats" name for an item also in the Tutorial Chest section of this page.
+After you have created a new treasure table file, you'll need to paste the code block below into it. Afterwards, replace `1st_Trader_Treasuretable` with the treasure table of the Vendor you wish to place new items into. Then, replace `I_GameObject_Stats_Name` with the "Stats" name of your chosen item. You can find a picture showcasing how to find the "Stats" name for an item in the Tutorial Chest section above.
 
 ```txt
 new treasuretable "1st_Trader_Treasuretable"
@@ -164,10 +164,10 @@ new subtable "10,1"
 object category "I_OBJ_Camp_Pack",1,0,0,0,0,0,0,0
 ```
 
-To find the treasure table for a specific Vendor, please visit the [Notable NPCs](https://wiki.bg3.community/en/Information/Notable-NPCs) page's Vendors section, found on this wiki. 
+To find the treasure table for a specific Vendor, please visit the [Notable NPCs](https://wiki.bg3.community/en/Information/Notable-NPCs) page's Vendors section on this wiki. 
 ## Script Extender Console
 You can also spawn in items with the [Script Extender Console](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender#h-3-how-to-install-the-console), via a console command. However, this method is mostly useful for mod development, or testing of items, and should not be used to ship items to users.
 
 **Command:** `TemplateAddTo("", GetHostCharacter(), 1)`
 
-Above is the console command to spawn an item into your own inventory, simply paste it into the SE Console, place the UUID/MapKey for the item you want between the quotes, and change the `1` to the amount of the item you would like recieve.
+Above is the console command to spawn an item into active character's inventory, simply paste it into the SE Console, place the UUID/MapKey for the item you want between the quotes, and change the `1` to the amount of the item you would like to receive.
