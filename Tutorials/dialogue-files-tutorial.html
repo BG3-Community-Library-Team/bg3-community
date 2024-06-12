@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-06-12T08:03:36.381Z
+date: 2024-06-12T12:39:08.056Z
 tags: tutorial, scripting, data
 editor: ckeditor
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -13,9 +13,9 @@ dateCreated: 2024-06-12T08:03:36.381Z
 <h2>SO? What goes into dialogue in Baldur’s Gate 3?&nbsp;</h2>
 <p>Dialogue in the game is actually handled by a lot of files, some of which I’m still looking into, but the main ones this tutorial will focus on, and the ones you need to edit existing game dialogue are the following:&nbsp;</p>
 <ul>
-  <li>Dialog Timeline files&nbsp;</li>
-  <li>Dialog Scene files&nbsp;</li>
-  <li>DialogBinary files&nbsp;</li>
+  <li>Dialog Timeline files</li>
+  <li>Dialog Scene files</li>
+  <li>DialogBinary files</li>
 </ul>
 <p>And one you likely will not need to use as much, but is still important to know about:&nbsp;</p>
 <ul>
@@ -24,3 +24,28 @@ dateCreated: 2024-06-12T08:03:36.381Z
 <p>Which is a compilation of information and resources on all the dialogue files in the game, and may need to be added to if certain things in your dialogue mod are not triggering properly. I’m going to start you off by throwing you into the deep end.&nbsp;</p>
 <h3>WHAT ARE DIALOGUE TIMELINE FILES?&nbsp;</h3>
 <p>Dialogue timeline files are files that control the timing of all elements required to play dialogue and cinematics, including the actual voice lines, character animations, the emotions the characters use, camera angles and shot changes, and sound effects.</p>
+<p>These are very lengthy and complicated files, and you will absolutely need to use a script to update the start and endtimes of anything you add to them.&nbsp; I’ll be covering mine when I get into how to work with the files in earnest!</p>
+<p>First, though, I’m going to break down the elements that go into the dialogue timeline files.</p>
+<h3><strong>ANATOMY OF A DIALOGUE TIMELINE FILE</strong></h3>
+<p>Dialogue files are broken down into a several sections:</p>
+<h4><strong>Duration:</strong></h4>
+<p>The total duration of the dialogue file. Make sure you update this to account for anything you add to a dialogue file! Otherwise you may end up with something like <a href="https://drive.google.com/file/d/14EuxFC8-d7parUiTvuBVPjHmkN-4LrGn/view">THIS</a>.</p>
+<p>There’s not much to say about it beyond that, honestly! It’s one line, and yet I have managed to say 56 words about them anyway!</p>
+<h4><strong>Phases</strong></h4>
+<p>Dialogue phases are what control the actual timing of each dialogue node (i.e. each separate line of dialogue a character might have, marked by the captions for the dialogue changing! Cinematics are also counted as unique dialogue nodes within the game’s files.) These phases group together all elements in a single dialogue node, allowing them to play out in their proper timing when the dialogue node is called for.</p>
+<p>A good way to picture the dialogue timeline files in general is to imagine them like a movie! Each bit of dialogue is contained within that movie, and you can think of phases as being specific, very brief scenes within that movie you can skip to at any time, timestamped for your convenience.</p>
+<h5><strong>These phases have four elements:</strong></h5>
+<ul>
+  <li><strong>Duration:</strong> The total length of the dialogue or cinematic, and all elements included for them.</li>
+  <li><strong>PlayCount:</strong> The number of times the dialogue will play in a row. I’ve never seen this be anything but 1, likely because it’d just be playing the same dialogue multiple times in a row, which probably isn’t ideal! Although, hm. I guess you could use it for stuff like INFINITE KISS WYLL MOD. A not hypothetical and totally actually real WIP of mine, limited by the fact you cannot actually insert “infinity” as a character into the code (and indefinite recursion is almost always a bad idea in any case).</li>
+  <li><strong>DialogNodeID:</strong> Linked to the TimelinePhases section found later in the file, as well as the UUID for the specific dialogue node the phase is for, which can be found in the DialogBinary files. I’ll be covering DialogBinary files later, but for now, all you need to know is that this UUID will tell game’s files what group of dialogue elements to play, and when.</li>
+</ul>
+<p>You can find the specific phase number associated with that dialogue node via that UUID! That same UUID will link to a MapKey and associated MapValue number, again, in the TimelinePhases section. That MapValue number is linked to the PhaseIndex for the elements in another section I’ll be covering shortly: the EffectsComponents. That listed PhaseIndex number groups together all related elements for that dialogue node! And they’re the bulk of what you’ll be editing (or cloning) for your own dialogue mods.</p>
+<p>But, we’re getting ahead of ourselves.</p>
+<h4><strong>There’s two more things to cover for the Phases section:</strong></h4>
+<p><strong>QuestionHoldAutomation: </strong>I believe this is meant to trigger pauses for “question” dialogue nodes i.e. your character’s responses. I haven’t experimented with it much though! I’ve not seen any file that didn’t have QuestionHoldAutomation after every dialogue node yet, so you should probably keep that consistent in your own mods as well.</p>
+<p>Another thing to note is that the Phases are also in sequential order, and that order corresponds directly to the MapValue and PhaseIndex for the dialogue node! The timeline also starts counting the phases from 0 (which is how most animation/video program timelines handle things as well). Phase 0 is listed at the top of the timeline, and is also not given a PhaseIndex or MapValue number, because it’s unnecessary, being at the start of the timeline. This also means that the second listed phase will be PhaseIndex “1”, the third listed phase will be PhaseIndex “2,” and so on. You can actually mess things up by changing this order!</p>
+<p>When adding things to the timeline, I recommend appending everything to the end of each necessary section. This will keep your phase order consistent, and prevent you from having to update the entire timeline at once.</p>
+<p>Keep that in mind and you should be good! (And also save yourself just, a ton of work.)</p>
+<p><strong>EffectsComponents: </strong>Again, this is the bulk of what you’ll be getting into and editing for your dialogue mods. I’m going to be very thorough with these, and there’s a lot to go through, so strap in!</p>
+<p>EffectsComponents contain each element needed to properly play the dialogue, and they’re played in relation to each other according to the times for each element (usually under “StartTime” and “EndTime,” but some effects only list “Time,” which is still actually when the effect is supposed to start, they just don’t have equivalent end times, and are superseded by the following listed “Time.”)</p>
