@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-06-13T13:40:46.161Z
+date: 2024-06-14T01:28:26.982Z
 tags: tutorial, scripting, data
 editor: ckeditor
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -121,6 +121,56 @@ dateCreated: 2024-06-12T08:03:36.381Z
 <ul>
   <li>TLAnimation:</li>
   <li>TLEmotionEvent:</li>
+</ul>
+<figure class="image"><img src="/tutorials/tutorials/dialogue-files-tutorial/tlemotioneventvisual.png"></figure>
+<p>Emotion and emotion variation ID numbers are handled in the following pattern:</p>
+<ul>
+  <li>12 possible emotions, which are given ID numbers in powers of 2.</li>
+  <li>8 different .GR2 expression rigs for each of these emotions, the first five of which are closed mouth poses when the character is not speaking (this would be [Emotion]_A through [Emotion]_E), and the last three of which are open mouthed poses (this would be [Emotion]_X through [Emotion]_Y).</li>
+  <li>The ID/value numbers here roughly correspond to the final letter in the file name, only with the numbers starting at 0, like other parts of the timeline file. This means that, for example, a character’s Happy_B expression rig has the ID value of "1," Happy_C has the ID value of "2," and so on. The X, Y, and Z expression rigs still follow this pattern, making the ID numbers for them 23, 24, and 25 respectively.</li>
+</ul>
+<p><strong>A quick reference for Emotions and their variation ID numbers:</strong></p>
+<p>1 = Neutral Neutral_A = No variation, only the emotion is listed.</p>
+<ol>
+  <li>Neutral_B = 1</li>
+  <li>Neutral_C = 2</li>
+  <li>Neutral_D = 3</li>
+  <li>Neutral_E = 4</li>
+  <li>Neutral_X = 23</li>
+  <li>Neutral_Y = 24</li>
+  <li>Neutral_Z = 25</li>
+</ol>
+<p>2 = Happy Happy_A = No variation, only the emotion is listed.</p>
+<ol>
+  <li>Happy_B = 1</li>
+  <li>Happy_C = 2</li>
+  <li>Happy_D = 3</li>
+  <li>Happy_E = 4</li>
+  <li>Happy_X = 23</li>
+  <li>Happy_Y = 24</li>
+  <li>Happy_Z = 25</li>
+</ol>
+<p>4 = Thinking Thinking_A = No variation, only the emotion is listed.</p>
+<ol>
+  <li>Thinking_B = 1</li>
+  <li>Thinking_C = 2</li>
+  <li>Thinking_D = 3</li>
+  <li>Thinking_E = 4</li>
+  <li>Thinking_X = 23</li>
+  <li>Thinking_Y = 24</li>
+  <li>Thinking_Z = 25</li>
+</ol>
+<p>8 = Angry Angry_A = No variation, only the emotion is listed.</p>
+<ol>
+  <li>Angry_B = 1</li>
+  <li>Angry_C = 2</li>
+  <li>Angry_D = 3</li>
+  <li>Angry_E = 4</li>
+  <li>Angry_X = 23</li>
+  <li>Angry_Y = 24</li>
+  <li>Angry_Z = 25</li>
+</ol>
+<ul>
   <li>TLLookAtEvent:</li>
   <li>TLShowWeapon:</li>
 </ul>
