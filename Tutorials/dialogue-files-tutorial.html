@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-06-14T01:28:26.982Z
+date: 2024-06-15T23:09:23.827Z
 tags: tutorial, scripting, data
 editor: ckeditor
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -27,15 +27,15 @@ dateCreated: 2024-06-12T08:03:36.381Z
 <h3><strong>WHAT ARE DIALOGUE TIMELINE FILES?</strong></h3>
 <p>Dialogue timeline files are files that control the timing of all elements required to play dialogue and cinematics, including (but not limited to) the actual voice lines, character animations, the emotions the characters use, camera angles and shot changes, and sound effects.</p>
 <p>These are very lengthy and complicated files, and you will absolutely need to use a script to update the start and endtimes of anything you add to them.&nbsp; I’ll be covering mine when I get into how to work with the files in earnest!</p>
-<p>First, though, I’m going to break down the elements that go into the dialogue timeline files.</p>
+<p>First, though, I’m going to break down the elements that go into the dialogue timeline files.<br>&nbsp;</p>
 <h3><strong>ANATOMY OF A DIALOGUE TIMELINE FILE</strong></h3>
-<p>Dialogue files are broken down into a several sections:</p>
+<p>Dialogue files are broken down into a several sections:<br>&nbsp;</p>
 <h4><strong>Duration:</strong></h4>
-<p>The total duration of the dialogue file. Make sure you update this to account for anything you add to a dialogue file! Otherwise you may end up with something like <a href="https://drive.google.com/file/d/14EuxFC8-d7parUiTvuBVPjHmkN-4LrGn/view">THIS</a>.</p>
-<p>There’s not much to say about it beyond that, honestly! It’s one line, and yet I have managed to say 56 words about it anyway!</p>
-<h4><strong>Phases</strong></h4>
-<p>Dialogue phases are what control the actual timing of each dialogue node. A dialogue node refers to each separate line of dialogue a character might have, marked by the captions for the dialogue changing! Cinematics—the term the game uses for cutscenes and animations without voice lines—are also counted as unique dialogue nodes within the game’s files. These phases group together all elements for a single dialogue node, allowing them to play out in their proper timing when the dialogue node is called for.</p>
-<p>A good way to picture the dialogue timeline files in general is to imagine them like a movie! Each bit of dialogue is contained within that movie, and you can think of phases as being specific, very brief scenes within that movie you can skip to at any time, timestamped for your convenience.</p>
+<p>The total duration of the dialogue file. Make sure you update this to account for anything you add to a dialogue file! The elements you've added will not be able to play properly if you don't.</p>
+<p>There’s not much to say about it beyond that, honestly! It’s one line, and yet I have managed to say 61 words about it anyway!<br>&nbsp;</p>
+<h4><strong>Phases:</strong></h4>
+<p>Dialogue phases are what control the actual timing of each dialogue node. A dialogue node refers to each separate line of dialogue a character might have, generally marked by the captions for the dialogue changing! Cinematics—the term the game uses for cutscenes and animations without voice lines—are also counted as unique dialogue nodes within the game’s files. These phases group together all elements for a single dialogue node, allowing them to play out in their proper timing when the dialogue node is called for.</p>
+<p>A good way to picture the dialogue timeline files in general is to imagine them like a movie! Each bit of dialogue is contained within that movie, and you can think of phases as being specific, very brief scenes within that movie you can skip to at any time, timestamped for your convenience.<br>&nbsp;</p>
 <h5>These phases have four elements:</h5>
 <ul>
   <li><strong>Duration: </strong>The total length of the dialogue or cinematic, and all elements included for them.</li>
@@ -48,11 +48,10 @@ dateCreated: 2024-06-12T08:03:36.381Z
 </ul>
 <p>Another thing to note is that the Phases are in sequential order, and that order corresponds directly to the MapValue and PhaseIndex for the dialogue node! The timeline also starts counting the phases from 0 (which is how most animation/video program timelines handle things as well). Phase 0 is listed at the top of the timeline, and is also not given a PhaseIndex or MapValue number, because it’s unnecessary, being at the start of the timeline. This also means that the second listed phase will be PhaseIndex “1”, the third listed phase will be PhaseIndex “2,” and so on. You can actually mess things up by changing this order!</p>
 <p>When adding things to the timeline, I recommend appending everything to the end of each necessary section. This will keep your phase order consistent, and prevent you from having to update the entire timeline at once.</p>
-<p>Keep that in mind and you should be good! (And also save yourself just, a ton of work.)</p>
-<ul>
-  <li><strong>EffectsComponents: </strong>Again, this is the bulk of what you’ll be getting into and editing for your dialogue mods. I’m going to be very thorough with these, and there’s a lot to go through, so strap in!</li>
-</ul>
-<p>EffectsComponents contain each element needed to properly play the dialogue, and they’re played in relation to each other according to the times for each element (usually under “StartTime” and “EndTime,” but some effects only list “Time,” which is still actually when the effect is supposed to start, they just don’t have equivalent end times, and are superseded by the following listed “Time.”)</p>
+<p>Keep that in mind and you should be good! (And also save yourself just, a ton of work.)<br>&nbsp;</p>
+<h4><strong>EffectsComponents:</strong></h4>
+<p>Again, this is the bulk of what you’ll be getting into and editing for your dialogue mods. I’m going to be very thorough with these, and there’s a lot to go through, so strap in!</p>
+<p>EffectsComponents contain each element needed to properly play the dialogue, and they’re played in relation to each other according to the times for each element (usually under “StartTime” and “EndTime,” but some effects only list “Time,” which is still actually when the effect is supposed to start, they just don’t have equivalent end times, and are superseded by the following listed “Time.”)<br>&nbsp;</p>
 <h3>So, what are the “effects components” you can choose from?</h3>
 <p>So far, I’ve found the following effects components, each of which controls a different aspect of dialogue, and each of which has different set of attributes, which I’ll be going into shortly. For now, though, I’m just going to give a brief rundown of each:</p>
 <ul>
@@ -66,41 +65,41 @@ dateCreated: 2024-06-12T08:03:36.381Z
   <li><strong>TLSoundEvents:</strong> What sound effects play and when.</li>
   <li><strong>TLSwitchStageEvent:</strong> Mainly used for cinematics. Used when the characters need to change positions from their places in normal dialogue.</li>
   <li><strong>TLTransform:</strong> Mainly used for cinematics. I believe this controls changes in character position within the game world i.e. if they need to turn or walk from one place to another, but I need to do some more experimenting with it.</li>
-  <li><strong>TLShot:</strong> Used to time camera position switches.</li>
+  <li><strong>TLShot:</strong> Used to time camera position switches.<br>&nbsp;</li>
 </ul>
 <h2><strong>OK, SO, I KNOW THE BASICS. WHAT IS GOING ON WITH THOSE ATTRIBUTES, THOUGH?</strong></h2>
-<p>Each effects component node is broken down into several attributes, as well as the times that each component and attribute will trigger and end. This section of the tutorial will contain example code blocks breaking down each effects component by their attributes, explaining what each of them means as we go. Keep in mind that not every possible attribute for these components will be present every time! Which means some possible attributes the game can process may not be listed in this tutorial yet. If you find one I missed, please let me know!</p>
+<p>Each effects component node is broken down into several attributes, as well as the times that each component and attribute will trigger and end. This section of the tutorial will contain example code blocks breaking down each effects component by their attributes, explaining what each of them means as we go. You can find an .lsx file with all of this information here [link], if you need to copy/paste, but this wiki will contain all of the same information via screenshots of the code blocks in that .lsx file.<br><br>Keep in mind that not every possible attribute for these components will be present every time! Which means some possible attributes the game can process may not be listed in this tutorial yet. If you find one I missed, please let me know!</p>
 <p>This section is likely going to be very long. If you’d like to find a breakdown of a specific effects component, you can hit Ctrl+F to search for the name of the component you’re looking for.</p>
-<p>To start, though, I’ll be explaining some basic attributes most components have, some of which are present every time:</p>
+<p>To start, though, I’ll be explaining some basic attributes most components have, some of which are present every time:<br>&nbsp;</p>
 <h4>Type:</h4>
-<p>Pretty self explanatory. The type of effects component, which will be one of the kinds of components I listed above.</p>
+<p>Pretty self explanatory. The type of effects component, which will be one of the kinds of components I listed above.<br>&nbsp;</p>
 <h4>PhaseIndex:</h4>
 <p><code>&lt;attribute id="PhaseIndex" type="int64" value="1" /&gt;</code></p>
-<p>As mentioned above, the PhaseIndex refers to every component necessary for a given dialogue node. All components with the same PhaseIndex number belong to the same dialogue node! For your own mods, you’ll want to make sure this number is unique, sequential, and is tied to the same MapValue number and placement in the TimelinePhases and Phases sections, respectively.</p>
-<p>Also, again, the first dialogue node on the timeline will not have a PhaseIndex listed for its components. Its PhaseIndex number is actually 0, but, being at the start of the timeline, the game’s code doesn’t require it to be listed.</p>
+<p>As mentioned above, the PhaseIndex refers to every component necessary for a given dialogue node. All components with the same PhaseIndex number belong to the same dialogue node! For your own mods, you’ll want to make sure this number is unique, sequential, and is tied to the same MapValue number and placement in the TimelinePhases and Phases sections, respectively. You'll also want to make sure all elements you add for your dialogue have the same PhaseIndex, so they'll be grouped together, and play properly as a unit.</p>
+<p>Also, again, the first dialogue node on the timeline will not have a PhaseIndex listed for its components. Its PhaseIndex number is actually 0, but, being at the start of the timeline, the game’s code doesn’t require it to be listed.<br>&nbsp;</p>
 <h4>StartTime and EndTime:</h4>
 <p><code>&lt;attribute id="StartTime" type="float" value="7.42" /&gt;</code></p>
 <p><code>&lt;attribute id="EndTime" type="float" value="9.21491" /&gt;</code></p>
-<p>Pretty self-explanatory! The start and end time each component will play within the timeline. A few things to note, though:</p>
+<p>Pretty self-explanatory! The start and end time for each component within the phase, according to its placement within the whole dialogue timeline. A few things to note, though:</p>
 <ul>
   <li>The first phase on the timeline, again, starts at 0, so it generally does not list start times for its components, unless one of those components is meant to start partway through the dialogue. It usually will list end times, though.</li>
   <li>The start and end times listed do not actually have to match the full length of the phase! You can actually add pauses at the start and end of dialogue and cinematics by adding a little extra time in the duration of the phase, and adjusting your start and end times to add the pauses where you’d like. You will want to make a note of how much time you added, though, so you can make sure the overall timeline duration matches the actual length of the phases you’ve included.</li>
-  <li>These start and end times are placed within a massive timeline, and they are, again, sequential. Once again, it helps to imagine the dialogue timeline like a movie, and the phases in the timeline are little chapters you can skip to within it, with each component playing at specific times within that chapter.</li>
+  <li>These start and end times are placed within a massive timeline, and they are, again, sequential. Once again, it helps to imagine the dialogue timeline like a movie, and the phases in the timeline are little chapters you can skip to within it, with each component playing at specific times within that chapter.<br>&nbsp;</li>
 </ul>
 <h4>Time:</h4>
 <p>Some components list start and end times, and then are further broken down into “Time” elements. These are seen in components like TLEmotionEvent and TLLookAtEvent, among others. I mentioned this above,&nbsp; but to reiterate, the “Time” attribute refers to when a certain effect is supposed to start, they just don’t have equivalent end times. Instead, the next instance of the “Time” attribute will replace the previous effect listed within the component.</p>
 <p>As an example, the characters’ emotions during dialogue are usually handled with the “Time” attribute. Each “Time” attribute will set the character’s expression, starting at that time. The next “Time” attribute will replace the previous expression at the listed time.</p>
 <p>The StartTime, EndTime, and Time attributes are all handled <i>extremely </i>precisely, with times often being very, very tiny fractions of a second.</p>
 <p>This is extremely helpful with facial expressions in particular— each character actually only has around 8 expression rigs for any given emotion, and the total number they have is actually relatively small. But by using the precise timing the game allows, it almost never feels like they’re using so few expression rigs. You can make extremely complex sequences of emotions using this method, making the characters’ expressions feel unique, despite how few rigs they actually use.</p>
-<p>I’ll be getting more into the TLEmotionEvent components later! But, for now, there’s still three common elements to talk about:</p>
+<p>I’ll be getting more into the TLEmotionEvent components later! But, for now, there’s still three common elements to talk about:<br>&nbsp;</p>
 <h4>IsSnappedToEnd:</h4>
 <p><code>&lt;attribute id="IsSnappedToEnd" type="bool" value="True" /&gt;</code></p>
-<p>I believe this snaps the components to the end of the phase. This is often set to “True,” but some components are missing the attribute entirely. This is likely because the default is False, and is not necessary to list when the component doesn’t need to be snapped to the end of the phase.</p>
+<p>I believe this snaps the components to the end of the phase. This is often set to “True,” but some components are missing the attribute entirely. This is likely because the default is False, and is not necessary to list when the component doesn’t need to be snapped to the end of the phase.<br>&nbsp;</p>
 <h4>ID:</h4>
 <p><code>&lt;attribute id="ID" type="guid" value="49292981-224c-4feb-a51b-fa7bf0fb46f3" /&gt;</code></p>
 <p>The unique UUID for the specific effects component you’re looking at. It’s generally a good idea to generate a new one for each effects component you add, but the dialogue timeline files don’t seem to be able to reference UUIDs from other timeline files, so, as far as I can tell, changing these IDs is only strictly necessary when cloning effects components within the same timeline file.</p>
-<p>You do also have to be careful—other UUIDs within an effects component are connected to other things, like animations, camera positions, and the characters performing the listed effects.</p>
-<p>Which brings me to the last common attribute:</p>
+<p>You do also have to be careful—other UUIDs within an effects component are connected to other things, like animations, camera positions, and the characters performing the listed effects. Make sure you only generate a new UUID for this “ID” attribute, and that all other UUIDs are the same as the elements (like camera positions, animations, etc) you want to reference.</p>
+<p>Which brings me to the last common attribute:<br>&nbsp;</p>
 <h4>Actor:</h4>
 <p><code>&lt;node id="Actor"&gt;</code></p>
 <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;attribute id="UUID" type="guid" value="55bce89d-670d-f7c9-6e3b-38ebe3322b32" /&gt;</code></p>
@@ -193,3 +192,5 @@ dateCreated: 2024-06-12T08:03:36.381Z
   <li>…..</li>
 </ul>
 <p>&nbsp;</p>
+<p><strong>TimelineSpeakers:</strong></p>
+<p>These, along with the peanut</p>
