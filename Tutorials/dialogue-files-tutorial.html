@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-06-16T08:28:54.232Z
+date: 2024-06-16T10:12:08.615Z
 tags: tutorial, scripting, data
 editor: ckeditor
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -58,7 +58,8 @@ dateCreated: 2024-06-12T08:03:36.381Z
 <p>Speaker 0 is generally the person your character is talking to, with Speaker 1 being your character. These roles are also referenced in the corresponding DialogBinary files. Speaker roles after that may be listed if narration is present, or if other characters beyond the character you’re speaking to have lines (like when other companions have reactions during a conversation). You’ll want to cross reference these TimelineSpeaker UUIDs with the same UUIDs in the DialogBinary files, so you’ll know what character is being referenced by them.</p>
 <p><br>To give you an example, the UUID for Speaker 0 in the above screenshot actually refers to Lae’zel in the timeline file for her InParty dialogue. You can cross reference that UUID in the corresponding DialogBinary file to find her global character UUID, as well as see the speaker number she's given, which will match the one for her in the timeline file.</p>
 <p>Anything that references her UUID from the TimelineSpeakers section is related to her. So, if that UUID is listed as the “Actor” for a voice line (referring to which character is performing what element of the dialogue), that voice line will be spoken by her. If it's listed under a TLEmotionEffect component, then that component controls her expressions in the dialogue. If she's being referred to as the Target in a TLLookAtEvent component, then she's the character being looked at.</p>
-<p>If you're not sure what any of these terms mean, don't worry! They'll all be covered when we get to the EffectsComponents section of the tutorial.</p>
+<p>The most important thing to know about the Timeline Speakers, though, is that you want to make sure any components you copy over from other files are updated to use the Timeline Speaker UUIDs from the file you copied them into. If you don't update them, the components you added won't be able to reference the characters properly, and you could end up something like <a href="https://drive.google.com/file/d/1EIVmKs6qtHvgeUopn5bnDr7q6VgYhQ7w/view">THIS</a>. Which is not ideal, for sure.</p>
+<p>If you're not sure what any of these terms mean, don't worry! They'll all be covered when we get to the EffectsComponents section of the tutorial, and I'll also be covering how to update timeline speaker UUIDs when we actually start working with the files.</p>
 <p>Let's continue on with the other sections, first, though.<br>&nbsp;</p>
 <h4>TimelineActorData:</h4>
 <p>This section contains several long lists mapping out each effects component in the timeline and the UUIDs of the characters performing them, pulled from both the TimelineSpeakers and PeanutSlotIdMap sections, the latter of which I'll be covering shortly. However, I think it's likely these lists are used for Larian's game engine, to allow it to reference the components, and don't seem to do much in the game itself. Even leaving these MapKey lists entirely unedited didn't change anything, despite adding new components to the dialogue timeline. All dialogue played as normal, even the newly added components. For this reason, I actually don't think modders need to worry about updating the MapKey lists here at all.</p>
@@ -84,6 +85,7 @@ dateCreated: 2024-06-12T08:03:36.381Z
   <li><strong>TLAnimation:</strong> The animations used by the characters. Mainly used for cinematics, but can be used for unique facial expression overrides as well. A note: the animations used during dialogue outside of cinematics are generally tied to the voice lines itself, and not referenced in the timeline files. This is for animations not tied to voice lines directly.</li>
   <li><strong>TLEmotionEvent:</strong> Controls the facial expressions used for the character referenced in the “Actor” section of the component.</li>
   <li><strong>TLLookAtEvent:</strong> Controls where the character is looking, as well as whether their eyes are open or closed, head and body turning, etc.</li>
+  <li><strong>TLMaterial:</strong> Used for temporary material overrides, like for Karlach's glow map colors during romance scenes.</li>
   <li><strong>TLShowWeapon:</strong> Controls whether weapons and instruments are shown during the dialogue or cinematic, and when their visibility is toggled on and off.</li>
   <li><strong>TLShowPeanuts:</strong> Controls whether the characters standing behind your character during dialogue are shown or not. (Again, like the peanut gallery!)</li>
   <li><strong>TLSoundEvents:</strong> What sound effects play and when.</li>
