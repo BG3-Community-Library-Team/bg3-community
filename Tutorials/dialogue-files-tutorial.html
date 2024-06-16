@@ -2,13 +2,13 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-06-15T23:09:23.827Z
+date: 2024-06-16T05:43:39.318Z
 tags: tutorial, scripting, data
 editor: ckeditor
 dateCreated: 2024-06-12T08:03:36.381Z
 -->
 
-<h1>A How-To tutorial about dialogue files</h1>
+<h1>Editing Dialogue and Cinematics: A How-To Guide</h1>
 <p>HI!!!! Welcome to Milo Magnetuning’s guide to dialogue files! There’s a lot to cover, and venturing into these files makes you very brave indeed, but I’ll be here to guide you along the way.</p>
 <p>Let’s get started, shall we?</p>
 <h2><strong>SO? WHAT GOES INTO DIALOGUE IN BALDUR’S GATE 3?</strong></h2>
@@ -24,12 +24,15 @@ dateCreated: 2024-06-12T08:03:36.381Z
 </ul>
 <p>Which is a compilation of information and resources on all the dialogue files in the game, and may need to be added to if certain things in your dialogue mod are not triggering properly.</p>
 <p>I’m going to start you off by throwing you into the deep end.</p>
-<h3><strong>WHAT ARE DIALOGUE TIMELINE FILES?</strong></h3>
-<p>Dialogue timeline files are files that control the timing of all elements required to play dialogue and cinematics, including (but not limited to) the actual voice lines, character animations, the emotions the characters use, camera angles and shot changes, and sound effects.</p>
-<p>These are very lengthy and complicated files, and you will absolutely need to use a script to update the start and endtimes of anything you add to them.&nbsp; I’ll be covering mine when I get into how to work with the files in earnest!</p>
-<p>First, though, I’m going to break down the elements that go into the dialogue timeline files.<br>&nbsp;</p>
+<h2><strong>WHAT ARE DIALOGUE TIMELINE FILES?</strong></h2>
+<p>Dialogue timeline files are files that control the timing of all elements required to play dialogue and cinematics, including (but not limited to) the actual voice lines, character animations, the emotions the characters use, camera angles and shot changes, and sound effects. They control all aspects of dialogue that require full animation and timing—which does not include moments where your character picks dialogue options! Those are covered in the DialogBinary files, which I'll be explaining more later.</p>
+<p>First, though, I want to get into the timeline files. These are very lengthy and complicated files, and you will absolutely need to use a script to update the start and endtimes of anything you add to them. I’ll be covering mine when I get into how to work with the files in earnest!</p>
+<p>I'm starting here for two reasons: one, the timeline files currently have the least documentation—I have not been able to find <i>any </i>other resources on them, actually. The information on timeline files in this tutorial was compiled entirely from me experimenting and working with them over the last few months. The other reason is that really, these <i>are </i>the hardest files to work with—but once you've gotten a good grasp on how they work, everything that comes after will be a breeze.</p>
+<p>(You can, however, find the breakdowns of other kinds of dialogue files in the navigation on this page! If you're getting overwhelmed by the timeline files, DialogBinary files might be a good place to start instead. Once again, venturing into these files makes you a brave soul indeed—but I believe in you all the way! Just, make sure to take breaks when you need to.)</p>
+<p>…Now, let's get into it! I'll start by breaking down the elements that go into the timeline files.<br>&nbsp;</p>
 <h3><strong>ANATOMY OF A DIALOGUE TIMELINE FILE</strong></h3>
-<p>Dialogue files are broken down into a several sections:<br>&nbsp;</p>
+<p>Dialogue timeline files are broken down into a several sections, the biggest of which—EffectsComponents—I'll be covering last. The EffectsComponents section contains most of the actual information about the dialogue being played, so it is both extremely lengthy, and references all the other sections in the timeline files. Covering the others first will make the EffectsComponents section make a lot more sense. I'll be covering each section in the order they appear in the files, skipping the EffectsComponents for now.&nbsp;</p>
+<p>These sections are:<br>&nbsp;</p>
 <h4><strong>Duration:</strong></h4>
 <p>The total duration of the dialogue file. Make sure you update this to account for anything you add to a dialogue file! The elements you've added will not be able to play properly if you don't.</p>
 <p>There’s not much to say about it beyond that, honestly! It’s one line, and yet I have managed to say 61 words about it anyway!<br>&nbsp;</p>
@@ -48,7 +51,19 @@ dateCreated: 2024-06-12T08:03:36.381Z
 </ul>
 <p>Another thing to note is that the Phases are in sequential order, and that order corresponds directly to the MapValue and PhaseIndex for the dialogue node! The timeline also starts counting the phases from 0 (which is how most animation/video program timelines handle things as well). Phase 0 is listed at the top of the timeline, and is also not given a PhaseIndex or MapValue number, because it’s unnecessary, being at the start of the timeline. This also means that the second listed phase will be PhaseIndex “1”, the third listed phase will be PhaseIndex “2,” and so on. You can actually mess things up by changing this order!</p>
 <p>When adding things to the timeline, I recommend appending everything to the end of each necessary section. This will keep your phase order consistent, and prevent you from having to update the entire timeline at once.</p>
-<p>Keep that in mind and you should be good! (And also save yourself just, a ton of work.)<br>&nbsp;</p>
+<p>Keep that in mind and you should be good! (And also save yourself just, a ton of work.)</p>
+<h4><br>TimelineSpeakers:&nbsp;</h4>
+<p>Contains the UUIDs of which character is performing what action, and which character is being referenced in general! These UUIDs are specific to a given set of dialogue files, and are linked to in the corresponding DialogBinary file for the timeline, which will then be connected to either the global UUID for the speaking character, or the UUID for the player character.</p>
+<p>The structure of this section is arranged into “Objects” followed by MapKeys and MapValues, the former of which refers to what speaker number a character was given, and the second is the aforementioned UUID referring to the character.</p>
+<p>Speaker 0 is generally the person your character is talking to, with Speaker 1 being your character. These roles are also referenced in the corresponding DialogBinary files. Speaker roles after that may be listed if narration is present, or if other characters beyond the character you’re speaking to have lines (like when other companions have reactions during a conversation). You’ll want to cross reference these TimelineSpeaker UUIDs with the same UUIDs in the DialogBinary files, so you’ll know what character is being referenced by them.</p>
+<p><br>To give you an example, the UUID for Speaker 0 in the above screenshot actually refers to Lae’zel in the timeline file for her InParty dialogue. You can cross reference that UUID in the corresponding DialogBinary file to find her global character UUID, as well as see the speaker number she's given, which will match the one for her in the timeline file.</p>
+<p>Anything that references her UUID from the TimelineSpeakers section is related to her. So, if that UUID is listed as the “Actor” for a voice line (referring to which character is performing what element of the dialogue), that voice line will be spoken by her. If it's listed under a TLEmotionEffect component, then that component controls her expressions in the dialogue. If she's being referred to as the Target in a TLLookAtEvent component, then she's the character being looked at.</p>
+<p>If you're not sure what any of these terms mean, don't worry! They'll all be covered when we get to the EffectsComponents section of the tutorial.</p>
+<p>Let's continue on with the other sections, first, though.</p>
+<h4>TimelineActorData:</h4>
+<p>This section contains several long lists mapping out each effects component in the timeline and the UUIDs of the characters performing them, pulled from both the TimelineSpeakers and PeanutSlotIDMap sections, the latter of which I'll be covering shortly. However, I think it's likely these lists are used for Larian's game engine, to allow it to reference the components, and don't seem to do much in the game itself. Even leaving these MapKey lists entirely unedited didn't change anything, despite adding new components to the dialogue timeline. All dialogue played as normal, even the newly added components. For this reason, I actually don't think modders need to worry about updating the MapKey lists here at all.</p>
+<p>There <i>are,</i> however, two actor types contained within this section you will likely need to update, especially when cloning elements from other files—the "scenecam" and “scenelighting” actors. These are not characters, but instead refer to specific camera angles and lights necessary for the dialogue, and are also often located in the corresponding Dialogue Scene files, which will be covered later. If the camera angles referred to in a dialogue node are not present in the TimelineActorData section, the game will not be able to properly reference the camera. This is, in highly technical terms—bad. It won't damage your game or your hardware (Baldur's Gate 3 is very forgiving when it comes to modding issues, which is good, because this is not true of all games. *<i>Screams in Sims 2*</i>). It will, however, likely lead to the game's camera getting pinned to the ground at your character's feet, which is not ideal, especially if you want to see what's going on. If you're having trouble with that, make sure you've got all the necessary scenecams and scenelighting you need in this section of the file.</p>
+<p>&nbsp;</p>
 <h4><strong>EffectsComponents:</strong></h4>
 <p>Again, this is the bulk of what you’ll be getting into and editing for your dialogue mods. I’m going to be very thorough with these, and there’s a lot to go through, so strap in!</p>
 <p>EffectsComponents contain each element needed to properly play the dialogue, and they’re played in relation to each other according to the times for each element (usually under “StartTime” and “EndTime,” but some effects only list “Time,” which is still actually when the effect is supposed to start, they just don’t have equivalent end times, and are superseded by the following listed “Time.”)<br>&nbsp;</p>
@@ -57,7 +72,7 @@ dateCreated: 2024-06-12T08:03:36.381Z
 <ul>
   <li><strong>TLVoice:</strong> The voice line for the character speaking.</li>
   <li><strong>TLAttitudeEvent:</strong> Controls the nodding/motion of the head and animated expressions characters are given when other animations are not being played, i.e. when a character is waiting for you to pick a dialogue choice, or is listening to the character speaking.</li>
-  <li><strong>TLAnimation:</strong> Pretty self-explanatory, but this is for animations used by the characters. Mainly used for cinematics, but can be used for unique facial expression overrides as well. A note: the animations used during dialogue outside of cinematics are generally tied to the voice lines itself, and not referenced in the timeline files. This is for animations not tied to voice lines directly.</li>
+  <li><strong>TLAnimation:</strong> The animations used by the characters. Mainly used for cinematics, but can be used for unique facial expression overrides as well. A note: the animations used during dialogue outside of cinematics are generally tied to the voice lines itself, and not referenced in the timeline files. This is for animations not tied to voice lines directly.</li>
   <li><strong>TLEmotionEvent:</strong> Controls the facial expressions used for the character referenced in the “Actor” section of the component.</li>
   <li><strong>TLLookAtEvent:</strong> Controls where the character is looking, as well as whether their eyes are open or closed, head and body turning, etc.</li>
   <li><strong>TLShowWeapon:</strong> Controls whether weapons and instruments are shown during the dialogue or cinematic, and when their visibility is toggled on and off.</li>
@@ -84,11 +99,13 @@ dateCreated: 2024-06-12T08:03:36.381Z
 <ul>
   <li>The first phase on the timeline, again, starts at 0, so it generally does not list start times for its components, unless one of those components is meant to start partway through the dialogue. It usually will list end times, though.</li>
   <li>The start and end times listed do not actually have to match the full length of the phase! You can actually add pauses at the start and end of dialogue and cinematics by adding a little extra time in the duration of the phase, and adjusting your start and end times to add the pauses where you’d like. You will want to make a note of how much time you added, though, so you can make sure the overall timeline duration matches the actual length of the phases you’ve included.</li>
-  <li>These start and end times are placed within a massive timeline, and they are, again, sequential. Once again, it helps to imagine the dialogue timeline like a movie, and the phases in the timeline are little chapters you can skip to within it, with each component playing at specific times within that chapter.<br>&nbsp;</li>
+  <li>These start and end times are placed within a massive timeline, and they are, again, sequential. As mentioned earlier, it helps to imagine the dialogue timeline like a movie, and the phases in the timeline are little chapters you can skip to within it, with each component playing at specific times within that chapter.<br>&nbsp;</li>
 </ul>
 <h4>Time:</h4>
 <p>Some components list start and end times, and then are further broken down into “Time” elements. These are seen in components like TLEmotionEvent and TLLookAtEvent, among others. I mentioned this above,&nbsp; but to reiterate, the “Time” attribute refers to when a certain effect is supposed to start, they just don’t have equivalent end times. Instead, the next instance of the “Time” attribute will replace the previous effect listed within the component.</p>
 <p>As an example, the characters’ emotions during dialogue are usually handled with the “Time” attribute. Each “Time” attribute will set the character’s expression, starting at that time. The next “Time” attribute will replace the previous expression at the listed time.</p>
+<p>This may be because some of these attributes are meant to persist, even after the game has moved onto the next dialogue node! Two examples of these are TLEmotionEvent and TLAttitudeEvent. The animations from these two effects components are carried into the next node, and are often used to preserve the characters' expressions and attitude animations while you're picking dialogue options. These attributes are not given a definitive end time, because they're meant to persist until the next instance of the attribute is called, or the dialogue ends.</p>
+<h5>A note about timing in general:</h5>
 <p>The StartTime, EndTime, and Time attributes are all handled <i>extremely </i>precisely, with times often being very, very tiny fractions of a second.</p>
 <p>This is extremely helpful with facial expressions in particular— each character actually only has around 8 expression rigs for any given emotion, and the total number they have is actually relatively small. But by using the precise timing the game allows, it almost never feels like they’re using so few expression rigs. You can make extremely complex sequences of emotions using this method, making the characters’ expressions feel unique, despite how few rigs they actually use.</p>
 <p>I’ll be getting more into the TLEmotionEvent components later! But, for now, there’s still three common elements to talk about:<br>&nbsp;</p>
@@ -105,8 +122,7 @@ dateCreated: 2024-06-12T08:03:36.381Z
 <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;attribute id="UUID" type="guid" value="55bce89d-670d-f7c9-6e3b-38ebe3322b32" /&gt;</code></p>
 <p><code>&lt;/node&gt;</code></p>
 <p>This UUID refers to which character is performing the effects component! These are usually unique to each timeline file, and will need to be updated to match when cloning effects components from other files. The component won’t be able to reference the related character if this UUID is not updated.</p>
-<p>To give you an example of what I mean, the above actor UUID actually refers to Lae’zel in the timeline file for her InParty dialogue. Any time that UUID appears is related to her. So, if that UUID is listed as the actor for a voice line, that voice line will be spoken by her. If that actor is listed under a TLEmotionEffect component, then that component controls her expressions in the dialogue.</p>
-<p>These UUIDs come from the TimelineSpeakers and PeanutSlotIdMap sections of the files, which I’ll be covering more later.</p>
+<p>&nbsp;</p>
 <h2>OK, SO, WE’VE COVERED THE BASICS. WHAT ABOUT SPECIFIC EFFECTS COMPONENTS?</h2>
 <p>The moment you’ve all been waiting for! Maybe. I’m now going to be breaking down each kind of effects component by its attributes. These are only example components—they won’t refer to anything specific, and almost values for the attributes have been generated new (and are almost certainly nonfunctional).</p>
 <ul>
@@ -192,5 +208,3 @@ dateCreated: 2024-06-12T08:03:36.381Z
   <li>…..</li>
 </ul>
 <p>&nbsp;</p>
-<p><strong>TimelineSpeakers:</strong></p>
-<p>These, along with the peanut</p>
