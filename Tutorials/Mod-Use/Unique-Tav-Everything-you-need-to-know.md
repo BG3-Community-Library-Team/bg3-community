@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2024-05-17T18:07:48.599Z
+date: 2024-06-16T21:23:52.110Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -29,7 +29,7 @@ As this is going to be a big guide, here are the things it will cover:
   	- [How to install the Data main file](#how-to-install-the-data-main-file)
 1. [Compatibility](#compatibility)
 1. [Common issues and how to fix them](#common-issues-and-how-to-fix-them)
-	- [Invislbe body](#invisible-body)
+	- [Invisible body](#invisible-body)
  	 - [Blue body](#blue-body)
    - [Tattoo or makeup mods does not work correctly](#tattoo-or-makeup-mods-does-not-work-correctly) 
    - [Naked characters on my screen](#naked-characters-on-my-screen) 
