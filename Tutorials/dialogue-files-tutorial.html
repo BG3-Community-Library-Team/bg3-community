@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-06-17T04:39:32.214Z
+date: 2024-06-17T04:56:24.653Z
 tags: tutorial, scripting, data
 editor: ckeditor
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -139,7 +139,10 @@ dateCreated: 2024-06-12T08:03:36.381Z
 <p>This UUID refers to which character is performing the effects component! These are usually unique to each timeline file, and will need to be updated to match when cloning effects components from other files. The component won’t be able to reference the related character if this UUID is not updated.</p>
 <p>&nbsp;</p>
 <h2>OK, SO, WE’VE COVERED THE BASICS. WHAT ABOUT SPECIFIC EFFECTS COMPONENTS?</h2>
-<p>The moment you’ve all been waiting for! Maybe. I’m now going to be breaking down each kind of effects component by its attributes. These are only example components—they won’t refer to anything specific, and almost values for the attributes have been generated new (and are almost certainly nonfunctional).<br>&nbsp;</p>
+<p>The moment you’ve all been waiting for! Maybe. I’m now going to be breaking down each kind of effects component by its attributes. These are only example components—they won’t refer to anything specific, and almost all values for the attributes have been generated new (and are almost certainly nonfunctional).</p>
+<p>I also provided explanations for all attributes I could find within these code blocks—which means that some of the attributes shown in these blocks actually contradict each other! And should not be used at the same time. One example is the “IsMimicry” and “PeanutOverride” attributes. These attributes seem to be mutually exclusive; from what I can tell, the IsMimicry tag is used when things like emotions/attitude animations/etc need to be copied over onto “peanut” characters i.e. the characters standing behind your character in conversations. The PeanutOverride attribute marks a component block as being a unique override for a peanut character, separate from the player character.</p>
+<p>These tags actually may be a tag for Larian's game engine to process; they don't seem to affect much when changed. But still, as I mentioned in the code blocks below, they should likely still be updated when changing these blocks, and shouldn't be used together.</p>
+<p>A good rule of thumb for editing, creating, and adding onto these components is to try and find other components with a similar structure. If you can find other components with the same attributes yours has, you can be sure those attributes will work together!<br>&nbsp;</p>
 <h4>TLVoice:</h4>
 <figure class="image"><img src="/tutorials/dialogue-files-tutorial/tlvoicevisual.png"></figure>
 <p>&nbsp;</p>
