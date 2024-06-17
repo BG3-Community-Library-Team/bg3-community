@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: true
-date: 2024-06-17T08:19:29.926Z
+date: 2024-06-17T08:22:18.123Z
 tags: 
 editor: code
 dateCreated: 2024-06-17T08:15:31.973Z
@@ -41,12 +41,11 @@ dateCreated: 2024-06-17T08:15:31.973Z
 
     <script>
         const items = [
-            // Add your items here, structured as JavaScript objects
             {
                 name: "Shadowheart's Clothes",
                 primaryItemName: "ARM_Camp_Body_Shadowheart",
                 meshFiles: ["CLT_Camp_Shar_Body", "CLT_Camp_Shar_Pants"],
-                image: "your_image_url_here", // Update image URL
+                image: "https://example.com/path_to_shadowheart_image.png", // Update this with a real URL
                 notes: "",
                 itemVariants: [],
                 variantImages: [],
@@ -54,7 +53,7 @@ dateCreated: 2024-06-17T08:15:31.973Z
                 type: "Camp Clothing",
                 completed: true
             },
-            // More items...
+            // Add more items as needed...
         ];
 
         function filterItems() {
@@ -64,7 +63,7 @@ dateCreated: 2024-06-17T08:15:31.973Z
         }
 
         function showCategory(category) {
-            const filteredItems = items.filter(item => item.categories.includes(category));
+            const filteredItems = items.filter(item => item.categories.includes(category) || category === 'All');
             displayItems(filteredItems);
         }
 
@@ -85,7 +84,7 @@ dateCreated: 2024-06-17T08:15:31.973Z
         }
 
         document.addEventListener('DOMContentLoaded', function () {
-            displayItems(items); // Display all items on initial load
+            showCategory('All'); // Display all items on initial load
         });
     </script>
 </body>
