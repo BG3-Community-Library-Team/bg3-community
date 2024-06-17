@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-06-17T00:20:27.427Z
+date: 2024-06-17T00:34:41.603Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -131,6 +131,8 @@ Following are the main components of the MCM schema. Don't stress over this too 
     - `Options`: Additional parameters that tailor the setting's behavior, applicable to certain types like `enum`, `radio`, sliders and drags. This includes:
       - `Choices`: The options to be made available for `enum` and `radio` types.
       - `Min` and `Max`: Boundary values for types such as `slider`/`drag`.
+      - `Multiline`: Whether the text input should be multiline, used for `text` type.
+    - `VisibleIf`: Allows defining a simple boolean expression that determines the visibility of a setting, (also tab or section) based on the values of other settings.
 
 Thus, the main content of the blueprint is defined in the `Tabs` and `Settings` properties. You'll need to include at least one of these - either a list of tabs, or a list of standalone settings.
 Within each tab, you can define either `Sections` or a list of `Settings`. Sections provide a way to group related settings together under a header. Each setting has an `Id`, `Name`, `Type`, `Default` value, and at least a `Tooltip` or a `Description`. Each setting `Id` must be unique across the entire blueprint, and that is validated by one of the many validation checks MCM performs.
