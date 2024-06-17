@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: true
-date: 2024-06-17T08:22:18.123Z
+date: 2024-06-17T08:25:12.577Z
 tags: 
 editor: code
 dateCreated: 2024-06-17T08:15:31.973Z
@@ -40,12 +40,14 @@ dateCreated: 2024-06-17T08:15:31.973Z
     <div id="itemGrid"></div>
 
     <script>
+        console.log("Script is running");
+
         const items = [
             {
                 name: "Shadowheart's Clothes",
                 primaryItemName: "ARM_Camp_Body_Shadowheart",
                 meshFiles: ["CLT_Camp_Shar_Body", "CLT_Camp_Shar_Pants"],
-                image: "https://example.com/path_to_shadowheart_image.png", // Update this with a real URL
+                image: "https://example.com/path_to_shadowheart_image.png", // Ensure this is a valid URL
                 notes: "",
                 itemVariants: [],
                 variantImages: [],
@@ -57,17 +59,20 @@ dateCreated: 2024-06-17T08:15:31.973Z
         ];
 
         function filterItems() {
+            console.log("Filtering items");
             const searchText = document.getElementById('searchBar').value.toLowerCase();
             const filteredItems = items.filter(item => item.name.toLowerCase().includes(searchText));
             displayItems(filteredItems);
         }
 
         function showCategory(category) {
+            console.log("Showing category:", category);
             const filteredItems = items.filter(item => item.categories.includes(category) || category === 'All');
             displayItems(filteredItems);
         }
 
         function displayItems(items) {
+            console.log("Displaying items");
             const grid = document.getElementById('itemGrid');
             grid.innerHTML = ''; // Clear existing items
             items.forEach(item => {
@@ -84,6 +89,7 @@ dateCreated: 2024-06-17T08:15:31.973Z
         }
 
         document.addEventListener('DOMContentLoaded', function () {
+            console.log("Document loaded");
             showCategory('All'); // Display all items on initial load
         });
     </script>
