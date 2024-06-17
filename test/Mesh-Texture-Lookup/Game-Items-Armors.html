@@ -2,11 +2,40 @@
 title: Untitled Page
 description: 
 published: true
-date: 2024-06-17T08:15:44.836Z
+date: 2024-06-17T08:18:43.021Z
 tags: 
 editor: code
 dateCreated: 2024-06-17T08:15:31.973Z
 -->
 
-<h1 class="toc-header" id="header"> Header</h1>
-<p>Your content here</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Armor Catalog</title>
+    <style>
+        #itemGrid div {
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="tabs">
+        <!-- Buttons for categories -->
+        <!-- Each button has an onclick event to filter items based on category -->
+    </div>
+    <input type="text" id="searchBar" oninput="filterItems()" placeholder="Search for armors...">
+    <div id="itemGrid"></div>
+
+    <script>
+        // JavaScript array containing item data
+        // Functions for filtering and displaying items
+    </script>
+</body>
+</html>
