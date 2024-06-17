@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-06-17T00:34:47.350Z
+date: 2024-06-17T00:35:25.297Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -139,13 +139,12 @@ Within each tab, you can define either `Sections` or a list of `Settings`. Secti
 
 Future versions of MCM might make this structure less strict, allowing nesting tabs inside sections and vice-versa.
 
-
 > If your [mod is symlinked](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking 'Symlinking mods tutorial'), you can try out changes to your mod's blueprint in-game by using `reset` in the console without having to restart the game every time you make a change to the blueprint file.
 {.is-info}
 
 
 > For examples of mods that use MCM, you can check:
-> [MCM Demo (WIP)](https://github.com/AtilioA/BG3-MCM/blob/308141a5c1b1e91d87440f066a62a4f2b9f41e55/Mod%20Configuration%20Menu/Mods/BG3MCM/MCM_blueprint.json) - showcases all input types, tab insertion and a bit of client/server communication
+> [MCM demo](#mcm-demo) - showcases all input types, tab insertion and a bit of client/server communication
 > [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/MCM-integration/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
 > [Smart Autosaving](https://github.com/AtilioA/BG3-smart-autosaving/blob/main/Smart%20Autosaving/Mods/SmartAutosaving/MCM_blueprint.json)
 > [Preemptively Label Containers](https://github.com/AtilioA/BG3-preemptively-label-containers/blob/main/Preemptively%20Label%20Containers/Mods/PreemptivelyLabelContainers/MCM_blueprint.json)
