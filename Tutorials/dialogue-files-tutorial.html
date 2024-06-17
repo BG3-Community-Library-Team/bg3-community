@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-06-17T04:29:51.721Z
+date: 2024-06-17T04:39:32.214Z
 tags: tutorial, scripting, data
 editor: ckeditor
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -145,18 +145,17 @@ dateCreated: 2024-06-12T08:03:36.381Z
 <p>&nbsp;</p>
 <h4>TLAttitudeEvent:</h4>
 <figure class="image"><img src="/tutorials/dialogue-files-tutorial/tlattitudeevenvisual.png"></figure>
-<ul>
-  <li>TLAnimation:</li>
-  <li>TLEmotionEvent:</li>
-</ul>
-<figure class="image"><img src="/tutorials/tutorials/dialogue-files-tutorial/tlemotioneventvisual.png"></figure>
+<h4>TLAnimation:</h4>
+<p>&nbsp;</p>
+<h4>TLEmotionEvent:</h4>
+<figure class="image"><img src="/tutorials/dialogue-files-tutorial/tlemotioneventvisual.png"></figure>
 <p>Emotion and emotion variation ID numbers are handled in the following pattern:</p>
 <ul>
   <li>12 possible emotions, which are given ID numbers in powers of 2.</li>
-  <li>8 different .GR2 expression rigs for each of these emotions, the first five of which are closed mouth poses when the character is not speaking (this would be [Emotion]_A through [Emotion]_E), and the last three of which are open mouthed poses (this would be [Emotion]_X through [Emotion]_Y).</li>
-  <li>The ID/value numbers here roughly correspond to the final letter in the file name, only with the numbers starting at 0, like other parts of the timeline file. This means that, for example, a character’s Happy_B expression rig has the ID value of "1," Happy_C has the ID value of "2," and so on. The X, Y, and Z expression rigs still follow this pattern, making the ID numbers for them 23, 24, and 25 respectively.</li>
+  <li>8 different .GR2 expression rigs for each of these emotions, the first five of which are generally closed mouth poses when the character is not speaking (this would be [Emotion]_A through [Emotion]_E), and the last three of which are generally open mouthed or teeth bared poses (this would be [Emotion]_X through [Emotion]_Z).</li>
+  <li>The different expression rigs are referred to in the game's files as “variations,” and their variation ID/value numbers roughly correspond to the final letter in the rig name. The reference numbers for the letters still start at 0, though, like other parts of the timeline file! This means that, for example, a character’s Happy_B expression rig has the ID value of "1," Happy_C has the ID value of "2," and so on. The X, Y, and Z expression rigs still follow this pattern (even though most characters do not have expression rigs between those A-E and X-Z rigs), making the ID numbers for them 23, 24, and 25 respectively.</li>
 </ul>
-<p>&nbsp;</p>
+<p>I've provided a reference for all of them below.<br>&nbsp;</p>
 <h5><strong>A quick reference for Emotions and their variation ID numbers:</strong></h5>
 <p>In this list, you can find the ID numbers of each given emotion (listed first before the emotion name), followed by a list of the corresponding emotion rigs and their variation IDs.</p>
 <p>1 = Neutral</p>
