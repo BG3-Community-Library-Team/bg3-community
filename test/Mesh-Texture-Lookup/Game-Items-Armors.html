@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: true
-date: 2024-06-17T08:18:43.021Z
+date: 2024-06-17T08:19:29.926Z
 tags: 
 editor: code
 dateCreated: 2024-06-17T08:15:31.973Z
@@ -27,15 +27,66 @@ dateCreated: 2024-06-17T08:15:31.973Z
 </head>
 <body>
     <div id="tabs">
-        <!-- Buttons for categories -->
-        <!-- Each button has an onclick event to filter items based on category -->
+        <button class="tab" onclick="showCategory('All')">All Armors</button>
+        <button class="tab" onclick="showCategory('Starting')">Starting Armors</button>
+        <button class="tab" onclick="showCategory('Clothing')">Clothing</button>
+        <button class="tab" onclick="showCategory('Light')">Light</button>
+        <button class="tab" onclick="showCategory('Medium')">Medium</button>
+        <button class="tab" onclick="showCategory('Heavy')">Heavy</button>
+        <button class="tab" onclick="showCategory('Accessories')">Accessories</button>
+        <button class="tab" onclick="showCategory('Other')">Other</button>
     </div>
     <input type="text" id="searchBar" oninput="filterItems()" placeholder="Search for armors...">
     <div id="itemGrid"></div>
 
     <script>
-        // JavaScript array containing item data
-        // Functions for filtering and displaying items
+        const items = [
+            // Add your items here, structured as JavaScript objects
+            {
+                name: "Shadowheart's Clothes",
+                primaryItemName: "ARM_Camp_Body_Shadowheart",
+                meshFiles: ["CLT_Camp_Shar_Body", "CLT_Camp_Shar_Pants"],
+                image: "your_image_url_here", // Update image URL
+                notes: "",
+                itemVariants: [],
+                variantImages: [],
+                categories: ["Clothing - Camp Outfits", "Clothing - Starter Camp Outfits"],
+                type: "Camp Clothing",
+                completed: true
+            },
+            // More items...
+        ];
+
+        function filterItems() {
+            const searchText = document.getElementById('searchBar').value.toLowerCase();
+            const filteredItems = items.filter(item => item.name.toLowerCase().includes(searchText));
+            displayItems(filteredItems);
+        }
+
+        function showCategory(category) {
+            const filteredItems = items.filter(item => item.categories.includes(category));
+            displayItems(filteredItems);
+        }
+
+        function displayItems(items) {
+            const grid = document.getElementById('itemGrid');
+            grid.innerHTML = ''; // Clear existing items
+            items.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <h2>${item.name}</h2>
+                    <p>Primary Item Name: ${item.primaryItemName}</p>
+                    <p>Mesh Files: ${item.meshFiles.join(', ')}</p>
+                    <p>Notes: ${item.notes}</p>
+                `;
+                grid.appendChild(itemElement);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            displayItems(items); // Display all items on initial load
+        });
     </script>
 </body>
 </html>
