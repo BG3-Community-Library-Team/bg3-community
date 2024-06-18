@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-06-18T06:20:11.279Z
+date: 2024-06-18T06:21:16.730Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -10,6 +10,8 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
 Ignore me - Just testing stuff
 
+{.tabset}
+## thing
 |     |     |     |     |     |
 | --- | --- | --- | --- | --- |
 | image | file name | mesh uuid | sub-mesh | material ID |
@@ -19,3 +21,5 @@ Ignore me - Just testing stuff
 | Image | HUM F Whatever | 000 | a\_mesh | fsdfs |
 |     |     | b\_mesh | fdfas |
 |     |     | c\_mesh | dfa |
+## thing
+{-}
