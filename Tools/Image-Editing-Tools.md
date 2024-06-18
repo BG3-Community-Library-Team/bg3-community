@@ -2,7 +2,7 @@
 title: Image-Editing-Tools
 description: A list of image editing tools and information on them
 published: true
-date: 2024-05-19T13:36:57.340Z
+date: 2024-06-18T16:25:03.484Z
 tags: tools, textures, image editing
 editor: markdown
 dateCreated: 2024-05-19T12:32:58.632Z
@@ -16,12 +16,13 @@ Collection of software and tools for editing images and creating texture maps.
 
 
 ## General Software
-- [GIMP](https://www.gimp.org/) 
+- [GIMP](https://www.gimp.org/)
 - [Paint.Net](https://www.getpaint.net/)
 - [Adobe Photoshop](https://www.adobe.com/au/products/photoshop.html)
    - [NVIDIA Texture Tools (Photoshop Plugin](https://developer.nvidia.com/texture-tools-exporter)
 - [chaiNNer](https://chainner.app/)
 - [Krita](https://krita.org/en/)
+- [XnView MP](https://www.xnview.com/en/xnviewmp/) - to view, manage, resize and convert images in bulk
 
 ## 3D Specifc Software
 - [Adobe Substance Painter (Creative Cloud)](https://www.adobe.com/products/substance3d/apps/painter.html)
