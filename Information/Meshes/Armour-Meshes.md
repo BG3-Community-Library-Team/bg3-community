@@ -2,7 +2,7 @@
 title: Armour Meshes Reference
 description: A reference for all wearable meshes in the game
 published: false
-date: 2024-06-18T04:51:23.088Z
+date: 2024-06-18T07:33:07.432Z
 tags: reference, meshes, armor, armour
 editor: markdown
 dateCreated: 2024-06-17T23:33:06.802Z
@@ -15,10 +15,10 @@ dateCreated: 2024-06-17T23:33:06.802Z
 
 ---
 ### Armour (ARM)
-- [Body, Clothing]()
-- [Body, Light]()
-- [Body, Medium]()
-- [Body, Heavy]()
+- [Body, Clothing](ARM_Body-Clothing)
+- [Body, Light](ARM_Body-Light)
+- [Body, Medium](ARM_Body-Medium)
+- [Body, Heavy](ARM_Body-Heavy)
 - More...
 
 {.links-list}
