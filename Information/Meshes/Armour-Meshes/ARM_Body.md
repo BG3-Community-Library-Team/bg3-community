@@ -2,7 +2,7 @@
 title: Armour (Body) Meshes Reference
 description: 
 published: false
-date: 2024-06-18T05:07:10.056Z
+date: 2024-06-18T05:08:37.186Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -12,7 +12,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 Description
 
-# Tabset
+# {.tabset}
 
 ## Clothing
 
@@ -21,3 +21,9 @@ Description
 ## Medium
 
 ## Heavy
+
+# {.tabset}
+## holy
+## fucking
+## shit
+
