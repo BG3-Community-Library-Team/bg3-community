@@ -2,21 +2,20 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-18T20:31:45.092Z
+date: 2024-06-18T21:13:23.041Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
 ---
 
-# Armour - Body, Clothing
+# Explanation
 
-Description
+# Meshes
 
-## ARM\_Body\_Example
+## ARM_Body_Example
+### {.tabset}
 
-# {.tabset}
-
-## HUM
+#### HUM
 
 | Image | File name | Mesh UUID | Submeshes | Material ID |
 | --- | --- | --- | --- | --- |
@@ -33,7 +32,7 @@ Description
 |     |     |     | Example\_Skirt\_Mesh | def456 |
 |     |     |     | Example\_Body\_Mesh | ghi789 |
 
-## DGB
+#### DGB
 | Image | File name | Mesh UUID | Submeshes | Material ID |
 | --- | --- | --- | --- | --- |
 | image | DGB\_F\_ARM\_Body\_Example | DGB_F UUID | Example\_Bracers\_Mesh | abc123 |
@@ -43,7 +42,7 @@ Description
 |     |     |     | Example\_Skirt\_Mesh | def456 |
 |     |     |     | Example\_Body\_Mesh | ghi789 |
 
-## DWR
+#### DWR
 | Image | File name | Mesh UUID | Submeshes | Material ID |
 | --- | --- | --- | --- | --- |
 | image | DWR\_F\_ARM\_Body\_Example | DWR_F UUID | Example\_Bracers\_Mesh | abc123 |
@@ -53,7 +52,7 @@ Description
 |     |     |     | Example\_Skirt\_Mesh | def456 |
 |     |     |     | Example\_Body\_Mesh | ghi789 |
 
-## GTY
+#### GTY
 | Image | File name | Mesh UUID | Submeshes | Material ID |
 | --- | --- | --- | --- | --- |
 | image | GTY_F\_ARM\_Body\_Example | GTY_F UUID | Example\_Bracers\_Mesh | abc123 |
@@ -63,20 +62,20 @@ Description
 |     |     |     | Example\_Skirt\_Mesh | def456 |
 |     |     |     | Example\_Body\_Mesh | ghi789 |
 
-## GNO
+#### GNO
 
-## HFL
+#### HFL
 
-## HRC
+#### HRC
 
-## TIF
-# {-}
+#### TIF
+### {-}
 
 ## ARM\_Body\_Example2
 
-# {.tabset}
+### {.tabset}
 
-## HUM
+#### HUM
 
 | Image | File name | Mesh UUID | Submeshes | Material ID |
 | --- | --- | --- | --- | --- |
@@ -93,7 +92,7 @@ Description
 |     |     |     | Example\_Skirt\_Mesh | def456 |
 |     |     |     | Example\_Body\_Mesh | ghi789 |
 
-## DGB
+#### DGB
 | Image | File name | Mesh UUID | Submeshes | Material ID |
 | --- | --- | --- | --- | --- |
 | image | DGB\_F\_ARM\_Body\_Example2 | DGB_F UUID | Example\_Bracers\_Mesh | abc123 |
@@ -103,7 +102,7 @@ Description
 |     |     |     | Example\_Skirt\_Mesh | def456 |
 |     |     |     | Example\_Body\_Mesh | ghi789 |
 
-## DWR
+#### DWR
 | Image | File name | Mesh UUID | Submeshes | Material ID |
 | --- | --- | --- | --- | --- |
 | image | DWR\_F\_ARM\_Body\_Example2 | DWR_F UUID | Example\_Bracers\_Mesh | abc123 |
@@ -113,7 +112,7 @@ Description
 |     |     |     | Example\_Skirt\_Mesh | def456 |
 |     |     |     | Example\_Body\_Mesh | ghi789 |
 
-## GTY
+#### GTY
 | Image | File name | Mesh UUID | Submeshes | Material ID |
 | --- | --- | --- | --- | --- |
 | image | GTY_F\_ARM\_Body\_Example2 | GTY_F UUID | Example\_Bracers\_Mesh | abc123 |
@@ -123,11 +122,11 @@ Description
 |     |     |     | Example\_Skirt\_Mesh | def456 |
 |     |     |     | Example\_Body\_Mesh | ghi789 |
 
-## GNO
+#### GNO
 
-## HFL
+#### HFL
 
-## HRC
+#### HRC
 
-## TIF
-# {-}
+#### TIF
+### {-}
