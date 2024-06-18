@@ -2,7 +2,7 @@
 title: Armour (Body) Meshes Reference
 description: 
 published: false
-date: 2024-06-18T05:23:16.143Z
+date: 2024-06-18T05:43:34.291Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -19,11 +19,19 @@ ARM_Body_Example
 # {.tabset}
 
 ## HUM
-As soon as I figure out how to do a table properly in markup
-Image | HUM_F_ARM_Body_Example | UUID
-HUM_FS
-HUM_M
-HUM_MS
+
+| Image | File name | Mesh UUID | Submeshes | Material ID |
+|----|----|----|----|----|
+| image | HUM_F_ARM_Body_Example | 00000000 | Example_Bracers_Mesh | abc123 |
+| | | | Example_Skirt_Mesh | def456 |
+| | | | Example_Body_Mesh | ghi789 |
+| Image | HUM_FS_ARM_Body_Example | 000000 | Example_Bracers_Mesh| 000000|
+| | | | Example_Skirt_Mesh | def456 |
+| | | | Example_Body_Mesh | ghi789 |
+| Image | HUM_M_ARM_Body_Example | 00000 | Example_Bracers_Mesh | abc123|
+
+
+
 ## DGB
 
 ## DWR
