@@ -1,22 +1,22 @@
 ---
-title: Armour (Body) Meshes Reference
+title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-18T05:43:34.291Z
+date: 2024-06-18T05:54:09.131Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
 ---
 
-# Armour - Body
+# Armour - Body, Clothing
 
 Description
 
 ---
 ARM_Body_Example
----
 
-# {.tabset}
+
+# ARM_Body_Example {.tabset}
 
 ## HUM
 
@@ -29,8 +29,6 @@ ARM_Body_Example
 | | | | Example_Skirt_Mesh | def456 |
 | | | | Example_Body_Mesh | ghi789 |
 | Image | HUM_M_ARM_Body_Example | 00000 | Example_Bracers_Mesh | abc123|
-
-
 
 ## DGB
 
