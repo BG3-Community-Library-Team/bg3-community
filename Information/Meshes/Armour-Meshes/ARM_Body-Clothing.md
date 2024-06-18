@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-18T05:58:36.054Z
+date: 2024-06-18T20:12:25.211Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -12,32 +12,32 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 Description
 
+ARM\_Body\_Example
 
-ARM_Body_Example
-
-
-# ARM_Body_Example {.tabset}
+# Tabset
 
 ## HUM
 
 | Image | File name | Mesh UUID | Submeshes | Material ID |
-|----|----|----|----|----|
-| image | HUM_F_ARM_Body_Example | 00000000 | Example_Bracers_Mesh | abc123 |
-| | | | Example_Skirt_Mesh | def456 |
-| | | | Example_Body_Mesh | ghi789 |
-| Image | HUM_FS_ARM_Body_Example | 000000 | Example_Bracers_Mesh| 000000|
-| | | | Example_Skirt_Mesh | def456 |
-| | | | Example_Body_Mesh | ghi789 |
-| Image | HUM_M_ARM_Body_Example | 00000 | Example_Bracers_Mesh | abc123|
+| --- | --- | --- | --- | --- |
+| image | HUM\_F\_ARM\_Body\_Example | 00000000 | Example\_Bracers\_Mesh | abc123 |
+|     |     |     | Example\_Skirt\_Mesh | def456 |
+|     |     |     | Example\_Body\_Mesh | ghi789 |
+| Image | HUM\_FS\_ARM\_Body\_Example | 000000 | Example\_Bracers\_Mesh | 000000 |
+|     |     |     | Example\_Skirt\_Mesh | def456 |
+|     |     |     | Example\_Body\_Mesh | ghi789 |
+| Image | HUM\_M\_ARM\_Body\_Example | 00000 | Example\_Bracers\_Mesh | abc123 |
 
 ## DGB
 
 ## DWR
 
 ## GTY
+
 ## GNO
+
 ## HFL
+
 ## HRC
+
 ## TIF
-
-
