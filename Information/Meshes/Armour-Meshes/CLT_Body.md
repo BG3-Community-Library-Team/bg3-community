@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-06-18T06:21:16.730Z
+date: 2024-06-18T06:22:12.212Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -10,7 +10,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
 Ignore me - Just testing stuff
 
-{.tabset}
+# {.tabset}
 ## thing
 |     |     |     |     |     |
 | --- | --- | --- | --- | --- |
@@ -22,4 +22,4 @@ Ignore me - Just testing stuff
 |     |     | b\_mesh | fdfas |
 |     |     | c\_mesh | dfa |
 ## thing
-{-}
+# {-}
