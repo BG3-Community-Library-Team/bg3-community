@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-18T20:13:58.974Z
+date: 2024-06-18T20:14:26.437Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -14,7 +14,7 @@ Description
 
 ARM\_Body\_Example
 
-# Tabset
+# {.tabset}
 
 ## HUM
 
