@@ -2,7 +2,7 @@
 title: Meshes
 description: 
 published: true
-date: 2024-06-18T22:42:51.131Z
+date: 2024-06-18T22:43:16.110Z
 tags: meshes, list
 editor: markdown
 dateCreated: 2024-04-30T21:17:01.440Z
@@ -23,7 +23,7 @@ This page is a list of existing informational documentation relating to Meshes.
 {.links-list}
 
 ### Item Meshes
-- [Armor Meshes](Armor-Meshes)
+- [Armour Meshes](Armor-Meshes)
 {.links-list}
 
 ## Guides
