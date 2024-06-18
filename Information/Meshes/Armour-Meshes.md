@@ -2,7 +2,7 @@
 title: Armour Meshes Reference
 description: A reference for all wearable meshes in the game
 published: false
-date: 2024-06-18T04:49:21.119Z
+date: 2024-06-18T04:49:58.526Z
 tags: reference, meshes, armor, armour
 editor: markdown
 dateCreated: 2024-06-17T23:33:06.802Z
@@ -24,6 +24,6 @@ dateCreated: 2024-06-17T23:33:06.802Z
 {.links-list}
 ### Clothing (CLT)
 - [Body](Armour-Meshes/CLT_Body)
-- [Pants]()
-- [Shoes]()
+- [Pants]
+- [Shoes]
 {.links-list}
