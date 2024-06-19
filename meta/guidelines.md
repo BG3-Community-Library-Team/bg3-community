@@ -2,7 +2,7 @@
 title: Guidelines
 description: Explainer on basic content and behavioral guidelines
 published: true
-date: 2024-06-19T22:38:19.402Z
+date: 2024-06-19T22:42:35.127Z
 tags: meta, rules, guidelines
 editor: markdown
 dateCreated: 2024-04-23T22:34:04.842Z
@@ -25,7 +25,7 @@ BG3 Modding Community is adamant about creating a safe, accessible place for mod
 
 Administrators and moderators reserve the right to ban/remove content if they deem it necessary. Questions or concerns can be sent to wiki@bg3.community.
 
-## Standard Practice
+## Standard Practices
 
 [TODO: Fill this out]
 
