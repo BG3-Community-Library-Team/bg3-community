@@ -2,7 +2,7 @@
 title: Species Lore Layout Test
 description: 
 published: true
-date: 2024-06-19T00:51:20.431Z
+date: 2024-06-19T00:52:26.974Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T23:17:55.295Z
@@ -83,19 +83,21 @@ Caption
   </div>
 </div>
 
-<div class="mdc-card__actions">
-  <div class="mdc-card__action-buttons">
-    <button class="mdc-button mdc-card__action mdc-card__action--button mdc-card__primary-action">
-      <div class="mdc-button__ripple"></div>
-      <span class="mdc-button__label">Read</span>
-    </button>
-    <button class="mdc-button mdc-card__action mdc-card__action--button">
-      <div class="mdc-button__ripple"></div>
-      <span class="mdc-button__label">Bookmark</span>
-    </button>
-  </div>
-  <div class="mdc-card__action-icons">
-   <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon mdc-card__primary-action" title="Share">share</button>
-    <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="More options">more_vert</button>
+<div class="mdc-tab-bar" role="tablist">
+  <div class="mdc-tab-scroller">
+    <div class="mdc-tab-scroller__scroll-area">
+      <div class="mdc-tab-scroller__scroll-content">
+        <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+          <span class="mdc-tab__content">
+            <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+            <span class="mdc-tab__text-label">Favorites</span>
+          </span>
+          <span class="mdc-tab-indicator mdc-tab-indicator--active">
+            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+          </span>
+          <span class="mdc-tab__ripple"></span>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
