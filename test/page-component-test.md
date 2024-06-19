@@ -2,7 +2,7 @@
 title: Species Lore Layout Test
 description: 
 published: true
-date: 2024-06-19T00:52:26.974Z
+date: 2024-06-19T00:55:46.645Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T23:17:55.295Z
@@ -48,56 +48,23 @@ Caption
   </div>
 </div>
 
-<div class="mdc-data-table">
-  <div class="mdc-data-table__table-container">
-    <table class="mdc-data-table__table" aria-label="Dessert calories">
-      <thead>
-        <tr class="mdc-data-table__header-row">
-          <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Dessert</th>
-          <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Carbs (g)</th>
-          <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Protein (g)</th>
-          <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Comments</th>
-        </tr>
-      </thead>
-      <tbody class="mdc-data-table__content">
-        <tr class="mdc-data-table__row">
-          <th class="mdc-data-table__cell" scope="row">Frozen yogurt</th>
-          <td class="mdc-data-table__cell mdc-data-table__cell--numeric">24</td>
-          <td class="mdc-data-table__cell mdc-data-table__cell--numeric">4.0</td>
-          <td class="mdc-data-table__cell">Super tasty</td>
-        </tr>
-        <tr class="mdc-data-table__row">
-          <th class="mdc-data-table__cell" scope="row">Ice cream sandwich</th>
-          <td class="mdc-data-table__cell mdc-data-table__cell--numeric">37</td>
-          <td class="mdc-data-table__cell mdc-data-table__cell--numeric">4.33333333333</td>
-          <td class="mdc-data-table__cell">I like ice cream more</td>
-        </tr>
-        <tr class="mdc-data-table__row">
-          <th class="mdc-data-table__cell" scope="row">Eclair</th>
-          <td class="mdc-data-table__cell mdc-data-table__cell--numeric">24</td>
-          <td class="mdc-data-table__cell mdc-data-table__cell--numeric">6.0</td>
-          <td class="mdc-data-table__cell">New filing flavor</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<div class="mdc-tab-bar" role="tablist">
-  <div class="mdc-tab-scroller">
-    <div class="mdc-tab-scroller__scroll-area">
-      <div class="mdc-tab-scroller__scroll-content">
-        <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
-          <span class="mdc-tab__content">
-            <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
-            <span class="mdc-tab__text-label">Favorites</span>
-          </span>
-          <span class="mdc-tab-indicator mdc-tab-indicator--active">
-            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-          </span>
-          <span class="mdc-tab__ripple"></span>
-        </button>
-      </div>
+  <h1 class="md-typescale-display-medium">Hello Material!</h1>
+  <form>
+    <p class="md-typescale-body-medium">Check out these controls in a form!</p>
+    <md-checkbox></md-checkbox>
+    <div>
+      <md-radio name="group"></md-radio>
+      <md-radio name="group"></md-radio>
+      <md-radio name="group"></md-radio>
     </div>
-  </div>
-</div>
+    <md-outlined-text-field label="Favorite color" value="Purple"></md-outlined-text-field>
+    <md-outlined-button type="reset">Reset</md-outlined-button>
+  </form>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  </style>
