@@ -2,7 +2,7 @@
 title: Armour Meshes Reference
 description: A reference for all wearable meshes in the game
 published: false
-date: 2024-06-19T04:15:47.015Z
+date: 2024-06-19T04:41:18.020Z
 tags: reference, meshes, armor, armour
 editor: markdown
 dateCreated: 2024-06-17T23:33:06.802Z
@@ -20,11 +20,10 @@ Armour files begin with an abbreviated race name and body type, followed by the 
 ## Glossary
 - Mesh: Meshes are the models that make up all physical objects in the game, be they people, items, or buildings. 
 - Item: An item, as defined here, is something which can be obtained in game. It is something that can exist in your inventory. An item can be comprised of a single or multiple meshes.
-
-## How it works
-
-
-
+- Body: In the case of armour files, a body mesh is typically the piece which contains the torso. Body can refer to a shirt, breastplate, or even full top-to-bottom outfit.
+- Skirt: A skirt often refers to the bottom, looser part of a piece of armour (or even a shirt) rather than the typical idea of a skirt. If an armour has physics, it is typically on the skirt.
+- Physics: Physics are the way the game attempts to simulate how an object in game should move. In armour, we are typically dealing with cloth physics, which attempt to mimic the movement of fabric. This is accomplished through [vertex painting](https://wiki.bg3.community/Information/Meshes/Vertex-Painting-Meshes).
+- Cloth mesh: When an armour file submesh ends with `_Cloth_Mesh`, this is (with very rare exceptions) the cloth mesh, which is an invisible submesh that gives the game information on how to simulate the cloth physics for the other parts of that armour file.
 
 
 # Pages
