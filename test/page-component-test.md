@@ -2,7 +2,7 @@
 title: Species Lore Layout Test
 description: 
 published: true
-date: 2024-06-19T00:55:46.645Z
+date: 2024-06-19T00:56:42.957Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T23:17:55.295Z
@@ -60,11 +60,3 @@ Caption
     <md-outlined-text-field label="Favorite color" value="Purple"></md-outlined-text-field>
     <md-outlined-button type="reset">Reset</md-outlined-button>
   </form>
-  <style>
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 16px;
-    }
-  </style>
