@@ -2,7 +2,7 @@
 title: Guidelines
 description: Explainer on basic content and behavioral guidelines
 published: true
-date: 2024-04-27T02:13:59.913Z
+date: 2024-06-19T22:38:19.402Z
 tags: meta, rules, guidelines
 editor: markdown
 dateCreated: 2024-04-23T22:34:04.842Z
@@ -28,3 +28,4 @@ Administrators and moderators reserve the right to ban/remove content if they de
 ## Standard Practice
 
 [TODO: Fill this out]
+
