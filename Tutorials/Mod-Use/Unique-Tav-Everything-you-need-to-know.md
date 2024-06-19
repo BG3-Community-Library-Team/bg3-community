@@ -2,13 +2,13 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2024-06-16T21:23:52.110Z
+date: 2024-06-19T21:34:12.229Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
 ---
 
-# Unique Tav guide & everything you need to know
+# Unique Tav guide & everything you need to know - Probably being deleted in the near future, only staying up because of Kartoffel
 
 This is a guide that will cover all of [Unique Tav](https://www.nexusmods.com/baldursgate3/mods/2754)
 What is Unique Tav? Unique Tav is a mod that functions as a tool for a lot of mod users and mod creators, where they can customize their character a lot more than you would have been able to in vanilla BG3. For example you need unique tav for body tattoo's.
