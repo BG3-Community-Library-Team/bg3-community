@@ -2,7 +2,7 @@
 title: Species Lore Layout Test
 description: 
 published: true
-date: 2024-06-19T00:43:48.446Z
+date: 2024-06-19T00:49:22.448Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T23:17:55.295Z
@@ -80,5 +80,22 @@ Caption
         </tr>
       </tbody>
     </table>
+  </div>
+</div>
+
+<div class="mdc-card__actions">
+  <div class="mdc-card__action-buttons">
+    <button class="mdc-button mdc-card__action mdc-card__action--button">
+      <div class="mdc-button__ripple"></div>
+      <span class="mdc-button__label">Read</span>
+    </button>
+    <button class="mdc-button mdc-card__action mdc-card__action--button">
+      <div class="mdc-button__ripple"></div>
+      <span class="mdc-button__label">Bookmark</span>
+    </button>
+  </div>
+  <div class="mdc-card__action-icons">
+   <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share">share</button>
+    <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="More options">more_vert</button>
   </div>
 </div>
