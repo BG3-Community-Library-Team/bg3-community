@@ -2,7 +2,7 @@
 title: Species Lore Layout Test
 description: 
 published: true
-date: 2024-06-19T00:56:42.957Z
+date: 2024-06-19T00:57:56.925Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T23:17:55.295Z
@@ -48,15 +48,14 @@ Caption
   </div>
 </div>
 
-  <h1 class="md-typescale-display-medium">Hello Material!</h1>
-  <form>
-    <p class="md-typescale-body-medium">Check out these controls in a form!</p>
-    <md-checkbox></md-checkbox>
-    <div>
-      <md-radio name="group"></md-radio>
-      <md-radio name="group"></md-radio>
-      <md-radio name="group"></md-radio>
-    </div>
-    <md-outlined-text-field label="Favorite color" value="Purple"></md-outlined-text-field>
-    <md-outlined-button type="reset">Reset</md-outlined-button>
-  </form>
+<md-tabs>
+  <md-primary-tab>Video</md-primary-tab>
+  <md-primary-tab>Photos</md-primary-tab>
+  <md-primary-tab>Audio</md-primary-tab>
+</md-tabs>
+
+<md-tabs>
+  <md-secondary-tab>Birds</md-secondary-tab>
+  <md-secondary-tab>Cats</md-secondary-tab>
+  <md-secondary-tab>Dogs</md-secondary-tab>
+</md-tabs>
