@@ -2,7 +2,7 @@
 title: Species Lore Layout Test
 description: 
 published: true
-date: 2024-06-19T00:57:56.925Z
+date: 2024-06-19T00:59:51.705Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T23:17:55.295Z
@@ -48,14 +48,7 @@ Caption
   </div>
 </div>
 
-<md-tabs>
-  <md-primary-tab>Video</md-primary-tab>
-  <md-primary-tab>Photos</md-primary-tab>
-  <md-primary-tab>Audio</md-primary-tab>
-</md-tabs>
-
-<md-tabs>
-  <md-secondary-tab>Birds</md-secondary-tab>
-  <md-secondary-tab>Cats</md-secondary-tab>
-  <md-secondary-tab>Dogs</md-secondary-tab>
-</md-tabs>
+<button class="mdc-button foo-button">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Button</span>
+</button>
