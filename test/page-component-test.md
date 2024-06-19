@@ -2,7 +2,7 @@
 title: Species Lore Layout Test
 description: 
 published: true
-date: 2024-06-19T00:49:22.448Z
+date: 2024-06-19T00:49:58.059Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-13T23:17:55.295Z
@@ -21,7 +21,7 @@ Traveling between Wildspace and Limbo, the Zerth Freebooters are followers of Ze
 They cooperate with other races in Wildspace, but try to stick to themselves, focused more on eliminating the Pirates of Gith than finding allies. They often travel alongside Elves, as Gith Pirates tend to target Elven ships. While a subfaction of Githzerai, they rarely travel to  Limbo, and don't follow Githzerai leadership so much as they do the legends of Zerthimon. Despite this, Githzerai consider them heroes, and Zerths themselves consider the freebooters as equals^[1]^.
 
   </div>
-  <div class="col-4">
+  <div class="col-4 mdc-card mdc-card--outlined">
     
 # Details
 [Image Here]
