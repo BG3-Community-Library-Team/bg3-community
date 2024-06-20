@@ -2,19 +2,21 @@
 title: General Load Order Guide
 description: Setting up a solid Load Order
 published: true
-date: 2024-06-20T17:03:58.361Z
+date: 2024-06-20T17:13:08.623Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-01T03:29:26.549Z
 ---
 
 # General Load Order
-This guide will give a general overview of how to handle Mod Load Orders. It's not meant to be a strict prescription, but it will assist in ensuring your load order has minimal issues, and is easier to troubleshoot. **If playing in Multiplayer**, it's important to note that you must have the exact same mods and load order as the other player, including mods listed in the inactive pane or loose-file mods, or you may run into problems.
+This guide will give a general overview of how to handle Mod Load Orders. It's not meant to be a strict prescription, but it will assist in ensuring your load order has minimal issues and is easier to troubleshoot. 
 
-> Do not load these entries:
+**If playing in Multiplayer, it's important to note that you must have the exact same mods and load order as the other player, including mods listed in the inactive pane or loose-file mods, or you may run into problems.**
+
+> Do not load/delete these entries:
 > - Honour.pak
 > - DiceSet_06.pak
-> These files are from the base game itself, but show up in BG3MM. They should stay in the Inactive Mods pane.
+> These are base game files that show in the Inactive Mods pane. They should stay in the Inactive Mods pane.
 <!-- {blockquote:.is-danger} -->
 
 > A note on Mod Load Order: There are a lot of ways people reference the order in which mods load. You'll often hear things like:
@@ -31,20 +33,19 @@ This guide will give a general overview of how to handle Mod Load Orders. It's n
 Load orders should be set up in an order following the below structure. As always, if a mod's page recommends a specific placement load order, go with the author's suggestion.
 
 ## 1. Early Loaders
-The first types of mods you shoul have on your list are Library mods and Single-Purpose SE mods.
+The first types of mods you should have on your list are **Library mods** and **Single-Purpose SE mods**.
 
-Library Mods are mods that are relied on by other mods. Examples include 5eSpells, Unlock Level Curve, Community Library, and Vlad's Grimoire.
-Single-purpose SE mods are mods that are standalone, and limited in scope. Examples include Loz's Autosave mods, and KvCampEvents, as well as most Frameworks.
+- **Library Mods** are mods that are relied on by other mods. Examples include 5eSpells, Unlock Level Curve, Community Library, and Vlad's Grimoire.
+- **Single-purpose SE mods** are mods that are standalone, and limited in scope. Examples include Loz's Autosave mods, and KvCampEvents, as well as most Frameworks.
 
 ## 2. New Items/Spells/Actions and Fixes
-Next up are mods that provide playable actions, items, and dyes, and Mods that fix base-game content and/or affect general gameplay (ex. Concentration Failsafe, Shields Overhaul) should go next. Often these will rely on Early Loaders, or are mods that are expected to get overridden or referenced by other mods as well.
+Next are mods that provide **playable actions, items, and dyes**, and mods that **fix base-game content and/or affect general gameplay** (ex. Concentration Failsafe, Shields Overhaul) should go next. Often these will rely on Early Loaders, or are mods that are expected to get overridden or referenced by other mods as well.
 
 ## 3. Expanded Content
-The third chunk of mods you should place in your order are those that provide new content to existing structures (ex. FeatsExtra, Metamagic Extended, WildMagicD100)
+The third chunk of mods you should place in your order are those that provide **new content to existing structures** (ex. FeatsExtra, Metamagic Extended, WildMagicD100)
 
 > I recommend ordering these by type
 {.is-info}
-
 
 These types of mods also fall under this category:
 - Additional Feats
