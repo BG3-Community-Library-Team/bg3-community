@@ -2,7 +2,7 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: true
-date: 2024-06-11T09:17:09.825Z
+date: 2024-06-20T21:31:02.384Z
 tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
@@ -21,7 +21,7 @@ It also includes an integrated Tutorial Chest located in the camp chest, which c
 **The ISF doesn't force mods into a mandatory dependency with the Script Extender**. The configuration file will be picked up in case users have ISF installed, but will simply remain inert otherwise. **Therefore, if your mod is designed to function without the Script Extender, integrating with the ISF will not change this**.
 
 > **Why you should use the Item Shipment Framework:**
-> * It allows you to ship items directly into the inventories of users.
+> * It allows you to ship items directly and immediately into users' inventories as soon as the game starts.
 > * It allows you to ship items directly into the Camp Chest.
 > * Integration can take less than 30 seconds.
 > * You can use ISF with other shipping methods without committing to it, as it can remain a soft requirement/optional.
