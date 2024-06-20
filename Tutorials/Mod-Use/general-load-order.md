@@ -2,8 +2,8 @@
 title: General Load Order Guide
 description: Setting up a solid Load Order
 published: true
-date: 2024-06-20T17:13:08.623Z
-tags: 
+date: 2024-06-20T20:45:19.047Z
+tags: bg3-mod-helper, guide, mod use, mod load, load order, general load order, bg3 load order
 editor: markdown
 dateCreated: 2024-05-01T03:29:26.549Z
 ---
