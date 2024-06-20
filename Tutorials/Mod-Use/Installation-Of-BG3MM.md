@@ -2,7 +2,7 @@
 title: Installation of BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: true
-date: 2024-06-20T21:37:35.391Z
+date: 2024-06-20T21:49:25.274Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -35,10 +35,10 @@ Download the latest version of BG3MM from [LaughingLeaders GitHub](https://githu
 Note, that the latest release on GitHub may look older, but BG3MM automatically prompts you to update upon launch when a new update is pushed out. There is no reason to redownload from GitHub once you have installed it, unless it was deleted.
 
 ## 4. Extract BG3MM into a folder
-> Its recommended to **not** download BG3MM inside your Program files.
+> Its recommended to **not** extract BG3MM inside a protected folder.
 {.is-info}
 
-Extract BG3MM into a folder on your computer. Its recommended to install it either inside the hard drive where your steam in installed or any other location where you want to hold BG3MM. Please note the screens and gifs below show installing it in a dedicated game drive, but you can install it anywhere you choose.
+Extract BG3MM into a folder on your computer. Its recommended to install it either inside the hard drive where your steam in installed or any other location where you want to hold BG3MM. Please note the screens and gifs below show it installed in a dedicated game drive, but you can install it anywhere you choose.
 
 ## 5. Run the BG3ModManager.exe
 After extracting the files to a new location, you will see a BG3ModManager.exe.
