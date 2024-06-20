@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-06-20T07:50:10.876Z
+date: 2024-06-20T08:21:35.534Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -83,9 +83,9 @@ or this:
 ![no_workspace_set.png](/tutorials/bg3-mod-helper/no_workspace_set.png)
 in the bottom right of VSCode, especially if this is your first time using the extension.
 
-There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extension's settings. I cover that [below](#setup-extension-settings), but first let's get a proper workspace set up so you can utilize all the features of the extension. The extension is designed to launch right when you start VSCode (once you have installed).
+There are a few quick setup steps that the extension requires to be in a working state, namely adjusting the paths in the extension's settings. I cover that [below](#setup-extension-settings), but first let's get a proper workspace set up so you can utilize all the features of the extension. Once installed, the extension is designed to launch right when you start VSCode.
 
-> While the extension doesn't do anything while sitting in the background, it is technically always on. This shouldn't hinder your other non modding projects but it's good practice to disable or delete any extension if you don't plan on using it for a while.
+> While the extension doesn't perform any actions while in the background, it is technically always on. This shouldn't hinder your other non-modding projects, but it's good practice to disable or delete any extension if you don't plan on using it for a while.
 {.is-info}
 
 The key working with the extension is setting up a workspace. There are a few different ways to do it but here is the simplest and safest.
