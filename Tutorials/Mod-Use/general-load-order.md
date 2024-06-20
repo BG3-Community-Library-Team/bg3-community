@@ -2,7 +2,7 @@
 title: General Load Order Guide
 description: Setting up a solid Load Order
 published: true
-date: 2024-06-19T21:35:43.476Z
+date: 2024-06-20T17:03:58.361Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-01T03:29:26.549Z
@@ -63,6 +63,29 @@ Examples of these include:
 - Custom Hairs
 - Custom Cosmetics
 - Custom Heads
+- Custom Horns/Tails
+- Custom Accessories
+- Custom Tattoos
+- Custom Dice
+
+## 4.1 Unique Tav or Appearance Overrides
+If you want more information on how to use Unique Tav, refer to the [UT Guide](/Tutorials/Mod-Use/Unique-Tav-Everything-you-need-to-know).
+
+Mods that override the appearance of Tav or Companions, such as Unique Tav, have a very specific load order. You will know that it is incorrectly installed if you have issues such as blue or black skin, missing limbs, torso, or head.
+
+>The following suggested load order for visual mods is only needed if you have UT or Appearance Override mods. Note that you must check all your visual mods to download UT patches or determine if they are compatible with UT.
+{.is-info}
+
+Examples of these include:
+- Skin/Hair/Eye Color mods
+- Custom Hairs
+- Custom Cosmetics
+- Custom Heads
+- Custom Horns/Tails
+- Custom Accessories
+- UniqueTav/Appearance Override Mods
+- UniqueTav Patches* 
+- Custom Tattoos
 - Custom Dice
 
 ## 5. Late Loaders
