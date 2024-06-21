@@ -2,7 +2,7 @@
 title: Dictionary Test
 description: 
 published: true
-date: 2024-06-21T05:24:23.922Z
+date: 2024-06-21T05:24:39.133Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-20T22:50:16.737Z
@@ -38,7 +38,7 @@ classDiagram
         +run()
     }
     
-    click Fish 'http://www.github.com'
+    click Fish http://www.github.com
 ```
     
     
@@ -72,7 +72,7 @@ classDiagram
         +run()
     }
     
-    click Fish 'http://www.github.com'
+    click Fish http://www.github.com
 ```
 
 ----
