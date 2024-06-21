@@ -2,7 +2,7 @@
 title: Installing Script Extender
 description: 
 published: false
-date: 2024-06-21T05:46:14.560Z
+date: 2024-06-21T05:47:55.864Z
 tags: installation, moduse, script extender
 editor: markdown
 dateCreated: 2024-06-21T04:52:35.045Z
@@ -26,7 +26,8 @@ dateCreated: 2024-06-21T04:52:35.045Z
 > There is no support for Script Extender on consoles like PlayStation or XBox
 {.is-danger}
 
-\* Additional actions necessary. See 4. Installing Script Extender Manually (Linux) [ADD LINK HERE] for instructions
+\* Additional actions necessary. See [4. Installing Script Extender Manually (Linux)](https://wiki.bg3.community/en/Tutorials/Mod-Use/Installing-Script-Extender#h-4-installing-script-extender-manually-linux)
+
 
 
 ## **2\. Installing Script Extender via BG3MM (Windows)**
