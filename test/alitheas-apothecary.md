@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: false
-date: 2024-06-21T11:54:28.200Z
+date: 2024-06-21T11:55:28.014Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -29,9 +29,10 @@ png uploaded to imgur
 
 ## icon comparison
 
-|     |     |     |
+
+
 | --- | --- | --- |
-|     | png | webp | imgur
+|     | png | webp | imgur |
 |     | ![](/test/bard.png) | ![](/test/bard.webp) | ![Imgur](https://i.imgur.com/NMaW2Nn.png) |
 | low res    | ![](/test/bard_low.png) | ![](/test/bard_low.webp) | ![Imgur](https://i.imgur.com/4cZPuNR.png) |
 |     | ![](/test/debuffpassive_bg.png) | ![](/test/debuffpassive_bg.webp) | ![Imgur](https://i.imgur.com/UBikBMX.png) |
