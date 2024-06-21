@@ -2,11 +2,13 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-06-21T14:38:32.263Z
+date: 2024-06-21T17:32:26.713Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
 ---
+
+![myconid-cmty-curvy.webp](/test/myconid-cmty-curvy.webp)
 
 [Follow up to this conversation.](https://discord.com/channels/1211056047784198186/1252694850097385472/1252955321887096893)
 
