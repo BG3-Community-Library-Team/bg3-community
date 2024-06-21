@@ -2,7 +2,7 @@
 title: Dictionary Test
 description: 
 published: true
-date: 2024-06-21T05:20:38.129Z
+date: 2024-06-21T05:22:09.079Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-20T22:50:16.737Z
@@ -30,7 +30,7 @@ classDiagram
         +quack()
     }
     class Fish{
-        -int [an <b>important</b> <a href='http://google.com'>link</a>]
+        -int click size in feet "http://www.github.com"
         -canEat()
     }
     class Zebra{
