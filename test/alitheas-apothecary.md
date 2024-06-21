@@ -2,13 +2,15 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: false
-date: 2024-06-21T11:48:15.355Z
+date: 2024-06-21T11:48:59.841Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
 ---
 
 # Astarion is my emotional support character
+
+## image comparison
 
 ![alithea's_apothecary.webp](/test/alithea's_apothecary.webp)
 
@@ -25,7 +27,7 @@ png 4,53 mb
   
 png uploaded to imgur
 
-# Icon comparison
+## icon comparison
 
 |     |     |     |
 | --- | --- | --- |
