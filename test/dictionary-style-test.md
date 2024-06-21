@@ -2,11 +2,14 @@
 title: Dictionary Test
 description: 
 published: true
-date: 2024-06-21T05:15:49.021Z
+date: 2024-06-21T05:16:28.398Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-20T22:50:16.737Z
 ---
+
+```kroki
+mermaid
 
 ---
 title: Animal example
@@ -34,3 +37,4 @@ classDiagram
         +bool is_wild
         +run()
     }
+    ```
