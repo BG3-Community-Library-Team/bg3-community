@@ -2,7 +2,7 @@
 title: Dictionary Test
 description: 
 published: true
-date: 2024-06-21T05:28:34.238Z
+date: 2024-06-21T05:30:01.306Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-20T22:50:16.737Z
@@ -38,7 +38,7 @@ classDiagram
         +run()
     }
     
-    click Fish href "https://google.com"
+    click Fish href "https://google.com" "Fish"
 ```
     
     
@@ -72,7 +72,7 @@ classDiagram
         +run()
     }
     
-    click Fish href "https://google.com"
+    click Fish href "https://google.com" "Fish"
 ```
 
 ----
