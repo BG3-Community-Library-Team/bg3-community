@@ -2,7 +2,7 @@
 title: Dictionary Test
 description: 
 published: true
-date: 2024-06-21T05:25:00.907Z
+date: 2024-06-21T05:25:55.337Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-20T22:50:16.737Z
@@ -38,7 +38,7 @@ classDiagram
         +run()
     }
     
-    click Fish <a href="http://www.github.com">Fish</a>
+    Fish[an <b>important</b> <a href="http://google.com">link</a>] 
 ```
     
     
@@ -72,7 +72,7 @@ classDiagram
         +run()
     }
     
-    click Fish http://www.github.com
+    Fish[an <b>important</b> <a href="http://google.com">link</a>] 
 ```
 
 ----
