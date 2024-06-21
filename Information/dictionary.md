@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-06-21T07:06:24.231Z
+date: 2024-06-21T14:13:59.596Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -19,20 +19,34 @@ Intended as a temporary hub for terms that may need to be explained in our work-
 ## B
 
 -   BG3MM - LaughingLeader's Baldur's Gate 3 Mod Manager
+-   BootstrapClient - 
+-   BootstrapServer - 
 
 ## C
 
 -   CF - Compatibility Framework
+-   Client - 
 -   CL - Community Library
--   CMTY - Community
+-   CMTY - Community / BG3 Modding Community
+
+## D
+
+-   Dump - 
+
+## E
+
+-   Entity - 
+-   Entity Dump - 
 
 ## I
 
+-   IDE - 
 -   IF - Inspiration Framework
 
 ## L
 
 -   Load order - term commonly used for the sequence in which mods are placed in bg3mm and vortex
+-   Lua - programming language used for SE
 
 ## N
 
@@ -51,6 +65,7 @@ Intended as a temporary hub for terms that may need to be explained in our work-
 ## S
 
 -   Shared folder - folder that contains your Localization, Mods, and Public folder
+-   Server - 
 
 ## U
 
