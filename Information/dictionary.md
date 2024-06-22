@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-06-22T21:21:52.252Z
+date: 2024-06-22T21:58:54.878Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -93,7 +93,7 @@ Intended as a temporary hub for terms that may need to be explained in our work-
 
 ## U
 
--   UUID - universally unique identifier (UUID), a 128-bit value used in the game files to identify an object or entity. It is identified by its unique 36 word format.
+-   UUID - universally unique identifier (UUID), a 128-bit value used in the game files to identify an object or entity. It is identified by its unique 36 character format.
     -   Example: acde070d-8c4c-4f0d-9d8a-162843c10333
 
 ## V
