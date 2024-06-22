@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-06-22T19:43:28.944Z
+date: 2024-06-22T19:54:54.812Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -156,27 +156,27 @@ While the extension has many other capabilities and shortcuts, the best way to a
 
 I will cover most of what these do below, but here is each current setting and a very quick breakdown of what they are.
 - **Pack/Unpacking Tool:** Allows the user to pack their current workspace mod and unpack mods (duh). Has quick actions only at the moment.
-- **Converstion Tool:** Open a webview tab which allows the user to handle conversion related features regarding lsx and loca files. Has quick actions.
+- **Conversion Tool:** Open a webview tab which allows the user to handle conversion related features regarding lsx and loca files. Has quick actions.
 - **Launch Game:** Launch the game directly from VSCode
 - **Generate Folder Structure :** Lets the user quickly deploy mod templates. Only class mod templates working at the moment.
 - **Atlas Generator:** By supplying a folder of correctly sized PNGs, the user can generate a PNG that can then be right click converted to a dds to use as a atlas texture file.
 - **Version Generator:** Open a webview tab which allows the user to quickly generate a version number for their meta, as well as quickly apply it to your meta file.
 - **Rotation Tool:** Dont worry about this one for now.
-- **DDS Viewer:** In development still but opens a webview that shows information about all the dds files in your workspace. While in development, it is only search for dds files in the `Mods` folder so please place your dds files in there temporarily if you wish to test and use while this tool is in development.
+- **DDS Viewer:** In development still but opens a webview that shows information about all the dds files in your workspace. While in development, it only searches for dds files in the `Mods` folder. Please place your dds files in there temporarily if you wish to test and use this tool currently.
 - **Debug Command:** "Don't press this please, I use this for development"- Ghostboats
 
 > I hear you saying "reading is annoying!" and "I don't want to read all this."
 ***Too bad.***
-The one thing you should get comfy with, even if you ~~stupidly~~ don't care about some of the shortcuts and other features, is the data provider. It will always house the most powerful features of the tool and it would be ~~stupid~~ a waste not to use them.
+The one thing you should get comfy with, even if you ~~stupidly~~ unfortunately don't care about some of the shortcuts and other features, is the data provider. It will always house the most powerful features of the tool and it would be a waste of your time not to use them.
 {.is-danger}
 
 
 ### 1. **UUID/Handle Creation**
 
 - Right-click on an open editor to access the context menu, or press F1 and choose "Generate UUID" or "Generate Handle" to insert a UUID or handle at the cursor's location.
-- If text is selected when generating a UUID or handle, the selected text will be replaced with the generated value. For handles, the selected text will be used as the handle's context if local XML files exist.
-- All this functionality also supports multiple cursors.
-- You can also generate a UUID or handle using the default keystrokes Ctrl+Shift+U and Ctrl+Shift+H, respectively.
+- If text is selected when generating a UUID or handle, the selected text will be replaced with the generated value. For handles, the selected text will be used as the handle's context if a local XML files exist.
+- All this functionality supports multiple cursors.
+- Alternatively you can generate a UUID or handle using the default keystrokes Ctrl+Shift+U and Ctrl+Shift+H, respectively.
 - When handles are generated, if an XML file exists, it will add the newly created handle to the XML. *Tip: you can easily create one with [Create BG3 File](https://wiki.bg3.community/Tools/bg3-mod-helper#h-6-other-actions)*. Handle-y!
 
 
