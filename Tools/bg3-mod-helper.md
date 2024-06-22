@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-06-22T19:54:54.812Z
+date: 2024-06-22T22:46:50.356Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -195,11 +195,11 @@ The one thing you should get comfy with, even if you ~~stupidly~~ unfortunately 
 
 ### 3. **Pack/Unpack Mods**
 - Open a custom webview tab where users can manage packing and unpacking related features (webview in development, quick actions currently working though).
-- Can also quick pack/unpack without the packaging tool by clicking the dropdown arrow on `Pack/Unpacking Tool` to display quick options regarding packing such as `Pack Mod` and `Unpack Mod`.
-- `Pack Mod` performs a number a background checks.
---Ensures a meta exists and will prompt you to create one if not.
+- Can also quickly pack/unpack without the packaging tool by clicking the dropdown arrow on `Pack/Unpacking Tool` to display quick options regarding packing such as `Pack Mod` and `Unpack Mod`.
+- `Pack Mod` performs a number of background checks:
+--Ensures a meta exists or prompts you to create one.
 --Converts all non excluded .lsx and .xml files for you automatically.
---Will move the newly made .pak to the games Mods folder.
+--Moves the newly made .pak to the game's Mods folder.
 --Can autolaunch game after packing if settings are enabled (disabled at the meowment).
 
 
@@ -217,15 +217,15 @@ The one thing you should get comfy with, even if you ~~stupidly~~ unfortunately 
 - Convert PNG files to DDS files (and vice versa) by right clicking on a file in the file tree and selecting `Convert To  DDS` or `Convert To PNG`.
 --When converting an atlas texture, it will correctly convert the PNG to dds, not DDS
 - Resize PNG/DDS files by right clicking on a PNG/DDS file and hovering over `Resize Image`. Four options will appear:
---`Resize Image Custom` which will prompt the user to select a length and width (make them the same please)
+--`Resize Image Custom` which will prompt you to select a height and width (make them the same please)
 --`Resize Image to Controller (144x144)`
 --`Resize Image to Hotbar (64x64)`
 --`Resize Image to Tooltip (380x380)`
-- If you have a PNG image with a transparent background that you plan to use as an icon in the game, you can add a background to to it by right clicking on the PNG in the file tree and clicking `Add Icon Background` which will prompt the user to select from multiple in game backgrounds or a custom one if you have one to supply.
+- If you have a PNG image with a transparent background that you plan to use as an icon in the game, you can add a background to it. Right click on the PNG in the file tree and select `Add Icon Background` which will prompt you to either choose from multiple in game backgrounds or a custom one if you have one.
 
 ## 6. **Other Actions**
-- Generate BG3 related template files (ClassDescriptions.lsx, etc) quickly by right clicking in the file tree and clicking `Create BG3 File` or press `Control + 1` which will give the user a dropdown of files templates to make.
-- Open online export tools (BG3 Search Engine, LSX Validator and Stats Validator) in a VSCode tab by right clicking in an open editor and hovering over `Export Tools` and select the relevant option.
+- Generate BG3 related template files (ClassDescriptions.lsx, etc) quickly by right clicking in the file tree and clicking `Create BG3 File` or press `Control + 1` which opens a dropdown of file templates to choose from.
+- Open online export tools (BG3 Search Engine, LSX Validator and Stats Validator) in a VSCode tab. Right click in an open editor to open the context menu, hover over `Export Tools`, and select the relevant option.
 - Hovering over BG3 related functions will provide information on them
 --VERY LIMITED WHILE STILL GETTING FUNCTION INFORMATION
 - Autocomplete for data entries
