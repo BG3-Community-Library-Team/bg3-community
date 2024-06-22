@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-06-22T22:14:07.056Z
+date: 2024-06-22T22:15:36.294Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -45,6 +45,8 @@ Intended as a temporary hub for terms that may need to be explained in our work-
 ## G
 
 ## H
+
+-   handle - 
 
 ## I
 
