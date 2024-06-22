@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-06-22T17:27:57.862Z
+date: 2024-06-22T17:59:05.165Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -137,7 +137,7 @@ Let's go through each settings option.
 
 ## Features and Usage
 ### 0. **The Data Provider**
-While the extension has many other capabilities and shortcuts, the best way to access the features of the extension are to use the data provider. Im sure when you first installed the extension you noticed the little box on the far left (given you havent moved around your VSCode ui). Clicking it opens up the data provider, which is a quick one stop shop for alot of (but not all) the main functionality of the extension.
+While the extension has many other capabilities and shortcuts, the best way to access the features of the extension is to use the data provider. I'm sure when you first installed the extension, you noticed the little box on the far left (given you havent moved around your VSCode ui). Clicking it opens up the data provider, which is a quick one stop shop for alot of (but not all) the main functionality of the extension.
 ![data_providerr.png](/tutorials/bg3-mod-helper/data_providerr.png)
 
 # Some important notes:
