@@ -1,0 +1,195 @@
+---
+title: How to remove mods from BG3
+description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
+published: true
+date: 2024-06-22T22:15:33.634Z
+tags: bg3-mod-helper, moduse, mod use, loose-file-mods, mod, bg3mm, mod uninstall
+editor: markdown
+dateCreated: 2024-05-02T16:40:20.175Z
+---
+
+# *Establishing a Baseline: A Guide to Removing Mods from BG3*
+
+## **Created in collaboration with Resplendent Arrow, Maze, DefinitiveToast, Norbyte, Surōand a very special thanks to LaughingLeader and NellsRelo!**
+
+---
+
+## **Before using this guide:**
+
+-   This guide is written assuming you are using [_BG3MM_](https://github.com/LaughingLeader/BG3ModManager) and windows
+-   This guide focuses on removing all mods from your game, but it can also be used to remove individual mods for troubleshooting
+-   This guide directs you to delete folders/files, but you can move the folders/files to another location instead of deleting if you want to reinstall the mods after following this guide
+-   This guide uses screenshots of folder locations that may differ from what it looks on your computer
+-   If you would like to share this guide outside of the Larian discord, please contact Resplendent Arrow on Discord
+
+---
+
+# **1\. Delete all Mods in your AppData folder**
+
+## **1.1 Navigate to your Mods folder at:**
+
+C:\\Users\\YourName\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\Mods
+
+![](https://lh7-us.googleusercontent.com/sfc47gTFBtAgy0jdp-vdZUDtUHWdTf3V1pQs1a3pgUNM7dLI0mpVGE0OJoNloVsLvdpha0K7iWP5y9LhXBidJ-fI7odc2I3Hek3idI6odP_tKVLPt2FWHYpBlkD0B8Ln6xQSEfiAVMV2U5UTc_vPmA)
+
+You can find this folder quickly by typing “run” in the windows search. When the command window opens, type or copy in: %LOCALAPPDATA% and press enter. When the window opens, navigate to the Larian folder\\Baldur's Gate 3\\Mods
+
+![](https://lh7-us.googleusercontent.com/IrwKckAgRpfBCkh1Kx9sh1kyLllf7fsHwqunn6cnEYa6wpKBukD3FJjSwRtKGwJxnykHLlbNrZORZ0GoC20GDeuZHWxPZUoiiByxTIrVc0b9BuBx0CZObXdwqty6rUbK38XC_Dj2ZDVD3yNk09ORyg)
+
+![](https://lh7-us.googleusercontent.com/d5N7jk9lm40JSAJ20HZT2x8hHG9fBJz3ofqr0HVzHU5revqfozXMyP-TQyk2FHppecGfBPSb_KSnnbEgRX-EBUpddd6yM7N8Jin7JwdaWZ_MSbgSA9PGS2EB6EQgzNfYIeh6e-jAj1UhYX2Gtx3Ejw)
+
+## **1.2 Delete ALL .pak files (mods) in the Mods Folder:**
+
+![](https://lh7-us.googleusercontent.com/JZBIPV31xeidZR7sWowjcnQxfoAVtFDggLqEGQiOtM4Bclg24hSrkU0hGjGMbXMJZcQwnTxuIVyLxd9EFVGTOfndDWTo_poAnVRkeyG2ut6nFd3qpAtL4tOnVTGqdxZRoWUOVIWhGEm-6ofmNrIFTw)
+
+---
+
+# **2\. Delete Folders in Installation Folders**
+
+Some mods may have files in your BG3 Installation folder, such as UniqueTav or other replacer mods. These files and folders must be **deleted**.
+
+## **2.1 Navigate to your Installation folder at:**
+
+D:\\SteamLibrary\\steamapps\\common\\Baldurs Gate 3\\Data
+
+![](https://lh7-us.googleusercontent.com/EOnBD3jTOQNUM2aRECE1jW6qfgjmlb-lhxwTX4h9sy_4hgZE1FW-gzcSZ1lDC-eJM5NspnhRG7JDSadP8SJzK8IFWmNziNJ_0CnAkMkVT_xmgWZMLbP2C3RLSIgDbNgxJOs4pVasqYDNrZpdxi6kHw)
+
+*The location of your installation folder may look different.*
+
+If you are using the steam version of BG3, you can access your Bin folder by right clicking the game in your game list, clicking Manage, then Browse Local Files.
+
+![](https://lh7-us.googleusercontent.com/cQ7YI8Szh3ZEq_-CXY0ibUEAhtef5b1QyaxRVdliYySOXI270k9gPU7GXFnV-4Wl0T2YKkBhFQVqGQq5PEZeOdWzYNg350eU3UhXNY6xmge-wF3oZ8MRx5_8iPaE-pnzGvT1GCaCtSXvYz-byDEGBg)
+
+## **2.2 Delete all folders in your Data folder, EXCEPT LOCALIZATION**
+
+**_DO NOT DELETE .PAK FILES OR THE LOCALIZATION FOLDER, DOING SO MAY RESULT IN NEEDING TO FULLY REINSTALL BG3. ONLY DELETE THE FOLDERS HIGHLIGHTED IN THE SCREENSHOTS BELOW_**
+
+![](https://lh7-us.googleusercontent.com/ZfBGtdVsBWmUps9aWCA7uTvFu74_rhieWHod-OHPaENCqRLLVJp4BOypIwhUxAG8vUlvPS68KTFCix3LW2DyrKZTMSyWyhBOoGl7dEHeH18FHkPQly3R4MQrzD-VOOGvRgTgsQE1kQauHqkwFzCPBA)
+
+ *As done in _step 1.2_, you can instead move these folders to another location if you intend to mod the game again.*
+
+If you installed any .pak (mod)’s into your Localization folder, make sure to delete those .pak (mod) files.
+
+## **Special Note - Translation Mods**
+
+If you are using a translation mod, the following must be done:
+
+-   If you installed a .pak (mod) in the Localization folder, make sure to delete the .pak (mod) file.
+-   If you replaced any of the .pak (mod) files in the Localization folder, simply delete those replaced .pak files and when you verify your game in _step 4_, the verification process will replace this file with a vanilla file.
+
+---
+
+# **2.1. Uninstall NativeMods/WASD/NativeCameraTweaks**
+
+Use this step if you are using NativeMods/WASD/NativeCameraTweaks
+
+## **2.1.1 Navigate to your Bin folder, as done in _step 2.1_**
+
+![](https://lh7-us.googleusercontent.com/d3Va6wYlmclQmgol4ekMQS4WZzv3X2ELJGn_wsEjr459M3zzuBuSn0jvLnmfxL2vgoSXa9Z2ovKWiA5MsD0wjvFavbidv48pipAuHPCb4xrMVlbqMXC9Ke5nHI1a5oTMSPj47Qin5VFbDneR7M9yqw)
+
+*The location of your installation folder may differ.*
+
+## **2.1.2 Delete the following in your Bin folder to remove** NativeMods/WASD/NativeCameraTweaks**:**
+
+-   Delete the “NativeMods” folder
+-   Delete “bink2w64.dll”
+
+![](https://lh7-us.googleusercontent.com/YjEEe33FgKNEXBz0Q-xroy9nuXqFUtKUMlNAUxFrw7Af5Hz6hZxbNmlZYNYbuTFMPW-8-IKfURejfJrPDROQ4L4SSLXisfGtB7yjTXR6jIt44DK9SSyOkK4ggneVHKodfYO22QQKHaOh-tCFPf6cCQ)
+
+## **2.1.3 Rename “bink2w64\_original.dll” to “bink2w64.dll”**
+
+The file “bink2w64\_original.dll” was added when NativeMods was installed.
+
+![](https://lh7-us.googleusercontent.com/gigioMv1DPjqQHkBp65m_DOCqahGVaNXIyq8Ic22eEfDOOn5ThSxwqGYv0bmNgs7R9ouAxZ6FKbiC9L82OYRrljaslkR-L2nwL6lt92FCD1aj8poq-_6KUU1gGNwP8JW3z_Gnib-OcnWBHrG1aozqw)
+
+---
+
+# **2.2. Uninstall Script Extender**
+
+Use this step if you have Script Extender installed. 
+
+## **2.2.1 Navigate to your Bin folder, as done in _step 2.1_**
+
+![](https://lh7-us.googleusercontent.com/d3Va6wYlmclQmgol4ekMQS4WZzv3X2ELJGn_wsEjr459M3zzuBuSn0jvLnmfxL2vgoSXa9Z2ovKWiA5MsD0wjvFavbidv48pipAuHPCb4xrMVlbqMXC9Ke5nHI1a5oTMSPj47Qin5VFbDneR7M9yqw)
+
+## **2.2.2 Delete the file “Dwrite.dll” in your Bin folder**
+
+![](https://lh7-us.googleusercontent.com/m6W8Fyitzb2pDPHxiM1uxLX_oUcOz3ZaaC0MVX4vf9v9zrrzUK_aOB-iPnwtkqHukfl7mz9F0vpRRHFSSfXj8ATu5j4hSDr0Tv9Ew8DsfT9IjkkuJkQyf4C3y6Hjqg2uMzwV7sV8lwmmErLY1XIAsQ)
+
+## **2.2.3 Delete the files “ScriptExtenderSetting.json” and “ScriptextenderUpdater.json” (if you have these) in your Bin folder**
+
+![](https://lh7-us.googleusercontent.com/J0vMTloBJqNsUTQ7RhzGUrC-YuIgX8lPhioujUm-0C-YcYdBhYJI12FogigdWPUOjamnM6EExe3iqQcg3FgWgQvMoBwjWIiLnW4lkoVmT-20x8rlalClRCGozRlf9KHRdT5EPnzJfBcfkzdV46FeTw)
+
+## **2.2.4 Navigate to your local folder, as done in _step 1.1_**
+
+## **2.2.5 Delete the folder “BG3ScriptExtender”**
+
+![](https://lh7-us.googleusercontent.com/A2CmAgCI5tR3HUWRcPNz2Cy80wkLW54Xllx16mQX1yGvJZWvdqDF67KfErvjkBeL19RL95t1ZBq98Te_krO32cppaSvtRIRiKSErWP0B_eVoZe-7-8rMRQkRXUXJGcX_BCNLf7kb_18RzK-4ZVt_EQ)
+
+## **2.2.6 Navigate to your Baldur’s Gate 3 folder in your AppData**
+
+As done in [_step 1.1_](https://docs.google.com/document/d/1RiVLwx__QUBzTNyO4F2xCNeLrIrAZahEq8XFDXsLxEU/edit#heading=h.5whws5mpsrlg), use the run command, click into the Larian Studios folder, then the Baldur’s Gate 3 folder.
+
+## **2.2.7 Delete the folder ”Script Extender” (if you have it)**
+
+![](https://lh7-us.googleusercontent.com/x3Y_K6jqR0o-xVbkBVke2nalzQchNn7bt6ti80nfyeOzeprwzyuN544QZ58mCgKgiHAiPPZtPoihz3chPi3IYmf06ULWM6vemuCNEDkdDnjpsT77vthCALPpG5V-hiAAM0zPLo19fysZW2fL4xNSEQ)
+
+---
+
+# **2.3 Uninstall Party Limit Begone Legacy Edition**
+
+If you had Party limit Begone Legacy, then you need to delete your .exe files in your bin folder and the .exe backup.
+
+The .exes do not get altered/reinstalled when you verify the game so this is a MUST!
+
+**If you use the .pak version then do not worry and skip this step.**
+
+---
+
+# **3\. Deleting the modsetting file**
+
+## **3.1 Navigate to the following location:**
+
+C:\\Users\\YourName\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\PlayerProfiles\\Public
+
+Refer to [_step 1.1_](https://docs.google.com/document/d/1RiVLwx__QUBzTNyO4F2xCNeLrIrAZahEq8XFDXsLxEU/edit#heading=h.5whws5mpsrlg) on how to navigate to the Local file.
+
+## **3.2 Delete the modsetting file, refer to the image below**
+
+![](https://lh7-us.googleusercontent.com/1c_d_3riqXNJ4yBRk4RPfWQiYt_HiQ8Ak3XeNyaXpWwT2XMKVwr_DQpEAruG-Tquyj88M6OZmuf8rugbV_cb4WMjAsIi5hOFXpadTRlY46bI_PMy3eogKKX5qE3wlJr0LtKbssbnu9Uk96C6ACsIrA)
+
+---
+
+# **4\. Verify Game Files**
+
+## **4.1 In steam, right click on BG3 in your game list and click properties.**
+
+![](https://lh7-us.googleusercontent.com/gIV2yWZCHH_K6-QYvHMYhfM64MZXC4JsBNmlguvpcP9BN8o4O0Y6DCCCzDTa2EoibfmJ0vPvRLfUIM_IF9Z8vinjVve1PRU3S8zfpmuad-fyu5zEyll2VRb9_eXRshhAHvt39JSm4es1OyiDMC0GrA)
+
+## **4.2 In the properties window, click on the Installed files tab and click Verify Integrity of Game Files**
+
+![](https://lh7-us.googleusercontent.com/nC7ObRzfxulKmG-UTsSmn0daeU6QOvr32q21t1i71zi9wiIc78NcNYeTzUBcT3XcOn-IgIqtOAn-fh6OIWEmOHxIcpaGpZKTVwHCQVH3TeHE-c23-FRC-_muzVmpLJ6jk0l2cOWY3Cn9yqIc1IUqlA)
+
+*This process may take some time.*
+
+Verifying game files replaces missing files and files that have been overwritten by mods. It does not delete mod files, which is why all the above steps must be done.
+
+## **Special Note - GOG Users**
+
+For GOG users, you can verify files like in the screenshot below.
+
+![](https://lh7-us.googleusercontent.com/6l8BVR8aLHjNIMslF3kKXpN5JvmStIL7vWV1_FG3BWVPCJe0O1V5OfxuBpjwX6EXj55NWWaqEm7pol6Au0imtqHKbtg4Ml0MVRHa-2ofmofZMrlqUPAnY74uiCwBQ4r76ic4NsMtx5q0TxCGXjIpkg)
+
+---
+
+# **5\. Test your game**
+
+## **5.1 Run BG3 once without any mods (This will reset the modsetting file and tell the game SE is no longer installed)**
+
+## **5.2 Test if you can reach character creation without issues and identify any bugs.**
+
+## **5.3 If there are no issues, create a base tav and test if you can load into the ship (the tutorial area).**
+
+If you have made it here, then congratulations, you have successfully returned your modded BG3 to a vanilla state! You can choose to continue without mods or use this as an opportunity to test mods.
+
+![](https://lh7-us.googleusercontent.com/iI8GEYUqbLLxjJ3UG8dlDcGmU0jFl1DW5y3yUuLklQUxGhUN__Z0_sajucPxHmnMk-uzx9er_hxBmFMeSCpV_iHJGcw_mo_P4yX-2pTiTJpmxHfenCunnHGimyAsrgHIz1GksdK4ML1nQS1QrlANPg)
