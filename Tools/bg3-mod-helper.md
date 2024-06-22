@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-06-22T18:37:15.946Z
+date: 2024-06-22T19:43:28.944Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -143,9 +143,6 @@ While the extension has many other capabilities and shortcuts, the best way to a
 # Some important notes:
 
 > If you see a `>` before an option, such as Pack/Unpacking Tool, it means that button does multiple things. If you press the text next to it, its main action will be performed, typically open up some sort of webview to work with that tool or process. Your other option would be to hit the `>`, revealing a dropdown list of quick options you can execute without accessing the more intensive main action.
-{.is-info}
-
-> If you see `(in development)` next to an option, it is clearly in development. Expect issues with these and please don't bother me with errors that pop up. It is known, `dear user`.
 {.is-info}
 
 > If you don't see the cardboard box, you don't have the extension installed correctly or something is corrupted.
