@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-06-21T17:32:26.713Z
+date: 2024-06-22T20:09:22.642Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -58,7 +58,10 @@ Intended as a temporary hub for terms that may need to be explained in our work-
 ## L
 
 -   Load order - term commonly used for the sequence in which mods are placed in bg3mm and vortex
+-   loca - 
 -   Lua - programming language used for SE
+-   lsf - 
+-   lsx -
 
 ## M
 
@@ -103,6 +106,8 @@ Intended as a temporary hub for terms that may need to be explained in our work-
 -   Workspace
 
 ## X
+
+-   xml - 
 
 ## Y
 
