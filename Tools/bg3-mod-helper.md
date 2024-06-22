@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-06-22T16:00:32.834Z
+date: 2024-06-22T16:16:42.947Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -53,7 +53,7 @@ Although the extension is still receiving regular updates, it's very functional,
 ## Limitations
 Nothing is perfect, let's get the rough stuff out of the way before we start, to possibly save you time in case this extension is not what you are looking for.
 - Unable to work with multiple workspaces in one VSCode window
-- Unable to edit pngs/dds in VSCode (can resize, convert, generate atlas texture, and apply backgrounds to transparent pngs though)
+- Unable to edit png and dds files in VSCode (can resize, convert, generate atlas texture, and apply backgrounds to transparent pngs though)
 - Buggy when having other folders within your workspace
 - Buggy when using multiple VSCode windows (need to confirm)
 - Possible lag due to folder/file size (need to confirm)
