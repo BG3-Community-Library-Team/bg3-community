@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-06-22T22:15:36.294Z
+date: 2024-06-22T22:21:05.911Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -71,6 +71,7 @@ Intended as a temporary hub for terms that may need to be explained in our work-
 
 ## N
 
+-   Norbsearch - [BG3 Search Engine](https://bg3.norbyte.dev/) by Norbyte
 -   Notepad++ - open source code editor and replacement for NotePad. Commonly used by the community.
 
 ## O
