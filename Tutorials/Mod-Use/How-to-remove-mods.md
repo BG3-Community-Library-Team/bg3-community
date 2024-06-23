@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T02:25:51.476Z
+date: 2024-06-23T02:26:18.576Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -182,6 +182,8 @@ For GOG users, you can verify files in a similar way as Steam
 - Test if you can reach character creation without issues and identify any bugs.
 - If there are no issues, create a base tav and test if you can load into the ship (the tutorial area).
 
-If you have made it here, then congratulations, you have successfully returned your modded BG3 to a vanilla state! You can choose to continue without mods or use this as an opportunity to test mods.
+> If you have made it here, then congratulations, you have successfully returned your modded BG3 to a vanilla state! You can choose to continue without mods or use this as an opportunity to test mods.
+> 
+{.is-success}
 
 ![](https://lh7-us.googleusercontent.com/iI8GEYUqbLLxjJ3UG8dlDcGmU0jFl1DW5y3yUuLklQUxGhUN__Z0_sajucPxHmnMk-uzx9er_hxBmFMeSCpV_iHJGcw_mo_P4yX-2pTiTJpmxHfenCunnHGimyAsrgHIz1GksdK4ML1nQS1QrlANPg)
