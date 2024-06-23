@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T00:43:19.458Z
+date: 2024-06-23T00:45:09.866Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -60,11 +60,9 @@ If you are using the Steam version of BG3, you can access your Bin folder by rig
 > **DO NOT DELETE .PAK FILES OR THE LOCALIZATION FOLDER, DOING SO MAY RESULT IN NEEDING A FULL REINSTALL OF BG3. ONLY DELETE THE FOLDERS HIGHLIGHTED IN THE SCREENSHOTS BELOW**
 {.is-warning}
 
-![](https://lh7-us.googleusercontent.com/ZfBGtdVsBWmUps9aWCA7uTvFu74_rhieWHod-OHPaENCqRLLVJp4BOypIwhUxAG8vUlvPS68KTFCix3LW2DyrKZTMSyWyhBOoGl7dEHeH18FHkPQly3R4MQrzD-VOOGvRgTgsQE1kQauHqkwFzCPBA)
+![](https://lh7-us.googleusercontent.com/ZfBGtdVsBWmUps9aWCA7uTvFu74_rhieWHod-OHPaENCqRLLVJp4BOypIwhUxAG8vUlvPS68KTFCix3LW2DyrKZTMSyWyhBOoGl7dEHeH18FHkPQly3R4MQrzD-VOOGvRgTgsQE1kQauHqkwFzCPBA "Example image of the specific files in the Data folder to delete or move to another location")<p style="text-align:center">*Example image of the specific files in the Data folder to delete or move to another location*</p>
 
- *As done in _step 1.2_, you can instead move these folders to another location if you intend to mod the game again.*
-
-If you installed any .pak (mod)’s into your Localization folder, make sure to delete those .pak (mod) files.
+If you installed any .pak//mods into your Localization folder, make sure to delete those .pak//mods files.
 
 ## **Special Note - Translation Mods**
 
