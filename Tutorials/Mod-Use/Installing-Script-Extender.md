@@ -2,43 +2,37 @@
 title: Installing Script Extender
 description: How to install Norbyte's Script Extender
 published: true
-date: 2024-06-23T02:31:58.480Z
+date: 2024-06-23T02:44:04.174Z
 tags: installation, moduse, script extender
 editor: markdown
 dateCreated: 2024-06-21T04:52:35.045Z
 ---
 
-How to install Script Extender
+# <p style="text-align:center">*How to Install Script Extender*</p>
 
-> **Do not Download Script Extender from Nexus**
-> **It is an inofficial reupload.**
+> **Do not Download Script Extender from Nexus. It is an unofficial reupload.**
+> **Do not Download Script Extender from any other website except for Norbytes official GitHub.**
 {.is-danger}
 
 
-## **1\. Availability of Script Extender**
+## Compatiable Operating Systems
 
-
-> Script Extender works on Windows
-> Script Extender works on Steam Deck *
-> Script Extender works on Linux *
-{.is-success}
-
-
-> There is no official support for Script Extender on Mac OS.
-> There is no support for Script Extender on consoles like PlayStation or XBox
-{.is-danger}
+Script Extender is compatiable with the following systems:
+- Script Extender works on Windows
+- Script Extender works on Steam Deck *
+- Script Extender works on Linux *
 
 \* Additional actions necessary. See [4. Installing Script Extender Manually (Linux)](https://wiki.bg3.community/en/Tutorials/Mod-Use/Installing-Script-Extender#h-4-installing-script-extender-manually-linux)
 
+> Mac OS has no official supprt for Script Extender
+> Consoles (Playstation, Xbox) have no official supprt for Script Extender
+{.is-danger}
 
+## **Method 1: Installing Script Extender via BG3MM (Windows)**
 
-## **2\. Installing Script Extender via BG3MM (Windows)**
+The easiest way to install Script Extender (SE) is by using Baldur’s Gate 3 Mod Manager (BG3MM) 
 
-The easiest way to install Script extender (SE) is by using the Baldur’s Gate 3 Mod Manager (BG3MM)  
-
-[_https://github.com/LaughingLeader/BG3ModManager/releases_](https://github.com/LaughingLeader/BG3ModManager/releases)
-
-
+[Click here](https://github.com/LaughingLeader/BG3ModManager/releases) to go to LaughingLeader's official GitHub to download BG3MM. You can use [this guide](/Tutorials/Mod-Use/Installation-Of-BG3MM) this guide to install BG3MM.
 
 <img src="https://lh7-us.googleusercontent.com/kh-PKn8ADbNExFHssRdN3ZwpuBdeFwFqHgDoP7LJZUZOilN0mnNKcOiE4jXbzyECBmAJdm01IFPi7noHuO0jhDZFkgmI8oRecyRfE7XXPYqtxpFCfAtEeSumLuDUm00XHZrhNau6ZNmJbiMaTBEstco" alt="description" width="600" height="auto" />
 
