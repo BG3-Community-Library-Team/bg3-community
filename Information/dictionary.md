@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-06-22T22:21:05.911Z
+date: 2024-06-23T07:31:47.120Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -89,8 +89,9 @@ Intended as a temporary hub for terms that may need to be explained in our work-
      
 ## S
 
--   Shared folder - folder that contains your Localization, Mods, and Public folder
+-   Screen Archery - taking in game screen shots or recording videos in game
 -   Server - 
+-   Shared folder - folder that contains your Localization, Mods, and Public folder
 
 ## T
 
