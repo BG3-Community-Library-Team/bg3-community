@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T00:15:55.093Z
+date: 2024-06-23T00:31:08.410Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -29,13 +29,11 @@ dateCreated: 2024-05-02T16:40:20.175Z
 
 C:\\Users\\YourName\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\Mods
 
-![](<https://lh7-us.googleusercontent.com/sfc47gTFBtAgy0jdp-vdZUDtUHWdTf3V1pQs1a3pgUNM7dLI0mpVGE0OJoNloVsLvdpha0K7iWP5y9LhXBidJ-fI7odc2I3Hek3idI6odP_tKVLPt2FWHYpBlkD0B8Ln6xQSEfiAVMV2U5UTc_vPmA> "Example image of Mod folder located in the AppData of a users computer")*TEST*
+![](<https://lh7-us.googleusercontent.com/sfc47gTFBtAgy0jdp-vdZUDtUHWdTf3V1pQs1a3pgUNM7dLI0mpVGE0OJoNloVsLvdpha0K7iWP5y9LhXBidJ-fI7odc2I3Hek3idI6odP_tKVLPt2FWHYpBlkD0B8Ln6xQSEfiAVMV2U5UTc_vPmA> "Example image of Mod folder located in the AppData of a users computer") <p style="text-align:center">*Example image of Mod folder located in the AppData of a users computer*</p>
+To quickly find this folder, type "run" into the windows search bar at the bottom of your screen. A window should open that looks like the image below. Type or copy and paste the following into the run screen and press enter:
+> %localAppData%/Larian Studios/Baldur's Gate 3/Mods
 
-You can find this folder quickly by typing “run” in the windows search. When the command window opens, type or copy in: %LOCALAPPDATA% and press enter. When the window opens, navigate to the Larian folder\\Baldur's Gate 3\\Mods
-
-![](https://lh7-us.googleusercontent.com/IrwKckAgRpfBCkh1Kx9sh1kyLllf7fsHwqunn6cnEYa6wpKBukD3FJjSwRtKGwJxnykHLlbNrZORZ0GoC20GDeuZHWxPZUoiiByxTIrVc0b9BuBx0CZObXdwqty6rUbK38XC_Dj2ZDVD3yNk09ORyg)
-
-![](https://lh7-us.googleusercontent.com/d5N7jk9lm40JSAJ20HZT2x8hHG9fBJz3ofqr0HVzHU5revqfozXMyP-TQyk2FHppecGfBPSb_KSnnbEgRX-EBUpddd6yM7N8Jin7JwdaWZ_MSbgSA9PGS2EB6EQgzNfYIeh6e-jAj1UhYX2Gtx3Ejw)
+![](<https://lh7-us.googleusercontent.com/IrwKckAgRpfBCkh1Kx9sh1kyLllf7fsHwqunn6cnEYa6wpKBukD3FJjSwRtKGwJxnykHLlbNrZORZ0GoC20GDeuZHWxPZUoiiByxTIrVc0b9BuBx0CZObXdwqty6rUbK38XC_Dj2ZDVD3yNk09ORyg> "Image showing the run window with the copy and pasted line of text.")
 
 ## **1.2 Delete ALL .pak files (mods) in the Mods Folder:**
 
