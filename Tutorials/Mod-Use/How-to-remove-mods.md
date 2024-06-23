@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T01:38:29.005Z
+date: 2024-06-23T01:41:50.636Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -89,9 +89,9 @@ This folder is inside your game installation folder, refer to the steps taken in
 
 ## **2.1.3 Rename “bink2w64\_original.dll” to “bink2w64.dll”**
 
-The file “bink2w64\_original.dll” was added when NativeMods was installed.
+The file “bink2w64\_original.dll” was created when NativeMods was installed.
 
-![](https://lh7-us.googleusercontent.com/gigioMv1DPjqQHkBp65m_DOCqahGVaNXIyq8Ic22eEfDOOn5ThSxwqGYv0bmNgs7R9ouAxZ6FKbiC9L82OYRrljaslkR-L2nwL6lt92FCD1aj8poq-_6KUU1gGNwP8JW3z_Gnib-OcnWBHrG1aozqw)
+![](https://lh7-us.googleusercontent.com/gigioMv1DPjqQHkBp65m_DOCqahGVaNXIyq8Ic22eEfDOOn5ThSxwqGYv0bmNgs7R9ouAxZ6FKbiC9L82OYRrljaslkR-L2nwL6lt92FCD1aj8poq-_6KUU1gGNwP8JW3z_Gnib-OcnWBHrG1aozqw "Example image showing the file to rename")<p style="text-align:center">*Example image showing the file to rename*</p>
 
 ---
 
@@ -99,7 +99,7 @@ The file “bink2w64\_original.dll” was added when NativeMods was installed.
 
 Use this step if you have Script Extender installed. 
 
-## **2.2.1 Navigate to your Bin folder, as done in _step 2.1_**
+Script Extender is installed in the Bin folder. Refer to the steps taken in *2.1 Navigate to your Installation folder at* to get to your Bin folder.
 
 ![](https://lh7-us.googleusercontent.com/d3Va6wYlmclQmgol4ekMQS4WZzv3X2ELJGn_wsEjr459M3zzuBuSn0jvLnmfxL2vgoSXa9Z2ovKWiA5MsD0wjvFavbidv48pipAuHPCb4xrMVlbqMXC9Ke5nHI1a5oTMSPj47Qin5VFbDneR7M9yqw)
 
