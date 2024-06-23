@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-06-23T07:33:33.263Z
+date: 2024-06-23T07:35:10.872Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -20,7 +20,7 @@ Intended as a temporary hub for terms that may need to be explained in our work-
 
 ## B
 
--   BG3MM - LaughingLeader's Baldur's Gate 3 Mod Manager
+-   BG3MM - [LaughingLeader's Baldur's Gate 3 Mod Manager](https://github.com/LaughingLeader/BG3ModManager)
 -   BootstrapClient - 
 -   BootstrapServer - 
 
@@ -89,9 +89,8 @@ Intended as a temporary hub for terms that may need to be explained in our work-
      
 ## S
 
--   Screen Archery - taking in game screen shots or recording videos in game
--   Server - 
 -   Shared folder - folder that contains your Localization, Mods, and Public folder
+-   Server - 
 
 ## T
 
