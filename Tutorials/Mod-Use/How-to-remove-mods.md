@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T02:19:22.730Z
+date: 2024-06-23T02:25:51.476Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -159,28 +159,28 @@ In the Public folder, delete the modsetting.lsx file
 
 ## **4.1 In steam, right click on BG3 in your game list and click properties.**
 
-![](https://lh7-us.googleusercontent.com/gIV2yWZCHH_K6-QYvHMYhfM64MZXC4JsBNmlguvpcP9BN8o4O0Y6DCCCzDTa2EoibfmJ0vPvRLfUIM_IF9Z8vinjVve1PRU3S8zfpmuad-fyu5zEyll2VRb9_eXRshhAHvt39JSm4es1OyiDMC0GrA "Example GIF of how to verify files through steam part 1")<p style="text-align:center">*Example GIF of how to verify files through steam*</p>
+![](https://lh7-us.googleusercontent.com/gIV2yWZCHH_K6-QYvHMYhfM64MZXC4JsBNmlguvpcP9BN8o4O0Y6DCCCzDTa2EoibfmJ0vPvRLfUIM_IF9Z8vinjVve1PRU3S8zfpmuad-fyu5zEyll2VRb9_eXRshhAHvt39JSm4es1OyiDMC0GrA "Example GIF of how to verify files through Steam part 1")<p style="text-align:center">*Example GIF of how to verify files through Steam*</p>
 
 ## **4.2 In the properties window, click on the Installed files tab and click Verify Integrity of Game Files**
 
-![](https://lh7-us.googleusercontent.com/nC7ObRzfxulKmG-UTsSmn0daeU6QOvr32q21t1i71zi9wiIc78NcNYeTzUBcT3XcOn-IgIqtOAn-fh6OIWEmOHxIcpaGpZKTVwHCQVH3TeHE-c23-FRC-_muzVmpLJ6jk0l2cOWY3Cn9yqIc1IUqlA "Example GIF of how to verify files through steam part 2")<p style="text-align:center">*Example GIF of how to verify files through steam*</p>
+![](https://lh7-us.googleusercontent.com/nC7ObRzfxulKmG-UTsSmn0daeU6QOvr32q21t1i71zi9wiIc78NcNYeTzUBcT3XcOn-IgIqtOAn-fh6OIWEmOHxIcpaGpZKTVwHCQVH3TeHE-c23-FRC-_muzVmpLJ6jk0l2cOWY3Cn9yqIc1IUqlA "Example GIF of how to verify files through Steam part 2")<p style="text-align:center">*Example GIF of how to verify files through Steam*</p>
 
 > This process may take some time. Verifying game files replaces missing files and files that have been overwritten by mods. It does not delete mod files, which is why all the above steps must be done.
 {.is-info}
 
 ## **Special Note - GOG Users**
 
-For GOG users, you can verify files like in the screenshot below.
+For GOG users, you can verify files in a similar way as Steam
+
+(Screenshot coming soon)
 
 ---
 
-# **5\. Test your game**
+# **5. Test your game**
 
-## **5.1 Run BG3 once without any mods (This will reset the modsetting file and tell the game SE is no longer installed)**
-
-## **5.2 Test if you can reach character creation without issues and identify any bugs.**
-
-## **5.3 If there are no issues, create a base tav and test if you can load into the ship (the tutorial area).**
+- Run BG3 once without any mods (This will reset the modsetting file and tell the game SE is no longer installed)
+- Test if you can reach character creation without issues and identify any bugs.
+- If there are no issues, create a base tav and test if you can load into the ship (the tutorial area).
 
 If you have made it here, then congratulations, you have successfully returned your modded BG3 to a vanilla state! You can choose to continue without mods or use this as an opportunity to test mods.
 
