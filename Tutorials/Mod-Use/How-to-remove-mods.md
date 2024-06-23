@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T00:03:41.225Z
+date: 2024-06-23T00:04:14.126Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -29,7 +29,7 @@ dateCreated: 2024-05-02T16:40:20.175Z
 
 C:\\Users\\YourName\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\Mods
 
-![Example image of Mod folder located in the AppData of a users computer](<https://lh7-us.googleusercontent.com/sfc47gTFBtAgy0jdp-vdZUDtUHWdTf3V1pQs1a3pgUNM7dLI0mpVGE0OJoNloVsLvdpha0K7iWP5y9LhXBidJ-fI7odc2I3Hek3idI6odP_tKVLPt2FWHYpBlkD0B8Ln6xQSEfiAVMV2U5UTc_vPmA>)
+![Example image of Mod folder located in the AppData of a users computer](https://lh7-us.googleusercontent.com/sfc47gTFBtAgy0jdp-vdZUDtUHWdTf3V1pQs1a3pgUNM7dLI0mpVGE0OJoNloVsLvdpha0K7iWP5y9LhXBidJ-fI7odc2I3Hek3idI6odP_tKVLPt2FWHYpBlkD0B8Ln6xQSEfiAVMV2U5UTc_vPmA "Test")
 
 
 You can find this folder quickly by typing “run” in the windows search. When the command window opens, type or copy in: %LOCALAPPDATA% and press enter. When the window opens, navigate to the Larian folder\\Baldur's Gate 3\\Mods
