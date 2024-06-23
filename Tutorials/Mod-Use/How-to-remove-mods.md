@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T01:41:50.636Z
+date: 2024-06-23T02:06:21.285Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -97,55 +97,52 @@ The file “bink2w64\_original.dll” was created when NativeMods was installed.
 
 # **2.2. Uninstall Script Extender**
 
-Use this step if you have Script Extender installed. 
+Use these steps if you have Script Extender installed. 
 
 Script Extender is installed in the Bin folder. Refer to the steps taken in *2.1 Navigate to your Installation folder at* to get to your Bin folder.
 
-![](https://lh7-us.googleusercontent.com/d3Va6wYlmclQmgol4ekMQS4WZzv3X2ELJGn_wsEjr459M3zzuBuSn0jvLnmfxL2vgoSXa9Z2ovKWiA5MsD0wjvFavbidv48pipAuHPCb4xrMVlbqMXC9Ke5nHI1a5oTMSPj47Qin5VFbDneR7M9yqw)
+## **2.2.1 Delete the file “Dwrite.dll” in your Bin folder**
 
-## **2.2.2 Delete the file “Dwrite.dll” in your Bin folder**
+![](https://lh7-us.googleusercontent.com/m6W8Fyitzb2pDPHxiM1uxLX_oUcOz3ZaaC0MVX4vf9v9zrrzUK_aOB-iPnwtkqHukfl7mz9F0vpRRHFSSfXj8ATu5j4hSDr0Tv9Ew8DsfT9IjkkuJkQyf4C3y6Hjqg2uMzwV7sV8lwmmErLY1XIAsQ "Example image showing the file to delete")<p style="text-align:center">*Example image showing the file to delete*</p>s
 
-![](https://lh7-us.googleusercontent.com/m6W8Fyitzb2pDPHxiM1uxLX_oUcOz3ZaaC0MVX4vf9v9zrrzUK_aOB-iPnwtkqHukfl7mz9F0vpRRHFSSfXj8ATu5j4hSDr0Tv9Ew8DsfT9IjkkuJkQyf4C3y6Hjqg2uMzwV7sV8lwmmErLY1XIAsQ)
+## **2.2.2 Delete the files “ScriptExtenderSetting.json” and “ScriptextenderUpdater.json” (if you have them) in your Bin folder**
 
-## **2.2.3 Delete the files “ScriptExtenderSetting.json” and “ScriptextenderUpdater.json” (if you have these) in your Bin folder**
+![](https://lh7-us.googleusercontent.com/J0vMTloBJqNsUTQ7RhzGUrC-YuIgX8lPhioujUm-0C-YcYdBhYJI12FogigdWPUOjamnM6EExe3iqQcg3FgWgQvMoBwjWIiLnW4lkoVmT-20x8rlalClRCGozRlf9KHRdT5EPnzJfBcfkzdV46FeTw "Example image showing the files to delete if you have them")<p style="text-align:center">*Example image showing the file to delete if you have them*</p>
 
-![](https://lh7-us.googleusercontent.com/J0vMTloBJqNsUTQ7RhzGUrC-YuIgX8lPhioujUm-0C-YcYdBhYJI12FogigdWPUOjamnM6EExe3iqQcg3FgWgQvMoBwjWIiLnW4lkoVmT-20x8rlalClRCGozRlf9KHRdT5EPnzJfBcfkzdV46FeTw)
+## **2.2.3 Delete the folder “BG3ScriptExtender”**
 
-## **2.2.4 Navigate to your local folder, as done in _step 1.1_**
+Navigate to your local folder, as done in step *1.1 Navigate to your Mods folder* and delete the BG3ScriptExtender folder.
 
-## **2.2.5 Delete the folder “BG3ScriptExtender”**
+![](https://lh7-us.googleusercontent.com/A2CmAgCI5tR3HUWRcPNz2Cy80wkLW54Xllx16mQX1yGvJZWvdqDF67KfErvjkBeL19RL95t1ZBq98Te_krO32cppaSvtRIRiKSErWP0B_eVoZe-7-8rMRQkRXUXJGcX_BCNLf7kb_18RzK-4ZVt_EQ "Example image showing the file to delete")<p style="text-align:center">*Example image showing the file to delete*</p>
 
-![](https://lh7-us.googleusercontent.com/A2CmAgCI5tR3HUWRcPNz2Cy80wkLW54Xllx16mQX1yGvJZWvdqDF67KfErvjkBeL19RL95t1ZBq98Te_krO32cppaSvtRIRiKSErWP0B_eVoZe-7-8rMRQkRXUXJGcX_BCNLf7kb_18RzK-4ZVt_EQ)
+## **2.2.4 Delete the folder ”Script Extender” (if you have it)**
 
-## **2.2.6 Navigate to your Baldur’s Gate 3 folder in your AppData**
+Navigate to your Baldur's Gate 3 folder in the your AppData. You can use the same "run" method as earlier but use the following text instead.
 
-As done in [_step 1.1_](https://docs.google.com/document/d/1RiVLwx__QUBzTNyO4F2xCNeLrIrAZahEq8XFDXsLxEU/edit#heading=h.5whws5mpsrlg), use the run command, click into the Larian Studios folder, then the Baldur’s Gate 3 folder.
+> %localAppData%/Larian Studios/Baldur's Gate 3
 
-## **2.2.7 Delete the folder ”Script Extender” (if you have it)**
-
-![](https://lh7-us.googleusercontent.com/x3Y_K6jqR0o-xVbkBVke2nalzQchNn7bt6ti80nfyeOzeprwzyuN544QZ58mCgKgiHAiPPZtPoihz3chPi3IYmf06ULWM6vemuCNEDkdDnjpsT77vthCALPpG5V-hiAAM0zPLo19fysZW2fL4xNSEQ)
+![runcommandbg3folder.png](/mod-use/remove-mods/runcommandbg3folder.png "Example image of run window with the copy and pasted line of text")<p style="text-align:center">*Example image of run window with the copy and pasted line of text*</p>
 
 ---
 
 # **2.3 Uninstall Party Limit Begone Legacy Edition**
 
-If you had Party limit Begone Legacy, then you need to delete your .exe files in your bin folder and the .exe backup.
+> **If you use the .pak version of this mod, skip this step.**
+{.is-success}
+
+If you had Party Limit Begone Legacy, then you need to delete your .exe files in your bin folder and the .exe backup.
 
 The .exes do not get altered/reinstalled when you verify the game so this is a MUST!
 
-**If you use the .pak version then do not worry and skip this step.**
-
 ---
 
-# **3\. Deleting the modsetting file**
+# **3. Deleting the modsetting file**
 
-## **3.1 Navigate to the following location:**
+Navigate to C:\\Users\\YourName\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\PlayerProfiles\\Public
 
-C:\\Users\\YourName\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\PlayerProfiles\\Public
+You can navigate to this folder using the same "run" command as done in step *2.2.4 Delete the folder ”Script Extender”*
 
 Refer to [_step 1.1_](https://docs.google.com/document/d/1RiVLwx__QUBzTNyO4F2xCNeLrIrAZahEq8XFDXsLxEU/edit#heading=h.5whws5mpsrlg) on how to navigate to the Local file.
-
-## **3.2 Delete the modsetting file, refer to the image below**
 
 ![](https://lh7-us.googleusercontent.com/1c_d_3riqXNJ4yBRk4RPfWQiYt_HiQ8Ak3XeNyaXpWwT2XMKVwr_DQpEAruG-Tquyj88M6OZmuf8rugbV_cb4WMjAsIi5hOFXpadTRlY46bI_PMy3eogKKX5qE3wlJr0LtKbssbnu9Uk96C6ACsIrA)
 
