@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T02:06:21.285Z
+date: 2024-06-23T02:13:43.940Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -31,6 +31,7 @@ C:\\Users\\YourName\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\Mods
 
 ![](<https://lh7-us.googleusercontent.com/sfc47gTFBtAgy0jdp-vdZUDtUHWdTf3V1pQs1a3pgUNM7dLI0mpVGE0OJoNloVsLvdpha0K7iWP5y9LhXBidJ-fI7odc2I3Hek3idI6odP_tKVLPt2FWHYpBlkD0B8Ln6xQSEfiAVMV2U5UTc_vPmA> "Example image of Mod folder located in the AppData of a users computer") <p style="text-align:center">*Example image of Mod folder located in the AppData of a users computer*</p>
 To quickly find this folder, type "run" into the windows search bar at the bottom of your screen. A window should open that looks like the image below. Type or copy and paste the following into the run screen and press enter:
+
 > %localAppData%/Larian Studios/Baldur's Gate 3/Mods
 
 ![rumcommandmodfolder.png](</mod-use/remove-mods/rumcommandmodfolder.png> "Example image of run window with the copy and pasted line of text")<p style="text-align:center">*Example image of run command window using the copy and pasted text from above*</p>
@@ -117,7 +118,7 @@ Navigate to your local folder, as done in step *1.1 Navigate to your Mods folder
 
 ## **2.2.4 Delete the folder ”Script Extender” (if you have it)**
 
-Navigate to your Baldur's Gate 3 folder in the your AppData. You can use the same "run" method as earlier but use the following text instead.
+Navigate to your Baldur's Gate 3 folder in the your AppData. You can use the same "run" method as earlier but use the following text instead:
 
 > %localAppData%/Larian Studios/Baldur's Gate 3
 
@@ -136,15 +137,19 @@ The .exes do not get altered/reinstalled when you verify the game so this is a M
 
 ---
 
-# **3. Deleting the modsetting file**
+# **3. Deleting the modsetting.lsx file**
 
 Navigate to C:\\Users\\YourName\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\PlayerProfiles\\Public
 
+You can use the same "run" method as earlier but use the following text instead:
+
+> %localAppData%/Larian Studios/Baldur's Gate 3/PlayerProfiles/Public
+
 You can navigate to this folder using the same "run" command as done in step *2.2.4 Delete the folder ”Script Extender”*
 
-Refer to [_step 1.1_](https://docs.google.com/document/d/1RiVLwx__QUBzTNyO4F2xCNeLrIrAZahEq8XFDXsLxEU/edit#heading=h.5whws5mpsrlg) on how to navigate to the Local file.
+![runcommandmodsetting.png](/mod-use/remove-mods/runcommandmodsetting.png "Example image of run window with the copy and pasted line of text")<p style="text-align:center">*Example image of run window with the copy and pasted line of text*</p>
 
-![](https://lh7-us.googleusercontent.com/1c_d_3riqXNJ4yBRk4RPfWQiYt_HiQ8Ak3XeNyaXpWwT2XMKVwr_DQpEAruG-Tquyj88M6OZmuf8rugbV_cb4WMjAsIi5hOFXpadTRlY46bI_PMy3eogKKX5qE3wlJr0LtKbssbnu9Uk96C6ACsIrA)
+In the Public folder, delete 
 
 ---
 
