@@ -2,11 +2,13 @@
 title: Installing Script Extender
 description: How to install Norbyte's Script Extender
 published: true
-date: 2024-06-21T06:08:48.876Z
+date: 2024-06-23T02:31:58.480Z
 tags: installation, moduse, script extender
 editor: markdown
 dateCreated: 2024-06-21T04:52:35.045Z
 ---
+
+How to install Script Extender
 
 > **Do not Download Script Extender from Nexus**
 > **It is an inofficial reupload.**
