@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T02:13:43.940Z
+date: 2024-06-23T02:19:22.730Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -149,29 +149,28 @@ You can navigate to this folder using the same "run" command as done in step *2.
 
 ![runcommandmodsetting.png](/mod-use/remove-mods/runcommandmodsetting.png "Example image of run window with the copy and pasted line of text")<p style="text-align:center">*Example image of run window with the copy and pasted line of text*</p>
 
-In the Public folder, delete 
+In the Public folder, delete the modsetting.lsx file
+
+![removemodsstep3.png](/mod-use/remove-mods/removemodsstep3.png "Example image showing the file to delete")<p style="text-align:center">*Example image showing the file to delete*</p>
 
 ---
 
-# **4\. Verify Game Files**
+# **4. Verify Game Files**
 
 ## **4.1 In steam, right click on BG3 in your game list and click properties.**
 
-![](https://lh7-us.googleusercontent.com/gIV2yWZCHH_K6-QYvHMYhfM64MZXC4JsBNmlguvpcP9BN8o4O0Y6DCCCzDTa2EoibfmJ0vPvRLfUIM_IF9Z8vinjVve1PRU3S8zfpmuad-fyu5zEyll2VRb9_eXRshhAHvt39JSm4es1OyiDMC0GrA)
+![](https://lh7-us.googleusercontent.com/gIV2yWZCHH_K6-QYvHMYhfM64MZXC4JsBNmlguvpcP9BN8o4O0Y6DCCCzDTa2EoibfmJ0vPvRLfUIM_IF9Z8vinjVve1PRU3S8zfpmuad-fyu5zEyll2VRb9_eXRshhAHvt39JSm4es1OyiDMC0GrA "Example GIF of how to verify files through steam part 1")<p style="text-align:center">*Example GIF of how to verify files through steam*</p>
 
 ## **4.2 In the properties window, click on the Installed files tab and click Verify Integrity of Game Files**
 
-![](https://lh7-us.googleusercontent.com/nC7ObRzfxulKmG-UTsSmn0daeU6QOvr32q21t1i71zi9wiIc78NcNYeTzUBcT3XcOn-IgIqtOAn-fh6OIWEmOHxIcpaGpZKTVwHCQVH3TeHE-c23-FRC-_muzVmpLJ6jk0l2cOWY3Cn9yqIc1IUqlA)
+![](https://lh7-us.googleusercontent.com/nC7ObRzfxulKmG-UTsSmn0daeU6QOvr32q21t1i71zi9wiIc78NcNYeTzUBcT3XcOn-IgIqtOAn-fh6OIWEmOHxIcpaGpZKTVwHCQVH3TeHE-c23-FRC-_muzVmpLJ6jk0l2cOWY3Cn9yqIc1IUqlA "Example GIF of how to verify files through steam part 2")<p style="text-align:center">*Example GIF of how to verify files through steam*</p>
 
-*This process may take some time.*
-
-Verifying game files replaces missing files and files that have been overwritten by mods. It does not delete mod files, which is why all the above steps must be done.
+> This process may take some time. Verifying game files replaces missing files and files that have been overwritten by mods. It does not delete mod files, which is why all the above steps must be done.
+{.is-info}
 
 ## **Special Note - GOG Users**
 
 For GOG users, you can verify files like in the screenshot below.
-
-![](https://lh7-us.googleusercontent.com/6l8BVR8aLHjNIMslF3kKXpN5JvmStIL7vWV1_FG3BWVPCJe0O1V5OfxuBpjwX6EXj55NWWaqEm7pol6Au0imtqHKbtg4Ml0MVRHa-2ofmofZMrlqUPAnY74uiCwBQ4r76ic4NsMtx5q0TxCGXjIpkg)
 
 ---
 
