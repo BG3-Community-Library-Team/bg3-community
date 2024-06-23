@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T00:31:22.753Z
+date: 2024-06-23T00:43:19.458Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -18,8 +18,8 @@ dateCreated: 2024-05-02T16:40:20.175Z
 -   This guide is written assuming you are using [_BG3MM_](https://github.com/LaughingLeader/BG3ModManager) and a PC with Microsoft Windows.
 -   This guide focuses on removing all mods from your game, but it can also be used to remove individual mods for troubleshooting
 -   This guide directs you to delete folders/files, but you can move the folders/files to another location instead of deleting if you want to reinstall the mods after following this guide
--   This guide uses screenshots of folder locations that may differ from what it looks on your computer
--   If you would like to share this guide outside of the Larian discord, please contact Resplendent Arrow on Discord
+-   This guide uses screenshots of folder locations that may differ from what it is located on your computer
+-   If you would like to respost this guide to another site, please contact ResplendentArrow on Discord
 
 ---
 
@@ -33,15 +33,15 @@ C:\\Users\\YourName\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\Mods
 To quickly find this folder, type "run" into the windows search bar at the bottom of your screen. A window should open that looks like the image below. Type or copy and paste the following into the run screen and press enter:
 > %localAppData%/Larian Studios/Baldur's Gate 3/Mods
 
-![](<https://lh7-us.googleusercontent.com/IrwKckAgRpfBCkh1Kx9sh1kyLllf7fsHwqunn6cnEYa6wpKBukD3FJjSwRtKGwJxnykHLlbNrZORZ0GoC20GDeuZHWxPZUoiiByxTIrVc0b9BuBx0CZObXdwqty6rUbK38XC_Dj2ZDVD3yNk09ORyg> "Image showing the run window with the copy and pasted line of text.")
+![rumcommandmodfolder.png](</mod-use/remove-mods/rumcommandmodfolder.png> "Example image of run window with the copy and pasted line of text")<p style="text-align:center">*Example image of run command window using the copy and pasted text from above*</p>
 
 ## **1.2 Delete ALL .pak files (mods) in the Mods Folder:**
 
-![](https://lh7-us.googleusercontent.com/JZBIPV31xeidZR7sWowjcnQxfoAVtFDggLqEGQiOtM4Bclg24hSrkU0hGjGMbXMJZcQwnTxuIVyLxd9EFVGTOfndDWTo_poAnVRkeyG2ut6nFd3qpAtL4tOnVTGqdxZRoWUOVIWhGEm-6ofmNrIFTw)
+![](https://lh7-us.googleusercontent.com/JZBIPV31xeidZR7sWowjcnQxfoAVtFDggLqEGQiOtM4Bclg24hSrkU0hGjGMbXMJZcQwnTxuIVyLxd9EFVGTOfndDWTo_poAnVRkeyG2ut6nFd3qpAtL4tOnVTGqdxZRoWUOVIWhGEm-6ofmNrIFTw "Example image of mod files to delete or move to another location")<p style="text-align:center">*Example image of mod files to delete or move to another location*</p>
 
 ---
 
-# **2\. Delete Folders in Installation Folders**
+# **2. Delete Folders in Installation Folders**
 
 Some mods may have files in your BG3 Installation folder, such as UniqueTav or other replacer mods. These files and folders must be **deleted**.
 
@@ -49,17 +49,16 @@ Some mods may have files in your BG3 Installation folder, such as UniqueTav or o
 
 D:\\SteamLibrary\\steamapps\\common\\Baldurs Gate 3\\Data
 
-![](https://lh7-us.googleusercontent.com/EOnBD3jTOQNUM2aRECE1jW6qfgjmlb-lhxwTX4h9sy_4hgZE1FW-gzcSZ1lDC-eJM5NspnhRG7JDSadP8SJzK8IFWmNziNJ_0CnAkMkVT_xmgWZMLbP2C3RLSIgDbNgxJOs4pVasqYDNrZpdxi6kHw)
+![](https://lh7-us.googleusercontent.com/EOnBD3jTOQNUM2aRECE1jW6qfgjmlb-lhxwTX4h9sy_4hgZE1FW-gzcSZ1lDC-eJM5NspnhRG7JDSadP8SJzK8IFWmNziNJ_0CnAkMkVT_xmgWZMLbP2C3RLSIgDbNgxJOs4pVasqYDNrZpdxi6kHw "Example image of the Data folder in the BG3 installation folder")<p style="text-align:center">*Example image of the Data folder in the BG3 installation folder*</p>
 
-*The location of your installation folder may look different.*
+If you are using the Steam version of BG3, you can access your Bin folder by right clicking the game in your game list, clicking Manage, then Browse Local Files.
 
-If you are using the steam version of BG3, you can access your Bin folder by right clicking the game in your game list, clicking Manage, then Browse Local Files.
-
-![](https://lh7-us.googleusercontent.com/cQ7YI8Szh3ZEq_-CXY0ibUEAhtef5b1QyaxRVdliYySOXI270k9gPU7GXFnV-4Wl0T2YKkBhFQVqGQq5PEZeOdWzYNg350eU3UhXNY6xmge-wF3oZ8MRx5_8iPaE-pnzGvT1GCaCtSXvYz-byDEGBg)
+![](https://lh7-us.googleusercontent.com/cQ7YI8Szh3ZEq_-CXY0ibUEAhtef5b1QyaxRVdliYySOXI270k9gPU7GXFnV-4Wl0T2YKkBhFQVqGQq5PEZeOdWzYNg350eU3UhXNY6xmge-wF3oZ8MRx5_8iPaE-pnzGvT1GCaCtSXvYz-byDEGBg "Example GIF of how to access Data folder through Steam")<p style="text-align:center">*Example GIF of how to access Data folder through Steam*</p>
 
 ## **2.2 Delete all folders in your Data folder, EXCEPT LOCALIZATION**
 
-**_DO NOT DELETE .PAK FILES OR THE LOCALIZATION FOLDER, DOING SO MAY RESULT IN NEEDING TO FULLY REINSTALL BG3. ONLY DELETE THE FOLDERS HIGHLIGHTED IN THE SCREENSHOTS BELOW_**
+> **DO NOT DELETE .PAK FILES OR THE LOCALIZATION FOLDER, DOING SO MAY RESULT IN NEEDING A FULL REINSTALL OF BG3. ONLY DELETE THE FOLDERS HIGHLIGHTED IN THE SCREENSHOTS BELOW**
+{.is-warning}
 
 ![](https://lh7-us.googleusercontent.com/ZfBGtdVsBWmUps9aWCA7uTvFu74_rhieWHod-OHPaENCqRLLVJp4BOypIwhUxAG8vUlvPS68KTFCix3LW2DyrKZTMSyWyhBOoGl7dEHeH18FHkPQly3R4MQrzD-VOOGvRgTgsQE1kQauHqkwFzCPBA)
 
