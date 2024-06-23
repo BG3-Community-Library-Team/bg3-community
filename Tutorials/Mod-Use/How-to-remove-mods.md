@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T00:46:31.385Z
+date: 2024-06-23T01:38:29.005Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -62,15 +62,13 @@ If you are using the Steam version of BG3, you can access your Bin folder by rig
 
 ![](https://lh7-us.googleusercontent.com/ZfBGtdVsBWmUps9aWCA7uTvFu74_rhieWHod-OHPaENCqRLLVJp4BOypIwhUxAG8vUlvPS68KTFCix3LW2DyrKZTMSyWyhBOoGl7dEHeH18FHkPQly3R4MQrzD-VOOGvRgTgsQE1kQauHqkwFzCPBA "Example image of the specific files in the Data folder to delete or move to another location")<p style="text-align:center">*Example image of the specific files in the Data folder to delete or move to another location*</p>
 
-If you installed any .pak//mods into your Localization folder, make sure to delete those .pak//mods files.
+If you installed any .pak(mod) file into your Localization folder, make sure to delete those .pak(mod) files.
 
 > ### **Special Note - Translation Mods**
 > If you are using a translation mod, the following must be done:
-> -   If you installed a .pak (mod) in the Localization folder, make sure to delete the .pak (mod) file.
+> -   If you installed a .pak(mod) file in the Localization folder, make sure to delete the .pak(mod) files
 > -   If you replaced any of the .pak (mod) files in the Localization folder, simply delete those replaced .pak files and when you verify your game in _step 4_, the verification process will replace this file with a vanilla file.
-> {.is-success}
-
-
+> {.is-info}
 
 ---
 
@@ -78,18 +76,16 @@ If you installed any .pak//mods into your Localization folder, make sure to dele
 
 Use this step if you are using NativeMods/WASD/NativeCameraTweaks
 
-## **2.1.1 Navigate to your Bin folder, as done in _step 2.1_**
+## **2.1.1 Navigate to your Bin folder**
+This folder is inside your game installation folder, refer to the steps taken in *2.1 Navigate to your Installation folder at*
+![](https://lh7-us.googleusercontent.com/d3Va6wYlmclQmgol4ekMQS4WZzv3X2ELJGn_wsEjr459M3zzuBuSn0jvLnmfxL2vgoSXa9Z2ovKWiA5MsD0wjvFavbidv48pipAuHPCb4xrMVlbqMXC9Ke5nHI1a5oTMSPj47Qin5VFbDneR7M9yqw "Example image of the Bin folder in the game installation folder")<p style="text-align:center">*Example image of the Bin folder in the game installation folder*</p>
 
-![](https://lh7-us.googleusercontent.com/d3Va6wYlmclQmgol4ekMQS4WZzv3X2ELJGn_wsEjr459M3zzuBuSn0jvLnmfxL2vgoSXa9Z2ovKWiA5MsD0wjvFavbidv48pipAuHPCb4xrMVlbqMXC9Ke5nHI1a5oTMSPj47Qin5VFbDneR7M9yqw)
-
-*The location of your installation folder may differ.*
-
-## **2.1.2 Delete the following in your Bin folder to remove** NativeMods/WASD/NativeCameraTweaks**:**
+## 2.1.2 Delete the following in your Bin folder
 
 -   Delete the “NativeMods” folder
 -   Delete “bink2w64.dll”
 
-![](https://lh7-us.googleusercontent.com/YjEEe33FgKNEXBz0Q-xroy9nuXqFUtKUMlNAUxFrw7Af5Hz6hZxbNmlZYNYbuTFMPW-8-IKfURejfJrPDROQ4L4SSLXisfGtB7yjTXR6jIt44DK9SSyOkK4ggneVHKodfYO22QQKHaOh-tCFPf6cCQ)
+![](https://lh7-us.googleusercontent.com/YjEEe33FgKNEXBz0Q-xroy9nuXqFUtKUMlNAUxFrw7Af5Hz6hZxbNmlZYNYbuTFMPW-8-IKfURejfJrPDROQ4L4SSLXisfGtB7yjTXR6jIt44DK9SSyOkK4ggneVHKodfYO22QQKHaOh-tCFPf6cCQ "Example image showing what to delete in the Bin folder")<p style="text-align:center">*Example image showing what to delete in the Bin folder*</p>
 
 ## **2.1.3 Rename “bink2w64\_original.dll” to “bink2w64.dll”**
 
