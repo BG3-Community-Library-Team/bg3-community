@@ -2,7 +2,7 @@
 title: Installing Script Extender
 description: How to install Norbyte's Script Extender
 published: true
-date: 2024-06-23T02:44:04.174Z
+date: 2024-06-23T03:07:30.365Z
 tags: installation, moduse, script extender
 editor: markdown
 dateCreated: 2024-06-21T04:52:35.045Z
@@ -11,7 +11,7 @@ dateCreated: 2024-06-21T04:52:35.045Z
 # <p style="text-align:center">*How to Install Script Extender*</p>
 
 > **Do not Download Script Extender from Nexus. It is an unofficial reupload.**
-> **Do not Download Script Extender from any other website except for Norbytes official GitHub.**
+> **Do not Download Script Extender from any other website except for Norbyte's official GitHub.**
 {.is-danger}
 
 
@@ -28,32 +28,32 @@ Script Extender is compatiable with the following systems:
 > Consoles (Playstation, Xbox) have no official supprt for Script Extender
 {.is-danger}
 
-## **Method 1: Installing Script Extender via BG3MM (Windows)**
+## **1. Install Script Extender via BG3MM (Windows)**
 
 The easiest way to install Script Extender (SE) is by using Baldur’s Gate 3 Mod Manager (BG3MM) 
 
 [Click here](https://github.com/LaughingLeader/BG3ModManager/releases) to go to LaughingLeader's official GitHub to download BG3MM. You can use [this guide](/Tutorials/Mod-Use/Installation-Of-BG3MM) this guide to install BG3MM.
 
+To install SE via BG3MM:
+- Open BG3MM
+- Click *Tools* on the top ribbon
+- In the tools drop down menu, click *Download & Extract Script Extender*
+
 <img src="https://lh7-us.googleusercontent.com/kh-PKn8ADbNExFHssRdN3ZwpuBdeFwFqHgDoP7LJZUZOilN0mnNKcOiE4jXbzyECBmAJdm01IFPi7noHuO0jhDZFkgmI8oRecyRfE7XXPYqtxpFCfAtEeSumLuDUm00XHZrhNau6ZNmJbiMaTBEstco" alt="description" width="600" height="auto" />
 
+- After clicking, you will see the following message pop up on the bottom left of your screen.
+- Once you see this message confirming the install, close BG3MM and reopen.
+- Launch BG3 once and SE will install on its own.
 
-Click _Tools_ and _Download & Extract the Script Extender_ . 
-
-Afterwards, launch your game once, and SE should install itself.
-
-> BG3MM will warn you that SE is not installed **unless** you launch the game once and refresh the manager.
+> BG3MM will warn you with a red exclamation mark that SE is not installed **unless** you launch the game once and refresh the manager.
 > If you see the yellow SE Symbol (Plunger) it means that BG3MM has recognized that SE is installed.
-> Else you will see a red exclamation mark.
 {.is-warning}
 
+## **2. Install Script Extender Manually (Windows)**
 
+If you do not use BG3MM, download SE directly from Norbyte's GitHub and follow the the steps below.
 
-## **3\. Installing Script Extender Manually (Windows)**
-
-If you cannot use BG3MM, download SE directly from github and follow the install instructions.
-
-[_https://github.com/Norbyte/bg3se/releases_](https://github.com/Norbyte/bg3se/releases)
-
+[Click here to download SE from Norbyte's official GitHub](https://github.com/Norbyte/bg3se/releases)
 
 Simply drag the `DWrite.dll` in your bin folder. On windows this is usually located at 
 
@@ -62,59 +62,45 @@ Simply drag the `DWrite.dll` in your bin folder. On windows this is usually loca
 
 Afterwards, launch your game once, and SE should install itself.
 
-> BG3MM will warn you that SE is not installed **unless** you launch the game once and refresh the manager.
+> BG3MM will warn you with a red exclamation mark that SE is not installed **unless** you launch the game once and refresh the manager.
 > If you see the yellow SE Symbol (Plunger) it means that BG3MM has recognized that SE is installed.
-> Else you will see a red exclamation mark.
 {.is-warning}
 
-
-
-## **4\. Installing Script Extender Manually (Linux)**
-
-Download SE directly from github and follow the install instructions.
-
-[_https://github.com/Norbyte/bg3se/releases_](https://github.com/Norbyte/bg3se/releases)
-
-On Linux the path is usually
-`\home\yourname\.steam\steam\steamapps\common\Baldurs Gate 3\bin` 
-
-On steamdeck yourname is usually `deck` 
-`\home\deck\.steam\steam\steamapps\common\Baldurs Gate 3\bin` 
-
-
-
+## **3. Install Script Extender on Linux/Steam Deck**
 
 > The following instructions are for Linux/Steam Deck.
 > Please ignore them if you use windows
-{.is-info}
+{.is-warning}
 
+Download SE directly from Norbyte's GitHub and follow the the steps below.
 
-Additionally add the following command to the launch options on steam.
+[Click here to download SE from Norbyte's official GitHub](https://github.com/Norbyte/bg3se/releases)
 
-`WINEDLLOVERRIDES="DWrite.dll=n,b" PROTON_NO_ESYNC=1 %command%`
+- Extract the file "Dwrite.dll" to the following locations (Linux or Steam Deck):
+  - On **Linux** the path is usually
+    - `\home\yourname\.steam\steam\steamapps\common\Baldurs Gate 3\bin` 
+  - On **Steam Deck** yourname is usually 
+    - `deck` 
+    - `\home\deck\.steam\steam\steamapps\common\Baldurs Gate 3\bin` 
 
-For this navigate to steam.
-Right click on Baldur's Gate 3.
-Select `Properties...`
-
+- Navigate to the launch options on steam, right click on BG3 in your game library and click `Properties`
 ![steam_properties.png](/tutorials/install_se/steam_properties.png)
-
-Add `WINEDLLOVERRIDES="DWrite.dll=n,b" PROTON_NO_ESYNC=1 %command%` to the launch options
-
+- Add the following command to the launch options on steam (for both Linux/Steam Deck):
+> `WINEDLLOVERRIDES="DWrite.dll=n,b" PROTON_NO_ESYNC=1 %command%`
 ![launch_options.png](/tutorials/install_se/launch_options.png)
 
-Afterwards, launch your game once, and SE should install itself.
+- Launch your game once, and SE should install itself.
 
 > BG3MM will warn you that SE is not installed **unless** you launch the game once and refresh the manager.
 > BG3MM will sometimes fail to recognize an SE install on Linux/Steam Deck.
 > The red exclamation mark and warnings might show even though SE is installed correctly.
 {.is-warning}
 
-To verify whether SE is installed, simply start the game and see if you can spot the Script Extender version on the bottom left in the main menu.
+To verify SE is installed, simply start the game and see if you can spot the Script Extender version on the bottom left in the main menu.
 
 ![se_manual_check.png](/tutorials/install_se/se_manual_check.png)
 
-## **5\. Activating the Script Extender Console (BG3MM)**
+## **4. Activating Script Extender Console (BG3MM)**
 
 To be able to spot errors, or debug your mod and test your functions, the debug console is very useful.
 
@@ -126,14 +112,9 @@ In BG3MM click _Settings_ and _Open Preferences_. Another menu will open.
 
 ![](https://lh7-us.googleusercontent.com/06oM1eidUKDnFk-kBwhSC0Ql3_YZMQopntV-4peuFMCsiq02M84cmrjjKdFgOxcDq1sJYOQGHgh6_kZ37ly8aj5O1lcp9Zi7HS7VqPb3Lj685m2qHKJVotbek7j5qUh8Ic0nPKvKc9kLI9aOifTZyh0)
 
-
-
 In this menu make sure to activate the setting “Create Console”.
 
 ![](https://lh7-us.googleusercontent.com/hMiFp1tEQLqTUEU6EWYCNrluAlZIm3pR9n73I3_r0_AAKZZLk46kiSgOr80cvsrnBRAKH8HsAtiVLbrMkEx-9S90Vjfig_IY9ZzPBVP9XFSQib8zVtXJq2FrG_Uiwd07fDN1WIYeUXhoSbTX1zINRdw)
-
-
-
 
 ## **6\. Activating the Script Extender Console (Manually)**
 
