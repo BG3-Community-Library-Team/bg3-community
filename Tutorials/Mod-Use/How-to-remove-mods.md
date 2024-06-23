@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T00:45:09.866Z
+date: 2024-06-23T00:46:31.385Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -64,12 +64,13 @@ If you are using the Steam version of BG3, you can access your Bin folder by rig
 
 If you installed any .pak//mods into your Localization folder, make sure to delete those .pak//mods files.
 
-## **Special Note - Translation Mods**
+> ### **Special Note - Translation Mods**
+> If you are using a translation mod, the following must be done:
+> -   If you installed a .pak (mod) in the Localization folder, make sure to delete the .pak (mod) file.
+> -   If you replaced any of the .pak (mod) files in the Localization folder, simply delete those replaced .pak files and when you verify your game in _step 4_, the verification process will replace this file with a vanilla file.
+> {.is-success}
 
-If you are using a translation mod, the following must be done:
 
--   If you installed a .pak (mod) in the Localization folder, make sure to delete the .pak (mod) file.
--   If you replaced any of the .pak (mod) files in the Localization folder, simply delete those replaced .pak files and when you verify your game in _step 4_, the verification process will replace this file with a vanilla file.
 
 ---
 
