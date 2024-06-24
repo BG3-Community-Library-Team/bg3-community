@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: false
-date: 2024-06-24T06:38:48.007Z
+date: 2024-06-24T08:32:34.938Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -12,7 +12,7 @@ dateCreated: 2024-06-21T10:57:05.698Z
 
 ![soon_tm.webp](/test/alithea/soon_tm.webp) 
 
-[Screen Archery I](https://wiki.bg3.community/e/en/test/alitheas-apothecary/I)
+[Screen Archery I](https://wiki.bg3.community/en/test/alitheas-apothecary/I)
 
 ## image comparison
 
