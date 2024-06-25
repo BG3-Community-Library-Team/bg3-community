@@ -2,15 +2,12 @@
 title: Obtaining Old Builds/Patches of Baldur's Gate 3
 description: This tutorial will go over how to legally obtain old Patches/Builds of Baldur's Gate 3 using the Steam Depot.
 published: false
-date: 2024-06-25T08:15:05.595Z
+date: 2024-06-25T08:15:38.719Z
 tags: early access, ea, old patch, download, steam, steam depot, steamdb, download_depot, old build
 editor: markdown
 dateCreated: 2024-06-25T05:39:45.425Z
 ---
 
-> **WARNING**
-> Old builds of Baldur's Gate 3 use the same AppData folder as the current Patch of the game. Make sure to BACK-UP your `C:\Users\USERNAME\AppData\Local\Larian Studios` folder before continuing.
-<!-- {blockquote:.is-danger} -->
 # Obtaining Old Builds/Patches of Baldur's Gate 3
 ## Requirements
 - [Steam](https://store.steampowered.com/about/) - Steam must be installed and running on your computer, as well as a Steam account.
@@ -41,7 +38,9 @@ To access this console, make sure Steam is currently running on your PC. Then pa
 At this point, steam will open a new tab called "CONSOLE", which will be a blank page with a text input box at the bottom.
 
 ## Downloading Your Chosen Build
-
+> **WARNING**
+> Old builds of Baldur's Gate 3 use the same AppData folder as the current Patch of the game. Make sure to BACK-UP your `C:\Users\USERNAME\AppData\Local\Larian Studios` folder before continuing.
+<!-- {blockquote:.is-danger} -->
 You will not have the option to choose the installation location of the Depot. It will be placed into a default directory separate from your default game download location. Verify there is enough storage on the drive Steam is installed, so do not have issues while downloading your chosen build.
 
 Before entering any commands, verify that you have the correct App, Depot, and Manifest IDs for the version of the game you wish to download, and that you are only attempting to use Manifest IDs from their correlating Depots.
