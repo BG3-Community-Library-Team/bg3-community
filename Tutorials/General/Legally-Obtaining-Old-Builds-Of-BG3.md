@@ -1,8 +1,8 @@
 ---
 title: Legally Obtaining Old Builds of Baldur's Gate 3
 description: This tutorial will go over how to legally obtain old Patches/Builds of Baldur's Gate 3 using Steam's console and download_depot command.
-published: true
-date: 2024-06-25T05:39:45.425Z
+published: false
+date: 2024-06-25T05:39:59.121Z
 tags: early access, ea, old patch, download, steam, steam depot, steamdb, download_depot, old build
 editor: markdown
 dateCreated: 2024-06-25T05:39:45.425Z
