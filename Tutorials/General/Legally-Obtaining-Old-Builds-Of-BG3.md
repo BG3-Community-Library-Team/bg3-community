@@ -2,7 +2,7 @@
 title: Legally Obtaining Old Builds of Baldur's Gate 3
 description: This tutorial will go over how to legally obtain old Patches/Builds of Baldur's Gate 3 using Steam's console and download_depot command.
 published: false
-date: 2024-06-25T06:59:19.276Z
+date: 2024-06-25T07:18:14.254Z
 tags: early access, ea, old patch, download, steam, steam depot, steamdb, download_depot, old build
 editor: markdown
 dateCreated: 2024-06-25T05:39:45.425Z
@@ -41,6 +41,8 @@ At this point, steam will open a new tab called "CONSOLE", which will be a blank
 ## Downloading Your Chosen Build
 
 You will not have the option to choose the installation location of the Depot. It will be placed into a default directory separate from your default game download location. Verify there is enough storage on the drive Steam is installed, so do not have issues while downloading your chosen build.
+
+Before entering any commands, verify that you have the correct App, Depot, and Manifest IDs for the version of the game you wish to download, and that you are only attempting to use Manifest IDs from their correlating Depots.
 
 In the Steam Console, type the command `download_depot AppID DepotID ManifestID`. Replace the **AppID**, **DepotID**, and **ManifestID** values with the IDs that you found earlier.
 
