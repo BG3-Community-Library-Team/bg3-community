@@ -2,7 +2,7 @@
 title: Obtaining Old Builds/Patches of Baldur's Gate 3
 description: This tutorial will go over how to legally obtain old Patches/Builds of Baldur's Gate 3 using the Steam Depot.
 published: false
-date: 2024-06-25T08:59:44.924Z
+date: 2024-06-25T09:02:09.223Z
 tags: early access, ea, old patch, download, steam, steam depot, steamdb, download_depot, old build
 editor: markdown
 dateCreated: 2024-06-25T05:39:45.425Z
@@ -58,4 +58,4 @@ There will not be a download percentage which tells you how much of the depot ha
 
 `Depot download complete : "...Steam\steamapps\content\app_AppID\depot_DepotID" (X files, manifest ManifestID) `
 
-Once you recieve this message, go to the file location listed, and you should find the contents of the build you chose to download.
+Once you receive this message, go to the file location listed, and you should find the contents of the build you chose to download.
