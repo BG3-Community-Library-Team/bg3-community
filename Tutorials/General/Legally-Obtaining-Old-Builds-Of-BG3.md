@@ -2,7 +2,7 @@
 title: Legally Obtaining Old Builds of Baldur's Gate 3
 description: This tutorial will go over how to legally obtain old Patches/Builds of Baldur's Gate 3 using Steam's console and download_depot command.
 published: false
-date: 2024-06-25T06:10:38.046Z
+date: 2024-06-25T06:46:43.770Z
 tags: early access, ea, old patch, download, steam, steam depot, steamdb, download_depot, old build
 editor: markdown
 dateCreated: 2024-06-25T05:39:45.425Z
@@ -18,16 +18,40 @@ Legally obtaining previous builds or patches of Baldur's Gate 3 is an easy proce
 
 The [SteamDB page for Baldur's Gate 3](https://steamdb.info/app/1086940/) will contain three pieces of information which we require for downloading previous/old builds of the game:
 
-- **App ID**: This is the ID associated with Baldur's Gate 3 on Steam, and is unique to each game found on the platform.
+- **App ID**: This is the ID associated with an application on Steam, and is unique to each game found on the platform.
 - **Depot ID**: This is the ID associated with the specific grouping of files that gets packaged and sent to users when they download a game on steam.
 - **Manifest ID**: This is the ID associated with the specific build of the game you wish to download.
 
 ### General guide on how to obtain these IDs
-1. **App ID**: This is easily found in the official store page link for BG3, and is `1086940`
-2. **Depot ID**: Navigate to the ***Depots*** page on the SteamDB BG3 Page, and sort the depots by size. The main depot will typically have the highest file size, however, in this instance, we want to make sure we are finding the ***Windows*** build of the game, and not the ***macOS*** version of the game. This depot will be labeled as ***Gustav Content***, with the ID of `1086941`.
-3. **Manifest ID**: Once you have found the correct ***Depot ID***, click on it, and then navigate to it's ***Manifests*** page. Here you will find the Manifest of every published build of the game.
-From here, you want to look at the date each Manifest was published, and compare it to the date each [Patch Notes](https://steamdb.info/app/1086940/patchnotes/) was published. You should be able to triangulate which ***Manifest ID*** you require by doing this. 
-For example, the very first Early Access build's ***Manifest ID*** is `891244578529757560`.
+1. **App ID**: This is easily found in the official store page link for BG3.
+2. **Depot ID**: Navigate to the ***Depots*** page on the SteamDB BG3 Page, and sort the depots by size. The main depot will typically have the highest file size, however, in this instance, we want to make sure we are finding the ***Windows*** build of the game, and not the ***macOS*** version of the game. This depot will be labeled as ***Gustav Content***.
+3. **Manifest ID**: Once you have found the correct ***Depot ID***, click on it, and then navigate to it's ***Manifests*** page. Here you will find the Manifest of every published build of the game. From here, you want to look at the date each Manifest was published, and compare it to the date each [Patch Notes](https://steamdb.info/app/1086940/patchnotes/) was published. You should be able to triangulate which ***Manifest ID*** you require by doing this.
+
+For example, the **App ID** for BG3 is `1086940`, the main **Depot ID** is `1086941`, and the very first Early Access build's **Manifest ID** is `891244578529757560`.
 
 ## Steam's Console
-To 
+Using the IDs found above, you'll need to use a console command in Steam to start downloading the build of the game you want.
+
+To access this console, make sure Steam is currently running on your PC. Then paste the command found below into either the Windows Run utility, or into the address bar of your browser.
+
+`steam://open/console`
+
+At this point, steam will open a new tab called "CONSOLE", which will be a blank page with a text input box at the bottom.
+
+## Downloading Your Chosen Build
+
+You will not have the option to choose the installation location of the Depot. It will be placed into a default directory separate from your default game download location. Verify there is enough storage on the drive Steam is installed, so do not have issues while downloading your chosen build.
+
+In the Steam Console, type the command `download_deput AppID DepotID ManifestID`. Replace the **AppID**, **DepotID**, and **ManifestID** values with the IDs that you found earlier.
+
+**Example Command**: `download_depot 1086940 1086941 891244578529757560` - This command will tell Steam to start downloading very first early access build of the game.
+
+Once you have entered the command, a line will appear in the console that looks something like this: 
+
+`Downloading depot DepotID (file size in MB)`
+
+There will not be a download percentage which tells you how much of the depot has been downloaded, or the speed in which you're downloading it. You will know when the download is finished once a new line appears in the console along the lines of:
+
+`Depot download complete : "...Steam\steamapps\content\app_AppID\depot_DepotID" (X files, manifest ManifestID) `
+
+Once you recieve this message, go to the file location listed, and you should find the contents of the patch you chose to download.
