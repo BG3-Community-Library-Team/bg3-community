@@ -2,7 +2,7 @@
 title: Obtaining Old Builds/Patches of Baldur's Gate 3
 description: This tutorial will go over how to legally obtain old Patches/Builds of Baldur's Gate 3 using the Steam Depot.
 published: false
-date: 2024-06-25T15:53:03.329Z
+date: 2024-06-25T18:11:51.055Z
 tags: early access, ea, old patch, download, steam, steam depot, steamdb, download_depot, old build
 editor: markdown
 dateCreated: 2024-06-25T05:39:45.425Z
@@ -56,10 +56,16 @@ Once you have entered the command, a line will appear in the console that looks 
 
 There will not be a download percentage which tells you how much of the depot has been downloaded, or the speed at which you're downloading it. You will know when the download is finished once a new line appears in the console along the lines of:
 
-`Depot download complete : "...Steam\steamapps\content\app_AppID\depot_DepotID" (X files, manifest ManifestID) `
+`Depot download complete : "...\Steam\steamapps\content\app_AppID\depot_DepotID" (X files, manifest ManifestID) `
 
 Once you receive this message, go to the file location listed, and you should find the contents of the build you chose to download.
 > Later Early Access builds of Baldur's Gate 3 such as **Hotfix #32** require you to download the `Gustav Content - Bin` depot, in addition to the `Gustav Content` depot. You must place the contents of both depots into the same folder for the game to function.
 >
 > If the `Gustav Content` build you downloaded does not contain a `Bin` folder, you must additionally download the corresponding `Gustav Content - Bin` build.
 <!-- {blockquote:.is-info} -->
+
+When launching these older builds of Baldur's Gate 3, verify that Steam has been entirely closed, and that you are launching from the exe files. If you attempt to launch the game while Steam is open, it will prompt you to install the latest version of the game.
+
+Older game versions should be used for asset mining, accquiring cut content, or anything else that might be useful for modding the latest version of the game.
+
+It is not recommended to actually play on these old patches/builds of BG3, as you will get a hampered, and buggy experience compared to the latest release version of the game.
