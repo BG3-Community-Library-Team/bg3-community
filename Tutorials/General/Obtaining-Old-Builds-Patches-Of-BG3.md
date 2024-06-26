@@ -2,7 +2,7 @@
 title: Obtaining Old Builds/Patches of Baldur's Gate 3
 description: This tutorial will go over how to legally obtain old Patches/Builds of Baldur's Gate 3 using the Steam Depot.
 published: false
-date: 2024-06-25T19:58:10.820Z
+date: 2024-06-26T04:51:24.756Z
 tags: early access, ea, old patch, download, steam, steam depot, steamdb, download_depot, old build
 editor: markdown
 dateCreated: 2024-06-25T05:39:45.425Z
@@ -22,7 +22,7 @@ The [SteamDB page for Baldur's Gate 3](https://steamdb.info/app/1086940/) will c
 - **Manifest ID**: This is the ID associated with the specific build of the game you wish to download.
 
 ### General guide on how to obtain these IDs
-1. **App ID**: This is easily found in the official store page link for BG3.
+1. **App ID**: This is easily found in the official store page link for BG3. It can also be found at the very top of the game's SteamDB page.
 2. **Depot ID**: Navigate to the ***Depots*** page on the SteamDB BG3 Page, and sort the depots by size. The main depot will typically have the highest file size, however, in this instance, we want to make sure we are finding the ***Windows*** build of the game, and not the ***macOS*** version of the game. This depot will be labeled as ***Gustav Content***.
 3. **Manifest ID**: Once you have found the correct ***Depot ID***, click on it, and then navigate to it's ***Manifests*** page. Here you will find the Manifest of every published build of the game. From here, you want to look at the date each Manifest was published, and compare it to the date each [Patch Notes](https://steamdb.info/app/1086940/patchnotes/) was published. You should be able to triangulate which ***Manifest ID*** you require by doing this.
 
@@ -42,9 +42,9 @@ At this point, steam will open a new tab called "CONSOLE", which will be a blank
 >
 > Data loss, including the loss of Save Data **CAN** occur if you do not back up this folder.
 <!-- {blockquote:.is-danger} -->
-You will not have the option to choose the installation location of the Depot. It will be placed into a default directory separate from your default game download location. Verify there is enough storage on the drive Steam is installed, so you do not have issues while downloading your chosen build.
+You will not have the option to choose an installation directory for the Depot. It will be placed into the default Steam content directory, which separate from your default game installation directory. Verify there is enough storage on the drive Steam is installed to, so you do not have issues while downloading your chosen build.
 
-Before entering any commands, verify that you have the correct App, Depot, and Manifest IDs for the version of the game you wish to download, and that you are only attempting to use Manifest IDs from their correlating Depots.
+Before entering any commands, verify you have the correct App, Depot, and Manifest IDs for the version of the game you wish to download, and that you are only attempting to use Manifest IDs from their correlating Depots.
 
 In the Steam Console, type the command `download_depot AppID DepotID ManifestID`. Replace the **AppID**, **DepotID**, and **ManifestID** values with the IDs that you found earlier.
 
