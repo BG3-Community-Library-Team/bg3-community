@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2024-06-26T06:45:41.912Z
+date: 2024-06-26T06:47:01.563Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
