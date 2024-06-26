@@ -2,7 +2,7 @@
 title: Technical skills I
 description: Exploring Otis’ camera tool and ReShade to enhance your captures. (Beginner)
 published: false
-date: 2024-06-26T21:23:46.000Z
+date: 2024-06-26T21:41:15.487Z
 tags: guide, wip, screen archery
 editor: markdown
 dateCreated: 2024-06-24T20:54:56.738Z
@@ -11,6 +11,20 @@ dateCreated: 2024-06-24T20:54:56.738Z
 ## Exploring Otis camera tool and ReShade to enhance your captures. (Beginner)
 
 ![soon_tm.webp](/test/alithea/soon_tm.webp)
+INTRO
+
+### Overview
+> - **What to Install**
+> 	- Download and setup of main tools needed to start
+> - **Depth of Field**
+> 	- What is DOF
+>   - Disable default DOF
+>   - Using IgcsDOF
+> - **DisplayDepth & DepthDarkness**
+> 	- How to setup DisplayDepth first
+> 	- Using Depthdarkness
+
+
 
 ### What to install
 - Otis_inf Camera tool: https://www.patreon.com/Otis_Inf/posts
@@ -33,7 +47,7 @@ dateCreated: 2024-06-24T20:54:56.738Z
 - And set Anti-aliasing to TAA to prevent issues later on when using shaders
 -> screenshot game menu
 
-### Using IgcsDOF
+### Using IgcsDOF --> prob place this under Depth of Field
 - Because DOF in game has been disabled, you will now have to setup your own depth of field when taking screenshots
 - Open the reshade overlay by pressing the home button -> change the default key in the settings tab because home is also used by the camera tool to block camera movement
 - You'll see a list of shaders that can be selected
