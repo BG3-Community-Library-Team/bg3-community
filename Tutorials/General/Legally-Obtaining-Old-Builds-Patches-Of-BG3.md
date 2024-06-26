@@ -2,7 +2,7 @@
 title: Legally Obtaining Old Builds/Patches of Baldur's Gate 3
 description: This tutorial will go over how to legally obtain old Patches/Builds of Baldur's Gate 3 using the Steam Depot.
 published: false
-date: 2024-06-26T06:55:43.743Z
+date: 2024-06-26T08:11:57.554Z
 tags: early access, ea, old patch, download, steam, steam depot, steamdb, download_depot, old build
 editor: markdown
 dateCreated: 2024-06-25T05:39:45.425Z
@@ -51,21 +51,16 @@ Before entering any commands, verify you have the correct App, Depot, and Manife
 In the Steam Console, type the command `download_depot AppID DepotID ManifestID`. Replace the **AppID**, **DepotID**, and **ManifestID** values with the IDs that you found earlier.
 
 **Example Command**: `download_depot 1086940 1086941 891244578529757560` - This command will tell Steam to start downloading very first early access build of the game.
-
+![steam_download_depot_1.webp](/tutorials/general/old_builds_bg3/steam_download_depot_1.webp)
 Once you have entered the command, a line will appear in the console that looks something like this: 
-
-`Downloading depot DepotID (file size in MB)`
-
+![steam_download_depot_2.webp](/tutorials/general/old_builds_bg3/steam_download_depot_2.webp)
 There will not be a download percentage which tells you how much of the depot has been downloaded, or the speed at which you're downloading it. You will know when the download is finished once a new line appears in the console along the lines of:
-
-`Depot download complete : "...\Steam\steamapps\content\app_AppID\depot_DepotID" (X files, manifest ManifestID) `
-
+![steam_download_depot_3.webp](/tutorials/general/old_builds_bg3/steam_download_depot_3.webp)
 Once you receive this message, go to the file location listed, and you should find the contents of the build you chose to download.
 > Later Early Access builds of Baldur's Gate 3 such as **Hotfix #32** require you to download the `Gustav Content - Bin` depot, in addition to the `Gustav Content` depot. You must place the contents of both depots into the same folder for the game to function.
 >
 > If the `Gustav Content` build you downloaded does not contain a `Bin` folder, you must additionally download the corresponding `Gustav Content - Bin` build.
 <!-- {blockquote:.is-info} -->
-
 At this point, you may unpack the downloaded game files.
 
 ## Launching The Game
