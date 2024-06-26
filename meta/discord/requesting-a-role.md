@@ -2,8 +2,8 @@
 title: Requesting Discord Roles
 description: 
 published: true
-date: 2024-06-26T07:12:30.811Z
-tags: 
+date: 2024-06-26T07:14:01.256Z
+tags: discord, role, discord role, request a role, requesting a discord role, roles, request discord role
 editor: markdown
 dateCreated: 2024-05-13T20:18:04.427Z
 ---
