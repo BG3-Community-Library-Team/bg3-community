@@ -2,7 +2,7 @@
 title: General
 description: A List of General-purpose Tutorials
 published: true
-date: 2024-05-06T17:07:39.982Z
+date: 2024-06-26T08:27:20.318Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T22:32:48.795Z
@@ -14,6 +14,7 @@ This page is a list of existing general Tutorials.
 ## Pages
 - [A Modder's Guide to Git](modders-guide-to-git)
 - [Creating a meta.lsx file](creating_meta)
+- [Legally Obtaining Old Builds/Patches of Baldur’s Gate 3](Legally-Obtaining-Old-Builds-Patches-Of-BG3)
 - [Setting up a Dev Environment](setting-up-a-dev-environment)
 - [Shipping Items to Users](Shipping-Items-to-Users)
 {.links-list}
