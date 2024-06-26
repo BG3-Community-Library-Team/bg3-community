@@ -2,7 +2,7 @@
 title: Legally Obtaining Old Builds/Patches of Baldur's Gate 3
 description: This tutorial will go over how to legally obtain old Patches/Builds of Baldur's Gate 3 using the Steam Depot.
 published: false
-date: 2024-06-26T08:11:57.554Z
+date: 2024-06-26T08:12:48.538Z
 tags: early access, ea, old patch, download, steam, steam depot, steamdb, download_depot, old build
 editor: markdown
 dateCreated: 2024-06-25T05:39:45.425Z
@@ -56,7 +56,7 @@ Once you have entered the command, a line will appear in the console that looks 
 ![steam_download_depot_2.webp](/tutorials/general/old_builds_bg3/steam_download_depot_2.webp)
 There will not be a download percentage which tells you how much of the depot has been downloaded, or the speed at which you're downloading it. You will know when the download is finished once a new line appears in the console along the lines of:
 ![steam_download_depot_3.webp](/tutorials/general/old_builds_bg3/steam_download_depot_3.webp)
-Once you receive this message, go to the file location listed, and you should find the contents of the build you chose to download.
+Once you receive this message, go to the listed file location, and you should find the contents of the build you chose to download.
 > Later Early Access builds of Baldur's Gate 3 such as **Hotfix #32** require you to download the `Gustav Content - Bin` depot, in addition to the `Gustav Content` depot. You must place the contents of both depots into the same folder for the game to function.
 >
 > If the `Gustav Content` build you downloaded does not contain a `Bin` folder, you must additionally download the corresponding `Gustav Content - Bin` build.
