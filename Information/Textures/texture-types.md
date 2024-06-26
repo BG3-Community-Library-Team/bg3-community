@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2024-06-26T05:58:16.234Z
+date: 2024-06-26T06:45:41.912Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -25,39 +25,50 @@ The formats are as follows:
 
 ---
 
-## Non-Dgb
- - For Non-Dragonborn Skin
+## Skin
+ <table>
+  <tr>
+    <th>Map Syntax</th>
+    <th>Red Channel</th>
+    <th>Green Channel</th>
+    <th>Blue Channel</th>
+    <th>Alpha Channel</th>
+    <th>DDS Compresstion</th>
+  </tr>
+  <tr>
+    <td>CLEA</td>
+    <td>Cavity Map</td>
+    <td>Hair</td>
+    <td>Makeup(lipstick)</td>
+    <td>Ambient Occlusion</td>
+    <td>BC3/DXT5 Linear</td>
+  </tr>
+  <tr>
+    <td>HMVY</td>
+    <td>Hemoglobin</td>
+    <td>Melanin</td>
+    <td>Vein</td>
+    <td>Yellowing</td>
+    <td>BC3/DXT5 Linear</td>
+  </tr>
+    <tr>
+    <td>NM</td>
+    <td>Not used</td>
+    <td>Y Axis Normals</td>
+    <td>Z Axis Normals</td>
+    <td>X Axis Normals</td>
+    <td>BC3/DXT5 Linear</td>
+  </tr>
+    <tr>
+    <td>MSK</td>
+    <td>Non-Skin</td>
+    <td>Melanin Removal</td>
+    <td>Mucous Map</td>
+    <td>Not Used</td>
+    <td>BC1/DXT1 Linear</td>
+  </tr>
+</table> 
 
-	1. CLEA 
-
-	*~Format:~* *~BC3/DXT5~ ~Linear~*
-	C - Curvature/Cavity map - RED channel
-  L - Lips  - GRN channel
-	E - Eyebrows - BLU channel
-  A - Ambient occlusion - ALPHA channel
-
-	2. NM 
-
-	*~Format:~* *~BC3/DXT5~ ~Linear~*
-	RED channel - UNUSED BY BG3 ENGINE STORED IN ALPHA
-  GRN channel - Y Axis Normals
-  BLU channel - Z Axis Normals
-  ALPHA channel - X Axis Normals
-
-	3. HMVY
-
-	*~Format:~* *~BC1/DXT1~ ~Linear~*
-	H - Hemoglobin - RED channel
-  M - Melanin - GRN channel
-  V - Veins - BLU channel
-  Y - Yellowing - ALPHA channel
-
-	4. MSK (CancelMSK)
-
-	*~Format:~* *~BC1/DXT1~ ~Linear~*
-	RED channel - Non-Skin amount (Nails/Horns usually)
-  GRN channel - Skin melanin intensity
-  BLU channel - Mucous (Lips/tear lines)
 
 
 ---
