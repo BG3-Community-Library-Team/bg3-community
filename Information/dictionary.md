@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-06-23T07:35:10.872Z
+date: 2024-06-27T07:27:36.856Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -42,11 +42,13 @@ Intended as a temporary hub for terms that may need to be explained in our work-
 
 ## F
 
+-   Framework - 
+
 ## G
 
 ## H
 
--   handle - 
+-   Handle - 
 
 ## I
 
@@ -60,19 +62,19 @@ Intended as a temporary hub for terms that may need to be explained in our work-
 ## L
 
 -   Load order - term commonly used for the sequence in which mods are placed in bg3mm and vortex
--   loca - 
+-   Loca - 
 -   Lua - programming language used for SE
--   lsf - 
--   lsx -
+-   Lsf - 
+-   Lsx -
 
 ## M
 
--   meta - 
+-   Meta - 
 
 ## N
 
 -   Norbsearch - [BG3 Search Engine](https://bg3.norbyte.dev/) by Norbyte
--   Notepad++ - open source code editor and replacement for NotePad. Commonly used by the community.
+-   Notepad++ - open source code editor and replacement for NotePad, commonly used by the community
 
 ## O
 
@@ -96,13 +98,13 @@ Intended as a temporary hub for terms that may need to be explained in our work-
 
 ## U
 
--   UUID - universally unique identifier (UUID), a 128-bit value used in the game files to identify an object or entity. It is identified by its unique 36 character format. Example: 000cfc9f-b973-48e7-a5c8-f2992a47a943
+-   UUID - universally unique identifier, a 128-bit value used in the game files to identify an object or entity by its unique 36 character format. Example: 000cfc9f-b973-48e7-a5c8-f2992a47a943
 
 ## V
 
 -   Vortex - Nexusmods' Mod Manager
 -   Visual bank entry -
--   Visual Studio Code (VSCode) - free code editor created by Microsoft. Commonly used in the community, it has several extensions specifically made for BG3 modding.
+-   Visual Studio Code (VSCode) - free code editor created by Microsoft. Commonly used in the community, with several extensions available specifically for BG3 modding
 -   Visual Studio Codium (VSCodium) - an open source version of VSCode
 
 ## W
@@ -111,7 +113,7 @@ Intended as a temporary hub for terms that may need to be explained in our work-
 
 ## X
 
--   xml - 
+-   Xml - Extensible Markup Language, markup language and file format for storing, transmitting, and reconstructing arbitrary data, both human-readable and machine-readable
 
 ## Y
 
