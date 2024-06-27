@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: false
-date: 2024-06-24T21:23:09.419Z
+date: 2024-06-27T07:45:40.987Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -13,7 +13,7 @@ dateCreated: 2024-06-21T10:57:05.698Z
 ![soon_tm.webp](/test/alithea/soon_tm.webp) 
 
 [Screen Archery Introduction](https://wiki.bg3.community/en/test/alitheas-apothecary/I)
-Part 1 - Getting started: Understanding the basic tools and settings required for screen archery
+[Part 1](https://wiki.bg3.community/en/test/alitheas-apothecary/screen-archery-guide-part-1) - Getting started: Understanding the basic tools and settings required for screen archery
 Part 2 - Fundamentals: Learning how to frame shots, use lighting, and create compelling compositions without third party tools.
 Part 3 - Integrating free tools and mods.
 [Part 4](https://wiki.bg3.community/en/test/alitheas-apothecary/screen-archery-guide-part-4) - Technical skills I: Exploring Otis’ camera tool and ReShade to enhance your captures. (Beginner)
