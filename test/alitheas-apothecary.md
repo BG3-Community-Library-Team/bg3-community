@@ -1,8 +1,8 @@
 ---
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
-published: false
-date: 2024-06-27T07:45:40.987Z
+published: true
+date: 2024-06-28T11:21:39.347Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -10,7 +10,6 @@ dateCreated: 2024-06-21T10:57:05.698Z
 
 # Astarion is my emotional support character
 
-![soon_tm.webp](/test/alithea/soon_tm.webp) 
 
 [Screen Archery Introduction](https://wiki.bg3.community/en/test/alitheas-apothecary/I)
 [Part 1](https://wiki.bg3.community/en/test/alitheas-apothecary/screen-archery-guide-part-1) - Getting started: Understanding the basic tools and settings required for screen archery
@@ -54,3 +53,7 @@ png uploaded to imgur
 ## file sizes
 
 ![file_sizes.png](/test/file_sizes.png)
+
+# How to add tabs to the wiki
+[with template](https://wiki.bg3.community/en/test/alitheas-apothecary/tabs)
+
