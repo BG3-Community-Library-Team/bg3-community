@@ -1,8 +1,8 @@
 ---
 title: How to add tabs to your wiki page
-description: Tutorial including template
+description: Guide including template
 published: false
-date: 2024-06-28T11:08:11.481Z
+date: 2024-06-28T11:08:59.633Z
 tags: guide, test
 editor: markdown
 dateCreated: 2024-06-28T10:32:48.003Z
