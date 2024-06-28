@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-06-28T11:24:07.729Z
+date: 2024-06-28T11:24:56.363Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -10,8 +10,8 @@ dateCreated: 2024-06-21T10:57:05.698Z
 
 # Astarion is my emotional support character
 
-
-# [Screen Archery Introduction](https://wiki.bg3.community/en/test/alitheas-apothecary/I)
+# Screen Archery guide - wip
+[Screen Archery Introduction](https://wiki.bg3.community/en/test/alitheas-apothecary/I)
 [Part 1](https://wiki.bg3.community/en/test/alitheas-apothecary/screen-archery-guide-part-1) - Getting started: Understanding the basic tools and settings required for screen archery
 Part 2 - Fundamentals: Learning how to frame shots, use lighting, and create compelling compositions without third party tools.
 Part 3 - Integrating free tools and mods.
