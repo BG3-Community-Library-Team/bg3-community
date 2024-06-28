@@ -2,13 +2,15 @@
 title: Screen archery
 description: What even is screen archery?
 published: false
-date: 2024-06-24T08:31:46.547Z
+date: 2024-06-28T11:55:43.491Z
 tags: guide, wip, screen archery
 editor: markdown
 dateCreated: 2024-06-24T08:17:29.706Z
 ---
 
 ![](/test/alithea/soon_tm.webp)
+
+![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp)
 
 ## Introduction to Screen Archery: Capturing the Art Within Games
 
@@ -60,6 +62,6 @@ Join us on this journey as we delve into the fascinating world of screen archery
 
 ![](/test/alithea/cmty_pride_logo.webp)
 
-Let’s get started! (insert link to part 1)
+Shall we? (insert link to part 1)
 
 Note: I'd like to include examples to show the difference between vanilla, modded, and including paid tools
