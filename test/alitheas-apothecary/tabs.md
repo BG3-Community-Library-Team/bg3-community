@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: get up Babes, we got tabs!
 published: false
-date: 2024-06-28T10:34:47.019Z
+date: 2024-06-28T10:52:08.991Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-28T10:32:48.003Z
@@ -32,7 +32,7 @@ If you want to add content below the tabset, create a new header with the same d
 In this example: "## Next Section"
 
 ### Template
-Conveniently for you, I'll include a sort of template. Simply copy / paste the below code into your markdown editor, rename the tabs, and remove or add tabs according to your vision.
+For convenience, simply copy / paste the below code into your markdown editor, rename the tabs, and remove or add tabs according to your vision.
 
 ```
 # Tabs - How To
