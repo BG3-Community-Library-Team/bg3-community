@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: get up Babes, we got tabs!
 published: false
-date: 2024-06-28T10:32:48.003Z
+date: 2024-06-28T10:34:47.019Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-28T10:32:48.003Z
@@ -11,7 +11,7 @@ dateCreated: 2024-06-28T10:32:48.003Z
 # Tabs - How To
 <!-- add some fancy text here if you want to -->
 
-![add_tabs_to_the_wiki.webp](/test/add_tabs_to_the_wiki.webp)
+![add_tabs_to_the_wiki.webp](/test/add_tabs_to_the_wiki.webp =500x)
 
 ## Tab {.tabset}
 ### Step One
