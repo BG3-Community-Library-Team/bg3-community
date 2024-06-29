@@ -2,7 +2,7 @@
 title: Installing Script Extender
 description: How to install Norbyte's Script Extender
 published: true
-date: 2024-06-29T14:16:19.150Z
+date: 2024-06-29T14:16:33.997Z
 tags: installation, moduse, script extender
 editor: markdown
 dateCreated: 2024-06-21T04:52:35.045Z
@@ -116,7 +116,7 @@ In this menu make sure to activate the setting “Create Console”.
 
 ![](https://lh7-us.googleusercontent.com/hMiFp1tEQLqTUEU6EWYCNrluAlZIm3pR9n73I3_r0_AAKZZLk46kiSgOr80cvsrnBRAKH8HsAtiVLbrMkEx-9S90Vjfig_IY9ZzPBVP9XFSQib8zVtXJq2FrG_Uiwd07fDN1WIYeUXhoSbTX1zINRdw)
 
-To access logs on Windows, press Win+R and run `explorer %LocalAppData%\Larian Studios\Baldur's Gate 3\Script Extender Logs`
+To access logs on Windows, press Win+R, paste and run this: `explorer %LocalAppData%\Larian Studios\Baldur's Gate 3\Script Extender Logs`
 
 
 ## **6\. Activating the Script Extender Console (Manually)**
