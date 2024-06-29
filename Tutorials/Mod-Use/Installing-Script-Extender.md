@@ -2,7 +2,7 @@
 title: Installing Script Extender
 description: How to install Norbyte's Script Extender
 published: true
-date: 2024-06-23T12:53:44.360Z
+date: 2024-06-29T14:16:19.150Z
 tags: installation, moduse, script extender
 editor: markdown
 dateCreated: 2024-06-21T04:52:35.045Z
@@ -11,21 +11,20 @@ dateCreated: 2024-06-21T04:52:35.045Z
 # <p style="text-align:center">*How to Install Script Extender*</p>
 
 > **Do not Download Script Extender from Nexus. It is an unofficial reupload.**
-> **Do not Download Script Extender from any other website except for Norbyte's official GitHub.**
+> **Do not Download Script Extender from any other website except for [Norbyte's official GitHub page](https://github.com/Norbyte/bg3se/releases/latest).**
 {.is-danger}
 
 
 ## Compatiable Operating Systems
 
-Script Extender is compatiable with the following systems:
+Script Extender is compatible with the following systems:
 - Script Extender works on Windows
-- Script Extender works on Steam Deck *
-- Script Extender works on Linux *
+- Script Extender works on Linux and Steam Deck *
 
 \* Additional actions necessary. See [4. Installing Script Extender Manually (Linux)](https://wiki.bg3.community/en/Tutorials/Mod-Use/Installing-Script-Extender#h-4-installing-script-extender-manually-linux)
 
-> Mac OS has no official supprt for Script Extender
-> Consoles (Playstation, Xbox) have no official supprt for Script Extender
+> Mac OS has no official support for Script Extender
+> Consoles (Playstation, Xbox) have no official support for Script Extender
 {.is-danger}
 
 ## **1. Install Script Extender via BG3MM (Windows)**
@@ -113,8 +112,12 @@ In BG3MM click _Settings_ and _Open Preferences_. Another menu will open.
 ![](https://lh7-us.googleusercontent.com/06oM1eidUKDnFk-kBwhSC0Ql3_YZMQopntV-4peuFMCsiq02M84cmrjjKdFgOxcDq1sJYOQGHgh6_kZ37ly8aj5O1lcp9Zi7HS7VqPb3Lj685m2qHKJVotbek7j5qUh8Ic0nPKvKc9kLI9aOifTZyh0)
 
 In this menu make sure to activate the setting “Create Console”.
+ It is also recommended to enable 'Log Runtime,' which is located a few options below. This setting will create a record of each SE console, and the logs won't take up much space. Having these logs will assist you in checking them or sharing them with other people.
 
 ![](https://lh7-us.googleusercontent.com/hMiFp1tEQLqTUEU6EWYCNrluAlZIm3pR9n73I3_r0_AAKZZLk46kiSgOr80cvsrnBRAKH8HsAtiVLbrMkEx-9S90Vjfig_IY9ZzPBVP9XFSQib8zVtXJq2FrG_Uiwd07fDN1WIYeUXhoSbTX1zINRdw)
+
+To access logs on Windows, press Win+R and run `explorer %LocalAppData%\Larian Studios\Baldur's Gate 3\Script Extender Logs`
+
 
 ## **6\. Activating the Script Extender Console (Manually)**
 
