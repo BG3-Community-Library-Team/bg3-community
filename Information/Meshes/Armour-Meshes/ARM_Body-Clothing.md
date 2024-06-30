@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T06:51:43.703Z
+date: 2024-06-30T06:55:14.218Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -454,13 +454,13 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ## CLT_Camp_Karlach_Bra
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Camp_Karlach_Bra F only-->
+#### DWR<!--CLT_Camp_Karlach_Bra-->
+#### GTY<!--CLT_Camp_Karlach_Bra-->
+#### GNO<!--CLT_Camp_Karlach_Bra-->
+#### HFL<!--CLT_Camp_Karlach_Bra-->
+#### HRC<!--CLT_Camp_Karlach_Bra-->
+#### TIF<!--CLT_Camp_Karlach_Bra FS only-->
 
 ### {-}
   
@@ -473,13 +473,13 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ## CLT_Camp_Minsc_Body_Ragged
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Camp_Minsc_Body_Ragged-->
+#### DGB<!--CLT_Camp_Minsc_Body_Ragged-->
+#### DWR<!--CLT_Camp_Minsc_Body_Ragged-->
+#### GTY<!--CLT_Camp_Minsc_Body_Ragged-->
+#### GNO<!--CLT_Camp_Minsc_Body_Ragged-->
+#### HFL<!--CLT_Camp_Minsc_Body_Ragged-->
+#### HRC<!--CLT_Camp_Minsc_Body_Ragged-->
 
 ### {-}
   
@@ -492,13 +492,12 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ## CLT_Camp_Outfit_Astarion_Body
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Camp_Outfit_Astarion_Body-->
+#### DGB<!--CLT_Camp_Outfit_Astarion_Body-->
+#### DWR<!--CLT_Camp_Outfit_Astarion_Body-->
+#### GTY<!--CLT_Camp_Outfit_Astarion_Body-->
+#### GNO<!--CLT_Camp_Outfit_Astarion_Body-->
+#### HFL<!--CLT_Camp_Outfit_Astarion_Body-->
 
 ### {-}
   
