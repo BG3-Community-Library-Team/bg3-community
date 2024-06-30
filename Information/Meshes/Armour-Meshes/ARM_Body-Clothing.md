@@ -2,13 +2,15 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T06:48:19.881Z
+date: 2024-06-30T06:51:43.703Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
 ---
 
 <!--While the amount of dev notes may seem excessive, I think that markers to tell you which mesh you're on for each tab is helpful for keeping your place while scrolling through an endless number of meshes. I also believe that the nav bar containing every mesh is less excessive than it seems, since it will help jump to points on a long page -SCR-->
+
+<!--If a tabset doesn't have notes on it yet, the available bodies haven't been verified yet-->
 # Explanation
 
 # Meshes
@@ -415,13 +417,12 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ## CLT_Camp_Halsin_Body
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Camp_Halsin_Body-->
+#### DGB<!--CLT_Camp_Halsin_Body-->
+#### DWR<!--CLT_Camp_Halsin_Body-->
+#### GTY<!--CLT_Camp_Halsin_Body-->
+#### GNO<!--CLT_Camp_Halsin_Body-->
+#### HFL<!--CLT_Camp_Halsin_Body-->
 
 ### {-}
 
@@ -434,13 +435,12 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ## CLT_Camp_Jaheira_Body_A
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Camp_Jaheira_Body_A-->
+#### DGB<!--CLT_Camp_Jaheira_Body_A-->
+#### DWR<!--CLT_Camp_Jaheira_Body_A-->
+#### GTY<!--CLT_Camp_Jaheira_Body_A-->
+#### GNO<!--CLT_Camp_Jaheira_Body_A-->
+#### HFL<!--CLT_Camp_Jaheira_Body_A-->
 
 ### {-}
 
