@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T06:42:23.837Z
+date: 2024-06-30T06:44:04.283Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -178,7 +178,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 </table>
 
 
-#### DGB
+#### DGB<!--ARM_NightsongPrison_Body-->
 <table> 
       
   <thead>
@@ -209,7 +209,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
  </table>
 
-#### DWR
+#### DWR<!--ARM_NightsongPrison_Body-->
 <table> 
       
   <thead>
@@ -240,7 +240,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
  </table>
 
-#### GTY
+#### GTY<!--ARM_NightsongPrison_Body-->
 <table> 
       
   <thead>
@@ -271,7 +271,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
 </table>
 
-#### GNO
+#### GNO<!--ARM_NightsongPrison_Body-->
 <table> 
       
   <thead>
@@ -302,7 +302,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
 </table>
 
-#### HFL
+#### HFL<!--ARM_NightsongPrison_Body-->
 <table> 
       
   <thead>
@@ -333,7 +333,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
 </table>
 
-#### HRC
+#### HRC<!--ARM_NightsongPrison_Body-->
 <table> 
       
   <thead>
@@ -375,7 +375,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ## CLT_Camp_Citizen_Shirt_B
 ### {.tabset}
 
-#### HUM
+#### HUM<!--CLT_Camp_Citizen_Shirt_B-->
 #### DGB
 #### DWR
 #### GTY
