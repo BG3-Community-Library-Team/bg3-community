@@ -2,7 +2,7 @@
 title: Armour Meshes - Body, Light
 description: Mesh reference for light armour
 published: false
-date: 2024-06-30T23:34:33.014Z
+date: 2024-06-30T23:34:39.396Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-30T00:56:00.057Z
