@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T04:35:00.543Z
+date: 2024-06-30T04:41:40.864Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -474,44 +474,68 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   <br>
   
-<h2>CLT_Shirt_C
+## CLT_Shirt_C
   
   <br>
   
-<h2>CLT_Shirt_C_1
+## CLT_Shirt_C_1
   
   <br>
   
-<h2>CLT_Shirt_Cook_A
+## CLT_Shirt_Cook_A
   
   <br>
   
-<h2>CLT_Shirt_Courtesan_A
+## CLT_Shirt_Courtesan_A
   
   <br>
   
-<h2>CLT_Shirt_Courtesan_A_Corset_E
+## CLT_Shirt_Courtesan_A_Corset_E
   
   <br>
   
-<h2>CLT_Shirt_Courtesan_A_Corset_Twitch
+## CLT_Shirt_Courtesan_A_Corset_Twitch
   
   <br>
   
-<h2>CLT_Shirt_D_Corset_B
+## CLT_Shirt_D_Corset_B
   
   <br>
   
-<h2>CLT_Shirt_H
+## CLT_Shirt_H
   
   <br>
   
-<h2>CLT_Shirt_I_Twitch
+## CLT_Shirt_I_Twitch
   
   <br>
   
-<h2>CLT_Shirt_J
+## CLT_Shirt_J
   
   <br>
   
-<h2>SKEL_HUM_M_ARM_Robe_B_Body
+## SKEL_HUM_M_ARM_Robe_B_Body
+### {.tabset}
+
+#### HUM
+<table>
+ 
+  <thead>
+      <th>Image</th>
+  	  <th>File Name</th>
+  	  <th>Mesh UUID</th>
+  	  <th>Sub-Meshes</th>
+    	<th>Material ID</th>
+  </thead>
+  
+  
+  <!--SKEL_HUM_M-->
+  <tr>
+    <td><img src="/armour_meshes/example-3-4.png" alt="example-3-4.png" width="150"/></td>
+    <td>SKEL_HUM_M_ARM_Robe_B_Body</td>
+    <td>fcdf8c0b-afa9-7fd0-aa44-9fdce83447de</td>
+    <td>SKEL_HUM_M_ARM_Robe_B_Body_Mesh</td>
+    <td>171158a1-f53c-7e95-cdc5-520ec974128d</td>
+  </tr>
+</table>
+### {-}
