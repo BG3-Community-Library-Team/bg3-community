@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T04:12:47.456Z
+date: 2024-06-30T04:25:37.027Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -118,6 +118,8 @@ dateCreated: 2024-06-18T05:04:11.115Z
 #### TIF
 ### {-}
 
+<br>
+
 ## ARM_NightsongPrison_Body
 
 ### {.tabset}
@@ -172,52 +174,12 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 </table>
 
-#### HUM
-
-| Image | File name | Mesh UUID | Submeshes | Material ID |
-| --- | --- | --- | --- | --- |
-| image | HUM\_F\_ARM\_Body\_Example2 | HUM_F UUID | Example\_Bracers\_Mesh | abc123 |
-|     |     |     | Example\_Skirt\_Mesh | def456 |
-|     |     |     | Example\_Body\_Mesh | ghi789 |
-| Image | HUM\_FS\_ARM\_Body\_Example2 | HUM_FS UUID | Example\_Bracers\_Mesh | abc123 |
-|     |     |     | Example\_Skirt\_Mesh | def456 |
-|     |     |     | Example\_Body\_Mesh | ghi789 |
-| Image | HUM\_M\_ARM\_Body\_Example2 | HUM_M UUID | Example\_Bracers\_Mesh | abc123 |
-|     |     |     | Example\_Skirt\_Mesh | def456 |
-|     |     |     | Example\_Body\_Mesh | ghi789 |
-| image | HUM\_MS\_ARM\_Body\_Example2 | HUM_MS UUID | Example\_Bracers\_Mesh | abc123 |
-|     |     |     | Example\_Skirt\_Mesh | def456 |
-|     |     |     | Example\_Body\_Mesh | ghi789 |
 
 #### DGB
-| Image | File name | Mesh UUID | Submeshes | Material ID |
-| --- | --- | --- | --- | --- |
-| image | DGB\_F\_ARM\_Body\_Example2 | DGB_F UUID | Example\_Bracers\_Mesh | abc123 |
-|     |     |     | Example\_Skirt\_Mesh | def456 |
-|     |     |     | Example\_Body\_Mesh | ghi789 |
-| Image | DGB_M\_ARM\_Body\_Example2 | DGB_M UUID | Example\_Bracers\_Mesh | abc123 |
-|     |     |     | Example\_Skirt\_Mesh | def456 |
-|     |     |     | Example\_Body\_Mesh | ghi789 |
 
 #### DWR
-| Image | File name | Mesh UUID | Submeshes | Material ID |
-| --- | --- | --- | --- | --- |
-| image | DWR\_F\_ARM\_Body\_Example2 | DWR_F UUID | Example\_Bracers\_Mesh | abc123 |
-|     |     |     | Example\_Skirt\_Mesh | def456 |
-|     |     |     | Example\_Body\_Mesh | ghi789 |
-| Image | DWR_M\_ARM\_Body\_Example2 | DWR_M UUID | Example\_Bracers\_Mesh | abc123 |
-|     |     |     | Example\_Skirt\_Mesh | def456 |
-|     |     |     | Example\_Body\_Mesh | ghi789 |
 
 #### GTY
-| Image | File name | Mesh UUID | Submeshes | Material ID |
-| --- | --- | --- | --- | --- |
-| image | GTY_F\_ARM\_Body\_Example2 | GTY_F UUID | Example\_Bracers\_Mesh | abc123 |
-|     |     |     | Example\_Skirt\_Mesh | def456 |
-|     |     |     | Example\_Body\_Mesh | ghi789 |
-| Image | GTY_M\_ARM\_Body\_Example2 | GTY_M UUID | Example\_Bracers\_Mesh | abc123 |
-|     |     |     | Example\_Skirt\_Mesh | def456 |
-|     |     |     | Example\_Body\_Mesh | ghi789 |
 
 #### GNO
 
@@ -227,3 +189,156 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 #### TIF
 ### {-}
+
+<br>
+
+## CLT_Camp_Deva_A_Body_A
+
+<br>
+
+## CLT_Camp_Halsin_Body
+
+<br>
+
+## CLT_Camp_Jaheira_Body_A
+
+
+<br>
+
+## CLT_Camp_Karlach_Bra
+  
+<br>
+
+## CLT_Camp_Minsc_Body_Ragged
+  
+<br>
+
+## CLT_Camp_Outfit_Astarion_Body
+  
+<br>
+  
+## CLT_Camp_Shirt_A
+  
+  <br>
+  
+## CLT_Daisy_Dress_A
+  
+  <br>
+  
+## CLT_Doublet_A
+  
+  <br>
+  
+## CLT_Doublet_Rich_A
+  
+  <br>
+  
+## CLT_Doublet_Rich_B_Twitch
+  
+  <br>
+  
+## CLT_Doublet_Rich_C_Body
+  
+  <br>
+  
+## CLT_Doublet_Rich_C_Skirt_A
+  
+  <br>
+  
+## CLT_Doublet_Rich_C_Skirt_B
+  
+  <br>
+  
+## CLT_Humans_Shirt_A
+  
+  <br>
+  
+## CLT_Jacket_D
+  
+  <br>
+  
+## CLT_Jacket_E
+  
+  <br>
+  
+## CLT_MiddleClass_Body_B
+  
+  <br>
+  
+## CLT_MiddleClass_Body_C
+  
+  <br>
+  
+## CLT_MiddleClass_Body_C_Sleeveless
+  
+  <br>
+  
+## CLT_Refugees_Jacket
+  
+  <br>
+  
+## CLT_Refugees_Shirt_A_1
+  
+<br>
+  
+## CLT_Refugees_Shirt_B
+  
+<br>
+  
+## CLT_Rich_D_Body
+  
+<br>
+  
+## CLT_Rich_Dress_B
+  
+  <br>
+  
+## CLT_Rich_Dress_B_Shirt
+  
+  <br>
+  
+## CLT_Rich_E
+  
+  <br>
+  
+<h2>CLT_Shirt_C
+  
+  <br>
+  
+<h2>CLT_Shirt_C_1
+  
+  <br>
+  
+<h2>CLT_Shirt_Cook_A
+  
+  <br>
+  
+<h2>CLT_Shirt_Courtesan_A
+  
+  <br>
+  
+<h2>CLT_Shirt_Courtesan_A_Corset_E
+  
+  <br>
+  
+<h2>CLT_Shirt_Courtesan_A_Corset_Twitch
+  
+  <br>
+  
+<h2>CLT_Shirt_D_Corset_B
+  
+  <br>
+  
+<h2>CLT_Shirt_H
+  
+  <br>
+  
+<h2>CLT_Shirt_I_Twitch
+  
+  <br>
+  
+<h2>CLT_Shirt_J
+  
+  <br>
+  
+<h2>SKEL_HUM_M_ARM_Robe_B_Body
