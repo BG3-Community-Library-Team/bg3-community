@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T04:44:28.679Z
+date: 2024-06-30T04:49:09.852Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -531,7 +531,9 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   <!--SKEL_HUM_M-->
   <tr>
-    <td><img src="/armour_meshes/skel_hum_m_arm_robe_b_body.png" alt="skel_hum_m_arm_robe_b_body.png" width="150"/></td>
+    <td><img src="/armour_meshes/	
+skel_hum_m_arm_robe_b_body.png" alt="	
+skel_hum_m_arm_robe_b_body.png" width="150" /></td>
     <td>SKEL_HUM_M_ARM_Robe_B_Body</td>
     <td>fcdf8c0b-afa9-7fd0-aa44-9fdce83447de</td>
     <td>SKEL_HUM_M_ARM_Robe_B_Body_Mesh</td>
