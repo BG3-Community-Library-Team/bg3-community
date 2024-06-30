@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T03:04:25.102Z
+date: 2024-06-30T03:08:50.343Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -17,9 +17,30 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 #### HUM
 
+  
+    
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+
 | Image | File name | Mesh UUID | Submeshes | Material ID |
 | --- | --- | --- | --- | --- |
-<td rowspan=3> ![chin_grove.png](/hair_meshes/chin_grove.png) | <td rowspan=3> HUM\_F\_ARM\_Body\_Example | HUM_F UUID | Example\_Bracers\_Mesh | abc123 |
+<td rowspan=3> ![chin_grove.png](/hair_meshes/chin_grove.png)</td> | <td rowspan=3> HUM\_F\_ARM\_Body\_Example | HUM_F UUID | Example\_Bracers\_Mesh | abc123 |
 |     |     |     | Example\_Skirt\_Mesh | def456 |
 |     |     |     | Example\_Body\_Mesh | ghi789 |
 | ![chin_grove.png](/hair_meshes/chin_grove.png) | HUM\_FS\_ARM\_Body\_Example | HUM_FS UUID | Example\_Bracers\_Mesh | abc123 |
