@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T06:20:58.244Z
+date: 2024-06-30T06:37:23.806Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -361,6 +361,21 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 </table>  
   
+### {-}
+
+<br>
+
+## CLT_Camp_Citizen_Shirt_B
+### {.tabset}
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+#### OTHER
+
 ### {-}
 
 <br>
