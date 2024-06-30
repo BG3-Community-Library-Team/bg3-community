@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T04:42:18.956Z
+date: 2024-06-30T04:42:31.522Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -517,7 +517,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ## SKEL_HUM_M_ARM_Robe_B_Body
 ### {.tabset}
 
-#### SKEL
+#### OTHER
 <table>
  
   <thead>
