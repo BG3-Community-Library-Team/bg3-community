@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-06-30T07:29:24.917Z
+date: 2024-06-30T07:48:30.864Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -21,116 +21,6 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
 
 # Meshes
-
-## ARM_Body_Example
-### {.tabset}
-
-#### HUM
-<table>
- 
-  <thead>
-      <th>Image</th>
-  	  <th>File Name</th>
-  	  <th>Mesh UUID</th>
-  	  <th>Sub-Meshes</th>
-    	<th>Material ID</th>
-  </thead>
-  
-  
-  <!--HUM_M-->
-  <tr>
-    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png"/></td>
-    <td rowspan="2">HUM_M_ARM_Cult_Absolute_Body_C</td>
-    <td rowspan="2">4390343c-cc66-1bc4-d31a-5eaadeda0e90</td>
-    <td>ARM_Cult_Absolute_C_Body_Mesh</td>
-    <td>8d1e6e58-f337-03da-3019-6fceb0d9a809</td>
-  </tr>
-
-  <tr>
-    <!--image cont-->
-    <!--file name cont-->
-		<!--mesh UUID cont-->
-   	<td>ARM_Cult_Absolute_C_Body_Accessories_Mesh</td>
-    <td>745542f7-6f1e-740b-1bdb-9acf9f26174c</td>
-  </tr>
-  
-  
-  <!--HUM_F-->
-  <tr>
-    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png"/></td>
-    <td rowspan="2">HUM_F_ARM_Cult_Absolute_Body_C</td>
-    <td rowspan="2">e936b4b2-5c11-ff4a-a9b4-7a744844e508</td>
-    <td>ARM_Cult_Absolute_C_Body_Mesh</td>
-    <td>8d1e6e58-f337-03da-3019-6fceb0d9a809</td>
-  </tr>
-
-  <tr>
-    <!--image cont-->
-    <!--file name cont-->
-		<!--mesh UUID cont-->
-   	<td>ARM_Cult_Absolute_C_Body_Accessories_Mesh</td>
-    <td>745542f7-6f1e-740b-1bdb-9acf9f26174c</td>
-  </tr>
-  
-  
-  <!--HUM_MS-->
-  <tr>
-    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png"/></td>
-    <td rowspan="2">HUM_MS_ARM_Cult_Absolute_Body_C</td>
-    <td rowspan="2">e936b4b2-5c11-ff4a-a9b4-7a744844e508</td>
-    <td>ARM_Cult_Absolute_C_Body_Mesh</td>
-    <td>8d1e6e58-f337-03da-3019-6fceb0d9a809</td>
-  </tr>
-
-  <tr>
-    <!--image cont-->
-    <!--file name cont-->
-		<!--mesh UUID cont-->
-   	<td>ARM_Cult_Absolute_C_Body_Accessories_Mesh</td>
-    <td>745542f7-6f1e-740b-1bdb-9acf9f26174c</td>
-  </tr>
-  
-  
-  <!--HUM_FS-->
-  <tr>
-    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png"/></td>
-    <td rowspan="2">HUM_FS_ARM_Cult_Absolute_Body_C</td>
-    <td rowspan="2">8d1e6e58-f337-03da-3019-6fceb0d9a809</td>
-    <td>ARM_Cult_Absolute_C_Body_Mesh</td>
-    <td>8d1e6e58-f337-03da-3019-6fceb0d9a809</td>
-  </tr>
-
-  <tr>
-    <!--image cont-->
-    <!--file name cont-->
-		<!--mesh UUID cont-->
-   	<td>ARM_Cult_Absolute_C_Body_Accessories_Mesh</td>
-    <td>745542f7-6f1e-740b-1bdb-9acf9f26174c</td>
-  </tr>  
-</table>
-
-
-#### DGB
-
-
-#### DWR
-
-
-#### GTY
-
-
-#### GNO
-
-#### HFL
-
-#### HRC
-
-#### TIF
-### {-}
-
-<br>
-
-
 
 
 ## ARM_NightsongPrison_Body
