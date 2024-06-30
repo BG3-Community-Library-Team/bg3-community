@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T03:47:40.882Z
+date: 2024-06-30T03:48:46.710Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -16,9 +16,6 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ### {.tabset}
 
 #### HUM
-
-  
-    
 <table>
  
   <thead>
