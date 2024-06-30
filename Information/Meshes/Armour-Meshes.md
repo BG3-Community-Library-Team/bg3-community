@@ -2,7 +2,7 @@
 title: Armour Meshes Reference
 description: A reference for all wearable meshes in the game
 published: false
-date: 2024-06-30T09:40:33.045Z
+date: 2024-06-30T09:42:58.812Z
 tags: reference, meshes, armor, armour
 editor: markdown
 dateCreated: 2024-06-17T23:33:06.802Z
@@ -25,7 +25,7 @@ Armour files begin with an abbreviated race name and body type, followed by the 
 - Body: In the case of armour files, a body mesh is typically the piece which contains the torso. Body can refer to a shirt, breastplate, or even full top-to-bottom outfit.
 - Skirt: A skirt often refers to the bottom, looser part of a piece of armour (or even a shirt). If an armour has physics, it is typically on the skirt.
 - Physics: Physics are the way the game attempts to simulate how an object in game should move. In armour, we are typically dealing with cloth physics, which attempt to mimic the movement of fabric. This is accomplished through [vertex painting](/Information/Meshes/Vertex-Painting-Meshes).
-- Cloth mesh: When an armour file submesh ends with `_Cloth_Mesh`, this is (with very rare exceptions) the cloth mesh, which is an invisible submesh that gives the game information on how to simulate the cloth physics for the other parts of that armour file. 
+- Cloth mesh: When a sub-mesh ends with `_Cloth_Mesh`, this is (with very rare exceptions) the cloth mesh, which is an invisible submesh that gives the game information on how to simulate the cloth physics for the other parts of that mesh. 
 > Cloth meshes typically (though not always) use the Material ID 9e2966c7-b61c-4bc1-bef1-a79cb5fde067 (Engine_Default_Mesh_Lit_Opaque). It is safe to use this engine default for any cloth mesh, but the ID of your GR2's other sub-mesh will also work!
 {.is-info}
 
