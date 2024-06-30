@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T03:08:50.343Z
+date: 2024-06-30T03:09:43.579Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -26,12 +26,12 @@ dateCreated: 2024-06-18T05:04:11.115Z
     <th>Country</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td rowspan=2>Alfreds Futterkiste</td>
     <td>Maria Anders</td>
     <td>Germany</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
+    <!---->
     <td>Francisco Chang</td>
     <td>Mexico</td>
   </tr>
