@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-06-30T09:23:59.351Z
+date: 2024-06-30T09:48:05.873Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -15,7 +15,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 -   Sub-Mesh: The individual meshes within a GR2 file.
 -   Material ID: The UUID that contains the texture information for each sub-mesh.
 
-> Cloth meshes typically (though not always) use the Material ID 9e2966c7-b61c-4bc1-bef1-a79cb5fde067 (Engine\_Default\_Mesh\_Lit\_Opaque). It is safe to use this engine default for any cloth mesh, but the ID of the other mesh will also work!
+> Cloth meshes typically (though not always) use the Material ID 9e2966c7-b61c-4bc1-bef1-a79cb5fde067 (Engine\_Default\_Mesh\_Lit\_Opaque). It is safe to use this engine default for any cloth mesh, but the ID of your file's other sub-mesh will also work!
 {.is-info}
 
 
