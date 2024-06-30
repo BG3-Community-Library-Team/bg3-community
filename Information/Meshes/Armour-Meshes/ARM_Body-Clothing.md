@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T03:37:27.576Z
+date: 2024-06-30T03:42:08.819Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -20,13 +20,14 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
     
 <table>
-  <tr>
-    <th>Image</th>
-    <th>File Name</th>
-    <th>Mesh UUID</th>
-    <th>Sub-Meshes</th>
-    <th>Material ID</th>
-  </tr>
+ 
+  <thead>
+      <th>Image</th>
+  	  <th>File Name</th>
+  	  <th>Mesh UUID</th>
+  	  <th>Sub-Meshes</th>
+    	<th>Material ID</th>
+  </thead>
   
   <tr>
     <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png" width="200"/></td>
