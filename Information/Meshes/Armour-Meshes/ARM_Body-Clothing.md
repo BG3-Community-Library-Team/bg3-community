@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T06:37:23.806Z
+date: 2024-06-30T06:42:23.837Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -119,6 +119,9 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ### {-}
 
 <br>
+
+
+
 
 ## ARM_NightsongPrison_Body
 
@@ -365,8 +368,13 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 <br>
 
+
+
+
+
 ## CLT_Camp_Citizen_Shirt_B
 ### {.tabset}
+
 #### HUM
 #### DGB
 #### DWR
@@ -380,154 +388,713 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 <br>
 
+
+
+
+
 ## CLT_Camp_Deva_A_Body_A
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
 
 <br>
+
+
+
+
 
 ## CLT_Camp_Halsin_Body
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
 
 <br>
+
+
+
+
 
 ## CLT_Camp_Jaheira_Body_A
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
 
 
 <br>
+
+
+
+
 
 ## CLT_Camp_Karlach_Bra
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
 <br>
+
+
+
+
 
 ## CLT_Camp_Minsc_Body_Ragged
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
 <br>
 
+
+
+
+
 ## CLT_Camp_Outfit_Astarion_Body
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
 <br>
+  
+  
+  
+  
   
 ## CLT_Camp_Shirt_A
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Daisy_Dress_A
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Doublet_A
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
   
-## CLT_Doublet_Rich_A
+  
+  
+  
+  
+## CLT_Doublet_Rich_
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Doublet_Rich_B_Twitch
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Doublet_Rich_C_Body
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Doublet_Rich_C_Skirt_A
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Doublet_Rich_C_Skirt_B
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Humans_Shirt_A
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Jacket_D
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Jacket_E
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_MiddleClass_Body_B
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_MiddleClass_Body_C
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_MiddleClass_Body_C_Sleeveless
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Refugees_Jacket
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Refugees_Shirt_A_1
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
 <br>
+  
+  
+  
+  
   
 ## CLT_Refugees_Shirt_B
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
 <br>
+  
+  
+  
+  
   
 ## CLT_Rich_D_Body
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
 <br>
   
+  
+  
+  
+  
 ## CLT_Rich_Dress_B
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Rich_Dress_B_Shirt
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Rich_E
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Shirt_C
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Shirt_C_1
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Shirt_Cook_A
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Shirt_Courtesan_A
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Shirt_Courtesan_A_Corset_E
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Shirt_Courtesan_A_Corset_Twitch
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Shirt_D_Corset_B
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Shirt_H
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Shirt_I_Twitch
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## CLT_Shirt_J
+### {.tabset}
+
+#### HUM
+#### DGB
+#### DWR
+#### GTY
+#### GNO
+#### HFL
+#### HRC
+
+### {-}
   
   <br>
+  
+  
+  
+  
   
 ## SKEL_HUM_M_ARM_Robe_B_Body
 ### {.tabset}
