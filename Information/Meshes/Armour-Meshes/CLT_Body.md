@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-06-30T08:59:40.614Z
+date: 2024-06-30T09:08:22.391Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -1574,7 +1574,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   
   
-## CLT_Rich_Dress_B<!--1 rows each-->
+## CLT_Rich_Dress_B
 ### {.tabset}
 
 #### HUM<!--CLT_Rich_Dress_B-->
@@ -1810,7 +1810,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   
   
-## CLT_Shirt_Cook_A<!--1 rows each-->
+## CLT_Shirt_Cook_A
 ### {.tabset}
 
 #### HUM<!--CLT_Shirt_Cook_A-->
@@ -1873,7 +1873,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   
   
-## CLT_Shirt_Courtesan_A<!--1 rows each--><!--F only-->
+## CLT_Shirt_Courtesan_A
 ### {.tabset}
 
 #### HUM<!--CLT_Shirt_Courtesan_A HUM_F-->
@@ -1899,10 +1899,10 @@ dateCreated: 2024-06-18T04:48:47.326Z
     
 </table>
 
-#### DWR<!--CLT_Shirt_Courtesan_A--->
-#### GTY<!--CLT_Shirt_Courtesan_A--->
-#### GNO<!--CLT_Shirt_Courtesan_A--->
-#### HFL<!--CLT_Shirt_Courtesan_A--->
+#### DWR<!--CLT_Shirt_Courtesan_A-->
+#### GTY<!--CLT_Shirt_Courtesan_A-->
+#### GNO<!--CLT_Shirt_Courtesan_A-->
+#### HFL<!--CLT_Shirt_Courtesan_A-->
 
 
 ### {-}
