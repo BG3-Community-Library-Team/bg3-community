@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T06:55:14.218Z
+date: 2024-06-30T07:04:24.604Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -510,13 +510,13 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ## CLT_Camp_Shirt_A
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Camp_Shirt_A-->
+#### DGB<!--CLT_Camp_Shirt_A-->
+#### DWR<!--CLT_Camp_Shirt_A-->
+#### GTY<!--CLT_Camp_Shirt_A-->
+#### GNO<!--CLT_Camp_Shirt_A-->
+#### HFL<!--CLT_Camp_Shirt_A-->
+#### HRC<!--CLT_Camp_Shirt_A-->
 
 ### {-}
   
@@ -529,13 +529,13 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ## CLT_Daisy_Dress_A
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Daisy_Dress_A-->
+#### DGB<!--CLT_Daisy_Dress_A-->
+#### DWR<!--CLT_Daisy_Dress_A-->
+#### GTY<!--CLT_Daisy_Dress_A-->
+#### GNO<!--CLT_Daisy_Dress_A-->
+#### HFL<!--CLT_Daisy_Dress_A-->
+#### TIF<!--CLT_Daisy_Dress_A TIF_F-->
 
 ### {-}
   
@@ -548,13 +548,11 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ## CLT_Doublet_A
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Doublet_A no FS-->
+#### DWR<!--CLT_Doublet_A-->
+#### GTY<!--CLT_Doublet_A-->
+#### GNO<!--CLT_Doublet_A-->
+#### HFL<!--CLT_Doublet_A-->
 
 ### {-}
   
@@ -564,16 +562,15 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Doublet_Rich_
+## CLT_Doublet_Rich_A
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Doublet_Rich_A-->
+#### DGB<!--CLT_Doublet_Rich_A-->
+#### DWR<!--CLT_Doublet_Rich_A-->
+#### GTY<!--CLT_Doublet_Rich_A-->
+#### GNO<!--CLT_Doublet_Rich_A-->
+#### HFL<!--CLT_Doublet_Rich_A-->
 
 ### {-}
   
@@ -583,16 +580,15 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Doublet_Rich_B_Twitch
+## CLT_Doublet_Rich_B_Twitch<!--M only-->
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Doublet_Rich_B_Twitch-->
+#### DGB<!--CLT_Doublet_Rich_B_Twitch-->
+#### DWR<!--CLT_Doublet_Rich_B_Twitch-->
+#### GTY<!--CLT_Doublet_Rich_B_Twitch-->
+#### GNO<!--CLT_Doublet_Rich_B_Twitch-->
+#### HFL<!--CLT_Doublet_Rich_B_Twitch-->
 
 ### {-}
   
@@ -605,13 +601,12 @@ dateCreated: 2024-06-18T05:04:11.115Z
 ## CLT_Doublet_Rich_C_Body
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Doublet_Rich_C_Body-->
+#### DGB<!--CLT_Doublet_Rich_C_Body-->
+#### DWR<!--CLT_Doublet_Rich_C_Body-->
+#### GTY<!--CLT_Doublet_Rich_C_Body-->
+#### GNO<!--CLT_Doublet_Rich_C_Body-->
+#### HFL<!--CLT_Doublet_Rich_C_Body-->
 
 ### {-}
   
