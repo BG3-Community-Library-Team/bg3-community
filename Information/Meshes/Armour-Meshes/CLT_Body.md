@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-06-30T08:47:13.661Z
+date: 2024-06-30T08:53:11.169Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -782,6 +782,43 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Doublet_A no FS-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_M-->
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!--HUM_F-->  
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!--HUM_MS-->  
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    
+</table>
+
 #### DWR<!--CLT_Doublet_A-->
 #### GTY<!--CLT_Doublet_A-->
 #### GNO<!--CLT_Doublet_A-->
@@ -864,6 +901,112 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Doublet_Rich_C_Body-->
+<table>
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+    
+  <!--HUM_M-->
+  <tr>          
+    <td rowspan="3">image</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+  
+  
+  <!--HUM_F-->
+  <tr>          
+    <td rowspan="3">image</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+  
+  
+  <!--HUM_MS-->
+  <tr>          
+    <td rowspan="3">image</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+  
+  
+  <!--HUM_FS-->
+  <tr>          
+    <td rowspan="3">image</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
 #### DGB<!--CLT_Doublet_Rich_C_Body-->
 #### DWR<!--CLT_Doublet_Rich_C_Body-->
 #### GTY<!--CLT_Doublet_Rich_C_Body-->
@@ -882,6 +1025,112 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Doublet_Rich_C_Skirt_A-->
+<table>
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+    
+  <!--HUM_M-->
+  <tr>          
+    <td rowspan="3">image</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+  
+  
+  <!--HUM_F-->
+  <tr>          
+    <td rowspan="3">image</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+  
+  
+  <!--HUM_MS-->
+  <tr>          
+    <td rowspan="3">image</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+  
+  
+  <!--HUM_FS-->
+  <tr>          
+    <td rowspan="3">image</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
 #### DGB<!--CLT_Doublet_Rich_C_Skirt_A-->
 #### DWR<!--CLT_Doublet_Rich_C_Skirt_A-->
 #### GTY<!--CLT_Doublet_Rich_C_Skirt_A-->
@@ -900,6 +1149,112 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Doublet_Rich_C_Skirt_B-->
+<table>
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+    
+  <!--HUM_M-->
+  <tr>          
+    <td rowspan="3">image</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+  
+  
+  <!--HUM_F-->
+  <tr>          
+    <td rowspan="3">image</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+  
+  
+  <!--HUM_MS-->
+  <tr>          
+    <td rowspan="3">image</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+  
+  
+  <!--HUM_FS-->
+  <tr>          
+    <td rowspan="3">image</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
 #### DWR<!--CLT_Doublet_Rich_C_Skirt_B-->
 #### GTY<!--CLT_Doublet_Rich_C_Skirt_B-->
 #### GNO<!--CLT_Doublet_Rich_C_Skirt_B-->
@@ -1348,22 +1703,22 @@ dateCreated: 2024-06-18T04:48:47.326Z
   <!--HUM_M-->
   <tr>          
     <td rowspan="3">image</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-    <tr>          
-		<!--image cont-->
-    <td></td>
-    <td></td>
+    <td rowspan="3"></td>
+    <td rowspan="3"></td>
     <td></td>
     <td></td>
   </tr>
     <tr>          
 		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
     <td></td>
     <td></td>
+  </tr>
+    <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
     <td></td>
     <td></td>
   </tr>
