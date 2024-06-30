@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T03:42:08.819Z
+date: 2024-06-30T03:47:40.882Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -29,6 +29,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
     	<th>Material ID</th>
   </thead>
   
+  <!--HUM_M-->
   <tr>
     <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png" width="200"/></td>
     <td rowspan="2">HUM_M_ARM_Cult_Absolute_Body_C</td>
@@ -36,11 +37,41 @@ dateCreated: 2024-06-18T05:04:11.115Z
     <td>ARM_Cult_Absolute_C_Body_Mesh</td>
     <td>8d1e6e58-f337-03da-3019-6fceb0d9a809</td>
   </tr>
-  
+	<!--merged rows here-->
   <tr>
    	<td>ARM_Cult_Absolute_C_Body_Accessories_Mesh</td>
     <td>745542f7-6f1e-740b-1bdb-9acf9f26174c</td>
   </tr>
+  
+  <!--HUM_F-->
+  <tr>
+    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png" width="200"/></td>
+    <td rowspan="2">HUM_F_ARM_Cult_Absolute_Body_C</td>
+    <td rowspan="2">e936b4b2-5c11-ff4a-a9b4-7a744844e508</td>
+    <td>ARM_Cult_Absolute_C_Body_Mesh</td>
+    <td>8d1e6e58-f337-03da-3019-6fceb0d9a809</td>
+  </tr>
+	<!--merged rows here-->
+  <tr>
+   	<td>ARM_Cult_Absolute_C_Body_Accessories_Mesh</td>
+    <td>745542f7-6f1e-740b-1bdb-9acf9f26174c</td>
+  </tr>
+  
+  <!--HUM_MS-->
+  <tr>
+    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png" width="200"/></td>
+    <td rowspan="2">HUM_F_ARM_Cult_Absolute_Body_C</td>
+    <td rowspan="2">e936b4b2-5c11-ff4a-a9b4-7a744844e508</td>
+    <td>ARM_Cult_Absolute_C_Body_Mesh</td>
+    <td>8d1e6e58-f337-03da-3019-6fceb0d9a809</td>
+  </tr>
+	<!--merged rows here-->
+  <tr>
+   	<td>ARM_Cult_Absolute_C_Body_Accessories_Mesh</td>
+    <td>745542f7-6f1e-740b-1bdb-9acf9f26174c</td>
+  </tr>
+  
+  <!--HUM_FS-->
   
 </table>
 
