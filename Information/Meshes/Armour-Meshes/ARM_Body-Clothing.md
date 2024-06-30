@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T04:25:37.027Z
+date: 2024-06-30T04:35:00.543Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -176,18 +176,191 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 
 #### DGB
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--DGB_M-->
+  <tr>          
+    <td><img src="/armour_meshes/dgb_m_arm_nightsongprison_body.png" alt="DGB_M_ARM_NightsongPrison_Body.png" width="150" /></td>
+    <td>DGB_M_ARM_NightsongPrison_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_NightsongPrison_A</td>
+    <td>77d86716-3816-6155-8060-a76d5560e31c</td>
+  </tr>         
+
+  <!--DGB_F-->
+  <tr>          
+    <td><img src="/armour_meshes/dgb_f_arm_nightsongprison_body.png" alt="DGB_F_ARM_NightsongPrison_Body.png" width="150"/></td>
+    <td>DGB_F_ARM_NightsongPrison_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_NightsongPrison_A</td>
+    <td>77d86716-3816-6155-8060-a76d5560e31c</td>
+  </tr> 
+  
+ </table>
 
 #### DWR
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--DWR_M-->
+  <tr>          
+    <td><img src="/armour_meshes/dwr_m_arm_nightsongprison_body.png" alt="DWR_M_ARM_NightsongPrison_Body.png" width="150" /></td>
+    <td>DWR_M_ARM_NightsongPrison_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_NightsongPrison_A</td>
+    <td>77d86716-3816-6155-8060-a76d5560e31c</td>
+  </tr>         
+
+  <!--DWR_F-->
+  <tr>          
+    <td><img src="/armour_meshes/dwr_f_arm_nightsongprison_body.png" alt="DWR_F_ARM_NightsongPrison_Body.png" width="150"/></td>
+    <td>DWR_F_ARM_NightsongPrison_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_NightsongPrison_A</td>
+    <td>77d86716-3816-6155-8060-a76d5560e31c</td>
+  </tr> 
+  
+ </table>
 
 #### GTY
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--GTY_M-->
+  <tr>          
+    <td><img src="/armour_meshes/gty_m_arm_nightsongprison_body.png" alt="GTY_M_ARM_NightsongPrison_Body.png" width="150" /></td>
+    <td>GTY_M_ARM_NightsongPrison_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_NightsongPrison_A</td>
+    <td>77d86716-3816-6155-8060-a76d5560e31c</td>
+  </tr>         
+
+  <!--GTY_F-->
+  <tr>          
+    <td><img src="/armour_meshes/gty_f_arm_nightsongprison_body.png" alt="GTY_F_ARM_NightsongPrison_Body.png" width="150"/></td>
+    <td>GTY_F_ARM_NightsongPrison_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_NightsongPrison_A</td>
+    <td>77d86716-3816-6155-8060-a76d5560e31c</td>
+  </tr> 
+  
+</table>
 
 #### GNO
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--GNO_M-->
+  <tr>          
+    <td><img src="/armour_meshes/gno_m_arm_nightsongprison_body.png" alt="GNO_M_ARM_NightsongPrison_Body.png" width="150" /></td>
+    <td>GNO_M_ARM_NightsongPrison_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_NightsongPrison_A</td>
+    <td>77d86716-3816-6155-8060-a76d5560e31c</td>
+  </tr>         
+
+  <!--GNO_F-->
+  <tr>          
+    <td><img src="/armour_meshes/gno_f_arm_nightsongprison_body.png" alt="GNO_F_ARM_NightsongPrison_Body.png" width="150"/></td>
+    <td>GNO_F_ARM_NightsongPrison_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_NightsongPrison_A</td>
+    <td>77d86716-3816-6155-8060-a76d5560e31c</td>
+  </tr> 
+  
+</table>
 
 #### HFL
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HFL_M-->
+  <tr>          
+    <td><img src="/armour_meshes/hfl_m_arm_nightsongprison_body.png" alt="HFL_M_ARM_NightsongPrison_Body.png" width="150" /></td>
+    <td>HFL_M_ARM_NightsongPrison_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_NightsongPrison_A</td>
+    <td>77d86716-3816-6155-8060-a76d5560e31c</td>
+  </tr>         
+
+  <!--HFL_F-->
+  <tr>          
+    <td><img src="/armour_meshes/hfl_f_arm_nightsongprison_body.png" alt="HFL_F_ARM_NightsongPrison_Body.png" width="150"/></td>
+    <td>HFL_F_ARM_NightsongPrison_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_NightsongPrison_A</td>
+    <td>77d86716-3816-6155-8060-a76d5560e31c</td>
+  </tr> 
+  
+</table>
 
 #### HRC
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
 
-#### TIF
+  <!--HRC_M-->
+  <tr>          
+    <td><img src="/armour_meshes/hrc_m_arm_nightsongprison_body.png" alt="HRC_M_ARM_NightsongPrison_Body.png" width="150" /></td>
+    <td>HRC_M_ARM_NightsongPrison_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_NightsongPrison_A</td>
+    <td>77d86716-3816-6155-8060-a76d5560e31c</td>
+  </tr>         
+
+  <!--HRC_F-->
+  <tr>          
+    <td><img src="/armour_meshes/hrc_f_arm_nightsongprison_body.png" alt="HRC_F_ARM_NightsongPrison_Body.png" width="150"/></td>
+    <td>HRC_F_ARM_NightsongPrison_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_NightsongPrison_A</td>
+    <td>77d86716-3816-6155-8060-a76d5560e31c</td>
+  </tr> 
+
+</table>  
+  
 ### {-}
 
 <br>
