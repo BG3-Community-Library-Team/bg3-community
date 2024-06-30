@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T06:15:36.273Z
+date: 2024-06-30T06:18:59.839Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -29,7 +29,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   <!--HUM_M-->
   <tr>
-    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png" width="200"/></td>
+    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png"/></td>
     <td rowspan="2">HUM_M_ARM_Cult_Absolute_Body_C</td>
     <td rowspan="2">4390343c-cc66-1bc4-d31a-5eaadeda0e90</td>
     <td>ARM_Cult_Absolute_C_Body_Mesh</td>
@@ -47,7 +47,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   <!--HUM_F-->
   <tr>
-    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png" width="200"/></td>
+    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png"/></td>
     <td rowspan="2">HUM_F_ARM_Cult_Absolute_Body_C</td>
     <td rowspan="2">e936b4b2-5c11-ff4a-a9b4-7a744844e508</td>
     <td>ARM_Cult_Absolute_C_Body_Mesh</td>
@@ -65,7 +65,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   <!--HUM_MS-->
   <tr>
-    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png" width="200"/></td>
+    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png"/></td>
     <td rowspan="2">HUM_MS_ARM_Cult_Absolute_Body_C</td>
     <td rowspan="2">e936b4b2-5c11-ff4a-a9b4-7a744844e508</td>
     <td>ARM_Cult_Absolute_C_Body_Mesh</td>
@@ -83,7 +83,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   <!--HUM_FS-->
   <tr>
-    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png" width="200"/></td>
+    <td rowspan="2"><img src="/armour_meshes/example-4-3.png" alt="example-4-3.png"/></td>
     <td rowspan="2">HUM_FS_ARM_Cult_Absolute_Body_C</td>
     <td rowspan="2">8d1e6e58-f337-03da-3019-6fceb0d9a809</td>
     <td>ARM_Cult_Absolute_C_Body_Mesh</td>
