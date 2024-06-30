@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-06-30T08:40:06.492Z
+date: 2024-06-30T08:47:13.661Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -1435,16 +1435,15 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   
   
-## CLT_Shirt_Courtesan_A<!--1 rows each-->
+## CLT_Shirt_Courtesan_A<!--1 rows each--><!--F only-->
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Shirt_Courtesan_A HUM_F-->
+#### DWR<!--CLT_Shirt_Courtesan_A--->
+#### GTY<!--CLT_Shirt_Courtesan_A--->
+#### GNO<!--CLT_Shirt_Courtesan_A--->
+#### HFL<!--CLT_Shirt_Courtesan_A--->
+
 
 ### {-}
   
@@ -1454,16 +1453,13 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   
   
-## CLT_Shirt_Courtesan_A_Corset_E<!--2 rows each-->
+## CLT_Shirt_Courtesan_A_Corset_E<!--2 rows each--><!--F only-->
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Shirt_Courtesan_A_Corset_E no FS-->
+#### DWR<!--CLT_Shirt_Courtesan_A_Corset_E-->
+#### GNO<!--CLT_Shirt_Courtesan_A_Corset_E-->
+#### HFL<!--CLT_Shirt_Courtesan_A_Corset_E-->
 
 ### {-}
   
@@ -1473,16 +1469,15 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   
   
-## CLT_Shirt_Courtesan_A_Corset_Twitch<!--1 rows each-->
+## CLT_Shirt_Courtesan_A_Corset_Twitch<!--1 rows each--><!--F only-->
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Shirt_Courtesan_A_Corset_Twitch-->
+#### DGB<!--CLT_Shirt_Courtesan_A_Corset_Twitch-->
+#### DWR<!--CLT_Shirt_Courtesan_A_Corset_Twitch-->
+#### GNO<!--CLT_Shirt_Courtesan_A_Corset_Twitch-->
+#### HFL<!--CLT_Shirt_Courtesan_A_Corset_Twitch-->
+
 
 ### {-}
   
@@ -1492,16 +1487,13 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   
   
-## CLT_Shirt_D_Corset_B<!--2 rows each-->
+## CLT_Shirt_D_Corset_B<!--2 rows each--><!--F only-->
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Shirt_D_Corset_B no FS-->
+#### DWR<!--CLT_Shirt_D_Corset_B-->
+#### GNO<!--CLT_Shirt_D_Corset_B-->
+#### HFL<!--CLT_Shirt_D_Corset_B-->
 
 ### {-}
   
@@ -1511,16 +1503,14 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   
   
-## CLT_Shirt_H<!--1 rows each-->
+## CLT_Shirt_H<!--1 rows each--><!--F only-->
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Shirt_H no FS-->
+#### DWR<!--CLT_Shirt_H-->
+#### GTY<!--CLT_Shirt_H-->
+#### GNO<!--CLT_Shirt_H-->
+#### HFL<!--CLT_Shirt_H-->
 
 ### {-}
   
@@ -1530,16 +1520,15 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   
   
-## CLT_Shirt_I_Twitch<!--1 rows each-->
+## CLT_Shirt_I_Twitch<!--1 rows each--><!--F only-->
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Shirt_I_Twitch both-->
+#### DGB<!--CLT_Shirt_I_Twitch-->
+#### DWR<!--CLT_Shirt_I_Twitch-->
+#### GTY<!--CLT_Shirt_I_Twitch-->
+#### GNO<!--CLT_Shirt_I_Twitch-->
+#### HFL<!--CLT_Shirt_I_Twitch-->
 
 ### {-}
   
@@ -1549,16 +1538,15 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   
   
-## CLT_Shirt_J<!--1 rows each-->
+## CLT_Shirt_J<!--1 rows each--><!--F only-->
 ### {.tabset}
 
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
+#### HUM<!--CLT_Shirt_J both-->
+#### DGB<!--CLT_Shirt_J-->
+#### DWR<!--CLT_Shirt_J-->
+#### GTY<!--CLT_Shirt_J-->
+#### GNO<!--CLT_Shirt_J-->
+#### HFL<!--CLT_Shirt_J-->
 
 ### {-}
   
