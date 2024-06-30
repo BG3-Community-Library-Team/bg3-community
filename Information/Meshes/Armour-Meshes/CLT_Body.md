@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-06-30T07:28:16.780Z
+date: 2024-06-30T07:28:20.353Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
