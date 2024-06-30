@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T07:04:24.604Z
+date: 2024-06-30T07:27:07.849Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -375,7 +375,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 
 
-## CLT_Camp_Citizen_Shirt_B
+## CLT_Camp_Citizen_Shirt_B<!--1 row each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Camp_Citizen_Shirt_B-->
@@ -385,7 +385,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 #### GNO<!--CLT_Camp_Citizen_Shirt_B-->
 #### HFL<!--CLT_Camp_Citizen_Shirt_B-->
 #### HRC<!--CLT_Camp_Citizen_Shirt_B-->
-#### OTHER<!--CLT_Camp_Citizen_Shirt_B-->
+#### OTHER<!--CLT_Camp_Citizen_Shirt_B SKEL_GTY_M-->
 
 ### {-}
 
@@ -395,7 +395,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 
 
-## CLT_Camp_Deva_A_Body_A
+## CLT_Camp_Deva_A_Body_A<!--4 rows each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Camp_Deva_A_Body_A-->
@@ -414,7 +414,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 
 
-## CLT_Camp_Halsin_Body
+## CLT_Camp_Halsin_Body<!--1 row each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Camp_Halsin_Body-->
@@ -432,7 +432,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 
 
-## CLT_Camp_Jaheira_Body_A
+## CLT_Camp_Jaheira_Body_A<!--1 row each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Camp_Jaheira_Body_A-->
@@ -451,7 +451,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 
 
-## CLT_Camp_Karlach_Bra
+## CLT_Camp_Karlach_Bra<!--1 row each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Camp_Karlach_Bra F only-->
@@ -470,7 +470,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 
 
-## CLT_Camp_Minsc_Body_Ragged
+## CLT_Camp_Minsc_Body_Ragged<!--1 row each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Camp_Minsc_Body_Ragged-->
@@ -489,7 +489,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 
 
 
-## CLT_Camp_Outfit_Astarion_Body
+## CLT_Camp_Outfit_Astarion_Body<!--1 row each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Camp_Outfit_Astarion_Body-->
@@ -507,7 +507,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Camp_Shirt_A
+## CLT_Camp_Shirt_A<!--5 rows each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Camp_Shirt_A-->
@@ -526,7 +526,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Daisy_Dress_A
+## CLT_Daisy_Dress_A<!--1 row each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Daisy_Dress_A-->
@@ -545,7 +545,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Doublet_A
+## CLT_Doublet_A<!--1 row each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Doublet_A no FS-->
@@ -562,7 +562,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Doublet_Rich_A
+## CLT_Doublet_Rich_A<!--2 rows each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Doublet_Rich_A-->
@@ -580,7 +580,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Doublet_Rich_B_Twitch<!--M only-->
+## CLT_Doublet_Rich_B_Twitch<!--M only--><!--1 row each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Doublet_Rich_B_Twitch-->
@@ -598,7 +598,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Doublet_Rich_C_Body
+## CLT_Doublet_Rich_C_Body<!--3 rows each-->
 ### {.tabset}
 
 #### HUM<!--CLT_Doublet_Rich_C_Body-->
@@ -616,7 +616,153 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Doublet_Rich_C_Skirt_A
+## CLT_Doublet_Rich_C_Skirt_A<!--3 rows each-->
+### {.tabset}
+
+#### HUM<!--CLT_Doublet_Rich_C_Skirt_A-->
+#### DGB<!--CLT_Doublet_Rich_C_Skirt_A-->
+#### DWR<!--CLT_Doublet_Rich_C_Skirt_A-->
+#### GTY<!--CLT_Doublet_Rich_C_Skirt_A-->
+#### GNO<!--CLT_Doublet_Rich_C_Skirt_A-->
+#### HFL<!--CLT_Doublet_Rich_C_Skirt_A-->
+
+### {-}
+  
+  <br>
+  
+  
+  
+  
+  
+## CLT_Doublet_Rich_C_Skirt_B<!--3 rows each-->
+### {.tabset}
+
+#### HUM<!--CLT_Doublet_Rich_C_Skirt_B-->
+#### DWR<!--CLT_Doublet_Rich_C_Skirt_B-->
+#### GTY<!--CLT_Doublet_Rich_C_Skirt_B-->
+#### GNO<!--CLT_Doublet_Rich_C_Skirt_B-->
+#### HFL<!--CLT_Doublet_Rich_C_Skirt_B-->
+
+### {-}
+  
+  <br>
+  
+  
+  
+  
+  
+## CLT_Humans_Shirt_A<!--F only--><!--2 rows each-->
+### {.tabset}
+
+#### HUM<!--CLT_Humans_Shirt_A-->
+#### DGB<!--CLT_Humans_Shirt_A-->
+#### DWR<!--CLT_Humans_Shirt_A-->
+#### GTY<!--CLT_Humans_Shirt_A-->
+#### GNO<!--CLT_Humans_Shirt_A-->
+#### HFL<!--CLT_Humans_Shirt_A-->
+#### HRC<!--CLT_Humans_Shirt_A-->
+
+### {-}
+  
+  <br>
+  
+  
+  
+  
+  
+## CLT_Jacket_D<!--2 rows each-->
+### {.tabset}
+
+#### HUM<!--CLT_Jacket_D no FS-->
+#### DWR<!--CLT_Jacket_D-->
+#### GTY<!--CLT_Jacket_D-->
+#### GNO<!--CLT_Jacket_D-->
+#### HFL<!--CLT_Jacket_D-->
+
+
+### {-}
+  
+  <br>
+  
+  
+  
+  
+  
+## CLT_Jacket_E<!--2 rows each-->
+### {.tabset}
+
+#### HUM<!--CLT_Jacket_E-->
+#### DGB<!--CLT_Jacket_E-->
+#### DWR<!--CLT_Jacket_E-->
+#### GTY<!--CLT_Jacket_E-->
+#### GNO<!--CLT_Jacket_E-->
+#### HFL<!--CLT_Jacket_E-->
+#### HRC<!--CLT_Jacket_E-->
+
+### {-}
+  
+  <br>
+  
+  
+  
+  
+  
+## CLT_MiddleClass_Body_B<!--2 rows each-->
+### {.tabset}
+
+#### HUM<!--CLT_MiddleClass_Body_B-->
+#### DGB<!--CLT_MiddleClass_Body_B-->
+#### DWR<!--CLT_MiddleClass_Body_B-->
+#### GTY<!--CLT_MiddleClass_Body_B-->
+#### GNO<!--CLT_MiddleClass_Body_B-->
+#### HFL<!--CLT_MiddleClass_Body_B-->
+#### OTHER<!--CLT_MiddleClass_Body_B SKEL_GTY_M-->
+
+### {-}
+  
+  <br>
+  
+  
+  
+  
+  
+## CLT_MiddleClass_Body_C<!--2 rows each-->
+### {.tabset}
+
+#### HUM<!--CLT_MiddleClass_Body_C-->
+#### DGB<!--CLT_MiddleClass_Body_C-->
+#### DWR<!--CLT_MiddleClass_Body_C-->
+#### GTY<!--CLT_MiddleClass_Body_C-->
+#### GNO<!--CLT_MiddleClass_Body_C-->
+#### HFL<!--CLT_MiddleClass_Body_C-->
+
+### {-}
+  
+  <br>
+  
+  
+  
+  
+  
+## CLT_MiddleClass_Body_C_Sleeveless<!--M only--><!--1 rows each-->
+### {.tabset}
+
+#### HUM<!--CLT_MiddleClass_Body_C_Sleeveless-->
+#### DGB<!--CLT_MiddleClass_Body_C_Sleeveless-->
+#### DWR<!--CLT_MiddleClass_Body_C_Sleeveless-->
+#### GTY<!--CLT_MiddleClass_Body_C_Sleeveless-->
+#### GNO<!--CLT_MiddleClass_Body_C_Sleeveless-->
+#### HFL<!--CLT_MiddleClass_Body_C_Sleeveless-->
+
+### {-}
+  
+  <br>
+  
+  
+  
+  
+  
+## CLT_Refugees_Jacket<!--1 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -635,159 +781,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Doublet_Rich_C_Skirt_B
-### {.tabset}
-
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
-
-### {-}
-  
-  <br>
-  
-  
-  
-  
-  
-## CLT_Humans_Shirt_A
-### {.tabset}
-
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
-
-### {-}
-  
-  <br>
-  
-  
-  
-  
-  
-## CLT_Jacket_D
-### {.tabset}
-
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
-
-### {-}
-  
-  <br>
-  
-  
-  
-  
-  
-## CLT_Jacket_E
-### {.tabset}
-
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
-
-### {-}
-  
-  <br>
-  
-  
-  
-  
-  
-## CLT_MiddleClass_Body_B
-### {.tabset}
-
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
-
-### {-}
-  
-  <br>
-  
-  
-  
-  
-  
-## CLT_MiddleClass_Body_C
-### {.tabset}
-
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
-
-### {-}
-  
-  <br>
-  
-  
-  
-  
-  
-## CLT_MiddleClass_Body_C_Sleeveless
-### {.tabset}
-
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
-
-### {-}
-  
-  <br>
-  
-  
-  
-  
-  
-## CLT_Refugees_Jacket
-### {.tabset}
-
-#### HUM
-#### DGB
-#### DWR
-#### GTY
-#### GNO
-#### HFL
-#### HRC
-
-### {-}
-  
-  <br>
-  
-  
-  
-  
-  
-## CLT_Refugees_Shirt_A_1
+## CLT_Refugees_Shirt_A_1<!--1 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -806,7 +800,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Refugees_Shirt_B
+## CLT_Refugees_Shirt_B<!--2 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -825,7 +819,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Rich_D_Body
+## CLT_Rich_D_Body<!--2 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -844,7 +838,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Rich_Dress_B
+## CLT_Rich_Dress_B<!--1 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -863,7 +857,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Rich_Dress_B_Shirt
+## CLT_Rich_Dress_B_Shirt<!--1 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -901,7 +895,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Shirt_C
+## CLT_Shirt_C<!--1 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -920,7 +914,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Shirt_C_1
+## CLT_Shirt_C_1<!--1 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -939,7 +933,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Shirt_Cook_A
+## CLT_Shirt_Cook_A<!--1 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -958,7 +952,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Shirt_Courtesan_A
+## CLT_Shirt_Courtesan_A<!--1 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -977,7 +971,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Shirt_Courtesan_A_Corset_E
+## CLT_Shirt_Courtesan_A_Corset_E<!--2 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -996,7 +990,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Shirt_Courtesan_A_Corset_Twitch
+## CLT_Shirt_Courtesan_A_Corset_Twitch<!--1 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -1015,7 +1009,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Shirt_D_Corset_B
+## CLT_Shirt_D_Corset_B<!--2 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -1034,7 +1028,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Shirt_H
+## CLT_Shirt_H<!--1 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -1053,7 +1047,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Shirt_I_Twitch
+## CLT_Shirt_I_Twitch<!--1 rows each-->
 ### {.tabset}
 
 #### HUM
@@ -1072,7 +1066,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
   
   
   
-## CLT_Shirt_J
+## CLT_Shirt_J<!--1 rows each-->
 ### {.tabset}
 
 #### HUM
