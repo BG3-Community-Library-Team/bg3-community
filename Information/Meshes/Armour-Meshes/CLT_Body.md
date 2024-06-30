@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-06-30T08:53:11.169Z
+date: 2024-06-30T08:59:40.614Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -654,50 +654,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Camp_Shirt_A-->
-<table> 
-      
-  <thead>
-    <th>Image</th>
-    <th>File Name</th>
-    <th>Mesh UUID</th>
-    <th>Sub-Meshes</th>
-    <th>Material ID</th>
-	</thead>
 
-  <!--HUM_M-->
-  <tr>          
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <!--HUM_F-->  
-  <tr>          
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <!--HUM_MS-->  
-  <tr>          
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <!--HUM_FS--> 
-  <tr>          
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-    
-</table>
 
 #### DGB<!--CLT_Camp_Shirt_A-->
 #### DWR<!--CLT_Camp_Shirt_A-->
@@ -1738,6 +1695,51 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Shirt_C-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_M-->
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!--HUM_F-->  
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!--HUM_MS-->  
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!--HUM_FS--> 
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    
+</table>
+
 #### DGB<!--CLT_Shirt_C-->
 #### DWR<!--CLT_Shirt_C-->
 #### GTY<!--CLT_Shirt_C-->
@@ -1757,6 +1759,43 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Shirt_C_1 no FS-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_M-->
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!--HUM_F-->  
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!--HUM_MS-->  
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    
+</table>
+
 #### DGB
 #### DWR<!--CLT_Shirt_C_1-->
 #### GTY<!--CLT_Shirt_C_1-->
@@ -1775,7 +1814,51 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Shirt_Cook_A-->
-#### DGB
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_M-->
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!--HUM_F-->  
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!--HUM_MS-->  
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!--HUM_FS--> 
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    
+</table>
+
 #### DWR<!--CLT_Shirt_Cook_A-->
 #### GTY<!--CLT_Shirt_Cook_A-->
 #### GNO<!--CLT_Shirt_Cook_A-->
@@ -1794,6 +1877,28 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Shirt_Courtesan_A HUM_F-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_F-->
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+    
+</table>
+
 #### DWR<!--CLT_Shirt_Courtesan_A--->
 #### GTY<!--CLT_Shirt_Courtesan_A--->
 #### GNO<!--CLT_Shirt_Courtesan_A--->
@@ -1828,6 +1933,37 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Shirt_Courtesan_A_Corset_Twitch-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+
+  <!--HUM_F-->  
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <!--HUM_FS--> 
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    
+</table>
+
 #### DGB<!--CLT_Shirt_Courtesan_A_Corset_Twitch-->
 #### DWR<!--CLT_Shirt_Courtesan_A_Corset_Twitch-->
 #### GNO<!--CLT_Shirt_Courtesan_A_Corset_Twitch-->
@@ -1862,6 +1998,28 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Shirt_H no FS-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_F-->
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+    
+</table>
+
 #### DWR<!--CLT_Shirt_H-->
 #### GTY<!--CLT_Shirt_H-->
 #### GNO<!--CLT_Shirt_H-->
@@ -1879,6 +2037,35 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Shirt_I_Twitch both-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_F-->
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!--HUM_FS--> 
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    
+</table>
+
 #### DGB<!--CLT_Shirt_I_Twitch-->
 #### DWR<!--CLT_Shirt_I_Twitch-->
 #### GTY<!--CLT_Shirt_I_Twitch-->
@@ -1897,6 +2084,35 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Shirt_J both-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_F-->
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!--HUM_FS--> 
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    
+</table>
+
 #### DGB<!--CLT_Shirt_J-->
 #### DWR<!--CLT_Shirt_J-->
 #### GTY<!--CLT_Shirt_J-->
