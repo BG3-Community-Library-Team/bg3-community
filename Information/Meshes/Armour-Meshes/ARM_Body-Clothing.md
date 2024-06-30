@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-06-30T02:54:48.076Z
+date: 2024-06-30T02:58:29.948Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -23,7 +23,7 @@ dateCreated: 2024-06-18T05:04:11.115Z
 |     |     |     | Example\_Skirt\_Mesh | def456 |
 |     |     |     | Example\_Body\_Mesh | ghi789 |
 | ![chin_grove.png](/hair_meshes/chin_grove.png) | HUM\_FS\_ARM\_Body\_Example | HUM_FS UUID | Example\_Bracers\_Mesh | abc123 |
-|     |     |     | Example\_Skirt\_Mesh | def456 |
+|  ^  |          || Example\_Skirt\_Mesh | def456 |
 |     |     |     | Example\_Body\_Mesh | ghi789 |
 | ![chin_grove.png](/hair_meshes/chin_grove.png) | HUM\_M\_ARM\_Body\_Example | HUM_M UUID | Example\_Bracers\_Mesh | abc123 |
 |     |     |     | Example\_Skirt\_Mesh | def456 |
