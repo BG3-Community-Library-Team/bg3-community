@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T06:44:50.738Z
+date: 2024-07-01T07:10:47.006Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -21,6 +21,20 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
 
 # Meshes
+
+## CLT_Bard_Body_A
+
+### {-}
+
+<br>
+
+
+
+## CLT_Blacksmith_Body
+
+### {-}
+
+<br>
 
 
 
@@ -1164,6 +1178,14 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   
   
+## CLT_Camp_Shar_Body
+
+
+### {-}
+  
+<br>
+
+
   
   
 ## CLT_Camp_Shirt_A<!--5 rows each-->
@@ -2223,6 +2245,30 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   <br>
   
+  
+  
+## CLT_MiddleClass_Body_A_0
+
+### {-}
+  
+  <br>
+  
+  
+  
+## CLT_MiddleClass_Body_A_1
+
+
+### {-}
+  
+  <br>
+  
+  
+  
+## CLT_MiddleClass_Body_A_2
+  
+### {-}
+  
+  <br>
   
   
   
