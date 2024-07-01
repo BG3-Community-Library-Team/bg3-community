@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T07:43:58.921Z
+date: 2024-07-01T07:46:47.169Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -313,7 +313,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
   <!--HUM_M-->
   <tr>          
     <td rowspan="3"><img src="/armour_meshes/clt_body/hum_m_clt_camp_deva_a_body_a.png" alt="hum_m_clt_camp_deva_a_body_a.png"/></td>
-    <td rowspan="3"></td>
+    <td rowspan="3">HUM_M_CLT_Camp_Deva_A_Body_A</td>
     <td rowspan="3">f9452932-ec9b-6448-09d3-f8accdb45cec</td>
     <td>Camp_Deva_A_Footwear_high_Mesh</td>
     <td></td>
@@ -338,7 +338,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
   <!--HUM_F-->
   <tr>          
     <td rowspan="4"><img src="/armour_meshes/clt_body/hum_f_clt_camp_deva_a_body_a.png" alt="hum_f_clt_camp_deva_a_body_a.png"/></td>
-    <td rowspan="4"></td>
+    <td rowspan="4">HUM_F_CLT_Camp_Deva_A_Body_A</td>
     <td rowspan="4">dc75dded-74b2-1b63-5ed4-8cfaacbaf80a</td>
     <td>ARM_Nightsong_A_Body_Mesh</td>
     <td></td>
@@ -369,7 +369,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
   <!--HUM_MS-->
   <tr>          
     <td rowspan="3"><img src="/armour_meshes/clt_body/hum_ms_clt_camp_deva_a_body_a.png" alt="hum_ms_clt_camp_deva_a_body_a.png"/></td>
-    <td rowspan="3"></td>
+    <td rowspan="3">HUM_MS_CLT_Camp_Deva_A_Body_A</td>
     <td rowspan="3">bc01b379-37bf-0433-609b-27511beb8142</td>
     <td>Camp_Deva_A_Footwear_high_Mesh</td>
     <td></td>
@@ -394,7 +394,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
   <!--HUM_FS-->
   <tr>          
     <td rowspan="4"><img src="/armour_meshes/clt_body/hum_fs_clt_camp_deva_a_body_a.png" alt="hum_fs_clt_camp_deva_a_body_a.png"/></td>
-    <td rowspan="4"></td>
+    <td rowspan="4">HUM_FS_CLT_Camp_Deva_A_Body_A</td>
     <td rowspan="4">6ab5bb28-e639-3580-038b-8d43a85487de</td>
     <td>ARM_Nightsong_A_Body_Mesh</td>
     <td></td>
@@ -434,69 +434,54 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <th>Sub-Meshes</th>
     <th>Material ID</th>
 	</thead>
-    
-  <!--HUM_M-->
+        
+  <!--DGB_M-->
   <tr>          
-    <td rowspan="4">image</td>
-    <td rowspan="4"></td>
-    <td rowspan="4"></td>
-    <td></td>
+    <td rowspan="3"><img src="/armour_meshes/clt_body/hum_m_clt_camp_deva_a_body_a.png" alt="hum_m_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="3">DGB_M_CLT_Camp_Deva_A_Body_A</td>
+    <td rowspan="3"></td>
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
     <td></td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
     <td></td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
     <td></td>
   </tr>
-
+  
+  <!--DGB_F-->
+  <tr>          
+    <td rowspan="3"><img src="/armour_meshes/clt_body/hum_m_clt_camp_deva_a_body_a.png" alt="hum_m_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="3">DGB_F_CLT_Camp_Deva_A_Body_A</td>
+    <td rowspan="3"></td>
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
+    <td></td>
+  </tr>
+  <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
+    <td></td>
+  </tr>
+  <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
+    <td></td>
+  </tr>
   
   
-  <!--HUM_F-->
-  <tr>          
-    <td rowspan="4">image</td>
-    <td rowspan="4"></td>
-    <td rowspan="4"></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
-    <td></td>
-  </tr>
-
 </table>
 
 #### DWR<!--CLT_Camp_Deva_A_Body_A-->
