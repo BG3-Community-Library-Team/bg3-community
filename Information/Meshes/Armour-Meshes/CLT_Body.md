@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T06:21:45.277Z
+date: 2024-07-01T06:25:27.000Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -290,7 +290,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--HUM_F-->
   <tr>          
-    <td><img src="/armour_meshes/clt_body/hum_f_arm_robe_gothic_dress.png" alt="hum_f_arm_robe_gothic_dress.png"  /></td>
+    <td><img src="/armour_meshes/clt_body/arm_robe_gothic_dress.png" alt="arm_robe_gothic_dress.png"/></td>
     <td>HUM_F_ARM_Robe_Gothic_Dress</td>
     <td>N/A</td>
     <td>ARM_Robe_Gothic_Dress_Mesh</td>
