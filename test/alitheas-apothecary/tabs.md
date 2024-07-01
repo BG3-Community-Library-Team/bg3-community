@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: Guide including template
 published: false
-date: 2024-06-28T11:08:59.633Z
+date: 2024-07-01T02:05:43.108Z
 tags: guide, test
 editor: markdown
 dateCreated: 2024-06-28T10:32:48.003Z
@@ -44,6 +44,8 @@ For convenience, simply copy / paste the below code into your markdown editor, r
 ### Step Five
 ## Next Section
 ```
+
+{-}
 
 ## Next Section
 <!-- add some more fancy text, I recommend questionable poetry -->
