@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T02:09:00.309Z
+date: 2024-07-01T02:11:22.112Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -3539,16 +3539,17 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--HUM_F-->
   <tr>          
-    <td></td>
-    <td></td>
+    <td>Image</td>
+    <td>HUM_F_CLT_Shirt_J</td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
+  
   <!--HUM_FS--> 
   <tr>          
-    <td></td>
-    <td></td>
+    <td>Image</td>
+    <td>HUM_FS_CLT_Shirt_J</td>
     <td></td>
     <td></td>
     <td></td>
@@ -3569,8 +3570,8 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--DGB_F-->
   <tr>          
-    <td></td>
-    <td></td>
+    <td>Image</td>
+    <td>DGB_F_CLT_Shirt_J</td>
     <td></td>
     <td></td>
     <td></td>
@@ -3591,8 +3592,8 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--DWR_F-->
   <tr>          
-    <td></td>
-    <td></td>
+    <td>Image</td>
+    <td>DWR_F_CLT_Shirt_J</td>
     <td></td>
     <td></td>
     <td></td>
@@ -3613,8 +3614,8 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--GTY_F-->
   <tr>          
-    <td></td>
-    <td></td>
+    <td>Image</td>
+    <td>GTY_F_CLT_Shirt_J</td>
     <td></td>
     <td></td>
     <td></td>
@@ -3635,8 +3636,8 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--GNO_F-->
   <tr>          
-    <td></td>
-    <td></td>
+    <td>Image</td>
+    <td>GNO_F_CLT_Shirt_J</td>
     <td></td>
     <td></td>
     <td></td>
@@ -3657,8 +3658,8 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--HFL_F-->
   <tr>          
-    <td></td>
-    <td></td>
+    <td>Image</td>
+    <td>HFL_F_CLT_Shirt_J</td>
     <td></td>
     <td></td>
     <td></td>
