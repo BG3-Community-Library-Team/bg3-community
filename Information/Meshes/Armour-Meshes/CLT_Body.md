@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T01:31:33.740Z
+date: 2024-07-01T01:33:59.652Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -91,7 +91,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--DGB_M-->
   <tr>          
-    <td><img src="/armour_meshes/dgb_m_arm_nightsongprison_body.png" alt="DGB_M_ARM_NightsongPrison_Body.png"/></td>
+    <td><img src="/armour_meshes/clt_body/dgb_m_arm_nightsongprison_body.png" alt="DGB_M_ARM_NightsongPrison_Body.png"/></td>
     <td>DGB_M_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -100,7 +100,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--DGB_F-->
   <tr>          
-    <td><img src="/armour_meshes/dgb_f_arm_nightsongprison_body.png" alt="DGB_F_ARM_NightsongPrison_Body.png"/></td>
+    <td><img src="/armour_meshes/clt_body/dgb_f_arm_nightsongprison_body.png" alt="DGB_F_ARM_NightsongPrison_Body.png"/></td>
     <td>DGB_F_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -122,7 +122,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--DWR_M-->
   <tr>          
-    <td><img src="/armour_meshes/dwr_m_arm_nightsongprison_body.png" alt="DWR_M_ARM_NightsongPrison_Body.png"/></td>
+    <td><img src="/armour_meshes/clt_body/dwr_m_arm_nightsongprison_body.png" alt="DWR_M_ARM_NightsongPrison_Body.png"/></td>
     <td>DWR_M_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -131,7 +131,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--DWR_F-->
   <tr>          
-    <td><img src="/armour_meshes/dwr_f_arm_nightsongprison_body.png" alt="DWR_F_ARM_NightsongPrison_Body.png"/></td>
+    <td><img src="/armour_meshes/clt_body/dwr_f_arm_nightsongprison_body.png" alt="DWR_F_ARM_NightsongPrison_Body.png"/></td>
     <td>DWR_F_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -153,7 +153,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--GTY_M-->
   <tr>          
-    <td><img src="/armour_meshes/gty_m_arm_nightsongprison_body.png" alt="GTY_M_ARM_NightsongPrison_Body.png" /></td>
+    <td><img src="/armour_meshes/clt_body/gty_m_arm_nightsongprison_body.png" alt="GTY_M_ARM_NightsongPrison_Body.png" /></td>
     <td>GTY_M_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -162,7 +162,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--GTY_F-->
   <tr>          
-    <td><img src="/armour_meshes/gty_f_arm_nightsongprison_body.png" alt="GTY_F_ARM_NightsongPrison_Body.png"/></td>
+    <td><img src="/armour_meshes/clt_body/gty_f_arm_nightsongprison_body.png" alt="GTY_F_ARM_NightsongPrison_Body.png"/></td>
     <td>GTY_F_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -184,7 +184,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--GNO_M-->
   <tr>          
-    <td><img src="/armour_meshes/gno_m_arm_nightsongprison_body.png" alt="GNO_M_ARM_NightsongPrison_Body.png"/></td>
+    <td><img src="/armour_meshes/clt_body/gno_m_arm_nightsongprison_body.png" alt="GNO_M_ARM_NightsongPrison_Body.png"/></td>
     <td>GNO_M_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -193,7 +193,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--GNO_F-->
   <tr>          
-    <td><img src="/armour_meshes/gno_f_arm_nightsongprison_body.png" alt="GNO_F_ARM_NightsongPrison_Body.png"/></td>
+    <td><img src="/armour_meshes/clt_body/gno_f_arm_nightsongprison_body.png" alt="GNO_F_ARM_NightsongPrison_Body.png"/></td>
     <td>GNO_F_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -215,7 +215,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--HFL_M-->
   <tr>          
-    <td><img src="/armour_meshes/hfl_m_arm_nightsongprison_body.png" alt="HFL_M_ARM_NightsongPrison_Body.png"/></td>
+    <td><img src="/armour_meshes/clt_body/hfl_m_arm_nightsongprison_body.png" alt="HFL_M_ARM_NightsongPrison_Body.png"/></td>
     <td>HFL_M_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -224,7 +224,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--HFL_F-->
   <tr>          
-    <td><img src="/armour_meshes/hfl_f_arm_nightsongprison_body.png" alt="HFL_F_ARM_NightsongPrison_Body.png"/></td>
+    <td><img src="/armour_meshes/clt_body/hfl_f_arm_nightsongprison_body.png" alt="HFL_F_ARM_NightsongPrison_Body.png"/></td>
     <td>HFL_F_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -246,7 +246,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--HRC_M-->
   <tr>          
-    <td><img src="/armour_meshes/hrc_m_arm_nightsongprison_body.png" alt="HRC_M_ARM_NightsongPrison_Body.png"  /></td>
+    <td><img src="/armour_meshes/clt_body/hrc_m_arm_nightsongprison_body.png" alt="HRC_M_ARM_NightsongPrison_Body.png"  /></td>
     <td>HRC_M_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -255,7 +255,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--HRC_F-->
   <tr>          
-    <td><img src="/armour_meshes/hrc_f_arm_nightsongprison_body.png" alt="HRC_F_ARM_NightsongPrison_Body.png"/></td>
+    <td><img src="/armour_meshes/clt_body/hrc_f_arm_nightsongprison_body.png" alt="HRC_F_ARM_NightsongPrison_Body.png"/></td>
     <td>HRC_F_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
