@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T01:55:50.227Z
+date: 2024-07-01T02:01:52.689Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -1720,6 +1720,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Doublet_Rich_A-->
+
 <table>
       
   <thead>
@@ -1763,7 +1764,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <td></td>
   </tr>
   
-    <!--HUM_M-->
+  <!--HUM_MS-->
   <tr>          
   <tr>          
     <td rowspan="2">image</td>
@@ -1781,7 +1782,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
   </tr>
 
    
-  <!--HUM_F-->
+  <!--HUM_FS-->
   <tr>          
     <td rowspan="2">image</td>
     <td rowspan="2"></td>
