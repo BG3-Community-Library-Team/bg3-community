@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T07:16:10.521Z
+date: 2024-07-01T07:27:59.867Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -315,28 +315,28 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <td rowspan="4">image</td>
     <td rowspan="4"></td>
     <td rowspan="4"></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
+    <td>ARM_Nightsong_A_Body_Mesh</td>
     <td></td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
     <td></td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
     <td></td>
+  </tr>
+  <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
     <td></td>
   </tr>
 
