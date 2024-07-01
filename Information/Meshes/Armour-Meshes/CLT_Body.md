@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T06:25:27.000Z
+date: 2024-07-01T06:28:02.942Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -268,6 +268,35 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
 <br>
 
+## ARM_Robe_B_Body
+### {.tabset}
+
+#### OTHER
+<table>
+ 
+  <thead>
+      <th>Image</th>
+  	  <th>File Name</th>
+  	  <th>Mesh UUID</th>
+  	  <th>Sub-Meshes</th>
+    	<th>Material ID</th>
+  </thead>
+  
+  
+  <!--SKEL_HUM_M-->
+  <tr>
+    <td><img src="/armour_meshes/clt_body/skel_hum_m_arm_robe_b_body.png" alt="	
+skel_hum_m_arm_robe_b_body.png" /></td>
+    <td>SKEL_HUM_M_ARM_Robe_B_Body</td>
+    <td>fcdf8c0b-afa9-7fd0-aa44-9fdce83447de</td>
+    <td>SKEL_HUM_M_ARM_Robe_B_Body_Mesh</td>
+    <td>171158a1-f53c-7e95-cdc5-520ec974128d</td>
+  </tr>
+</table>
+
+### {-}
+
+<br>
 
 
 ## ARM_Robe_Gothic_Dress
@@ -303,6 +332,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {-}
 
 <br>
+
 
 
 
@@ -3710,30 +3740,3 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   
   
-## SKEL_HUM_M_ARM_Robe_B_Body
-### {.tabset}
-
-#### OTHER
-<table>
- 
-  <thead>
-      <th>Image</th>
-  	  <th>File Name</th>
-  	  <th>Mesh UUID</th>
-  	  <th>Sub-Meshes</th>
-    	<th>Material ID</th>
-  </thead>
-  
-  
-  <!--SKEL_HUM_M-->
-  <tr>
-    <td><img src="/armour_meshes/clt_body/skel_hum_m_arm_robe_b_body.png" alt="	
-skel_hum_m_arm_robe_b_body.png" /></td>
-    <td>SKEL_HUM_M_ARM_Robe_B_Body</td>
-    <td>fcdf8c0b-afa9-7fd0-aa44-9fdce83447de</td>
-    <td>SKEL_HUM_M_ARM_Robe_B_Body_Mesh</td>
-    <td>171158a1-f53c-7e95-cdc5-520ec974128d</td>
-  </tr>
-</table>
-
-### {-}
