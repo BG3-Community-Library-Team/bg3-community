@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-06-28T11:24:56.363Z
+date: 2024-07-01T02:04:20.117Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -21,6 +21,7 @@ Part 6 - Creative expression: Tips and tricks for developing your unique style a
 Part 7 - Post production:
 Part 8 - Sharing your work: Ways to showcase your screen archery on social media, participate in the community, and even enter contests.
 
+{-}
 
 # Image file type comparison
 
