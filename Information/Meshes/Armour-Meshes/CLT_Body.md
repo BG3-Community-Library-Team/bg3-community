@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T07:30:09.292Z
+date: 2024-07-01T07:31:44.670Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -344,62 +344,62 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   <!--HUM_F-->
   <tr>          
-    <td rowspan="4">image</td>
+    <td rowspan="4"><img src="/armour_meshes/clt_body/hum_f_clt_camp_deva_a_body_a.png" alt="hum_f_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="4"></td>
     <td rowspan="4"></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
+    <td>ARM_Nightsong_A_Body_Mesh</td>
     <td></td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
     <td></td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
     <td></td>
+  </tr>
+  <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
     <td></td>
   </tr>
 
   
   <!--HUM_MS-->
   <tr>          
-    <td rowspan="4">image</td>
+    <td rowspan="4"><img src="/armour_meshes/clt_body/hum_ms_clt_camp_deva_a_body_a.png" alt="hum_ms_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="4"></td>
     <td rowspan="4"></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
+    <td>ARM_Nightsong_A_Body_Mesh</td>
     <td></td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
     <td></td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
     <td></td>
+  </tr>
+  <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
     <td></td>
   </tr>
 
@@ -407,31 +407,31 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   <!--HUM_FS-->
   <tr>          
-    <td rowspan="4">image</td>
+    <td rowspan="4"><img src="/armour_meshes/clt_body/hum_fs_clt_camp_deva_a_body_a.png" alt="hum_fs_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="4"></td>
     <td rowspan="4"></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
+    <td>ARM_Nightsong_A_Body_Mesh</td>
     <td></td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
     <td></td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
     <td></td>
+  </tr>
+  <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
     <td></td>
   </tr>
 
