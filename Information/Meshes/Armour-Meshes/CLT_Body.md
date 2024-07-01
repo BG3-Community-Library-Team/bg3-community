@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T01:48:30.170Z
+date: 2024-07-01T01:55:50.227Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -1708,7 +1708,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 #### GNO<!--CLT_Doublet_A-->
 #### HFL<!--CLT_Doublet_A-->
 
-### {-}
+
   
   <br>
   
@@ -1720,6 +1720,85 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ### {.tabset}
 
 #### HUM<!--CLT_Doublet_Rich_A-->
+<table>
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+    
+  <!--HUM_M-->     
+  <tr>          
+    <td rowspan="2">image</td>
+    <td rowspan="2"></td>
+    <td rowspan="2"></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+
+   
+  <!--HUM_F-->
+  <tr>          
+    <td rowspan="2">image</td>
+    <td rowspan="2"></td>
+    <td rowspan="2"></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+  
+    <!--HUM_M-->
+  <tr>          
+  <tr>          
+    <td rowspan="2">image</td>
+    <td rowspan="2"></td>
+    <td rowspan="2"></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+
+   
+  <!--HUM_F-->
+  <tr>          
+    <td rowspan="2">image</td>
+    <td rowspan="2"></td>
+    <td rowspan="2"></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>          
+		<!--image cont-->
+    <!--filename cont-->
+    <!--uuid cont-->
+    <td></td>
+    <td></td>
+  </tr>
+
+</table>
+
 #### DGB<!--CLT_Doublet_Rich_A-->
 #### DWR<!--CLT_Doublet_Rich_A-->
 #### GTY<!--CLT_Doublet_Rich_A-->
