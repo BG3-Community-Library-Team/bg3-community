@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T07:50:28.676Z
+date: 2024-07-01T07:59:37.375Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -437,9 +437,9 @@ dateCreated: 2024-06-18T04:48:47.326Z
         
   <!--DGB_M-->
   <tr>          
-    <td rowspan="3"><img src="/armour_meshes/clt_body/hum_m_clt_camp_deva_a_body_a.png" alt="hum_m_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="3"><img src="/armour_meshes/clt_body/dgb_f_clt_camp_deva_a_body_a.png" alt="dgb_f_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="3">DGB_M_CLT_Camp_Deva_A_Body_A</td>
-    <td rowspan="3"></td>
+    <td rowspan="3">00000000-0000-0000-0000-000000000000</td>
     <td>Camp_Deva_A_Footwear_high_Mesh</td>
     <td>cd7f6edd-729c-c2ec-6ba4-738910c5ffd9</td>
   </tr>
@@ -448,7 +448,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <!--filename cont-->
     <!--uuid cont-->
     <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
-    <td></td>
+    <td>2c53a57f-e7ed-dac7-eb36-a6b48e07bdbc</td>
   </tr>
   <tr>          
 		<!--image cont-->
@@ -460,9 +460,9 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
   <!--DGB_F-->
   <tr>          
-    <td rowspan="3"><img src="/armour_meshes/clt_body/hum_m_clt_camp_deva_a_body_a.png" alt="hum_m_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="3"><img src="/armour_meshes/clt_body/dgb_f_clt_camp_deva_a_body_a.png" alt="dgb_f_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="3">DGB_F_CLT_Camp_Deva_A_Body_A</td>
-    <td rowspan="3"></td>
+    <td rowspan="3">00000000-0000-0000-0000-000000000000</td>
     <td>Camp_Deva_A_Footwear_high_Mesh</td>
     <td>cd7f6edd-729c-c2ec-6ba4-738910c5ffd9</td>
   </tr>
@@ -471,7 +471,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <!--filename cont-->
     <!--uuid cont-->
     <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
-    <td></td>
+    <td>2c53a57f-e7ed-dac7-eb36-a6b48e07bdbc</td>
   </tr>
   <tr>          
 		<!--image cont-->
@@ -495,65 +495,59 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <th>Material ID</th>
 	</thead>
     
-  <!--HUM_M-->
+  <!--DWR_M-->
   <tr>          
-    <td rowspan="4">image</td>
-    <td rowspan="4"></td>
-    <td rowspan="4"></td>
-    <td></td>
-    <td></td>
+    <td rowspan="3"><img src="/armour_meshes/clt_body/dwr_m_clt_camp_deva_a_body_a.png" alt="dwr_m_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="3">DWR_M_CLT_Camp_Deva_A_Body_A</td>
+    <td rowspan="3">00000000-0000-0000-0000-000000000000</td>
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
+    <td>cd7f6edd-729c-c2ec-6ba4-738910c5ffd9</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
+    <td>2c53a57f-e7ed-dac7-eb36-a6b48e07bdbc</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
+    <td>77f48081-3725-0fa5-c151-a1281853a1c0</td>
   </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
-    <td></td>
-  </tr>
+
   
   
-  <!--HUM_F-->
+  <!--DWR_F-->
   <tr>          
-    <td rowspan="4">image</td>
-    <td rowspan="4"></td>
-    <td rowspan="4"></td>
-    <td></td>
-    <td></td>
+    <td rowspan="4"><img src="/armour_meshes/clt_body/dwr_f_clt_camp_deva_a_body_a.png" alt="dwr_f_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="4">DWR_F_CLT_Camp_Deva_A_Body_A</td>
+    <td rowspan="4">00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_Nightsong_A_Body_Mesh</td>
+    <td>ed07cfa8-6e5b-ff91-9151-849c3311cd60</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
+    <td>2c53a57f-e7ed-dac7-eb36-a6b48e07bdbc</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
+    <td>cd7f6edd-729c-c2ec-6ba4-738910c5ffd9</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
+    <td>77f48081-3725-0fa5-c151-a1281853a1c0</td>
   </tr>
 </table>
 
@@ -568,65 +562,59 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <th>Material ID</th>
 	</thead>
     
-  <!--HUM_M-->
+  <!--GTY_M-->
   <tr>          
-    <td rowspan="4">image</td>
-    <td rowspan="4"></td>
-    <td rowspan="4"></td>
-    <td></td>
-    <td></td>
+    <td rowspan="3"><img src="/armour_meshes/clt_body/gty_m_clt_camp_deva_a_body_a.png" alt="gty_m_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="3">GTY_M_CLT_Camp_Deva_A_Body_A</td>
+    <td rowspan="3">00000000-0000-0000-0000-000000000000</td>
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
+    <td>cd7f6edd-729c-c2ec-6ba4-738910c5ffd9</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
+    <td>2c53a57f-e7ed-dac7-eb36-a6b48e07bdbc</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
+    <td>77f48081-3725-0fa5-c151-a1281853a1c0</td>
   </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
-    <td></td>
-  </tr>
+
   
   
-  <!--HUM_F-->
+  <!--GTY_F-->
   <tr>          
-    <td rowspan="4">image</td>
-    <td rowspan="4"></td>
-    <td rowspan="4"></td>
-    <td></td>
-    <td></td>
+    <td rowspan="4"><img src="/armour_meshes/clt_body/gty_f_clt_camp_deva_a_body_a.png" alt="gty_f_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="4">GTY_F_CLT_Camp_Deva_A_Body_A</td>
+    <td rowspan="4">00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_Nightsong_A_Body_Mesh</td>
+    <td>ed07cfa8-6e5b-ff91-9151-849c3311cd60</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
+    <td>2c53a57f-e7ed-dac7-eb36-a6b48e07bdbc</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
+    <td>cd7f6edd-729c-c2ec-6ba4-738910c5ffd9</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
+    <td>77f48081-3725-0fa5-c151-a1281853a1c0</td>
   </tr>
 </table>
 
@@ -641,65 +629,59 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <th>Material ID</th>
 	</thead>
     
-  <!--HUM_M-->
+  <!--GNO_M-->
   <tr>          
-    <td rowspan="4">image</td>
-    <td rowspan="4"></td>
-    <td rowspan="4"></td>
-    <td></td>
-    <td></td>
+    <td rowspan="3"><img src="/armour_meshes/clt_body/gno_m_clt_camp_deva_a_body_a.png" alt="gno_m_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="3">GNO_M_CLT_Camp_Deva_A_Body_A</td>
+    <td rowspan="3">00000000-0000-0000-0000-000000000000</td>
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
+    <td>cd7f6edd-729c-c2ec-6ba4-738910c5ffd9</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
+    <td>2c53a57f-e7ed-dac7-eb36-a6b48e07bdbc</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
+    <td>77f48081-3725-0fa5-c151-a1281853a1c0</td>
   </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
-    <td></td>
-  </tr>
+
   
   
-  <!--HUM_F-->
+  <!--GNO_F-->
   <tr>          
-    <td rowspan="4">image</td>
-    <td rowspan="4"></td>
-    <td rowspan="4"></td>
-    <td></td>
-    <td></td>
+    <td rowspan="4"><img src="/armour_meshes/clt_body/gno_f_clt_camp_deva_a_body_a.png" alt="gno_f_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="4">GNO_F_CLT_Camp_Deva_A_Body_A</td>
+    <td rowspan="4">00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_Nightsong_A_Body_Mesh</td>
+    <td>ed07cfa8-6e5b-ff91-9151-849c3311cd60</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
+    <td>2c53a57f-e7ed-dac7-eb36-a6b48e07bdbc</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
+    <td>cd7f6edd-729c-c2ec-6ba4-738910c5ffd9</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
+    <td>77f48081-3725-0fa5-c151-a1281853a1c0</td>
   </tr>
 </table>
 
@@ -714,65 +696,59 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <th>Material ID</th>
 	</thead>
     
-  <!--HUM_M-->
+  <!--HFL_M-->
   <tr>          
-    <td rowspan="4">image</td>
-    <td rowspan="4"></td>
-    <td rowspan="4"></td>
-    <td></td>
-    <td></td>
+    <td rowspan="3"><img src="/armour_meshes/clt_body/hfl_m_clt_camp_deva_a_body_a.png" alt="hfl_m_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="3">HFL_M_CLT_Camp_Deva_A_Body_A</td>
+    <td rowspan="3">00000000-0000-0000-0000-000000000000</td>
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
+    <td>cd7f6edd-729c-c2ec-6ba4-738910c5ffd9</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
+    <td>2c53a57f-e7ed-dac7-eb36-a6b48e07bdbc</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
+    <td>77f48081-3725-0fa5-c151-a1281853a1c0</td>
   </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
-    <td></td>
-  </tr>
+
   
   
-  <!--HUM_F-->
+  <!--HFL_F-->
   <tr>          
-    <td rowspan="4">image</td>
-    <td rowspan="4"></td>
-    <td rowspan="4"></td>
-    <td></td>
-    <td></td>
+    <td rowspan="4"><img src="/armour_meshes/clt_body/hfl_f_clt_camp_deva_a_body_a.png" alt="hfl_f_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="4">HFL_F_CLT_Camp_Deva_A_Body_A</td>
+    <td rowspan="4">00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_Nightsong_A_Body_Mesh</td>
+    <td>ed07cfa8-6e5b-ff91-9151-849c3311cd60</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
+    <td>2c53a57f-e7ed-dac7-eb36-a6b48e07bdbc</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
+    <td>cd7f6edd-729c-c2ec-6ba4-738910c5ffd9</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
+    <td>77f48081-3725-0fa5-c151-a1281853a1c0</td>
   </tr>
 </table>
 
@@ -787,64 +763,59 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <th>Material ID</th>
 	</thead>
     
-  <!--HUM_M-->
+  <!--HRC_M-->
   <tr>          
-    <td rowspan="4">image</td>
-    <td rowspan="4"></td>
-    <td rowspan="4"></td>
-    <td></td>
-    <td></td>
+    <td rowspan="3"><img src="/armour_meshes/clt_body/hrc_m_clt_camp_deva_a_body_a.png" alt="hrc_m_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="3">HRC_M_CLT_Camp_Deva_A_Body_A</td>
+    <td rowspan="3">00000000-0000-0000-0000-000000000000</td>
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
+    <td>cd7f6edd-729c-c2ec-6ba4-738910c5ffd9</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
+    <td>2c53a57f-e7ed-dac7-eb36-a6b48e07bdbc</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
+    <td>77f48081-3725-0fa5-c151-a1281853a1c0</td>
   </tr>
-  <tr>          
-		<!--image cont-->
-    <!--filename cont-->
-    <!--uuid cont-->
-    <td></td>
-    <td></td>
-  </tr>
+
   
-  <!--HUM_F-->
+  
+  <!--HRC_F-->
   <tr>          
-    <td rowspan="4">image</td>
-    <td rowspan="4"></td>
-    <td rowspan="4"></td>
-    <td></td>
-    <td></td>
+    <td rowspan="4"><img src="/armour_meshes/clt_body/dwr_f_clt_camp_deva_a_body_a.png" alt="dwr_f_clt_camp_deva_a_body_a.png"/></td>
+    <td rowspan="4">HRC_F_CLT_Camp_Deva_A_Body_A</td>
+    <td rowspan="4">00000000-0000-0000-0000-000000000000</td>
+    <td>ARM_Nightsong_A_Body_Mesh</td>
+    <td>ed07cfa8-6e5b-ff91-9151-849c3311cd60</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Bracers_Mesh</td>
+    <td>2c53a57f-e7ed-dac7-eb36-a6b48e07bdbc</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>Camp_Deva_A_Footwear_high_Mesh</td>
+    <td>cd7f6edd-729c-c2ec-6ba4-738910c5ffd9</td>
   </tr>
   <tr>          
 		<!--image cont-->
     <!--filename cont-->
     <!--uuid cont-->
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Deva_A_Body_Mesh</td>
+    <td>77f48081-3725-0fa5-c151-a1281853a1c0</td>
   </tr>
 </table>
 
