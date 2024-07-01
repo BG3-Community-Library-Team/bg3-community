@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-06-30T09:48:36.998Z
+date: 2024-07-01T01:30:33.619Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -40,7 +40,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--HUM_M-->
   <tr>          
-    <td><img src="/armour_meshes/hum_m_arm_nightsongprison_body.png" alt="HUM_M_ARM_NightsongPrison_Body.png" /></td>
+    <td><img src="/armour_meshes/clt_body/hum_m_arm_nightsongprison_body.png" alt="HUM_M_ARM_NightsongPrison_Body.png"/></td>
     <td>HUM_M_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -49,7 +49,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--HUM_F-->
   <tr>          
-    <td><img src="/armour_meshes/hum_f_arm_nightsongprison_body.png" alt="HUM_F_ARM_NightsongPrison_Body.png"/></td>
+    <td><img src="/armour_meshes/clt_body/hum_f_arm_nightsongprison_body.png" alt="HUM_F_ARM_NightsongPrison_Body.png"/></td>
     <td>HUM_F_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -58,7 +58,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--HUM_MS-->
   <tr>          
-    <th><img src="/armour_meshes/hum_ms_arm_nightsongprison_body.png" alt="HUM_MS_ARM_NightsongPrison_Body.png"/></th>
+    <th><img src="/armour_meshes/clt_body/hum_ms_arm_nightsongprison_body.png" alt="HUM_MS_ARM_NightsongPrison_Body.png"/></th>
     <td>HUM_MS_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
@@ -67,7 +67,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
   <!--HUM_FS-->
   <tr>          
-    <td><img src="/armour_meshes/hum_fs_arm_nightsongprison_body.png" alt="HUM_FS_ARM_NightsongPrison_Body.png"/></td>
+    <td><img src="/armour_meshes/clt_body/hum_fs_arm_nightsongprison_body.png" alt="HUM_FS_ARM_NightsongPrison_Body.png"/></td>
     <td>HUM_FS_ARM_NightsongPrison_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>ARM_NightsongPrison_A</td>
