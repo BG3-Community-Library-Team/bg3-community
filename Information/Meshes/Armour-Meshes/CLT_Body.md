@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T01:39:23.120Z
+date: 2024-07-01T01:48:13.590Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -289,34 +289,34 @@ dateCreated: 2024-06-18T04:48:47.326Z
   <!--HUM_M-->
   <tr>          
     <td><img src="/armour_meshes/clt_body/hum_m_clt_camp_citizen_shirt_b.png" alt="hum_m_clt_camp_citizen_shirt_b.png"/></td>
+    <td>HUM_M_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
   <!--HUM_F-->  
   <tr>          
     <td><img src="/armour_meshes/clt_body/hum_m_clt_camp_citizen_shirt_b.png" alt="hum_f_clt_camp_citizen_shirt_b.png"/></td>
+    <td>HUM_F_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
   <!--HUM_MS-->  
   <tr>          
     <td><img src="/armour_meshes/clt_body/hum_ms_clt_camp_citizen_shirt_b.png" alt="hum_ms_clt_camp_citizen_shirt_b.png"/></td>
+    <td>HUM_MS_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
   <!--HUM_FS--> 
   <tr>          
     <td><img src="/armour_meshes/clt_body/hum_m_clt_camp_citizen_shirt_b.png" alt="hum_fs_clt_camp_citizen_shirt_b.png"/></td>
+    <td>HUM_FS_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
     
 </table>
@@ -332,21 +332,21 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <th>Material ID</th>
 	</thead>
 
-  <!--HUM_M-->
+  <!--DGB_M-->
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>DGB_M_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
-  <!--HUM_F-->  
+  <!--DGB_F-->  
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>DGB_F_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
 </table>
 
@@ -361,21 +361,21 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <th>Material ID</th>
 	</thead>
 
-  <!--HUM_M-->
+  <!--DWR_M-->
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>DWR_M_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
-  <!--HUM_F-->  
+  <!--DWR_F-->  
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>DWR_F_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
 </table>
 
@@ -391,21 +391,21 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <th>Material ID</th>
 	</thead>
 
-  <!--HUM_M-->
+  <!--GTY_M-->
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>GTY_M_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
-  <!--HUM_F-->  
+  <!--GTY_F-->  
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>GTY_F_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
 </table>
 
@@ -421,21 +421,21 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <th>Material ID</th>
 	</thead>
 
-  <!--HUM_M-->
+  <!--GNO_M-->
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>GNO_M_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
-  <!--HUM_F-->  
+  <!--GNO_F-->  
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>GNO_F_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
 </table>
 
@@ -451,21 +451,21 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <th>Material ID</th>
 	</thead>
 
-  <!--HUM_M-->
+  <!--HFL_M-->
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>HFL_M_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
-  <!--HUM_F-->  
+  <!--HFL_F-->  
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>HFL_F_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
 </table>
 
@@ -481,21 +481,21 @@ dateCreated: 2024-06-18T04:48:47.326Z
     <th>Material ID</th>
 	</thead>
 
-  <!--HUM_M-->
+  <!--HRC_M-->
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>HRC_M_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
-  <!--HUM_F-->  
+  <!--HRC_F-->  
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>HRC_F_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
 </table>
 
@@ -514,10 +514,10 @@ dateCreated: 2024-06-18T04:48:47.326Z
   <!--SKEL_GTY_M-->
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>SKEL_GTY_M_CLT_Camp_Citizen_Shirt_B</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
+    <td>9617d11e-fb8e-1c80-46a0-015fdd86fc07</td>
   </tr>
 </table>
 
