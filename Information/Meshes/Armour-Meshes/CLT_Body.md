@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-01T06:19:28.488Z
+date: 2024-07-01T06:21:45.277Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -273,6 +273,11 @@ dateCreated: 2024-06-18T04:48:47.326Z
 ## ARM_Robe_Gothic_Dress
 ### {.tabset}
 #### HUM_F
+> This mesh was never completed. Trying to get it to a point where it can be used would be difficult.
+  It's not in the code and has no textures.
+{.is-warning}
+
+
 <table> 
       
   <thead>
