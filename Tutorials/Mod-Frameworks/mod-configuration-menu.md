@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-02T04:17:51.866Z
+date: 2024-07-02T04:18:33.158Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -113,10 +113,10 @@ This schema file can be used to **write and validate** your `MCM_blueprint.json`
   }
 ],
 ```
-\* Alternatively, you can replace the `url` value with the path to the schema JSON file (e.g., where you place IDEHelpers or Osi.lua files). However, using the URL above is recommended, as it ensures you automatically have an up-to-date schema for development as MCM updates are released.
 
 3. This might require a Reload Window or just reopening your editor, but you're done! You won't need to do this again, and the schema file will be always up-to-date with MCM releases.
 
+\* Alternatively, you can replace the `url` value with the path to the schema JSON file (e.g., where you place IDEHelpers or Osi.lua files). However, only do so if you have problems with the URL above.
 
 > Having the schema file set up in your IDE will help you write the blueprint file correctly, without having to guess the structure or wonder if you're missing something. A few minor features, such as `ModName` (to replace the string used for your mod's name) are only documented by the JSON schema.
 {.is-info}
