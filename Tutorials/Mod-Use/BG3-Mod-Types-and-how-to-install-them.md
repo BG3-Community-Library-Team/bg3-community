@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-02T15:48:23.246Z
+date: 2024-07-02T16:48:18.902Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -35,7 +35,7 @@ Mod authors usually provide crucial information about their creations in the des
 - load order
 - compatibility between mods
 
-It also doesn't hurt to read sticky posts in the comments and to have a quick glance at the most recent entries.
+It also never hurts to read sticky posts in the comments and to have a quick glance at the most recent entries.
 
 ### Disable auto-updating your game
 - Steam: go to Library - Baldur’s Gate 3 - right click Properties - Updates - select *Only update this game when i launch it*
@@ -55,10 +55,11 @@ Installation:
 
 1. Install the mod manager of your choice. We recommend Laughing Leader's Baldur's Gate 3 Mod Manager. [Follow this guide on how to install and set up BG3MM.](https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM)
 2. Go to the mod page, read it, and download the desired version of the mod you want to a location outside of program or game files.
-3. Open the archive and drag or copy the pak into your Mods Folder
+3. Open the archive and drag or copy the pak into your Mods Folder. While doing so make sure that there aren't any subfolders or files other than .pak in this folder.
 Default Mod folder path:
 ```C:\Users\USERNAME\AppData\Local\Larian Studios\Baldur's Gate 3\Mods```
 4. Start BG3MM or if it is already running, click refresh to see the new mod. It most likely will appear in Inactive Mods to the right.
+Optional: *Save Order As* to make sure you have a working order to go back to just in case.
 5. Drag the mod from Inactive Mods to Active Mods. Keep load order requirements in mind while doing so. [General Load Order Guide](/Tutorials/Mod-Use/general-load-order)
 > Some mods are *overrides*. They will appear in a separate section called Overrides at the bottom of the Active Mods panel.
 *DiceSet_06* and *Honor* in the Inactive Mods panel to the right are game files.
