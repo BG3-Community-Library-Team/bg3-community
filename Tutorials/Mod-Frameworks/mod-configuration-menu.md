@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-06-18T03:31:38.238Z
+date: 2024-07-02T04:10:28.010Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -77,8 +77,12 @@ First, let's establish some concepts that are important for understanding MCM. T
 
 Mod authors need to integrate their mods with MCM for their settings to appear in the UI. The subsections below go in detail about this process, but it is essentially done in two steps:
 
-  1. Define the blueprint JSON file for your mod's settings and place it alongside your mod's `meta.lsx` file. It's also recommended to define BG3MCM as a dependency in your meta.lsx file. [Listing a dependency in a meta.lsx file](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/46822bb0a8af4db524fd1ccb6f8a277724f5630c/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/meta.lsx#L7-L24 'Auto Send Food To Camp');
+  1. Define the blueprint JSON file for your mod's settings and place it alongside your mod's `meta.lsx` file.
   2. Replace your mod's logic for reading/writing settings with calls to the MCM API, using the setting's ID as defined in the blueprint.
+
+> It's also recommended to define BG3MCM as a dependency in your meta.lsx file. You can set the mod and its minimum required version. Always set the version of MCM to the version you're using during the development of your mod. [Example of listing a dependency in a meta.lsx file](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/46822bb0a8af4db524fd1ccb6f8a277724f5630c/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/meta.lsx#L7-L24 'Auto Send Food To Camp');
+> • This allows mod managers to ***ensure*** that MCM is loaded ***before** your own mod* - eliminating the need to instruct users to do so manually and avoiding false reports/troubleshooting when they don't!
+{.is-warning}
 
 The `MCM_blueprint.json` file is how you specify your mod's configuration definition; this JSON file will define how your settings are to be structured, what are their names, defaults, etc., allowing for automatic generation of a user-friendly interface and validation of user-set values.
 
