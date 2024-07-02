@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2024-05-14T17:06:25.747Z
+date: 2024-07-02T05:41:32.438Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -31,7 +31,7 @@ This is the BG3 Modding Community Wiki. This space is a place where tutorials, r
 - [:speech_balloon: Discord *A list of pages related to the BG3 Modding Community Discord server.*](/meta/discord)
 {.links-list}
 
-## Information
+## Reference
 - [Basic *Basic Modding information*](Information/Basic)
 - [Icons *Information relating to Icons*](Information/Icons)
 - [Items *Information related to Items*](/Information/Items)
@@ -50,6 +50,17 @@ This is the BG3 Modding Community Wiki. This space is a place where tutorials, r
 {.links-list}
 
 ## Tools
+- [BG3 Mod Helper - A VSCod(e/ium) Extension](/Tools/bg3-mod-helper)
+- [Image-Editing-Tools](/Tools/Image-Editing-Tools)
+{.links-list}
+
+## Mod Usage
+- [Install BG3MM (BG3 Mod Manager)](/Tutorial/Mod-Use/Installation-Of-BG3MM)
+- [Load Order](/Tutorials/Mod-Use/general-load-order)
+- [Removing Mods](/Tutorials/Mod-Use/How-to-remove-mods)
+- [Installing Script Extender](/Tutorials/Mod-Use/Installing-Script-Extender)
+- [Unique Tav guide](/Tutorials/Mod-Use/Unique-Tav-Everything-you-need-to-know)
+{.links-list}
 
 ## Tutorials
 - [General Guides *General Guides not specific to a single type of modding.*](Tutorials/General)
