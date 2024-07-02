@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-07-02T21:47:14.197Z
+date: 2024-07-02T21:51:24.831Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -19,9 +19,18 @@ Make sure to add the class to any page you wish to have function this way. Style
 
 <!--If a tabset doesn't have notes on it yet, the available bodies haven't been verified yet-->
 
-# Explanation
+# Description
 
-You can see a larger version of the images if you open them in a new tab.
+-   Filename: The name of the model in the actual game files.
+-   UUID: The unique identifier for the model.
+-   Sub-Mesh: The individual meshes within a GR2 file.
+-   Material ID: The UUID that contains the texture information for each sub-mesh.
+
+> Cloth meshes typically (though not always) use the Material ID 9e2966c7-b61c-4bc1-bef1-a79cb5fde067 (Engine\_Default\_Mesh\_Lit\_Opaque). It is safe to use this engine default for any cloth mesh, but the ID of your file's other sub-mesh will also work!
+{.is-info}
+
+>You can see a larger version of the images if you open them in a new tab.
+{.is-info}
 
 # Meshes
 
