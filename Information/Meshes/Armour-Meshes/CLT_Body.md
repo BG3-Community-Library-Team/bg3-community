@@ -2,13 +2,13 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-02T20:51:23.782Z
+date: 2024-07-02T20:59:53.328Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
 ---
 
-<!--The CSS was initially set so I could override wiki.js's override of max-width, but I don't want it to potentially break. Setting to width allows it to behave that way but *only*-->
+<!--The CSS was initially set so I could override wiki.js's override of max-width, but I don't want it to potentially break. Setting to width allows it to scale down but will still stretch images with a limited height-->
 
 # Description
 
