@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-02T09:38:34.224Z
+date: 2024-07-02T09:48:18.122Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -19,7 +19,9 @@ Thus it is important to check if updates are needed each time Larian provides a 
 
 ## Minimize the risks with a few simple steps:
 * Backup your savegames
-before you start modding an ongoing playthrough, add more complex mods, or update your game
+before you start modding an ongoing playthrough, add more complex mods, or update your game.
+Default savegame folder path: 
+C:\Users\USER\AppData\Local\Larian Studios\Baldur's Gate 3\PlayerProfiles\Public\Savegames\Story
 
 * Read mod descriptions
 pay extra attention to install instructions, requirements and possible incompatibility between mods
