@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-02T09:12:39.385Z
+date: 2024-07-02T09:14:38.062Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -34,7 +34,7 @@ GOG: go to Settings - Game features - uncheck *Auto-update games*
 #### pak
 
 #### mod fixer
-This pak is still neccessary. If you don't have it, Durge's harem will visit you in your dreams. Unless you like that, I don't judge.
+This pak is still neccessary. If you don't have it, Durge's harem will visit you in your dreams. Unless you're into it, I won't judge.
 
 [download](https://www.nexusmods.com/baldursgate3/mods/141)
 #### loose files
