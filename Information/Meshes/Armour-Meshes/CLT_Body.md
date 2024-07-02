@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-02T21:11:31.257Z
+date: 2024-07-02T21:14:02.575Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -26,7 +26,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
 
 <div class="mesh_page">
 
-  <p class="mesh_tables">
+  <div class="contents">
     
 ## CLT_Bard_Body_A
 
@@ -3478,7 +3478,7 @@ dateCreated: 2024-06-18T04:48:47.326Z
   
 ## CLT_Worker_Body
   
-  </p>
+  </div>
   
 </div>  
   
