@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-02T04:18:33.158Z
+date: 2024-07-02T04:22:03.076Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -155,7 +155,6 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 > [Preemptively Label Containers](https://github.com/AtilioA/BG3-preemptively-label-containers/blob/main/Preemptively%20Label%20Containers/Mods/PreemptivelyLabelContainers/MCM_blueprint.json)
 {.is-success}
 
----
 
 ### Using values from MCM
 
@@ -255,8 +254,8 @@ MCM performs validation checks when:
   - Loading blueprints from the `MCM_blueprint.json`;
 - Settings validation:
   - Loading settings from a JSON file (+ e.g., switching between profiles);
-  - Setting values programmatically through the API (TODO, effectively same as below);
-  - Processing user input from the UI (TODO, effectively same as above);
+  - Setting values programmatically through the API;
+  - Processing user input from the UI.
 
 
 >• Settings not present in the blueprint will be removed from the settings JSON file;
@@ -268,12 +267,12 @@ MCM performs validation checks when:
 
 In your blueprint, you can define localization handles for various elements of the configuration, including:
 
-- Tab names and descriptions
-- Section names
-- Setting names, descriptions, and tooltips
+- Tabs names and descriptions
+- Sections names
+- Settings names, descriptions, and tooltips
 - Enum/radio choice labels
 
-This is achieved through the use of "handles" - unique identifiers that can be used to look up the localized strings, just as used by the vanilla game. For every element that you can put a string in the blueprint, you can use a handle by adding a `Handles` object in the same level as the element, like this:
+This is achieved through the use of "handles" - unique identifiers that can be used to look up the localized strings, just as used by the vanilla game. For basically any element that you can put a user-facing string in the blueprint, you can use a handle by adding a `Handles` object in the same level as the element, like this:
 
 ```json
 {
