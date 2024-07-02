@@ -2,13 +2,15 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-02T21:35:36.235Z
+date: 2024-07-02T21:42:32.729Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
 ---
 
-<!--Styling currently uses meshPage twice to allow max-width to take effect over wiki.js's 100%-->
+<!--Styling currently uses meshPage twice to allow max-width to take effect over wiki.js's 100%. I was using wiki.js's .vmain but didn't want to have the potential of that breaking if they changed their code there to something else. If the max-width on this page somehow breaks, you can inspect element and copy the rule and replace .meshPage.meshPage with what they have. If that also somehow breaks, do it again and change it to the new one. And so on.
+
+Make sure to add the class to any page you wish to have function this way. Style can be added under "page" in the top right.-->
 
 # Description
 
