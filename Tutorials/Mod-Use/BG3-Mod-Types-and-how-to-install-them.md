@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-02T06:32:16.092Z
+date: 2024-07-02T09:12:39.385Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -13,15 +13,32 @@ dateCreated: 2024-07-02T06:32:16.092Z
 ![soon_tm.webp](/test/alithea/soon_tm.webp)
 
 
+Modding games is never entirely safe. Especially if the game is still regularly patched like Baldur's Gate 3. 
+Mods modify game files, if those game files are altered by a patch or hotfix, it can cause the mod to not being able to work properly anymore. This may lead to being unable to load a savegame or cause gameplay issues.
+Thus it is important to check if updates are needed each time Larian provides a patch or hotfix.
 
-## First things first
-*always backup your files & read mod descriptions* <!--placeholder-->
+## Minimize the risks with a few simple steps:
+* Backup your savegames
+before you start modding an ongoing playthrough, add more complex mods, or update your game
 
-## Mod types
+* Read mod descriptions
+pay extra attention to install instructions, requirements and possible incompatibility between mods
+
+* Disable auto-updating your game
+Steam: go to Library - Baldur’s Gate 3 - right click Properties - Updates - select *Only update this game when i launch it*
+GOG: go to Settings - Game features - uncheck *Auto-update games*
+
+## Mod types and how to install them
 
 ### Tab {.tabset}
 #### pak
+
+#### mod fixer
+This pak is still neccessary. If you don't have it, Durge's harem will visit you in your dreams. Unless you like that, I don't judge.
+
+[download](https://www.nexusmods.com/baldursgate3/mods/141)
 #### loose files
-#### overrides
-#### 
-#### Step Five
+
+#### native mods
+
+
