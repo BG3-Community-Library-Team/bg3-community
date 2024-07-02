@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-02T14:57:22.660Z
+date: 2024-07-02T14:59:19.454Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -75,7 +75,7 @@ Default Data folder path:
 Default bin folder path:
 ```C:\Program files\Steam\steamapps\common\Baldur's Gate 3\bin```
 
-### Modding and Achievements
+## Modding and Achievements
 Modding Baldur's Gate 3 disables all achievements. They can be re-enabled using Script Extender or the native mod Achievement Enabler.
 
 Happy modding!
