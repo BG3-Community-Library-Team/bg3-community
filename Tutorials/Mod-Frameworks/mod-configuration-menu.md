@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-02T04:22:03.076Z
+date: 2024-07-02T04:23:42.212Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -288,6 +288,8 @@ This is achieved through the use of "handles" - unique identifiers that can be u
 > • If handles are provided and their content can be retrieved, the localized string will be used instead of the usual name/description/tooltip;
 > • If the handle is not found, the usual string will be used.
 {.is-info}
+
+### TODO: ported IMGUI icons
 
 ## MCM demo
 
