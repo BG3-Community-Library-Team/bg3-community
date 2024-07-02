@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-02T09:48:18.122Z
+date: 2024-07-02T11:16:24.590Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -36,9 +36,14 @@ GOG: go to Settings - Game features - uncheck *Auto-update games*
 #### pak
 [Install BG3MM](https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM)
 #### mod fixer
-This pak created by Norbyte is still neccessary. If you don't have it, Durge's harem will visit you in your dreams. Unless you're into it, I won't judge.
+Mod fixer created by Norbyte is still neccessary. If it isn't installed, character creation will not be available. Instead this lovely view will appear on screen:
 
-[download](https://www.nexusmods.com/baldursgate3/mods/141)
+![durgeharem.webp](/mod-use/install-mods/durgeharem.webp)
+
+Installation:
+[download mod fixer](https://www.nexusmods.com/baldursgate3/mods/141)
+
+
 
 <!--[norbyte's post on larian studio's discord](https://discord.com/channels/98922182746329088/767804218819477515/784392518883868674)-->
 #### loose files
