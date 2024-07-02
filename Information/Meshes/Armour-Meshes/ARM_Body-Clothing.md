@@ -2,7 +2,7 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-07-02T21:45:38.789Z
+date: 2024-07-02T21:47:14.197Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
@@ -20,6 +20,8 @@ Make sure to add the class to any page you wish to have function this way. Style
 <!--If a tabset doesn't have notes on it yet, the available bodies haven't been verified yet-->
 
 # Explanation
+
+You can see a larger version of the images if you open them in a new tab.
 
 # Meshes
 
