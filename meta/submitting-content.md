@@ -2,7 +2,7 @@
 title: Submitting Content
 description: An overview of adding new pages and content to the Wiki
 published: true
-date: 2024-07-02T06:04:58.669Z
+date: 2024-07-02T06:05:57.797Z
 tags: meta
 editor: markdown
 dateCreated: 2024-04-24T20:11:12.024Z
@@ -49,7 +49,7 @@ The Page Properties window will appear. Fill in the relevant information--Title,
 ![createpageclose_sc.png](/meta/createpageclose_sc.png)
 Now click Create in the top right corner. You have successfully created a new page!
 
-### Editing Pages
+## Editing Pages
 - [Using tabs](/meta/submitting-content/using-tabs)
 
 [TODO: The rest of the guide]
