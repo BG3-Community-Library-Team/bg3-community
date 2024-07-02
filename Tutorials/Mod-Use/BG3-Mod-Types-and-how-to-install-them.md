@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-02T14:59:19.454Z
+date: 2024-07-02T15:48:23.246Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -48,14 +48,25 @@ Default bin folder path:
 ## Mod types and how to install them
 
 ### Tab {.tabset}
-#### pak
+#### PAK
+Pak files are conveniently packaged data bundles. They make installing and uninstalling Mods easier, quicker and safer. Paks can include a variety of modifications to game elements such as textures, sounds, objects, and others.
 
+Installation:
 
-[Follow this guide on how to install and set up BG3MM.](https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM)
-
+1. Install the mod manager of your choice. We recommend Laughing Leader's Baldur's Gate 3 Mod Manager. [Follow this guide on how to install and set up BG3MM.](https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM)
+2. Go to the mod page, read it, and download the desired version of the mod you want to a location outside of program or game files.
+3. Open the archive and drag or copy the pak into your Mods Folder
 Default Mod folder path:
 ```C:\Users\USERNAME\AppData\Local\Larian Studios\Baldur's Gate 3\Mods```
-#### mod fixer
+4. Start BG3MM or if it is already running, click refresh to see the new mod. It most likely will appear in Inactive Mods to the right.
+5. Drag the mod from Inactive Mods to Active Mods. Keep load order requirements in mind while doing so. [General Load Order Guide](/Tutorials/Mod-Use/general-load-order)
+> Some mods are *overrides*. They will appear in a separate section called Overrides at the bottom of the Active Mods panel.
+*DiceSet_06* and *Honor* in the Inactive Mods panel to the right are game files.
+Leave them all where they are and don't move them into the Active Mods panel.
+{.is-warning}
+6. 
+
+#### MOD FIXER
 Mod fixer is still neccessary. If it isn't installed, character creation will not be available. Instead this lovely view will appear on screen:
 
 ![durgeharem.webp](/mod-use/install-mods/durgeharem.webp)
@@ -68,10 +79,10 @@ That's it.
 
 [Norbyte, the creator of Mod fixer explains how it works in his post on Larian Studio's discord](https://discord.com/channels/98922182746329088/767804218819477515/784392518883868674)
 
-#### loose files
+#### LOOSE FILES
 Default Data folder path:
 ```C:\Program files\Steam\steamapps\common\Baldur's Gate 3\Data```
-#### native mods
+#### NATIVE MODS
 Default bin folder path:
 ```C:\Program files\Steam\steamapps\common\Baldur's Gate 3\bin```
 
