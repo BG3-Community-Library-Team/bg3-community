@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T03:03:00.069Z
+date: 2024-07-03T16:30:06.343Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -3436,6 +3436,321 @@ Make sure to add the class to any page you wish to have function this way. Style
 
 
   
+## CLT_Shirt_A<!--1 rows each-->
+### {.tabset}
+
+#### HUM<!--CLT_Shirt_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_M-->
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/hum_m_clt_shirt_a.png" alt="hum_m_clt_shirt_a.png"/></td>
+    <td>HUM_M_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
+  </tr>
+  <!--HUM_F-->  
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/hum_f_clt_shirt_a.png" alt="hum_f_clt_shirt_a.png"/></td>
+    <td>HUM_F_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>15e183c5-4e33-99a0-b6ba-89d99732374f</td>
+  </tr>
+  <!--HUM_MS-->  
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/hum_ms_clt_shirt_a.png" alt="hum_ms_clt_shirt_a.png"/></td>
+    <td>HUM_MS_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
+  </tr>
+  <!--HUM_FS--> 
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/hum_fs_clt_shirt_a.png" alt="hum_fs_clt_shirt_a.png"/></td>
+    <td>HUM_FS_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>15e183c5-4e33-99a0-b6ba-89d99732374f</td>
+  </tr>
+    
+</table>
+
+#### DGB<!--CLT_Shirt_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--DGB_M-->
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/dgb_m_clt_shirt_a.png" alt="dgb_m_clt_shirt_a.png"/></td>
+    <td>DGB_M_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
+  </tr>
+  <!--DGB_F-->  
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/dgb_f_clt_shirt_a.png" alt="dgb_f_clt_shirt_a.png"/></td>
+    <td>DGB_F_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>15e183c5-4e33-99a0-b6ba-89d99732374f</td>
+  </tr>
+</table>
+  
+#### DWR<!--CLT_Shirt_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--DWR_M-->
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/dwr_m_clt_shirt_a.png" alt="dwr_m_clt_shirt_a.png"/></td>
+    <td>WRF_M_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
+  </tr>
+  <!--DWR_F-->  
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/dwr_f_clt_shirt_a.png" alt="dwr_f_clt_shirt_a.png"/></td>
+    <td>DWR_F_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>15e183c5-4e33-99a0-b6ba-89d99732374f</td>
+  </tr>
+</table>
+  
+#### GTY<!--CLT_Shirt_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--GTY_M-->
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/gty_m_clt_shirt_a.png" alt="gty_m_clt_shirt_a.png"/></td>
+    <td>GTY_M_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
+  </tr>
+  <!--GTY_F-->  
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/gty_f_clt_shirt_a.png" alt="gty_f_clt_shirt_a.png"/></td>
+    <td>GTY_F_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>15e183c5-4e33-99a0-b6ba-89d99732374f</td>
+  </tr>
+</table>
+  
+#### GNO<!--CLT_Shirt_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--GNO_M-->
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/gno_m_clt_shirt_a.png" alt="gno_m_clt_shirt_a.png"/></td>
+    <td>GNO_M_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
+  </tr>
+  <!--GNO_F-->  
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/hum_f_clt_shirt_a.png" alt="hum_f_clt_shirt_a.png"/></td>
+    <td>GNO_F_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>15e183c5-4e33-99a0-b6ba-89d99732374f</td>
+  </tr>
+</table>
+  
+#### HFL<!--CLT_Shirt_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HFL_M-->
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/hfl_m_clt_shirt_a.png" alt="hfl_m_clt_shirt_a.png"/></td>
+    <td>HUM_M_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
+  </tr>
+  <!--HFL_F-->  
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/hfl_f_clt_shirt_a.png" alt="hfl_f_clt_shirt_a.png"/></td>
+    <td>HUM_F_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>15e183c5-4e33-99a0-b6ba-89d99732374f</td>
+  </tr>
+</table>
+  
+#### HRC<!--CLT_Shirt_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HRC_M-->
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/hhr_m_clt_shirt_a.png" alt="hrc_m_clt_shirt_a.png"/></td>
+    <td>HRC_M_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
+  </tr>
+  <!--HRC_F-->  
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/hrc_f_clt_shirt_a.png" alt="hrc_f_clt_shirt_a.png"/></td>
+    <td>HRC_F_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>15e183c5-4e33-99a0-b6ba-89d99732374f</td>
+  </tr>
+</table>
+  
+#### OTHER<!--CLT_Shirt_A CHD_HUM_M & ZOM_HUM_M-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--CHD_HUM_M-->
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/chd_hum_m_clt_shirt_a.png" alt="chd_hum_m_clt_shirt_a.png"/></td>
+    <td>CHD_HUM_M_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
+  </tr>
+  <!--ZOM_HUM_M-->  
+  <tr>          
+    <td><img src="/armour_meshes/clt_body/zom_hum_m_clt_shirt_a.png" alt="zom_hum_m_clt_shirt_a.png"/></td>
+    <td>ZOM_HUM_M_CLT_Shirt_A</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Shirt_A_Mesh</td>
+    <td>15e183c5-4e33-99a0-b6ba-89d99732374f</td>
+  </tr>
+</table>
+  
+
+### {-}
+  
+  <br>
+  
+  
+
+ ## CLT_Shirt_C<!--1 rows each-->
+### {.tabset}
+
+#### HUM<!--CLT_Shirt_B-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_M-->
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  <!--HUM_F-->  
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <!--HUM_FS--> 
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    
+</table>
+
+#### DWR<!--CLT_Shirt_B-->
+#### GTY<!--CLT_Shirt_B-->
+#### GNO<!--CLT_Shirt_B-->
+#### HFL<!--CLT_Shirt_B-->
+
+
+### {-}
+  
+  <br>
+  
+  
+  
+  
 ## CLT_Shirt_C<!--1 rows each-->
 ### {.tabset}
 
@@ -3450,7 +3765,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--HUM_M-->
+  <!--HUM_M No FS even tho DGB - Double-check for any other spellings-->
   <tr>          
     <td></td>
     <td></td>
@@ -3474,14 +3789,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <td></td>
     <td></td>
   </tr>
-  <!--HUM_FS--> 
-  <tr>          
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+
     
 </table>
 
