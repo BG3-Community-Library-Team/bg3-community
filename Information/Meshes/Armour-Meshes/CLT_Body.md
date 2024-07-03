@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T02:39:16.163Z
+date: 2024-07-03T02:45:16.596Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -1115,59 +1115,244 @@ Make sure to add the class to any page you wish to have function this way. Style
   <!--HUM_M-->
   <tr>          
     <td rowspan="2"></td>
-    <td rowspan="2"></td>
-    <td rowspan="2"></td>
-    <td rowspan="2"></td>
-    <td></td>
+    <td rowspan="2">HUM_M_CLT_Camp_Minsc_Body</td>
+    <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
+    <td rowspan="2">CLT_Camp_Minsc_Body_Mesh</td>
+    <td>4007a74b-1556-ec8f-c7d0-291bbcbdffa8</td>
   </tr>  
     <tr>          
-    <td></td>
+    <td>185c40a0-0488-0704-656e-dcf43946caaa</td>
   </tr>  
     
   <!--HUM_F-->
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>HUM_F_CLT_Camp_Minsc_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Minsc_Body_Mesh</td>
+    <td>e3f872e7-17a5-aaa8-44f1-5e1b7565b69e</td>
   </tr>
    
   <!--HUM_MS-->
   <tr>          
     <td rowspan="2"></td>
-    <td rowspan="2"></td>
-    <td rowspan="2"></td>
-    <td rowspan="2"></td>
-    <td></td>
+    <td rowspan="2">HUM_MS_CLT_Camp_Minsc_Body</td>
+    <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
+    <td rowspan="2">CLT_Camp_Minsc_Body_Mesh</td>
+    <td>4007a74b-1556-ec8f-c7d0-291bbcbdffa8</td>
   </tr>
     <tr>          
-    <td></td>
+    <td>185c40a0-0488-0704-656e-dcf43946caaa</td>
   </tr>  
     
   <!--HUM_FS-->
   <tr>          
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>HUM_FS_CLT_Camp_Minsc_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Minsc_Body_Mesh</td>
+    <td>e3f872e7-17a5-aaa8-44f1-5e1b7565b69e</td>
   </tr>
     
 </table>
   
 #### DGB<!--CLT_Camp_Minsc_Body-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--DGB_M-->
+  <tr>          
+    <td rowspan="2"></td>
+    <td rowspan="2">DGB_M_CLT_Camp_Minsc_Body</td>
+    <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
+    <td rowspan="2">CLT_Camp_Minsc_Body_Mesh</td>
+    <td>4007a74b-1556-ec8f-c7d0-291bbcbdffa8</td>
+  </tr>  
+    <tr>          
+    <td>185c40a0-0488-0704-656e-dcf43946caaa</td>
+  </tr>  
+    
+  <!--DGB_F-->
+  <tr>          
+    <td></td>
+    <td>DGB_F_CLT_Camp_Minsc_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Minsc_Body_Mesh</td>
+    <td>e3f872e7-17a5-aaa8-44f1-5e1b7565b69e</td>
+  </tr>
+</table>
   
 #### DWR<!--CLT_Camp_Minsc_Body-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--DWR_M-->
+  <tr>          
+    <td rowspan="2"></td>
+    <td rowspan="2">DWR_M_CLT_Camp_Minsc_Body</td>
+    <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
+    <td rowspan="2">CLT_Camp_Minsc_Body_Mesh</td>
+    <td>4007a74b-1556-ec8f-c7d0-291bbcbdffa8</td>
+  </tr>  
+    <tr>          
+    <td>185c40a0-0488-0704-656e-dcf43946caaa</td>
+  </tr>  
+    
+  <!--DWR_F-->
+  <tr>          
+    <td></td>
+    <td>DWR_F_CLT_Camp_Minsc_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Minsc_Body_Mesh</td>
+    <td>e3f872e7-17a5-aaa8-44f1-5e1b7565b69e</td>
+  </tr>
+</table>
   
 #### GTY<!--CLT_Camp_Minsc_Body-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_M-->
+  <tr>          
+    <td rowspan="2"></td>
+    <td rowspan="2">CLT_Camp_Minsc_Body</td>
+    <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
+    <td rowspan="2">CLT_Camp_Minsc_Body_Mesh</td>
+    <td>4007a74b-1556-ec8f-c7d0-291bbcbdffa8</td>
+  </tr>  
+    <tr>          
+    <td>185c40a0-0488-0704-656e-dcf43946caaa</td>
+  </tr>  
+    
+  <!--HUM_F-->
+  <tr>          
+    <td></td>
+    <td>CLT_Camp_Minsc_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Minsc_Body_Mesh</td>
+    <td>e3f872e7-17a5-aaa8-44f1-5e1b7565b69e</td>
+  </tr>
+</table>
   
 #### GNO<!--CLT_Camp_Minsc_Body-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_M-->
+  <tr>          
+    <td rowspan="2"></td>
+    <td rowspan="2">CLT_Camp_Minsc_Body</td>
+    <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
+    <td rowspan="2">CLT_Camp_Minsc_Body_Mesh</td>
+    <td>4007a74b-1556-ec8f-c7d0-291bbcbdffa8</td>
+  </tr>  
+    <tr>          
+    <td>185c40a0-0488-0704-656e-dcf43946caaa</td>
+  </tr>  
+    
+  <!--HUM_F-->
+  <tr>          
+    <td></td>
+    <td>CLT_Camp_Minsc_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Minsc_Body_Mesh</td>
+    <td>e3f872e7-17a5-aaa8-44f1-5e1b7565b69e</td>
+  </tr>
+</table>
   
 #### HFL<!--CLT_Camp_Minsc_Body-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_M-->
+  <tr>          
+    <td rowspan="2"></td>
+    <td rowspan="2">CLT_Camp_Minsc_Body</td>
+    <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
+    <td rowspan="2">CLT_Camp_Minsc_Body_Mesh</td>
+    <td>4007a74b-1556-ec8f-c7d0-291bbcbdffa8</td>
+  </tr>  
+    <tr>          
+    <td>185c40a0-0488-0704-656e-dcf43946caaa</td>
+  </tr>  
+    
+  <!--HUM_F-->
+  <tr>          
+    <td></td>
+    <td>CLT_Camp_Minsc_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Minsc_Body_Mesh</td>
+    <td>e3f872e7-17a5-aaa8-44f1-5e1b7565b69e</td>
+  </tr>
+</table>
   
 #### HRC<!--CLT_Camp_Minsc_Body-->
-  
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_M-->
+  <tr>          
+    <td rowspan="2"></td>
+    <td rowspan="2">CLT_Camp_Minsc_Body</td>
+    <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
+    <td rowspan="2">CLT_Camp_Minsc_Body_Mesh</td>
+    <td>4007a74b-1556-ec8f-c7d0-291bbcbdffa8</td>
+  </tr>  
+    <tr>          
+    <td>185c40a0-0488-0704-656e-dcf43946caaa</td>
+  </tr>  
+    
+  <!--HUM_F-->
+  <tr>          
+    <td></td>
+    <td>CLT_Camp_Minsc_Body</td>
+    <td>00000000-0000-0000-0000-000000000000</td>
+    <td>CLT_Camp_Minsc_Body_Mesh</td>
+    <td>e3f872e7-17a5-aaa8-44f1-5e1b7565b69e</td>
+  </tr>
+</table>  
 
 ### {-}
   
