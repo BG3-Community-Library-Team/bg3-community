@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-02T16:48:18.902Z
+date: 2024-07-03T16:49:32.585Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -81,11 +81,16 @@ That's it.
 [Norbyte, the creator of Mod fixer explains how it works in his post on Larian Studio's discord](https://discord.com/channels/98922182746329088/767804218819477515/784392518883868674)
 
 #### LOOSE FILES
+![soon_tm.webp](/test/alithea/soon_tm.webp)
 Default Data folder path:
 ```C:\Program files\Steam\steamapps\common\Baldur's Gate 3\Data```
 #### NATIVE MODS
+![soon_tm.webp](/test/alithea/soon_tm.webp)
 Default bin folder path:
 ```C:\Program files\Steam\steamapps\common\Baldur's Gate 3\bin```
+
+#### MANUAL INSTALLATION
+![soon_tm.webp](/test/alithea/soon_tm.webp)
 
 ## Modding and Achievements
 Modding Baldur's Gate 3 disables all achievements. They can be re-enabled using Script Extender or the native mod Achievement Enabler.
