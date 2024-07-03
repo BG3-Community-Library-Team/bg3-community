@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T17:57:37.101Z
+date: 2024-07-03T18:03:57.598Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -1978,44 +1978,211 @@ Make sure to add the class to any page you wish to have function this way. Style
   <!--HUM_M-->
   <tr>          
     <td></td>
+    <td>HUM_M_CLT_Camp_Minsc_Body_Ragged</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>579a5b54-6beb-5171-bde9-23858644cb75</td>
   </tr>
   <!--HUM_F-->  
   <tr>          
     <td></td>
+    <td>HUM_F_CLT_Camp_Minsc_Body_Ragged</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>20fd18f5-10a1-281f-e857-8ea3141a47b1</td>
   </tr>
   <!--HUM_MS-->  
   <tr>          
     <td></td>
+    <td>HUM_MS_CLT_Camp_Minsc_Body_Ragged</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>579a5b54-6beb-5171-bde9-23858644cb75</td>
   </tr>
   <!--HUM_FS--> 
   <tr>          
     <td></td>
+    <td>HUM_FS_CLT_Camp_Minsc_Body_Ragged</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>20fd18f5-10a1-281f-e857-8ea3141a47b1</td>
   </tr>
     
 </table>
 
 #### DGB<!--CLT_Camp_Minsc_Body_Ragged-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--DGB_M-->
+  <tr>          
+    <td></td>
+    <td>DGB_M_CLT_Camp_Minsc_Body_Ragged</td>
+    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>579a5b54-6beb-5171-bde9-23858644cb75</td>
+  </tr>
+  <!--DGB_F-->  
+  <tr>          
+    <td></td>
+    <td>DGB_F_CLT_Camp_Minsc_Body_Ragged</td>
+    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>20fd18f5-10a1-281f-e857-8ea3141a47b1</td>
+  </tr>
+</table>
+  
 #### DWR<!--CLT_Camp_Minsc_Body_Ragged-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--DWR_M-->
+  <tr>          
+    <td></td>
+    <td>DWR_M_CLT_Camp_Minsc_Body_Ragged</td>
+    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>579a5b54-6beb-5171-bde9-23858644cb75</td>
+  </tr>
+  <!--DWR_F-->  
+  <tr>          
+    <td></td>
+    <td>DWR_F_CLT_Camp_Minsc_Body_Ragged</td>
+    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>20fd18f5-10a1-281f-e857-8ea3141a47b1</td>
+  </tr>
+</table>
+  
 #### GTY<!--CLT_Camp_Minsc_Body_Ragged-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--GTY_M-->
+  <tr>          
+    <td></td>
+    <td>GTY_M_CLT_Camp_Minsc_Body_Ragged</td>
+    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>579a5b54-6beb-5171-bde9-23858644cb75</td>
+  </tr>
+  <!--GTY_F-->  
+  <tr>          
+    <td></td>
+    <td>GTY_F_CLT_Camp_Minsc_Body_Ragged</td>
+    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>20fd18f5-10a1-281f-e857-8ea3141a47b1</td>
+  </tr>
+</table>
+  
 #### GNO<!--CLT_Camp_Minsc_Body_Ragged-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--GNO_M-->
+  <tr>          
+    <td></td>
+    <td>GNO_M_CLT_Camp_Minsc_Body_Ragged</td>
+    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>579a5b54-6beb-5171-bde9-23858644cb75</td>
+  </tr>
+  <!--GNO_F-->  
+  <tr>          
+    <td></td>
+    <td>GNO_F_CLT_Camp_Minsc_Body_Ragged</td>
+    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>20fd18f5-10a1-281f-e857-8ea3141a47b1</td>
+  </tr>
+</table>
+  
 #### HFL<!--CLT_Camp_Minsc_Body_Ragged-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HFL_M-->
+  <tr>          
+    <td></td>
+    <td>HFL_M_CLT_Camp_Minsc_Body_Ragged</td>
+    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>579a5b54-6beb-5171-bde9-23858644cb75</td>
+  </tr>
+  <!--HFL_F-->  
+  <tr>          
+    <td></td>
+    <td>HFL_F_CLT_Camp_Minsc_Body_Ragged</td>
+    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>20fd18f5-10a1-281f-e857-8ea3141a47b1</td>
+  </tr>
+</table>
+  
 #### HRC<!--CLT_Camp_Minsc_Body_Ragged-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HRC_M-->
+  <tr>          
+    <td></td>
+    <td>HRC_M_CLT_Camp_Minsc_Body_Ragged</td>
+    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>579a5b54-6beb-5171-bde9-23858644cb75</td>
+  </tr>
+  <!--HRC_F-->  
+  <tr>          
+    <td></td>
+    <td>HRC_F_CLT_Camp_Minsc_Body_Ragged</td>
+    <td></td>
+    <td>CLT_Camp_Minsc_Body_Ragged_Mesh</td>
+    <td>20fd18f5-10a1-281f-e857-8ea3141a47b1</td>
+  </tr>
+</table>
 
 ### {-}
   
