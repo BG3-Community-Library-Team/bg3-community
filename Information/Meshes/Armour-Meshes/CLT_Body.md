@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T02:45:16.596Z
+date: 2024-07-03T02:48:16.178Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -1233,10 +1233,10 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--HUM_M-->
+  <!--GTY_M-->
   <tr>          
     <td rowspan="2"></td>
-    <td rowspan="2">CLT_Camp_Minsc_Body</td>
+    <td rowspan="2">GTY_M_CLT_Camp_Minsc_Body</td>
     <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
     <td rowspan="2">CLT_Camp_Minsc_Body_Mesh</td>
     <td>4007a74b-1556-ec8f-c7d0-291bbcbdffa8</td>
@@ -1245,10 +1245,10 @@ Make sure to add the class to any page you wish to have function this way. Style
     <td>185c40a0-0488-0704-656e-dcf43946caaa</td>
   </tr>  
     
-  <!--HUM_F-->
+  <!--GTY_F-->
   <tr>          
     <td></td>
-    <td>CLT_Camp_Minsc_Body</td>
+    <td>GTY_F_CLT_Camp_Minsc_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Minsc_Body_Mesh</td>
     <td>e3f872e7-17a5-aaa8-44f1-5e1b7565b69e</td>
@@ -1266,10 +1266,10 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--HUM_M-->
+  <!--GNO_M-->
   <tr>          
     <td rowspan="2"></td>
-    <td rowspan="2">CLT_Camp_Minsc_Body</td>
+    <td rowspan="2">GNO_M_CLT_Camp_Minsc_Body</td>
     <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
     <td rowspan="2">CLT_Camp_Minsc_Body_Mesh</td>
     <td>4007a74b-1556-ec8f-c7d0-291bbcbdffa8</td>
@@ -1278,10 +1278,10 @@ Make sure to add the class to any page you wish to have function this way. Style
     <td>185c40a0-0488-0704-656e-dcf43946caaa</td>
   </tr>  
     
-  <!--HUM_F-->
+  <!--GNO_F-->
   <tr>          
     <td></td>
-    <td>CLT_Camp_Minsc_Body</td>
+    <td>GNO_F_CLT_Camp_Minsc_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Minsc_Body_Mesh</td>
     <td>e3f872e7-17a5-aaa8-44f1-5e1b7565b69e</td>
@@ -1299,10 +1299,10 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--HUM_M-->
+  <!--HFL_M-->
   <tr>          
     <td rowspan="2"></td>
-    <td rowspan="2">CLT_Camp_Minsc_Body</td>
+    <td rowspan="2">HFL_M_CLT_Camp_Minsc_Body</td>
     <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
     <td rowspan="2">CLT_Camp_Minsc_Body_Mesh</td>
     <td>4007a74b-1556-ec8f-c7d0-291bbcbdffa8</td>
@@ -1311,10 +1311,10 @@ Make sure to add the class to any page you wish to have function this way. Style
     <td>185c40a0-0488-0704-656e-dcf43946caaa</td>
   </tr>  
     
-  <!--HUM_F-->
+  <!--HFL_F-->
   <tr>          
     <td></td>
-    <td>CLT_Camp_Minsc_Body</td>
+    <td>HFL_F_CLT_Camp_Minsc_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Minsc_Body_Mesh</td>
     <td>e3f872e7-17a5-aaa8-44f1-5e1b7565b69e</td>
@@ -1332,10 +1332,10 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--HUM_M-->
+  <!--HRC_M-->
   <tr>          
     <td rowspan="2"></td>
-    <td rowspan="2">CLT_Camp_Minsc_Body</td>
+    <td rowspan="2">HRC_M_CLT_Camp_Minsc_Body</td>
     <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
     <td rowspan="2">CLT_Camp_Minsc_Body_Mesh</td>
     <td>4007a74b-1556-ec8f-c7d0-291bbcbdffa8</td>
@@ -1344,10 +1344,10 @@ Make sure to add the class to any page you wish to have function this way. Style
     <td>185c40a0-0488-0704-656e-dcf43946caaa</td>
   </tr>  
     
-  <!--HUM_F-->
+  <!--HRC_F-->
   <tr>          
     <td></td>
-    <td>CLT_Camp_Minsc_Body</td>
+    <td>HRC_F_CLT_Camp_Minsc_Body</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Minsc_Body_Mesh</td>
     <td>e3f872e7-17a5-aaa8-44f1-5e1b7565b69e</td>
