@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T16:30:06.343Z
+date: 2024-07-03T16:41:45.008Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -3452,7 +3452,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   <!--HUM_M-->
   <tr>          
-    <td><img src="/armour_meshes/clt_body/hum_m_clt_shirt_a.png" alt="hum_m_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/hum_m_shirt_a.png" alt="hum_m_clt_shirt_a.png"/></td>
     <td>HUM_M_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
@@ -3460,7 +3460,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--HUM_F-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/hum_f_clt_shirt_a.png" alt="hum_f_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/humf_shirt_a.png" alt="humf_shirt_a.png"/></td>
     <td>HUM_F_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
@@ -3468,7 +3468,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--HUM_MS-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/hum_ms_clt_shirt_a.png" alt="hum_ms_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/humms_shirt_a.png" alt="hum_ms_clt_shirt_a.png"/></td>
     <td>HUM_MS_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
@@ -3476,7 +3476,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--HUM_FS--> 
   <tr>          
-    <td><img src="/armour_meshes/clt_body/hum_fs_clt_shirt_a.png" alt="hum_fs_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/humfs_shirt_a.png" alt="humfs_shirt_a.png"/></td>
     <td>HUM_FS_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
@@ -3643,7 +3643,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   <!--HRC_M-->
   <tr>          
-    <td><img src="/armour_meshes/clt_body/hhr_m_clt_shirt_a.png" alt="hrc_m_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/hrc_m_clt_shirt_a.png" alt="hrc_m_clt_shirt_a.png"/></td>
     <td>HRC_M_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
