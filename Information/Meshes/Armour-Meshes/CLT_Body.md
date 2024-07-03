@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T17:49:07.187Z
+date: 2024-07-03T17:49:34.609Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -1146,7 +1146,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   <!--HUM_M-->
   <tr>          
     <td></td>
-    <td>_M_CLT_Camp_Halsin_Body</td>
+    <td>HUM_M_CLT_Camp_Halsin_Body</td>
     <td></td>
     <td>CLT_Camp_Halsin_Body_Mesh</td>
     <td>1a714355-d9b1-7900-5bb2-c6096f42294b</td>
@@ -1154,7 +1154,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   <!--HUM_F-->  
   <tr>          
     <td></td>
-    <td>_F_CLT_Camp_Halsin_Body</td>
+    <td>HUM_F_CLT_Camp_Halsin_Body</td>
     <td></td>
     <td>CLT_Camp_Halsin_Body_Mesh</td>
     <td>d0e513ed-a0d1-5b2d-87f6-af43f0c933c8</td>
