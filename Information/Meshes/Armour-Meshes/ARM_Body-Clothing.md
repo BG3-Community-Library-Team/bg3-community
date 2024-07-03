@@ -2,13 +2,13 @@
 title: Armour (Body, Clothing) Meshes Reference
 description: 
 published: false
-date: 2024-07-03T02:07:09.053Z
+date: 2024-07-03T02:07:20.987Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-18T05:04:11.115Z
 ---
 
-<!--Styling currently uses meshPage twice to allow max-width to take priority over vmain
+<!--Styling currently uses meshPage twice to allow max-width to take priority over vmain.
 
 Make sure to add the class to any page you wish to have function this way. Style can be added under "page" in the top right.-->
 
