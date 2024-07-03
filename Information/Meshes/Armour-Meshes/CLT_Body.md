@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T02:25:33.583Z
+date: 2024-07-03T02:39:16.163Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -1038,9 +1038,13 @@ Make sure to add the class to any page you wish to have function this way. Style
 </table>
 
 #### DGB<!--CLT_Camp_Jaheira_Body_A-->
+  
 #### DWR<!--CLT_Camp_Jaheira_Body_A-->
+  
 #### GTY<!--CLT_Camp_Jaheira_Body_A-->
+  
 #### GNO<!--CLT_Camp_Jaheira_Body_A-->
+  
 #### HFL<!--CLT_Camp_Jaheira_Body_A-->
 
 ### {-}
@@ -1078,10 +1082,15 @@ Make sure to add the class to any page you wish to have function this way. Style
 </table>
 
 #### DWR<!--CLT_Camp_Karlach_Bra-->
+  
 #### GTY<!--CLT_Camp_Karlach_Bra-->
+  
 #### GNO<!--CLT_Camp_Karlach_Bra-->
+  
 #### HFL<!--CLT_Camp_Karlach_Bra-->
+  
 #### HRC<!--CLT_Camp_Karlach_Bra-->
+  
 #### TIF<!--CLT_Camp_Karlach_Bra FS only-->
 
 ### {-}
@@ -1089,7 +1098,82 @@ Make sure to add the class to any page you wish to have function this way. Style
 <br>
 
 
+## CLT_Camp_Minsc_Body<!--2 rows M, 1 row F-->
 
+### {.tabset}
+#### HUM<!--CLT_Camp_Minsc_Body-->
+  <table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_M-->
+  <tr>          
+    <td rowspan="2"></td>
+    <td rowspan="2"></td>
+    <td rowspan="2"></td>
+    <td rowspan="2"></td>
+    <td></td>
+  </tr>  
+    <tr>          
+    <td></td>
+  </tr>  
+    
+  <!--HUM_F-->
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+   
+  <!--HUM_MS-->
+  <tr>          
+    <td rowspan="2"></td>
+    <td rowspan="2"></td>
+    <td rowspan="2"></td>
+    <td rowspan="2"></td>
+    <td></td>
+  </tr>
+    <tr>          
+    <td></td>
+  </tr>  
+    
+  <!--HUM_FS-->
+  <tr>          
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    
+</table>
+  
+#### DGB<!--CLT_Camp_Minsc_Body-->
+  
+#### DWR<!--CLT_Camp_Minsc_Body-->
+  
+#### GTY<!--CLT_Camp_Minsc_Body-->
+  
+#### GNO<!--CLT_Camp_Minsc_Body-->
+  
+#### HFL<!--CLT_Camp_Minsc_Body-->
+  
+#### HRC<!--CLT_Camp_Minsc_Body-->
+  
+
+### {-}
+  
+<br>
+  
+  
 
 
 ## CLT_Camp_Minsc_Body_Ragged<!--1 row each-->
