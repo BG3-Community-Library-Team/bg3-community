@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T16:41:45.008Z
+date: 2024-07-03T17:33:16.106Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -50,9 +50,9 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--HUM_M-->
+  <!--HUM_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
-    <td rowspan="2"><img src="/armour_meshes/clt_body/hum_m_clt_bard_body_a.png" alt="hum_m_clt_camp_citizen_shirt_b.png"/></td>
+    <td rowspan="2"><img src="/armour_meshes/clt_body/_m_clt_bard_body_a.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">HUM_M_CLT_Bard_Body_A</td>
     <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
     <td rowspan="2">CLT_Bard_Body_A_Mesh</td>
@@ -61,9 +61,9 @@ Make sure to add the class to any page you wish to have function this way. Style
   <tr>
     <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
   </tr>
-  <!--HUM_F-->  
+  <!--HUM_F--> <!--rename to remove clt but rename it in the image first before here--> 
   <tr>          
-    <td rowspan="2"><img src="/armour_meshes/clt_body/hum_m_clt_bard_body_a.png" alt="hum_f_clt_camp_citizen_shirt_b.png"/></td>
+    <td rowspan="2"><img src="/armour_meshes/clt_body/_f_clt_bard_body_a.png" alt="_f_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">HUM_F_CLT_Bard_Body_A</td>
     <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
     <td rowspan="2">CLT_Bard_Body_A_Mesh</td>
@@ -72,9 +72,9 @@ Make sure to add the class to any page you wish to have function this way. Style
   <tr>
     <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
   </tr>
-  <!--HUM_MS-->  
+  <!--HUM_MS--><!--rename to remove clt but rename it in the image first before here-->  
   <tr>          
-    <td rowspan="2"><img src="/armour_meshes/clt_body/hum_ms_clt_bard_body_a.png" alt="hum_ms_clt_bard_body_a.png"/></td>
+    <td rowspan="2"><img src="/armour_meshes/clt_body/_ms_clt_bard_body_a.png" alt="_ms_clt_bard_body_a.png"/></td>
     <td rowspan="2">HUM_MS_CLT_Bard_Body_A</td>
     <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
     <td rowspan="2">CLT_Bard_Body_A_Mesh</td>
@@ -83,9 +83,9 @@ Make sure to add the class to any page you wish to have function this way. Style
   <tr>
     <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
   </tr>
-  <!--HUM_FS--> 
+  <!--HUM_FS--><!--rename to remove clt but rename it in the image first before here--> 
   <tr>          
-    <td rowspan="2"><img src="/armour_meshes/clt_body/hum_m_clt_bard_body_a.png" alt="hum_fs_clt_bard_body_a.png"/></td>
+    <td rowspan="2"><img src="/armour_meshes/clt_body/_m_clt_bard_body_a.png" alt="_fs_clt_bard_body_a.png"/></td>
     <td rowspan="2">HUM_FS_CLT_Bard_Body_A</td>
     <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
     <td rowspan="2">CLT_Bard_Body_A_Mesh</td>
@@ -108,9 +108,9 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--DGB_M-->
+  <!--DGB_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
-    <td rowspan="2"><img src="/armour_meshes/clt_body/dgb_m_clt_bard_body_a.png" alt="dgb_m_clt_camp_citizen_shirt_b.png"/></td>
+    <td rowspan="2"><img src="/armour_meshes/clt_body/dgb_m_clt_bard_body_a.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">DGB_M_CLT_Bard_Body_A</td>
     <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
     <td rowspan="2">CLT_Bard_Body_A_Mesh</td>
@@ -119,9 +119,9 @@ Make sure to add the class to any page you wish to have function this way. Style
   <tr>
     <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
   </tr>
-  <!--DGB_F-->  
+  <!--DGB_F--><!--rename to remove clt but rename it in the image first before here-->  
   <tr>          
-    <td rowspan="2"><img src="/armour_meshes/clt_body/dgb_m_clt_bard_body_a.png" alt="dgb_f_clt_camp_citizen_shirt_b.png"/></td>
+    <td rowspan="2"><img src="/armour_meshes/clt_body/dgb_m_clt_bard_body_a.png" alt="_f_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">DGB_F_CLT_Bard_Body_A</td>
     <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
     <td rowspan="2">CLT_Bard_Body_A_Mesh</td>
@@ -143,9 +143,9 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--DWR_M-->
+  <!--DWR_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
-    <td rowspan="2"><img src="/armour_meshes/clt_body/dwr_m_clt_bard_body_a.png" alt="dwr_m_clt_camp_citizen_shirt_b.png"/></td>
+    <td rowspan="2"><img src="/armour_meshes/clt_body/_m_clt_bard_body_a.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">DWR_M_CLT_Bard_Body_A</td>
     <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
     <td rowspan="2">CLT_Bard_Body_A_Mesh</td>
@@ -154,9 +154,9 @@ Make sure to add the class to any page you wish to have function this way. Style
   <tr>
     <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
   </tr>
-  <!--DWR_F-->  
+  <!--DWR_F--> <!--rename to remove clt but rename it in the image first before here--> 
   <tr>          
-    <td rowspan="2"><img src="/armour_meshes/clt_body/dwr_m_clt_bard_body_a.png" alt="dwr_f_clt_camp_citizen_shirt_b.png"/></td>
+    <td rowspan="2"><img src="/armour_meshes/clt_body/_m_clt_bard_body_a.png" alt="_f_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">DWR_F_CLT_Bard_Body_A</td>
     <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
     <td rowspan="2">CLT_Bard_Body_A_Mesh</td>
@@ -178,7 +178,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--GTY_M-->
+  <!--GTY_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="2"><img src="/armour_meshes/clt_body/gty_m_clt_bard_body_a.png" alt="gty_m_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">GTY_M_CLT_Bard_Body_A</td>
@@ -189,7 +189,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   <tr>
     <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
   </tr>
-  <!--GTY_F-->  
+  <!--GTY_F--><!--rename to remove clt but rename it in the image first before here-->  
   <tr>          
     <td rowspan="2"><img src="/armour_meshes/clt_body/gty_m_clt_bard_body_a.png" alt="gty_f_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">GTY_F_CLT_Bard_Body_A</td>
@@ -213,7 +213,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--GNO_M-->
+  <!--GNO_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="2"><img src="/armour_meshes/clt_body/gno_m_clt_bard_body_a.png" alt="gno_m_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">GNO_M_CLT_Bard_Body_A</td>
@@ -224,7 +224,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   <tr>
     <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
   </tr>
-  <!--GNO_F-->  
+  <!--GNO_F--><!--rename to remove clt but rename it in the image first before here-->  
   <tr>          
     <td rowspan="2"><img src="/armour_meshes/clt_body/gno_m_clt_bard_body_a.png" alt="gno_f_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">GNO_F_CLT_Bard_Body_A</td>
@@ -250,7 +250,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--HFL_M-->
+  <!--HFL_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="2"><img src="/armour_meshes/clt_body/hfl_m_clt_bard_body_a.png" alt="hfl_m_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">HFL_M_CLT_Bard_Body_A</td>
@@ -261,7 +261,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   <tr>
     <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
   </tr>
-  <!--HFL_F-->  
+  <!--HFL_F--> <!--rename to remove clt but rename it in the image first before here--> 
   <tr>          
     <td rowspan="2"><img src="/armour_meshes/clt_body/hfl_m_clt_bard_body_a.png" alt="hfl_f_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">HFL_F_CLT_Bard_Body_A</td>
@@ -287,7 +287,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--HRC_M-->
+  <!--HRC_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="2"><img src="/armour_meshes/clt_body/hrc_m_clt_bard_body_a.png" alt="hrc_m_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">HRC_M_CLT_Bard_Body_A</td>
@@ -298,7 +298,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   <tr>
     <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
   </tr>
-  <!--HRC_F-->  
+  <!--HRC_F--><!--rename to remove clt but rename it in the image first before here-->  
   <tr>          
     <td rowspan="2"><img src="/armour_meshes/clt_body/hrc_m_clt_bard_body_a.png" alt="hrc_f_clt_camp_citizen_shirt_b.png"/></td>
     <td rowspan="2">HRC_F_CLT_Bard_Body_A</td>
@@ -401,7 +401,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   <!--DGB_M-->
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>DGB_M_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -409,7 +409,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--DGB_F-->  
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>DGB_F_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -430,7 +430,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   <!--DWR_M-->
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>DWR_M_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -460,7 +460,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   <!--GTY_M-->
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>GTY_M_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -468,7 +468,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--GTY_F-->  
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>GTY_F_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -490,7 +490,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   <!--GNO_M-->
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>GNO_M_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -498,7 +498,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--GNO_F-->  
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>GNO_F_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -520,7 +520,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   <!--HFL_M-->
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>HFL_M_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -528,7 +528,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--HFL_F-->  
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>HFL_F_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -550,7 +550,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   <!--HRC_M-->
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/hum_m_clt_camp_citizen_shirt_b.png" alt="hum_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>HRC_M_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -558,7 +558,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--HRC_F-->  
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>HRC_F_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -580,7 +580,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   <!--SKEL_GTY_M-->
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/skel_hum_m_clt_camp_citizen_shirt_b.png" alt="skel_hum_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>SKEL_GTY_M_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -736,7 +736,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
         
-  <!--DGB_M-->
+  <!--DGB_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="3"><img src="/armour_meshes/clt_body/dgb_f_clt_camp_deva_a_body_a.png" alt="dgb_f_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="3">DGB_M_CLT_Camp_Deva_A_Body_A</td>
@@ -759,7 +759,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <td>77f48081-3725-0fa5-c151-a1281853a1c0</td>
   </tr>
   
-  <!--DGB_F-->
+  <!--DGB_F--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="3"><img src="/armour_meshes/clt_body/dgb_f_clt_camp_deva_a_body_a.png" alt="dgb_f_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="3">DGB_F_CLT_Camp_Deva_A_Body_A</td>
@@ -796,7 +796,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
     
-  <!--DWR_M-->
+  <!--DWR_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="3"><img src="/armour_meshes/clt_body/dwr_m_clt_camp_deva_a_body_a.png" alt="dwr_m_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="3">DWR_M_CLT_Camp_Deva_A_Body_A</td>
@@ -821,7 +821,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   
   
-  <!--DWR_F-->
+  <!--DWR_F--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="4"><img src="/armour_meshes/clt_body/dwr_f_clt_camp_deva_a_body_a.png" alt="dwr_f_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="4">DWR_F_CLT_Camp_Deva_A_Body_A</td>
@@ -863,7 +863,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
     
-  <!--GTY_M-->
+  <!--GTY_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="3"><img src="/armour_meshes/clt_body/gty_m_clt_camp_deva_a_body_a.png" alt="gty_m_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="3">GTY_M_CLT_Camp_Deva_A_Body_A</td>
@@ -888,7 +888,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   
   
-  <!--GTY_F-->
+  <!--GTY_F--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="4"><img src="/armour_meshes/clt_body/gty_f_clt_camp_deva_a_body_a.png" alt="gty_f_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="4">GTY_F_CLT_Camp_Deva_A_Body_A</td>
@@ -930,7 +930,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
     
-  <!--GNO_M-->
+  <!--GNO_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="3"><img src="/armour_meshes/clt_body/gno_m_clt_camp_deva_a_body_a.png" alt="gno_m_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="3">GNO_M_CLT_Camp_Deva_A_Body_A</td>
@@ -955,7 +955,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   
   
-  <!--GNO_F-->
+  <!--GNO_F--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="4"><img src="/armour_meshes/clt_body/gno_f_clt_camp_deva_a_body_a.png" alt="gno_f_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="4">GNO_F_CLT_Camp_Deva_A_Body_A</td>
@@ -997,7 +997,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
     
-  <!--HFL_M-->
+  <!--HFL_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="3"><img src="/armour_meshes/clt_body/hfl_m_clt_camp_deva_a_body_a.png" alt="hfl_m_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="3">HFL_M_CLT_Camp_Deva_A_Body_A</td>
@@ -1022,7 +1022,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   
   
-  <!--HFL_F-->
+  <!--HFL_F--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="4"><img src="/armour_meshes/clt_body/hfl_f_clt_camp_deva_a_body_a.png" alt="hfl_f_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="4">HFL_F_CLT_Camp_Deva_A_Body_A</td>
@@ -1064,7 +1064,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
     
-  <!--HRC_M-->
+  <!--HRC_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="3"><img src="/armour_meshes/clt_body/hrc_m_clt_camp_deva_a_body_a.png" alt="hrc_m_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="3">HRC_M_CLT_Camp_Deva_A_Body_A</td>
@@ -1089,7 +1089,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   
   
-  <!--HRC_F-->
+  <!--HRC_F--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td rowspan="4"><img src="/armour_meshes/clt_body/dwr_f_clt_camp_deva_a_body_a.png" alt="dwr_f_clt_camp_deva_a_body_a.png"/></td>
     <td rowspan="4">HRC_F_CLT_Camp_Deva_A_Body_A</td>
@@ -3460,7 +3460,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--HUM_F-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/humf_shirt_a.png" alt="humf_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/humf_shirt_a.png" alt="_f_clt_shirt_a.png"/></td>
     <td>HUM_F_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
@@ -3476,7 +3476,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--HUM_FS--> 
   <tr>          
-    <td><img src="/armour_meshes/clt_body/humfs_shirt_a.png" alt="humfs_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/humfs_shirt_a.png" alt="_fs_clt_shirt_a.png"/></td>
     <td>HUM_FS_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
@@ -3498,7 +3498,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   <!--DGB_M-->
   <tr>          
-    <td><img src="/armour_meshes/clt_body/dgb_m_clt_shirt_a.png" alt="dgb_m_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/dgb_m_shirt_a.png" alt="dgb_m_clt_shirt_a.png"/></td>
     <td>DGB_M_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
@@ -3506,7 +3506,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--DGB_F-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/dgb_f_clt_shirt_a.png" alt="dgb_f_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/dgb_f_shirt_a.png" alt="dgb_f_clt_shirt_a.png"/></td>
     <td>DGB_F_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
@@ -3525,17 +3525,17 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--DWR_M-->
+  <!--DWR_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
-    <td><img src="/armour_meshes/clt_body/dwr_m_clt_shirt_a.png" alt="dwr_m_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/rename_m_clt_shirt_a.png" alt="dwr_m_clt_shirt_a.png"/></td>
     <td>WRF_M_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
     <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
   </tr>
-  <!--DWR_F-->  
+  <!--DWR_F--><!--rename to remove clt but rename it in the image first before here-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/dwr_f_clt_shirt_a.png" alt="dwr_f_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/_f_clt_shirt_a.png" alt="dwr_f_clt_shirt_a.png"/></td>
     <td>DWR_F_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
@@ -3554,17 +3554,17 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--GTY_M-->
+  <!--GTY_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
-    <td><img src="/armour_meshes/clt_body/gty_m_clt_shirt_a.png" alt="gty_m_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_shirt_a.png" alt="gty_m_clt_shirt_a.png"/></td>
     <td>GTY_M_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
     <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
   </tr>
-  <!--GTY_F-->  
+  <!--GTY_F--><!--rename to remove clt but rename it in the image first before here-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/gty_f_clt_shirt_a.png" alt="gty_f_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/_f_clt_shirt_a.png" alt="gty_f_clt_shirt_a.png"/></td>
     <td>GTY_F_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
@@ -3583,17 +3583,17 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--GNO_M-->
+  <!--GNO_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
-    <td><img src="/armour_meshes/clt_body/gno_m_clt_shirt_a.png" alt="gno_m_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_shirt_a.png" alt="gno_m_clt_shirt_a.png"/></td>
     <td>GNO_M_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
     <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
   </tr>
-  <!--GNO_F-->  
+  <!--GNO_F--><!--rename to remove clt but rename it in the image first before here-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/hum_f_clt_shirt_a.png" alt="hum_f_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/_f_clt_shirt_a.png" alt="hum_f_clt_shirt_a.png"/></td>
     <td>GNO_F_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
@@ -3612,17 +3612,17 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--HFL_M-->
+  <!--HFL_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
-    <td><img src="/armour_meshes/clt_body/hfl_m_clt_shirt_a.png" alt="hfl_m_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_shirt_a.png" alt="hfl_m_clt_shirt_a.png"/></td>
     <td>HUM_M_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
     <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
   </tr>
-  <!--HFL_F-->  
+  <!--HFL_F--><!--rename to remove clt but rename it in the image first before here-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/hfl_f_clt_shirt_a.png" alt="hfl_f_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/_f_clt_shirt_a.png" alt="hfl_f_clt_shirt_a.png"/></td>
     <td>HUM_F_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
@@ -3641,7 +3641,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--HRC_M-->
+  <!--HRC_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td><img src="/armour_meshes/clt_body/hrc_m_clt_shirt_a.png" alt="hrc_m_clt_shirt_a.png"/></td>
     <td>HRC_M_CLT_Shirt_A</td>
@@ -3649,7 +3649,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <td>CLT_Shirt_A_Mesh</td>
     <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
   </tr>
-  <!--HRC_F-->  
+  <!--HRC_F--><!--rename to remove clt but rename it in the image first before here-->  
   <tr>          
     <td><img src="/armour_meshes/clt_body/hrc_f_clt_shirt_a.png" alt="hrc_f_clt_shirt_a.png"/></td>
     <td>HRC_F_CLT_Shirt_A</td>
@@ -3670,7 +3670,7 @@ Make sure to add the class to any page you wish to have function this way. Style
     <th>Material ID</th>
 	</thead>
 
-  <!--CHD_HUM_M-->
+  <!--CHD_HUM_M--><!--rename to remove clt but rename it in the image first before here-->
   <tr>          
     <td><img src="/armour_meshes/clt_body/chd_hum_m_clt_shirt_a.png" alt="chd_hum_m_clt_shirt_a.png"/></td>
     <td>CHD_HUM_M_CLT_Shirt_A</td>
@@ -3678,9 +3678,9 @@ Make sure to add the class to any page you wish to have function this way. Style
     <td>CLT_Shirt_A_Mesh</td>
     <td>f028eb0c-03a3-e6ec-b341-bb415395fcb0</td>
   </tr>
-  <!--ZOM_HUM_M-->  
+  <!--ZOM_HUM_M-->  <!--rename to remove clt but rename it in the image first before here-->
   <tr>          
-    <td><img src="/armour_meshes/clt_body/zom_hum_m_clt_shirt_a.png" alt="zom_hum_m_clt_shirt_a.png"/></td>
+    <td><img src="/armour_meshes/clt_body/chd_hum_m_clt_shirt_a.png" alt="zom_hum_m_clt_shirt_a.png"/></td>
     <td>ZOM_HUM_M_CLT_Shirt_A</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Shirt_A_Mesh</td>
