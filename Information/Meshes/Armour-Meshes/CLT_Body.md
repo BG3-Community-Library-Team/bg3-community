@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T02:10:13.773Z
+date: 2024-07-03T02:25:33.583Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -37,6 +37,76 @@ Make sure to add the class to any page you wish to have function this way. Style
 <div class="meshPage">
     
 ## CLT_Bard_Body_A
+  
+### {.tabset}
+  #### HUM<!--CLT_Bard_Body_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HUM_M-->
+  <tr>          
+    <td rowspan="2"><img src="/armour_meshes/clt_body/hum_m_clt_bard_body_a.png" alt="hum_m_clt_camp_citizen_shirt_b.png"/></td>
+    <td rowspan="2">HUM_M_CLT_Bard_Body_A</td>
+    <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
+    <td rowspan="2">CLT_Bard_Body_A_Mesh</td>
+    <td>215f424d-180b-c1ff-5141-7f6f5f57ea23</td>
+  </tr>
+  <tr>
+    <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
+  </tr>
+  <!--HUM_F-->  
+  <tr>          
+    <td rowspan="2"><img src="/armour_meshes/clt_body/hum_m_clt_bard_body_a.png" alt="hum_f_clt_camp_citizen_shirt_b.png"/></td>
+    <td rowspan="2">HUM_F_CLT_Bard_Body_A</td>
+    <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
+    <td rowspan="2">CLT_Bard_Body_A_Mesh</td>
+    <td>215f424d-180b-c1ff-5141-7f6f5f57ea23</td>
+  </tr>
+  <tr>
+    <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
+  </tr>
+  <!--HUM_MS-->  
+  <tr>          
+    <td rowspan="2"><img src="/armour_meshes/clt_body/hum_ms_clt_bard_body_a.png" alt="hum_ms_clt_bard_body_a.png"/></td>
+    <td rowspan="2">HUM_MS_CLT_Bard_Body_A</td>
+    <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
+    <td rowspan="2">CLT_Bard_Body_A_Mesh</td>
+    <td >215f424d-180b-c1ff-5141-7f6f5f57ea23</td>
+  </tr>
+  <tr>
+    <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
+  </tr>
+  <!--HUM_FS--> 
+  <tr>          
+    <td rowspan="2"><img src="/armour_meshes/clt_body/hum_m_clt_bard_body_a.png" alt="hum_fs_clt_bard_body_a.png"/></td>
+    <td rowspan="2">HUM_FS_CLT_Bard_Body_A</td>
+    <td rowspan="2">00000000-0000-0000-0000-000000000000</td>
+    <td rowspan="2">CLT_Bard_Body_A_Mesh</td>
+    <td>215f424d-180b-c1ff-5141-7f6f5f57ea23</td>
+  </tr>
+  <tr>
+    <td>fde94c54-aba1-12bb-469d-d2aa4a36af34</td>
+  </tr>
+    
+</table>
+  
+  #### DGB<!--CLT_Bard_Body_A-->
+  
+  #### DWR<!--CLT_Bard_Body_A-->
+  
+  #### GTY <!--CLT_Bard_Body_A-->
+  
+  #### GNO<!--CLT_Bard_Body_A-->
+  
+  #### HFL<!--CLT_Bard_Body_A-->
+ 
 
 ### {-}
 
@@ -47,6 +117,19 @@ Make sure to add the class to any page you wish to have function this way. Style
 ## CLT_Blacksmith_Body
 
 ### {-}
+  
+  ### {.tabset}
+  #### HUM
+  
+  #### DGB
+  
+  #### DWR
+  
+  #### GTY 
+  
+  #### GNO
+  
+  #### HFL
 
 <br>
 
