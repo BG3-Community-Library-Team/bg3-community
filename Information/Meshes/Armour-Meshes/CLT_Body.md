@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T17:41:46.433Z
+date: 2024-07-03T17:49:07.187Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -1146,43 +1146,184 @@ Make sure to add the class to any page you wish to have function this way. Style
   <!--HUM_M-->
   <tr>          
     <td></td>
+    <td>_M_CLT_Camp_Halsin_Body</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>1a714355-d9b1-7900-5bb2-c6096f42294b</td>
   </tr>
   <!--HUM_F-->  
   <tr>          
     <td></td>
+    <td>_F_CLT_Camp_Halsin_Body</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>d0e513ed-a0d1-5b2d-87f6-af43f0c933c8</td>
   </tr>
   <!--HUM_MS-->  
   <tr>          
     <td></td>
+    <td>HUM_MS_CLT_Camp_Halsin_Body</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>1a714355-d9b1-7900-5bb2-c6096f42294b</td>
   </tr>
   <!--HUM_FS--> 
   <tr>          
     <td></td>
+    <td>HUM_FS_CLT_Camp_Halsin_Body</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>d0e513ed-a0d1-5b2d-87f6-af43f0c933c8</td>
   </tr>
     
 </table>
 
 #### DGB<!--CLT_Camp_Halsin_Body-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--DGB_M-->
+  <tr>          
+    <td></td>
+    <td>DGB_M_CLT_Camp_Halsin_Body</td>
+    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>1a714355-d9b1-7900-5bb2-c6096f42294b</td>
+  </tr>
+  <!--DGB_F-->  
+  <tr>          
+    <td></td>
+    <td>DGB_F_CLT_Camp_Halsin_Body</td>
+    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>d0e513ed-a0d1-5b2d-87f6-af43f0c933c8</td>
+  </tr>
+</table>
+  
 #### DWR<!--CLT_Camp_Halsin_Body-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--DWR_M-->
+  <tr>          
+    <td></td>
+    <td>DWR_M_CLT_Camp_Halsin_Body</td>
+    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>1a714355-d9b1-7900-5bb2-c6096f42294b</td>
+  </tr>
+  <!--DWR_F-->  
+  <tr>          
+    <td></td>
+    <td>DWR_F_CLT_Camp_Halsin_Body</td>
+    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>d0e513ed-a0d1-5b2d-87f6-af43f0c933c8</td>
+  </tr>
+</table>
+  
+
 #### GTY<!--CLT_Camp_Halsin_Body-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--GTY_M-->
+  <tr>          
+    <td></td>
+    <td>_M_CLT_Camp_Halsin_Body</td>
+    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>1a714355-d9b1-7900-5bb2-c6096f42294b</td>
+  </tr>
+  <!--GTY_HUM_F-->  
+  <tr>          
+    <td></td>
+    <td>_F_CLT_Camp_Halsin_Body</td>
+    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>d0e513ed-a0d1-5b2d-87f6-af43f0c933c8</td>
+  </tr>
+</table>
+  
 #### GNO<!--CLT_Camp_Halsin_Body-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--GNO_M-->
+  <tr>          
+    <td></td>
+    <td>GNO_M_CLT_Camp_Halsin_Body</td>
+    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>1a714355-d9b1-7900-5bb2-c6096f42294b</td>
+  </tr>
+  <!--GNO_F-->  
+  <tr>          
+    <td></td>
+    <td>GNO_F_CLT_Camp_Halsin_Body</td>
+    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>d0e513ed-a0d1-5b2d-87f6-af43f0c933c8</td>
+  </tr>
+</table>
+  
 #### HFL<!--CLT_Camp_Halsin_Body-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HFL_M-->
+  <tr>          
+    <td></td>
+    <td>HFL_M_CLT_Camp_Halsin_Body</td>
+    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>1a714355-d9b1-7900-5bb2-c6096f42294b</td>
+  </tr>
+  <!--HFL_F-->  
+  <tr>          
+    <td></td>
+    <td>HFL_F_CLT_Camp_Halsin_Body</td>
+    <td></td>
+    <td>CLT_Camp_Halsin_Body_Mesh</td>
+    <td>d0e513ed-a0d1-5b2d-87f6-af43f0c933c8</td>
+  </tr>
+</table>
+  
 
 ### {-}
 
