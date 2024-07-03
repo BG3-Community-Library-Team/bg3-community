@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T17:49:34.609Z
+date: 2024-07-03T17:54:25.755Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -1350,47 +1350,182 @@ Make sure to add the class to any page you wish to have function this way. Style
   <!--HUM_M-->
   <tr>          
     <td></td>
+    <td>HUM_M_CLT_Camp_Jaheira_Body_A</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>b1953980-0bc8-3890-b0e0-dbbc5ad91153</td>
   </tr>
   <!--HUM_F-->  
   <tr>          
     <td></td>
+    <td>HUM_F_CLT_Camp_Jaheira_Body_A</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>ea015dd8-a5e4-06f1-c7a2-ac7bbe605845</td>
   </tr>
   <!--HUM_MS-->  
   <tr>          
     <td></td>
+    <td>HUM_MS_CLT_Camp_Jaheira_Body_A</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>b1953980-0bc8-3890-b0e0-dbbc5ad91153</td>
   </tr>
   <!--HUM_FS--> 
   <tr>          
     <td></td>
+    <td>HUM_FS_CLT_Camp_Jaheira_Body_A</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>ea015dd8-a5e4-06f1-c7a2-ac7bbe605845</td>
   </tr>
     
 </table>
 
 #### DGB<!--CLT_Camp_Jaheira_Body_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--DGB_M-->
+  <tr>          
+    <td></td>
+    <td>DGB_M_CLT_Camp_Jaheira_Body_A</td>
+    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>b1953980-0bc8-3890-b0e0-dbbc5ad91153</td>
+  </tr>
+  <!--DGB_F-->  
+  <tr>          
+    <td></td>
+    <td>DGB_F_CLT_Camp_Jaheira_Body_A</td>
+    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>ea015dd8-a5e4-06f1-c7a2-ac7bbe605845</td>
+  </tr>
+</table>
   
 #### DWR<!--CLT_Camp_Jaheira_Body_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--DWR_M-->
+  <tr>          
+    <td></td>
+    <td>DWR_M_CLT_Camp_Jaheira_Body_A</td>
+    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>b1953980-0bc8-3890-b0e0-dbbc5ad91153</td>
+  </tr>
+  <!--DWR_F-->  
+  <tr>          
+    <td></td>
+    <td>DWR_F_CLT_Camp_Jaheira_Body_A</td>
+    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>ea015dd8-a5e4-06f1-c7a2-ac7bbe605845</td>
+  </tr>
+</table>
   
 #### GTY<!--CLT_Camp_Jaheira_Body_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--GTY_M-->
+  <tr>          
+    <td></td>
+    <td>GTY_M_CLT_Camp_Jaheira_Body_A</td>
+    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>b1953980-0bc8-3890-b0e0-dbbc5ad91153</td>
+  </tr>
+  <!--GTY_F-->  
+  <tr>          
+    <td></td>
+    <td>GTY_F_CLT_Camp_Jaheira_Body_A</td>
+    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>ea015dd8-a5e4-06f1-c7a2-ac7bbe605845</td>
+  </tr>
+</table>
   
 #### GNO<!--CLT_Camp_Jaheira_Body_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--GNO_M-->
+  <tr>          
+    <td></td>
+    <td>GNO_M_CLT_Camp_Jaheira_Body_A</td>
+    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>b1953980-0bc8-3890-b0e0-dbbc5ad91153</td>
+  </tr>
+  <!--GNO_F-->  
+  <tr>          
+    <td></td>
+    <td>GNO_F_CLT_Camp_Jaheira_Body_A</td>
+    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>ea015dd8-a5e4-06f1-c7a2-ac7bbe605845</td>
+  </tr>
+</table>
   
 #### HFL<!--CLT_Camp_Jaheira_Body_A-->
+<table> 
+      
+  <thead>
+    <th>Image</th>
+    <th>File Name</th>
+    <th>Mesh UUID</th>
+    <th>Sub-Meshes</th>
+    <th>Material ID</th>
+	</thead>
+
+  <!--HFL_M-->
+  <tr>          
+    <td></td>
+    <td>HFL_M_CLT_Camp_Jaheira_Body_A</td>
+    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>b1953980-0bc8-3890-b0e0-dbbc5ad91153</td>
+  </tr>
+  <!--HFL_F-->  
+  <tr>          
+    <td></td>
+    <td>HFL_F_CLT_Camp_Jaheira_Body_A</td>
+    <td></td>
+    <td>CLT_Camp_Jaheira_Body_A_Mesh</td>
+    <td>ea015dd8-a5e4-06f1-c7a2-ac7bbe605845</td>
+  </tr>
+</table>
 
 ### {-}
 
