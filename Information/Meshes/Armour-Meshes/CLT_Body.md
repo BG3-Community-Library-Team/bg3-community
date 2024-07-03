@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T17:39:21.925Z
+date: 2024-07-03T17:41:46.433Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -438,7 +438,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--DWR_F-->  
   <tr>          
-    <td></td>
+    <td><img src="/armour_meshes/clt_body/_f_clt_camp_citizen_shirt_b.png" alt="_f_clt_camp_citizen_shirt_b.png"/></td>
     <td>DWR_F_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -468,7 +468,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--GTY_F-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
+    <td><img src="/armour_meshes/clt_body/_f_clt_camp_citizen_shirt_b.png" alt="_f_clt_camp_citizen_shirt_b.png"/></td>
     <td>GTY_F_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -498,7 +498,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--GNO_F-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
+    <td><img src="/armour_meshes/clt_body/_f_clt_camp_citizen_shirt_b.png" alt="_f_clt_camp_citizen_shirt_b.png"/></td>
     <td>GNO_F_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -528,7 +528,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--HFL_F-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
+    <td><img src="/armour_meshes/clt_body/_f_clt_camp_citizen_shirt_b.png" alt="_f_clt_camp_citizen_shirt_b.png"/></td>
     <td>HFL_F_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -550,7 +550,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   <!--HRC_M-->
   <tr>          
-    <td><img src="/armour_meshes/clt_body/hum_m_clt_camp_citizen_shirt_b.png" alt="hum_m_clt_camp_citizen_shirt_b.png"/></td>
+    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>HRC_M_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -558,7 +558,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--HRC_F-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
+    <td><img src="/armour_meshes/clt_body/_f_clt_camp_citizen_shirt_b.png" alt="_f_clt_camp_citizen_shirt_b.png"/></td>
     <td>HRC_F_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
