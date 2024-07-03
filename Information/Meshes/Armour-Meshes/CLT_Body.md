@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T18:03:57.598Z
+date: 2024-07-03T18:06:49.080Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -319,6 +319,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
 
 ## CLT_Blacksmith_Body
+### {.tabset}
 
 ### {-}
   
