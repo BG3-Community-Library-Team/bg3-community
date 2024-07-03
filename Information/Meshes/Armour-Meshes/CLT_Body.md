@@ -2,7 +2,7 @@
 title: Clothing - Body
 description: Mesh files for non-armour clothing
 published: false
-date: 2024-07-03T17:33:16.106Z
+date: 2024-07-03T17:39:21.925Z
 tags: meshes, clothing, camp clothes
 editor: markdown
 dateCreated: 2024-06-18T04:48:47.326Z
@@ -401,7 +401,7 @@ Make sure to add the class to any page you wish to have function this way. Style
 
   <!--DGB_M-->
   <tr>          
-    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
+    <td><img src="/armour_meshes/clt_body/dgb_m_clt_camp_citizen_shirt_b.png" alt="dgb_m_clt_camp_citizen_shirt_b.png"/></td>
     <td>DGB_M_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
@@ -409,7 +409,7 @@ Make sure to add the class to any page you wish to have function this way. Style
   </tr>
   <!--DGB_F-->  
   <tr>          
-    <td><img src="/armour_meshes/clt_body/_m_clt_camp_citizen_shirt_b.png" alt="_m_clt_camp_citizen_shirt_b.png"/></td>
+    <td><img src="/armour_meshes/clt_body/dgb_f_clt_camp_citizen_shirt_b.png" alt="dgb_f_clt_camp_citizen_shirt_b.png"/></td>
     <td>DGB_F_CLT_Camp_Citizen_Shirt_B</td>
     <td>00000000-0000-0000-0000-000000000000</td>
     <td>CLT_Camp_Citizen_Shirt_B_Mesh</td>
