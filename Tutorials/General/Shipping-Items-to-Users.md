@@ -2,7 +2,7 @@
 title: Shipping Items to Users
 description: This tutorial will teach you how to ship both vanilla, and modded items using the four main methods of item distribution.
 published: true
-date: 2024-07-04T13:52:47.207Z
+date: 2024-07-04T13:56:20.451Z
 tags: tutorial, guide, tutorial chest, item shipment framework, treasuretables, treasure tables, isf, vendor, shop, items, console command, templateaddto, add items, ship items, merchant inventories, vendor inventories, shop inventories, merchant
 editor: markdown
 dateCreated: 2024-04-30T09:43:22.722Z
@@ -79,7 +79,7 @@ This guide will show you how to create a Treasure Table, and place items into th
 > * It is a requirement to use a tutorial chest summoning mod if you wish to get an item from it after the tutorial.
 > * If too many mods that use the Tutorial Chest are installed, the chest will become cluttered and hard to sort through.
 > * There is no granularity or customization in the way you can utilize the Tutorial Chest, such as choosing when an item will spawn, or if there will be a cost to acquire the item.
-> * If a user wishes to have multiple of an item found in the chest, authors must include multiple of the same item. Else users will have to use a tutorial chest summoning mod to duplicate the chest.
+> * If a user wishes to have multiple of an item found in the chest, authors must include multiple of the same item. Else users will have to use a tutorial chest summoning mod or the Item Shipment Framework to duplicate/refresh the chest.
 <!-- {blockquote:.is-danger} -->
 
 ### Getting Started
