@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-02T04:23:42.212Z
+date: 2024-07-05T13:08:50.021Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -34,7 +34,7 @@ This documentation is aimed at mod authors who want to integrate their mods with
 Below are listed some nice features that MCM provides to mod authors:
 > • ***Easy to use***: MCM provides a simple and intuitive way to define your mod's settings. Integrating MCM into your mod only requires creating a simple blueprint JSON file and replacing a few lines of code;
 >
-> • ***UI without writing client-side code***: MCM handles the UI for you, so you don't have to write any client-side code or learn the IMGUI API to display your mod's settings, since IMGUI is only available on the client-side.
+> • ***UI without writing client-side code***: MCM handles the UI for you, so you don't have to write any client-side code or learn the IMGUI API to display your mod's settings, since IMGUI is only available on the client side.
 >
 > • ***Simplifies settings management***: MCM takes care of saving and loading your mod's settings automatically, so you don't have to build an entire configuration system to manage JSON files. MCM has 8k+ lines of code so that ***you*** don't have to deal with that.
 >
