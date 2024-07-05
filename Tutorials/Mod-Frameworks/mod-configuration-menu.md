@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-05T13:14:12.156Z
+date: 2024-07-05T13:17:36.096Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -81,7 +81,7 @@ Mod authors need to integrate their mods with MCM for their settings to appear i
   2. Replace your mod's logic for reading/writing settings with calls to the MCM API, using settings' IDs as defined in the blueprint.
 
 > It's extremely recommended to define BG3MCM as a dependency in your `meta.lsx` file. This allows mod managers to ***ensure*** that MCM is loaded ***before** your own mod* - eliminating the need to instruct users to do so manually and avoiding incorrect reports/troubleshooting when they don't!
-> • [Example of listing dependencies in a meta.lsx file](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/46822bb0a8af4db524fd1ccb6f8a277724f5630c/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/meta.lsx#L7-L24 'Auto Send Food To Camp');
+> • [Example of listing two dependencies in a meta.lsx file, one being BG3MCM](https://github.com/AtilioA/BG3-mod-uninstaller/blob/main/Mod%20Uninstaller/Mods/ModUninstaller/meta.lsx#L7-L24 'Mod Uninstaller with two dependencies, one being BG3MCM');
 > • You can set dependencies and their minimum required versions. Always set the required version (`Version64`) of MCM to the version you're using during the development of your mod. 
 {.is-warning}
 
