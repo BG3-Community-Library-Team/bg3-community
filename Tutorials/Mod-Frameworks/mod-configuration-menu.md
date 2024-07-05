@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-05T13:14:00.744Z
+date: 2024-07-05T13:14:12.156Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -65,7 +65,7 @@ On top of it all, if you currently offer multiple mod versions with different co
 
 ## Concepts
 
-First, let's establish some concepts so that we're on the same page when discussing MCM. These will be used throughout the documentation:
+First, let's establish some important concepts so that we're on the same page when discussing MCM. These will be used throughout the documentation:
 
 >**Setting**: A **single configuration option** that can be set by the user.
 >**Config/Configuration/Settings**: All the possible settings; the **entire set of settings** for a mod.
