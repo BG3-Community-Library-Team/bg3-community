@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-05T14:36:34.897Z
+date: 2024-07-05T14:37:01.127Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -243,7 +243,7 @@ Here are some other events that can be listened to:
 	- `MCM_Server_Deleted_Profile`: Fired when a profile is deleted.
 - Other events:
 	- `MCM_Mod_Tab_Added`: Fired when a mod inserts a custom tab into the MCM UI.
-  - `MCM_Mod_Tab_Activated`: Fired when the user clicks a mod in the mod list inside MCM's window.
+  - `MCM_Mod_Tab_Activated`: Fired when the user clicks a mod in the mod list in MCM's left panel.
 
 > Always verify the `modGUID` in the payload to confirm that the event pertains to the mod of interest (typically your own, which you have global access to via `ModuleUUID`).
 {.is-warning}
