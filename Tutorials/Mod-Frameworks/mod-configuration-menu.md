@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-05T13:24:23.949Z
+date: 2024-07-05T13:28:42.990Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -98,7 +98,7 @@ The MCM Schema dictates how you should structure your blueprint file, and you ca
 
 This schema file can be used to **write and validate** your `MCM_blueprint.json` file, as it will help enforcing the intended structure of the MCM Schema in your blueprint file, ensuring that it is correctly formatted and adheres to the schema.
 
-**While not mandatory, it is highly recommended to set it up**. By adding this JSON schema entry to your settings in VSCode, for example, you can easily write and validate your blueprint files:
+**While not mandatory, it is highly recommended to set it up** in a code editor. By adding this JSON schema entry to your settings in VSCode, for example, you can easily write and validate your blueprint files:
 
 1. Press F1, type and select 'Open User Settings (JSON)'
 2. Copy the following and paste inside the main object of the JSON you just opened:
