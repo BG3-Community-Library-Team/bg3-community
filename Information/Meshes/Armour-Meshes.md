@@ -2,15 +2,15 @@
 title: Armour Meshes Reference
 description: A reference for all wearable meshes in the game
 published: true
-date: 2024-07-06T17:51:22.709Z
+date: 2024-07-06T18:25:28.734Z
 tags: reference, meshes, armor, armour
 editor: markdown
 dateCreated: 2024-06-17T23:33:06.802Z
 ---
 
 # Armour Mesh Reference
-## Description
-### Summary
+
+## Summary
 This is a collection of the wearable meshes in the game files, including some which are not utilised within the game itself. They are split between ARM (armour) and CLT (clothing). "Armour files" will be used here to refer to all ARM and CLT files.
 
 Armour files begin with an abbreviated race name and body type, followed by the type of equipment it is - for instance `HUM_M_ARM`.
@@ -18,7 +18,7 @@ Armour files begin with an abbreviated race name and body type, followed by the 
 > Sometimes an item within the game will use ARM files for a piece of camp clothing and vice versa. On rare occasions, neither ARM nor CLT will be used.
 {.is-info}
 
-### Glossary
+## Glossary
 - Mesh: Meshes are the models that make up all physical objects in the game, be they people, items, or buildings.
 - GR2: The file type used for meshes.
 - Sub-Mesh: The individual meshes within a GR2 file. Used to differentiate between the components within the file and the overall model.
