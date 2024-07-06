@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-03T16:49:32.585Z
+date: 2024-07-06T04:40:24.729Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -65,7 +65,9 @@ Optional: *Save Order As* to make sure you have a working order to go back to ju
 *DiceSet_06* and *Honor* in the Inactive Mods panel to the right are game files.
 Leave them all where they are and don't move them into the Active Mods panel.
 {.is-warning}
-6. 
+6. Make sure that Mod Fixer is installed.
+7. Save and export the load order to game.
+8. Start the game either directly through BG3MM or use your prefered method.
 
 #### MOD FIXER
 Mod fixer is still neccessary. If it isn't installed, character creation will not be available. Instead this lovely view will appear on screen:
