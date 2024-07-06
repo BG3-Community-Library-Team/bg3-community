@@ -2,13 +2,14 @@
 title: Armour Meshes Reference
 description: A reference for all wearable meshes in the game
 published: true
-date: 2024-07-06T17:49:53.929Z
+date: 2024-07-06T17:51:22.709Z
 tags: reference, meshes, armor, armour
 editor: markdown
 dateCreated: 2024-06-17T23:33:06.802Z
 ---
 
-# Description
+# Armour Mesh Reference
+## Description
 ### Summary
 This is a collection of the wearable meshes in the game files, including some which are not utilised within the game itself. They are split between ARM (armour) and CLT (clothing). "Armour files" will be used here to refer to all ARM and CLT files.
 
@@ -34,7 +35,7 @@ Armour files begin with an abbreviated race name and body type, followed by the 
 ## Pages
 
 ---
-## Armour (ARM)
+### Armour (ARM)
 - [Body, Clothing](ARM_Body-Clothing-)
 - [Body, Light](ARM_Body-Light-)
 - [Body, Medium](ARM_Body-Medium-)
@@ -42,7 +43,7 @@ Armour files begin with an abbreviated race name and body type, followed by the 
 - More...
 
 {.links-list}
-## Clothing (CLT)
+### Clothing (CLT)
 - [Body](CLT_Body)
 - [Pants](CLT_Pants-)
 - [Shoes](CLT_Accessories-)
