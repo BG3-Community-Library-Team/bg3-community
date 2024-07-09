@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-09T20:17:45.456Z
+date: 2024-07-09T20:18:19.606Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -298,9 +298,11 @@ This is achieved through the use of "handles" - unique identifiers that can be u
 > • If the handle is not found, the usual string will be used.
 {.is-info}
 
-The [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper) extension can help you with creating localization files and replacing strings with handles to be translated.
+The [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper) extension can help you create localization files and replace strings with handles to be translated.
 
 ### TODO: ported IMGUI icons
+
+--
 
 ## MCM demo
 
