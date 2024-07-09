@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-09T20:08:55.547Z
+date: 2024-07-09T20:12:10.874Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -83,14 +83,14 @@ Mod authors need to integrate their mods with MCM for their settings to appear i
 
 > It's extremely recommended to define BG3MCM as a dependency in your `meta.lsx` file. This allows mod managers to ***ensure*** that MCM is loaded ***before** your own mod* - eliminating the need to instruct users to do so manually and avoiding incorrect reports/troubleshooting when they don't!
 > • [Example for listing two dependencies in a meta.lsx file, one being BG3MCM](https://github.com/AtilioA/BG3-mod-uninstaller/blob/main/Mod%20Uninstaller/Mods/ModUninstaller/meta.lsx#L7-L24 'Mod Uninstaller with two dependencies, one being BG3MCM');
-> • You can set dependencies and their minimum required versions. It is also recommended to always set the required version (`Version64`) of MCM to the version you're using during the development of your mod. As modding evolves, mod managers might start to use these enforce correct dependencies.
+> • You can set dependencies and their minimum required versions. It is also recommended to always set the required version (`Version64`) of MCM to the version you're using during the development of your mod. As modding evolves, mod managers might start to use these to enforce correct dependencies.
 {.is-warning}
 
-The `MCM_blueprint.json` file is how you specify your mod's configuration definition; this JSON file will define how your settings are to be structured, what are their names, defaults, etc., allowing for automatic generation of a user-friendly interface and validation of user-set values.
+The `MCM_blueprint.json` file is how you specify your mod's configuration definition; this JSON file will define how your settings are to be structured, what are their name, input type, default, etc., allowing for automatic generation of a user-friendly interface and validation of user-set values.
 
 ### Defining a blueprint
 
-> **Recap**: a blueprint is a JSON file that defines the structure of your mod's configuration settings. It is used by MCM to generate the UI and validate the settings. It should be named `MCM_blueprint.json` and placed alongside your mod's `meta.lsx` file.
+> **Recap**: a blueprint is a JSON file that defines the structure of your mod's configuration settings. It is used by MCM to generate the UI and validate the settings for you. It should be named `MCM_blueprint.json` and placed alongside your mod's `meta.lsx` file.
 {.is-info}
 
 ### The MCM Schema
@@ -119,7 +119,7 @@ This schema file can be used to **write and validate** your `MCM_blueprint.json`
 
 \* Alternatively, you can replace the `url` value with the path to the schema JSON file (e.g., where you place IDEHelpers or Osi.lua files). However, only do so if you have problems with the URL above.
 
-You can also use a service like https://www.jsonschemavalidator.net/s/cV447mjH by pasting your blueprint in the right pane, but that can be cumbersome, and you'd have to paste the latest schema in the left to make sure you're not missing updates to it. Prefer the aforementioned method.
+You can also use a service like https://www.jsonschemavalidator.net/s/cV447mjH by pasting your blueprint in the right pane; however, that can be cumbersome, and you'd have to paste the latest schema in the left to make sure you're not missing updates to it. Prefer the aforementioned method.
 
 > Having the schema file set up in your IDE will help you write the blueprint file correctly, without having to guess the structure or wonder if you're missing something. A few minor features, such as `ModName` (to replace the string used for your mod's name) are only documented by the JSON schema.
 {.is-info}
