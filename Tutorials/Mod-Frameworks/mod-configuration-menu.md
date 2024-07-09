@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-09T20:07:54.856Z
+date: 2024-07-09T20:08:55.547Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -83,7 +83,7 @@ Mod authors need to integrate their mods with MCM for their settings to appear i
 
 > It's extremely recommended to define BG3MCM as a dependency in your `meta.lsx` file. This allows mod managers to ***ensure*** that MCM is loaded ***before** your own mod* - eliminating the need to instruct users to do so manually and avoiding incorrect reports/troubleshooting when they don't!
 > • [Example for listing two dependencies in a meta.lsx file, one being BG3MCM](https://github.com/AtilioA/BG3-mod-uninstaller/blob/main/Mod%20Uninstaller/Mods/ModUninstaller/meta.lsx#L7-L24 'Mod Uninstaller with two dependencies, one being BG3MCM');
-> • You can set dependencies and their minimum required versions. Always set the required version (`Version64`) of MCM to the version you're using during the development of your mod. 
+> • You can set dependencies and their minimum required versions. It is also recommended to always set the required version (`Version64`) of MCM to the version you're using during the development of your mod. As modding evolves, mod managers might start to use these enforce correct dependencies.
 {.is-warning}
 
 The `MCM_blueprint.json` file is how you specify your mod's configuration definition; this JSON file will define how your settings are to be structured, what are their names, defaults, etc., allowing for automatic generation of a user-friendly interface and validation of user-set values.
