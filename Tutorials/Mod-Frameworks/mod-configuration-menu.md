@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-09T20:12:10.874Z
+date: 2024-07-09T20:13:39.745Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -189,14 +189,15 @@ end)
 ```
 
 #### Reducing verbiage
-You can allow global usage of `MCMAPI` by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`. 
-Likewise, you can define a global function such as this early in your scripts:
+To avoid typing `Mods.BG3MCM.MCMAPI:GetSettingValue` and passing your mod's UUID every time you get/set a setting value, you can define a simple global function such as this early in your scripts:
 ```lua
 function MCMGet(settingID)
     return Mods.BG3MCM.MCMAPI:GetSettingValue(settingID, ModuleUUID)
 end
 -- Now, get values by calling MCMGet("setting_id")
 ```
+
+Likewise, you can allow global usage of `MCMAPI` by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`. 
 Otherwise, prepend `Mods.BG3MCM` to all API calls.
 
 
