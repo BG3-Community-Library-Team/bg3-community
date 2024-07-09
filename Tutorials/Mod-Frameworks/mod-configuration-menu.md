@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-09T20:14:56.451Z
+date: 2024-07-09T20:15:34.149Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -250,6 +250,8 @@ Here are some other events that can be listened to:
 
 > Always verify the `modGUID` in the payload to confirm that the event pertains to the mod of interest (typically your own, which you have global access to via `ModuleUUID`).
 {.is-warning}
+
+Note: this is a workaround while SE does not support mod event/communication.
 
 ### How validation works
 
