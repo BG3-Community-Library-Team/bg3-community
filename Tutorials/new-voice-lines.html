@@ -1,0 +1,23 @@
+<!--
+title: Adding New Voice Lines
+description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
+published: false
+date: 2024-07-09T21:40:21.205Z
+tags: 
+editor: ckeditor
+dateCreated: 2024-07-09T21:40:21.205Z
+-->
+
+<h1>Adding New Voice Lines</h1>
+<p>Hi! Welcome to another guide on dialogue files, made by yours truly, Milo Magnetuning. This guide will cover voice lines, how the game is able to reference them within dialogue files, and how to add new ones without overriding any existing ones!</p>
+<p>It turns out that voice lines function a bit differently than other sounds used by the game. Things like music, ambient noise, and sound effects are handled within a specific file type, Soundbank files, which use the file extension .bnk. These files can be made via the program <a href="https://www.audiokinetic.com/en/wwise/overview/">Wwise,</a> but making functional soundbank files does require matching the file structure BG3 uses for their own soundbank files. This also involves learning how to use Wwise itself, which I <i>will</i> be covering briefly as part of this guide, but only to convert your own audio files to the .wem format the game uses. I'll be honest, soundbank files are still a bit of a mystery to me!</p>
+<p>…Lucky for us, though, is that voice lines don't use these files.</p>
+<p>Instead, character voice lines are handled via these four files:</p>
+<ul>
+  <li>A character voicebank .lsf file</li>
+  <li>A .wem audio file</li>
+  <li>A .GR2 animation file for the character's gestures during the line</li>
+  <li>And a .ffxanim file for lipsyncing.</li>
+</ul>
+<p>All of these are referenced within the DialogBinary files via a text handle, which is also used to call to the captions in the localization files! This both means that you can find a specific line of dialogue you're looking for within a DialogBinary file by searching for the caption localization handle, and can also find the .wem, .GR2, and .ffxanim files belonging to a certain line of dialogue.</p>
+<p>…and this also means you can follow this format to add your own new dialogue to the game!</p>
