@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-09T20:04:57.974Z
+date: 2024-07-09T20:06:05.941Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -62,7 +62,7 @@ Below are listed some nice features that MCM provides to mod authors:
 > • ***Localization support***: MCM supports localizing mod settings, allowing you to optionally provide translations for different languages.
 {.is-success}
 
-On top of it all, if you currently offer multiple mod versions with different code to avoid dealing with the complexities of providing settings, you can simplify this by using a single version with MCM to introduce settings. This way, you can avoid creating and maintaining several different .pak releases for your mods.
+On top of it all, if you currently offer multiple mod versions with different code to avoid dealing with the complexities of providing settings, you can simplify this by using a single version with MCM to introduce settings. This approach allows you to avoid creating and maintaining several different .pak releases for your mods.
 
 ## Concepts
 
