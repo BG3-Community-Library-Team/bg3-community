@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-09T20:15:43.010Z
+date: 2024-07-09T20:17:32.552Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -270,7 +270,7 @@ MCM performs validation checks when:
 >• Settings not present in the blueprint will be removed from the settings JSON file;
 >• Invalid settings values will be replaced with their respective default value as specified in the blueprint;
 >• New settings are automatically introduced to the settings JSON file when new settings are added to the schema;
->Therefore, mod authors can safely add or remove settings from the blueprint without worrying about inconsistencies in the settings JSON file.
+> **Therefore, mod authors can safely add or remove settings from the blueprint without worrying about inconsistencies in the settings JSON file.**
 {.is-success}
 ### Localization support
 
@@ -297,6 +297,8 @@ This is achieved through the use of "handles" - unique identifiers that can be u
 > • If handles are provided and their content can be retrieved, the localized string will be used instead of the usual name/description/tooltip;
 > • If the handle is not found, the usual string will be used.
 {.is-info}
+
+The [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper) extension can help you creating localization files and replacing strings with handles to be translated.
 
 ### TODO: ported IMGUI icons
 
