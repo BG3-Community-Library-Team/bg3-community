@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-09T20:13:39.745Z
+date: 2024-07-09T20:14:48.528Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -215,6 +215,7 @@ end)
 ```
 
 > You can define an entire tab's content — not just a widget — and call the `InsertModMenuTab` function to insert it into the MCM window, inside the space dedicated for your mod.
+> • [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) is a mod that leverages the `InsertModMenuTab` method to add custom logic inside MCM.
 {.is-info}
 
 ### Listening to MCM events
