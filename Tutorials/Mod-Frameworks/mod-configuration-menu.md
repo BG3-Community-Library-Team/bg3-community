@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-05T14:37:01.127Z
+date: 2024-07-09T20:02:47.173Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -28,6 +28,7 @@ This documentation is aimed at mod authors who want to integrate their mods with
     - [How validation works](#how-validation-works)
     - [Localization support](#localization-support)
   - [MCM demo](#mcm-demo)
+  - [Closing words](#closing-words)
   
 ## Features for mod authors
 
@@ -299,3 +300,8 @@ This is achieved through the use of "handles" - unique identifiers that can be u
 
 The demo below showcases the different types of config options that can be used (all of them as of v1.5.0). The demo also shows how to insert custom UI elements into the menu and how to listen and react to MCM events:
 [MCM Demo.zip](/tutorials/frameworks/mcm/mcm_demo.zip)
+
+## Closing words
+I hope this documentation has provided you with a clear understanding of how to integrate MCM into your mod. If you have any suggestions or encountered any points of confusion or errors, no matter how small or mundane, please let me know on the Nexus page or Discord. I'm keen on ensuring MCM has excellent design and documentation.
+
+I'd like to thank the community again for their support and feedback, as well as the mod authors who have already integrated MCM into their mods. I hope MCM enhances your development experience and provides a better user experience for your users! It's been awesome to see what you've been building with it so far.
