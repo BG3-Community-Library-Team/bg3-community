@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-09T20:03:58.535Z
+date: 2024-07-09T20:04:57.974Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -49,7 +49,7 @@ Below are listed some nice features that MCM provides to mod authors:
 >
 > • **Cross-mod settings access**: The unified config approach promoted by MCM allows for straightforward access to settings from other mods, as arbitrary implementations are mostly eliminated, facilitating compatibility and interoperability.
 >
-> • ***Doesn't clutter UI***: MCM centralizes settings for all mods that use it, so you don't have to worry about cluttering players' screens with yet another IMGUI window, thinking when should it initialize, activate, or even about keybindings - and possible conflicts thereof - for  showing such windows. Users will have a familiar (Noesis) button in the ESC menu (later also the main menu) for opening MCM.
+> • ***Doesn't clutter UI***: MCM centralizes settings for all mods that use it, so you don't have to worry about cluttering players' screens with yet another IMGUI window, thinking when should it initialize, activate, or even about keybindings - and possible conflicts thereof - for  showing such windows. Users will have a familiar (Noesis) button in the ESC menu (main menu is planned) for opening MCM.
 > • Furthermore, you can conditionally hide elements of your configuration based on settings' values with `VisibleIf` entries.
 >
 > • ***Robustness***: MCM has more than 40 automated server-side tests aiming to ensure that it works as expected, edge cases are handled, and errors are gracefully reported without halting the framework or game; errors from one mod won't affect the others.
