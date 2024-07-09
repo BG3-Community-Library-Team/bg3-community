@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-09T20:06:05.941Z
+date: 2024-07-09T20:07:11.531Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -70,8 +70,8 @@ First, let's establish some important concepts so that we're on the same page wh
 
 >**Setting**: A **single configuration option** that can be set by the user.
 >**Config/Configuration/Settings**: All the possible settings; the **entire set of settings** for a mod.
->**Blueprint**: Defines the **structure of a mod's configuration for MCM** to use (with a `MCM_blueprint.json` file).
->**MCM Schema**: Dictates the **structure of the blueprint**/configuration definition; the 'metaschema'.
+>**Blueprint**: Defines the **structure of a mod's configuration for MCM** to use (with a `MCM_blueprint.json` file), written by you.
+>**MCM Schema**: Dictates the **structure of the blueprint**; is the 'metaschema', defined by MCM.
 {.is-info}
 
 ## Integrating MCM into your mod
