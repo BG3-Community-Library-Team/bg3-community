@@ -2,7 +2,7 @@
 title: Adding New Voice Lines
 description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
 published: false
-date: 2024-07-09T22:25:13.108Z
+date: 2024-07-10T05:07:03.843Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-07-09T21:40:21.205Z
@@ -10,7 +10,7 @@ dateCreated: 2024-07-09T21:40:21.205Z
 
 <h1>Adding New Voice Lines</h1>
 <p>Hi! Welcome to another guide on dialogue files, made by yours truly, Milo Magnetuning. This guide will cover voice lines, how the game is able to reference them within dialogue files, and how to add new ones without overriding any existing ones!</p>
-<p>One thing to note before we start, though—in making this tutorial, I do ask that you respect the wishes and work of voice actors, and <i>don't</i> use AI voices for your mods! I'll actually be covering voice acting, audio recording, and audio editing within this guide shortly. My own ultimate goal for this is actually to add new voiced characters using original voice acting, and restoring some cut early access content, but I can imagine this technique will also be helpful for adding voice lines for tavs/durges, adding cameos from the voice actors (with permission!), including your own edits of existing lines, and so on!<br><br>The sky's almost the limit, but don't be rude.<br><br>You don't need to disrespect other peoples' work, and consume an unconscionable amount of electricity as our planet burns to make voice mods for this game.</p>
+<p>One thing to note before we start, though—in making this tutorial, I do ask that you respect the wishes and work of voice actors, and <i>don't</i> use AI voices for your mods! I'll actually be covering voice acting, audio recording, and audio editing within this guide shortly. My own ultimate goal for this is actually to add new voiced characters using original voice acting, and restoring some cut early access content, but I can imagine this technique will also be helpful for adding voice lines for tavs/durges, adding cameos from the voice actors (with permission!), including your own edits of existing lines, and so on!<br><br>The sky's almost the limit, but don't be rude.<br>&nbsp;</p>
 <p>It turns out that voice lines function a bit differently than other sounds used by the game. Things like music, ambient noise, and sound effects are handled within a specific file type, Soundbank files, which use the file extension .bnk. These files can be made via the program <a href="https://www.audiokinetic.com/en/wwise/overview/">Wwise,</a> but making functional soundbank files does require matching the file structure BG3 uses for their own soundbank files. This also involves learning how to use Wwise itself, which I <i>will</i> be covering briefly as part of this guide, but only to convert your own audio files to the .wem format the game uses. I'll be honest, soundbank files are still a bit of a mystery to me!</p>
 <p>…Lucky for us, though, is that voice lines don't use these files.</p>
 <p>Instead, character voice lines are handled via these four files:</p>
