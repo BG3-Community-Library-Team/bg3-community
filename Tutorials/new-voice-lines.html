@@ -2,7 +2,7 @@
 title: Adding New Voice Lines
 description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
 published: false
-date: 2024-07-10T05:07:03.843Z
+date: 2024-07-10T05:42:48.602Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-07-09T21:40:21.205Z
@@ -10,8 +10,8 @@ dateCreated: 2024-07-09T21:40:21.205Z
 
 <h1>Adding New Voice Lines</h1>
 <p>Hi! Welcome to another guide on dialogue files, made by yours truly, Milo Magnetuning. This guide will cover voice lines, how the game is able to reference them within dialogue files, and how to add new ones without overriding any existing ones!</p>
-<p>One thing to note before we start, though—in making this tutorial, I do ask that you respect the wishes and work of voice actors, and <i>don't</i> use AI voices for your mods! I'll actually be covering voice acting, audio recording, and audio editing within this guide shortly. My own ultimate goal for this is actually to add new voiced characters using original voice acting, and restoring some cut early access content, but I can imagine this technique will also be helpful for adding voice lines for tavs/durges, adding cameos from the voice actors (with permission!), including your own edits of existing lines, and so on!<br><br>The sky's almost the limit, but don't be rude.<br>&nbsp;</p>
-<p>It turns out that voice lines function a bit differently than other sounds used by the game. Things like music, ambient noise, and sound effects are handled within a specific file type, Soundbank files, which use the file extension .bnk. These files can be made via the program <a href="https://www.audiokinetic.com/en/wwise/overview/">Wwise,</a> but making functional soundbank files does require matching the file structure BG3 uses for their own soundbank files. This also involves learning how to use Wwise itself, which I <i>will</i> be covering briefly as part of this guide, but only to convert your own audio files to the .wem format the game uses. I'll be honest, soundbank files are still a bit of a mystery to me!</p>
+<p>One thing to note before we start, though—in making this tutorial, I do ask that you respect the wishes and work of voice actors, and <i>don't</i> use AI voices for your mods! I'll actually be covering voice acting, audio recording, and audio editing within this guide as well. My own ultimate goal for this is actually to add new voiced characters using original voice acting, and restoring some cut early access content, but I can imagine this technique will also be helpful for adding voice lines for tavs/durges, adding cameos from the voice actors (with permission!), including your own edits of existing lines, and so on!<br><br>The sky's almost the limit, but don't be rude.<br>&nbsp;</p>
+<p>It turns out that voice lines function a bit differently than other sounds used by the game. Things like music, ambient noise, and sound effects are handled within a specific file type, soundbank files, which use the file extension .bnk. These files can be made via the program <a href="https://www.audiokinetic.com/en/wwise/overview/">Wwise,</a> but making functional soundbank files does require matching the file structure BG3 uses for their own files. This also involves learning how to use Wwise itself, which I <i>will</i> be covering briefly as part of this guide, but only to convert your own audio files to the .wem format the game uses. I'll be honest, soundbank files are still a bit of a mystery to me!</p>
 <p>…Lucky for us, though, is that voice lines don't use these files.</p>
 <p>Instead, character voice lines are handled via these four files:</p>
 <ul>
@@ -20,9 +20,15 @@ dateCreated: 2024-07-09T21:40:21.205Z
   <li>A .GR2 animation file for the character's gestures during the line</li>
   <li>And a .ffxanim file for lipsyncing.</li>
 </ul>
-<p>All of these are referenced within the DialogBinary files via a text handle, which is also used to call to the captions in the localization files! This both means that you can find a specific line of dialogue you're looking for within a DialogBinary file by searching for the caption localization handle, and can also find the .wem, .GR2, and .ffxanim files belonging to a certain line of dialogue.</p>
+<p>All of these are referenced within the DialogBinary files via a text handle, which is also used to call to the captions in the localization files! This both means that you can find a specific line of dialogue you're looking for within a DialogBinary file by searching for that text handle, and will usually find the .wem, .GR2, and .ffxanim files belonging to a certain line of dialogue that way, too. There are rare exceptions to this, though! In these cases, that text handle will be referenced in the voicebank file, followed by the actual .wem filename for the line, which will then lead you to the .GR2 and .ffxanim files as well.</p>
 <p>…and this also means you can follow this format to add your own new dialogue to the game!</p>
 <h2>So, how do you add new voice lines?</h2>
 <p>It's actually pretty straightforward! You'll need to find the proper voicebank file for a character, but this can be done by grabbing the text handle for a line of dialogue from the character, and searching for that via the BG3 Modder's Multitool index (you can find instructions on how to do so here! [link]).</p>
-<p>Once you've found the proper voicebank file, all you need to do is clone an existing voice line resource, and edit the information in the following screenshot. The example shown here adds a new voice line for Wyll! It's a line I grabbed from early access.</p>
+<p>This text handle will usually pull up the voicebank .lsf file for the character the line belongs to. The name of the voicebank file is generally the UUID of the global template for the character, with all hyphens removed! (For more information on character GlobalTemplates and UUIDs, check here [link]!) You can double-check to make sure you've got the right character via the UUID listed at the top of the voicebank, which will be under VoiceSpeakerMetaData. If that UUID refers to the character you're looking for, congrats!! You've got the right voicebank file!</p>
+<p>&nbsp;</p>
+<p>Once you've found the proper voicebank file, you'll need to copy the format for an existing voice line resource, and edit the information in the following screenshot. The easiest way to do this is just by copying and pasting a duplicate of an existing voice line node, which are referred to as VoiceTextMetaData nodes.</p>
+<p>The example shown here adds a new voice line for Wyll! It's a line I grabbed from early access.</p>
 <p>If you're restoring a line from early access, make sure the text handle you're using isn't referenced in the full release version of game before you add it! (Once again, you can check via the indexing function with BG3MM.) It might be good practice to generate a new text handle regardless, though!</p>
+<p>Once you've got your unique dialogue text handle, you'll then want to format your filenames like so:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
