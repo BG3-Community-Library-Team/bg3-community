@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-06-21T05:33:45.478Z
+date: 2024-07-11T21:13:06.023Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -15,7 +15,7 @@ This tutorial covers the absolute basics for modders to start writing mods with 
 No prior knowledge about programming is required; however, please familiarize yourself with how to install mods and Script Extender:
 
 -   [How to install .pak files](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-Install-Pak-Files) 
--   [Installing Script Extender and activating the console](https://wiki.bg3.community/e/en/Tutorials/Mod-Use/Installing-Script-Extender)
+-   [Installing Script Extender and activating the console](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender)
 
 
 After reading this guide, feel free to follow the tutorial: [**Creating your First SE Mod (TBA)**](https://wiki.bg3.community/en/Tutorials/ScriptExtender/creating_your_first_se_mod)
