@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-12T06:51:32.145Z
+date: 2024-07-12T07:35:42.575Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -88,16 +88,14 @@ Default Data folder path:
 ```C:\Program files\Steam\steamapps\common\Baldur's Gate 3\Data```
 #### NATIVE MODS
 ![soon_tm.webp](/test/alithea/soon_tm.webp)
-Default bin folder path:
-```C:\Program files\Steam\steamapps\common\Baldur's Gate 3\bin```
+
+Few mods such as [Native Camera Tweaks](https://www.nexusmods.com/baldursgate3/mods/945) come in the format .dll, which is an application extension. To load native dll plugins in bin folder the tool [Native Mod Loader](https://www.nexusmods.com/baldursgate3/mods/944) is required.
+
+[Please follow the instructions provided by the creator Kassent carefully.](https://www.nexusmods.com/baldursgate3/mods/944)
 
 #### MANUAL INSTALLATION
 ![soon_tm.webp](/test/alithea/soon_tm.webp)
-Manual istallation of mods is an alternative in case you can't use a mod manager.
-
-1. Go to the mod page, read it, and download the desired version of the mod you want. Use **Manual download** and save the archive to a location outside of program or game files.
-2. Open the archive and drag or copy the .pak into your Mods Folder. Make sure that there aren't any subfolders or files other than .pak in the mod folder.
-3. If a modsettings code is provided in the mod description use that.
+The manual istallation of mods is an alternative in case you can't use a mod manager.
 
 ???? I have no idea, never done that. Help!
 <!-- https://bg3.wiki/wiki/Modding:Installing_mods &
@@ -105,7 +103,7 @@ https://www.nexusmods.com/baldursgate3/articles/129 may be useful-->
 
 #### SCRIPT EXTENDER
 
-Script Extender written by Norbyte adds Lua/Osiris scripting support to the game. It is a necessary requirement for a multitude of other mods.
+Script Extender by Norbyte adds Lua/Osiris scripting support to the game. It is a necessary requirement for a multitude of other mods.
 SE works on Windows, Linux, and Steam Deck. [Follow this guide on how to install SE.](/Tutorials/Mod-Use/How-to-install-Script-Extender)
 > Download SE only from [Norbyte's official GitHub](https://github.com/Norbyte/bg3se/releases) or via the BG3 Mod Manager.
 {.is-danger}
