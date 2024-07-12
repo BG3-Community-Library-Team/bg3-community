@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-06T04:40:24.729Z
+date: 2024-07-12T06:51:32.145Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -49,13 +49,13 @@ Default bin folder path:
 
 ### Tab {.tabset}
 #### PAK
-Pak files are conveniently packaged data bundles. They make installing and uninstalling Mods easier, quicker and safer. Paks can include a variety of modifications to game elements such as textures, sounds, objects, and others.
+Pak files are conveniently packaged data bundles. They are used with a mod manager and make installing and uninstalling Mods far easier. Paks can include a variety of modifications to game elements such as textures, sounds, objects, and others.
 
 Installation:
 
 1. Install the mod manager of your choice. We recommend Laughing Leader's Baldur's Gate 3 Mod Manager. [Follow this guide on how to install and set up BG3MM.](https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM)
-2. Go to the mod page, read it, and download the desired version of the mod you want to a location outside of program or game files.
-3. Open the archive and drag or copy the pak into your Mods Folder. While doing so make sure that there aren't any subfolders or files other than .pak in this folder.
+2. Go to the mod page, read it, and download the desired version of the mod you want. Use **Manual download** and save the archive to a location outside of program or game files.
+3. Open the archive and drag or copy the .pak into your Mods Folder. Make sure that there aren't any subfolders or files other than .pak in the mod folder.
 Default Mod folder path:
 ```C:\Users\USERNAME\AppData\Local\Larian Studios\Baldur's Gate 3\Mods```
 4. Start BG3MM or if it is already running, click refresh to see the new mod. It most likely will appear in Inactive Mods to the right.
@@ -63,10 +63,10 @@ Optional: *Save Order As* to make sure you have a working order to go back to ju
 5. Drag the mod from Inactive Mods to Active Mods. Keep load order requirements in mind while doing so. [General Load Order Guide](/Tutorials/Mod-Use/general-load-order)
 > Some mods are *overrides*. They will appear in a separate section called Overrides at the bottom of the Active Mods panel.
 *DiceSet_06* and *Honor* in the Inactive Mods panel to the right are game files.
-Leave them all where they are and don't move them into the Active Mods panel.
+Don't move either of them into the Active Mods panel.
 {.is-warning}
 6. Make sure that Mod Fixer is installed.
-7. Save and export the load order to game.
+7. Save and export the load order to your game.
 8. Start the game either directly through BG3MM or use your prefered method.
 
 #### MOD FIXER
@@ -93,7 +93,22 @@ Default bin folder path:
 
 #### MANUAL INSTALLATION
 ![soon_tm.webp](/test/alithea/soon_tm.webp)
+Manual istallation of mods is an alternative in case you can't use a mod manager.
 
+1. Go to the mod page, read it, and download the desired version of the mod you want. Use **Manual download** and save the archive to a location outside of program or game files.
+2. Open the archive and drag or copy the .pak into your Mods Folder. Make sure that there aren't any subfolders or files other than .pak in the mod folder.
+3. If a modsettings code is provided in the mod description use that.
+
+???? I have no idea, never done that. Help!
+<!-- https://bg3.wiki/wiki/Modding:Installing_mods &
+https://www.nexusmods.com/baldursgate3/articles/129 may be useful-->
+
+#### SCRIPT EXTENDER
+
+Script Extender written by Norbyte adds Lua/Osiris scripting support to the game. It is a necessary requirement for a multitude of other mods.
+SE works on Windows, Linux, and Steam Deck. [Follow this guide on how to install SE.](/Tutorials/Mod-Use/How-to-install-Script-Extender)
+> Download SE only from [Norbyte's official GitHub](https://github.com/Norbyte/bg3se/releases) or via the BG3 Mod Manager.
+{.is-danger}
 ## Modding and Achievements
 Modding Baldur's Gate 3 disables all achievements. They can be re-enabled using Script Extender or the native mod Achievement Enabler.
 
