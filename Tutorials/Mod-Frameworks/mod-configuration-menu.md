@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-13T00:21:27.546Z
+date: 2024-07-13T00:22:59.806Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -64,6 +64,7 @@ Below are listed some nice features that MCM provides to mod authors:
 
 On top of it all, if you currently offer multiple mod versions with different code to avoid dealing with the complexities of providing settings, you can simplify this by using a single version with MCM to introduce settings. This approach allows you to avoid creating and maintaining several different .pak releases for your mods.
 
+You can even technically integrate MCM as an optional requirement (with hardcoded defaults or MCM values if present), although that takes a bit more effort than just adding it as a standard requirement.
 ## Concepts
 
 First, let's establish some important concepts so that we're on the same page when discussing MCM. These will be used throughout the documentation:
