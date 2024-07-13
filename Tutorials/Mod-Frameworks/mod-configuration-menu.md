@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-12T23:58:42.228Z
+date: 2024-07-13T00:07:23.622Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -83,7 +83,7 @@ Mod authors need to integrate their mods with MCM for their settings to appear i
 
 > It's **extremely recommended to define BG3MCM as a dependency in your `meta.lsx` file**. This allows mod managers to ***ensure*** that MCM is loaded ***before** your own mod* - eliminating the need to instruct users to do so manually and avoiding incorrect reports/troubleshooting when they don't!
 > • [Example for listing two dependencies in a meta.lsx file, one being BG3MCM](https://github.com/AtilioA/BG3-mod-uninstaller/blob/main/Mod%20Uninstaller/Mods/ModUninstaller/meta.lsx#L7-L24 'Mod Uninstaller with two dependencies, one being BG3MCM');
-> • You can set dependencies and their minimum required versions. It is also recommended to always set the required version (`Version64`) of MCM to the version you're using during the development of your mod. As modding evolves, mod managers might start to use these to enforce correct dependencies.
+> • You can set dependencies and their minimum required versions. It is also recommended to always set the required version (`Version64`) of MCM to the version you're using during the development of your mod. As modding evolves, mod managers might start to use these to enforce correct versions for dependencies.
 {.is-warning}
 
 The `MCM_blueprint.json` file is how you specify your mod's configuration definition; this JSON file will define how your settings are to be structured, what are their name, input type, default, etc., allowing for automatic generation of a user-friendly interface and validation of user-set values.
@@ -97,9 +97,9 @@ The `MCM_blueprint.json` file is how you specify your mod's configuration defini
 
 The MCM Schema dictates how you should structure your blueprint file, and you can [get it from GitHub](https://github.com/AtilioA/BG3-MCM/blob/main/.vscode/schema.json).
 
-This schema file can be used to **write and validate** your `MCM_blueprint.json` file, as it will help enforcing the intended structure of the MCM Schema in your blueprint file, ensuring that it is correctly formatted and adheres to the schema.
+This schema file can be used to **write and validate** your `MCM_blueprint.json` file, as it will help enforcing the intended structure of the MCM Schema in your blueprint file, ensuring that it is correctly formatted and adheres to it.
 
-**While not mandatory, it is highly recommended to set it up** in a code editor. By adding this JSON schema entry to your settings in VSCode, for example, you can easily write and validate your blueprint files:
+**While not mandatory, it is highly recommended to set the schema up** in a code editor. By adding this JSON schema entry to your settings in VSCode, for example, you can easily write and validate your blueprint files:
 
 1. Press F1, type and select 'Open User Settings (JSON)'
 2. Copy the following and paste inside the main object of the JSON you just opened:
@@ -119,13 +119,13 @@ This schema file can be used to **write and validate** your `MCM_blueprint.json`
 
 \* Alternatively, you can replace the `url` value with the path to the schema JSON file (e.g., where you place IDEHelpers or Osi.lua files). However, only do so if you have problems with the URL above.
 
-You can also use a service like https://www.jsonschemavalidator.net/s/cV447mjH by pasting your blueprint in the right pane; however, that can be cumbersome, and you'd have to paste the latest schema in the left to make sure you're not missing updates to it. Prefer the aforementioned method.
+You can also use a service like https://www.jsonschemavalidator.net/s/cV447mjH by pasting your blueprint in the right pane; however, that can be cumbersome, and you'd have to paste the latest schema in the left to make sure you're not using an older version. Prefer the aforementioned method.
 
 > Having the schema file set up in your IDE will help you write the blueprint file correctly, without having to guess the structure or wonder if you're missing something. A few minor features, such as `ModName` (to replace the string used for your mod's name) are only documented by the JSON schema.
 {.is-info}
 
 
-Following are the main components of the MCM schema. Don't stress over this too much, the schema file will guide you when writing blueprints.
+Following are the main components of the MCM schema. Don't stress over this too much, the schema file will guide you while writing blueprints if you have set it up.
 
 - **Organizational structure**: the MCM Schema defines a hierarchical organization using `Tabs` and `Sections`:
   - `Tabs`: Serve as top-level organizational units in the MCM menu. Each tab can exclusively contain either `Sections` or standalone `Settings`.
@@ -144,7 +144,8 @@ Following are the main components of the MCM schema. Don't stress over this too 
     - `VisibleIf`: Allows defining a simple boolean expression that determines the visibility of a setting (also tab or section) based on the values of other settings.
 
 Thus, the main content of the blueprint is defined in the `Tabs` and `Settings` properties. You'll need to include at least one of these - either a list of tabs, or a list of standalone settings.
-Within each tab, you can define either `Sections` or a list of `Settings`. Sections provide a way to group related settings together under a header. Each setting has an `Id`, `Name`, `Type`, `Default` value, and at least a `Tooltip` or a `Description`. Each setting `Id` must be unique across the entire blueprint, and that is validated by one of the many validation checks MCM performs.
+Within each tab, you can define either `Sections` or a list of `Settings`. Sections provide a way to group related settings together under a header.
+Each setting has an `Id`, `Name`, `Type`, `Default` value, and at least a `Tooltip` or a `Description`. Each setting `Id` must be unique across the entire blueprint, and that is validated by one of the many validation checks MCM performs.
 
 Future versions of MCM might make this structure less strict, allowing nesting tabs inside sections and vice-versa.
 
@@ -153,7 +154,7 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 
 
 > For examples of mods that use MCM, you can check:
-> [MCM demo](#mcm-demo) - showcases all input types, tab insertion and a bit of client/server communication
+> [MCM demo](#mcm-demo) (1.5.1) - showcases all input types, tab insertion and a bit of client/server communication
 > [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/MCM-integration/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
 > [Smart Autosaving](https://github.com/AtilioA/BG3-smart-autosaving/blob/main/Smart%20Autosaving/Mods/SmartAutosaving/MCM_blueprint.json)
 > [Preemptively Label Containers](https://github.com/AtilioA/BG3-preemptively-label-containers/blob/main/Preemptively%20Label%20Containers/Mods/PreemptivelyLabelContainers/MCM_blueprint.json)
