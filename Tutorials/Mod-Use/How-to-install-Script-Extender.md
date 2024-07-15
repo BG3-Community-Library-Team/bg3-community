@@ -2,7 +2,7 @@
 title: Installing Script Extender
 description: How to install Norbyte's Script Extender
 published: true
-date: 2024-06-29T14:16:33.997Z
+date: 2024-07-15T13:52:01.941Z
 tags: installation, moduse, script extender
 editor: markdown
 dateCreated: 2024-06-21T04:52:35.045Z
@@ -15,7 +15,7 @@ dateCreated: 2024-06-21T04:52:35.045Z
 {.is-danger}
 
 
-## Compatiable Operating Systems
+## Compatible Operating Systems
 
 Script Extender is compatible with the following systems:
 - Script Extender works on Windows
