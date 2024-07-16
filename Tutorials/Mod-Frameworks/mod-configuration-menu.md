@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-16T22:23:38.096Z
+date: 2024-07-16T22:23:43.717Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -223,7 +223,7 @@ end)
 {.is-info}
 
 ### Listening to MCM events
-> With the introduction of `ModEvents` in SE v18, the existing method for listening to MCM events will be deprecated. While the information in this section remains, please note that it is subject to change. MCM will maintain backward compatibility with the current method for the time being.
+> With the introduction of `ModEvents` in SE v18, the existing method for listening to MCM events will be deprecated. While the information in this section remains valid, please note that it is subject to change. MCM will maintain backward compatibility with the current method for the time being.
 > Currently, mod events are implemented using a workaround involving net messages, which were originally intended for use within a single mod only.
 {.is-warning}
 
