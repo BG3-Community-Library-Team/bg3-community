@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-13T00:22:59.806Z
+date: 2024-07-16T22:23:38.096Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -144,7 +144,7 @@ Following are the main components of the MCM schema. Don't stress over this too 
       - `Multiline`: Whether the text input should be multiline, used for `text` type.
     - `VisibleIf`: Allows defining a simple boolean expression that determines the visibility of a setting (also tab or section) based on the values of other settings.
 
-Thus, the main content of the blueprint is defined in the `Tabs` and `Settings` properties. You'll need to include at least one of these - either a list of tabs, or a list of standalone settings.
+Thus, the main content of the blueprint is defined in the `Tabs` and `Settings` properties. You'll need to include at least one of these - either a list of tabs, or a list of standalone settings. However, for now, only defining a Settings array is not properly supported. Versions 1.10+ might be able to handle it correctly.
 Within each tab, you can define either `Sections` or a list of `Settings`. Sections provide a way to group related settings together under a header.
 Each setting has an `Id`, `Name`, `Type`, `Default` value, and at least a `Tooltip` or a `Description`. Each setting `Id` must be unique across the entire blueprint, and that is validated by one of the many validation checks MCM performs.
 
@@ -155,7 +155,7 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 
 
 > For examples of mods that use MCM, you can check:
-> [MCM demo](#mcm-demo) (1.5.1) - showcases all input types, tab insertion and a bit of client/server communication
+> [MCM demo](#mcm-demo) (1.5.1) - slightly outdated, showcases all input types, tab insertion and a bit of client/server communication
 > [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/MCM-integration/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
 > [Smart Autosaving](https://github.com/AtilioA/BG3-smart-autosaving/blob/main/Smart%20Autosaving/Mods/SmartAutosaving/MCM_blueprint.json)
 > [Preemptively Label Containers](https://github.com/AtilioA/BG3-preemptively-label-containers/blob/main/Preemptively%20Label%20Containers/Mods/PreemptivelyLabelContainers/MCM_blueprint.json)
@@ -223,6 +223,9 @@ end)
 {.is-info}
 
 ### Listening to MCM events
+> With the introduction of `ModEvents` in SE v18, the existing method for listening to MCM events will be deprecated. While the information in this section remains, please note that it is subject to change. MCM will maintain backward compatibility with the current method for the time being.
+> Currently, mod events are implemented using a workaround involving net messages, which were originally intended for use within a single mod only.
+{.is-warning}
 
 MCM uses a set of channels to communicate between the client and server. Some of these can be useful for mod authors to listen to, as they can use this to update their mod's behavior based on changes from MCM, such as when a setting is saved:
 
@@ -311,6 +314,7 @@ The [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostbo
 ## MCM demo
 
 The demo below showcases the different types of config options that can be used (all of them as of v1.5.0). The demo also shows how to insert custom UI elements into the menu and how to listen and react to MCM events:
+NOTE: with the introduction of `ModEvents` in SE v18, the current way of listening to MCM events will get deprecated.
 [MCM Demo.zip](/tutorials/frameworks/mcm/mcm_demo.zip)
 
 ## Closing words
