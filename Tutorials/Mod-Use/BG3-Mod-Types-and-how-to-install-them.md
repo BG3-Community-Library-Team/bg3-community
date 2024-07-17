@@ -2,15 +2,13 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-12T07:35:42.575Z
+date: 2024-07-17T06:14:20.580Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
 ---
 
 # How to use mods in Baldur's Gate 3
-
-![soon_tm.webp](/test/alithea/soon_tm.webp)
 
 
 Modding games is a wonderful way to enhance and individualize your game experience, it's also never entirely safe. Especially if the game is still regularly patched like Baldur's Gate 3. 
