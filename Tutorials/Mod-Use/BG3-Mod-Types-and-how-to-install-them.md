@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: false
-date: 2024-07-17T06:14:20.580Z
+date: 2024-07-17T06:19:52.345Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -81,18 +81,18 @@ That's it.
 [Norbyte, the creator of Mod fixer explains how it works in his post on Larian Studio's discord](https://discord.com/channels/98922182746329088/767804218819477515/784392518883868674)
 
 #### LOOSE FILES
-![soon_tm.webp](/test/alithea/soon_tm.webp)
+
+Mods that come as loose files are moved to your Data folder and do not need to be installed with a mod manager. The exact subfolder is usually part of the mod description and included in the archive.
+
 Default Data folder path:
 ```C:\Program files\Steam\steamapps\common\Baldur's Gate 3\Data```
 #### NATIVE MODS
-![soon_tm.webp](/test/alithea/soon_tm.webp)
 
-Few mods such as [Native Camera Tweaks](https://www.nexusmods.com/baldursgate3/mods/945) come in the format .dll, which is an application extension. To load native dll plugins in bin folder the tool [Native Mod Loader](https://www.nexusmods.com/baldursgate3/mods/944) is required.
+Few mods such as [Native Camera Tweaks](https://www.nexusmods.com/baldursgate3/mods/945) are application extensions and come in the format .dll, they go in your bin folder and the tool [Native Mod Loader](https://www.nexusmods.com/baldursgate3/mods/944) is required to load them.
 
-[Please follow the instructions provided by the creator Kassent carefully.](https://www.nexusmods.com/baldursgate3/mods/944)
+[Please follow the instructions on how to install the tool carefully.](https://www.nexusmods.com/baldursgate3/mods/944)
 
 #### MANUAL INSTALLATION
-![soon_tm.webp](/test/alithea/soon_tm.webp)
 The manual istallation of mods is an alternative in case you can't use a mod manager.
 
 ???? I have no idea, never done that. Help!
