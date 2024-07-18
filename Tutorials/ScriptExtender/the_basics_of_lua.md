@@ -2,7 +2,7 @@
 title: The Basics of Lua
 description: 
 published: true
-date: 2024-05-23T12:16:05.721Z
+date: 2024-07-18T12:54:27.517Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T15:05:08.014Z
@@ -480,7 +480,7 @@ This also means that we can reuse names as long as they exist in different scope
 
 ```lua
 
--- returns Shadowhearts UUIS
+-- returns Shadowhearts UUID
 local function getShart()
 	local uuid = "S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679"
   return  uuid
