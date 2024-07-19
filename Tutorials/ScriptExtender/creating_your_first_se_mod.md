@@ -2,7 +2,7 @@
 title: Creating your first SE Mod
 description: A follow along tutorial for creating your first Script Extender Mod that stops companions from returning to their tent when in camp. Optional toggleable version
 published: false
-date: 2024-07-19T18:10:28.556Z
+date: 2024-07-19T18:30:55.697Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T14:54:45.494Z
@@ -39,16 +39,19 @@ You are now ready to begin coding your magnum opus!
 ## 3. Writing the code
 
 ### 3.1 Defining your Constants
-
+First, we will define our constants. These are variables that will be used throughout our code. They are usually used for flags, UUIDs, or any important value you would like to use in more than one function/event. 
+In the following example, we are defining two constants, FLAG_IN_CAMP, which is defined as the UUID of an immobile character, and ModAuthor, which is defined as a simple string with the value "Smart".
 ```lua
 -- variables
 
 FLAG_IN_CAMP = "161b7223-039d-4ebe-986f-1dcd9a66733f"
+ModAuthor = "Smart"
+
 ```
 
 ### 3.2 Writing your Methods
 
-
+We will now use our previously defined variables in functions (methods) of our design. In the following example, we are creating two functions, stopMoving and startMoving:
 ```lua
 -- methods
 
@@ -74,11 +77,22 @@ end
 ```
 
 ### 3.3 Making your Code Event-driven
+Mods are often, if not always, driven by Game Events, moments in the game that trigger an "event", which we will "listen" to and apply our functions afterwards. 
 
+For example, if we wanted to apply the stopMoving function after a character enters combat, this is how it would look like:
+```
+		Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(character, combatid)
+			stopMoving(character)
+    end)
+```
+You can find more events at https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.Events.lua
 
 ## 4. Interdiscipline: Using stats file in conjunction with SE
 
+You can call game statuses, passives or other elements inside your SE functions and events. You can also create your own statuses and passives. Here are an example of a status and a passive.
+
 ### 4.1 Status
+
 
 
 ```
@@ -91,7 +105,6 @@ data "Icon" "Spell_Conjuration_DimensionDoor"
 data "StackId" "STAY_STILL_STATUS"
 
 ```
-
 ### 4.2 Passive
 
 
@@ -108,7 +121,8 @@ data "ToggleOffFunctors" "RemoveStatus(STAY_STILL_STATUS)"
 
 ```
 
-
+In order to display tooltips and/or descriptions in-game, you will need to create a Localization file with the extension .loca.xml. It is highly recommended to use the BG3 Mod Helper VSCode extension for this purpose, as it allows you generate handles inside your stats file and automatically creates localizations for you.
+Below is an example of a Localization file. As you can see, the contentuids correspond to the descriptions and display names of the Status and Passive above. 
 ### 4.3 Localization File
 
 ```
@@ -132,7 +146,7 @@ data "ToggleOffFunctors" "RemoveStatus(STAY_STILL_STATUS)"
 
 ## 5. Using SE to Handle the Stats
 
-
+As we've mentioned above, you can use SE to handle and call stats in your code. If you wanted to add the previously defined passive to your party, here is how that would look like in your script:
 
 ### 5.1 Adding the Passives to the Party
 
@@ -176,7 +190,7 @@ end)
 
 ### 5.2 Responding to the Passive being Toggled On
 
-
+When the passive is toggled on, the "TeleportedToCamp" event is triggered. If the STAY_STILL_STATUS status is on, we will call the "stopMoving" function and stop the character from moving.
 
 
 ```lua
@@ -206,6 +220,7 @@ end)
 ### 5.3 Responding to the Passive being Toggled Off
 
 
+When the passive is toggled off, another event is triggered, the "StatusRemoved" event, where the Status in question is "STAY_STILL_STATUS". If that status is removed, we will call the "startMoving" function and allow the character to move again.
 
 
 ```lua
