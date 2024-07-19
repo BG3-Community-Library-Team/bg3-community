@@ -2,7 +2,7 @@
 title: Creating your first SE Mod
 description: A follow along tutorial for creating your first Script Extender Mod that stops companions from returning to their tent when in camp. Optional toggleable version
 published: false
-date: 2024-05-04T11:37:42.875Z
+date: 2024-07-19T18:10:28.556Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T14:54:45.494Z
@@ -12,7 +12,7 @@ dateCreated: 2024-05-01T14:54:45.494Z
 
 This tutorial will walk you through creating a simple Mod with Norbyte's Script Extender(SE).
 
-We will create mod that stops your companions from going back to their tent once in camp.
+We will create a mod that stops your companions from going back to their tent once in camp.
 Aditionally we will utilize SE together with `stats` to make this toggleable.
 
 This tutorial is based on **Alithea Ancunín's** implementation of [Please Stay] (include link here)
@@ -25,20 +25,17 @@ This tutorial is based on **Alithea Ancunín's** implementation of [Please Stay]
 
 ## 1. Outlining your strategy
 
-- console time
-- research all necessary functions
-- research al necessary flags etc
+First, you are going to be organizing the functions and game elements you will be needing for your mod. One of the best resources for this is https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua, which contains a list of Osiris (Native) functions you can use. To find the flags, spells, passives or any other game elements you might need, you can browse https://bg3.norbyte.dev/search, or index your game files using the Multitool (https://github.com/ShinyHobo/BG3-Modders-Multitool). 
 
 
 
 
 ## 2. Preparing your workspace
 
-- change the meta file
-- create all the files
-
-
-
+Once you've outlined the necessary functions, flags, spells, items, and other elements, you will need to prepare your workspace. The first step is to create a proper file structure: 
+(Insert folder structure images)
+Upon organizing your folder structure, you can go ahead and pack the mod, which - if you're using BG3 Multitool - will prompt you to add an author (That's your name!), a description for your mod and a version.
+You are now ready to begin coding your magnum opus!
 ## 3. Writing the code
 
 ### 3.1 Defining your Constants
