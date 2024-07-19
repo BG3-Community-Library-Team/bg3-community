@@ -2,7 +2,7 @@
 title: Creating your first SE Mod
 description: A follow along tutorial for creating your first Script Extender Mod that stops companions from returning to their tent when in camp. Optional toggleable version
 published: false
-date: 2024-07-19T18:30:55.697Z
+date: 2024-07-19T18:33:37.389Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T14:54:45.494Z
@@ -150,6 +150,7 @@ As we've mentioned above, you can use SE to handle and call stats in your code. 
 
 ### 5.1 Adding the Passives to the Party
 
+We will first create a function that adds a passive to a character that doesn't have that passive. 
 
 ```lua
 
@@ -163,7 +164,7 @@ end
 
 ```
 
-
+We will use the LevelGameplayStarted event (After a save is loaded) to add the "Stay in Camp" toggle passive to each party member.
 ```lua
 
 -- Adds the "Stay in Camp" toggle to each partymember
@@ -178,7 +179,7 @@ Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(_, _)
 end)
 ```
 
-
+We will also add that toggle passive to any party member that joins the party during gameplay, using the event "CharacterJoinedParty".
 ```lua
 
 -- Adds the "Stay in Camp" toggle to a partymember added during gameplay
