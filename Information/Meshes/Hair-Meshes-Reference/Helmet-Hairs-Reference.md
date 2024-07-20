@@ -2,7 +2,7 @@
 title: Helmet Hair Meshes Reference
 description: A reference for all helmet hair meshes in the game's files.
 published: false
-date: 2024-07-20T23:00:16.560Z
+date: 2024-07-20T23:11:01.727Z
 tags: hair, reference
 editor: markdown
 dateCreated: 2024-07-20T22:45:19.939Z
@@ -34,17 +34,15 @@ The helmet hair version that a headwear will use is set in the headwear's RootTe
 
 # Helmet Hairs
 
-### Version A
-
 | HairType | Hair Texture & Length | Version A | Version B | Version C |
 | --- | --- | --- | --- | --- |
-| 1   | Straight\_Long | ![](/information/meshes/helmet-hairs/straight_long_a.png) |     | ![](/information/meshes/helmet-hairs/straight_long_c.png) |
-| 2   | Straight\_Short | ![](/information/meshes/helmet-hairs/straight_short_a.png) | ![](/information/meshes/helmet-hairs/straight_short_b.png) | ![](/information/meshes/helmet-hairs/straight_short_c.png) |
-| 3   | Wavy\_Long | ![](/information/meshes/helmet-hairs/wavy_long_a.png) | ![](/information/meshes/helmet-hairs/wavy_long_b.png) | ![](/information/meshes/helmet-hairs/wavy_long_c.png) |
-| 4   | Wavy\_Short | ![](/information/meshes/helmet-hairs/wavy_short_a.png) | ![](/information/meshes/helmet-hairs/wavy_short_b.png) | ![](/information/meshes/helmet-hairs/wavy_short_c.png) |
-| 5   | Curly\_Long | ![](/information/meshes/helmet-hairs/curly_long_a.png) | ![](/information/meshes/helmet-hairs/curly_long_b.png) | ![](/information/meshes/helmet-hairs/curly_long_c.png) |
-| 6   | Curly\_Short | ![](/information/meshes/helmet-hairs/curly_short_a.png) | ![](/information/meshes/helmet-hairs/curly_short_b.png) | ![](/information/meshes/helmet-hairs/curly_short_c.png) |
-| 7   | Dreads\_Long | ![](/information/meshes/helmet-hairs/dreads_long_a.png) | ![](/information/meshes/helmet-hairs/dreads_long_b.png) | ![](/information/meshes/helmet-hairs/dreads_long_c.png) |
-| 8   | Dreads\_Short | ![](/information/meshes/helmet-hairs/dreads_short_a.png) | ![](/information/meshes/helmet-hairs/dreads_short_b.png) | ![](/information/meshes/helmet-hairs/dreads_short_c.png) |
-| 9   | Afro\_Long | ![](/information/meshes/helmet-hairs/afro_long_a.png) | ![](/information/meshes/helmet-hairs/afro_long_b.png) | ![](/information/meshes/helmet-hairs/afro_long_c.png) |
-| 10  | Afro\_Short | ![](/information/meshes/helmet-hairs/afro_short_a.png) | ![](/information/meshes/helmet-hairs/afro_short_b.png) | ![](/information/meshes/helmet-hairs/afro_short_c.png) |
+|1|Straight_Long|![straight_long_a.png](/information/meshes/helmet-hairs/straight_long_a.png)| |![straight_long_c.png](/information/meshes/helmet-hairs/straight_long_c.png)
+|2|Straight_Short|![straight_short_a.png](/information/meshes/helmet-hairs/straight_short_a.png)|![straight_short_b.png](/information/meshes/helmet-hairs/straight_short_b.png)|![straight_short_c.png](/information/meshes/helmet-hairs/straight_short_c.png)|
+|3|Wavy_Long|![wavy_long_a.png](/information/meshes/helmet-hairs/wavy_long_a.png)|![wavy_long_b.png](/information/meshes/helmet-hairs/wavy_long_b.png)|![wavy_long_c.png](/information/meshes/helmet-hairs/wavy_long_c.png)|
+|4|Wavy_Short|![wavy_short_a.png](/information/meshes/helmet-hairs/wavy_short_a.png)|![wavy_short_b.png](/information/meshes/helmet-hairs/wavy_short_b.png)|![wavy_short_c.png](/information/meshes/helmet-hairs/wavy_short_c.png)|
+|5|Curly_Long|![curly_long_a.png](/information/meshes/helmet-hairs/curly_long_a.png)|![curly_long_b.png](/information/meshes/helmet-hairs/curly_long_b.png)|![curly_long_c.png](/information/meshes/helmet-hairs/curly_long_c.png)|
+|6|Curly_Short|![curly_short_a.png](/information/meshes/helmet-hairs/curly_short_a.png)|![curly_short_b.png](/information/meshes/helmet-hairs/curly_short_b.png)|![curly_short_c.png](/information/meshes/helmet-hairs/curly_short_c.png)|
+|7|Dreads_Long|![dreads_long_a.png](/information/meshes/helmet-hairs/dreads_long_a.png)|![dreads_long_b.png](/information/meshes/helmet-hairs/dreads_long_b.png)|![dreads_long_c.png](/information/meshes/helmet-hairs/dreads_long_c.png)|
+|8|Dreads_Short|![dreads_short_a.png](/information/meshes/helmet-hairs/dreads_short_a.png)|![dreads_short_b.png](/information/meshes/helmet-hairs/dreads_short_b.png)|![dreads_short_c.png](/information/meshes/helmet-hairs/dreads_short_c.png)|
+|9|Afro_Long|![afro_long_a.png](/information/meshes/helmet-hairs/afro_long_a.png)|![afro_long_b.png](/information/meshes/helmet-hairs/afro_long_b.png)|![afro_long_c.png](/information/meshes/helmet-hairs/afro_long_c.png)|
+|10|Afro_Short|![afro_short_a.png](/information/meshes/helmet-hairs/afro_short_a.png)|![afro_short_b.png](/information/meshes/helmet-hairs/afro_short_b.png)|![afro_short_c.png](/information/meshes/helmet-hairs/afro_short_c.png)|
