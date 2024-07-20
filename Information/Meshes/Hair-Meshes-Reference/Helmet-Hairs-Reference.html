@@ -2,112 +2,172 @@
 title: Helmet Hair Meshes Reference
 description: A reference for all helmet hair meshes in the game's files.
 published: false
-date: 2024-07-20T23:15:21.737Z
+date: 2024-07-20T23:23:12.220Z
 tags: hair, reference
 editor: ckeditor
 dateCreated: 2024-07-20T22:45:19.939Z
 -->
 
-<h1 class="toc-header" id="explanation"> Explanation</h1>
+<h1>Explanation</h1>
 <p>The “HairType” value in a standard hair’s _merged entry helps determine what mesh will be used when a character has equipped certain headwear, such as a hat or a helmet.</p>
 <p>Helmet hair meshes do not have physics and are not made to autosnap, so there are meshes for each unique body type. You can find the meshes in “Models\Generated\Public\Shared\Assets\Characters\_Models\_Hair\Helmet_Hair\Resources”.</p>
 <p>The _merged file containing the entries for each helmet hair mesh can be found in “Shared\Public\Shared\Content\Assets\Characters\[PAK]_Helmet_Hair”.</p>
 <p>Note that there is no mesh or _merged entry for value 0. A hairstyle with a “0” HairType will only show the scalp, rather than a helmet hair.</p>
 <p>The helmet hair version that a headwear will use is set in the headwear’s RootTemplate, but if none is set then it will use the same version assigned to the ParentTemplate item.</p>
 <ul>
-<li>Version A is typically used by helmets, to which the base ParentTemplateID is c58a1f91-ec1b-49c8-96ab-d94d4be4b584 (aka “ARM_Helmet_Leather” or “ARM_Headwear_Leather_A”).</li>
-<li>Version B is not currently used by vanilla headwear.</li>
-<li>Version C is typically used by hats, to which the base ParentTemplateID is 4d2e0931-3a01-4759-834b-8ae36749daab (aka “ARM_Hat” or “CLT_Headwear_H”).</li>
+  <li>Version A is typically used by helmets, to which the base ParentTemplateID is c58a1f91-ec1b-49c8-96ab-d94d4be4b584 (aka “ARM_Helmet_Leather” or “ARM_Headwear_Leather_A”).</li>
+  <li>Version B is not currently used by vanilla headwear.</li>
+  <li>Version C is typically used by hats, to which the base ParentTemplateID is 4d2e0931-3a01-4759-834b-8ae36749daab (aka “ARM_Hat” or “CLT_Headwear_H”).</li>
 </ul>
-<h3 class="toc-header" id="table"> Table</h3>
+<h3>Table</h3>
 <ul>
-<li>HairType: The identifier for the mesh the hair uses when wearing a hat.</li>
-<li>Filename: The name of the mesh in the game files. Note: Only the HUM_M mesh names are listed here.</li>
-<li>Version A: An image of the “A” version of the hair.</li>
-<li>Version B: An image of the “B” version of the hair.</li>
-<li>Version C: An image of the “C” version of the hair.</li>
+  <li>HairType: The identifier for the mesh the hair uses when wearing a hat.</li>
+  <li>Filename: The name of the mesh in the game files. Note: Only the HUM_M mesh names are listed here.</li>
+  <li>Version A: An image of the “A” version of the hair.</li>
+  <li>Version B: An image of the “B” version of the hair.</li>
+  <li>Version C: An image of the “C” version of the hair.</li>
 </ul>
-<h1 class="toc-header" id="helmet-hairs"> Helmet Hairs</h1>
-<div class="table-container"><table>
-<thead>
-<tr>
-<th>HairType</th>
-<th>Hair Texture &amp; Length</th>
-<th>Version A</th>
-<th>Version B</th>
-<th>Version C</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Straight_Long</td>
-<td><img alt="straight_long_a.png" src="/information/meshes/helmet-hairs/straight_long_a.png"></td>
-<td></td>
-<td><img alt="straight_long_c.png" src="/information/meshes/helmet-hairs/straight_long_c.png"></td>
-</tr>
-<tr>
-<td>2</td>
-<td>Straight_Short</td>
-<td><img alt="straight_short_a.png" src="/information/meshes/helmet-hairs/straight_short_a.png"></td>
-<td><img alt="straight_short_b.png" src="/information/meshes/helmet-hairs/straight_short_b.png"></td>
-<td><img alt="straight_short_c.png" src="/information/meshes/helmet-hairs/straight_short_c.png"></td>
-</tr>
-<tr>
-<td>3</td>
-<td>Wavy_Long</td>
-<td><img alt="wavy_long_a.png" src="/information/meshes/helmet-hairs/wavy_long_a.png"></td>
-<td><img alt="wavy_long_b.png" src="/information/meshes/helmet-hairs/wavy_long_b.png"></td>
-<td><img alt="wavy_long_c.png" src="/information/meshes/helmet-hairs/wavy_long_c.png"></td>
-</tr>
-<tr>
-<td>4</td>
-<td>Wavy_Short</td>
-<td><img alt="wavy_short_a.png" src="/information/meshes/helmet-hairs/wavy_short_a.png"></td>
-<td><img alt="wavy_short_b.png" src="/information/meshes/helmet-hairs/wavy_short_b.png"></td>
-<td><img alt="wavy_short_c.png" src="/information/meshes/helmet-hairs/wavy_short_c.png"></td>
-</tr>
-<tr>
-<td>5</td>
-<td>Curly_Long</td>
-<td><img alt="curly_long_a.png" src="/information/meshes/helmet-hairs/curly_long_a.png"></td>
-<td><img alt="curly_long_b.png" src="/information/meshes/helmet-hairs/curly_long_b.png"></td>
-<td><img alt="curly_long_c.png" src="/information/meshes/helmet-hairs/curly_long_c.png"></td>
-</tr>
-<tr>
-<td>6</td>
-<td>Curly_Short</td>
-<td><img alt="curly_short_a.png" src="/information/meshes/helmet-hairs/curly_short_a.png"></td>
-<td><img alt="curly_short_b.png" src="/information/meshes/helmet-hairs/curly_short_b.png"></td>
-<td><img alt="curly_short_c.png" src="/information/meshes/helmet-hairs/curly_short_c.png"></td>
-</tr>
-<tr>
-<td>7</td>
-<td>Dreads_Long</td>
-<td><img alt="dreads_long_a.png" src="/information/meshes/helmet-hairs/dreads_long_a.png"></td>
-<td><img alt="dreads_long_b.png" src="/information/meshes/helmet-hairs/dreads_long_b.png"></td>
-<td><img alt="dreads_long_c.png" src="/information/meshes/helmet-hairs/dreads_long_c.png"></td>
-</tr>
-<tr>
-<td>8</td>
-<td>Dreads_Short</td>
-<td><img alt="dreads_short_a.png" src="/information/meshes/helmet-hairs/dreads_short_a.png"></td>
-<td><img alt="dreads_short_b.png" src="/information/meshes/helmet-hairs/dreads_short_b.png"></td>
-<td><img alt="dreads_short_c.png" src="/information/meshes/helmet-hairs/dreads_short_c.png"></td>
-</tr>
-<tr>
-<td>9</td>
-<td>Afro_Long</td>
-<td><img alt="afro_long_a.png" src="/information/meshes/helmet-hairs/afro_long_a.png"></td>
-<td><img alt="afro_long_b.png" src="/information/meshes/helmet-hairs/afro_long_b.png"></td>
-<td><img alt="afro_long_c.png" src="/information/meshes/helmet-hairs/afro_long_c.png"></td>
-</tr>
-<tr>
-<td>10</td>
-<td>Afro_Short</td>
-<td><img alt="afro_short_a.png" src="/information/meshes/helmet-hairs/afro_short_a.png"></td>
-<td><img alt="afro_short_b.png" src="/information/meshes/helmet-hairs/afro_short_b.png"></td>
-<td><img alt="afro_short_c.png" src="/information/meshes/helmet-hairs/afro_short_c.png"></td>
-</tr>
-</tbody>
-</table></div>
+<h1>Helmet Hairs</h1>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align:center;">HairType</th>
+        <th style="text-align:center;">Hair Texture &amp; Length</th>
+        <th style="text-align:center;">Version A</th>
+        <th style="text-align:center;">Version B</th>
+        <th style="text-align:center;">Version C</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">Straight_Long</td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/straight_long_a.png" alt="straight_long_a.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">&nbsp;</td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/straight_long_c.png" alt="straight_long_c.png"></figure>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">Straight_Short</td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/straight_short_a.png" alt="straight_short_a.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/straight_short_b.png" alt="straight_short_b.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/straight_short_c.png" alt="straight_short_c.png"></figure>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">3</td>
+        <td style="text-align:center;">Wavy_Long</td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/wavy_long_a.png" alt="wavy_long_a.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/wavy_long_b.png" alt="wavy_long_b.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/wavy_long_c.png" alt="wavy_long_c.png"></figure>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">4</td>
+        <td style="text-align:center;">Wavy_Short</td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/wavy_short_a.png" alt="wavy_short_a.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/wavy_short_b.png" alt="wavy_short_b.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/wavy_short_c.png" alt="wavy_short_c.png"></figure>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">5</td>
+        <td style="text-align:center;">Curly_Long</td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/curly_long_a.png" alt="curly_long_a.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/curly_long_b.png" alt="curly_long_b.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/curly_long_c.png" alt="curly_long_c.png"></figure>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">6</td>
+        <td style="text-align:center;">Curly_Short</td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/curly_short_a.png" alt="curly_short_a.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/curly_short_b.png" alt="curly_short_b.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/curly_short_c.png" alt="curly_short_c.png"></figure>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">Dreads_Long</td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/dreads_long_a.png" alt="dreads_long_a.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/dreads_long_b.png" alt="dreads_long_b.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/dreads_long_c.png" alt="dreads_long_c.png"></figure>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">8</td>
+        <td style="text-align:center;">Dreads_Short</td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/dreads_short_a.png" alt="dreads_short_a.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/dreads_short_b.png" alt="dreads_short_b.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/dreads_short_c.png" alt="dreads_short_c.png"></figure>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">9</td>
+        <td style="text-align:center;">Afro_Long</td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/afro_long_a.png" alt="afro_long_a.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/afro_long_b.png" alt="afro_long_b.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/afro_long_c.png" alt="afro_long_c.png"></figure>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">10</td>
+        <td style="text-align:center;">Afro_Short</td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/afro_short_a.png" alt="afro_short_a.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/afro_short_b.png" alt="afro_short_b.png"></figure>
+        </td>
+        <td style="height:200px;text-align:center;width:200px;">
+          <figure class="image"><img src="/information/meshes/helmet-hairs/afro_short_c.png" alt="afro_short_c.png"></figure>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
