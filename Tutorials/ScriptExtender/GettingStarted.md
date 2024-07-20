@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-07-11T21:13:57.842Z
+date: 2024-07-20T07:14:49.779Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -672,14 +672,14 @@ Utils file:
 
 Credits: 
 
-[*Alithea Ancunín*](https://next.nexusmods.com/profile/AlitheaAncunin/about-me) for screenshots, writing and proofreading 
+[*Alithea Ancunín*](https://next.nexusmods.com/profile/AlitheaAncunin/about-me) for proofreading 
 *Cerberry* for screenshots, ideas and feedback
 *Chip Chocolate, Legendary Muffin for a multitude* of resources and his knowledge
 *ImmortalRD, Schroedingercat and Chip Chocolate, Legendary Muffin* for the [tutorial for Symlinking & Mass File Conversion for hot-testing your mods](https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki)
 [*Padme4000*](https://next.nexusmods.com/profile/Padme4000/about-me?gameId=3474) for reporting the conflict between MMT and symlinks
 *simosas* for his millions of useful functions and good company.
 *Skiz* for bravely enduring and suffering through this journey with me
-*BG3 Modding Communiry Discord* for answering my questions
+*BG3 Modding Community Discord* for answering my questions
 
 # References
 
