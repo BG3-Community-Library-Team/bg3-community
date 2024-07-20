@@ -1,0 +1,136 @@
+<!--
+title: Helmet Hair Meshes Reference
+description: A reference for all helmet hair meshes in the game's files.
+published: false
+date: 2024-07-20T22:45:19.939Z
+tags: hair, reference
+editor: ckeditor
+dateCreated: 2024-07-20T22:45:19.939Z
+-->
+
+<h1>Explanation</h1>
+<p>The “HairType” value in a standard hair's _merged entry helps determine what mesh will be used when a character has equipped certain headwear, such as a hat or a helmet.</p>
+<p>Helmet hair meshes do not have physics and are not made to autosnap, so there are meshes for each unique body type. You can find the meshes in “Models\Generated\Public\Shared\Assets\Characters\_Models\_Hair\Helmet_Hair\Resources”.</p>
+<p>The _merged file containing the entries for each helmet hair mesh can be found in "Shared\Public\Shared\Content\Assets\Characters\[PAK]_Helmet_Hair".</p>
+<p>Note that there is no mesh or _merged entry for value 0. A hairstyle with a "0" HairType will only show the scalp, rather than a helmet hair.</p>
+<p>The helmet hair version that a headwear will use is set in the headwear's RootTemplate, but if none is set then it will use the same version assigned to the ParentTemplate item.</p>
+<ul>
+  <li>Version A is typically used by helmets, to which the base ParentTemplateID is c58a1f91-ec1b-49c8-96ab-d94d4be4b584 (aka "ARM_Helmet_Leather" or "ARM_Headwear_Leather_A").</li>
+  <li>Version B is not currently used by vanilla headwear.</li>
+  <li>Version C is typically used by hats, to which the base ParentTemplateID is 4d2e0931-3a01-4759-834b-8ae36749daab (aka "ARM_Hat" or "CLT_Headwear_H").</li>
+</ul>
+<h3>Table</h3>
+<ul>
+  <li>HairType: The identifier for the mesh the hair uses when wearing a hat.</li>
+  <li>Filename: The name of the mesh in the game files. Note: Only the HUM_M mesh names are listed here.</li>
+  <li>Version A: An image of the “A” version of the hair.</li>
+  <li>Version B: An image of the “B” version of the hair.</li>
+  <li>Version C: An image of the “C” version of the hair.</li>
+</ul>
+<h1>Helmet Hairs</h1>
+<h3>Version A</h3>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>HairType</th>
+        <th>Hair Texture &amp; Length</th>
+        <th>Version A</th>
+        <th>Version B</th>
+        <th>Version C</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p style="text-align:center;">1</p>
+        </td>
+        <td><span class="text-tiny">Straight_Long</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">2</p>
+        </td>
+        <td><span class="text-tiny">Straight_Short</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">3</p>
+        </td>
+        <td><span class="text-tiny">Wavy_Long</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">4</p>
+        </td>
+        <td><span class="text-tiny">Wavy_Short</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">5</p>
+        </td>
+        <td><span class="text-tiny">Curly_Long</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">6</p>
+        </td>
+        <td><span class="text-tiny">Curly_Short</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">7</p>
+        </td>
+        <td><span class="text-tiny">Dreads_Long</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">8</p>
+        </td>
+        <td><span class="text-tiny">Dreads_Short</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">9</p>
+        </td>
+        <td><span class="text-tiny">Afro_Long</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">10</p>
+        </td>
+        <td><span class="text-tiny">Afro_Short</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
