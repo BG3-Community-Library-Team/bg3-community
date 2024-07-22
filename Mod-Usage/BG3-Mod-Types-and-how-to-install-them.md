@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: true
-date: 2024-07-22T09:08:26.725Z
+date: 2024-07-22T10:45:11.823Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -109,7 +109,7 @@ SE works on Windows, Linux, and Steam Deck. [Follow this guide on how to install
 > Download SE only from [Norbyte's official GitHub](https://github.com/Norbyte/bg3se/releases) or via the BG3 Mod Manager.
 {.is-danger}
 ## Modding and Achievements
-Modding Baldur's Gate 3 disables all achievements. They can be re-enabled using Script Extender or the native mod Achievement Enabler.
+Modding Baldur's Gate 3 disables all achievements. They are automatically re-enabled when using Script Extender. If Script Extender cannot be used for any reason, the native mod Achievement Enabler can also be used for enabling achievements again. Please do not use those two methods together.
 
 Happy modding!
 
