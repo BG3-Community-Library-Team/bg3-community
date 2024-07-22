@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-07-22T16:13:53.676Z
+date: 2024-07-22T16:17:25.598Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -21,8 +21,8 @@ No prior knowledge about programming is required; however, please familiarize yo
 After reading this guide, feel free to follow the tutorial: [**Creating your First SE Mod (TBA)**](https://wiki.bg3.community/en/Tutorials/ScriptExtender/creating_your_first_se_mod)
 
 
-> If you are having trouble following this guide, feel free to join the DBTR discord linked [here](https://discord.com/channels/1211056047784198186/1211069415605538887/1246912213646835843)
-> DBTR is a community discord. Keep in mind that everyone that may help you is a volunteer. Please read and follow the server rules.
+> If you are having trouble following this guide, feel free to join the Baldur's Gate 3 Modding Community discord linked [here](https://discord.gg/bg3mods)
+> The Baldur's Gate 3 Modding Community is a community run discord. Keep in mind that everyone that may help you is a volunteer. Please read and follow the server rules.
 {.is-success}
 
 You can find further information linked under [09. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-9-useful-resources) on the bottom of this page.
