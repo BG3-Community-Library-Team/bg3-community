@@ -1,0 +1,27 @@
+---
+title: Dyes
+description: Reference info for dyes found in game.
+published: false
+date: 2024-07-22T21:46:30.046Z
+tags: reference
+editor: markdown
+dateCreated: 2024-07-22T21:45:29.342Z
+---
+
+![](/information/icons/item_loot_dye_blackblue_01.png)
+
+# Black and Azure Dye
+
+> The scales of a lightning-breathing dragon are this blue.
+
+|     |     |     |
+| --- | --- | --- |
+| ColorPreset | 3a87940e-c9a2-494c-0026-a94a2087e128 | ![](/information/icons/item_loot_dye_blackblue_01-tooltip.png) |
+| Description | h8303f613g5e4ag48c1g9238g074eccea4531 |
+| DisplayName | hd21cb119g1602g4121gb0cegd79abede8eed |
+| Icon | Item\_LOOT\_Dye\_BlackBlue\_01 |
+| MapKey | 02bb51c0-00e5-408c-8e11-8de7b9580c04 |
+| Name | LOOT\_Dye\_BlackBlue\_01 |
+| Stats | OBJ\_Dye\_BlackBlue |
+
+\*If I could put a little dropdown/spoiler type thing here that actually has the color values for the ColorPreset, that would be lovely.\*
