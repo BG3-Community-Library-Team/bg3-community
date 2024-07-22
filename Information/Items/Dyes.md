@@ -2,15 +2,21 @@
 title: Dyes
 description: Reference info for dyes found in game.
 published: false
-date: 2024-07-22T23:45:19.735Z
+date: 2024-07-22T23:53:44.757Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
 ---
 
+# General Info
+- All dyes use the same ParentTemplate: `1a750a66-e5c2-40be-9f62-0a4bf3ddb403`
+- Something about filepaths
+- Blah blah blah
 
-
-# ![](/information/icons/item_loot_dye_blackblue_01.png)Black and Azure Dye
+# Dye List
+## Uncommon Dyes
+## Rare Dyes
+### ![](/information/icons/item_loot_dye_blackblue_01.png)Black and Azure Dye
 
 > The scales of a lightning-breathing dragon are this blue.
 
@@ -42,3 +48,5 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **Color 01** | 0.1385567 0.2514399 0.5750329 | #6889C8 |
 | **Color 02** | 0.1074473 0.1074473 0.1074473 | #5C5C5C |
 | **Color 03** | 0.2198461 0.3058653 0.5234432 | #8196BF |
+## Very Rare Dyes
+## Unreleased Dyes
