@@ -2,7 +2,7 @@
 title: Dyes
 description: Reference info for dyes found in the game files.
 published: false
-date: 2024-07-23T05:39:46.424Z
+date: 2024-07-23T05:46:42.142Z
 tags: reference
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
@@ -28,6 +28,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 19c7bbb1-29f5-4ec9-a72c-74a73318f8da |
 | **Name** | LOOT_Dye_Remover |
 | **Stats** | OBJ_Dye_Remover |
+
 
 
 ## Uncommon Dyes
@@ -189,8 +190,20 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **Stats** | OBJ_Dye_Golden |
 
 
+
 ## Rare Dyes
 ### ![item_loot_dye_blueyellow_02-icon.png](/information/icons/dyes/item_loot_dye_blueyellow_02-icon.png)Baby Blue and Gold Dye
+> *This gold evokes the piercings of the Adjudicators, dragonborn soldiers of Djerad Thymar.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 9d88e168-e638-65fa-feb3-9573ba3e3608 |
+| **Description** | h1fa84c85gc8f1g4723g9ac7g4b2e0e3fdac9 |
+| **DisplayName** | he9b71244g4604g44afga5cfga19d030913df |
+| **Icon** | Item_LOOT_Dye_BlueYellow_02 |
+| **MapKey** | 1dec170b-101f-457b-b22d-8d38c45168c7 |
+| **Name** | LOOT_Dye_BlueYellow_02 |
+| **Stats** | OBJ_Dye_BlueYellow_02 |
 ### ![item_loot_dye_blackblue_01-icon.png](/information/icons/dyes/item_loot_dye_blackblue_01-icon.png)Black and Azure Dye
 > *The scales of a lightning-breathing dragon are this blue.*
 #### Tab {.tabset}
@@ -224,20 +237,187 @@ dateCreated: 2024-07-22T21:45:29.342Z
 
 
 ### ![item_loot_dye_blackred_01-icon.png](/information/icons/dyes/item_loot_dye_blackred_01-icon.png)Black and Furance Red Dye
+> *Mixed from enchanted furnace coals from the forge of some legendary smith.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 59e211f9-38bf-2013-a66b-27f075a7a057 |
+| **Description** | h6e7a8e62g07d2g4b46g8c46gdd68ac02a209 |
+| **DisplayName** | he4d944fbg7dcbg4936gaee7g618e48a1a346 |
+| **Icon** | Item_LOOT_Dye_BlackRed_01 |
+| **MapKey** | bb108620-186f-4a00-b7de-af9329d5497b |
+| **Name** | LOOT_Dye_BlackRed_01 |
+| **Stats** | OBJ_Dye_BlackRed |
 ### ![item_loot_dye_blackteal_01-icon.png](/information/icons/dyes/item_loot_dye_blackteal_01-icon.png)Black and Jade Green Dye
+> *A dye so rich it evokes liquid jade held up to the sun.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 5f97bbfc-7dca-37b4-0285-768fd66f11e8 |
+| **Description** | h465bf165gfcb6g4e79gba5fg4de579b97b46 |
+| **DisplayName** | h357c3698gf91cg4469g82a2g978e046dd7d6 |
+| **Icon** | Item_LOOT_Dye_BlackTeal_01 |
+| **MapKey** | 94ef7170-1c1d-489a-9c18-55209d864e3a |
+| **Name** | LOOT_Dye_BlackTeal_01 |
+| **Stats** | OBJ_Dye_BlackTeal |
 ### ![item_loot_dye_blackgreen_01-icon.png](/information/icons/dyes/item_loot_dye_blackgreen_01-icon.png)Black and Summer Green Dye
+> *This dye smells vaguely of mint and lime.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 88d7c30f-c736-cc70-d005-d1169f73a58f |
+| **Description** | h467afa74g0f7cg42c0g88c2gc8d39686b773 |
+| **DisplayName** | h8d3d6ba7g6f6bg4089g9d01ga7dd7b3dc511 |
+| **Icon** | Item_LOOT_Dye_BlackGreen_01 |
+| **MapKey** | 81512e6c-dbe4-451c-b5cc-7268656444c1 |
+| **Name** | LOOT_Dye_BlackGreen_01 |
+| **Stats** | OBJ_Dye_BlackGreen |
 ### ![item_loot_dye_purplered_01-icon.png](/information/icons/dyes/item_loot_dye_purplered_01-icon.png)Bloody Plum Dye
+> *The ingredients for this dye are impressively rare - tears from an empyrean, conveyed to this plane from Mount Celestia.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | cca868e6-4720-6a07-8db7-1c117564e4e4 |
+| **Description** | he9e56c46gc267g4b62g85ebge4e0c92e41c8 |
+| **DisplayName** | h84386d82g447fg4e3cgaa5bgd3698863c948 |
+| **Icon** | Item_LOOT_Dye_PurpleRed_01 |
+| **MapKey** | 2292d37f-7cb2-4458-83c6-1f2e48ffa23e |
+| **Name** | LOOT_Dye_PurpleRed_01 |
+| **Stats** | OBJ_Dye_PurpleRed |
 ### ![item_loot_dye_whitebrown_01-icon.png](/information/icons/dyes/item_loot_dye_whitebrown_01-icon.png)Brown Alabaster Dye
+> *Pillars of this colour can be found in the palaces of Chult's nobility.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 612865e1-ac2c-30b7-dc50-207c95d3901f |
+| **Description** | hb388ab97g107dg48d3g8821g7e78eb3d01c0 |
+| **DisplayName** | h36a2560bg5966g4f6ag9976g753754b85197 |
+| **Icon** | Item_LOOT_Dye_WhiteBrown_01 |
+| **MapKey** | 3336e3a5-0be1-407d-9c37-01536bb2e6c5 |
+| **Name** | LOOT_Dye_WhiteBrown_01 |
+| **Stats** | OBJ_Dye_WhiteBrown |
 ### ![item_loot_dye_purple_04-icon.png](/information/icons/dyes/item_loot_dye_purple_04-icon.png)Deep Lilac Dye
+> *Ironically made of magnolias and concentrated ethanol.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 7c8ae356-9720-d6b2-02e6-70479f45adec |
+| **Description** | h128f4c34g3f23g4b79ga594g06389dc0758f |
+| **DisplayName** | h0619c661g89e1g4cc5g94d2g32663f8b6beb |
+| **Icon** | Item_LOOT_Dye_Purple_04 |
+| **MapKey** | 7ac1bb07-e494-42d2-bb8d-6bf9e553a52a |
+| **Name** | LOOT_Dye_Purple_04 |
+| **Stats** | OBJ_Dye_Purple_04 |
 ### ![item_loot_dye_whiteblack_01-icon.png](/information/icons/dyes/item_loot_dye_whiteblack_01-icon.png)Harlequin Black and White Dye
+> *The white of the moon, the black of courtly mischief.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 455c4b21-4cda-3fec-7425-a557d140b972 |
+| **Description** | h0613cb8fga786g47c4ga7d1gbbf85dc09dc4 |
+| **DisplayName** | h2262c454g78e2g43ecgad9dg116b71edd3a5 |
+| **Icon** | Item_LOOT_Dye_WhiteBlack_01 |
+| **MapKey** | ffdb4490-cbaf-4eac-97f8-893564d7ead9 |
+| **Name** | LOOT_Dye_WhiteBlack_01 |
+| **Stats** | OBJ_Dye_WhiteBlack |
 ### ![item_loot_dye_purple_03-icon.png](/information/icons/dyes/item_loot_dye_purple_03-icon.png)Indigo Dye
+> *A splash of this colour immediately communicates nobility.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 3973c28b-e2ce-0fe6-0548-d8e9157a4b0e |
+| **Description** | h4870e194g9d02g475ag9e17ga3bd2f864b25 |
+| **DisplayName** | hc061e9fagd6c3g40acgb7e0g886d11d42f7d |
+| **Icon** | Item_LOOT_Dye_Purple_03 |
+| **MapKey** | 5adba582-b552-4850-9be9-c6e28f656675 |
+| **Name** | LOOT_Dye_Purple_03 |
+| **Stats** | OBJ_Dye_Purple_03 |
 ### ![item_loot_dye_bluepurple_01-icon.png](/information/icons/dyes/item_loot_dye_bluepurple_01-icon.png)Lavender Dye
+> *The fragrance of the flowers used to create this dye is pungent and very pretty.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 854e37e1-a840-ac3f-948b-a6630187d3e7 |
+| **Description** | h0b9f54bdg7a87g4356gb712gedabd25596f4 |
+| **DisplayName** | hdd6ff83dgbb07g4b96g88ffg892f5ac2855f |
+| **Icon** | Item_LOOT_Dye_BluePurple_01 |
+| **MapKey** | 83cde47b-9e15-4ea5-98f4-4efd9ce93861 |
+| **Name** | LOOT_Dye_BluePurple_01 |
+| **Stats** | OBJ_Dye_BluePurple |
 ### ![item_loot_dye_icecream_04-icon.png](/information/icons/dyes/item_loot_dye_icecream_04-icon.png)Lime, Lemon, and Lichen Dye
+> *Despite the name, this dye's colour comes from pixie wings fluttering over old chicken coops - the eggs come out funky.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 16febc6c-1fb8-970f-9d3d-73ab5bc3dc73 |
+| **Description** | hcf2311e9geddag4a46g80f4gf6216b3208a8 |
+| **DisplayName** | h1a4e7eecgc77dg4903g9257ge83312883fc4 |
+| **Icon** | Item_LOOT_Dye_IceCream_04 |
+| **MapKey** | 43da55c8-55b7-41c6-9a44-3dd6843875f8 |
+| **Name** | LOOT_Dye_IceCream_04 |
+| **Stats** | OBJ_Dye_IceCream_04 |
 ### ![item_loot_dye_icecream_03-icon.png](/information/icons/dyes/item_loot_dye_icecream_03-icon.png)Mellow Fruit Dye
+> *You'll look like you belong in a tree - not hanging like an extremely dead person, but rather dangling in a most enchanting fashion.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 7c32bee2-2804-ba2f-9421-479fb068dd74 |
+| **Description** | h2b412a35ga1b8g4c2bgb66fgc69ae3384ca1 |
+| **DisplayName** | hc230832aga63bg4082g91d7g3e3e30b92f07 |
+| **Icon** | Item_LOOT_Dye_IceCream_03 |
+| **MapKey** | 2cd56a6a-35bb-417c-9eb6-d78bbe73d3cc |
+| **Name** | LOOT_Dye_IceCream_03 |
+| **Stats** | OBJ_Dye_IceCream_03 |
 ### ![item_loot_dye_pink_01-icon.png](/information/icons/dyes/item_loot_dye_pink_01-icon.png)Pale Pink Dye
+> *Ah, the hue of heroes.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | dcda84b0-4981-90a0-0372-626285920845 |
+| **Description** | h8562d6a1gf773g4db4g9894g2503f9b854ea |
+| **DisplayName** | hc94a98feg4c91g480ag8bf2gd1699332e4a1 |
+| **Icon** | Item_LOOT_Dye_Pink_01 |
+| **MapKey** | 48a27277-7c18-49fe-9124-899919e162bc |
+| **Name** | LOOT_Dye_Pink_01 |
+| **Stats** | OBJ_Dye_Pink |
 ### ![item_loot_dye_greenpink_01-icon.png](/information/icons/dyes/item_loot_dye_greenpink_01-icon.png)Pink and Leaf Green Dye
+> *Colours used by gnomish alderfolk to mark intelligence and guile.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 84b1e032-4013-a304-5e1b-867c4c07fc72 |
+| **Description** | h29438249gfaa6g4236gb457g2afe1c211b72 |
+| **DisplayName** | hd995de8dg0b82g4d2dg9018gf94b0a2f77a8 |
+| **Icon** | Item_LOOT_Dye_GreenPink_01 |
+| **MapKey** | 78f41a7b-4742-419d-a0ac-b9a90a9e198e |
+| **Name** | LOOT_Dye_GreenPink_01 |
+| **Stats** | OBJ_Dye_GreenPink |
 ### ![item_loot_dye_greenswamp_01-icon.png](/information/icons/dyes/item_loot_dye_greenswamp_01-icon.png)Sage Green Dye
+> *Green as good-smelling herbs in a cookpot.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 7922733b-ebb1-1d40-2e5d-f68a1a450571 |
+| **Description** | hb463553cgbd70g4c33g8c2fg9b40a63f99e1 |
+| **DisplayName** | he4dea32bg1601g4040g8f6ag46b256166144 |
+| **Icon** | Item_LOOT_Dye_GreenSwamp_01 |
+| **MapKey** | a13f6fad-bca8-40c0-b5b1-592832c73050 |
+| **Name** | LOOT_Dye_GreenSwamp_01 |
+| **Stats** | OBJ_Dye_GreenSwamp |
 ### ![item_loot_dye_redwhite_01-icon.png](/information/icons/dyes/item_loot_dye_redwhite_01-icon.png)White and Scarlet Dye
+> *A very agreeable dye that evokes pale snow and fresh bloodshed.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | ef743f2d-2d6c-74a9-c1e7-8f477269e6be |
+| **Description** | h7985e0c4gf34eg497ag99edgabf714178b28 |
+| **DisplayName** | h725a2462g77dag4391g84ccgf41fe0b7fd78 |
+| **Icon** | Item_LOOT_Dye_RedWhite_01 |
+| **MapKey** | f42e3c96-e622-4d3a-97da-ce5a939feb3c |
+| **Name** | LOOT_Dye_RedWhite_01 |
+| **Stats** | OBJ_Dye_RedWhite |
+
+
 
 ## Very Rare Dyes
 ### ![item_loot_dye_royalblue_01-icon.png](/information/icons/dyes/item_loot_dye_royalblue_01-icon.png)Boreal Blue Dye
