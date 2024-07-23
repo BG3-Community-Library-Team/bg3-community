@@ -2,7 +2,7 @@
 title: Dyes
 description: Reference info for dyes found in the game files.
 published: false
-date: 2024-07-23T04:33:09.368Z
+date: 2024-07-23T05:33:11.713Z
 tags: reference
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
@@ -31,29 +31,28 @@ dateCreated: 2024-07-22T21:45:29.342Z
 
 ## Uncommon Dyes
 ### ![item_loot_dye_blueyellow_01-icon.png](/information/icons/dyes/item_loot_dye_blueyellow_01-icon.png)Blue Dye
-> **
+> *This strong blue and yellow combination brings to mind a gala event in winter, with yellow dresses twirling and laughter on the air.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | ddc1e83b-8727-7900-94bc-72dc6e78d89a |
+| **Description** | h5b0acd87g9067g4143gad03gf9e2f303500f |
+| **DisplayName** | hc0631ef8g819cg4597gbd6ag098461ee0f22 |
+| **Icon** | Item_LOOT_Dye_BlueYellow_01 |
+| **MapKey** | a4c2594e-33a6-49b2-ab6f-e992a3e0257e |
+| **Name** | LOOT_Dye_BlueYellow_01 |
+| **Stats** | OBJ_Dye_BlueYellow |
 ### ![item_loot_dye_green_01-icon.png](/information/icons/dyes/item_loot_dye_green_01-icon.png)Green Dye
-> **
 ### ![item_loot_dye_blue_01-icon.png](/information/icons/dyes/item_loot_dye_blue_01-icon.png)Light Blue Dye
-> **
 ### ![item_loot_dye_redbrown_01-icon.png](/information/icons/dyes/item_loot_dye_redbrown_01-icon.png)Muddy Red Dye
-> **
 ### ![item_loot_dye_ocean_01-icon.png](/information/icons/dyes/item_loot_dye_ocean_01-icon.png)Ocean Dye
-> **
 ### ![item_loot_dye_orange_01-icon.png](/information/icons/dyes/item_loot_dye_orange_01-icon.png)Orange Dye
-> **
 ### ![item_loot_dye_teal_01-icon.png](/information/icons/dyes/item_loot_dye_teal_01-icon.png)Pale Green Dye
-> **
 ### ![item_loot_dye_orangeblue_01-icon.png](/information/icons/dyes/item_loot_dye_orangeblue_01-icon.png)Pale Orange Dye
-> **
 ### ![item_loot_dye_purple_02-icon.png](/information/icons/dyes/item_loot_dye_purple_02-icon.png)Purple Dye
-> **
 ### ![item_loot_dye_red-icon.png](/information/icons/dyes/item_loot_dye_red-icon.png)Red Dye
-> **
 ### ![item_loot_dye_bluegreen_01-icon.png](/information/icons/dyes/item_loot_dye_bluegreen_01-icon.png)Sea Green Dye
-> **
 ### ![item_loot_dye_greensage_01-icon.png](/information/icons/dyes/item_loot_dye_greensage_01-icon.png)Swamp Green Dye
-> **
 ### ![item_loot_dye_golden_01-icon.png](/information/icons/dyes/item_loot_dye_golden_01-icon.png)Yellow Dye
 > *This dye will make even iron shine like the sun.*
 #### Tab {.tabset}
