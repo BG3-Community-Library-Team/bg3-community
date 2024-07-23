@@ -1,8 +1,8 @@
 ---
 title: Dyes
 description: Reference info for dyes found in the game files.
-published: false
-date: 2024-07-23T05:57:30.405Z
+published: true
+date: 2024-07-23T06:03:08.743Z
 tags: reference
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
@@ -587,3 +587,4 @@ dateCreated: 2024-07-22T21:45:29.342Z
 
 
 ## Unreleased Dyes
+[WIP]
