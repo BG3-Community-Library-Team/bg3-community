@@ -2,7 +2,7 @@
 title: Dyes
 description: Reference info for dyes found in the game files.
 published: false
-date: 2024-07-23T04:25:37.441Z
+date: 2024-07-23T04:32:47.917Z
 tags: reference
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
@@ -31,23 +31,46 @@ dateCreated: 2024-07-22T21:45:29.342Z
 
 ## Uncommon Dyes
 ### ![item_loot_dye_blueyellow_01-icon.png](/information/icons/dyes/item_loot_dye_blueyellow_01-icon.png)Blue Dye
+> **
 ### ![item_loot_dye_green_01-icon.png](/information/icons/dyes/item_loot_dye_green_01-icon.png)Green Dye
+> **
 ### ![item_loot_dye_blue_01-icon.png](/information/icons/dyes/item_loot_dye_blue_01-icon.png)Light Blue Dye
+> **
 ### ![item_loot_dye_redbrown_01-icon.png](/information/icons/dyes/item_loot_dye_redbrown_01-icon.png)Muddy Red Dye
+> **
 ### ![item_loot_dye_ocean_01-icon.png](/information/icons/dyes/item_loot_dye_ocean_01-icon.png)Ocean Dye
+> **
 ### ![item_loot_dye_orange_01-icon.png](/information/icons/dyes/item_loot_dye_orange_01-icon.png)Orange Dye
+> **
 ### ![item_loot_dye_teal_01-icon.png](/information/icons/dyes/item_loot_dye_teal_01-icon.png)Pale Green Dye
+> **
 ### ![item_loot_dye_orangeblue_01-icon.png](/information/icons/dyes/item_loot_dye_orangeblue_01-icon.png)Pale Orange Dye
+> **
 ### ![item_loot_dye_purple_02-icon.png](/information/icons/dyes/item_loot_dye_purple_02-icon.png)Purple Dye
+> **
 ### ![item_loot_dye_red-icon.png](/information/icons/dyes/item_loot_dye_red-icon.png)Red Dye
+> **
 ### ![item_loot_dye_bluegreen_01-icon.png](/information/icons/dyes/item_loot_dye_bluegreen_01-icon.png)Sea Green Dye
+> **
 ### ![item_loot_dye_greensage_01-icon.png](/information/icons/dyes/item_loot_dye_greensage_01-icon.png)Swamp Green Dye
+> **
 ### ![item_loot_dye_golden_01-icon.png](/information/icons/dyes/item_loot_dye_golden_01-icon.png)Yellow Dye
+> *This dye will make even iron shine like the sun.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 4157e913-f20d-037e-db5c-33a38d2b1e81 |
+| **Description** | hc7496f6fg4dc9g451bg87e0gb3fa14399617 |
+| **DisplayName** | hbb7cb740g0da8g44e3gb6afg6a491fd1f5b9 |
+| **Icon** | Item_LOOT_Dye_Golden_01 |
+| **MapKey** | 09e48b43-f567-4acc-b98d-0c86c1396084 |
+| **Name** | LOOT_Dye_Golden_01 |
+| **Stats** | OBJ_Dye_Golden |
 
 ## Rare Dyes
 ### ![item_loot_dye_blueyellow_02-icon.png](/information/icons/dyes/item_loot_dye_blueyellow_02-icon.png)Baby Blue and Gold Dye
 ### ![item_loot_dye_blackblue_01-icon.png](/information/icons/dyes/item_loot_dye_blackblue_01-icon.png)Black and Azure Dye
-> The scales of a lightning-breathing dragon are this blue.
+> *The scales of a lightning-breathing dragon are this blue.*
 #### Tab {.tabset}
 ##### RootTemplate Info
 | --- | --- |
@@ -105,6 +128,17 @@ dateCreated: 2024-07-22T21:45:29.342Z
 ### ![item_loot_dye_blackpink_01-icon.png](/information/icons/dyes/item_loot_dye_blackpink_01-icon.png)Jet and Pink Rose Dye
 ### ![item_loot_dye_richred_01-icon.png](/information/icons/dyes/item_loot_dye_richred_01-icon.png)Lush Burgundy
 ### ![item_loot_dye_icecream_02-icon.png](/information/icons/dyes/item_loot_dye_icecream_02-icon.png)Peach and Apricot Dye
+> *The most fruitful fashionistas of Toril use this dye.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 428e99ed-6fd8-c81a-d856-be32f8d2df84 |
+| **Description** | h60671e58ge4c2g46bcg9ba7g7dfa6fbffdb7 |
+| **DisplayName** | haae795b7gf1a2g4f01g92f8g4b420a35c0a9 |
+| **Icon** | Item_LOOT_Dye_IceCream_02 |
+| **MapKey** | 0e339e21-df58-4e46-a263-e91d4ed19dc9 |
+| **Name** | LOOT_Dye_IceCream_02 |
+| **Stats** | OBJ_Dye_IceCream_02 |
 ### ![item_loot_dye_whitered_01-icon.png](/information/icons/dyes/item_loot_dye_whitered_01-icon.png)Sinful Red on Bone White
 
 ## Unreleased Dyes
