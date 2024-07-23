@@ -2,7 +2,7 @@
 title: Dyes
 description: Reference info for dyes found in the game files.
 published: false
-date: 2024-07-23T05:46:42.142Z
+date: 2024-07-23T05:57:30.405Z
 tags: reference
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
@@ -30,7 +30,6 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **Stats** | OBJ_Dye_Remover |
 
 
-
 ## Uncommon Dyes
 ### ![item_loot_dye_blueyellow_01-icon.png](/information/icons/dyes/item_loot_dye_blueyellow_01-icon.png)Blue Dye
 > *This strong blue and yellow combination brings to mind a gala event in winter, with yellow dresses twirling and laughter on the air.*
@@ -44,6 +43,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | a4c2594e-33a6-49b2-ab6f-e992a3e0257e |
 | **Name** | LOOT_Dye_BlueYellow_01 |
 | **Stats** | OBJ_Dye_BlueYellow |
+
 ### ![item_loot_dye_green_01-icon.png](/information/icons/dyes/item_loot_dye_green_01-icon.png)Green Dye
 > *A humble dye made from tree sap.*
 #### Tab {.tabset}
@@ -56,6 +56,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | e6f417bd-9d84-416f-8c96-5a6917977b77 |
 | **Name** | LOOT_Dye_Green_01 |
 | **Stats** | OBJ_Dye_Green |
+
 ### ![item_loot_dye_blue_01-icon.png](/information/icons/dyes/item_loot_dye_blue_01-icon.png)Light Blue Dye
 > *The colour of a summertime sky.*
 #### Tab {.tabset}
@@ -68,6 +69,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | a94ac1cd-96c9-4775-8dcd-c2b581bfeb50 |
 | **Name** | LOOT_Dye_Blue_01 |
 | **Stats** | OBJ_Dye_Blue |
+
 ### ![item_loot_dye_redbrown_01-icon.png](/information/icons/dyes/item_loot_dye_redbrown_01-icon.png)Muddy Red Dye
 > *This is absolutely just mud and blood. Right?*
 #### Tab {.tabset}
@@ -80,6 +82,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 6904ea3d-89b6-4db7-a0bc-d890423e9312 |
 | **Name** | LOOT_Dye_RedBrown_01 |
 | **Stats** | OBJ_Dye_RedBrown |
+
 ### ![item_loot_dye_ocean_01-icon.png](/information/icons/dyes/item_loot_dye_ocean_01-icon.png)Ocean Dye
 > *Simple and charming as a trip to the seaside.*
 #### Tab {.tabset}
@@ -92,6 +95,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 54cd5913-5226-4143-9186-6c1a8499de1c |
 | **Name** | LOOT_Dye_Ocean_01 |
 | **Stats** | OBJ_Dye_Ocean |
+
 ### ![item_loot_dye_orange_01-icon.png](/information/icons/dyes/item_loot_dye_orange_01-icon.png)Orange Dye
 > *Segments of tangerine and tiger eye.*
 #### Tab {.tabset}
@@ -104,6 +108,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 1bb2ba7b-1ac3-4c2e-bcd3-85886d294204 |
 | **Name** | LOOT_Dye_Orange_01 |
 | **Stats** | OBJ_Dye_Orange |
+
 ### ![item_loot_dye_teal_01-icon.png](/information/icons/dyes/item_loot_dye_teal_01-icon.png)Pale Green Dye
 > *A simple dye made from crushed pellet-shaped insects.*
 #### Tab {.tabset}
@@ -116,6 +121,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 6d90deb8-8df3-4a6f-b31f-f13cf2eb68f9 |
 | **Name** | LOOT_Dye_Teal_01 |
 | **Stats** | OBJ_Dye_Teal |
+
 ### ![item_loot_dye_orangeblue_01-icon.png](/information/icons/dyes/item_loot_dye_orangeblue_01-icon.png)Pale Orange Dye
 > *Certainly very orange. Pumpkins live in envy of this dye.*
 #### Tab {.tabset}
@@ -128,6 +134,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 84f7b0a1-8840-47a1-a27a-1ac79e383520 |
 | **Name** | LOOT_Dye_OrangeBlue_01 |
 | **Stats** | OBJ_Dye_OrangeBlue |
+
 ### ![item_loot_dye_purple_02-icon.png](/information/icons/dyes/item_loot_dye_purple_02-icon.png)Purple Dye
 > *Shavings of a coatl's wing dissolved in natural acids.*
 #### Tab {.tabset}
@@ -140,6 +147,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | fecebc29-385d-4bef-a18a-79705fb0ecf3 |
 | **Name** | LOOT_Dye_Purple_02 |
 | **Stats** | OBJ_Dye_Purple_02 |
+
 ### ![item_loot_dye_red-icon.png](/information/icons/dyes/item_loot_dye_red-icon.png)Red Dye
 > *One of the primary colours, and one you've seen a lot of, given your career choice.*
 #### Tab {.tabset}
@@ -152,6 +160,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 809f228e-8d2b-46b8-8a33-51181505bc61 |
 | **Name** | LOOT_Dye_Red |
 | **Stats** | OBJ_Dye_Red |
+
 ### ![item_loot_dye_bluegreen_01-icon.png](/information/icons/dyes/item_loot_dye_bluegreen_01-icon.png)Sea Green Dye
 > *Cunning merrow preserve coral for a hundred years in a kind of aquatic stasis; when the coral emerges, it forms this dye.*
 #### Tab {.tabset}
@@ -164,6 +173,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | b702ddc5-f4fc-4976-adc4-18a8ddaab8d5 |
 | **Name** | LOOT_Dye_BlueGreen_01 |
 | **Stats** | OBJ_Dye_BlueGreen |
+
 ### ![item_loot_dye_greensage_01-icon.png](/information/icons/dyes/item_loot_dye_greensage_01-icon.png)Swamp Green Dye
 > *This dye will make your clothes look like noxious, stagnant swampwater, and honestly that's so in right now.*
 #### Tab {.tabset}
@@ -176,6 +186,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | ad60be55-7a95-4dcb-ae55-908a97f9955a |
 | **Name** | LOOT_Dye_GreenSage_01 |
 | **Stats** | OBJ_Dye_GreenSage |
+
 ### ![item_loot_dye_golden_01-icon.png](/information/icons/dyes/item_loot_dye_golden_01-icon.png)Yellow Dye
 > *This dye will make even iron shine like the sun.*
 #### Tab {.tabset}
@@ -188,7 +199,6 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 09e48b43-f567-4acc-b98d-0c86c1396084 |
 | **Name** | LOOT_Dye_Golden_01 |
 | **Stats** | OBJ_Dye_Golden |
-
 
 
 ## Rare Dyes
@@ -204,6 +214,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 1dec170b-101f-457b-b22d-8d38c45168c7 |
 | **Name** | LOOT_Dye_BlueYellow_02 |
 | **Stats** | OBJ_Dye_BlueYellow_02 |
+
 ### ![item_loot_dye_blackblue_01-icon.png](/information/icons/dyes/item_loot_dye_blackblue_01-icon.png)Black and Azure Dye
 > *The scales of a lightning-breathing dragon are this blue.*
 #### Tab {.tabset}
@@ -235,7 +246,6 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **Color 02** | 0.1074473 0.1074473 0.1074473 | #5C5C5C |
 | **Color 03** | 0.2198461 0.3058653 0.5234432 | #8196BF |
 
-
 ### ![item_loot_dye_blackred_01-icon.png](/information/icons/dyes/item_loot_dye_blackred_01-icon.png)Black and Furance Red Dye
 > *Mixed from enchanted furnace coals from the forge of some legendary smith.*
 #### Tab {.tabset}
@@ -248,6 +258,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | bb108620-186f-4a00-b7de-af9329d5497b |
 | **Name** | LOOT_Dye_BlackRed_01 |
 | **Stats** | OBJ_Dye_BlackRed |
+
 ### ![item_loot_dye_blackteal_01-icon.png](/information/icons/dyes/item_loot_dye_blackteal_01-icon.png)Black and Jade Green Dye
 > *A dye so rich it evokes liquid jade held up to the sun.*
 #### Tab {.tabset}
@@ -260,6 +271,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 94ef7170-1c1d-489a-9c18-55209d864e3a |
 | **Name** | LOOT_Dye_BlackTeal_01 |
 | **Stats** | OBJ_Dye_BlackTeal |
+
 ### ![item_loot_dye_blackgreen_01-icon.png](/information/icons/dyes/item_loot_dye_blackgreen_01-icon.png)Black and Summer Green Dye
 > *This dye smells vaguely of mint and lime.*
 #### Tab {.tabset}
@@ -272,6 +284,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 81512e6c-dbe4-451c-b5cc-7268656444c1 |
 | **Name** | LOOT_Dye_BlackGreen_01 |
 | **Stats** | OBJ_Dye_BlackGreen |
+
 ### ![item_loot_dye_purplered_01-icon.png](/information/icons/dyes/item_loot_dye_purplered_01-icon.png)Bloody Plum Dye
 > *The ingredients for this dye are impressively rare - tears from an empyrean, conveyed to this plane from Mount Celestia.*
 #### Tab {.tabset}
@@ -284,6 +297,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 2292d37f-7cb2-4458-83c6-1f2e48ffa23e |
 | **Name** | LOOT_Dye_PurpleRed_01 |
 | **Stats** | OBJ_Dye_PurpleRed |
+
 ### ![item_loot_dye_whitebrown_01-icon.png](/information/icons/dyes/item_loot_dye_whitebrown_01-icon.png)Brown Alabaster Dye
 > *Pillars of this colour can be found in the palaces of Chult's nobility.*
 #### Tab {.tabset}
@@ -296,6 +310,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 3336e3a5-0be1-407d-9c37-01536bb2e6c5 |
 | **Name** | LOOT_Dye_WhiteBrown_01 |
 | **Stats** | OBJ_Dye_WhiteBrown |
+
 ### ![item_loot_dye_purple_04-icon.png](/information/icons/dyes/item_loot_dye_purple_04-icon.png)Deep Lilac Dye
 > *Ironically made of magnolias and concentrated ethanol.*
 #### Tab {.tabset}
@@ -308,6 +323,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 7ac1bb07-e494-42d2-bb8d-6bf9e553a52a |
 | **Name** | LOOT_Dye_Purple_04 |
 | **Stats** | OBJ_Dye_Purple_04 |
+
 ### ![item_loot_dye_whiteblack_01-icon.png](/information/icons/dyes/item_loot_dye_whiteblack_01-icon.png)Harlequin Black and White Dye
 > *The white of the moon, the black of courtly mischief.*
 #### Tab {.tabset}
@@ -320,6 +336,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | ffdb4490-cbaf-4eac-97f8-893564d7ead9 |
 | **Name** | LOOT_Dye_WhiteBlack_01 |
 | **Stats** | OBJ_Dye_WhiteBlack |
+
 ### ![item_loot_dye_purple_03-icon.png](/information/icons/dyes/item_loot_dye_purple_03-icon.png)Indigo Dye
 > *A splash of this colour immediately communicates nobility.*
 #### Tab {.tabset}
@@ -332,6 +349,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 5adba582-b552-4850-9be9-c6e28f656675 |
 | **Name** | LOOT_Dye_Purple_03 |
 | **Stats** | OBJ_Dye_Purple_03 |
+
 ### ![item_loot_dye_bluepurple_01-icon.png](/information/icons/dyes/item_loot_dye_bluepurple_01-icon.png)Lavender Dye
 > *The fragrance of the flowers used to create this dye is pungent and very pretty.*
 #### Tab {.tabset}
@@ -344,6 +362,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 83cde47b-9e15-4ea5-98f4-4efd9ce93861 |
 | **Name** | LOOT_Dye_BluePurple_01 |
 | **Stats** | OBJ_Dye_BluePurple |
+
 ### ![item_loot_dye_icecream_04-icon.png](/information/icons/dyes/item_loot_dye_icecream_04-icon.png)Lime, Lemon, and Lichen Dye
 > *Despite the name, this dye's colour comes from pixie wings fluttering over old chicken coops - the eggs come out funky.*
 #### Tab {.tabset}
@@ -356,6 +375,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 43da55c8-55b7-41c6-9a44-3dd6843875f8 |
 | **Name** | LOOT_Dye_IceCream_04 |
 | **Stats** | OBJ_Dye_IceCream_04 |
+
 ### ![item_loot_dye_icecream_03-icon.png](/information/icons/dyes/item_loot_dye_icecream_03-icon.png)Mellow Fruit Dye
 > *You'll look like you belong in a tree - not hanging like an extremely dead person, but rather dangling in a most enchanting fashion.*
 #### Tab {.tabset}
@@ -368,6 +388,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 2cd56a6a-35bb-417c-9eb6-d78bbe73d3cc |
 | **Name** | LOOT_Dye_IceCream_03 |
 | **Stats** | OBJ_Dye_IceCream_03 |
+
 ### ![item_loot_dye_pink_01-icon.png](/information/icons/dyes/item_loot_dye_pink_01-icon.png)Pale Pink Dye
 > *Ah, the hue of heroes.*
 #### Tab {.tabset}
@@ -380,6 +401,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 48a27277-7c18-49fe-9124-899919e162bc |
 | **Name** | LOOT_Dye_Pink_01 |
 | **Stats** | OBJ_Dye_Pink |
+
 ### ![item_loot_dye_greenpink_01-icon.png](/information/icons/dyes/item_loot_dye_greenpink_01-icon.png)Pink and Leaf Green Dye
 > *Colours used by gnomish alderfolk to mark intelligence and guile.*
 #### Tab {.tabset}
@@ -392,6 +414,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 78f41a7b-4742-419d-a0ac-b9a90a9e198e |
 | **Name** | LOOT_Dye_GreenPink_01 |
 | **Stats** | OBJ_Dye_GreenPink |
+
 ### ![item_loot_dye_greenswamp_01-icon.png](/information/icons/dyes/item_loot_dye_greenswamp_01-icon.png)Sage Green Dye
 > *Green as good-smelling herbs in a cookpot.*
 #### Tab {.tabset}
@@ -404,6 +427,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | a13f6fad-bca8-40c0-b5b1-592832c73050 |
 | **Name** | LOOT_Dye_GreenSwamp_01 |
 | **Stats** | OBJ_Dye_GreenSwamp |
+
 ### ![item_loot_dye_redwhite_01-icon.png](/information/icons/dyes/item_loot_dye_redwhite_01-icon.png)White and Scarlet Dye
 > *A very agreeable dye that evokes pale snow and fresh bloodshed.*
 #### Tab {.tabset}
@@ -418,17 +442,123 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **Stats** | OBJ_Dye_RedWhite |
 
 
-
 ## Very Rare Dyes
 ### ![item_loot_dye_royalblue_01-icon.png](/information/icons/dyes/item_loot_dye_royalblue_01-icon.png)Boreal Blue Dye
+> *During the goddess Auril's curse upon Icewind Dale, she shed enchanted snow upon the land - this dye is made from a fistful of those flakes.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 25f9b6dc-e7ab-ac6a-1d5a-529d02a36358 |
+| **Description** | h6c415c60g828dg4772ga043gf0dc90730e23 |
+| **DisplayName** | h3f80e572ga6abg4a93g9b1dgfc19b3b47dae |
+| **Icon** | Item_LOOT_Dye_RoyalBlue_01 |
+| **MapKey** | 17f6e66e-1c23-41d2-9370-3bd9a5a90b4a |
+| **Name** | LOOT_Dye_RoyalBlue_01 |
+| **Stats** | OBJ_Dye_RoyalBlue |
+
 ### ![item_loot_dye_azure_01-icon.png](/information/icons/dyes/item_loot_dye_azure_01-icon.png)Cobalt Dye
+> *The very heavens at dusk, alight with stars and deepening through blues, could not be so vivid as this dye!*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 85fc7553-b1ca-cb0c-600c-2d0a1fb4c06c |
+| **Description** | h8bce30aegac6bg43b8ga5aeg7f8b53cc1e96 |
+| **DisplayName** | h3108c778g15eag4bfcg8765gc100064cc2c8 |
+| **Icon** | Item_LOOT_Dye_Azure_01 |
+| **MapKey** | eedbd9cc-5072-47fd-90a6-36a24c435620 |
+| **Name** | LOOT_Dye_Azure_01 |
+| **Stats** | OBJ_Dye_Azure |
+
 ### ![item_loot_dye_icecream_01-icon.png](/information/icons/dyes/item_loot_dye_icecream_01-icon.png)Custard and Pink Rose Dye
+> *Figaro of Baldur's Gate invented this dye one day - he did not sleep for a fortnight, so anxious was he to get the pigment right.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | baf0cd87-d867-0e2a-570f-67162f0c242b |
+| **Description** | h76bde699g9758g4fe5ga5f1g2c154d3af4d6 |
+| **DisplayName** | h986dfa00ga400g4907g9f81g67d9d4cb8ead |
+| **Icon** | Item_LOOT_Dye_IceCream_01 |
+| **MapKey** | 23899dcd-8f27-4144-b29d-ae61eaacd8c3 |
+| **Name** | LOOT_Dye_IceCream_01 |
+| **Stats** | OBJ_Dye_IceCream |
+
 ### ![item_loot_dye_purple_01-icon.png](/information/icons/dyes/item_loot_dye_purple_01-icon.png)Dark Amethyst Dye
+> *The colour of an immeasurably expensive claret.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 27e27bb5-ec6d-f79d-6144-ab19625f99ee |
+| **Description** | h50de10b7g8ee9g4d83gb245g85e7275e0fd7 |
+| **DisplayName** | h8743eb8ag3e64g4e78ga345ge97655793100 |
+| **Icon** | Item_LOOT_Dye_Purple_01 |
+| **MapKey** | 808cd643-ac73-415c-8ed8-0a81b8b71dd8 |
+| **Name** | LOOT_Dye_Purple_01 |
+| **Stats** | OBJ_Dye_Purple |
+
 ### ![item_loot_laboratory_flask_glass_c-icon.png](/information/icons/dyes/item_loot_laboratory_flask_glass_c-icon.png)Drake General Dye
+> *A dye created by Imperial Dyemaster Sigurd and his apprentice, Aurora, for those who wish to stride valiantly into a world rife with adventure.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 68d055b3-c3df-ab42-857d-cfe747e4a85b |
+| **Description** | h232f2fa4gcd89g419egbe48g1a0fa95b2c95 |
+| **DisplayName** | h902a8881g489fg4babgbc82g6c60329627a5 |
+| **MapKey** | dfb0bd5d-e4ed-4bd3-bcfe-45195260e7dc |
+| **Name** | DLC_LOOT_Dye_Larian |
+| **Stats** | DLC_OBJ_Dye_Larian |
+
 ### ![item_loot_dye_green_02-icon.png](/information/icons/dyes/item_loot_dye_green_02-icon.png)Faewild Green and Dun Dye
+> *Halfling foresters use this dye in their ghillie suits for camouflage.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | ea44dc42-196e-5bbf-56e3-10fe5a21eb82 |
+| **Description** | h94268662g7e83g457bg8034g0cd2c7c3c189 |
+| **DisplayName** | h636b9596g60ccg4326g9f90gf8719f2322ed |
+| **Icon** | Item_LOOT_Dye_Green_02 |
+| **MapKey** | ea46200e-001b-45a1-b1d9-20920e747ba2 |
+| **Name** | LOOT_Dye_Green_02 |
+| **Stats** | OBJ_Dye_Green_02 |
+
 ### ![item_loot_dye_maroon_01-icon.png](/information/icons/dyes/item_loot_dye_maroon_01-icon.png)Gorgeous Maroon Dye
+> *In the Sea Ward in Waterdeep, Lady Cassalanter caused quite the stir at one of her famous parties while wearing this shade of dye in her dress.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 1cdd0db3-f51e-b310-1cf8-06b05ae6213b |
+| **Description** | he93a11c3gf86cg4d53g8d12gdd83e0a99e5e |
+| **DisplayName** | h75c18054g831ag4910gb634g587ca271180a |
+| **Icon** | Item_LOOT_Dye_Maroon_01 |
+| **MapKey** | 10e79bfb-c448-4af4-a153-bf3d19f83c62 |
+| **Name** | LOOT_Dye_Maroon_01 |
+| **Stats** | OBJ_Dye_Maroon |
+
 ### ![item_loot_dye_blackpink_01-icon.png](/information/icons/dyes/item_loot_dye_blackpink_01-icon.png)Jet and Pink Rose Dye
+> *These hues give the appearance of one of Luskan's dignitaries.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | cfada95a-0ef4-0e97-5330-42fff41a7cbe |
+| **Description** | h2138ea63ga872g4474gb8d2g28d1810cacb4 |
+| **DisplayName** | hdca99884ga886g4c43g876ag8be3160e299c |
+| **Icon** | Item_LOOT_Dye_BlackPink_01 |
+| **MapKey** | db4761b2-cce8-4d6d-86ec-5cf0924a5f4c |
+| **Name** | LOOT_Dye_BlackPink_01 |
+| **Stats** | OBJ_Dye_BlackPink |
+
 ### ![item_loot_dye_richred_01-icon.png](/information/icons/dyes/item_loot_dye_richred_01-icon.png)Lush Burgundy
+> *The wealthiest courtiers, merchant princesses, and mesmerising princes wear this colour.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 51d9244b-3f97-a169-63bb-cd5773dfc47a |
+| **Description** | hbf9967f5gae53g4d89g961fg9d2104100594 |
+| **DisplayName** | hbc2ffb7fg38d9g476agac74gd8300ef1df5d |
+| **Icon** | Item_LOOT_Dye_RichRed_01 |
+| **MapKey** | 51cd678b-6a27-490d-b4d1-17cc89a32e40 |
+| **Name** | LOOT_Dye_RichRed_01 |
+| **Stats** | OBJ_Dye_RichRed |
+
 ### ![item_loot_dye_icecream_02-icon.png](/information/icons/dyes/item_loot_dye_icecream_02-icon.png)Peach and Apricot Dye
 > *The most fruitful fashionistas of Toril use this dye.*
 #### Tab {.tabset}
@@ -441,6 +571,19 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 0e339e21-df58-4e46-a263-e91d4ed19dc9 |
 | **Name** | LOOT_Dye_IceCream_02 |
 | **Stats** | OBJ_Dye_IceCream_02 |
+
 ### ![item_loot_dye_whitered_01-icon.png](/information/icons/dyes/item_loot_dye_whitered_01-icon.png)Sinful Red on Bone White
+> *Decorating your armour with this will make you look like a moon weeping bitter tears of blood.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 33f7e7b9-7e66-7893-b18f-e080f39fe3e3 |
+| **Description** | h90517f38g5484g4271g8454g1a8eb79cdd26 |
+| **DisplayName** | h31f8c33dg44f1g4a98gaa57gfd5bc7b227ed |
+| **Icon** | Item_LOOT_Dye_WhiteRed_01 |
+| **MapKey** | 1d0d3883-6196-4ccd-8a49-8e4fb84f6c6b |
+| **Name** | LOOT_Dye_WhiteRed_01 |
+| **Stats** | OBJ_Dye_WhiteRed |
+
 
 ## Unreleased Dyes
