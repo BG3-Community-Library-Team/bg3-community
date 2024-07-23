@@ -2,7 +2,7 @@
 title: Dyes
 description: Reference info for dyes found in the game files.
 published: false
-date: 2024-07-23T03:40:55.755Z
+date: 2024-07-23T03:50:32.929Z
 tags: reference
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
@@ -85,15 +85,15 @@ dateCreated: 2024-07-22T21:45:29.342Z
 
 ## Very Rare Dyes
 ### ![item_loot_dye_royalblue_01-icon.png](/information/icons/dyes/item_loot_dye_royalblue_01-icon.png)Boreal Blue Dye
-### Cobalt Dye
-### Custard and Pink Rose Dye
-### Dark Amethyst Dye
+### ![item_loot_dye_azure_01-icon.png](/information/icons/dyes/item_loot_dye_azure_01-icon.png)Cobalt Dye
+### ![item_loot_dye_icecream_01-icon.png](/information/icons/dyes/item_loot_dye_icecream_01-icon.png)Custard and Pink Rose Dye
+### ![item_loot_dye_purple_01-icon.png](/information/icons/dyes/item_loot_dye_purple_01-icon.png)Dark Amethyst Dye
 ### ![item_loot_laboratory_flask_glass_c-icon.png](/information/icons/dyes/item_loot_laboratory_flask_glass_c-icon.png)Drake General Dye
-### Faewild Green and Dun Dye
+### ![item_loot_dye_green_02-icon.png](/information/icons/dyes/item_loot_dye_green_02-icon.png)Faewild Green and Dun Dye
 ### ![item_loot_dye_maroon_01-icon.png](/information/icons/dyes/item_loot_dye_maroon_01-icon.png)Gorgeous Maroon Dye
-### Jet and Pink Rose Dye
-### Lush Burgundy
+### ![item_loot_dye_blackpink_01-icon.png](/information/icons/dyes/item_loot_dye_blackpink_01-icon.png)Jet and Pink Rose Dye
+### ![item_loot_dye_richred_01-icon.png](/information/icons/dyes/item_loot_dye_richred_01-icon.png)Lush Burgundy
 ### ![item_loot_dye_icecream_02-icon.png](/information/icons/dyes/item_loot_dye_icecream_02-icon.png)Peach and Apricot Dye
-### Sinful Red on Bone White
+### ![item_loot_dye_whitered_01-icon.png](/information/icons/dyes/item_loot_dye_whitered_01-icon.png)Sinful Red on Bone White
 
 ## Unreleased Dyes
