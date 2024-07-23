@@ -2,7 +2,7 @@
 title: Dyes
 description: Reference info for dyes found in the game files.
 published: false
-date: 2024-07-23T04:05:10.985Z
+date: 2024-07-23T04:25:37.441Z
 tags: reference
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
@@ -17,6 +17,17 @@ dateCreated: 2024-07-22T21:45:29.342Z
 
 ## Common Dyes
 ### ![item_loot_dye_remover-icon.png](/information/icons/dyes/item_loot_dye_remover-icon.png)Dye Remover
+> *Using a universal solvent and a secret recipe coined by a hedge witch long ago, this dye remover just wipes those pesky colours right out.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 00000000-0000-0000-0000-000000000000 |
+| **Description** | h21c66565gcb1dg490fg8dfbgbe677cb51350 |
+| **DisplayName** | ha62d19a1g818fg473bg8d83gf165a548160e |
+| **Icon** | Item_LOOT_Dye_Remover |
+| **MapKey** | 19c7bbb1-29f5-4ec9-a72c-74a73318f8da |
+| **Name** | LOOT_Dye_Remover |
+| **Stats** | OBJ_Dye_Remover |
 
 ## Uncommon Dyes
 ### ![item_loot_dye_blueyellow_01-icon.png](/information/icons/dyes/item_loot_dye_blueyellow_01-icon.png)Blue Dye
