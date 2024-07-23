@@ -2,7 +2,7 @@
 title: Dyes
 description: Reference info for dyes found in the game files.
 published: false
-date: 2024-07-23T05:33:11.713Z
+date: 2024-07-23T05:39:46.424Z
 tags: reference
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
@@ -29,6 +29,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **Name** | LOOT_Dye_Remover |
 | **Stats** | OBJ_Dye_Remover |
 
+
 ## Uncommon Dyes
 ### ![item_loot_dye_blueyellow_01-icon.png](/information/icons/dyes/item_loot_dye_blueyellow_01-icon.png)Blue Dye
 > *This strong blue and yellow combination brings to mind a gala event in winter, with yellow dresses twirling and laughter on the air.*
@@ -43,16 +44,137 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **Name** | LOOT_Dye_BlueYellow_01 |
 | **Stats** | OBJ_Dye_BlueYellow |
 ### ![item_loot_dye_green_01-icon.png](/information/icons/dyes/item_loot_dye_green_01-icon.png)Green Dye
+> *A humble dye made from tree sap.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | a8690bc5-9f17-5672-28e2-41c1ab3018ea |
+| **Description** | hfdb77420g4c12g484cgbedfg5a34e52aeed0 |
+| **DisplayName** | ha5df18ffga394g4784g966bgaac61ee3e0fe |
+| **Icon** | Item_LOOT_Dye_Green_01 |
+| **MapKey** | e6f417bd-9d84-416f-8c96-5a6917977b77 |
+| **Name** | LOOT_Dye_Green_01 |
+| **Stats** | OBJ_Dye_Green |
 ### ![item_loot_dye_blue_01-icon.png](/information/icons/dyes/item_loot_dye_blue_01-icon.png)Light Blue Dye
+> *The colour of a summertime sky.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 5bf267b7-cbba-02f6-64f1-6b7600b6d641 |
+| **Description** | hefef14e9ge948g46dfgbe33gb4a683644afa |
+| **DisplayName** | h2607f84fga217g4fd1g9291ga09225545417 |
+| **Icon** | Item_LOOT_Dye_Blue_01 |
+| **MapKey** | a94ac1cd-96c9-4775-8dcd-c2b581bfeb50 |
+| **Name** | LOOT_Dye_Blue_01 |
+| **Stats** | OBJ_Dye_Blue |
 ### ![item_loot_dye_redbrown_01-icon.png](/information/icons/dyes/item_loot_dye_redbrown_01-icon.png)Muddy Red Dye
+> *This is absolutely just mud and blood. Right?*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 86668c08-3811-9f97-1a82-a7a2bc3da66d |
+| **Description** | hf16ce283gc7f5g497fgb4c8gaefe705fd1c0 |
+| **DisplayName** | h5f347defgc2feg4a8agbf14g7962b4f59c00 |
+| **Icon** | Item_LOOT_Dye_RedBrown_01 |
+| **MapKey** | 6904ea3d-89b6-4db7-a0bc-d890423e9312 |
+| **Name** | LOOT_Dye_RedBrown_01 |
+| **Stats** | OBJ_Dye_RedBrown |
 ### ![item_loot_dye_ocean_01-icon.png](/information/icons/dyes/item_loot_dye_ocean_01-icon.png)Ocean Dye
+> *Simple and charming as a trip to the seaside.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 8b2bc234-5b59-1dac-ad0b-981dcaadf1f8 |
+| **Description** | h9bd7e22fg431fg4007gaccfgff46a5068696 |
+| **DisplayName** | hc96f2798g0226g47afg9195g4e1148a4acf5 |
+| **Icon** | Item_LOOT_Dye_Ocean_01 |
+| **MapKey** | 54cd5913-5226-4143-9186-6c1a8499de1c |
+| **Name** | LOOT_Dye_Ocean_01 |
+| **Stats** | OBJ_Dye_Ocean |
 ### ![item_loot_dye_orange_01-icon.png](/information/icons/dyes/item_loot_dye_orange_01-icon.png)Orange Dye
+> *Segments of tangerine and tiger eye.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | d5c2b4ee-0d01-35c4-efe1-97a590cf1b33 |
+| **Description** | h8a6e6c58g6602g4515g952dgae7cc77bff1f |
+| **DisplayName** | hcdcc6a65g4ff2g4f69gb2abg5a82061d2765 |
+| **Icon** | Item_LOOT_Dye_Orange_01 |
+| **MapKey** | 1bb2ba7b-1ac3-4c2e-bcd3-85886d294204 |
+| **Name** | LOOT_Dye_Orange_01 |
+| **Stats** | OBJ_Dye_Orange |
 ### ![item_loot_dye_teal_01-icon.png](/information/icons/dyes/item_loot_dye_teal_01-icon.png)Pale Green Dye
+> *A simple dye made from crushed pellet-shaped insects.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 8b78d035-f64f-5e03-9fa9-ec44a3dc7832 |
+| **Description** | h613beab9g63e4g4d84gb089gb27121986959 |
+| **DisplayName** | h09683058g6c5bg4fb1g9b95gc23504ddd0c5 |
+| **Icon** | Item_LOOT_Dye_Teal_01 |
+| **MapKey** | 6d90deb8-8df3-4a6f-b31f-f13cf2eb68f9 |
+| **Name** | LOOT_Dye_Teal_01 |
+| **Stats** | OBJ_Dye_Teal |
 ### ![item_loot_dye_orangeblue_01-icon.png](/information/icons/dyes/item_loot_dye_orangeblue_01-icon.png)Pale Orange Dye
+> *Certainly very orange. Pumpkins live in envy of this dye.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 81347759-e898-e086-4e85-8ff9b006f3de |
+| **Description** | h48ca94abgb3b2g4c39gb1d4g42b64480fd17 |
+| **DisplayName** | h55a48b98g8dfbg4752gb47bg2e2b1eeadb20 |
+| **Icon** | Item_LOOT_Dye_OrangeBlue_01 |
+| **MapKey** | 84f7b0a1-8840-47a1-a27a-1ac79e383520 |
+| **Name** | LOOT_Dye_OrangeBlue_01 |
+| **Stats** | OBJ_Dye_OrangeBlue |
 ### ![item_loot_dye_purple_02-icon.png](/information/icons/dyes/item_loot_dye_purple_02-icon.png)Purple Dye
+> *Shavings of a coatl's wing dissolved in natural acids.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 323abe30-af8f-38b1-a0bd-bdbf1f30a4ac |
+| **Description** | h6c56d537gaf90g4299g9e40ga89e1e96790e |
+| **DisplayName** | h772d56aege6eag4e2eg97e7g1a6854e79c6b |
+| **Icon** | Item_LOOT_Dye_Purple_02 |
+| **MapKey** | fecebc29-385d-4bef-a18a-79705fb0ecf3 |
+| **Name** | LOOT_Dye_Purple_02 |
+| **Stats** | OBJ_Dye_Purple_02 |
 ### ![item_loot_dye_red-icon.png](/information/icons/dyes/item_loot_dye_red-icon.png)Red Dye
+> *One of the primary colours, and one you've seen a lot of, given your career choice.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 980bdb9c-b9d0-5c57-8b9b-e4ac0db125ec |
+| **Description** | h30b4046dgdf31g4477ga88agab45f437aa29 |
+| **DisplayName** | hd4340198g8858g44a6g8c67g6609a510931f |
+| **Icon** | Item_LOOT_Dye_Red |
+| **MapKey** | 809f228e-8d2b-46b8-8a33-51181505bc61 |
+| **Name** | LOOT_Dye_Red |
+| **Stats** | OBJ_Dye_Red |
 ### ![item_loot_dye_bluegreen_01-icon.png](/information/icons/dyes/item_loot_dye_bluegreen_01-icon.png)Sea Green Dye
+> *Cunning merrow preserve coral for a hundred years in a kind of aquatic stasis; when the coral emerges, it forms this dye.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | 9b822fd0-36ea-d24f-efff-f24e2b1c78c7 |
+| **Description** | h5535bed8g1a3bg4b42g92cbgd9eeeb76c859 |
+| **DisplayName** | h27d0656bge689g464dg9c58g51472bb21e2f |
+| **Icon** | Item_LOOT_Dye_BlueGreen_01 |
+| **MapKey** | b702ddc5-f4fc-4976-adc4-18a8ddaab8d5 |
+| **Name** | LOOT_Dye_BlueGreen_01 |
+| **Stats** | OBJ_Dye_BlueGreen |
 ### ![item_loot_dye_greensage_01-icon.png](/information/icons/dyes/item_loot_dye_greensage_01-icon.png)Swamp Green Dye
+> *This dye will make your clothes look like noxious, stagnant swampwater, and honestly that's so in right now.*
+#### Tab {.tabset}
+##### RootTemplate Info
+| --- | --- |
+| **ColorPreset** | a9895745-150c-5621-bc1a-c05ea59224e1 |
+| **Description** | h3b24b42dg3c13g487bgb755g90f4c33e9dd9 |
+| **DisplayName** | h7175a1b3g3b4ag46beg8f61g34f075583d74 |
+| **Icon** | Item_LOOT_Dye_GreenSage_01 |
+| **MapKey** | ad60be55-7a95-4dcb-ae55-908a97f9955a |
+| **Name** | LOOT_Dye_GreenSage_01 |
+| **Stats** | OBJ_Dye_GreenSage |
 ### ![item_loot_dye_golden_01-icon.png](/information/icons/dyes/item_loot_dye_golden_01-icon.png)Yellow Dye
 > *This dye will make even iron shine like the sun.*
 #### Tab {.tabset}
@@ -65,6 +187,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **MapKey** | 09e48b43-f567-4acc-b98d-0c86c1396084 |
 | **Name** | LOOT_Dye_Golden_01 |
 | **Stats** | OBJ_Dye_Golden |
+
 
 ## Rare Dyes
 ### ![item_loot_dye_blueyellow_02-icon.png](/information/icons/dyes/item_loot_dye_blueyellow_02-icon.png)Baby Blue and Gold Dye
