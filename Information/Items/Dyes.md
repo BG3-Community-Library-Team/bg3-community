@@ -2,7 +2,7 @@
 title: Dyes
 description: Reference info for dyes found in the game files.
 published: false
-date: 2024-07-23T03:27:30.321Z
+date: 2024-07-23T03:40:55.755Z
 tags: reference
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
@@ -16,26 +16,26 @@ dateCreated: 2024-07-22T21:45:29.342Z
 # Dye List
 
 ## Common Dyes
-### Dye Remover
+### ![item_loot_dye_remover-icon.png](/information/icons/dyes/item_loot_dye_remover-icon.png)Dye Remover
 
 ## Uncommon Dyes
-### Blue Dye
-### Green Dye
-### Light Blue Dye
-### Muddy Red Dye
-### Ocean Dye
-### Orange Dye
-### Pale Green Dye
-### Pale Orange Dye
-### Purple Dye
-### Red Dye
-### Sea Green Dye
-### Swamp Green Dye
+### ![item_loot_dye_blueyellow_01-icon.png](/information/icons/dyes/item_loot_dye_blueyellow_01-icon.png)Blue Dye
+### ![item_loot_dye_green_01-icon.png](/information/icons/dyes/item_loot_dye_green_01-icon.png)Green Dye
+### ![item_loot_dye_blue_01-icon.png](/information/icons/dyes/item_loot_dye_blue_01-icon.png)Light Blue Dye
+### ![item_loot_dye_redbrown_01-icon.png](/information/icons/dyes/item_loot_dye_redbrown_01-icon.png)Muddy Red Dye
+### ![item_loot_dye_ocean_01-icon.png](/information/icons/dyes/item_loot_dye_ocean_01-icon.png)Ocean Dye
+### ![item_loot_dye_orange_01-icon.png](/information/icons/dyes/item_loot_dye_orange_01-icon.png)Orange Dye
+### ![item_loot_dye_teal_01-icon.png](/information/icons/dyes/item_loot_dye_teal_01-icon.png)Pale Green Dye
+### ![item_loot_dye_orangeblue_01-icon.png](/information/icons/dyes/item_loot_dye_orangeblue_01-icon.png)Pale Orange Dye
+### ![item_loot_dye_purple_02-icon.png](/information/icons/dyes/item_loot_dye_purple_02-icon.png)Purple Dye
+### ![item_loot_dye_red-icon.png](/information/icons/dyes/item_loot_dye_red-icon.png)Red Dye
+### ![item_loot_dye_bluegreen_01-icon.png](/information/icons/dyes/item_loot_dye_bluegreen_01-icon.png)Sea Green Dye
+### ![item_loot_dye_greensage_01-icon.png](/information/icons/dyes/item_loot_dye_greensage_01-icon.png)Swamp Green Dye
 ### ![item_loot_dye_golden_01-icon.png](/information/icons/dyes/item_loot_dye_golden_01-icon.png)Yellow Dye
 
 ## Rare Dyes
 ### Baby Blue and Gold Dye
-### ![](/information/icons/dyes/item_loot_dye_blackblue_01-icon.png)Black and Azure Dye
+### ![item_loot_dye_blackblue_01-icon.png](/information/icons/dyes/item_loot_dye_blackblue_01-icon.png)Black and Azure Dye
 > The scales of a lightning-breathing dragon are this blue.
 #### Tab {.tabset}
 ##### RootTemplate Info
