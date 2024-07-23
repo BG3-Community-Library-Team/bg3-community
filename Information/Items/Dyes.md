@@ -1,9 +1,9 @@
 ---
 title: Dyes
-description: Reference info for dyes found in game.
+description: Reference info for dyes found in the game files.
 published: false
-date: 2024-07-23T03:12:10.893Z
-tags: 
+date: 2024-07-23T03:27:30.321Z
+tags: reference
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
 ---
@@ -31,11 +31,11 @@ dateCreated: 2024-07-22T21:45:29.342Z
 ### Red Dye
 ### Sea Green Dye
 ### Swamp Green Dye
-### Yellow Dye
+### ![item_loot_dye_golden_01-icon.png](/information/icons/dyes/item_loot_dye_golden_01-icon.png)Yellow Dye
 
 ## Rare Dyes
 ### Baby Blue and Gold Dye
-### ![](/information/icons/item_loot_dye_blackblue_01.png)Black and Azure Dye
+### ![](/information/icons/dyes/item_loot_dye_blackblue_01-icon.png)Black and Azure Dye
 > The scales of a lightning-breathing dragon are this blue.
 #### Tab {.tabset}
 ##### RootTemplate Info
@@ -84,16 +84,16 @@ dateCreated: 2024-07-22T21:45:29.342Z
 ### White and Scarlet Dye
 
 ## Very Rare Dyes
-### Boreal Blue Dye
+### ![item_loot_dye_royalblue_01-icon.png](/information/icons/dyes/item_loot_dye_royalblue_01-icon.png)Boreal Blue Dye
 ### Cobalt Dye
 ### Custard and Pink Rose Dye
 ### Dark Amethyst Dye
-### Drake General Dye
+### ![item_loot_laboratory_flask_glass_c-icon.png](/information/icons/dyes/item_loot_laboratory_flask_glass_c-icon.png)Drake General Dye
 ### Faewild Green and Dun Dye
-### Gorgeous Maroon Dye
+### ![item_loot_dye_maroon_01-icon.png](/information/icons/dyes/item_loot_dye_maroon_01-icon.png)Gorgeous Maroon Dye
 ### Jet and Pink Rose Dye
 ### Lush Burgundy
-### Peach and Apricot Dye
+### ![item_loot_dye_icecream_02-icon.png](/information/icons/dyes/item_loot_dye_icecream_02-icon.png)Peach and Apricot Dye
 ### Sinful Red on Bone White
 
 ## Unreleased Dyes
