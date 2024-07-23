@@ -2,7 +2,7 @@
 title: Dyes
 description: Reference info for dyes found in the game files.
 published: false
-date: 2024-07-23T03:50:32.929Z
+date: 2024-07-23T04:05:10.985Z
 tags: reference
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
@@ -34,7 +34,7 @@ dateCreated: 2024-07-22T21:45:29.342Z
 ### ![item_loot_dye_golden_01-icon.png](/information/icons/dyes/item_loot_dye_golden_01-icon.png)Yellow Dye
 
 ## Rare Dyes
-### Baby Blue and Gold Dye
+### ![item_loot_dye_blueyellow_02-icon.png](/information/icons/dyes/item_loot_dye_blueyellow_02-icon.png)Baby Blue and Gold Dye
 ### ![item_loot_dye_blackblue_01-icon.png](/information/icons/dyes/item_loot_dye_blackblue_01-icon.png)Black and Azure Dye
 > The scales of a lightning-breathing dragon are this blue.
 #### Tab {.tabset}
@@ -67,21 +67,21 @@ dateCreated: 2024-07-22T21:45:29.342Z
 | **Color 03** | 0.2198461 0.3058653 0.5234432 | #8196BF |
 
 
-### Black and Furance Red Dye
-### Black and Jade Green Dye
-### Black and Summer Green Dye
-### Bloody Plum Dye
-### Brown Alabaster Dye
-### Deep Lilac Dye
-### Harlequin Black and White Dye
-### Indigo Dye
-### Lavender Dye
-### Lime, Lemon, and Lichen Dye
-### Mellow Fruit Dye
-### Pale Pink Dye
-### Pink and Leaf Green Dye
-### Sage Green Dye
-### White and Scarlet Dye
+### ![item_loot_dye_blackred_01-icon.png](/information/icons/dyes/item_loot_dye_blackred_01-icon.png)Black and Furance Red Dye
+### ![item_loot_dye_blackteal_01-icon.png](/information/icons/dyes/item_loot_dye_blackteal_01-icon.png)Black and Jade Green Dye
+### ![item_loot_dye_blackgreen_01-icon.png](/information/icons/dyes/item_loot_dye_blackgreen_01-icon.png)Black and Summer Green Dye
+### ![item_loot_dye_purplered_01-icon.png](/information/icons/dyes/item_loot_dye_purplered_01-icon.png)Bloody Plum Dye
+### ![item_loot_dye_whitebrown_01-icon.png](/information/icons/dyes/item_loot_dye_whitebrown_01-icon.png)Brown Alabaster Dye
+### ![item_loot_dye_purple_04-icon.png](/information/icons/dyes/item_loot_dye_purple_04-icon.png)Deep Lilac Dye
+### ![item_loot_dye_whiteblack_01-icon.png](/information/icons/dyes/item_loot_dye_whiteblack_01-icon.png)Harlequin Black and White Dye
+### ![item_loot_dye_purple_03-icon.png](/information/icons/dyes/item_loot_dye_purple_03-icon.png)Indigo Dye
+### ![item_loot_dye_bluepurple_01-icon.png](/information/icons/dyes/item_loot_dye_bluepurple_01-icon.png)Lavender Dye
+### ![item_loot_dye_icecream_04-icon.png](/information/icons/dyes/item_loot_dye_icecream_04-icon.png)Lime, Lemon, and Lichen Dye
+### ![item_loot_dye_icecream_03-icon.png](/information/icons/dyes/item_loot_dye_icecream_03-icon.png)Mellow Fruit Dye
+### ![item_loot_dye_pink_01-icon.png](/information/icons/dyes/item_loot_dye_pink_01-icon.png)Pale Pink Dye
+### ![item_loot_dye_greenpink_01-icon.png](/information/icons/dyes/item_loot_dye_greenpink_01-icon.png)Pink and Leaf Green Dye
+### ![item_loot_dye_greenswamp_01-icon.png](/information/icons/dyes/item_loot_dye_greenswamp_01-icon.png)Sage Green Dye
+### ![item_loot_dye_redwhite_01-icon.png](/information/icons/dyes/item_loot_dye_redwhite_01-icon.png)White and Scarlet Dye
 
 ## Very Rare Dyes
 ### ![item_loot_dye_royalblue_01-icon.png](/information/icons/dyes/item_loot_dye_royalblue_01-icon.png)Boreal Blue Dye
