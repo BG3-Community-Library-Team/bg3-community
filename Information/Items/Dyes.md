@@ -2,7 +2,7 @@
 title: Dyes
 description: Reference info for dyes found in the game files.
 published: false
-date: 2024-07-23T04:32:47.917Z
+date: 2024-07-23T04:33:09.368Z
 tags: reference
 editor: markdown
 dateCreated: 2024-07-22T21:45:29.342Z
