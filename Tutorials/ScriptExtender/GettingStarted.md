@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-07-24T18:47:06.476Z
+date: 2024-07-24T18:56:28.850Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -10,30 +10,25 @@ dateCreated: 2024-04-30T08:23:34.674Z
 
 # **Getting started with Script Extender**
 
-This tutorial covers the absolute basics for modders to start writing mods with [Norbytes Script Extender](https://github.com/Norbyte/bg3se/tree/main). 
+This tutorial covers the absolute basics for modders to start writing mods with [Norbytes Script Extender](https://github.com/Norbyte/bg3se/tree/main).
 
 No prior knowledge about programming is required; however, please familiarize yourself with how to install mods and Script Extender:
-
 -   [How to install .pak files](https://wiki.bg3.community/en//Tutorials/Mod-Use/BG3-Mod-Types-and-how-to-install-them) 
 -   [Installing Script Extender and activating the console](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender)
 
-
 After reading this guide, feel free to follow the tutorial: [**Creating your First SE Mod (TBA)**](https://wiki.bg3.community/en/Tutorials/ScriptExtender/creating_your_first_se_mod)
 
-
 > If you are having trouble following this guide, feel free to join the Baldur's Gate 3 Modding Community discord linked [here](https://discord.gg/bg3mods)
-> The Baldur's Gate 3 Modding Community is a community run discord. Keep in mind that everyone that may help you is a volunteer. Please read and follow the server rules.
+> The Baldur's Gate 3 Modding Community is a community modding run discord. Keep in mind that everyone that may help you is a volunteer. Please read and follow the server rules.
 {.is-success}
 
 You can find further information linked under [09. Useful Resources](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-9-useful-resources) on the bottom of this page.
 
+## 1\. Activate the Script Extender Console  
 
+After following the guide [How to install Script Extender](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender) and activating the console, ensure that the console works properly.  
 
-## 1\. Ensure you have activated the Script Extender Console  
-
-After following the guide  [How to install Script Extender](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender) and activating the console, ensure that the console works properly.  
-When you launch the game now, you should see a second window opening. This is the Script Extender console.
-
+Launch your game and when the game exe opens, a second window will also open. When you launch the game now, you should see a second window opening. This is the Script Extender console.
 
 ![gswse_console_startup.png](/tutorials/getting_started_with_se/gswse_console_startup.png)
 
