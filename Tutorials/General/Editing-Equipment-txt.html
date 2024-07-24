@@ -1,0 +1,114 @@
+<!--
+title: Editing Equipment.txt
+description: 
+published: true
+date: 2024-07-24T13:29:17.453Z
+tags: 
+editor: ckeditor
+dateCreated: 2024-07-24T13:29:17.453Z
+-->
+
+<p>To change the starting equipment for your game's classes, you can edit the Equipment.txt file. This is useful for previewing items or creating icons, just to name a couple examples. But how do you edit Equipment.txt?</p>
+<h2>Tools You'll Need</h2>
+<p>You should just need the <a href="https://github.com/ShinyHobo/BG3-Modders-Multitool"><strong>BG3 Modder's Multitool</strong></a> for this, which you'll use to extract the existing Equipment.txt file from the game. You'll also need a text editor, <a href="https://code.visualstudio.com/"><strong>VSCode</strong></a> or <a href="https://notepad-plus-plus.org/"><strong>Notepad++</strong></a> are good options.</p>
+<h2>Extracting and Placing Equipment.txt</h2>
+<p>Open up your Modder's Multitool and open Search Index. Search for Equipment.txt. Scroll down to <strong>Shared\Public\Shared\Stats\Generated\Equipment.txt</strong> and open the file folder.</p>
+<p>Now, in your Baldur's Gate 3 Data folder, create this file path: <strong>Data\Public\Shared\Stats\Generated</strong></p>
+<p>Copy the Equipment.txt from the first Generated folder to this newly created one. This new Equipment.txt will overwrite the base game settings for equipment.</p>
+<h2>Editing Equipment.txt - Removing equipment</h2>
+<p>Before making any changes, we recommend making a copy of the Equipment.txt and naming it something like "Equipment - OG Copy.txt". This is so you can easily revert back to the default later if you so choose.</p>
+<p>Now open up Equipment.txt in your text editor. It's a huge file, but you'll see something like this at the top.</p>
+<pre><code class="language-plaintext">new equipment "_PC_Equipment"
+
+new equipment "EQP_Unarmed"
+add initialweaponset "Melee"
+
+new equipment "EQP_CC_Barbarian"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greataxe"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Shoes_Barbarian"
+add equipmentgroup
+add equipment entry "ARM_Barbarian"
+add equipmentgroup
+add equipment entry "WPN_Handaxe"
+add equipmentgroup
+add equipment entry "WPN_Handaxe"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+
+&lt;!-- file continues --&gt;</code></pre>
+<p>This equipment entry sets the starting equipment for Barbarian. Here's an edited example, where Barbarian is set to spawn in with nothing but their underwear:</p>
+<pre><code class="language-plaintext">new equipment "_PC_Equipment"
+
+new equipment "EQP_Unarmed"
+add initialweaponset "Melee"
+
+new equipment "EQP_CC_Barbarian"
+add initialweaponset "Melee"
+
+new equipment "EQP_CC_Barbarian2"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greataxe"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Shoes_Barbarian"
+add equipmentgroup
+add equipment entry "ARM_Barbarian"
+add equipmentgroup
+add equipment entry "WPN_Handaxe"
+add equipmentgroup
+add equipment entry "WPN_Handaxe"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+
+&lt;!-- file continues --&gt;</code></pre>
+<p>As you can see, EQP_CC_Barbarian has been changed to match EQP_Unarmed, which will cause them to spawn in with nothing. The original EQP_CC_Barbarian has been renamed to EQP_CC_Barbarian2, so that if we want to later revert the Barbarian back to default equipment, we can simply delete our EQP_CC_Barbarian entry and rename EQP_CC_Barbarian2 to EQP_CC_Barbarian.</p>
+<p>The concept is the same for any class. Keep in mind that some classes have subclasses that each have their own unique equipment set, such as Sorcerer and Paladin. You will need to locate the specific subclass you want to change.</p>
+<h2>Editing Equipment.txt - Adding/changing equipment</h2>
+<p>But what if you want to change the equipment or add new equipment instead of removing it? Well, here's where you'll have to trawl through the game files to find the right UIDs... or you can just check the Wiki to see if they have it. For example, let's say we want to put <a href="https://bg3.wiki/wiki/Armour_of_Landfall">Armour of Landfall</a> on our Barbarian, and give them a <a href="https://bg3.wiki/wiki/Greatsword_+1">Greatsword +1</a>. We visit those wiki pages and find that the UID for the outfit is <code>MAG_Druid_Land_Magic_Leather_Armor</code> and the UID for the weapon is <code>WPN_Greatsword_1</code>.</p>
+<p>Now we just add these entries to our Barbarian:</p>
+<pre><code class="language-plaintext">new equipment "_PC_Equipment"
+
+new equipment "EQP_Unarmed"
+add initialweaponset "Melee"
+
+new equipment "EQP_CC_Barbarian"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greatsword_1"
+add equipmentgroup
+add equipment entry "MAG_Druid_Land_Magic_Leather_Armor"
+
+&lt;!-- file continues --&gt;</code></pre>
+<p>Now our Barbarian spawns in wearing the Armour of Landfall and with a Greatsword +1 on their back. Wearable items are automatically equipped. Items that aren't wearable (such as potions) will appear in your character's inventory once you start the game.</p>
+<p>Warning: adding multiple armors or multiple weapons at once can cause some odd things to happen.</p>
