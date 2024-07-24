@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: true
-date: 2024-07-24T18:21:25.806Z
+date: 2024-07-24T20:26:56.638Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
