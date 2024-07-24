@@ -2,7 +2,7 @@
 title: Mod Use
 description: Home page for tutorials on how to use mods.
 published: true
-date: 2024-07-24T18:19:30.411Z
+date: 2024-07-24T18:19:51.746Z
 tags: tutorials, guides, mod-use
 editor: markdown
 dateCreated: 2024-04-26T01:02:06.859Z
@@ -13,9 +13,9 @@ This page is a list of existing guides relating to the Installation and usage of
 
 ## Pages 
 - [Install BG3MM (BG3 Mod Manager) *A comphrensive guide on how to install mods via BG3MM*](Installation-Of-BG3MM)
-- [Installing Script Extender *How to install Norbyte's Script Extender*](/Tutorials/Installing-Script-Extender)
-- [BG3 Mod Types and how to install them) *A guide on how to install different mod types*](/Mod-Usage/BG3-Mod-Types-and-how-to-install-them)
+- [Installing Script Extender *How to install Norbyte's Script Extender*](Installing-Script-Extender)
+- [BG3 Mod Types and how to install them) *A guide on how to install different mod types*](BG3-Mod-Types-and-how-to-install-them)
 - [General Load Order *Recommendations on how load orders work, and how to orders them*](general-load-order)
 - [Establishing a Baseline *How to Remove mods and ease the Troubleshooting Process*](How-to-remove-mods)
-- [Unique Tav & everything you need to know *A detailed guide on how to install and use Unique Tav*](/Tutorials/Mod-Use/Unique-Tav-Everything-you-need-to-know)
+- [Unique Tav & everything you need to know *A detailed guide on how to install and use Unique Tav*](Unique-Tav-Everything-you-need-to-know)
 {.links-list}
