@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-24T14:06:45.924Z
+date: 2024-07-24T14:08:34.410Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -168,7 +168,7 @@ After setting up the blueprint, mod authors can access the values set by the pla
 Remember, SE makes this `ModuleUUID` constant hold the value of the mod you're writing.
 
 ```lua
--- Get the value of a setting with the ID "MySetting"
+-- Get the value of a setting with the ID "MySetting". ModuleUUID has the UUID of your mod
 local mySettingValue = Mods.BG3MCM.MCMAPI:GetSettingValue("MySetting", ModuleUUID)
 
 -- Set the value of a setting
@@ -200,7 +200,7 @@ end
 -- Now, get values by calling MCMGet("setting_id")
 ```
 
-Global functions are only accessible within your mod table, so this function won't be causing conflicts with other MCM mods that define it.
+Global functions are only accessible within your mod table, so this function won't be causing conflicts with other MCM mods that also define it.
 
 Likewise, you can allow global usage of `MCMAPI` by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`. 
 Otherwise, prepend `Mods.BG3MCM` to all API calls.
@@ -211,13 +211,15 @@ Otherwise, prepend `Mods.BG3MCM` to all API calls.
 MCM allows mod authors to insert custom UI elements into the MCM UI. This can be done using the `InsertModMenuTab` function from MCM's `IMGUIAPI`:
 
 ```lua
-Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "Inserted tab", function(tabHeader)
+Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "Tab name", function(tabHeader)
     local myCustomWidget = tabHeader:AddButton("My custom widget")
     myCustomWidget.OnClick = function()
         _D("My custom widget was clicked!")
     end
 end)
 ```
+
+This will create a new tab or insert the content at the end of an existing one.
 
 > You can define an entire tab's content — not just a widget — and call the `InsertModMenuTab` function to insert it into the MCM window, inside the space dedicated for your mod.
 > • For reference, [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) is a mod that leverages the `InsertModMenuTab` method to add custom logic inside MCM.
