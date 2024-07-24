@@ -2,7 +2,7 @@
 title: Install BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: true
-date: 2024-07-02T08:51:40.721Z
+date: 2024-07-24T18:18:44.920Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
