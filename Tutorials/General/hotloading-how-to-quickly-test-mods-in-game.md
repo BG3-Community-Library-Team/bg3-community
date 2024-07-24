@@ -1,8 +1,8 @@
 ---
 title: Hotloading - How to quickly test mods in game
 description: Hotloading is a way to greatly speed up your modding workflow by reducing the number of times you have to open and close the game.
-published: false
-date: 2024-07-24T17:47:11.642Z
+published: true
+date: 2024-07-24T17:48:41.274Z
 tags: guide, guides, hotloading, mod testing, mod workflow
 editor: markdown
 dateCreated: 2024-07-24T17:47:11.642Z
