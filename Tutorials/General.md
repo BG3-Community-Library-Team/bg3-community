@@ -2,7 +2,7 @@
 title: General
 description: A List of General-purpose Tutorials
 published: true
-date: 2024-06-26T08:27:20.318Z
+date: 2024-07-24T13:30:31.718Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T22:32:48.795Z
@@ -17,4 +17,5 @@ This page is a list of existing general Tutorials.
 - [Legally Obtaining Old Builds/Patches of Baldur’s Gate 3](Legally-Obtaining-Old-Builds-Patches-Of-BG3)
 - [Setting up a Dev Environment](setting-up-a-dev-environment)
 - [Shipping Items to Users](Shipping-Items-to-Users)
+- [Editing Equipment.txt](Editing-Equipment-txt)
 {.links-list}
