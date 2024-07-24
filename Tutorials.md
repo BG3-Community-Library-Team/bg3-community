@@ -2,13 +2,13 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-07-24T18:03:39.102Z
+date: 2024-07-24T18:22:41.417Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
 ---
 
-# List:Tutorials
+# Tutorials
 This page is a list of existing Tutorials.
 
 # Pages {.tabset}
