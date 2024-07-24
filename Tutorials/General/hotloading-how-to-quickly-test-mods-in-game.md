@@ -2,7 +2,7 @@
 title: Hotloading - How to quickly test mods in game
 description: Hotloading is a way to greatly speed up your modding workflow by reducing the number of times you have to open and close the game.
 published: true
-date: 2024-07-24T20:11:42.662Z
+date: 2024-07-24T20:20:56.555Z
 tags: guide, guides, hotloading, mod testing, mod workflow
 editor: markdown
 dateCreated: 2024-07-24T17:47:11.642Z
@@ -29,6 +29,18 @@ You can then hotload it by creating this filepath in your BG3 Data directory:
 `C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Generated\Public\SampleMod\Assets\HUM_F_NKD_Head_LI.GR2`
 
 Then open the game with your .pak loaded and you should see the new head. If you replace the .GR2 inside the Data directory, swapping to another head and back should reflect the new changes without having to restart the game.
+
+If you want to hotload your scripts, add them in the same manner.
+
+For example, say one of your mods has the Script Extender folder located here:
+
+`>SampleMod\Mods\SampleMod\ScriptExtender\Lua\Server\MyFirstSEScript.lua
+`
+You can then hotload it by creating this filepath in your BG3 Data directory:
+
+`C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Mods\SampleMod\ScriptExtender\Lua\Server\MyFirstSEScript.lua`
+
+Then open the game with your .pak loaded and your script should load. If you make changes to the script in the Data directory, then enter `reset` in the Script Extender console, your script will be loaded again without having to restart the game.
 
 Alternatively you can use [symlinks](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking) to link your workspace to your Data folder.
 
