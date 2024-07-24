@@ -2,7 +2,7 @@
 title: Installing Script Extender
 description: How to install Norbyte's Script Extender
 published: true
-date: 2024-07-15T13:52:01.941Z
+date: 2024-07-24T19:59:41.605Z
 tags: installation, moduse, script extender
 editor: markdown
 dateCreated: 2024-06-21T04:52:35.045Z
@@ -21,7 +21,7 @@ Script Extender is compatible with the following systems:
 - Script Extender works on Windows
 - Script Extender works on Linux and Steam Deck *
 
-\* Additional actions necessary. See [4. Installing Script Extender Manually (Linux)](https://wiki.bg3.community/en/Tutorials/Mod-Use/Installing-Script-Extender#h-4-installing-script-extender-manually-linux)
+\* Additional actions necessary. See [4. Installing Script Extender Manually (Linux)](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender#h-3-install-script-extender-on-linuxsteam-deck)
 
 > Mac OS has no official support for Script Extender
 > Consoles (Playstation, Xbox) have no official support for Script Extender
