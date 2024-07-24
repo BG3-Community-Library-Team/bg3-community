@@ -2,7 +2,7 @@
 title: General
 description: A List of General-purpose Tutorials
 published: true
-date: 2024-07-24T13:30:31.718Z
+date: 2024-07-24T17:52:14.388Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T22:32:48.795Z
@@ -18,4 +18,5 @@ This page is a list of existing general Tutorials.
 - [Setting up a Dev Environment](setting-up-a-dev-environment)
 - [Shipping Items to Users](Shipping-Items-to-Users)
 - [Editing Equipment.txt](Editing-Equipment-txt)
+- [Hotloading - How to quickly test mods in game](hotloading-how-to-quickly-test-mods-in-game)
 {.links-list}
