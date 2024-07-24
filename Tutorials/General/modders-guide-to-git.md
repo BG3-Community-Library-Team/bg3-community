@@ -2,7 +2,7 @@
 title: A Modder's Guide to Git
 description: A Primer on Version Control
 published: true
-date: 2024-07-24T22:53:15.126Z
+date: 2024-07-24T22:53:51.967Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:10.635Z
@@ -20,7 +20,7 @@ Many mods for Baldur's Gate 3 are being uploaded on GitHub, and it's easy to see
    - Repositories
    - Initializing a Repository
    - Cloning a Repository
-   - [Getting Familiar with GitHub](/Tutorials/Tools/modders-guide-to-git/getting-familiar-with-github) (Optional)
+   - [Getting Familiar with GitHub](/Tutorials/General/modders-guide-to-git/getting-familiar-with-github) (Optional)
 - [Branch Management](/Tutorials/General/modders-guide-to-git/branch-management)
    - Branches
    - Checking Out/Creating a Branch
