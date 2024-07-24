@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-07-24T17:58:48.661Z
+date: 2024-07-24T18:03:39.102Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -14,7 +14,6 @@ This page is a list of existing Tutorials.
 # Pages {.tabset}
 ## Subsections
 - [General Guides *General-Purpose Guides*](General)
-- [Mod-Use *A List of Guides for Using and Troubleshooting Mods*](mod-use)
 - [Races *A List of Race Mod Tutorials*](Races)
 - [Classes *A List of Class Mod Tutorials*](Classes)
 - [Frameworks *A List of Mod Framework Tutorials*](Mod-Frameworks)
