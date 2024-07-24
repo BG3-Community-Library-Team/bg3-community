@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2024-07-24T18:02:06.141Z
+date: 2024-07-24T18:33:49.748Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -56,7 +56,7 @@ This is the BG3 Modding Community Wiki. This space is a place where tutorials, r
 
 ## Mod Usage
 - [Install BG3MM (BG3 Mod Manager)](Tutorials/Mod-Use/Installation-Of-BG3MM)
-- [Install Mods](Mod-Usage/BG3-Mod-Types-and-how-to-install-them)
+- [Install Mods](Tutorials/Mod-Use/BG3-Mod-Types-and-how-to-install-them)
 - [Load Order](/Tutorials/Mod-Use/general-load-order)
 - [Removing Mods](/Tutorials/Mod-Use/How-to-remove-mods)
 - [Installing Script Extender](/Tutorials/Mod-Use/How-to-install-Script-Extender)
