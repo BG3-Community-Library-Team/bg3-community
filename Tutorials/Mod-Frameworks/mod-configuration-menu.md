@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-07-24T14:09:29.706Z
+date: 2024-07-25T21:02:11.273Z
 tags: mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -41,7 +41,7 @@ Below are listed some nice features that MCM provides to mod authors:
 >
 > • ***Instant saving and loading***: Unlike the traditional way of handling settings, MCM-integrated mods update settings in real-time as they are changed, without requiring save reloads;
 >
-> • ***Minimizes user error***: MCM handles the UI and validation of settings, reducing the risk of user error when configuring your mod and encouraging them to do so safely. It skips the need for manual editing of configuration files, which is a very common source of errors;
+> • ***Minimizes user error***: MCM handles the UI and validation of settings, reducing the risk of user error when configuring your mod and encouraging them to do so safely. By skipping the need for manual editing of configuration files, a very common source of errors, users are less likely to encounter issues or need to ask how to configure your mod.
 >
 > • ***Validation checks***: MCM runs dozens of validation checks to ensure that your blueprint for integration was correctly written, while providing detailed error messages if something is wrong. It also validates the settings' values at runtime to ensure that they respect the defined constraints, which is especially useful if JSON settings files were manually edited, something that is supported by MCM;
 >
