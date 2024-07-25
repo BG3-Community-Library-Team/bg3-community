@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: true
-date: 2024-07-24T20:26:56.638Z
+date: 2024-07-25T07:37:05.386Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -89,6 +89,8 @@ Mods that come as loose files are moved to your Data folder and do not need to b
 
 Default Data folder path:
 ```C:\Program files\Steam\steamapps\common\Baldur's Gate 3\Data```
+
+Depending on which mods are installed, the contents of this may vary greatly.
 #### NATIVE MODS
 
 Few mods such as [Native Camera Tweaks](https://www.nexusmods.com/baldursgate3/mods/945) are application extensions and come in the format .dll, they go in your bin folder and the tool [Native Mod Loader](https://www.nexusmods.com/baldursgate3/mods/944) is required to load them.
