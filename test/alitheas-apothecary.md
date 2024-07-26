@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-07-26T08:31:58.281Z
+date: 2024-07-26T08:48:04.999Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -40,14 +40,17 @@ Part 6 - Creative expression: Tips and tricks for developing your unique style a
 ```![soon_tm.webp](/test/alithea/soon_tm.webp)```
 *credit: Alithea Ancunín*
 
-![myconid-cmty-curvy.webp](/test/myconid-cmty-curvy.webp =250x)
-```![myconid-cmty-curvy.webp](/test/myconid-cmty-curvy.webp)```
+![myconid-cmty-curvy.webp](/test/myconid-cmty-curvy.webp =350x)
+```![myconid-cmty-curvy.webp](/test/myconid-cmty-curvy.webp =350x)```
 *credit: jerinski*
 
-![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp =500x)
-```![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp =500x)```
+![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp =750x)
+```![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp =750x)```
 *credit: Alithea Ancunín*
 
+![durgeharem.webp](/mod-use/install-mods/durgeharem.webp =750x)
+```![durgeharem.webp](/mod-use/install-mods/durgeharem.webp =750x)```
+*credit: Alithea Ancunín*
 
 
 
