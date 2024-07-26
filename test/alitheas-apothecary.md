@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-07-26T08:20:16.395Z
+date: 2024-07-26T08:31:26.291Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -10,6 +10,7 @@ dateCreated: 2024-06-21T10:57:05.698Z
 
 # Astarion is my emotional support character
 ![alithea's_apothecary.webp](/test/alithea's_apothecary.webp)
+---
 ## Screen Archery guide - wip
 [Screen Archery Introduction](https://wiki.bg3.community/en/test/alitheas-apothecary/I)
 [Part 1](https://wiki.bg3.community/en/test/alitheas-apothecary/screen-archery-guide-part-1) - Getting started: Understanding the basic tools and settings required for screen archery
@@ -20,6 +21,8 @@ Part 3 - Integrating free tools and mods.
 Part 6 - Creative expression: Tips and tricks for developing your unique style and storytelling through screen archery.
 [Part 7](/test/alitheas-apothecary/Post-production) - Post production:
 [Part 8](/test/alitheas-apothecary/sharing-your-work) - Sharing your work: Ways to showcase your screen archery on social media, participate in the community, and even enter contests.
+
+
 
 ## Images free to use on our wiki
 [how to includ images and adjust dimensions using markdown](https://docs.requarks.io/en/editors/markdown)
@@ -44,5 +47,8 @@ Part 6 - Creative expression: Tips and tricks for developing your unique style a
 ![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp =500x)
 ```![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp =500x)```
 *credit: Alithea Ancunín*
+
+
+
 
 
