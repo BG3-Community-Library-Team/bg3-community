@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-07-26T07:57:07.883Z
+date: 2024-07-26T08:20:16.395Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -39,7 +39,7 @@ Part 6 - Creative expression: Tips and tricks for developing your unique style a
 
 ![myconid-cmty-curvy.webp](/test/myconid-cmty-curvy.webp =250x)
 ```![myconid-cmty-curvy.webp](/test/myconid-cmty-curvy.webp)```
-*credit: Jerinski*
+*credit: jerinski*
 
 ![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp =500x)
 ```![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp =500x)```
