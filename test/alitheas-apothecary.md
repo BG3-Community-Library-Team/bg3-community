@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-07-26T08:48:04.999Z
+date: 2024-07-26T16:29:42.802Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -52,6 +52,6 @@ Part 6 - Creative expression: Tips and tricks for developing your unique style a
 ```![durgeharem.webp](/mod-use/install-mods/durgeharem.webp =750x)```
 *credit: Alithea Ancunín*
 
-
+![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp)
 
 
