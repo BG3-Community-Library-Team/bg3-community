@@ -2,7 +2,7 @@
 title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
 published: true
-date: 2024-05-26T12:53:05.261Z
+date: 2024-07-29T21:31:49.372Z
 tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -79,6 +79,9 @@ Same as with LSLIB, download from releases.
 
 Instructions for installation and configuration can also be found on the Github page [here](https://github.com/ShinyHobo/BG3-Modders-Multitool/wiki/Installation).
 
+Remember to set up your directories in Configuration:
+![mmt-config.png](/tutorials/getting_started_visual/mmt-config.png)
+
 For most cases you DO NOT need to mass unpack any game files. What you will want to do is index them so that you can use the "Search Index" option later.
 
 ![mmt.png](/tutorials/getting_started_visual/mmt.png)
@@ -110,16 +113,17 @@ First, download zip from Github, located here:
 
 ![bg3plugin-gh.png](/tutorials/getting_started_visual/bg3plugin-gh.png)
 
-Now go into Blender, Edit -> Preferences -> Add-ons -> ...Install
+Unfortunately this cannot be directly installed from Blender due to having an extra folder. So what we need to do is extract the zip, look inside for a folder called "**io_scene_dos2de**", grab it and drop it into 
 
-![blender-install-addon.png](/tutorials/getting_started_visual/blender-install-addon.png)
+..\AppData\Roaming\Blender Foundation\Blender\4.1\scripts\addons 
+(4.1 or whatever version of Blender you are using)
+ 
+If you look inside this folder it should look like this:
 
-Find the .zip you downloaded:
+![plugin-gr2-location.png](/tutorials/getting_started_visual/plugin-gr2-location.png)
 
-![blender-install-addon-2.png](/tutorials/getting_started_visual/blender-install-addon-2.png)
 
-And hit Install Add-on. It should now appear in the list of Add-ons. 
-Now we need to edit its preferences. Expand the Add-on and enter here the path to the divine.exe inside your LSLIB directory.
+Now we need to edit its configuration in Blender. To to Edit -> Preferences -> Add-ons. Use the search box for bg3 and it should be here. Expand it with the little arrow and enter here the path to the divine.exe inside your LSLIB directory.
 
 ![blender-bg3plugin-prefs.png](/tutorials/getting_started_visual/blender-bg3plugin-prefs.png)
 
@@ -133,7 +137,7 @@ If you wish you can tick "Convert to GR2 by Default" (otherwise it will always d
 
 
 Download and install the same way we did the BG3/DOS2 Collada Exporter.
-There aren't any specific add-on preferences to set here, and once installed you should see this in the Outliner under Object properties (yellow square):
+However, in this case there aren't any specific add-on preferences to set here, and once installed you should see this at the bottom right under Object properties (yellow square):
 
 ![blenderhelpers-outliner.png](/tutorials/getting_started_visual/blenderhelpers-outliner.png)
 
