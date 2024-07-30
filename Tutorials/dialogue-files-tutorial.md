@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T05:24:50.605Z
+date: 2024-07-30T05:30:26.523Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -112,9 +112,18 @@ Followed by separate folders breaking down the dialog according to what section 
 
 The Dialog Assets files still refer to the dialog .lsj files as the file paths it's looking for to play a given scene. However, the .lsj files are still deprecated! And despite being referred to in the Dialog Assets entries, the game can still refer to the corresponding DialogsBinary.lsf files through that .lsj file path, and will use those files instead. Even entirely new modded dialog files can be referenced without an .lsj file, even when the file path is set to look for an .lsj file.
 
+Alright, now that we've covered the basics, let's get into editing the files!
+###
+
 ## **HOW DO YOU EDIT THE DIALOGSBINARY FILES?**
 
+These sections of the tutorial will be broken down into tabs, one containing information on how to edit the files, and one containing documentation on the elements in them.
 
+Honestly, just understanding what you're looking at is half the battle when editing dialogue! So I highly recommend checking out the documentation tab before you begin.
+
+### DialogsBinary Files {.tabset}
+
+### Documentation
 
 ## **HOW DO YOU EDIT THE DIALOGUE TIMELINE FILES?**
 
