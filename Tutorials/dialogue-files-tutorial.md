@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T18:40:16.875Z
+date: 2024-07-30T18:41:02.487Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -702,3 +702,4 @@ In this list, you can find the ID numbers of each given emotion (listed first be
 
 You've arrived at how to edit the Dialog Timeline files!
 
+First, find the dialogue node you'd like to edit. You can do this by 
