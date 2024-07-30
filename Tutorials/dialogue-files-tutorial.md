@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T04:40:26.460Z
+date: 2024-07-30T04:50:54.168Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -35,9 +35,29 @@ This tutorial will be divided into sections, breaking down what the purpose of e
 
 Now, let's get started, shall we?
 
+
+
 ## **WHAT THE HECK ARE ALL THESE FILES?**
 
 This section of the tutorial will provide a basic summary of each of the dialogue files listed above. Each file will get its own, more in-depth section later, don't worry! But all of these files are, of course, extremely interconnected, and it'll help to have some basic information before we get into specifics.
+
+Let's start with the Dialog Timeline files.
+####
+
+The Dialog timeline files can usually be found in the \\Data\Public\GustavDev\Timeline\Generated folder when you extract them from the game. Some timeline files can be found in the Gustav folder as well, but they’ll still be in a \\Timeline\Generated folder.
+
+These files control the timing of all elements required to play dialogue and cinematics, including (but not limited to) the actual voice lines, character animations, the emotions the characters use, camera angles and shot changes, and sound effects. They control all aspects of dialogue that require full animation and timing—which does not include moments where your character picks dialogue options! Those are covered in the DialogBinary files, which I'll be explaining more later.
+
+A good way to think of the dialogue timeline files, and the dialogue in this game in general, is actually to picture it like a movie! With each individual line of dialogue as a small scene within that movie. The code in the dialogue timeline files gives the game everything necessary to play those scenes, and what element of the scene play when.
+
+Fun fact, by the way: cutscenes are actually just regular dialogue files! They switch between lines of dialogue and cinematics—sections of animation without voice lines—to create a given scene.
+
+This also means that cinematics are sorta like mini cutscenes, including the cinematics for kisses!
+
+It’s important to note, though, that these little scenes within the timeline files aren’t actually played in order. While the timeline itself is like a movie, the game is almost constantly skipping around within it to play the scene—or line of dialogue—it needs.
+
+And that’s where the DialogsBinary files come in!
+####
 
 
 
@@ -47,9 +67,7 @@ This section of the tutorial will provide a basic summary of each of the dialogu
 
 ## **WHAT ARE DIALOGUE TIMELINE FILES?**
 
-Dialogue timeline files are files that control the timing of all elements required to play dialogue and cinematics, including (but not limited to) the actual voice lines, character animations, the emotions the characters use, camera angles and shot changes, and sound effects. They control all aspects of dialogue that require full animation and timing—which does not include moments where your character picks dialogue options! Those are covered in the DialogBinary files, which I'll be explaining more later.
 
-These files are not just how dialogue is handled, by the way; cutscenes are actually strings of cinematics, which can be edited within these files!
 
 First, though, I want to get into the timeline files. These are very lengthy and complicated files, and you will absolutely need to use a script to update the start and endtimes of anything you add to them. I’ll be covering mine when I get into how to work with the files in earnest!
 
