@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T18:19:41.701Z
+date: 2024-07-30T18:31:33.629Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -295,7 +295,7 @@ Like the DialogsBinary section, I'm also going to be breaking this section of th
 
 You can find instructions on how to use my Dialog Timeline updater in the Using the Timeline Updater tab, as well as on the Nexusmods page for the tool.
 
-The Summary tab offers a bit more explanation on how these files work, the Anatomy of a Dialog Timeline tab explains the structure of the files overall, the Effect Components tab will break down the different EffectComponents in the files, the How to Edit tab will go over editing the files, and the Emotions Quick Ref tab lists out the expression rigs used by the game, with the ID and variation numbers you'll need to reference them in the files.
+The Summary tab offers a bit more explanation on how these files work, the Anatomy of a Dialog Timeline tab explains the structure of the files overall, the Effect Components tab will break down the different EffectComponents in the files, the How to Edit tab will go over editing the files, and the Emotion Rigs Quick Ref tab lists out the expression rigs used by the game, with the ID and variation numbers you'll need to reference them in the files.
 
 ## Tab {.tabset}
 
@@ -479,7 +479,7 @@ I’ll be getting more into the TLEmotionEvent components later! But, for now, t
 
 `<attribute id="IsSnappedToEnd" type="bool" value="True" />`
 
-Honestly, I think this might just be used by Larian's game engine, to make sure each effect component snaps to the end of the previous phase. This doesn't seem to affect things when changing it on the .xml level. 
+Honestly, I think this might just be used by Larian's game engine, to make sure each effect component snaps to the end of the previous phase. This doesn't seem to affect much when changing it on the .xml level. 
  
 
 #### ID:
@@ -501,15 +501,15 @@ Which brings me to the last common attribute:
 
 `</node>`
 
-This UUID refers to which character is performing the effects component! These are usually unique to each timeline file, and will need to be updated to match when cloning effects components from other files. The component won’t be able to reference the related character if this UUID is not updated.
+This UUID refers to which character is performing the effects component! These as mentioned before, these are unique to each timeline file, and will usually need to be updated to match when cloning effects components from other files. The component won’t be able to reference the related character if this UUID is not updated.
 
 #### OK, SO, WE’VE COVERED THE BASICS. WHAT ABOUT SPECIFIC EFFECTS COMPONENTS?
 
 The moment you’ve all been waiting for! Maybe. I’m now going to be breaking down each kind of effects component by its attributes. These are only example components—they won’t refer to anything specific, and almost all values for the attributes have been generated new (and are almost certainly nonfunctional).
 
-I also provided explanations for all attributes I could find within these code blocks—which means that some of the attributes shown in these blocks actually contradict each other! And should not be used at the same time. One example is the “IsMimicry” and “PeanutOverride” attributes. These attributes seem to be mutually exclusive; from what I can tell, the IsMimicry tag is used when things like emotions/attitude animations/etc need to be copied over onto “peanut” characters i.e. the characters standing behind your character in conversations. The PeanutOverride attribute marks a component block as being a unique override for a peanut character, separate from the player character.
+I also provided explanations for all attributes I could find within these code blocks—which means that some of the attributes shown in these blocks actually contradict each other! And should not be used at the same time. One example is the “IsMimicry” and “PeanutOverride” attributes. These attributes seem to be mutually exclusive; from what I can tell, the IsMimicry tag is used when things like emotions/attitude animations/etc need to be copied over onto “peanut” characters (the characters standing behind your character in conversations) from the player character. The PeanutOverride attribute marks a component block as being a unique override for a peanut character, separate from the player character.
 
-These tags actually may be a tag for Larian's game engine to process; they don't seem to affect much when changed. But still, as I mentioned in the code blocks below, they should likely still be updated when changing these blocks, and shouldn't be used together.
+These tags actually may be a tag for Larian's game engine to process; they don't seem to affect much when changed. But still, they should probably be updated when changing these blocks, and shouldn't be used together.
 
 A good rule of thumb for editing, creating, and adding onto these components is to try and find other components with a similar structure. If you can find other components with the same attributes yours has, you can be sure those attributes will work together!  
  
@@ -534,10 +534,33 @@ Emotion and emotion variation ID numbers are handled in the following pattern:
 -   8 different .GR2 expression rigs for each of these emotions, the first five of which are generally closed mouth poses when the character is not speaking (this would be \[Emotion\]\_A through \[Emotion\]\_E), and the last three of which are generally open mouthed or teeth bared poses (this would be \[Emotion\]\_X through \[Emotion\]\_Z).
 -   The different expression rigs are referred to in the game's files as “variations,” and their variation ID/value numbers roughly correspond to the final letter in the rig name. The reference numbers for the letters still start at 0, though, like other parts of the timeline file! This means that, for example, a character’s Happy\_B expression rig has the ID value of "1," Happy\_C has the ID value of "2," and so on. The X, Y, and Z expression rigs still follow this pattern (even though most characters do not have expression rigs between those A-E and X-Z rigs), making the ID numbers for them 23, 24, and 25 respectively.
 
-I've provided a reference for all of them below.  
- 
+I've provided a reference for all of them in the Emotion Rigs Quick Ref tab.  
 
-##### **A quick reference for Emotions and their variation ID numbers:**
+
+#### TLLookAtEvent:
+
+#### TLShowWeapon:
+
+![](/tutorials/dialogue-files-tutorial/tlshowweaponvisual.png)
+
+#### TLShowPeanuts:
+
+![](/tutorials/dialogue-files-tutorial/tlshowpeanutsvisual.png)
+
+#### TLSoundEvents:
+
+#### TLSwitchStageEvent:
+
+![](/tutorials/dialogue-files-tutorial/tlswitchstageeventvisual.png)
+
+#### TLTransform:
+
+#### TLShot:
+
+![](/tutorials/dialogue-files-tutorial/tlshotvisual.png)
+
+
+### **Emotion Rigs Quick Ref**
 
 In this list, you can find the ID numbers of each given emotion (listed first before the emotion name), followed by a list of the corresponding emotion rigs and their variation IDs.
 
@@ -672,27 +695,3 @@ In this list, you can find the ID numbers of each given emotion (listed first be
 -   Pain\_X = 23
 -   Pain\_Y = 24
 -   Pain\_Z = 25
-
-#### TLLookAtEvent:
-
-#### TLShowWeapon:
-
-![](/tutorials/dialogue-files-tutorial/tlshowweaponvisual.png)
-
-#### TLShowPeanuts:
-
-![](/tutorials/dialogue-files-tutorial/tlshowpeanutsvisual.png)
-
-#### TLSoundEvents:
-
-#### TLSwitchStageEvent:
-
-![](/tutorials/dialogue-files-tutorial/tlswitchstageeventvisual.png)
-
-#### TLTransform:
-
-#### TLShot:
-
-![](/tutorials/dialogue-files-tutorial/tlshotvisual.png)
-
--   …..
