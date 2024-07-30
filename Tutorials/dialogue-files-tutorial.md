@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T18:09:05.095Z
+date: 2024-07-30T18:19:41.701Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -418,11 +418,11 @@ So far, I’ve found the following effect components, each of which controls a d
 
 #### Ok, cool. What do you mean by “attributes," though?
 
-Each effect component in a timeline file is broken down into several variables, or attributes, as well as the times that each component and attribute will trigger and end. Each type of effect component has a different set of possible attributes, although there are common attributes most if not all component types share. I'll be breaking down each type of effect component and their attributes in this section of the tutorial, with example code blocks explaining what each element of them means line by line.
+Each effect component in a timeline file is broken down into several variables, or attributes, which will tell the game how it should handle the effect when calling it in the game. These attributes include things like start and end times, the actors mentioned above, the sound effects/animations the game should be playing, and so on.
   
 Keep in mind that not every possible attribute for these components will be present every time! Which means some possible attributes the game can process may not be listed in this tutorial yet. If you find one I missed, please let me know!
 
-Also, some of the attributes I included in these explanations contradict each other, and will not be found in the same instance of that effects component. I've generally pointed it out when this happens, but a good rule of thumb will be to look at examples of the same type of effects component you're editing, to know what attributes are usually included in them, and which are not.
+Also, some of the attributes I included in these explanations contradict each other, and will not be found in the same instance of that effects component. I've generally pointed it out when this happens, but a good rule of thumb will be to look at examples of the same type of effect component you're editing, to know what attributes are usually included in them, and which are not.
 
 This section is likely going to be very long, but hopefully having explanations of what everything is makes it a bit less intimidating! These files can be a lot to look at, but the more you understand about them, the less daunting it'll be to edit them.
 
@@ -440,9 +440,11 @@ Pretty self explanatory. The type of effect component, which will be one of the 
 
 `<attribute id="PhaseIndex" type="int64" value="1" />`
 
-As mentioned above, the PhaseIndex refers to every component necessary for a given dialogue node, which will be played as a group according to their given start and end times (explained below). All components with the same PhaseIndex number belong to the same dialogue node! For your own mods, you’ll want to make sure this number is unique, sequential, and is tied to the same MapValue number and placement in the TimelinePhases and Phases sections, respectively. You'll also want to make sure all elements you add for your dialogue node have the same PhaseIndex, so they'll be grouped together, and play properly as a unit.
+As mentioned above, the PhaseIndex refers to every component belonging to a given dialogue node, which will be played as a group according to their given start and end times (explained below).
 
-Also, again, the first dialogue node on the timeline will not have a PhaseIndex listed for its components. Its PhaseIndex number is actually 0, but, being at the start of the timeline, the game’s code doesn’t require it to be listed.  
+For your own mods, you’ll want to make sure this number is unique, sequential, and is tied to the same MapValue number and placement in the TimelinePhases and Phases sections, respectively. You'll also want to make sure all elements you add for your dialogue node have the same PhaseIndex, so they'll be grouped together, and play properly as a unit.
+
+And again, the first dialogue node on the timeline will not have a PhaseIndex listed for its components! Its PhaseIndex number is actually 0, but, being at the start of the timeline, the game’s code doesn’t require it to be listed.  
  
 
 #### StartTime and EndTime:
@@ -454,9 +456,8 @@ Also, again, the first dialogue node on the timeline will not have a PhaseIndex 
 Pretty self-explanatory! The start and end time for each component within the phase, according to its placement within the whole dialogue timeline. A few things to note, though:
 
 -   The first phase on the timeline, again, starts at 0, so it generally does not list start times for its components, unless one of those components is meant to start partway through the dialogue. It usually will list end times, though.
--   The start and end times listed do not actually have to match the full length of the phase! Some effect components start and/or end partway through the phase, which can be used to add pauses between lines of dialogue.
+-   The start and end times listed do not actually have to match the full length of the phase! Some effect components start and/or end partway through the phase, which can be used to add pauses between lines of dialogue, among other things.
 -   These start and end times are placed within a massive timeline, and they are, again, sequential. As mentioned earlier, it helps to imagine the dialogue timeline like a movie, and the phases in the timeline are little chapters you can skip to within it, with each component playing at specific times within that chapter, according to these start and end times.
-     
 
 #### Time:
 
