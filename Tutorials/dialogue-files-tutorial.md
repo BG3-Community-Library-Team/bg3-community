@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T08:54:28.998Z
+date: 2024-07-30T09:46:48.832Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -291,9 +291,17 @@ And now for the Dialog Timeline files. These are very lengthy and complicated fi
 
 It's an extremely simple tool, and is basically the Python scripts I've been using to update timeline files put into a tkinter UI, but it's been a lifesaver for me when editing these files.
   
-Like the DialogsBinary section, I'm also going to be breaking this section of the tutorial into different tabs. You can find instructions on how to use my Dialog Timeline updater in the "Using the Timeline Updater" tab, as well as on the Nexusmods page for the tool.
+Like the DialogsBinary section, I'm also going to be breaking this section of the tutorial into different tabs.
 
-### **ANATOMY OF A DIALOG TIMELINE FILE**
+You can find instructions on how to use my Dialog Timeline updater in the Using the Timeline Updater tab, as well as on the Nexusmods page for the tool.
+
+The Summary tab offers a bit more explanation on how these files work, the Anatomy of a Dialog Timeline tab explains the structure of the files overall, the Documentation tab will break down the different EffectComponents in the files, the How to Edit tab will go over editing the files, and the Emotions Quick Ref tab lists out the expression rigs used by the game, with the ID and variation numbers you'll need to reference them in the files.
+
+## Tab {.tabset}
+
+### A Summary
+
+### Anatomy of a Dialog Timeline File
 
 Dialogue timeline files are broken down into a several sections, the biggest of which—EffectComponents—I'll be covering last. The EffectComponents section contains most of the actual information about the dialogue being played, so it is both extremely lengthy, and references a majority of the other sections in the timeline files. Covering the others first will make the EffectComponents section make a lot more sense. I'll be covering each other section in the order they appear in the files, skipping the EffectComponents for now. 
 
@@ -309,9 +317,9 @@ There’s not much to say about it beyond that, honestly! It’s one line, and y
 
 #### **Phases:**
 
-Dialogue phases are what control the actual timing of each dialogue node. A dialogue node refers to each separate line of dialogue a character might have, generally marked by the captions for the dialogue changing! Cinematics—the term the game uses for cutscenes and animations without voice lines—are also counted as unique dialogue nodes within the game’s files. These phases group together all elements for a single dialogue node, allowing them to play out in their proper timing when the dialogue node is called for.
+Dialogue phases are what control the actual timing of the elements in each dialogue node, as described in the DialogsBinary section of the tutorial.
 
-A good way to picture the dialogue timeline files in general is to imagine them like a movie! Each bit of dialogue is contained within that movie, and you can think of phases as being specific, very brief scenes within that movie you can skip to at any time, timestamped for your convenience.  
+Again, a good way to picture the dialogue timeline files in general is to imagine them like a movie! Each bit of dialogue is contained within that movie, and, like the dialogue nodes that correspond to them, you can think of phases as being specific scenes within that movie you can skip to at any time, timestamped for your convenience.
  
 
 ##### These phases have four elements:
@@ -373,16 +381,18 @@ This is a lot of repeat information, but I thought it'd help to have it listed u
 
 This is similar to the TimelineSpeakers section mentioned above, but it actually refers to the characters standing behind the player character during a conversation. Like the peanut gallery! Definitely one of my favorite variable names for sure. Any references to “Peanuts” in the dialogue files is about these characters. And the UUIDs here are meant to map out things like emotions/animations/etc for these characters according to what “slot,” or placement behind you the characters are. From what I can tell, these characters are not ever referred to in the DialogBinary files, unlike the TimelineSpeakers, probably because they don't speak, and can be any companion or hireling character. This means the animations of the characters behind you are tied to which of 3 placements they've been put into, rather than a specific character.  
  
+#### AdditionalLocations:
 
-### What about the rest of the file?
+If a scene needs to take you to a different location for the scene to play, the triggers for those locations will be listed here.
+
+#### What about the rest of the file?
 
 The rest of the sections in the timeline file are either things that likely should be kept consistent, don't seem to affect much in the game when changed, or don't seem to actually contain information in most of the files I've seen. I'll be experimenting more with them, though! But you likely won't need to worry about them much for most of your own dialogue mods.
 
   
 …And, with that, we're ready to move on!  
  
-
-## **OK, SURE, I'M READY. WHAT IS GOING ON WITH THOSE EFFECT COMPONENTS?**
+#### OK, SURE, I'M READY. WHAT IS GOING ON WITH THOSE EFFECT COMPONENTS?
 
 Again, the EffectComponents section is the bulk of what you’ll be getting into and editing for your dialogue mods. The effect components contain the actual information on timing, character animations, poses, staging, expressions, sound effects, voice lines, camera angles, and more that need to be referenced to play the dialogue or cinematic. Most of the other sections I've covered so far are really meant to help the game properly reference this information—the effect components are the true core of the dialogue system.
 
@@ -391,7 +401,7 @@ Effect components are classified into several different “Types,” each of whi
 I’m going to be very thorough with these, and there’s a lot to go through, so strap in!  
  
 
-### What types of effects components you can choose from?
+#### What types of effects components you can choose from?
 
 So far, I’ve found the following effect components, each of which controls a different aspect of dialogue, and each of which has different set of attributes, which I’ll be going into shortly. For now, though, I’m just going to give a brief rundown of each:
 
@@ -401,31 +411,32 @@ So far, I’ve found the following effect components, each of which controls a d
 -   **TLEmotionEvent:** Controls the facial expressions used for the character referenced in the “Actor” section of the component.
 -   **TLLookAtEvent:** Controls where the character is looking, as well as whether their eyes are open or closed, head and body turning, etc.
 -   **TLMaterial:** Used for temporary material overrides, like for Karlach's glow map colors during romance scenes.
--   **TLShowVisual**: Used to switch different VisualTemplates in and out. Can be used for model swapping/placing objects in scenes/etc.
+-   **TLShowVisual**: Used to switch different objects into scenes, such as set pieces in the environment.
 -   **TLShowWeapon:** Controls whether weapons and instruments are shown during the dialogue or cinematic, and when their visibility is toggled on and off.
+- **TLShowArmor** Controls whether different armor or clothing slots are displayed on a character during a scene.
 -   **TLShowPeanuts:** Controls whether the characters standing behind your character during dialogue are shown or not. (Again, like the peanut gallery!)
 -   **TLSoundEvents:** What sound effects play and when.
--   **TLSwitchStageEvent:** Mainly used for cinematics. Used when the characters need to change positions from their places in normal dialogue.
--   **TLTransform:** Mainly used for cinematics. I believe this controls changes in character position within the game world i.e. if they need to turn or walk from one place to another, but I need to do some more experimenting with it.
+-   **TLSwitchStageEvent:** Mainly used for cinematics. I believe this is used when the characters need to change positions from their places in normal dialogue.
+-   **TLTransform:** Mainly used for cinematics. I believe this controls changes in character position within the game world i.e. if they need to turn or walk from one place to another.
+- **TLShapeshift:** Used to swap in different character RootTemplates, so you can change character appearance within a scene.
+- **TLSwitchLocationEvent** Used to take you to different locations when necessary in a scene. These locations will be listed in the AdditonalLocations section of the file.
 -   **TLShot:** Used to time camera position switches.  
      
 
-### Ok, cool. What do you mean by “attributes," though?
+#### Ok, cool. What do you mean by “attributes," though?
 
 Each effect component in a timeline file is broken down into several variables, or attributes, as well as the times that each component and attribute will trigger and end. Each type of effect component has a different set of possible attributes, although there are common attributes most if not all component types share. I'll be breaking down each type of effect component and their attributes in this section of the tutorial, with example code blocks explaining what each element of them means line by line.
-
-You can find an .lsx file with all of this information here \[link\], if you need to copy/paste, but this wiki will contain all of the same information contained in that .lsx file, just via screenshots.  
   
 Keep in mind that not every possible attribute for these components will be present every time! Which means some possible attributes the game can process may not be listed in this tutorial yet. If you find one I missed, please let me know!
 
 Also, some of the attributes I included in these explanations contradict each other, and will not be found in the same instance of that effects component. I've generally pointed it out when this happens, but a good rule of thumb will be to look at examples of the same type of effects component you're editing, to know what attributes are usually included in them, and which are not.
 
-This section is likely going to be very long, but hopefully having explanations of what everything is makes it a bit less intimidating! These files can be a lot to look at, but the more you understand about them, the less daunting it'll be to edit them. This section will also serve as a reference if you're just looking for information on specific component types. If you’d like to find a breakdown of a specific effect component, you can hit Ctrl+F to search for the name of the one you’re looking for, or use the navigation links on the side of the page.
+This section is likely going to be very long, but hopefully having explanations of what everything is makes it a bit less intimidating! These files can be a lot to look at, but the more you understand about them, the less daunting it'll be to edit them.
 
-Let's get into it! I'll start by explaining some common attributes you'll see in most components:  
+Let's get into it! I'll start by explaining some common attributes you'll see in most effect components:  
  
 
-## A GUIDE TO COMMON EFFECT COMPONENT ATTRIBUTES
+#### A GUIDE TO COMMON EFFECT COMPONENT ATTRIBUTES
 
 #### Type:
 
@@ -450,15 +461,13 @@ Also, again, the first dialogue node on the timeline will not have a PhaseIndex 
 Pretty self-explanatory! The start and end time for each component within the phase, according to its placement within the whole dialogue timeline. A few things to note, though:
 
 -   The first phase on the timeline, again, starts at 0, so it generally does not list start times for its components, unless one of those components is meant to start partway through the dialogue. It usually will list end times, though.
--   The start and end times listed do not actually have to match the full length of the phase! You can actually add pauses at the start and end of dialogue and cinematics by adding a little extra time in the duration of the phase, and adjusting your start and end times to add the pauses where you’d like. You will want to make a note of how much time you added, though, so you can make sure the overall timeline duration matches the actual length of the phases you’ve included.
--   These start and end times are placed within a massive timeline, and they are, again, sequential. As mentioned earlier, it helps to imagine the dialogue timeline like a movie, and the phases in the timeline are little chapters you can skip to within it, with each component playing at specific times within that chapter.  
+-   The start and end times listed do not actually have to match the full length of the phase! Some effect components start and/or end partway through the phase, which can be used to add pauses between lines of dialogue.
+-   These start and end times are placed within a massive timeline, and they are, again, sequential. As mentioned earlier, it helps to imagine the dialogue timeline like a movie, and the phases in the timeline are little chapters you can skip to within it, with each component playing at specific times within that chapter, according to these start and end times.
      
 
 #### Time:
 
-Some components list start and end times, and then are further broken down into “Time” elements. These are seen in components like TLEmotionEvent and TLLookAtEvent, among others. I mentioned this above,  but to reiterate, the “Time” attribute refers to when a certain effect is supposed to start, they just don’t have equivalent end times. Instead, the next instance of the “Time” attribute will replace the previous effect listed within the component.
-
-As an example, the characters’ emotions during dialogue are usually handled with the “Time” attribute. Each “Time” attribute will set the character’s expression, starting at that time. The next “Time” attribute will replace the previous expression at the listed time.
+Some components list start and end times, and then are further broken down into “Time” elements. These are seen in components like TLEmotionEvent and TLLookAtEvent, among others. I mentioned this above, but to reiterate, the “Time” attribute refers to when a certain effect is supposed to start, they just don’t have equivalent end times. Instead, the next instance of the “Time” attribute will replace the previous effect listed within the component.
 
 This may be because some of these attributes are meant to persist, even after the game has moved onto the next dialogue node! Two examples of these are TLEmotionEvent and TLAttitudeEvent. The animations from these two effects components are carried into the next node, and are often used to preserve the characters' expressions and attitude animations while you're picking dialogue options. These attributes are not given a definitive end time, because they're meant to persist until the next instance of the attribute is called, or the dialogue ends.  
  
@@ -467,7 +476,7 @@ This may be because some of these attributes are meant to persist, even after th
 
 The StartTime, EndTime, and Time attributes are all handled *extremely* precisely, with times often being very, very tiny fractions of a second.
 
-This is extremely helpful with facial expressions in particular— each character actually only has around 8 expression rigs for any given emotion, and the total number they have is actually relatively small. But by using the precise timing the game allows, it almost never feels like they’re using so few expression rigs. You can make extremely complex sequences of emotions using this method, making the characters’ expressions feel unique, despite how few rigs they actually use.
+This is extremely helpful with facial expressions in particular—each character actually only has around 8 expression rigs for any given emotion, and the total number they have is relatively small. But by using the precise timing the game allows, it almost never feels like they’re using so few expression rigs. You can make extremely complex sequences of emotions using this method, making the characters’ expressions feel unique, despite how few rigs they actually use.
 
 I’ll be getting more into the TLEmotionEvent components later! But, for now, there’s still three common elements to talk about:  
  
@@ -476,16 +485,16 @@ I’ll be getting more into the TLEmotionEvent components later! But, for now, t
 
 `<attribute id="IsSnappedToEnd" type="bool" value="True" />`
 
-I believe this snaps the components to the end of the phase. This is often set to “True,” but some components are missing the attribute entirely. This is likely because the default is False, and is not necessary to list when the component doesn’t need to be snapped to the end of the phase.  
+Honestly, I think this might just be used by Larian's game engine, to make sure each effect component snaps to the end of the previous phase. This doesn't seem to affect things when changing it on the .xml level. 
  
 
 #### ID:
 
 `<attribute id="ID" type="guid" value="49292981-224c-4feb-a51b-fa7bf0fb46f3" />`
 
-The unique UUID for the specific effects component you’re looking at. It’s generally a good idea to generate a new one for each effects component you add, but the dialogue timeline files don’t seem to be able to reference UUIDs from other timeline files, so, as far as I can tell, changing these IDs is only strictly necessary when cloning effects components within the same timeline file.
+The unique UUID for the specific effect component you’re looking at. It’s generally a good idea to generate a new one for each effect component you add, which my dialogue updater tool can take care of for you. (More explanation can be found in the
 
-You do also have to be careful—other UUIDs within an effects component are connected to other things, like animations, camera positions, and the characters performing the listed effects. Make sure you only generate a new UUID for this “ID” attribute, and that all other UUIDs are the same as the elements (like camera positions, animations, etc) you want to reference.
+A note: other UUIDs within an effects component are connected to other things, like animations, camera positions, and the characters performing the listed effects. My dialogue updater will only change the IDs for the effects components themselves, and won't touch any other UUIDs, but make sure you're careful if you're manually editing them. You'll want to make sure all other UUIDs are the same as the elements (like camera positions, animations, etc) you want to reference.
 
 Which brings me to the last common attribute:  
  
@@ -500,7 +509,7 @@ Which brings me to the last common attribute:
 
 This UUID refers to which character is performing the effects component! These are usually unique to each timeline file, and will need to be updated to match when cloning effects components from other files. The component won’t be able to reference the related character if this UUID is not updated.
 
-## OK, SO, WE’VE COVERED THE BASICS. WHAT ABOUT SPECIFIC EFFECTS COMPONENTS?
+#### OK, SO, WE’VE COVERED THE BASICS. WHAT ABOUT SPECIFIC EFFECTS COMPONENTS?
 
 The moment you’ve all been waiting for! Maybe. I’m now going to be breaking down each kind of effects component by its attributes. These are only example components—they won’t refer to anything specific, and almost all values for the attributes have been generated new (and are almost certainly nonfunctional).
 
