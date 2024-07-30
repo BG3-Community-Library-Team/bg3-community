@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T19:08:22.317Z
+date: 2024-07-30T20:16:28.767Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -727,7 +727,9 @@ To edit things like expressions over player responses, you'll be looking at the 
 
 The easiest way to add onto the dialogue timeline, like adding onto the DialogsBinary files, is to clone existing ones and editing what you need to from there.
 
-Once you've found the effect components for the dialog node (or cinematic!) you'd like to clone, you can easily enclose all the effect components for it by searching for the first instance of that PhaseIndex, and putting a bracket with a nonsense word that isn't used anywhere in the code above it (will explain momentarily.)
+You'll need to add new sets of effect components for each new voice line and cinematic you've added to your DialogsBinary files, and you can do that by cloning existing sets of effect components. I'd recommend looking for dialogue nodes that are similar to what you're adding, and then cloning the effect components from that.
+
+Once you've found the PhaseIndex for the dialog node (or cinematic!) you'd like to clone, you can easily enclose all the effect components for it by searching for the first instance of that PhaseIndex, and putting a bracket with a nonsense word that isn't used anywhere in the code above it (will explain momentarily.)
 
 Then, you'll want to find the last instance of that PhaseIndex, and put a closing bracket with that same nonsense word below it. You should now have something that looks like this:
 
@@ -737,8 +739,16 @@ Then, you'll want to find the last instance of that PhaseIndex, and put a closin
   
 `</apples>  `
 
-To explain, this will allow you to collapse all of the effect components you need to copy in your code editor, so you can easily copy all of them at once. Using a nonsense word will make it easier to find and clean up later (you'll need to delete these tags before using your code in the game), and will also prevent them from being registered as proper code, leading the your mod to function improperly.
+To explain, this will allow you to collapse all of the effect components you need to copy in your code editor, so you can easily copy all of them at once. Using a nonsense word will make it easier to find and clean up later (you'll need to delete these tags before using your code in the game), and will also prevent them from being registered as proper code, leading your mod to function improperly.
 
 I generally use apples. Dunno why! You can use any other word you'd like, as long as it's not a proper tag in the code.
 
-I'd then recommend copying those effect components into a separate file while you're working on them.
+A little tip: You can also use this technique to very quickly copy or delete sections of code in other files, too, like the CharacterVisuals files.
+
+Also, another fun fact: turns out my dad has been doing the same thing for years, just with the word bananas, and I had no idea! Very fun to me that we picked those words specifically tbh. At least, it is to me!
+
+Once you've copied the effect components you need to, I recommend copying them into a separate file while you're working on them.
+
+#### Updating cloned effect components
+
+The first thing you want to do when adding new effect components is to update their PhaseIndex. You'll need to 
