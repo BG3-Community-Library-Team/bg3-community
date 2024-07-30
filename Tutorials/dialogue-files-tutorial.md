@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T18:41:02.487Z
+date: 2024-07-30T19:08:22.317Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -702,4 +702,43 @@ In this list, you can find the ID numbers of each given emotion (listed first be
 
 You've arrived at how to edit the Dialog Timeline files!
 
-First, find the dialogue node you'd like to edit. You can do this by 
+#### Finding the right effect components
+
+First, find the dialogue node you'd like to edit. You can do this by cross referencing the line of dialogue and the text handle for it with the DialogsBinary file, as described in the section on those files.
+
+This will allow you to find the UUID for a specific dialogue node.
+
+Once you've done that, search for that UUID in the dialog timeline file. Look for its listing in the TimelinePhases section. This will give you its MapValue number, which is also its PhaseIndex number. You can search for that PhaseIndex and its effect components in the code by substituting that MapValue number for the "1" in this line of code here (unless, of course, your PhaseIndex *is* 1):
+
+`
+<attribute id="PhaseIndex" type="int64" value="1" />`
+
+This will give you all the effect components of a given node.
+
+#### A note about adding onto the timeline
+
+I'll be covering more about how to edit some of the common effect components shortly, if you'd just like to make changes to existing dialog and cinematics, without adding new dialog to the scene, but I would like to start with adding new things.
+
+Keep in mind that TagQuestion nodes, and other player responses are not present in the timeline file! Only spoken lines of dialogue and cinematics will be present in these files, because they need specific timing to play properly. Things like player responses, dice rolls, etc are handled only in the DialogsBinary files.
+
+To edit things like expressions over player responses, you'll be looking at the line of spoken dialogue or cinematic directly before the player is given a chance to respond (I'll be covering that more later.)
+
+#### Cloning effect components
+
+The easiest way to add onto the dialogue timeline, like adding onto the DialogsBinary files, is to clone existing ones and editing what you need to from there.
+
+Once you've found the effect components for the dialog node (or cinematic!) you'd like to clone, you can easily enclose all the effect components for it by searching for the first instance of that PhaseIndex, and putting a bracket with a nonsense word that isn't used anywhere in the code above it (will explain momentarily.)
+
+Then, you'll want to find the last instance of that PhaseIndex, and put a closing bracket with that same nonsense word below it. You should now have something that looks like this:
+
+`<apples>`
+  
+`  <all the effect components of the PhaseIndex should be enclosed here>`
+  
+`</apples>  `
+
+To explain, this will allow you to collapse all of the effect components you need to copy in your code editor, so you can easily copy all of them at once. Using a nonsense word will make it easier to find and clean up later (you'll need to delete these tags before using your code in the game), and will also prevent them from being registered as proper code, leading the your mod to function improperly.
+
+I generally use apples. Dunno why! You can use any other word you'd like, as long as it's not a proper tag in the code.
+
+I'd then recommend copying those effect components into a separate file while you're working on them.
