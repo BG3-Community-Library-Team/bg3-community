@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T04:50:54.168Z
+date: 2024-07-30T05:24:50.605Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -29,13 +29,23 @@ There are also two more files you will need to add new dialogue files—which *i
 The two files you'll need for adding new dialogue to the game are:
 
 - Generated Dialog Timelines
-- Dialog Resources
+- Dialog Assets
 
 This tutorial will be divided into sections, breaking down what the purpose of each of these files is, the components that go into them, and how to edit them. I've also provided an annotated sample mod and a mirror of some of this tutorial on Nexusmods, which you can find here! The sample mod contains example code with notes breaking what each element in the code does line by line, and you can use it to follow along with this tutorial, or use it on its own, if that would work better for you.
 
-Now, let's get started, shall we?
+> A note on deprecated files:{.is-warning}
 
+You'll likely also find Dialog.lsj files with that same file name when extracting the files, as well as an extra Dialog Scene file with the .lsx file extension. These files are actually both deprecated! (The Dialog Scene files with the .lsf file extension are what you'll need to edit, NOT the .lsx files. Yes, confusing, I know.)
 
+These deprecated files genuinely do nothing. You don't need to edit them or include them in your mods at all, and I do not recommend you do so. You can actually create fully functional new dialogue without them, so they really do just, nothing.
+
+Thank you very much to <a href="https://next.nexusmods.com/profile/Joell560/about-me">Joell560</a> on Nexusmods for letting me know the files were deprecated! You've saved me a ton of hassle trying to recreate my changes in both files, and it's genuinely saved me so much time.
+
+I used to include these files in my mods, because I thought mismatches between the data in the Dialogs .lsj files and the DialogsBinary .lsf files would cause issues, but that wasn't actually the case. Turns out what I thought were issues with data mismatches were actually just, the changes not being made in the DialogsBinary files.
+
+...The Dialogs .lsj files aren't even necessary for creating *new* dialog; they really just, do nothing in the game as far as I can tell. I'm getting ahead of myself, a little, though!
+
+*Let's get started, shall we?*
 
 ## **WHAT THE HECK ARE ALL THESE FILES?**
 
@@ -59,13 +69,54 @@ It’s important to note, though, that these little scenes within the timeline f
 And that’s where the DialogsBinary files come in!
 ####
 
+The DialogsBinary files are generally found in the \\Data\Mods\GustavDev\Story\DialogsBinary folder when you extract them from the game, and are then further broken down by what section of the game they belong in, like if they’re from Act 3, or the Tutorial level, or if they’re meant to be Companion dialogue, and so on. You might also find these files in the Gustav folder, but they’re still broken down in a similar way.
+
+Now, if the dialogue timeline files are like a movie, then DialogsBinary files are like a chapter skip function on a DVD. These files contain the information the game needs to reference your choices in dialogue, and select which voice lines or cinematics to play, and when. They also contain information on dice rolls, links to nested dialogue files—which I’ll explain a more about later—and are where the game tests for whether a line of dialogue or or player response should be accessible or not. They can also be used by the game to set flags it can test for in other areas of the game, and can link to information on companion approval.
+
+Dialog Scene files
+####
+
+The Dialog Scene files contain information on camera and character positioning when the dialogue is triggered, as well as lighting, which characters can be present in the dialogue, and can also be used to control character scale within a scene! Which is fun.
+
+They can also inherit information from other files, the most important of which is the default dialogue scene file, which is often linked at the bottom of the file. The default Scene files can be usually found at this file path here:
+
+\\Public\Shared\Timeline\Scenes\Default\
+
+You actually might not have to edit these files often, but it's still important to note! And they'll absolutely be necessary when creating entirely new dialogue files.
+
+The DialogsBinary, Dialog Timeline, and Dialog Scene files for a given scene will all have the same file name, with the Dialogue Scene files just appending the word Scene to that same file name.
+
+Generated Dialog Timelines
+####
+
+The GeneratedDialogTimelines files contain information linking each DialogsBinary file to its proper timeline file, as well as each of the characters, props, scenery, and so on that are referenced by the timeline files. These files are huge, and contain information on most of the dialog timelines in the game. You should generally only include the entries for the dialog timelines you're editing in your mods, though!
+
+The GeneratedDialogTimelines files can be found at these file paths:
+
+\\Public\Gustav\Content\Generated\[PAK]_GeneratedDialogTimelines\_merged.lsf
+
+\\Public\GustavDev\Content\Generated\[PAK]_GeneratedDialogTimelines\_merged.lsf
+
+Dialog Assets
+####
+
+These files contain information on the DialogsBinary files, where the game should look to to find them, and what dialogue files are linked as nested dialogue within a another file. Again, there are often a lot of entries in these files! And you should only include the entries for the dialog files you're editing if necessary.
+
+These files can generally be found at this file path:
+
+\\Public\GustavDev\Content\Assets\Dialogs\
+
+Followed by separate folders breaking down the dialog according to what section of the game they're supposed to happen, just like the DialogsBinary files.
+
+**A note:**
+
+The Dialog Assets files still refer to the dialog .lsj files as the file paths it's looking for to play a given scene. However, the .lsj files are still deprecated! And despite being referred to in the Dialog Assets entries, the game can still refer to the corresponding DialogsBinary.lsf files through that .lsj file path, and will use those files instead. Even entirely new modded dialog files can be referenced without an .lsj file, even when the file path is set to look for an .lsj file.
+
+## **HOW DO YOU EDIT THE DIALOGSBINARY FILES?**
 
 
-## **WHAT ARE DIALOGUE BINARY FILES?**
 
-
-
-## **WHAT ARE DIALOGUE TIMELINE FILES?**
+## **HOW DO YOU EDIT THE DIALOGUE TIMELINE FILES?**
 
 
 
