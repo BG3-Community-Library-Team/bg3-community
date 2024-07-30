@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T09:46:48.832Z
+date: 2024-07-30T10:10:20.740Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -317,24 +317,18 @@ There’s not much to say about it beyond that, honestly! It’s one line, and y
 
 #### **Phases:**
 
-Dialogue phases are what control the actual timing of the elements in each dialogue node, as described in the DialogsBinary section of the tutorial.
+Dialogue phases are what control the actual timing of the elements in each dialogue node, as described in the DialogsBinary section of the tutorial. They group together each element that needs to play as part of a given dialogue node, which are linked together via their PhaseIndex. These grouped-together elements can be found in the EffectComponents section, which I'll be covering later.
 
-Again, a good way to picture the dialogue timeline files in general is to imagine them like a movie! Each bit of dialogue is contained within that movie, and, like the dialogue nodes that correspond to them, you can think of phases as being specific scenes within that movie you can skip to at any time, timestamped for your convenience.
- 
+The "Phases" section at the top of the file lists the total duration of each phase, alongside the UUID of the dialogue node in the DialogsBinary file that plays during that phase.
 
-##### These phases have four elements:
 
--   **Duration:** The total length of the specific dialogue node or cinematic, and all elements included for them.
--   **PlayCount:** The number of times the dialogue will play in a row. I’ve never seen this be anything but 1, likely because it’d just be playing the same dialogue multiple times in a row, which probably isn’t ideal! Although, hm. I guess you could use it for stuff like INFINITE KISS WYLL MOD. A not hypothetical and totally actually real WIP of mine, limited by the fact you cannot actually insert “infinity” as a character into the code (and indefinite recursion is almost always a bad idea in any case). I just love him dearly ok.
--   **DialogueNodeID:** Linked to the TimelinePhases section found later in the file, as well as the UUID for the specific dialogue node the phase is for, which can be found in the DialogBinary files. I’ll be covering DialogBinary files later, but for now, all you need to know is that this UUID will tell the game what group of dialogue elements to play, and when.
+You can find the specific PhaseIndex associated with that dialogue node via that UUID as well! That same UUID will link to a MapKey and associated MapValue number, in the TimelinePhases section further down in the file. That MapValue number is linked to the PhaseIndex for the elements in the EffectComponents section. The PhaseIndex number will group together all related effect components for that dialogue node! These components will be the bulk of what you’ll edit for your own dialogue mods, and, again, will be covered later.
 
-You can find the specific phase number associated with that dialogue node via that UUID! That same UUID will link to a MapKey and associated MapValue number, again, in the TimelinePhases section. That MapValue number is linked to the PhaseIndex for the elements in the EffectComponents section. That listed PhaseIndex number groups together all related effect components for that dialogue node! These components will be the bulk of what you’ll edit for your own dialogue mods, and, again, will be covered later.
+Another thing to note is that the Phases section is in sequential order, and that order corresponds directly to the MapValue and PhaseIndex for the dialogue node! The timeline also starts counting the phases from 0 (which is how most animation/video program timelines handle things as well). 
 
--   **QuestionHoldAutomation:** I believe this is *might* help automatically trigger pauses for “question” dialogue nodes, i.e., your character’s responses. I haven’t experimented with it much though! Something to note: I’ve not seen any file that didn’t have QuestionHoldAutomation after every dialogue node yet, but most timelines also have a setting later in the file regarding QuestionHoldAutomation that is usually set to “False.” So, who knows! I'd recommend you keep both of these consistent in your own mods, though, just in case.
+Phase 0 is placed at the top of the timeline, and is not given a PhaseIndex number, because it's unnecessary with it at the start of the timeline. This also means that the second listed phase will be PhaseIndex “1”, the third listed phase will be PhaseIndex “2,” and so on. You can actually mess things up by changing this order!
 
-Another thing to note is that the Phases are in sequential order, and that order corresponds directly to the MapValue and PhaseIndex for the dialogue node! The timeline also starts counting the phases from 0 (which is how most animation/video program timelines handle things as well). Phase 0 is listed at the top of the timeline, and is also not given a PhaseIndex or MapValue number, because it’s unnecessary, being at the start of the timeline. This also means that the second listed phase will be PhaseIndex “1”, the third listed phase will be PhaseIndex “2,” and so on. You can actually mess things up by changing this order!
-
-When adding things to the timeline, I recommend appending everything to the end of each necessary section. This will keep your phase order consistent, and prevent you from having to update the entire timeline at once.
+When adding things to the timeline, I recommend adding everything to the end of each necessary section. This will keep your phase order consistent, and prevent you from having to update the entire timeline at once.
 
 And you can also prevent dialogue from functioning by skipping PhaseIndex numbers! Make sure you don't have any gaps in your PhaseIndex numbers as well.
 
@@ -347,12 +341,12 @@ Contains the UUIDs of which character is performing what action, and which chara
 
 The structure of this section is arranged into “Objects” followed by MapKeys and MapValues, the former of which refers to what speaker number a character was given, and the second is the aforementioned UUID referring to the character.
 
-Speaker 0 is generally the person your character is talking to, with Speaker 1 being your character. These roles are also referenced in the corresponding DialogBinary files. Speaker roles after that may be listed if narration is present, or if other characters beyond the character you’re speaking to have lines (like when other companions have reactions during a conversation). You’ll want to cross reference these TimelineSpeaker UUIDs with the same UUIDs in the DialogBinary file for the scene you're working with, so you’ll know what character is being referenced by them.
+Speaker 0 is generally the person your character is talking to, with Speaker 1 being your character. These roles are also referenced in the corresponding DialogBinary files. Speaker roles after that may be listed if narration is present, or if other characters beyond the character you’re speaking to have lines (like when other companions have reactions during a conversation). You’ll want to cross reference the TimelineSpeaker UUIDs with the same UUIDs in the DialogsBinary file, so you’ll know what character is being referenced by them.
 
   
-To give you an example, the UUID for Speaker 0 in the above screenshot actually refers to Lae’zel in the timeline file for her InParty dialogue. You can cross reference that UUID in the corresponding DialogBinary file to find her global character UUID, as well as see the speaker number she's given, which will match the one for her in the timeline file.
+To give you an example, the UUID for Speaker 0 in the above screenshot actually refers to Lae’zel in the timeline file for her InParty dialogue. You can cross reference her speaker UUID by checking the corresponding DialogBinary file for the scene. This will also give you the speaker number she's given, which should match the one for her in the timeline file.
 
-Anything that references her UUID from the TimelineSpeakers section is related to her. So, if that UUID is listed as the “Actor” for a voice line (referring to which character is performing what element of the dialogue), that voice line will be spoken by her. If it's listed under a TLEmotionEffect component, then that component controls her expressions in the dialogue. If she's being referred to as the Target in a TLLookAtEvent component, then she's the character being looked at.
+Anything that references her UUID from the TimelineSpeakers section is related to her. So, if her UUID is listed as the “Actor” for a voice line (referring to which character is performing what element of the dialogue), that voice line will be spoken by her. If it's listed under a TLEmotionEvent component, then that component controls her expressions in the dialogue. If she's being referred to as the Target in a TLLookAtEvent component, then she's the character being looked at.
 
 The most important thing to know about the Timeline Speakers, though, is that you want to make sure any components you copy over from other files are updated to use the Timeline Speaker UUIDs from the file you copied them into. If you don't update them, the components you added won't be able to reference the characters properly, and you could end up something like [THIS](https://drive.google.com/file/d/1EIVmKs6qtHvgeUopn5bnDr7q6VgYhQ7w/view). Which is not ideal, for sure.
 
