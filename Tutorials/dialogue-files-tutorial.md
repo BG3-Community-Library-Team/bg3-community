@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T20:58:33.073Z
+date: 2024-07-30T21:48:35.290Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -775,5 +775,40 @@ You'll be copying anything you add to the end of the EffectComponents section as
 
 Make sure the PhaseIndex has been changed for each effect component you're adding! This will make sure they'll all play together as a group.
 
-**Updating the Timeline Speakers:**
+**Updating the Timeline Actors, and finding Timeline Speakers:**
 
+Next, you'll want to make sure the Actor UUIDs for the elements you're adding match those of the timeline file. You probably won't have to update these if you're cloning effect components from within the same file, but if you're taking them from a different file, you probably will have to update them.
+
+To do so, first search for TimelineSpeakers in the file you're cloning effects from. This will take you to the UUIDs and Speaker ID numbers for each character in the file with spoken dialogue lines, as well as the player character.
+
+Usually, Speaker 0 is the character you're speaking to in a conversation, and Speaker 1 is usually the player character. These Speaker ID numbers will be listed as the MapKey value above the UUID for the character.
+
+There might be more than these two speakers, though! If other characters have speaking lines in the dialogue, they'll also be given Speaker IDs in this section.
+
+These are the UUIDs you'll want to update. Select the UUID of Speaker 0, and search for it in your cloned effect components. This UUID should be listed as the Actor for many of the components you cloned.
+
+Then, find the UUID for Speaker 0 in the timeline file you're adding to, again by looking for TimelineSpeakers. Replace the UUID for Speaker 0 in your cloned effect components with the UUID for Speaker 0 in the new timeline file! Then do the same for Speaker 1.
+
+You'll want to update the Peanut character IDs as well. Search for PeanutSlotIDMap in the timeline file you cloned from, and then again in the file you're adding to. Replace the UUIDs in your cloned effect components according to the MapKeys for each of the Peanut characters, like you did for the TimelineSpeakers.
+
+The characters in your edited timeline file should now be able to properly perform the new effect components!
+
+**Updating timing and effect component ID numbers:**
+
+To do this, I highly recommend you use my <a href="https://www.nexusmods.com/baldursgate3/mods/11295">Dialogue Timeline Updater tool</a>. An explanation of it can be found in the Using the Timeline Updater tab, as well as on the mod page for the tool,but I'll also explain a little bit about it here, and why updating all of this is necessary.
+
+Since you're adding onto the end of the timeline, you'll need to make sure all your effect components start right when the last effect component ends. To do so, you'll need to make sure the start times of the effect components match the end times of the previous PhaseIndex components, with the exception of components that begin and end partway through the Phase.
+
+You can do this with the tool I've provided by inputting the end time of the last PhaseIndex in the file, and checking the box giving you the option to reset your start times. This will set the start time of all your effect components to the number you've provided, while preserving the timing of the effect components in relation to each other.
+
+You'll also want to make sure each of the IDs of the effect components are updated. These IDs are unique to each effect component, and aren't referenced anywhere else, but will still need to be unique. You can do this with the tool I've provided. Just input your file when running the Update Effect Component IDs function of the tool, and all of the IDs for your effect components will be updated automatically, leaving all other UUIDs intact.
+
+**What if I want the dialog to be a different length than it already is?**
+
+To make the effect components you're adding last for a different amount of time than they currently have, like if you're adding a new voice line that's a different length from the effect components you're adding, you'll actually need to update them manually 😅 This should probably be a function of the tool I made, but it currently is not.
+
+It's still doable, though!
+
+You'll want to update the start times for your effect components first. Then find the length of the line you're adding, and add that number to the new start time. This will be your new end time. You can also add additonal time to this number to add pauses between the voice line if you'd like.
+
+Take the new end time you just calculated, and use "replace all" in your code editor to update all your end times in the file. You'll have to double check to make sure all the timing for your effect components, like the timing of emotion changes in TLEmotionEvent, are all contained within your new start and end times. This is especially important when setting a shorter end time than the original one.
