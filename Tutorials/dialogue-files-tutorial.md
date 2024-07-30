@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T08:54:18.248Z
+date: 2024-07-30T08:54:28.998Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -291,7 +291,7 @@ And now for the Dialog Timeline files. These are very lengthy and complicated fi
 
 It's an extremely simple tool, and is basically the Python scripts I've been using to update timeline files put into a tkinter UI, but it's been a lifesaver for me when editing these files.
   
-Like the DialogsBinary section, I'm also going to be breaking this section of the tutorial into different tabs. You can find instructions on how to use my Dialog Timeline updater in the "Using the Timeline Updater" tab, as well as on the Nexusmods mod page for the tool.
+Like the DialogsBinary section, I'm also going to be breaking this section of the tutorial into different tabs. You can find instructions on how to use my Dialog Timeline updater in the "Using the Timeline Updater" tab, as well as on the Nexusmods page for the tool.
 
 ### **ANATOMY OF A DIALOG TIMELINE FILE**
 
