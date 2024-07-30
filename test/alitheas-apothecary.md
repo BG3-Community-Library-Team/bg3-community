@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-07-30T22:21:28.358Z
+date: 2024-07-30T22:36:14.376Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -25,8 +25,8 @@ Part 6 - Creative expression: Tips and tricks for developing your unique style a
 
 
 ## Images free to use on our wiki
-[how to includ images and adjust dimensions using markdown](https://docs.requarks.io/en/editors/markdown)
-(or copy the codeblock under the image)
+[how to include images and adjust dimensions using markdown](https://docs.requarks.io/en/editors/markdown)
+(or copy the code block under the image)
 
 ![cmty_cub.webp](/test/alithea/cmty_cub.webp)
 ```![cmty_cub.webp](/test/alithea/cmty_cub.webp)```
