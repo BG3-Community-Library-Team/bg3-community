@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T04:26:44.903Z
+date: 2024-07-30T04:40:26.460Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -18,17 +18,32 @@ Let’s get started, shall we?
 
 Dialogue in the game is actually handled by a lot of files, some of which I’m still looking into, but the main ones this tutorial will focus on, and the ones you need to edit existing game dialogue are the following:
 
+-   DialogsBinary files
 -   Dialog Timeline files
 -   Dialog Scene files
--   DialogBinary files
 
-And one you likely will not need to use as much, but is still important to know about:
+There are also two more files you will need to add new dialogue files—which *is* possible, by the way! And you can see an example of that here:
 
--   The \[PAK\]\_GeneratedDialogTimelines file
 
-Which is a compilation of information and resources on all the dialogue files in the game, and may need to be added to if certain things in your dialogue mod are not triggering properly.
 
-I’m going to start you off by throwing you into the deep end.
+The two files you'll need for adding new dialogue to the game are:
+
+- Generated Dialog Timelines
+- Dialog Resources
+
+This tutorial will be divided into sections, breaking down what the purpose of each of these files is, the components that go into them, and how to edit them. I've also provided an annotated sample mod and a mirror of some of this tutorial on Nexusmods, which you can find here! The sample mod contains example code with notes breaking what each element in the code does line by line, and you can use it to follow along with this tutorial, or use it on its own, if that would work better for you.
+
+Now, let's get started, shall we?
+
+## **WHAT THE HECK ARE ALL THESE FILES?**
+
+This section of the tutorial will provide a basic summary of each of the dialogue files listed above. Each file will get its own, more in-depth section later, don't worry! But all of these files are, of course, extremely interconnected, and it'll help to have some basic information before we get into specifics.
+
+
+
+## **WHAT ARE DIALOGUE BINARY FILES?**
+
+
 
 ## **WHAT ARE DIALOGUE TIMELINE FILES?**
 
