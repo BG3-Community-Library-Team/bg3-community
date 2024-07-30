@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T10:10:20.740Z
+date: 2024-07-30T18:09:05.095Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -295,7 +295,7 @@ Like the DialogsBinary section, I'm also going to be breaking this section of th
 
 You can find instructions on how to use my Dialog Timeline updater in the Using the Timeline Updater tab, as well as on the Nexusmods page for the tool.
 
-The Summary tab offers a bit more explanation on how these files work, the Anatomy of a Dialog Timeline tab explains the structure of the files overall, the Documentation tab will break down the different EffectComponents in the files, the How to Edit tab will go over editing the files, and the Emotions Quick Ref tab lists out the expression rigs used by the game, with the ID and variation numbers you'll need to reference them in the files.
+The Summary tab offers a bit more explanation on how these files work, the Anatomy of a Dialog Timeline tab explains the structure of the files overall, the Effect Components tab will break down the different EffectComponents in the files, the How to Edit tab will go over editing the files, and the Emotions Quick Ref tab lists out the expression rigs used by the game, with the ID and variation numbers you'll need to reference them in the files.
 
 ## Tab {.tabset}
 
@@ -317,87 +317,86 @@ There’s not much to say about it beyond that, honestly! It’s one line, and y
 
 #### **Phases:**
 
-Dialogue phases are what control the actual timing of the elements in each dialogue node, as described in the DialogsBinary section of the tutorial. They group together each element that needs to play as part of a given dialogue node, which are linked together via their PhaseIndex. These grouped-together elements can be found in the EffectComponents section, which I'll be covering later.
+Dialogue phases are what control the actual timing of the elements in each dialogue node, as described in the DialogsBinary section of the tutorial. They group together each element that needs to play as part of a given dialogue node, which are linked together via their PhaseIndex. These grouped-together elements can be found in the EffectComponents section, which is covered in the Effect Components tab.
 
 The "Phases" section at the top of the file lists the total duration of each phase, alongside the UUID of the dialogue node in the DialogsBinary file that plays during that phase.
 
 
-You can find the specific PhaseIndex associated with that dialogue node via that UUID as well! That same UUID will link to a MapKey and associated MapValue number, in the TimelinePhases section further down in the file. That MapValue number is linked to the PhaseIndex for the elements in the EffectComponents section. The PhaseIndex number will group together all related effect components for that dialogue node! These components will be the bulk of what you’ll edit for your own dialogue mods, and, again, will be covered later.
+You can find the specific PhaseIndex associated with that dialogue node via that UUID as well! That same UUID will link to a MapKey and associated MapValue number in the TimelinePhases section further down in the file. That MapValue number is linked to the PhaseIndex for the elements in the EffectComponents section. The PhaseIndex number will group together all related effect components for that dialogue node! These components will be the bulk of what you’ll edit for your own dialogue mods.
 
 Another thing to note is that the Phases section is in sequential order, and that order corresponds directly to the MapValue and PhaseIndex for the dialogue node! The timeline also starts counting the phases from 0 (which is how most animation/video program timelines handle things as well). 
 
 Phase 0 is placed at the top of the timeline, and is not given a PhaseIndex number, because it's unnecessary with it at the start of the timeline. This also means that the second listed phase will be PhaseIndex “1”, the third listed phase will be PhaseIndex “2,” and so on. You can actually mess things up by changing this order!
 
-When adding things to the timeline, I recommend adding everything to the end of each necessary section. This will keep your phase order consistent, and prevent you from having to update the entire timeline at once.
+When adding things to the timeline, I highly recommend adding everything to the end of each section in the file. This will keep your phase order consistent, and prevent you from having to update the entire timeline at once.
 
-And you can also prevent dialogue from functioning by skipping PhaseIndex numbers! Make sure you don't have any gaps in your PhaseIndex numbers as well.
+You can also prevent dialogue from functioning by skipping PhaseIndex numbers! Make sure you don't have any gaps in your PhaseIndex numbering as well.
 
 Keep both of those things in mind and you should be good! (And also save yourself just, a ton of work.)
 
 ####   
 TimelineSpeakers: 
 
-Contains the UUIDs of which character is performing what action, and which character is being referenced in general! These UUIDs are specific to a given set of dialogue files, and are linked to in the corresponding DialogBinary file for the timeline, which will then be connected to either the global UUID for the speaking character, or the UUID for the player character.
+Contains the UUIDs of which character is performing what action, and which character is being referenced in general! These UUIDs are specific to a given set of dialogue files, and are linked to in the corresponding DialogBinary file for the timeline, which will be connected to either the UUID for the speaking character, or the UUID for the player character.
 
-The structure of this section is arranged into “Objects” followed by MapKeys and MapValues, the former of which refers to what speaker number a character was given, and the second is the aforementioned UUID referring to the character.
+The structure of this section is arranged into “Objects,” followed by MapKeys and MapValues, the former of which refers to what speaker number a character was given, and the second is the aforementioned UUID referring to the character.
 
-Speaker 0 is generally the person your character is talking to, with Speaker 1 being your character. These roles are also referenced in the corresponding DialogBinary files. Speaker roles after that may be listed if narration is present, or if other characters beyond the character you’re speaking to have lines (like when other companions have reactions during a conversation). You’ll want to cross reference the TimelineSpeaker UUIDs with the same UUIDs in the DialogsBinary file, so you’ll know what character is being referenced by them.
+Speaker 0 is generally the person your character is talking to, with Speaker 1 being your character. Speaker roles after that may be listed if narration is present, or if other characters beyond the character you’re speaking to have lines (like when other companions have reactions during a conversation). You’ll want to cross reference the TimelineSpeaker UUIDs with the same UUIDs in the DialogsBinary file, so you’ll know what character is being referenced by them.
 
-  
-To give you an example, the UUID for Speaker 0 in the above screenshot actually refers to Lae’zel in the timeline file for her InParty dialogue. You can cross reference her speaker UUID by checking the corresponding DialogBinary file for the scene. This will also give you the speaker number she's given, which should match the one for her in the timeline file.
 
-Anything that references her UUID from the TimelineSpeakers section is related to her. So, if her UUID is listed as the “Actor” for a voice line (referring to which character is performing what element of the dialogue), that voice line will be spoken by her. If it's listed under a TLEmotionEvent component, then that component controls her expressions in the dialogue. If she's being referred to as the Target in a TLLookAtEvent component, then she's the character being looked at.
+The most important thing to know about the Timeline Speakers, and Timeline Actors, though, is that you want to make sure any components you copy over from other files are updated to use the Timeline Speaker UUIDs from the file you copied them into. If you don't update them, the components you added won't be able to reference the characters properly, and you could end up something like [THIS](https://drive.google.com/file/d/1EIVmKs6qtHvgeUopn5bnDr7q6VgYhQ7w/view). Which is not ideal, for sure!
 
-The most important thing to know about the Timeline Speakers, though, is that you want to make sure any components you copy over from other files are updated to use the Timeline Speaker UUIDs from the file you copied them into. If you don't update them, the components you added won't be able to reference the characters properly, and you could end up something like [THIS](https://drive.google.com/file/d/1EIVmKs6qtHvgeUopn5bnDr7q6VgYhQ7w/view). Which is not ideal, for sure.
+If you're not sure what any of these terms mean, don't worry! There's more information about them in the Effect Components tab, and I've also be covering how to update timeline speaker UUIDs in the How to Edit tab.
 
-If you're not sure what any of these terms mean, don't worry! They'll all be covered when we get to the EffectComponents section of the tutorial, and I'll also be covering how to update timeline speaker UUIDs when we actually start working with the files.
-
-Let's continue on with the other sections, first, though.  
+Let's continue on with the other sections in the timeline files, first, though.  
  
 
 #### TimelineActorData:
 
-This section contains several long lists mapping out each effect component in the timeline and the UUIDs of the characters performing them, pulled from both the TimelineSpeakers and PeanutSlotIdMap sections, the latter of which I'll be covering shortly. However, I think it's likely these lists are used for Larian's game engine, to allow it to reference the components, and don't seem to do much in the game itself. Even leaving these MapKey lists entirely unedited didn't change anything, despite adding new components to the dialogue timeline. All dialogue played as normal, even the newly added components. For this reason, I actually don't think modders need to worry about updating the MapKey lists here at all.
+This section contains several long lists mapping out each effect component in the timeline and the UUIDs of the characters performing them, pulled from both the TimelineSpeakers and PeanutSlotIdMap sections. However, I think it's likely these lists are used for Larian's game engine, to allow it to reference the components, and don't seem to do much in the game itself. Even leaving these MapKey lists entirely unedited didn't change anything, in the game, so I don't actually think you have to worry about the component map.
 
-There *are,* however, two actor types contained within this section you will likely need to update, especially when cloning elements from other files—the "scenecam" and “scenelighting” actors. These are not characters, but instead refer to specific camera angles and lights necessary for the dialogue, and are also often located in the corresponding Dialogue Scene files, which will be covered later. If the camera angles referred to in a dialogue node are not present in the TimelineActorData section, the game will not be able to properly reference the camera. This is, in highly technical terms—bad. It won't damage your game or your hardware (Baldur's Gate 3 is very forgiving when it comes to modding issues, which is good, because this is not true of all games. \**Screams in Sims 2\**). It will, however, likely lead to the game's camera getting pinned to the ground at your character's feet, which is not ideal, especially if you want to see what's going on. If you're having trouble with that, make sure you've got all the necessary scenecams and scenelighting you need in this section of the file.  
- 
+There *are,* however, things in this section you'll likely need to update, especially when cloning elements from other files. These are the "scenecam" and “scenelighting” actors. These are not characters, but instead refer to specific camera angles and lights necessary for the dialogue, and are also often located in the corresponding Dialogue Scene files, which have their own section on this page. If the camera angles referred to in a dialogue node are not present in the TimelineActorData section, the game will not be able to properly reference the camera, and you'll likely get the camera pinned to the floor instead.
 
 #### TimelinePhases:
 
-As discussed in the Phases section above, this section contains UUIDs in a list of MapKeys and MapValues. The MapKeys in this section will match the UUID for a phase in the Phases section of the file. The placement of that phase in the timeline will match the MapValue listed for the MapKey in this section, starting from zero. (Again, most animation programs and video editors also start their timelines from 0, so this is probably why BG3 handles its timelines like this, too.) That MapValue number is also the PhaseIndex number you'll be looking for when editing and cloning components in the EffectsComponents section for your dialogue mods. That same UUID belongs to a specific dialogue node in the DialogBinary file, and all components related to it in the timeline file are what plays when that line of dialogue is called for by the game.
+As discussed in the Phases section above, this section contains UUIDs in a list of MapKeys and MapValues. The UUIDs here will correspond to the UUIDs in the Phases section of the file. The placement of that phase in the Phases section, as well as in the EffectComponents section will match the MapValue listed for the MapKey in the TimelinePhases, starting from zero. (Again, most animation programs and video editors also start their timelines from 0, so this is probably why BG3 handles its timelines like this, too.) That MapValue number is also the PhaseIndex number you'll be looking for when editing and cloning components in the EffectComponents section for your mods.
+
+That same UUID belongs to a specific dialogue node in the DialogBinary file, and all components related to it are what plays when that line of dialogue is called by the game.
 
 Important to note is that the MapKey order here does not have to match the phase order! Most of the elements of the timeline files have to be sequential, but these do not. I still recommend appending your additions to the end of the section, just to make everything easier to keep track of.
 
-This is a lot of repeat information, but I thought it'd help to have it listed under the proper header, too!  
- 
 
 #### PeanutSlotIdMap:
 
-This is similar to the TimelineSpeakers section mentioned above, but it actually refers to the characters standing behind the player character during a conversation. Like the peanut gallery! Definitely one of my favorite variable names for sure. Any references to “Peanuts” in the dialogue files is about these characters. And the UUIDs here are meant to map out things like emotions/animations/etc for these characters according to what “slot,” or placement behind you the characters are. From what I can tell, these characters are not ever referred to in the DialogBinary files, unlike the TimelineSpeakers, probably because they don't speak, and can be any companion or hireling character. This means the animations of the characters behind you are tied to which of 3 placements they've been put into, rather than a specific character.  
+This is similar to the TimelineSpeakers section mentioned above, but it actually refers to the characters standing behind the player character during a conversation. Like the peanut gallery! Definitely one of my favorite variable names for sure. Any references to “Peanuts” in the dialogue files is about these characters. And the UUIDs here are meant to map out things like emotions/animations/etc for these characters according to what “slot,” or placement behind you the characters are.
+
+From what I can tell, these characters are not ever referred to in the DialogBinary files, unlike the TimelineSpeakers, probably because they don't speak, and can be any companion or hireling character. This means the animations of the characters behind you are tied to which of 3 placements they've been put into, rather than a specific character.  
  
 #### AdditionalLocations:
 
-If a scene needs to take you to a different location for the scene to play, the triggers for those locations will be listed here.
+If a scene needs to take you to a different location for the scene to play, the triggers for those locations will be listed here. These can then be called by the TLSwitchLocationEvent effect component.
 
 #### What about the rest of the file?
 
 The rest of the sections in the timeline file are either things that likely should be kept consistent, don't seem to affect much in the game when changed, or don't seem to actually contain information in most of the files I've seen. I'll be experimenting more with them, though! But you likely won't need to worry about them much for most of your own dialogue mods.
 
   
-…And, with that, we're ready to move on!  
+…And, with that, we're ready to move on! Check the Effect Components tab to continue with the tutorial.
+
+### Effect Components
  
-#### OK, SURE, I'M READY. WHAT IS GOING ON WITH THOSE EFFECT COMPONENTS?
+#### OK, I'M READY. WHAT IS GOING ON WITH THOSE EFFECT COMPONENTS?
 
-Again, the EffectComponents section is the bulk of what you’ll be getting into and editing for your dialogue mods. The effect components contain the actual information on timing, character animations, poses, staging, expressions, sound effects, voice lines, camera angles, and more that need to be referenced to play the dialogue or cinematic. Most of the other sections I've covered so far are really meant to help the game properly reference this information—the effect components are the true core of the dialogue system.
+The EffectComponents section is the bulk of what you’ll be getting into and editing for your dialogue mods. This section contains all the actual information on timing, character animations, poses, staging, expressions, sound effects, voice lines, camera angles, and more that need to be referenced to play the dialogue or cinematic. Most of the other sections in the file are meant to help the game reference this information, but the effect components are the true core of the dialogue system.
 
-Effect components are classified into several different “Types,” each of which performs a unique function—again, from voice lines, to sound effects, camera angle changes, which I'll list below.
+Effect components are classified into several different “Types,” each of which performs a unique function, which I'll list below.
 
-I’m going to be very thorough with these, and there’s a lot to go through, so strap in!  
+There’s a lot to go through, so strap in!  
  
 
 #### What types of effects components you can choose from?
 
-So far, I’ve found the following effect components, each of which controls a different aspect of dialogue, and each of which has different set of attributes, which I’ll be going into shortly. For now, though, I’m just going to give a brief rundown of each:
+So far, I’ve found the following effect components, each of which controls a different aspect of dialogue, and each of which has different set of attributes, which I’ll explain shortly. For now, though, I’m just going to give a brief rundown of each:
 
 -   **TLVoice:** The voice line for the character speaking.
 -   **TLAttitudeEvent:** Controls the nodding/motion of the head and animated expressions characters are given when other animations are not being played, i.e. when a character is waiting for you to pick a dialogue choice, or is listening to the character speaking.
@@ -410,7 +409,7 @@ So far, I’ve found the following effect components, each of which controls a d
 - **TLShowArmor** Controls whether different armor or clothing slots are displayed on a character during a scene.
 -   **TLShowPeanuts:** Controls whether the characters standing behind your character during dialogue are shown or not. (Again, like the peanut gallery!)
 -   **TLSoundEvents:** What sound effects play and when.
--   **TLSwitchStageEvent:** Mainly used for cinematics. I believe this is used when the characters need to change positions from their places in normal dialogue.
+-   **TLSwitchStageEvent:** Mainly used for cinematics. I believe this is used when the characters need to change positions from their places in normal dialogue, often for animations.
 -   **TLTransform:** Mainly used for cinematics. I believe this controls changes in character position within the game world i.e. if they need to turn or walk from one place to another.
 - **TLShapeshift:** Used to swap in different character RootTemplates, so you can change character appearance within a scene.
 - **TLSwitchLocationEvent** Used to take you to different locations when necessary in a scene. These locations will be listed in the AdditonalLocations section of the file.
