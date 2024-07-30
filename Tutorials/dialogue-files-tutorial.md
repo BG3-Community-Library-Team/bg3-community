@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T07:23:10.145Z
+date: 2024-07-30T07:57:27.047Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -122,6 +122,7 @@ These sections of the tutorial will be broken down into tabs, one containing a f
 
 Honestly, just understanding what you're looking at is half the battle when editing dialogue! So I highly recommend checking out the documentation tab before you begin.
 
+**The How to Edit tab also contains a short guide on creating custom game flags!** If you'd like to know how to do so, you can find instructions there!
 
 ## Tab {.tabset}
 
@@ -247,16 +248,39 @@ Also, when multiple children are listed under a character's speaking line (label
 
 The checkflags attribute is how the game tests whether a line of dialogue should be available or not. When a given flag is set to True under the checkflags attribute, that means the dialogue node will only be available if that flag is set to true. When the flag the game is testing for is set to False, then that line of dialogue will only play if the flag is *not* true.
 
-To edit the conditions a line of dialogue will be available under, you can add or remove flags for this attribute. Check their UUIDs to make sure you're testing for the right ones! Also, take a note of what kind of flag it's testing for; if the game's testing for a Tag, it's testing what character tags a given character has. When the flag type is a Global flag, it's testing for a flag that's present in the game globally, and not just applied to a specific character. Local flags seem to be flags set for the player character, and Object flags are testing to see whether the character you're speaking to has a given flag set for them (these are distinct from tags; flags are conditional, and are usually set during gameplay!).
+To edit the conditions a line of dialogue will be available under, you can add or remove flags for this attribute. Check their UUIDs to make sure you're testing for the right ones! Also, take a note of what kind of flag it's testing for; if the game's testing for a Tag, it's testing what character tags a given character has. When the flag type is a Global flag, it's testing for a flag that's present in the game globally, and not just applied to a specific character. Local flags seem to be flags set for the player character, and Object flags are testing to see whether the character you're speaking to has a given flag set for them (these are distinct from tags; flags are conditional, and are usually set during gameplay, as opposed to tags, which are used to determine different qualities of a character, like whether they can participate in dialogue or not!).
 
 **Setting game flags**
 ####
 
-The setflags attribute will allow you to set game flags when that dialogue node is played. This can be done by listing the UUID for the  game flag, and either setting it to True to enable the flag, or setting it to False to disable it.
+The setflags attribute will allow you to set game flags when that dialogue node is played. This can be done by listing the UUID for the game flag, and either setting it to True to enable the flag, or setting it to False to disable it. You can also make your own custom flags!
 
-**Changing dice roll attributes**
+**Making custom game flags**
 ####
 
+Making custom game flags is actually pretty straightforward! All you need to do is find an existing game flag file, and duplicate it to begin editing it. Generate a new UUID for the flag within that file, give it a new name, a description to remind you what the flag is for, and then change the file name to the UUID you gave the flag within the code. Keep in mind the usage type! As mentioned above, there are multiple different kinds of flags, which usually correspond to their usage type.
+
+For instance, most HasMet flags (flags that determine whether a given character has met another character) are given usage type 6, which usually corresponds to the Dialog flag type in the DialogsBinary files (I believe this flag type is used to mark flags that are tested in dialog specifically, instead of elsewhere in the game, but I'm not entirely sure yet.) Global flags are often given usage type 5, and so on. I'd recommending finding a flag that has the same flag type in the DialogsBinary files as the flag you're trying to create, so you can keep the usage type consistent.
+
+**Adding Alias nodes**
+####
+
+Alias nodes, as described in the documentation tab, are nodes that can emulate another line of dialogue, but will allow you to set different conditions and configure new dialogue paths for that same line. This especially helpful when using the same line of dialogue in a scene multiple times, because it means you won't have to duplicate that line of dialogue in the Dialogue Timeline file. This is a very good thing! Editing the timeline files is not easy, and you'll save yourself a ton of time by using alias nodes instead.
+
+Just list the UUID of the line of dialogue you'd like to emulate as your SourceNode, and you should be good to go.
+
+**Linking Nested Dialogue**
+####
+
+Nested dialogue files are files that can be linked to from other dialogue files, usually containing smaller scenes, or dialog based around a certain theme, like companion romance. *These files are especially helpful for compatibilty.*
+
+This is because they have their own unique dialogue timeline files, which, again, are really complicated to edit. And to make mods that edit dialogue timeline files compatible, you’ll need to incorporate all changes made by each modder into the same dialogue timeline for that scene. This is not easy. Editing the DialogsBinary files to link to nested dialogue is much simpler, and will allow for much easier compatibility patching between mods.
+
+To refer to a nested dialogue sequence, you'll need to list the UUID for the nested dialogue found in its Dialog Assets entry, and then set the line of dialogue you'd like to start with in your nested dialogue sequence as a child of the Nested Dialog node.
+
+You'll also need to make sure the nested dialogue you're linking to is listed as a child in the Dialog Assets entry for the original dialogue, and add the original dialogue as a child of the nested dialogue if you'd like to be able to return to it.
+
+I'll be covering more about how to create new nested dialogue files, as well as creating new dialogue files generally at the end of this tutorial! You can scroll to the end of the page to find it.
 
 
 ## **HOW DO YOU EDIT THE DIALOG TIMELINE FILES?**
