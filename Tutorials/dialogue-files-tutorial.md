@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T08:01:11.733Z
+date: 2024-07-30T08:54:18.248Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -285,16 +285,13 @@ I'll be covering more about how to create new nested dialogue files, as well as 
 
 ## **HOW DO YOU EDIT THE DIALOG TIMELINE FILES?**
 
+And now for the Dialog Timeline files. These are very lengthy and complicated files, and some parts of editing them can be extremely tedious, time consuming, and potentially, like, almost impossible without a python script to automate some parts of editing them.
 
+...It's a good thing, then, that I made a tool to automate those tasks! You can find it on Nexusmods <a href="https://www.nexusmods.com/baldursgate3/mods/11295">here.</a>
 
-First, though, I want to get into the timeline files. These are very lengthy and complicated files, and you will absolutely need to use a script to update the start and endtimes of anything you add to them. I’ll be covering mine when I get into how to work with the files in earnest!
-
-I'm starting here for two reasons: one, the timeline files currently have the least documentation—I have not been able to find *any* other resources on them, actually. The information on timeline files in this tutorial was compiled entirely from me experimenting and working with them over the last few months. The other reason is that really, these *are* the hardest files to work with—but once you've gotten a good grasp on how they work, everything that comes after will be a breeze.
-
-(You can, however, find the breakdowns of other kinds of dialogue files in the navigation on this page! If you're getting overwhelmed by the timeline files, DialogBinary files might be a good place to start instead. Once again, venturing into these files makes you a brave soul indeed—but I believe in you all the way! Just, make sure to take breaks when you need to.)
-
-…Now, let's get into it! I'll start by breaking down the elements that go into the timeline files.  
- 
+It's an extremely simple tool, and is basically the Python scripts I've been using to update timeline files put into a tkinter UI, but it's been a lifesaver for me when editing these files.
+  
+Like the DialogsBinary section, I'm also going to be breaking this section of the tutorial into different tabs. You can find instructions on how to use my Dialog Timeline updater in the "Using the Timeline Updater" tab, as well as on the Nexusmods mod page for the tool.
 
 ### **ANATOMY OF A DIALOG TIMELINE FILE**
 
