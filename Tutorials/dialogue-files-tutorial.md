@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T05:55:18.850Z
+date: 2024-07-30T07:23:10.145Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -25,11 +25,12 @@ Dialogue in the game is actually handled by a lot of files, some of which I’m 
 There are also two more files you will need to add new dialogue files—which *is* possible, by the way! And you can see an example of that here:
 
 
-
-The two files you'll need for adding new dialogue to the game are:
+The two files you'll need for adding entirely new dialogue to the game are:
 
 - Generated Dialog Timelines
 - Dialog Assets
+
+You'll also need extra files to add new voice lines, which I'll be providing in a separate guide for this wiki as well.
 
 This tutorial will be divided into sections, breaking down what the purpose of each of these files is, the components that go into them, and how to edit them. I've also provided an annotated sample mod and a mirror of some of this tutorial on Nexusmods, which you can find here! The sample mod contains example code with notes breaking what each element in the code does line by line, and you can use it to follow along with this tutorial, or use it on its own, if that would work better for you.
 
@@ -198,6 +199,63 @@ RootNodes
 Root nodes are unique, in the sense that they're generally mirrors of other nodes. The root nodes refer to the possible first lines of dialogue in a given scene or conversation, and are generally referring to TagGreeting nodes, but other types of nodes can be referenced as RootNodes. When a dialogue node in a file is considered a root node, that line of dialogue will have a RootNodes entry with its UUID listed at the end of the file, and will also be marked in its own code block with the Root attribute, which will be set to True.
 
 ### How To Edit
+
+Honestly, the easiest way to edit these files, at least if you're adding new elements, is to duplicate existing code blocks. This will guarantee you'll keep the code structure the game needs consistent, and saves you a bit of work typing everything out.
+
+I've actually provided an annotated sample/template mod on Nexusmods <a href="https://www.nexusmods.com/baldursgate3/mods/10086">here,</a> which you can use to follow along with this guide, and understand a bit more about what goes into the code structure for a given node.
+
+Now, let's begin!
+
+**Editing existing files**
+####
+
+When editing existing files, you'll first need to find the dialogue nodes you'd like to change. This can be done by searching for the dialogue you're looking for in an extracted Localization file, which I've provided in the above link as well, for each language the game has been translated into.
+
+I also *highly* recommend using the parsed dialogue files provided by roksik-dnd on Tumblr. These will not only help you find lines of dialogue from the game, but will also serve as a guide to the structure of the dialogue tree you're editing, which lines of dialogue follow which other lines, the branching paths available in the scene, and so on.
+
+But the extracted Localization file is often necessary, because the dialogue in the DialogsBinary files are referred to by their text handles, which can be found in the Localization files.
+
+These text handles are found under the TaggedTexts attribute for a given node, and determine both the caption for the dialogue, and are linked to the voice line, animations, and lipsync for the dialogue in a character's voicebank.
+
+**Finding the right dialogue nodes**
+####
+
+Search for the line of dialogue you're looking for in your extracted Localization file, and then copy the text handle that corresponds to the line. Then search for that text handle in your DialogsBinary file, which should bring you to the correct dialogue node.
+
+Once you've found the right dialogue node, I'd recommend making a comment in the file labeling what it is, so you can come back to it later. You can enclose your comment in a bracket like this to prevent it from affecting your code: \<!-- -->
+
+Once you've found the right dialogue node(s), you can start making your changes.
+
+
+**Changing dialogue tree paths**
+####
+
+The game navigates through the dialogue trees via two things: the UUIDs of the dialogue nodes, and the "children" of each dialogue node. The UUID is the unique identifier of a given node, and the "children" of a node are the dialogue nodes that can directly follow it, referred to by each child node's UUID.
+
+To change the paths the game takes through the dialogue, you'll want to edit these child nodes. You can remove a child from a dialogue node to prevent it from following that node, or you can add a dialogue node as a child of another to make it a possible option the game can take.
+
+You can replace all the children nodes for a given dialogue node if you'd like, or you can remove all of them entirely, which will usually return the player to the last set of player responses available to them.
+
+All you need is the UUID of the dialogue nodes you'd like to remove or add as children of a node, and then you can start configuring your dialogue trees!
+
+A note: when adding player responses (which will be labeled as TagQuestion nodes), the order the children are listed under a dialogue node will also be the order they're displayed in the game, listed from top to bottom.
+
+Also, when multiple children are listed under a character's speaking line (labeled as a TagAnswer node), and they're not player responses, these are usually lines of dialogue that are being tested for certain conditions, to determine whether they should play or not. In this case, the order the children are listed in is the order the game will test them in, with children placed higher in the list taking priority.
+
+**Checking game flags**
+####
+
+The checkflags attribute is how the game tests whether a line of dialogue should be available or not. When a given flag is set to True under the checkflags attribute, that means the dialogue node will only be available if that flag is set to true. When the flag the game is testing for is set to False, then that line of dialogue will only play if the flag is *not* true.
+
+To edit the conditions a line of dialogue will be available under, you can add or remove flags for this attribute. Check their UUIDs to make sure you're testing for the right ones! Also, take a note of what kind of flag it's testing for; if the game's testing for a Tag, it's testing what character tags a given character has. When the flag type is a Global flag, it's testing for a flag that's present in the game globally, and not just applied to a specific character. Local flags seem to be flags set for the player character, and Object flags are testing to see whether the character you're speaking to has a given flag set for them (these are distinct from tags; flags are conditional, and are usually set during gameplay!).
+
+**Setting game flags**
+####
+
+The setflags attribute will allow you to set game flags when that dialogue node is played. This can be done by listing the UUID for the  game flag, and either setting it to True to enable the flag, or setting it to False to disable it.
+
+**Changing dice roll attributes**
+####
 
 
 
