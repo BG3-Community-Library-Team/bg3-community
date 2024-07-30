@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T20:16:28.767Z
+date: 2024-07-30T20:58:33.073Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -751,4 +751,29 @@ Once you've copied the effect components you need to, I recommend copying them i
 
 #### Updating cloned effect components
 
-The first thing you want to do when adding new effect components is to update their PhaseIndex. You'll need to 
+**Updating the PhaseIndex:**
+
+The first thing you want to do when adding new effect components is to update their PhaseIndex. You can do so via "replace all" commands in your code editor. You can also use the "change all occurences" function in VSCode by right clicking on a highlighted line of code.
+
+To update the PhaseIndex, replace the existing PhaseIndex line:
+
+`
+<attribute id="PhaseIndex" type="int64" value="1" />`
+
+With the number that comes after the last PhaseIndex number already in your file, with something like this:
+
+`
+<attribute id="PhaseIndex" type="int64" value="232" />`
+
+If the last existing PhaseIndex is 231, you'll want the PhaseIndex of the new effects you're adding to be 232. If the last PhaseIndex is 39, you'll want your new PhaseIndex to be 40, etc.
+
+You can find the last PhaseIndex in the file in two ways, either by searching for PhaseIndex and navigating to the last instance of it, or by searching for TimelineSpeakers, which will be the next section of the file listed after the EffectComponents section, and will take you directly to the end of that section, allowing you to see the last PhaseIndex number.
+
+Remember, it's easiest to add to the end of the timeline in these files, rather than putting it somewhere in the middle. The placement of dialog phases in the timeline doesn't actually matter to the game when playing a scene. The DialogsBinary file will be able to tell the game where to go!
+
+You'll be copying anything you add to the end of the EffectComponents section as well, so it'll help to have an easy way to navigate to it.
+
+Make sure the PhaseIndex has been changed for each effect component you're adding! This will make sure they'll all play together as a group.
+
+**Updating the Timeline Speakers:**
+
