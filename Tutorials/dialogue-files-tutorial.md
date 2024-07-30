@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T07:57:27.047Z
+date: 2024-07-30T08:01:11.733Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -212,7 +212,7 @@ Now, let's begin!
 
 When editing existing files, you'll first need to find the dialogue nodes you'd like to change. This can be done by searching for the dialogue you're looking for in an extracted Localization file, which I've provided in the above link as well, for each language the game has been translated into.
 
-I also *highly* recommend using the parsed dialogue files provided by roksik-dnd on Tumblr. These will not only help you find lines of dialogue from the game, but will also serve as a guide to the structure of the dialogue tree you're editing, which lines of dialogue follow which other lines, the branching paths available in the scene, and so on.
+I also *highly* recommend using the <a href="https://www.tumblr.com/roksik-dnd/727481314781102080/bg3-datamined-dialogue-google-drive">parsed dialogue files</a> provided by roksik-dnd on Tumblr. These will not only help you find lines of dialogue from the game, but will also serve as a guide to the structure of the dialogue tree you're editing, which lines of dialogue follow which other lines, the branching paths available in the scene, and so on.
 
 But the extracted Localization file is often necessary, because the dialogue in the DialogsBinary files are referred to by their text handles, which can be found in the Localization files.
 
