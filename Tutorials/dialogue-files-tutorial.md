@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T05:30:26.523Z
+date: 2024-07-30T05:55:18.850Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -113,19 +113,95 @@ Followed by separate folders breaking down the dialog according to what section 
 The Dialog Assets files still refer to the dialog .lsj files as the file paths it's looking for to play a given scene. However, the .lsj files are still deprecated! And despite being referred to in the Dialog Assets entries, the game can still refer to the corresponding DialogsBinary.lsf files through that .lsj file path, and will use those files instead. Even entirely new modded dialog files can be referenced without an .lsj file, even when the file path is set to look for an .lsj file.
 
 Alright, now that we've covered the basics, let's get into editing the files!
-###
+
 
 ## **HOW DO YOU EDIT THE DIALOGSBINARY FILES?**
 
-These sections of the tutorial will be broken down into tabs, one containing information on how to edit the files, and one containing documentation on the elements in them.
+These sections of the tutorial will be broken down into tabs, one containing a further explanation of the DialogsBinary files, one containing information on the elements in them, and one explaining how to edit them.
 
 Honestly, just understanding what you're looking at is half the battle when editing dialogue! So I highly recommend checking out the documentation tab before you begin.
 
-### DialogsBinary Files {.tabset}
+
+## Tab {.tabset}
+
+### A Summary
+
+As mentioned before, the DialogsBinary files are essentially like a chapter skip function on a DVD, telling the game which line of dialogue to play and when.
+
+This is done within the code of the DialogsBinary files, which link together a variety of different types of dialogue node. This is done by linking one dialogue node to the ones that are supposed to come after by the “children” attribute. When you list the UUID of one dialogue node as a “child” of another node, the game will see that UUID and know that “child” is the dialogue node that should play next. A dialogue node can have multiple “children,” which can be tested for using the CheckFlags attribute to know which line to play, or these multiple “children” could actually be sets of player choices following a given line of dialogue, which will then lead to further branching paths depending on what the player selects.
+
+This is how the game navigates through scenes, by following and testing for these different branching paths between different types of dialogue nodes.
+
+And yes, there are different types of dialogue nodes! These types determine what kind of behavior to perform for that node. Is a character speaking, or is the player given the opportunity to respond? Should a dice roll be performed, or is this a cinematic cutscene that needs to be played?
 
 ### Documentation
 
-## **HOW DO YOU EDIT THE DIALOGUE TIMELINE FILES?**
+As mentioned in the summary, the main elements in a DialogsBinary file are dialogue nodes.
+
+There are 11 different types of dialogue node that I’ve found so far. Keep in mind this game is huge, and there are a ton of dialogue files and different scenes in the game. There might be something I’ve missed. But I have looked at these files extensively, these are all I’ve found at this point!
+
+These different dialogue nodes are TagGreeting, TagAnswer, TagQuestion,TagCinematic, ActiveRoll, PassiveRoll, RollResult, Alias, Jump, Nested Dialog, and RootNodes.
+
+TagGreeting
+####
+
+TagGreeting nodes are the first line of dialogue a character will say to you when speaking to them. These are also paired with a corresponding Root Node at the end of the file. These TagGreeting nodes can then be followed by further dialogue nodes, or they could be a single line of dialogue, followed by the end of a conversation. That last bit is really common for NPCs. The greeting a character uses can be tested for using the CheckFlags attribute, allowing a character to use different lines of dialogue when initially speaking to them, depending on the conditions that have been set.
+
+TagAnswer
+####
+
+TagAnswer nodes are used for dialogue lines from speaking characters. This is usually the character you’re directly speaking to, but other characters can be included in conversations, such as when companions have voice line reactions to what’s going on. These are also given the TagAnswer label.
+
+TagQuestion
+####
+
+TagQuestion nodes are used for player dialogue options. These will be listed as “children” under the line of dialogue they’re meant to follow, which will act as a kind of “hub” for these options. The response from the character you’re speaking to when that option is chosen will be listed as a child of the TagQuestion node, allowing the game to navigate through the proper responses to your choices in dialogue.
+
+TagCinematic
+####
+
+TagCinematic nodes are generally animations without voice lines. These are essentially what cutscenes are in the game, although most scenes combine multiple lines of dialogue and cinematics together to complete the scene. Again, cutscenes really are just regular dialogue files. Understanding how to edit dialogue will allow you to edit and potentially create cutscenes in the game yourself from the XML level.
+
+ActiveRoll
+####
+
+ActiveRoll nodes are dialogue nodes that prompt the player to make a dice roll, and allow you to set different dialogue paths as “children” of the dice roll depending on whether the roll was successful or not. The different outcomes are set via RollResult nodes, which will be set to True or False to give the outcome of the roll.
+
+PassiveRoll
+####
+
+PassiveRoll nodes are very similar to ActiveRoll nodes! However, these are the passive rolls, like for perception and arcana, that are made automatically for the player in dialogue. The results for these rolls are also handled via the RollResult dialogue nodes.
+
+RollResult
+####
+
+RollResult nodes are linked as childen of ActiveRoll and PassiveRoll nodes. There's generally only two RollResult nodes, one with the Success attribute for the node being listed as "True," and the other with its Success attribute set to "False." These nodes determine what happens as a result of a dice roll, depending on whether the roll succeeded or not.
+
+Alias
+####
+
+Alias nodes essentially allow you to play another line of dialogue without having to duplicate everything from the original line. This is really helpful if you need to configure multiple branching paths that contain the same line, because it means you won’t have to duplicate the information for that line in the Dialogue Timeline file every time the it needs to be played. This is a very good thing, and I’ll get more into why when we cover the timeline files.
+
+Jump
+####
+
+Jump nodes allow you to jump to different lines of dialogue within a dialogue tree.
+
+Nested Dialog
+####
+
+Nested Dialog nodes will allow you to link to Nested Dialog files, which are essentially separate dialogue files that can contain smaller scenes, or dialogue options based on a certain theme, and so on. An example of this is used for companion romance dialogue; most companions have their romance dialogue in nested dialogue files, which are then linked to from their default InParty dialogue.
+
+RootNodes
+####
+
+Root nodes are unique, in the sense that they're generally mirrors of other nodes. The root nodes refer to the possible first lines of dialogue in a given scene or conversation, and are generally referring to TagGreeting nodes, but other types of nodes can be referenced as RootNodes. When a dialogue node in a file is considered a root node, that line of dialogue will have a RootNodes entry with its UUID listed at the end of the file, and will also be marked in its own code block with the Root attribute, which will be set to True.
+
+### How To Edit
+
+
+
+## **HOW DO YOU EDIT THE DIALOG TIMELINE FILES?**
 
 
 
@@ -138,7 +214,7 @@ I'm starting here for two reasons: one, the timeline files currently have the le
 …Now, let's get into it! I'll start by breaking down the elements that go into the timeline files.  
  
 
-### **ANATOMY OF A DIALOGUE TIMELINE FILE**
+### **ANATOMY OF A DIALOG TIMELINE FILE**
 
 Dialogue timeline files are broken down into a several sections, the biggest of which—EffectComponents—I'll be covering last. The EffectComponents section contains most of the actual information about the dialogue being played, so it is both extremely lengthy, and references a majority of the other sections in the timeline files. Covering the others first will make the EffectComponents section make a lot more sense. I'll be covering each other section in the order they appear in the files, skipping the EffectComponents for now. 
 
