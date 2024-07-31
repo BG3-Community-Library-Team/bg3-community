@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T02:04:53.239Z
+date: 2024-07-31T04:26:38.945Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -560,7 +560,7 @@ I've provided a reference for all of them in the Emotion Rigs Quick Ref tab.
 ![](/tutorials/dialogue-files-tutorial/tlshotvisual.png)
 
 
-### **Emotion Rigs Quick Ref**
+### Emotion Rigs Quick Ref
 
 In this list, you can find the ID numbers of each given emotion (listed first before the emotion name), followed by a list of the corresponding emotion rigs and their variation IDs.
 
@@ -866,3 +866,71 @@ Now, you should be all good! You've added your new dialogue to the timeline file
 
 
 ### Using the Timeline Updater
+
+You can download my Dialogue Timeline Updater tool from Nexusmods here! This section of the tutorial will tell you how to use it.
+
+I highly recommend you check out the other sections of the guide before checking it out, though! Otherwise this might not make much sense.
+
+#### What is the tool do?
+
+This tool will allow you to update all timing and/or IDs on the dialogue timeline effect components you're editing automatically, eliminating the need for you to do so by hand.
+
+Trust me, there's potentially hundreds or thousands of effect components in a given dialogue timeline file; you do not want to have to update the start and end times and UUIDs on each one of them individually.
+
+That's where the Dialogue Timeline Updater tool comes in!
+
+#### How to use this tool:
+
+1. First, download the tool from Nexusmods, and extract the folder inside the provided .zip file to another place on your computer.
+2. Open that folder and run MGNTN_BG3DialogueTimelineUpdater.exe to start the program.
+3. Copy all effect components you'd like to update into a new .xml, .lsx, or .txt file. **DO NOT run the program on your entire dialogue timeline file.**
+    \
+    I've set up a couple failsafes to prevent you from running the tool on your entire dialogue timeline file, but, just to clarify, the tool is only meant to automate updates to the timing of your effect components, and/or to generate new IDs for them.
+    \
+    You will need to manually copy the effect components you're updating into a new file, and then copy the updated effect components into your dialogue timeline file once you've made the changes you want.
+    \
+    It's a very, very basic tool, but it's been a lifesaver for me, and hopefully will be for you, too.
+
+#### Updating Effect Component Timing:
+
+To update the timing on your effect components, navigate to the Update Timing tab of the tool.
+
+This tab will let you input an amount of time to increment all of the start and end times in your effect components by. This is referred to as a "time offset" in the tool, and each start and end time will be updated by that amount of time.
+
+This will prevent you from having to manually update all of the timing in the file, and will also preserve the timing of things like emotions, sound effects, camera angle switches etc, within a given set of effect components.
+
+Say you'd like to increment all your start and end times by half a second. To do so, write 0.5 in the input box in the tab. Make sure to leave the "Reset Start Time" box unchecked, otherwise your start times will be set to 0.5!
+
+Then hit the "Select File and Run Updater" button. This will prompt you to select a file. Select the file you copied your effect components into and run the tool.
+
+All changes will be made within the file itself, with a backup file being automatically generated in the same folder when you run the tool, using the .backup file extension.
+
+The tool will tell you how many lines it changed. Check the file you just updated to make sure everything looks correct, and you can make further edits from there!
+
+##### Resetting start times:
+
+To be honest, this tool is mainly just meant to make it easier to place all of your effect components at the end of the existing timeline. That's what the "Reset Start Time" option is for! This option will clear the existing start time, and replace it with the time offset you set in the input box. It will also preserve the timing of all your effect components in relation to that new start time.
+
+This function will make it so you can grab the last end time of your existing timeline file, input that as your time offset, check the Reset Start Times box, and set all of your effect components to start directly after the end of the existing timeline.
+
+You can see a video example of me doing so here, actually!:
+
+Again, run the tool and select the file you'd like to update, as explained above. Double-check your file after running the tool, and then make any further desired edits from there!
+
+#### Updating effect components IDs:
+
+Each effect component in a timeline file is given a unique UUID, which will need to be changed when cloning existing effect components. This tool will let you do so, while leaving all other UUIDs untouched!
+
+All you need to do is navigate to the Update Effect Component IDs tab, and hit the Select File and Run Updater button. Select the file you copied your effect components into and run the tool. That's it!
+
+The tool will tell you how many lines were updated, which should match the number of effect components in your file (you can generally find how many effect components you have by searching for \"\<node id="EffectComponent">" in your file.
+
+Once again, all changes will be made within your file itself, with a backup file being generated in the same folder when you run the tool. Make sure everything looks ok, and then make any further edits you'd like from there!
+
+#### Wait, that's it?
+
+Yep, that's it! For now. Again, this is a very basic tool, and it's really just meant to automate the more tedious tasks required to edit the timeline files. But it's still been helpful for me, and I hope it will be for you!
+
+Once you've made all the changes you'd like, you can copy your effect components into the timeline file you're editing. You can keep editing them from there if you'd like! The effect components only need to be placed in a separate file to run the tool.
+
+Check out the "Adding to the Timeline" tab for further information about adding effect components and dialogue nodes!
