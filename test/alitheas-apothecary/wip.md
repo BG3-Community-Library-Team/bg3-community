@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: false
-date: 2024-07-31T13:56:46.951Z
+date: 2024-07-31T21:53:34.058Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
@@ -10,7 +10,7 @@ dateCreated: 2024-07-30T22:33:35.683Z
 
 # Editing Dialogue and Cinematics: A How-To Guide
 
-HI!!!! Welcome to Milo Magnetuning’s guide to dialogue files! There’s a lot to cover, and venturing into these files makes you very brave indeed, but I’ll be here to guide you along the way.
+HI!!!! Welcome to Milo Magnetuning’s guide to dialogue files! There’s a lot to cover, and these files can be pretty intimidating, but working with them gets easier the more you know about them!
 
 Let’s get started, shall we?
 
@@ -30,49 +30,53 @@ The two files you'll need for adding entirely new dialogue to the game are:
 - Generated Dialog Timelines
 - Dialog Assets
 
-You'll also need extra files to add new voice lines, which I'll be providing in a separate guide for this wiki as well.
+You'll also need extra files to add new voice lines, which I'll be providing in a separate guide for this wiki too.
 
-This tutorial will be divided into sections, breaking down what the purpose of each of these files is, the components that go into them, and how to edit them. I've also provided an annotated sample mod and a mirror of some of this tutorial on Nexusmods, which you can find here! The sample mod contains example code with notes breaking what each element in the code does line by line, and you can use it to follow along with this tutorial, or use it on its own, if that would work better for you.
+This tutorial will break down each of these files, and how to edit them. I've also provided an annotated sample mod and a mirror of some of this tutorial on Nexusmods, which you can find here! The sample mod breaks each element in the code down line by line, and can serve as a reference for the files as well.
 
 > A note on deprecated files:{.is-warning}
 
-You'll likely also find Dialog.lsj files with that same file name when extracting the files, as well as an extra Dialog Scene file with the .lsx file extension. These files are actually both deprecated! (The Dialog Scene files with the .lsf file extension are what you'll need to edit, NOT the .lsx files. Yes, confusing, I know.)
+You'll likely also find Dialog.lsj files with that same file name when extracting the files, as well as an extra Dialog Scene file with the .lsx file extension. These files are both deprecated! (The Dialog Scene files with the .lsf file extension are what you'll need to edit, NOT the .lsx files. Yes, confusing, I know.)
 
 These deprecated files genuinely do nothing. You don't need to edit them or include them in your mods at all, and I do not recommend you do so. You can actually create fully functional new dialogue without them, so they really do just, nothing.
 
 Thank you very much to <a href="https://next.nexusmods.com/profile/Joell560/about-me">Joell560</a> on Nexusmods for letting me know the files were deprecated! You've saved me a ton of hassle trying to recreate my changes in both files, and it's genuinely saved me so much time.
 
-I used to include these files in my mods, because I thought mismatches between the data in the Dialogs .lsj files and the DialogsBinary .lsf files would cause issues, but that wasn't actually the case. Turns out what I thought were issues with data mismatches were actually just, the changes not being made in the DialogsBinary files.
+The Dialogs .lsj files aren't necessary for creating new dialog, either! They really don't seem to do anything in the game. I'd recommend not including them in your mods at all.
 
-...The Dialogs .lsj files aren't even necessary for creating *new* dialog; they really just, do nothing in the game as far as I can tell. I'm getting ahead of myself, a little, though!
 
-*Let's get started, shall we?*
+Now, let's start breaking down the file, starting with the Dialog Timeline files.
 
-## **WHAT THE HECK ARE ALL THESE FILES?**
+### A Summary of Dialog Timeline Files
 
-This section of the tutorial will provide a basic summary of each of the dialogue files listed above. Each file will get its own, more in-depth section later, don't worry! But all of these files are, of course, extremely interconnected, and it'll help to have some basic information before we get into specifics.
+The Dialog timeline files are usually found in the this folder in the game's files:
 
-Let's start with the Dialog Timeline files.
-####
+`
+\\Data\Public\GustavDev\Timeline\Generated
+`
 
-The Dialog timeline files can usually be found in the \\Data\Public\GustavDev\Timeline\Generated folder when you extract them from the game. Some timeline files can be found in the Gustav folder as well, but they’ll still be in a \\Timeline\Generated folder.
+These files control the timing of all elements required to play dialogue and cinematics, including the actual voice lines, character animations, the emotions the characters use, camera angles, sound effects, and more. They control all aspects of dialogue that require full animation and timing—which does not include moments where your character picks dialogue options! Those are found in the DialogsBinary files, which I'll cover shortly.
 
-These files control the timing of all elements required to play dialogue and cinematics, including (but not limited to) the actual voice lines, character animations, the emotions the characters use, camera angles and shot changes, and sound effects. They control all aspects of dialogue that require full animation and timing—which does not include moments where your character picks dialogue options! Those are covered in the DialogBinary files, which I'll be explaining more later.
-
-A good way to think of the dialogue timeline files, and the dialogue in this game in general, is actually to picture it like a movie! With each individual line of dialogue as a small scene within that movie. The code in the dialogue timeline files gives the game everything necessary to play those scenes, and what element of the scene play when.
+A good way to think of the dialogue timeline files is to picture it like a movie! With each line of dialogue as a small scene within that movie. The code in the dialogue timeline files gives the game everything necessary to play those scenes, and what element of the scene play when.
 
 Fun fact, by the way: cutscenes are actually just regular dialogue files! They switch between lines of dialogue and cinematics—sections of animation without voice lines—to create a given scene.
 
 This also means that cinematics are sorta like mini cutscenes, including the cinematics for kisses!
 
-It’s important to note, though, that these little scenes within the timeline files aren’t actually played in order. While the timeline itself is like a movie, the game is almost constantly skipping around within it to play the scene—or line of dialogue—it needs.
+It’s important to note, though—these little scenes within the timeline files aren’t actually played in order. While the timeline itself is like a movie, the game is almost constantly skipping around within it to play the dialogue or cinematic it needs!
 
 And that’s where the DialogsBinary files come in!
 ####
 
-The DialogsBinary files are generally found in the \\Data\Mods\GustavDev\Story\DialogsBinary folder when you extract them from the game, and are then further broken down by what section of the game they belong in, like if they’re from Act 3, or the Tutorial level, or if they’re meant to be Companion dialogue, and so on. You might also find these files in the Gustav folder, but they’re still broken down in a similar way.
+The DialogsBinary files are generally found in this folder in the game's files:
 
-Now, if the dialogue timeline files are like a movie, then DialogsBinary files are like a chapter skip function on a DVD. These files contain the information the game needs to reference your choices in dialogue, and select which voice lines or cinematics to play, and when. They also contain information on dice rolls, links to nested dialogue files—which I’ll explain a more about later—and are where the game tests for whether a line of dialogue or or player response should be accessible or not. They can also be used by the game to set flags it can test for in other areas of the game, and can link to information on companion approval.
+`
+\\Data\Mods\GustavDev\Story\DialogsBinary 
+`
+
+They're then further broken down by what section of the game they belong in, like if they’re from Act 3, or the Tutorial level, if they’re Companion dialogue, etc. You might also find these files in the Gustav folder, but they’re still organized in a similar way.
+
+Now, if the timeline files are like a movie, then DialogsBinary files are like a chapter skip function on a DVD. These files contain the information the game needs to reference your choices in dialogue, and select which voice lines or cinematics to play, and when. They also contain information on dice rolls, links to nested dialogue files—which I’ll explain a more about later—and are where the game tests for whether a line of dialogue or or player response should be accessible or not. They can also be used by the game to set flags it can test for in other areas of the game, and can link to information on companion approval.
 
 Dialog Scene files
 ####
@@ -755,8 +759,6 @@ I generally use apples. Dunno why! You can use any other word you'd like, as lon
 
 A little tip: You can also use this technique to very quickly copy or delete sections of code in other files, too, like the CharacterVisuals files.
 
-Also, another fun fact: turns out my dad has been doing the same thing for years, just with the word bananas, and I had no idea! Very fun to me that we picked those words specifically tbh. At least, it is to me!
-
 Once you've copied the effect components you need to, I recommend pasting them into a separate file while you're working on them. You will need to do this if you plan on using my Dialogue Timeline Updater, by the way!
 
 #### Updating cloned effect components
@@ -914,7 +916,7 @@ In the above example, the first emotion listed is the "Surprised" emotion, which
 
 Now, in the above example, the the second emotion listed is Happy, with no variation. This means that the variation ID is 0, and that the character will start using the Happy_A rig at that time! 
 
-Now, to change this, all you need to do is find the value IDs for the emotion and variaton you'd like, and swap them in for the existing emotion and variation values.
+To change this, all you need to do is find the value IDs for the emotion and variaton you'd like, and swap them in for the existing emotion and variation values.
 
 You'll also notice the Time attribute for the second emotion starts partway through the dialogue. Specifically, 1.69996 seconds into it. This is where you can adjust the timing of each expression change!
 
@@ -923,6 +925,24 @@ Tweaking the Time attribute will tell the game what emotion should play when, in
 You can also add new emotion changes by duplicating one of the "Keys" listed for expression changes, and adjusting the emotion, variation, and time attributes as necessary.
 
 You can create really complex sequences of emotions this way, exactly how the game does!
+
+#### TLVoice
+
+This component controls the voice line for a node! However, the actual voice line is not referenced within the timeline file. Instead, the specific voice line is linked to the text handle listed for the node in the DialogsBinary file. This text handle is not only referenced in the Localization files, but is also referenced in a character's voicebank file, and will allow the game to reference the proper audio file.
+
+The UUIDs listed in the TLVoice component are actually the UUIDs for the dialog node, group id, and/or custom sequence IDs of the dialog in the DialogsBinary file.
+
+To change the voice line, you'll actually want to go into the DialogsBinary file instead, and change the text handle of the node to match the line you want to use!
+
+
+#### TLShot
+
+This controls camera angle changes! The CameraContainer UUID will link to a Scenecam entry later in the file, which will link to a specific camera angle in the Dialog Scene file. To swap in a new camera angle, just find the UUID for the camera you'd like to use, and then set that as the UUID of your CameraContainer in the node. To find a specific camera, you can double check the timeline actors listed for a scenecam; the scenecams will usually list who the camera is looking at, as well as whether a camera is looking over a character's shoulder, etc. 
+
+This is done within a scenecam entry by listing the actor UUIDs for the AttachTo and LookAt attributes. If a scenecam uses the same UUID for the LookAt and AttachTo attributes, that's usually a closeup with no other characters present!
+
+You can add additional camera angle changes to a dialog or cinematic by adding new TLShot nodes, and changing their Start and End times to last for however long you'd want the shot to last!
+
 
 ### Using the Timeline Updater
 
