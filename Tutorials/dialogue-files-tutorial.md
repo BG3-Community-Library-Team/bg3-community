@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T04:26:38.945Z
+date: 2024-07-31T04:28:22.284Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -917,11 +917,11 @@ You can see a video example of me doing so here, actually!:
 
 Again, run the tool and select the file you'd like to update, as explained above. Double-check your file after running the tool, and then make any further desired edits from there!
 
-#### Updating effect components IDs:
+#### Updating effect component IDs:
 
 Each effect component in a timeline file is given a unique UUID, which will need to be changed when cloning existing effect components. This tool will let you do so, while leaving all other UUIDs untouched!
 
-All you need to do is navigate to the Update Effect Component IDs tab, and hit the Select File and Run Updater button. Select the file you copied your effect components into and run the tool. That's it!
+Navigate to the Update Effect Components IDs tab, and hit the Select File and Run Updater button. Select the file you copied your effect components into and run the tool. That's it!
 
 The tool will tell you how many lines were updated, which should match the number of effect components in your file (you can generally find how many effect components you have by searching for \"\<node id="EffectComponent">" in your file.
 
