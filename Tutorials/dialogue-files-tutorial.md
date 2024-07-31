@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T13:28:17.055Z
+date: 2024-07-31T13:56:22.502Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -916,9 +916,9 @@ Now, in the above example, the the second emotion listed is Happy, with no varia
 
 Now, to change this, all you need to do is find the value IDs for the emotion and variaton you'd like, and swap them in for the existing emotion and variation values.
 
-You'll also notice the Time attribute for the second emotion starts partway through the dialogue. Specifically, 1.69996 seconds into it. This is where you can adjust the timing of each expression change! Timing for everything in the dialogue timeline can be *extremely* precise, and you can create
+You'll also notice the Time attribute for the second emotion starts partway through the dialogue. Specifically, 1.69996 seconds into it. This is where you can adjust the timing of each expression change!
 
-You can tweak the Time attribute here to tell the game when that emotion should play in relation to the start and end times of the dialog! Just make sure you keep those times within the start and end times for the Phase you're editing, otherwise they'll overlap with other dialog effect components.
+Tweaking the Time attribute will tell the game what emotion should play when, in relation to the start and end times of the dialog. Just make sure you keep those times within the start and end times for the Phase you're editing, otherwise they'll overlap with other dialog effect components.
 
 You can also add new emotion changes by duplicating one of the "Keys" listed for expression changes, and adjusting the emotion, variation, and time attributes as necessary.
 
