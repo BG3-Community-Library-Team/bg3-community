@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T13:56:22.502Z
+date: 2024-07-31T20:05:53.424Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -914,7 +914,7 @@ In the above example, the first emotion listed is the "Surprised" emotion, which
 
 Now, in the above example, the the second emotion listed is Happy, with no variation. This means that the variation ID is 0, and that the character will start using the Happy_A rig at that time! 
 
-Now, to change this, all you need to do is find the value IDs for the emotion and variaton you'd like, and swap them in for the existing emotion and variation values.
+To change this, all you need to do is find the value IDs for the emotion and variaton you'd like, and swap them in for the existing emotion and variation values.
 
 You'll also notice the Time attribute for the second emotion starts partway through the dialogue. Specifically, 1.69996 seconds into it. This is where you can adjust the timing of each expression change!
 
@@ -923,6 +923,17 @@ Tweaking the Time attribute will tell the game what emotion should play when, in
 You can also add new emotion changes by duplicating one of the "Keys" listed for expression changes, and adjusting the emotion, variation, and time attributes as necessary.
 
 You can create really complex sequences of emotions this way, exactly how the game does!
+
+TLVoice
+
+This component controls the voice line for a node! However, the actual voice line is not referenced within the timeline file. Instead, the specific voice line is linked to the text handle listed for the node in the DialogsBinary file. This text handle is not only referenced in the Localization files, but is also referenced in a character's voicebank file, and will allow the game to reference the proper audio file.
+
+The UUIDs listed in the TLVoice component are actually the UUIDs for the dialog node, group id, and/or custom sequence IDs of the dialog in the DialogsBinary file.
+
+To change the voice line, you'll actually want to go into the DialogsBinary file instead, and change the text handle of the node to match the line you want to use!
+
+
+
 
 ### Using the Timeline Updater
 
