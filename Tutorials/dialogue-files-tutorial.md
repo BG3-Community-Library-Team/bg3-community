@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T01:05:57.988Z
+date: 2024-07-31T01:27:20.023Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -845,4 +845,8 @@ Replace the UUID for that Object entry with the UUID for your dialogue node. If 
 
 Then update the MapValue number to match your PhaseIndex number.
 
-Now, you should be all good! You've added your new dialogue node to the timeline file!
+**Oh, and one more thing:**
+
+Now that you've added what you'd like to the timeline, make sure you update the duration of the file overall! Find the end time of your newly added effect components, and set the Duration listed at the top of the file to that same end time. You'll need to update this to make sure your new effect components can play.
+
+Now, you should be all good! You've added your new dialogue to the timeline file!
