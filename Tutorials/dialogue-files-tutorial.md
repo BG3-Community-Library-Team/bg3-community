@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T00:47:40.419Z
+date: 2024-07-31T01:05:57.988Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -821,6 +821,28 @@ In order to get the game to reference the voice line you need, you'll need to up
 
 However, it is possible to randomize voice lines, or include multiple voice lines within the dialogue node. This is explained a bit more in the DialogsBinary section of the tutorial, but, to summarize, different lines of text can be listed under the TaggedTexts section of a dialogue node, and will be given a CustomSequenceID number. In this case, you'll want to put the original dialogue node UUID in as the DialogNodeID in the TLVoice component, and the CustomSequenceID in as the ReferenceID for the line.
 
+**Adding cinematics**
+
+All of the steps before can be used for adding cinematics to files, but you won't need to update the voice lines, which will most likely not be present.
+
 #### Ok, cool. Now that I've updated all that, what's next?
 
-Now you can add your effect components back into the file you're editing. You'll need to set up two more things in order to get the game to reference them, though.
+Now you can add your effect components back into the file you're editing. Copy all the effect components you just added, and search for TimelineSpeakers to bring you to the end of the EffectComponents section of the file. Paste all of your updated effect components after the last effect component in this section, and you'll have all your new effect components set up!
+
+You'll need to set up two more things in order to get the game to reference them, though.
+
+**Phases:**
+
+First, you'll need to add an entry for your dialogue node in the Phases section at the top of the file. Search for EffectComponents to bring you to the bottom of the Phases section; the EffectComponents section comes directly after the Phases section, so searching for it will bring you directly to the end of the list. Then add a new Phase code block. You can just duplicate the one that came before it.
+
+Replace the UUID in your duplicated Phase code block for the UUID of your new dialogue node, as listed in your DialogsBinary file. Then update the Duration of the phase. This will be the total amount of time your dialogue or cinematic takes to play, which you can calculate by subtracting the start time of your effect components from the end time. Make sure you're not calculating it based on effects that start partway through the phase, though.
+
+**TimelinePhases:**
+
+Very confusing wording, I'm not gonna lie, but still very important. Navigate to this section of the file by searching for PeanutSlotIDMap, which follows the TimelinePhases section, and will take you to the end of it. Then duplicate one of the Object entries in the TimelinePhases section.
+
+Replace the UUID for that Object entry with the UUID for your dialogue node. If you're adding a line of dialogue included as a custom sequence within a dialogue node, though (as explained above), you'll want to put your CustomSequenceID UUID here. The UUID in the Phases section should still be the UUID for the original dialog node, though, and NOT the CustomSequenceID.
+
+Then update the MapValue number to match your PhaseIndex number.
+
+Now, you should be all good! You've added your new dialogue node to the timeline file!
