@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T20:45:17.093Z
+date: 2024-07-31T21:29:16.242Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -10,7 +10,7 @@ dateCreated: 2024-06-12T08:03:36.381Z
 
 # Editing Dialogue and Cinematics: A How-To Guide
 
-HI!!!! Welcome to Milo Magnetuning’s guide to dialogue files! There’s a lot to cover, and venturing into these files makes you very brave indeed, but I’ll be here to guide you along the way.
+HI!!!! Welcome to Milo Magnetuning’s guide to dialogue files! There’s a lot to cover, and these files can be pretty intimidating, but working with them gets easier the more you know about them!
 
 Let’s get started, shall we?
 
