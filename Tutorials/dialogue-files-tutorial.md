@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T04:28:22.284Z
+date: 2024-07-31T04:42:57.953Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -862,6 +862,9 @@ Now that you've added what you'd like to the timeline, make sure you update the 
 Now, you should be all good! You've added your new dialogue to the timeline file!
 
 ### How to Edit - Effect Components
+
+This section of the tutorial will give you some tips on editing specific common effect components! The Effect Components - Documentation tab does break down a lot of effect components line by line, but I'll go more in-depth on how to edit some common kinds of effect components here.
+
 
 
 
