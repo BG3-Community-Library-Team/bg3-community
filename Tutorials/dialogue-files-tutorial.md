@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T08:34:13.936Z
+date: 2024-07-31T13:28:17.055Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -865,9 +865,64 @@ Now, you should be all good! You've added your new dialogue to the timeline file
 
 This section of the tutorial will give you some tips on editing specific common effect components! The Effect Components - Documentation tab does break down a lot of effect components line by line, but I'll go more in-depth on how to edit some common kinds of effect components here.
 
-Some common effect components you might want to change, especially for existing sections of dialogue are the TLEmotionEvent, TLAnimation, 
+#### TLEmotionEvent:
+
+One of the most common effect components you might want to edit is the TLEmotionEvent component.
+
+This controls character expressions during cinematics and dialogue. These expressions are swapped in and out according to the Time attribute given to each expression - this is the exact moment an expression rig is swapped in for the character.
+
+Here's an example code block.
 
 
+								<node id="EffectComponent">
+									<attribute id="Type" type="LSString" value="TLEmotionEvent" />
+									<attribute id="ID" type="guid" value="49ec2e56-16cf-43f7-a8f2-f3991d8d1e80" />
+									<attribute id="StartTime" type="float" value="39.24994" />
+									<attribute id="EndTime" type="float" value="43.54994" />
+									<attribute id="PhaseIndex" type="int64" value="4" />
+									<attribute id="IsSnappedToEnd" type="bool" value="True" />
+									<children>
+										<node id="Actor">
+											<attribute id="UUID" type="guid" value="cdb171e8-361d-e4e1-c29e-9242fb86ab72" />
+										</node>
+										<node id="Keys">
+											<children>
+												<node id="Key">
+													<attribute id="Time" type="float" value="39.24994" />
+													<attribute id="InterpolationType" type="uint8" value="3" />
+													<attribute id="Emotion" type="int32" value="64" />
+													<attribute id="Variation" type="int32" value="1" />
+												</node>
+												<node id="Key">
+													<attribute id="Time" type="float" value="40.9499" />
+													<attribute id="InterpolationType" type="uint8" value="3" />
+													<attribute id="Emotion" type="int32" value="2" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>      
+                
+                
+Remember, the Actor UUID refers to the specific character these expression changes belong to!
+
+To change character expressions, all you need to do is swap out the "Emotion" and "Variation" attributes with the emotion you'd like. As explained in the Documentation tab, the Emotion listed in this code block, of course, refers to the specific emotion a character will use, starting from the Time listed above it.
+
+The Variation below it will point to a specific rig for that emotion! Each character usually only has 8 expression rigs for a given emotion. These are all variants on that emotion, and you can swap them out by changing the "value" for the variation attribute.
+
+In the above example, the first emotion listed is the "Surprised" emotion, which has a value ID of 64. Below it is its variation, variation 1. This actually corresponds to variant B of the surprised emotion! Meaning its rig will be the Surprised_B rig of the character. Like most things in the timeline files, the value IDs of the emotion variation rigs starts at 0 (the emotions themselves don't, though. Again, check the Emotion Rigs Quick Ref tab to find the value ID of the emotion you need!)
+
+Now, in the above example, the the second emotion listed is Happy, with no variation. This means that the variation ID is 0, and that the character will start using the Happy_A rig at that time! 
+
+Now, to change this, all you need to do is find the value IDs for the emotion and variaton you'd like, and swap them in for the existing emotion and variation values.
+
+You'll also notice the Time attribute for the second emotion starts partway through the dialogue. Specifically, 1.69996 seconds into it. This is where you can adjust the timing of each expression change! Timing for everything in the dialogue timeline can be *extremely* precise, and you can create
+
+You can tweak the Time attribute here to tell the game when that emotion should play in relation to the start and end times of the dialog! Just make sure you keep those times within the start and end times for the Phase you're editing, otherwise they'll overlap with other dialog effect components.
+
+You can also add new emotion changes by duplicating one of the "Keys" listed for expression changes, and adjusting the emotion, variation, and time attributes as necessary.
+
+You can create really complex sequences of emotions this way, exactly how the game does!
 
 ### Using the Timeline Updater
 
