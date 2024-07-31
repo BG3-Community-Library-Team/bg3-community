@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T20:05:53.424Z
+date: 2024-07-31T20:36:47.584Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -924,7 +924,7 @@ You can also add new emotion changes by duplicating one of the "Keys" listed for
 
 You can create really complex sequences of emotions this way, exactly how the game does!
 
-TLVoice
+#### TLVoice
 
 This component controls the voice line for a node! However, the actual voice line is not referenced within the timeline file. Instead, the specific voice line is linked to the text handle listed for the node in the DialogsBinary file. This text handle is not only referenced in the Localization files, but is also referenced in a character's voicebank file, and will allow the game to reference the proper audio file.
 
@@ -932,6 +932,14 @@ The UUIDs listed in the TLVoice component are actually the UUIDs for the dialog 
 
 To change the voice line, you'll actually want to go into the DialogsBinary file instead, and change the text handle of the node to match the line you want to use!
 
+
+#### TLShot
+
+This controls camera angle changes! The CameraContainer UUID will link to a Scenecam entry later in the file, which will link to a specific camera angle in the Dialog Scene file. To swap in a new camera angle, just find the UUID for the camera you'd like to use, and then set that as the UUID of your CameraContainer in the node. To find a specific camera, you can double check the timeline actors listed for a scenecam; the scenecams will usually list who the camera is looking at, as well as whether a camera is looking over a character's shoulder, etc. 
+
+This is done within a scenecam entry by listing the actor UUIDs for the AttachTo and LookAt attributes. If a scenecam uses the same UUID for the LookAt and AttachTo attributes, that's usually a closeup with no other characters present!
+
+You can add additional camera angle changes to a dialog or cinematic by adding new TLShot nodes, and changing their Start and End times to last for however long you'd want the shot to last!
 
 
 
