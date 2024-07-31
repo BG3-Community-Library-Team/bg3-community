@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-30T21:48:35.290Z
+date: 2024-07-31T00:47:40.419Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -809,6 +809,18 @@ To make the effect components you're adding last for a different amount of time 
 
 It's still doable, though!
 
-You'll want to update the start times for your effect components first. Then find the length of the line you're adding, and add that number to the new start time. This will be your new end time. You can also add additonal time to this number to add pauses between the voice line if you'd like.
+You'll want to update the start times for your effect components first. Then find the length of the line you're adding, and add that number to the start time you just updated. You'll be using this as the new end time for your effect components. You can also add additonal time to this number to add pauses between the voice line if you'd like.
 
-Take the new end time you just calculated, and use "replace all" in your code editor to update all your end times in the file. You'll have to double check to make sure all the timing for your effect components, like the timing of emotion changes in TLEmotionEvent, are all contained within your new start and end times. This is especially important when setting a shorter end time than the original one.
+Take the new end time you just calculated, and use "replace all" in your code editor to update all your end times in the file. You'll have to double check to make sure the timing for your effect components, like the timing of emotion changes in TLEmotionEvent, are all contained within your new start and end times. This is especially important when setting a shorter end time than the original one.
+
+Setting the timing outside of your start and end times can cause them to overlap with other dialogue nodes, and cause the game to be unsure of which to select! (If you have stuttering expressions or animations, it might be good to double-check to make sure everything's properly contained within the length of the phase.) 
+
+**Updating voice lines:**
+
+In order to get the game to reference the voice line you need, you'll need to update the UUIDs the DialogNodeID and the ReferenceID in the TLVoice effect component, which will need to be included for any voice lines. These are generally the same UUID, and will be the UUID of your dialog node in the DialogsBinary files.
+
+However, it is possible to randomize voice lines, or include multiple voice lines within the dialogue node. This is explained a bit more in the DialogsBinary section of the tutorial, but, to summarize, different lines of text can be listed under the TaggedTexts section of a dialogue node, and will be given a CustomSequenceID number. In this case, you'll want to put the original dialogue node UUID in as the DialogNodeID in the TLVoice component, and the CustomSequenceID in as the ReferenceID for the line.
+
+#### Ok, cool. Now that I've updated all that, what's next?
+
+Now you can add your effect components back into the file you're editing. You'll need to set up two more things in order to get the game to reference them, though.
