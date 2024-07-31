@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T20:36:47.584Z
+date: 2024-07-31T20:45:17.093Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -940,7 +940,6 @@ This controls camera angle changes! The CameraContainer UUID will link to a Scen
 This is done within a scenecam entry by listing the actor UUIDs for the AttachTo and LookAt attributes. If a scenecam uses the same UUID for the LookAt and AttachTo attributes, that's usually a closeup with no other characters present!
 
 You can add additional camera angle changes to a dialog or cinematic by adding new TLShot nodes, and changing their Start and End times to last for however long you'd want the shot to last!
-
 
 
 ### Using the Timeline Updater
