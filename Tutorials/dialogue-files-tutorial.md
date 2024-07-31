@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T01:27:20.023Z
+date: 2024-07-31T02:04:53.239Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -383,7 +383,7 @@ The rest of the sections in the timeline file are either things that likely shou
   
 …And, with that, we're ready to move on! Check the Effect Components tab to continue with the tutorial.
 
-### Effect Components
+### Effect Components - Documentation
  
 #### OK, I'M READY. WHAT IS GOING ON WITH THOSE EFFECT COMPONENTS?
 
@@ -696,11 +696,13 @@ In this list, you can find the ID numbers of each given emotion (listed first be
 -   Pain\_Y = 24
 -   Pain\_Z = 25
 
-### How to Edit
+### How to Edit - Finding the Right Components
 
 #### FINALLY.
 
-You've arrived at how to edit the Dialog Timeline files!
+You've arrived at how to edit the Dialog Timeline files! This tab will cover basic information on how to navigate the files, to find the effect components you'd like to edit. The How to Edit - Adding to the Timeline tab will cover how to add new dialogue and cinematics to a file, and The How to Edit - Effect Components tab will cover how to edit specific effect components. You'll need to know what you're looking for before you do either, though!
+
+So, let's get started!
 
 #### Finding the right effect components
 
@@ -715,19 +717,27 @@ Once you've done that, search for that UUID in the dialog timeline file. Look fo
 
 This will give you all the effect components of a given node.
 
-#### A note about adding onto the timeline
+Keep in mind that dialogue nodes at the start of the timeline file have a PhaseIndex of 0, which will not be listed in the effect component code blocks. Instead, if the dialogue you'd like to edit has a PhaseIndex of 0, search for EffectComponents to take you to the start of that section. Everything that doesn't have a PhaseIndex is part of the dialogue node you'd like to edit.
 
-I'll be covering more about how to edit some of the common effect components shortly, if you'd just like to make changes to existing dialog and cinematics, without adding new dialog to the scene, but I would like to start with adding new things.
+#### A note about player responses:
 
-Keep in mind that TagQuestion nodes, and other player responses are not present in the timeline file! Only spoken lines of dialogue and cinematics will be present in these files, because they need specific timing to play properly. Things like player responses, dice rolls, etc are handled only in the DialogsBinary files.
+Keep in mind that TagQuestion nodes, and other player responses are not present in the timeline file! Only spoken lines of dialogue and cinematics will be present in these files, because they need specific timing to play properly. Things like dialog options, dice rolls, etc are handled only in the DialogsBinary files.
 
-To edit things like expressions over player responses, you'll be looking at the line of spoken dialogue or cinematic directly before the player is given a chance to respond (I'll be covering that more later.)
+To edit things like the expressions characters use when selecting dialog options, you'll be looking at the line of spoken dialogue or cinematic directly before the player is given a chance to respond. The animations and expressions from that node will be carried over your responses, so if you'd like to edit that, search for the UUID and PhaseIndex for the previous spoken line of dialog.
+
+Now that you've found what you want to edit, navigate to either the How to Edit - Adding to the Timeline tab or the How to Edit - Effect Components tabs!
+
+### How to Edit - Adding to the Timeline
+
+Hi! You can find instructions on how to add to your dialog timeline here.
+
+Each spoken line of dialogue and cinematic you add in your DialogsBinary file will need to have a corresponding set of effect components in your dialog timeline! And here's how you can add them.
 
 #### Cloning effect components
 
 The easiest way to add onto the dialogue timeline, like adding onto the DialogsBinary files, is to clone existing ones and editing what you need to from there.
 
-You'll need to add new sets of effect components for each new voice line and cinematic you've added to your DialogsBinary files, and you can do that by cloning existing sets of effect components. I'd recommend looking for dialogue nodes that are similar to what you're adding, and then cloning the effect components from that.
+I'd recommend looking for dialogue nodes that are similar to what you're adding, and then cloning the effect components from that. (And, of course, if you're trying to add an interaction from one file to another, you can just clone that.)
 
 Once you've found the PhaseIndex for the dialog node (or cinematic!) you'd like to clone, you can easily enclose all the effect components for it by searching for the first instance of that PhaseIndex, and putting a bracket with a nonsense word that isn't used anywhere in the code above it (will explain momentarily.)
 
@@ -747,7 +757,7 @@ A little tip: You can also use this technique to very quickly copy or delete sec
 
 Also, another fun fact: turns out my dad has been doing the same thing for years, just with the word bananas, and I had no idea! Very fun to me that we picked those words specifically tbh. At least, it is to me!
 
-Once you've copied the effect components you need to, I recommend copying them into a separate file while you're working on them.
+Once you've copied the effect components you need to, I recommend pasting them into a separate file while you're working on them. You will need to do this if you plan on using my Dialogue Timeline Updater, by the way!
 
 #### Updating cloned effect components
 
@@ -850,3 +860,9 @@ Then update the MapValue number to match your PhaseIndex number.
 Now that you've added what you'd like to the timeline, make sure you update the duration of the file overall! Find the end time of your newly added effect components, and set the Duration listed at the top of the file to that same end time. You'll need to update this to make sure your new effect components can play.
 
 Now, you should be all good! You've added your new dialogue to the timeline file!
+
+### How to Edit - Effect Components
+
+
+
+### Using the Timeline Updater
