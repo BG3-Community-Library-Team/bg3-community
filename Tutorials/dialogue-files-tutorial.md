@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T21:29:16.242Z
+date: 2024-07-31T21:33:48.935Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -754,8 +754,6 @@ To explain, this will allow you to collapse all of the effect components you nee
 I generally use apples. Dunno why! You can use any other word you'd like, as long as it's not a proper tag in the code.
 
 A little tip: You can also use this technique to very quickly copy or delete sections of code in other files, too, like the CharacterVisuals files.
-
-Also, another fun fact: turns out my dad has been doing the same thing for years, just with the word bananas, and I had no idea! Very fun to me that we picked those words specifically tbh. At least, it is to me!
 
 Once you've copied the effect components you need to, I recommend pasting them into a separate file while you're working on them. You will need to do this if you plan on using my Dialogue Timeline Updater, by the way!
 
