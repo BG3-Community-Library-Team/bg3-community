@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-07-31T21:33:48.935Z
+date: 2024-07-31T21:53:01.853Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -30,49 +30,53 @@ The two files you'll need for adding entirely new dialogue to the game are:
 - Generated Dialog Timelines
 - Dialog Assets
 
-You'll also need extra files to add new voice lines, which I'll be providing in a separate guide for this wiki as well.
+You'll also need extra files to add new voice lines, which I'll be providing in a separate guide for this wiki too.
 
-This tutorial will be divided into sections, breaking down what the purpose of each of these files is, the components that go into them, and how to edit them. I've also provided an annotated sample mod and a mirror of some of this tutorial on Nexusmods, which you can find here! The sample mod contains example code with notes breaking what each element in the code does line by line, and you can use it to follow along with this tutorial, or use it on its own, if that would work better for you.
+This tutorial will break down each of these files, and how to edit them. I've also provided an annotated sample mod and a mirror of some of this tutorial on Nexusmods, which you can find here! The sample mod breaks each element in the code down line by line, and can serve as a reference for the files as well.
 
 > A note on deprecated files:{.is-warning}
 
-You'll likely also find Dialog.lsj files with that same file name when extracting the files, as well as an extra Dialog Scene file with the .lsx file extension. These files are actually both deprecated! (The Dialog Scene files with the .lsf file extension are what you'll need to edit, NOT the .lsx files. Yes, confusing, I know.)
+You'll likely also find Dialog.lsj files with that same file name when extracting the files, as well as an extra Dialog Scene file with the .lsx file extension. These files are both deprecated! (The Dialog Scene files with the .lsf file extension are what you'll need to edit, NOT the .lsx files. Yes, confusing, I know.)
 
 These deprecated files genuinely do nothing. You don't need to edit them or include them in your mods at all, and I do not recommend you do so. You can actually create fully functional new dialogue without them, so they really do just, nothing.
 
 Thank you very much to <a href="https://next.nexusmods.com/profile/Joell560/about-me">Joell560</a> on Nexusmods for letting me know the files were deprecated! You've saved me a ton of hassle trying to recreate my changes in both files, and it's genuinely saved me so much time.
 
-I used to include these files in my mods, because I thought mismatches between the data in the Dialogs .lsj files and the DialogsBinary .lsf files would cause issues, but that wasn't actually the case. Turns out what I thought were issues with data mismatches were actually just, the changes not being made in the DialogsBinary files.
+The Dialogs .lsj files aren't necessary for creating new dialog, either! They really don't seem to do anything in the game. I'd recommend not including them in your mods at all.
 
-...The Dialogs .lsj files aren't even necessary for creating *new* dialog; they really just, do nothing in the game as far as I can tell. I'm getting ahead of myself, a little, though!
 
-*Let's get started, shall we?*
+Now, let's start breaking down the file, starting with the Dialog Timeline files.
 
-## **WHAT THE HECK ARE ALL THESE FILES?**
+### A Summary of Dialog Timeline Files
 
-This section of the tutorial will provide a basic summary of each of the dialogue files listed above. Each file will get its own, more in-depth section later, don't worry! But all of these files are, of course, extremely interconnected, and it'll help to have some basic information before we get into specifics.
+The Dialog timeline files are usually found in the this folder in the game's files:
 
-Let's start with the Dialog Timeline files.
-####
+`
+\\Data\Public\GustavDev\Timeline\Generated
+`
 
-The Dialog timeline files can usually be found in the \\Data\Public\GustavDev\Timeline\Generated folder when you extract them from the game. Some timeline files can be found in the Gustav folder as well, but they’ll still be in a \\Timeline\Generated folder.
+These files control the timing of all elements required to play dialogue and cinematics, including the actual voice lines, character animations, the emotions the characters use, camera angles, sound effects, and more. They control all aspects of dialogue that require full animation and timing—which does not include moments where your character picks dialogue options! Those are found in the DialogsBinary files, which I'll cover shortly.
 
-These files control the timing of all elements required to play dialogue and cinematics, including (but not limited to) the actual voice lines, character animations, the emotions the characters use, camera angles and shot changes, and sound effects. They control all aspects of dialogue that require full animation and timing—which does not include moments where your character picks dialogue options! Those are covered in the DialogBinary files, which I'll be explaining more later.
-
-A good way to think of the dialogue timeline files, and the dialogue in this game in general, is actually to picture it like a movie! With each individual line of dialogue as a small scene within that movie. The code in the dialogue timeline files gives the game everything necessary to play those scenes, and what element of the scene play when.
+A good way to think of the dialogue timeline files is to picture it like a movie! With each line of dialogue as a small scene within that movie. The code in the dialogue timeline files gives the game everything necessary to play those scenes, and what element of the scene play when.
 
 Fun fact, by the way: cutscenes are actually just regular dialogue files! They switch between lines of dialogue and cinematics—sections of animation without voice lines—to create a given scene.
 
 This also means that cinematics are sorta like mini cutscenes, including the cinematics for kisses!
 
-It’s important to note, though, that these little scenes within the timeline files aren’t actually played in order. While the timeline itself is like a movie, the game is almost constantly skipping around within it to play the scene—or line of dialogue—it needs.
+It’s important to note, though—these little scenes within the timeline files aren’t actually played in order. While the timeline itself is like a movie, the game is almost constantly skipping around within it to play the dialogue or cinematic it needs!
 
 And that’s where the DialogsBinary files come in!
 ####
 
-The DialogsBinary files are generally found in the \\Data\Mods\GustavDev\Story\DialogsBinary folder when you extract them from the game, and are then further broken down by what section of the game they belong in, like if they’re from Act 3, or the Tutorial level, or if they’re meant to be Companion dialogue, and so on. You might also find these files in the Gustav folder, but they’re still broken down in a similar way.
+The DialogsBinary files are generally found in this folder in the game's files:
 
-Now, if the dialogue timeline files are like a movie, then DialogsBinary files are like a chapter skip function on a DVD. These files contain the information the game needs to reference your choices in dialogue, and select which voice lines or cinematics to play, and when. They also contain information on dice rolls, links to nested dialogue files—which I’ll explain a more about later—and are where the game tests for whether a line of dialogue or or player response should be accessible or not. They can also be used by the game to set flags it can test for in other areas of the game, and can link to information on companion approval.
+`
+\\Data\Mods\GustavDev\Story\DialogsBinary 
+`
+
+They're then further broken down by what section of the game they belong in, like if they’re from Act 3, or the Tutorial level, if they’re Companion dialogue, etc. You might also find these files in the Gustav folder, but they’re still organized in a similar way.
+
+Now, if the timeline files are like a movie, then DialogsBinary files are like a chapter skip function on a DVD. These files contain the information the game needs to reference your choices in dialogue, and select which voice lines or cinematics to play, and when. They also contain information on dice rolls, links to nested dialogue files—which I’ll explain a more about later—and are where the game tests for whether a line of dialogue or or player response should be accessible or not. They can also be used by the game to set flags it can test for in other areas of the game, and can link to information on companion approval.
 
 Dialog Scene files
 ####
