@@ -2,7 +2,7 @@
 title: Tools
 description: A list of pages relating to tools, as well as a list of links to useful tools.
 published: true
-date: 2024-06-19T16:39:49.385Z
+date: 2024-08-02T19:56:38.376Z
 tags: tools, list
 editor: markdown
 dateCreated: 2024-05-01T03:55:31.302Z
@@ -11,7 +11,7 @@ dateCreated: 2024-05-01T03:55:31.302Z
 # List:Tools
 
 ## Getting Started - LSLib
-Reguardless of what you wish to create, you will need a way to both extract and convert BG3's game files. For this, the first tool you need to download is LSLib
+Regardless of what you wish to create, you will need a way to both extract and convert BG3's game files. For this, the first tool you need to download is [LSLib](https://github.com/Norbyte/lslib)
 
 
 ## The Toolshed
