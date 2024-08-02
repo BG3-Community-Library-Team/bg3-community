@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: false
-date: 2024-08-02T18:50:36.417Z
+date: 2024-08-02T20:14:02.872Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
@@ -12,7 +12,19 @@ dateCreated: 2024-07-30T22:33:35.683Z
 Guide on how to change Dialogue and Cinematics by Milo Magnetuning
 ## Requirements
 
+### Tools
 
+- [LSLib](https://github.com/Norbyte/lslib)
+- code editor, i recommend [VSCode](https://code.visualstudio.com/)
+- [BG3 Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool/wiki/General-Usage) (for finding files, the multitool can have issues processing dialog files so i Dont recommend packing them with it)
+- my [dialog timeline updater](https://www.nexusmods.com/baldursgate3/mods/11295) or similar python script to update things like start and end times, effect component IDs, etc
+- an extracted localization file to reference your dialog
+- not necessary but highly recommended - [parsed dialog files}(https://www.tumblr.com/roksik-dnd/727481314781102080/bg3-datamined-dialogue-google-drive)
+
+skills:
+- basic knowledge of BG3 modding, but especially unpacking and converting .lsf files
+- basic knowledge of using LSLib and the Multitool index
+- basic knowledge of conditional statements in code (so it's easier to understand how bg3 dialog flags work)
 ## So, What Goes Into Dialogue in Baldur’s Gate 3?
 
 Dialogue in the game is handled by a lot of files, some of which I’m still looking into, but the main ones this tutorial will focus on, and the ones you need to edit existing game dialogue are the following:
