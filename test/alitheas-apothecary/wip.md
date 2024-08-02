@@ -2,16 +2,18 @@
 title: Untitled Page
 description: 
 published: false
-date: 2024-08-02T17:35:24.126Z
+date: 2024-08-02T18:27:45.310Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
 ---
 
+# Timeline Editing (Working Title)
 Guide on how to change Dialogue and Cinematics by Milo Magnetuning
+## Requirements
 
 
-## **SO? WHAT GOES INTO DIALOGUE IN BALDUR’S GATE 3?**
+## So, What Goes Into Dialogue in Baldur’s Gate 3?
 
 Dialogue in the game is handled by a lot of files, some of which I’m still looking into, but the main ones this tutorial will focus on, and the ones you need to edit existing game dialogue are the following:
 
@@ -19,7 +21,7 @@ Dialogue in the game is handled by a lot of files, some of which I’m still loo
 -   Dialog Timeline files
 -   Dialog Scene files
 
-There are also two more files you will need to add new dialogue files—which *is* possible, by the way! And you can see an example of that here:
+There are two more files you will need to add new dialogue files—which *is* possible, by the way! And you can see an example of that here:
 
 
 The two files you'll need for adding entirely new dialogue to the game are:
@@ -27,13 +29,13 @@ The two files you'll need for adding entirely new dialogue to the game are:
 - Generated Dialog Timelines
 - Dialog Assets
 
-You'll also need extra files to add new voice lines, which I'll be providing in a separate guide for this wiki too.
+You'll need extra files to add new voice lines, which I'll be providing in a separate guide for this wiki too.
 
-This tutorial will break down each of these files, and how to edit them. I've also provided an annotated sample mod and a mirror of some of this tutorial on Nexusmods, which you can find here! The sample mod breaks each element in the code down line by line, and can serve as a reference for the files as well.
+This tutorial will break down each of these files, and how to edit them. <!--I've provided an annotated sample mod and a mirror of some of this tutorial on Nexusmods, which you can find here! The sample mod breaks each element in the code down line by line, and can serve as a reference for the files as well.-->
 
 > A note on deprecated files:{.is-warning}
 
-You'll likely also find Dialog.lsj files with that same file name when extracting the files, as well as an extra Dialog Scene file with the .lsx file extension. These files are both deprecated! (The Dialog Scene files with the .lsf file extension are what you'll need to edit, NOT the .lsx files. Yes, confusing, I know.)
+You'll likely find Dialog.lsj files with that same file name when extracting the files, as well as an extra Dialog Scene file with the .lsx file extension. These files are both deprecated! (The Dialog Scene files with the .lsf file extension are what you'll need to edit, NOT the .lsx files. Yes, confusing, I know.)
 
 These deprecated files genuinely do nothing. You don't need to edit them or include them in your mods at all, and I do not recommend you do so. You can create fully functional new dialogue without them, so they really do just, nothing.
 
@@ -58,7 +60,7 @@ A good way to think of the dialogue timeline files is to picture it like a movie
 
 Fun fact, by the way: cutscenes are regular dialogue files! They switch between lines of dialogue and cinematics—sections of animation without voice lines—to create a given scene.
 
-This also means that cinematics are sorta like mini cutscenes, including the cinematics for kisses!
+This means that cinematics are sorta like mini cutscenes, including the cinematics for kisses!
 
 It’s important to note, these little scenes within the timeline files aren’t played in order. While the timeline itself is like a movie, the game is almost constantly skipping around within it to play the dialogue or cinematic it needs!
 
@@ -71,16 +73,16 @@ The DialogsBinary files are generally found in this folder in the game's files:
 \\Data\Mods\GustavDev\Story\DialogsBinary 
 `
 
-They're then further broken down by what section of the game they belong in, like if they’re from Act 3, or the Tutorial level, if they’re Companion dialogue, etc. You might also find these files in the Gustav folder, but they’re still organized in a similar way.
+They're then further broken down by what section of the game they belong in, like if they’re from Act 3, or the Tutorial level, if they’re Companion dialogue, etc. You might find these files in the Gustav folder, but they’re still organized in a similar way.
 
-Now, if the timeline files are like a movie, then DialogsBinary files are like a chapter skip function on a DVD. These files contain the information the game needs to reference your choices in dialogue, and select which voice lines or cinematics to play, and when. They also contain information on dice rolls, links to nested dialogue files—which I’ll explain a more about later—and are where the game tests for whether a line of dialogue or or player response should be accessible or not. They can also be used by the game to set flags it can test for in other areas of the game, and can link to information on companion approval.
+Now, if the timeline files are like a movie, then DialogsBinary files are like a chapter skip function on a DVD. These files contain the information the game needs to reference your choices in dialogue, and select which voice lines or cinematics to play, and when. They contain information on dice rolls, links to nested dialogue files—which I’ll explain a more about later—and are where the game tests for whether a line of dialogue or or player response should be accessible or not. They can be used by the game to set flags it can test for in other areas of the game, and can link to information on companion approval.
 
 Dialog Scene files
 ####
 
-The Dialog Scene files contain information on camera and character positioning when the dialogue is triggered, as well as lighting, which characters can be present in the dialogue, and can also be used to control character scale within a scene! Which is fun.
+The Dialog Scene files contain information on camera and character positioning when the dialogue is triggered, as well as lighting, which characters can be present in the dialogue, and can be used to control character scale within a scene! Which is fun.
 
-They can also inherit information from other files, the most important of which is the default dialogue scene file, which is often linked at the bottom of the file. The default Scene files can be usually found at this file path here:
+They can inherit information from other files, the most important of which is the default dialogue scene file, which is often linked at the bottom of the file. The default Scene files can be usually found at this file path here:
 
 \\Public\Shared\Timeline\Scenes\Default\
 
@@ -117,13 +119,13 @@ The Dialog Assets files still refer to the dialog .lsj files as the file paths i
 Alright, now that we've covered the basics, let's get into editing the files!
 
 
-## **HOW DO YOU EDIT THE DIALOGSBINARY FILES?**
+## How Do You Edit the DialogsBinary Files?
 
 These sections of the tutorial will be broken down into tabs, one containing a further explanation of the DialogsBinary files, one containing information on the elements in them, and one explaining how to edit them.
 
 Honestly, just understanding what you're looking at is half the battle when editing dialogue! So I highly recommend checking out the documentation tab before you begin.
 
-**The How to Edit tab also contains a short guide on creating custom game flags!** If you'd like to know how to do so, you can find instructions there!
+**The How to Edit tab contains a short guide on creating custom game flags!** If you'd like to know how to do so, you can find instructions there!
 
 ## Tab {.tabset}
 
@@ -148,12 +150,12 @@ These different dialogue nodes are TagGreeting, TagAnswer, TagQuestion,TagCinema
 TagGreeting
 ####
 
-TagGreeting nodes are the first line of dialogue a character will say to you when speaking to them. These are also paired with a corresponding Root Node at the end of the file. These TagGreeting nodes can then be followed by further dialogue nodes, or they could be a single line of dialogue, followed by the end of a conversation. That last bit is really common for NPCs. The greeting a character uses can be tested for using the CheckFlags attribute, allowing a character to use different lines of dialogue when initially speaking to them, depending on the conditions that have been set.
+TagGreeting nodes are the first line of dialogue a character will say to you when speaking to them. These are paired with a corresponding Root Node at the end of the file. These TagGreeting nodes can then be followed by further dialogue nodes, or they could be a single line of dialogue, followed by the end of a conversation. That last bit is really common for NPCs. The greeting a character uses can be tested for using the CheckFlags attribute, allowing a character to use different lines of dialogue when initially speaking to them, depending on the conditions that have been set.
 
 TagAnswer
 ####
 
-TagAnswer nodes are used for dialogue lines from speaking characters. This is usually the character you’re directly speaking to, but other characters can be included in conversations, such as when companions have voice line reactions to what’s going on. These are also given the TagAnswer label.
+TagAnswer nodes are used for dialogue lines from speaking characters. This is usually the character you’re directly speaking to, but other characters can be included in conversations, such as when companions have voice line reactions to what’s going on. These are given the TagAnswer label.
 
 TagQuestion
 ####
@@ -173,7 +175,7 @@ ActiveRoll nodes are dialogue nodes that prompt the player to make a dice roll, 
 PassiveRoll
 ####
 
-PassiveRoll nodes are very similar to ActiveRoll nodes! However, these are the passive rolls, like for perception and arcana, that are made automatically for the player in dialogue. The results for these rolls are also handled via the RollResult dialogue nodes.
+PassiveRoll nodes are very similar to ActiveRoll nodes! However, these are the passive rolls, like for perception and arcana, that are made automatically for the player in dialogue. The results for these rolls are  handled via the RollResult dialogue nodes.
 
 RollResult
 ####
@@ -198,13 +200,13 @@ Nested Dialog nodes will allow you to link to Nested Dialog files, which are ess
 RootNodes
 ####
 
-Root nodes are unique, in the sense that they're generally mirrors of other nodes. The root nodes refer to the possible first lines of dialogue in a given scene or conversation, and are generally referring to TagGreeting nodes, but other types of nodes can be referenced as RootNodes. When a dialogue node in a file is considered a root node, that line of dialogue will have a RootNodes entry with its UUID listed at the end of the file, and will also be marked in its own code block with the Root attribute, which will be set to True.
+Root nodes are unique, in the sense that they're generally mirrors of other nodes. The root nodes refer to the possible first lines of dialogue in a given scene or conversation, and are generally referring to TagGreeting nodes, but other types of nodes can be referenced as RootNodes. When a dialogue node in a file is considered a root node, that line of dialogue will have a RootNodes entry with its UUID listed at the end of the file, and will  be marked in its own code block with the Root attribute, which will be set to True.
 
 ### How To Edit
 
 Honestly, the easiest way to edit these files, at least if you're adding new elements, is to duplicate existing code blocks. This will guarantee you'll keep the code structure the game needs consistent, and saves you a bit of work typing everything out.
 
-<!--I've actually provided an annotated sample/template mod on Nexusmods <a href="https://www.nexusmods.com/baldursgate3/mods/10086">here,</a> which you can use to follow along with this guide, and understand a bit more about what goes into the code structure for a given node.-->
+<!--I've provided an annotated sample/template mod on Nexusmods <a href="https://www.nexusmods.com/baldursgate3/mods/10086">here,</a> which you can use to follow along with this guide, and understand a bit more about what goes into the code structure for a given node.-->
 
 Now, let's begin!
 
@@ -213,7 +215,7 @@ Now, let's begin!
 
 When editing existing files, you'll first need to find the dialogue nodes you'd like to change. This can be done by searching for the dialogue you're looking for in an extracted Localization file, which I've provided in the above link as well, for each language the game has been translated into.
 
-I also *highly* recommend using the <a href="https://www.tumblr.com/roksik-dnd/727481314781102080/bg3-datamined-dialogue-google-drive">parsed dialogue files</a> provided by roksik-dnd on Tumblr. These will not only help you find lines of dialogue from the game, but will also serve as a guide to the structure of the dialogue tree you're editing, which lines of dialogue follow which other lines, the branching paths available in the scene, and so on.
+I  *highly* recommend using the <a href="https://www.tumblr.com/roksik-dnd/727481314781102080/bg3-datamined-dialogue-google-drive">parsed dialogue files</a> provided by roksik-dnd on Tumblr. These will not only help you find lines of dialogue from the game, but will  serve as a guide to the structure of the dialogue tree you're editing, which lines of dialogue follow which other lines, the branching paths available in the scene, and so on.
 
 But the extracted Localization file is often necessary, because the dialogue in the DialogsBinary files are referred to by their text handles, which can be found in the Localization files.
 
@@ -240,21 +242,21 @@ You can replace all the children nodes for a given dialogue node if you'd like, 
 
 All you need is the UUID of the dialogue nodes you'd like to remove or add as children of a node, and then you can start configuring your dialogue trees!
 
-A note: when adding player responses (which will be labeled as TagQuestion nodes), the order the children are listed under a dialogue node will also be the order they're displayed in the game, listed from top to bottom.
+A note: when adding player responses (which will be labeled as TagQuestion nodes), the order the children are listed under a dialogue node will  be the order they're displayed in the game, listed from top to bottom.
 
-Also, when multiple children are listed under a character's speaking line (labeled as a TagAnswer node), and they're not player responses, these are usually lines of dialogue that are being tested for certain conditions, to determine whether they should play or not. In this case, the order the children are listed in is the order the game will test them in, with children placed higher in the list taking priority.
+, when multiple children are listed under a character's speaking line (labeled as a TagAnswer node), and they're not player responses, these are usually lines of dialogue that are being tested for certain conditions, to determine whether they should play or not. In this case, the order the children are listed in is the order the game will test them in, with children placed higher in the list taking priority.
 
 **Checking game flags**
 ####
 
 The checkflags attribute is how the game tests whether a line of dialogue should be available or not. When a given flag is set to True under the checkflags attribute, that means the dialogue node will only be available if that flag is set to true. When the flag the game is testing for is set to False, then that line of dialogue will only play if the flag is *not* true.
 
-To edit the conditions a line of dialogue will be available under, you can add or remove flags for this attribute. Check their UUIDs to make sure you're testing for the right ones! Also, take a note of what kind of flag it's testing for; if the game's testing for a Tag, it's testing what character tags a given character has. When the flag type is a Global flag, it's testing for a flag that's present in the game globally, and not just applied to a specific character. Local flags seem to be flags set for the player character, and Object flags are testing to see whether the character you're speaking to has a given flag set for them (these are distinct from tags; flags are conditional, and are usually set during gameplay, as opposed to tags, which are used to determine different qualities of a character, like whether they can participate in dialogue or not!).
+To edit the conditions a line of dialogue will be available under, you can add or remove flags for this attribute. Check their UUIDs to make sure you're testing for the right ones! , take a note of what kind of flag it's testing for; if the game's testing for a Tag, it's testing what character tags a given character has. When the flag type is a Global flag, it's testing for a flag that's present in the game globally, and not just applied to a specific character. Local flags seem to be flags set for the player character, and Object flags are testing to see whether the character you're speaking to has a given flag set for them (these are distinct from tags; flags are conditional, and are usually set during gameplay, as opposed to tags, which are used to determine different qualities of a character, like whether they can participate in dialogue or not!).
 
 **Setting game flags**
 ####
 
-The setflags attribute will allow you to set game flags when that dialogue node is played. This can be done by listing the UUID for the game flag, and either setting it to True to enable the flag, or setting it to False to disable it. You can also make your own custom flags!
+The setflags attribute will allow you to set game flags when that dialogue node is played. This can be done by listing the UUID for the game flag, and either setting it to True to enable the flag, or setting it to False to disable it. You can  make your own custom flags!
 
 **Making custom game flags**
 ####
@@ -279,12 +281,12 @@ This is because they have their own unique dialogue timeline files, which, again
 
 To refer to a nested dialogue sequence, you'll need to list the UUID for the nested dialogue found in its Dialog Assets entry, and then set the line of dialogue you'd like to start with in your nested dialogue sequence as a child of the Nested Dialog node.
 
-You'll also need to make sure the nested dialogue you're linking to is listed as a child in the Dialog Assets entry for the original dialogue, and add the original dialogue as a child of the nested dialogue if you'd like to be able to return to it.
+You'll  need to make sure the nested dialogue you're linking to is listed as a child in the Dialog Assets entry for the original dialogue, and add the original dialogue as a child of the nested dialogue if you'd like to be able to return to it.
 
 I'll be covering more about how to create new nested dialogue files, as well as creating new dialogue files generally at the end of this tutorial! You can scroll to the end of the page to find it.
 
 
-## **HOW DO YOU EDIT THE DIALOG TIMELINE FILES?**
+## ### How Do You Edit the Dialog Timeline Files?
 
 And now for the Dialog Timeline files. These are very lengthy and complicated files, and some parts of editing them can be extremely tedious, time consuming, and potentially, like, almost impossible without a python script to automate some parts of editing them.
 
@@ -292,7 +294,7 @@ And now for the Dialog Timeline files. These are very lengthy and complicated fi
 
 It's an extremely simple tool, and is basically the Python scripts I've been using to update timeline files put into a tkinter UI, but it's been a lifesaver for me when editing these files.
   
-Like the DialogsBinary section, I'm also going to be breaking this section of the tutorial into different tabs.
+Like the DialogsBinary section, I'm  going to be breaking this section of the tutorial into different tabs.
 
 You can find instructions on how to use my Dialog Timeline updater in the Using the Timeline Updater tab, as well as on the Nexusmods page for the tool.
 
@@ -325,15 +327,15 @@ The "Phases" section at the top of the file lists the total duration of each pha
 
 You can find the specific PhaseIndex associated with that dialogue node via that UUID as well! That same UUID will link to a MapKey and associated MapValue number in the TimelinePhases section further down in the file. That MapValue number is linked to the PhaseIndex for the elements in the EffectComponents section. The PhaseIndex number will group together all related effect components for that dialogue node! These components will be the bulk of what you’ll edit for your own dialogue mods.
 
-Another thing to note is that the Phases section is in sequential order, and that order corresponds directly to the MapValue and PhaseIndex for the dialogue node! The timeline also starts counting the phases from 0 (which is how most animation/video program timelines handle things as well). 
+Another thing to note is that the Phases section is in sequential order, and that order corresponds directly to the MapValue and PhaseIndex for the dialogue node! The timeline  starts counting the phases from 0 (which is how most animation/video program timelines handle things as well). 
 
-Phase 0 is placed at the top of the timeline, and is not given a PhaseIndex number, because it's unnecessary with it at the start of the timeline. This also means that the second listed phase will be PhaseIndex “1”, the third listed phase will be PhaseIndex “2,” and so on. You can mess things up by changing this order!
+Phase 0 is placed at the top of the timeline, and is not given a PhaseIndex number, because it's unnecessary with it at the start of the timeline. This  means that the second listed phase will be PhaseIndex “1”, the third listed phase will be PhaseIndex “2,” and so on. You can mess things up by changing this order!
 
 When adding things to the timeline, I highly recommend adding everything to the end of each section in the file. This will keep your phase order consistent, and prevent you from having to update the entire timeline at once.
 
-You can also prevent dialogue from functioning by skipping PhaseIndex numbers! Make sure you don't have any gaps in your PhaseIndex numbering as well.
+You can  prevent dialogue from functioning by skipping PhaseIndex numbers! Make sure you don't have any gaps in your PhaseIndex numbering as well.
 
-Keep both of those things in mind and you should be good! (And also save yourself just, a ton of work.)
+Keep both of those things in mind and you should be good! (And  save yourself just, a ton of work.)
 
 ####   
 TimelineSpeakers: 
@@ -347,7 +349,7 @@ Speaker 0 is generally the person your character is talking to, with Speaker 1 b
 
 The most important thing to know about the Timeline Speakers, and Timeline Actors, though, is that you want to make sure any components you copy over from other files are updated to use the Timeline Speaker UUIDs from the file you copied them into. If you don't update them, the components you added won't be able to reference the characters properly, and you could end up something like [THIS](https://drive.google.com/file/d/1EIVmKs6qtHvgeUopn5bnDr7q6VgYhQ7w/view). Which is not ideal, for sure!
 
-If you're not sure what any of these terms mean, don't worry! There's more information about them in the Effect Components tab, and I've also be covering how to update timeline speaker UUIDs in the How to Edit tab.
+If you're not sure what any of these terms mean, don't worry! There's more information about them in the Effect Components tab, and I've  be covering how to update timeline speaker UUIDs in the How to Edit tab.
 
 Let's continue on with the other sections in the timeline files, first, though.  
  
@@ -356,11 +358,11 @@ Let's continue on with the other sections in the timeline files, first, though.
 
 This section contains several long lists mapping out each effect component in the timeline and the UUIDs of the characters performing them, pulled from both the TimelineSpeakers and PeanutSlotIdMap sections. However, I think it's likely these lists are used for Larian's game engine, to allow it to reference the components, and don't seem to do much in the game itself. Even leaving these MapKey lists entirely unedited didn't change anything, in the game, so I don't think you have to worry about the component map.
 
-There *are,* however, things in this section you'll likely need to update, especially when cloning elements from other files. These are the "scenecam" and “scenelighting” actors. These are not characters, but instead refer to specific camera angles and lights necessary for the dialogue, and are also often located in the corresponding Dialogue Scene files, which have their own section on this page. If the camera angles referred to in a dialogue node are not present in the TimelineActorData section, the game will not be able to properly reference the camera, and you'll likely get the camera pinned to the floor instead.
+There *are,* however, things in this section you'll likely need to update, especially when cloning elements from other files. These are the "scenecam" and “scenelighting” actors. These are not characters, but instead refer to specific camera angles and lights necessary for the dialogue, and are  often located in the corresponding Dialogue Scene files, which have their own section on this page. If the camera angles referred to in a dialogue node are not present in the TimelineActorData section, the game will not be able to properly reference the camera, and you'll likely get the camera pinned to the floor instead.
 
 #### TimelinePhases:
 
-As discussed in the Phases section above, this section contains UUIDs in a list of MapKeys and MapValues. The UUIDs here will correspond to the UUIDs in the Phases section of the file. The placement of that phase in the Phases section, as well as in the EffectComponents section will match the MapValue listed for the MapKey in the TimelinePhases, starting from zero. (Again, most animation programs and video editors also start their timelines from 0, so this is probably why BG3 handles its timelines like this, too.) That MapValue number is also the PhaseIndex number you'll be looking for when editing and cloning components in the EffectComponents section for your mods.
+As discussed in the Phases section above, this section contains UUIDs in a list of MapKeys and MapValues. The UUIDs here will correspond to the UUIDs in the Phases section of the file. The placement of that phase in the Phases section, as well as in the EffectComponents section will match the MapValue listed for the MapKey in the TimelinePhases, starting from zero. (Again, most animation programs and video editors  start their timelines from 0, so this is probably why BG3 handles its timelines like this, too.) That MapValue number is  the PhaseIndex number you'll be looking for when editing and cloning components in the EffectComponents section for your mods.
 
 That same UUID belongs to a specific dialogue node in the DialogBinary file, and all components related to it are what plays when that line of dialogue is called by the game.
 
@@ -423,14 +425,14 @@ Each effect component in a timeline file is broken down into several variables, 
   
 Keep in mind that not every possible attribute for these components will be present every time! Which means some possible attributes the game can process may not be listed in this tutorial yet. If you find one I missed, please let me know!
 
-Also, some of the attributes I included in these explanations contradict each other, and will not be found in the same instance of that effects component. I've generally pointed it out when this happens, but a good rule of thumb will be to look at examples of the same type of effect component you're editing, to know what attributes are usually included in them, and which are not.
+, some of the attributes I included in these explanations contradict each other, and will not be found in the same instance of that effects component. I've generally pointed it out when this happens, but a good rule of thumb will be to look at examples of the same type of effect component you're editing, to know what attributes are usually included in them, and which are not.
 
 This section is likely going to be very long, but hopefully having explanations of what everything is makes it a bit less intimidating! These files can be a lot to look at, but the more you understand about them, the less daunting it'll be to edit them.
 
 Let's get into it! I'll start by explaining some common attributes you'll see in most effect components:  
  
 
-#### A GUIDE TO COMMON EFFECT COMPONENT ATTRIBUTES
+#### A Guide to Common Effect Component Attributes
 
 #### Type:
 
@@ -443,7 +445,7 @@ Pretty self explanatory. The type of effect component, which will be one of the 
 
 As mentioned above, the PhaseIndex refers to every component belonging to a given dialogue node, which will be played as a group according to their given start and end times (explained below).
 
-For your own mods, you’ll want to make sure this number is unique, sequential, and is tied to the same MapValue number and placement in the TimelinePhases and Phases sections, respectively. You'll also want to make sure all elements you add for your dialogue node have the same PhaseIndex, so they'll be grouped together, and play properly as a unit.
+For your own mods, you’ll want to make sure this number is unique, sequential, and is tied to the same MapValue number and placement in the TimelinePhases and Phases sections, respectively. You'll  want to make sure all elements you add for your dialogue node have the same PhaseIndex, so they'll be grouped together, and play properly as a unit.
 
 And again, the first dialogue node on the timeline will not have a PhaseIndex listed for its components! Its PhaseIndex number is 0, but, being at the start of the timeline, the game’s code doesn’t require it to be listed.  
  
@@ -504,11 +506,11 @@ Which brings me to the last common attribute:
 
 This UUID refers to which character is performing the effects component! These as mentioned before, these are unique to each timeline file, and will usually need to be updated to match when cloning effects components from other files. The component won’t be able to reference the related character if this UUID is not updated.
 
-#### OK, SO, WE’VE COVERED THE BASICS. WHAT ABOUT SPECIFIC EFFECTS COMPONENTS?
+#### Ok, So, We've Covered the Basics. What About Specific Effects Components?
 
 The moment you’ve all been waiting for! Maybe. I’m now going to be breaking down each kind of effects component by its attributes. These are only example components—they won’t refer to anything specific, and almost all values for the attributes have been generated new (and are almost certainly nonfunctional).
 
-I also provided explanations for all attributes I could find within these code blocks—which means that some of the attributes shown in these blocks contradict each other! And should not be used at the same time. One example is the “IsMimicry” and “PeanutOverride” attributes. These attributes seem to be mutually exclusive; from what I can tell, the IsMimicry tag is used when things like emotions/attitude animations/etc need to be copied over onto “peanut” characters (the characters standing behind your character in conversations) from the player character. The PeanutOverride attribute marks a component block as being a unique override for a peanut character, separate from the player character.
+I  provided explanations for all attributes I could find within these code blocks—which means that some of the attributes shown in these blocks contradict each other! And should not be used at the same time. One example is the “IsMimicry” and “PeanutOverride” attributes. These attributes seem to be mutually exclusive; from what I can tell, the IsMimicry tag is used when things like emotions/attitude animations/etc need to be copied over onto “peanut” characters (the characters standing behind your character in conversations) from the player character. The PeanutOverride attribute marks a component block as being a unique override for a peanut character, separate from the player character.
 
 These tags may be a tag for Larian's game engine to process; they don't seem to affect much when changed. But still, they should probably be updated when changing these blocks, and shouldn't be used together.
 
@@ -711,7 +713,7 @@ First, find the dialogue node you'd like to edit. You can do this by cross refer
 
 This will allow you to find the UUID for a specific dialogue node.
 
-Once you've done that, search for that UUID in the dialog timeline file. Look for its listing in the TimelinePhases section. This will give you its MapValue number, which is also its PhaseIndex number. You can search for that PhaseIndex and its effect components in the code by substituting that MapValue number for the "1" in this line of code here (unless, of course, your PhaseIndex *is* 1):
+Once you've done that, search for that UUID in the dialog timeline file. Look for its listing in the TimelinePhases section. This will give you its MapValue number, which is  its PhaseIndex number. You can search for that PhaseIndex and its effect components in the code by substituting that MapValue number for the "1" in this line of code here (unless, of course, your PhaseIndex *is* 1):
 
 `
 <attribute id="PhaseIndex" type="int64" value="1" />`
@@ -750,11 +752,11 @@ Then, you'll want to find the last instance of that PhaseIndex, and put a closin
   
 `</apples>  `
 
-To explain, this will allow you to collapse all of the effect components you need to copy in your code editor, so you can easily copy all of them at once. Using a nonsense word will make it easier to find and clean up later (you'll need to delete these tags before using your code in the game), and will also prevent them from being registered as proper code, leading your mod to function improperly.
+To explain, this will allow you to collapse all of the effect components you need to copy in your code editor, so you can easily copy all of them at once. Using a nonsense word will make it easier to find and clean up later (you'll need to delete these tags before using your code in the game), and will  prevent them from being registered as proper code, leading your mod to function improperly.
 
 I generally use apples. Dunno why! You can use any other word you'd like, as long as it's not a proper tag in the code.
 
-A little tip: You can also use this technique to very quickly copy or delete sections of code in other files, too, like the CharacterVisuals files.
+A little tip: You can  use this technique to very quickly copy or delete sections of code in other files, too, like the CharacterVisuals files.
 
 Once you've copied the effect components you need to, I recommend pasting them into a separate file while you're working on them. You will need to do this if you plan on using my Dialogue Timeline Updater, by the way!
 
@@ -762,7 +764,7 @@ Once you've copied the effect components you need to, I recommend pasting them i
 
 **Updating the PhaseIndex:**
 
-The first thing you want to do when adding new effect components is to update their PhaseIndex. You can do so via "replace all" commands in your code editor. You can also use the "change all occurences" function in VSCode by right clicking on a highlighted line of code.
+The first thing you want to do when adding new effect components is to update their PhaseIndex. You can do so via "replace all" commands in your code editor. You can  use the "change all occurences" function in VSCode by right clicking on a highlighted line of code.
 
 To update the PhaseIndex, replace the existing PhaseIndex line:
 
@@ -792,7 +794,7 @@ To do so, first search for TimelineSpeakers in the file you're cloning effects f
 
 Usually, Speaker 0 is the character you're speaking to in a conversation, and Speaker 1 is usually the player character. These Speaker ID numbers will be listed as the MapKey value above the UUID for the character.
 
-There might be more than these two speakers, though! If other characters have speaking lines in the dialogue, they'll also be given Speaker IDs in this section.
+There might be more than these two speakers, though! If other characters have speaking lines in the dialogue, they'll  be given Speaker IDs in this section.
 
 These are the UUIDs you'll want to update. Select the UUID of Speaker 0, and search for it in your cloned effect components. This UUID should be listed as the Actor for many of the components you cloned.
 
@@ -804,13 +806,13 @@ The characters in your edited timeline file should now be able to properly perfo
 
 **Updating timing and effect component ID numbers:**
 
-To do this, I highly recommend you use my <a href="https://www.nexusmods.com/baldursgate3/mods/11295">Dialogue Timeline Updater tool</a>. An explanation of it can be found in the Using the Timeline Updater tab, as well as on the mod page for the tool,but I'll also explain a little bit about it here, and why updating all of this is necessary.
+To do this, I highly recommend you use my <a href="https://www.nexusmods.com/baldursgate3/mods/11295">Dialogue Timeline Updater tool</a>. An explanation of it can be found in the Using the Timeline Updater tab, as well as on the mod page for the tool,but I'll  explain a little bit about it here, and why updating all of this is necessary.
 
 Since you're adding onto the end of the timeline, you'll need to make sure all your effect components start right when the last effect component ends. To do so, you'll need to make sure the start times of the effect components match the end times of the previous PhaseIndex components, with the exception of components that begin and end partway through the Phase.
 
 You can do this with the tool I've provided by inputting the end time of the last PhaseIndex in the file, and checking the box giving you the option to reset your start times. This will set the start time of all your effect components to the number you've provided, while preserving the timing of the effect components in relation to each other.
 
-You'll also want to make sure each of the IDs of the effect components are updated. These IDs are unique to each effect component, and aren't referenced anywhere else, but will still need to be unique. You can do this with the tool I've provided. Just input your file when running the Update Effect Component IDs function of the tool, and all of the IDs for your effect components will be updated automatically, leaving all other UUIDs intact.
+You'll  want to make sure each of the IDs of the effect components are updated. These IDs are unique to each effect component, and aren't referenced anywhere else, but will still need to be unique. You can do this with the tool I've provided. Just input your file when running the Update Effect Component IDs function of the tool, and all of the IDs for your effect components will be updated automatically, leaving all other UUIDs intact.
 
 **What if I want the dialog to be a different length than it already is?**
 
@@ -818,7 +820,7 @@ To make the effect components you're adding last for a different amount of time 
 
 It's still doable, though!
 
-You'll want to update the start times for your effect components first. Then find the length of the line you're adding, and add that number to the start time you just updated. You'll be using this as the new end time for your effect components. You can also add additonal time to this number to add pauses between the voice line if you'd like.
+You'll want to update the start times for your effect components first. Then find the length of the line you're adding, and add that number to the start time you just updated. You'll be using this as the new end time for your effect components. You can  add additonal time to this number to add pauses between the voice line if you'd like.
 
 Take the new end time you just calculated, and use "replace all" in your code editor to update all your end times in the file. You'll have to double check to make sure the timing for your effect components, like the timing of emotion changes in TLEmotionEvent, are all contained within your new start and end times. This is especially important when setting a shorter end time than the original one.
 
@@ -915,17 +917,17 @@ Now, in the above example, the the second emotion listed is Happy, with no varia
 
 To change this, all you need to do is find the value IDs for the emotion and variaton you'd like, and swap them in for the existing emotion and variation values.
 
-You'll also notice the Time attribute for the second emotion starts partway through the dialogue. Specifically, 1.69996 seconds into it. This is where you can adjust the timing of each expression change!
+You'll  notice the Time attribute for the second emotion starts partway through the dialogue. Specifically, 1.69996 seconds into it. This is where you can adjust the timing of each expression change!
 
 Tweaking the Time attribute will tell the game what emotion should play when, in relation to the start and end times of the dialog. Just make sure you keep those times within the start and end times for the Phase you're editing, otherwise they'll overlap with other dialog effect components.
 
-You can also add new emotion changes by duplicating one of the "Keys" listed for expression changes, and adjusting the emotion, variation, and time attributes as necessary.
+You can add new emotion changes by duplicating one of the "Keys" listed for expression changes, and adjusting the emotion, variation, and time attributes as necessary.
 
 You can create really complex sequences of emotions this way, exactly how the game does!
 
 #### TLVoice
 
-This component controls the voice line for a node! However, the actual voice line is not referenced within the timeline file. Instead, the specific voice line is linked to the text handle listed for the node in the DialogsBinary file. This text handle is not only referenced in the Localization files, but is also referenced in a character's voicebank file, and will allow the game to reference the proper audio file.
+This component controls the voice line for a node! However, the actual voice line is not referenced within the timeline file. Instead, the specific voice line is linked to the text handle listed for the node in the DialogsBinary file. This text handle is not only referenced in the Localization files, but is  referenced in a character's voicebank file, and will allow the game to reference the proper audio file.
 
 The UUIDs listed in the TLVoice component are  the UUIDs for the dialog node, group id, and/or custom sequence IDs of the dialog in the DialogsBinary file.
 
@@ -973,7 +975,7 @@ To update the timing on your effect components, navigate to the Update Timing ta
 
 This tab will let you input an amount of time to increment all of the start and end times in your effect components by. This is referred to as a "time offset" in the tool, and each start and end time will be updated by that amount of time.
 
-This will prevent you from having to manually update all of the timing in the file, and will also preserve the timing of things like emotions, sound effects, camera angle switches etc, within a given set of effect components.
+This will prevent you from having to manually update all of the timing in the file, and will  preserve the timing of things like emotions, sound effects, camera angle switches etc, within a given set of effect components.
 
 Say you'd like to increment all your start and end times by half a second. To do so, write 0.5 in the input box in the tab. Make sure to leave the "Reset Start Time" box unchecked, otherwise your start times will be set to 0.5!
 
@@ -985,7 +987,7 @@ The tool will tell you how many lines it changed. Check the file you just update
 
 ##### Resetting start times:
 
-To be honest, this tool is mainly just meant to make it easier to place all of your effect components at the end of the existing timeline. That's what the "Reset Start Time" option is for! This option will clear the existing start time, and replace it with the time offset you set in the input box. It will also preserve the timing of all your effect components in relation to that new start time.
+To be honest, this tool is mainly just meant to make it easier to place all of your effect components at the end of the existing timeline. That's what the "Reset Start Time" option is for! This option will clear the existing start time, and replace it with the time offset you set in the input box. It will  preserve the timing of all your effect components in relation to that new start time.
 
 This function will make it so you can grab the last end time of your existing timeline file, input that as your time offset, check the Reset Start Times box, and set all of your effect components to start directly after the end of the existing timeline.
 
