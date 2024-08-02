@@ -2,21 +2,20 @@
 title: Untitled Page
 description: 
 published: false
-date: 2024-07-31T21:53:34.058Z
+date: 2024-08-02T17:20:57.703Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
 ---
 
-# Editing Dialogue and Cinematics: A How-To Guide
+# Dialog Timeline Editing
 
-HI!!!! Welcome to Milo Magnetuning’s guide to dialogue files! There’s a lot to cover, and these files can be pretty intimidating, but working with them gets easier the more you know about them!
+Guide on how to change Dialogue and Cinematics by Milo Magnetuning
 
-Let’s get started, shall we?
 
 ## **SO? WHAT GOES INTO DIALOGUE IN BALDUR’S GATE 3?**
 
-Dialogue in the game is actually handled by a lot of files, some of which I’m still looking into, but the main ones this tutorial will focus on, and the ones you need to edit existing game dialogue are the following:
+Dialogue in the game is handled by a lot of files, some of which I’m still looking into, but the main ones this tutorial will focus on, and the ones you need to edit existing game dialogue are the following:
 
 -   DialogsBinary files
 -   Dialog Timeline files
@@ -59,11 +58,11 @@ These files control the timing of all elements required to play dialogue and cin
 
 A good way to think of the dialogue timeline files is to picture it like a movie! With each line of dialogue as a small scene within that movie. The code in the dialogue timeline files gives the game everything necessary to play those scenes, and what element of the scene play when.
 
-Fun fact, by the way: cutscenes are actually just regular dialogue files! They switch between lines of dialogue and cinematics—sections of animation without voice lines—to create a given scene.
+Fun fact, by the way: cutscenes are regular dialogue files! They switch between lines of dialogue and cinematics—sections of animation without voice lines—to create a given scene.
 
 This also means that cinematics are sorta like mini cutscenes, including the cinematics for kisses!
 
-It’s important to note, though—these little scenes within the timeline files aren’t actually played in order. While the timeline itself is like a movie, the game is almost constantly skipping around within it to play the dialogue or cinematic it needs!
+It’s important to note, these little scenes within the timeline files aren’t played in order. While the timeline itself is like a movie, the game is almost constantly skipping around within it to play the dialogue or cinematic it needs!
 
 And that’s where the DialogsBinary files come in!
 ####
@@ -87,7 +86,7 @@ They can also inherit information from other files, the most important of which 
 
 \\Public\Shared\Timeline\Scenes\Default\
 
-You actually might not have to edit these files often, but it's still important to note! And they'll absolutely be necessary when creating entirely new dialogue files.
+You may not have to edit these files often, but it's still important to note! And they'll absolutely be necessary when creating entirely new dialogue files.
 
 The DialogsBinary, Dialog Timeline, and Dialog Scene files for a given scene will all have the same file name, with the Dialogue Scene files just appending the word Scene to that same file name.
 
@@ -134,7 +133,7 @@ Honestly, just understanding what you're looking at is half the battle when edit
 
 As mentioned before, the DialogsBinary files are essentially like a chapter skip function on a DVD, telling the game which line of dialogue to play and when.
 
-This is done within the code of the DialogsBinary files, which link together a variety of different types of dialogue node. This is done by linking one dialogue node to the ones that are supposed to come after by the “children” attribute. When you list the UUID of one dialogue node as a “child” of another node, the game will see that UUID and know that “child” is the dialogue node that should play next. A dialogue node can have multiple “children,” which can be tested for using the CheckFlags attribute to know which line to play, or these multiple “children” could actually be sets of player choices following a given line of dialogue, which will then lead to further branching paths depending on what the player selects.
+This is done within the code of the DialogsBinary files, which link together a variety of different types of dialogue node. This is done by linking one dialogue node to the ones that are supposed to come after by the “children” attribute. When you list the UUID of one dialogue node as a “child” of another node, the game will see that UUID and know that “child” is the dialogue node that should play next. A dialogue node can have multiple “children,” which can be tested for using the CheckFlags attribute to know which line to play, or these multiple “children” could be sets of player choices following a given line of dialogue, which will then lead to further branching paths depending on what the player selects.
 
 This is how the game navigates through scenes, by following and testing for these different branching paths between different types of dialogue nodes.
 
