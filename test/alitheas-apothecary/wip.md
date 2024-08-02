@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: false
-date: 2024-08-02T18:27:45.310Z
+date: 2024-08-02T18:50:36.417Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
@@ -93,7 +93,7 @@ The DialogsBinary, Dialog Timeline, and Dialog Scene files for a given scene wil
 Generated Dialog Timelines
 ####
 
-The GeneratedDialogTimelines files contain information linking each DialogsBinary file to its proper timeline file, as well as each of the characters, props, scenery, and so on that are referenced by the timeline files. These files are huge, and contain information on most of the dialog timelines in the game. You should generally only include the entries for the dialog timelines you're editing in your mods, though!
+The GeneratedDialogTimelines files contain information linking each DialogsBinary file to its proper timeline file, as well as each of the characters, props, scenery, and so on that are referenced by the timeline files. These files are huge, and contain information on most of the dialog timelines in the game. You should generally only include the entries for the dialog timelines you're editing in your mods!
 
 The GeneratedDialogTimelines files can be found at these file paths:
 
@@ -347,11 +347,11 @@ The structure of this section is arranged into “Objects,” followed by MapKey
 Speaker 0 is generally the person your character is talking to, with Speaker 1 being your character. Speaker roles after that may be listed if narration is present, or if other characters beyond the character you’re speaking to have lines (like when other companions have reactions during a conversation). You’ll want to cross reference the TimelineSpeaker UUIDs with the same UUIDs in the DialogsBinary file, so you’ll know what character is being referenced by them.
 
 
-The most important thing to know about the Timeline Speakers, and Timeline Actors, though, is that you want to make sure any components you copy over from other files are updated to use the Timeline Speaker UUIDs from the file you copied them into. If you don't update them, the components you added won't be able to reference the characters properly, and you could end up something like [THIS](https://drive.google.com/file/d/1EIVmKs6qtHvgeUopn5bnDr7q6VgYhQ7w/view). Which is not ideal, for sure!
+The most important thing to know about the Timeline Speakers, and Timeline Actors is that you want to make sure any components you copy over from other files are updated to use the Timeline Speaker UUIDs from the file you copied them into. If you don't update them, the components you added won't be able to reference the characters properly, and you could end up something like [THIS](https://drive.google.com/file/d/1EIVmKs6qtHvgeUopn5bnDr7q6VgYhQ7w/view). Which is not ideal, for sure!
 
 If you're not sure what any of these terms mean, don't worry! There's more information about them in the Effect Components tab, and I've  be covering how to update timeline speaker UUIDs in the How to Edit tab.
 
-Let's continue on with the other sections in the timeline files, first, though.  
+Let's continue on with the other sections in the timeline files, first, .  
  
 
 #### TimelineActorData:
@@ -381,7 +381,7 @@ If a scene needs to take you to a different location for the scene to play, the 
 
 #### What about the rest of the file?
 
-The rest of the sections in the timeline file are either things that likely should be kept consistent, don't seem to affect much in the game when changed, or don't seem to contain information in most of the files I've seen. I'll be experimenting more with them, though! But you likely won't need to worry about them much for most of your own dialogue mods.
+The rest of the sections in the timeline file are either things that likely should be kept consistent, don't seem to affect much in the game when changed, or don't seem to contain information in most of the files I've seen. I'll be experimenting more with them, ! But you likely won't need to worry about them much for most of your own dialogue mods.
 
   
 …And, with that, we're ready to move on! Check the Effect Components tab to continue with the tutorial.
@@ -399,7 +399,7 @@ There’s a lot to go through, so strap in!
 
 #### What types of effects components you can choose from?
 
-So far, I’ve found the following effect components, each of which controls a different aspect of dialogue, and each of which has different set of attributes, which I’ll explain shortly. For now, though, I’m just going to give a brief rundown of each:
+So far, I’ve found the following effect components, each of which controls a different aspect of dialogue, and each of which has different set of attributes, which I’ll explain shortly. For now, , I’m just going to give a brief rundown of each:
 
 -   **TLVoice:** The voice line for the character speaking.
 -   **TLAttitudeEvent:** Controls the nodding/motion of the head and animated expressions characters are given when other animations are not being played, i.e. when a character is waiting for you to pick a dialogue choice, or is listening to the character speaking.
@@ -419,7 +419,7 @@ So far, I’ve found the following effect components, each of which controls a d
 -   **TLShot:** Used to time camera position switches.  
      
 
-#### Ok, cool. What do you mean by “attributes," though?
+#### Ok, cool. What do you mean by “attributes," ?
 
 Each effect component in a timeline file is broken down into several variables, or attributes, which will tell the game how it should handle the effect when calling it in the game. These attributes include things like start and end times, the actors mentioned above, the sound effects/animations the game should be playing, and so on.
   
@@ -456,9 +456,9 @@ And again, the first dialogue node on the timeline will not have a PhaseIndex li
 
 `<attribute id="EndTime" type="float" value="9.21491" />`
 
-Pretty self-explanatory! The start and end time for each component within the phase, according to its placement within the whole dialogue timeline. A few things to note, though:
+Pretty self-explanatory! The start and end time for each component within the phase, according to its placement within the whole dialogue timeline. A few things to note, :
 
--   The first phase on the timeline, again, starts at 0, so it generally does not list start times for its components, unless one of those components is meant to start partway through the dialogue. It usually will list end times, though.
+-   The first phase on the timeline, again, starts at 0, so it generally does not list start times for its components, unless one of those components is meant to start partway through the dialogue. It usually will list end times, .
 -   The start and end times listed do not have to match the full length of the phase! Some effect components start and/or end partway through the phase, which can be used to add pauses between lines of dialogue, among other things.
 -   These start and end times are placed within a massive timeline, and they are, again, sequential. As mentioned earlier, it helps to imagine the dialogue timeline like a movie, and the phases in the timeline are little chapters you can skip to within it, with each component playing at specific times within that chapter, according to these start and end times.
 
@@ -535,7 +535,7 @@ Emotion and emotion variation ID numbers are handled in the following pattern:
 
 -   12 possible emotions, which are given ID numbers in powers of 2.
 -   8 different .GR2 expression rigs for each of these emotions, the first five of which are generally closed mouth poses when the character is not speaking (this would be \[Emotion\]\_A through \[Emotion\]\_E), and the last three of which are generally open mouthed or teeth bared poses (this would be \[Emotion\]\_X through \[Emotion\]\_Z).
--   The different expression rigs are referred to in the game's files as “variations,” and their variation ID/value numbers roughly correspond to the final letter in the rig name. The reference numbers for the letters still start at 0, though, like other parts of the timeline file! This means that, for example, a character’s Happy\_B expression rig has the ID value of "1," Happy\_C has the ID value of "2," and so on. The X, Y, and Z expression rigs still follow this pattern (even though most characters do not have expression rigs between those A-E and X-Z rigs), making the ID numbers for them 23, 24, and 25 respectively.
+-   The different expression rigs are referred to in the game's files as “variations,” and their variation ID/value numbers roughly correspond to the final letter in the rig name. The reference numbers for the letters still start at 0 like other parts of the timeline file! This means that, for example, a character’s Happy\_B expression rig has the ID value of "1," Happy\_C has the ID value of "2," and so on. The X, Y, and Z expression rigs still follow this pattern (although most characters do not have expression rigs between those A-E and X-Z rigs), making the ID numbers for them 23, 24, and 25 respectively.
 
 I've provided a reference for all of them in the Emotion Rigs Quick Ref tab.  
 
@@ -703,7 +703,7 @@ In this list, you can find the ID numbers of each given emotion (listed first be
 
 #### FINALLY.
 
-You've arrived at how to edit the Dialog Timeline files! This tab will cover basic information on how to navigate the files, to find the effect components you'd like to edit. The How to Edit - Adding to the Timeline tab will cover how to add new dialogue and cinematics to a file, and The How to Edit - Effect Components tab will cover how to edit specific effect components. You'll need to know what you're looking for before you do either, though!
+You've arrived at how to edit the Dialog Timeline files! This tab will cover basic information on how to navigate the files, to find the effect components you'd like to edit. The How to Edit - Adding to the Timeline tab will cover how to add new dialogue and cinematics to a file, and The How to Edit - Effect Components tab will cover how to edit specific effect components. You'll need to know what you're looking for before you do either!
 
 So, let's get started!
 
@@ -794,7 +794,7 @@ To do so, first search for TimelineSpeakers in the file you're cloning effects f
 
 Usually, Speaker 0 is the character you're speaking to in a conversation, and Speaker 1 is usually the player character. These Speaker ID numbers will be listed as the MapKey value above the UUID for the character.
 
-There might be more than these two speakers, though! If other characters have speaking lines in the dialogue, they'll  be given Speaker IDs in this section.
+There might be more than these two speakers! If other characters have speaking lines in the dialogue, they'll  be given Speaker IDs in this section.
 
 These are the UUIDs you'll want to update. Select the UUID of Speaker 0, and search for it in your cloned effect components. This UUID should be listed as the Actor for many of the components you cloned.
 
@@ -816,7 +816,7 @@ You'll  want to make sure each of the IDs of the effect components are updated. 
 
 **What if I want the dialog to be a different length than it already is?**
 
-To make the effect components you're adding last for a different amount of time than they currently have, like if you're adding a new voice line that's a different length from the effect components you're adding, you'll  need to update them manually 😅 This should probably be a function of the tool I made, but it currently is not.
+To make the effect components you're adding last for a different amount of time than they currently have, like if you're adding a new voice line that's a different length from the effect components you're adding, you'll  need to update them manually. This should probably be a function of the tool I made, but it currently is not.
 
 It's still doable, though!
 
@@ -840,19 +840,19 @@ All of the steps before can be used for adding cinematics to files, but you won'
 
 Now you can add your effect components back into the file you're editing. Copy all the effect components you just added, and search for TimelineSpeakers to bring you to the end of the EffectComponents section of the file. Paste all of your updated effect components after the last effect component in this section, and you'll have all your new effect components set up!
 
-You'll need to set up two more things in order to get the game to reference them, though.
+You'll need to set up two more things in order to get the game to reference them.
 
 **Phases:**
 
 First, you'll need to add an entry for your dialogue node in the Phases section at the top of the file. Search for EffectComponents to bring you to the bottom of the Phases section; the EffectComponents section comes directly after the Phases section, so searching for it will bring you directly to the end of the list. Then add a new Phase code block. You can just duplicate the one that came before it.
 
-Replace the UUID in your duplicated Phase code block for the UUID of your new dialogue node, as listed in your DialogsBinary file. Then update the Duration of the phase. This will be the total amount of time your dialogue or cinematic takes to play, which you can calculate by subtracting the start time of your effect components from the end time. Make sure you're not calculating it based on effects that start partway through the phase, though.
+Replace the UUID in your duplicated Phase code block for the UUID of your new dialogue node, as listed in your DialogsBinary file. Then update the Duration of the phase. This will be the total amount of time your dialogue or cinematic takes to play, which you can calculate by subtracting the start time of your effect components from the end time. Make sure you're not calculating it based on effects that start partway through the phase.
 
 **TimelinePhases:**
 
 Very confusing wording, I'm not gonna lie, but still very important. Navigate to this section of the file by searching for PeanutSlotIDMap, which follows the TimelinePhases section, and will take you to the end of it. Then duplicate one of the Object entries in the TimelinePhases section.
 
-Replace the UUID for that Object entry with the UUID for your dialogue node. If you're adding a line of dialogue included as a custom sequence within a dialogue node, though (as explained above), you'll want to put your CustomSequenceID UUID here. The UUID in the Phases section should still be the UUID for the original dialog node, though, and NOT the CustomSequenceID.
+Replace the UUID for that Object entry with the UUID for your dialogue node. If you're adding a line of dialogue included as a custom sequence within a dialogue node, you'll want to put your CustomSequenceID UUID here. The UUID in the Phases section should still be the UUID for the original dialog node, and NOT the CustomSequenceID.
 
 Then update the MapValue number to match your PhaseIndex number.
 
@@ -911,7 +911,8 @@ To change character expressions, all you need to do is swap out the "Emotion" an
 
 The Variation below it will point to a specific rig for that emotion! Each character usually only has 8 expression rigs for a given emotion. These are all variants on that emotion, and you can swap them out by changing the "value" for the variation attribute.
 
-In the above example, the first emotion listed is the "Surprised" emotion, which has a value ID of 64. Below it is its variation, variation 1. This  corresponds to variant B of the surprised emotion! Meaning its rig will be the Surprised_B rig of the character. Like most things in the timeline files, the value IDs of the emotion variation rigs starts at 0 (the emotions themselves don't, though. Again, check the Emotion Rigs Quick Ref tab to find the value ID of the emotion you need!)
+In the above example, the first emotion listed is the "Surprised" emotion, which has a value ID of 64. Below it is its variation, variation 1. This  corresponds to variant B of the surprised emotion! Meaning its rig will be the Surprised_B rig of the character. Like most things in the timeline files, the value IDs of the emotion variation rigs starts at 0, unlike the emotions themselves.
+You can check the Emotion Rigs Quick Ref tab to find the value ID of the emotion you need!
 
 Now, in the above example, the the second emotion listed is Happy, with no variation. This means that the variation ID is 0, and that the character will start using the Happy_A rig at that time! 
 
@@ -947,7 +948,7 @@ You can add additional camera angle changes to a dialog or cinematic by adding n
 
 You can download my Dialogue Timeline Updater tool from Nexusmods here! This section of the tutorial will tell you how to use it.
 
-I highly recommend you check out the other sections of the guide before checking it out, though! Otherwise this might not make much sense.
+I highly recommend you check out the other sections of the guide before checking it out. Otherwise this might not make much sense.
 
 #### What is the tool do?
 
