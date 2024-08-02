@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: false
-date: 2024-08-02T17:20:57.703Z
+date: 2024-08-02T17:22:24.616Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
@@ -37,7 +37,7 @@ This tutorial will break down each of these files, and how to edit them. I've al
 
 You'll likely also find Dialog.lsj files with that same file name when extracting the files, as well as an extra Dialog Scene file with the .lsx file extension. These files are both deprecated! (The Dialog Scene files with the .lsf file extension are what you'll need to edit, NOT the .lsx files. Yes, confusing, I know.)
 
-These deprecated files genuinely do nothing. You don't need to edit them or include them in your mods at all, and I do not recommend you do so. You can actually create fully functional new dialogue without them, so they really do just, nothing.
+These deprecated files genuinely do nothing. You don't need to edit them or include them in your mods at all, and I do not recommend you do so. You can create fully functional new dialogue without them, so they really do just, nothing.
 
 Thank you very much to <a href="https://next.nexusmods.com/profile/Joell560/about-me">Joell560</a> on Nexusmods for letting me know the files were deprecated! You've saved me a ton of hassle trying to recreate my changes in both files, and it's genuinely saved me so much time.
 
