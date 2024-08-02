@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: false
-date: 2024-08-02T20:16:03.395Z
+date: 2024-08-02T21:24:31.114Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
@@ -297,7 +297,7 @@ You'll  need to make sure the nested dialogue you're linking to is listed as a c
 I'll be covering more about how to create new nested dialogue files, as well as creating new dialogue files generally at the end of this tutorial! You can scroll to the end of the page to find it.
 
 
-## ### How Do You Edit the Dialog Timeline Files?
+### How Do You Edit the Dialog Timeline Files?
 
 And now for the Dialog Timeline files. These are very lengthy and complicated files, and some parts of editing them can be extremely tedious, time consuming, and potentially, like, almost impossible without a python script to automate some parts of editing them.
 
