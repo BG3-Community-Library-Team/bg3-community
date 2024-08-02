@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: false
-date: 2024-08-02T20:14:02.872Z
+date: 2024-08-02T20:16:03.395Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
@@ -12,7 +12,7 @@ dateCreated: 2024-07-30T22:33:35.683Z
 Guide on how to change Dialogue and Cinematics by Milo Magnetuning
 ## Requirements
 
-### Tools
+
 
 - [LSLib](https://github.com/Norbyte/lslib)
 - code editor, i recommend [VSCode](https://code.visualstudio.com/)
@@ -21,7 +21,6 @@ Guide on how to change Dialogue and Cinematics by Milo Magnetuning
 - an extracted localization file to reference your dialog
 - not necessary but highly recommended - [parsed dialog files}(https://www.tumblr.com/roksik-dnd/727481314781102080/bg3-datamined-dialogue-google-drive)
 
-skills:
 - basic knowledge of BG3 modding, but especially unpacking and converting .lsf files
 - basic knowledge of using LSLib and the Multitool index
 - basic knowledge of conditional statements in code (so it's easier to understand how bg3 dialog flags work)
