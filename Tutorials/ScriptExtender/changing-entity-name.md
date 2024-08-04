@@ -2,7 +2,7 @@
 title: Changing an entity's name
 description: A simple guide to update an entity's name with Script Extender.
 published: false
-date: 2024-08-04T19:33:00.471Z
+date: 2024-08-04T19:43:09.885Z
 tags: tutorial
 editor: markdown
 dateCreated: 2024-08-04T19:32:05.725Z
@@ -55,12 +55,10 @@ To add a prefix to an entity's display name, we can use the following function. 
 
 ```lua
 
-local 
-function UpdateEntityDisplayName
-(entity, prefix)
+local function UpdateEntityDisplayName(entity, prefix)
 
     local entityObject = Ext.Entity.Get(entity)
-    local handle = entityObject.DisplayName.NameKey.Handle.Handle  -- Extracting the handle
+    local handle = entityObject.DisplayName.NameKey.Handle.Handle  --Extracting the handle
     if handle then
         local displayName = Ext.Loca.GetTranslatedString(handle)
         if not displayName:find(prefix) then
@@ -86,9 +84,7 @@ To remove a prefix from an entity's display name, we can use the following funct
 
 ```lua
 
-local 
-function RemovePrefixFromDisplayName
-(entity, prefix)
+local function RemovePrefixFromDisplayName(entity, prefix)
 
     local entityObject = Ext.Entity.Get(entity)
     local handle = entityObject.DisplayName.NameKey.Handle.Handle  -- Extracting the handle
@@ -123,9 +119,7 @@ local statusToPrefixMap = {
     -- Add other statuses and their corresponding prefixes here
 }
 
-Ext.Osiris.RegisterListener("TurnStarted", 1, "after", 
-function
-(object)
+Ext.Osiris.RegisterListener("TurnStarted", 1, "after", function(object)
 
     -- Check and update display name based on status
     for status, prefix in pairs(statusToPrefixMap) do
@@ -143,15 +137,11 @@ end)
 To remove the prefix when the entity dies:
 
 ```lua
-Ext.Osiris.RegisterListener("Dying", 1, "after", 
-function
-(entity)
+Ext.Osiris.RegisterListener("Dying", 1, "after", function(entity)
 
     -- Check and remove prefix based on status
     for status, prefix in pairs(statusToPrefixMap) do
-        if HasActiveStatus(entity, status) == 1 then
-            RemovePrefixFromDisplayName(entity, prefix)
-        end
+    		RemovePrefixFromDisplayName(entity, prefix)
     end
 
     -- Add your existing Dying logic here
