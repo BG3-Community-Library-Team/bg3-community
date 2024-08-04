@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-08-04T20:14:26.437Z
+date: 2024-08-04T20:14:34.485Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -172,5 +172,3 @@ Z
 -
 
 *   **Zip** - A compressed file format used to package mod files for distribution.
-
-This expanded dictionary provides comprehensive definitions for various terms related to BG3 modding, helping new and experienced modders understand and navigate the modding landscape.
