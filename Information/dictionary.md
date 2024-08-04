@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-08-04T20:14:34.485Z
+date: 2024-08-04T20:47:24.295Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -21,7 +21,7 @@ A
 -
 
 *   **Anubis** - Larian scripting language.
-*   **Attribute (Character Stats)** - Attributes refer to character statistics such as Strength, Constitution, and others. These can be modified through various means, including templates, classes, and stats.
+*   **Attribute (Character Stats)** - Attributes refer to character statistics such as Charisma, Strength, Constitution, etc. These can be modified through various means, including templates, classes, and stats.
 *   **Attribute (Template)** - An Attribute in the context of a template defines its characteristics and functionality. For example, `WalkOn = true` allows characters to walk on it, `CanShootThrough = false` makes it impenetrable, and `VisualEntry = "A UUID"` links a VisualBank to a template.
 
 B
