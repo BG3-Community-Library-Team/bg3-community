@@ -1,8 +1,8 @@
 ---
 title: Changing an entity's name
 description: A simple guide to update an entity's name with Script Extender.
-published: false
-date: 2024-08-04T19:44:34.302Z
+published: true
+date: 2024-08-04T19:45:03.734Z
 tags: tutorial
 editor: markdown
 dateCreated: 2024-08-04T19:32:05.725Z
