@@ -1,14 +1,27 @@
 <!--
 title: Shaders
 description: A reference for all shaders in the game.
-published: false
-date: 2024-08-02T19:41:33.075Z
+published: true
+date: 2024-08-04T13:11:58.717Z
 tags: reference, shaders
 editor: ckeditor
 dateCreated: 2024-08-02T13:23:13.885Z
 -->
 
-<h1>Overview</h1>
+<h1>Glossary</h1>
+<p>Shaders are what determines how an object is rendered, what texture maps it allows and the parameters that can be utilized.</p>
+<p>Shaders come in two types: VirtualTextures Shaders which are encoded textures, and Non-Virtual Textures Shaders.</p>
+<p>The pathing of shaders can be found in this entry:</p>
+<p><code>&lt;attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Materials/Characters/CHAR_BASE.lsf" /&gt;</code></p>
+<h1>Explanation</h1>
+<ul>
+  <li>Filename: The name of the shader in the actual game files.</li>
+  <li>Alpha: The shader's capacity to allow transparency, partial or fully. Two-Sided Alpha edits the model to appear as double-sided.</li>
+  <li>MSKCloth: The shader's capacity to make an object tintable, corresponds each colour to a parameter.</li>
+  <li>VertCut: The shader's capacity to implement masking, which is used to hide parts of models that overlap. (such as helmets hiding hair)</li>
+  <li>GlowMap: The shader's capacity to allow for an object to glow.</li>
+  <li>Physics: The Shader's capacity to contain physics (Mostly used in Atmosphere Shaders for flowers)</li>
+</ul>
 <h1>VT Shaders</h1>
 <h2>Atmosphere</h2>
 <figure class="table">
@@ -1295,7 +1308,6 @@ dateCreated: 2024-08-02T13:23:13.885Z
     </tbody>
   </table>
 </figure>
-<h2>Effects</h2>
 <h2>InstancePaint</h2>
 <figure class="table">
   <table>
@@ -1391,7 +1403,6 @@ dateCreated: 2024-08-02T13:23:13.885Z
     </tbody>
   </table>
 </figure>
-<h2>Test</h2>
 <h1>Non-VT Shaders</h1>
 <h2>Atmosphere</h2>
 <figure class="table">
@@ -2414,7 +2425,6 @@ dateCreated: 2024-08-02T13:23:13.885Z
     </tbody>
   </table>
 </figure>
-<h2>Effects</h2>
 <h2>InstancePaint</h2>
 <figure class="table">
   <table>
@@ -2470,4 +2480,3 @@ dateCreated: 2024-08-02T13:23:13.885Z
     </tbody>
   </table>
 </figure>
-<h2>Test</h2>
