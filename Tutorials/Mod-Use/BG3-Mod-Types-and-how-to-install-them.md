@@ -2,13 +2,13 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: true
-date: 2024-07-25T07:37:05.386Z
+date: 2024-08-04T20:23:31.243Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
 ---
 
-> This article needs to be finished and proof read.
+> Manual installation currently missing. If you happen to know how it works, please add instructions. Thanks!
 {.is-warning}
 
 # How to use mods in Baldur's Gate 3
