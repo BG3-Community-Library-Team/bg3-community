@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-07-24T20:26:12.200Z
+date: 2024-08-04T19:48:37.164Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -16,7 +16,8 @@ No prior knowledge about programming is required; however, please familiarize yo
 -   [How to install .pak files](https://wiki.bg3.community/en//Tutorials/Mod-Use/BG3-Mod-Types-and-how-to-install-them) 
 -   [Installing Script Extender and activating the console](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender)
 
-After reading this guide, feel free to follow the tutorial: [**Creating your First SE Mod (TBA)**](https://wiki.bg3.community/en/Tutorials/ScriptExtender/creating_your_first_se_mod)
+
+After reading this guide, feel free to look at the example [Changing an entity's name](https://wiki.bg3.community/en/Tutorials/ScriptExtender/changing-entity-name) or follow the tutorial: [**Creating your First SE Mod (TBA)**](https://wiki.bg3.community/en/Tutorials/ScriptExtender/creating_your_first_se_mod)
 
 > If you are having trouble following this guide, feel free to join the Baldur's Gate 3 Modding Community discord linked [here](https://discord.gg/bg3mods)
 > The Baldur's Gate 3 Modding Community is a community modding run discord. Keep in mind that everyone that may help you is a volunteer. Please read and follow the server rules.
