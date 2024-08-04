@@ -2,7 +2,7 @@
 title: Tools
 description: A list of pages relating to tools, as well as a list of links to useful tools.
 published: true
-date: 2024-08-04T20:10:28.900Z
+date: 2024-08-04T20:10:54.640Z
 tags: tools, list
 editor: markdown
 dateCreated: 2024-05-01T03:55:31.302Z
@@ -50,7 +50,6 @@ VSCode and VSCodium are powerful code editors that can be enhanced with extensio
 ### Miscellaneous Tools
 
 *   **[Notepad++](https://notepad-plus-plus.org/downloads/)** : A versatile text editor that supports many programming languages and is useful for editing scripts and configuration files.
-*   **[xEdit](https://www.nexusmods.com/skyrimspecialedition/mods/164)** : A powerful tool for viewing and editing game data files. While originally developed for Skyrim, it has been adapted for use with BG3.
 
 Additional Resources
 --------------------
@@ -60,5 +59,3 @@ Here are some additional resources to help you get started with BG3 modding:
 *   **[BG3 Modding Wiki](https://bg3modding.wiki/)** : A community-driven wiki that contains tutorials, guides, and documentation on BG3 modding.
 *   **[BG3 Nexus Mods](https://www.nexusmods.com/baldursgate3)** : A popular site for downloading and sharing mods for BG3.
 *   **[BG3 Modding Discord](https://discord.com/invite/bg3modding)** : A community of modders who can provide help and support for your modding projects.
-
-This markdown ensures that there are spaces between sections, making it easier to read and navigate.
