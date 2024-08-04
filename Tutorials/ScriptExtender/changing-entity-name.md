@@ -2,19 +2,19 @@
 title: Changing an entity's name
 description: A simple guide to update an entity's name with Script Extender.
 published: false
-date: 2024-08-04T19:32:05.725Z
+date: 2024-08-04T19:33:00.471Z
 tags: tutorial
 editor: markdown
 dateCreated: 2024-08-04T19:32:05.725Z
 ---
 
-Handling Entity Display Names in Larian's Game
+Handling Display Names
 ==============================================
 
 Introduction
 ------------
 
-In this tutorial, we'll explore how to manage entity display names in Larian's game using `DisplayName.NameKey`. We'll discuss how to extract the display name handle, why using `DisplayName.NameKey` is superior to `SetStoryDisplayName`, and demonstrate functions to add and remove prefixes to display names dynamically.
+In this tutorial, we'll explore how to manage entity display names in Larian's game using `DisplayName.NameKey`. We'll discuss how to extract the display name handle, why using `DisplayName.NameKey` is superior to `Osi.SetStoryDisplayName`, and demonstrate functions to add and remove prefixes to display names dynamically.
 
 Extracting `DisplayName.NameKey`
 --------------------------------
