@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-07-29T08:54:44.180Z
+date: 2024-08-04T20:14:26.437Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -14,120 +14,163 @@ dateCreated: 2024-06-20T08:31:54.801Z
 
 Intended as a temporary hub for terms that may need to be explained in our work-in-progress dictionary. Very inclined by [this layout](https://eternity.obsidian.net/game-data-formats/concepts), but no decisions were made yet.
 
-## A
+BG3 Modding Dictionary
+======================
 
--   Anubis - Larian scripting language
--	Attribute (Character Stats) - Attributes refer to character statistics such as Strength, Constitution, and others. These can be modified through various means, including templates, classes, and stats.
--	Attribute (Template) - An Attribute in the context of a template define its characteristics and functionality. For example, WalkOn = true allows characters to walk on it, CanShootThrough = false makes it impenetrable, and VisualEntry = "A UUID" links a VisualBank to a template.
+A
+-
 
-## B
+*   **Anubis** - Larian scripting language.
+*   **Attribute (Character Stats)** - Attributes refer to character statistics such as Strength, Constitution, and others. These can be modified through various means, including templates, classes, and stats.
+*   **Attribute (Template)** - An Attribute in the context of a template defines its characteristics and functionality. For example, `WalkOn = true` allows characters to walk on it, `CanShootThrough = false` makes it impenetrable, and `VisualEntry = "A UUID"` links a VisualBank to a template.
 
--   BG3MM - [LaughingLeader's Baldur's Gate 3 Mod Manager](https://github.com/LaughingLeader/BG3ModManager)
--   Boost - Boosts are similar to buffs or debuffs in other games. They can modify an entity in various ways or be re-utilized to trigger other things with Script Extender.
--   BootstrapClient - 
--   BootstrapServer - 
+B
+-
 
-## C
+*   **BG3MM** - [LaughingLeader's Baldur's Gate 3 Mod Manager](https://github.com/LaughingLeader/BG3ModManager).
+*   **Boost** - Boosts are similar to buffs or debuffs in other games. They can modify an entity in various ways or be re-utilized to trigger other things with Script Extender.
+*   **BootstrapClient** - A script or set of scripts that initialize on the client side when the game starts.
+*   **BootstrapServer** - A script or set of scripts that initialize on the server side when the game starts.
 
--   CF - Compatibility Framework
--   Client - 
--   CL - Community Library
--   Class (Coding) - In coding, a class is a blueprint for creating objects within Object-Oriented Programming (OOP). It defines shared properties and methods of an object you create. For example, a class dedicated to an element/object would outline its properties and the functions available for it.
--   Class (Game) - In-game classes determine the abilities and stats a character gains throughout the game. [Here is a guide to creating a custom class)](https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation)
--   CMTY - Community / BG3 Modding Community
+C
+-
 
-## D
+*   **CF** - Compatibility Framework.
+*   **Client** - The game instance running on a player's machine, handling local rendering and input.
+*   **CL** - Community Library.
+*   **Class (Coding)** - In coding, a class is a blueprint for creating objects within Object-Oriented Programming (OOP). It defines shared properties and methods of an object you create. For example, a class dedicated to an element/object would outline its properties and the functions available for it.
+*   **Class (Game)** - In-game classes determine the abilities and stats a character gains throughout the game. [Here is a guide to creating a custom class](https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation).
+*   **CMTY** - Community / BG3 Modding Community.
 
--   Dump - 
+D
+-
 
-## E
+*   **Dump** - Extracting game data for analysis or modification.
 
--   Enumeration (Enum) - Enumerations, or Enums, are lists of named constants representing component types, such as WeaponType. Each type can also be associated with a number, allowing it to be referenced by name or number, e.g., (None, 0), (Sword, 1), (Club, 2). [(Here is a list of possible Enumerations available to us via Script Extender)](https://github.com/Norbyte/bg3se/blob/1b96b0824bd541933219226d48279c89635dba44/BG3Extender/GameDefinitions/Enumerations.inl)
--   Entity - 
--   Entity Dump - 
+E
+-
 
-## F
+*   **Enumeration (Enum)** - Enumerations, or Enums, are lists of named constants representing component types, such as WeaponType. Each type can also be associated with a number, allowing it to be referenced by name or number, e.g., (None, 0), (Sword, 1), (Club, 2). [(Here is a list of possible Enumerations available to us via Script Extender)](https://github.com/Norbyte/bg3se/blob/1b96b0824bd541933219226d48279c89635dba44/BG3Extender/GameDefinitions/Enumerations.inl).
+*   **Entity** - Any object in the game world, including characters, items, and environmental objects.
+*   **Entity Dump** - A comprehensive list of all properties and attributes of an entity, useful for debugging and modding.
 
--   Framework - 
+F
+-
 
-## G
+*   **Framework** - A structured foundation for developing mods, often providing essential functions and utilities.
 
-## H
+G
+-
 
--   Handle - 
+*   **GUID** - Globally Unique Identifier, a unique reference number used as an identifier in software.
 
-## I
+H
+-
 
--   IDE - 
--   IF - Inspiration Framework
+*   **Handle** - A reference to an object or entity in the game, often used in scripting.
 
-## J
+I
+-
 
-## K
+*   **IDE** - Integrated Development Environment, a software application that provides comprehensive facilities to computer programmers for software development.
+*   **IF** - Inspiration Framework.
 
-## L
+J
+-
 
--   Load order - term commonly used for the sequence in which mods are placed in bg3mm and vortex
--   Loca - 
--   Lua - programming language used for SE
--   Lsf - 
--   Lsx -
+*   **JSON** - JavaScript Object Notation, a lightweight data interchange format that's easy for humans to read and write and easy for machines to parse and generate.
 
-## M
+K
+-
 
--   Meta - 
+*   **Keybind** - A keyboard shortcut that allows a player to perform a specific action in the game.
 
-## N
+L
+-
 
--   Norbsearch - [BG3 Search Engine](https://bg3.norbyte.dev/) by Norbyte
--   Notepad++ - open source code editor and replacement for NotePad, commonly used by the community
+*   **Load order** - The sequence in which mods are placed in BG3MM and Vortex.
+*   **Loca** - Localization files containing translations for different languages.
+*   **Lua** - Programming language used for Script Extender.
+*   **Lsf** - Larian's proprietary file format for various game data.
+*   **Lsx** - Larian's XML-based file format for game data.
 
-## O
+M
+-
 
--   OF - Oath Framework
--   OOP (Object-Oriented Programming) - Object-Oriented Programming is a programming paradigm that structures code using objects, which are instances of classes. It defines elements/objects, their properties, and functions. [Here is a brief introduction to OOP with more information)](https://wiki.bg3.community/en/Tutorials/ScriptExtender/the_basics_of_lua)
--   Osiris - Larian scripting language
+*   **Meta** - Metadata or data about data, often used to refer to information about a mod or file.
 
-## p
+N
+-
 
--   Passive - A passive ability provides a continuous effect (Boost) as long as it is activated on the passive hotbar.
+*   **Norbsearch** - [BG3 Search Engine](https://bg3.norbyte.dev/) by Norbyte.
+*   **Notepad++** - Open source code editor and replacement for Notepad, commonly used by the community.
 
-## Q
+O
+-
 
-## R
+*   **OF** - Oath Framework.
+*   **OOP (Object-Oriented Programming)** - Object-Oriented Programming is a programming paradigm that structures code using objects, which are instances of classes. It defines elements/objects, their properties, and functions. [Here is a brief introduction to OOP with more information](https://wiki.bg3.community/en/Tutorials/ScriptExtender/the_basics_of_lua).
+*   **Osiris** - Larian scripting language.
 
--   REL - Random Equipment Loot  
-     
-## S
+P
+-
 
--   Shared folder - folder that contains your Localization, Mods, and Public folder
--   Server - 
--   Stats - Stats are various attributes linked to a GameObject-Template, typically defined in a text file. Examples include the attributes an item grants, its weight, and the slot it occupies (e.g., Gloves).
+*   **Passive** - A passive ability provides a continuous effect (Boost) as long as it is activated on the passive hotbar.
 
-## T
+Q
+-
 
--   Template - A template is a fundamental building block in the game, composed of various attributes. It can also inherit attributes from a parent template, building on its properties or overriding a specific attribute if the child has a new value for it.
--   TreasureTable - A treasuretable is what determines what items a container OR vendor might have. A treasuretable would be registered in the container/entities GameObject-Template as a new childnode "InventoryList". (Use Norbsearch to look up an existing container to find out how)
+*   **Quest** - A task or series of tasks that a player completes for rewards.
 
-## U
+R
+-
 
--   UUID - universally unique identifier, a 128-bit value used in the game files to identify an object or entity by its unique 36 character format. Example: 000cfc9f-b973-48e7-a5c8-f2992a47a943
+*   **REL** - Random Equipment Loot.
 
-## V
+S
+-
 
--   Vortex - Nexusmods' Mod Manager
--   Visual bank entry -
--   Visual Studio Code (VSCode) - free code editor created by Microsoft. Commonly used in the community, with several extensions available specifically for BG3 modding
--   Visual Studio Codium (VSCodium) - an open source version of VSCode
+*   **Shared folder** - Folder that contains your Localization, Mods, and Public folder.
+*   **Server** - The game instance that manages the game world and game state, often running on a remote machine.
+*   **Stats** - Various attributes linked to a GameObject-Template, typically defined in a text file. Examples include the attributes an item grants, its weight, and the slot it occupies (e.g., Gloves).
 
-## W
+T
+-
 
--   Workspace
+*   **Template** - A template is a fundamental building block in the game, composed of various attributes. It can also inherit attributes from a parent template, building on its properties or overriding a specific attribute if the child has a new value for it.
+*   **TreasureTable** - Determines what items a container or vendor might have. A TreasureTable would be registered in the container/entity's GameObject-Template as a new child node "InventoryList". (Use Norbsearch to look up an existing container to find out how.)
 
-## X
+U
+-
 
--   Xml - Extensible Markup Language, markup language and file format for storing, transmitting, and reconstructing arbitrary data, both human-readable and machine-readable
+*   **UUID** - Universally Unique Identifier, a 128-bit value used in the game files to identify an object or entity by its unique 36-character format. Example: `000cfc9f-b973-48e7-a5c8-f2992a47a943`.
 
-## Y
+V
+-
 
-## Z
+*   **Vortex** - Nexusmods' Mod Manager.
+*   **Visual bank entry** - A reference to a visual asset in the game.
+*   **Visual Studio Code (VSCode)** - Free code editor created by Microsoft. Commonly used in the community, with several extensions available specifically for BG3 modding.
+*   **Visual Studio Codium (VSCodium)** - An open source version of VSCode.
+
+W
+-
+
+*   **Workspace** - A project setup in a development environment that includes all files and settings related to a specific mod or group of mods.
+
+X
+-
+
+*   **Xml** - Extensible Markup Language, markup language and file format for storing, transmitting, and reconstructing arbitrary data, both human-readable and machine-readable.
+
+Y
+-
+
+*   **YAML** - Yet Another Markup Language, a human-readable data serialization format.
+
+Z
+-
+
+*   **Zip** - A compressed file format used to package mod files for distribution.
+
+This expanded dictionary provides comprehensive definitions for various terms related to BG3 modding, helping new and experienced modders understand and navigate the modding landscape.
