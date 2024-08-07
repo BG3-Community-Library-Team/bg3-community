@@ -2,7 +2,7 @@
 title: Creating a meta.lsx file
 description: 
 published: true
-date: 2024-08-07T12:37:23.423Z
+date: 2024-08-07T12:38:10.886Z
 tags: modding, creating mods
 editor: markdown
 dateCreated: 2024-05-04T18:14:40.394Z
@@ -22,7 +22,7 @@ A meta.lsx file is a necessity if you plan on making .pak mods. Here's how to se
 
 To generate a UUID in VSCode, you can highlight a section or click in a blank area, right click, and select Generate UUID here.
 
-For the UUID generation in Notepad++, once ToolBucket is installed, you want to press Alt + Shift + G. It will bring up a window as shown below. Keep Include hyphens ticked, and you can also click Don't ask again if you won't use any of the other options. Then click Generate.
+For the UUID generation in Notepad++, once ToolBucket is installed, you want to press Alt + Shift + G. It will bring up a window as shown below. Keep Include hyphens ticked, and you can also click 'Don't ask again' if you won't use any of the other options. Then click Generate.
 
 Or use an online UUID-Generator.
 
