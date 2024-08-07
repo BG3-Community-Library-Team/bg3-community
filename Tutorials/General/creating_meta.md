@@ -2,7 +2,7 @@
 title: Creating a meta.lsx file
 description: 
 published: true
-date: 2024-08-07T12:45:33.668Z
+date: 2024-08-07T12:48:50.936Z
 tags: modding, creating mods
 editor: markdown
 dateCreated: 2024-05-04T18:14:40.394Z
@@ -14,7 +14,8 @@ The content of this page was transferred from another wiki with the permission o
 
 A meta.lsx file is a necessity if you plan on making .pak mods. Here's how to set one up.
 
-**Tools You'll Need**
+### **Tools You'll Need**
+
 - BG3 Modders Multitool
 - BG3 Mini Tool
 - VSCode or Notepad++
@@ -26,7 +27,7 @@ For the UUID generation in Notepad++, once ToolBucket is installed, you want to 
 
 Or use an online [UUID-Generator](https://generateuuid.net/#UUIDv4).
 
-**Meta.lsx**
+### **Meta.lsx**
 
 Most pak mods need a meta.lsx. A meta.lsx is a file that tells the mod loader certain "meta" information about your mod. This is information such as author's name, version number, etc.
 
@@ -120,7 +121,7 @@ This version number is the version it was when published. Can remain this number
 
 If your mod is dependent on another mods assets (remember get permission) it is best to add that mod as a dependency learn how here.
 
-**Generating a Version Number with the tools**
+### **Generating a Version Number with the tools**
 
 You can generate a version number with Multitool, BG3 Mod Manager or Padme's mini tool. Here is how:
 
@@ -154,7 +155,7 @@ Use the up and down arrows on the first and last number and it will change the n
 
 Or use the Save to button, then locate your meta.lsx and it will override the lines for you.
 
-**Creating your meta.lsx with the Multitool**
+### **Creating your meta.lsx with the Multitool**
 
 Once your mod is complete and ready to be tested in-game, create a Mods folder inside your workspace folder, then drag your workspace folder to the blue box that says "Drop mod workspace folder or a mod.pak here". If your Mods folder doesn't have a meta.lsx, it will bring up this popup:
 
@@ -166,7 +167,7 @@ Then choose your version number for your mod. Once ready, you can click the conf
 
 If wanting to update the number, you can delete your meta.lsx and drag your workspace folder again over to the blue box, which will trigger this popup again.
 
-**Creating your meta.lsx with bg3 mini tool by Padme4000**
+### **Creating your meta.lsx with bg3 mini tool by Padme4000**
 
 If you find it easier to follow videos or have a video alongside a written tutorial, please find my video here on how to use that section of my tool.
 
