@@ -2,7 +2,7 @@
 title: Creating a meta.lsx file
 description: 
 published: true
-date: 2024-08-07T12:44:29.851Z
+date: 2024-08-07T12:45:33.668Z
 tags: modding, creating mods
 editor: markdown
 dateCreated: 2024-05-04T18:14:40.394Z
@@ -174,31 +174,31 @@ Once you open the tool you will see a button called meta that is the one we want
 
 If you don't already have the folders setup you can use the top part of this window to create the folders. They will be created in a folder called Mods where the tool exe is. Or it will create that folder if it doesn't already exist.
 
-Mod creator
+- Mod creator
 
 type in the name you want associated with the mod such as your nexusmods name. Click update when you've finished typing it in.
 
 Always click update.
 
-Mod name
+- Mod name
 
 line give your mod a name that will show up in the mod managers.
 
-Mod description
+- Mod description
 
 can be anything, just describe it a little or add nothing.
 
-Shared Folder - you want this line to be the same name you give your secondary folders.
+- Shared Folder - you want this line to be the same name you give your secondary folders.
 
 We will use the meta path as an example:
 ModName/Mods/YourShared this last folder needs to match the name you give that line
 
-Unique UUID
+- Unique UUID
 
 use the generated unique uuid button and then click update once it's generated.
 you want this to be unique so it doesn't clash with other mods
 
-Version Number
+- Version Number
 
 by default it is set to 1.0.0.0 so just in case the file has changed at all click the update button so it sets it back to 1.0.0.0
 
