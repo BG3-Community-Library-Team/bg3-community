@@ -2,7 +2,7 @@
 title: Creating a meta.lsx file
 description: 
 published: true
-date: 2024-08-07T12:39:49.308Z
+date: 2024-08-07T12:41:41.994Z
 tags: modding, creating mods
 editor: markdown
 dateCreated: 2024-05-04T18:14:40.394Z
@@ -30,7 +30,7 @@ Or use an online [UUID-Generator](https://generateuuid.net/#UUIDv4).
 
 Most pak mods need a meta.lsx. A meta.lsx is a file that tells the mod loader certain "meta" information about your mod. This is information such as author's name, version number, etc.
 
-The file path should be: ModName/Mods/YourShared/meta.lsx
+The file path should be: *ModName/Mods/YourShared/meta.lsx*
 
 The ModName folder is your workspace folder for your mod. Each mod needs one, and it holds all of the other folders. Then you would create a folder called Mods, then a new folder with a custom name (could be same as the mod name) this is what will be known as YourShared folder, and then finally you want to create a .txt file and rename it to meta.lsx.
 
