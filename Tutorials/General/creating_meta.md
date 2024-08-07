@@ -1,8 +1,8 @@
 ---
 title: Creating a meta.lsx file
 description: 
-published: false
-date: 2024-08-07T12:28:24.109Z
+published: true
+date: 2024-08-07T12:37:23.423Z
 tags: modding, creating mods
 editor: markdown
 dateCreated: 2024-05-04T18:14:40.394Z
