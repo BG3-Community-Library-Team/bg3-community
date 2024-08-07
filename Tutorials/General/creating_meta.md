@@ -2,7 +2,7 @@
 title: Creating a meta.lsx file
 description: 
 published: true
-date: 2024-08-07T12:41:41.994Z
+date: 2024-08-07T12:44:29.851Z
 tags: modding, creating mods
 editor: markdown
 dateCreated: 2024-05-04T18:14:40.394Z
@@ -32,7 +32,7 @@ Most pak mods need a meta.lsx. A meta.lsx is a file that tells the mod loader ce
 
 The file path should be: *ModName/Mods/YourShared/meta.lsx*
 
-The ModName folder is your workspace folder for your mod. Each mod needs one, and it holds all of the other folders. Then you would create a folder called Mods, then a new folder with a custom name (could be same as the mod name) this is what will be known as YourShared folder, and then finally you want to create a .txt file and rename it to meta.lsx.
+The ModName folder is your workspace folder for your mod. Each mod needs one, and it holds all of the other folders. Then you would create a folder called Mods, then a new folder with a custom name (could be same as the mod name) this is what will be known as *YourShared* folder, and then finally you want to create a .txt file and rename it to meta.lsx.
 
 The only time your mod won't need a meta.lsx if it is classed as a basegame override. You will know them by the mods that get put into the Overrides section of BG3 Mod Manager or have that orange highlight to them. In some cases, you may still add a meta just so people can place the mod into their load order if they prefer.
 
