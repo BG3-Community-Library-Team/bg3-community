@@ -2,7 +2,7 @@
 title: Creating a meta.lsx file
 description: 
 published: false
-date: 2024-08-07T12:28:08.562Z
+date: 2024-08-07T12:28:24.109Z
 tags: modding, creating mods
 editor: markdown
 dateCreated: 2024-05-04T18:14:40.394Z
@@ -11,11 +11,6 @@ dateCreated: 2024-05-04T18:14:40.394Z
 # Creating a meta.lsx file
 
 The content of this page was transferred from another wiki with the permission of [Padme4000](https://next.nexusmods.com/profile/Padme4000/about-me?gameId=3474)
-
-
-// TODO - copy this over (with padmes permission)
-based on https://bg3.wiki/wiki/Modding:Creating_meta.lsx 
-
 
 A meta.lsx file is a necessity if you plan on making .pak mods. Here's how to set one up.
 
