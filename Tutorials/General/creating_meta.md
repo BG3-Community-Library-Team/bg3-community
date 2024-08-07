@@ -2,7 +2,7 @@
 title: Creating a meta.lsx file
 description: 
 published: false
-date: 2024-08-07T12:27:21.073Z
+date: 2024-08-07T12:28:08.562Z
 tags: modding, creating mods
 editor: markdown
 dateCreated: 2024-05-04T18:14:40.394Z
@@ -24,7 +24,6 @@ A meta.lsx file is a necessity if you plan on making .pak mods. Here's how to se
 - BG3 Mini Tool
 - VSCode or Notepad++
 - UUID Generator Extension in VSCode OR ToolBucket & XML Tools in Notepad++ found via Plugins > Plugins Admin then search for it and install.
-
 
 To generate a UUID in VSCode, you can highlight a section or click in a blank area, right click, and select Generate UUID here.
 
