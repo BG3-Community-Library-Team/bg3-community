@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-08-08T15:16:27.795Z
+date: 2024-08-08T15:23:26.058Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -35,7 +35,7 @@ B
 C
 -
 
-*   **CCAV** - characterappearancevisuals - 
+*   **CCAV** - CharacterCreationAppearanceVisuals - A file that assigns visuals to slots in Character Creation such as heads, hairs, horns, etc.
 *   **CF** - Compatibility Framework.
 *   **Client** - The game instance running on a player's machine, handling local rendering and input.
 *   **CL** - Community Library.
