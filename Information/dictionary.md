@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-08-04T20:47:24.295Z
+date: 2024-08-08T15:16:27.795Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -35,6 +35,7 @@ B
 C
 -
 
+*   **CCAV** - characterappearancevisuals - 
 *   **CF** - Compatibility Framework.
 *   **Client** - The game instance running on a player's machine, handling local rendering and input.
 *   **CL** - Community Library.
