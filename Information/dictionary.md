@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-08-09T12:50:53.721Z
+date: 2024-08-09T15:01:54.331Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -67,7 +67,7 @@ G
 -
 
 *   **Gtp** - Graphine Tileset Page file, which is a collection of virtual textures
-*   **Gts** - Graphine Tileset Page file, which contains ‘mappings’ for virtual textures
+*   **Gts** - Graphine Tile set file, which contains ‘mappings’ for virtual textures
 *   **GTex** - VirtualTexture containing the 3 dds files (CLEA,NM,HMVY or BM,NM,PM)
 *   **GUID** - Globally Unique Identifier, a unique reference number used as an identifier in software.
 
