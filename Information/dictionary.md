@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-08-08T15:28:58.037Z
+date: 2024-08-09T11:25:31.485Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -42,6 +42,7 @@ C
 *   **CL** - Community Library.
 *   **Class (Coding)** - In coding, a class is a blueprint for creating objects within Object-Oriented Programming (OOP). It defines shared properties and methods of an object you create. For example, a class dedicated to an element/object would outline its properties and the functions available for it.
 *   **Class (Game)** - In-game classes determine the abilities and stats a character gains throughout the game. [Here is a guide to creating a custom class](https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation).
+*   **CLEA** - DDS file, stores Curvature, Lips, Eyebrows, and Ambient Occlusion (AO)
 *   **CMTY** - Community / BG3 Modding Community.
 
 D
@@ -70,6 +71,7 @@ H
 -
 
 *   **Handle** - A reference to an object or entity in the game, often used in scripting.
+*   **HMVY** - DDS file, stores the Hemoglobin, Melanin, Veins, and Yellowing
 
 I
 -
@@ -104,6 +106,7 @@ M
 N
 -
 
+*   **NM** - Normal Map, DDS file, stores directional data used to fake depth on objects
 *   **Norbsearch** - [BG3 Search Engine](https://bg3.norbyte.dev/) by Norbyte.
 *   **Notepad++** - Open source code editor and replacement for Notepad, commonly used by the community.
 
