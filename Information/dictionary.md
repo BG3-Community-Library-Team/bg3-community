@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-08-09T11:25:31.485Z
+date: 2024-08-09T11:47:13.311Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -65,6 +65,8 @@ F
 G
 -
 
+*   **Gtp** - Graphine Tileset Page file, which is a collection of virtual textures
+*   **Gts** - Graphine Tileset Page file, which contains ‘mappings’ for virtual textures
 *   **GUID** - Globally Unique Identifier, a unique reference number used as an identifier in software.
 
 H
@@ -156,7 +158,8 @@ V
 *   **Vortex** - Nexusmods' Mod Manager.
 *   **Visual bank entry** - A reference to a visual asset in the game.
 *   **Visual Studio Code (VSCode)** - Free code editor created by Microsoft. Commonly used in the community, with several extensions available specifically for BG3 modding.
-*   **Visual Studio Codium (VSCodium)** - An open source version of VSCode.
+*   **Visual Studio Codium (VSCodium)** - An open source version of VSCode
+*   **VT** - Virtual Texture
 
 W
 -
