@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-08-09T11:47:13.311Z
+date: 2024-08-09T12:05:38.616Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -28,6 +28,7 @@ B
 -
 
 *   **BG3MM** - [LaughingLeader's Baldur's Gate 3 Mod Manager](https://github.com/LaughingLeader/BG3ModManager).
+*   **BM** - Base Map (called Albedo internally), DDS file, contains either a greyscale representation of the color intensity or a colored representation
 *   **Boost** - Boosts are similar to buffs or debuffs in other games. They can modify an entity in various ways or be re-utilized to trigger other things with Script Extender.
 *   **BootstrapClient** - A script or set of scripts that initialize on the client side when the game starts.
 *   **BootstrapServer** - A script or set of scripts that initialize on the server side when the game starts.
@@ -67,6 +68,7 @@ G
 
 *   **Gtp** - Graphine Tileset Page file, which is a collection of virtual textures
 *   **Gts** - Graphine Tileset Page file, which contains ‘mappings’ for virtual textures
+*   **GTex** - VirtualTexture containing the 3 dds files (CLEA,NM,HMVY or BM,NM,PM)
 *   **GUID** - Globally Unique Identifier, a unique reference number used as an identifier in software.
 
 H
@@ -108,7 +110,7 @@ M
 N
 -
 
-*   **NM** - Normal Map, DDS file, stores directional data used to fake depth on objects
+*   **NM** - Normal Map, DDS file, stores directional data used to fake depth on objects 
 *   **Norbsearch** - [BG3 Search Engine](https://bg3.norbyte.dev/) by Norbyte.
 *   **Notepad++** - Open source code editor and replacement for Notepad, commonly used by the community.
 
@@ -123,6 +125,7 @@ P
 -
 
 *   **Passive** - A passive ability provides a continuous effect (Boost) as long as it is activated on the passive hotbar.
+*   **PM** - Physical Map, DDS file, contains Roughness, Metallic, and Ambient Occlusion
 
 Q
 -
