@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-08-09T15:01:54.331Z
+date: 2024-08-09T15:03:24.462Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -66,7 +66,7 @@ F
 G
 -
 
-*   **Gtp** - Graphine Tileset Page file, which is a collection of virtual textures
+*   **Gtp** - Graphine Tile Set Page file, which is a collection of virtual textures
 *   **Gts** - Graphine Tile set file, which contains ‘mappings’ for virtual textures
 *   **GTex** - VirtualTexture containing the 3 dds files (CLEA,NM,HMVY or BM,NM,PM)
 *   **GUID** - Globally Unique Identifier, a unique reference number used as an identifier in software.
@@ -147,6 +147,7 @@ S
 T
 -
 
+*   **Tile Set** - A huge texture containing multiple sub-textures merged into one
 *   **Template** - A template is a fundamental building block in the game, composed of various attributes. It can also inherit attributes from a parent template, building on its properties or overriding a specific attribute if the child has a new value for it.
 *   **TreasureTable** - Determines what items a container or vendor might have. A TreasureTable would be registered in the container/entity's GameObject-Template as a new child node "InventoryList". (Use Norbsearch to look up an existing container to find out how.)
 
