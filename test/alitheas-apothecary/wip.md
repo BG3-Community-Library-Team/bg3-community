@@ -2,7 +2,7 @@
 title: wip
 description: 
 published: false
-date: 2024-08-07T16:33:42.902Z
+date: 2024-08-09T07:11:01.707Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
@@ -12,7 +12,7 @@ dateCreated: 2024-07-30T22:33:35.683Z
 Guide on how to change Dialogue and Cinematics by Milo Magnetuning
 ## Requirements
 
-
+### Tools
 
 - [LSLib](https://github.com/Norbyte/lslib)
 - code editor, i recommend [VSCode](https://code.visualstudio.com/)
@@ -21,6 +21,7 @@ Guide on how to change Dialogue and Cinematics by Milo Magnetuning
 - an extracted localization file to reference your dialog
 - not necessary but highly recommended - [parsed dialog files}(https://www.tumblr.com/roksik-dnd/727481314781102080/bg3-datamined-dialogue-google-drive)
 
+skills:
 - basic knowledge of BG3 modding, but especially unpacking and converting .lsf files
 - basic knowledge of using LSLib and the Multitool index
 - basic knowledge of conditional statements in code (so it's easier to understand how bg3 dialog flags work)
@@ -65,7 +66,7 @@ The Dialog timeline files are usually found in the this folder in the game's fil
 \\Data\Public\GustavDev\Timeline\Generated
 `
 
-These files control the timing of all elements required to play dialogue and cinematics, including the actual voice lines, character animations, the emotions the characters use, camera angles, sound effects, and more. They control all aspects of dialogue that require full animation and timing—which does not include moments where your character picks dialogue options! Those are found in the DialogsBinary files, which I'll cover shortly.
+These files control the timing of all elements required to play dialogue and cinematics, including the voice lines, character animations, the emotions the characters use, camera angles, sound effects, and more. They control all aspects of dialogue that require full animation and timing—which does not include moments where your character picks dialogue options! Those are found in the DialogsBinary files, which I'll cover shortly.
 
 A good way to think of the dialogue timeline files is to picture it like a movie! With each line of dialogue as a small scene within that movie. The code in the dialogue timeline files gives the game everything necessary to play those scenes, and what element of the scene play when.
 
@@ -215,7 +216,7 @@ Root nodes are unique, in the sense that they're generally mirrors of other node
 
 ### How To Edit
 
-Honestly, the easiest way to edit these files, at least if you're adding new elements, is to duplicate existing code blocks. This will guarantee you'll keep the code structure the game needs consistent, and saves you a bit of work typing everything out.
+The easiest way to edit these files, at least if you're adding new elements, is to duplicate existing code blocks. This will keep the code structure the game needs consistent, and saves unnecessarily typing everything out.
 
 <!--I've provided an annotated sample/template mod on Nexusmods <a href="https://www.nexusmods.com/baldursgate3/mods/10086">here,</a> which you can use to follow along with this guide, and understand a bit more about what goes into the code structure for a given node.-->
 
@@ -297,7 +298,7 @@ You'll  need to make sure the nested dialogue you're linking to is listed as a c
 I'll be covering more about how to create new nested dialogue files, as well as creating new dialogue files generally at the end of this tutorial! You can scroll to the end of the page to find it.
 
 
-### How Do You Edit the Dialog Timeline Files?
+## ### How Do You Edit the Dialog Timeline Files?
 
 And now for the Dialog Timeline files. These are very lengthy and complicated files, and some parts of editing them can be extremely tedious, time consuming, and potentially, like, almost impossible without a python script to automate some parts of editing them.
 
@@ -317,7 +318,7 @@ The Summary tab offers a bit more explanation on how these files work, the Anato
 
 ### Anatomy of a Dialog Timeline File
 
-Dialogue timeline files are broken down into a several sections, the biggest of which—EffectComponents—I'll be covering last. The EffectComponents section contains most of the actual information about the dialogue being played, so it is both extremely lengthy, and references a majority of the other sections in the timeline files. Covering the others first will make the EffectComponents section make a lot more sense. I'll be covering each other section in the order they appear in the files, skipping the EffectComponents for now. 
+Dialogue timeline files are broken down into a several sections, the biggest of which—EffectComponents—I'll be covering last. The EffectComponents section contains most of the information about the dialogue being played, so it is both extremely lengthy, and references a majority of the other sections in the timeline files. Covering the others first will make the EffectComponents section make a lot more sense. I'll be covering each other section in the order they appear in the files, skipping the EffectComponents for now. 
 
 These sections are:  
  
@@ -331,7 +332,7 @@ There’s not much to say about it beyond that, honestly! It’s one line, and y
 
 #### **Phases:**
 
-Dialogue phases are what control the actual timing of the elements in each dialogue node, as described in the DialogsBinary section of the tutorial. They group together each element that needs to play as part of a given dialogue node, which are linked together via their PhaseIndex. These grouped-together elements can be found in the EffectComponents section, which is covered in the Effect Components tab.
+Dialogue phases are what control the timing of the elements in each dialogue node, as described in the DialogsBinary section of the tutorial. They group together each element that needs to play as part of a given dialogue node, which are linked together via their PhaseIndex. These grouped-together elements can be found in the EffectComponents section, which is covered in the Effect Components tab.
 
 The "Phases" section at the top of the file lists the total duration of each phase, alongside the UUID of the dialogue node in the DialogsBinary file that plays during that phase.
 
@@ -401,7 +402,7 @@ The rest of the sections in the timeline file are either things that likely shou
  
 #### OK, I'M READY. WHAT IS GOING ON WITH THOSE EFFECT COMPONENTS?
 
-The EffectComponents section is the bulk of what you’ll be getting into and editing for your dialogue mods. This section contains all the actual information on timing, character animations, poses, staging, expressions, sound effects, voice lines, camera angles, and more that need to be referenced to play the dialogue or cinematic. Most of the other sections in the file are meant to help the game reference this information, but the effect components are the true core of the dialogue system.
+The EffectComponents section is the bulk of what you’ll be getting into and editing for your dialogue mods. This section contains all the information on timing, character animations, poses, staging, expressions, sound effects, voice lines, camera angles, and more that need to be referenced to play the dialogue or cinematic. Most of the other sections in the file are meant to help the game reference this information, but the effect components are the true core of the dialogue system.
 
 Effect components are classified into several different “Types,” each of which performs a unique function, which I'll list below.
 
@@ -432,7 +433,7 @@ So far, I’ve found the following effect components, each of which controls a d
 
 #### Ok, cool. What do you mean by “attributes," ?
 
-Each effect component in a timeline file is broken down into several variables, or attributes, which will tell the game how it should handle the effect when calling it in the game. These attributes include things like start and end times, the actors mentioned above, the sound effects/animations the game should be playing, and so on.
+Each effect component in a timeline file is broken down into several variables, or attributes, which will tell the game how to handle the effect when calling it in the game. These attributes include start and end times, the actors, sound effects, animations the game should be playing, and so on.
   
 Keep in mind that not every possible attribute for these components will be present every time! Which means some possible attributes the game can process may not be listed in this tutorial yet. If you find one I missed, please let me know!
 
@@ -493,7 +494,7 @@ I’ll be getting more into the TLEmotionEvent components later! But, for now, t
 
 `<attribute id="IsSnappedToEnd" type="bool" value="True" />`
 
-Honestly, I think this might just be used by Larian's game engine, to make sure each effect component snaps to the end of the previous phase. This doesn't seem to affect much when changing it on the .xml level. 
+This doesn't seem to affect much when changing it on the .xml level; I assume this may just be used by Larian's game engine, to ensure each effect component snaps to the end of the previous phase.
  
 
 #### ID:
@@ -939,7 +940,7 @@ You can create really complex sequences of emotions this way, exactly how the ga
 
 #### TLVoice
 
-This component controls the voice line for a node! However, the actual voice line is not referenced within the timeline file. Instead, the specific voice line is linked to the text handle listed for the node in the DialogsBinary file. This text handle is not only referenced in the Localization files, but is  referenced in a character's voicebank file, and will allow the game to reference the proper audio file.
+This component controls the voice line for a node! However, the voice line is not referenced within the timeline file. Instead, the specific voice line is linked to the text handle listed for the node in the DialogsBinary file. This text handle is not only referenced in the Localization files, but is  referenced in a character's voicebank file, and will allow the game to reference the proper audio file.
 
 The UUIDs listed in the TLVoice component are  the UUIDs for the dialog node, group id, and/or custom sequence IDs of the dialog in the DialogsBinary file.
 
