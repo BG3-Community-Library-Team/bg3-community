@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: true
-date: 2024-08-04T20:23:31.243Z
+date: 2024-08-10T14:58:01.946Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -46,11 +46,15 @@ Alternatively the game can be started directly from the bg3.exe or bg3_dx11.exe 
 Default bin folder path:
 ```C:\Program files\Steam\steamapps\common\Baldur's Gate 3\bin```
 
+## Where to find and download mods
+
+[BG3 Nexus Mods](https://www.nexusmods.com/baldursgate3)
+
 ## Mod types and how to install them
 
 ### Tab {.tabset}
 #### PAK
-Pak files are conveniently packaged data bundles. They are used with a mod manager and make installing and uninstalling Mods far easier. Paks can include a variety of modifications to game elements such as textures, sounds, objects, and others.
+Pak files are conveniently packaged data bundles. They are used with a mod manager and make installing and uninstalling Mods very convenient. Paks can include a variety of modifications to game elements such as textures, sounds, objects, and many others.
 
 Installation:
 
