@@ -2,7 +2,7 @@
 title: VSCod(e/ium) Extension
 description: A extension for VSCode and VSCodium by @khbsd and @ghostboats that has lots of helpful features for modders.
 published: true
-date: 2024-06-22T22:46:50.356Z
+date: 2024-08-10T16:05:52.979Z
 tags: vscode, vscodium, bg3-mod-helper, tool, tools, ghostboats, khbsd
 editor: markdown
 dateCreated: 2024-04-25T01:43:35.054Z
@@ -223,7 +223,7 @@ The one thing you should get comfy with, even if you ~~stupidly~~ unfortunately 
 --`Resize Image to Tooltip (380x380)`
 - If you have a PNG image with a transparent background that you plan to use as an icon in the game, you can add a background to it. Right click on the PNG in the file tree and select `Add Icon Background` which will prompt you to either choose from multiple in game backgrounds or a custom one if you have one.
 
-## 6. **Other Actions**
+### 6. **Other Actions**
 - Generate BG3 related template files (ClassDescriptions.lsx, etc) quickly by right clicking in the file tree and clicking `Create BG3 File` or press `Control + 1` which opens a dropdown of file templates to choose from.
 - Open online export tools (BG3 Search Engine, LSX Validator and Stats Validator) in a VSCode tab. Right click in an open editor to open the context menu, hover over `Export Tools`, and select the relevant option.
 - Hovering over BG3 related functions will provide information on them
