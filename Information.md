@@ -2,13 +2,16 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2024-08-10T07:41:16.805Z
+date: 2024-08-10T07:48:29.854Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
 ---
 
-# List:Information
+# Information
+
+Foreword
+
 This section of the wiki goes over BG3's game files, how they work, and how to edit them, as well as touching on what is considered 'best practice' in modding. Most, if not all, of the information here is unoffical and has been gathered from fellow members of the modding community who where willing to share their knowlage and experience.
 
 This area is not for tutorials but general information, if you would like to know how to put this infomration into pratice please head over to the Tutorials section of the wiki.
@@ -16,15 +19,17 @@ This area is not for tutorials but general information, if you would like to kno
 
 
 
+
+
 ## Pages
 - [Fundamentals](/Information/fundamental)
 - [Icons](Icons)
 - [Items](/Information/Items)
-- [Locations](/Information/Locations)
+- [Locations](/Information/Locations) <!--to do: move to references-->
 - [Lua](Lua)
 - [Meshes](Meshes)
 - [Noesis](/Information/Noesis)
-- [Notable NPCs](Notable-NPCs)
+- [Notable NPCs](Notable-NPCs) <!--to do: move to references-->
 - [Osiris](Osiris)
 - [Sound](Sound)
 - [Spells](Spells)
