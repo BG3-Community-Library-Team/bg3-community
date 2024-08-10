@@ -2,7 +2,7 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2024-08-10T08:54:24.394Z
+date: 2024-08-10T08:56:45.830Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
@@ -47,9 +47,7 @@ Textures
 
 Sound
 -
-- [Sound](Sound)
-
-
+- [Sound](/Information/Sound)
 
 ## Pages
 
