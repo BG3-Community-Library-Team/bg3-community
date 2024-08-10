@@ -2,7 +2,7 @@
 title: Tools
 description: A list of pages relating to tools, as well as a list of links to useful tools.
 published: true
-date: 2024-08-04T20:10:54.640Z
+date: 2024-08-10T14:45:10.516Z
 tags: tools, list
 editor: markdown
 dateCreated: 2024-05-01T03:55:31.302Z
@@ -32,9 +32,9 @@ VSCode and VSCodium are powerful code editors that can be enhanced with extensio
 *   **[BG3-SE-Snippets](https://marketplace.visualstudio.com/items?itemName=FallenStar.bg3-se-snippets)** : Code snippets for the Baldur's Gate 3 script extender, mainly events listeners.
 *   **[BG3-GUIDinfos](https://marketplace.visualstudio.com/items?itemName=FallenStar.bg3guidinfos)** : Provides information about hovered GUIDs.
 
-### [Image & Texture Creation & Editing](https://www.gimp.org/downloads/)
+### [Image & Texture Creation & Editing](https://wiki.bg3.community/en/Tools/Image-Editing-Tools)
 
-*   **GIMP**: An open-source image editor that can handle a wide range of image formats and is useful for creating and editing textures.
+*   [**GIMP**](https://www.gimp.org/downloads/): An open-source image editor that can handle a wide range of image formats and is useful for creating and editing textures.
 *   **Photoshop**: A professional-grade image editor with extensive features for creating high-quality textures and other graphics.
 
 ### [3D Modeling & Animation](https://www.blender.org/download/)
