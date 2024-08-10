@@ -2,7 +2,7 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2024-08-10T08:26:53.846Z
+date: 2024-08-10T08:54:24.394Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
@@ -16,8 +16,8 @@ This area is not for tutorials but general information, if you would like to kno
 <!-- For the sake of organisation the information here has been devided up into sections: **Core**, **Scripting**, **Meshes**, **Textures**, **Sound**, and **Gameplay**. -->
 
 
-Core Information
--
+## Core Information
+
 
 - [Fundamentals](/Information/fundamental)
 - [Osiris](Osiris) 
@@ -26,7 +26,8 @@ Core Information
 
 Scripting
 -
-- [Lua](/Information/Lua)
+<!-- - [Lua](/Information/Lua) -->
+- [Lua](/Tutorials/ScriptExtender/the_basics_of_lua)
 
 
 Gameplay
@@ -41,8 +42,8 @@ Meshes
 
 Textures
 -
-- [Textures](Textures)
-- [Icons](Icons)
+- [Textures](/Information/Textures)
+- [Icons](Tutorials/Icons/Icon-Creation)
 
 Sound
 -
