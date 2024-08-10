@@ -2,7 +2,7 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2024-08-10T07:34:16.901Z
+date: 2024-08-10T07:37:19.078Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
@@ -17,7 +17,7 @@ This area is not for tutorials but general information, if you would like to kno
 
 
 ## Pages
-- [Fundamentals](Fundamentals)
+- [Fundamentals](Fundamental)
 - [Icons](Icons)
 - [Items](/Information/Items)
 - [Locations](/Information/Locations)
