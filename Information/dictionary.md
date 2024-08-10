@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-08-09T15:08:25.745Z
+date: 2024-08-10T15:57:36.747Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -162,7 +162,7 @@ V
 *   **Vortex** - Nexusmods' Mod Manager.
 *   **Visual bank entry** - A reference to a visual asset in the game.
 *   **Visual Studio Code (VSCode)** - Free code editor created by Microsoft. Commonly used in the community, with several extensions available specifically for BG3 modding.
-*   **Visual Studio Codium (VSCodium)** - An open source version of VSCode
+*   **Visual Studio Codium (VSCodium)** - An open source alternative for VSCode
 *   **VT** - Virtual Texture
 
 W
