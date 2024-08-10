@@ -1,8 +1,8 @@
 ---
-title: fundamental
-description: Information that applies to many types of mods
+title: Fundamentals
+description: The basics of BG3 modding
 published: true
-date: 2024-08-10T07:26:22.987Z
+date: 2024-08-10T07:27:42.298Z
 tags: information
 editor: markdown
 dateCreated: 2024-05-03T16:25:58.320Z
