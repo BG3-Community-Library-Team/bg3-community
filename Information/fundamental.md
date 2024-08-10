@@ -2,7 +2,7 @@
 title: fundamental
 description: Information that applies to many types of mods
 published: true
-date: 2024-08-10T07:26:17.936Z
+date: 2024-08-10T07:26:22.987Z
 tags: information
 editor: markdown
 dateCreated: 2024-05-03T16:25:58.320Z
