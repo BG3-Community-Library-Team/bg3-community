@@ -2,13 +2,14 @@
 title: Changing Character Visuals
 description: A tutorial on how to change any non-Tav character appearance.
 published: false
-date: 2024-05-18T22:11:20.645Z
+date: 2024-08-11T20:28:25.597Z
 tags: visual, tutorial, vscode
 editor: ckeditor
 dateCreated: 2024-05-13T01:04:29.106Z
 -->
 
 <p>This tutorial will walk you through changing any non-Tav Character (Origin Characters, Companions, NPCs) through the CharacterVisuals .lsf file with resources.</p>
+<p>This tutorial assumes that the reader knows basic modding knowledge.</p>
 <h2>Important Tools</h2>
 <ol>
   <li><a href="https://github.com/ShinyHobo/BG3-Modders-Multitool">BG3 Multi-Tool</a> by ShinyHobo<ul>
@@ -32,9 +33,10 @@ dateCreated: 2024-05-13T01:04:29.106Z
 </ol>
 <h2>Outlining Your Strategy</h2>
 <ul>
-  <li>Creating a .pak folder</li>
-  <li>Writing down the needed changes and finding the necessary UUIDs</li>
-  <li>Extracting all necessary .lsf files for reference</li>
+  <li>Creating the mod folder</li>
+  <li>Writing down the needed changes and finding the required UUIDs for each change</li>
+  <li>Finding the Character's CharacterVisuals</li>
+  <li>Extracting and opening up all necessary .lsf files for reference</li>
   <li>Creating a new _merged with all the changed UUIDs</li>
   <li>Packaging the folder</li>
 </ul>
@@ -43,18 +45,36 @@ dateCreated: 2024-05-13T01:04:29.106Z
 <p>As an example, Astarion uses the 13082f1f-d9ea-be63-ba1a-a5c682123e02 UUID in the hair parameter, which references the HAIR_HUM_M_Astarion.GR2.</p>
 <p>As a reference, you can search up <a href="https://wiki.bg3.community/en/Information/Notable-NPCs">Notable NPCs</a> and take a look at their visual resource.</p>
 <h2>File Setup</h2>
-<p>To create a .pak folder for this mod, you can use this blank template here.</p>
+<p>To create a .pak folder for this mod, you can use this blank template here which will require changing the “YourModName_Here” to the mod's custom name.</p>
 <h2>CharacterVisuals</h2>
 <p>The [PAK]_CharacterVisuals lsf (Filename<i>: _</i>merged) includes visuals of all non-Tav characters in game, one can find most characters by searching up their names. In some cases the character can be referred to by another name, such as Minthara being referred to as “DrowCommander”.</p>
-<p>After finding the intended character, you must create a new _merged.lsf that includes the character's visual resources. Some characters have multiple visual resources (accounting for multiple appearances) so make sure you have every visual resource in game for that character.</p>
-<p>You must copy and paste all the parameters, even the ones you do not want to edit, as removing any parameter will cause the object to not load in at all. This means that any other mod that edits the same character will likely conflict by default.</p>
-<h2>UUIDS</h2>
-<p>You can trace Character Creation preset objects through their name in game. If one wants to find the UUID for Skintone:Warm Tone 9:</p>
+<p>If such is the case, one can trace back the character through this method:</p>
 <ol>
-  <li>Search up “Warm Tone 9” in the Multi-Tool and open the english.loca</li>
-  <li>Search “Warm Tone 9” in the english.loca file until you find the DisplayName UUID “h94c0aa00g98c3g4114ga186g7d02ce6cb8c4”</li>
-  <li>Search the UUID in the index to find its original file, which is CharacterCreationSkinColors.lsf.</li>
-  <li>Search in CharacterCreationSkinColors.lsf the UUID until you find it's node, in which you find the MaterialPresetUUID which is what mostly is required.</li>
+  <li>Click “Search Index” on BGMM</li>
+  <li>Search up the Character's name (In this case, Arabella)</li>
+  <li>Find/Filter the search by .loca files and click on <strong>english.loca</strong></li>
+  <li>Search the Character's name in the .loca (Searching the name <strong>&gt;Arabella&lt;</strong> like this narrows down the text handle that is not dialogue related)</li>
+  <li>The search will yield two text handles, one that leads to JournalMarker and one that leads to <strong>WLD_Main_A</strong>. The required UUID is in the latter as it is where Arabella spawns.</li>
+  <li>Opening <strong>WLD_Main_A</strong> will show various character parameters. Using the text handle, it will go to Arabella's parameters, in which she is referenced as <strong>DEN_SnakeKid</strong> in the code.</li>
+  <li>The required UUID for Arabella's CharacterVisuals is:<ul>
+      <li><code>&lt;attribute id="CharacterVisualResourceID" type="FixedString" value="<strong>94eb1315-258b-999e-8193-0bdd9e2784ba</strong>" /&gt;</code></li>
+    </ul>
+  </li>
+  <li>The above UUID will lead you to where Arabella's CharacterVisuals are.</li>
+</ol>
+<p>After finding the intended character, you must create a new <strong>_merged.lsx </strong>(to be later converted as lsf)<strong> </strong>that includes the character's visual resource. Some characters have multiple visual resources (accounting for multiple appearances, Origin Characters tend to have up to eight parameters) so make sure you have every visual resource in game for that character.</p>
+<p>You must copy and paste all the parameters before applying any edits, even parameters that are left unedited for the CharacterVisual to fully function. This means that any other mod that edits the same character will conflict by default.</p>
+<h2>Vanilla Presets</h2>
+<p>You can trace Character Creation preset objects through their name in game in the same manner as above.</p>
+<p>If one wants to find the UUID for Skintone: Warm Tone 9:</p>
+<ol>
+  <li>Search up “Warm Tone 9” in the BGMM and open the <strong>english.loca</strong></li>
+  <li>Search “Warm Tone 9” in the <strong>english.loca</strong> file until you find the DisplayName UUID:<ul>
+      <li>&nbsp;h94c0aa00g98c3g4114ga186g7d02ce6cb8c4</li>
+    </ul>
+  </li>
+  <li>Search the UUID in the index to find its original file, which is <strong>CharacterCreationSkinColors.lsf</strong>.</li>
+  <li>Search in <strong>CharacterCreationSkinColors.lsf</strong> the UUID until you find it's node, in which you can find the <strong>MaterialPresetUUID</strong> which is what mostly is required.</li>
   <li>If further is needed, you can search its UUID to pinpoint the original file of the object with its assigned materials.</li>
 </ol>
 <h2>Parameters</h2>
@@ -276,7 +296,8 @@ dateCreated: 2024-05-13T01:04:29.106Z
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;attribute id="Slot" type="FixedString" value="Private Parts" /&gt;</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;attribute id="VisualResource" type="FixedString" value="UUID" /&gt;</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/node&gt;</p>
-<h2>Walkthrough</h2>
+<h2>Custom Content</h2>
+<p>If one wants to switch a character's parameter with a custom/modded object, not from vanilla game, they must add the asset within the mod's folder, and use the assigned UUID to custom asset to put in the CharacterVisuals.</p>
 <h2>Finalising</h2>
 <p>After finishing editing the .lsx, it's time to convert it back to .lsf with the LSLib Tookilt.</p>
 <p>Import the mod to ModManager, and all changes should be visible in game.</p>
@@ -295,7 +316,7 @@ dateCreated: 2024-05-13T01:04:29.106Z
   </li>
   <li><strong>The hair/horns/armour is not correctly fitted.</strong>
     <ul>
-      <li>There are multiple meshes for multiple objects, either pinpoint the exact race/gender mesh for your character or find the closest approximation (Masc Tiefling can use Human Meshes for example)</li>
+      <li>There are multiple meshes for multiple objects, either pinpoint the exact race/gender mesh for your character or find the closest approximation (Masc Tiefling can use Masc Human Meshes for example)</li>
     </ul>
   </li>
 </ol>
