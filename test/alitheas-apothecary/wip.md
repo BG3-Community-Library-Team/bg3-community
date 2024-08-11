@@ -2,61 +2,60 @@
 title: wip
 description: 
 published: false
-date: 2024-08-09T07:11:01.707Z
+date: 2024-08-11T11:02:10.347Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
 ---
 
 # Timeline Editing (Working Title)
-Guide on how to change Dialogue and Cinematics by Milo Magnetuning
+Hi there! Welcome to Milo Magnetuning's guide to dialogue files.
+
+AlitheaAncunín helped with the editing/proofreading for this—thank you so much! What was once a novella is now a much more reasonable guide.
+
 ## Requirements
 
 ### Tools
 
 - [LSLib](https://github.com/Norbyte/lslib)
-- code editor, i recommend [VSCode](https://code.visualstudio.com/)
-- [BG3 Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool/wiki/General-Usage) (for finding files, the multitool can have issues processing dialog files so i Dont recommend packing them with it)
-- my [dialog timeline updater](https://www.nexusmods.com/baldursgate3/mods/11295) or similar python script to update things like start and end times, effect component IDs, etc
-- an extracted localization file to reference your dialog
-- not necessary but highly recommended - [parsed dialog files}(https://www.tumblr.com/roksik-dnd/727481314781102080/bg3-datamined-dialogue-google-drive)
+- A code editor, I recommend [VSCode](https://code.visualstudio.com/)
+- [BG3 Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool/wiki/General-Usage) (For finding files. The multitool can have issues processing dialog files, so I don't recommend packing them with it)
+- My [dialog timeline updater](https://www.nexusmods.com/baldursgate3/mods/11295) or similar python script to update things like start and end times, effect component IDs, etc
+- An extracted localization file to reference your dialog
+- Not necessary but highly recommended: The [parsed dialog files](https://www.tumblr.com/roksik-dnd/727481314781102080/bg3-datamined-dialogue-google-drive) made by roksik-dnd on Tumblr
 
-skills:
-- basic knowledge of BG3 modding, but especially unpacking and converting .lsf files
-- basic knowledge of using LSLib and the Multitool index
-- basic knowledge of conditional statements in code (so it's easier to understand how bg3 dialog flags work)
-## So, What Goes Into Dialogue in Baldur’s Gate 3?
+### Skills
+- Basic knowledge of BG3 modding, but especially unpacking and converting .lsf files
+- Basic knowledge of using LSLib and the Multitool index
+- Optional, but will help a lot: a basic understanding of conditional statements in code, which the game uses to test dialog trees
 
-Dialogue in the game is handled by a lot of files, some of which I’m still looking into, but the main ones this tutorial will focus on, and the ones you need to edit existing game dialogue are the following:
+Let's get started, shall we?
 
--   DialogsBinary files
--   Dialog Timeline files
--   Dialog Scene files
+## What Goes Into Dialog in Baldur’s Gate 3?
 
-There are two more files you will need to add new dialogue files—which *is* possible, by the way! And you can see an example of that here:
+There's five files specific to dialog in the game, which will all need to be present when creating new scenes—but you may not need all of them when editing existing dialog!
 
+These dialog-specific files are as follows:
 
-The two files you'll need for adding entirely new dialogue to the game are:
-
-- Generated Dialog Timelines
+- DialogsBinary files
+- Dialog Timeline files
+- Dialog Scene files
+- GeneratedDialogTimelines
 - Dialog Assets
 
-You'll need extra files to add new voice lines, which I'll be providing in a separate guide for this wiki too.
+The first three files are most likely what you'll be editing! They contain the bulk of the information needed to play a scene. The GeneratedDialogTimelines file and the Dialog Assets files are what help the game reference the first three files, and are necessary when creating new scenes and sets of dialog, but you might not be editing them as frequently for existing scenes.
 
-This tutorial will break down each of these files, and how to edit them. <!--I've provided an annotated sample mod and a mirror of some of this tutorial on Nexusmods, which you can find here! The sample mod breaks each element in the code down line by line, and can serve as a reference for the files as well.-->
+The first three files for a given scene/conversation will share the same file name, with the Scene files just having the word Scene appended to that name. The GeneratedDialogTimelines and Dialog Assets files, are merged files, with many entries for each set of dialog in the game.
 
 > A note on deprecated files:{.is-warning}
 
 You'll likely find Dialog.lsj files with that same file name when extracting the files, as well as an extra Dialog Scene file with the .lsx file extension. These files are both deprecated! (The Dialog Scene files with the .lsf file extension are what you'll need to edit, NOT the .lsx files. Yes, confusing, I know.)
 
-These deprecated files genuinely do nothing. You don't need to edit them or include them in your mods at all, and I do not recommend you do so. You can create fully functional new dialogue without them, so they really do just, nothing.
+These files genuinely do nothing—even entirely new scenes, with neither of these files existing for them in the vanilla game will play just fine without them! You don't need to edit them or include them in your mods at all, and I do not recommend you do so.
 
-Thank you very much to <a href="https://next.nexusmods.com/profile/Joell560/about-me">Joell560</a> on Nexusmods for letting me know the files were deprecated! You've saved me a ton of hassle trying to recreate my changes in both files, and it's genuinely saved me so much time.
+Thank you very much to <a href="https://next.nexusmods.com/profile/Joell560/about-me">Joell560</a> on Nexusmods for letting me know the files were deprecated! You've saved me a ton of time and headaches trying to recreate my changes in both files, and I'm very grateful for it.
 
-The Dialogs .lsj files aren't necessary for creating new dialog, either! They really don't seem to do anything in the game. I'd recommend not including them in your mods at all.
-
-
-Now, let's start breaking down the file, starting with the Dialog Timeline files.
+You'll also need extra files to add new voice lines, which I'll be providing in a separate guide for this wiki too.
 
 ### A Summary of Dialog Timeline Files
 
