@@ -2,7 +2,7 @@
 title: draft - Tools
 description: A list of pages relating to tools, as well as a list of links to useful tools.
 published: false
-date: 2024-08-10T16:42:27.254Z
+date: 2024-08-11T05:15:23.942Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
@@ -14,7 +14,7 @@ The following is a list of tools that can be used to mod BG3. Please note that t
 
 - [LSLib](https://github.com/Norbyte/lslib) - essential for handling various file formats used in the game, allowing you to extract, convert, and pack files for modding purposes
 
-- [BG3 Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool) - quickly generate .paks from an unpacked workspace, unpack mods, browse and extract game files, among other functions
+- [BG3 Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool) - quickly generate .paks from an unpacked workspace, unpack mods, index, browse and extract game files, among other functions
 
 # Code editing
 
@@ -66,6 +66,8 @@ The following is a list of tools that can be used to mod BG3. Please note that t
 
 # Miscellaneous tools
 - [Notepad++](https://notepad-plus-plus.org/downloads/): - versatile text editor that supports many programming languages and is useful for editing scripts and configuration files
+- [Obsidian](https://obsidian.md/) - project management app, free for personal use, supports markdown editing
+- [Notion](https://www.notion.so) - project management app, free for personal use
 
 
 
