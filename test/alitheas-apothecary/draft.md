@@ -2,7 +2,7 @@
 title: draft - private parts
 description: 
 published: true
-date: 2024-08-14T19:54:58.651Z
+date: 2024-08-14T19:56:30.033Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
