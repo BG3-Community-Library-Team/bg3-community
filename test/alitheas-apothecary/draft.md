@@ -2,7 +2,7 @@
 title: draft - private parts
 description: 
 published: true
-date: 2024-08-14T18:00:59.870Z
+date: 2024-08-14T18:02:22.036Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
@@ -176,7 +176,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 107   | Vulva     | DGB_F_NKD_Body_Genital_A  | 7068217d-28ba-4b82-81c5-c77809c16a0d     | 9c61a74a-20df-4119-89c5-d996956b6c66      | 5327907a-36dd-7c0a-a4c5-328f4fe1e558  |
 | 108   | Default   |                           | f3735e8a-178c-4d00-92d7-5cf784a9ee35     | 9c61a74a-20df-4119-89c5-d996956b6c66      | 5327907a-36dd-7c0a-a4c5-328f4fe1e558  |
 
-## Penis
+## Vanilla Penis
 
 ![soon_tm.webp](/test/alithea/soon_tm.webp)
 
