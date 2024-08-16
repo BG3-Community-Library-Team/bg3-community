@@ -2,7 +2,7 @@
 title: Creating a meta.lsx file
 description: 
 published: true
-date: 2024-08-08T15:48:06.324Z
+date: 2024-08-16T20:24:57.245Z
 tags: modding, creating mods
 editor: markdown
 dateCreated: 2024-05-04T18:14:40.394Z
@@ -41,7 +41,9 @@ The only time your mod won't need a meta.lsx if it is classed as a basegame over
 
 Here is the template for meta.lsx. Just paste this into the meta.lsx file you created earlier, and then follow the instructions to edit the template.
 
-`<?xml version="1.0" encoding="UTF-8"?>
+```
+
+<?xml version="1.0" encoding="UTF-8"?>
 <save>
    <version major="4" minor="0" revision="9" build="331"/>
    <region id="Config">
@@ -82,6 +84,8 @@ Here is the template for meta.lsx. Just paste this into the meta.lsx file you cr
        </node>
    </region>`
 </save>
+
+```
 
 Let's go over the lines you want to edit:
 
