@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-08-16T04:08:01.357Z
+date: 2024-08-16T04:08:33.105Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -142,7 +142,7 @@ Following are the main components of the MCM schema. Don't stress over this too 
       - `Choices`: The options to be made available for `enum` and `radio` types.
       - `Min` and `Max`: Boundary values for types such as `slider`/`drag`.
       - `Multiline`: Whether the text input should be multiline, used for `text` type.
-    - `VisibleIf`: Allows defining a simple boolean expression that determines the visibility of a setting (also tab or section) based on the values of other settings. NOTE: this still does not work in the main menu.
+    - `VisibleIf`: Allows defining a simple boolean expression that determines the visibility of a setting (also tab or section) based on the values of other settings. NOTE: this might not work in the main menu as of 1.10; 
 
 Thus, the main content of the blueprint is defined in the `Tabs` and `Settings` properties. You'll need to include at least one of these - either a list of tabs, or a list of standalone settings. However, for now, only defining a Settings array is not properly supported. Versions 1.10+ might be able to handle it correctly.
 Within each tab, you can define either `Sections` or a list of `Settings`. Sections provide a way to group related settings together under a header.
