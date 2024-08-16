@@ -2,18 +2,16 @@
 title: draft - private parts
 description: 
 published: true
-date: 2024-08-16T20:09:10.910Z
+date: 2024-08-16T20:19:23.286Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
 ---
 
-# Genitalia
-
-## Vanilla Vulvas
+# Vanilla Vulvas
 
 
-### Dwarf
+## Dwarf
 
 | Index | Name    | Visual                          | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|---------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -24,7 +22,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 5     | Default | DWR_M_NKD_Body_Genital_A        | bb9227ca-72e7-4381-96bd-0f8ebc94c301 | 0ab2874d-cfdc-405e-8a97-d37bfbb23c52 | dc9f7e94-a634-2009-5788-775e4ef26d62 |
 | 6     | Vulva_B | DWR_M_NKD_Body_Genital_A_NoHair | 065b37d7-55c7-4f6f-93a7-b76aeb366deb | 0ab2874d-cfdc-405e-8a97-d37bfbb23c52 | 7d4a9298-0e8c-465f-cbb1-428fc93a5aca |
 
-### Elves
+## Elves
 
 | Index | Name    | Visual                              | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|------------------------------------ |--------------------------------------|--------------------------------------|--------------------------------------|
@@ -44,7 +42,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 20    | Vulva_B | HUM_MS_NKD_Body_Genital_A           | 3f7f1f74-deea-4669-a5a5-b39ffb099a64 | 6c038dcb-7eb5-431d-84f8-cecfaf1c0c5a | dfcd4686-8b3c-23c2-e8b4-d82f2e659bd2 |
 | 21    | Vulva_C | HUM_MS_NKD_Body_Genital_A_BushyHair | 60679d59-6fc1-4f89-8edc-bfa2980bf216 | 6c038dcb-7eb5-431d-84f8-cecfaf1c0c5a | 8fbe3573-ba17-4956-35e4-101fc465c030 |
 
-### Drow
+## Drow
 
 | Index | Name    | Visual                              | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|------------------------------------ |--------------------------------------|--------------------------------------|--------------------------------------|
@@ -64,7 +62,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 35    | Vulva_B | HUM_MS_NKD_Body_Genital_A           | f67dfbcf-67a6-406c-a064-0902c3d3689c | 4f5d1434-5175-4fa9-b7dc-ab24fba37929 | 04385805-06e7-8730-b578-497defc185c1 |
 | 36    | Vulva_C | HUM_MS_NKD_Body_Genital_A_BushyHair | 4abf0621-2056-4e51-9b12-53fba19791bb | 4f5d1434-5175-4fa9-b7dc-ab24fba37929 | 8fbe3573-ba17-4956-35e4-101fc465c030 |
 
-### Gnomes
+## Gnomes
 
 | Index | Name    | Visual                          | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|---------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -75,7 +73,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 41    | Default | GNO_M_NKD_Body_Genital_A        | 33e8878b-a61e-49c7-a30e-14a2ab0ef00f | f1b3f884-4029-4f0f-b158-1f9fe0ae5a0d | 5bd79b62-0a52-3d03-88f2-6183ab3d0e83 |
 | 42    | Vulva_B | GNO_M_NKD_Body_Genital_A_NoHair | da5a2106-3830-4c23-844a-bf875619abdf | f1b3f884-4029-4f0f-b158-1f9fe0ae5a0d | 4adbec4e-e3a3-fdd6-d010-a9c29b133472 |
 
-### Githyanki
+## Githyanki
 
 | Index | Name    | Visual                   | Genital ID                            | Race ID                              | Visual ID                            |
 |-------|---------|--------------------------|---------------------------------------|--------------------------------------|--------------------------------------|
@@ -86,7 +84,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 47    | Default | GTY_M_NKD_Body_Genital_A | 4a56c372-1135-451b-9557-01786af9837d  | bdf9b779-002c-4077-b377-8ea7c1faa795 | c3a7effc-3965-b971-cdb6-74ee23769411 |
 | 48    | Vulva_B | GTY_M_NKD_Body_Genital_E | 03d1360a-a751-4e45-83fb-0d541cc85600  | bdf9b779-002c-4077-b377-8ea7c1faa795 | 006c45c1-5a82-48f8-f965-a665613f9ce6 |
 
-### Halflings
+## Halflings
 
 | Index | Name    | Visual                          | Genital ID                            | Race ID                              | Visual ID                            |
 |-------|---------|---------------------------------|---------------------------------------|--------------------------------------|--------------------------------------|
@@ -97,7 +95,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 53    | Default | HFL_M_NKD_Body_Genital_A        | 276620bf-43f9-4da8-80f6-ce600e2064a6  | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04 | 57de58a5-7cc1-10ca-d287-bf6f03870bab |
 | 54    | Vulva_B | HFL_M_NKD_Body_Genital_A_NoHair | 650a7a6e-b386-479c-8590-1092f2b8c708  | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04 | b38cbf42-d792-06f2-9f5f-a08ac691fd80 |
 
-### Half-Orcs
+## Half-Orcs
 
 | Index | Name    | Visual                          | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|---------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -108,7 +106,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 59    | Default | HRC_M_NKD_Body_Genital_A        | b8d2d678-7fde-4c72-8651-6b244ea5efd1 | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | b1392667-7883-8206-a2ef-207d5c3bda91 |
 | 60    | Vulva_B | HRC_M_NKD_Body_Genital_A_NoHair | dab5269f-6529-479f-9ff2-a59261082a1a | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | de1498ff-c91e-f53c-f1b3-84b691a2d0a6 |
 
-### Humans
+## Humans
 
 | Index | Name    | Visual                              | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|------------------------------------ |--------------------------------------|--------------------------------------|--------------------------------------|
@@ -128,7 +126,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 74    | Vulva_B | HUM_MS_NKD_Body_Genital_A_BushyHair | 6c66f0c4-9088-4e33-893a-fb39d10c919d | 0eb594cb-8820-4be6-a58d-8be7a1a98fba | cf9d8104-76f1-54fc-259b-603316dc471b |
 | 75    | Vulva_C | HUM_MS_NKD_Body_Genital_A_NoHair    | 6a362b5a-956d-4954-8837-d22cf0e754d5 | 0eb594cb-8820-4be6-a58d-8be7a1a98fba | 377c65af-58f8-923d-b12b-f395dbd31c3c |
 
-### Half-Elves
+## Half-Elves
 
 | Index | Name    | Visual                              | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|-------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -147,7 +145,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 88    | Vulva_B | HUM_MS_NKD_Body_Genital_A_BushyHair | 706f8ace-a1cb-4e10-b93e-40f799684933 | 45f4ac10-3c89-4fb2-b37d-f973bb9110c0 | cf9d8104-76f1-54fc-259b-603316dc471b |
 | 89    | Vulva_C | HUM_MS_NKD_Body_Genital_A_NoHair    | 60cf4491-79c9-4c2b-a4c2-3773e76200f4 | 45f4ac10-3c89-4fb2-b37d-f973bb9110c0 | 377c65af-58f8-923d-b12b-f395dbd31c3c |
 
-### Tieflings
+## Tieflings
 
 | Index | Name    | Visual                             | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -167,7 +165,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 103   | Vulva_B | TIF_MS_NKD_Body_Genital_A_BushyHair| 402a5db2-63e9-4ec5-b710-7f71d1f24952 | b6dccbed-30f3-424b-a181-c4540cf38197 | f61a348a-6eb9-1045-3929-34dc45b84231 |
 | 104   | Vulva_C | TIF_MS_NKD_Body_Genital_A_Hair     | a0e977bb-17be-4cd1-a371-0841f0c93125 | b6dccbed-30f3-424b-a181-c4540cf38197 | 02686c9f-98a0-6d2a-1351-c9bd50112600 |
 
-### Dragonborn
+## Dragonborn
 
 | Index | Name    | Visual                   | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|-------- |--------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -176,9 +174,9 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 107   | Vulva   | DGB_F_NKD_Body_Genital_A | 7068217d-28ba-4b82-81c5-c77809c16a0d | 9c61a74a-20df-4119-89c5-d996956b6c66 | 5327907a-36dd-7c0a-a4c5-328f4fe1e558 |
 | 108   | Default |                          | f3735e8a-178c-4d00-92d7-5cf784a9ee35 | 9c61a74a-20df-4119-89c5-d996956b6c66 | 5327907a-36dd-7c0a-a4c5-328f4fe1e558 |
 
-## Vanilla Penises
+# Vanilla Penises
 
-### Dwarves
+## Dwarves
 
 | Index | Name    | Visual                          | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|---------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -193,7 +191,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 9     | Penis_C | DWR_M_NKD_Body_Genital_C        | 77f5921c-9402-404e-b7d2-8d22368b2a39 | 0ab2874d-cfdc-405e-8a97-d37bfbb23c52 | bc8cc519-e763-ad13-85c3-ec07c66a3e96 |
 | 10    | Penis_D | DWR_M_NKD_Body_Genital_C_NoHair | 81504ba2-af71-4c80-b6c5-606ea5141302 | 0ab2874d-cfdc-405e-8a97-d37bfbb23c52 | 57ce0800-dacd-5c96-623e-e609f7f87720 |
 
-### Elves
+## Elves
 
 | Index | Name    | Visual                              | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|------------------------------------ |--------------------------------------|--------------------------------------|--------------------------------------|
@@ -222,7 +220,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 33    | Penis_E | HUM_MS_NKD_Body_Genital_C_NoHair    | 3af68ffc-c773-4dcc-83ef-3444f534281c | 6c038dcb-7eb5-431d-84f8-cecfaf1c0c5a | af26118c-92b0-166e-3ea4-19d202872daf |
 
 
-### Drow
+## Drow
 
 | Index | Name    | Visual                             | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -250,7 +248,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 55    | Penis_D | HUM_MS_NKD_Body_Genital_C          | e0e799ff-ac83-4d5c-9379-c57b60639b2a | 4f5d1434-5175-4fa9-b7dc-ab24fba37929 | 88563fa3-1336-cf6d-becf-32416713e9ab |
 | 56    | Penis_E | HUM_MS_NKD_Body_Genital_C_NoHair   | d2747199-8e72-48d4-b8aa-486df858cf67 | 4f5d1434-5175-4fa9-b7dc-ab24fba37929 | af26118c-92b0-166e-3ea4-19d202872daf |
 
-### Gnomes
+## Gnomes
 
 | Index | Name    | Visual                          | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|---------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -265,7 +263,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 65    | Penis_C | GNO_M_NKD_Body_Genital_C        | 6059c226-df0b-4922-9ae5-50e104a0072c | f1b3f884-4029-4f0f-b158-1f9fe0ae5a0d | 1d85c4d4-c52b-d5ac-80a3-ed33604c7446 |
 | 66    | Penis_D | GNO_M_NKD_Body_Genital_C_NoHair | 52a0aee8-e98d-4fcc-acb4-ea8dbad14961 | f1b3f884-4029-4f0f-b158-1f9fe0ae5a0d | 03b207d6-e64d-3f49-01b7-971bc6bbd7b7 |
 
-### Githyanki
+## Githyanki
 
 | Index | Name    | Visual                          | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|---------|---------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -280,7 +278,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 75    | Penis_C | GTY_M_NKD_Body_Genital_C        | 6ccb126e-c538-4b87-ae88-c413f09b5df1 | bdf9b779-002c-4077-b377-8ea7c1faa795 | d4ec9107-665e-21ec-a474-7434bda277b6 |
 | 76    | Penis_D | GTY_M_NKD_Body_Genital_C_NoHair | 2f8e9781-2120-4de0-a2d7-593176a02545 | bdf9b779-002c-4077-b377-8ea7c1faa795 | 16f1885d-f62a-e1c7-e9e3-ebd4fbb37523 |
 
-### Halflings
+## Halflings
 
 | Index | Name    | Visual                          | Genital ID                           | Race ID                               | Visual ID                            |
 |-------|---------|---------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|
@@ -295,7 +293,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 85    | Penis_C | HFL_M_NKD_Body_Genital_C        | 451aeb50-f74c-4118-ac2c-1719c7512f63 | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04  | f9f28af9-1230-78cb-8bea-dce548510685 |
 | 86    | Penis_D | HFL_M_NKD_Body_Genital_C_NoHair | 290fcca7-2332-4d74-a3db-572fbac086e1 | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04  | 16fe6d00-d48d-2dd0-9adf-c60f19ed7657 |
 
-### Half-Orcs
+## Half-Orcs
 
 | Index | Name     | Visual                          | Genital ID                           | Race ID                              | Visual ID                            |
 |-------|----------|---------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -310,7 +308,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 95    | Penis_C  | HRC_M_NKD_Body_Genital_C        | 97ab3ef3-11a6-4b1d-88d5-4de83a405edb | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | ab0b3c35-d773-5512-dc09-f99655568f48 |
 | 96    | Penis_D  | HRC_M_NKD_Body_Genital_C_NoHair | 79476476-624d-4c53-a1a8-64c87616ca84 | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | e8eb488a-f7a9-edb6-d6d2-c5070742e549 |
 
-### Humans
+## Humans
 
 | Index | Name     | Visual                                | Genital ID                              | Race ID                                  | Visual ID                                |
 |-------|----------|---------------------------------------|-----------------------------------------|------------------------------------------|------------------------------------------|
@@ -338,7 +336,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 118   | Penis_D  | HUM_MS_NKD_Body_Genital_C              | 56fe81c9-cdbd-4af7-ae80-83d38ba7e38c    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | ab4600f0-ed82-1639-6386-0e3f2f1ae917     |
 | 119   | Penis_E  | HUM_MS_NKD_Body_Genital_C_NoHair       | 4739cfc3-29cc-484d-9095-8531b7ee1fcd    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 8648179b-d698-7e41-1391-26d0c811655d     |
 
-### Half-Elves
+## Half-Elves
 
 | Index | Name     | Visual                                | Genital ID                              | Race ID                                  | Visual ID                                |
 |-------|----------|---------------------------------------|-----------------------------------------|------------------------------------------|------------------------------------------|
@@ -365,7 +363,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 140   | Penis_C  | HUM_MS_NKD_Body_Genital_B_NoHair       | 3
 
 
-### Tieflings
+## Tieflings
 
 | Index | Name    | Visual                              | GenitalID                            | RaceID                               | VisualID                             |
 |-------|---------|-------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
@@ -389,7 +387,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | 160   | Penis_C | TIF_MS_NKD_Body_Genital_C_BushyHair | 40cae433-5db0-47be-a068-50a996424e3e | b6dccbed-30f3-424b-a181-c4540cf38197 | 8310e4da-6f03-a981-86a2-60273755d52b |
 | 161   | Penis_D | TIF_MS_NKD_Body_Genital_C_NoHair    | 66bb2f27-a505-4ebc-9eb8-0aa365ec862f | b6dccbed-30f3-424b-a181-c4540cf38197 | 245e173f-4fda-26cb-77cc-99a59a74be2e |
 
-### Dragonborn
+## Dragonborn
 
 | Index | Name    | Visual                   | GenitalID                            | RaceID                               | VisualID                             |
 |-------|---------|--------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
