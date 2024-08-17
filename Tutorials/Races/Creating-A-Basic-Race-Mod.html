@@ -2,7 +2,7 @@
 title: Creating A Basic Race Mod
 description: 
 published: true
-date: 2024-08-17T22:53:06.090Z
+date: 2024-08-17T22:54:08.877Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-07-22T13:11:31.834Z
@@ -43,3 +43,40 @@ dateCreated: 2024-07-22T13:11:31.834Z
 <p>As you can see, there are only two lines defined here, one for the Name of the race and one for the Description. But you can add as many more lines as you want and connect them to various parts of your code.</p>
 <h2>meta.lsx</h2>
 <p>As there's already a dedicated page for creating a meta.lsx, we'll <a href="https://wiki.bg3.community/en/Tutorials/General/creating_meta">send you over there</a>. Once you understand how the meta works and what it does, come back here.</p>
+<h2>CharacterCreationPresets.lsx</h2>
+<pre><code class="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;save&gt;
+    &lt;version major="4" minor="0" revision="9" build="313"/&gt;
+    &lt;region id="CharacterCreationPresets"&gt; &lt;!-- This is the file that tells the game important information about what body types need to show up in CC for your race. --&gt;
+        &lt;node id="root"&gt;
+            &lt;children&gt;
+                &lt;node id="CharacterCreationPreset"&gt; &lt;!-- Female Standard --&gt;
+                    &lt;attribute id="BodyShape" type="uint8" value="0"/&gt; &lt;!-- 0 = Standard --&gt;
+                    &lt;attribute id="BodyType" type="uint8" value="1"/&gt; &lt;!-- 1 = Female --&gt;
+                    &lt;attribute id="CloseUpA" type="LSString" value="ELF_F_Camera_Closeup_A"/&gt; &lt;!-- Cameras for zooming in in CC --&gt;
+                    &lt;attribute id="CloseUpB" type="LSString" value="ELF_F_Camera_Closeup_B"/&gt; &lt;!-- ^ --&gt;
+                    &lt;attribute id="Overview" type="LSString" value="ELF_F_Camera_Overview_A"/&gt; &lt;!-- ^ --&gt;
+                    &lt;attribute id="RaceUUID" type="guid" value="3328d981-bf97-4e50-8961-fef8cd80c67e"/&gt; &lt;!-- Race ID from races.lsx --&gt;
+                    &lt;attribute id="RootTemplate" type="guid" value="7f52aa3a-40cf-4f75-b190-e773726a8939"/&gt; &lt;!-- Root template from Race_Root_Templates.lsf.lsx --&gt;
+                    &lt;attribute id="SubRaceUUID" type="guid" value="00000000-0000-0000-0000-000000000000"/&gt; &lt;!-- Subrace ID from races.lsx, 00000000-0000-0000-0000-000000000000 if no subrace --&gt;
+                    &lt;attribute id="UUID" type="guid" value="04c52da3-cc33-4f63-88b4-462cdc7ebacc"/&gt; &lt;!-- UUID that tells the game this is its own unique object. Regenerate this before publishing the mod! --&gt;
+                    &lt;attribute id="VOLinesTableUUID" type="guid" value="14df8f45-90af-4bd0-8024-42624da9976e"/&gt; &lt;!-- ? What does this do? --&gt;
+                &lt;/node&gt;
+                &lt;node id="CharacterCreationPreset"&gt; &lt;!-- Male Standard --&gt;
+                    &lt;attribute id="BodyShape" type="uint8" value="0"/&gt; &lt;!-- 0 = Standard --&gt;
+                    &lt;attribute id="BodyType" type="uint8" value="0"/&gt; &lt;!-- 0 = Male --&gt;
+                    &lt;attribute id="CloseUpA" type="LSString" value="ELF_M_Camera_Closeup_A"/&gt; &lt;!-- Cameras for zooming in in CC --&gt;
+                    &lt;attribute id="CloseUpB" type="LSString" value="ELF_M_Camera_Closeup_B"/&gt; &lt;!-- ^ --&gt;
+                    &lt;attribute id="Overview" type="LSString" value="ELF_M_Camera_Overview_A"/&gt; &lt;!-- ^ --&gt;
+                    &lt;attribute id="RaceUUID" type="guid" value="3328d981-bf97-4e50-8961-fef8cd80c67e"/&gt; &lt;!-- Race ID from races.lsx --&gt;
+                    &lt;attribute id="RootTemplate" type="guid" value="5dd3feb0-89e5-44e9-9467-5d362b556763"/&gt; &lt;!-- Root template from Race_Root_Templates --&gt;
+                    &lt;attribute id="SubRaceUUID" type="guid" value="00000000-0000-0000-0000-000000000000"/&gt; &lt;!-- Subrace ID from races.lsx, 00000000-0000-0000-0000-000000000000 if no subrace --&gt;
+                    &lt;attribute id="UUID" type="guid" value="54a734e9-462a-480f-ab82-700a62a59142"/&gt; &lt;!-- UUID that tells the game this is its own unique object. Regenerate this before publishing the mod! --&gt;
+                    &lt;attribute id="VOLinesTableUUID" type="guid" value="14df8f45-90af-4bd0-8024-42624da9976e"/&gt; &lt;!-- ? What does this do? --&gt;
+                &lt;/node&gt;
+            &lt;/children&gt;
+        &lt;/node&gt;
+    &lt;/region&gt;
+&lt;/save&gt;
+</code></pre>
+<p>This is the file that tells the game important information about what body types need to show up in CC for your race.</p>
