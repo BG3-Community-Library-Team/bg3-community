@@ -2,7 +2,7 @@
 title: Creating A Basic Race Mod
 description: 
 published: true
-date: 2024-08-17T22:48:34.067Z
+date: 2024-08-17T22:52:06.000Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-07-22T13:11:31.834Z
@@ -16,7 +16,7 @@ dateCreated: 2024-07-22T13:11:31.834Z
 <p>Just visit the link, click the green Code button, and then click Download ZIP.</p>
 <p>Unzip the zip file, delete the README.md, and you're ready to start following the tutorial.</p>
 <h2>Seeing What We've Got</h2>
-<p>Just to see what the template has already set up for you, go ahead and pack the mod using Modder's Multitool or LSLib. Then load it into BG3 Mod Manager, save, export, and run the game.</p>
+<p>Just to see what the template has already set up for you, go ahead and pack the mod using Modder's Multitool. Then load it into BG3 Mod Manager, save, export, and run the game.</p>
 <p>Start a new game, and you'll see a new Custom Race option at the end of all the vanilla races.&nbsp;</p>
 <figure class="image"><img src="/tutorials/creating_a_basic_race_mod/cabrm_custom_race_in_cc.png"></figure>
 <p>This Custom Race is going to look a lot like a default Human, but that's okay. We can tweak the visuals as much as we want later.</p>
@@ -26,3 +26,18 @@ dateCreated: 2024-07-22T13:11:31.834Z
 <p>Open the Community_Race_Template folder in your preferred code viewer, such as Notepad++ or VSCode.</p>
 <figure class="image"><img src="/tutorials/creating_a_basic_race_mod/cabrm_template_files_example.png"></figure>
 <p>In this example from VSCode, we can see all of the files that are contained within the template. You can see that we have six files, and we'll go over each of them in detail.</p>
+<h2>Community_Race_Template.loca.xml</h2>
+<pre><code class="language-xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;contentList&gt; &lt;!-- This is the file that defines the localization, aka the actual text that shows up in game. --&gt;
+
+	&lt;!--Base race loca--&gt;
+	&lt;content contentuid="hdf502bafg2939g4569g820bg200792707f93" version="1"&gt;Custom Race&lt;/content&gt;
+	&lt;content contentuid="h8c7f32e9ga38ag4a4dg95f5g84300a7a48a8" version="1"&gt;This custom race is brimming with potential.&lt;/content&gt;
+	
+	&lt;!--Subraces loca--&gt;
+
+	&lt;!--Passives loca--&gt;
+
+&lt;/contentList&gt;</code></pre>
+<p>This file is not very long, but it is important. This is the Localization file, which handles all of the custom text that is actually going to appear in the game. Any text that your race will need to appear in the game itself will be defined here.</p>
+<p>As you can see, there are only two lines defined here, one for the Name of the race and one for the Description. But you can add as many more lines as you want and connect them to various parts of your code.</p>
