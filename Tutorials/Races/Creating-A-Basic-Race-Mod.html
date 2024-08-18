@@ -2,7 +2,7 @@
 title: Creating A Basic Race Mod
 description: 
 published: true
-date: 2024-08-17T23:17:20.365Z
+date: 2024-08-18T13:15:55.913Z
 tags: tutorial, races
 editor: ckeditor
 dateCreated: 2024-07-22T13:11:31.834Z
@@ -252,6 +252,31 @@ dateCreated: 2024-07-22T13:11:31.834Z
 				&lt;/node&gt;</code></pre>
 <p>This is the CharacterVisuals file, which defines a lot of stuff about how your race appears and what it uses as default values (think the appearance of the character when you first select the race).</p>
 <h2>Races.lsx</h2>
+<pre><code class="language-xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;save&gt;
+  &lt;version major="4" minor="0" revision="9" build="328" /&gt;
+  &lt;region id="Races"&gt; &lt;!-- This is the file that sets up important information about your race. --&gt;
+    &lt;node id="root"&gt;
+      &lt;children&gt;
+        &lt;node id="Race"&gt;
+            &lt;attribute id="DisplayName" type="TranslatedString" handle="hdf502bafg2939g4569g820bg200792707f93" version="1" /&gt; &lt;!-- Display name for the race, links to Community_Race_Template.loca.xml --&gt;
+            &lt;attribute id="Description" type="TranslatedString" handle="h8c7f32e9ga38ag4a4dg95f5g84300a7a48a8" version="1" /&gt; &lt;!-- Description for the race, links to Community_Race_Template.loca.xml --&gt;
+            &lt;attribute id="DisplayTypeUUID" type="guid" value="899d275e-9893-490a-9cd5-be856794929f" /&gt; &lt;!-- Humanoid display type (what precisely does this do?) --&gt;
+            &lt;attribute id="Name" type="FixedString" value="Community_MainRace" /&gt; &lt;!-- Internal name for race, doesn't affect anything in-game --&gt;
+            &lt;attribute id="ParentGuid" type="guid" value="899d275e-9893-490a-9cd5-be856794929f" /&gt; &lt;!-- Humanoid Parent ID, this connects the entry to the humanoid race entry in the vanilla Races file.--&gt;
+            &lt;attribute id="ProgressionTableUUID" type="guid" value="78cb9632-c52c-47d6-8588-4779228fc892" /&gt; &lt;!-- Progression table, regenerate before releasing mod! --&gt;
+            &lt;attribute id="RaceEquipment" type="FixedString" value="EQ_Underwear_Humans"/&gt; &lt;!-- Default underwear for the race --&gt;
+            &lt;attribute id="RaceSoundSwitch" type="FixedString" value="Human" /&gt; &lt;!-- Sound made when selecting the race --&gt;
+            &lt;attribute id="UUID" type="guid" value="3328d981-bf97-4e50-8961-fef8cd80c67e" /&gt; &lt;!-- Unique Race UUID, regenerate before releasing mod! --&gt;
+                &lt;children&gt; &lt;!-- Most of the colors and visuals that the race can choose from in CC, such as eye color, hair color, hairs, and beards. --&gt;
+                	...
+                &lt;/children&gt;
+        &lt;/node&gt;
+      &lt;/children&gt;
+    &lt;/node&gt;
+  &lt;/region&gt;
+&lt;/save&gt;
+</code></pre>
 <p>This is the file that defines some basic information about your race, and also assigns it visuals for use in Character Creation.</p>
 <h2>Race_Root_Templates.lsf.lsx</h2>
 <p>This is the file that handles the RootTemplates for your race, which is a template that brings information from most of the other files together into one neat template package.</p>
