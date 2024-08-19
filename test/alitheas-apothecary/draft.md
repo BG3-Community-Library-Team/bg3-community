@@ -2,7 +2,7 @@
 title: draft - private parts
 description: 
 published: true
-date: 2024-08-19T13:12:06.287Z
+date: 2024-08-19T13:13:52.361Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
@@ -81,11 +81,18 @@ dateCreated: 2024-08-07T16:35:03.491Z
 | Penis   | DGB_F_NKD_Body_Genital_B | e353b86b-db05-4cfc-9142-0395cefea52c | 61f59a7e-ced5-ee43-86af-a8a87deefcad |                                     |
 | Default | DGB_F_NKD_Body_Genital_B | 5c70068f-6503-44e1-81e3-10494d46fcb9 | 61f59a7e-ced5-ee43-86af-a8a87deefcad |                                     |
 
-### Dwarvs
+### Dwarves
 
 #### Vulvas
 
-
+| Name    | Visual                          | Genital ID                           | Visual ID                            | Notable NPCs                        |
+|---------|---------------------------------|--------------------------------------|--------------------------------------|-------------------------------------|
+| Vulva   | DWR_F_NKD_Body_Genital_A        | 4d4101c7-6acc-4174-a1e9-51f72837ebfa | 7058e55a-5d40-fbce-0662-671eb6529de8 |                                     |
+| Default | DWR_F_NKD_Body_Genital_A        | f270fb31-60a0-476b-9d59-bda6a4bbd9de | 7058e55a-5d40-fbce-0662-671eb6529de8 |                                     |
+| Vulva_B | DWR_F_NKD_Body_Genital_A_NoHair | 59da5932-ffd2-45ba-8993-51f4a3cd040c | 37a94b45-e1a3-42bd-c76d-f42b085ad74e |                                     |
+| Vulva   | DWR_M_NKD_Body_Genital_A        | 72430fea-3ad2-48dc-9948-a8f39596013c | dc9f7e94-a634-2009-5788-775e4ef26d62 |                                     |
+| Default | DWR_M_NKD_Body_Genital_A        | bb9227ca-72e7-4381-96bd-0f8ebc94c301 | dc9f7e94-a634-2009-5788-775e4ef26d62 |                                     |
+| Vulva_B | DWR_M_NKD_Body_Genital_A_NoHair | 065b37d7-55c7-4f6f-93a7-b76aeb366deb | 7d4a9298-0e8c-465f-cbb1-428fc93a5aca |                                     |
 
 #### Penises
 
