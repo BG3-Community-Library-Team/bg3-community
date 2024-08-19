@@ -1,9 +1,9 @@
 ---
-title: draft - private parts
+title: Genitalia Meshes Reference
 description: 
 published: true
-date: 2024-08-19T18:21:38.893Z
-tags: wip
+date: 2024-08-19T18:25:20.175Z
+tags: reference, meshes, body
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
 ---
@@ -11,7 +11,7 @@ dateCreated: 2024-08-07T16:35:03.491Z
 # Baldur's Gate 3 Genitalia
 
 
-### Legend
+## Legend
 
 #### CC Name
 
