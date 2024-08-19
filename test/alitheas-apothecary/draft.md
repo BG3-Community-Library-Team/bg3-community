@@ -2,7 +2,7 @@
 title: draft - private parts
 description: 
 published: true
-date: 2024-08-19T18:20:11.370Z
+date: 2024-08-19T18:21:38.893Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
@@ -37,6 +37,7 @@ The UUID of the VisualResource. This points back to the ID in the `_merged.lsf` 
 
 `Public\ModName\CharacterCreation\CharacterCreationAppearanceVisuals.lsx`
 
+---
 
 ## Tab {.tabset}
 
@@ -487,6 +488,8 @@ Other NPCs usually do not have any genitals. Only player characters have them.
 | Minthara    | HUM_F_NKD_Body_Genital_A_NoHair     |
 | Shadowheart | HUM_F_NKD_Body_Genital_A            |
 | Wyll        | HUM_M_NKD_Body_Genital_B            |
+
+
 
 ## Credit
 - [SatanModding](https://linktr.ee/satanmodding) and [Skiz](https://next.nexusmods.com/profile/Skiz/about-me?gameId=3474) for collecting the data
