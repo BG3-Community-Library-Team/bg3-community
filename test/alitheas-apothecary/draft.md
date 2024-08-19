@@ -2,7 +2,7 @@
 title: draft - private parts
 description: 
 published: true
-date: 2024-08-19T14:16:06.178Z
+date: 2024-08-19T14:26:15.629Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
@@ -457,6 +457,6 @@ Shadowheart: HUM_F_NKD_Body_Genital_A
 Wyll (both versions):  HUM_M_NKD_Body_Genital_B
 
 ## Credit
-[SatanModding](https://linktr.ee/satanmodding) and Skiz for collecting the data 
+[SatanModding](https://linktr.ee/satanmodding) and [Skiz](https://next.nexusmods.com/profile/Skiz/about-me?gameId=3474) for collecting the data, and 
 [Jax for the info about Companions](https://discord.com/channels/766962323037749248/1261531263634899024/1261531263634899024)
 
