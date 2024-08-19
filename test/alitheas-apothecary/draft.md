@@ -2,7 +2,7 @@
 title: draft - private parts
 description: 
 published: true
-date: 2024-08-19T13:03:01.262Z
+date: 2024-08-19T13:12:06.287Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
@@ -65,9 +65,21 @@ dateCreated: 2024-08-07T16:35:03.491Z
 
 #### Vulvas
 
-
+| Name    | Visual                   | Genital ID                           | Visual ID                            | Notable NPCs                        |
+|---------|--------------------------|--------------------------------------|--------------------------------------|-------------------------------------|
+| Vulva   | DGB_M_NKD_Body_Genital_A | 7c0bea36-3bca-4ef2-878a-c296c1c3d717 | 67ef3852-f876-2b2c-0edf-4deebdc7020e |                                     |
+| Default |                          | 104c06ec-3dc0-4a6f-8b05-798a5f614fa5 | 67ef3852-f876-2b2c-0edf-4deebdc7020e |                                     |
+| Vulva   | DGB_F_NKD_Body_Genital_A | 7068217d-28ba-4b82-81c5-c77809c16a0d | 5327907a-36dd-7c0a-a4c5-328f4fe1e558 |                                     |
+| Default |                          | f3735e8a-178c-4d00-92d7-5cf784a9ee35 | 5327907a-36dd-7c0a-a4c5-328f4fe1e558 |                                     |
 
 #### Penises
+
+| Name    | Visual                   | Genital ID                           | Visual ID                            | Notable NPCs                        |
+|---------|--------------------------|--------------------------------------|--------------------------------------|-------------------------------------|
+| Penis   | DGB_M_NKD_Body_Genital_B | b2871277-8cd3-4e28-82c1-70cacdda2815 | 38bb9ec3-f5d3-18a5-4484-007ecccabc8e |                                     |
+| Default | DGB_M_NKD_Body_Genital_B | e5b9ae92-3e18-4a7b-820c-6e3a6d1655d2 | 38bb9ec3-f5d3-18a5-4484-007ecccabc8e |                                     |
+| Penis   | DGB_F_NKD_Body_Genital_B | e353b86b-db05-4cfc-9142-0395cefea52c | 61f59a7e-ced5-ee43-86af-a8a87deefcad |                                     |
+| Default | DGB_F_NKD_Body_Genital_B | 5c70068f-6503-44e1-81e3-10494d46fcb9 | 61f59a7e-ced5-ee43-86af-a8a87deefcad |                                     |
 
 ### Dwarvs
 
@@ -151,7 +163,8 @@ Race ID 0ab2874d-cfdc-405e-8a97-d37bfbb23c52
 #### Penises
 
 
-##  
+## Credit
+Satan and Skiz for collecting the data 
 
 # Vanilla Vulvas
 
@@ -461,5 +474,4 @@ to do:
 
 ![soon_tm.webp](/test/alithea/soon_tm.webp)
 
-#### Credit
-Satan and Skiz for collecting the data
+
