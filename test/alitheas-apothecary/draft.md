@@ -2,7 +2,7 @@
 title: draft - private parts
 description: 
 published: true
-date: 2024-08-19T13:51:20.556Z
+date: 2024-08-19T14:15:31.748Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
@@ -369,6 +369,32 @@ Race ID 0eb594cb-8820-4be6-a58d-8be7a1a98fba
 
 #### Penises
 
+| Name     | Visual                                | Genital ID                              | Visual ID                                | Notable NPCs |
+|----------|---------------------------------------|-----------------------------------------|------------------------------------------|--------------|
+| Penis    | HUM_F_NKD_Body_Genital_B              | 5e15f15d-9600-4a77-8094-0f59d99ca42d    | 2a629211-3f5e-88bf-8001-629b17070ab7     |              |
+| Default  | HUM_F_NKD_Body_Genital_B              | 09e8639c-2b39-4795-86e7-ead609223c9c    | 2a629211-3f5e-88bf-8001-629b17070ab7     |              |
+| Penis_B  | HUM_F_NKD_Body_Genital_B_BushyHair    | b63a265f-88b1-4184-a8b0-c0631bb66cbd    | 0febc8e5-342d-4476-44c8-eaa40734cf07     |              |
+| Penis_C  | HUM_F_NKD_Body_Genital_B_NoHair       | e09e326a-ba0e-4d83-ba23-9c7f81d826ac    | ea7bf6d8-f3ed-1398-32c8-b484131511fa     |              |
+| Penis_D  | HUM_F_NKD_Body_Genital_C              | 6b2b27f3-02d7-4b6a-b277-fc32fe6f0ff0    | f4393963-532c-f19f-ac9f-e2332e68cd59     |              |
+| Penis_E  | HUM_F_NKD_Body_Genital_C_NoHair       | e826b6c9-eb93-47d3-a96a-2386bee5680e    | 72ed8208-24ca-f565-2f34-a96128543920     |              |
+| Penis    | HUM_FS_NKD_Body_Genital_B              | 48ee875d-de58-44cd-8586-f80920f637b4    | 921745e0-8a71-187c-2a7e-9632e1ce2685     |              |
+| Default  | HUM_FS_NKD_Body_Genital_B              | 0da17e19-4ce6-4ea1-b57b-5a0e5b4917a4    | 921745e0-8a71-187c-2a7e-9632e1ce2685     |              |
+| Penis_B  | HUM_FS_NKD_Body_Genital_B_NoHair       | 52058927-df9e-42d0-a9a8-e8c5d40bfb65    | d8af2b7c-b003-99b5-b6f9-e25a73d1fefd     |              |
+| Penis_C  | HUM_FS_NKD_Body_Genital_C              | 457b5ade-b58b-4044-a7cc-18b1e6dc0583    | 7fbe8386-ee4d-0985-b24d-114e1064b3b9     |              |
+| Penis_D  | HUM_FS_NKD_Body_Genital_C_NoHair       | 8cbb8715-f29c-4f51-a8e4-563a3ec82c97    | f7be6845-c419-c09c-c8b3-5eb1b94b230d     |              |
+| Penis    | HUM_M_NKD_Body_Genital_B              | 2fe9e574-035b-44e7-b177-9eccdf83914e    | 6236e77f-6127-5de9-d390-72b0ed12d1fd     |              |
+| Default  | HUM_M_NKD_Body_Genital_B              | 426a0352-2d91-4e9b-94e9-d64cf4204b5c    | 6236e77f-6127-5de9-d390-72b0ed12d1fd     |              |
+| Penis_B  | HUM_M_NKD_Body_Genital_B_BushyHair    | 512fe692-3c1c-496a-b6f5-0c7b27b99fd6    | 1d43b23c-b22b-57ab-4627-a12c16c2b42f     |              |
+| Penis_C  | HUM_M_NKD_Body_Genital_B_NoHair       | 398137b8-f90a-4978-9f33-5709ff7c28be    | 441354be-b2c8-c3c5-5474-26407c139644     |              |
+| Penis_D  | HUM_M_NKD_Body_Genital_C              | 996a56da-e7f8-4647-be2f-52fa78a43439    | 245e034b-ac05-8656-c7ef-83cac38f6d91     |              |
+| Penis_E  | HUM_M_NKD_Body_Genital_C_NoHair       | e84e1c54-ad5f-463a-a8fc-38c2854194fa    | 7441c28c-f875-d6e8-cacc-32e1e54bc615     |              |
+| Penis    | HUM_MS_NKD_Body_Genital_B              | 6f59b211-95c5-47a9-826a-f884401550b6    | 72fa164d-3c5a-e5e8-5de7-65cd9f6a1f4a     |              |
+| Default  | HUM_MS_NKD_Body_Genital_B              | 756d27d8-7fa8-4656-b56c-07eaddadcc52    | 72fa164d-3c5a-e5e8-5de7-65cd9f6a1f4a     |              |
+| Penis_B  | HUM_MS_NKD_Body_Genital_B_BushyHair    | 13ca1de1-976a-40c0-af61-6f95b0774408    | ab534eea-b326-f69b-f136-ff7440522b6a     |              |
+| Penis_C  | HUM_MS_NKD_Body_Genital_B_NoHair       | 13d437ee-e1f1-4699-b73c-1200792c8572    | 889c1a4d-d6aa-b2b3-ab94-3f1822cd9519     |              |
+| Penis_D  | HUM_MS_NKD_Body_Genital_C              | 56fe81c9-cdbd-4af7-ae80-83d38ba7e38c    | ab4600f0-ed82-1639-6386-0e3f2f1ae917     |              |
+| Penis_E  | HUM_MS_NKD_Body_Genital_C_NoHair       | 4739cfc3-29cc-484d-9095-8531b7ee1fcd    | 8648179b-d698-7e41-1391-26d0c811655d     |              |
+
 ### Tieflings
 
 Race ID b6dccbed-30f3-424b-a181-c4540cf38197
@@ -393,117 +419,44 @@ Race ID b6dccbed-30f3-424b-a181-c4540cf38197
 | Vulva_B | TIF_MS_NKD_Body_Genital_A_BushyHair| 402a5db2-63e9-4ec5-b710-7f71d1f24952 | f61a348a-6eb9-1045-3929-34dc45b84231 |              |
 | Vulva_C | TIF_MS_NKD_Body_Genital_A_Hair     | a0e977bb-17be-4cd1-a371-0841f0c93125 | 02686c9f-98a0-6d2a-1351-c9bd50112600 |              |
 
-
 #### Penises
 
+| Name    | Visual                              | GenitalID                            | VisualID                             | Notable NPCs |
+|---------|-------------------------------------|--------------------------------------|--------------------------------------|--------------|
+| Penis   | TIF_F_NKD_Body_Genital_B_NoHair     | c1573be8-d83e-49fe-b628-1878d02b83c4 | 34d1075f-2478-5f6b-3652-22be3a32cf7d |              |
+| Default | TIF_F_NKD_Body_Genital_B_NoHair     | dc7cf0e7-4d99-47b3-af2d-7f8dc33c126b | 34d1075f-2478-5f6b-3652-22be3a32cf7d |              |
+| Penis_B | TIF_F_NKD_Body_Genital_B            | 6676a9f0-0ab5-44d2-8d4d-1f2e8b885498 | 141f20fa-b938-98c8-817b-779facf73b57 |              |
+| Penis_C | TIF_F_NKD_Body_Genital_C            | b32d6bb5-6a19-45ef-add2-11283321b7a1 | 8ebf98a0-1f48-4373-185d-3ca86ac8bd45 |              |
+| Penis_D | TIF_F_NKD_Body_Genital_C_NoHair     | 29bb84a6-8360-4504-88b6-023ddcafa7db | ce084b86-6248-d195-d15e-4c315240f575 |              |
+| Penis   | TIF_FS_NKD_Body_Genital_B_NoHair    | 13114b3e-713b-4871-ab86-8d25b1271cef | c74f6dda-afe8-e137-a7ae-e17a706703ba |              |
+| Default | TIF_FS_NKD_Body_Genital_B_NoHair    | 5893db07-dd6d-4add-81de-43b797231a0e | c74f6dda-afe8-e137-a7ae-e17a706703ba |              |
+| Penis_B | TIF_FS_NKD_Body_Genital_B           | f122c186-3a3e-4a9e-b116-ef0c28344b89 | 878039f9-63a9-f9c8-633c-a5abb7be6090 |              |
+| Penis_C | TIF_FS_NKD_Body_Genital_C           | ac260ecb-0571-447c-bfe8-d5084813b101 | 3d208bff-a2ac-1314-cd92-591563db9e70 |              |
+| Penis   | TIF_M_NKD_Body_Genital_B_NoHair     | 8156f035-8f12-406e-9174-3c5e0f890696 | 35d1d860-d38c-d995-0b1b-16d04728e341 |              |
+| Default | TIF_M_NKD_Body_Genital_B_NoHair     | f42c550b-0322-4e3e-9155-4342c438103b | 35d1d860-d38c-d995-0b1b-16d04728e341 |              |
+| Penis_B | TIF_M_NKD_Body_Genital_B            | 1e4aa916-cfe7-4280-aac3-e8891b46a457 | c3cddd15-a2ee-4268-9d4f-c1e7674879b3 |              |
+| Penis_C | TIF_M_NKD_Body_Genital_C_BushyHair  | 1b3e8b7c-365e-48e4-9ea6-07565e2bd9d9 | 614f5dbc-81e2-47b8-42be-7cbed08c8e26 |              |
+| Penis_D | TIF_M_NKD_Body_Genital_C_NoHair     | bfe6c250-68c4-4985-92f3-7807ccb8d35a | 5ca86e95-b289-6641-76df-edc902baf9a5 |              |
+| Penis   | TIF_MS_NKD_Body_Genital_B           | db17497d-3d9a-4150-8b5b-3d238553a432 | b2ab50ba-93bb-1107-ee57-cff286d2687a |              |
+| Default | TIF_MS_NKD_Body_Genital_B           | 1f922d58-06e4-41c7-947b-39b656ea1671 | b2ab50ba-93bb-1107-ee57-cff286d2687a |              |
+| Penis_B | TIF_MS_NKD_Body_Genital_C           | 6cc4bb64-07b1-4c9a-ba8d-1c1e3069de94 | f0bb716d-d6b5-d496-cb3f-7ff68dc55cf3 |              |
+| Penis_C | TIF_MS_NKD_Body_Genital_C_BushyHair | 40cae433-5db0-47be-a068-50a996424e3e | 8310e4da-6f03-a981-86a2-60273755d52b |              |
+| Penis_D | TIF_MS_NKD_Body_Genital_C_NoHair    | 66bb2f27-a505-4ebc-9eb8-0aa365ec862f | 245e173f-4fda-26cb-77cc-99a59a74be2e |              |
+
+### Companions
+
+Astarion: ELF_M_NKD_Body_Genital_B_NoHair
+Gale: HUM_M_NKD_Body_Genital_B
+Halsin: HUM_MS_NKD_Body_Genital_B_BushyHair
+Jaheira: HUM_F_NKD_Body_Genital_A
+Karlach: TIF_FS_NKD_Body_Genital_A
+Lae'zel: GTY_F_NKD_Body_Genital_A
+Minsc: HUM_MS_NKD_Body_Genital_B
+Minthara: HUM_F_NKD_Body_Genital_A_NoHair
+Shadowheart: HUM_F_NKD_Body_Genital_A
+Wyll (both versions):  HUM_M_NKD_Body_Genital_B
+
 ## Credit
-Satan and Skiz for collecting the data 
-
-
-
-
-
-# Vanilla Penises
-
-
-
-
-
-
-
-## Halflings
-
-| Index | Name    | Visual                          | Genital ID                           | Race ID                               | Visual ID                            |
-|-------|---------|---------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|
-| 77    | Penis   | HFL_F_NKD_Body_Genital_B        | 4f7844ba-7745-4e26-9e18-5695e98b2fa3 | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04  | 62131bb8-b49c-d10a-c1f8-be145d7521ad |
-| 78    | Default | HFL_F_NKD_Body_Genital_B        | b489b56d-6a73-41c9-b356-f0bd4b954cc5 | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04  | 62131bb8-b49c-d10a-c1f8-be145d7521ad |
-| 79    | Penis_B | HFL_F_NKD_Body_Genital_B_NoHair | 61c512f1-a07a-45fd-91c6-9b1d58391bb6 | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04  | 2f82a0cf-e381-6db2-d801-d74a52fa9b58 |
-| 80    | Penis_C | HFL_F_NKD_Body_Genital_C        | 54850733-ffb1-4908-8846-6405388b2cf8 | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04  | fa193a38-4312-096f-0583-6b4336051e52 |
-| 81    | Penis_D | HFL_F_NKD_Body_Genital_C_NoHair | 1a3ad202-1be0-485c-942c-e68f4e744257 | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04  | 3cf9e918-c3f3-5e5c-9e92-72c0765e866b |
-| 82    | Penis   | HFL_M_NKD_Body_Genital_B        | 41c48f11-a6b2-4836-b4e2-bb33ee69c7f4 | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04  | 6aa1d494-e8b3-ba2c-c3ab-5ff7255adff9 |
-| 83    | Default | HFL_M_NKD_Body_Genital_B        | 77c8b015-d8f2-42ba-aae8-d94a1226ec3a | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04  | 6aa1d494-e8b3-ba2c-c3ab-5ff7255adff9 |
-| 84    | Penis_B | HFL_M_NKD_Body_Genital_B_NoHair | a336f191-b004-46ae-8e37-68ff53fd1319 | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04  | fbbc3b2b-5b71-84f4-90e1-6f99fd6e3e83 |
-| 85    | Penis_C | HFL_M_NKD_Body_Genital_C        | 451aeb50-f74c-4118-ac2c-1719c7512f63 | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04  | f9f28af9-1230-78cb-8bea-dce548510685 |
-| 86    | Penis_D | HFL_M_NKD_Body_Genital_C_NoHair | 290fcca7-2332-4d74-a3db-572fbac086e1 | 78cd3bcc-1c43-4a2a-aa80-c34322c16a04  | 16fe6d00-d48d-2dd0-9adf-c60f19ed7657 |
-
-## Half-Orcs
-
-| Index | Name     | Visual                          | Genital ID                           | Race ID                              | Visual ID                            |
-|-------|----------|---------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
-| 87    | Penis    | HRC_F_NKD_Body_Genital_B        | d80f4797-aee1-4650-bfc4-dfa41431b2eb | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | b7f9c4ed-b6ca-ae7e-68de-a2f5dd9d1701 |
-| 88    | Default  | HRC_F_NKD_Body_Genital_B        | 814e3da2-3a3b-4abc-ae77-b285d06efc90 | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | b7f9c4ed-b6ca-ae7e-68de-a2f5dd9d1701 |
-| 89    | Penis_B  | HRC_F_NKD_Body_Genital_B_NoHair | e011e3f5-67e4-4add-a511-05c6f82b147e | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | 17fbc77e-e502-2f5c-52ed-52998d61bd90 |
-| 90    | Penis_C  | HRC_F_NKD_Body_Genital_C        | 2f4e56e9-179e-4c77-9e01-3f0365a31178 | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | ae5985a3-d6ac-e50d-5a29-ec2ba8c16619 |
-| 91    | Penis_D  | HRC_F_NKD_Body_Genital_C_NoHair | 71eea35d-085a-416e-9b36-b96f3c95147e | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | 9396107e-9b6e-d9e2-87c7-cb8ec86f7879 |
-| 92    | Penis    | HRC_M_NKD_Body_Genital_B        | f806217a-707a-4188-8ac8-e01ec9f289c9 | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | 0e396e65-5051-5e4f-390a-430299070142 |
-| 93    | Default  | HRC_M_NKD_Body_Genital_B        | b22ceb0c-1673-4f3e-a24b-393169e503d5 | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | 0e396e65-5051-5e4f-390a-430299070142 |
-| 94    | Penis_B  | HRC_M_NKD_Body_Genital_B_NoHair | 565059d4-1217-49ce-8af0-d34c89fbb748 | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | f16de3b8-2e2d-20cf-82dc-7dbb1efc5091 |
-| 95    | Penis_C  | HRC_M_NKD_Body_Genital_C        | 97ab3ef3-11a6-4b1d-88d5-4de83a405edb | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | ab0b3c35-d773-5512-dc09-f99655568f48 |
-| 96    | Penis_D  | HRC_M_NKD_Body_Genital_C_NoHair | 79476476-624d-4c53-a1a8-64c87616ca84 | 5c39a726-71c8-4748-ba8d-f768b3c11a91 | e8eb488a-f7a9-edb6-d6d2-c5070742e549 |
-
-## Humans
-
-| Index | Name     | Visual                                | Genital ID                              | Race ID                                  | Visual ID                                |
-|-------|----------|---------------------------------------|-----------------------------------------|------------------------------------------|------------------------------------------|
-| 97    | Penis    | HUM_F_NKD_Body_Genital_B              | 5e15f15d-9600-4a77-8094-0f59d99ca42d    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 2a629211-3f5e-88bf-8001-629b17070ab7     |
-| 98    | Default  | HUM_F_NKD_Body_Genital_B              | 09e8639c-2b39-4795-86e7-ead609223c9c    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 2a629211-3f5e-88bf-8001-629b17070ab7     |
-| 99    | Penis_B  | HUM_F_NKD_Body_Genital_B_BushyHair    | b63a265f-88b1-4184-a8b0-c0631bb66cbd    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 0febc8e5-342d-4476-44c8-eaa40734cf07     |
-| 100   | Penis_C  | HUM_F_NKD_Body_Genital_B_NoHair       | e09e326a-ba0e-4d83-ba23-9c7f81d826ac    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | ea7bf6d8-f3ed-1398-32c8-b484131511fa     |
-| 101   | Penis_D  | HUM_F_NKD_Body_Genital_C              | 6b2b27f3-02d7-4b6a-b277-fc32fe6f0ff0    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | f4393963-532c-f19f-ac9f-e2332e68cd59     |
-| 102   | Penis_E  | HUM_F_NKD_Body_Genital_C_NoHair       | e826b6c9-eb93-47d3-a96a-2386bee5680e    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 72ed8208-24ca-f565-2f34-a96128543920     |
-| 103   | Penis    | HUM_FS_NKD_Body_Genital_B              | 48ee875d-de58-44cd-8586-f80920f637b4    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 921745e0-8a71-187c-2a7e-9632e1ce2685     |
-| 104   | Default  | HUM_FS_NKD_Body_Genital_B              | 0da17e19-4ce6-4ea1-b57b-5a0e5b4917a4    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 921745e0-8a71-187c-2a7e-9632e1ce2685     |
-| 105   | Penis_B  | HUM_FS_NKD_Body_Genital_B_NoHair       | 52058927-df9e-42d0-a9a8-e8c5d40bfb65    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | d8af2b7c-b003-99b5-b6f9-e25a73d1fefd     |
-| 106   | Penis_C  | HUM_FS_NKD_Body_Genital_C              | 457b5ade-b58b-4044-a7cc-18b1e6dc0583    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 7fbe8386-ee4d-0985-b24d-114e1064b3b9     |
-| 107   | Penis_D  | HUM_FS_NKD_Body_Genital_C_NoHair       | 8cbb8715-f29c-4f51-a8e4-563a3ec82c97    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | f7be6845-c419-c09c-c8b3-5eb1b94b230d     |
-| 108   | Penis    | HUM_M_NKD_Body_Genital_B              | 2fe9e574-035b-44e7-b177-9eccdf83914e    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 6236e77f-6127-5de9-d390-72b0ed12d1fd     |
-| 109   | Default  | HUM_M_NKD_Body_Genital_B              | 426a0352-2d91-4e9b-94e9-d64cf4204b5c    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 6236e77f-6127-5de9-d390-72b0ed12d1fd     |
-| 110   | Penis_B  | HUM_M_NKD_Body_Genital_B_BushyHair    | 512fe692-3c1c-496a-b6f5-0c7b27b99fd6    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 1d43b23c-b22b-57ab-4627-a12c16c2b42f     |
-| 111   | Penis_C  | HUM_M_NKD_Body_Genital_B_NoHair       | 398137b8-f90a-4978-9f33-5709ff7c28be    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 441354be-b2c8-c3c5-5474-26407c139644     |
-| 112   | Penis_D  | HUM_M_NKD_Body_Genital_C              | 996a56da-e7f8-4647-be2f-52fa78a43439    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 245e034b-ac05-8656-c7ef-83cac38f6d91     |
-| 113   | Penis_E  | HUM_M_NKD_Body_Genital_C_NoHair       | e84e1c54-ad5f-463a-a8fc-38c2854194fa    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 7441c28c-f875-d6e8-cacc-32e1e54bc615     |
-| 114   | Penis    | HUM_MS_NKD_Body_Genital_B              | 6f59b211-95c5-47a9-826a-f884401550b6    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 72fa164d-3c5a-e5e8-5de7-65cd9f6a1f4a     |
-| 115   | Default  | HUM_MS_NKD_Body_Genital_B              | 756d27d8-7fa8-4656-b56c-07eaddadcc52    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 72fa164d-3c5a-e5e8-5de7-65cd9f6a1f4a     |
-| 116   | Penis_B  | HUM_MS_NKD_Body_Genital_B_BushyHair    | 13ca1de1-976a-40c0-af61-6f95b0774408    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | ab534eea-b326-f69b-f136-ff7440522b6a     |
-| 117   | Penis_C  | HUM_MS_NKD_Body_Genital_B_NoHair       | 13d437ee-e1f1-4699-b73c-1200792c8572    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 889c1a4d-d6aa-b2b3-ab94-3f1822cd9519     |
-| 118   | Penis_D  | HUM_MS_NKD_Body_Genital_C              | 56fe81c9-cdbd-4af7-ae80-83d38ba7e38c    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | ab4600f0-ed82-1639-6386-0e3f2f1ae917     |
-| 119   | Penis_E  | HUM_MS_NKD_Body_Genital_C_NoHair       | 4739cfc3-29cc-484d-9095-8531b7ee1fcd    | 0eb594cb-8820-4be6-a58d-8be7a1a98fba     | 8648179b-d698-7e41-1391-26d0c811655d     |
-
-
-
-## Tieflings
-
-| Index | Name    | Visual                              | GenitalID                            | RaceID                               | VisualID                             |
-|-------|---------|-------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
-| 143   | Penis   | TIF_F_NKD_Body_Genital_B_NoHair     | c1573be8-d83e-49fe-b628-1878d02b83c4 | b6dccbed-30f3-424b-a181-c4540cf38197 | 34d1075f-2478-5f6b-3652-22be3a32cf7d |
-| 144   | Default | TIF_F_NKD_Body_Genital_B_NoHair     | dc7cf0e7-4d99-47b3-af2d-7f8dc33c126b | b6dccbed-30f3-424b-a181-c4540cf38197 | 34d1075f-2478-5f6b-3652-22be3a32cf7d |
-| 145   | Penis_B | TIF_F_NKD_Body_Genital_B            | 6676a9f0-0ab5-44d2-8d4d-1f2e8b885498 | b6dccbed-30f3-424b-a181-c4540cf38197 | 141f20fa-b938-98c8-817b-779facf73b57 |
-| 146   | Penis_C | TIF_F_NKD_Body_Genital_C            | b32d6bb5-6a19-45ef-add2-11283321b7a1 | b6dccbed-30f3-424b-a181-c4540cf38197 | 8ebf98a0-1f48-4373-185d-3ca86ac8bd45 |
-| 147   | Penis_D | TIF_F_NKD_Body_Genital_C_NoHair     | 29bb84a6-8360-4504-88b6-023ddcafa7db | b6dccbed-30f3-424b-a181-c4540cf38197 | ce084b86-6248-d195-d15e-4c315240f575 |
-| 148   | Penis   | TIF_FS_NKD_Body_Genital_B_NoHair    | 13114b3e-713b-4871-ab86-8d25b1271cef | b6dccbed-30f3-424b-a181-c4540cf38197 | c74f6dda-afe8-e137-a7ae-e17a706703ba |
-| 149   | Default | TIF_FS_NKD_Body_Genital_B_NoHair    | 5893db07-dd6d-4add-81de-43b797231a0e | b6dccbed-30f3-424b-a181-c4540cf38197 | c74f6dda-afe8-e137-a7ae-e17a706703ba |
-| 150   | Penis_B | TIF_FS_NKD_Body_Genital_B           | f122c186-3a3e-4a9e-b116-ef0c28344b89 | b6dccbed-30f3-424b-a181-c4540cf38197 | 878039f9-63a9-f9c8-633c-a5abb7be6090 |
-| 151   | Penis_C | TIF_FS_NKD_Body_Genital_C           | ac260ecb-0571-447c-bfe8-d5084813b101 | b6dccbed-30f3-424b-a181-c4540cf38197 | 3d208bff-a2ac-1314-cd92-591563db9e70 |
-| 152   | Penis   | TIF_M_NKD_Body_Genital_B_NoHair     | 8156f035-8f12-406e-9174-3c5e0f890696 | b6dccbed-30f3-424b-a181-c4540cf38197 | 35d1d860-d38c-d995-0b1b-16d04728e341 |
-| 153   | Default | TIF_M_NKD_Body_Genital_B_NoHair     | f42c550b-0322-4e3e-9155-4342c438103b | b6dccbed-30f3-424b-a181-c4540cf38197 | 35d1d860-d38c-d995-0b1b-16d04728e341 |
-| 154   | Penis_B | TIF_M_NKD_Body_Genital_B            | 1e4aa916-cfe7-4280-aac3-e8891b46a457 | b6dccbed-30f3-424b-a181-c4540cf38197 | c3cddd15-a2ee-4268-9d4f-c1e7674879b3 |
-| 155   | Penis_C | TIF_M_NKD_Body_Genital_C_BushyHair  | 1b3e8b7c-365e-48e4-9ea6-07565e2bd9d9 | b6dccbed-30f3-424b-a181-c4540cf38197 | 614f5dbc-81e2-47b8-42be-7cbed08c8e26 |
-| 156   | Penis_D | TIF_M_NKD_Body_Genital_C_NoHair     | bfe6c250-68c4-4985-92f3-7807ccb8d35a | b6dccbed-30f3-424b-a181-c4540cf38197 | 5ca86e95-b289-6641-76df-edc902baf9a5 |
-| 157   | Penis   | TIF_MS_NKD_Body_Genital_B           | db17497d-3d9a-4150-8b5b-3d238553a432 | b6dccbed-30f3-424b-a181-c4540cf38197 | b2ab50ba-93bb-1107-ee57-cff286d2687a |
-| 158   | Default | TIF_MS_NKD_Body_Genital_B           | 1f922d58-06e4-41c7-947b-39b656ea1671 | b6dccbed-30f3-424b-a181-c4540cf38197 | b2ab50ba-93bb-1107-ee57-cff286d2687a |
-| 159   | Penis_B | TIF_MS_NKD_Body_Genital_C           | 6cc4bb64-07b1-4c9a-ba8d-1c1e3069de94 | b6dccbed-30f3-424b-a181-c4540cf38197 | f0bb716d-d6b5-d496-cb3f-7ff68dc55cf3 |
-| 160   | Penis_C | TIF_MS_NKD_Body_Genital_C_BushyHair | 40cae433-5db0-47be-a068-50a996424e3e | b6dccbed-30f3-424b-a181-c4540cf38197 | 8310e4da-6f03-a981-86a2-60273755d52b |
-| 161   | Penis_D | TIF_MS_NKD_Body_Genital_C_NoHair    | 66bb2f27-a505-4ebc-9eb8-0aa365ec862f | b6dccbed-30f3-424b-a181-c4540cf38197 | 245e173f-4fda-26cb-77cc-99a59a74be2e |
-
-
-
-
-
-
-
-
-
-
-![soon_tm.webp](/test/alithea/soon_tm.webp)
-
+[SatanModding](https://linktr.ee/satanmodding) and Skiz for collecting the data 
+[Jax for the info about Companions)(https://discord.com/channels/766962323037749248/1261531263634899024/1261531263634899024)
 
