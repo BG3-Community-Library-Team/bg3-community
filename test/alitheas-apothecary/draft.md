@@ -2,7 +2,7 @@
 title: draft - private parts
 description: 
 published: true
-date: 2024-08-19T14:15:31.748Z
+date: 2024-08-19T14:16:06.178Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
@@ -458,5 +458,5 @@ Wyll (both versions):  HUM_M_NKD_Body_Genital_B
 
 ## Credit
 [SatanModding](https://linktr.ee/satanmodding) and Skiz for collecting the data 
-[Jax for the info about Companions)(https://discord.com/channels/766962323037749248/1261531263634899024/1261531263634899024)
+[Jax for the info about Companions](https://discord.com/channels/766962323037749248/1261531263634899024/1261531263634899024)
 
