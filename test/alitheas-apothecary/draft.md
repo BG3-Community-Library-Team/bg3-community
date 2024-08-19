@@ -2,13 +2,47 @@
 title: draft - private parts
 description: 
 published: true
-date: 2024-08-19T14:46:07.039Z
+date: 2024-08-19T15:08:30.655Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
 ---
 
 # Baldur's Gate 3 Genitalia
+
+
+## Legend
+
+### CC Name
+
+The name of the genital when choosing it in Character Creation.
+
+### Visual Name
+
+The name of the mesh. Usually found in:
+
+`Public\ModName\Content\Assets\Characters\RaceName\[PAK]_BodyName\_merged.lsf`
+
+### Genital ID
+
+The UUID of the visual. Usually found in:
+
+`Public\ModName\CharacterCreation\CharacterCreationAppearanceVisuals.lsx`
+
+Use this UUID when adding the visual via `Osi.AddCustomVisualOverride()`
+
+### Visual ID
+
+The UUID of the VisualResource. This points back to the ID in the `_merged.lsf` file. Usually found in 
+
+`Public\ModName\CharacterCreation\CharacterCreationAppearanceVisuals.lsx`
+
+### Notable NPC
+
+NPC's that have a certain genital.
+Note that NPCs usually do not have any genitals. Only player characters have them.
+Even companions do not have a visual in the traditional sense.
+
 ## Tab {.tabset}
 
 ### Drow
