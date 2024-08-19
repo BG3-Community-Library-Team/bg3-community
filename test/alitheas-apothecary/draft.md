@@ -2,7 +2,7 @@
 title: draft - private parts
 description: 
 published: true
-date: 2024-08-19T18:19:13.243Z
+date: 2024-08-19T18:20:11.370Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
@@ -11,19 +11,19 @@ dateCreated: 2024-08-07T16:35:03.491Z
 # Baldur's Gate 3 Genitalia
 
 
-## Legend
+### Legend
 
-### CC Name
+#### CC Name
 
 The name of the genital in Character Creation.
 
-### Filename
+#### Filename
 
 The name of the mesh. Usually found in:
 
 `Public\ModName\Content\Assets\Characters\RaceName\[PAK]_BodyName\_merged.lsf`
 
-### Genital ID
+#### Genital ID
 
 The UUID of the visual. Usually found in:
 
@@ -31,7 +31,7 @@ The UUID of the visual. Usually found in:
 
 Use this UUID when adding the visual via `Osi.AddCustomVisualOverride()`
 
-### Visual ID
+#### Visual ID
 
 The UUID of the VisualResource. This points back to the ID in the `_merged.lsf` file. Usually found in 
 
