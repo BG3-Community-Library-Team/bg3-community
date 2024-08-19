@@ -2,18 +2,19 @@
 title: draft - private parts
 description: 
 published: true
-date: 2024-08-19T12:50:23.719Z
+date: 2024-08-19T12:51:03.274Z
 tags: wip
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
 ---
 
-# Tab {.tabset}
-## Elves
+# Baldur's Gate 3 Genitalia
+## Tab {.tabset}
+### Elves
 
 Race ID 0ab2874d-cfdc-405e-8a97-d37bfbb23c52
 
-### Vulvas
+#### Vulvas
 
 | CC Name | Visual Name                         | Genital ID                           | Visual ID                            | Notable NPC's |
 |---------|-------------------------------------|--------------------------------------|--------------------------------------|---------------|
@@ -33,7 +34,7 @@ Race ID 0ab2874d-cfdc-405e-8a97-d37bfbb23c52
 | Vulva_B | HUM_MS_NKD_Body_Genital_A           | 3f7f1f74-deea-4669-a5a5-b39ffb099a64 | dfcd4686-8b3c-23c2-e8b4-d82f2e659bd2 |               |
 | Vulva_C | HUM_MS_NKD_Body_Genital_A_BushyHair | 60679d59-6fc1-4f89-8edc-bfa2980bf216 | 8fbe3573-ba17-4956-35e4-101fc465c030 |               |
 
-### Penises
+#### Penises
 
 | CC Name  | Visual Name                             | Genital ID                           | Visual ID                            | Notable NPC's |
 |----------|-----------------------------------------|--------------------------------------|--------------------------------------|---------------|
