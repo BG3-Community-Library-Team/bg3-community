@@ -2,7 +2,7 @@
 title: Dev Environment Set-up
 description: Guide to getting started creating mods
 published: true
-date: 2024-04-27T21:17:42.007Z
+date: 2024-08-20T19:02:47.142Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-27T19:03:07.632Z
@@ -12,7 +12,7 @@ dateCreated: 2024-04-27T19:03:07.632Z
   <div class="col col-offset-1 col-10">
 
 # Setting up a Development Environment
-Just getting started? This guide will help you figure out how to make sure you have the right set-up to beign creating a mod.
+Just getting started? This guide will help you figure out how to make sure you have the right set-up to begin creating a mod.
 
   </div>
 </div>
@@ -40,7 +40,7 @@ Mods/ProjectName/
 
 The `Assets` and `Releases` folders exist to store artifacts relating to publishing your mods - zipped up .pak files, images for your nexus page, etc. 
 
-`Source` is there the meat of your mod will be, and consists of three folders: `Localization`, `Mods`, and `Public`. 
+`Source` is where the meat of your mod will be, and consists of three folders: `Localization`, `Mods`, and `Public`. 
 - `Localization` requires a subfolder for the language you're localizing in, and a `.xml` file of any name.
 - `Mods` contains a folder with the name of your mod, within which you'll need a `meta.lsx` file, which defines the metadata, including the UUID, Name, and expected folder of your mod.
 - `Public` contains a folder with the name of your mod, within which you'll place the data files you work with, matching Larian's folder structure. 
