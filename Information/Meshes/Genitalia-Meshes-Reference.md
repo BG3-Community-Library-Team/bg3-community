@@ -2,7 +2,7 @@
 title: Genitalia Meshes Reference
 description: 
 published: true
-date: 2024-08-20T16:09:51.732Z
+date: 2024-08-20T16:11:55.787Z
 tags: reference, meshes, body
 editor: markdown
 dateCreated: 2024-08-07T16:35:03.491Z
@@ -478,6 +478,7 @@ Race ID b6dccbed-30f3-424b-a181-c4540cf38197
 Only companions have private parts but do not have a visual in the traditional sense.
 Other NPCs usually do not have any genitals. Only player characters have them.
 
+|-------------|-------------------------------------|
 | Astarion    | ELF_M_NKD_Body_Genital_B_NoHair     |
 | Gale        | HUM_M_NKD_Body_Genital_B            |
 | Halsin      | HUM_MS_NKD_Body_Genital_B_BushyHair |
