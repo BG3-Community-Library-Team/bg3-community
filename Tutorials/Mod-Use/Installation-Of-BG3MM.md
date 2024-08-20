@@ -2,7 +2,7 @@
 title: Install BG3MM (BG3 Mod Manager)
 description: A comphrensive guide on how to install mods via BG3MM 
 published: true
-date: 2024-07-24T18:18:44.920Z
+date: 2024-08-20T08:05:31.584Z
 tags: bg3mm, guide, installation
 editor: markdown
 dateCreated: 2024-04-25T01:54:07.278Z
@@ -20,8 +20,8 @@ Doing this creates a profile and mod folders in the game files that BG3MM needs.
 ## 2. Download .NET files (if needed)
 You **must** have the following installed on your PC. If you are not sure if you have these, its safer to download and install anyway.
 
-- [.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
-- [.NET 7.0 Desktop Runtime (v7.0.13)](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-7.0.13-windows-x64-installer)
+- [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
+- [.NET 7.0 Desktop Runtime (latest version)](https://dotnet.microsoft.com/en-us/download/dotnet)
 
 ## 3. Download the latest version of BG3MM
 Download the latest version of BG3MM from [LaughingLeaders GitHub](https://github.com/LaughingLeader/BG3ModManager/releases/latest).
