@@ -2,14 +2,14 @@
 title: wip
 description: 
 published: false
-date: 2024-08-21T06:21:47.472Z
+date: 2024-08-21T06:41:37.271Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
 ---
 
-# Timeline Editing (Working Title)
-Hi there! Welcome to Milo Magnetuning's guide to dialogue files.
+# Timeline Editing
+Hi there! Welcome to Milo Magnetuning's guide to editing cinematics and dialogue files.
 
 
 ## Requirements
