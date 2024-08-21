@@ -2,7 +2,7 @@
 title: Removing mods from a save
 description: This guide focuses on removing individual mods from a save while being able to resume gameplay after the mods are removed.
 published: true
-date: 2024-08-21T18:23:40.131Z
+date: 2024-08-21T18:32:54.920Z
 tags: mods, mod uninstall, modsuse, mod uninstaller, uninstall, remove
 editor: markdown
 dateCreated: 2024-08-21T18:05:24.644Z
@@ -37,11 +37,11 @@ _Mod Uninstaller_ is a mod that offers an automated way to remove mod items and 
 
 Here is how you can use it:
 
-* Download [Mod Uninstaller](https://www.nexusmods.com/baldursgate3/mods/9701) from the Nexus Mods page and install it and its requirements as usual;
-* Open the MCM window in-game;
-* Click the Mod Uninstaller tab and wait for mod data to be analyzed;
-* Select the mod you want to uninstall, and click uninstall.
-* Save your game and exit.
+1. Download [Mod Uninstaller](https://www.nexusmods.com/baldursgate3/mods/9701) from the Nexus Mods page and install it and its requirements as usual;
+2. Open the MCM window in-game;
+3. Click the Mod Uninstaller tab and wait for mod data to be analyzed;
+4. Select the mod you want to uninstall, and click uninstall.
+5. Save your game and exit.
 
 This process will remove all items and statuses associated with the mod, **greatly increasing the chances of a successful uninstallation.**
 
