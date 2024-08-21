@@ -2,7 +2,7 @@
 title: wip
 description: 
 published: false
-date: 2024-08-11T11:02:10.347Z
+date: 2024-08-21T06:21:47.472Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
@@ -11,7 +11,6 @@ dateCreated: 2024-07-30T22:33:35.683Z
 # Timeline Editing (Working Title)
 Hi there! Welcome to Milo Magnetuning's guide to dialogue files.
 
-AlitheaAncunín helped with the editing/proofreading for this—thank you so much! What was once a novella is now a much more reasonable guide.
 
 ## Requirements
 
@@ -297,7 +296,7 @@ You'll  need to make sure the nested dialogue you're linking to is listed as a c
 I'll be covering more about how to create new nested dialogue files, as well as creating new dialogue files generally at the end of this tutorial! You can scroll to the end of the page to find it.
 
 
-## ### How Do You Edit the Dialog Timeline Files?
+## How Do You Edit the Dialog Timeline Files?
 
 And now for the Dialog Timeline files. These are very lengthy and complicated files, and some parts of editing them can be extremely tedious, time consuming, and potentially, like, almost impossible without a python script to automate some parts of editing them.
 
@@ -1024,3 +1023,7 @@ Yep, that's it! For now. Again, this is a very basic tool, and it's really just 
 Once you've made all the changes you'd like, you can copy your effect components into the timeline file you're editing. You can keep editing them from there if you'd like! The effect components only need to be placed in a separate file to run the tool.
 
 Check out the "Adding to the Timeline" tab for further information about adding effect components and dialogue nodes!
+
+## Credit
+
+[Alithea Ancunín](https://paths.to/astariomancer) helped with the editing/proofreading for this — thank you so much! What was once a novella is now a much more reasonable guide.
