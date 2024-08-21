@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-06-23T02:44:09.456Z
+date: 2024-08-21T18:27:05.445Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -16,7 +16,7 @@ dateCreated: 2024-05-02T16:40:20.175Z
 ## **Before using this guide:**
 
 -   This guide is written assuming you are using [_BG3MM_](https://github.com/LaughingLeader/BG3ModManager) and a PC with Microsoft Windows.
--   This guide focuses on removing all mods from your game, but it can also be used to remove individual mods for troubleshooting
+-   This guide focuses on removing all mods from your game, but it can also be used to remove individual mods for troubleshooting. If you wish to remove specific mods and resume gameplay in an existing save, [How-to-remove-mods](/Tutorials/Mod-Use/How-to-remove-mods)follow this guide instead
 -   This guide directs you to delete folders/files, but you can move the folders/files to another location instead of deleting if you want to reinstall the mods after following this guide
 -   This guide uses screenshots of folder locations that may differ from what it is located on your computer
 -   If you would like to respost this guide to another site, please contact ResplendentArrow on Discord
