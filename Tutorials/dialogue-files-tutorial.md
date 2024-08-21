@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-08-21T06:41:26.379Z
+date: 2024-08-21T06:51:58.799Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -298,21 +298,17 @@ I'll be covering more about how to create new nested dialogue files, as well as 
 
 ## How Do You Edit the Dialog Timeline Files?
 
-And now for the Dialog Timeline files. These are very lengthy and complicated files, and some parts of editing them can be extremely tedious, time consuming, and potentially, like, almost impossible without a python script to automate some parts of editing them.
+And now for the Dialog Timeline files. These are very lengthy and complicated files, and some parts of editing them can be extremely tedious, time consuming, and potentially almost impossible without a python script to automate some parts of editing them.
 
-...It's a good thing, then, that I made a tool to automate those tasks! You can find it on Nexusmods <a href="https://www.nexusmods.com/baldursgate3/mods/11295">here.</a>
+I've made a tool to help automate those tasks, though! You can find it on Nexusmods <a href="https://www.nexusmods.com/baldursgate3/mods/11295">here.</a>
 
-It's an extremely simple tool, and is basically the Python scripts I've been using to update timeline files put into a tkinter UI, but it's been a lifesaver for me when editing these files.
-  
-Like the DialogsBinary section, I'm  going to be breaking this section of the tutorial into different tabs.
+The Using the Timeline Updater tab covers how to use the tool! The instructions have been mirrored on the tool's Nexusmods page as well.
 
-You can find instructions on how to use my Dialog Timeline updater in the Using the Timeline Updater tab, as well as on the Nexusmods page for the tool.
+This section of the tutorial is also broken down into the following other tabs:
 
-The Summary tab offers a bit more explanation on how these files work, the Anatomy of a Dialog Timeline tab explains the structure of the files overall, the Effect Components tab will break down the different EffectComponents in the files, the How to Edit tab will go over editing the files, and the Emotion Rigs Quick Ref tab lists out the expression rigs used by the game, with the ID and variation numbers you'll need to reference them in the files.
+The Anatomy of a Dialog Timeline tab explains the structure of the files overall, the Effect Components tab will break down the different EffectComponents in the files, the How to Edit tab will go over editing the files, and the Emotion Rigs Quick Ref tab lists out the expression rigs used by the game, with the ID and variation numbers you'll need to reference them in the files.
 
 ## Tab {.tabset}
-
-### A Summary
 
 ### Anatomy of a Dialog Timeline File
 
@@ -397,8 +393,6 @@ The rest of the sections in the timeline file are either things that likely shou
 …And, with that, we're ready to move on! Check the Effect Components tab to continue with the tutorial.
 
 ### Effect Components - Documentation
- 
-#### OK, I'M READY. WHAT IS GOING ON WITH THOSE EFFECT COMPONENTS?
 
 The EffectComponents section is the bulk of what you’ll be getting into and editing for your dialogue mods. This section contains all the information on timing, character animations, poses, staging, expressions, sound effects, voice lines, camera angles, and more that need to be referenced to play the dialogue or cinematic. Most of the other sections in the file are meant to help the game reference this information, but the effect components are the true core of the dialogue system.
 
