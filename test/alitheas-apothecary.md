@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-07-30T22:36:14.376Z
+date: 2024-08-24T08:09:05.617Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -53,5 +53,5 @@ Part 6 - Creative expression: Tips and tricks for developing your unique style a
 *credit: Alithea Ancunín*
 
 
-
-
+## Can we upload videos to the wiki?
+[barber.mp4](/test/alithea/barber.mp4)
