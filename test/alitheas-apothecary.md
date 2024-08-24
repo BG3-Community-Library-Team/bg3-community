@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-08-24T08:09:05.617Z
+date: 2024-08-24T08:16:01.733Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -55,3 +55,6 @@ Part 6 - Creative expression: Tips and tricks for developing your unique style a
 
 ## Can we upload videos to the wiki?
 [barber.mp4](/test/alithea/barber.mp4)
+
+## What about gifs?
+![astarion_skin_texture_comparison.gif](/test/alithea/astarion_skin_texture_comparison.gif)
