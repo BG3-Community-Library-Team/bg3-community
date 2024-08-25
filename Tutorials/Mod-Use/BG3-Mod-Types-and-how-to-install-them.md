@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: true
-date: 2024-08-10T14:58:01.946Z
+date: 2024-08-25T16:06:04.720Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -114,6 +114,11 @@ Script Extender by Norbyte adds Lua/Osiris scripting support to the game. It is 
 SE works on Windows, Linux, and Steam Deck. [Follow this guide on how to install SE.](/Tutorials/Mod-Use/How-to-install-Script-Extender)
 > Download SE only from [Norbyte's official GitHub](https://github.com/Norbyte/bg3se/releases) or via the BG3 Mod Manager.
 {.is-danger}
+
+## Video
+
+[![installmodsthumbnail.webp](/mod-use/install-mods/installmodsthumbnail.webp)](https://youtu.be/juQunE2vmJE)
+
 ## Modding and Achievements
 Modding Baldur's Gate 3 disables all achievements. They are automatically re-enabled when using Script Extender. If Script Extender cannot be used for any reason, the native mod Achievement Enabler can also be used for enabling achievements again. Please do not use those two methods together.
 
