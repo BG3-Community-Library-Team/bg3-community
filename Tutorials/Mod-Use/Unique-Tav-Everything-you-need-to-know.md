@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2024-06-19T22:35:51.727Z
+date: 2024-08-27T21:32:26.771Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -18,9 +18,7 @@ The beginning is how to install unique tav, compatiblity and common errors.
 
 If you are more of a visual learner, I have made a [YouTube Video](https://www.youtube.com/watch?v=Bk1FCpg7S38) on how to install Unique Tav, load order, how to switch body/face tattoo's, makeup and how to make other texture mods compatible with Unique Tav! 
 
-If you are an experienced user, there will be a lot of useful information in this guide, however take a look at [Kartoffel's YouTube Video](https://www.youtube.com/watch?v=g67eTrz9fWg) about Unique Tav.
-
-If you are super advanced and want to add custom heads etc, look through [Super advanced super custom Unique Tav guide by Kartoffel](https://www.nexusmods.com/baldursgate3/articles/380)
+Even if you are an experienced user, there will still be a lot of useful information in this guide.
 
 As this is going to be a big guide, here are the things it will cover:
 1. [How to install Unique Tav](#how-to-install-unique-tav)
@@ -529,4 +527,4 @@ Other relevant guides:
 - SE Fresh Install (On-To-Do)
 
 Made by: Maze
-Credits: Kaz, kartoffel, NellsRelo
+Credits: Kaz, NellsRelo
