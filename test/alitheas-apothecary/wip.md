@@ -2,7 +2,7 @@
 title: wip
 description: 
 published: false
-date: 2024-08-21T07:04:05.019Z
+date: 2024-08-27T07:56:05.435Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-30T22:33:35.683Z
@@ -12,9 +12,7 @@ dateCreated: 2024-07-30T22:33:35.683Z
 Hi there! Welcome to Milo Magnetuning's guide to editing cinematics and dialogue files.
 
 
-## Requirements
-
-### Tools
+## Required Tools
 
 - [LSLib](https://github.com/Norbyte/lslib)
 - A code editor, I recommend [VSCode](https://code.visualstudio.com/)
@@ -23,7 +21,7 @@ Hi there! Welcome to Milo Magnetuning's guide to editing cinematics and dialogue
 - An extracted localization file to reference your dialog
 - Not necessary but highly recommended: The [parsed dialog files](https://www.tumblr.com/roksik-dnd/727481314781102080/bg3-datamined-dialogue-google-drive) made by roksik-dnd on Tumblr
 
-### Skills
+## Recommended Skills
 - Basic knowledge of BG3 modding, but especially unpacking and converting .lsf files
 - Basic knowledge of using LSLib and the Multitool index
 - Optional, but will help a lot: a basic understanding of conditional statements in code, which the game uses to test dialog trees
@@ -32,7 +30,7 @@ Let's get started, shall we?
 
 ## What Goes Into Dialog in Baldur’s Gate 3?
 
-There's five files specific to dialog in the game, which will all need to be present when creating new scenes—but you may not need all of them when editing existing dialog!
+There's five file types specific to dialog in the game, which will all need to be present when creating new scenes - but you may not need all of them when editing existing dialog.
 
 These dialog-specific files are as follows:
 
@@ -42,7 +40,7 @@ These dialog-specific files are as follows:
 - GeneratedDialogTimelines
 - Dialog Assets
 
-The first three files are most likely what you'll be editing! They contain the bulk of the information needed to play a scene. The GeneratedDialogTimelines file and the Dialog Assets files are what help the game reference the first three files, and are necessary when creating new scenes and sets of dialog, but you might not be editing them as frequently for existing scenes.
+The first three files are most likely what you'll be editing. They contain the bulk of the information needed to play a scene. The GeneratedDialogTimelines file and the Dialog Assets files are what help the game reference the first three files, and are necessary when creating new scenes and sets of dialog, but you might not be editing them as frequently for existing scenes.
 
 The first three files for a given scene/conversation will share the same file name, with the Scene files just having the word Scene appended to that name. The GeneratedDialogTimelines and Dialog Assets files, are merged files, with many entries for each set of dialog in the game.
 
