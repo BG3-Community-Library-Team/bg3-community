@@ -2,7 +2,7 @@
 title: Backstabbing Framework
 description: 
 published: true
-date: 2024-08-28T17:27:33.839Z
+date: 2024-08-28T17:32:11.418Z
 tags: se, script-extender, frameworks, spells, statuses
 editor: ckeditor
 dateCreated: 2024-08-27T22:20:24.504Z
@@ -19,10 +19,13 @@ dateCreated: 2024-08-27T22:20:24.504Z
 <h2>The BackstabbingBlueprint.json file</h2>
 <p>This file is the core of the framework. Here, you'll list all the spells/passives that can backstab, and at what angle. The file harbors the following structure :</p>
 <pre><code class="language-plaintext">{
-  "EnablingSpells": [
-  ],
-  "EnablingPassives": [
-  ],
+  "Enabling" : 
+	{
+		"Spells" : [
+		],
+		"Passives": [
+		]
+	},
   "Custom" : 
 	{
 		"Spells" : [
@@ -30,7 +33,7 @@ dateCreated: 2024-08-27T22:20:24.504Z
 		"Passives": [
 		]
 	},
-"Modifiers" : 
+  "Modifiers" : 
 	{
 		"Spells" : [
 		],
@@ -38,8 +41,7 @@ dateCreated: 2024-08-27T22:20:24.504Z
 		]
 	}
 }</code></pre>
-<p>&nbsp;</p>
-<p>&nbsp; There are currently 3 categories :</p>
+<p>You can see 3 distincts categories :</p>
 <ol>
   <li>Enabling</li>
   <li>Custom</li>
