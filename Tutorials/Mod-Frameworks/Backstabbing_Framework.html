@@ -2,11 +2,25 @@
 title: Backstabbing Framework
 description: 
 published: false
-date: 2024-08-27T22:20:24.504Z
+date: 2024-08-28T17:21:18.341Z
 tags: se, script-extender, frameworks, spells, statuses
 editor: ckeditor
 dateCreated: 2024-08-27T22:20:24.504Z
 -->
 
 <h1>Quick Intro</h1>
+<p>The Backstabbing Framework provides easy support to a much more refined backstabbing mechanic than what exists in the game with stats (i.e. : not FacingMe()). It only supports spells and passives, not status, but since you can make a status give a passive it basically supports status aswell. With it, you can precisely describe what condition(s) enable backstab (what spell can backstab and what passive make a character able to backstab). Furthermore, you can associate au precise angle on a case-by-case basis, so you can make a spell that backstabs all the time, regardless of the targets's orientations for instance. It also supports what is called “Modifiers”, spells/passives that do not inherently enable backstab, but rather increases (or decreases) the angle at which you can backstab.</p>
+<p>To properly use this framework, you'll have to do 2 things :</p>
+<ol>
+  <li>Add a BackstabbingBlueprint.json file next to your mod's meta.lsx</li>
+  <li>The status “BACKSTABBING_FRAMEWORK_MAIN_STATUS_200001” will be applied to targets that satisfy the backstabbing conditions (mostly the angle, but there also is a maximum distance). So if you want a spell to have an extra effect when backstabbing, just use this status as a condition.</li>
+</ol>
+<p>&nbsp;</p>
+<h2>The BackstabbingBlueprint.json file</h2>
+<p>This file is the core of the framework. Here, you'll list all the spells/passives that can backstab, and at what angle. There are currently 3 categories :</p>
+<ol>
+  <li>Enabling</li>
+  <li>Custom</li>
+  <li>Modifiers</li>
+</ol>
 <p>&nbsp;</p>
