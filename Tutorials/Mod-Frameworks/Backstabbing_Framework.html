@@ -2,7 +2,7 @@
 title: Backstabbing Framework
 description: 
 published: true
-date: 2024-08-29T01:44:50.626Z
+date: 2024-08-29T01:59:50.981Z
 tags: se, script-extender, frameworks, spells, statuses
 editor: ckeditor
 dateCreated: 2024-08-27T22:20:24.504Z
@@ -89,8 +89,15 @@ dateCreated: 2024-08-27T22:20:24.504Z
 			["DivineHealth",30]
 		]
 	}</code></pre>
-<p>There is no priority for modifiers, every single one will be accounted for if a character has multiple of them. So for instance, a Paladin having Divine Health and using Divine Smite will add 70 to every backstab calculation. Considering he also has UnlockedSpellSlotLevel2, which is associated to an angle of 240°, then if he uses Divine Smite he'll have a total backstabbing angle of 240+30+40 = 310° (very close to 360°, which is guaranteed backstab).</p>
+<p>There is no priority for modifiers, every single one will be accounted for if a character has multiple of them. So in this case for instance, a Paladin having Divine Health and using Divine Smite will add 70 to every backstab calculation. Considering he also has UnlockedSpellSlotLevel2, which is associated to an angle of 240°, then if he uses Divine Smite he'll have a total backstabbing angle of 240+30+40 = 310° (very close to 360°, which is guaranteed backstab).</p>
 <p><code>As always be sure to separate every table by a comma “,”.</code></p>
 <p>&nbsp;</p>
 <h2>The “BACKSTABBING_FRAMEWORK_MAIN_STATUS_200001” Status</h2>
-<p>&nbsp;</p>
+<p>We enter the stats part of this mod. This framework only provides the foundations on which you can create your own classes/items/passives or whatever and since I opted for customability over practicality, you'll have to do most of the work here.&nbsp;</p>
+<p>How it works is simple : on previewing a spell (aka when a player clicks on a spell icon), this mod will calculate (using the angles mentionned above) the backstabbing state of each entity within a roughly 30 meter radius and applies the status BACKSTABBING_FRAMEWORK_MAIN_STATUS_200001 to all those that meet the conditions. What you do with this status is entirely up to you, you can for instance make a passive like that :</p>
+<pre><code class="language-plaintext">new entry "Shade_Infiltrate_100011"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "DisplayName" "he532834a9e294966b775dae69c06f4f14ff9;1"
+data "Boosts" "IF(HasStatus('BACKSTABBING_FRAMEWORK_MAIN_STATUS_200001',context.Target)):CriticalHit(AttackRoll,Success,Always)"</code></pre>
+<p>Such a passive would guarantee critical hits to the character's attacks against Backstabbed entities, but you can do much more (<i>almost</i> everything, even).&nbsp;</p>
