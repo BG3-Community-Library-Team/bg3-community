@@ -2,7 +2,7 @@
 title: Backstabbing Framework
 description: 
 published: true
-date: 2024-08-29T00:59:19.912Z
+date: 2024-08-29T01:19:36.657Z
 tags: se, script-extender, frameworks, spells, statuses
 editor: ckeditor
 dateCreated: 2024-08-27T22:20:24.504Z
@@ -64,4 +64,17 @@ dateCreated: 2024-08-27T22:20:24.504Z
 <p><code>Be wary that each Spell/Passive <i>must</i> be separated by a comma “,”.</code></p>
 <p>&nbsp;</p>
 <h3>Custom</h3>
-<p>Here, it's getting a little bit more complicated.</p>
+<p>Here, it's getting a little bit more complicated but worry not it's still easy and it allows some customization. For each entry in this section, you'll have to put a table associating the name of a spell/passive to an angle of your choice. In case you want to associate multiple spells/passives to a single angle, you'll have to create additional tables. The priority is (for now) always given to the <i>widest</i> angle (whether it's from a spell or a passive). So, if a character has a passive associated to a 180° angle and uses a spell associated to an angle of 60° for instance, then the passive will take priority and completely disregards the spell. In the <a href="https://github.com/Lunisole/BackstabbingFramework/blob/main/Mods/BackstabbingFramework/BackstabbingBlueprint-Example.json">BackstabbingBlueprint-Example.json</a> we have :</p>
+<pre><code class="language-plaintext">"Custom" : 
+	{
+		"Spells" : [
+			["Target_MainHandAttack",180]
+		],
+		"Passives": [
+			["UnlockedSpellSlotLevel2",240]	
+		]
+	},</code></pre>
+<p><code>Again, each individual entry (in this case, each table) must be separated by a comma “,”.</code></p>
+<p>&nbsp;</p>
+<h3>Modifiers</h3>
+<p>&nbsp;</p>
