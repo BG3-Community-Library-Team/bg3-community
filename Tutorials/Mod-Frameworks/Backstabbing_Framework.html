@@ -2,14 +2,14 @@
 title: Backstabbing Framework
 description: 
 published: true
-date: 2024-08-29T01:19:36.657Z
+date: 2024-08-29T01:44:50.626Z
 tags: se, script-extender, frameworks, spells, statuses
 editor: ckeditor
 dateCreated: 2024-08-27T22:20:24.504Z
 -->
 
 <h1>Quick Intro</h1>
-<p>The Backstabbing Framework provides easy support to a much more refined backstabbing mechanic than what exists in the game with stats (i.e. : not FacingMe()). It only supports spells and passives, not status, but since you can make a status give a passive it basically supports status aswell. With it, you can precisely describe what condition(s) enable backstab (what spell can backstab and what passive make a character able to backstab). Furthermore, you can associate au precise angle on a case-by-case basis, so you can make a spell that backstabs all the time, regardless of the targets's orientations for instance. It also supports what is called “Modifiers”, spells/passives that do not inherently enable backstab, but rather increases (or decreases) the angle at which you can backstab.</p>
+<p>The Backstabbing Framework provides easy support to a much more refined backstabbing mechanic than what exists in the game with stats (i.e. : not FacingMe()). It only supports spells and passives, not status, but since you can make a status give a passive it basically supports status aswell. With it, you can precisely describe what condition(s) enable backstab (what spell can backstab and what passive make a character able to backstab). Furthermore, you can associate a precise angle on a case-by-case basis, so you can make a spell that backstabs all the time, regardless of the targets's orientations for instance. It also supports what is called “Modifiers”, spells/passives that do not inherently enable backstab, but rather increases (or decreases) the angle at which you can backstab.</p>
 <p>To properly use this framework, you'll have to do 2 things :</p>
 <ol>
   <li>Add a BackstabbingBlueprint.json file next to your mod's meta.lsx</li>
@@ -64,7 +64,7 @@ dateCreated: 2024-08-27T22:20:24.504Z
 <p><code>Be wary that each Spell/Passive <i>must</i> be separated by a comma “,”.</code></p>
 <p>&nbsp;</p>
 <h3>Custom</h3>
-<p>Here, it's getting a little bit more complicated but worry not it's still easy and it allows some customization. For each entry in this section, you'll have to put a table associating the name of a spell/passive to an angle of your choice. In case you want to associate multiple spells/passives to a single angle, you'll have to create additional tables. The priority is (for now) always given to the <i>widest</i> angle (whether it's from a spell or a passive). So, if a character has a passive associated to a 180° angle and uses a spell associated to an angle of 60° for instance, then the passive will take priority and completely disregards the spell. In the <a href="https://github.com/Lunisole/BackstabbingFramework/blob/main/Mods/BackstabbingFramework/BackstabbingBlueprint-Example.json">BackstabbingBlueprint-Example.json</a> we have :</p>
+<p>Here, it's getting a little bit more complicated but worry not it's still easy and it allows some customization. For each entry in this section, you'll have to put a table associating the name of a spell/passive to an angle of your choice. In case you want to associate multiple spells/passives to a single angle, you'll have to create additional tables. You don't need to add entries here in the Enabling section, every spell/passive in here will automatically be “Enablers". The priority is (for now) always given to the <i>widest</i> angle (whether it's from a spell or a passive). So, if a character has a passive associated to a 180° angle and uses a spell associated to an angle of 60° for instance, then the passive will take priority and completely disregards the spell. In the <a href="https://github.com/Lunisole/BackstabbingFramework/blob/main/Mods/BackstabbingFramework/BackstabbingBlueprint-Example.json">BackstabbingBlueprint-Example.json</a> we have :</p>
 <pre><code class="language-plaintext">"Custom" : 
 	{
 		"Spells" : [
@@ -74,7 +74,23 @@ dateCreated: 2024-08-27T22:20:24.504Z
 			["UnlockedSpellSlotLevel2",240]	
 		]
 	},</code></pre>
-<p><code>Again, each individual entry (in this case, each table) must be separated by a comma “,”.</code></p>
+<p><code>Again, each individual entry (in this case, each table) <i>must</i> be separated by a comma “,”.</code></p>
 <p>&nbsp;</p>
 <h3>Modifiers</h3>
+<p>Modifiers work very differently from the 2 categories above. Instead of making backstab possible with a fixed angle, modifiers will add their associated value to any backstab angle calculation. This means you can make a passive that increases the width of every other spell/passive's angle you might have added in the two categories above. It shall be noted that modifiers <i>do not</i> enable backstab inherently, meaning that if you want a modifier that also makes a character to back, you'll have to put it into Enabling or Custom aswell. In the <a href="https://github.com/Lunisole/BackstabbingFramework/blob/main/Mods/BackstabbingFramework/BackstabbingBlueprint-Example.json">BackstabbingBlueprint-Example.json</a> there is :&nbsp;</p>
+<pre><code class="language-plaintext">"Modifiers" : 
+	{
+		"Spells" : [
+			["Target_Smite_Divine",40],
+			["Target_SneakAttack",15],
+			["Projectile_SneakAttack",30]
+		],
+		"Passives" : [
+			["DivineHealth",30]
+		]
+	}</code></pre>
+<p>There is no priority for modifiers, every single one will be accounted for if a character has multiple of them. So for instance, a Paladin having Divine Health and using Divine Smite will add 70 to every backstab calculation. Considering he also has UnlockedSpellSlotLevel2, which is associated to an angle of 240°, then if he uses Divine Smite he'll have a total backstabbing angle of 240+30+40 = 310° (very close to 360°, which is guaranteed backstab).</p>
+<p><code>As always be sure to separate every table by a comma “,”.</code></p>
+<p>&nbsp;</p>
+<h2>The “BACKSTABBING_FRAMEWORK_MAIN_STATUS_200001” Status</h2>
 <p>&nbsp;</p>
