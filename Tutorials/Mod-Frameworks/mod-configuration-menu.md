@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-08-31T16:43:43.928Z
+date: 2024-08-31T16:57:58.294Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -65,6 +65,7 @@ Below are listed some nice features that MCM provides to mod authors:
 On top of it all, if you currently offer multiple mod versions with different code to avoid dealing with the complexities of providing settings, you can simplify this by using a single version with MCM to introduce settings. This approach allows you to avoid creating and maintaining several different .pak releases for your mods.
 
 You can even technically integrate MCM as an optional requirement (with hardcoded defaults or MCM values if present), although that takes a bit more effort than just adding it as a standard requirement.
+
 ## Concepts
 
 First, let's establish some important concepts so that we're on the same page when discussing MCM. These will be used throughout the documentation:
@@ -74,6 +75,8 @@ First, let's establish some important concepts so that we're on the same page wh
 >**Blueprint**: Defines the **structure of a mod's configuration for MCM** to use (with a `MCM_blueprint.json` file); written by you.
 >**MCM Schema**: Dictates the **structure of the blueprint**; is the 'metaschema'; defined by MCM.
 {.is-info}
+
+Additionally, MCM follows [semantic versioning](https://semver.org/spec/v2.0.0-rc.2.html). MAJOR updates would probably mean introducing breaking changes to blueprints. I currently don't have any MAJOR updates in mind at all.
 
 ## Integrating MCM into your mod
 
@@ -153,7 +156,6 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 > If your [mod is symlinked](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking 'Symlinking mods tutorial'), you can try out changes to your mod's blueprint in-game by using `reset` in the console without having to restart the game every time you make a change to the blueprint file.
 {.is-info}
 
-
 > For examples of mods that use MCM, you can check:
 > [MCM demo](#mcm-demo) (1.5.1) - slightly outdated, showcases all input types, tab insertion and a bit of client/server communication
 > [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/MCM-integration/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
@@ -205,7 +207,6 @@ Global functions are only accessible within your mod table, so this function won
 Likewise, you can allow global usage of `MCMAPI` by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`. 
 Otherwise, prepend `Mods.BG3MCM` to all API calls.
 
-
 ### Inserting custom UI elements
 
 MCM allows mod authors to insert custom UI elements into the MCM UI. This can be done using the `InsertModMenuTab` function from MCM's `IMGUIAPI`:
@@ -224,7 +225,6 @@ This will create a new tab or insert the content at the end of an existing one.
 > You can define an entire tab's content — not just a widget — and call the `InsertModMenuTab` function to insert it into the MCM window, inside the space dedicated for your mod.
 > • For reference, [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) is a mod that leverages the `InsertModMenuTab` method to add custom logic inside MCM.
 {.is-info}
-
 
 
 ### Listening to MCM events
@@ -351,6 +351,7 @@ MCM performs validation checks when:
 >• New settings are automatically introduced to the settings JSON file when new settings are added to the schema;
 > **Therefore, mod authors can safely add or remove settings from the blueprint without worrying about inconsistencies in the settings JSON file.**
 {.is-success}
+
 ### Localization support
 
 In your blueprint, you can define localization handles for various elements of the configuration, including:
@@ -390,6 +391,7 @@ NOTE: with the introduction of `ModEvents` in SE v18, the current way of listeni
 [MCM Demo.zip](/tutorials/frameworks/mcm/mcm_demo.zip)
 
 ## Closing words
+
 I hope this documentation has provided you with a clear understanding of how to integrate MCM into your mod. If you have any suggestions or encountered any points of confusion or errors, no matter how small or mundane, please let me know [on the Nexus page](https://www.nexusmods.com/baldursgate3/mods/9162) or on Discord ([BG3MC](https://discord.com/invite/bg3mods)). I'm keen on ensuring MCM has excellent design and documentation. I also hope MCM enhances your development experience and provides a better experience for your users!
 
 I'd like to thank the community again for their support and feedback, as well as the mod authors who have already integrated MCM into their mods. It's been awesome to see what you've been building with it so far.
