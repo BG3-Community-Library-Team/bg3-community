@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-08-31T16:21:49.805Z
+date: 2024-08-31T16:43:43.928Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -225,32 +225,22 @@ This will create a new tab or insert the content at the end of an existing one.
 > • For reference, [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) is a mod that leverages the `InsertModMenuTab` method to add custom logic inside MCM.
 {.is-info}
 
+
+
 ### Listening to MCM events
-> With the introduction of `ModEvents` in SE v18, the previous method for listening to MCM events will be deprecated. While the information in this section remains valid, please note that it is subject to change. MCM will maintain backward compatibility with the current method for the time being.
-> Currently, mod events are implemented using a workaround involving net messages, which were originally intended for use within a single mod only.
+
+> • With the introduction of `ModEvents` in SE v18, the previous method for listening to MCM events was deprecated. MCM will maintain backward compatibility with the net message method for the time being.
+> • Prior to version 1.11, mod events were handled using a workaround that relied on net messages, which were originally designed for communication within a single mod. This approach was necessary due to the absence of a dedicated mod event system in SE at that time.
 {.is-warning}
+
 <details>
-<summary>Event changes in 1.11</summary>
-  
-- `MCM_Saved_Setting` -> `MCM_Setting_Saved`
-  
-- `MCM_Reset_All_Mod_Settings` -> `MCM_All_Mod_Settings_Reset`
-  
-- `MCM_Created_Profile` -> `MCM_Profile_Created`
-  
-- `MCM_Set_Profile` -> `MCM_Profile_Activated`
-  
-- `MCM_Deleted_Profile` -> `MCM_Profile_Deleted`
-  
-- `MCM_User_Opened_Window` -> `MCM_Window_Opened`
-  
-- `MCM_User_Closed_Window` -> `MCM_Window_Closed`
-  
-- `modGUID` (payload param) -> `modUUID`
-</details>
+<summary> Event usage prior to 1.11 </summary>
 
+> • With the introduction of `ModEvents` in SE v18, the previous method for listening to MCM events has been deprecated. MCM will continue to support this legacy method for the time being.
+> • Prior to version 1.11, mod events were handled using a workaround that relied on net messages, which were originally designed for communication within a single mod. This approach was necessary due to the absence of a dedicated mod event system in SE at that time.
+{.is-warning}
 
-MCM uses a set of channels to communicate between the client and server. Some of these can be useful for mod authors to listen to, as they can use this to update their mod's behavior based on changes from MCM, such as when a setting is saved:
+Up to 1.10, MCM used a set of channels to communicate between the client and server. Some of these can be useful for mod authors to listen to, as they can use this to update their mod's behavior based on changes from MCM, such as when a setting is saved:
 
 `MCM_Saved_Setting`: fired whenever a setting value has been saved and written to the settings JSON file by MCM. The payload contains the setting ID and the new value. Example usage:
 ```lua
@@ -279,6 +269,67 @@ Here are some other events that can be listened to:
   - `MCM_Mod_Tab_Activated`: Fired when the user clicks a mod in the mod list in MCM's left panel.
 
 > Always verify the `modGUID` in the payload to confirm that the event pertains to the mod of interest (typically your own, which you have global access to via `ModuleUUID`).
+{.is-warning}
+
+</details>
+
+<details>
+<summary>Event changes in 1.11</summary>
+Some names were changed with this refactor: 
+  
+- `MCM_Saved_Setting` -> `MCM_Setting_Saved`
+
+- `MCM_Reset_All_Mod_Settings` -> `MCM_All_Mod_Settings_Reset`
+
+- `MCM_Created_Profile` -> `MCM_Profile_Created`
+
+- `MCM_Set_Profile` -> `MCM_Profile_Activated`
+
+- `MCM_Deleted_Profile` -> `MCM_Profile_Deleted`
+
+- `MCM_User_Opened_Window` -> `MCM_Window_Opened`
+
+- `MCM_User_Closed_Window` -> `MCM_Window_Closed`
+
+- `modGUID` (payload param) -> `modUUID`
+</details>
+
+As of 1.11, MCM uses Script Extender's `ModEvents` to communicate between different mods. This allows mod authors to listen for these events and implement specific behaviors in response to changes from MCM, such as when a setting is saved:
+
+`MCM_Setting_Saved`: fired whenever a setting value has been saved and written to the settings JSON file by MCM. The payload contains the setting ID and the new value. Example usage:
+```lua
+-- In your MCM-integrated mod's code
+Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(call, payload)
+    local data = Ext.Json.Parse(payload)
+    if not data or data.modGUID ~= ModuleUUID or not data.settingId then
+        return
+    end
+
+    if data.settingId == "debug_level" then
+        _D("Setting debug level to " .. data.value)
+        MyMod.DebugLevel = data.value
+    end
+end)
+```
+
+Here are the events that can be listened to:
+
+| Event name                | Description                                                       | Payload content                                                                                     |
+|------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| `MCM_Saved_Setting`          | Fired when a setting value has been saved by MCM. | `modUUID`: The UUID of the mod  </br> `settingId`: The ID of the setting  </br> `value`: The new value of the setting |
+| `MCM_Setting_Reset`          | Fired when a setting is reset to its default value.              | `modUUID`: The UUID of the mod  </br> `settingId`: The ID of the setting  </br> `defaultValue`: The default value of the setting |
+| `MCM_Profile_Created`        | Fired when a new profile is created.                             | `profileName`: The name of the created profile  </br> `newSettings`: The settings of the new profile |
+| `MCM_Profile_Activated`      | Fired when a profile is set as the active one.                  | `profileName`: The name of the active profile                                               |
+| `MCM_Profile_Deleted`        | Fired when a profile is deleted.                                 | `profileName`: The name of the deleted profile                                               |
+| `MCM_Mod_Tab_Added`          | Fired when a mod inserts a custom tab into the MCM UI.          | `modUUID`: The UUID of the mod  </br> `tabName`: The name of the tab added                      |
+| `MCM_Mod_Tab_Activated`      | Fired when a player clicks a mod in the mod list in MCM's left panel. | `modUUID`: The UUID of the mod  </br> `tabName`: The name of the activated tab  |
+| `MCM_Mod_Subtab_Activated`   | Fired when a subtab within a mod tab is activated.              | `modUUID`: The UUID of the mod  </br> `subtabName`: The name of the activated subtab  |
+| `MCM_Window_Opened`          | Fired when a player opens the MCM window.         | `playSound`: Whether a sound should be played when the window opens.                        |
+| `MCM_Window_Closed`          | Fired when a player closes the MCM window.                      | `playSound`: Whether a sound should be played when the window closes.                       |
+
+For the most up-to-date information, please refer to this file in the Git repository: [EventChannels.lua](https://github.com/AtilioA/BG3-MCM/blob/main/Mod%20Configuration%20Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Events/EventChannels.lua)
+
+> Always verify the `modUUID` in the payload to confirm that the event pertains to the mod of interest (typically your own, which you have global access to via `ModuleUUID`).
 {.is-warning}
 
 ### How validation works
