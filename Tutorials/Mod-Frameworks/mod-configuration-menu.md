@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-08-31T17:19:11.419Z
+date: 2024-08-31T17:21:02.014Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -293,6 +293,8 @@ Some names were changed with this refactor:
 - `MCM_User_Closed_Window` -> `MCM_Window_Closed`
 
 - `modGUID` (payload param) -> `modUUID`
+    
+These changes were implemented in a backwards-compatible way.
 </details>
 
 As of 1.11, MCM uses Script Extender's `ModEvents` to communicate between different mods. This allows mod authors to subscribe to these events and implement specific behaviors in response to changes from MCM, such as when a setting is saved:
