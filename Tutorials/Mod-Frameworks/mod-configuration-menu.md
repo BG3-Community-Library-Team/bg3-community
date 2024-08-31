@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-08-31T17:11:36.517Z
+date: 2024-08-31T17:15:33.992Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -294,9 +294,9 @@ Some names were changed with this refactor:
 - `modGUID` (payload param) -> `modUUID`
 </details>
 
-As of 1.11, MCM uses Script Extender's `ModEvents` to communicate between different mods. This allows mod authors to listen for these events and implement specific behaviors in response to changes from MCM, such as when a setting is saved:
+As of 1.11, MCM uses Script Extender's `ModEvents` to communicate between different mods. This allows mod authors to subscribe to these events and implement specific behaviors in response to changes from MCM, such as when a setting is saved:
 
-`MCM_Setting_Saved`: fired whenever a setting value has been saved and written to the settings JSON file by MCM. The payload contains the setting ID and the new value. Example usage:
+`MCM_Setting_Saved`: fired whenever a setting value has been saved and written to the settings JSON file by MCM. The payload contains information such as the UUID of the mod that added this setting, the setting ID and the new value. Example usage:
 ```lua
 -- In your MCM-integrated mod's code
 Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(call, payload)
@@ -316,7 +316,7 @@ Here are the events that can be listened to:
 
 | Event name                | Description                                                       | Payload content                                                                                     |
 |------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| `MCM_Setting_Saved`          | Fired when a setting value has been saved by MCM. | `modUUID`: The UUID of the mod  </br> `settingId`: The ID of the setting  </br> `value`: The new value of the setting |
+| `MCM_Setting_Saved`          | Fired whenever a setting value has been saved and written to the settings JSON file by MCM. | `modUUID`: The UUID of the mod  </br> `settingId`: The ID of the setting  </br> `value`: The new value of the setting  </br> `oldValue`: The old value of the setting |
 | `MCM_Setting_Reset`          | Fired when a setting is reset to its default value.              | `modUUID`: The UUID of the mod  </br> `settingId`: The ID of the setting  </br> `defaultValue`: The default value of the setting |
 | `MCM_Profile_Created`        | Fired when a new profile is created.                             | `profileName`: The name of the created profile  </br> `newSettings`: The settings of the new profile |
 | `MCM_Profile_Activated`      | Fired when a profile is set as the active one.                  | `profileName`: The name of the active profile                                               |
