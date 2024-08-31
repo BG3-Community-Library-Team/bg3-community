@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-08-16T04:08:33.105Z
+date: 2024-08-31T16:21:49.805Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -226,9 +226,29 @@ This will create a new tab or insert the content at the end of an existing one.
 {.is-info}
 
 ### Listening to MCM events
-> With the introduction of `ModEvents` in SE v18, the existing method for listening to MCM events will be deprecated. While the information in this section remains valid, please note that it is subject to change. MCM will maintain backward compatibility with the current method for the time being.
+> With the introduction of `ModEvents` in SE v18, the previous method for listening to MCM events will be deprecated. While the information in this section remains valid, please note that it is subject to change. MCM will maintain backward compatibility with the current method for the time being.
 > Currently, mod events are implemented using a workaround involving net messages, which were originally intended for use within a single mod only.
 {.is-warning}
+<details>
+<summary>Event changes in 1.11</summary>
+  
+- `MCM_Saved_Setting` -> `MCM_Setting_Saved`
+  
+- `MCM_Reset_All_Mod_Settings` -> `MCM_All_Mod_Settings_Reset`
+  
+- `MCM_Created_Profile` -> `MCM_Profile_Created`
+  
+- `MCM_Set_Profile` -> `MCM_Profile_Activated`
+  
+- `MCM_Deleted_Profile` -> `MCM_Profile_Deleted`
+  
+- `MCM_User_Opened_Window` -> `MCM_Window_Opened`
+  
+- `MCM_User_Closed_Window` -> `MCM_Window_Closed`
+  
+- `modGUID` (payload param) -> `modUUID`
+</details>
+
 
 MCM uses a set of channels to communicate between the client and server. Some of these can be useful for mod authors to listen to, as they can use this to update their mod's behavior based on changes from MCM, such as when a setting is saved:
 
