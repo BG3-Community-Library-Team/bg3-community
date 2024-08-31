@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-08-31T17:18:08.521Z
+date: 2024-08-31T17:19:11.419Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -25,6 +25,7 @@ This documentation is aimed at mod authors who want to integrate their mods with
     - [The MCM Schema](#the-mcm-schema)
     - [Using values from MCM](#using-values-from-mcm)
     - [Inserting custom UI elements](#inserting-custom-ui-elements)
+    - [Listening to MCM events](#listening-to-mcm-events)
     - [How validation works](#how-validation-works)
     - [Localization support](#localization-support)
   - [MCM demo](#mcm-demo)
