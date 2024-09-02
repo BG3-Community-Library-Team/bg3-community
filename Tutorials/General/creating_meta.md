@@ -2,7 +2,7 @@
 title: Creating a meta.lsx file
 description: 
 published: true
-date: 2024-08-16T20:24:57.245Z
+date: 2024-09-02T19:22:25.837Z
 tags: modding, creating mods
 editor: markdown
 dateCreated: 2024-05-04T18:14:40.394Z
@@ -91,7 +91,7 @@ Let's go over the lines you want to edit:
 
               <node id="Dependencies"/>
 
-Please have a read through of Dependencies for this section and whether it pertains to your mod or not.
+Please read [adding mod dependencies]((/Tutorials/General/Basic/adding-mod-dependencies) and whether it pertains to your mod or not.
 
                    <attribute id="Author" type="LSString" value="AUTHOR NAME HERE"/>
 
