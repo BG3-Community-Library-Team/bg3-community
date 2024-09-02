@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2024-09-02T18:50:15.146Z
+date: 2024-09-02T18:52:59.084Z
 tags: meta, mods, modsuse, dependencies, dependency, meta.lsx, mod dependency
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -64,7 +64,10 @@ Dependencies are essential for the evolution of modding communities. If you take
 > Some mods are focused on player-facing features, while others are focused on providing tools and frameworks for other mod authors. **Dependency mods are the backbone of a great modding community**. Framework maintainers spend a lot of time and effort to design and implement systems that other mod authors can leverage to create more complex and feature-rich mods, with less effort.
 {.is-info}
 
-Not all dependencies are created equal. Some try to fix inherent issues with the game and offer compatibility capabilities for other mods, and may be even almost unavoidable. In any case, dependencies are tools that will **allow you to build on top of other mods and focus on what you want to do, instead of reinventing the wheel.** You could theoretically implement all the features of a dependency mod in your mod, but that would be a tremendous waste of time and effort. As BG3 modding progresses, you can expect more and more tools and frameworks to be developed, and you should take advantage of them to create better mods.
+Not all dependencies are created equal. Some try to fix inherent issues with the game and offer compatibility capabilities for other mods, and may be even almost unavoidable. You could theoretically implement all the features of a dependency mod in your mod, but that would be a tremendous waste of time and effort. As BG3 modding progresses, you can expect more and more tools and frameworks to be developed, and you should take advantage of them to create better mods.
+
+> Dependencies are tools that will **allow you to build on top of other mods and focus on what you want to do, instead of reinventing the wheel.**
+{.is-success}
 
 ### But then users won't download my mod!
 
