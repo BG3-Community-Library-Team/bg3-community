@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-08-31T17:21:02.014Z
+date: 2024-09-02T14:15:52.694Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -38,7 +38,7 @@ Below are listed some nice features that MCM provides to mod authors:
 >
 > • ***UI without writing client-side code***: MCM handles the UI for you, so you don't have to write any client-side code or learn the IMGUI API to display your mod's settings, since IMGUI is only available on the client side.
 >
-> • ***Simplifies settings management***: MCM takes care of saving and loading your mod's settings automatically, so you don't have to build an entire configuration system to manage JSON files. MCM has 8k+ lines of code so that ***you*** don't have to deal with that.
+> • ***Simplifies settings management***: MCM takes care of saving and loading your mod's settings automatically, so you don't have to build an entire configuration system to manage JSON files. MCM has 9k+ lines of code so that ***you*** don't have to deal with that.
 >
 > • ***Instant saving and loading***: Unlike the traditional way of handling settings, MCM-integrated mods update settings in real-time as they are changed, without requiring save reloads;
 >
@@ -50,7 +50,7 @@ Below are listed some nice features that MCM provides to mod authors:
 >
 > • **Cross-mod settings access**: The unified config approach promoted by MCM allows for straightforward access to settings from other mods, as arbitrary implementations are mostly eliminated, facilitating compatibility and interoperability.
 >
-> • ***Doesn't clutter UI***: MCM centralizes settings for all mods that use it, so you don't have to worry about cluttering players' screens with yet another IMGUI window, thinking when should it initialize, activate, or even about keybindings - and possible conflicts thereof - for  showing such windows. Users will have a familiar (Noesis) button in the ESC menu (main menu is planned) for opening MCM.
+> • ***Doesn't clutter UI***: MCM centralizes settings for all mods that use it, so you don't have to worry about cluttering players' screens with yet another IMGUI window, thinking when should it initialize, activate, or even about keybindings - and possible conflicts thereof - for  showing such windows. Users will have a familiar (Noesis) button in the ESC and main menus for opening MCM.
 > • Furthermore, you can conditionally hide elements of your configuration based on settings' values (by using `VisibleIf`, more details below).
 >
 > • ***Robustness***: MCM has more than 40 automated server-side tests aiming to ensure that it works as expected, edge cases are handled, and errors are gracefully reported without halting the framework or game; errors from one mod won't affect the others.
