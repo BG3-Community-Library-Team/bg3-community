@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2024-09-02T18:50:00.116Z
+date: 2024-09-02T18:50:15.146Z
 tags: meta, mods, modsuse, dependencies, dependency, meta.lsx, mod dependency
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -74,9 +74,11 @@ If the dependency is popular or has an easy installation process, users will lik
 
 ### What if the dependency mod is abandoned or becomes unavailable?
 
-This is a valid concern. However, history has shown that modding communities are resilient and will find a way to keep mods alive. If a mod is abandoned, the community will either find a way to keep it alive or create a new mod that does the same thing. Large dependency mods are hardly ever abandoned. Note that, in a way, **if you build on top of a mod, you are also helping to keep it alive**. By adding a dependency to your mod, you are also promoting the original mod, and that can help to keep it alive one way or another.
+This is a valid concern. However, history has shown that modding communities are resilient and will find a way to keep mods alive. If a mod is abandoned, the community will either find a way to keep it alive or create a new mod that does the same thing. Large dependency mods are hardly ever abandoned.
 
-In the end, this also brings up another extremely important point: **open source**.  At the time of writing, most of the popular BG3 framework mods are open source and could be picked up by the community if needed. Nexus tracks permissions, and authors cannot suddenly change the permissions of their mods to prevent others from using them.
+Note that, in a way, **if you build on top of a mod, you are also helping to keep it alive**. By adding a dependency to your mod, you are also promoting the original mod, and that can help to keep it alive one way or another.
+
+In the end, this also brings up another extremely important point: **open source**.  At the time of writing, most of the popular BG3 framework mods are open source and could be picked up by the community if needed. Nexus tracks permissions, and authors cannot suddenly change the permissions of their mods to prevent others from using them. 
 
 If you are a mod author, especially of a framework, **consider making your mod(s) open source with a permissive license**. This will allow other mod authors to keep your mod(s) alive if you are unable or unwilling to do so. Remember:
 
