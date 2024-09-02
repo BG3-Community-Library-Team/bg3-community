@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures
 description: aka Mr Bones Wild Guide
 published: true
-date: 2024-05-25T22:00:38.747Z
+date: 2024-09-02T07:44:45.502Z
 tags: tutorial, blender, head, skeleton, piercings, bones, armature
 editor: markdown
 dateCreated: 2024-05-25T09:33:53.534Z
@@ -30,6 +30,9 @@ dateCreated: 2024-05-25T09:33:53.534Z
 
 
 This guide assumes you have already installed these items and have a general idea on how to use them. Despite that, it is hopefully still aimed at beginners. Don’t be afraid of the length, it’s mostly pictures (maybe overexplaining some things to those who are more well-versed but I hope it is more helpful than pure text for those who aren’t).
+
+There is also a supplemental video on Youtube: https://youtu.be/Um_3z2vjMQ8
+It does not cover the initial setup section of this guide and gathering of files so please read on.
 
 If it seems like I’m going between a lot of different plugins and tools instead of just using one for everything, it’s because this whole process is rather sensitive to how things are imported/exported and I’ve had the most consistent results this way.   
 
@@ -158,9 +161,9 @@ Now we can hit “Prepare Skeleton”. If all goes well, it should appear that n
 
 ![12_prepare-skele-b.png](/tutorials/custom_head_armatures/12_prepare-skele-b.png)
 
-> This “Ready for BG3” is now a skeleton which can be edited. If your custom head is just a port of another vanilla head to a different race (and thus has the same features aside from ears), you don’t even need to do the “Adjust Skeleton”. In that case just skip the next step and go to **[Final Touches](#heading=h.jhqko1auqhjl)**. 
+> This “Ready for BG3” is now a skeleton which can be edited/refit to new faces. 
 > 
-> If you wish, you can duplicate this “base fbx” Collection to have a fresh backup on hand in case things go awry or you want to quickly redo. You can also hide the Ready armature(s) for the moment to better see the next step.
+> If you wish, you can duplicate this “base fbx” Collection to have a fresh backup on hand in case things go awry or you want to quickly redo. You can also now hide the Ready armature(s) for the moment to better see the next step.
 {.is-success}
 
 
@@ -195,7 +198,8 @@ So now all which is visible is:
 
 
 
-> It’s important that each of these has had Transforms applied. If you aren’t sure if you have done so earlier, do it again to be safe.**
+> It’s important that each of these has had Transforms applied. If you aren’t sure if you have done so earlier, do it again to be safe.
+Additionally, for the next step it is best to have all of these things completely visible.
 {.is-warning}
 
 
@@ -230,7 +234,7 @@ We can also go ahead and hide the vanilla head, the joined-edited submesh of you
 
 ![18_ready-to-fine-tune.png](/tutorials/custom_head_armatures/18_ready-to-fine-tune.png)
 
-It’s a lot of bones, so to make it easier to edit we can (in object mode as we are in) click “Separate bones to layers”. At this point we can, for example, select “Piercing” and deselect “All” so that only the piercing bones are visible.
+It’s a lot of bones, so to make it easier to edit we can (in Object Mode) click “Separate bones to layers”. At this point we can, for example, select “Piercing” and deselect “All” so that only the piercing bones are visible.
 
 > **Blender 4+ with updated plugin note**: Separating the bones looks a bit different here (see below), but works the same. Additionally there is no “Return bones to layer 0”, I assume this is not needed anymore and have had no issues. Probably safest to have all bone layers visible before exporting later anyway.
 {.is-info}
@@ -300,6 +304,8 @@ After this it should look something like this, with all of those 9 bones stacked
 ### 5.2) Piercings and beards
 
 For these just try to move them so that the base ball of the bone is somewhat flush with the surface where you want the piercing/beard to sit. It’s a bit of trial and error but here’s a general visual for face bones: (side note for beards, keep in mind that some of Trips’ accessories use beard bones to attach piercings to: beard_smileline1_ r/l for dimple, beard_upper_lip_m for medusa.)
+
+Regarding deleting piercing bones, some testing has shown that it is possible to delete them (if for example you have made an ear where not all piercings will visually fit, you can just delete the bones of those you don't want showing).
 
 ![25_piercings-beards-bones-example.png](/tutorials/custom_head_armatures/25_piercings-beards-bones-example.png)
 
