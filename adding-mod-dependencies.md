@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2024-09-02T18:33:21.499Z
+date: 2024-09-02T18:50:00.116Z
 tags: meta, mods, modsuse, dependencies, dependency, meta.lsx, mod dependency
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -57,31 +57,28 @@ That's it! You've just added a dependency to your mod. By properly declaring dep
 
 ### Why adding dependencies? I don't need them!
 
-Disclaimer: I am a maintainer of MCM and VC, so I might be biased. However, I will try to be as neutral as possible.
+*Disclaimer: I am a maintainer of MCM and VC, so I might be biased. However, I will try to be as neutral as possible.*
 
 Dependencies are essential for the evolution of modding communities. If you take a look at Skyrim's modding scene, the amount of complex and interconnected mods was made possible, for the most part, because of the community's ability to work together and build on top of each other's work.
 
-> TIP: Some mods are focused on player-facing features, while others are focused on providing tools and frameworks for other mod authors. **Dependency mods are the backbone of a great modding community**. Framework maintainers spend a lot of time and effort to design and implement systems that other mod authors can leverage to create more complex and feature-rich mods, with less effort.
+> Some mods are focused on player-facing features, while others are focused on providing tools and frameworks for other mod authors. **Dependency mods are the backbone of a great modding community**. Framework maintainers spend a lot of time and effort to design and implement systems that other mod authors can leverage to create more complex and feature-rich mods, with less effort.
+{.is-info}
 
-Not all dependencies are created equal. Some try to fix inherent issues with the game and offer compatibility capabilities for other mods, and may be even almost unavoidable. In any case, dependencies are tools that will **allow you to build on top of other mods and focus on what you want to do, instead of reinventing the wheel.**
+Not all dependencies are created equal. Some try to fix inherent issues with the game and offer compatibility capabilities for other mods, and may be even almost unavoidable. In any case, dependencies are tools that will **allow you to build on top of other mods and focus on what you want to do, instead of reinventing the wheel.** You could theoretically implement all the features of a dependency mod in your mod, but that would be a tremendous waste of time and effort. As BG3 modding progresses, you can expect more and more tools and frameworks to be developed, and you should take advantage of them to create better mods.
 
-You could theoretically implement all the features of a dependency mod in your mod, but that would be a tremendous waste of time and effort. As BG3 modding progresses, you can expect more and more tools and frameworks to be developed, and you should take advantage of them to create better mods.
-
-### But users won't download my mod then!
+### But then users won't download my mod!
 
 As I said, as modding progresses, users are becoming more and more accustomed to mods that have dependencies. Mod managers will also likely improve their dependency handling capabilities, further streamlining the process for users.
 
-If the dependency is popular or has an easy/stable installation process, users will likely not mind much. It comes down to how impactful your mod is, the dependency is to your mod, and how likely users are to have the dependency installed (whether by popularity or ease of installation).
+If the dependency is popular or has an easy installation process, users will likely not mind much. It comes down to how impactful your mod is, the dependency is to your mod, and how likely users are to have the dependency installed (whether by popularity or ease of installation).
 
-### What if the original mod is abandoned or becomes unavailable?
+### What if the dependency mod is abandoned or becomes unavailable?
 
-This is a valid concern. However, history has shown that modding communities are resilient and will find a way to keep mods alive. If a mod is abandoned, the community will either find a way to keep it alive or create a new mod that does the same thing. Large dependency mods are hardly ever abandoned.
-
-Note that, in a way, **if you build on top of a mod, you are also helping to keep it alive**. By adding a dependency to your mod, you are also promoting the original mod, and that can help to keep it alive one way or another.
+This is a valid concern. However, history has shown that modding communities are resilient and will find a way to keep mods alive. If a mod is abandoned, the community will either find a way to keep it alive or create a new mod that does the same thing. Large dependency mods are hardly ever abandoned. Note that, in a way, **if you build on top of a mod, you are also helping to keep it alive**. By adding a dependency to your mod, you are also promoting the original mod, and that can help to keep it alive one way or another.
 
 In the end, this also brings up another extremely important point: **open source**.  At the time of writing, most of the popular BG3 framework mods are open source and could be picked up by the community if needed. Nexus tracks permissions, and authors cannot suddenly change the permissions of their mods to prevent others from using them.
 
-If you are a framework mod author, consider making your mod open source with a permissive license. This will allow other mod authors to keep your mod alive if you are unable or unwilling to do so.
+If you are a mod author, especially of a framework, **consider making your mod(s) open source with a permissive license**. This will allow other mod authors to keep your mod(s) alive if you are unable or unwilling to do so. Remember:
 
 ![If you build it, they will come.](https://i.imgur.com/XlpxKYX.gif)
 
