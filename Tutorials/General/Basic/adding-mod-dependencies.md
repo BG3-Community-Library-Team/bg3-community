@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2024-09-02T19:23:03.990Z
+date: 2024-09-02T19:24:03.912Z
 tags: mods, load order, modsuse, dependencies, dependency, meta.lsx, mod dependency, deps
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -45,7 +45,7 @@ After:
 
 That's it! You've just added a dependency to your mod. By properly declaring dependencies, you will:
 
-- Ensure that required mods are loaded in the correct order (BG3MM handles this automatically)
+- Ensure that required mods are loaded in the correct order - dependencies will automatically be loaded earlier (BG3MM handles this automatically)
 - Eliminate the need for users to follow manual instructions (e.g., "*don't forget to add **this** mod*", "*load **this** mod before **that** mod*")
 - Overall simplify troubleshooting by reducing incorrect/false positive bug reports
 
