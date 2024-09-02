@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-09-02T14:26:06.254Z
+date: 2024-09-02T14:26:21.951Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -325,7 +325,7 @@ Here are the events that can be listened to:
 | `MCM_Profile_Activated`      | Fired when a profile is set as the active one.                  | `profileName`: The name of the active profile                                               |
 | `MCM_Profile_Deleted`        | Fired when a profile is deleted.                                 | `profileName`: The name of the deleted profile                                               |
 | `MCM_Mod_Tab_Added`          | Fired when a mod inserts a custom tab into the MCM UI.          | `modUUID`: The UUID of the mod  </br> `tabName`: The name of the tab added                      |
-| `MCM_Mod_Tab_Activated`      | Fired when a player clicks a mod in the mod list in MCM's left panel. | `modUUID`: The UUID of the mod  </br> `tabName`: The name of the activated tab  |
+| `MCM_Mod_Tab_Activated`      | Fired when a player clicks a mod in the mod list in MCM's left panel. | `modUUID`: The UUID of the mod  |
 | `MCM_Mod_Subtab_Activated`   | Fired when a subtab within a mod tab is activated.              | `modUUID`: The UUID of the mod  </br> `subtabName`: The name of the activated subtab  |
 | `MCM_Window_Opened`          | Fired when a player opens the MCM window.         | `playSound`: Whether a sound should be played when the window opens.                        |
 | `MCM_Window_Closed`          | Fired when a player closes the MCM window.                      | `playSound`: Whether a sound should be played when the window closes.                       |
