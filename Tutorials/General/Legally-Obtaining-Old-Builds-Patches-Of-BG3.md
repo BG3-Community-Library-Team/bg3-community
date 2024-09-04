@@ -2,13 +2,30 @@
 title: Legally Obtaining Old Builds/Patches of Baldur's Gate 3
 description: This tutorial will go over how to legally obtain old Patches/Builds of Baldur's Gate 3 using the Steam Depot.
 published: true
-date: 2024-06-26T08:26:36.806Z
+date: 2024-09-04T22:40:55.391Z
 tags: early access, ea, old patch, download, steam, steam depot, steamdb, download_depot, old build
 editor: markdown
 dateCreated: 2024-06-25T05:39:45.425Z
 ---
 
 # Legally Obtaining Old Builds/Patches of Baldur's Gate 3
+
+
+
+## Foreword for mod users
+- Users usually always want to be on the latest patch available.
+- Newer software, like mods or script extender are usually not made for old patches.
+- Developers will likely not be willing to troubleshoot outdated version.
+
+> **USE THIS GUIDE AT YOUR OWN RISK**
+{.is-danger}
+
+> If you are here because you want to revert from patch 7 to patch 6, remember to update your game again
+> when you are comfortable to prevent incompatibilities with new mod updates and other issues.
+{.is-warning}
+
+
+
 ## Requirements
 - [Steam](https://store.steampowered.com/about/) - Steam must be installed and running on your computer, as well as a Steam account.
 - [Baldur's Gate 3](https://store.steampowered.com/app/1086940/Baldurs_Gate_3/) - You **MUST** own a legal copy of Baldur's Gate 3 on Steam, this guide will not function otherwise.
