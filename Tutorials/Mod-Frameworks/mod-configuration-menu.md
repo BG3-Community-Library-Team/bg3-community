@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-09-02T21:43:57.951Z
+date: 2024-09-04T14:14:23.869Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -168,7 +168,7 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 ### Using values from MCM
 
 After setting up the blueprint, mod authors can access the values set by the player through the MCM API from anywhere in their mod's code. 
-Remember, SE makes this `ModuleUUID` constant hold the value of the mod you're writing.
+Remember, SE injects a `ModuleUUID` constant that holds the value of the mod you're writing into your runtime.
 
 ```lua
 -- Get the value of a setting with the ID "MySetting". ModuleUUID has the UUID of your mod
