@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-08-04T19:48:37.164Z
+date: 2024-09-07T10:47:35.382Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -265,6 +265,11 @@ When you see your print statement on game startup, you have successfully loaded 
 If you are not able to see this statement, you likely missed one of the steps.
 
 ## **4\. Symlinking**
+
+
+> **As of patch 7 symlinked mods have to be activated and exported in BG3MM to be recognised**.
+{.is-warning}
+
 
 Every time you make a change to your mod, you have to exit the game, repack your mod, and launch the game again to see the effect.
 Symlinking is optional, although **highly recommended**, as it allows you conveniently avoid the aforementioned steps and hot reload your mod.
