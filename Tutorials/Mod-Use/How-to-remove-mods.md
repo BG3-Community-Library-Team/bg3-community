@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-08-21T18:30:12.458Z
+date: 2024-09-08T23:26:46.443Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -10,16 +10,18 @@ dateCreated: 2024-05-02T16:40:20.175Z
 
 # <p style="text-align:center">*How to Remove All Mods from BG3*</p>
 
-## <p style="text-align:center">**Created in collaboration with ResplendentArrow, Maze, DefinitiveToast, Norbyte, Surōand, a very special thanks to LaughingLeader and NellsRelo!**</p>
+## <p style="text-align:center">**Created in collaboration with ResplendentArrow, Maze, DefinitiveToast, Norbyte, Surōand, SatanModding, and with a very special thanks to LaughingLeader and NellsRelo!**</p>
 ---
 
 ## **Before using this guide:**
 
--   This guide is written assuming you are using [_BG3MM_](https://github.com/LaughingLeader/BG3ModManager) and a PC with Microsoft Windows;
--   This guide focuses on removing all mods from your game, but it can also be used to remove individual mods for troubleshooting. If you wish to remove specific mods and resume gameplay in an existing save, [follow this guide instead](/Tutorials/Mod-Use/Removing-mods-from-a-save);
--   This guide directs you to delete folders/files, but you can move the folders/files to another location instead of deleting if you want to reinstall the mods after following this guide;
--   This guide uses screenshots of folder locations that may differ from what it is located on your computer;
--   If you would like to respost this guide to another site, please contact ResplendentArrow on Discord.
+- This guide is written assuming you are using [_BG3MM_](https://github.com/LaughingLeader/BG3ModManager) and a PC with Microsoft Windows;
+- This guide focuses on removing all mods from your game, but it can also be used to remove individual mods for troubleshooting. If you wish to remove specific mods and resume gameplay in an existing save, [follow this guide instead](/Tutorials/Mod-Use/Removing-mods-from-a-save);
+- This guide directs you to delete folders/files, but you can move the folders/files to another location instead of deleting if you want to reinstall the mods after following this guide;
+- This guide uses screenshots of folder locations that may differ from where it is located on your computer;
+- This guide has been updated for Patch 7;
+- If you are using the in game mod manager (IGMM), uninstall your mods through IGMM, and you can continue to use this guide remove mods from your game.
+- If you would like to respost this guide to another site, please contact ResplendentArrow on Discord.
 
 ---
 
@@ -63,13 +65,15 @@ If you are using the Steam version of BG3, you can access your Bin folder by rig
 
 ![](https://lh7-us.googleusercontent.com/ZfBGtdVsBWmUps9aWCA7uTvFu74_rhieWHod-OHPaENCqRLLVJp4BOypIwhUxAG8vUlvPS68KTFCix3LW2DyrKZTMSyWyhBOoGl7dEHeH18FHkPQly3R4MQrzD-VOOGvRgTgsQE1kQauHqkwFzCPBA "Example image of the specific files in the Data folder to delete or move to another location")<p style="text-align:center">*Example image of the specific files in the Data folder to delete or move to another location*</p>
 
-If you installed any .pak(mod) file into your Localization folder, make sure to delete those .pak(mod) files.
+> It is possible you may have two folders for the toolkit in your data folder even if you never downloaded the toolkit. See below for what extra folders you may need to delete. **MODDERS, if you want to keep the tools and your mod projects, do NOT delete these folders.**
+{.is-warning}
 
-> ### **Special Note - Translation Mods**
-> If you are using a translation mod, the following must be done:
-> -   If you installed a .pak(mod) file in the Localization folder, make sure to delete the .pak(mod) files
-> -   If you replaced any of the .pak (mod) files in the Localization folder, simply delete those replaced .pak files and when you verify your game in _step 4_, the verification process will replace this file with a vanilla file.
-> {.is-info}
+![removetoolkitfolders.png](/mod-use/remove-mods/removetoolkitfolders.png "Example image of the toolkit folders in the Data folder to delete")<p style="text-align:center">*Example image of the toolkit folders in the Data folder to delete*</p>
+
+## **2.3 Delete the language .loca file in the localization file**
+
+
+
 
 ---
 
@@ -137,6 +141,14 @@ The .exes do not get altered/reinstalled when you verify the game so this is a M
 
 ---
 
+# **2.4 Uninstall Translation/Dialogue Mods**
+
+If you are using a translation/dialogue mod, the following must be done:
+- If you added a language folder into your Localization folder, delete the folder.
+- If you replaced any of the files in the Localization folder, simply delete those replaced files and when you verify your game in _step 4_, the verification process will replace the deleted files with vanilla files.
+
+---
+
 # **3. Deleting the modsetting.lsx file**
 
 Navigate to C:\\Users\\YourName\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\PlayerProfiles\\Public
@@ -171,8 +183,6 @@ In the Public folder, delete the modsetting.lsx file
 ## **Special Note - GOG Users**
 
 For GOG users, you can verify files in a similar way as Steam
-
-(Screenshot coming soon)
 
 ---
 
