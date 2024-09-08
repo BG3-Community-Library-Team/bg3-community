@@ -2,7 +2,7 @@
 title: Localization Voicelines
 description: Explains the Voicelines in Localization
 published: true
-date: 2024-09-08T19:28:25.324Z
+date: 2024-09-08T19:29:46.294Z
 tags: audio, sound, localization
 editor: markdown
 dateCreated: 2024-09-08T19:27:00.922Z
@@ -67,7 +67,7 @@ Alternatively, you can place the loose files into your data folder.
 - Tav voice 8 [(Siggi)](https://www.nexusmods.com/baldursgate3/mods/9499): ```vfb6b53538d1445079222ceaec990fce9```
 
 ## Useful Localization Voiceline Tools
-Simosas created the [Voiceline Tool](https://www.nexusmods.com/baldursgate3/mods/11810) which can generate a list of voiceline transcriptions and their corresponding wem filenames when you enter the character name into the terminal.
+[Simosas](https://media.sketchfab.com/models/1f6b691f4d864022804dfe42bf3f708f/thumbnails/ac33688358e3434393f1cadfc1ce6efc/d0c68675dab846ed88dce5d1764dcd90.jpeg) created the [Voiceline Tool](https://www.nexusmods.com/baldursgate3/mods/11810) which can generate a list of voiceline transcriptions and their corresponding wem filenames when you enter the character name into the terminal.
 
 
 
