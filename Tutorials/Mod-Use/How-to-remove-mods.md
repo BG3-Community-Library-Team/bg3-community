@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-09-08T23:26:46.443Z
+date: 2024-09-08T23:28:30.290Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -69,11 +69,6 @@ If you are using the Steam version of BG3, you can access your Bin folder by rig
 {.is-warning}
 
 ![removetoolkitfolders.png](/mod-use/remove-mods/removetoolkitfolders.png "Example image of the toolkit folders in the Data folder to delete")<p style="text-align:center">*Example image of the toolkit folders in the Data folder to delete*</p>
-
-## **2.3 Delete the language .loca file in the localization file**
-
-
-
 
 ---
 
