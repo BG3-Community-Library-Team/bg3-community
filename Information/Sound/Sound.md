@@ -1,8 +1,8 @@
 ---
 title: Localization Voicelines
 description: Explains the Voicelines in Localization
-published: false
-date: 2024-09-08T19:27:00.922Z
+published: true
+date: 2024-09-08T19:28:25.324Z
 tags: audio, sound, localization
 editor: markdown
 dateCreated: 2024-09-08T19:27:00.922Z
