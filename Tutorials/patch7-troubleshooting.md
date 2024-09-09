@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-09T15:18:36.286Z
+date: 2024-09-09T15:54:37.077Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -101,6 +101,9 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 - The in game Mod Manager does not allow you to change the load order 
 - The load order in the IGMM is based on dependencies and order of subscription
 - For this reasons, we recommend to use BG3MM instead
+- If you want to use the in game mod manager, we recommend you reenable the load order buttons with
+   - [Mod Manager Fixes and Tweaks - Nexus](https://www.nexusmods.com/baldursgate3/mods/11954)
+   - [Mod Manager Fixes and Tweaks - Mod.io](https://baldursgate3.game/mods#/m/mod-manager-fixes-and-tweaks)
 
 
 
