@@ -2,15 +2,20 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: false
-date: 2024-08-21T06:51:58.799Z
+date: 2024-09-09T19:51:41.178Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
 ---
 
-# Timeline Editing
+# Editing Dialog Files - WIP
 Hi there! Welcome to Milo Magnetuning's guide to editing cinematics and dialogue files.
 
+This page is still a WIP! A lot of it has been carried over into the annotated sample dialog mods I put together, which you can find [here](https://www.nexusmods.com/baldursgate3/mods/10086).
+
+I've also made a tool to help automate some parts of editing the dialog timeline files! You can find that [here](https://www.nexusmods.com/baldursgate3/mods/11295). Instructions on using the tool have been provided on the mod page for it!
+
+Now, let's get started with the guide!
 
 ## Requirements
 
@@ -27,8 +32,8 @@ Hi there! Welcome to Milo Magnetuning's guide to editing cinematics and dialogue
 - Basic knowledge of BG3 modding, but especially unpacking and converting .lsf files
 - Basic knowledge of using LSLib and the Multitool index
 - Optional, but will help a lot: a basic understanding of conditional statements in code, which the game uses to test dialog trees
+- Also optional, but will help a lot: a basic understanding of cinematic language and film continuity editing, which the cutscenes in the game rely on!
 
-Let's get started, shall we?
 
 ## What Goes Into Dialog in Baldur’s Gate 3?
 
@@ -40,11 +45,9 @@ These dialog-specific files are as follows:
 - Dialog Timeline files
 - Dialog Scene files
 - GeneratedDialogTimelines
-- Dialog Assets
+- Dialog Resources
 
-The first three files are most likely what you'll be editing! They contain the bulk of the information needed to play a scene. The GeneratedDialogTimelines file and the Dialog Assets files are what help the game reference the first three files, and are necessary when creating new scenes and sets of dialog, but you might not be editing them as frequently for existing scenes.
-
-The first three files for a given scene/conversation will share the same file name, with the Scene files just having the word Scene appended to that name. The GeneratedDialogTimelines and Dialog Assets files, are merged files, with many entries for each set of dialog in the game.
+The first three files are most likely what you'll be editing! They contain the bulk of the information needed to play a scene. The GeneratedDialogTimelines file and the Dialog Assets files are what help the game reference the first three files, and are necessary when creating new scenes and sets of dialog, but aren't often needed when editing existing scenes.
 
 > A note on deprecated files:{.is-warning}
 
@@ -52,19 +55,24 @@ You'll likely find Dialog.lsj files with that same file name when extracting the
 
 These files genuinely do nothing—even entirely new scenes, with neither of these files existing for them in the vanilla game will play just fine without them! You don't need to edit them or include them in your mods at all, and I do not recommend you do so.
 
-Thank you very much to <a href="https://next.nexusmods.com/profile/Joell560/about-me">Joell560</a> on Nexusmods for letting me know the files were deprecated! You've saved me a ton of time and headaches trying to recreate my changes in both files, and I'm very grateful for it.
+Thank you very much to <a href="https://next.nexusmods.com/profile/Joell560/about-me">Joell560</a> on Nexusmods for letting me know the files were deprecated!
 
-You'll also need extra files to add new voice lines, which I'll be providing in a separate guide for this wiki too.
+You'll also need extra files to add new voice lines, which I've documented in the "Adding New Voice Lines" page above.
 
 ### A Summary of Dialog Timeline Files
 
-The Dialog timeline files are usually found in the this folder in the game's files:
+The Dialog timeline files are usually found in one of these folders in the game's files:
 
+`
+\\Data\Public\Gustav\Timeline\Generated
+`
 `
 \\Data\Public\GustavDev\Timeline\Generated
 `
 
-These files control the timing of all elements required to play dialogue and cinematics, including the voice lines, character animations, the emotions the characters use, camera angles, sound effects, and more. They control all aspects of dialogue that require full animation and timing—which does not include moments where your character picks dialogue options! Those are found in the DialogsBinary files, which I'll cover shortly.
+Some of them can also be found in the Shared and SharedDev folders.
+
+These files control the timing of all elements required to play dialog and cinematics, including the voice lines, character animations, the emotions the characters use, camera angles, sound effects, and more. They control all aspects of dialogue that require full animation and timing—which does not include moments where your character picks dialogue options! Those are found in the DialogsBinary files, which I'll cover shortly.
 
 A good way to think of the dialogue timeline files is to picture it like a movie! With each line of dialogue as a small scene within that movie. The code in the dialogue timeline files gives the game everything necessary to play those scenes, and what element of the scene play when.
 
@@ -77,26 +85,29 @@ It’s important to note, these little scenes within the timeline files aren’t
 And that’s where the DialogsBinary files come in!
 ####
 
-The DialogsBinary files are generally found in this folder in the game's files:
+The DialogsBinary files are generally found in these folders in the game's files:
 
+`
+\\Data\Mods\Gustav\Story\DialogsBinary 
+`
 `
 \\Data\Mods\GustavDev\Story\DialogsBinary 
 `
 
-They're then further broken down by what section of the game they belong in, like if they’re from Act 3, or the Tutorial level, if they’re Companion dialogue, etc. You might find these files in the Gustav folder, but they’re still organized in a similar way.
+They're then further broken down by what section of the game they belong in, like if they’re from Act 3, or the Tutorial level, if they’re Companion dialog, etc.
 
-Now, if the timeline files are like a movie, then DialogsBinary files are like a chapter skip function on a DVD. These files contain the information the game needs to reference your choices in dialogue, and select which voice lines or cinematics to play, and when. They contain information on dice rolls, links to nested dialogue files—which I’ll explain a more about later—and are where the game tests for whether a line of dialogue or or player response should be accessible or not. They can be used by the game to set flags it can test for in other areas of the game, and can link to information on companion approval.
+Now, if the timeline files are like a movie, then DialogsBinary files are like a chapter skip function on a DVD. These files contain the information the game needs to reference your choices in dialogue, and select which voice lines or cinematics to play, and when. They contain information on dice rolls, links to nested dialog files—which I’ll explain a more about later—and are where the game tests for whether a line of dialog or or player response should be accessible or not. They can also set game flags and link to companion approval.
 
 Dialog Scene files
 ####
 
 The Dialog Scene files contain information on camera and character positioning when the dialogue is triggered, as well as lighting, which characters can be present in the dialogue, and can be used to control character scale within a scene! Which is fun.
 
-They can inherit information from other files, the most important of which is the default dialogue scene file, which is often linked at the bottom of the file. The default Scene files can be usually found at this file path here:
+They can inherit information from other files, the most important of which is the default dialog scene file, which is often linked at the bottom of the file. The default Scene files can be found at this file path here:
 
 \\Public\Shared\Timeline\Scenes\Default\
 
-You may not have to edit these files often, but it's still important to note! And they'll absolutely be necessary when creating entirely new dialogue files.
+You may not have to edit these files often, but it's still important to note! And they'll be necessary when creating entirely new dialog files.
 
 The DialogsBinary, Dialog Timeline, and Dialog Scene files for a given scene will all have the same file name, with the Dialogue Scene files just appending the word Scene to that same file name.
 
@@ -200,23 +211,23 @@ Alias nodes essentially allow you to play another line of dialogue without havin
 Jump
 ####
 
-Jump nodes allow you to jump to different lines of dialogue within a dialogue tree.
+Jump nodes allow you to jump to different lines of dialogue within a dialogue tree! They can help you skip to a line, or skip over them entirely. This is determined by the jumptargetpoint attribute; a jumptargetpoint of 1 will take you to the line, while a jumptargetpoint of 2 will skip over it. This is extremely helpful for skipping over passive rolls, which will keep retriggering unless they're bypassed by a Jump node.
 
 Nested Dialog
 ####
 
-Nested Dialog nodes will allow you to link to Nested Dialog files, which are essentially separate dialogue files that can contain smaller scenes, or dialogue options based on a certain theme, and so on. An example of this is used for companion romance dialogue; most companions have their romance dialogue in nested dialogue files, which are then linked to from their default InParty dialogue.
+Nested Dialog nodes will allow you to link to Nested Dialog files, which are essentially separate dialogue files that can contain smaller scenes, or dialogue options based on a certain theme, and so on. An example of this is used for companion romance dialogue; most companions have their romance dialogue in nested dialogue files, which are then linked to from their default InParty dialogue. Story moments can also be handled by nested dialog, however, like the scene with Aylin in the Shadowfell in Act 2!
 
 RootNodes
 ####
 
-Root nodes are unique, in the sense that they're generally mirrors of other nodes. The root nodes refer to the possible first lines of dialogue in a given scene or conversation, and are generally referring to TagGreeting nodes, but other types of nodes can be referenced as RootNodes. When a dialogue node in a file is considered a root node, that line of dialogue will have a RootNodes entry with its UUID listed at the end of the file, and will  be marked in its own code block with the Root attribute, which will be set to True.
+Root nodes are unique, in the sense that they're generally mirrors of other nodes. The root nodes refer to the possible first lines of dialogue in a given scene or conversation, and are generally referring to TagGreeting nodes, but other types of nodes can be referenced as RootNodes. When a dialogue node in a file is considered a root node, that line of dialogue will have a RootNodes entry with its UUID listed at the end of the file, and will be marked in its own code block with the Root attribute, which will be set to True.
 
 ### How To Edit
 
 The easiest way to edit these files, at least if you're adding new elements, is to duplicate existing code blocks. This will keep the code structure the game needs consistent, and saves unnecessarily typing everything out.
 
-<!--I've provided an annotated sample/template mod on Nexusmods <a href="https://www.nexusmods.com/baldursgate3/mods/10086">here,</a> which you can use to follow along with this guide, and understand a bit more about what goes into the code structure for a given node.-->
+I've provided a collection of annotated sample/template mods on Nexusmods <a href="https://www.nexusmods.com/baldursgate3/mods/10086">here,</a> which has line-by-line breakdowns of different elements of the dialog files, and will explain a lot of what you'll need to edit for these files.
 
 Now, let's begin!
 
@@ -254,7 +265,7 @@ All you need is the UUID of the dialogue nodes you'd like to remove or add as ch
 
 A note: when adding player responses (which will be labeled as TagQuestion nodes), the order the children are listed under a dialogue node will  be the order they're displayed in the game, listed from top to bottom.
 
-, when multiple children are listed under a character's speaking line (labeled as a TagAnswer node), and they're not player responses, these are usually lines of dialogue that are being tested for certain conditions, to determine whether they should play or not. In this case, the order the children are listed in is the order the game will test them in, with children placed higher in the list taking priority.
+When multiple children are listed under a character's speaking line (labeled as a TagAnswer node), and they're not player responses, these are usually lines of dialogue that are being tested for certain conditions, to determine whether they should play or not. In this case, the order the children are listed in is the order the game will test them in, with children placed higher in the list taking priority.
 
 **Checking game flags**
 ####
@@ -302,9 +313,11 @@ And now for the Dialog Timeline files. These are very lengthy and complicated fi
 
 I've made a tool to help automate those tasks, though! You can find it on Nexusmods <a href="https://www.nexusmods.com/baldursgate3/mods/11295">here.</a>
 
-The Using the Timeline Updater tab covers how to use the tool! The instructions have been mirrored on the tool's Nexusmods page as well.
+Instructions on how to use the tool can be found on the mod page for it!
 
-This section of the tutorial is also broken down into the following other tabs:
+I've also provided annotated sample mods, including ones that break down different effect components, and how they work, on this mod page [here.](https://www.nexusmods.com/baldursgate3/mods/10086) I highly recommend checking those out; I was planning on screenshotting the code for them, but it ended up being a lot to screenshot. You'll probably have an easier time following along with this guide if you check out the sample mods! (Some people I sent them to thought they *were* the guide, actually, so you might only have to look at those!)
+
+This section of the tutorial is also broken down into the following tabs:
 
 The Anatomy of a Dialog Timeline tab explains the structure of the files overall, the Effect Components tab will break down the different EffectComponents in the files, the How to Edit tab will go over editing the files, and the Emotion Rigs Quick Ref tab lists out the expression rigs used by the game, with the ID and variation numbers you'll need to reference them in the files.
 
@@ -407,11 +420,11 @@ So far, I’ve found the following effect components, each of which controls a d
 
 -   **TLVoice:** The voice line for the character speaking.
 -   **TLAttitudeEvent:** Controls the nodding/motion of the head and animated expressions characters are given when other animations are not being played, i.e. when a character is waiting for you to pick a dialogue choice, or is listening to the character speaking.
--   **TLAnimation:** The animations used by the characters. Mainly used for cinematics, but can be used for unique facial expression overrides as well. A note: the animations used during dialogue outside of cinematics are generally tied to the voice lines itself, and not referenced in the timeline files. This is for animations not tied to voice lines directly.
+-   **TLAnimation:** The animations used by the characters. Mainly used for cinematics, but can be used in dialog, and for unique facial expression overrides as well. A note: the animations used during dialogue outside of cinematics are generally tied to the voice lines itself, and not referenced in the timeline files. This is for animations not tied to voice lines directly.
 -   **TLEmotionEvent:** Controls the facial expressions used for the character referenced in the “Actor” section of the component.
 -   **TLLookAtEvent:** Controls where the character is looking, as well as whether their eyes are open or closed, head and body turning, etc.
 -   **TLMaterial:** Used for temporary material overrides, like for Karlach's glow map colors during romance scenes.
--   **TLShowVisual**: Used to switch different objects into scenes, such as set pieces in the environment.
+-   **TLShowVisual**: Used to toggle the visibility of different visual resources into scenes, such as set pieces in the environment.
 -   **TLShowWeapon:** Controls whether weapons and instruments are shown during the dialogue or cinematic, and when their visibility is toggled on and off.
 - **TLShowArmor** Controls whether different armor or clothing slots are displayed on a character during a scene.
 -   **TLShowPeanuts:** Controls whether the characters standing behind your character during dialogue are shown or not. (Again, like the peanut gallery!)
@@ -429,9 +442,9 @@ Each effect component in a timeline file is broken down into several variables, 
   
 Keep in mind that not every possible attribute for these components will be present every time! Which means some possible attributes the game can process may not be listed in this tutorial yet. If you find one I missed, please let me know!
 
-, some of the attributes I included in these explanations contradict each other, and will not be found in the same instance of that effects component. I've generally pointed it out when this happens, but a good rule of thumb will be to look at examples of the same type of effect component you're editing, to know what attributes are usually included in them, and which are not.
+> Most of this part of the guide has now been moved to the sample mods I uploaded [here](https://www.nexusmods.com/baldursgate3/mods/10086)! I'll be filling in the information from those sample mods over time, but for now, I recommend using those over this section.:{.is-warning}
 
-This section is likely going to be very long, but hopefully having explanations of what everything is makes it a bit less intimidating! These files can be a lot to look at, but the more you understand about them, the less daunting it'll be to edit them.
+---
 
 Let's get into it! I'll start by explaining some common attributes you'll see in most effect components:  
  
@@ -519,21 +532,23 @@ I  provided explanations for all attributes I could find within these code block
 These tags may be a tag for Larian's game engine to process; they don't seem to affect much when changed. But still, they should probably be updated when changing these blocks, and shouldn't be used together.
 
 A good rule of thumb for editing, creating, and adding onto these components is to try and find other components with a similar structure. If you can find other components with the same attributes yours has, you can be sure those attributes will work together!  
+
+> Most of this part of the guide has now been moved to the sample mods I uploaded [here](https://www.nexusmods.com/baldursgate3/mods/10086)! I'll be filling in the information from those sample mods here over time, but for now, Please use the sample mods. {.is-warning}
  
+ <!--
 
 #### TLVoice:
 
-![](/tutorials/dialogue-files-tutorial/tlvoicevisual.png)
+
 
 #### TLAttitudeEvent:
 
-![](/tutorials/dialogue-files-tutorial/tlattitudeevenvisual.png)
 
 #### TLAnimation:
 
 #### TLEmotionEvent:
 
-![](/tutorials/dialogue-files-tutorial/tlemotioneventvisual.png)
+
 
 Emotion and emotion variation ID numbers are handled in the following pattern:
 
@@ -548,24 +563,20 @@ I've provided a reference for all of them in the Emotion Rigs Quick Ref tab.
 
 #### TLShowWeapon:
 
-![](/tutorials/dialogue-files-tutorial/tlshowweaponvisual.png)
 
 #### TLShowPeanuts:
 
-![](/tutorials/dialogue-files-tutorial/tlshowpeanutsvisual.png)
 
 #### TLSoundEvents:
 
 #### TLSwitchStageEvent:
 
-![](/tutorials/dialogue-files-tutorial/tlswitchstageeventvisual.png)
 
 #### TLTransform:
 
 #### TLShot:
 
-![](/tutorials/dialogue-files-tutorial/tlshotvisual.png)
-
+-->
 
 ### Emotion Rigs Quick Ref
 
@@ -705,7 +716,6 @@ In this list, you can find the ID numbers of each given emotion (listed first be
 
 ### How to Edit - Finding the Right Components
 
-#### FINALLY.
 
 You've arrived at how to edit the Dialog Timeline files! This tab will cover basic information on how to navigate the files, to find the effect components you'd like to edit. The How to Edit - Adding to the Timeline tab will cover how to add new dialogue and cinematics to a file, and The How to Edit - Effect Components tab will cover how to edit specific effect components. You'll need to know what you're looking for before you do either!
 
@@ -736,7 +746,7 @@ Now that you've found what you want to edit, navigate to either the How to Edit 
 
 ### How to Edit - Adding to the Timeline
 
-Hi! You can find instructions on how to add to your dialog timeline here.
+You can find instructions on how to add to your dialog timeline here!
 
 Each spoken line of dialogue and cinematic you add in your DialogsBinary file will need to have a corresponding set of effect components in your dialog timeline! And here's how you can add them.
 
@@ -746,7 +756,7 @@ The easiest way to add onto the dialogue timeline, like adding onto the DialogsB
 
 I'd recommend looking for dialogue nodes that are similar to what you're adding, and then cloning the effect components from that. (And, of course, if you're trying to add an interaction from one file to another, you can just clone that.)
 
-Once you've found the PhaseIndex for the dialog node (or cinematic!) you'd like to clone, you can easily enclose all the effect components for it by searching for the first instance of that PhaseIndex, and putting a bracket with a nonsense word that isn't used anywhere in the code above it (will explain momentarily.)
+Once you've found the PhaseIndex for the dialog node (or cinematic!) you'd like to clone, you can easily enclose all the effect components for it by searching for the first instance of that PhaseIndex, and putting a bracket with a nonsense word that isn't used anywhere in the code above it.
 
 Then, you'll want to find the last instance of that PhaseIndex, and put a closing bracket with that same nonsense word below it. You should now have something that looks like this:
 
@@ -760,15 +770,15 @@ To explain, this will allow you to collapse all of the effect components you nee
 
 I generally use apples. Dunno why! You can use any other word you'd like, as long as it's not a proper tag in the code.
 
-A little tip: You can  use this technique to very quickly copy or delete sections of code in other files, too, like the CharacterVisuals files.
+A little tip: You can use this technique to very quickly copy or delete sections of code in other files, too, like the CharacterVisuals files.
 
-Once you've copied the effect components you need to, I recommend pasting them into a separate file while you're working on them. You will need to do this if you plan on using my Dialogue Timeline Updater, by the way!
+Once you've copied the effect components you need to, I recommend pasting them into a separate file while you're working on them. You will need to do this if you plan on using my Dialogue Timeline Updater!
 
 #### Updating cloned effect components
 
 **Updating the PhaseIndex:**
 
-The first thing you want to do when adding new effect components is to update their PhaseIndex. You can do so via "replace all" commands in your code editor. You can  use the "change all occurences" function in VSCode by right clicking on a highlighted line of code.
+The first thing you want to do when adding new effect components is to update their PhaseIndex. You can do so via "replace all" commands in your code editor.
 
 To update the PhaseIndex, replace the existing PhaseIndex line:
 
@@ -784,7 +794,7 @@ If the last existing PhaseIndex is 231, you'll want the PhaseIndex of the new ef
 
 You can find the last PhaseIndex in the file in two ways, either by searching for PhaseIndex and navigating to the last instance of it, or by searching for TimelineSpeakers, which will be the next section of the file listed after the EffectComponents section, and will take you directly to the end of that section, allowing you to see the last PhaseIndex number.
 
-Remember, it's easiest to add to the end of the timeline in these files, rather than putting it somewhere in the middle. The placement of dialog phases in the timeline doesn't  matter to the game when playing a scene. The DialogsBinary file will be able to tell the game where to go!
+Remember, it's easiest to add to the end of the timeline in these files, rather than putting it somewhere in the middle. The placement of dialog phases in the timeline doesn't matter to the game when playing a scene. The DialogsBinary file will be able to tell the game where to go!
 
 You'll be copying anything you add to the end of the EffectComponents section as well, so it'll help to have an easy way to navigate to it.
 
@@ -820,15 +830,7 @@ You'll  want to make sure each of the IDs of the effect components are updated. 
 
 **What if I want the dialog to be a different length than it already is?**
 
-To make the effect components you're adding last for a different amount of time than they currently have, like if you're adding a new voice line that's a different length from the effect components you're adding, you'll  need to update them manually. This should probably be a function of the tool I made, but it currently is not.
-
-It's still doable, though!
-
-You'll want to update the start times for your effect components first. Then find the length of the line you're adding, and add that number to the start time you just updated. You'll be using this as the new end time for your effect components. You can  add additonal time to this number to add pauses between the voice line if you'd like.
-
-Take the new end time you just calculated, and use "replace all" in your code editor to update all your end times in the file. You'll have to double check to make sure the timing for your effect components, like the timing of emotion changes in TLEmotionEvent, are all contained within your new start and end times. This is especially important when setting a shorter end time than the original one.
-
-Setting the timing outside of your start and end times can cause them to overlap with other dialogue nodes, and cause the game to be unsure of which to select! (If you have stuttering expressions or animations, it might be good to double-check to make sure everything's properly contained within the length of the phase.) 
+You can use either the "Update Specific Times" function or the "Update End Times" function of my Dialog Timeline Updater to do so! You can find more instructions on how to do so on the mod page for the tool.
 
 **Updating voice lines:**
 
@@ -867,6 +869,10 @@ Now that you've added what you'd like to the timeline, make sure you update the 
 Now, you should be all good! You've added your new dialogue to the timeline file!
 
 ### How to Edit - Effect Components
+
+This section has now been replaced by the sample dialog timeline mods I provided [here](https://www.nexusmods.com/baldursgate3/mods/10086)! I'll probably be adding the information from those files here over time, but for now, almost all the information here was covered by the sample mods!
+
+<!--
 
 This section of the tutorial will give you some tips on editing specific common effect components! The Effect Components - Documentation tab does break down a lot of effect components line by line, but I'll go more in-depth on how to edit some common kinds of effect components here.
 
@@ -996,7 +1002,7 @@ To be honest, this tool is mainly just meant to make it easier to place all of y
 
 This function will make it so you can grab the last end time of your existing timeline file, input that as your time offset, check the Reset Start Times box, and set all of your effect components to start directly after the end of the existing timeline.
 
-<!--You can see a video example of me doing so here:-->
+You can see a video example of me doing so here:
 
 Again, run the tool and select the file you'd like to update, as explained above. Double-check your file after running the tool, and then make any further desired edits from there!
 
@@ -1017,6 +1023,12 @@ Yep, that's it! For now. Again, this is a very basic tool, and it's really just 
 Once you've made all the changes you'd like, you can copy your effect components into the timeline file you're editing. You can keep editing them from there if you'd like! The effect components only need to be placed in a separate file to run the tool.
 
 Check out the "Adding to the Timeline" tab for further information about adding effect components and dialogue nodes!
+
+-->
+
+## How Do You Edit the Scene Files?
+
+This portion of the guide is currently handled by the annotated Dialog Scene file I included with the timeline file sample mods! You can find them [here](https://www.nexusmods.com/baldursgate3/mods/10086).
 
 ## Credit
 
