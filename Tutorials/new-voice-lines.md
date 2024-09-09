@@ -2,7 +2,7 @@
 title: Adding New Voice Lines And Dialog
 description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
 published: false
-date: 2024-09-09T23:02:16.617Z
+date: 2024-09-09T23:03:08.032Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-09T21:40:21.205Z
@@ -30,7 +30,7 @@ The sky's almost the limit, but don't be rude.
  
 ...Now, let's get into the tutorial.
 
-## How do you add new voice lines to Baldur's Gate 3?
+## What files do you need for voice lines?
 
 It turns out that voice lines function a bit differently than other sounds used by the game. Things like music, ambient noise, and sound effects are handled within a specific file type, soundbank files, which use the file extension .bnk. These files can be made via the program [Wwise,](https://www.audiokinetic.com/en/wwise/overview/), and I believe they might now be able to be made by the BG3 Modding Tools, but I've not looked into that much!
 
