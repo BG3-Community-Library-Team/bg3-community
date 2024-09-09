@@ -1,8 +1,8 @@
 ---
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
-published: false
-date: 2024-09-09T00:16:41.370Z
+published: true
+date: 2024-09-09T00:19:37.808Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
