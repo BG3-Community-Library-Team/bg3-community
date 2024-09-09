@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-09T00:28:16.511Z
+date: 2024-09-09T07:03:17.612Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -146,7 +146,10 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 **Does UTav work? Why should I switch to KazVT?**
 - It seems like UTav works again, however we recommend switching to [KazVT](https://www.nexusmods.com/baldursgate3/mods/8912) 
 - You can see a guide about how to use it [here](https://wiki.bg3.community/en/Tutorials/patch7-troubleshooting#kaz-virtual-tav)
-- KazVT has multiple benefits that will be explained here later.
+- KazVT has multiple benefits:
+  - It's console/mac compatible
+  - It can support sweat (to be released)
+  - It doesnt depend on additional unsupported shaders
 
 **What mods are broken/Still work?**
 - Many mods work, some don't
