@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-09-04T14:14:23.869Z
+date: 2024-09-09T12:58:08.478Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -178,18 +178,18 @@ local mySettingValue = Mods.BG3MCM.MCMAPI:GetSettingValue("MySetting", ModuleUUI
 Mods.BG3MCM.MCMAPI:SetSettingValue("MySetting", newValue, ModuleUUID)
 ```
 
-You can also listen to changes to settings values by listening to net messages like this:
+You can also listen to changes to settings values by listening to mod events like this:
 
 ```lua
-Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
-    local data = Ext.Json.Parse(payload)
-    if not data or data.modGUID ~= ModuleUUID or not data.settingId then
+-- In your MCM-integrated mod's code
+Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
+    if not payload or payload.modUUID ~= ModuleUUID or not payload.settingId then
         return
     end
 
-    if data.settingId == "debug_level" then
-        _D("Setting debug level to " .. data.value)
-        ASFTCPrinter.DebugLevel = data.value
+    if payload.settingId == "debug_level" then
+        _D("Setting debug level to " .. payload.value)
+        MyMod.DebugLevel = payload.value
     end
 end)
 ```
