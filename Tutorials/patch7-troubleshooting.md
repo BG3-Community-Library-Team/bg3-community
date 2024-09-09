@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-09T00:27:11.105Z
+date: 2024-09-09T00:28:16.511Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -137,8 +137,9 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 - This seems to be a visual bug that has no other consequences
 - Ignore it
 
-**How do I add mods safely?'**
+**How do I add mods safely?**
 - To add mods safely, first revert to  [Vanilla](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods)
+- Then add mods one by one, or in small batches to test if they work
 
 ## Mod Updates: 
 
