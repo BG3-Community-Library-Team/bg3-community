@@ -2,17 +2,16 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: false
-date: 2024-09-09T00:04:28.438Z
+date: 2024-09-09T00:06:34.897Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
 ---
 
 # Patch 7 Troubleshooting
-This page will be updated to add/change information as more is learned over time.
-
-Note, the in game mod manager that BG3 now has will be referred to as IGMM on this page.
-
+- This page will be updated to add/change information as more is learned over time.
+- Note, the in game mod manager that BG3 now has will be referred to as IGMM on this page.
+- Thank you to SatanModding, Kaz, ResplendentArrow, and the mod support helpers!
 ## General Troubleshooting
 
 **How do I back up my saves and mods ?**
