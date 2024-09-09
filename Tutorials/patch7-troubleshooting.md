@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: false
-date: 2024-09-09T00:08:50.683Z
+date: 2024-09-09T00:16:41.370Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -49,7 +49,7 @@ saves: `%LocalAppData%\Larian Studios\Baldur's Gate 3\PlayerProfiles\Public\Save
 Data folder: `C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data`
 
 
-_For Linux/SteamDeck - On SteamDeck your username is usually **deck** _ 
+_For Linux/SteamDeck_ - _On SteamDeck your username is usually_ **deck** 
 Mod folder: `/home/userName/.steam/steam/steamapps/compatdata/1086940/pfx/drive_c/users/steamuser/AppData/Local/Larian Studios/Baldur's Gate 3/Mods`
 
 modsettings: `/home/userName/.steam/steam/steamapps/compatdata/1086940/pfx/drive_c/users/steamuser/AppData/Local/Larian Studios/Baldur's Gate 3/PlayerProfiles/Public`
@@ -109,6 +109,9 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 **Does Script Extender work?**
 - Yes. Script Extender works
 
+**Is Script Extender included in Patch 7?**
+- No. You still need to [install](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender) it 
+
 **Why are mods that use Script Extender not on Mod.io?**
 - The official toolkits do not support SE, which means that no SE mods can be uploaded to Mod.io.
 - To clarify, the only way modders can upload a mod to mod.io, is to use the official toolkit. Mods, such as ones on NexusMods, cannot be simply dragged and dropped to convert using the toolkit. Since SE is not supported on the toolkit, there is no way to convert SE mods using the tool and upload to mod.io.
@@ -126,7 +129,7 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 - Start your game but don't interact with the IGMM
 - If you interact with the IGMM, your load order will be changed and you have to close the game, and export with BG3MM again
 
-**What does the :volatile:  third party :volatile:  warning mean ?**
+**What does the third party warning mean ?**
 - This is a design decision by Larian and has no meaning
 - Ignore it
 
@@ -137,12 +140,12 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 **How do I add mods safely?'**
 - To add mods safely, first revert to  [Vanilla](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods)
 
-## Mod Updates :bcaPatient~3: 
+## Mod Updates: 
 
 **Does UTav work? Why should I switch to KazVT?**
 - It seems like UTav works again, however we recommend switching to [KazVT](https://www.nexusmods.com/baldursgate3/mods/8912) 
-- You can see a guide about how to use it [here]() https://discord.com/channels/1211056047784198186/1279189360369078332/1282482014087544937  <- change this when it goes live
-- KazVT has the benefits of: Add benefits here
+- You can see a guide about how to use it [here](https://wiki.bg3.community/en/Tutorials/patch7-troubleshooting#kaz-virtual-tav)
+- KazVT has multiple benefits that will be explained here later.
 
 **What mods are broken/Still work?**
 - Many mods work, some don't
@@ -152,7 +155,7 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 - You can check for updates on Nexus
 - Either check your download history and filter by **Updated**
 - Or check the Nexus page of the mod you are interested in
-- Be patient :bcaPatient:  mod author's create mods in their free time. Updates might take a while
+- Be patient mod author's create mods in their free time. Updates might take a while
 - Other mods don't need updates at all and work on patch 7
 
 **When will my favorite mod come to the in game mod manager ?**
@@ -190,10 +193,12 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 - Rename it to `ForceRecompile.txt` if you want your mod to stay comaptible with patch6
 - Or remove it entirely if you only want to support Patch7 +
 
+
+
 ## Kaz Virtual Tav
 
 Just like with regular UTav and its additional patches and assets place the files from the mod in the corresponding folder. **COMPATIBLE with any UTav asset AFTER IT HAS BEEN CONVERTED by either the author or yourself**
-- WRITTEN CONVERSION GUIDE IS ON KVT PAGE
+- WRITTEN CONVERSION GUIDE IS ON KVT [KazVT](https://www.nexusmods.com/baldursgate3/mods/8912) PAGE 
 - LSLIB is required for conversion you can find it [here](https://github.com/Norbyte/lslib/releases/tag/v1.19.5) (1.19.5 is Current as of Sept 6 '24) - unzip and double click converter.exe
 
 **For Tattoos:**
