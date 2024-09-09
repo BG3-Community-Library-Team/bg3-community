@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-09T11:53:57.784Z
+date: 2024-09-09T15:18:36.286Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -167,6 +167,32 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 - Converting a mod is not as simple as drag and drop. It takes time to convert mods and may takes weeks to months for mods to be converted if the mod author is willing to convert their mod, so be patient
 - Not every mod author may want to put their mods on mod.io. Respect the mod authors choice and do not harass them
 - Any mod that uses SE extensively will not be on mod.io because the toolkit is incompatible with Script Extender. SE mods still work! You just won’t see them uploaded on mod.io. SE mods will continue to be available on nexus mods.
+
+
+## Multiplayer
+
+**To play with another person for a modded game, you need the same**
+- Mods
+- Mod Versions
+- Load order (modsettings)
+- Game version
+
+**I have the same Mods, Mod versions, load order and game version but I still cannot connect**
+- You made a mistake somewhere
+- To make sure you really have the exact same files, do the following steps:
+    - Everyone reverts to  [Vanilla](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods) 
+    - Everyone updates their game to the most recent version
+	- One person downloads all mods
+    - They create a load order (`modsettings.lsx`) file
+    - This person zips their `Mods` folder and sends it, together with the `modsettings.lsx` to their friends
+	- Everyone else deletes their `Mods` folder and `modsettings.lsx` file
+	- Everyone unzips the `Mods` folder that has been sent and places it, and the `modsettings.lsx` file in the correct folder
+- Afterwards you can compare the size of your folder and your `modsettings.lsx` file with  https://www.diffchecker.com/
+
+**I sent my Mods and modsettings to my friend, but we still cannot connect**
+
+- There is a rare case where the host has to long rest before others can join
+- Otherwise you have made a mistake somewhere and there is still a difference
 
 ## For Mod Developers / Aspiring Mod Developers
 
