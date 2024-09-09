@@ -2,7 +2,7 @@
 title: Adding New Voice Lines And Dialog
 description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
 published: false
-date: 2024-09-09T23:03:08.032Z
+date: 2024-09-09T23:04:03.120Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-09T21:40:21.205Z
@@ -10,7 +10,7 @@ dateCreated: 2024-07-09T21:40:21.205Z
 
 # Adding New Voice Lines And Dialog - WIP
 
-Hi! Welcome to another guide on dialogue files, made by Milo Magnetuning. This guide will cover voice lines, how the game is able to reference them within dialogue files, and how to add new ones without overriding any existing ones! (It's still currently a WIP, though, so keep that in mind!)
+Hi! Welcome to another guide on dialogue files, made by Milo Magnetuning. This guide will cover voice lines, how the game is able to reference them within dialogue files, and how to add entirely new lines and dialog files without overriding existing ones! (It's still currently a WIP, though, so keep that in mind!)
 
 One thing to note before we start, though—in making this tutorial, I do ask that you respect the wishes and work of voice actors, and *don't* use AI voices for your mods! There's a number of ways to get voice acting for your mods, even if you're on a budget. You don't need AI voices to do so.
 
