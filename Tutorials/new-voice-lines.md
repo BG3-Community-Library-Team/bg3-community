@@ -2,7 +2,7 @@
 title: Adding New Voice Lines And Dialog
 description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
 published: false
-date: 2024-09-09T23:04:03.120Z
+date: 2024-09-09T23:05:31.060Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-09T21:40:21.205Z
@@ -198,7 +198,7 @@ The files you'll need to set up are as follows:
 - An entry in a GeneratedDialogTimelines .lsf file
 - A Dialog Resource entry in a Dialog Assets .lsf file
 
-You can find more about what all these files do, and what file paths you can find them in in my longer dialog guide, here.
+You can find more about what all these files do, and what file paths you can find them in in my longer dialog guide, [here](https://wiki.bg3.community/Tutorials/dialogue-files-tutorial).
 
 The process for adding onto existing dialog files is remarkably similar to making them from scratch! Which is covered in that guide.
 
