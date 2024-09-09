@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-09T07:03:17.612Z
+date: 2024-09-09T10:51:16.069Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -196,6 +196,8 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 - If your Modfixer has any other name, it will cause this error
 - Rename it to `ForceRecompile.txt` if you want your mod to stay comaptible with patch6
 - Or remove it entirely if you only want to support Patch7 +
+
+<img src="/mod-use/not_forcerecompile.png" alt="not_forcerecompile.png" width="700" height="200">
 
 
 
