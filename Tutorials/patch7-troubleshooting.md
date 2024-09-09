@@ -2,35 +2,35 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: false
-date: 2024-09-08T23:55:05.989Z
+date: 2024-09-09T00:04:28.438Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
 ---
 
-# Header
-Your content here
+# Patch 7 Troubleshooting
+This page will be updated to add/change information as more is learned over time.
 
+Note, the in game mod manager that BG3 now has will be referred to as IGMM on this page.
 
-
-
-## General Patch 7
+## General Troubleshooting
 
 **How do I back up my saves and mods ?**
-- Copy your `Mods` folder, `modsettings.lsx` , `Story` folder and `Generated` folder somewhere else, like your desktop. 
+- Copy your `Mods` folder, `modsettings.lsx` file, `Story` folder, and `Generated` folder somewhere else, like your desktop. 
 - The location of those files are a bit further down
 
-**How do I update my game to patch 7 ?**
-- To update to patch 7, we recommend backing up your mods and reverting to [Vanilla](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods) first. 
+**How do I update my game to Patch 7 ?**
+- To update to patch 7, we recommend backing up your mods and reverting to [Vanilla](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods) first.
+- After you do this, simply update the game on whatever game manager you are using (Steam, GOG, etc).
 
-**How do I downgrade my game to patch 6 ?**
+**How do I downgrade my game to Patch 6 ?**
 - Larian made it possible to choose a patch 6 beta branch
 - Before you do this, we recommend backing up your mods and reverting to [Vanilla](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods) first. 
-- Then you can join the patch 6 branch like so:
+- Then, you can revert to Patch 6 like so:
 _Right click on BG3 in your Steam Library > Properties > Betas
 On Beta Participation select: release_patch6_hf9_
 
-**I downgraded to patch 6 and now my mods don't work anymore**
+**I downgraded to Patch 6 and now my mods don't work anymore**
 - Back up your mods and revert to  [Vanilla](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods) 
 - Get the [Patch 7 version of BG3MM](https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.10.0)
 - Delete your `modsettings.lsx` file
@@ -109,6 +109,11 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 
 **Does Script Extender work?**
 - Yes. Script Extender works
+
+**Why are mods that use Script Extender not on Mod.io?**
+- The official toolkits do not support SE, which means that no SE mods can be uploaded to Mod.io.
+- To clarify, the only way modders can upload a mod to mod.io, is to use the official toolkit. Mods, such as ones on NexusMods, cannot be simply dragged and dropped to convert using the toolkit. Since SE is not supported on the toolkit, there is no way to convert SE mods using the tool and upload to mod.io.
+- This is a Larian decision, not a modder one, modders cannot control what the tools allow and don't allow.
 
 **Will my mods work on patch 7 ?**
 - Many mods work, some don't
