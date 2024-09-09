@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-09T10:51:16.069Z
+date: 2024-09-09T11:53:57.784Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -68,7 +68,7 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 - Delete the file `C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Localozation\English\english.loca` and Verify file integrity on steam
 
 **I removed Mods and now I cannot load my save anymore**
-- Most mods cannot be removed froma current save.
+- Most mods cannot be removed from a current save.
 - Reinstall your mods and use [Mod Uninstaller](https://www.nexusmods.com/baldursgate3/mods/9701) by Volitio to uninstall your mods
 - This does not work for all mods.
 - We recommend you start a new save for patch 7
