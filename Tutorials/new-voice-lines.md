@@ -2,7 +2,7 @@
 title: Adding New Voice Lines And Dialog
 description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
 published: false
-date: 2024-09-09T20:27:09.339Z
+date: 2024-09-09T20:27:15.407Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-09T21:40:21.205Z
@@ -26,7 +26,7 @@ Some resources that might help you a ton with voice acting are:
 - You can try pulling EA lines, or lines from other media!
 - And, if all else fails, you could try editing lines from the game together, YTP style. (Although maybe not...that specific editing style...)
 
-The sky's almost the limit, but don't be rude. And don't destroy the planet with energy-intensive AI!
+The sky's almost the limit, but don't be rude.
  
 ...Now, let's get into the tutorial.
 
