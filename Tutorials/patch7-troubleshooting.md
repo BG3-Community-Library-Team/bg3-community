@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-10T09:10:19.446Z
+date: 2024-09-10T12:58:24.698Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -31,9 +31,10 @@ On Beta Participation select: release_patch6_hf9_
 
 **I downgraded to Patch 6 and now my mods don't work anymore**
 - Back up your mods and revert to  [Vanilla](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods) 
-- Get the [Patch 7 version of BG3MM](https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.10.0)
+- Get the [Patch 6 version of BG3MM](https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.10.0)
+- If you use [Vortex](https://www.nexusmods.com/about/vortex/) no additional steps are necesssary.
 - Delete your `modsettings.lsx` file
-- Add your mods with BG3MM as usual
+- Add your mods with BG3MM/Vortex as usual
 
 **How do I revert back to Vanilla ?**
 Follow [this](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods) guide to revert to vanilla
@@ -76,16 +77,23 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 
 
 
-## BG3MM  and the IGMM (In Game Mod Manager)
+## BG3MM/Vortex and the IGMM (In Game Mod Manager)
 
 **Should I use BG3MM, Vortex, or the in game mod manager ?** 
-- We recommend that you use BG3MM
+- We recommend that you use BG3MM or Vortex
+- Please don't use BG3MM and Vortex together
 
 **BG3MM doesn't work anymore**
 - Use the correct BG3MM version for your patch
 - Click [here](https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.11.1) for the patch 7 version
 - Click [here](https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.10.0) for the patch 6 version
 - delete your `modsettings.lsx` file if you run into any issues like BG3MM being stuck loading or modsettings not working correctly.
+
+**Vortex doesn't work anymore**
+- Vortex auto updates. If you have not received the new updates, restart the program.
+- The newest Vortex version is compatible with Patch 6 and Patch 7
+- You can import your patch 6 load orders and they will be converted to patch 7 load order.
+- You can read more information [here](https://forums.nexusmods.com/topic/13498316-baldurs-gate-3-patch-7-support-for-vortex/)
 
 **My modsettings are always getting reset**
 - You have one, or multiple mods that are "bad" and keep resetting the `modsettings.lsx` file
@@ -100,7 +108,7 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 **How does the in game mod manager handle load order ?**
 - The in game Mod Manager does not allow you to change the load order 
 - The load order in the IGMM is based on dependencies and order of subscription
-- For this reasons, we recommend to use BG3MM instead
+- For this reasons, we recommend to use BG3MM/Vortex instead
 - If you want to use the in game mod manager, we recommend you reenable the load order buttons with
    - [Mod Manager Fixes and Tweaks - Nexus](https://www.nexusmods.com/baldursgate3/mods/11954)
    - [Mod Manager Fixes and Tweaks - Mod.io](https://baldursgate3.game/mods#/m/mod-manager-fixes-and-tweaks)
@@ -134,9 +142,9 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 - You can use supported and third party mods together.
 - In this case, choose the supported mods from the IGMM
 - Then close the game
-- Export your load order with BG3MM as usual
+- Export your load order with BG3MM/Vortex as usual
 - Start your game but don't interact with the IGMM
-- If you interact with the IGMM, your load order will be changed and you have to close the game, and export with BG3MM again
+- If you interact with the IGMM, your load order will be changed and you have to close the game, and export with BG3MM/Vortex again
 
 **What does the third party warning mean ?**
 - This is a design decision by Larian and has no meaning
