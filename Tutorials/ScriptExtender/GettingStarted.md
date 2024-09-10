@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-09-07T10:47:35.382Z
+date: 2024-09-10T16:12:18.873Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -267,6 +267,10 @@ If you are not able to see this statement, you likely missed one of the steps.
 ## **4\. Symlinking**
 
 
+> If you want to symlink your mod, don't have a .pak version if it in your Mods.
+{.is-warning}
+
+
 > **As of patch 7 symlinked mods have to be activated and exported in BG3MM to be recognised**.
 {.is-warning}
 
@@ -279,7 +283,21 @@ Symlinking is optional, although **highly recommended**, as it allows you conven
 {.is-success}
 
 
-### 4.1\. Setting up the Symlink
+
+
+### 4.1\. Setting up the Symlink (With a tool - Recommended for beginners)
+
+
+Use [Link Shell Extension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html) to simply create symlinks with the click of a button.
+
+Check out their instructions [here](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html#introduction)
+
+
+![gswe_focus_muffin.png](/tutorials/getting_started_with_se/gswe_focus_muffin.png =1100x900)
+<div style="margin-left: 300px;"> <i>Image created by Focus and kindly provided by Muffin </i> </div>
+
+
+### 4.2\. Setting up the Symlink (Manual - For advanced windows users)
 
 
 The following instructions are for Windows. On Linux, simply use `ln -s <workspace> <game files>`
@@ -330,16 +348,6 @@ mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Loc
 
 
 
-
-> Want to use a tool that creates the links for you? 
-> Try [Link Shell Extension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html)
-{.is-info}
-
-
-![gswe_focus_muffin.png](/tutorials/getting_started_with_se/gswe_focus_muffin.png =1100x900)
-<div style="margin-left: 300px;"> <i>Image created by Focus and kindly provided by Muffin </i> </div>
-
-
 > Still stuck? Here are some other resources that explain this step differently
 > [Tutorial for Symlinking & Mass File Conversion for hot-testing your mods](https://github.com/ImmortalRDI/Tutorial-SymLink-Convert-HotTest/wiki/3.-Symlink)
 {.is-warning}
@@ -353,7 +361,7 @@ mklink /D "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Loc
 > An automated way of setting up your symlink might be provided in the future
 {.is-info}
 
-### 4.2\. Alternative to symlinking: Move your project to the Mods folder
+### 4.3\. Alternative to symlinking: Move your project to the Mods folder
 
 
 You can also move your project to the `Mods` folder in `Data` instead if you were not able to symlink your folders.
@@ -375,7 +383,7 @@ in the example below, where you can see the full path to the script it is:
 {.is-info}
 
 
-### 4.3\. Verifying the symlink
+### 4.4\. Verifying the symlink
 
 To verify whether the symlink has been created in the correct space, click your newly created symlink
 in `Data`. This should lead you to your workspace folder. 
@@ -384,7 +392,7 @@ in `Data`. This should lead you to your workspace folder.
 If you see an error instead or a link to a subfolder, please repeat the steps in [4. Symlinking](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking) and make sure your **paths** are correct.
 
 
-### 4.4\. Testing the symlink
+### 4.5\. Testing the symlink
 
 To test whether your symlink has been succesfully created, you can change the print line we have created earlier while having a save loaded.
 
