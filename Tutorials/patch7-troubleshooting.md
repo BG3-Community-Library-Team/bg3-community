@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-10T12:58:24.698Z
+date: 2024-09-10T15:06:15.656Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -22,12 +22,29 @@ dateCreated: 2024-09-08T23:55:05.989Z
 - To update to patch 7, we recommend backing up your mods and reverting to [Vanilla](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods) first.
 - After you do this, simply update the game on whatever game manager you are using (Steam, GOG, etc).
 
-**How do I downgrade my game to Patch 6 ?**
+**How do I downgrade my game to the Patch 6 beta ?**
+
+> This method is not recommended as it causes almost as many issues as just upgrading to patch 7
+{.is-warning}
 - Larian made it possible to choose a patch 6 beta branch
+- However this branch is more of a patch 7 "light"
+- This means many mods that are broken on patch 7, are also broken on patch 6
+- Specifically, mods that reset the `modsettings.lsx` file
+- Regardless, if you want to join the patch 6 beta follow these steps:
 - Before you do this, we recommend backing up your mods and reverting to [Vanilla](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods) first. 
 - Then, you can revert to Patch 6 like so:
 _Right click on BG3 in your Steam Library > Properties > Betas
 On Beta Participation select: release_patch6_hf9_
+- Update BG3MM to the [patch 7 version](https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.11.1)
+
+
+
+
+**How do I actually downgrade my game to Patch 6 ?**
+- To actually downgrade your game to the "real" patch 6 follow these steps:
+- Before you do this, we recommend backing up your mods and reverting to [Vanilla](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods) first. 
+- Then, you can follow this guide https://wiki.bg3.community/en/Tutorials/General/Legally-Obtaining-Old-Builds-Patches-Of-BG3
+
 
 **I downgraded to Patch 6 and now my mods don't work anymore**
 - Back up your mods and revert to  [Vanilla](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods) 
