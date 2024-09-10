@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-09T15:54:37.077Z
+date: 2024-09-10T09:10:19.446Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -116,6 +116,12 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 - No. You still need to [install](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-install-Script-Extender) it 
 
 **Why are mods that use Script Extender not on Mod.io?**
+
+> The following text has been written when it was believed that Script Extender mods could never be on mod.io
+> Recent discoveries have made it possible to host Script Extender mods on mod.io now.
+{.is-warning}
+
+
 - The official toolkits do not support SE, which means that no SE mods can be uploaded to Mod.io.
 - To clarify, the only way modders can upload a mod to mod.io, is to use the official toolkit. Mods, such as ones on NexusMods, cannot be simply dragged and dropped to convert using the toolkit. Since SE is not supported on the toolkit, there is no way to convert SE mods using the tool and upload to mod.io.
 - This is a Larian decision, not a modder one, modders cannot control what the tools allow and don't allow.
@@ -166,10 +172,18 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 - Other mods don't need updates at all and work on patch 7
 
 **When will my favorite mod come to the in game mod manager ?**
+
+
+> The following text has been written when it was believed that Script Extender mods could never be on mod.io
+> Recent discoveries have made it possible to host Script Extender mods on mod.io now.
+{.is-warning}
+
+
 - Not every mod will be converted for upload on mod.io
 - Converting a mod is not as simple as drag and drop. It takes time to convert mods and may takes weeks to months for mods to be converted if the mod author is willing to convert their mod, so be patient
 - Not every mod author may want to put their mods on mod.io. Respect the mod authors choice and do not harass them
 - Any mod that uses SE extensively will not be on mod.io because the toolkit is incompatible with Script Extender. SE mods still work! You just won’t see them uploaded on mod.io. SE mods will continue to be available on nexus mods.
+
 
 
 ## Multiplayer
