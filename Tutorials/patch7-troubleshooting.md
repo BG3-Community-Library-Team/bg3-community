@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-10T15:06:15.656Z
+date: 2024-09-10T15:09:57.664Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -52,6 +52,11 @@ On Beta Participation select: release_patch6_hf9_
 - If you use [Vortex](https://www.nexusmods.com/about/vortex/) no additional steps are necesssary.
 - Delete your `modsettings.lsx` file
 - Add your mods with BG3MM/Vortex as usual
+
+> Please be aware that the Patch 6 beta is **not** the same as Patch 6  
+> See __How do I downgrade my game to the Patch 6 beta ?__  for additional information
+{.is-warning}
+
 
 **How do I revert back to Vanilla ?**
 Follow [this](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods) guide to revert to vanilla
@@ -103,6 +108,7 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 **BG3MM doesn't work anymore**
 - Use the correct BG3MM version for your patch
 - Click [here](https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.11.1) for the patch 7 version
+- Click [here](https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.11.1) for the patch 6 beta version (same as for patch 7)
 - Click [here](https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.10.0) for the patch 6 version
 - delete your `modsettings.lsx` file if you run into any issues like BG3MM being stuck loading or modsettings not working correctly.
 
