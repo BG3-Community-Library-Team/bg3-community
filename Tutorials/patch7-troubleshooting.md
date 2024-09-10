@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-10T23:39:48.947Z
+date: 2024-09-10T23:42:31.027Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -188,6 +188,7 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 
 > The following text has been written when it was believed that Script Extender mods could never be on mod.io
 > Recent discoveries have made it possible to host Script Extender mods on mod.io now.
+> It is not clear if they will be allowed to stay on mod.io or removed
 {.is-warning}
 
 
@@ -262,6 +263,7 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 
 > The following text has been written when it was believed that Script Extender mods could never be on mod.io
 > Recent discoveries have made it possible to host Script Extender mods on mod.io now.
+> It is not clear if they will be allowed to stay on mod.io or removed
 {.is-warning}
 
 
