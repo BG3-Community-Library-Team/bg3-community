@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-10T16:25:29.808Z
+date: 2024-09-10T23:39:48.947Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -159,6 +159,18 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
    - [Mod Manager Fixes and Tweaks - Mod.io](https://baldursgate3.game/mods#/m/mod-manager-fixes-and-tweaks)
 
 
+
+
+#####
+**If Load Order still important if Larian did not include a way to change it in the IGMM?**
+- The IGMM uses a mix of install order, dependencies and conflicts to automatically manage load order
+- While this might work well for small load orders and inexperienced users, it is not an all-encompassing solution.
+- Here are some points as to why this method might not always work
+    - Some mod author's might not include dependency or conflict nodes
+    - Some load orders cannot be solved by dependencies. For example a patch for multiple races has to be loaded after the race. If this patch had all the races as dependencies, mod.io would automatically download all of them.
+    - Some required load orders are only figured out weeks after a mod has been published. Changing load orders is very easy for third party mod managers, but not for the IGMM 
+
+- For these reasons we do not recommend the IGMM
 
 ## Third Party Mods and Supported mods  (Mod.io and IGMM)
 
