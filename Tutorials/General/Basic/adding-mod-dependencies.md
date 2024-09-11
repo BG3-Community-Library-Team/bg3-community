@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2024-09-11T04:14:34.068Z
+date: 2024-09-11T04:17:48.853Z
 tags: mods, load order, modsuse, dependencies, dependency, meta.lsx, mod dependency, deps
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -83,7 +83,7 @@ As mentioned, as modding progresses, users are becoming more and more accustomed
 
 ### What if the dependency mod is abandoned or becomes unavailable?
 
-This is a valid concern. However, history has shown that modding communities are resilient and will find a way to keep mods alive. If a mod is abandoned, the community will either find a way to keep it alive or create a new mod that does the same thing. Large dependency mods are hardly ever truly abandoned.
+This is a valid concern. However, even though your mod might become unusable for a moment, history has shown that modding communities are resilient and will find a way to keep mods alive. If a mod is abandoned, the community will either find a way to keep it alive or create a new mod that does the same thing. Large dependency mods are hardly ever truly abandoned.
 
 Note that, in a way, **if you build on top of a mod, you are also helping to keep it alive**. By adding a dependency to your mod, you are also promoting the original mod, and that can help to keep it alive one way or another.
 
@@ -95,4 +95,5 @@ If you are a mod author, especially of a framework, **consider making your mod(s
 
 ### Closing thoughts
 
-Adding dependencies to your mod is a great way to leverage the work of other mod authors and build on top of their work so that you can focus on achieving your vision. In the end, however, it's your mod, and you should do what you want with it. I just hope that my tools and writings can nudge the community into a more collaborative direction!
+Adding dependencies to your mod is a great way to leverage the work of other mod authors and build on top of their work so that you can focus on achieving your vision. Adding them to your meta.lsx ensures that load order is correct (and versions, potentially).
+In the end, however, it's your mod, and you should do what you want with it. I just hope that my tools and writings can nudge the community into a more collaborative direction!
