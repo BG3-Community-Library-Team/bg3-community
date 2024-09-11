@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2024-09-11T04:12:54.730Z
+date: 2024-09-11T04:13:12.289Z
 tags: mods, load order, modsuse, dependencies, dependency, meta.lsx, mod dependency, deps
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -45,7 +45,7 @@ After:
 ```
 
 > It is also recommended to always set the required version (`Version64`) of the dependency to the version you're using during the development of your mod. In the example above, it's MCM 1.14.0.0.
-> As modding evolves, mod managers may use this to enforce correct versions for dependencies. MCM already uses it to warn users if they have outdated dependencies.
+> As modding evolves, mod managers may use this to enforce correct versions for dependencies. **MCM already uses it to warn users if they have outdated dependencies**.
 {.is-info}
 
 That's it! You've just added a dependency to your mod. By properly declaring dependencies, you will:
