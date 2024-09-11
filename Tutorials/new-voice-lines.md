@@ -2,7 +2,7 @@
 title: Adding New Voice Lines And Dialog
 description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
 published: true
-date: 2024-09-11T21:03:35.333Z
+date: 2024-09-11T21:04:42.567Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-09T21:40:21.205Z
@@ -32,7 +32,7 @@ The sky's almost the limit, but don't be rude.
 
 ## What files do you need for voice lines?
 
-It turns out that voice lines function a bit differently than other sounds used by the game. Things like music, ambient noise, and sound effects are handled within a specific file type, soundbank files, which use the file extension .bnk. These files can be made via the program [Wwise,](https://www.audiokinetic.com/en/wwise/overview/)! I don't know if anyone's gotten them to work for the game, yet, though.
+It turns out that voice lines function a bit differently than other sounds used by the game. Things like music, ambient noise, and sound effects are handled within a specific file type, soundbank files, which use the file extension .bnk. These files can be made via the program [Wwise](https://www.audiokinetic.com/en/wwise/overview/), but I don't know if anyone's gotten them to work for the game yet.
 
 Thankfully, voice lines don't use .bnk files!
 
