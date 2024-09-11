@@ -2,7 +2,7 @@
 title: Adding New Voice Lines And Dialog
 description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
 published: true
-date: 2024-09-11T08:59:59.523Z
+date: 2024-09-11T20:33:37.869Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-09T21:40:21.205Z
@@ -54,11 +54,13 @@ To accompany this guide, I've uploaded a collection of annotated dialog files wi
 
 The sample dialog files include an annotated voicebank file, which will help a lot with this portion of the guide.
 
-Adding voice lines to the game is pretty straightforward! You'll need to start by find the proper voicebank file for a character. This can be done by grabbing the text handle for a line of dialogue from the character, and searching for that via the BG3 Modder's Multitool index.
+Adding voice lines to the game is pretty straightforward! You'll need to start by finding the proper voicebank file for a character. This can be done by grabbing the text handle for a line of dialogue from the character, and searching for that via the BG3 Modder's Multitool index.
 
 This text handle will usually pull up the voicebank .lsf file for the character the line belongs to. The name of the voicebank file is usually the UUID of the global/root template for the character, with all hyphens removed! You can double-check to make sure you've got the right character via the UUID listed at the top of the voicebank, which will be under VoiceSpeakerMetaData. If that UUID refers to the character you're looking for, congrats!! You've got the right voicebank file!
 
-Once you've found the proper voicebank file, you'll need to copy the format for an existing voice line resource, and edit the information to match your audio file. The easiest way to do this is just by copying and pasting a duplicate of an existing voice line node, which are referred to as VoiceTextMetaData nodes.
+You can also use this format to make voicebanks for new characters. Rename your voicebank to the UUID of your character's Root or GlobalTemplate, just with the hyphens removed. Then, take your character's UUID again, and put it at the top of the file, under VoiceSpeakerMetaData. You now have a new voicebank for your character!
+
+Once you've found the proper voicebank file (or made your own), you'll need to copy the format for an existing voice line resource, and edit the information to match your audio file. The easiest way to do this is just by copying and pasting a duplicate of an existing voice line node, which are referred to as VoiceTextMetaData nodes.
 
 If you're restoring a line from early access, make sure the text handle you're using isn't referenced in the full release version of game before you add it! (Once again, you can check via the indexing function with BG3MM.) It might be good practice to generate a new text handle regardless, though!
 
