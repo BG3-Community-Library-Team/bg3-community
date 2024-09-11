@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2024-09-02T19:28:46.102Z
+date: 2024-09-11T04:09:57.920Z
 tags: mods, load order, modsuse, dependencies, dependency, meta.lsx, mod dependency, deps
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -19,8 +19,8 @@ Before:
 ```xml
 ...
     <children>
-    <node id="Dependencies" />
-    <node id="ModuleInfo">
+      <node id="Dependencies" />
+      <node id="ModuleInfo">
         ...
 ```
 
@@ -28,21 +28,25 @@ After:
 ```xml
 ...
     <children>
-    <node id="Dependencies">
+      <node id="Dependencies">
         <children>
           <node id="ModuleShortDesc">
               <attribute id="Folder" type="LSWString" value="BG3MCM" />
               <attribute id="MD5" type="LSString" value="" />
               <attribute id="Name" type="FixedString" value="Mod Configuration Menu" />
               <attribute id="UUID" type="FixedString" value="755a8a72-407f-4f0d-9a33-274ac0f0b53d" />
-              <attribute id="Version64" type="int64" value="36028797018963968" />
+              <attribute id="Version64" type="int64" value="37999121855938560" />
           </node>
           <!-- You can add more <node id="ModuleShortDesc"> entries here for additional dependencies, if needed -->
         </children>
-    </node>
-    <node id="ModuleInfo">
+      </node>
+      <node id="ModuleInfo">
         ...
 ```
+
+> It is also recommended to always set the required version (`Version64`) of the dependency to the version you're using during the development of your mod. In the example above, it's MCM 1.14.0.0.
+> As modding evolves, mod managers may use this to enforce correct versions for dependencies. MCM already uses it to warn users if they have outdated dependencies.
+{.is-info}
 
 That's it! You've just added a dependency to your mod. By properly declaring dependencies, you will:
 
