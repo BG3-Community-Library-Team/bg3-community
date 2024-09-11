@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2024-09-11T04:10:07.889Z
+date: 2024-09-11T04:10:13.654Z
 tags: mods, load order, modsuse, dependencies, dependency, meta.lsx, mod dependency, deps
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -21,7 +21,7 @@ Before:
     <children>
       <node id="Dependencies" />
       <node id="ModuleInfo">
-      ...
+        ...
 ```
 
 After:
