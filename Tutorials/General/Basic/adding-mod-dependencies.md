@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2024-09-11T16:13:39.291Z
+date: 2024-09-11T16:15:56.795Z
 tags: mods, load order, modsuse, dependencies, dependency, meta.lsx, mod dependency, deps
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -47,14 +47,14 @@ After:
 > It is also recommended to always set the required version (`Version64`) of the dependency to the version you're using during the development of your mod. In the example above, it's MCM 1.14.0.0.
 > As modding evolves, mod managers may use this to enforce correct versions for dependencies. **MCM already uses it to warn users if they have outdated dependencies**.
 >
-> Example: if your mod has dependencies A and B, and you need B to be version 2.1.1.0 or greater due to a recent fix, you should use 2.1.1.0 for the dependency version (generate the Version64 number through BG3MM)
+> Example: if your mod has dependencies *A* and *B*, and you need *B* to be version 2.1.1.0 or greater due to a recent fix, you should use 2.1.1.0 for the dependency version (generate the `Version64` number with BG3MM)
 {.is-info}
 
 That's it! You've just added a dependency to your mod. By properly declaring dependencies, you will:
 
-- Ensure that required mods are loaded in the correct order - dependencies will automatically be loaded earlier (BG3MM handles this automatically)
-- Eliminate the need for users to follow manual instructions (e.g., "*don't forget to add **this** mod*", "*load **this** mod before **that** mod*")
-- Overall simplify troubleshooting by reducing incorrect/false positive bug reports
+- **Ensure that required mods are loaded in the correct order** - dependencies will automatically be loaded earlier (BG3MM handles this automatically)
+- **Eliminate the need for users to follow manual instructions** (e.g., "*don't forget to add **this** mod*", "*load **this** mod before **that** mod*", *"don't forget to update **x** dependency"*)
+- **Overall simplify troubleshooting** by reducing incorrect/false positive bug reports
 
 > **Note:** Make sure the `Name` is something that the user will recognize. At the time of writing, it is used by BG3MM and MCM to display the dependency name to the user.
 > {.is-warning}
