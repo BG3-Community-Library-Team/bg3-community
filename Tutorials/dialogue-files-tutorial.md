@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: true
-date: 2024-09-10T10:58:02.290Z
+date: 2024-09-11T05:51:54.174Z
 tags: tutorial, scripting, data
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -107,7 +107,9 @@ The Dialog Scene files contain information on camera and character positioning w
 
 They can inherit information from other files, the most important of which is the default dialog scene file, which is often linked at the bottom of the file. The default Scene files can be found at this file path here:
 
+`
 \\Public\Shared\Timeline\Scenes\Default\
+`
 
 You may not have to edit these files often, but it's still important to note! And they'll be necessary when creating entirely new dialog files.
 
@@ -120,9 +122,12 @@ The GeneratedDialogTimelines files contain information linking each DialogsBinar
 
 The GeneratedDialogTimelines files can be found at these file paths:
 
+`
 \\Public\Gustav\Content\Generated\[PAK]_GeneratedDialogTimelines\_merged.lsf
-
+`
+`
 \\Public\GustavDev\Content\Generated\[PAK]_GeneratedDialogTimelines\_merged.lsf
+`
 
 Dialog Assets
 ####
@@ -131,7 +136,9 @@ These files contain information on the DialogsBinary files, where the game shoul
 
 These files can generally be found at this file path:
 
+`
 \\Public\GustavDev\Content\Assets\Dialogs\
+`
 
 Followed by separate folders breaking down the dialog according to what section of the game they're supposed to happen, just like the DialogsBinary files.
 
