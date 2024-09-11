@@ -2,7 +2,7 @@
 title: Adding New Voice Lines And Dialog
 description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
 published: true
-date: 2024-09-11T20:46:22.521Z
+date: 2024-09-11T20:47:58.584Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-09T21:40:21.205Z
@@ -86,6 +86,7 @@ The audio filename should be formatted like this:
 `
 v[character voicebank ID]_[text handle].wem
 `
+
 You can see examples of this in the sample mod I made, [A New Voice In Town](https://www.nexusmods.com/baldursgate3/mods/10086)). This is one of the voice lines for the character added by the mod, Jason.
 
 `
