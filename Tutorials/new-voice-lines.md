@@ -2,7 +2,7 @@
 title: Adding New Voice Lines And Dialog
 description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
 published: true
-date: 2024-09-11T20:33:37.869Z
+date: 2024-09-11T20:46:22.521Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-09T21:40:21.205Z
@@ -177,7 +177,11 @@ Keep in mind that the start of your file needs to match that of the original aud
 
 You can't change when the lipsync will start playing—it'll start alongside the audio file, and not adding padding at the start when you need to can cause misalignments with the lipsync. Your line doesn't have to match the length of the original audio file, though! You can cut it short, and the lipsync will cut with it. Longer files will be missing lipsync at the end, but you can change the camera angles in the dialog timeline file to hide any misaligned or missing lipsync.
 
-Once you've got your audio file lined up properly, mute the original line and export your line as a .wav file. Then, convert the file to a .wem audio file using Wwise. Tendirty has a [really helpful guide](https://www.nexusmods.com/baldursgate3/mods/2801) on how to do so!
+Once you've got your audio file lined up properly, mute the original line, and then make sure you check the audio levels for it. It's important to match the audio levels for the game itself! Audio levels for voices in other media are usually around -6 to -9db, but the voice lines in BG3 hover around -16/-18db. You'll want to make sure you match that, or you'll either blast your ears off, or it'll be way too quiet.
+
+Keep in mind that you can't really trust your ears for this! You'll want to check the audio meter in the program you're using. Everyone has a different speaker setup, and something that sounds fine on your speakers might not on someone else's. Checking the audio meter itself will help produce more consistent results between sound systems!
+
+Once you've done that, export your line as a .wav file. Then, convert the file to a .wem audio file using Wwise. Tendirty has a [really helpful guide](https://www.nexusmods.com/baldursgate3/mods/2801) on how to do so!
 
 Now, rename your .wem file to match the pattern for voice lines, and place it in the folder I listed above. Then, grab the lipsync .ffxanim file for the original line, and rename it to match your audio file, before placing it in the folder I listed above for .ffxanim files, too.
 
