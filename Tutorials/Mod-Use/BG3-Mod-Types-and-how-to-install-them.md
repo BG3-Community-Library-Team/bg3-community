@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: true
-date: 2024-09-05T20:47:13.754Z
+date: 2024-09-12T14:40:38.319Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -78,7 +78,9 @@ Don't move either of them into the Active Mods panel.
 8. Start the game either directly through BG3MM or use your prefered method.
 
 #### MOD FIXER
-Mod fixer is still neccessary. If it isn't installed, character creation will not be available. Instead this lovely view will appear on screen:
+Games updated to Patch 7 do not need Mod fixer anymore. Mods including mod fixer should still work fine as long as the used file is called ForceRecompile.txt
+
+Mod fixer is still neccessary up to patch 6. If it isn't installed, character creation will not be available. Instead this lovely view will appear on screen:
 
 ![durgeharem.webp](/mod-use/install-mods/durgeharem.webp)
 
