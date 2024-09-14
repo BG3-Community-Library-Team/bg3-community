@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-09-11T04:25:17.035Z
+date: 2024-09-14T21:38:26.472Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -89,7 +89,7 @@ Mod authors need to integrate their mods with MCM for their settings to appear i
 > It's **extremely recommended to define BG3MCM as a dependency in your `meta.lsx` file**. This allows mod managers to ***ensure*** that MCM is loaded ***before** your own mod* - eliminating the need to instruct users to do so manually and avoiding incorrect reports/troubleshooting when they don't! See our [guide for adding dependencies](/Tutorials/General/Basic/adding-mod-dependencies).
 > • [Example for listing two dependencies in a meta.lsx file, one being BG3MCM](https://github.com/AtilioA/BG3-mod-uninstaller/blob/main/Mod%20Uninstaller/Mods/ModUninstaller/meta.lsx#L7-L24 'Mod Uninstaller with two dependencies, one being BG3MCM'); (Volition Cabinet is not required for MCM)
 > • You can set dependencies and their minimum required versions. It is also recommended to always set the required version (`Version64`) of MCM to the version you're using during the development of your mod.
-**MCM 1.14+ will also verify dependencies' versions and warn users if they have outdated versions of any mods.**
+**MCM 1.14 also verifies dependencies' versions and warn users if they have outdated versions of any mods.**
 {.is-warning}
 
 The `MCM_blueprint.json` file is how you specify your mod's configuration definition; this JSON file will define how your settings are to be structured, what are their name, input type, default, etc., allowing for automatic generation of a user-friendly interface and validation of user-set values.
@@ -169,14 +169,13 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 ### Using values from MCM
 
 After setting up the blueprint, mod authors can access the values set by the player through the MCM API from anywhere in their mod's code. 
-Remember, SE injects a `ModuleUUID` constant that holds the value of the mod you're writing into your runtime.
+MCM provides a convenient way for mod authors to access and modify the values set by players through the MCM API. As of version 1.14+, MCM introduces a global `MCM` table that simplifies this process even further:
 
 ```lua
--- Get the value of a setting with the ID "MySetting". ModuleUUID has the UUID of your mod
-local mySettingValue = Mods.BG3MCM.MCMAPI:GetSettingValue("MySetting", ModuleUUID)
-
--- Set the value of a setting
-Mods.BG3MCM.MCMAPI:SetSettingValue("MySetting", newValue, ModuleUUID)
+  -- Get the value of a setting with the ID "MySetting".
+  local mySettingValue = MCM.Get("MySetting")
+  -- Set the value of a setting
+  MCM.Set("MySetting", newValue)
 ```
 
 You can also listen to changes to settings values by listening to mod events like this (more on this below):
@@ -195,7 +194,23 @@ Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
 end)
 ```
 
+Remember, SE injects a `ModuleUUID` constant that holds the value of the mod you're writing into your runtime.
+
+<details>
+<summary> Setting usage prior to 1.14 (DEPRECATED) </summary>
+
+While the following code is still valid, it is recommended to use the new global `MCM` table introduced in 1.14+ for easier access to settings values.
+
+```lua
+-- Get the value of a setting with the ID "MySetting". ModuleUUID has the UUID of your mod
+local mySettingValue = Mods.BG3MCM.MCMAPI:GetSettingValue("MySetting", ModuleUUID)
+
+-- Set the value of a setting
+Mods.BG3MCM.MCMAPI:SetSettingValue("MySetting", newValue, ModuleUUID)
+```
+
 #### Reducing verbiage
+
 To avoid typing `Mods.BG3MCM.MCMAPI:GetSettingValue` and passing your mod's UUID every time you get/set a setting value, you can define a simple global function such as this early in your scripts:
 ```lua
 function MCMGet(settingID)
@@ -205,9 +220,10 @@ end
 ```
 
 Global functions are only accessible within your mod table, so this function won't be causing conflicts with other MCM mods that also define it.
+</details>
 
-Likewise, you can allow global usage of `MCMAPI` by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`. 
-Otherwise, prepend `Mods.BG3MCM` to all API calls.
+You can allow global usage of `MCM` functions by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`. 
+Otherwise, prepend `Mods.BG3MCM` to all function calls.
 
 ### Inserting custom UI elements
 
