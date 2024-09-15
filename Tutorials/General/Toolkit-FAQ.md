@@ -2,7 +2,7 @@
 title: Toolkit FAQ
 description: FAQ about the Larian Toolkit
 published: false
-date: 2024-09-15T05:43:21.411Z
+date: 2024-09-15T05:44:37.666Z
 tags: toolkit
 editor: markdown
 dateCreated: 2024-09-13T04:50:44.079Z
@@ -14,6 +14,10 @@ dateCreated: 2024-09-13T04:50:44.079Z
 - The following page covers the frequentyl asked questions about the toolkit.
 - Huge thanks to Lunisole for compiling the majority of this knowledge.
 - Thank you Arrow and jerinski for adding their own expertise.
+
+<br />
+
+- Feel free to add to this FAQ. Information about how to become a contributor are linked in the sidebar. 
 
 <br />
 
