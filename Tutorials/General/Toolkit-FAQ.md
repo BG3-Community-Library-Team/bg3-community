@@ -1,8 +1,8 @@
 ---
 title: Toolkit FAQ
 description: FAQ about the Larian Toolkit
-published: false
-date: 2024-09-15T07:13:14.259Z
+published: true
+date: 2024-09-15T07:13:23.775Z
 tags: toolkit
 editor: markdown
 dateCreated: 2024-09-13T04:50:44.079Z
