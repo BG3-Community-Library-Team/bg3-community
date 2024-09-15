@@ -2,7 +2,7 @@
 title: Patch 7 Troubleshooting
 description: Will be updated as we discover more information
 published: true
-date: 2024-09-10T23:42:31.027Z
+date: 2024-09-15T06:41:30.782Z
 tags: patch 7, troubleshooting
 editor: markdown
 dateCreated: 2024-09-08T23:55:05.989Z
@@ -224,6 +224,7 @@ Data folder: `/home/userName/.steam/steam/steamapps/common/Baldurs Gate 3/Data`
 **In game all my third party mods have the same name**
 - This seems to be a visual bug that has no other consequences
 - Ignore it
+<img src="/tutorials/infinite_cmty.png" alt="infinite_cmty.png" width="400" height="350">
 
 #####
 
