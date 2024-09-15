@@ -2,7 +2,7 @@
 title: Toolkit FAQ
 description: FAQ about the Larian Toolkit
 published: false
-date: 2024-09-15T05:19:42.647Z
+date: 2024-09-15T05:43:21.411Z
 tags: toolkit
 editor: markdown
 dateCreated: 2024-09-13T04:50:44.079Z
@@ -13,7 +13,10 @@ dateCreated: 2024-09-13T04:50:44.079Z
 
 - The following page covers the frequentyl asked questions about the toolkit.
 - Huge thanks to Lunisole for compiling the majority of this knowledge.
+- Thank you Arrow and jerinski for adding their own expertise.
+
 <br />
+
 ### General Usage
 <br />
 
@@ -25,6 +28,7 @@ _"Where can I find tutorials ?"_
 _"I want to leave some cells empty after overriding but it keeps filling in"_
 - Right click &#8594; Tick 'Disable parent stat's field inheritance'.
 <br />
+
 ### Converting your mods to the toolkit and uploading them to mod.io
 <br />
 
@@ -99,6 +103,24 @@ _"How to export GR2 files into blender ?"_
 
 - There is an [addon](https://github.com/Norbyte/dos2de_collada_exporter) for blender you can use 
 - You can also just use [lslib](https://github.com/Norbyte/lslib) to convert gr2 into a blender format.
+- For a more in-depth guide click [here](https://wiki.bg3.community/en/Tutorials/Visual/getting-started-with-3d-modding)
+
+<br />
+
+
+_"Do I need to create mesh entries for all races?"_
+- No. The human body type for example covers all elf races.
+
+
+<br />
+
+_"Why can't I find armor/clothing textures/meshes by name?"_
+
+- Textures for armors/clothing a lot of the times have the `HUM_M`  prefix.
+- If you cannot find your resource by searching for `HUM_F_Insert_Armor_Name_Here`, try adding the `HUM_M` prefix:   `HUM_M_Insert_Armor_Name_Here` 
+- You can also use UndefinedScribble's Resource [here](https://docs.google.com/document/d/1otN5cz-mpxg4NCOGOwvGM17fJQR_Sm7lOwS50ReHtEg/edit)
+- Internally the game calls body type 2 the *Strong body type* or adds *S* to the body type, so *FS* for *Femme Strong* or *MS* for *Masc Strong*.
+- Strong body type body meshes are usually shared across races, unlike body type 1. So the `HUM_FS`, `TIF_FS`, `ORC_F`, all might share the same top and bottom meshes for a given armor.
 
 
 <br />
@@ -117,7 +139,8 @@ _"How do I add classes or subclasses in the toolkit ?"_
 <br />
 
 _"How to do races in the toolkit ?"_ 
-- Answer coming soon
+- Answer coming  <img src="/test/alithea/soon_tm.webp" alt="soon_tm.webp" width="40"/>
+
 
 <br />
 
@@ -126,13 +149,15 @@ _"How to do races in the toolkit ?"_
 <br />
 
 _"How to I trigger CC in the toolkit ?"_ 
-- Load CC level, or use debug console and the command ccStartNew.
+- Load the CC level
+- Or use the debug console and the command *ccStartNew*.
 
 
 <br />
 
 _"How do I place my custom Item in the world ?"_ 
--> You can't really "place" them in the world, but you can put them inside containers by changing those container's TreasureTable(s).
+- You can't really "place" them in the world
+- But you can put them inside containers by changing those container's TreasureTable(s).
 
 <br />
 
@@ -141,7 +166,10 @@ _"How do I place my custom Item in the world ?"_
 <br />
 
 _"Are tooltips in description different in the toolkit ?"_ 
-- Yes, the formatting changed a bit. For instance, `&lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;` is now `<LSTag Tooltip="ArmourClass"><em>Armour</em> </LSTag>`.
+- Yes, the formatting changed a bit. For instance,
+- `&lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;` 
+- is now: 
+- `<LSTag Tooltip="ArmourClass"><em>Armour</em> </LSTag>`.
 
 <br />
 
@@ -150,17 +178,25 @@ _"Are tooltips in description different in the toolkit ?"_
 <br />
 
 _"Is there any Osiris Documentation or guide ?"_
-- The only documentation we have is from dos2 <https://docs.larian.game/Osiris_Overview> but there are also guides uploaded by Larian <https://mod.io/g/baldursgate3/r/introduction-to-osiris>.
+- The only documentation we have is from [dos2](https://docs.larian.game/Osiris_Overview)
+- But there are also guides uploaded by [Larian](https://mod.io/g/baldursgate3/r/introduction-to-osiris).
 
 <br />
 
 _"How do I make custom khns in the toolkit ?"_
-- Not handled through the toolkit, you'll have to add the files and write them on a text editor outside the toolkit. <https://mod.io/g/baldursgate3/r/adding-khonsu-khn-condition-scripts>.
+- They are not handled through the toolkit
+- You will have to [add the files and write them on a text editor outside the toolkit.](https://mod.io/g/baldursgate3/r/adding-khonsu-khn-condition-scripts)
 
 <br />
 
-### Gameplay
 
+### Testing
+
+<br />
+
+_"How do I test my mod in the game ?"_ 
+- Project settings &#8594; Publish Local 
+- Save it into `Drive:\Users\Username\AppData\Local\Larian Studios\Baldur's Gate 3\Mods`
 <br />
 
 _"How do I respec in the toolkit ?"_ 
@@ -168,22 +204,7 @@ _"How do I respec in the toolkit ?"_
 
 <br />
 
-### Testing
-
 <br />
 
-_"How do I test my mod in the game ?"_ 
-- Project settings -> Publish Local and save it into Drive:\Users\Username\AppData\Local\Larian Studios\Baldur's Gate 3\Mods
 
 
-<br />
-
-export gr2 files to blender: if you want we can also link to the getting started with 3d modding tutorial, it covers setting up the plugins at least for it
-"how can I convert my mod to the toolkit/mod.io" and "how do I import old mods into the toolkit" seem like they could be consolidated?
-
-
-
-That the human body type covers all the elf races. So you only need to make one mesh entry if you only want to support just body type 1 or 2.
-Textures for armors/clothing a lot of the times have their texture files start with HUM_M. So if you type in HUM_F_Insert Armor Name here, and nothing pops up, 9/10, type in HUM_M_Insert Armor Name here and it pops up
-Internally the game calls body type two the Strong body type or adding S to the body type, so FS or MS.
-Strong body type body meshes share across races, unlike body type 1. So the HUM_FS, TIF_FS, ORC_F, all might share the same top and bottom meshes for a given armor. Its not 100% always the case but more often than not it is
