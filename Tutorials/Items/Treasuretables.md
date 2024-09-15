@@ -2,7 +2,7 @@
 title: Treasuretables
 description: 
 published: true
-date: 2024-09-15T07:10:39.984Z
+date: 2024-09-15T07:14:41.109Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-15T07:10:08.311Z
@@ -11,6 +11,7 @@ dateCreated: 2024-09-15T07:10:08.311Z
 # Treasuretables
 
 There are 1.5 ways you can add items to an object inventory. (Container/NPC)
+I'll get to the 0.5th way at the very end.
 
 Before anything with treasuretables can happen, except just editing existing ones, a gameobject needs this attribute node added to it:
 
@@ -85,3 +86,18 @@ object category "I_CONS_FOOD_Fruit_Apple",1,0,0,0,0,0,0,0
 
 This should give some initial insight on how treasuretables work.
 A treasuretable only ends whenever the file ends or you start a new treasuretable entry. Just like stats/spells/boosts.
+
+#### The 0.5th way:
+
+```
+<node id="InventoryList">
+    <children>
+        <node id="InventoryItem">
+            <attribute id="Object" type="FixedString" value="MyTreasureTable" />
+        </node>
+        <node id="InventoryItem">
+            <attribute id="Object" type="FixedString" value="MyOtherTreasureTable" />
+        </node>
+    </children>
+</node>
+```
