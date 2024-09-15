@@ -2,7 +2,7 @@
 title: Treasuretables
 description: 
 published: true
-date: 2024-09-15T07:14:41.109Z
+date: 2024-09-15T07:25:57.820Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-15T07:10:08.311Z
@@ -59,8 +59,8 @@ In this case, 4 out of 18 times, one of the other items get picked. 2 out of 18 
 This chance will get rolled twice because we pretend the second set with `2 Amount` was chosen.
 So there is a high chance that the additional treasuretable will get rolled twice.
 
-If you doN't want to deal with chances you can tell the subtable to roll like this: `"1,1"`
-This means 1 our of 1 times, so basically 100% of the time. It rolls 1 amount of times over whatever you list underneath.
+If you don't want to deal with chances you can tell the subtable to roll like this: `"1,1"`
+This means 1 out of 1 times, so basically 100% of the time. It rolls 1 amount of times over whatever you list underneath.
 
 You can also add to existing treasuretables via `CanMerge`.
 Lets pretend we want to add an additional 100% dropchance apple to `MyTreasureTable`:
