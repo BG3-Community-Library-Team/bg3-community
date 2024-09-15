@@ -2,7 +2,7 @@
 title: Mod Use
 description: Home page for tutorials on how to use mods.
 published: true
-date: 2024-07-24T18:21:52.229Z
+date: 2024-09-15T07:22:37.573Z
 tags: tutorials, guides, mod-use
 editor: markdown
 dateCreated: 2024-04-26T01:02:06.859Z
@@ -18,4 +18,5 @@ This page is a list of existing guides relating to the Installation and usage of
 - [General Load Order *Recommendations on how load orders work, and how to orders them*](general-load-order)
 - [Establishing a Baseline *How to Remove mods and ease the Troubleshooting Process*](How-to-remove-mods)
 - [Unique Tav & everything you need to know *A detailed guide on how to install and use Unique Tav*](Unique-Tav-Everything-you-need-to-know)
+- [Patch 7 Troubleshooting](https://wiki.bg3.community/en/Tutorials/patch7-troubleshooting)
 {.links-list}
