@@ -2,7 +2,7 @@
 title: Toolkit FAQ
 description: FAQ about the Larian Toolkit
 published: false
-date: 2024-09-15T05:44:37.666Z
+date: 2024-09-15T05:45:07.932Z
 tags: toolkit
 editor: markdown
 dateCreated: 2024-09-13T04:50:44.079Z
@@ -42,7 +42,7 @@ _"How do I import old mods into the toolkit ?"_
 <br />
 
 
-_"How do I publish my mod ? "_ 
+_"How do I publish my mod ?"_ 
 - Project settings &#8594; Publish
 - There also is a [guide](https://mod.io/g/baldursgate3/r/publishing-a-mod)
 <br />
