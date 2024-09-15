@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-07-24T18:41:31.647Z
+date: 2024-09-15T07:18:57.844Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -45,6 +45,7 @@ This page is a list of existing Tutorials.
 {.links-list}
 ## Items
 - [Item Positioning](Items/Add-and-position-items-in-world)
+- [Treasuretables](/Tutorials/Items/Treasuretables)
 {.links-list}
 ## Script Extender
 - [Getting Started with Script Extender](ScriptExtender/GettingStarted)
