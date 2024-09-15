@@ -1,8 +1,8 @@
 ---
 title: Treasuretables
 description: 
-published: false
-date: 2024-09-15T07:10:08.311Z
+published: true
+date: 2024-09-15T07:10:39.984Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-15T07:10:08.311Z
