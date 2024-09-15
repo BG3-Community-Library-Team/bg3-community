@@ -2,7 +2,7 @@
 title: Toolkit FAQ
 description: FAQ about the Larian Toolkit
 published: false
-date: 2024-09-15T05:45:07.932Z
+date: 2024-09-15T07:13:14.259Z
 tags: toolkit
 editor: markdown
 dateCreated: 2024-09-13T04:50:44.079Z
@@ -161,7 +161,7 @@ _"How to I trigger CC in the toolkit ?"_
 
 _"How do I place my custom Item in the world ?"_ 
 - You can't really "place" them in the world
-- But you can put them inside containers by changing those container's TreasureTable(s).
+- But you can put them inside containers by changing those container's [TreasureTable(s)](https://wiki.bg3.community/Tutorials/Items/Treasuretables).
 
 <br />
 
