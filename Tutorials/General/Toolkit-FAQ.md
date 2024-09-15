@@ -2,77 +2,188 @@
 title: Toolkit FAQ
 description: FAQ about the Larian Toolkit
 published: false
-date: 2024-09-13T05:54:39.957Z
+date: 2024-09-15T05:19:42.647Z
 tags: toolkit
 editor: markdown
 dateCreated: 2024-09-13T04:50:44.079Z
 ---
 
 # Toolkit FAQ
+<br />
+
+- The following page covers the frequentyl asked questions about the toolkit.
+- Huge thanks to Lunisole for compiling the majority of this knowledge.
+<br />
+### General Usage
+<br />
+
+_"Where can I find tutorials ?"_
+- You can find tutorials for the toolkit on [mod.io or Larian's website under "Guides"](https://baldursgate3.game/mods#/r)
+
+<br />
+
+_"I want to leave some cells empty after overriding but it keeps filling in"_
+- Right click &#8594; Tick 'Disable parent stat's field inheritance'.
+<br />
+### Converting your mods to the toolkit and uploading them to mod.io
+<br />
+
+_"How do I import old mods into the toolkit ?"_ 
+- There is no way to simply import them, but you can follow the [converting our existing mods to toolkit](https://mod.io/g/baldursgate3/r/converting-our-existing-mods-to-toolkit) guide.
+
+<br />
 
 
+_"How do I publish my mod ? "_ 
+- Project settings &#8594; Publish
+- There also is a [guide](https://mod.io/g/baldursgate3/r/publishing-a-mod)
+<br />
 
-The following page covers the frequentyl asked questions about the toolkit.
+### Game Files
+<br />
 
-## General Usage
+_"What is the difference between Shared/SharedDev and Gustav/GustavDev ?"_
 
-
-#### "Where can I find tutorials !"
-- Add link sto Larian tutorials here
-
-#### How can I convert my mod to the toolkit/mod.io
-- You cannot just add it, but have to convert it.
-- Link Padmes guide here
-#### "What is the difference between Shared/SharedDev and Gustav/GustavDev ?"
-
-- Shared and Gustav contain what was in  the EA of the game. SharedDev and GustavDev include everything else. Usually, Shared folders are for player-related stats, when Gustavs are for NPC, items and such.
-
-
-#### "I can't find this spell in stats editor !"
-
-- Look for it in all Shared/SharedDev/Gustav and GustavDev. Or you can narrow it down with the answer above.
+- Shared and Gustav contain the Early Access content of the game. 
+- SharedDev and GustavDev include everything else. 
+- Shared folders are usually for player-related stats
+- Gustavs are usually for NPC, items and such.
 
 
-#### "Is there a list of all functions and arguments for spells, passives and statuses ?" 
+<br />
 
-- Not really, sadly, but there are community-made resources about it such as <https://github.com/Norbyte/lslib/blob/master/LSLibDefinitions.xml> [insert JuuM's guide when it's released].
+### Stats (Spells, Passives and Statuses) 
+<br />
 
+_"I can't find this spell in stats editor !"_
 
-#### "How to export GR2 files into blender ?" 
+- Look for it in all Shared/SharedDev/Gustav and GustavDev.
+- Or you can narrow it down with the answer above.
 
-There's an addon for blender : <https://github.com/Norbyte/dos2de_collada_exporter>. 
-- You can also just use <https://github.com/Norbyte/lslib> to convert gr2 into a blender format.
+<br />
 
+_"Why do my spells not get added with AddSpells() ?"_ 
+- The stats editor doesn't display the *actual* name of spells. 
+- Spell names will have a prefix, depending on their type. 
+- For instance, the cantrip *FireBolt* is actually called *"Projectile_FireBolt"* and must be referenced as such in your SpellLists.
 
-#### "How do I test spells, passives and statuses in the editor ?"
-- The debug console ! <https://mod.io/g/baldursgate3/r/editor-shortcuts-and-tips>.
+<br />
 
-#### "How to I trigger CC in the toolkit ?" 
-- Load CC level, or use debug console and the command ccStartNew.
-#### "How do I respec in the toolkit ?" 
-- Debug console and the command ccStartRespec.
-#### "How do I import old mods into the toolkit ?" 
-- Not "very easy" way, but you can follow <https://mod.io/g/baldursgate3/r/converting-our-existing-mods-to-toolkit> this guide.
-#### "How do I place my custom Item in the world ?" 
--> You can't really "place" them in the world, but you can put them inside containers by changing those container's TreasureTable(s).
-#### "How do I publish my mod ? " 
-- Project settings -> Publish <https://mod.io/g/baldursgate3/r/publishing-a-mod>
-#### "How do I test my mod in the game ?" 
-- Project settings -> Publish Local and save it into Drive:\Users\Username\AppData\Local\Larian Studios\Baldur's Gate 3\Mods
-#### "How do I do trajectories ?"
+_"Is there a list of all functions and arguments for spells, passives and statuses ?"_ 
+
+- Not really, but there are community made resources about it such as [LSLibDefinitions.xml](https://github.com/Norbyte/lslib/blob/master/LSLibDefinitions.xml)
+- And another guide [coming soon](insert-JuuMs-guide-when-released-here).
+
+<br />
+
+_"How do I test spells, passives and statuses in the editor ?"_
+- The  [debug console](https://mod.io/g/baldursgate3/r/editor-shortcuts-and-tips) ! .
+
+<br />
+
+### VFX
+
+<br />
+
+_"How do I do trajectories ?"_
 - You're a nerd and you don't exist, nobody cares about trajectories.
-#### "How to do classes in the toolkit ?" 
-- <https://mod.io/g/baldursgate3/r/adding-new-classes>
-#### "I want to leave some cells empty after overriding but it keeps filling in"
-- Right click -> Tick 'Disable parent stat's field inheritance'.
-#### "Is there any Osiris Documentation or guide ?"
-- The only documentation we have is from dos2 <https://docs.larian.game/Osiris_Overview> but there are also guides uploaded by Larian <https://mod.io/g/baldursgate3/r/introduction-to-osiris>.
-#### "How do I make custom khns in the toolkit ?" 
-- Not handled through the toolkit, you'll have to add the files and write them on a text editor outside the toolkit. <https://mod.io/g/baldursgate3/r/adding-khonsu-khn-condition-scripts>.
-#### "Why do my spells not get added with AddSpells() ?" 
-- The stats editor doesn't display the *actual* name of spells. Spell names will have a prefix, depending on their type. For instance, the cantrip FireBolt is actually called "Projectile_FireBolt" and must be referenced as such in your SpellLists.
-#### "Are tooltips in description different in the toolkit ?" 
+
+
+<br />
+
+### Visuals
+
+<br />
+
+_"How to export GR2 files into blender ?"_ 
+
+- There is an [addon](https://github.com/Norbyte/dos2de_collada_exporter) for blender you can use 
+- You can also just use [lslib](https://github.com/Norbyte/lslib) to convert gr2 into a blender format.
+
+
+<br />
+
+### Classes
+<br />
+
+_"How do I add classes or subclasses in the toolkit ?"_ 
+
+- You can follow the [Adding new classes or subclasses guide](https://mod.io/g/baldursgate3/r/adding-new-classes)
+
+<br />
+
+### Races
+
+<br />
+
+_"How to do races in the toolkit ?"_ 
+- Answer coming soon
+
+<br />
+
+### Levels
+
+<br />
+
+_"How to I trigger CC in the toolkit ?"_ 
+- Load CC level, or use debug console and the command ccStartNew.
+
+
+<br />
+
+_"How do I place my custom Item in the world ?"_ 
+-> You can't really "place" them in the world, but you can put them inside containers by changing those container's TreasureTable(s).
+
+<br />
+
+### Localization
+
+<br />
+
+_"Are tooltips in description different in the toolkit ?"_ 
 - Yes, the formatting changed a bit. For instance, `&lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;` is now `<LSTag Tooltip="ArmourClass"><em>Armour</em> </LSTag>`.
 
-#### "How to do races in the toolkit ?" 
-- Add answer here
+<br />
+
+### Scripting
+
+<br />
+
+_"Is there any Osiris Documentation or guide ?"_
+- The only documentation we have is from dos2 <https://docs.larian.game/Osiris_Overview> but there are also guides uploaded by Larian <https://mod.io/g/baldursgate3/r/introduction-to-osiris>.
+
+<br />
+
+_"How do I make custom khns in the toolkit ?"_
+- Not handled through the toolkit, you'll have to add the files and write them on a text editor outside the toolkit. <https://mod.io/g/baldursgate3/r/adding-khonsu-khn-condition-scripts>.
+
+<br />
+
+### Gameplay
+
+<br />
+
+_"How do I respec in the toolkit ?"_ 
+- Debug console and the command ccStartRespec.
+
+<br />
+
+### Testing
+
+<br />
+
+_"How do I test my mod in the game ?"_ 
+- Project settings -> Publish Local and save it into Drive:\Users\Username\AppData\Local\Larian Studios\Baldur's Gate 3\Mods
+
+
+<br />
+
+export gr2 files to blender: if you want we can also link to the getting started with 3d modding tutorial, it covers setting up the plugins at least for it
+"how can I convert my mod to the toolkit/mod.io" and "how do I import old mods into the toolkit" seem like they could be consolidated?
+
+
+
+That the human body type covers all the elf races. So you only need to make one mesh entry if you only want to support just body type 1 or 2.
+Textures for armors/clothing a lot of the times have their texture files start with HUM_M. So if you type in HUM_F_Insert Armor Name here, and nothing pops up, 9/10, type in HUM_M_Insert Armor Name here and it pops up
+Internally the game calls body type two the Strong body type or adding S to the body type, so FS or MS.
+Strong body type body meshes share across races, unlike body type 1. So the HUM_FS, TIF_FS, ORC_F, all might share the same top and bottom meshes for a given armor. Its not 100% always the case but more often than not it is
