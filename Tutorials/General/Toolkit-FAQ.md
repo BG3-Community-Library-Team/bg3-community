@@ -2,7 +2,7 @@
 title: Toolkit FAQ
 description: FAQ about the Larian Toolkit
 published: true
-date: 2024-09-18T21:42:20.473Z
+date: 2024-09-18T21:43:00.905Z
 tags: toolkit
 editor: markdown
 dateCreated: 2024-09-13T04:50:44.079Z
@@ -92,7 +92,7 @@ _"How do I test spells, passives and statuses in the editor ?"_
 <br />
 
 _"How to stop the stats editor from scrolling back to first column ?"_
-- Go to options → untick "Horizontal Scroll Sync". Or only use the top bar
+- Go to options → untick "Horizontal Scroll Sync". Or only use the top bar.
 
 <br />
 
