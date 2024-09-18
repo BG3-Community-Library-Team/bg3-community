@@ -2,7 +2,7 @@
 title: Toolkit FAQ
 description: FAQ about the Larian Toolkit
 published: true
-date: 2024-09-15T07:13:23.775Z
+date: 2024-09-18T21:42:17.231Z
 tags: toolkit
 editor: markdown
 dateCreated: 2024-09-13T04:50:44.079Z
@@ -86,6 +86,13 @@ _"Is there a list of all functions and arguments for spells, passives and status
 
 _"How do I test spells, passives and statuses in the editor ?"_
 - The  [debug console](https://mod.io/g/baldursgate3/r/editor-shortcuts-and-tips) ! .
+
+<br />
+
+<br />
+
+_"How to stop the stats editor from scrolling back to first column ?"_
+- Go to options → untick "Horizontal Scroll Sync". Or only use the top bar
 
 <br />
 
