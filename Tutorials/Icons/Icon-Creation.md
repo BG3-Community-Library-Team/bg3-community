@@ -2,7 +2,7 @@
 title: Icon Creation
 description: Apply icons to your items, passives, skills, spells, etc. (Does not include class/subclass icons)
 published: true
-date: 2024-05-08T07:10:20.054Z
+date: 2024-09-18T10:32:15.513Z
 tags: tutorial, icons, icon, atlas
 editor: markdown
 dateCreated: 2024-05-08T06:50:52.688Z
@@ -381,3 +381,10 @@ and just like that, we can now see out icon in CC and ingame locations that aren
 ![image](https://github.com/ghostboats/bg3_modders_guide/assets/106226990/94bc918f-b237-4de8-b6f9-baa940015c6d)
 
 ![image](https://github.com/ghostboats/bg3_modders_guide/assets/106226990/6de99891-f0de-4193-80f2-026ce802c983)
+
+<!-- resources to add:
+https://www.nexusmods.com/baldursgate3/mods/4148
+https://www.nexusmods.com/baldursgate3/mods/5480
+https://www.nexusmods.com/baldursgate3/mods/238
+https://www.nexusmods.com/baldursgate3/mods/7712
+-->
