@@ -2,8 +2,8 @@
 title: Hair Meshes Reference
 description: A reference for all hair meshes in the game.
 published: true
-date: 2024-09-19T05:36:11.739Z
-tags: hair, reference
+date: 2024-09-19T05:38:16.711Z
+tags: 
 editor: markdown
 dateCreated: 2024-04-25T14:35:35.084Z
 ---
@@ -27,7 +27,7 @@ dateCreated: 2024-04-25T14:35:35.084Z
 
 | **Filename** | **Image** | **In-game name** | **UUID** | **HairPresetResourceID** | **MaterialID** | **ScalpMaterialID** | **SkeletonResource** | **HairType** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| HAIR\_HUM\_M\_Straight\_Long\_C\_Spring | ![](/information/meshes/bardic_inspiration.png =200x) | Bardic Inspiration | a35b4354-5c1d-f299-e5d4-606cf11bf76f | 0451f0e3-ebf8-1ffd-c62b-58364ca47d35 | 96f4b1b8-3603-3122-c91d-18fe0628396f | 5d24db8c-0b72-8910-ea49-c1030fc4e12f | \-  | 1   |
+| HAIR\_HUM\_M\_Straight\_Long\_C\_Spring | ![](/information/meshes/bardic_inspiration.png) | Bardic Inspiration | a35b4354-5c1d-f299-e5d4-606cf11bf76f | 0451f0e3-ebf8-1ffd-c62b-58364ca47d35 | 96f4b1b8-3603-3122-c91d-18fe0628396f | 5d24db8c-0b72-8910-ea49-c1030fc4e12f | \-  | 1   |
 | HAIR\_DWR\_M\_Straight\_Long\_C\_Spring\_Mesh | 0d00fe89-63b7-ff57-e3cf-5e454d73891f |
 | HAIR\_GTY\_F\_GithyankiCut\_Long\_C\_Spring | ![](/information/meshes/bohemian.png) | Bohemian | a79d257b-32b2-edc6-0d6d-82b6ff3462cd | eddb47f5-e76c-870d-ed9e-9ce3f5e2b21d | 811abc78-2715-7e8a-2539-9966d3174d0f | fe488b78-d5ef-4e6f-a6d1-5e6b229c7807 | 710d8bae-fc5e-fd8b-d98e-57d815397691 | 1   |
 | HAIR\_HUM\_M\_Straight\_Long\_A\_Spring | ![](/hair_meshes/hair_meshes/fair_forester.png) | Fair Forester | 449eba68-442d-a684-c843-c32961002dc1 | 2115f447-83b1-dc06-ac56-22472a9c2d83 | b84a005a-b668-0fef-eeb5-0535a0ff65ad | dc1ef0e4-c0d1-9022-bdef-d62d50097d9c | \-  | 1   |
