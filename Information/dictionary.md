@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-08-12T05:09:59.992Z
+date: 2024-09-19T06:26:26.532Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -45,7 +45,7 @@ C
 *   **Class (Game)** - In-game classes determine the abilities and stats a character gains throughout the game. [Here is a guide to creating a custom class](https://wiki.bg3.community/en/Tutorials/Classes/Basic-Class-Creation).
 *   **CLEA** - DDS file, stores Curvature, Lips, Eyebrows, and Ambient Occlusion (AO)
 *   **CMTY** - Community / BG3 Modding Community.
-
+*   **Collada** - (COLLAborative Design Activity) is an open-source XML format, designed to exchange 3D information among 3D Digital Content Creation tools. Collada files have the .dae file extension, which stands for digital asset exchange.
 D
 -
 
