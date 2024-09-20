@@ -2,7 +2,7 @@
 title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
 published: true
-date: 2024-07-29T21:31:49.372Z
+date: 2024-09-20T19:53:11.721Z
 tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -86,6 +86,17 @@ For most cases you DO NOT need to mass unpack any game files. What you will want
 
 ![mmt.png](/tutorials/getting_started_visual/mmt.png)
 
+### Further Setup
+If you want to use the index search for finding/extracting meshes (GR2 files), there is one more step required as MMT itself does not contain a necessary file to deal with GR2. The granny.
+
+Head over to where you installed LSLIB and copy the granny.dll file from here:
+![granny-lslib2.png](/tutorials/getting_started_visual/granny-lslib2.png)
+
+and paste it in your MMT directory here:
+![granny-lslib2.png](/tutorials/getting_started_visual/granny-lslib2.png)
+
+### Using the Index Search
+A small guide on using the index search here. (link coming soon)
 
 ## Tools: Blender
 
