@@ -2,7 +2,7 @@
 title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
 published: true
-date: 2024-09-20T19:53:11.721Z
+date: 2024-09-20T19:54:02.989Z
 tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -93,7 +93,7 @@ Head over to where you installed LSLIB and copy the granny.dll file from here:
 ![granny-lslib2.png](/tutorials/getting_started_visual/granny-lslib2.png)
 
 and paste it in your MMT directory here:
-![granny-lslib2.png](/tutorials/getting_started_visual/granny-lslib2.png)
+![granny-lslib2.png](/tutorials/getting_started_visual/granny-mmt.png)
 
 ### Using the Index Search
 A small guide on using the index search here. (link coming soon)
