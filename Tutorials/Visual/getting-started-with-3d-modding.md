@@ -2,7 +2,7 @@
 title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
 published: true
-date: 2024-09-20T19:54:02.989Z
+date: 2024-09-20T20:02:12.535Z
 tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -111,6 +111,11 @@ A small guide on using the index search here. (link coming soon)
 
 Once we have Blender installed, it's time to get some core plugins.
 
+> Some people have had some issues directly installing these plugins with Blender versions 4+.
+> It is possible to have multiple versions of Blender installed! So, grab 3.6, install the plugins there, and when you update to a newer version it should take your plugins and settings with it.
+{.is-warning}
+
+
 ### Important BG3 Plugins
 
 #### [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter)
@@ -118,6 +123,7 @@ Once we have Blender installed, it's time to get some core plugins.
 > - This is a necessary plugin to import/export the games extracted GR2 files
 > - Requires LSLIB and setting a path to it in its settings
 {.is-info}
+
 
 
 First, download zip from Github, located here:
