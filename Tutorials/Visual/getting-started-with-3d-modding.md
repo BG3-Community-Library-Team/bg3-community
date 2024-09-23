@@ -2,7 +2,7 @@
 title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
 published: true
-date: 2024-09-23T18:49:06.758Z
+date: 2024-09-23T18:59:32.450Z
 tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -29,21 +29,21 @@ What it won't cover is what happens after the initial set up, i.e. the creation 
 
 > This first part covers the installation of a few core tools needed to get you up and running.
 > Includes:
-> - LSLIB
+> - LSLIB / ConverterApp
 > - Modder's Multitool
 > - Blender and core related add-ons
 > - VSCod(e/ium) and some useful extensions
 
 
-## Tools: LSLIB
+## Tools: LSLiB
 
 > [LSLIB](https://github.com/Norbyte/lslib/releases)
 > use latest beta release
 {.is-success}
 
-> LSLIB is used for many things. Unpacking game/mod paks, converting between various game file formats and editable ones, creating paks, creating virtual textures, etc. 
+> LSLiB is used for many things. Its front end application, ConverterApp.exe is used for unpacking game/mod paks, converting between various game file formats and editable ones, creating paks, creating virtual textures, and more. 
 > 
-> (TODO: create/link page here on how to use various LSLIB functions)
+> (TODO: create/link page here on how to use various LSLiB functions)
 {.is-info}
 
 ### Initial setup
@@ -57,12 +57,13 @@ For the purposes of this guide I have a directory for BG3 Utilities and have ext
 
 ![utilites-folder.png](/tutorials/getting_started_visual/utilites-folder.png)
 
+Inside `ExportTool-vX.X\Packed` you will find ConverterApp.exe (colloquially, LSLiB), open it.
 At the moment there isn't too much to set up, a few notes:
 
 ![lslib.png](/tutorials/getting_started_visual/lslib.png)
 
 - Game: is set to Baldur's Gate 3
-- For most purposes you will want to have X-flip meshes turned OFF (default is on)
+- For most mesh purposes you will want to have X-flip meshes turned OFF (default is on)
 
 
 ## Tools: Modder's Multitool
@@ -75,7 +76,7 @@ At the moment there isn't too much to set up, a few notes:
 {.is-info}
 
 ### Initial Setup
-Same as with LSLIB, download from releases.
+Same as with LSLiB, download from releases.
 
 Instructions for installation and configuration can also be found on the Github page [here](https://github.com/ShinyHobo/BG3-Modders-Multitool/wiki/Installation).
 
@@ -91,7 +92,7 @@ If you want to use the index search for finding/extracting meshes (GR2 files), t
 
 ![logo_granny.png](/tutorials/getting_started_visual/logo_granny.png)
 
-Head over to where you installed LSLIB and copy the granny.dll file from here:
+Head over to where you installed LSLiB and copy the granny.dll file from here:
 ![granny-lslib2.png](/tutorials/getting_started_visual/granny-lslib2.png)
 
 and paste it in your MMT directory here:
