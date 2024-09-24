@@ -2,7 +2,7 @@
 title: Creating A Basic Race Mod
 description: 
 published: true
-date: 2024-09-24T11:36:31.815Z
+date: 2024-09-24T11:46:21.880Z
 tags: tutorial, races
 editor: ckeditor
 dateCreated: 2024-07-22T13:11:31.834Z
@@ -337,6 +337,7 @@ dateCreated: 2024-07-22T13:11:31.834Z
 <p>Let's say you want to add a subrace, or more than one subrace, to your custom race. Here's how to do that.</p>
 <h2>Races.lsx</h2>
 <p>The most important thing you'll need to add a subrace is to add another Race entry in the Races.lsx.</p>
+<p>&nbsp;</p>
 <pre><code class="language-xml">		&lt;node id="Race"&gt; &lt;!-- Sub Race --&gt;
             &lt;attribute id="DisplayName" type="TranslatedString" handle="h687c2b71g292eg4e12gbce8g29fb2edeceeb" version="1" /&gt; &lt;!-- Display name for the sub race, links to Community_Race_Template.loca.xml --&gt;
             &lt;attribute id="Description" type="TranslatedString" handle="h3ed7c5e5gb17ag4b3dg8787g9663e1129dd9" version="1" /&gt; &lt;!-- Description for the sub race, links to Community_Race_Template.loca.xml --&gt;
@@ -349,3 +350,73 @@ dateCreated: 2024-07-22T13:11:31.834Z
             &lt;attribute id="UUID" type="guid" value="728faa82-273a-4dd1-a832-f776dbe331b7" /&gt; &lt;!-- Unique Sub Race UUID, regenerate before releasing mod! --&gt;
         &lt;/node&gt;</code></pre>
 <p>Add one of these Race entries under your original Race entry for every subrace you want to make. Make sure the ParentGuid is set to the UUID for your original race, which will tie it to your original Race and inherit its colors and visuals entries.</p>
+<h2>Race_Root_Templates.lsf.lsx</h2>
+<p>You'll also need to create new root templates for each of the bodytypes for your subrace.</p>
+<pre><code class="language-xml">				&lt;node id="GameObjects"&gt; &lt;!-- Sub Race Female --&gt;
+					&lt;attribute id="MapKey" type="FixedString" value="5f1f84ac-1eae-415f-990c-efd34f3d95ef" /&gt; &lt;!-- UUID that tells the game this is its own unique object. Regenerate this before publishing the mod! --&gt;
+					&lt;attribute id="Name" type="LSString" value="SubRace_Female_Player" /&gt; &lt;!-- Internal name for race, does not affect anything in-game. --&gt;
+					&lt;attribute id="Type" type="FixedString" value="character" /&gt; &lt;!-- Tells the game that this is a Character root template. --&gt;
+					&lt;attribute id="ParentTemplateId" type="FixedString" value="7f52aa3a-40cf-4f75-b190-e773726a8939" /&gt; &lt;!-- The UUID for your original female race root template. --&gt;
+					&lt;attribute id="SpellSet" type="FixedString" value="CommonPlayerActions" /&gt; &lt;!-- Gives your race common player actions as options --&gt;
+					&lt;attribute id="CharacterVisualResourceID" type="FixedString" value="c6e16e66-2313-4a49-b0e7-1e38e7f25987" /&gt; &lt;!-- Tells the game what CharacterVisuals entry to use for the race. --&gt;
+					&lt;attribute id="Race" type="guid" value="728faa82-273a-4dd1-a832-f776dbe331b7" /&gt; &lt;!-- The Unique Sub Race UUID from races.lsx --&gt;
+					&lt;children&gt;
+						&lt;node id="Tags"&gt; &lt;!-- Add any tags you want here, including custom tags. --&gt;
+							&lt;children&gt;
+								&lt;node id="Tag"&gt;
+									&lt;attribute id="Object" type="guid" value="00000000-0000-0000-0000-000000000000" /&gt;
+								&lt;/node&gt;
+							&lt;/children&gt;
+						&lt;/node&gt;
+						&lt;node id="GameMaster" /&gt;
+						&lt;node id="LocomotionParams" /&gt;
+					&lt;/children&gt;
+				&lt;/node&gt;
+				&lt;node id="GameObjects"&gt; &lt;!-- Sub Race Male --&gt;
+					&lt;attribute id="MapKey" type="FixedString" value="046a4c5e-060f-4221-a783-4750871da873" /&gt; &lt;!-- UUID that tells the game this is its own unique object. Regenerate this before publishing the mod! --&gt;
+					&lt;attribute id="Name" type="LSString" value="SubRace_Male_Player" /&gt; &lt;!-- Internal name for race, does not affect anything in-game. --&gt;
+					&lt;attribute id="Type" type="FixedString" value="character" /&gt; &lt;!-- Tells the game that this is a Character root template. --&gt;
+					&lt;attribute id="ParentTemplateId" type="FixedString" value="5dd3feb0-89e5-44e9-9467-5d362b556763" /&gt; &lt;!-- The UUID for your original male race root template. --&gt;
+					&lt;attribute id="SpellSet" type="FixedString" value="CommonPlayerActions" /&gt; &lt;!-- Gives your race common player actions as options --&gt;
+					&lt;attribute id="CharacterVisualResourceID" type="FixedString" value="48c09f41-f9db-4ad6-8aec-4db6482294fa" /&gt; &lt;!-- Tells the game what CharacterVisuals entry to use for the race. --&gt;
+					&lt;attribute id="Race" type="guid" value="728faa82-273a-4dd1-a832-f776dbe331b7" /&gt; &lt;!-- The Unique Sub Race UUID from races.lsx --&gt;
+					&lt;children&gt;
+						&lt;node id="Tags"&gt; &lt;!-- Add any tags you want here, including custom tags. --&gt;
+							&lt;children&gt;
+								&lt;node id="Tag"&gt;
+									&lt;attribute id="Object" type="guid" value="00000000-0000-0000-0000-000000000000" /&gt;
+								&lt;/node&gt;
+							&lt;/children&gt;
+						&lt;/node&gt;
+						&lt;node id="GameMaster" /&gt;
+						&lt;node id="LocomotionParams" /&gt;
+					&lt;/children&gt;
+				&lt;/node&gt;</code></pre>
+<p>Add these entries underneath your existing root templates, and make sure you change the ParentTemplateId and the Race values.</p>
+<h2>CharacterCreationPresets.lsx</h2>
+<p>Here we'll tell the game to use your new subrace instead of the base race.</p>
+<pre><code class="language-xml">				&lt;node id="CharacterCreationPreset"&gt; &lt;!-- Sub Race Female Standard --&gt;
+                    &lt;attribute id="BodyShape" type="uint8" value="0"/&gt; &lt;!-- 0 = Standard --&gt;
+                    &lt;attribute id="BodyType" type="uint8" value="1"/&gt; &lt;!-- 1 = Female --&gt;
+                    &lt;attribute id="CloseUpA" type="LSString" value="ELF_F_Camera_Closeup_A"/&gt; &lt;!-- Cameras for zooming in in CC --&gt;
+                    &lt;attribute id="CloseUpB" type="LSString" value="ELF_F_Camera_Closeup_B"/&gt; &lt;!-- ^ --&gt;
+                    &lt;attribute id="Overview" type="LSString" value="ELF_F_Camera_Overview_A"/&gt; &lt;!-- ^ --&gt;
+                    &lt;attribute id="RaceUUID" type="guid" value="3328d981-bf97-4e50-8961-fef8cd80c67e"/&gt; &lt;!-- Race ID from races.lsx --&gt;
+                    &lt;attribute id="RootTemplate" type="guid" value="5f1f84ac-1eae-415f-990c-efd34f3d95ef"/&gt; &lt;!-- Root template from Race_Root_Templates.lsf.lsx --&gt;
+                    &lt;attribute id="SubRaceUUID" type="guid" value="728faa82-273a-4dd1-a832-f776dbe331b7"/&gt; &lt;!-- Subrace ID from races.lsx, 00000000-0000-0000-0000-000000000000 if no subrace --&gt;
+                    &lt;attribute id="UUID" type="guid" value="04c52da3-cc33-4f63-88b4-462cdc7ebacc"/&gt; &lt;!-- UUID that tells the game this is its own unique object. Regenerate this before publishing the mod! --&gt;
+                    &lt;attribute id="VOLinesTableUUID" type="guid" value="14df8f45-90af-4bd0-8024-42624da9976e"/&gt; &lt;!-- Sets the lines used when the player previews the voice in CC. Leaving it at the default is recommended. --&gt;
+                &lt;/node&gt;
+                &lt;node id="CharacterCreationPreset"&gt; &lt;!-- Sub Race Male Standard --&gt;
+                    &lt;attribute id="BodyShape" type="uint8" value="0"/&gt; &lt;!-- 0 = Standard --&gt;
+                    &lt;attribute id="BodyType" type="uint8" value="0"/&gt; &lt;!-- 0 = Male --&gt;
+                    &lt;attribute id="CloseUpA" type="LSString" value="ELF_M_Camera_Closeup_A"/&gt; &lt;!-- Cameras for zooming in in CC --&gt;
+                    &lt;attribute id="CloseUpB" type="LSString" value="ELF_M_Camera_Closeup_B"/&gt; &lt;!-- ^ --&gt;
+                    &lt;attribute id="Overview" type="LSString" value="ELF_M_Camera_Overview_A"/&gt; &lt;!-- ^ --&gt;
+                    &lt;attribute id="RaceUUID" type="guid" value="3328d981-bf97-4e50-8961-fef8cd80c67e"/&gt; &lt;!-- Race ID from races.lsx --&gt;
+                    &lt;attribute id="RootTemplate" type="guid" value="046a4c5e-060f-4221-a783-4750871da873"/&gt; &lt;!-- Root template from Race_Root_Templates.lsf.lsx --&gt;
+                    &lt;attribute id="SubRaceUUID" type="guid" value="728faa82-273a-4dd1-a832-f776dbe331b7"/&gt; &lt;!-- Subrace ID from races.lsx, 00000000-0000-0000-0000-000000000000 if no subrace --&gt;
+                    &lt;attribute id="UUID" type="guid" value="54a734e9-462a-480f-ab82-700a62a59142"/&gt; &lt;!-- UUID that tells the game this is its own unique object. Regenerate this before publishing the mod! --&gt;
+                    &lt;attribute id="VOLinesTableUUID" type="guid" value="14df8f45-90af-4bd0-8024-42624da9976e"/&gt; &lt;!-- Sets the lines used when the player previews the voice in CC. Leaving it at the default is recommended. --&gt;
+                &lt;/node&gt;</code></pre>
+<p>The main change here is plugging the subrace UUID into the SubRaceUUID line and your new root templates into the RootTemplate line. You do not need to add new entries, you can simply use the ones that already exist! (However, if you were to have multiple subraces, you would need to add another copy of these nodes for each subrace.)</p>
