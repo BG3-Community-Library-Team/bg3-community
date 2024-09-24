@@ -2,7 +2,7 @@
 title: Creating A Basic Race Mod
 description: 
 published: true
-date: 2024-09-24T11:46:21.880Z
+date: 2024-09-24T11:47:27.174Z
 tags: tutorial, races
 editor: ckeditor
 dateCreated: 2024-07-22T13:11:31.834Z
@@ -392,7 +392,7 @@ dateCreated: 2024-07-22T13:11:31.834Z
 						&lt;node id="LocomotionParams" /&gt;
 					&lt;/children&gt;
 				&lt;/node&gt;</code></pre>
-<p>Add these entries underneath your existing root templates, and make sure you change the ParentTemplateId and the Race values.</p>
+<p>Add these entries underneath your existing root templates, and make sure you change the ParentTemplateId and the Race values. (If you have multiple subraces, make a copy of these for each subrace.)</p>
 <h2>CharacterCreationPresets.lsx</h2>
 <p>Here we'll tell the game to use your new subrace instead of the base race.</p>
 <pre><code class="language-xml">				&lt;node id="CharacterCreationPreset"&gt; &lt;!-- Sub Race Female Standard --&gt;
@@ -420,3 +420,4 @@ dateCreated: 2024-07-22T13:11:31.834Z
                     &lt;attribute id="VOLinesTableUUID" type="guid" value="14df8f45-90af-4bd0-8024-42624da9976e"/&gt; &lt;!-- Sets the lines used when the player previews the voice in CC. Leaving it at the default is recommended. --&gt;
                 &lt;/node&gt;</code></pre>
 <p>The main change here is plugging the subrace UUID into the SubRaceUUID line and your new root templates into the RootTemplate line. You do not need to add new entries, you can simply use the ones that already exist! (However, if you were to have multiple subraces, you would need to add another copy of these nodes for each subrace.)</p>
+<p>Now, stop and test the mod. You should see your subrace(s) appear in CC!</p>
