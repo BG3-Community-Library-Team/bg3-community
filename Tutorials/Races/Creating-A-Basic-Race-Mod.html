@@ -2,7 +2,7 @@
 title: Creating A Basic Race Mod
 description: 
 published: true
-date: 2024-09-24T11:47:27.174Z
+date: 2024-09-24T11:49:22.171Z
 tags: tutorial, races
 editor: ckeditor
 dateCreated: 2024-07-22T13:11:31.834Z
@@ -350,6 +350,7 @@ dateCreated: 2024-07-22T13:11:31.834Z
             &lt;attribute id="UUID" type="guid" value="728faa82-273a-4dd1-a832-f776dbe331b7" /&gt; &lt;!-- Unique Sub Race UUID, regenerate before releasing mod! --&gt;
         &lt;/node&gt;</code></pre>
 <p>Add one of these Race entries under your original Race entry for every subrace you want to make. Make sure the ParentGuid is set to the UUID for your original race, which will tie it to your original Race and inherit its colors and visuals entries.</p>
+<p>You'll need to create new entries in your loca.xml file for the DisplayName and Description, and plug their handles into this Race node. If you don't do that, your race will show as Not Found.</p>
 <h2>Race_Root_Templates.lsf.lsx</h2>
 <p>You'll also need to create new root templates for each of the bodytypes for your subrace.</p>
 <pre><code class="language-xml">				&lt;node id="GameObjects"&gt; &lt;!-- Sub Race Female --&gt;
