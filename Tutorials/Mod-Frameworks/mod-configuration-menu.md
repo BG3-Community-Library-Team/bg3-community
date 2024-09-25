@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-09-14T21:43:10.910Z
+date: 2024-09-25T15:43:32.710Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -28,6 +28,7 @@ This documentation is aimed at mod authors who want to integrate their mods with
     - [Listening to MCM events](#listening-to-mcm-events)
     - [How validation works](#how-validation-works)
     - [Localization support](#localization-support)
+  - [Notification API](#notification-api)
   - [MCM demo](#mcm-demo)
   - [Closing words](#closing-words)
   
@@ -403,6 +404,34 @@ The [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostbo
 ### TODO: ported IMGUI icons
 
 --
+
+## Notification API
+
+(**NEW IN MCM 1.16**)
+
+MCM's Notification API allows mods to create customizable notifications within the client context, provided that MCM is installed. Notifications can be tailored with specific titles, messages, durations, and visibility preferences.
+
+### Features
+
+- **Available in client context**: Notifications work within the client context, so they can be used in the main menu too, unlike the server-side Osiris message boxes.
+- **Custom title and message**: Define the title and content of the notification.
+- **Display preferences**: Configure notifications to show for a certain duration, only once, etc.
+- **Custom buttons**: Add buttons with associated callback functions for user interaction.
+
+### Example Usage
+
+To display a success notification with default options and a custom 'Log' button, use the following code:
+
+```lua
+NotificationManager.ShowSuccess('notification_id', 'Test Title', 'This is a test success message', {
+duration = nil, -- Duration can be set to nil for default behavior
+dontShowAgainButton = true, -- Option to show a button to prevent future notifications
+dontShowAgainButtonCountdownInSec = 5, -- Countdown for the 'don't show again' button
+displayOnceOnly = false, -- Set to true to show the notification only once
+buttons = {["Log"] = function() P("Log button clicked") end } -- Custom button with callback on click
+})
+```
+Analogous functions are available for error, warning, and info notifications.
 
 ## MCM demo
 
