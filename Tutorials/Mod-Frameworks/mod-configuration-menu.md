@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-09-25T15:44:14.793Z
+date: 2024-09-25T15:44:42.463Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -425,13 +425,14 @@ To display a success notification with default options and a custom 'Log' button
 
 ```lua
 NotificationManager.ShowSuccess('notification_id', 'Test Title', 'This is a test success message', {
-duration = nil, -- Duration can be set to nil for default behavior
-dontShowAgainButton = true, -- Option to show a button to prevent future notifications
-dontShowAgainButtonCountdownInSec = 5, -- Countdown for the 'don't show again' button
-displayOnceOnly = false, -- Set to true to show the notification only once
-buttons = {["Log"] = function() P("Log button clicked") end } -- Custom button with callback on click
+  duration = nil, -- Duration can be set to nil for default behavior
+  dontShowAgainButton = true, -- Option to show a button to prevent future notifications
+  dontShowAgainButtonCountdownInSec = 5, -- Countdown for the 'don't show again' button
+  displayOnceOnly = false, -- Set to true to show the notification only once
+  buttons = {["Log"] = function() P("Log button clicked") end } -- Custom button with callback on click
 })
 ```
+The `options` table (fourth param) is optional.
 Analogous functions are available for error, warning, and info notifications.
 
 ## MCM demo
