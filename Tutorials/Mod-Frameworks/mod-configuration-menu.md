@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-09-25T15:44:42.463Z
+date: 2024-09-25T15:45:45.768Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -433,7 +433,7 @@ NotificationManager.ShowSuccess('notification_id', 'Test Title', 'This is a test
 })
 ```
 The `options` table (fourth param) is optional.
-Analogous functions are available for error, warning, and info notifications.
+Analogous functions are available for other severity levels (e.g., `NotificationManager.ShowError`, `NotificationManager.ShowWarning`, `NotificationManager.ShowInfo`).
 
 ## MCM demo
 
