@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-09-25T15:43:32.710Z
+date: 2024-09-25T15:44:14.793Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -420,6 +420,7 @@ MCM's Notification API allows mods to create customizable notifications within t
 
 ### Example Usage
 
+`NotificationManager` is added to all mods' global tables if MCM is loaded.
 To display a success notification with default options and a custom 'Log' button, use the following code:
 
 ```lua
