@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-09-15T07:19:43.418Z
+date: 2024-09-30T13:56:57.718Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -33,6 +33,9 @@ This page is a list of existing Tutorials.
 - [Hotloading - How to quickly test mods in game](General/hotloading-how-to-quickly-test-mods-in-game)
 - [Toolkit FAQ](https://wiki.bg3.community/en/Tutorials/General/Toolkit-FAQ)
 {.links-list}
+## Races
+- [Creating A Basic Race Mod](/Tutorials/Classes/Basic-Class-Creation)
+ {.links-list}
 ## Class
 - [Basic Class Creation](Classes/Basic-Class-Creation)
 - [Subclass Creation for an Existing Subclass](Classes/Subclass_Creation_For_An_Existing_Class)
