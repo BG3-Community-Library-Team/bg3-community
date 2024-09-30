@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-09-30T15:12:39.536Z
+date: 2024-09-30T15:13:17.158Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -34,7 +34,7 @@ This page is a list of existing Tutorials.
 - [Toolkit FAQ](https://wiki.bg3.community/en/Tutorials/General/Toolkit-FAQ)
 {.links-list}
 ## Races
-- [Creating A Basic Race Mod](Tutorials/Races/Creating-A-Basic-Race-Mod)
+- [Creating A Basic Race Mod](https://wiki.bg3.community/Tutorials/Races/Creating-A-Basic-Race-Mod)
  {.links-list}
 ## Classes
 - [Basic Class Creation](Classes/Basic-Class-Creation)
