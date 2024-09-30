@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-09-30T13:56:57.718Z
+date: 2024-09-30T14:32:33.111Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -36,11 +36,11 @@ This page is a list of existing Tutorials.
 ## Races
 - [Creating A Basic Race Mod](/Tutorials/Classes/Basic-Class-Creation)
  {.links-list}
-## Class
+## Classes
 - [Basic Class Creation](Classes/Basic-Class-Creation)
 - [Subclass Creation for an Existing Subclass](Classes/Subclass_Creation_For_An_Existing_Class)
 {.links-list}
-## Framework
+## Frameworks
 - [Compatibility Framework Usage](Mod-Frameworks/compatibility-framework)
 - [Oath Framework Usage](Mod-Frameworks/oath-framework-usage)
 - [Tag Framework Usage](Mod-Frameworks/using-tag-framework)
