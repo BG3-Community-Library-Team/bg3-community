@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2024-10-01T02:45:20.548Z
+date: 2024-10-01T02:46:24.579Z
 tags: mods, load order, modsuse, dependencies, dependency, meta.lsx, mod dependency, deps
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -59,7 +59,7 @@ That's it! You've just added a dependency to your mod. By properly declaring dep
 > **Note:** Make sure the `Name` is something that the user will recognize. At the time of writing, it is used by BG3MM and MCM to display the dependency name to the user.
 > {.is-warning}
 
-> **Tip**: the [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper) extension provides buttons and commands to easily add dependencies to your mods. This tool can simplify the process and ensure correct formatting of the meta.lsx file.
+> **Tip**: the [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper) extension provides buttons and commands to simplify adding dependencies to your mods.
 > {.is-info}
 
 ### Why adding dependencies? I don't need them!
