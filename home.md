@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2024-08-21T18:24:33.931Z
+date: 2024-10-01T10:16:05.695Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -17,10 +17,13 @@ This is the BG3 Modding Community Wiki. This space is a place where tutorials, r
 ## Navigation
 - [:clipboard: Rules and Guidelines *A set of behavioral rules and common practices to follow when contributing or commenting on the Wiki.*](/meta/guidelines)
 - [:clipboard: Meta *Pages relating to the Wiki itself.*](/meta/guidelines)
-- [:blue_book: Information *A list of pages relating to information on Game content and modding practices.*](/Information)
+- [:blue_book: Reference *A list of pages relating to information on Game content and modding practices.*](/Information)
 - [:orange_book: Lore *Pieces of Lore relating to the Forgotten Realms and related settings.*](/Lore)
 - [:green_book: Tools *Links and guides relating to tools for modding Baldur's Gate 3.*](/Tools)
-- [:closed_book: Tutorials *A list of guides for creating and playing with mods.*](/Tutorials)
+- [:closed_book: Tutorials *A list of guides for creating mods.*](/Tutorials)
+- [:video_game: Mod Usage *A list of guides relating to the installation and usage of mods*](/Tutorials/Mod-Use)
+- [:notebook: Dictionary *A glossary of common terms used in Baldur's Gate 3 mod creation.*](/Information/dictionary)
+
 {.links-list}
 
 ## Meta
