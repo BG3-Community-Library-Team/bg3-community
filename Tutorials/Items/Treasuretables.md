@@ -2,7 +2,7 @@
 title: TreasureTables
 description: 
 published: true
-date: 2024-10-02T01:03:49.232Z
+date: 2024-10-02T01:04:04.963Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-15T07:10:08.311Z
