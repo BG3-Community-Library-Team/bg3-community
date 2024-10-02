@@ -1,14 +1,14 @@
 ---
-title: Treasuretables
+title: TreasureTables
 description: 
 published: true
-date: 2024-09-15T07:25:57.820Z
+date: 2024-10-02T00:58:37.800Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-15T07:10:08.311Z
 ---
 
-# Treasuretables
+# TreasureTables
 
 There are 1.5 ways you can add items to an object inventory. (Container/NPC)
 I'll get to the 0.5th way at the very end.
