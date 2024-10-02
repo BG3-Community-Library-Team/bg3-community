@@ -2,7 +2,7 @@
 title: TreasureTables
 description: 
 published: true
-date: 2024-10-02T00:58:37.800Z
+date: 2024-10-02T01:03:49.232Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-15T07:10:08.311Z
@@ -15,6 +15,8 @@ I'll get to the 0.5th way at the very end.
 
 Before anything with treasuretables can happen, except just editing existing ones, a gameobject needs this attribute node added to it:
 
+For items:
+
 ```
 <node id="InventoryList">
     <children>
@@ -22,6 +24,18 @@ Before anything with treasuretables can happen, except just editing existing one
             <attribute id="Object" type="FixedString" value="MyTreasureTable" />
         </node>
     </children>
+</node>
+```
+
+For NPCs:
+
+```
+<node id="TradeTreasures">
+		<children>
+				<node id="TreasureItem">
+						<attribute id="Object" type="FixedString" value="MyTreasureTable" />
+				</node>
+		</children>
 </node>
 ```
 
