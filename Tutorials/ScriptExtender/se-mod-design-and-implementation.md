@@ -2,7 +2,7 @@
 title: Designing and writing Script Extender mods
 description: Guide covering the generation of ideas, design, and implementation of SE mods, providing practical tips throughout. Includes an example mod, 'Waypoint Inside Emerald Grove', to illustrate the process, offering insights into the tools and methods used.
 published: true
-date: 2024-10-05T15:58:25.610Z
+date: 2024-10-05T15:58:56.478Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-05T15:28:54.111Z
