@@ -2,7 +2,7 @@
 title: Designing and writing Script Extender mods
 description: Guide discussing generating ideas and planning designs to implementing mods with practical tips. Includes an example mod, 'Waypoint Inside Emerald Grove', to illustrate the process, offering insights into the tools and methods used.
 published: true
-date: 2024-10-05T15:29:18.744Z
+date: 2024-10-05T15:56:12.471Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-05T15:28:54.111Z
@@ -14,7 +14,7 @@ As an author that has only created dozens of SE mods, I thought I'd share some o
 
 Now, just to make it clear:
 
-- This guide assumes little programming and SE knowledge, which could mostly be obtained by following the basic tutorials present in this wiki. Even then, most of this applies to modding in general.
+- This guide assumes little programming and SE knowledge, which could mostly be obtained by following the [basic tutorials present in this wiki](/Tutorials/ScriptExtender/). Even then, most of this applies to modding in general.
 - I mod the game because designing and problem solving are terribly addicting, and the game is great.
 - Modding is a creative process and should be fun, and there are many ways to go about it. This guide is just *my* way of doing things, and it's not to say other ways are wrong.
 
