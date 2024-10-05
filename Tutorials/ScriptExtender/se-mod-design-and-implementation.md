@@ -2,7 +2,7 @@
 title: Designing and writing Script Extender mods
 description: Guide discussing generating ideas and planning designs to implementing mods with practical tips. Includes an example mod, 'Waypoint Inside Emerald Grove', to illustrate the process, offering insights into the tools and methods used.
 published: true
-date: 2024-10-05T15:28:54.111Z
+date: 2024-10-05T15:29:18.744Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-05T15:28:54.111Z
@@ -77,8 +77,6 @@ If you don't know how to do something:
 - If you need to check for some state/progression, you can check the existing Flags dump, or dump entities and see what's there, doing a diff between two dumps (before and after) with VSCode. There are novel ways to do this with frame components, but this is what most modders have been doing.
 
 Modding is like a puzzle, and you'll have to find the right pieces to make it work. Sometimes, you'll have to make your own pieces, and to me that is the beauty and art of modding.
-
----
 
 ## Example: 'Waypoint Inside Emerald Grove'
 
