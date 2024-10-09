@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-10-09T15:49:43.270Z
+date: 2024-10-09T15:50:19.245Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -406,10 +406,10 @@ This is achieved through the use of "handles" - unique identifiers that can be u
 
 > These handles should have been listed in a loca file in your mod in order to be used;
 > • If handles are provided and their content can be retrieved, the localized string will be used instead of the usual name/description/tooltip;
-> • If the handle is not found, the usual string will be used; in the above example, `TabName`'s content.
+> • If the handle is not found, the usual string will be used; in the above example, it would be `TabName`'s content.
 {.is-info}
 
-The [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper) extension can help you create localization files and replace strings with handles to be translated.
+The [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper) extension can help you create localization files and mass replace strings with handles conveniently added to your localization files.
 
 ### TODO: ported IMGUI icons
 
