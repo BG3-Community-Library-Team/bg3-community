@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-10-09T15:56:41.754Z
+date: 2024-10-09T15:58:13.074Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -142,7 +142,6 @@ You can also use a service like https://www.jsonschemavalidator.net/s/cV447mjH b
 
 ##### Schema main components
 Following are the main components of the MCM schema. Don't stress over this too much, **the schema file will guide you while writing blueprints if you have set it up, and MCM will warn you about problems during runtime.**
-Also, it's **heavily recommended to just pick an existing schema** from one of the MCM mods out there **and adapt it**.
 
 <details>
 <summary> MCM schema breakdown </summary>
@@ -173,7 +172,8 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 > If your [mod is symlinked](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking 'Symlinking mods tutorial'), you can try out changes to your mod's blueprint in-game by using `reset` in the console without having to restart the game every time you make a change to the blueprint file.
 {.is-info}
 
-> For blueprints examples from mods that use MCM, you can check:
+> It's **recommended to just pick an existing blueprint** from MCM-integrated mods **and adapt it**.
+> For reference, you can check out the following examples:
 > [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/MCM-integration/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
 > [Smart Autosaving](https://github.com/AtilioA/BG3-smart-autosaving/blob/main/Smart%20Autosaving/Mods/SmartAutosaving/MCM_blueprint.json)
 > [Preemptively Label Containers](https://github.com/AtilioA/BG3-preemptively-label-containers/blob/main/Preemptively%20Label%20Containers/Mods/PreemptivelyLabelContainers/MCM_blueprint.json)
