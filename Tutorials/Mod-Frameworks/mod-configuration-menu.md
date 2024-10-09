@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-10-08T00:26:16.585Z
+date: 2024-10-09T15:45:03.779Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -90,6 +90,8 @@ Mod authors need to integrate their mods with MCM for their settings to appear i
 
   1. **Define the blueprint JSON** file for your mod's settings and **place it alongside your mod's `meta.lsx`** file.
   2. Replace your mod's logic for reading/writing settings with calls to the MCM API, using settings' IDs as defined in the blueprint.
+  
+Anything else is a matter of updating objects (if you're storing values in tables, for example), adding custom UI (very situational) and creating hotkeys (MCM 1.18+)
 
 > It's **extremely recommended to define BG3MCM as a dependency in your `meta.lsx` file**. This allows mod managers to ***ensure*** that MCM is loaded ***before** your own mod* - eliminating the need to instruct users to do so manually and avoiding incorrect reports/troubleshooting when they don't! See our [guide for adding dependencies](/Tutorials/General/Basic/adding-mod-dependencies).
 > • [Example for listing two dependencies in a meta.lsx file, one being BG3MCM](https://github.com/AtilioA/BG3-mod-uninstaller/blob/main/Mod%20Uninstaller/Mods/ModUninstaller/meta.lsx#L7-L24 'Mod Uninstaller with two dependencies, one being BG3MCM'); (Volition Cabinet is not required for MCM)
@@ -137,7 +139,11 @@ You can also use a service like https://www.jsonschemavalidator.net/s/cV447mjH b
 
 
 Following are the main components of the MCM schema. Don't stress over this too much, the schema file will guide you while writing blueprints if you have set it up.
+Also, it's **heavily recommended to just pick an existing schema** from one of the MCM mods out there **and adapt it**.
 
+<details>
+<summary> MCM schema breakdown </summary>
+  
 - **Organizational structure**: the MCM Schema defines a hierarchical organization using `Tabs` and `Sections`:
   - `Tabs`: Serve as top-level organizational units in the MCM menu. Each tab can exclusively contain either `Sections` or standalone `Settings`.
     - `Sections`: Sub-divisions within tabs to group related settings.
@@ -153,7 +159,8 @@ Following are the main components of the MCM schema. Don't stress over this too 
       - `Min` and `Max`: Boundary values for types such as `slider`/`drag`.
       - `Multiline`: Whether the text input should be multiline, used for `text` type.
     - `VisibleIf`: Allows defining a simple boolean expression that determines the visibility of a setting (also tab or section) based on the values of other settings. NOTE: this might not work in the main menu as of 1.10; 
-
+</details>
+  
 Thus, the main content of the blueprint is defined in the `Tabs` and `Settings` properties. You'll need to include at least one of these - either a list of tabs, or a list of standalone settings. However, for now, only defining a Settings array is not properly supported. Versions 1.10+ might be able to handle it correctly.
 Within each tab, you can define either `Sections` or a list of `Settings`. Sections provide a way to group related settings together under a header.
 Each setting has an `Id`, `Name`, `Type`, `Default` value, and at least a `Tooltip` or a `Description`. Each setting `Id` must be unique across the entire blueprint, and that is validated by one of the many validation checks MCM performs.
@@ -164,10 +171,10 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 {.is-info}
 
 > For examples of mods that use MCM, you can check:
-> [MCM demo](#mcm-demo) (1.5.1) - slightly outdated, showcases all input types, tab insertion and a bit of client/server communication
 > [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/MCM-integration/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
 > [Smart Autosaving](https://github.com/AtilioA/BG3-smart-autosaving/blob/main/Smart%20Autosaving/Mods/SmartAutosaving/MCM_blueprint.json)
 > [Preemptively Label Containers](https://github.com/AtilioA/BG3-preemptively-label-containers/blob/main/Preemptively%20Label%20Containers/Mods/PreemptivelyLabelContainers/MCM_blueprint.json)
+> [MCM demo](#mcm-demo) (1.5.1) - outdated refer to the other examples above instead in the meantime.
 {.is-success}
 
 
