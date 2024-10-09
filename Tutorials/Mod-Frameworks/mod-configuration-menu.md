@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-10-09T15:50:19.245Z
+date: 2024-10-09T15:52:33.092Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -93,9 +93,9 @@ Mod authors need to integrate their mods with MCM for their settings to appear i
   
 Anything else is a matter of updating objects (if you're storing values in tables, for example), adding custom UI (very situational) and creating hotkeys (MCM 1.18+)
 
-> It's **extremely recommended to define BG3MCM as a dependency in your `meta.lsx` file**. This allows mod managers to ***ensure*** that MCM is loaded ***before** your own mod* - eliminating the need to instruct users to do so manually and avoiding incorrect reports/troubleshooting when they don't! See our [guide for adding dependencies](/Tutorials/General/Basic/adding-mod-dependencies).
+> It's **extremely recommended to define BG3MCM as a dependency in your `meta.lsx` file**. This allows the game and mod managers to ***ensure*** that MCM is loaded ***before** your own mod* - eliminating the need to instruct users to do so manually and avoiding incorrect reports/troubleshooting when they don't! See our [guide for adding dependencies](/Tutorials/General/Basic/adding-mod-dependencies).
 > • [Example for listing two dependencies in a meta.lsx file, one being BG3MCM](https://github.com/AtilioA/BG3-mod-uninstaller/blob/main/Mod%20Uninstaller/Mods/ModUninstaller/meta.lsx#L7-L24 'Mod Uninstaller with two dependencies, one being BG3MCM'); (Volition Cabinet is not required for MCM)
-> • You can set dependencies and their minimum required versions. It is also recommended to always set the required version (`Version64`) of MCM to the version you're using during the development of your mod.
+> • You can set dependencies and their minimum required versions. It is also recommended to **always set the required version (`Version64`) of MCM to the version you're using** during the development of your mod.
 **MCM 1.14 also verifies dependencies' versions and warn users if they have outdated versions of any mods.**
 {.is-warning}
 
