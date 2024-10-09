@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-10-09T16:14:16.398Z
+date: 2024-10-09T16:17:21.813Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -183,10 +183,10 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 ### Using values from MCM
 
 After setting up the blueprint, mod authors can access the values set by the player through the MCM API from anywhere in their mod's code. 
-MCM provides a convenient way for mod authors to access and modify the values set by players through the MCM API. As of version 1.14+, MCM introduces a global `MCM` table that simplifies this process even further:
+MCM provides a convenient way for mod authors to access and modify values. As of version 1.14+, MCM introduces a global `MCM` table that simplifies this process:
 
 ```lua
-  -- Get the value of a setting with the ID "MySetting".
+  -- Get the value of a setting with the ID "MySetting"
   local mySettingValue = MCM.Get("MySetting")
   -- Set the value of a setting
   MCM.Set("MySetting", newValue)
@@ -241,7 +241,7 @@ Otherwise, prepend `Mods.BG3MCM` to all function calls.
 
 ### Inserting custom UI elements
 
-MCM allows mod authors to insert custom UI elements into the MCM UI. This can be done using the `InsertModMenuTab` function from MCM's `IMGUIAPI`:
+MCM allows mod authors to insert custom UI elements into the MCM UI. **This is only needed if you want to define custom IMGUI objects within MCM**. This can be done using the `InsertModMenuTab` function from MCM's `IMGUIAPI`:
 
 ```lua
 Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "Tab name", function(tabHeader)
@@ -255,7 +255,7 @@ end)
 This will create a new tab or insert the content at the end of an existing one.
 
 > You can define an entire tab's content — not just a widget — and call the `InsertModMenuTab` function to insert it into the MCM window, inside the space dedicated for your mod.
-> • For reference, [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) is a mod that leverages the `InsertModMenuTab` method to add custom logic inside MCM.
+> • For reference, [Mod Uninstaller](https://www.nexusmods.com/baldursgate3/mods/9701) uses both MCM-generated and custom IMGUI elements; there's also [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) that leverages the `InsertModMenuTab` method to add custom logic inside MCM.
 {.is-info}
 
 
