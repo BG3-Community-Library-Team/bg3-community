@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-10-09T15:46:55.827Z
+date: 2024-10-09T15:49:43.270Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -385,14 +385,14 @@ MCM performs validation checks when:
 
 ### Localization support
 
-In your blueprint, you can define localization handles for various elements of the configuration, including:
+In your blueprint, you can optionally define localization handles for various elements of the configuration, including:
 
 - Tabs names and descriptions
 - Sections names
 - Settings names, descriptions, and tooltips
 - Enum/radio choice labels
 
-This is achieved through the use of "handles" - unique identifiers that can be used to look up the localized strings, just as used by the vanilla game. For basically any element that you can put a user-facing string in the blueprint, you can use a handle by adding a `Handles` object in the same level as the element, like this:
+This is achieved through the use of "handles" - unique identifiers that can be used to look up the localized strings, just as used by the vanilla game. For any element that you can put a user-facing string in the blueprint, you can use a handle by adding a `Handles` object in the same level as the element, like this:
 
 ```json
 {
@@ -406,7 +406,7 @@ This is achieved through the use of "handles" - unique identifiers that can be u
 
 > These handles should have been listed in a loca file in your mod in order to be used;
 > • If handles are provided and their content can be retrieved, the localized string will be used instead of the usual name/description/tooltip;
-> • If the handle is not found, the usual string will be used.
+> • If the handle is not found, the usual string will be used; in the above example, `TabName`'s content.
 {.is-info}
 
 The [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper) extension can help you create localization files and replace strings with handles to be translated.
@@ -428,10 +428,10 @@ MCM's Notification API allows mods to create customizable notifications within t
 - **Display preferences**: Configure notifications to show for a certain duration, only once, etc.
 - **Custom buttons**: Add buttons with associated callback functions for user interaction.
 
-### Example Usage
+### Example usage
 
 `NotificationManager` is added to all mods' global tables if MCM is loaded.
-To display a success notification with default options and a custom 'Log' button, use the following code:
+To display a success notification with default options and a custom 'Log' button, use the following code in the client context:
 
 ```lua
 NotificationManager.ShowSuccess('notification_id', 'Test Title', 'This is a test success message', {
