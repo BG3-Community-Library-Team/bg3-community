@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-10-09T15:45:03.779Z
+date: 2024-10-09T15:46:15.133Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -176,7 +176,6 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 > [Preemptively Label Containers](https://github.com/AtilioA/BG3-preemptively-label-containers/blob/main/Preemptively%20Label%20Containers/Mods/PreemptivelyLabelContainers/MCM_blueprint.json)
 > [MCM demo](#mcm-demo) (1.5.1) - outdated refer to the other examples above instead in the meantime.
 {.is-success}
-
 
 ### Using values from MCM
 
@@ -448,8 +447,10 @@ Analogous functions are available for other severity levels (e.g., `Notification
 
 ## MCM demo
 
-The demo below showcases the different types of config options that can be used (all of them as of v1.5.0). The demo also shows how to insert custom UI elements into the menu and how to listen and react to MCM events:
-NOTE: with the introduction of `ModEvents` in SE v18, the current way of listening to MCM events will get deprecated.
+The demo below showcases the different types of config options that can be used (all of them as of v1.5.0). The demo also shows how to insert custom UI elements into the menu and how to listen and react to MCM events.
+
+NOTE: with the introduction of `ModEvents` in SE v18, the current way of listening to MCM events will get deprecated. The demo is over 10 versions behind MCM, so **please refer to other MCM mods in the meantime instead.**
+
 [MCM Demo.zip](/tutorials/frameworks/mcm/mcm_demo.zip)
 
 ## Closing words
