@@ -2,7 +2,7 @@
 title: TreasureTables
 description: 
 published: true
-date: 2024-10-02T01:04:04.963Z
+date: 2024-10-11T18:01:17.415Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-15T07:10:08.311Z
@@ -97,6 +97,14 @@ object category "I_CONS_FOOD_Fruit_Apple",2,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_CONS_FOOD_Fruit_Apple",1,0,0,0,0,0,0,0
 ``` 
+
+By Muffin:
+If you set the subtable chance to ```-1```, it always shows everything underneath, even if its unique or the player doesn't qualify due to level.
+
+```
+new subtable "-1"
+object category "I_CONS_FOOD_Fruit_Apple",2,0,0,0,0,0,0,0
+```
 
 This should give some initial insight on how treasuretables work.
 A treasuretable only ends whenever the file ends or you start a new treasuretable entry. Just like stats/spells/boosts.
