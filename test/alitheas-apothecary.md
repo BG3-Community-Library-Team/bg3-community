@@ -2,14 +2,14 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-09-04T08:38:56.688Z
+date: 2024-10-11T06:50:17.740Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
 ---
 
 # Astarion is my emotional support character
-![alithea's_apothecary.webp](/test/alithea's_apothecary.webp)
+![alithea's_apothecary.webp](/test/alithea's_apothecary.webp =1000x)
 
 ## Screen Archery guide - wip
 [Screen Archery Introduction](https://wiki.bg3.community/en/test/alitheas-apothecary/I)
