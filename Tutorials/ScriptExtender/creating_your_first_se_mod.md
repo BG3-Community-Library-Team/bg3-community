@@ -2,7 +2,7 @@
 title: Creating your first SE Mod
 description: A follow along tutorial for creating your first Script Extender Mod that stops companions from returning to their tent when in camp. Optional toggleable version
 published: false
-date: 2024-10-16T12:32:06.246Z
+date: 2024-10-16T12:40:54.040Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T14:54:45.494Z
@@ -17,7 +17,7 @@ We will create a mod that stops your companions from going back to their tent on
 This tutorial is based on **Satan & Alithea Ancunín's** implementation of [Stay still in camp and play idle animations anywhere](https://www.nexusmods.com/baldursgate3/mods/9731). Please note that the final mod also adds idle animations, which isn't part of this tutorial.
 
 
-> If you have not used SE before, it's recommended to have a look at [Getting started with Script Extender](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) first.
+> If you have not used SE before, it's recommended to read [Getting started with Script Extender](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) first.
 {.is-warning}
 
 
