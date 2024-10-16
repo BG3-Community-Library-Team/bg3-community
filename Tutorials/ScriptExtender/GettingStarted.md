@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-09-10T16:12:18.873Z
+date: 2024-10-16T11:54:29.485Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -110,19 +110,19 @@ Now that you are familiar with entering commands in the console, it is time to c
 > Only want to execute a few commands on the console and not interested in creating a mod?
 > You can stop here if you are following another guide or jump to 
 > [6.Osiris](https://wiki.bg3.community/Tutorials/ScriptExtender/GettingStarted#h-6-osiris) for a few examples
-{.is-warning}
+{.is-info}
 
 
 ## **3\. Creating your workspace**
 
 
 >  For the next steps, please close your game.
-{.is-info}
-
-
->This guide uses the example workspace found here: https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing
->Using it will make it easier to follow the tutorial.
 {.is-warning}
+
+
+>This guide uses this [example workspace](https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing) you can download from google drive.
+>Using it will make it easier to follow the tutorial.
+{.is-success}
 
 
 
