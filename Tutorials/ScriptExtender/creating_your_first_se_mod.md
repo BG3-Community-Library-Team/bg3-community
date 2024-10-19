@@ -2,7 +2,7 @@
 title: Creating your first SE Mod
 description: A follow along tutorial for creating your first Script Extender Mod that stops companions from returning to their tent when in camp. Optional toggleable version
 published: false
-date: 2024-10-19T19:18:40.604Z
+date: 2024-10-19T19:26:14.829Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T14:54:45.494Z
@@ -10,21 +10,19 @@ dateCreated: 2024-05-01T14:54:45.494Z
 
 # Creating your first SE Mod
 
-This tutorial will walk you through creating a simple mod with Norbyte's Script Extender(SE).
-
-We will create a mod that stops your companions from going back to their tent once in camp. Aditionally we will utilize SE together with `stats` to make this toggleable. 
+This tutorial will walk you through creating a simple mod with Norbyte's Script Extender(SE) that stops your companions from going back to their tent while in camp. Aditionally we will utilize SE together with `stats` to make this behaviour toggleable.
 
 This tutorial is based on **Satan & Alithea Ancunín's** implementation of [Stay still in camp and play idle animations anywhere](https://www.nexusmods.com/baldursgate3/mods/9731). Please note that the final mod also adds idle animations, which isn't part of this tutorial.
-
 
 > If you have not used SE before, it's recommended to read [Getting started with Script Extender](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted) first.
 {.is-warning}
 
 
-
 ## 1. Outlining your strategy
 
-First, you are going to be organizing the functions and game elements you will be needing for your mod. One of the best resources for this can be found on [Laughing Leader's Github](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua), which contains a list of Osiris (native) functions you can use. To find the flags, spells, passives or any other game elements you might need, you can use [Norbsearch](https://bg3.norbyte.dev/search), or index your game files using [ShinyHobo's Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool). 
+First, you are going to be organizing the functions and game elements you will be needing for your mod. One of the best resources for this can be found on [Laughing Leader's Github](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua), which contains a list of Osiris (native) functions you can use. 
+To find the flags, spells, passives or any other game elements you might need, you can use [Norbsearch](https://bg3.norbyte.dev/search), or index your game files using [ShinyHobo's Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool). 
+
 
 ## 2. Preparing your workspace
 
@@ -39,6 +37,7 @@ You are now ready to begin coding your mod!
 
 >An [example workspace](https://drive.google.com/file/d/1PP9i2oAI9NZQx4aTooTFIe6laotVvOop/view?usp=sharing) to adjust accordingly can be viewed and downloaded from google drive.
 {.is-success}
+
 
 ## 3. Writing the code
 
@@ -90,6 +89,7 @@ For example, if we wanted to apply the stopMoving function after a character ent
 ```
 You can find more events at https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.Events.lua
 
+
 ## 4. Interdiscipline: Using stats file in conjunction with SE
 
 You can call game statuses, passives or other elements inside your SE functions and events. You can also create your own statuses and passives. Here are examples of a status and a passive.
@@ -139,6 +139,7 @@ Below is an example of a Localization file. As you can see, the contentuids corr
     <content contentuid="hd5dfdb8b7aa34a808f628362b0f04fa8884a" version="1">Entity will not move back to Camp</content>
 </contentList>
 ```
+
 
 ## 5. Using SE to Handle the Stats
 
@@ -215,7 +216,6 @@ end)
 
 When the passive is toggled off, another event is triggered, the "StatusRemoved" event, where the Status in question is "STAY_STILL_STATUS". If that status is removed, we will call the "startMoving" function and allow the character to move again.
 
-
 ```lua
 
 -- Allows the partymember to move again if "Stay Still" is deactivated
@@ -225,8 +225,6 @@ Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function (character, st
 	end
 end)
 ```
-
-
 
 ![yfsem_workspace_structure_final.png](/tutorials/your_first_se_mod/yfsem_workspace_structure_final.png)
 
