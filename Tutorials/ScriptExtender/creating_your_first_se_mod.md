@@ -2,7 +2,7 @@
 title: Creating your first SE Mod
 description: A follow along tutorial for creating your first Script Extender Mod that stops companions from returning to their tent when in camp. Optional toggleable version
 published: false
-date: 2024-10-19T19:51:26.032Z
+date: 2024-10-19T19:52:27.220Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T14:54:45.494Z
@@ -28,7 +28,7 @@ To find the flags, spells, passives or any other game elements you might need, y
 
 Once you've outlined the necessary functions, flags, spells, items, and other elements, you need to prepare your workspace. It's important to create a proper file structure: 
 
-![firstsemodfolderstructure.webp](/tutorials/your_first_se_mod/firstsemodfolderstructure.webp)
+
 
 Upon organizing your folder structure, you can go ahead and pack the mod, which - if you're using BG3 Multitool - will prompt you to add an author (That's your name!), a description for your mod and a version.
 You are now ready to begin coding your mod!
