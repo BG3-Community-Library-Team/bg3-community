@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-20T18:27:58.224Z
+date: 2024-10-20T18:35:27.882Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -14,21 +14,19 @@ dateCreated: 2024-10-20T16:06:19.163Z
 # **Terminology**
 
 - Template
-	- A given entity or race RootTemplate
+	- A given entities or races RootTemplate
 - Animationbank
 	- What holds an actual animations data
 - AnimationID
 	- An ID (UUID) you set for a given animation in its AnimationBank
 - MapKey
-	- A UUID go link up with an AnimationID to call
+	- A UUID go link up with an AnimationID to call the animation
 - AnimationSet
 	- A list of MapKey/AnimationID links
 - Waterfall
 	- A list of AnimationSets on a Template
 - AnimationSetOverride
 	- An On-Demand Override of the Waterfall by inserting an AnimationSet with a higher priority
-
-
 
 # **Creating Custom Animations**
 
