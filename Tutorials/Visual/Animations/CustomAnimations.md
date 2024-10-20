@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-20T16:11:18.341Z
+date: 2024-10-20T18:27:58.224Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -11,6 +11,24 @@ dateCreated: 2024-10-20T16:06:19.163Z
 > This is a Work in Progress Tutorial
 {.is-warning}
 
+# **Terminology**
+
+- Template
+	- A given entity or race RootTemplate
+- Animationbank
+	- What holds an actual animations data
+- AnimationID
+	- An ID (UUID) you set for a given animation in its AnimationBank
+- MapKey
+	- A UUID go link up with an AnimationID to call
+- AnimationSet
+	- A list of MapKey/AnimationID links
+- Waterfall
+	- A list of AnimationSets on a Template
+- AnimationSetOverride
+	- An On-Demand Override of the Waterfall by inserting an AnimationSet with a higher priority
+
+
 
 # **Creating Custom Animations**
 
@@ -18,6 +36,7 @@ In this tutorial we will go over every step of creating custom animations: (Non-
 - Creating an animation in Blender.
 - Converting an animation for BG3.
 - Creating the necessary links in VSCode.
+- Implementing AnimationSets/Waterfalls and Overrides
 
 ## 1\. Creating an animation in Blender 
 ### **1.1\. Setup**
@@ -63,7 +82,16 @@ The general path to use is:
 ### **3.2\. AnimationSet**
 
 
-### **3.3\. Waterfall**
+## 4\. Implementing AnimationSets/Waterfalls and Overrides
+### **4.1\. AnimationSets**
+
+
+### **4.2\. Waterfalls**
+
+
+### **4.3\. Overrides**
+
+
 
 
 
