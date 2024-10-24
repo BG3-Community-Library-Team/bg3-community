@@ -2,14 +2,14 @@
 title: Exporting and Conforming
 description: how to export your hair mesh from Blender and use LSLIB to apply a skeleton
 published: true
-date: 2024-10-24T16:33:10.698Z
+date: 2024-10-24T17:14:57.934Z
 tags: hair, skeleton, conform, export
 editor: markdown
 dateCreated: 2024-10-24T16:22:21.296Z
 ---
 
 # Exporting out of Blender
-At this point we've created our hair mesh(s), have them all parented to the armature we want to use (and depending, also done a weight transfer from the vanilla hair the armature came from).
+Once we've created our hair mesh(es), have them all parented to the armature we want to use (and depending, also done a weight transfer from the vanilla hair the armature came from).
 
 This isn't very long but there are a lot of images, so don't despair!
 
@@ -19,10 +19,6 @@ If a hair exported directly as GR2 and put in game looks somewhat deformed and n
 
 
 ![conform_1_start.png](/tutorials/hair_conform_tuto/conform_1_start.png)
-
-Now at this point we need to do some preparation for export:
-- Make sure LOD Distance and Export Order are set
-- Make sure all Mesh Data Names are set to ones found in the original hair
 
 ## Preparation
 ### LOD Distance and Export Order
@@ -37,7 +33,7 @@ At the same time, we need to define an Export Order for each mesh comprising our
 
 ### Mesh Data Names
 
-Here's the part of the export process which is specific to conforming. We will want to conform to a vanilla GR2, generally the same one we took the armature from. 
+This part of the export process is specific to conforming. We will want to conform to a vanilla GR2, generally the same one we took the armature from. 
 
 When conforming to a vanilla GR2 with LSLIB, the tool will be looking for meshes with mesh data names matching the ones found in the vanilla hair.
 
@@ -46,11 +42,11 @@ In this example, I am using the armature and 2 meshes from HAIR_GOB_F_Priestess_
 - HAIR_GOB_F_Priestess_Gut_Accessories_A_Mesh
 - HAIR_GOB_F_Priestess_Gut_Accessories_A_Mesh
 
-So any of our meshes not matching any found in the vanilla hair will need to be changed otherwise LSLIB will throw an error when trying to conform. 
+So any of our meshes not matching any meshes found in the vanilla hair will need to be renamed. Otherwise LSLIB will throw an error when trying to conform. 
 
 > Note: Mesh data name is not the same as the mesh name. Mesh data names will be found in the properties editor, under the green triangle "Data" tab.
 ![conform_10_data.png](/tutorials/hair_conform_tuto/conform_10_data.png)
-{.is-info}
+{.is-warning}
 
 Here we can see that each mesh data name in the example is named according to this. The meshes taken from that hair originally will usually already have the appropriate data name (the Priestess Gut meshes), however we see that the mesh called 
 
@@ -73,30 +69,34 @@ Now, keeping them all selected, head to File -> Export -> DOS2/BG3 Collada
 
 ![conform_5_export.png](/tutorials/hair_conform_tuto/conform_5_export.png)
 
-And use these export settings. Specifically:
-- change the extension to .dae if it isn't already
-- choose Selected Only instead of Visible Only
+> Make sure you use these export settings. Specifically:
+> - change the extension to .dae if it isn't already
+> - choose Selected Only instead of Visible Only
+{.is-success}
+
 
 ![conform_6_exportsettings.png](/tutorials/hair_conform_tuto/conform_6_exportsettings.png)
 
-then export it. Blender should give a little note at the bottom of the window that export was successful.
+then click Export Collada/GR2. Blender should give a little note at the bottom of the window that the export was successful.
 
 ## LSLIB
 
-Now we have our hair .dae, and should now open LSLIB/ConverterTool ([link to basic installation here](/Tutorials/Visual/Creating-A-Hair-Mod/Tutorials))
+After we exported our hair .dae, we can now open LSLIB/ConverterTool ([link to basic installation here](/Tutorials/Visual/Creating-A-Hair-Mod/Tutorials))
 
 In the GR2 Tools tab, we need to set the Input File Path to our .dae, and set a directory for the to-be-exported GR2. In this example I set it the same, just changed the extension:
 
 ![conform_7_lslibimport.png](/tutorials/hair_conform_tuto/conform_7_lslibimport.png)
 
-As we can see, Export is still greyed out. First we need to hit Import, and this will open up some options we need below:
+As we can see, Export is still greyed out. We need to hit Import, to open up the options we need:
 
 ![conform_8_lslibexport.png](/tutorials/hair_conform_tuto/conform_8_lslibexport.png)
 
-First, we need to untick the box for X-flip meshes on the left, and then on the right choose Conform to Original GR2 and Copy Skeleton. In the field we need to put the GR2 of the vanilla hair we used the armature from back in Blender.
+1. untick the box for X-flip meshes on the left, 
+2. on the right choose Conform to Original GR2 and Copy Skeleton
+3. put the GR2 of the vanilla hair we used the armature from back in Blender in the field below
 
-Below this field we can see that all of our meshes are listed, they should only have names belonging to this vanilla GR2. If any of them has an "unexpected" mesh data name, LSLIB will throw an error when selecting Export.
+In the customize resource formats field all of our meshes are listed, they should only have names belonging to this vanilla GR2. If any of them has an "unexpected" mesh data name, LSLIB will throw an error when selecting Export.
 
-So let's do that. Once Export is selected we should see a pop-up saying it was successful. And if we head to the directory we sent the GR2 to, our new conformed GR2 should be there.
+So let's do that. Once Export is selected we should see a pop-up confirming that it was successful. If we head to the directory we sent the GR2 to, our new conformed GR2 should be there.
 
 
