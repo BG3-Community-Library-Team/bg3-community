@@ -2,7 +2,7 @@
 title: Exporting and Conforming
 description: how to export your hair mesh from Blender and use LSLIB to apply a skeleton
 published: true
-date: 2024-10-24T18:06:28.029Z
+date: 2024-10-24T18:10:25.308Z
 tags: hair, skeleton, conform, export
 editor: markdown
 dateCreated: 2024-10-24T16:22:21.296Z
@@ -96,5 +96,5 @@ So let's do that. Once Export is selected we should see a pop-up confirming that
 
 ![conform_8_lslibexport2.png](/tutorials/hair_conform_tuto/conform_8_lslibexport2.png)
 
-Next: 
+Next: ![soon_tm.webp](/test/alithea/soon_tm.webp)
 
