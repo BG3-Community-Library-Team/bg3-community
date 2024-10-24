@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-10-09T16:39:17.241Z
+date: 2024-10-24T23:14:24.175Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -240,6 +240,8 @@ You can allow global usage of `MCM` functions by incorporating MCM's table early
 Otherwise, prepend `Mods.BG3MCM` to all function calls.
 
 ### Inserting custom UI elements
+>Note that these methods are only available in the client context. They cannot be executed from server-side code, since UI-related functionality is strictly handled on the client side. If you're trying them out with the console, run `client` before executing these methods.
+>{.is-info}
 
 MCM allows mod authors to insert custom UI elements into the MCM UI. **This is only needed if you want to define custom IMGUI objects within MCM**. This can be done using the `InsertModMenuTab` function from MCM's `IMGUIAPI`:
 
@@ -258,6 +260,20 @@ This will create a new tab or insert the content at the end of an existing one.
 > • For reference, [Mod Uninstaller](https://www.nexusmods.com/baldursgate3/mods/9701) uses both MCM-generated and custom IMGUI elements; there's also [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) that leverages the `InsertModMenuTab` method to add custom logic inside MCM.
 {.is-info}
 
+#### Inserting Search Results for ListV2 Settings
+
+The `InsertListV2SearchResults` method in the `IMGUIAPI` allows mod authors to insert suggestions/'search results' into a `list_v2` setting. This is particularly useful for providing users with dynamic suggestions based on their input as they type in the add input field of the setting. All searches on MCM use fuzzy matching.
+
+- **modUUID**: A string representing the UUID of the mod.
+- **settingId**: A string that identifies the specific `list_v2` setting for which the search results are being inserted.
+- **searchResults**: A table containing the search results to be displayed.
+
+Here’s an example of how to use the `InsertListV2SearchResults` method to add the suggestions `a`, `b`, `c`, `aba`, `acaca`, and `abaca` to the `ignore_weapons` `list_v2` setting of the mod with the UUID `1c132ec4-4cd2-4c40-aeb9-ff6ee0467da8` (Auto Send Food To Camp).
+
+```lua
+Mods.BG3MCM.IMGUIAPI:InsertListV2SearchResults("1c132ec4-4cd2-4c40-aeb9-ff6ee0467da8", "ignore_weapons", {"a","b","c","aba","acaca","abaca"})
+```
+![mcm_suggestions.png](/mcm_suggestions.png)
 
 ### Listening to MCM events
 
