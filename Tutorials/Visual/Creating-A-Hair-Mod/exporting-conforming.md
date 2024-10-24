@@ -2,7 +2,7 @@
 title: Exporting and Conforming
 description: how to export your hair mesh from Blender and use LSLIB to apply a skeleton
 published: true
-date: 2024-10-24T17:14:57.934Z
+date: 2024-10-24T17:16:12.947Z
 tags: hair, skeleton, conform, export
 editor: markdown
 dateCreated: 2024-10-24T16:22:21.296Z
@@ -93,9 +93,9 @@ As we can see, Export is still greyed out. We need to hit Import, to open up the
 
 1. untick the box for X-flip meshes on the left, 
 2. on the right choose Conform to Original GR2 and Copy Skeleton
-3. put the GR2 of the vanilla hair we used the armature from back in Blender in the field below
+3. put the GR2 of the vanilla hair we used the armature from back in Blender in the field
 
-In the customize resource formats field all of our meshes are listed, they should only have names belonging to this vanilla GR2. If any of them has an "unexpected" mesh data name, LSLIB will throw an error when selecting Export.
+All of our meshes are listed in the customize resource formats box below, they should only have names belonging to this vanilla GR2. If any of them has an "unexpected" mesh data name, LSLIB will throw an error when selecting Export.
 
 So let's do that. Once Export is selected we should see a pop-up confirming that it was successful. If we head to the directory we sent the GR2 to, our new conformed GR2 should be there.
 
