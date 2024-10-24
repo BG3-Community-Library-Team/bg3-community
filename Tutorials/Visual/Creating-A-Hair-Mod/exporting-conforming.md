@@ -2,7 +2,7 @@
 title: Exporting and Conforming
 description: how to export your hair mesh from Blender and use LSLIB to apply a skeleton
 published: true
-date: 2024-10-24T17:16:12.947Z
+date: 2024-10-24T17:27:32.079Z
 tags: hair, skeleton, conform, export
 editor: markdown
 dateCreated: 2024-10-24T16:22:21.296Z
@@ -81,7 +81,7 @@ then click Export Collada/GR2. Blender should give a little note at the bottom o
 
 ## LSLIB
 
-After we exported our hair .dae, we can now open LSLIB/ConverterTool ([link to basic installation here](/Tutorials/Visual/Creating-A-Hair-Mod/Tutorials))
+After we exported our hair .dae, we can now open LSLIB/ConverterTool ([Getting Started tutorial here](/Tutorials/Visual/getting-started-with-3d-modding))
 
 In the GR2 Tools tab, we need to set the Input File Path to our .dae, and set a directory for the to-be-exported GR2. In this example I set it the same, just changed the extension:
 
@@ -89,11 +89,13 @@ In the GR2 Tools tab, we need to set the Input File Path to our .dae, and set a 
 
 As we can see, Export is still greyed out. We need to hit Import, to open up the options we need:
 
-![conform_8_lslibexport.png](/tutorials/hair_conform_tuto/conform_8_lslibexport.png)
+![conform_8_lslibexport2.png](/tutorials/hair_conform_tuto/conform_8_lslibexport2.png)
 
-1. untick the box for X-flip meshes on the left, 
-2. on the right choose Conform to Original GR2 and Copy Skeleton
-3. put the GR2 of the vanilla hair we used the armature from back in Blender in the field
+> 1. untick the box for X-flip meshes on the left, 
+> 2. on the right choose Conform to Original GR2 and Copy Skeleton
+> 3. put the GR2 of the vanilla hair we used the armature from back in Blender in the field
+{.is-info}
+
 
 All of our meshes are listed in the customize resource formats box below, they should only have names belonging to this vanilla GR2. If any of them has an "unexpected" mesh data name, LSLIB will throw an error when selecting Export.
 
