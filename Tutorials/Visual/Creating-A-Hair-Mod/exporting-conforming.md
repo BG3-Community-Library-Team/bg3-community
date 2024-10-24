@@ -2,7 +2,7 @@
 title: Exporting and Conforming
 description: how to export your hair mesh from Blender and use LSLIB to apply a skeleton
 published: true
-date: 2024-10-24T17:27:32.079Z
+date: 2024-10-24T18:06:28.029Z
 tags: hair, skeleton, conform, export
 editor: markdown
 dateCreated: 2024-10-24T16:22:21.296Z
@@ -16,7 +16,6 @@ This isn't very long but there are a lot of images, so don't despair!
 > Why Conform?
 If a hair exported directly as GR2 and put in game looks somewhat deformed and not quite attached, it can often be a skeleton issue. This can be solved by either using a hair `_Base` UUID as your SkeletonResource, if available, or it can also be solved by using LSLIB to conform an exported dae to a vanilla GR2 and copying the skeleton from that.
 {.is-success}
-
 
 ![conform_1_start.png](/tutorials/hair_conform_tuto/conform_1_start.png)
 
@@ -70,10 +69,9 @@ Now, keeping them all selected, head to File -> Export -> DOS2/BG3 Collada
 ![conform_5_export.png](/tutorials/hair_conform_tuto/conform_5_export.png)
 
 > Make sure you use these export settings. Specifically:
-> - change the extension to .dae if it isn't already
-> - choose Selected Only instead of Visible Only
-{.is-success}
-
+> • change the extension to .dae if it isn't already
+> • choose Selected Only instead of Visible Only
+{.is-info}
 
 ![conform_6_exportsettings.png](/tutorials/hair_conform_tuto/conform_6_exportsettings.png)
 
@@ -87,18 +85,16 @@ In the GR2 Tools tab, we need to set the Input File Path to our .dae, and set a 
 
 ![conform_7_lslibimport.png](/tutorials/hair_conform_tuto/conform_7_lslibimport.png)
 
-As we can see, Export is still greyed out. We need to hit Import, to open up the options we need:
-
-![conform_8_lslibexport2.png](/tutorials/hair_conform_tuto/conform_8_lslibexport2.png)
-
-> 1. untick the box for X-flip meshes on the left, 
-> 2. on the right choose Conform to Original GR2 and Copy Skeleton
-> 3. put the GR2 of the vanilla hair we used the armature from back in Blender in the field
-{.is-info}
-
+As we can see, Export is still greyed out. We need to hit Import, to open up the options we need to:
+1. untick the box for X-flip meshes on the left, 
+2. on the right choose Conform to Original GR2 and Copy Skeleton
+3. put the GR2 of the vanilla hair we used the armature from back in Blender in the field
 
 All of our meshes are listed in the customize resource formats box below, they should only have names belonging to this vanilla GR2. If any of them has an "unexpected" mesh data name, LSLIB will throw an error when selecting Export.
 
 So let's do that. Once Export is selected we should see a pop-up confirming that it was successful. If we head to the directory we sent the GR2 to, our new conformed GR2 should be there.
 
+![conform_8_lslibexport2.png](/tutorials/hair_conform_tuto/conform_8_lslibexport2.png)
+
+Next: 
 
