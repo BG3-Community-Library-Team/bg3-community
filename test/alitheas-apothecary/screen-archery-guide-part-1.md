@@ -2,7 +2,7 @@
 title: Getting started:
 description: Understanding the basic tools and settings required for screen archery
 published: false
-date: 2024-10-25T10:16:01.565Z
+date: 2024-10-25T11:28:28.827Z
 tags: guide, wip, screen archery
 editor: markdown
 dateCreated: 2024-06-27T07:44:35.341Z
@@ -42,9 +42,10 @@ Default methods to take screenshots and videos in Baldur's Gate 3 on Windows 10/
 
 ## Tips
 
-- hit F10 to hide the UI
-- keep save games to be able to access specific locations again
-- don't be afraid to experiment
+- UI: hit F10 to hide it
+- quicksave often, especially before engaging in a conversation, going to camp, or initiating a long rest
+- reload your favourites and make a hard save to keep and able to access a specific situation or location again
+
 
 ## Terminology
 
