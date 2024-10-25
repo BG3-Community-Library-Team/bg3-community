@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-10-25T13:42:46.016Z
+date: 2024-10-25T13:54:56.200Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -34,7 +34,7 @@ This page is a list of existing Tutorials.
 - [Shipping Items to Users](General/Shipping-Items-to-Users)
 - [Editing Equipment.txt](General/Editing-Equipment-txt)
 - [Hotloading - How to quickly test mods in game](General/hotloading-how-to-quickly-test-mods-in-game)
-- [Toolkit FAQ](https://wiki.bg3.community/en/Tutorials/General/Toolkit-FAQ)
+
 {.links-list}
 ## Races
 - [Creating A Basic Race Mod](https://wiki.bg3.community/Tutorials/Races/Creating-A-Basic-Race-Mod)
@@ -75,11 +75,9 @@ This page is a list of existing Tutorials.
 - [Class/Subclass Icon Creation (Coming Soon)](#)
 {.links-list}
 ## Toolkit
-<!-- 
-- [Display name](link) 
+
 
 {.links-list}
--->
 ## Screen Archery
 - [Introduction to Screen Archery](/Tutorials/Screen-Archery/screen-archery-guide-introduction)
 - [Getting started: Basic tools](/Tutorials/Screen-Archery/screen-archery-guide-part-1)
@@ -89,7 +87,7 @@ This page is a list of existing Tutorials.
 - [Technical skills II: Reshade](/Tutorials/Screen-Archery/screen-archery-guide-part-5)
 - [Creative expression: developing your unique style](/Tutorials/Screen-Archery/screen-archery-guide-part-6)
 - [Post production](/Tutorials/Screen-Archery/screen-archery-guide-part-7)
-
+- [Sharing your creations](/Tutorials/Screen-Archery/screen-archery-guide-part-8)
 
 
 {.links-list}
