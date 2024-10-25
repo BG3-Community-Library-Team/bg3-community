@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-10-25T13:56:04.129Z
+date: 2024-10-25T14:04:34.250Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -34,16 +34,17 @@ This page is a list of existing Tutorials.
 - [Shipping Items to Users](General/Shipping-Items-to-Users)
 - [Editing Equipment.txt](General/Editing-Equipment-txt)
 - [Hotloading - How to quickly test mods in game](General/hotloading-how-to-quickly-test-mods-in-game)
-- [Toolkit FAQ](/Tutorials/General/Toolkit-FAQ)
 
 {.links-list}
 ## Races
 - [Creating A Basic Race Mod](https://wiki.bg3.community/Tutorials/Races/Creating-A-Basic-Race-Mod)
- {.links-list}
+{.links-list}
+ 
 ## Classes
 - [Basic Class Creation](Classes/Basic-Class-Creation)
 - [Subclass Creation for an Existing Subclass](Classes/Subclass_Creation_For_An_Existing_Class)
 {.links-list}
+
 ## Frameworks
 - [Compatibility Framework Usage](Mod-Frameworks/compatibility-framework)
 - [Oath Framework Usage](Mod-Frameworks/oath-framework-usage)
@@ -51,34 +52,40 @@ This page is a list of existing Tutorials.
 - [Inspiration Framework Usage](Mod-Frameworks/using-inspiration-framework)
 - [Mod Configuration Menu](Mod-Frameworks/mod-configuration-menu)
 {.links-list}
+
 ## Items
 - [Item Positioning](Items/Add-and-position-items-in-world)
 - [Treasuretables](/Tutorials/Items/Treasuretables)
 {.links-list}
+
 ## Script Extender
 - [Getting Started with Script Extender](ScriptExtender/GettingStarted)
 - [The Basics of LUA](ScriptExtender/the_basics_of_lua)
 - [Creating your First SE Mod](ScriptExtender/creating_your_first_se_mod)
 - [Dear ImGui](ScriptExtender/ImGui-and-You/Dear-ImGui)
 {.links-list}
+
 ## Sound
 - [Extracting Game Audio Files](Sound/Extract-Audio)
 - [Replacing In-Game Sound](Sound/Replace-Sound)
 - [Using Sound Events to Narrow Down Source Files](Sound/SoundEventSorting)
 {.links-list}
+
 ## Visual
 - [Getting Started with 3D Modding](Visual/getting-started-with-3d-modding)
 - [Creating a Hair Mod](Visual/Creating-A-Hair-Mod)
 - [Creating Custom Head Armatures](Visual/mrboneswildguide)
 {.links-list}
+
 ## Icons
 - [Icon Creation](Icons/Icon-Creation)
 - [Class/Subclass Icon Creation (Coming Soon)](#)
 {.links-list}
+
 ## Toolkit
-
-
+- [Toolkit FAQ](/Tutorials/Toolkit/Toolkit-FAQ)
 {.links-list}
+
 ## Screen Archery
 - [Introduction to Screen Archery](/Tutorials/Screen-Archery/screen-archery-guide-introduction)
 - [Getting started: Basic tools](/Tutorials/Screen-Archery/screen-archery-guide-part-1)
@@ -89,6 +96,4 @@ This page is a list of existing Tutorials.
 - [Creative expression: developing your unique style](/Tutorials/Screen-Archery/screen-archery-guide-part-6)
 - [Post production](/Tutorials/Screen-Archery/screen-archery-guide-part-7)
 - [Sharing your creations](/Tutorials/Screen-Archery/screen-archery-guide-part-8)
-
-
 {.links-list}
