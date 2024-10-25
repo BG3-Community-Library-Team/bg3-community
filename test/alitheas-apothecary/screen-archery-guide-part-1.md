@@ -2,7 +2,7 @@
 title: Getting started:
 description: Understanding the basic tools and settings required for screen archery
 published: false
-date: 2024-10-25T09:42:05.526Z
+date: 2024-10-25T10:08:21.581Z
 tags: guide, wip, screen archery
 editor: markdown
 dateCreated: 2024-06-27T07:44:35.341Z
@@ -32,8 +32,8 @@ Default methods to take screenshots and videos in Baldur's Gate 3 on Windows 10/
 |Method for Videos            |Hotkey                                 |Default Save Location                               |Download Link                                                                                                                                         |
 |-----------------------------|---------------------------------------|----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 |**Windows Game Bar**         |`Win + Alt + R`                        |`User\Videos\Captures`                              |[Game Bar Documentation](https://support.microsoft.com/en-us/windows/record-clips-of-pc-games-with-xbox-game-bar-33bbd7d2-d14e-2d77-2584-e8b3cc2dd326)|
-|**Steam Overlay**            |`F6` (if enabled)                      |`Steam\userdata\[UserID]\760\remote\[GameID]\videos`|[Steam Download](https://store.steampowered.com/about/)                                                                                               |
-|**GOG Galaxy Overlay**       |`Ctrl + Shift + R` (if enabled)        |`User\Videos\GOG Galaxy\Baldur's Gate 3`            |[GOG Galaxy](https://www.gog.com/galaxy)                                                                                                              |
+|**Steam Overlay**            |`F6` if enabled                        |`Steam\userdata\[UserID]\760\remote\[GameID]\videos`|[Steam Download](https://store.steampowered.com/about/)                                                                                               |
+|**GOG Galaxy Overlay**       |`Ctrl + Shift + R` if enabled          |`User\Videos\GOG Galaxy\Baldur's Gate 3`            |[GOG Galaxy](https://www.gog.com/galaxy)                                                                                                              |
 |**NVIDIA GeForce Experience**|`Alt + F9`                             |`User\Videos\Baldur's Gate 3`                       |[NVIDIA GeForce Experience](https://www.nvidia.com/en-us/geforce/geforce-experience/)                                                                 |
 |**AMD Radeon Software**      |`Ctrl + Shift + R`                     |`User\Videos\Radeon ReLive`                         |[AMD Radeon Software](https://www.amd.com/en/support)                                                                                                 |
 |**ReShade**                  |No default                             |Same folder as ReShade installation                 |[ReShade](https://reshade.me/)                                                                                                                        |
