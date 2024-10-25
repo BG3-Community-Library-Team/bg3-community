@@ -2,7 +2,7 @@
 title: Part 1- Getting started:
 description: Basic tools for screen archery
 published: false
-date: 2024-10-25T12:32:42.529Z
+date: 2024-10-25T12:32:56.301Z
 tags: tutorial, guide, tutorials, screen archery
 editor: markdown
 dateCreated: 2024-06-27T07:44:35.341Z
@@ -45,7 +45,3 @@ Default methods to take screenshots and videos in Baldur's Gate 3 on Windows 10/
 - quicksave often, especially before engaging in a conversation, going to camp, or initiating a long rest
 - reload your favourites and make a hard save to keep and able to access a specific situation or location again
 
-
-
-## Tools
-- XnView MP is great for bulk editing and renaming
