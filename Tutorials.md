@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-10-25T13:25:14.117Z
+date: 2024-10-25T13:42:46.016Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -88,6 +88,8 @@ This page is a list of existing Tutorials.
 - [Technical skills I: Otis’ camera tool](/Tutorials/Screen-Archery/screen-archery-guide-part-4)
 - [Technical skills II: Reshade](/Tutorials/Screen-Archery/screen-archery-guide-part-5)
 - [Creative expression: developing your unique style](/Tutorials/Screen-Archery/screen-archery-guide-part-6)
+- [Post production](/Tutorials/Screen-Archery/screen-archery-guide-part-7)
+
 
 
 {.links-list}
