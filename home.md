@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2024-10-01T10:16:05.695Z
+date: 2024-10-25T15:23:27.705Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -69,9 +69,14 @@ This is the BG3 Modding Community Wiki. This space is a place where tutorials, r
 
 ## Tutorials
 - [General Guides *General Guides not specific to a single type of modding.*](Tutorials/General)
+- [Races *Guides relating to Race Modding*](Races)
 - [Classes *Guides relating to Class Modding*](Tutorials/Classes)
-- [Frameworks *Guides relating to using Framework mods*](Tutorials/Mod-Frameworks)
+- [Mod Frameworks *Guides relating to using Frameworks*](Tutorials/Mod-Frameworks)
 - [Items *Guides relating to Items*](Tutorials/Items)
 - [Script Extender *Guides relating to using Script Extender*](Tutorials/ScriptExtender)
+- [Sound *Guides relating to Sound Modding*](/Tutorials/Sound)
 - [Visual *Guides relating to Visual Modding*](Tutorials/Visual)
+- [Icons *Guides relating to Icons*](Icons)
+- [Toolkit *Guides relating to Larian's Toolkit*](/Tutorials/Toolkit)
+- [Screen Archery *Guides relating to Screen Archery*](/Tutorials/Screen-Archery)
 {.links-list}
