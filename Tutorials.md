@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-10-25T12:43:43.384Z
+date: 2024-10-25T12:44:13.722Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -73,9 +73,12 @@ This page is a list of existing Tutorials.
 ## Icons
 - [Icon Creation](Icons/Icon-Creation)
 - [Class/Subclass Icon Creation (Coming Soon)](#)
+{.links-list}
 ## Toolkit
 <!-- 
 - [Display name](link) 
+
+{.links-list}
 -->
 ## Screen Archery
 - [Introduction to Screen Archery](/Tutorials/Screen-Archery/screen-archery-guide-introduction)
