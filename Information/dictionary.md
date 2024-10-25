@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-09-19T06:26:26.532Z
+date: 2024-10-25T15:36:47.970Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -10,9 +10,7 @@ dateCreated: 2024-06-20T08:31:54.801Z
 
 ![myconid-cmty-curvy.webp](/test/myconid-cmty-curvy.webp)
 
-[Follow up to this conversation.](https://discord.com/channels/1211056047784198186/1252694850097385472/1252955321887096893)
-
-Intended as a temporary hub for terms that may need to be explained in our work-in-progress dictionary. Very inclined by [this layout](https://eternity.obsidian.net/game-data-formats/concepts), but no decisions were made yet.
+Intended as a temporary hub for terms that may need to be explained in our work-in-progress dictionary. 
 
 BG3 Modding Dictionary
 ======================
