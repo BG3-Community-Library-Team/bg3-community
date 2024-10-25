@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-10-25T13:54:56.200Z
+date: 2024-10-25T13:56:04.129Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -34,6 +34,7 @@ This page is a list of existing Tutorials.
 - [Shipping Items to Users](General/Shipping-Items-to-Users)
 - [Editing Equipment.txt](General/Editing-Equipment-txt)
 - [Hotloading - How to quickly test mods in game](General/hotloading-how-to-quickly-test-mods-in-game)
+- [Toolkit FAQ](/Tutorials/General/Toolkit-FAQ)
 
 {.links-list}
 ## Races
