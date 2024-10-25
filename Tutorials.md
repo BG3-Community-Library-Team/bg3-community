@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-10-25T14:04:34.250Z
+date: 2024-10-25T14:05:46.068Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -45,7 +45,7 @@ This page is a list of existing Tutorials.
 - [Subclass Creation for an Existing Subclass](Classes/Subclass_Creation_For_An_Existing_Class)
 {.links-list}
 
-## Frameworks
+## Mod Frameworks
 - [Compatibility Framework Usage](Mod-Frameworks/compatibility-framework)
 - [Oath Framework Usage](Mod-Frameworks/oath-framework-usage)
 - [Tag Framework Usage](Mod-Frameworks/using-tag-framework)
@@ -71,7 +71,7 @@ This page is a list of existing Tutorials.
 - [Using Sound Events to Narrow Down Source Files](Sound/SoundEventSorting)
 {.links-list}
 
-## Visual
+## Visual Modding
 - [Getting Started with 3D Modding](Visual/getting-started-with-3d-modding)
 - [Creating a Hair Mod](Visual/Creating-A-Hair-Mod)
 - [Creating Custom Head Armatures](Visual/mrboneswildguide)
