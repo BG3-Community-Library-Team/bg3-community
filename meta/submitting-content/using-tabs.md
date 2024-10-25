@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: Guide including template
 published: true
-date: 2024-10-25T10:00:45.947Z
+date: 2024-10-25T10:02:33.963Z
 tags: guide, test
 editor: markdown
 dateCreated: 2024-06-28T10:32:48.003Z
@@ -32,6 +32,8 @@ My tab names are: "Step one", "Step Two", "Step Three", "Step Four", "Step Five"
 If you want to add content below the tabset, create a new header with the same designation as the tabset header.
 In this example: "## Next Section"
 
+## Next Section
+
 ### Template
 For convenience, simply copy / paste the below code into your markdown editor, rename the tabs, and remove or add tabs according to your vision.
 
@@ -45,8 +47,6 @@ For convenience, simply copy / paste the below code into your markdown editor, r
 ### Step Five
 ## Next Section
 ```
-
-## Next Section
 
 ![add_tabs_to_the_wiki.webp](/test/add_tabs_to_the_wiki.webp =500x)
 
