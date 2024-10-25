@@ -2,7 +2,7 @@
 title: Screen Archery
 description: This page is a list of all parts of the Screen Archery Guide
 published: false
-date: 2024-10-25T13:37:22.172Z
+date: 2024-10-25T13:40:31.185Z
 tags: guide, wip, screen archery
 editor: markdown
 dateCreated: 2024-10-25T11:36:57.698Z
@@ -21,6 +21,6 @@ This page is a list of all parts of the Screen Archery Guide. Please note that a
 - [Technical skills I: Otis’ camera tool](/Tutorials/Screen-Archery/screen-archery-guide-part-4)
 - [Technical skills II: Reshade](/Tutorials/Screen-Archery/screen-archery-guide-part-5)
 - [Creative expression: developing your unique style](/Tutorials/Screen-Archery/screen-archery-guide-part-6)
-
+- [Post production and a word on credits](Tutorials/Screen-Archery/screen-archery-guide-part-7)
 
 {.links-list} 
