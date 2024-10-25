@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-10-25T12:52:47.577Z
+date: 2024-10-25T12:56:01.731Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -83,7 +83,7 @@ This page is a list of existing Tutorials.
 ## Screen Archery
 - [Introduction to Screen Archery](/Tutorials/Screen-Archery/screen-archery-guide-introduction)
 - [Getting started: Basic tools](/Tutorials/Screen-Archery/screen-archery-guide-part-1)
-- [Fundamentals: General tips and settings](Tutorials/Screen-Archery/screen-archery-guide-part-2)
+- [Fundamentals: General tips and settings](/Tutorials/Screen-Archery/screen-archery-guide-part-2)
 - [Integrating free mods](/Tutorials/Screen-Archery/screen-archery-guide-part-3)
 
 {.links-list}
