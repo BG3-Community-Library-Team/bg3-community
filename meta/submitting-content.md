@@ -2,7 +2,7 @@
 title: Submitting Content
 description: An overview of adding new pages and content to the Wiki
 published: true
-date: 2024-07-02T06:05:57.797Z
+date: 2024-10-25T13:50:10.566Z
 tags: meta
 editor: markdown
 dateCreated: 2024-04-24T20:11:12.024Z
@@ -62,3 +62,31 @@ Getting used to using the editor can be tricky, but here are some handy tips to 
 - When adding a page, make sure it's linked on the relevant Folder Page, as above
 - When creating tabs using `{.tabset}`, you can include tabs within tabs.
 - When trying to set up lists in a Styled Blockquote, add this beneath the blockquote: `<!-- {blockquote:.is-info} -->`
+
+## Images free to use on our wiki
+[how to include images and adjust dimensions using markdown](https://docs.requarks.io/en/editors/markdown)
+(or copy the code block under the image)
+
+![cmty_cub.webp](/test/alithea/cmty_cub.webp)
+```![cmty_cub.webp](/test/alithea/cmty_cub.webp)```
+*credit: Kaz & Sensha*
+
+![cmty_pride_logo.webp](/test/alithea/cmty_pride_logo.webp)
+```![cmty_pride_logo.webp](/test/alithea/cmty_pride_logo.webp)```
+*credit: Alithea Ancunín*
+
+![soon_tm.webp](/test/alithea/soon_tm.webp)
+```![soon_tm.webp](/test/alithea/soon_tm.webp)```
+*credit: Alithea Ancunín*
+
+![myconid-cmty-curvy.webp](/test/myconid-cmty-curvy.webp =350x)
+```![myconid-cmty-curvy.webp](/test/myconid-cmty-curvy.webp =350x)```
+*credit: jerinski*
+
+![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp =750x)
+```![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp =750x)```
+*credit: Alithea Ancunín*
+
+![durgeharem.webp](/mod-use/install-mods/durgeharem.webp =750x)
+```![durgeharem.webp](/mod-use/install-mods/durgeharem.webp =750x)```
+*credit: Alithea Ancunín*
