@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-09-30T15:13:17.158Z
+date: 2024-10-25T11:26:46.735Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -16,12 +16,15 @@ This page is a list of existing Tutorials.
 - [General Guides *General-Purpose Guides*](General)
 - [Races *A List of Race Mod Tutorials*](Races)
 - [Classes *A List of Class Mod Tutorials*](Classes)
-- [Frameworks *A List of Mod Framework Tutorials*](Mod-Frameworks)
+- [Mod Frameworks *A List of Mod Framework Tutorials*](Mod-Frameworks)
 - [Items *A List of Item Tutorials*](Items)
 - [Script Extender *A List of Script Extender Tutorials*](ScriptExtender)
 - [Sound *A List of Sound Tutorials*](/Tutorials/Sound)
-- [Visual *A List of Visual Mod Tutorials*](Visual)
+- [Visual Modding *A List of Visual Mod Tutorials*](Visual)
 - [Icons *A List of Icon Mod Tutorials*](Icons)
+- [Toolkit *A List of Toolkit Tutorials*](/Tutorials/Toolkit)
+- [Screen Archery *A List of Screen Archery Guides*]
+
 {.links-list}
 ## General Guides
 - [A Modder's Guide to Git](General/modders-guide-to-git)
@@ -70,4 +73,8 @@ This page is a list of existing Tutorials.
 ## Icons
 - [Icon Creation](Icons/Icon-Creation)
 - [Class/Subclass Icon Creation (Coming Soon)](#)
+## Toolkit
+- 
+## Screen Archery
+- 
 {.links-list}
