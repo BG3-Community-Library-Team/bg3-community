@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-10-25T14:05:46.068Z
+date: 2024-10-25T14:07:10.050Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -23,7 +23,7 @@ This page is a list of existing Tutorials.
 - [Visual Modding *A List of Visual Mod Tutorials*](Visual)
 - [Icons *A List of Icon Mod Tutorials*](Icons)
 - [Toolkit *A List of Toolkit Tutorials*](/Tutorials/Toolkit)
-- [Screen Archery Guide *A List of all parts*](/Tutorials/Screen-Archery)
+- [Screen Archery *A List of all parts of the Screen Archery Guide*](/Tutorials/Screen-Archery)
 
 {.links-list}
 ## General Guides
