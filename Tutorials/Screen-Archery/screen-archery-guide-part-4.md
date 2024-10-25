@@ -2,8 +2,8 @@
 title: Technical skills I
 description: Exploring Otis’ camera tool and ReShade to enhance your captures. (Beginner)
 published: false
-date: 2024-10-25T13:03:57.769Z
-tags: tutorial, tutorials, wip, screen archery
+date: 2024-10-25T13:30:00.987Z
+tags: guide, wip, screen archery
 editor: markdown
 dateCreated: 2024-06-24T20:54:56.738Z
 ---
