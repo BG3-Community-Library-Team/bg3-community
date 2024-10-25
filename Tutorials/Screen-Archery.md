@@ -2,14 +2,14 @@
 title: Screen Archery
 description: This page is a list of all parts of the Screen Archery Guide
 published: false
-date: 2024-10-25T13:46:25.140Z
+date: 2024-10-25T13:46:44.886Z
 tags: guide, wip, screen archery
 editor: markdown
 dateCreated: 2024-10-25T11:36:57.698Z
 ---
 
 # LIST:Screen Archery
-This page is a list of all parts of the Screen Archery Guide. Please note that all pages below are wip.
+This page is a list of all parts of the Screen Archery Guide. Please note that all pages below are wip and may undergo huge changes.
 [If you have ideas or suggestions, feel free to leave a comment on discord.](https://discord.com/channels/1211056047784198186/1254329164400431215)
 
 ## Pages
