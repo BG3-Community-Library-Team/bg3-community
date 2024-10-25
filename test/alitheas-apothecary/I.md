@@ -1,8 +1,8 @@
 ---
-title: Screen archery
+title: Introduction: Screen Archery
 description: What even is screen archery?
 published: false
-date: 2024-10-25T11:28:51.375Z
+date: 2024-10-25T11:47:32.024Z
 tags: guide, wip, screen archery
 editor: markdown
 dateCreated: 2024-06-24T08:17:29.706Z
