@@ -2,15 +2,18 @@
 title: How to add tabs to your wiki page
 description: Guide including template
 published: true
-date: 2024-10-25T10:02:33.963Z
+date: 2024-10-25T10:24:01.545Z
 tags: guide, test
 editor: markdown
 dateCreated: 2024-06-28T10:32:48.003Z
 ---
 
 # Tabs - How To
-<!-- add some fancy text here if you want to -->
+
 Tabsets are a convenient way to organize longer articles, make more complex guides easier to follow, or break down the display of extensive information, among other uses.
+
+![add_tabs_to_the_wiki.webp](/test/add_tabs_to_the_wiki.webp =1000x)
+
 To use tabsets either follow the steps below or copy the template provided below.
 
 ## Tab {.tabset}
@@ -48,9 +51,6 @@ For convenience, simply copy / paste the below code into your markdown editor, r
 ## Next Section
 ```
 
-![add_tabs_to_the_wiki.webp](/test/add_tabs_to_the_wiki.webp =500x)
-
-<!-- add some more fancy text, I recommend questionable poetry -->
 ![cmty_pride_logo.webp](/test/alithea/cmty_pride_logo.webp)
 
 
