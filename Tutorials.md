@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-10-25T12:56:01.731Z
+date: 2024-10-25T13:06:00.479Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -85,5 +85,7 @@ This page is a list of existing Tutorials.
 - [Getting started: Basic tools](/Tutorials/Screen-Archery/screen-archery-guide-part-1)
 - [Fundamentals: General tips and settings](/Tutorials/Screen-Archery/screen-archery-guide-part-2)
 - [Integrating free mods](/Tutorials/Screen-Archery/screen-archery-guide-part-3)
+- [Technical skills I: Otis’ camera tool and ReShade](/Tutorials/Screen-Archery/screen-archery-guide-part-4)
+
 
 {.links-list}
