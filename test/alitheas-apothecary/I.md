@@ -2,7 +2,7 @@
 title: Screen archery
 description: What even is screen archery?
 published: false
-date: 2024-07-26T06:31:11.281Z
+date: 2024-10-25T11:28:51.375Z
 tags: guide, wip, screen archery
 editor: markdown
 dateCreated: 2024-06-24T08:17:29.706Z
@@ -14,34 +14,34 @@ dateCreated: 2024-06-24T08:17:29.706Z
 
 ## Introduction to Screen Archery: Capturing the Art Within Games
 
-Welcome to our guide series on screen archery, the enthralling art of in-game photo and videography. Whether you’re a gamer looking to document your virtual adventures or an aspiring digital artist eager to explore new creative horizons, this series is designed to help you master the fundamentals and beyond.
+A guide series on the enthralling art of in-game photo and videography. Whether you’re a gamer looking to document your virtual adventures, a mod author, or an aspiring screen archer eager to explore new creative horizons, this series is designed to help you master the fundamentals and beyond.
 
 ## Who Is This Guide For?
 
-This series is for gamers of all levels, from casual players to hardcore enthusiasts, as well as photographers and artists interested in expanding their skill set into the digital realm. No prior experience is needed - just a passion for Baldur's Gate 3 and a desire to create beautiful visual art.
+This series is for gamers of all levels, from casual players to hardcore enthusiasts, as well as photographers and artists interested in expanding their skill set into the digital realm. No prior experience is needed - just a passion for Baldur's Gate 3 and a desire to capture the games beauty.
 
 ## What is Screen Archery?
 
-Screen archery is a term used to describe the art and practice of taking high-quality screenshots and videos within games like Baldur's Gate 3. However, Screen archery is more than just taking screenshots; it’s about capturing the essence, beauty, and drama of the digital worlds we immerse ourselves in. It involves capturing aesthetically pleasing, dramatic, or significant moments from within the game environment. From stunning landscapes and intricate character designs to intense action sequences, screen archery transforms ordinary gameplay into extraordinary visual art.
+Screen archery is a term used to describe the art and practice of taking (high-quality) screenshots and videos within games like Baldur's Gate 3. However, screen archery is more than just taking screenshots; it’s about the essence, beauty, and drama of the digital worlds we immerse ourselves in. It involves capturing aesthetically pleasing, dramatic, or significant moments from within the game environment. From stunning landscapes and intricate character designs to intense action sequences, screen archery transforms ordinary gameplay into extraordinary visual art.
 
 ## Why Screen Archery?
 
 Video games are a true form of art and for many screen archery is an art form too, a creative outlet akin to digital painting or writing. In an era where games offer breathtaking graphics and intricate details, screen archery allows us to appreciate and showcase the artistry behind these virtual realms. It can shift the focus to things that are easily missed during regular gameplay, distracted by the actual adventure, especially with the limited camera movement the vanilla game provides.   
 In short, screen archery merges the worlds of gaming and visual arts, offering a new medium for creative expression and storytelling within virtual environments.
 
-Screen archery provides a way to share unique perspectives, tell compelling stories, and connect with a community of like-minded enthusiasts. It's an excellent opportunity to connect and collaborate with others. Furthermore, most modders are very happy to see their creations used in screenshots or videos, and may even want to use them as so called product images on their mod pages.
+Screen archery provides a way to share unique perspectives, tell compelling stories, and connect with a community of like-minded enthusiasts. It's an excellent opportunity to connect and collaborate with others. Furthermore, most mod authors are very happy to see their creations used in screenshots or videos, and may even want to use them on their mod pages.
 
 ## Some key aspects of screen archery:
 
-Composition: Just like traditional photography, screen archers pay attention to elements like framing, lighting, and composition to create visually appealing images.
+- Composition: Just like traditional photography, screen archers pay attention to elements like framing, lighting, and composition to create visually appealing images.
 
-Technical skills: Using various in-game tools, mods, and software to enhance the quality of the captures, such as increasing resolution, adjusting camera angles, and applying post-processing effects.
+- Technical skills: Using various in-game tools, mods, and software to enhance the quality of the captures, such as increasing resolution, adjusting camera angles, and applying post-processing effects.
 
-Creative expression: Screen archery allows gamers to express their creativity and share their unique perspectives of a game. This can range from capturing breathtaking landscapes to documenting pivotal in-game moments.
+- Creative expression: Screen archery allows gamers to express their creativity and share their unique perspectives of a game. This can range from capturing breathtaking landscapes to documenting pivotal in-game moments.
 
-Community: Screen archery has a thriving community where enthusiasts share their work on social media platforms, forums, and dedicated websites. This community often engages in discussions, contests, and collaborations.
+- Community: Screen archery has a thriving community where enthusiasts share their work on social media platforms, forums, and dedicated websites. This community sometimes engages in discussions, contests, and collaborations.
 
-Professional use: Some professional photographers and videographers use screen archery to create promotional material for games, contribute to game reviews, and produce art for various media outlets.
+- Professional use: Some professional photographers and videographers use screen archery to create promotional material for games, contribute to game reviews, and produce art for various media outlets. Please not that this aspect is not covered by our guide. 
 
 ## What to Expect in This Guide Series
 
