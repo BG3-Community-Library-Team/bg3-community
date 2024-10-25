@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: Guide including template
 published: true
-date: 2024-07-02T06:04:11.481Z
+date: 2024-10-25T09:35:10.344Z
 tags: guide, test
 editor: markdown
 dateCreated: 2024-06-28T10:32:48.003Z
@@ -15,8 +15,9 @@ dateCreated: 2024-06-28T10:32:48.003Z
 
 ## Tab {.tabset}
 ### Step One
-Convert your page to the markdown editor - if you convert back to the visual editor, the tabs won't work.
-Tabs are only available in the markdown editor, and are rendered upon saving.
+Tabs are only available in the markdown editor, they are rendered upon saving.
+Convert your page to the markdown editor if it isn't already
+Do not convert back to the visual editor, it would break your tabs.
 ### Step Two
 Create your tabset header - this will be the name of your tabs - use header 1 (one # before the title)
 In this example the tabset header is "Tabs - How To".
