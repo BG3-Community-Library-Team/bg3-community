@@ -2,13 +2,13 @@
 title: Getting started:
 description: Understanding the basic tools and settings required for screen archery
 published: false
-date: 2024-10-25T10:09:35.697Z
+date: 2024-10-25T10:10:37.473Z
 tags: guide, wip, screen archery
 editor: markdown
 dateCreated: 2024-06-27T07:44:35.341Z
 ---
 
-# Basic tools and tricks for screen archery
+# Understanding the basic tools and tricks for screen archery
 
 ## Tools and Shortcuts
 Default methods to take screenshots and videos in Baldur's Gate 3 on Windows 10/11. Please note that this information may not be exhaustive, and the settings listed reflect default configurations, which may differ if customized on your PC.
