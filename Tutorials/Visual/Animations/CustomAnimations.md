@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-26T02:31:55.517Z
+date: 2024-10-26T02:34:50.950Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -90,11 +90,11 @@ You now have identical keyframes at the start and end of your animation. This is
 
 ![animtut_006.png](/tutorials/animation_tutorial/animtut_006.png)
 
-As of now there’s been no change of rotation on that right shoulder. All you’ve done is created a start and ending keyframe with no change in between. If you presses the “play” button right now (the large right facing triangle at the bottom), your model will do nothing.
+As of now there’s been no change of rotation on that right shoulder. All you’ve done is created a start and ending keyframe with no change in between. If you press the “play” button right now (the large right facing triangle at the bottom), your model will do nothing.
 
 So now you’re going to create a new keyframe with a different pose, say, with the model extending her arm out sideways.
 
-With the right shoulder still selected move the blue keyframe marker to say, position 50. Then with your cursor hovering in the main window “R” then “Y” then “-90” and press enter. This should “R”otate the model’s right arm (on the “Y” axis) at about 90 degrees.
+With the right shoulder still selected move the blue keyframe marker to say, position 50. Then with your cursor hovering in the main window press “R” then “Y” then “-90”, and press enter. This should “R”otate the model’s right arm (on the “Y” axis) at about 90 degrees.
 
 You’ll notice that Blender has inserted the keyframe for you since you enabled the “Auto Keying” button at the very beginning. 
 
