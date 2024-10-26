@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-26T02:39:56.638Z
+date: 2024-10-26T02:40:58.265Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -75,7 +75,7 @@ You’re now going to create your animation “keyframes”.  In the manual days
 
 Hover your mouse over the right shoulder you have selected and press “I” then “R”. This will :
 
-1.	Insert a keyframe (I) at position 0
+1.	Insert (I) a keyframe at position 0
 2.	Track that keyframe for rotations (R)
 
 The reason we’re only using rotation is that this rig doesn’t have what’s known as a control rig, or an IK rig, so we’re limited to rotating the bones only. This is fine for now. 
