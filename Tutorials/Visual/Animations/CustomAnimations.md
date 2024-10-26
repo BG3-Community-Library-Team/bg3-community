@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-26T02:34:50.950Z
+date: 2024-10-26T02:36:31.281Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -101,8 +101,6 @@ You’ll notice that Blender has inserted the keyframe for you since you enabled
 ![animtut_007.png](/tutorials/animation_tutorial/animtut_007.png)
 
 Now hit the play button. If you’ve done it correctly you should now see a looped animation of the model raising and lowering her right arm. Congratulations you’ve created your first animation!
-
-[Your Blender Animation](/tutorials/animation_tutorial/blender__[g__bg3_modding_tutorials_animation_tutorial.blend]_2024-10-25_21-57-31.mp4)
 
 
 The next section will describe how to export your animation in a format compatible with BG3.
