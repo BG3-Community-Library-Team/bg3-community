@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-26T02:19:31.349Z
+date: 2024-10-26T02:27:14.868Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -53,7 +53,62 @@ This tutorial won’t get into the “why” you’re doing what you’re doing 
 
 
 ### **1.2\. Creating an animation**
-\[Insert Animation Tutorial here]
+Once you’ve installed Blender and the add-on, and have opened the animation template, your screen should look like this. Make sure you’re in pose mode (drop down in the upper left), and that the Auto Keying button is turned on at the bottom.
+
+![animtut_001.png](/tutorials/animation_tutorial/animtut_001.png)
+
+Select the “Output” tab on the right side menu. This is where you can adjust how many frames your animation will have, and how many of those frames will play within a single second - known as the “Frame Rate”, measured in frames per second (FPS). These two values – the number of frames and the frame rate, will determine how long your animation is. By default this template has 286 frames at a rate of 60. With these values the animation would be 4.76 seconds long (286/60). 
+
+For the sake of simplicity lets change the number of frames to 96 and the frame rate to 24. This gives us animation length of exactly 4 seconds (96/24). You can play with the frame rate to achieve different effects. Bringing the frame rate down to 12 for example will slow down the animation and double the length. 
+
+![animtut_002.png](/tutorials/animation_tutorial/animtut_002.png)
+
+Your screen should now look like the below. Notice the timeline at the bottom has changed. The last frame is now 96 rather than 286. If you hover your mouse over that timeline and use your mouse wheel you can expand that view.
+
+![animtut_003.png](/tutorials/animation_tutorial/animtut_003.png)
+
+Now select the right shoulder bone. Notice that bone shows up in the summary in the lower left, and the keyframe marker at frame 0 now has a white tick mark. 
+
+![animtut_004.png](/tutorials/animation_tutorial/animtut_004.png)
+
+You’re now going to create your animation “keyframes”.  In the manual days of animation an animator had to draw every frame individually. With computer animation that’s not necessary. You will only create the keyframes which are basically your major poses, and the program will “fill in the blanks” to animate the frames in between.
+
+Hover your mouse over the right shoulder you have selected and press “I” then “R”. This will :
+
+1.	Insert a keyframe (I) at position 0
+2.	Track that keyframe for rotations (R)
+
+The reason we’re only using rotation is that this rig doesn’t have what’s known as a control rig, or an IK rig, so we’re limited to rotating the bones only. This is fine for now. 
+
+Notice that the tick mark is now yellow. This indicates that you now have a selected keyframe here that’s telling the program you want the shoulder to be rotated in this way at this specific frame.
+
+![animtut_005.png](/tutorials/animation_tutorial/animtut_005.png)
+
+Now you’re going to duplicate this keyframe at position 0 and copy it over to the last frame at position 96. With your mouse hovering inside the timeline press Shift+D. This will create a duplicate keyframe you can control with your mouse. Drag that keyframe all the way to the right and place it at frame 96, and left-click. 
+
+You now have identical keyframes at the start and end of your animation. This is especially important when you’re creating looped animations. If your start and ending keyframes aren’t identical your looping animations may not look seamless.
+
+![animtut_006.png](/tutorials/animation_tutorial/animtut_006.png)
+
+As of now there’s been no change of rotation on that right shoulder. All you’ve done is created a start and ending keyframe with no change in between. If you presses the “play” button right now (the large right facing triangle at the bottom), your model will do nothing.
+
+So now you’re going to create a new keyframe with a different pose, say, with the model extending her arm out sideways.
+
+With the right shoulder still selected move the blue keyframe marker to say, position 50. Then with your cursor hovering in the main window “R” then “Y” then “-90” and press enter. This should “R”otate the model’s right arm (on the “Y” axis) at about 90 degrees.
+
+You’ll notice that Blender has inserted the keyframe for you since you enabled the “Auto Keying” button at the very beginning. 
+
+![animtut_007.png](/tutorials/animation_tutorial/animtut_007.png)
+
+Now hit the play button. If you’ve done it correctly you should now see a looped animation of the model raising and lowering her right arm. Congratulations you’ve created your first animation!
+
+[Your Blender Animation](/tutorials/animation_tutorial/blender__[g__bg3_modding_tutorials_animation_tutorial.blend]_2024-10-25_21-57-31.mp4)
+
+
+The next section will describe how to export your animation in a format compatible with BG3.
+
+
+
 
 ### **1.3\. How to correctly save your animation**
 \[What to do to only select a given animation and only save that animation and not the entire model/rig]
