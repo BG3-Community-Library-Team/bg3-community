@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-26T02:37:43.289Z
+date: 2024-10-26T02:39:56.638Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -67,7 +67,7 @@ Your screen should now look like the below. Notice the timeline at the bottom ha
 
 ![animtut_003.png](/tutorials/animation_tutorial/animtut_003.png)
 
-Now select the right shoulder bone. Notice that bone shows up in the summary in the lower left, and the keyframe marker at frame 0 now has a white tick mark. 
+Now select the right shoulder bone by left-clicking on it. Notice that bone shows up in the summary in the lower left, and the keyframe marker at frame 0 now has a white tick mark. 
 
 ![animtut_004.png](/tutorials/animation_tutorial/animtut_004.png)
 
