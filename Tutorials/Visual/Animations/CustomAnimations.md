@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T12:30:02.104Z
+date: 2024-10-27T12:31:26.181Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -115,8 +115,7 @@ Now hit the play button. If you’ve done it correctly you should now see a loop
 
 
 The next section will describe how to export your animation in a format compatible with BG3.
-
-
+  
 
 
 ### **1.3\. How to correctly save your animation**
@@ -129,7 +128,7 @@ To get there you’ll need to :
 
 When exporting it’s important to remember that you only want to export the rig (the bones) not the model (mesh) itself. It may be easier to think of this process as exporting instructions on what BG3 is supposed to do with the in-game rig, rather than exporting an animation.
 
-To start, go into Object mode (drop down on the upper left) and then select any bone in the rig. The entire rig should now be selected (all the bones are highlighted). Make sure the model is not selected, .ie. the modek should not be lit up. 
+To start, go into Object mode (drop down on the upper left) and then select any bone in the rig. The entire rig should now be selected (all the bones are highlighted). Make sure the model is not selected, .ie. the model should not be lit up. 
 
 ![animtut_008.png](/tutorials/animation_tutorial/animtut_008.png)
 
