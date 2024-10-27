@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T16:09:24.563Z
+date: 2024-10-27T16:15:14.375Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -75,7 +75,7 @@ Now select the right shoulder bone by left-clicking on it. Notice that bone show
 
 You’re now going to create your animation “keyframes”.  In the manual days of animation an animator had to draw every frame individually. With computer animation that’s not necessary. You will only create the keyframes which are basically your major poses, and the program will “fill in the blanks” to animate the frames in between.
 
-> Knowing how to manage keyframes will be a fundamental part of your animation process. For more information on the basics of keyframing in Blender refer to ["Tutorial: Blender Keyframes For Beginners"](https://www.youtube.com/watch?v=8gi9lUYMRcI) by PIXXO 3D.
+> Knowing how to manage keyframes will be a big part of your animation process. For more information on the basics of keyframing in Blender refer to ["Keyframe Fundamentals"](https://www.youtube.com/watch?v=SZJswvw9wEs) by the Blender Foundation. The version of blender they use is dated but the core concepts still apply. For a tutorial that uses more recent versions of Blender you can refer to ["Tutorial: Blender Keyframes For Beginners"](https://www.youtube.com/watch?v=8gi9lUYMRcI) by PIXXO 3D.
 {.is-info}
 
 
