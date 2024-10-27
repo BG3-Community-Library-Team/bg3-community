@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T15:51:51.974Z
+date: 2024-10-27T15:53:46.911Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -98,7 +98,7 @@ So now you’re going to create a new keyframe with a different pose with the mo
 
 With the right shoulder still selected use your mouse cursor to drag the blue keyframe marker to say, position 50. Then with your cursor hovering in the main window press “R” then “Y” then “-90”, and press enter. This should “R”otate the model’s right arm (on the “Y” axis) at about 90 degrees.
 
->Moving, rotating and scaling objects and bones in Blender is what is known as a "transformation". There are quicker and more elegant ways of doing this than what is described above. For guidance that goes into a bit more detail check out ["Blender Basic 4: Tansforming Objects and Adjusting Transformations"](https://www.youtube.com/watch?v=lLJilYum_lQ). This focuses on models but the same logic will apply to rigs and bones.
+>Moving, rotating and scaling objects and bones in Blender is what is known as a "transformation". There are quicker and more elegant ways of doing this than what is described above. For guidance that goes into a bit more detail check out ["Blender Basic 4: Tansforming Objects and Adjusting Transformations"](https://www.youtube.com/watch?v=lLJilYum_lQ) by CG Cookie. This focuses on models but the same logic will apply to rigs and bones.
 {.is-info}
 
 
