@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T12:31:26.181Z
+date: 2024-10-27T12:56:57.698Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -170,6 +170,26 @@ That’s it, you now have a file BG3 can use for animation.
 
 ### **2.2\. Testing your animation**
 
+To test your animation you’ll be temporarily replacing the default “Idle” animation for female models with the animation you just created.  
+
+To do this :
+- Create the following directory within your “Baldurs Gate 3\Data\” folder :  "\Public\Shared\Assets\Characters\_Anims\Humans\_Female\HUM_F_Rig\"
+
+- Place a copy of the .gr2 file you just created into this directory
+ 
+- Rename that file **HUM_F_Rig_DFLT_IDLE_Still_Peace_01.GR2**
+
+Note – you can also use the Lslib tool to convert your .dae file into this directory with the required naming :
+
+![animtut_013.png](/tutorials/animation_tutorial/animtut_013.png)
+
+When you load any save your (medium-sized) female companions should now call on this animation when they’re idle :
+
+![animtest.gif](/tutorials/animation_tutorial/animtest.gif)
+
+Note you don’t have to exit the game whenever you want to test an updated version of your animation. Simply save the updated file to the directory and reload the save (F8 is the quickload shortcut).
+
+When you’re done testing simply delete the file and the game’s default idle animation will be re-enabled.
 
 
 
