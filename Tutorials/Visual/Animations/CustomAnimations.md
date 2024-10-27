@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T12:01:20.584Z
+date: 2024-10-27T12:15:00.403Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
