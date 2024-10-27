@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T12:29:16.475Z
+date: 2024-10-27T12:30:02.104Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -120,7 +120,9 @@ The next section will describe how to export your animation in a format compatib
 
 
 ### **1.3\. How to correctly save your animation**
-When you’re done with your animation or want to test it in progress, you’ll need to export it in a format that can be converted into the modeling / animation format used by BG3 -  “.gr2”. To get there you’ll need to :
+When you’re done with your animation or want to test it in progress, you’ll need to export it in a format that can be converted into the modeling / animation format used by BG3 -  “.gr2”. 
+
+To get there you’ll need to :
 
 - Export the rigged animation into a .dae format.
 - Use the lslib tool to convert that file into .gr2
