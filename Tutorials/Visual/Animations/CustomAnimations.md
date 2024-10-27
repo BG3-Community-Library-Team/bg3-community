@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T10:42:14.532Z
+date: 2024-10-27T10:56:01.520Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -44,6 +44,8 @@ In this tutorial we will go over every step of creating custom animations: (Non-
 [Blender](https://www.blender.org/download/releases/3-6/) – free open-source software for 3D modeling and animation. Recommended version is 3.6 as this is the latest version the add-on was created for.
 
 [BG3/DOS2 Collada Exporter for Blender 3.6](https://github.com/Norbyte/dos2de_collada_exporter) - An addon for Blender that allows you to import and export DAE/GR2 files for Baldur's Gate 3.
+
+[Lslib](https://github.com/Norbyte/lslib/releases) – a tool for manipulating Baldur's Gate 3 files.
 
 [Lune's BG3 Blender Animation Template.](https://www.nexusmods.com/baldursgate3/mods/5494)  
 
