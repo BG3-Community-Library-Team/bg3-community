@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-26T12:21:30.142Z
+date: 2024-10-27T10:42:14.532Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -94,7 +94,7 @@ As of now there’s been no change of rotation on that right shoulder. All you�
 
 So now you’re going to create a new keyframe with a different pose, say, with the model extending her arm out sideways.
 
-With the right shoulder still selected move the blue keyframe marker to say, position 50. Then with your cursor hovering in the main window press “R” then “Y” then “-90”, and press enter. This should “R”otate the model’s right arm (on the “Y” axis) at about 90 degrees.
+With the right shoulder still selected use your mouse cursor to drag the blue keyframe marker to say, position 50. Then with your cursor hovering in the main window press “R” then “Y” then “-90”, and press enter. This should “R”otate the model’s right arm (on the “Y” axis) at about 90 degrees.
 
 You’ll notice that Blender has inserted the keyframe for you since you enabled the “Auto Keying” button at the very beginning. 
 
