@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T10:56:01.520Z
+date: 2024-10-27T11:07:00.911Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -49,7 +49,7 @@ In this tutorial we will go over every step of creating custom animations: (Non-
 
 [Lune's BG3 Blender Animation Template.](https://www.nexusmods.com/baldursgate3/mods/5494)  
 
-This tutorial assumes you have some basic knowledge of how to navigate the Blender interface. If you have no experience at all in Blender I recommend the classic [“How to Create a Donut”](https://www.youtube.com/watch?v=B0J27sf9N1Y) tutorial series by Blender Guru, which has been updated for the latest version of Blender.
+This tutorial assumes you have some basic knowledge of how to navigate the Blender interface. If you have no experience at all in Blender I recommend the classic [“How to Create a Donut”](https://www.youtube.com/watch?v=B0J27sf9N1Y) introductory tutorial series by Blender Guru, which has been updated for the latest version of Blender.
 
 This tutorial won’t get into the “why” you’re doing what you’re doing too much as the intent is to get you from the template to an animation quickly.  Also there are many different ways to accomplish the same task – the instructions below are simply easier to convey. Over time you will (and should) discover shortcuts and more efficient ways of accomplishing the same task. Control+Z is the undo short cut. You’ll probably wear those keys out if you get into animating.
 
