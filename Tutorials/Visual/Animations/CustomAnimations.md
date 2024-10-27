@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T14:53:22.861Z
+date: 2024-10-27T14:55:10.797Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -11,7 +11,7 @@ dateCreated: 2024-10-20T16:06:19.163Z
 > This is a Work in Progress Tutorial
 {.is-warning}
 
-# **Terminology**
+# **BG3 Related Terminology**
 
 - **Template** - A given entities or races RootTemplate which gets loaded when the game starts
 - **Animationbank** - Like a template for entities but for an animation (includes attributes like the duration or the path of your animation file)
@@ -46,7 +46,7 @@ This tutorial assumes you have some basic knowledge of how to navigate the Blend
 
 This tutorial won’t get into the “why” you’re doing what you’re doing too much as the intent is to get you from the template to an animation quickly.  Also there are many different ways to accomplish the same task – the instructions below are simply easier to convey. Over time you will (and should) discover shortcuts and more efficient ways of accomplishing the same task. Control+Z is the undo short cut.
 
-Some terminology you may hear often :
+Some animation specific terminology you may hear often :
 
 - **A model / mesh** – is a 3D object. It can be anything from a simple sphere to a human or a spaceship. The model itself can’t be turned into an animation unless it has..
 
