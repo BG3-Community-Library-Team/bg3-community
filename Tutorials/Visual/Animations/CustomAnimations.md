@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T13:14:56.879Z
+date: 2024-10-27T13:25:58.691Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -158,11 +158,11 @@ To convert your .dae file into .gr2 you’ll be using the Lslib tool. The link t
 
 You’ll be using the first tab only – “GR2 Tools”. The process is fairly straight forward :
 
-1.	Select the Input path and file of your .dae file. The ellipses button can be used to navigate to your file.
-2.	Select the Output path and the name you want to give the file, and append “.gr2” to the end.
+1.	Select the Input path and your .dae file. The ellipses button can be used to navigate to your file.
+2.	Select the Output path and type the name you want to give the file, and append “.gr2” to the end.
 3.	Ensure the “Convert to Y-up” box is checked.
-4.	Press the Import button. You’ll see the bones you’re importing on the lower right.
-5.	Press the Export button. You’ll get a small pop-up window indicating that your “Export completed successfully”.
+4.	Click the Import button. You’ll see the bones you’re importing on the lower right.
+5.	Click the Export button. You’ll get a small pop-up window indicating that your “Export completed successfully”.
 
 ![animtut_012.png](/tutorials/animation_tutorial/animtut_012.png)
 
