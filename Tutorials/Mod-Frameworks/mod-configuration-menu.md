@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-10-27T14:12:26.761Z
+date: 2024-10-27T14:12:49.151Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -286,10 +286,6 @@ All searches on MCM use fuzzy matching.
 
 <details>
 <summary> Event usage prior to 1.11 (DEPRECATED) </summary>
-
-> • With the introduction of `ModEvents` in SE v18, the previous method for listening to MCM events has been deprecated. MCM will continue to support this legacy method for the time being.
-> • Prior to version 1.11, mod events were handled using a workaround that relied on net messages, which were originally designed for communication within a single mod. This approach was necessary due to the absence of a dedicated mod event system in SE at that time.
-{.is-warning}
 
 Up to 1.10, MCM used a set of channels to communicate between the client and server. Some of these can be useful for mod authors to listen to, as they can use this to update their mod's behavior based on changes from MCM, such as when a setting is saved:
 
