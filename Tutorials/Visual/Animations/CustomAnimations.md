@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T12:15:00.403Z
+date: 2024-10-27T12:29:16.475Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -120,14 +120,59 @@ The next section will describe how to export your animation in a format compatib
 
 
 ### **1.3\. How to correctly save your animation**
-\[What to do to only select a given animation and only save that animation and not the entire model/rig]
+When you’re done with your animation or want to test it in progress, you’ll need to export it in a format that can be converted into the modeling / animation format used by BG3 -  “.gr2”. To get there you’ll need to :
+
+- Export the rigged animation into a .dae format.
+- Use the lslib tool to convert that file into .gr2
+
+When exporting it’s important to remember that you only want to export the rig (the bones) not the model (mesh) itself. It may be easier to think of this process as exporting instructions on what BG3 is supposed to do with the in-game rig, rather than exporting an animation.
+
+To start, go into Object mode (drop down on the upper left) and then select any bone in the rig. The entire rig should now be selected (all the bones are highlighted). Make sure the model is not selected, .ie. the modek should not be lit up. 
+
+![animtut_008.png](/tutorials/animation_tutorial/animtut_008.png)
+
+With the rig (only) highlighted go into the “File” menu and select “Export” then “Collada (.dae)”.
+
+![animtut_009.png](/tutorials/animation_tutorial/animtut_009.png)
+
+In the pop up window you’ll see options on the right-hand side. On the ‘Main’ tab check the box for “Selection Only”
+
+![animtut_010.png](/tutorials/animation_tutorial/animtut_010.png)
+
+Now select the Anim tab :
+
+- Check the box for “Keep Keyframes”
+- *Uncheck* the box for “Include all Actions”
+
+Give your file a name (at the bottom) and save it somewhere you’ll remember by clicking the “Export Collada” button.
+
+![animtut_011.png](/tutorials/animation_tutorial/animtut_011.png)
+
+You now have a file ready for conversion into a .GR2 format.
 
 
 ## 2\. Converting an animation for BG3
 ### **2.1\. Using LSLib**
-\[Using LSLib part about how to convert Blender Animations to a correct GR2 file with fitting Rig assigned]
+To convert your .dae file into .gr2 you’ll be using the Lslib tool. The link to download this tool was provided in Setup section (1.1).
 
-### **2.2\. Sidenote: Converting BG3 Animations to Blender**
+You’ll be using the first tab only – “GR2 Tools”. The process is fairly straight forward :
+
+1.	Select the path and file of your .dae file. The ellipses button can be used to navigate to your file.
+2.	Select the path and the name you want to give the file, and append “.gr2” to the end.
+3.	Ensure the “Convert to Y-up” box is checked.
+4.	Press the Import button. You’ll see the bones you’re importing on the lower right.
+5.	Press the Export button. You’ll get a small pop-up window indicating that your “Export completed successfully”.
+
+![animtut_012.png](/tutorials/animation_tutorial/animtut_012.png)
+
+That’s it, you now have a file BG3 can use for animation.
+
+### **2.2\. Testing your animation**
+
+
+
+
+### **2.3\. Sidenote: Converting BG3 Animations to Blender**
 \[Using LSLib and Noesis Part about how to convert BG3 Animations to Blender]
 
 
