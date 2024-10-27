@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-10-27T14:12:49.151Z
+date: 2024-10-27T14:13:33.930Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -361,6 +361,9 @@ Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
 end)
 ```
 
+> Always verify the `modUUID` in the payload to confirm that the event pertains to the mod of interest (typically your own, which you have global access to via `ModuleUUID`).
+{.is-warning}
+
 Here are the events that can be listened to:
 
 | Event name                | Description                                                       | Payload content                                                                                     |
@@ -377,9 +380,6 @@ Here are the events that can be listened to:
 | `MCM_Window_Closed`          | Fired when a player closes the MCM window.                      | `playSound`: Whether a sound should be played when the window closes.                       |
 
 For the most up-to-date information, please refer to this file in the Git repository: [EventChannels.lua](https://github.com/AtilioA/BG3-MCM/blob/main/Mod%20Configuration%20Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Events/EventChannels.lua)
-
-> Always verify the `modUUID` in the payload to confirm that the event pertains to the mod of interest (typically your own, which you have global access to via `ModuleUUID`).
-{.is-warning}
 
 ### How validation works
 
