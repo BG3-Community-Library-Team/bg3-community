@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T13:25:58.691Z
+date: 2024-10-27T14:53:22.861Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -13,20 +13,13 @@ dateCreated: 2024-10-20T16:06:19.163Z
 
 # **Terminology**
 
-- Template
-	- A given entities or races RootTemplate
-- Animationbank
-	- What holds an actual animations data
-- AnimationID
-	- An ID (UUID) you set for a given animation in its AnimationBank
-- MapKey
-	- A UUID go link up with an AnimationID to call the animation
-- AnimationSet
-	- A list of MapKey/AnimationID links
-- Waterfall
-	- A list of AnimationSets on a Template
-- AnimationSetOverride
-	- An On-Demand Override of the Waterfall by inserting an AnimationSet with a higher priority
+- **Template** - A given entities or races RootTemplate which gets loaded when the game starts
+- **Animationbank** - Like a template for entities but for an animation (includes attributes like the duration or the path of your animation file)
+- **AnimationID** - An ID (UUID) you set for a given animation in its AnimationBank
+- **MapKey** - A UUID go link up with an AnimationID to call the animation
+- **AnimationSet** - A list of MapKey/AnimationID links
+- **Waterfall** - A list of AnimationSets on a Template
+- **AnimationSetOverride** - An On-Demand Override of the Waterfall by inserting an AnimationSet with a higher priority
 
 # **Creating Custom Animations**
 
