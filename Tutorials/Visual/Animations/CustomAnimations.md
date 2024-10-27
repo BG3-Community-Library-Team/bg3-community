@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T13:01:50.656Z
+date: 2024-10-27T13:10:59.647Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -107,7 +107,7 @@ With the right shoulder still selected use your mouse cursor to drag the blue ke
 
 You’ll notice that Blender has inserted the keyframe for you since you enabled the “Auto Keying” button at the very beginning. 
 
-![animtut_007.png](/tutorials/animation_tutorial/animtut_007.png)
+![animtut_014.png](/tutorials/animation_tutorial/animtut_014.png)
 
 Now hit the play button. If you’ve done it correctly you should now see a looped animation of the model raising and lowering her right arm. Congratulations you’ve created your first animation!
 
