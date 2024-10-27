@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T14:55:10.797Z
+date: 2024-10-27T15:22:28.248Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -181,9 +181,13 @@ When you load any save your (medium-sized) female companions should now call on 
 
 ![animtest.gif](/tutorials/animation_tutorial/animtest.gif)
 
-Note you don’t have to exit the game whenever you want to test an updated version of your animation. Simply save the updated animation file to the directory and reload the save (F8 is the quickload shortcut).
+Note: Don't worry about the animation cutting off here, as this is a test and replacing the idle animation. The idle animation specifically cycles through various different ones, which results in it getting cut off when the next one plays.
+
+Also note you don’t have to exit the game whenever you want to test an updated version of your animation. Simply save the updated animation file to the directory and reload the save (F8 is the quickload shortcut).
 
 When you’re done testing delete the file and the game’s default idle animation will be re-enabled.
+
+
 
 
 
