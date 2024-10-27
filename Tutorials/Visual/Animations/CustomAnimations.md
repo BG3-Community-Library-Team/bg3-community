@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T13:10:59.647Z
+date: 2024-10-27T13:14:56.879Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -97,7 +97,7 @@ Now you’re going to duplicate this keyframe at position 0 and copy it over to 
 
 You now have identical keyframes at the start and end of your animation. This is especially important when you’re creating looped animations. If your start and ending keyframes aren’t identical your looping animations may not look seamless.
 
-![animtut_006.png](/tutorials/animation_tutorial/animtut_006.png)
+![animtut_015.png](/animtut_015.png)
 
 As of now there’s been no change of rotation on that right shoulder. All you’ve done is created a start and ending keyframe with no change in between. If you press the “play” button right now (the large right facing triangle at the bottom), your model will do nothing.
 
