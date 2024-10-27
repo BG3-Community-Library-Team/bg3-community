@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2024-10-25T12:11:15.469Z
+date: 2024-10-27T14:12:26.761Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -262,7 +262,7 @@ This will create a new tab or insert the content at the end of an existing one.
 
 #### Inserting Search Results for ListV2 Settings
 
-The `InsertListV2SearchResults` method in the `IMGUIAPI` allows mod authors to insert suggestions/'search results' into a `list_v2` setting. This is particularly useful for providing users with dynamic suggestions based on their input as they type in the add input field of the setting. All searches on MCM use fuzzy matching.
+The `InsertListV2SearchResults` method in the `IMGUIAPI` allows mod authors to insert suggestions/'search results' into a `list_v2` setting. This is particularly useful for providing users with dynamic suggestions based on their input as they type in the add input field of the setting.
 
 Here’s an example of how to use the `InsertListV2SearchResults` method to add the suggestions `a`, `b`, `c`, `aba`, `acaca`, and `abaca` to the `ignore_weapons` `list_v2` setting of the mod with the UUID `1c132ec4-4cd2-4c40-aeb9-ff6ee0467da8` (Auto Send Food To Camp). **NOTE: In the next release, this method's signature will be updated to `settingId, searchResults, modUUID` for consistency. Sorry for the inconvenience.**
 
@@ -275,6 +275,8 @@ Mods.BG3MCM.IMGUIAPI:InsertListV2SearchResults("1c132ec4-4cd2-4c40-aeb9-ff6ee046
 - **searchResults**: A table containing the search results to be displayed.
 
 ![mcm_suggestions.png](/mcm_suggestions.png)
+
+All searches on MCM use fuzzy matching.
 
 ### Listening to MCM events
 
