@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T12:56:57.698Z
+date: 2024-10-27T13:01:50.656Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -154,12 +154,12 @@ You now have a file ready for conversion into a .GR2 format.
 
 ## 2\. Converting an animation for BG3
 ### **2.1\. Using LSLib**
-To convert your .dae file into .gr2 you’ll be using the Lslib tool. The link to download this tool was provided in Setup section (1.1).
+To convert your .dae file into .gr2 you’ll be using the Lslib tool. The link to download this tool was provided in the Setup section (1.1).
 
 You’ll be using the first tab only – “GR2 Tools”. The process is fairly straight forward :
 
-1.	Select the path and file of your .dae file. The ellipses button can be used to navigate to your file.
-2.	Select the path and the name you want to give the file, and append “.gr2” to the end.
+1.	Select the Input path and file of your .dae file. The ellipses button can be used to navigate to your file.
+2.	Select the Output path and the name you want to give the file, and append “.gr2” to the end.
 3.	Ensure the “Convert to Y-up” box is checked.
 4.	Press the Import button. You’ll see the bones you’re importing on the lower right.
 5.	Press the Export button. You’ll get a small pop-up window indicating that your “Export completed successfully”.
@@ -179,17 +179,18 @@ To do this :
  
 - Rename that file **HUM_F_Rig_DFLT_IDLE_Still_Peace_01.GR2**
 
-Note – you can also use the Lslib tool to convert your .dae file into this directory with the required naming :
+Note – you can also use the Lslib tool to convert your .dae file into this directory with the required naming. This will speed up your workflow when refining an animation :
 
 ![animtut_013.png](/tutorials/animation_tutorial/animtut_013.png)
+
 
 When you load any save your (medium-sized) female companions should now call on this animation when they’re idle :
 
 ![animtest.gif](/tutorials/animation_tutorial/animtest.gif)
 
-Note you don’t have to exit the game whenever you want to test an updated version of your animation. Simply save the updated file to the directory and reload the save (F8 is the quickload shortcut).
+Note you don’t have to exit the game whenever you want to test an updated version of your animation. Simply save the updated animation file to the directory and reload the save (F8 is the quickload shortcut).
 
-When you’re done testing simply delete the file and the game’s default idle animation will be re-enabled.
+When you’re done testing delete the file and the game’s default idle animation will be re-enabled.
 
 
 
