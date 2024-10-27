@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T16:25:53.398Z
+date: 2024-10-27T16:26:23.356Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -42,7 +42,7 @@ In this tutorial we will go over every step of creating custom animations: (Non-
 
 [Lune's BG3 Blender Animation Template.](https://www.nexusmods.com/baldursgate3/mods/5494)  
 
-> This tutorial assumes you have some basic knowledge of how to navigate the Blender interface. If you need a refresher you an refer to the ["Interface Overview"](https://www.youtube.com/watch?v=8XyIYRW_2xk) by the Blender Foundation. If you have no experience at all in Blender I recommend the classic [“How to Create a Donut”](https://www.youtube.com/watch?v=B0J27sf9N1Y) introductory tutorial series by Blender Guru, which has been updated for the latest version of Blender.
+> This tutorial assumes you have some basic knowledge of how to navigate the Blender interface. If you need a refresher you can refer to the ["Interface Overview"](https://www.youtube.com/watch?v=8XyIYRW_2xk) by the Blender Foundation. If you have no experience at all in Blender I recommend the classic [“How to Create a Donut”](https://www.youtube.com/watch?v=B0J27sf9N1Y) introductory tutorial series by Blender Guru, which has been updated for the latest version of Blender.
 {.is-info}
 
 
