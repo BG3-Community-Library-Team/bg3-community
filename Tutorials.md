@@ -2,7 +2,7 @@
 title: Tutorials
 description: 
 published: true
-date: 2024-10-25T14:07:10.050Z
+date: 2024-10-29T10:40:17.914Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -19,7 +19,7 @@ This page is a list of existing Tutorials.
 - [Mod Frameworks *A List of Mod Framework Tutorials*](Mod-Frameworks)
 - [Items *A List of Item Tutorials*](Items)
 - [Script Extender *A List of Script Extender Tutorials*](ScriptExtender)
-- [Sound *A List of Sound Tutorials*](/Tutorials/Sound)
+- [Sound/Audio *A List of Sound and Audio Tutorials*](/Tutorials/Sound)
 - [Visual Modding *A List of Visual Mod Tutorials*](Visual)
 - [Icons *A List of Icon Mod Tutorials*](Icons)
 - [Toolkit *A List of Toolkit Tutorials*](/Tutorials/Toolkit)
@@ -65,7 +65,7 @@ This page is a list of existing Tutorials.
 - [Dear ImGui](ScriptExtender/ImGui-and-You/Dear-ImGui)
 {.links-list}
 
-## Sound
+## Sound/Audio
 - [Extracting Game Audio Files](Sound/Extract-Audio)
 - [Replacing In-Game Sound](Sound/Replace-Sound)
 - [Using Sound Events to Narrow Down Source Files](Sound/SoundEventSorting)
