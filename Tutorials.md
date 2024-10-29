@@ -1,8 +1,8 @@
 ---
-title: All Guides
+title: Tutorials
 description: 
 published: true
-date: 2024-10-29T10:55:29.313Z
+date: 2024-10-29T10:55:52.973Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
