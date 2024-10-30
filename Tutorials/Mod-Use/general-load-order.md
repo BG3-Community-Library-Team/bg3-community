@@ -2,7 +2,7 @@
 title: General Load Order Guide
 description: Setting up a solid Load Order
 published: true
-date: 2024-10-30T00:10:58.708Z
+date: 2024-10-30T01:04:10.918Z
 tags: bg3-mod-helper, guide, mod use, mod load, load order, general load order, bg3 load order
 editor: markdown
 dateCreated: 2024-05-01T03:29:26.549Z
@@ -36,7 +36,7 @@ Load orders should be set up in an order following the below structure. As alway
 The first types of mods you should have on your list are **Library mods** and **Single-Purpose SE mods**.
 
 - **ImpUI (ImprovedUI)** mod should be loaded the earliest! It makes changes to the existing game UI and is a requirement for various Races, Classes, UI's and many other mods! 
-- **Library Mods** are mods that are relied on by other mods. Examples include 5eSpells, Unlock Level Curve, Community Library, Mod Configuration Menu (MCM),and Vlad's Grimoire.
+- **Library Mods** are mods that are relied on by other mods. Examples include 5eSpells, Unlock Level Curve, Community Library, Mod Configuration Menu (MCM) and Vlad's Grimoire.
 - **Single-purpose SE mods** are mods that are standalone, and limited in scope. Examples include Loz's Autosave mods, and KvCampEvents, as well as most Frameworks.
 
 ## 2. New Items/Spells/Actions and Fixes
