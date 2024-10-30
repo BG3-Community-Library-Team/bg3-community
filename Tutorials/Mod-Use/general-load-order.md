@@ -2,7 +2,7 @@
 title: General Load Order Guide
 description: Setting up a solid Load Order
 published: true
-date: 2024-06-20T20:45:19.047Z
+date: 2024-10-30T00:10:58.708Z
 tags: bg3-mod-helper, guide, mod use, mod load, load order, general load order, bg3 load order
 editor: markdown
 dateCreated: 2024-05-01T03:29:26.549Z
@@ -35,7 +35,8 @@ Load orders should be set up in an order following the below structure. As alway
 ## 1. Early Loaders
 The first types of mods you should have on your list are **Library mods** and **Single-Purpose SE mods**.
 
-- **Library Mods** are mods that are relied on by other mods. Examples include 5eSpells, Unlock Level Curve, Community Library, and Vlad's Grimoire.
+- **ImpUI (ImprovedUI)** mod should be loaded the earliest! It makes changes to the existing game UI and is a requirement for various Races, Classes, UI's and many other mods! 
+- **Library Mods** are mods that are relied on by other mods. Examples include 5eSpells, Unlock Level Curve, Community Library, Mod Configuration Menu (MCM),and Vlad's Grimoire.
 - **Single-purpose SE mods** are mods that are standalone, and limited in scope. Examples include Loz's Autosave mods, and KvCampEvents, as well as most Frameworks.
 
 ## 2. New Items/Spells/Actions and Fixes
@@ -52,6 +53,17 @@ These types of mods also fall under this category:
 - Additional Races/Subraces
 - Additional Classes
 - Additional Subclasses (organized by main class)
+
+## 3.5 User Interface mods
+UI mods like the Better Hotbar 2 mod can go here! 
+> I recommend ordering them like this:
+{.is-info}
+- Dynamic Sidebar
+- Better Character and Party Panels (BCPP)
+- Better Containers
+- Better Tooltips
+- Better Hotbar or Better Hotbar 2
+- Better Inventory UI
 
 ## 4. Visual Mods
 Visual mods can technically go anywhere in the load order, but I've found having them load just before Late Loaders to be the most reliable.
@@ -98,4 +110,4 @@ These types of mods should _always_ be near the bottom of your load order. They 
 Examples of Late Loaders include:
 - Mods that consist only of Compatibility Framework insertions (so the Feat Every 2/3 levels - Compatibility Framework version, for example)
 - Major patch mods (ex. Patches for CC Races, Spell List Combiner, Compatibility Framework)
-- Compatibility Framework is last to load
+- Compatibility Framework is last to load  
