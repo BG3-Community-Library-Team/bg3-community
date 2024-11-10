@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: [sandbox] Guide including template
 published: false
-date: 2024-11-10T15:08:20.322Z
+date: 2024-11-10T15:26:02.961Z
 tags: test
 editor: markdown
 dateCreated: 2024-11-10T07:43:44.876Z
@@ -48,13 +48,13 @@ In this example: "# How to add sub-tabs"
 # How to add sub-tabs
 
 # Tab {.tabset}
-## 1. Info
+## 1. start
 It doesn't matter if you create a complete tabset first and then add sub-tabs later, or add them directly as you write your article.
 
 Either way, start by creating a tabset per usual.
 
 ## 2. add sub-tabs
-To add sub-tabs, simply repeat the steps you took to create a tabset while adjusting the designation of your tabset header and tab names.
+To add sub-tabs, simply repeat the steps to create a tabset while adjusting the designation of your tabset header and tab names accordingly.
 In this example we used header 1 and 2 which means we have to use header 3 and 4 for the subtabs.
 
 ### Sub-tab example
@@ -64,6 +64,7 @@ In this example we used header 1 and 2 which means we have to use header 3 and 4
 #### 2.3 empty tab
 
 ## 3. multiple sub-tabs
+You can add multiple sub-tabsets to each tab.
 ### Sub-tabset 1
 ### Tab {.tabset}
 #### 3.1.1 empty tab
@@ -73,36 +74,48 @@ In this example we used header 1 and 2 which means we have to use header 3 and 4
 #### 3.2.1 empty tab
 #### 3.2.2 empty tab
 #### 3.2.3 empty tab
+### content inside tab
 
-## 4. add sub-tabs to sub-tabs?
-You may think that subsequent tabsets can be added by further adjusting the header designation. Alas, you'd get an error if you'd try:
+## 4. sub-sub-tabs?
+You may think that subsequent tabsets can be added by further adjusting the header designation. Alas, you'd get this error if you'd try:
 
 ![error_nodeiterator.webp](/meta/tabsets/error_nodeiterator.webp)
 
-So sub-sub-tabs are currently not usable. I do hope that we can change that going forward.
+Sub-sub-tabs are currently not possible. Hopefully that will change going forward.
 
-
-## Step 5
+## 5. continue
+If you want to add content below the sub-tabset inside the tab, create a new header with the same designation as the sub-tabset header.
+Otherwise, use the same designation as the tabset.
+In this example: "# Template"
 
 
 # Templates
-For convenience, simply copy / paste the below code into your markdown editor, rename the tabs, and remove or add tabs according to your vision.
+For convenience, simply copy / paste the below code into your markdown editor, rename the tabs, and remove or add tabs as required.
 
 ## Template Tabs
 
 ```
-# Tabs - How To
+# Optional header
 # Tab {.tabset}
-## Step One
-## Step Two
-## Step Three
-## Step Four
-## Step Five
+## Tab One
+## Tab Two
+## Tab Three
+## Tab Four
+## Tab Five
 # Next Section
 ```
 
 ## Template Subtabs
-
+```
+### Optional header
+### Tab {.tabset}
+#### Step One
+#### Step Two
+#### Step Three
+#### Step Four
+#### Step Five
+### Next Section
+```
 
 
 
