@@ -2,25 +2,25 @@
 title: How to add tabs to your wiki page
 description: [sandbox] Guide including template
 published: false
-date: 2024-11-10T13:58:18.143Z
+date: 2024-11-10T14:07:29.849Z
 tags: test
 editor: markdown
 dateCreated: 2024-11-10T07:43:44.876Z
 ---
 
-# Tabs and Subtabs
+# Tabs and Sub-tabs
 
-Among other uses Tabsets are a convenient way to organize longer articles, make more complex guides easier to follow, or break down the display of extensive information.
+Among other uses tabsets are a convenient way to organize longer articles, make more complex guides easier to follow, or break down the display of extensive information.
 
-> Please not that Tabs are only available in the markdown editor, they are rendered upon saving. 
-Do not convert back to the visual editor once you added Tabs, it would break them.
+> Please not that tabs are only available in the markdown editor, they are rendered upon saving. 
+Do not convert back to the visual editor once you added tabsets, it would inevitably break them.
 {.is-warning}
 
 To use tabsets either follow the steps below or copy the templates provided.
 
 # How to add a tabset
 
-Optional: you can add content beween the tabset header and the tabset if you want.
+Optional: you can add content between the tabset header and the tabset if you want.
 
 # Tab {.tabset}
 ## Step One
@@ -43,39 +43,46 @@ My tab names are: "Step one", "Step Two", "Step Three", "Step Four", and "Step F
 
 ## Step Five
 If you want to add content below the tabset, create a new header with the same designation as the tabset header.
-In this example: and "How to add subtabs"
+In this example: "# How to add sub-tabs"
 
-# How to add subtabs
+# How to add sub-tabs
 
 # Tab {.tabset}
 ## 1. Info
-It doesn't matter if you create a complete tabset first and then add subtabs later, or add them directly as you write your article.
+It doesn't matter if you create a complete tabset first and then add sub-tabs later, or add them directly as you write your article.
 
 Either way, start by creating a tabset per usual.
 
-## 2. add subtabs
-To add subtabs, simply recreate the steps while adjusting the designation of your tabset header, tabset, and tab names.
+## 2. add sub-tabs
+To add sub-tabs, simply repeat the steps you took to create a tabset while adjusting the designation of your tabset header and tab names.
 In this example we used header 1 and 2 which means we have to use header 3 and 4 for the subtabs.
 
-### Subtab example
+### Sub-tab example
 ### Tab {.tabset}
 #### 2.1 empty tab
 #### 2.2 empty tab
 #### 2.3 empty tab
 
-## 3. add subtabs to subtabs
+## 3. add sub-tabs to sub-tabs
 ### Tab {.tabset}
 #### 3.1
-Subsequent tabsets can be added by further adjusting the header designation. Keep adding two ## to your title per layer.
+Subsequent tabsets can be added by further adjusting the header designation. Keep adding two ## to the title and tab names.
 #### 3.2 like so
-##### Sub-subtab example
+##### Sub-sub-tabset example
 ##### Tab {.tabset}
 ###### 3.2.1 empty tab
 ###### 3.2.2 empty tab
 ###### 3.2.3 empty tab
 
 ## 4. below and beyond
-
+#### 4.1
+How many sub-tabsets can be added?
+#### 4.2 
+##### Sub-subtab example
+##### Tab {.tabset}
+###### 4.2.1 empty tab
+###### 4.2.2 empty tab
+###### 4.2.3 empty tab
 
 ## Step 5
 
