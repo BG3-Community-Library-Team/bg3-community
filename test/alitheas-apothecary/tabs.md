@@ -2,13 +2,13 @@
 title: How to add tabs to your wiki page
 description: [sandbox] Guide including template
 published: false
-date: 2024-11-10T07:51:44.762Z
+date: 2024-11-10T08:08:13.136Z
 tags: test
 editor: markdown
 dateCreated: 2024-11-10T07:43:44.876Z
 ---
 
-# Tabs - How To
+# Tabs
 
 Tabsets are a convenient way to organize longer articles, make more complex guides easier to follow, or break down the display of extensive information, among other uses.
 
@@ -33,12 +33,41 @@ Create your tab names - your tab names need to be one header designation below t
 My tab names are: "Step one", "Step Two", "Step Three", "Step Four", "Step Five" and "Template".
 ## Step Five
 If you want to add content below the tabset, create a new header with the same designation as the tabset header.
-In this example: "# Next Section"
+In this example: "# Subtabs"
 
-# Next Section
+# Subtabs
 
-## Template
+aikhjaiotkhjb
+
+# Tab {.tabset}
+## Step 1
+content
+## Step 2
+### Subtab {.tabset}
+#### 2.1
+content
+#### 2.2
+content
+## Step 3
+### Subtab {.tabset}
+#### 3.1
+content
+#### 3.2
+content
+#### 3.3
+content
+## Step 4
+content
+## Step 5
+### Subtab {.tabset}
+#### 5.1
+content
+#### 5.2
+content
+# Templates
 For convenience, simply copy / paste the below code into your markdown editor, rename the tabs, and remove or add tabs according to your vision.
+
+## Template Tabs
 
 ```
 # Tabs - How To
@@ -51,29 +80,9 @@ For convenience, simply copy / paste the below code into your markdown editor, r
 # Next Section
 ```
 
+## Template Subtabs
 
 
-
-
-# Tabs - Test
-# Tab {.tabset}
-## Step 1
-content
-## Step 2
-### Subtab {.tabset}
-#### 1.1
-#### 1.2
-## Step 3
-### Subtab {.tabset}
-#### 1.1
-#### 1.2
-## Step 4
-content
-## Step 5
-### Subtab {.tabset}
-#### 1.1
-#### 1.2
-# Next Section
 
 
 ![cmty_pride_logo.webp](/test/alithea/cmty_pride_logo.webp)
