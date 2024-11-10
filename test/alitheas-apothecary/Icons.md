@@ -2,7 +2,7 @@
 title: Icons
 description: [sandbox] Information relating to Icons
 published: true
-date: 2024-11-10T16:26:23.294Z
+date: 2024-11-10T16:27:37.781Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
@@ -20,6 +20,7 @@ The default folder paths after unpacking the icons relative to where you keep th
 
 The tabs below represent the individual folders as best as currently possible:
 
+## Tab {.tabset}
 ### AbilityIcons
 ### ActionResources_c
 ### ActiveRoll
