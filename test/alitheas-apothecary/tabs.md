@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: [sandbox] Guide including template
 published: false
-date: 2024-11-10T13:23:41.478Z
+date: 2024-11-10T13:26:32.736Z
 tags: test
 editor: markdown
 dateCreated: 2024-11-10T07:43:44.876Z
@@ -51,10 +51,10 @@ In this example: and "How to add subtabs"
 ## 1.
 It doesn't matter if you create a complete tabset first and then add subtabs later, or add them directly as you write your article.
 
-In either case you start by creating a tabset per usual.
+Either way, start by creating a tabset per usual.
 
 ## 2.
-
+To add subtabs, simply recreate the steps while adding another # to the designation of your tabset header, tabset, and tab names.
 
 ## 3
 
