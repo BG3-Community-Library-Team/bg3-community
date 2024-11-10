@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: [sandbox] Guide including template
 published: false
-date: 2024-11-10T14:43:26.450Z
+date: 2024-11-10T14:44:10.118Z
 tags: test
 editor: markdown
 dateCreated: 2024-11-10T07:43:44.876Z
@@ -57,7 +57,8 @@ Either way, start by creating a tabset per usual.
 To add sub-tabs, simply repeat the steps you took to create a tabset while adjusting the designation of your tabset header and tab names.
 In this example we used header 1 and 2 which means we have to use header 3 and 4 for the subtabs.
 
-### Sub-tab example {.tabset}
+### Sub-tab example
+### Tab {.tabset}
 #### 2.1 empty tab
 #### 2.2 empty tab
 #### 2.3 empty tab
