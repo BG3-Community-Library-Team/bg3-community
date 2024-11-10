@@ -2,7 +2,7 @@
 title: Icons
 description: [sandbox] Information relating to Icons
 published: true
-date: 2024-11-10T19:39:45.104Z
+date: 2024-11-10T21:16:25.753Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
@@ -19,8 +19,11 @@ dateCreated: 2024-11-10T07:48:57.175Z
 Below the individual folders and subfolders where you can find specific icns are represented. Please note that this page is meant as reference to make it easier to see what icons are available.
 
 ## AbilityIcons
+![abilityicons.webp](/information/icons/abilityicons.webp)
 ## ActionResources_c
+![actionresources_c.webp](/information/icons/actionresources_c.webp)
 ### Icons
+![actionresources_c_icons_1.webp](/information/icons/actionresources_c_icons_1.webp)
 ## ActiveRoll
 ### VFX
 ## ActiveRoll_c
