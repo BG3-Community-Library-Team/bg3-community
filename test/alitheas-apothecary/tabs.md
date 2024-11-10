@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: [sandbox] Guide including template
 published: false
-date: 2024-11-10T14:42:25.652Z
+date: 2024-11-10T14:43:26.450Z
 tags: test
 editor: markdown
 dateCreated: 2024-11-10T07:43:44.876Z
@@ -12,7 +12,7 @@ dateCreated: 2024-11-10T07:43:44.876Z
 
 Among other uses tabsets are a convenient way to organize longer articles, make more complex guides easier to follow, or break down the display of extensive information.
 
-> Please not that tabs are only available in the markdown editor, they are rendered upon saving. 
+> Please note that tabs are only available in the markdown editor, they are rendered upon saving. 
 Do not convert back to the visual editor once you added tabsets, it would inevitably break them.
 {.is-warning}
 
@@ -57,8 +57,7 @@ Either way, start by creating a tabset per usual.
 To add sub-tabs, simply repeat the steps you took to create a tabset while adjusting the designation of your tabset header and tab names.
 In this example we used header 1 and 2 which means we have to use header 3 and 4 for the subtabs.
 
-### Sub-tab example
-### Tab {.tabset}
+### Sub-tab example {.tabset}
 #### 2.1 empty tab
 #### 2.2 empty tab
 #### 2.3 empty tab
