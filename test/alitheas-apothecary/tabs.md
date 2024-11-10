@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: [sandbox] Guide including template
 published: false
-date: 2024-11-10T07:50:20.090Z
+date: 2024-11-10T07:51:44.762Z
 tags: test
 editor: markdown
 dateCreated: 2024-11-10T07:43:44.876Z
@@ -51,9 +51,9 @@ For convenience, simply copy / paste the below code into your markdown editor, r
 # Next Section
 ```
 
-<!-- add info about including tabs within tabs -->
 
-![cmty_pride_logo.webp](/test/alithea/cmty_pride_logo.webp)
+
+
 
 # Tabs - Test
 # Tab {.tabset}
@@ -76,7 +76,7 @@ content
 # Next Section
 
 
-
+![cmty_pride_logo.webp](/test/alithea/cmty_pride_logo.webp)
 
 
 
