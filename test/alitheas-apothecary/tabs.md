@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: [sandbox] Guide including template
 published: false
-date: 2024-11-10T15:29:56.570Z
+date: 2024-11-10T15:38:26.789Z
 tags: test
 editor: markdown
 dateCreated: 2024-11-10T07:43:44.876Z
@@ -48,12 +48,12 @@ In this example: "# How to add sub-tabs"
 # How to add sub-tabs
 
 # Tab {.tabset}
-## 1. start
+## 1. Start
 It doesn't matter if you create a complete tabset first and then add sub-tabs later, or add them directly as you write your article.
 
 Either way, start by creating a tabset per usual.
 
-## 2. add sub-tabs
+## 2. Add sub-tabs
 To add sub-tabs, simply repeat the steps to create a tabset while adjusting the designation of your tabset header and tab names accordingly.
 In this example we used header 1 and 2 which means we have to use header 3 and 4 for the subtabs.
 
@@ -63,7 +63,7 @@ In this example we used header 1 and 2 which means we have to use header 3 and 4
 #### 2.2 empty tab
 #### 2.3 empty tab
 
-## 3. multiple sub-tabs
+## 3. Multiple sub-tabs
 You can add multiple sub-tabsets to each tab.
 ### Sub-tabset 1
 ### Tab {.tabset}
@@ -74,19 +74,21 @@ You can add multiple sub-tabsets to each tab.
 #### 3.2.1 empty tab
 #### 3.2.2 empty tab
 #### 3.2.3 empty tab
-### content inside tab
+### Follow up
+see tab 5. to learn how to add content below the sub-tabset
 
-## 4. sub-sub-tabs?
+## 4. Sub-sub-tabs?
 You may think that subsequent tabsets can be added by further adjusting the header designation. Alas, you'd get this error if you'd try:
 
 ![error_nodeiterator.webp](/meta/tabsets/error_nodeiterator.webp)
 
 Sub-sub-tabs are currently not possible. Hopefully that will change going forward.
 
-## 5. continue
+## 5. Follow up
 If you want to add content below the sub-tabset inside the tab, create a new header with the same designation as the sub-tabset header.
-Otherwise, use the same designation as the tabset.
-In this example: "# Template"
+In this example: "### follow up"
+To add content below the tabset, use the same designation as the tabset.
+Here "# Templates"
 
 
 # Templates
