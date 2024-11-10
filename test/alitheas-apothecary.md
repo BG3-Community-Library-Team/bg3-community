@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-11-10T07:36:20.436Z
+date: 2024-11-10T07:36:37.786Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -18,8 +18,8 @@ dateCreated: 2024-06-21T10:57:05.698Z
 # Tab {.tabset}
 ## Step 1
 ### Subtab {.tabset}
-### 1.1
-### 1.2
+#### 1.1
+#### 1.2
 ## Step 2
 ## Step 3
 ## Step 4
