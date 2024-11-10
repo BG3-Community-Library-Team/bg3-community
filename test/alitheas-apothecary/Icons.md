@@ -2,23 +2,21 @@
 title: Icons
 description: [sandbox] Information relating to Icons
 published: true
-date: 2024-11-10T16:44:15.437Z
+date: 2024-11-10T16:47:55.585Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
 ---
 
-# Icons
-
 # How to unpack icons
 
 
 
-# Icon Reference
+# Where to find unpacked icons
 
 > The default folder paths after unpacking the icons relative to where you keep the Multitool: ```Multitool\UnpackedData\Game\Public\Game\GUI\Assets```
 
-The headers below represent the individual folders and subfolders where you can find the icons:
+Below represent the individual folders and subfolders where you can find specific:
 
 ## AbilityIcons
 ## ActionResources_c
