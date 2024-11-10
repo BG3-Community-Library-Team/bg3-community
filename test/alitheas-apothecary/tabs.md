@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: [sandbox] Guide including template
 published: false
-date: 2024-11-10T13:42:51.773Z
+date: 2024-11-10T13:45:52.972Z
 tags: test
 editor: markdown
 dateCreated: 2024-11-10T07:43:44.876Z
@@ -69,8 +69,14 @@ empty tab
 ## Step 3
 ### Tab {.tabset}
 #### 3.1
-empty tab
+It's possible to add more subtabs by further adjusting the header designation. 
 #### 3.2
+##### Tab {.tabset}
+###### 3.2.1
+empty tab
+###### 3.2.2
+empty tab
+###### 3.2.3
 empty tab
 #### 3.3
 empty tab
