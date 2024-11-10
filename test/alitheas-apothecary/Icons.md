@@ -2,7 +2,7 @@
 title: Icons
 description: [sandbox] Information relating to Icons
 published: true
-date: 2024-11-10T19:30:32.000Z
+date: 2024-11-10T19:39:45.104Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
@@ -100,6 +100,7 @@ Below the individual folders and subfolders where you can find specific icns are
 ### Tritanopia
 ## Map_c
 ## Messagebox
+### HonourMode
 ## Messagebox_c
 ## Minimap
 ## Minimap_c
@@ -107,12 +108,19 @@ Below the individual folders and subfolders where you can find specific icns are
 ## Notification
 ## Notification_c
 ## Options
+### SettingsPreview
 ## Options_c
 ## Overhead
+### Downed
+### PassiveRoll
 ## PanelSelect_c
 ## PartyInventory_c
 ## Pickpocket
+### c_assets
 ## PlayerPortraits
+### Deuteranopia
+### Protanopia
+### Tritanopia
 ## Portraits
 ## Profiles
 ## ProofOfHonour
@@ -129,15 +137,25 @@ Below the individual folders and subfolders where you can find specific icns are
 ## Scrollbars
 ## SelectionFlyOut
 ## Shared
+### ProficiencyIcons
+### Resources
+### Weight_Encumbrance
 ## Shared_c
+### c_damage_icons
+### c_SkillsIcons
+### ProficiencyIcons
+### Weight_Encumbrance
 ## SignUp
 ## SpellBook
 ## TadpoleTree
 ## TadpoleTree_c
 ## TargetInfo
 ## Tooltips
+### Icons
+### ItemIcons
 ## Tooltips_c
 ## Trade
 ## Tutorial
+### TutIcons
 ## VoiceChat
 
