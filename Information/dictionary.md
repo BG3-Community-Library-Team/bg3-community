@@ -2,8 +2,8 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-10-25T15:36:47.970Z
-tags: test
+date: 2024-11-10T07:31:40.434Z
+tags: information
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
 ---
