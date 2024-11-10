@@ -2,7 +2,7 @@
 title: How to add tabs to your wiki page
 description: [sandbox] Guide including template
 published: false
-date: 2024-11-10T13:02:33.528Z
+date: 2024-11-10T13:07:38.465Z
 tags: test
 editor: markdown
 dateCreated: 2024-11-10T07:43:44.876Z
@@ -16,21 +16,22 @@ Among other uses Tabsets are a convenient way to organize longer articles, make 
 Do not convert back to the visual editor once you added Tabs, it would break them.
 {.is-warning}
 
-
-# How to add Tabs
-
 To use tabsets either follow the steps below or copy the templates provided.
+
+# How to add a tabset
+
+Optional: you can add content beween the tabset header and the tabset if you want.
 
 # Tab {.tabset}
 ## Step One
 Convert your page to the markdown editor if it isn't already
-
 > Content inside tabsets can be styled per usual.
 {.is-info}
 
 ## Step Two
 Create your tabset header - this will be the name of your tabs - use header 1 (one # before the title)
-In this example the tabset header is "Tabs - How To".
+In this example the tabset header is "How to add a tabset".
+
 ## Step Three
 Now you need to tell the wiki to create tabs - you do this by creating a header 2 called "Tab" followed by "{.tabset}".
 This is how my full header looks in markdown:
