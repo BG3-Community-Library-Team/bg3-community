@@ -2,13 +2,13 @@
 title: Icons
 description: [sandbox] Information relating to Icons
 published: true
-date: 2024-11-10T16:47:55.585Z
+date: 2024-11-10T19:30:32.000Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
 ---
 
-# How to unpack icons
+# How to find and unpack icons
 
 
 
@@ -16,18 +16,28 @@ dateCreated: 2024-11-10T07:48:57.175Z
 
 > The default folder paths after unpacking the icons relative to where you keep the Multitool: ```Multitool\UnpackedData\Game\Public\Game\GUI\Assets```
 
-Below represent the individual folders and subfolders where you can find specific:
+Below the individual folders and subfolders where you can find specific icns are represented. Please note that this page is meant as reference to make it easier to see what icons are available.
 
 ## AbilityIcons
 ## ActionResources_c
+### Icons
 ## ActiveRoll
+### VFX
 ## ActiveRoll_c
 ## Alchemy
 ## Alchemy_c
 ## Book
+### GazetteIllustrations
 ## BottomBar
+### neo
+### VFX
 ## Buttons
 ## CC
+### icons_abilities
+### icons_backgrounds
+### icons_deities
+### icons_races
+### icons_resources
 ## CC_c
 ## CharacterAssign
 ## CharacterAssign_c
@@ -35,9 +45,11 @@ Below represent the individual folders and subfolders where you can find specifi
 ## CharacterCreation_c
 ## CharacterLevelup
 ## CharacterPanel
+### EquipSlots
 ## CharacterPanel_c
 ## CharacterSheet
 ## ClassIcons
+### hotbar
 ## CombatLog
 ## Combatants
 ## Combine
@@ -46,7 +58,15 @@ Below represent the individual folders and subfolders where you can find specifi
 ## Container
 ## ContextMenu
 ## ControllerHints
+### ps4
+### ps5
+### shared
+### switch
+### xboxone
 ## ControllerUIIcons
+### icon_bg_png
+### items_png
+### skills_png
 ## Credits
 ## CriticalHit
 ## Debug
@@ -54,11 +74,13 @@ Below represent the individual folders and subfolders where you can find specifi
 ## DiceRoll
 ## DiceSelector
 ## DiceSets
+### Default
 ## DMSettings
 ## Equipment
 ## Fonts
 ## HUD
 ## HUD_c
+### actionDetails
 ## Insert
 ## Inventory
 ## ItemSplitter
@@ -73,6 +95,9 @@ Below represent the individual folders and subfolders where you can find specifi
 ## MakeCamp
 ## MakeCamp_c
 ## Map
+### Deuteranopia
+### Protanopia
+### Tritanopia
 ## Map_c
 ## Messagebox
 ## Messagebox_c
