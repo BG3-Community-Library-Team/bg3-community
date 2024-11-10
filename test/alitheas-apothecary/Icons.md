@@ -2,7 +2,7 @@
 title: icon Reference
 description: [sandbox] Information relating to Icons
 published: true
-date: 2024-11-10T21:21:10.918Z
+date: 2024-11-10T21:57:57.096Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
@@ -20,7 +20,9 @@ Below the individual folders and subfolders where you can find specific icns are
 ## Icons
 ![actionresources_c_icons_1.webp](/information/icons/actionresources_c_icons_1.webp)
 # ActiveRoll
+![activeroll.webp](/information/icons/activeroll.webp)
 ## VFX
+![activeroll_vfx.webp](/information/icons/activeroll_vfx.webp)
 # ActiveRoll_c
 # Alchemy
 # Alchemy_c
