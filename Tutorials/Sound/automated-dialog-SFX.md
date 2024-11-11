@@ -2,7 +2,7 @@
 title: Adding New Music And Sound Effects With Automated Dialog
 description: A guide to using automated dialog to add custom sound effects and music to the game, without overriding existing files.
 published: false
-date: 2024-11-11T09:02:00.945Z
+date: 2024-11-11T09:04:23.898Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T08:59:48.275Z
@@ -40,4 +40,4 @@ So, let's get started, shall we?
 
 *(While having a basic understanding of dialog files is recommended for this guide, I will be covering some of the basics here!)*
 
-Automated dialog is one of the types of "overworld" dialog used outside of cutscenes. And it's used in a variety of ways, from the narrator lines that play when interacting with tombstones, to party banter, to the insults the characters give when using Vicious Mockery, and more. Automated dialog can be tied to events like spellcasting, interacting with objects, and more via Osiris scripting—and we can tie our own audio to these events through that automated dialog!
+Automated dialog is one of the types of "overworld" dialog used outside of cutscenes. And it's used in a variety of ways, from the narrator lines that play when interacting with tombstones, to party banter, to the insults the characters give when using Vicious Mockery, and more. Automated dialog can be tied to events like spellcasting, interacting with objects, and so on via Osiris scripting—and we can tie our own audio to these events through that automated dialog!
