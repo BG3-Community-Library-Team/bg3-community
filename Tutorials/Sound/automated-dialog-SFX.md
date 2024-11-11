@@ -2,7 +2,7 @@
 title: Adding New Music And Sound Effects With Automated Dialog
 description: A guide to using automated dialog to add custom sound effects and music to the game, without overriding existing files.
 published: false
-date: 2024-11-11T09:00:56.763Z
+date: 2024-11-11T09:02:00.945Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T08:59:48.275Z
@@ -10,11 +10,10 @@ dateCreated: 2024-11-11T08:59:48.275Z
 
 # Adding New Music And Sound Effects - WIP
 
-This guide requires a basic understanding of the Baldur's Gate 3 dialog system! You can find my guides to the dialog system on the following pages, and I recommend looking over them before proceeding.
+This guide requires a basic understanding of the Baldur's Gate 3 dialog system! You can find my guides to the dialog system on the following pages, and I recommend looking over them before proceeding:
 
-[Editing Dialog Files](https://wiki.bg3.community/en/Tutorials/dialogue-files-tutorial)
-
-[Adding New Voice Lines And Dialog](https://wiki.bg3.community/en/Tutorials/new-voice-lines)
+- [Editing Dialog Files](https://wiki.bg3.community/en/Tutorials/dialogue-files-tutorial)
+- [Adding New Voice Lines And Dialog](https://wiki.bg3.community/en/Tutorials/new-voice-lines)
 
 
 ### Soundbanks, Wwise, and the Trouble With New Audio Files
