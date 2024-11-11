@@ -2,7 +2,7 @@
 title: icon Reference
 description: [sandbox] Information relating to Icons
 published: true
-date: 2024-11-11T13:41:58.041Z
+date: 2024-11-11T13:43:50.705Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
@@ -19,8 +19,7 @@ Please note that this page is meant as as reference for available icons, their n
 # ActionResources_c
 ![actionresources_c.webp](/information/icons/actionresources_c.webp)
 ## Icons
-![actionresources_c_icons_1.webp](/information/icons/actionresources_c_icons_1.webp)
-![alchemy.webp](/information/icons/alchemy.webp)
+
 # ActiveRoll
 ![activeroll.webp](/information/icons/activeroll.webp)
 ## VFX
