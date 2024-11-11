@@ -2,7 +2,7 @@
 title: icon Reference
 description: [sandbox] Information relating to Icons
 published: true
-date: 2024-11-11T00:56:15.594Z
+date: 2024-11-11T00:59:24.961Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
@@ -27,7 +27,7 @@ Please note that this page is meant as as reference for available icons, their n
 # ActiveRoll_c
 ![activeroll_c.webp](/information/icons/activeroll_c.webp)
 # Alchemy
-![alchemy.webp](/information/icons/alchemy.webp)
+
 # Alchemy_c
 ![alchemy_c.webp](/information/icons/alchemy_c.webp)
 # Book
