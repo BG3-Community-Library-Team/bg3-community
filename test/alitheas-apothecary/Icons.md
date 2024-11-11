@@ -1,8 +1,8 @@
 ---
 title: icon Reference
 description: [sandbox] Information relating to Icons
-published: true
-date: 2024-11-11T13:43:50.705Z
+published: false
+date: 2024-11-11T21:32:07.311Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
@@ -19,7 +19,8 @@ Please note that this page is meant as as reference for available icons, their n
 # ActionResources_c
 ![actionresources_c.webp](/information/icons/actionresources_c.webp)
 ## Icons
-
+![actionresources_c_icons_1.webp](/information/icons/actionresources_c_icons_1.webp)
+![actionresources_c_icons_2.webp](/information/icons/actionresources_c_icons_2.webp)
 # ActiveRoll
 ![activeroll.webp](/information/icons/activeroll.webp)
 ## VFX
@@ -29,19 +30,30 @@ Please note that this page is meant as as reference for available icons, their n
 # Alchemy
 ![alchemy.webp](/information/icons/alchemy.webp)
 # Alchemy_c
-![alchemy_c.webp](/information/icons/alchemy_c.webp)
+![alchemy.webp](/information/icons/alchemy.webp)
 # Book
 Item icons of books, maps, letters, and notes can be found in ControllerUIIcons/items_png
 
+![book.webp](/information/icons/book.webp)
 ## GazetteIllustrations
 ![gazetteillustrations_1.webp](/information/icons/gazetteillustrations_1.webp)
 ![gazetteillustrations_2.webp](/information/icons/gazetteillustrations_2.webp)
 ![gazetteillustrations_3.webp](/information/icons/gazetteillustrations_3.webp)
-
+![gazetteillustrations_4.webp](/information/icons/gazetteillustrations_4.webp)
 # BottomBar
+![bottombar1.webp](/information/icons/bottombar1.webp)
+![bottombar2.webp](/information/icons/bottombar2.webp)
+![bottombar3.webp](/information/icons/bottombar3.webp)
+![bottombar4.webp](/information/icons/bottombar4.webp)
 ## neo
+![bottombar_neo.webp](/information/icons/bottombar_neo.webp)
 ## VFX
+![bottombar_vfx.webp](/information/icons/bottombar_vfx.webp)
 # Buttons
+![buttons_1.webp](/information/icons/buttons_1.webp)
+![buttons_2.webp](/information/icons/buttons_2.webp)
+![buttons_3.webp](/information/icons/buttons_3.webp)
+![buttons_4.webp](/information/icons/buttons_4.webp)
 # CC
 ## icons_abilities
 ## icons_backgrounds
