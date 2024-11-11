@@ -2,7 +2,7 @@
 title: icon Reference
 description: [sandbox] Information relating to Icons
 published: false
-date: 2024-11-11T21:33:44.265Z
+date: 2024-11-11T21:36:24.631Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
@@ -30,7 +30,7 @@ Please note that this page is meant as as reference for available icons, their n
 # Alchemy
 ![alchemy.webp](/information/icons/alchemy.webp)
 # Alchemy_c
-![alchemy_c.webp](/information/icons/alchemy_c.webp)
+![alchemy_c_copy.webp](/information/icons/alchemy_c_copy.webp)
 # Book
 Item icons of books, maps, letters, and notes can be found in ControllerUIIcons/items_png
 
