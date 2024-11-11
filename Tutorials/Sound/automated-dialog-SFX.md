@@ -1,8 +1,8 @@
 ---
 title: Adding New Music And Sound Effects With Automated Dialog
 description: A guide to using automated dialog to add custom sound effects and music to the game, without overriding existing files.
-published: true
-date: 2024-11-11T08:59:48.275Z
+published: false
+date: 2024-11-11T09:00:56.763Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T08:59:48.275Z
