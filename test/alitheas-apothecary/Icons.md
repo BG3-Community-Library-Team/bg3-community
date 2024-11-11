@@ -2,7 +2,7 @@
 title: icon Reference
 description: [sandbox] Information relating to Icons
 published: true
-date: 2024-11-11T12:34:52.618Z
+date: 2024-11-11T13:06:10.259Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
@@ -31,8 +31,13 @@ Please note that this page is meant as as reference for available icons, their n
 # Alchemy_c
 ![alchemy_c.webp](/information/icons/alchemy_c.webp)
 # Book
-## GazetteIllustrations
+Item icons of books, maps, letters, and notes can be found in ControllerUIIcons/items_png
 
+## GazetteIllustrations
+![gazetteillustrations_1.webp](/information/icons/gazetteillustrations_1.webp)
+![gazetteillustrations_2.webp](/information/icons/gazetteillustrations_2.webp)
+![gazetteillustrations_3.webp](/information/icons/gazetteillustrations_3.webp)
+![gazetteillustrations_4.webp](/information/icons/gazetteillustrations_4.webp)
 # BottomBar
 ## neo
 ## VFX
