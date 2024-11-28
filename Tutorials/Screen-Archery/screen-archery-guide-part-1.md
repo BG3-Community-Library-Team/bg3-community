@@ -1,8 +1,8 @@
 ---
 title: Part 1- Getting started:
-description: Basic tools for screen archery
+description: Basic tools and resources for screen archery
 published: false
-date: 2024-11-27T21:33:29.781Z
+date: 2024-11-28T05:43:57.628Z
 tags: guide, wip, screen archery
 editor: markdown
 dateCreated: 2024-06-27T07:44:35.341Z
