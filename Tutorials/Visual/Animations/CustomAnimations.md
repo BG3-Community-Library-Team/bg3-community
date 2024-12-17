@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-12-17T18:50:35.958Z
+date: 2024-12-17T20:09:35.003Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -41,6 +41,10 @@ In this tutorial we will go over every step of creating custom animations: (Non-
 [Lslib](https://github.com/Norbyte/lslib/releases) – a tool by Norbyte for manipulating Baldur's Gate 3 files.
 
 [Animation Template with BG3 IK Animation Rigs](https://www.nexusmods.com/baldursgate3/mods/14077)  
+
+[Noesis](https://richwhitehouse.com/index.php?content=inc_projects.php&showproject=91) - a tool for conversion of .dae and .gr2 files.
+
+[Noira's FBX import Addon](https://github.com/no-I-ra/bg3_fbx_importer/releases/tag/v1.0.0) - a Blender addon to import FBX files out of Noesis.
 
 > This tutorial assumes you have some basic knowledge of how to navigate the Blender interface. If you need a refresher you can refer to the ["Interface Overview"](https://www.youtube.com/watch?v=8XyIYRW_2xk) by the Blender Foundation. If you have no experience at all in Blender I recommend the classic [“How to Create a Donut”](https://www.youtube.com/watch?v=B0J27sf9N1Y) introductory tutorial series by Blender Guru, which has been updated for the latest version of Blender.
 {.is-info}
@@ -109,7 +113,7 @@ Go into Pose > Animation > Bake Action and bake it with the following settings i
 
 After the action is baked, your skeleton rig will now have its own keyframes on the timeline.
 
-To fix the aforementioned issue with lslib only picking up certain keyframes, run the script linked above with static bones selected in Pose Mode (usually it's safe to just select all bones in the skeleton).
+To fix the aforementioned issue with lslib only picking up certain keyframes, run the offset script linked above with static bones selected in Pose Mode (usually it's safe to just select all bones in the skeleton).
 ![bake_action_5.png](/animation_tutorial/bake_action_5.png)
 
 Your animation should be ready for export then.
@@ -133,6 +137,50 @@ Give your file a name (at the bottom) and save it somewhere you’ll remember by
 
 You now have a file ready for conversion into a .gr2 format.
 
+### **1.4\. Bonus: Using the head control rig**
+The head control rig setup works similarly to the body: there is a control rig that has a puppeteering function and is where you’ll do your animating. There is also the skeleton rig that is imported from the game (in the case of the provided .blend file, **HUM_F_NKD_Head_B**), and in the end you’d bake the action on it, use the offset script on it, and export it out, exactly like with the skeletin rig for the body.
+
+Upon opening the .blend file with the head control rig, you will see the following:
+![headrig1.png](/animation_tutorial/headrig1.png)
+
+Your Deform rig is the one that your meshes are weighted to, i.e. the actual head armature from the game, in this case **"HUM_F_NKD_Head_B"**
+
+Your Control rig is **"FaceitRig"**. The Metarig for it is **"FaceitMetaRig"**, and its only function is to make edits to the Control rig and duplicate/regenerate it for another head. This setup with the Metarig is Rigify-based (Rigify is a free add-on included in Blender to generate humanoid rigs), so editing the rig should be available to any user.
+
+#### How to set up the control rig on another head:
+1) Go into Edit > Preferences > Add-ons, and enable the Rigify addon. Also install and enable the setup addon provided in the [optional files](https://www.nexusmods.com/baldursgate3/mods/14077?tab=files) on Nexus, as well as [Noira's FBX import Addon](https://github.com/no-I-ra/bg3_fbx_importer/releases/tag/v1.0.0).
+2) Install [Noesis](/https://richwhitehouse.com/index.php?content=inc_projects.php&showproject=91). We will need it for importing the skeleton rig for the head you want with the correct bone orientations.
+3) In lslib, convert the .GR2 for your required head to .dae with the following options:
+![headrig2.png](/animation_tutorial/headrig2.png)
+4) In Noesis, navigate to your newly converted .dae and convert it (right click > Export) to FBX with the following options:
+![headrig3.png](/animation_tutorial/headrig3.png)
+5) In Blender, import the resulting FBX using Noira's FBX addon:
+![headrig4.png](/animation_tutorial/headrig4.png)
+
+In this example we will use Shadowheart's head as the new head to set the rig up on (everything else hidden for convenience). The Deform rig in this case would be her BG3 Head armature.
+![headrig5.png](/animation_tutorial/headrig5.png)
+
+To generate and fit a new control rig to Shadowheart's head, first we must duplicate the MetaRig.![headrig6.png](/animation_tutorial/headrig6.png)
+
+Select the MetaRig in Object Mode, then go into Edit Mode and position all the bones and joints to fit Shadowheart's head. The amount of work this will require will vary with how different your head of choice is from the head in the provided blend file. For a more thorough video on how to position the MetaRig bones for Rigify, see [this YouTube video](/https://www.youtube.com/watch?v=VUWdMeCqz0c)
+![metarig_edit.gif](/animation_tutorial/metarig_edit.gif)
+
+Important: when done, make sure that the origin point of your MetaRig is at the world Origin. If it's not, you can quickly move it back there by going Shift S > Cursor to World Origin, and then Object > Set Origin > Origin to 3D Cursor.
+![headrig8.png](/animation_tutorial/headrig8.png)
+
+After you're done with positioning the MetaRig bones, go to the Armature Data Properties tab, and under Rigify click "Generate Rig" (clear the Target Rig field if you want to generate a new separate Control Rig for your new head, and optionally put in a Rig Name).
+![headrig9.png](/animation_tutorial/headrig9.png)
+
+This will generate a new Control Rig for your head of choice. This Control rig can then be set in the addon tab of the rig setup addon. You can now hide the MetaRig.
+![headrig10.png](/animation_tutorial/headrig10.png)
+
+After the Control and Deform Rigs are set in the addon, you can connect them by clicking "Run All Steps". Ensure that both Rigs are visible in the viewport. This will set up constraints on the Deform rig to follow the corresponding bones in the Control Rig.
+
+After the setup is complete, you can hide everything but your meshes and the Control Rig. The Control Rig will have duplicates of bones in the Deform Rig - if they are in your way, you can toggle their visibility by turning off the visibility of the "helpers" Bone Collection in the Control Rig.
+![headrig11.png](/animation_tutorial/headrig11.png)
+
+You can now animate the Control Rig in Pose Mode as you would with the body rig, and afterwards bake the animation on the head skeleton (Deform Rig).
+![headrig12.png](/animation_tutorial/headrig12.png)
 
 ## 2\. Converting an animation for BG3
 ### **2.1\. Using LSLib**
