@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-12-17T20:09:35.003Z
+date: 2024-12-17T20:10:38.500Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -138,7 +138,7 @@ Give your file a name (at the bottom) and save it somewhere you’ll remember by
 You now have a file ready for conversion into a .gr2 format.
 
 ### **1.4\. Bonus: Using the head control rig**
-The head control rig setup works similarly to the body: there is a control rig that has a puppeteering function and is where you’ll do your animating. There is also the skeleton rig that is imported from the game (in the case of the provided .blend file, **HUM_F_NKD_Head_B**), and in the end you’d bake the action on it, use the offset script on it, and export it out, exactly like with the skeletin rig for the body.
+The head control rig setup works similarly to the body: there is a control rig that has a puppeteering function and is where you’ll do your animating. There is also the skeleton rig that is imported from the game (in the case of the provided .blend file, **HUM_F_NKD_Head_B**), and in the end you’d bake the action on it, use the offset script on it, and export it out, exactly like with the skeleton rig for the body.
 
 Upon opening the .blend file with the head control rig, you will see the following:
 ![headrig1.png](/animation_tutorial/headrig1.png)
