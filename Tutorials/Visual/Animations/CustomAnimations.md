@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-10-27T16:26:23.356Z
+date: 2024-12-17T18:49:11.220Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -40,7 +40,7 @@ In this tutorial we will go over every step of creating custom animations: (Non-
 
 [Lslib](https://github.com/Norbyte/lslib/releases) – a tool by Norbyte for manipulating Baldur's Gate 3 files.
 
-[Lune's BG3 Blender Animation Template.](https://www.nexusmods.com/baldursgate3/mods/5494)  
+[Animation Template with BG3 IK Animation Rigs](https://www.nexusmods.com/baldursgate3/mods/14077)  
 
 > This tutorial assumes you have some basic knowledge of how to navigate the Blender interface. If you need a refresher you can refer to the ["Interface Overview"](https://www.youtube.com/watch?v=8XyIYRW_2xk) by the Blender Foundation. If you have no experience at all in Blender I recommend the classic [“How to Create a Donut”](https://www.youtube.com/watch?v=B0J27sf9N1Y) introductory tutorial series by Blender Guru, which has been updated for the latest version of Blender.
 {.is-info}
@@ -57,73 +57,33 @@ Some animation specific terminology you may hear often :
 
 
 ### **1.2\. Creating an animation**
-Once you’ve installed Blender and the add-on, and have opened the animation template, your screen should look like this. Make sure you’re in pose mode (drop down in the upper left), and that the Auto Keying button is turned on at the bottom.
+A relatively quick [YouTube tutorial](https://www.youtube.com/watch?v=GAIZkIfXXjQ) on the basics of Blender's animating functions and UI - **highly** recommended to watch first, if you are not yet familiar with it.
 
-![animtut_001.png](/tutorials/animation_tutorial/animtut_001.png)
+#### Tutorial for working with the IK rigs from Nexus
+[Video tutorial](https://drive.google.com/file/d/1hBugCboET8Zxn_rSyC2wo1AZjahSJFKM/view?usp=sharing)![animation_thumbnail.png](/animation_tutorial/animation_thumbnail.png)
+Once you have opened the animation template, you will see rigs for 4 different body types. Each body type has a control rig (CR) and a skeleton rig (SK). The control rig is meant for animating on, and serves a puppeteering function for the skeleton rig. The skeleton is where you would bake the animation in the end and what you export out of Blender back into the game.
 
-Select the “Output” tab on the right side menu. This is where you can adjust how many frames your animation will have, and how many of those frames will play within a single second - known as the “Frame Rate”, measured in frames per second (FPS). These two values – the number of frames and the frame rate, will determine how long your animation is. By default this template has 286 frames at a rate of 60. With these values the animation would be 4.76 seconds long (286/60). 
+Make sure you’re in pose mode. We recommend using auto-keying if you’re going to animate manually (so that keyframes are inserted automatically whenever you move/rotate/scale a bone), but remember when it is enabled and disable it if necessary.
 
-For the sake of simplicity lets change the number of frames to 96 and the frame rate to 24. This gives us animation length of exactly 4 seconds (96/24). You can play with the frame rate to achieve different effects. Bringing the frame rate down to 12 for example will slow down the animation and double the length. 
+Set 30 FPS for the framerate. With the settings we'll be using, any animation you make regardless of the framerate in Blender will play at 30 FPS in the game. Therefore, it is best to set it to 30 FPS in Blender, as this will allow you to render it out later to see how fast or slow your animation is.
 
-![animtut_002.png](/tutorials/animation_tutorial/animtut_002.png)
+Keep it the starting frame of the animation (your frame range) at 0 and not 1, this is the correct setting for animations to be exported to BG3.
 
-Your screen should now look like the below. Notice the timeline at the bottom has changed. The last frame is now 96 rather than 286. If you hover your mouse over that timeline and use your mouse wheel you can expand that view.
-
-![animtut_003.png](/tutorials/animation_tutorial/animtut_003.png)
-
-Now select the right shoulder bone by left-clicking on it. Notice that bone shows up in the summary in the lower left, and the keyframe marker at frame 0 now has a white tick mark. 
-
-![animtut_004.png](/tutorials/animation_tutorial/animtut_004.png)
-
-You’re now going to create your animation “keyframes”.  In the manual days of animation an animator had to draw every frame individually. With computer animation that’s not necessary. You will only create the keyframes which are basically your major poses, and the program will “fill in the blanks” to animate the frames in between.
+All of the rigs are facing in the positive Y direction, and are mirrored, so the limbs you perceive to be on the left are named right, and so on. This is intentional (and is due to Blender's axis mismatch with the game's engine), and any animation you make on them will be mirrored in-game, so keep that mind.
 
 > Knowing how to manage keyframes will be a big part of your animation process. For more information on the basics of keyframing in Blender refer to ["Keyframe Fundamentals"](https://www.youtube.com/watch?v=SZJswvw9wEs) by the Blender Foundation. The version of blender they use is dated but the core concepts still apply. For a tutorial that uses more recent versions of Blender you can refer to ["Tutorial: Blender Keyframes For Beginners"](https://www.youtube.com/watch?v=8gi9lUYMRcI) by PIXXO 3D.
 {.is-info}
 
+#### Additional useful tutorials on Blender's animating functions:
 
+[AnimAide](/https://github.com/augmero/animaide/tree/blender4_fixes) (free Blender animation addon, version for 4.0+), [YouTube tutorial](/https://www.youtube.com/watch?v=r-rFLLkycxI) on AnimAide
+[YouTube Tutorial](/https://www.youtube.com/watch?v=mfdufhaiKtI) on Blender's Non-Linear Animation (layered animation) Editor
+[Animation Layers](/https://blendermarket.com/products/animation-layers) (paid Blender animation addon)
 
-Hover your mouse over the right shoulder you have selected and press “I” then “R”. This will :
-
-1.	Insert (I) a keyframe at position 0
-2.	Track that keyframe for rotations (R)
-
-The reason we’re only using rotation is that this rig doesn’t have what’s known as a control rig, or an IK rig, so we’re limited to rotating the bones only. This is fine for now. 
-
-Notice that the tick mark is now yellow. This indicates that you now have a selected keyframe here that’s telling the program you want the shoulder to be rotated in this way at this specific frame.
-
-![animtut_005.png](/tutorials/animation_tutorial/animtut_005.png)
-
-Now you’re going to duplicate this keyframe at position 0 and copy it over to the last frame at position 96. With your mouse hovering inside the timeline press Shift+D. This will create a duplicate keyframe you can control with your mouse. Drag that keyframe all the way to the right and place it at frame 96, and left-click. 
-
-You now have identical keyframes at the start and end of your animation. This is especially important when you’re creating looped animations. If your start and ending keyframes aren’t identical your looping animations may not look seamless.
-
-![animtut_015.png](/animtut_015.png)
-
-As of now there’s been no change of rotation on that right shoulder. All you’ve done is created a start and ending keyframe with no change in between. If you press the “play” button right now (the large right facing triangle at the bottom), your model will do nothing.
-
-So now you’re going to create a new keyframe with a different pose with the model extending her arm out sideways.
-
-With the right shoulder still selected use your mouse cursor to drag the blue keyframe marker to say, position 50. Then with your cursor hovering in the main window press “R” then “Y” then “-90”, and press enter. This should “R”otate the model’s right arm (on the “Y” axis) at about 90 degrees.
-
->Moving, rotating and scaling objects and bones in Blender is what is known as a "transformation". There are quicker and more elegant ways of doing this than what is described above. For guidance that goes into a bit more detail check out ["Blender Basics 4: Transforming Objects and Adjusting Transformations"](https://www.youtube.com/watch?v=lLJilYum_lQ) by CG Cookie. This focuses on models but the same logic will apply to rigs and bones.
-{.is-info}
-
-
-
-You’ll notice that Blender has inserted the keyframe for you since you enabled the “Auto Keying” button at the very beginning. 
-
-![animtut_014.png](/tutorials/animation_tutorial/animtut_014.png)
-
-Now hit the play button. If you’ve done it correctly you should now see a looped animation of the model raising and lowering her right arm. Congratulations you’ve created your first animation!
-
-![animtemplate.gif](/tutorials/animation_tutorial/animtemplate.gif)
-
-
-The next section will describe how to export your animation in a format compatible with BG3.
   
 
 
-### **1.3\. How to correctly save your animation**
+### **1.3\. How to correctly bake and export your animation**
 When you’re done with your animation or want to test it in progress, you’ll need to export it in a format that can be converted into the modeling / animation format used by BG3 -  “.gr2”. 
 
 To get there you’ll need to :
@@ -131,15 +91,32 @@ To get there you’ll need to :
 - Export the rigged animation into a .dae format.
 - Use the lslib tool to convert that file into .gr2
 
-When exporting it’s important to remember that you only want to export the rig (the bones) not the model (mesh) itself. It may be easier to think of this process as exporting instructions on what BG3 is supposed to do with the in-game rig, rather than exporting an animation.
+When exporting it’s important to remember that you only want to export the skeleton rig, not the control rig or any of the meshes. For that reason it's also important to remember that while you do your animating on the control rig, the skeleton does not receive any keyframes, it's being constrained (puppeteered) by the control rig. To bake keyframes on the skeleton, you need to Bake the Action on it before exporting. (This is also explained in tutorial video on the template.)
 
-To start, go into Object mode (drop down on the upper left) and then select any bone in the rig. The entire rig should now be selected (all the bones are highlighted). Make sure the model is not selected, .ie. the model should not be lit up. 
+Additional note of the method we will be using for converting our animation to gr2, which is lslib. Lslib only picks up keyframes if there are at least 2 and there is a difference between them, so if all the keyframes for a transformation (movement/rotation/scaling) on a bone are the same across the entire timeline, they will not be picked up. To fix this, after your action is baked, use [this Python script](/animation_tutorial/insert_keyframes_with_small_offset.py) on your skeleton rig, with the static bones selected in Pose Mode. It will insert keyframes with a minor offset from the initial value in a frame of your choice (edit the script in Blender's scripting tab as necessary). This should be negligible visually, but enough to be read by lslib.
 
-![animtut_008.png](/tutorials/animation_tutorial/animtut_008.png)
+To bake the animation on the skeleton, select it in Object Mode, go into Pose Mode and select all bones in the skeleton rig.
 
-With the rig (only) highlighted go into the “File” menu and select “Export” then “Collada (.dae)”.
+![bake_action_1.png](/animation_tutorial/bake_action_1.png)
 
-![animtut_009.png](/tutorials/animation_tutorial/animtut_009.png)
+Go into Pose > Animation > Bake Action and bake it with the following settings in the popup (set the end frame to what your end frame is):
+
+![bake_action_2.png](/animation_tutorial/bake_action_2.png)
+
+![bake_action_4.png](/animation_tutorial/bake_action_4.png)
+
+(Keep in mind that clearing constraints will disconnect the skeleton from the control rig, and moving the control rig will no longer move the skeleton along with it.)
+
+After the action is baked, your skeleton rig will now have its own keyframes on the timeline.
+
+To fix the aforementioned issue with lslib only picking up certain keyframes, run the script linked above with static bones selected in Pose Mode (usually it's safe to just select all bones in the skeleton).
+![bake_action_5.png](/animation_tutorial/bake_action_5.png)
+
+Your animation should be ready for export then.
+
+#### Exporting the animation and converting it to gr2
+
+Select your skeleton rig (in Object Mode or Pose Mode) and export as .dae (File > Export > Collada (.dae)
 
 In the pop up window you’ll see options on the right-hand side. On the ‘Main’ tab check the box for “Selection Only”
 
@@ -154,7 +131,7 @@ Give your file a name (at the bottom) and save it somewhere you’ll remember by
 
 ![animtut_011.png](/tutorials/animation_tutorial/animtut_011.png)
 
-You now have a file ready for conversion into a .GR2 format.
+You now have a file ready for conversion into a .gr2 format.
 
 
 ## 2\. Converting an animation for BG3
