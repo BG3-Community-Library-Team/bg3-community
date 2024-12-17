@@ -1,0 +1,126 @@
+<!--
+title: Custom Animations Blender Walkthrough
+description: Tutorial on using the Nexus animation templates in Blender
+published: true
+date: 2024-12-17T21:25:11.984Z
+tags: animation
+editor: ckeditor
+dateCreated: 2024-12-17T21:25:11.984Z
+-->
+
+<h1>Custom Animations Blender Walkthrough</h1>
+<p>In this section of the animation tutorial we will go over using the provided animation rigs and exporting the animations for use in BG3.</p>
+<ul>
+  <li>Creating an animation in Blender.</li>
+  <li>Converting an animation for BG3.</li>
+</ul>
+<h2>1. Creating an animation in Blender</h2>
+<h3><strong>1.1. Setup</strong></h3>
+<p><strong>Required software and Add-ons</strong></p>
+<p><a href="https://www.blender.org/download/releases/3-6/">Blender</a> – recommended version is 3.6+.</p>
+<p><a href="https://github.com/Norbyte/dos2de_collada_exporter">BG3/DOS2 Collada Exporter</a> - An addon for Blender that allows you to import and export DAE/GR2 files for Baldur’s Gate 3.</p>
+<p><a href="https://github.com/Norbyte/lslib/releases">Lslib</a> – a tool by Norbyte for manipulating Baldur’s Gate 3 files.</p>
+<p><a href="https://www.nexusmods.com/baldursgate3/mods/14077">Animation Template with BG3 IK Animation Rigs</a> – a collection of control rigs (head and body) ready for animating.</p>
+<p><a href="https://richwhitehouse.com/index.php?content=inc_projects.php&amp;showproject=91">Noesis</a> - a tool for conversion of .dae and .gr2 files.</p>
+<p><a href="https://github.com/no-I-ra/bg3_fbx_importer/releases/tag/v1.0.0">Noira’s FBX import Addon</a> - a Blender addon to import FBX files out of Noesis.</p>
+<blockquote>
+  <p>This tutorial assumes you have some basic knowledge of how to navigate the Blender interface. If you need a refresher you can refer to the <a href="https://www.youtube.com/watch?v=8XyIYRW_2xk">“Interface Overview”</a> by the Blender Foundation. If you have no experience at all in Blender I recommend the classic <a href="https://www.youtube.com/watch?v=B0J27sf9N1Y">“How to Create a Donut”</a> introductory tutorial series by Blender Guru, which has been updated for the latest version of Blender.</p>
+</blockquote>
+<p>This tutorial won’t get into the “why” you’re doing what you’re doing too much as the intent is to get you from the template to an animation quickly. Also there are many different ways to accomplish the same task – the instructions below are simply easier to convey. Over time you will (and should) discover shortcuts and more efficient ways of accomplishing the same task. Control+Z is the undo short cut.</p>
+<p>Some animation specific terminology you may hear often :</p>
+<p><strong>A model / mesh</strong> – is a 3D object. It can be anything from a simple sphere to a human or a spaceship. The model itself can’t be turned into an animation unless it has…</p>
+<p><strong>A rig</strong> – this is basically the “bones” of the 3D object and allows you to control and manipulate it in space. A rig can be as simple as one bone to move a sphere, or dozens of bones on a face to create different expressions.</p>
+<h3><strong>1.2. Creating an animation</strong></h3>
+<p>A relatively quick <a href="https://www.youtube.com/watch?v=GAIZkIfXXjQ">YouTube tutorial</a> on the basics of Blender’s animating functions and UI - <strong>highly</strong> recommended to watch first, if you are not yet familiar with it.</p>
+<h4>Tutorial for working with the IK rigs from Nexus</h4>
+<p><a href="https://drive.google.com/file/d/1hBugCboET8Zxn_rSyC2wo1AZjahSJFKM/view?usp=sharing">Video tutorial with instructions and animation tips</a></p>
+<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/animation_thumbnail.png" alt="animation_thumbnail.png"></figure>
+<p><br>Once you have opened the animation template, you will see rigs for 4 different body types. Each body type has a control rig (CR) and a skeleton rig (SK). The control rig is meant for animating on, and serves a puppeteering function for the skeleton rig. The skeleton is where you would bake the animation in the end and what you export out of Blender back into the game.</p>
+<p>Make sure you’re in pose mode. We recommend using auto-keying if you’re going to animate manually (so that keyframes are inserted automatically whenever you move/rotate/scale a bone), but remember when it is enabled and disable it if necessary.</p>
+<p>Set 30 FPS for the framerate. With the settings we’ll be using, any animation you make regardless of the framerate in Blender will play at 30 FPS in the game. Therefore, it is best to set it to 30 FPS in Blender, as this will allow you to render it out later to see how fast or slow your animation is.</p>
+<p>Keep it the starting frame of the animation (your frame range) at 0 and not 1, this is the correct setting for animations to be exported to BG3.</p>
+<p>All of the rigs are facing in the positive Y direction, and are mirrored, so the limbs you perceive to be on the left are named right, and so on. This is intentional (and is due to Blender’s axis mismatch with the game’s engine), and any animation you make on them will be mirrored in-game, so keep that in mind.</p>
+<blockquote>
+  <p>Knowing how to manage keyframes will be a big part of your animation process. For more information on the basics of keyframing in Blender refer to <a href="https://www.youtube.com/watch?v=SZJswvw9wEs">“Keyframe Fundamentals”</a> by the Blender Foundation. The version of blender they use is dated but the core concepts still apply. For a tutorial that uses more recent versions of Blender you can refer to <a href="https://www.youtube.com/watch?v=8gi9lUYMRcI">“Tutorial: Blender Keyframes For Beginners”</a> by PIXXO 3D.</p>
+</blockquote>
+<h4>Additional useful tutorials on Blender’s animating functions:</h4>
+<p><a href="https://wiki.bg3.community/https://github.com/augmero/animaide/tree/blender4_fixes">AnimAide</a> (free Blender animation addon, version for 4.0+), <a href="https://wiki.bg3.community/https://www.youtube.com/watch?v=r-rFLLkycxI">YouTube tutorial</a> on AnimAide<br><a href="https://wiki.bg3.community/https://www.youtube.com/watch?v=mfdufhaiKtI">YouTube Tutorial</a> on Blender’s Non-Linear Animation (layered animation) Editor<br><a href="https://wiki.bg3.community/https://blendermarket.com/products/animation-layers">Animation Layers</a> (paid Blender animation addon)</p>
+<h3><strong>1.3. How to correctly bake and export your animation</strong></h3>
+<p>When you’re done with your animation or want to test it in progress, you’ll need to export it in a format that can be converted into the modeling / animation format used by BG3 - “.gr2”.</p>
+<p>To get there you’ll need to :</p>
+<ul>
+  <li>Export the rigged animation into a .dae format.</li>
+  <li>Use the lslib tool to convert that file into .gr2</li>
+</ul>
+<p>When exporting it’s important to remember that you only want to export the skeleton rig, not the control rig or any of the meshes. For that reason it’s also important to remember that while you do your animating on the control rig, the skeleton does not receive any keyframes, it’s being constrained (puppeteered) by the control rig. To bake keyframes on the skeleton, you need to Bake the Action on it before exporting. (This is also explained in tutorial video on the template.)</p>
+<p>Additional note of the method we will be using for converting our animation to gr2, which is lslib. Lslib only picks up keyframes if there are at least 2 and there is a difference between them, so if all the keyframes for a transformation (movement/rotation/scaling) on a bone are the same across the entire timeline, i.e. the bones are static they will not be picked up. To fix this, after your action is baked, use <a href="https://wiki.bg3.community/animation_tutorial/insert_keyframes_with_small_offset.py">this Python script</a> on your skeleton rig, with the static bones selected in Pose Mode. It will insert keyframes with a minor offset from the initial value in a frame of your choice (edit the script in Blender’s scripting tab as necessary). This should be negligible visually, but enough to be read by lslib.</p>
+<p>To bake the animation on the skeleton, select it in Object Mode, go into Pose Mode and select all bones in the skeleton rig.</p>
+<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/bake_action_1.png" alt="bake_action_1.png"></figure>
+<p>Go into Pose &gt; Animation &gt; Bake Action and bake it with the following settings in the popup (set the end frame to what your end frame is):</p>
+<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/bake_action_2.png" alt="bake_action_2.png"></figure>
+<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/bake_action_4.png" alt="bake_action_4.png"></figure>
+<p>(Keep in mind that clearing constraints will disconnect the skeleton from the control rig, and moving the control rig will no longer move the skeleton along with it.)</p>
+<p>After the action is baked, your skeleton rig will now have its own keyframes on the timeline.</p>
+<p>To fix the aforementioned issue with lslib only picking up certain keyframes, go to Blender's scripting workspace and open the .py file you downloaded from <a href="https://wiki.bg3.community/animation_tutorial/insert_keyframes_with_small_offset.py">here</a>.&nbsp;Set the start and end frames, as well as the skeleton rig name. Select any static bones in Pose Mode (usually it’s safe to just select all bones in the skeleton), then the script.</p>
+<p><br>&nbsp;</p>
+<figure class="image"><img src="/animation_tutorial/headrig13.png"></figure>
+<p>Your animation should be ready for export then.</p>
+<h4>Exporting the animation and converting it to gr2</h4>
+<p>Select your skeleton rig (in Object Mode or Pose Mode) and export as .dae (File &gt; Export &gt; Collada (.dae)</p>
+<p>In the pop up window you’ll see options on the right-hand side. On the ‘Main’ tab check the box for “Selection Only”</p>
+<figure class="image"><img src="https://wiki.bg3.community/tutorials/animation_tutorial/animtut_010.png" alt="animtut_010.png"></figure>
+<p>Now select the Anim tab :</p>
+<ul>
+  <li>Check the box for “Keep Keyframes”</li>
+  <li><i>Uncheck</i> the box for “Include all Actions”</li>
+</ul>
+<p>Give your file a name (at the bottom) and save it somewhere you’ll remember by clicking the “Export Collada” button.</p>
+<figure class="image"><img src="https://wiki.bg3.community/tutorials/animation_tutorial/animtut_011.png" alt="animtut_011.png"></figure>
+<p>You now have a file ready for conversion into a .gr2 format.</p>
+<h3><strong>1.4. Bonus: Using the head control rig</strong></h3>
+<p>The head control rig setup works similarly to the body: there is a control rig that has a puppeteering function and is where you’ll do your animating. There is also the skeleton rig that is imported from the game (in the case of the provided .blend file, <strong>HUM_F_NKD_Head_B</strong>), and in the end you’d bake the action on it, use the offset script on it, and export it out, exactly like with the skeleton rig for the body.</p>
+<p>Upon opening the .blend file with the head control rig, you will see the following:<br>&nbsp;</p>
+<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/headrig1.png" alt="headrig1.png"></figure>
+<p>Your Deform rig is the one that your meshes are weighted to, i.e. the actual head armature from the game, in this case <strong>“HUM_F_NKD_Head_B”</strong></p>
+<p>Your Control rig is <strong>“FaceitRig”</strong>. The Metarig for it is <strong>“FaceitMetaRig”</strong>, and its only function is to make edits to the Control rig and duplicate/regenerate it for another head. This setup with the Metarig is Rigify-based (Rigify is a free add-on included in Blender to generate humanoid rigs), so editing the rig should be available to any user.</p>
+<h4>How to set up the control rig on another head:</h4>
+<ol>
+  <li>Go into Edit &gt; Preferences &gt; Add-ons, and enable the Rigify addon. Also install and enable the setup addon provided in the <a href="https://www.nexusmods.com/baldursgate3/mods/14077?tab=files">optional files</a> on Nexus, as well as <a href="https://github.com/no-I-ra/bg3_fbx_importer/releases/tag/v1.0.0">Noira’s FBX import Addon</a>.</li>
+  <li>Install <a href="https://wiki.bg3.community/https://richwhitehouse.com/index.php?content=inc_projects.php&amp;showproject=91">Noesis</a>. We will need it for importing the skeleton rig for the head you want with the correct bone orientations.</li>
+  <li>In lslib, convert the .GR2 for your required head to .dae with the following options:</li>
+</ol>
+<figure class="image image_resized" style="width:917.4px;"><img src="https://wiki.bg3.community/animation_tutorial/headrig2.png" alt="headrig2.png"></figure>
+<p>&nbsp; &nbsp;4. In Noesis, navigate to your newly converted .dae and convert it (right click &gt; Export) to FBX with the following options:</p>
+<figure class="image image_resized" style="width:46.81%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig3.png" alt="headrig3.png"></figure>
+<p>&nbsp; 5. In Blender, import the resulting FBX using Noira’s FBX addon:</p>
+<figure class="image image_resized" style="width:30.38%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig4.png" alt="headrig4.png"></figure>
+<p>In this example we will use Shadowheart’s head as the new head to set the rig up on (everything else hidden for convenience). The Deform rig in this case would be her BG3 Head armature.<br>&nbsp;</p>
+<figure class="image image_resized" style="width:83.53%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig5.png" alt="headrig5.png"></figure>
+<p>To generate and fit a new control rig to Shadowheart’s head, first we must duplicate the MetaRig.</p>
+<figure class="image image_resized" style="width:38.87%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig6.png" alt="headrig6.png"></figure>
+<p>Select the MetaRig in Object Mode, then go into Edit Mode and position all the bones and joints to fit Shadowheart’s head. The amount of work this will require will vary with how different your head of choice is from the head in the provided blend file. For a more thorough video on how to position the MetaRig bones for Rigify, see <a href="https://wiki.bg3.community/https://www.youtube.com/watch?v=VUWdMeCqz0c">this YouTube video</a><br>&nbsp;</p>
+<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/metarig_edit.gif" alt="metarig_edit.gif"></figure>
+<p>Important: when done, make sure that the origin point of your MetaRig is at the world Origin. If it’s not, you can quickly move it back there by going Shift S &gt; Cursor to World Origin, and then Object &gt; Set Origin &gt; Origin to 3D Cursor.<br>&nbsp;</p>
+<figure class="image image_resized" style="width:33.4%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig8.png" alt="headrig8.png"></figure>
+<p>After you’re done with positioning the MetaRig bones, go to the Armature Data Properties tab, and under Rigify click “Generate Rig” (clear the Target Rig field if you want to generate a new separate Control Rig for your new head, and optionally put in a Rig Name).<br>&nbsp;</p>
+<figure class="image image_resized" style="width:47.41%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig9.png" alt="headrig9.png"></figure>
+<p>This will generate a new Control Rig for your head of choice. This Control rig can then be set in the addon tab of the rig setup addon. You can now hide the MetaRig.<br>&nbsp;</p>
+<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/headrig10.png" alt="headrig10.png"></figure>
+<p>After the Control and Deform Rigs are set in the addon, you can connect them by clicking “Run All Steps”. Ensure that both Rigs are visible in the viewport. This will set up constraints on the Deform rig to follow the corresponding bones in the Control Rig.</p>
+<p>After the setup is complete, you can hide everything but your meshes and the Control Rig. The Control Rig will have duplicates of bones in the Deform Rig - if they are in your way, you can toggle their visibility by turning off the visibility of the “helpers” Bone Collection in the Control Rig.<br>&nbsp;</p>
+<figure class="image image_resized" style="width:42.49%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig11.png" alt="headrig11.png"></figure>
+<p>You can now animate the Control Rig in Pose Mode as you would with the body rig, and afterwards bake the animation on the head skeleton (Deform Rig).<br>&nbsp;</p>
+<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/headrig12.png" alt="headrig12.png"></figure>
+<h2>2. Converting an animation for BG3</h2>
+<h3><strong>2.1. Using LSLib</strong></h3>
+<p>To convert your .dae file into .gr2 you’ll be using the Lslib tool. The link to download this tool was provided in the Setup section (1.1).</p>
+<p>You’ll be using the first tab only – “GR2 Tools”. The process is fairly straight forward :</p>
+<ol>
+  <li>Select the Input path and your .dae file. The ellipses button can be used to navigate to your file.</li>
+  <li>Select the Output path and type the name you want to give the file, and append “.gr2” to the end.</li>
+  <li>Ensure the “Convert to Y-up” box is checked.</li>
+  <li>Click the Import button. You’ll see the bones you’re importing on the lower right.</li>
+  <li>Click the Export button. You’ll get a small pop-up window indicating that your “Export completed successfully”.</li>
+</ol>
+<figure class="image"><img src="https://wiki.bg3.community/tutorials/animation_tutorial/animtut_012.png" alt="animtut_012.png"></figure>
+<p>That’s it, you now have a file BG3 can use for animation.</p>
