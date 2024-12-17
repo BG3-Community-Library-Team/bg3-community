@@ -2,7 +2,7 @@
 title: Creating Custom Animations
 description: Tutorial on how to create custom animations
 published: false
-date: 2024-12-17T18:49:11.220Z
+date: 2024-12-17T18:50:35.958Z
 tags: animation
 editor: markdown
 dateCreated: 2024-10-20T16:06:19.163Z
@@ -69,7 +69,7 @@ Set 30 FPS for the framerate. With the settings we'll be using, any animation yo
 
 Keep it the starting frame of the animation (your frame range) at 0 and not 1, this is the correct setting for animations to be exported to BG3.
 
-All of the rigs are facing in the positive Y direction, and are mirrored, so the limbs you perceive to be on the left are named right, and so on. This is intentional (and is due to Blender's axis mismatch with the game's engine), and any animation you make on them will be mirrored in-game, so keep that mind.
+All of the rigs are facing in the positive Y direction, and are mirrored, so the limbs you perceive to be on the left are named right, and so on. This is intentional (and is due to Blender's axis mismatch with the game's engine), and any animation you make on them will be mirrored in-game, so keep that in mind.
 
 > Knowing how to manage keyframes will be a big part of your animation process. For more information on the basics of keyframing in Blender refer to ["Keyframe Fundamentals"](https://www.youtube.com/watch?v=SZJswvw9wEs) by the Blender Foundation. The version of blender they use is dated but the core concepts still apply. For a tutorial that uses more recent versions of Blender you can refer to ["Tutorial: Blender Keyframes For Beginners"](https://www.youtube.com/watch?v=8gi9lUYMRcI) by PIXXO 3D.
 {.is-info}
