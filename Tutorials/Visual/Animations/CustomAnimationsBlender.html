@@ -2,7 +2,7 @@
 title: Custom Animations Blender Walkthrough
 description: Tutorial on using the Nexus animation templates in Blender
 published: true
-date: 2024-12-17T21:26:33.546Z
+date: 2024-12-19T11:34:57.383Z
 tags: animation
 editor: ckeditor
 dateCreated: 2024-12-17T21:25:11.984Z
@@ -79,10 +79,10 @@ dateCreated: 2024-12-17T21:25:11.984Z
 <p>You now have a file ready for conversion into a .gr2 format.</p>
 <h3><strong>1.4. Bonus: Using the head control rig</strong></h3>
 <p>The head control rig setup works similarly to the body: there is a control rig that has a puppeteering function and is where you’ll do your animating. There is also the skeleton rig that is imported from the game (in the case of the provided .blend file, <strong>HUM_F_NKD_Head_B</strong>), and in the end you’d bake the action on it, use the offset script on it, and export it out, exactly like with the skeleton rig for the body.</p>
-<p>Upon opening the .blend file with the head control rig, you will see the following:<br>&nbsp;</p>
-<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/headrig1.png" alt="headrig1.png"></figure>
+<p>Upon opening the .blend file with the head control rig, you will see the following:</p>
+<figure class="image"><img src="/animation_tutorial/headrig_update1.png"></figure>
 <p>Your Deform rig is the one that your meshes are weighted to, i.e. the actual head armature from the game, in this case <strong>“HUM_F_NKD_Head_B”</strong></p>
-<p>Your Control rig is <strong>“FaceitRig”</strong>. The Metarig for it is <strong>“FaceitMetaRig”</strong>, and its only function is to make edits to the Control rig and duplicate/regenerate it for another head. This setup with the Metarig is Rigify-based (Rigify is a free add-on included in Blender to generate humanoid rigs), so editing the rig should be available to any user.</p>
+<p>Your Control rig is <strong>“ControlRig”</strong>. The Metarig for it is <strong>“ControlMetaRig”</strong>, and its only function is to make edits to the Control rig and duplicate/regenerate it for another head. This setup with the Metarig is Rigify-based (Rigify is a free add-on included in Blender to generate humanoid rigs), so editing the rig should be available to any user.</p>
 <h4>How to set up the control rig on another head:</h4>
 <ol>
   <li>Go into Edit &gt; Preferences &gt; Add-ons, and enable the Rigify addon. Also install and enable the setup addon provided in the <a href="https://www.nexusmods.com/baldursgate3/mods/14077?tab=files">optional files</a> on Nexus, as well as <a href="https://github.com/no-I-ra/bg3_fbx_importer/releases/tag/v1.0.0">Noira’s FBX import Addon</a>.</li>
@@ -94,23 +94,30 @@ dateCreated: 2024-12-17T21:25:11.984Z
 <figure class="image image_resized" style="width:46.81%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig3.png" alt="headrig3.png"></figure>
 <p>&nbsp; 5. In Blender, import the resulting FBX using Noira’s FBX addon:</p>
 <figure class="image image_resized" style="width:30.38%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig4.png" alt="headrig4.png"></figure>
-<p>In this example we will use Shadowheart’s head as the new head to set the rig up on (everything else hidden for convenience). The Deform rig in this case would be her BG3 Head armature.<br>&nbsp;</p>
-<figure class="image image_resized" style="width:83.53%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig5.png" alt="headrig5.png"></figure>
+<p>In this example we will use Shadowheart’s head as the new head to set the rig up on (everything else hidden for convenience). The Deform rig in this case would be her BG3 Head armature.</p>
+<figure class="image image_resized" style="width:86.44%;"><img src="/animation_tutorial/headrig_update2.png"></figure>
 <p>To generate and fit a new control rig to Shadowheart’s head, first we must duplicate the MetaRig.</p>
-<figure class="image image_resized" style="width:38.87%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig6.png" alt="headrig6.png"></figure>
-<p>Select the MetaRig in Object Mode, then go into Edit Mode and position all the bones and joints to fit Shadowheart’s head. The amount of work this will require will vary with how different your head of choice is from the head in the provided blend file. For a more thorough video on how to position the MetaRig bones for Rigify, see <a href="https://wiki.bg3.community/https://www.youtube.com/watch?v=VUWdMeCqz0c">this YouTube video</a><br>&nbsp;</p>
-<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/metarig_edit.gif" alt="metarig_edit.gif"></figure>
-<p>Important: when done, make sure that the origin point of your MetaRig is at the world Origin. If it’s not, you can quickly move it back there by going Shift S &gt; Cursor to World Origin, and then Object &gt; Set Origin &gt; Origin to 3D Cursor.<br>&nbsp;</p>
+<figure class="image image_resized" style="width:38.49%;"><img src="/animation_tutorial/headrig_update3.png"></figure>
+<p>Select the MetaRig in Object Mode, then go into Edit Mode and position all the bones and joints to fit your head. The amount of work this will require will vary with how different your head of choice is from the head in the provided blend file. For a more thorough video on how to position the MetaRig bones for Rigify, see <a href="https://wiki.bg3.community/https://www.youtube.com/watch?v=VUWdMeCqz0c">this YouTube video.</a></p>
+<figure class="image"><img src="/animation_tutorial/headrig_update_gif.gif"></figure>
+<p>For best alignment and rotation of eyeballs/jaw, snap the heads of the eye/jaw_master bones in the MetaRig to the corresponding bones in the head's Deform Rig. To do this, unhide both the MetaRig and the Deform Rig, enable X-ray view, X-symmetry and Vertex snapping, and snap the head of the MetaRig eye bones to the head of the Deform eye bones:</p>
+<figure class="image image_resized" style="width:32.57%;"><img src="/animation_tutorial/headrig_snapping1.png"></figure>
+<figure class="image image_resized" style="width:63.22%;"><img src="/animation_tutorial/headrig_snapping2.png"></figure>
+<p>Likewise, snap the MetaRig jaw_master bone to the jaw bone in the Deform Rig:</p>
+<figure class="image image_resized" style="width:49.08%;"><img src="/animation_tutorial/headrig_snapping3.png"></figure>
+<p>Important: when done, make sure that the origin point of your MetaRig is at the world Origin. If it’s not, you can quickly move it back there by going Shift S &gt; Cursor to World Origin, and then Object &gt; Set Origin &gt; Origin to 3D Cursor.</p>
 <figure class="image image_resized" style="width:33.4%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig8.png" alt="headrig8.png"></figure>
-<p>After you’re done with positioning the MetaRig bones, go to the Armature Data Properties tab, and under Rigify click “Generate Rig” (clear the Target Rig field if you want to generate a new separate Control Rig for your new head, and optionally put in a Rig Name).<br>&nbsp;</p>
+<p>After you’re done with positioning the MetaRig bones, go to the Armature Data Properties tab, and under Rigify click “Generate Rig” (clear the Target Rig field if you want to generate a new separate Control Rig for your new head, and optionally put in a Rig Name).</p>
 <figure class="image image_resized" style="width:47.41%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig9.png" alt="headrig9.png"></figure>
-<p>This will generate a new Control Rig for your head of choice. This Control rig can then be set in the addon tab of the rig setup addon. You can now hide the MetaRig.<br>&nbsp;</p>
-<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/headrig10.png" alt="headrig10.png"></figure>
-<p>After the Control and Deform Rigs are set in the addon, you can connect them by clicking “Run All Steps”. Ensure that both Rigs are visible in the viewport. This will set up constraints on the Deform rig to follow the corresponding bones in the Control Rig.</p>
-<p>After the setup is complete, you can hide everything but your meshes and the Control Rig. The Control Rig will have duplicates of bones in the Deform Rig - if they are in your way, you can toggle their visibility by turning off the visibility of the “helpers” Bone Collection in the Control Rig.<br>&nbsp;</p>
-<figure class="image image_resized" style="width:42.49%;"><img src="https://wiki.bg3.community/animation_tutorial/headrig11.png" alt="headrig11.png"></figure>
-<p>You can now animate the Control Rig in Pose Mode as you would with the body rig, and afterwards bake the animation on the head skeleton (Deform Rig).<br>&nbsp;</p>
-<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/headrig12.png" alt="headrig12.png"></figure>
+<p>This will generate a new Control Rig for your head of choice. This Control rig can then be set in the addon tab of the rig setup addon, along with the head mesh. You can now hide the MetaRig. (Keep the Deform and Control rigs visible in the viewport for running the setup.)</p>
+<figure class="image image_resized" style="width:91.63%;"><img src="/animation_tutorial/headrig_update4.png"></figure>
+<p>After the Control and Deform Rigs (and the mesh) are set in the addon, you can connect them by clicking “Run All Steps”. Ensure that both Rigs are visible in the viewport. This will set up constraints on the Deform rig to follow the corresponding bones in the Control Rig.</p>
+<p>After the setup is complete, you can hide everything but your meshes and the Control Rig.</p>
+<p>You can now animate the Control Rig in Pose Mode as you would with the body rig, and afterwards bake the animation on the head skeleton (Deform Rig).</p>
+<blockquote>
+  <p>If you are running each step separately, it is <strong>not recommended </strong>to skip the step to set up the beard empties/sockets, even for feminine heads/heads without beard meshes, since they all have beard bones. This will also ensure that any animation remapped from them in-game will play correctly on masculine heads with beards.</p>
+</blockquote>
+<figure class="image image_resized" style="width:81.17%;"><img src="/animation_tutorial/headrig_update5.png"></figure>
 <h2>2. Converting an animation for BG3</h2>
 <h3><strong>2.1. Using LSLib</strong></h3>
 <p>To convert your .dae file into .gr2 you’ll be using the Lslib tool. The link to download this tool was provided in the Setup section (1.1).</p>
