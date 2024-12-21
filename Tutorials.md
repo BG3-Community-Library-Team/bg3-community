@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2024-12-21T19:59:52.235Z
+date: 2024-12-21T20:07:53.783Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -21,6 +21,7 @@ This page is a list of existing Tutorials.-->
 - [Script Extender *A List of Script Extender Tutorials*](ScriptExtender)
 - [Sound/Audio *A List of Sound and Audio Tutorials*](/Tutorials/Sound)
 - [Visual Modding *A List of Visual Mod Tutorials*](Visual)
+- [Custom Animations Blender Walkthrough](Animations)
 - [Icons *A List of Icon Mod Tutorials*](Icons)
 - [Toolkit *A List of Toolkit Tutorials*](/Tutorials/Toolkit)
 - [Screen Archery *A List of all parts of the Screen Archery Guide*](/Tutorials/Screen-Archery)
@@ -78,7 +79,7 @@ This page is a list of existing Tutorials.-->
 {.links-list}
 
 ## Animations
-- [Custom Animations Blender Walkthrough](/Tutorials/Visual/Animations/CustomAnimationsBlender)
+- [Custom Animations Blender Walkthrough](/Tutorials/Animations/CustomAnimationsBlender)
 {.links-list}
 
 ## Icons
