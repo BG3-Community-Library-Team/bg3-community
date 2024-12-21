@@ -2,14 +2,16 @@
 title: Animations
 description: Creating custom animations for BG3
 published: false
-date: 2024-08-06T05:53:59.872Z
+date: 2024-12-21T19:52:32.918Z
 tags: 
 editor: markdown
 dateCreated: 2024-08-06T05:52:55.608Z
 ---
 
-# Header
-Your content here
+# LIST: Animations
+This page is a list of existing Tutorials relating to Animations.
 
+## Pages
+- [Creating Custom Animations in Blender](/Tutorials/Visual/Animations/CustomAnimationsBlender)
 
-# With Lune's return We will be migrating the Animation Tutorial here.
+{.links-list}
