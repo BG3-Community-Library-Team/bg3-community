@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2024-10-29T12:41:12.110Z
+date: 2024-12-21T19:59:52.235Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -75,6 +75,10 @@ This page is a list of existing Tutorials.-->
 - [Getting Started with 3D Modding](Visual/getting-started-with-3d-modding)
 - [Creating a Hair Mod](Visual/Creating-A-Hair-Mod)
 - [Creating Custom Head Armatures](Visual/mrboneswildguide)
+{.links-list}
+
+## Animations
+- [Custom Animations Blender Walkthrough](/Tutorials/Visual/Animations/CustomAnimationsBlender)
 {.links-list}
 
 ## Icons
