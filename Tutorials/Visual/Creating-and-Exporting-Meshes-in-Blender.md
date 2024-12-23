@@ -2,7 +2,7 @@
 title: Creating and Exporting Meshes in Blender
 description: How to create and export meshes in blender.
 published: false
-date: 2024-12-23T13:49:45.768Z
+date: 2024-12-23T14:50:00.703Z
 tags: visual, tutorial, blender, wip
 editor: markdown
 dateCreated: 2024-12-23T13:49:45.768Z
@@ -18,8 +18,7 @@ In this tutorial, we assume you are generally familiar with using 3D software. T
 
 - [Overview](#overview)
   - [Table of Contents](#table-of-contents)
-  - [BG3 Tutorials and Resources](#BG3-Tutorials-and-Resources)
-  - [Setup](#Setup)
+  - [BG3 Tutorials & Setup](#Requirements-&-Setup)
   - [Extracting a Model to Work With](#Extracting-a-Model-to-Work-With)
   - [Importing](#Importing)
   - [Editing Meshes](#Editing-Meshes)
@@ -36,28 +35,21 @@ In this tutorial, we assume you are generally familiar with using 3D software. T
   - [General Blender Tutorials](#General-Blender-Tutorials)
 
   
-## Requirements
-- Be sure to watch [this video tutorial series](https://www.youtube.com/watch?v=IbivHL2lPrc&list=PLG6GyipNkD2ptAp16VXs8BiTNEaMlgKhO&index=1) by Druu using the BG3 Blender plugin and follow along. It is older but still very relevant and helpful.
+## Requirements & Setup
 
-## Setup
-
-[Check here for a list of tools.](https://modding.wiki/tools)
-
-Here we are using Modder's Multitool, Blender 3.6, and [Norbyte’s Blender installer](https://github.com/Norbyte/dos2de_collada_exporter). Until the update specifically says it has been updated to work with Blender 4.0, we recommend sticking with Blender 3.6 currently.
-
-Make sure you install it correctly—[this video](https://www.youtube.com/watch?v=yQSqRF7dLB8) should give you an example of how to install it.
-
-You should also install [Padme’s Addon, ‘Create LODs’](https://www.nexusmods.com/baldursgate3/mods/346). You may also find use of the 'Reset Transforms' tools as they are helpful when weight painting a model.
+- A basic understanding of how to use and navigate Blender. 
+- **Modder's Multitool**, **Blender**, and the **BG3/DOS2 Collada Exporter**. Setup according to [Getting started with 3D Modding](/Tutorials/Visual/getting-started-with-3d-modding).
+- [Padme’s Blender Addons](https://www.nexusmods.com/baldursgate3/mods/346) **Create LODs** and **Reset Transforms**.
 
 ## Extracting a Model to Work With
 
-![Imported meshes.](NewBodyBlenderScreenshotImported.webp)
+<!--
 
-Now open your modder’s multitool. Click ‘Search Index’. Filter by `.GR2`. Search something like `HUM_F_ARM_` and browse the in-game meshes available to regular size humanlike females.
+Open modder’s multitool, click ‘Search Index’, and filter by `.GR2`. Search HUM_F_NKD_Body_A or the nude that is the base to fit your new outfit around, and extract it. 
 
-You should at least extract [HUM_F_NKD_Body_A](https://modding.wiki/Modding:Body%20Models) (or whatever nude you are basing your outfit on) to fit your new outfit around.
+Now search `HUM_F_ARM_` and browse the in-game meshes available to regular sized humanlike females. When you have found a model to your liking, click the extract file/open folder. You should find the mesh in `.GR2` and `.dae` form on your computer. Use the `.dae`—the Blender importer likes `.dae` format a lot more than `.gr2`. 
 
-When you have found a model to your liking, click the extract file/open folder. You should find the mesh in `.GR2` and `.dae` form on your computer. Use the `.dae`—the Blender importer likes `.dae` format a lot more than `.gr2`. 
+Filenames can be found in our [Mesh Reference](/Information/Meshes) or on [Norbyte's BG3 Search Engine](https://bg3.norbyte.dev/).
 
 ![A mesh importing. It has only 1 LOD.](MeshImportsWithLODSS.webp)
 
@@ -160,3 +152,5 @@ Hotloading is highly recommended for testing. [See here for hotloading.](https:/
 - [High Heel Feet by LazyIcarus.](https://www.nexusmods.com/baldursgate3/mods/2973)
 - [Outfit Builder by LazyIcarus.](https://www.nexusmods.com/baldursgate3/mods/3683)
 - [Volno Texture Toolbox.](https://www.nexusmods.com/baldursgate3/mods/4310)
+
+-->
