@@ -2,7 +2,7 @@
 title: Custom Animations Blender Walkthrough
 description: Tutorial on using the Nexus animation templates in Blender
 published: true
-date: 2024-12-21T20:09:46.305Z
+date: 2024-12-23T18:45:18.627Z
 tags: tutorial, animation
 editor: ckeditor
 dateCreated: 2024-12-17T21:25:11.984Z
@@ -56,7 +56,7 @@ dateCreated: 2024-12-17T21:25:11.984Z
 <p>When exporting it’s important to remember that you only want to export the skeleton rig, not the control rig or any of the meshes. For that reason it’s also important to remember that while you do your animating on the control rig, the skeleton does not receive any keyframes, it’s being constrained (puppeteered) by the control rig. To bake keyframes on the skeleton, you need to Bake the Action on it before exporting. (This is also explained in tutorial video on the template.)</p>
 <p>Additional note of the method we will be using for converting our animation to gr2, which is lslib. Lslib only picks up keyframes if there are at least 2 and there is a difference between them, so if all the keyframes for a transformation (movement/rotation/scaling) on a bone are the same across the entire timeline, i.e. the bones are static they will not be picked up. To fix this, after your action is baked, use <a href="https://wiki.bg3.community/animation_tutorial/insert_keyframes_with_small_offset.py">this Python script</a> on your skeleton rig, with the static bones selected in Pose Mode. It will insert keyframes with a minor offset from the initial value in a frame of your choice (edit the script in Blender’s scripting tab as necessary). This should be negligible visually, but enough to be read by lslib.</p>
 <p>To bake the animation on the skeleton, select it in Object Mode, go into Pose Mode and select all bones in the skeleton rig.</p>
-<figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/bake_action_1.png" alt="bake_action_1.png"></figure>
+<figure class="image"><img src="/animation_tutorial/bake_action_1_edited.png"></figure>
 <p>Go into Pose &gt; Animation &gt; Bake Action and bake it with the following settings in the popup (set the end frame to what your end frame is):</p>
 <figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/bake_action_2.png" alt="bake_action_2.png"></figure>
 <figure class="image"><img src="https://wiki.bg3.community/animation_tutorial/bake_action_4.png" alt="bake_action_4.png"></figure>
