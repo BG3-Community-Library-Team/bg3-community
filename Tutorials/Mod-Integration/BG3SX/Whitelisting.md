@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T08:55:08.321Z
+date: 2024-12-25T09:17:30.530Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -79,7 +79,9 @@ If you want to create a **BG3SX** patch for a mod that you are not the author of
   
   Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) and are only possible with a script
   
-  #### 2.1.2  With a script
+  #### 2.1.1  With a script
+  
+  ##### 2.1.1.1 For races
   
   Add the following code snippet to your `BootstrapServer.lua` script:
  
@@ -133,10 +135,11 @@ end
 ```
   
 
-    -- for single entities
+##### 2.1.1.2 For single entities
 
 
 
+  
 
 
 ```
