@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2024-08-27T21:32:26.771Z
+date: 2024-12-25T21:16:48.604Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -465,10 +465,12 @@ You will need a few programs for this.
 - You will need either multitool or Lslib to unpack the pak and pack the pak again
 - You will need NotePad++ or VSCode to open the unpacked pak and make edits
 > 
-> Which pak you will open up depends on if you use Eyes of Beholder or Astralities' Glow Eyes as well. 
-> If you use either of those two, you will need to open up Eyes of Beholder or Astralities' Glow Eyes. 
-> If you do not use either of those, then you need to open up and edit Unique Tav itself. 
-> This is because Eyes of Beholder or Glow Eyes overrides Unique Tav, so editing Unique Tav will not yield any results.
+> Which pak you will open up depends on if you use **Eyes of Beholder** or Astralities' **Glow Eyes** as well. 
+Reason: these 3 mods all edit the same files and will override each other, thus if you want to use them together, patches need to be used/maintained.
+>
+> So, if you use either of those two, you will need to find and open up the Unique Tav patches made for them. For Eyes of the Beholder, the patch is found on the Unique Tav page under [optional downloads](https://www.nexusmods.com/baldursgate3/mods/2754?tab=files): "Unique Tav EotB Patch". For Astralities' Glow Eyes, the patch is found on the Glow Eyes mod page under [optional downloads](https://www.nexusmods.com/baldursgate3/mods/4964?tab=files): "Unique Tav and Glow Eyes Compatibility Patch".
+>
+> If you do not use either of those, then you need to open up and edit Unique Tav / Kaz Virtual Tav itself. 
 {.is-info}
 
 
