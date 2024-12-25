@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T11:55:03.862Z
+date: 2024-12-25T14:45:07.141Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -228,3 +228,9 @@ test content
 
   -- TODO: CHeck the optional addon link
 
+comment on cmty by celadoneiron:
+  
+  what might be more practical is a suggestion that people not share images or video they've created when one of the characters involved hasn't been whitelisted by the mod author, because that's more about how someone is interacting online than what they're doing in private
+  
+  
+  
