@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T08:46:23.048Z
+date: 2024-12-25T08:55:08.321Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -118,20 +118,20 @@ if Mods.BG3SX then
 end
 ```
   
-  Similary, you can *Blacklist*  your race by setting `Allowed` to `false
+  Similary, you can *Blacklist*  your race by setting `Allowed` to `false`
+  You can also include an optional reason that will be shown in the error message.
 
+  
 ```lua
-------------------------------------
--- For Animators/Genital creators
--- If you happen to create animations/genitals for races that might not had some before, you can manually edit race tag entry in our whitelist
-------------------------------------
-if Mods.BG3SX and Ext.Mod.GetMod(TheRaceModUUID) then
-  Mods.BG3SX.Data.ModdedTags[ModuleUUID] = {}
-  local wList = Mods.BG3SX.Data.ModdedTags[TheRaceModUUID]
-  wList["TagName7"] = {TAG = "TagUUID2", Allowed = true} -- You may have created genitals for them
-  wList["TagName2"] = {TAG = "TagUUID3", Allowed = true} -- Or animations
+if Mods.BG3SX then
+  Mods.BG3SX.Data.ModdedTags[ModuleUUID] = {} 
+  local wList = Mods.BG3SX.Data.ModdedTags[ModuleUUID]
+  wList["MyCoolRaceTagName"] = {TAG = "413dcf04-586d-409f-aef1-1cf457711f5e", Allowed = false, Reason = "YourMod - No fitting Genitals"}
+  wList["MyCoolRaceTagName2"] = {TAG = "03d1fdaa-eb79-469c-a3b3-57a3b98fa484", Allowed = false, Reason = "YourMod - No Animations for Rig"}
 end
+  
 ```
+  
 
     -- for single entities
 
