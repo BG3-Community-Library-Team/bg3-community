@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2024-12-25T21:54:16.826Z
+date: 2024-12-25T21:57:22.964Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -522,14 +522,13 @@ When you have done your edits, remember to save and then pak the file. Replace t
 ## Other guides and credits
 
 How to install BG3MM, pak files and loose/manual mods series: 
-- [Part 1: Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
-- [BG3-Mod-Types-and-how-to-install-them](/Tutorials/Mod-Use/BG3-Mod-Types-and-how-to-install-them)/Tutorials/Mod-Use/How-to-Install-Pak-Files)
+- [Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
+- [BG3 Mod Types and How to Install Them](/Tutorials/Mod-Use/BG3-Mod-Types-and-how-to-install-them)
 
 Other relevant guides: 
 - [General load order guide](/Tutorials/Mod-Use/general-load-order)
 - [How to remove mods/troubleshooting guide](/Tutorials/Mod-Use/How-to-remove-mods)
 - [How to install Script Extender](/Tutorials/Mod-Use/How-to-install-Script-Extender)
-- SE Fresh Install (On-To-Do)
 
 Made by: Maze
 Credits: Kaz, NellsRelo
