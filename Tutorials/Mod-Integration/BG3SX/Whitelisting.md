@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T08:02:28.575Z
+date: 2024-12-25T08:11:13.482Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -48,18 +48,39 @@ If you want to create a **BG3SX** patch for a mod that you are not the author of
 
 ### 5. Can vanilla races be Whitelisted?
 
+  Yes. Vanilla races can be Whitelisted just like any modded race.
+  For this follow the guide for [optional addons](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#as-an-optional-addon). 
+  
+  Before sharing your vanilla Whitelist mod, make sure it is compliant with the Terms of Service of the website you want to publish it on. 
+ 
+  
 ### 6. Can single characters be whitelisted?
-
+  
+  If you do not want to whitelist an entire race but only one character, for example **Withers**, but not all UNDEAD entities, or **Haarlep**, but not all FIEND entities, you can Whitelist specific characters. For this follow [insert link here]
+  
 ## Whitelisting Guides
 
 ### 1. How to Whitelist when you already have some modding experience.
 
+  -- for races
+  
+  -- for single entities
+  
+  
+  
 ### 2. Detailed Whitelisting guide
 
 #### As a part of the main mod
 
 #### As an optional addon
+    
 
+  
+### 3. Custom Genitals
+  
+  -- sometimes races are not set up correctly so bpdytype 2 is actually not strong -> default to regular human peen and looks wird
+  -- authors might want to use their custom penises.
+  
 Your content here
 
 
