@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T09:19:41.685Z
+date: 2024-12-25T09:21:59.493Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -136,26 +136,24 @@ end
 
 ##### 2.1.1.2 For single entities
 
+  Add the following code snippet to your `BootstrapServer.lua` script:
+  
+```lua
+  
+if Mods.BG3SX then
+  table.insert(Mods.BG3SX.Data.WhitelistedEntities, "0133f2ad-e121-4590-b5f0-a79413919805")
+end
 
-
+```
+  
+  Replace "characterUUID" with the uuid of the character you want to add
   
 #### 2.1.2  With the Tag Framework
 
 Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) and are only possible with a script
   
-```
+```json
   
-  ### With the Tag Framework
-
-  -- for races
-  
-  -- single entity whitelisting is not possible with tag framework
-  
-
-  
-  
-  The [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) now has BG3SX Support, so if you are using it for your custom race mod, you can enable a check for every tag you create to include it in our mod automatically.
-```lua
 "Tags": [
   {
     "modGuids": ["bfc31d95-8fd5-4bdc-a92b-ec3bfce13f86"],
@@ -170,7 +168,28 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
       }
   },
   
+```  
   
+  Replcace x with y
+  
+  
+```json
+  
+"Tags": [
+  {
+    "modGuids": ["bfc31d95-8fd5-4bdc-a92b-ec3bfce13f86"],
+    "Type": "Race",
+    "Tag": "Ghouls_Dunmer_f34cadf5-ccfb-4e56-9596-356619569108",
+    "ReallyTag": "REALLY_Ghouls_Dunmer_6a018dee-2f04-4bda-93c4-958422c3ed0a",
+    "BG3SX_Support": {
+      "Allowed": false,
+      "Reason": "The MPAA are watching me type",
+      "IncludeReally": true,
+      "RaceModGuid": "bfc31d95-8fd5-4bdc-a92b-ec3bfce13f86"
+      }
+  },
+  
+```  
   
 ### 2. Detailed Whitelisting guide
 
