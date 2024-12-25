@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T08:20:43.083Z
+date: 2024-12-25T08:44:28.921Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -31,6 +31,11 @@ When a race has been made compatible with **BG3SX**, we call it *Whitelisted*
 To prevent inappropriate actions and to stay compliant with Nexus Terms of Service, **BG3SX** only allows the vanilla medium and tall humanoid races.
 
 Whitelisting allows other modders to add their races to the **BG3SX** system.
+
+In addition, you can also use this system to *Blacklist* your mod.
+For example if your race uses a non-default skeleton and is thus not compatible with any of your animations. See [link to script section]for more details.
+
+*Blacklisting* always has a higher priority than *Whitelisting* to ensure author control.
 
 ### 1.3 How to tell if a mod uses Whitelisting?
 
@@ -64,28 +69,54 @@ If you want to create a **BG3SX** patch for a mod that you are not the author of
   
   If you do not want to whitelist an entire race but only one character, for example **Withers**, but not all UNDEAD entities, or **Haarlep**, but not all FIEND entities, you can Whitelist specific characters. For this follow [insert link here]
   
+You can either *Whitelist*/*Blacklist* your race with a simple script, or by using the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) 
+  
 ## 2 Whitelisting Guides
 
 ### 2.1 How to Whitelist when you already have some modding experience.
   
-  #### With a script
+  The following sectiosn shortly explain how to *Whitelist* your race or character when you already know the basics of creating a workspace and finding tags. If you need a detailed explanation, jump to [INSERT DETAILED EXPLANATION LINK HERE]
   
-  Add this to your BootstrapServer.lua script:
-(One entry per Tag you create that an entity might have (All regular AND "Really" Tags))
+  #### 2.1.2  With a script
+  
+  Add the following code snippet to your `BootstrapServer.lua` script:
+ 
 
 ```lua
-------------------------------------
--- BG3SX Compatibility
-------------------------------------
 if Mods.BG3SX then
-  Mods.BG3SX.Data.ModdedTags[ModuleUUID] = {} -- To declare that a new entry named after your Mods UUID will be an empty table
-  local wList = Mods.BG3SX.Data.ModdedTags[ModuleUUID] -- Write 'ModuleUUID' to automatically fill in your mods UUID
-  wList["TagName1"] = {TAG = "TagUUID1", Allowed = true} -- Set to true or false
-  wList["TagName2"] = {TAG = "TagUUID2", Allowed = true}
-  wList["TagName3"] = {TAG = "TagUUID3", Allowed = false, Reason = "YourMod - No fitting Genitals"} -- Optional reasons merge with regular error message
-  wList["TagName3"] = {TAG = "TagUUID3", Allowed = false, Reason = "YourMod - No Animations for Rig"}
+  Mods.BG3SX.Data.ModdedTags[ModuleUUID] = {}
+  local wList = Mods.BG3SX.Data.ModdedTags[ModuleUUID]
+  wList["TagName"] = {TAG = "TagUUID", Allowed = true}
 end
 ```
+  Replace `"TagName"` and `"TagUUID"` with the corresponding data.
+
+  
+  
+  
+```lua
+if Mods.BG3SX then
+  Mods.BG3SX.Data.ModdedTags[ModuleUUID] = {}
+  local wList = Mods.BG3SX.Data.ModdedTags[ModuleUUID]
+  wList["MyCoolRaceTagName"] = {TAG = "413dcf04-586d-409f-aef1-1cf457711f5e", Allowed = true}
+end
+```
+  
+  
+If your race has multiple tags, make sure to include all regular, and all "Really" tags
+  
+  
+```lua
+if Mods.BG3SX then
+  Mods.BG3SX.Data.ModdedTags[ModuleUUID] = {}
+  local wList = Mods.BG3SX.Data.ModdedTags[ModuleUUID]
+  wList["MyCoolRaceTagName"] = {TAG = "413dcf04-586d-409f-aef1-1cf457711f5e", Allowed = true}
+  wList["MyCoolRaceTagName2"] = {TAG = "03d1fdaa-eb79-469c-a3b3-57a3b98fa484", Allowed = true}
+  wList["MyCoolRaceTagName3"] = {TAG = "2e6b73f8-20cb-4515-b9aa-83531ee8fa96", Allowed = true}
+end
+```
+  
+  Similary, you can *Blacklist*  your race by setting `Allowed` to `false
 
 ```lua
 ------------------------------------
@@ -141,6 +172,8 @@ end
 
 #### As an optional addon
     
+> Load the optional addon after BG3SX. If you are using the in game mod manager, don't
+{.is-warning}
 
   
 ### 3. Custom Genitals
