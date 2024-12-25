@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T07:43:38.221Z
+date: 2024-12-25T07:48:17.845Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -22,7 +22,13 @@ When a race has been made compatible with **BG3SX**, we call it *Whitelisted*
 
 ### 2. Why is Whitelisting necessary?
 
+To prevent inappropriate actions and to stay compliant with Nexus Terms of Service, **BG3SX** only allows the vanilla medium and tall humanoid races.
+
+Whitelisting allows other modders to add their races to the **BG3SX** system.
+
 ### 3. How to tell if a mod uses Whitelisting?
+
+
 
 ### 4. Is it possible to Whitelist a mod that you are using and you are not the creator of?
 
