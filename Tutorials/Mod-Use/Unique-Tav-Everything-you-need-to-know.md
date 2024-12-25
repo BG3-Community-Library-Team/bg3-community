@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2024-12-25T21:16:48.604Z
+date: 2024-12-25T21:54:16.826Z
 tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -515,12 +515,15 @@ Under these you will see a lot of visual nodes, but you will focus on these thre
                 
 When you have done your edits, remember to save and then pak the file. Replace the pak in your mods folder, save/export order and you should see the effect take place. 
 
+> If using Modder's Multitool to unpack/pack, follow this guide on how to do so: [github link](https://github.com/ShinyHobo/BG3-Modders-Multitool/wiki/Packaging-Mod-Files)
+{.is}
+
+
 ## Other guides and credits
 
 How to install BG3MM, pak files and loose/manual mods series: 
 - [Part 1: Installation Of BG3MM](/Tutorials/Mod-Use/Installation-Of-BG3MM)
-- [Part 2: How to Install Pak Files](/Tutorials/Mod-Use/How-to-Install-Pak-Files)
-- [Part 3: How to install manual or loose file-mods](/Tutorials/Mod-Use/How-to-install-manual-or-loose-file-mods)
+- [BG3-Mod-Types-and-how-to-install-them](/Tutorials/Mod-Use/BG3-Mod-Types-and-how-to-install-them)/Tutorials/Mod-Use/How-to-Install-Pak-Files)
 
 Other relevant guides: 
 - [General load order guide](/Tutorials/Mod-Use/general-load-order)
