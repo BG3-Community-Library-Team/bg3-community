@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T09:21:59.493Z
+date: 2024-12-25T09:22:38.863Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -141,12 +141,21 @@ end
 ```lua
   
 if Mods.BG3SX then
-  table.insert(Mods.BG3SX.Data.WhitelistedEntities, "0133f2ad-e121-4590-b5f0-a79413919805")
+  table.insert(Mods.BG3SX.Data.WhitelistedEntities, "characterUUID")
 end
 
 ```
   
-  Replace "characterUUID" with the uuid of the character you want to add
+  Replace `"characterUUID"` with the uuid of the character you want to add
+  
+  ```lua
+  
+if Mods.BG3SX then
+  -- Withers UUID
+  table.insert(Mods.BG3SX.Data.WhitelistedEntities, "0133f2ad-e121-4590-b5f0-a79413919805")
+end
+
+```
   
 #### 2.1.2  With the Tag Framework
 
