@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T09:23:05.188Z
+date: 2024-12-25T10:12:10.357Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -10,12 +10,12 @@ dateCreated: 2024-12-25T07:23:13.330Z
 
 # BG3SX Whitelisting
 
-> This Tutorial will walk you through the steps of intgegrationg your race mod, or character with **BG3SX**. An adult mod for Baldur's Gate 3.
+> This Tutorial will walk you through the steps of integrating your race mod, or character with **BG3SX**. An adult mod for Baldur's Gate 3.
 > Please note that due to the adult nature of this mod, it is not linked in this tutorial.
 {.is-info}
 
-> ᛫ **BG3SX** and affiliated parties are not responsible for the content users decide to modify for usage with the mod. 
-> ᛫ While we do not condone any inappropriate use of the mod, the reality is that we cannot control what you do on your on devices.
+> ᛫ **BG3SX** and affiliated parties are not responsible for the content users decide to modify for usage with the mod and may distribute via various media types on other platforms. 
+> ᛫ While we do not condone any inappropriate use of the mod, the reality is that we cannot control what you do on your own devices.
 > ᛫ Mod responsibly
 {.is-warning}
 
@@ -33,13 +33,13 @@ To prevent inappropriate actions and to stay compliant with Nexus Terms of Servi
 Whitelisting allows other modders to add their races to the **BG3SX** system.
 
 In addition, you can also use this system to *Blacklist* your mod.
-For example if your race uses a non-default skeleton and is thus not compatible with any of your animations. See [link to script section]for more details.
+For example if your race uses a non-default skeleton and thus may not be compatible with any of the BG3SX default/any Addons animations. See [link to script section]for more details.
 
 *Blacklisting* always has a higher priority than *Whitelisting* to ensure author control.
 
 ### 1.3 How to tell if a mod uses Whitelisting?
 
-Mod authors don't usually notify the development team of **BG3SX** about integration, so there is no list with Whitelisted races.
+Mod authors don't usually notify the development team of **BG3SX** about integration, so there is no list of Whitelisted races.
 
 If you want to know if a race mod you are using is compatible with BG3SX, you want to check the description of the mod page and see if the author has added compatibility.
 
@@ -50,12 +50,12 @@ If you want to know if a race mod you are using is compatible with BG3SX, you wa
 
 Yes. This is technically possible, but we encourage you to wait for the author to implement compatibility themselves. 
 
-If you want to create a **BG3SX** patch for a mod that you are not the author of and you want to use it for your personal use, you can follow the guide and create the patch as an [optional addon](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#as-an-optional-addon). 
+If you want to create a **BG3SX Whitelist** patch for a mod that you are not the author of and you want to use it for your personal use, you can follow the guide and create the patch as an [optional addon](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#as-an-optional-addon). 
 
 > **<ins>Personal use<ins>** **means that the file does not leave your computer!**
 > **Do not share files that you did not get permission for creating.**
+> **If you want to share it, get the authors permission first!**
 {.is-danger}
-
 
 ### 1.5 Can vanilla races be Whitelisted?
 
@@ -75,7 +75,9 @@ If you want to create a **BG3SX** patch for a mod that you are not the author of
   
   The following section shortly explain how to *Whitelist*/*Blacklist* your race or character when you already know the basics of creating a workspace and finding tags. If you need a detailed explanation, jump to [INSERT DETAILED EXPLANATION LINK HERE]#
   
-  You can either *Whitelist*/*Blacklist* your race with a simple script, or by using the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) you cannot *Whitelist*/*Blacklist* single characters. For that follow [INSERT SINGLE CHARACTER GUIDE HERE]
+  You can either *Whitelist*/*Blacklist* your race with a simple script, or by using the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545).
+  Keep in mind that if you are using it, you cannot automatically also *Whitelist*/*Blacklist* single characters.
+  This still needs to be done manually - For that follow [INSERT SINGLE CHARACTER GUIDE HERE]
  
   
   #### 2.1.1  With a script
@@ -115,12 +117,12 @@ if Mods.BG3SX then
   local wList = Mods.BG3SX.Data.ModdedTags[ModuleUUID]
   wList["MyCoolRaceTagName"] = {TAG = "413dcf04-586d-409f-aef1-1cf457711f5e", Allowed = true}
   wList["MyCoolRaceTagName2"] = {TAG = "03d1fdaa-eb79-469c-a3b3-57a3b98fa484", Allowed = true}
-  wList["MyCoolRaceTagName3"] = {TAG = "2e6b73f8-20cb-4515-b9aa-83531ee8fa96", Allowed = true}
+  wList["REALLY_MyCoolRaceTagName2"] = {TAG = "2e6b73f8-20cb-4515-b9aa-83531ee8fa96", Allowed = true}
 end
 ```
   
   Similary, you can *Blacklist*  your race by setting `Allowed` to `false`
-  You can also include an optional reason that will be shown in the error message.
+  You can also include an optional reason that will be shown in an error message, both On-Screen and the console.
 
   
 ```lua
@@ -172,7 +174,7 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
     "BG3SX_Support": {
       "Allowed": false,
       "Reason": "The MPAA are watching me type",
-      "IncludeReally": true,
+      "IncludeReally": true, -- This automatically also whitelists the REALLY variants of this tag
       "RaceModGuid": "bfc31d95-8fd5-4bdc-a92b-ec3bfce13f86"
       }
   },
@@ -206,7 +208,7 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
 
 #### As an optional addon
     
-> Load the optional addon after BG3SX. If you are using the in game mod manager, don't
+> Load any optional Whitelist addon **AFTER** BG3SX. If you are using the in game mod manager, don't, as it doesn't actually create a loadorder anymore.
 {.is-warning}
 
   
