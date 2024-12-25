@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T07:48:17.845Z
+date: 2024-12-25T07:51:28.506Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -28,7 +28,11 @@ Whitelisting allows other modders to add their races to the **BG3SX** system.
 
 ### 3. How to tell if a mod uses Whitelisting?
 
+Mod authors don't usually notify the development team of **BG3SX** about integration, so there is no list with Whitelisted races.
 
+If you want to know if a race mod you are using is compatible with BG3SX, you want to check the description of the mod page and see if the author has added compatibility.
+
+If you want to ask about, or request compatibility, remember to be kind and accept if the author declines the request.
 
 ### 4. Is it possible to Whitelist a mod that you are using and you are not the creator of?
 
