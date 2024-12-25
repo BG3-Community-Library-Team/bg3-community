@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T07:41:05.323Z
+date: 2024-12-25T07:43:38.221Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -17,15 +17,18 @@ dateCreated: 2024-12-25T07:23:13.330Z
 ## Whitelisting Basics
 ### 1. What is Whitelisting
 
-In **Baldur's Gate 3 Modding** a popular mode type is [Race mods](https://www.nexusmods.com/baldursgate3/mods/categories/15/)
+In **Baldur's Gate 3 Modding** a popular mod type is [Race mods](https://www.nexusmods.com/baldursgate3/mods/categories/15/). 
+When a race has been made compatible with **BG3SX**, we call it *Whitelisted* 
 
 ### 2. Why is Whitelisting necessary?
 
-### 3. Is it possible to Whitelist a mod that you are using and you are not the creator of?
+### 3. How to tell if a mod uses Whitelisting?
 
-### 4. Can vanilla races be Whitelisted?
+### 4. Is it possible to Whitelist a mod that you are using and you are not the creator of?
 
-### 5. Can single characters be whitelisted?
+### 5. Can vanilla races be Whitelisted?
+
+### 6. Can single characters be whitelisted?
 
 ## Whitelisting Guides
 
