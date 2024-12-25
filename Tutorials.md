@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2024-12-21T20:11:09.741Z
+date: 2024-12-25T07:27:04.856Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -25,6 +25,7 @@ This page is a list of existing Tutorials.-->
 - [Icons *A List of Icon Mod Tutorials*](Icons)
 - [Toolkit *A List of Toolkit Tutorials*](/Tutorials/Toolkit)
 - [Screen Archery *A List of all parts of the Screen Archery Guide*](/Tutorials/Screen-Archery)
+- [Mod Integration *A List of Tutorials for integrating your content with other mods*](/Tutorials/Mod-Integration)
 
 {.links-list}
 ## General Guides
@@ -101,4 +102,8 @@ This page is a list of existing Tutorials.-->
 - [Creative expression: developing your unique style](/Tutorials/Screen-Archery/screen-archery-guide-part-6)
 - [Post production](/Tutorials/Screen-Archery/screen-archery-guide-part-7)
 - [Sharing your creations](/Tutorials/Screen-Archery/screen-archery-guide-part-8)
+{.links-list}
+
+## Mod Integration
+- [BG3SX Whitelisting](/Tutorials/Mod-Integration/BG3SX/Whitelisting)
 {.links-list}
