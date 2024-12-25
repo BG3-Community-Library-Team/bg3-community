@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T14:45:07.141Z
+date: 2024-12-25T15:18:00.151Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -52,6 +52,8 @@ Yes. This is technically possible, but we encourage you to wait for the author t
 
 > We encourage users to ask the mod author for permission, even if they want to create a patch for personal use
 {.is-warning}
+
+^ rethink this textbos. Ask again for milo's and Em's feedback about this.
 
 If you want to create a **BG3SX Whitelist** patch for a mod that you are not the author of and you want to use it for your personal use, you can follow the guide and create the patch as an [optional addon](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#as-an-optional-addon). 
 
