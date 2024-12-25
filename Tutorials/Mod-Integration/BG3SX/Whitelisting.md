@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T10:14:30.038Z
+date: 2024-12-25T11:55:03.862Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -49,6 +49,9 @@ If you want to know if a race mod you are using is compatible with BG3SX, you wa
 ### 1.4 Is it possible to Whitelist a mod that you are using and you are not the creator of?
 
 Yes. This is technically possible, but we encourage you to wait for the author to implement compatibility themselves. 
+
+> We encourage users to ask the mod author for permission, even if they want to create a patch for personal use
+{.is-warning}
 
 If you want to create a **BG3SX Whitelist** patch for a mod that you are not the author of and you want to use it for your personal use, you can follow the guide and create the patch as an [optional addon](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#as-an-optional-addon). 
 
