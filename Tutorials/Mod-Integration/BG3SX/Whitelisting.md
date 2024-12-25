@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T08:11:13.482Z
+date: 2024-12-25T08:14:50.801Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -14,19 +14,19 @@ dateCreated: 2024-12-25T07:23:13.330Z
 > Please note that due to the adult nature of this mod, it is not linked in this tutorial.
 {.is-info}
 
-## Whitelisting Basics
-### 1. What is Whitelisting
+## 1 Whitelisting Basics
+### 1.1 What is Whitelisting
 
 In **Baldur's Gate 3 Modding** a popular mod type is [Race mods](https://www.nexusmods.com/baldursgate3/mods/categories/15/). 
 When a race has been made compatible with **BG3SX**, we call it *Whitelisted* 
 
-### 2. Why is Whitelisting necessary?
+### 1.2 Why is Whitelisting necessary?
 
 To prevent inappropriate actions and to stay compliant with Nexus Terms of Service, **BG3SX** only allows the vanilla medium and tall humanoid races.
 
 Whitelisting allows other modders to add their races to the **BG3SX** system.
 
-### 3. How to tell if a mod uses Whitelisting?
+### 1.3 How to tell if a mod uses Whitelisting?
 
 Mod authors don't usually notify the development team of **BG3SX** about integration, so there is no list with Whitelisted races.
 
@@ -35,7 +35,7 @@ If you want to know if a race mod you are using is compatible with BG3SX, you wa
 > If you want to ask about, or request compatibility, remember to be kind and accept if the author declines the request.
 {.is-warning}
 
-### 4. Is it possible to Whitelist a mod that you are using and you are not the creator of?
+### 1.4 Is it possible to Whitelist a mod that you are using and you are not the creator of?
 
 Yes. This is technically possible, but we encourage you to wait for the author to implement compatibility themselves. 
 
@@ -46,7 +46,7 @@ If you want to create a **BG3SX** patch for a mod that you are not the author of
 {.is-danger}
 
 
-### 5. Can vanilla races be Whitelisted?
+### 1.5 Can vanilla races be Whitelisted?
 
   Yes. Vanilla races can be Whitelisted just like any modded race.
   For this follow the guide for [optional addons](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#as-an-optional-addon). 
@@ -54,41 +54,17 @@ If you want to create a **BG3SX** patch for a mod that you are not the author of
   Before sharing your vanilla Whitelist mod, make sure it is compliant with the Terms of Service of the website you want to publish it on. 
  
   
-### 6. Can single characters be whitelisted?
+### 1.6 Can single characters be whitelisted?
   
   If you do not want to whitelist an entire race but only one character, for example **Withers**, but not all UNDEAD entities, or **Haarlep**, but not all FIEND entities, you can Whitelist specific characters. For this follow [insert link here]
   
-## Whitelisting Guides
+## 2 Whitelisting Guides
 
-### 1. How to Whitelist when you already have some modding experience.
-
-  -- for races
+### 2.1 How to Whitelist when you already have some modding experience.
   
-  -- for single entities
+  #### With a script
   
-  
-  
-### 2. Detailed Whitelisting guide
-
-#### As a part of the main mod
-
-#### As an optional addon
-    
-
-  
-### 3. Custom Genitals
-  
-  -- sometimes races are not set up correctly so bpdytype 2 is actually not strong -> default to regular human peen and looks wird
-  -- authors might want to use their custom penises.
-  
-Your content here
-
-
-test content
-
-
-
-Add this to your BootstrapServer.lua script:
+  Add this to your BootstrapServer.lua script:
 (One entry per Tag you create that an entity might have (All regular AND "Really" Tags))
 
 ```lua
@@ -118,11 +94,24 @@ if Mods.BG3SX and Ext.Mod.GetMod(TheRaceModUUID) then
 end
 ```
 
+    -- for single entities
 
 
 
 
-The [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) now has BG3SX Support, so if you are using it for your custom race mod, you can enable a check for every tag you create to include it in our mod automatically.
+
+```
+  
+  ### With the Tag Framework
+
+  -- for races
+  
+  -- single entity whitelisting is not possible with tag framework
+  
+
+  
+  
+  The [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) now has BG3SX Support, so if you are using it for your custom race mod, you can enable a check for every tag you create to include it in our mod automatically.
 ```lua
 "Tags": [
   {
@@ -137,4 +126,26 @@ The [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) now ha
       "RaceModGuid": "bfc31d95-8fd5-4bdc-a92b-ec3bfce13f86"
       }
   },
-```
+  
+  
+  
+### 2. Detailed Whitelisting guide
+
+#### As a part of the main mod
+
+#### As an optional addon
+    
+
+  
+### 3. Custom Genitals
+  
+  -- sometimes races are not set up correctly so bpdytype 2 is actually not strong -> default to regular human peen and looks wird
+  -- authors might want to use their custom penises.
+  
+Your content here
+
+
+test content
+
+
+
