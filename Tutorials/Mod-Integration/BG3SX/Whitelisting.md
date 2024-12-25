@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T09:17:30.530Z
+date: 2024-12-25T09:18:49.671Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -75,7 +75,7 @@ If you want to create a **BG3SX** patch for a mod that you are not the author of
   
   The following section shortly explain how to *Whitelist*/*Blacklist* your race or character when you already know the basics of creating a workspace and finding tags. If you need a detailed explanation, jump to [INSERT DETAILED EXPLANATION LINK HERE]#
   
-  You can either *Whitelist*/*Blacklist* your race with a simple script, or by using the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545).
+  You can either *Whitelist*/*Blacklist* your race with a simple script, or by using the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) you cannot *Whitelist*/*Blacklist* single characters. For that follow [INSERT SINGLE CHARACTER GUIDE HERE]
   
   Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) and are only possible with a script
   
@@ -140,8 +140,10 @@ end
 
 
   
+#### 2.1.2  With a script
 
-
+When using the  
+  
 ```
   
   ### With the Tag Framework
