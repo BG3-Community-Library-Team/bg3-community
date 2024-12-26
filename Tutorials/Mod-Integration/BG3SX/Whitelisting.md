@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-26T09:53:29.896Z
+date: 2024-12-26T09:55:48.954Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -242,6 +242,11 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
 
 If your mod does not have any ScriptExtender content yet, you want to add the necessary folders and files to your mod.
   
+> Don't want to create the files yourself? 
+> Download the Script Extender sample mod [here], drag the `ScriptExtender` folder to the correct location and modify the files
+{.is-info}
+
+  
 Create a `ScriptExtender` folder in your `ModName` folder in `Mods` where your `meta.lsx` file is located.
  
   
@@ -275,6 +280,12 @@ Replace `"YourCoolModName"` with your mod name.
 }
   
   ```
+  
+In your `Lua` folder, create a `BootstrapServer.lua` file.
+  
+[insert image here]
+  
+  
   
   
 #### As an optional addon
