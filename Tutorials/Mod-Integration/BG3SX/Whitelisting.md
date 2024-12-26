@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-26T10:27:27.071Z
+date: 2024-12-26T20:05:05.351Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -78,7 +78,7 @@ If you want to create a **BG3SX Whitelist** patch for a mod that you are not the
 ## 2 Whitelisting Guides
 
 >  Do you learn information better by trying things out yourself?
-> Download the [Example race mod with BG3SX support] or the [Example race mod with optional BG3SX addon] to see what a correct implementation looks like.
+> Download the [**Example race mod with BG3SX support** or the **Example race mod with optional BG3SX addon**](https://www.nexusmods.com/baldursgate3/mods/14435?tab=description) to see what a correct implementation looks like.
 {.is-info}
 
   
