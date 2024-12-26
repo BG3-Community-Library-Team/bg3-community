@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-25T17:10:11.098Z
+date: 2024-12-26T08:59:27.033Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -50,10 +50,9 @@ If you want to know if a race mod you are using is compatible with BG3SX, you wa
 
 Yes. This is technically possible, but we encourage you to wait for the author to implement compatibility themselves. 
 
-> We encourage users to ask the mod author for permission, even if they want to create a patch for personal use
+> If a mod author does not want to implement compatibility for BG3SX, please respect their decision and do not share screenshots or other content of their character/race in a sexual context.
 {.is-warning}
 
-^ rethink this textbos. Ask again for milo's and Em's feedback about this.
 
 If you want to create a **BG3SX Whitelist** patch for a mod that you are not the author of and you want to use it for your personal use, you can follow the guide and create the patch as an [optional addon](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#as-an-optional-addon). 
 
@@ -230,9 +229,7 @@ test content
 
   -- TODO: CHeck the optional addon link
 
-comment on cmty by celadoneiron:
-  
-  what might be more practical is a suggestion that people not share images or video they've created when one of the characters involved hasn't been whitelisted by the mod author, because that's more about how someone is interacting online than what they're doing in private
+
   
   
   
