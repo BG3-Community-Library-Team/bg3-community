@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-26T08:59:27.033Z
+date: 2024-12-26T09:08:14.924Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -171,10 +171,10 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
   
 "Tags": [
   {
-    "modGuids": ["bfc31d95-8fd5-4bdc-a92b-ec3bfce13f86"],
+    "modGuids": ["YourModGUID"],
     "Type": "Race",
-    "Tag": "Ghouls_Dunmer_f34cadf5-ccfb-4e56-9596-356619569108",
-    "ReallyTag": "REALLY_Ghouls_Dunmer_6a018dee-2f04-4bda-93c4-958422c3ed0a",
+    "Tag": "YourRaceTag",
+    "ReallyTag": "YourReallyRaceTag",
     "BG3SX_Support": {
       "Allowed": false,
       "Reason": "The MPAA are watching me type",
@@ -185,7 +185,12 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
   
 ```  
   
-  Replcace x with y
+  Replace the following content: 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourModGUID"` with the UUID of your mod
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourRaceTag"` with the UUID of your race tag
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourReallyRaceTag"` with the UUID of your really race tag
+  
+  Then add the `"BG3SX_Support"` section and set the content accordingly
   
   
 ```json
