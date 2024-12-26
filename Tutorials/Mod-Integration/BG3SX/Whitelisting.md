@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-26T09:22:32.236Z
+date: 2024-12-26T09:31:40.590Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -237,7 +237,7 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
 
 #### As an optional addon
     
-> Load any optional Whitelist addon **AFTER** BG3SX. If you are using the in game mod manager, don't, as it doesn't actually create a loadorder anymore.
+> Load any optional Whitelist addon **AFTER** BG3SX. If you are using the in game mod manager, we advise you to use [BG3MM](https://github.com/LaughingLeader/BG3ModManager/releases) instead as the in game Mod Manager does not allow you to reorder your mods.
 {.is-warning}
 
   
