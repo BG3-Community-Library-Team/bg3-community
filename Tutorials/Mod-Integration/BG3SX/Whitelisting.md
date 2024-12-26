@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-26T09:55:48.954Z
+date: 2024-12-26T10:27:27.071Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -24,7 +24,7 @@ dateCreated: 2024-12-25T07:23:13.330Z
 ### 1.1 What is Whitelisting
 
 In **Baldur's Gate 3 Modding** a popular mod type is [Race mods](https://www.nexusmods.com/baldursgate3/mods/categories/15/). 
-When a race has been made compatible with **BG3SX**, we call it *Whitelisted* 
+When a race has been made compatible and is allowed to be used with **BG3SX**, we call it *Whitelisted* 
 
 ### 1.2 Why is Whitelisting necessary?
 
@@ -41,7 +41,7 @@ For example if your race uses a non-default skeleton and thus may not be compati
 
 Mod authors don't usually notify the development team of **BG3SX** about integration, so there is no list of Whitelisted races.
 
-If you want to know if a race mod you are using is compatible with BG3SX, you want to check the description of the mod page and see if the author has added compatibility.
+If you want to know if a race mod you are using is compatible with BG3SX, you want to check the description of the mod page and see if the author has added a note about compatibility or an optional file to download.
 
 > If you want to ask about, or request compatibility, remember to be kind and accept if the author declines the request.
 {.is-warning}
@@ -61,7 +61,7 @@ If you want to create a **BG3SX Whitelist** patch for a mod that you are not the
 > **If you want to share it, get the authors permission first!**
 {.is-danger}
 
-### 1.5 Can vanilla races be Whitelisted?
+### 1.5 Can vanilla races be whitelisted?
 
   Yes. Vanilla races can be Whitelisted just like any modded race.
   For this follow the guide for [optional addons](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#as-an-optional-addon). 
@@ -69,9 +69,11 @@ If you want to create a **BG3SX Whitelist** patch for a mod that you are not the
   Before sharing your vanilla Whitelist mod, make sure it is compliant with the Terms of Service of the website you want to publish it on. 
  
   
-### 1.6 Can single characters be whitelisted?
+### 1.6 Can individual characters be white-/blacklisted?
   
   If you do not want to whitelist an entire race but only one character, for example **Withers**, but not all UNDEAD entities, or **Haarlep**, but not all FIEND entities, you can Whitelist specific characters. For this follow [insert link here]
+  
+  In the same vein, modders who create a custom NPCs, can also just as much blacklist them individually if they want to.
   
 ## 2 Whitelisting Guides
 
