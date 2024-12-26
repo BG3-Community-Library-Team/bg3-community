@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-26T09:18:33.847Z
+date: 2024-12-26T09:22:32.236Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -192,41 +192,26 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
     "BG3SX_Support": {
       "Allowed": true_or_false,
       "Reason": "Your Reason",
-      "IncludeReally": true, -- This automatically also whitelists the REALLY variants of this tag
+      "IncludeReally": true,
       "RaceModGuid": "YourModGUID"
       }
   },
   
 ```  
   
-  
-  
   Replace the following content: 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourModGUID"` with the UUID of your mod
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourRaceTag"` with the UUID of your race tag
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourReallyRaceTag"` with the UUID of your really race tag
   
-  Then add the `"BG3SX_Support"` section and set the content accordingly
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`true_or_false` with true if you want to allow BG3SX support
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`true_or_false` with false if you want to disallow BG3SX support
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Reason"` with your custom reason for your decision
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourModGUID"` with the UUID of your mod (same as above)
   
   
-  ```json
-  
-"Tags": [
-  {
-    "modGuids": ["YourModGUID"],
-    "Type": "Race",
-    "Tag": "YourRaceTag",
-    "ReallyTag": "YourReallyRaceTag",
-    "BG3SX_Support": {
-      "Allowed": false,
-      "Reason": "The MPAA are watching me type",
-      "IncludeReally": true, -- This automatically also whitelists the REALLY variants of this tag
-      "RaceModGuid": "bfc31d95-8fd5-4bdc-a92b-ec3bfce13f86"
-      }
-  },
-  
-```  
-  
+
   
 ```json
   
