@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-26T09:31:40.590Z
+date: 2024-12-26T09:33:52.130Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -75,6 +75,11 @@ If you want to create a **BG3SX Whitelist** patch for a mod that you are not the
   
 ## 2 Whitelisting Guides
 
+>  Do you learn information better by trying things out yourself?
+> Download the [Example race mod with BG3SX support] or the [Example race mod with optional BG3SX addon] to see what a correct implementation looks like.
+{.is-info}
+
+  
 ### 2.1 How to Whitelist when you already have some modding experience.
   
   The following section shortly explain how to *Whitelist*/*Blacklist* your race or character when you already know the basics of creating a workspace and finding tags. If you need a detailed explanation, jump to [INSERT DETAILED EXPLANATION LINK HERE]#
