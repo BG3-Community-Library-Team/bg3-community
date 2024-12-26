@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-26T09:08:14.924Z
+date: 2024-12-26T09:18:33.847Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -175,6 +175,48 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
     "Type": "Race",
     "Tag": "YourRaceTag",
     "ReallyTag": "YourReallyRaceTag",
+  },
+  
+```  
+  
+  Add the `BG3SX_Support section
+  
+```json
+  
+"Tags": [
+  {
+    "modGuids": ["YourModGUID"],
+    "Type": "Race",
+    "Tag": "YourRaceTag",
+    "ReallyTag": "YourReallyRaceTag",
+    "BG3SX_Support": {
+      "Allowed": true_or_false,
+      "Reason": "Your Reason",
+      "IncludeReally": true, -- This automatically also whitelists the REALLY variants of this tag
+      "RaceModGuid": "YourModGUID"
+      }
+  },
+  
+```  
+  
+  
+  
+  Replace the following content: 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourModGUID"` with the UUID of your mod
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourRaceTag"` with the UUID of your race tag
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourReallyRaceTag"` with the UUID of your really race tag
+  
+  Then add the `"BG3SX_Support"` section and set the content accordingly
+  
+  
+  ```json
+  
+"Tags": [
+  {
+    "modGuids": ["YourModGUID"],
+    "Type": "Race",
+    "Tag": "YourRaceTag",
+    "ReallyTag": "YourReallyRaceTag",
     "BG3SX_Support": {
       "Allowed": false,
       "Reason": "The MPAA are watching me type",
@@ -184,13 +226,6 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
   },
   
 ```  
-  
-  Replace the following content: 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourModGUID"` with the UUID of your mod
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourRaceTag"` with the UUID of your race tag
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourReallyRaceTag"` with the UUID of your really race tag
-  
-  Then add the `"BG3SX_Support"` section and set the content accordingly
   
   
 ```json
