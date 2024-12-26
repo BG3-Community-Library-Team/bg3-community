@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-26T09:46:59.060Z
+date: 2024-12-26T09:53:29.896Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -251,19 +251,31 @@ In your `ScriptExtender` folder, create a `Lua` folder and a `Config.json` file.
   
 > On windows, the file extensions are hidden by default.
 > This causes files to sometimes be created as "Filename.json.txt"
-> To make sure ot create the correct file extension, we suggest [you enable "File Extensions"](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/) 
+> To make sure you create the correct file extension, we suggest [you enable "File Extensions"](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/) 
 {.is-info}
 
   
 [Insert image here]
   
-Edit your `Config.json` file
+  
+Edit your `Config.json` file.
+  
+The Required Version is the minimum version of Script Extender your mod requires.
+This is usually irrelevant for most mods. If you are unsure which version to use here, use the version that **BG3SX** uses.
+Version `1.4.9` requires ScriptExtender version `21`.
+  
+Replace `"YourCoolModName"` with your mod name.
 
+```json  
+  
 {
-    "RequiredVersion": 20,
-    "ModTable": "BG3SX",
+    "RequiredVersion": 21,
+    "ModTable": "YourCoolModName",
     "FeatureFlags": ["Lua"]
 }
+  
+  ```
+  
   
 #### As an optional addon
     
