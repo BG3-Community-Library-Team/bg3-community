@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-26T09:38:11.654Z
+date: 2024-12-26T09:46:59.060Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -242,11 +242,28 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
 
 If your mod does not have any ScriptExtender content yet, you want to add the necessary folders and files to your mod.
   
-Create a `ScriptExtender` folder in your `Mods` folder
+Create a `ScriptExtender` folder in your `ModName` folder in `Mods` where your `meta.lsx` file is located.
+ 
   
 [insert image here]
   
-In your `ScriptExtender` folder, create a   
+In your `ScriptExtender` folder, create a `Lua` folder and a `Config.json` file.
+  
+> On windows, the file extensions are hidden by default.
+> This causes files to sometimes be created as "Filename.json.txt"
+> To make sure ot create the correct file extension, we suggest [you enable "File Extensions"](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/) 
+{.is-info}
+
+  
+[Insert image here]
+  
+Edit your `Config.json` file
+
+{
+    "RequiredVersion": 20,
+    "ModTable": "BG3SX",
+    "FeatureFlags": ["Lua"]
+}
   
 #### As an optional addon
     
