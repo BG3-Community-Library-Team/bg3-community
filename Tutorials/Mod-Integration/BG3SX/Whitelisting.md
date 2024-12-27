@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T09:55:17.296Z
+date: 2024-12-27T09:58:24.131Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -402,6 +402,17 @@ After whitelisting one tag, another one might still not be whitelisted, so repea
 
 ##### 3. Whitelist your tags
 
+  Now follow the previous section [Whitelisting with a script](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-2111-for-races) and all of your tags.
+  
+```lua  
+  if Mods.BG3SX then
+  Mods.BG3SX.Data.ModdedTags[ModuleUUID] = {}
+  local wList = Mods.BG3SX.Data.ModdedTags[ModuleUUID]
+  wList["DISALLOWED1"] = {TAG = "2105a2d9-e7ec-4a3f-91ba-a3c548713306", Allowed = true}
+  wList["DISALLOWED2"] = {TAG = "bf7fec70-5973-48c6-9d48-7cbe5c9d5035", Allowed = true}
+  wList["DISALLOWED3"] = {TAG = "da356c64-8194-45d0-9fc9-6fd72f1eb207", Allowed = true}
+end
+```   
   
 #### As an optional addon
     
