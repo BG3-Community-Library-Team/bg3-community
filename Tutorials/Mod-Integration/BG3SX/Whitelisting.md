@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T12:22:02.096Z
+date: 2024-12-27T12:23:50.398Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -372,7 +372,8 @@ Replace `"YourCoolModName"` with your mod name.
 
 In your `Lua` folder, create a `BootstrapServer.lua` file and add a print statement so you can check if you have done everything correctly.
   
-  ```
+
+   ```
 project-folder/
 │
 ├── Localization/
