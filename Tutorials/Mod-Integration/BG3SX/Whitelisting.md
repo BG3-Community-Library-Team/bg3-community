@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T09:58:24.131Z
+date: 2024-12-27T10:00:34.085Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -245,6 +245,10 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
 
   
 #### As a part of the main mod
+  
+> If you implement the whitelisting directly in your mod, make sure your users load it **AFTER** BG3SX. We advise you recommend them to use [BG3MM](https://github.com/LaughingLeader/BG3ModManager/releases) instead of the in game mod manager, as the latter does not allow you to reorder your mods.
+{.is-warning}
+
 
 ##### 1. Create all folders and files
   
@@ -405,7 +409,7 @@ After whitelisting one tag, another one might still not be whitelisted, so repea
   Now follow the previous section [Whitelisting with a script](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-2111-for-races) and all of your tags.
   
 ```lua  
-  if Mods.BG3SX then
+if Mods.BG3SX then
   Mods.BG3SX.Data.ModdedTags[ModuleUUID] = {}
   local wList = Mods.BG3SX.Data.ModdedTags[ModuleUUID]
   wList["DISALLOWED1"] = {TAG = "2105a2d9-e7ec-4a3f-91ba-a3c548713306", Allowed = true}
