@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-11-10T08:00:50.705Z
+date: 2024-12-27T07:50:03.761Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -21,7 +21,7 @@ dateCreated: 2024-06-21T10:57:05.698Z
 
 {.links-list}
 
-
+![merryxmas2024.webp](/test/alithea/merryxmas2024.webp)
 
 
 
