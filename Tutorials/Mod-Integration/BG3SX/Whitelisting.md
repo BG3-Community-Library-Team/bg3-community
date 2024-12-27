@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T11:11:45.326Z
+date: 2024-12-27T11:48:37.813Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -436,6 +436,8 @@ Don't forget to change the UUID in the `meta.lsx` file!
 Then you can follow the previous section from [Gather your tag names and uuids](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-312-gather-your-tag-names-and-uuids)
   
 > Load any optional Whitelist addon **AFTER** BG3SX. If you are using the in game mod manager, we advise you to use [BG3MM](https://github.com/LaughingLeader/BG3ModManager/releases) instead as the in game Mod Manager does not allow you to reorder your mods.
+>
+> ![screenshot_from_2024-12-27_12-47-17.png](/tutorials/bg3sx/screenshot_from_2024-12-27_12-47-17.png)
 {.is-warning}
 
   
