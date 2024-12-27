@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T10:14:16.684Z
+date: 2024-12-27T10:20:06.765Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -419,6 +419,8 @@ if Mods.BG3SX then
   wList["DISALLOWED3"] = {TAG = "da356c64-8194-45d0-9fc9-6fd72f1eb207", Allowed = true}
 end
 ```   
+  
+Your race is now allowed to use BG3SX actions.
   
 #### As an optional addon
     
