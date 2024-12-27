@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T11:56:49.480Z
+date: 2024-12-27T11:56:57.605Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -246,7 +246,7 @@ Create your `TagFrameworkConfig.json` as explained in the [Tag Framework guide](
 # 3. Detailed Whitelisting guide
 
 > This tutorial assumes you know a few basics about mod creation.
-> If you are not familiar with the basics of creating, or paking a mod, We recommend you have a look at one of our other [Tutorials](https://wiki.bg3.community/en/Tutorials).
+> If you are not familiar with the basics of creating, or paking a mod, We recommend you have a look at one of our other [Tutorials](https://wiki.bg3.community/en/Tutorials) first.
 {.is-success}
 
   
