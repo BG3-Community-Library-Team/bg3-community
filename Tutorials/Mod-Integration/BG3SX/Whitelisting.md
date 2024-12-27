@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T08:47:19.050Z
+date: 2024-12-27T08:49:21.499Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -378,6 +378,9 @@ Make a note of all your Tag `Name` and `UUID`
   ##### By using the BG3SX error code
   
   Non-whitelisted races do not get the ability to use BG3SX content. 
+  To trigger the error message, use an allowed character, like any of the companions and attempt an action on the non-whitelisted race.
+  
+  For example: Select Astarion in your Party. Choose the BG3SX action on the non-whitelisted character. You will now see an error message pop up.
   
   ![checkfailedondisallowed1console.png](/tutorials/bg3sx/checkfailedondisallowed1console.png)
   
