@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T12:02:54.064Z
+date: 2024-12-27T12:03:51.804Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -364,8 +364,8 @@ You can start the game and load a save to check if your changes were successfull
   
 ### 3.1.2 Gather your tag names and uuids
   
-  There are two ways of accesseing the data you need to whitelist a race. 
-  Either by directly looking at the mod files, or by checking the BG3SX error log.
+  There are two ways of accessing the data you need to whitelist a race. 
+  Either by directly getting them from the mod files, or by checking the BG3SX error log.
   
 #### 3.1.2.1 By checking your mod files
   
