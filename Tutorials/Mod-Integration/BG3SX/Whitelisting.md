@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T12:04:57.675Z
+date: 2024-12-27T12:08:54.454Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -400,16 +400,19 @@ Make a note of all your Tag `Name` and `UUID`
   
 ![checkfailedondisallowed1.png](/tutorials/bg3sx/checkfailedondisallowed1.png)
   
-This message tells you that the race `BG3SX_Example_Whitelisting_Race_Player` with the character UUID `"79ce94d1-2423-8cb6-0b17-af7ce8026069"` has failed the whitelist check because it has a tag with the name `DISALLOWED1` with the uuid `"2105a2d9-e7ec-4a3f-91ba-a3c548713306"`
+This message tells you that the race `BG3SX_Example_Whitelisting_Race_Player` with the character UUID `"79ce94d1-2423-8cb6-0b17-af7ce8026069"` has failed the whitelist check because it has a tag with the Name `DISALLOWED1` with the UUID `"2105a2d9-e7ec-4a3f-91ba-a3c548713306"`
   
 This data will also be printed in your ScriptExtender console for easy copying.
   
 ![checkfailedondisallowed1console.png](/tutorials/bg3sx/checkfailedondisallowed1console.png)
+ 
+ Make a note of your Tag `Name` and `UUID`. In this case this would be:
+Name `DISALLOWED1` with UUID `"2105a2d9-e7ec-4a3f-91ba-a3c548713306"`
   
-After whitelisting one tag, another one might still not be whitelisted, so repeat this process until no error messages appear anymore.  
+After whitelisting one Tag, you might get another error message with another non-whitelisted Tag. So repeat this process until no error messages appear anymore.  
   
 
-### 3.1.2. Whitelist your tags
+### 3.1.2. Whitelist your Tags
 
   Now follow the previous section [Whitelisting with a script](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-2111-for-races) and all of your tags.
   
