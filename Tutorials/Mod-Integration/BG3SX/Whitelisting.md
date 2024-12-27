@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T12:01:18.955Z
+date: 2024-12-27T12:02:54.064Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -357,6 +357,10 @@ Creating a BootstrapServer.lua file.
 You can start the game and load a save to check if your changes were successfull.
   
   ![successfullload.png](/tutorials/bg3sx/successfullload.png)
+  
+> A more detailed guide for those who are new to ScriptExtender can be found [here](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted)  
+{.is-info}
+
   
 ### 3.1.2 Gather your tag names and uuids
   
