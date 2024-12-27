@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T09:44:28.759Z
+date: 2024-12-27T09:47:00.969Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -376,8 +376,9 @@ If you have created custom Tags, you usually find them in the `someTag.lsx` file
   
   ![tags.png](/tutorials/bg3sx/tags.png)
   
+  
+  ![tagexample.png](/tutorials/bg3sx/tagexample.png)
 
- [image here] 
   
 Make a note of all your Tag `Name` and `UUID`  
   
