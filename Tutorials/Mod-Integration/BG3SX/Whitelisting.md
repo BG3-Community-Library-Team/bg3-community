@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T10:49:26.855Z
+date: 2024-12-27T10:49:59.623Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -63,7 +63,7 @@ If you want to create a **BG3SX Whitelist** patch for a mod that you are not the
 ## 1.5 Can vanilla races be whitelisted?
 
   Yes. Vanilla races can be Whitelisted just like any modded race.
-  For this follow the guide for [optional addons](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#as-an-optional-addon). 
+  For this follow the guide for [optional addons](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-32-as-an-optional-addon). 
   
   Before sharing your vanilla Whitelist mod, make sure it is compliant with the Terms of Service of the website you want to publish it on. 
  
