@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T09:34:02.417Z
+date: 2024-12-27T09:39:57.149Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -242,7 +242,7 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
 
 #### As a part of the main mod
 
-##### Create all folders and files
+##### 1. Create all folders and files
   
 If your mod does not have any ScriptExtender content yet, you want to add the necessary folders and files to your mod.
   
@@ -350,12 +350,12 @@ You can start the game and load a save to check if your changes were successfull
   
   ![successfullload.png](/tutorials/bg3sx/successfullload.png)
   
-##### Gather your tag names and uuids
+##### 2. Gather your tag names and uuids
   
   There are two ways of accesseing the data you need to whitelist a race. 
   Either by directly looking at the mod files, or by checking the BG3SX error log.
   
-##### By checking your mod files
+##### 2.1 By checking your mod files
   
 Since you are the author, you probably know where you added the race tags. 
 This is usually done in the `Races.lsx` file in `Public\YourModName\Races\Races.lsx`
@@ -375,7 +375,7 @@ If you have created custom Tags, you usually find them in the `someTag.lsx` file
   
 Make a note of all your Tag `Name` and `UUID`  
   
-  ##### By using the BG3SX error code
+  ##### 2.2 By using the BG3SX error code
   
   Non-whitelisted races do not get the ability to use BG3SX content. 
   To trigger the error message, use an allowed character, like any of the companions and attempt an action on the non-whitelisted race.
@@ -393,7 +393,7 @@ This data will also be printed in your ScriptExtender console for easy copying.
 After whitelisting one tag, another one might still not be whitelisted, so repeat this process until no error messages appear anymore.  
   
 
-  
+##### 3. Whitelist your tags
 
   
 #### As an optional addon
