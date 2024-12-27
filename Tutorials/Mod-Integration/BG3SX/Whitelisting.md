@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: true
-date: 2024-12-27T12:59:32.054Z
+date: 2024-12-27T13:08:39.967Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -319,14 +319,14 @@ project-folder/
 </div>
 
 
-  <br>
-  
-  
 
+  
   
 In your `ScriptExtender` folder, create a `Lua` folder and a `Config.json` file.
   
   
+
+ 
 ```
 project-folder/
 │
@@ -346,6 +346,8 @@ project-folder/
 
 ```
   
+<br>
+  
 > On windows, the file extensions are hidden by default.
 > This causes files to sometimes be created as "Filename.json.txt"
 > To make sure you create the correct file extension, we suggest [you enable "File Extensions"](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/) 
@@ -355,16 +357,12 @@ project-folder/
 <br>
   
 <div style="text-align: center;">
-  <img src="/tutorials/bg3sx/creatingluafolder.png" alt="Creating Lua Folder" width="300" height="700">
+  <img src="tutorials/bg3sx/creatingluafolder.png" alt="" width="" height="">
 </div>
 
   <div style="text-align: center;">
-Creating a Lua folder and Config.json.
 </div>
 
-  
-<br>
-  
   
   
 Edit your `Config.json` file.
@@ -419,22 +417,28 @@ project-folder/
 print("MyModName has been loaded succesfully")
   ```
   
+  <div style="text-align: center;">
+  <img src="/tutorials/bg3sx/workspace.png" alt="Creating BS" width="450" height="350">
+</div>
+  
+<div style="text-align: center;">
+  What your workspace should look like
+</div>
+
 
 <br>
   
 <div style="text-align: center;">
-  <img src="/tutorials/bg3sx/whitelisting/creatingbootstrap.png" alt="Creating BS" width="450" height="700">
+  <img src="tutorials/bg3sx/whitelisting/creatingbootstrap.png" alt="" width="" height="">
 </div>
 
   <div style="text-align: center;">
-Creating a BootstrapServer.lua file.
+
 </div>
 
-  
-<br>
-  
 
-You can start the game and load a save to check if your changes were successfull.
+  
+You can start the game and load a save to check if your changes were successful.
   
   ![successfullload.png](/tutorials/bg3sx/successfullload.png)
   
