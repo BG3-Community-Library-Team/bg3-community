@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T09:41:44.003Z
+date: 2024-12-27T09:44:28.759Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -368,7 +368,9 @@ This is usually done in the `Races.lsx` file in `Public\YourModName\Races\Races.
 
 This lists all of the Tags you have added to the race
   
-  [image here]
+  
+  ![raceslsxtags.png](/tutorials/bg3sx/raceslsxtags.png)
+
   
 If you have created custom Tags, you usually find them in the `someTag.lsx` file in `Public\YourModName\Tags\someTag.lsx`  
   
