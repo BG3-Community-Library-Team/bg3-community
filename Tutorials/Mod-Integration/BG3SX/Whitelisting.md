@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: true
-date: 2024-12-27T12:50:21.820Z
+date: 2024-12-27T12:51:54.672Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -213,7 +213,7 @@ Create your `TagFrameworkConfig.json` as explained in the [Tag Framework guide](
   Replace the following content: 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourModGUID"` with the UUID of your mod
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourRaceTag"` with the UUID of your race tag
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourReallyRaceTag"` with the UUID of your really race tag
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"YourReallyRaceTag"` with the UUID of your REALLY race tag
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`true_or_false` with true if you want to allow BG3SX support
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`true_or_false` with false if you want to disallow BG3SX support
