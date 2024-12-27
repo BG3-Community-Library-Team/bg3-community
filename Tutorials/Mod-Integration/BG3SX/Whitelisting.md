@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T11:04:45.711Z
+date: 2024-12-27T11:06:07.184Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -130,7 +130,7 @@ end
 ```
   
   Similary, you can *Blacklist*  your race by setting `Allowed` to `false`
-  You can also include an optional reason that will be shown in an error message, both On-Screen and the console.
+  You can also include an optional reason that will be shown in an error message, both on-screen and in the console.
 
   
 ```lua
