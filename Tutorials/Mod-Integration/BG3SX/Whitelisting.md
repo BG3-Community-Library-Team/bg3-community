@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T12:00:34.524Z
+date: 2024-12-27T12:01:18.955Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -328,20 +328,8 @@ Replace `"YourCoolModName"` with your mod name.
   ```
   
   
-<br>
-  
-<div style="text-align: center;">
-  <img src="/tutorials/bg3sx/whitelisting/creatingconfig.png" alt="Creating Lua Folder" width="300" height="700">
-</div>
 
-  <div style="text-align: center;">
-Creating a Lua folder and Config.json.
-</div>
-
-  
-<br>
-  
-
+ 
   
 
 In your `Lua` folder, create a `BootstrapServer.lua` file and add a print statement so you can check if you have done everything correctly.
