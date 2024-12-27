@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T12:40:04.973Z
+date: 2024-12-27T12:40:38.970Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -70,7 +70,7 @@ If you want to create a **BG3SX Whitelist** patch for a mod that you are not the
   
 ## 1.6 Can individual characters be white-/blacklisted?
   
-  If you do not want to whitelist an entire race but only one character, for example **Withers**, but not all UNDEAD entities, or **Haarlep**, but not all FIEND entities, you can Whitelist specific characters. For this follow [the section for individual entities](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-212-for-single-entities)
+  If you do not want to whitelist an entire race but only one character, for example **Withers**, but not all UNDEAD entities, or **Haarlep**, but not all FIEND entities, you can Whitelist specific characters. For this follow [the section for individual entities](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-212-for-individual-entities)
   
 Modders who create custom NPCs, can also just blacklist them individually if they want to.
   
