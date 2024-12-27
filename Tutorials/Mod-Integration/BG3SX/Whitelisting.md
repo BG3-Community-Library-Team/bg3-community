@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T12:23:50.398Z
+date: 2024-12-27T12:25:52.278Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -474,7 +474,7 @@ After whitelisting one Tag, you might get another error message with another non
 
 ### 3.1.2. Whitelist your Tags
 
-  Now follow the previous section [Whitelisting with a script](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-2111-for-races) and all of your tags.
+  Now follow the previous section [Whitelisting with a script](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-21-with-a-script) and enter all of your tags.
   
 ```lua  
 if Mods.BG3SX then
