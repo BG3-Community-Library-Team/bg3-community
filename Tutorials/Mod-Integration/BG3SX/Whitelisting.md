@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T10:54:42.061Z
+date: 2024-12-27T11:01:02.539Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -82,7 +82,7 @@ Modders who create a custom NPCs, can also just blacklist them individually if t
 {.is-info}  
 
   
-  The following section shortly explain how to *Whitelist*/*Blacklist* your race or character when you already know the basics of creating a workspace and finding tags. If you need a detailed explanation, jump to [INSERT DETAILED EXPLANATION LINK HERE]#
+  The following section shortly explain how to *Whitelist*/*Blacklist* your race or character when you already know the basics of creating a workspace with SE functionality. If you need a detailed explanation, jump to [the detailed guide here](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-3-detailed-whitelisting-guide)
   
   You can either *Whitelist*/*Blacklist* your race with a simple script, or by using the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545).
   Keep in mind that if you are using it, you cannot automatically also *Whitelist*/*Blacklist* single characters.
