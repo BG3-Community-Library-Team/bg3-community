@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T10:31:08.779Z
+date: 2024-12-27T10:33:00.387Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -33,7 +33,7 @@ To prevent inappropriate actions and to stay compliant with Nexus Terms of Servi
 Whitelisting allows other modders to add their races to the **BG3SX** system.
 
 In addition, you can also use this system to *Blacklist* your mod.
-For example if your race uses a non-default skeleton and thus may not be compatible with any of the BG3SX default/any Addons animations. See [link to script section]for more details.
+For example if your race uses a non-default skeleton and thus may not be compatible with any of the BG3SX default/any Addons animations. See [The script section](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-2111-for-races)for more details.
 
 *Blacklisting* always has a higher priority than *Whitelisting* to ensure author control.
 
