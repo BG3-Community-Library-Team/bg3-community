@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T08:43:17.564Z
+date: 2024-12-27T08:47:19.050Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -371,7 +371,13 @@ If you have created custom Tags, you usually find them in the `someTag.lsx` file
   ![tags.png](/tutorials/bg3sx/tags.png)
   
 
+ [image here] 
+  
 Make a note of all your Tag `Name` and `UUID`  
+  
+  ##### By using the BG3SX error code
+  
+  Non-whitelisted races do not get the ability to use BG3SX content. 
   
   ![checkfailedondisallowed1console.png](/tutorials/bg3sx/checkfailedondisallowed1console.png)
   
@@ -379,7 +385,7 @@ Make a note of all your Tag `Name` and `UUID`
   
   ![checkfailedondisallowed1.png](/tutorials/bg3sx/checkfailedondisallowed1.png)
   
-##### By using the BG3SX error code
+
   
 #### As an optional addon
     
