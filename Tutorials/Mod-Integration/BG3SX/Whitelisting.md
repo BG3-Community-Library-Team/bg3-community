@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T10:28:32.499Z
+date: 2024-12-27T10:29:21.046Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -428,7 +428,7 @@ If you want BG3SX support to be optional, you can create a small mod that whitel
 For this, simply create a new mod. We recommend you download the [BG3SX_Addon_For_Incompatible_ExampleRace](https://www.nexusmods.com/baldursgate3/mods/14435) and modify it.
 Don't forget to change the UUID in the `meta.lsx` file!
 
-Then you can follow the previous section from [Gather your tag names and uuids]()
+Then you can follow the previous section from [Gather your tag names and uuids](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-312-gather-your-tag-names-and-uuids)
   
 > Load any optional Whitelist addon **AFTER** BG3SX. If you are using the in game mod manager, we advise you to use [BG3MM](https://github.com/LaughingLeader/BG3ModManager/releases) instead as the in game Mod Manager does not allow you to reorder your mods.
 {.is-warning}
