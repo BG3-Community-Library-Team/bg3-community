@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T11:56:57.605Z
+date: 2024-12-27T11:59:01.523Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -297,7 +297,7 @@ In your `ScriptExtender` folder, create a `Lua` folder and a `Config.json` file.
 <br>
   
 <div style="text-align: center;">
-  <img src="/tutorials/bg3sx/whitelisting/creatingluafolder.png" alt="Creating Lua Folder" width="300" height="700">
+  <img src="/tutorials/bg3sx/creatingluafolder.png" alt="Creating Lua Folder" width="300" height="700">
 </div>
 
   <div style="text-align: center;">
