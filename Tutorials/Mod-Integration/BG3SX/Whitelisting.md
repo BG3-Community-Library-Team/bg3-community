@@ -2,13 +2,19 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T10:35:38.903Z
+date: 2024-12-27T10:36:55.616Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
 ---
 
 # BG3SX Whitelisting
+
+
+# Header one
+## header two
+### header three
+#### header four
 
 > This Tutorial will walk you through the steps of integrating your race mod, or character with **BG3SX**. An adult mod for Baldur's Gate 3.
 > Please note that due to the adult nature of this mod, it is not linked in this tutorial.
