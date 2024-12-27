@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T09:39:57.149Z
+date: 2024-12-27T09:41:44.003Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -238,8 +238,12 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
   
 ```  
   
-### 2. Detailed Whitelisting guide
+### 3. Detailed Whitelisting guide
 
+>   If at any point it looks like your changes don't do anything, verify that your changes are saved and the newest version of your mod is loaded.
+{.is-warning}
+
+  
 #### As a part of the main mod
 
 ##### 1. Create all folders and files
