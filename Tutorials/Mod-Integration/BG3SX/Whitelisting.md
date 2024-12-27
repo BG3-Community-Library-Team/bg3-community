@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: true
-date: 2024-12-27T12:54:31.399Z
+date: 2024-12-27T12:59:32.054Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -280,24 +280,45 @@ project-folder/
 ├── Mods/
 │   └── YourModName
 │ 			│   
-│  	 	├── ScriptExtender/
+│  	 	│  
 │   		└── meta.lsx
 |
 └── Public
 
 ```
+ 
+<div style="text-align: center;">
+  <span style="font-size: 50px;">↓</span>
+</div>
+
+
+
+```
+project-folder/
+│
+├── Localization/
+│
+├── Mods/
+│   └── YourModName
+│ 			│   
+│  	 	├── ScriptExtender/
+│   		└── meta.lsx
+|
+└── Public
+
+```  
   
   <br>
   
 <div style="text-align: center;">
-  <img src="/tutorials/bg3sx/creatingsefolder.png" alt="Creating SE Folder" width="300" height="700">
+  <img src="tutorials/bg3sx/creatingsefolder.png" alt="" width="" height="">
 </div>
 
   <div style="text-align: center;">
-Creating a ScriptExtender folder.
+
 </div>
 
-  
+
   <br>
   
   
