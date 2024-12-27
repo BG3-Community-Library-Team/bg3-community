@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T07:51:26.608Z
+date: 2024-12-27T08:06:21.968Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -354,6 +354,8 @@ You can start the game and load a save to check if your changes were successfull
   
 ##### By checking your mod files
   
+Since you are the author, you probably know where you added the race tags. 
+This is usually done in the `Races.lsx` file in `Public\YourModName\Races\Races.lsx`
   
 ##### By using the BG3SX error code
   
