@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T10:41:22.016Z
+date: 2024-12-27T10:43:24.904Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -89,9 +89,9 @@ If you want to create a **BG3SX Whitelist** patch for a mod that you are not the
   This still needs to be done manually - For that follow [INSERT SINGLE CHARACTER GUIDE HERE]
  
   
-  ### 2.1  With a script
+  ## 2.1  With a script
   
-  #### 2.1.1 For races
+  ### 2.1.1 For races
   
   Add the following code snippet to your `BootstrapServer.lua` script:
  
@@ -145,7 +145,7 @@ end
 ```
   
 
-#### 2.1.2 For single entities
+### 2.1.2 For single entities
 
   Add the following code snippet to your `BootstrapServer.lua` script:
   
@@ -168,7 +168,7 @@ end
 
 ```
   
-### 2.2  With the Tag Framework
+## 2.2  With the Tag Framework
 
 Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) and are only possible with a script
   
@@ -242,7 +242,7 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
 {.is-warning}
 
   
-#### 3.1 As a part of the main mod
+## 3.1 As a part of the main mod
   
 > If you implement the whitelisting directly in your mod, make sure your users load it **AFTER** BG3SX. We advise you recommend them to use [BG3MM](https://github.com/LaughingLeader/BG3ModManager/releases) instead of the in game mod manager, as the latter does not allow you to reorder your mods.
 >
@@ -250,7 +250,7 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
 {.is-warning}
 
 
-#### 3.1.1 Create all folders and files
+### 3.1.1 Create all folders and files
   
 If your mod does not have any ScriptExtender content yet, you want to add the necessary folders and files to your mod.
   
@@ -358,7 +358,7 @@ You can start the game and load a save to check if your changes were successfull
   
   ![successfullload.png](/tutorials/bg3sx/successfullload.png)
   
-#### 3.1.2 Gather your tag names and uuids
+### 3.1.2 Gather your tag names and uuids
   
   There are two ways of accesseing the data you need to whitelist a race. 
   Either by directly looking at the mod files, or by checking the BG3SX error log.
@@ -404,7 +404,7 @@ This data will also be printed in your ScriptExtender console for easy copying.
 After whitelisting one tag, another one might still not be whitelisted, so repeat this process until no error messages appear anymore.  
   
 
-#### 3.1.2. Whitelist your tags
+### 3.1.2. Whitelist your tags
 
   Now follow the previous section [Whitelisting with a script](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-2111-for-races) and all of your tags.
   
@@ -420,7 +420,7 @@ end
   
 Your race is now allowed to use BG3SX actions.
   
-### 3.2 As an optional addon
+## 3.2 As an optional addon
     
 If you want BG3SX support to be optional, you can create a small mod that whitelists your race.
 For this, simply create a new mod. We recommend you download the [BG3SX_Addon_For_Incompatible_ExampleRace](https://www.nexusmods.com/baldursgate3/mods/14435) and modify it.
@@ -432,7 +432,7 @@ Then you can follow the previous section from [Gather your tag names and uuids](
 {.is-warning}
 
   
-## 3. Custom Genitals
+# 3. Custom Genitals
   
   -- sometimes races are not set up correctly so bpdytype 2 is actually not strong -> default to regular human peen and looks wird
   -- authors might want to use their custom penises.
