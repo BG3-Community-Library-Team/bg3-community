@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T11:09:45.352Z
+date: 2024-12-27T11:11:45.326Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -176,6 +176,9 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
   
   For single entities see the section [here](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-212-for-single-entities)
   
+  
+Create your `TagFrameworkConfig.json` as explained in the [Tag Framework guide](https://github.com/BG3-Community-Library-Team/TagFramework/wiki)   
+  
 ```json
   
 "Tags": [
@@ -188,7 +191,7 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
   
 ```  
   
-  Add the `BG3SX_Support section
+  Add the `BG3SX_Support` section
   
 ```json
   
