@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: true
-date: 2024-12-27T12:49:14.406Z
+date: 2024-12-27T12:49:29.618Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -172,7 +172,7 @@ end
   
 ## 2.2  With the Tag Framework
 
-Individual characters cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) and are only possible with a script.
+Individual characters cannot be *Whitelisted/Blacklisted* with the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) and are only possible with a script.
   
   For individual entities see the section [here](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-212-for-individual-entities)
   
