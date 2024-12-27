@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T09:33:14.743Z
+date: 2024-12-27T09:34:02.417Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -390,7 +390,7 @@ This data will also be printed in your ScriptExtender console for easy copying.
   
 ![checkfailedondisallowed1console.png](/tutorials/bg3sx/checkfailedondisallowed1console.png)
   
-  
+After whitelisting one tag, another one might still not be whitelisted, so repeat this process until no error messages appear anymore.  
   
 
   
