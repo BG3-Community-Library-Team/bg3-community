@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-26T20:05:05.351Z
+date: 2024-12-27T06:50:29.942Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -245,14 +245,24 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
 If your mod does not have any ScriptExtender content yet, you want to add the necessary folders and files to your mod.
   
 > Don't want to create the files yourself? 
-> Download the Script Extender sample mod [here], drag the `ScriptExtender` folder to the correct location and modify the files
+> Download the Script Extender sample mod [here](https://www.nexusmods.com/baldursgate3/mods/14435), drag the `ScriptExtender` folder to the correct location and modify the files
 {.is-info}
 
   
 Create a `ScriptExtender` folder in your `ModName` folder in `Mods` where your `meta.lsx` file is located.
- 
+
+  <br>
   
-[insert image here]
+<div style="text-align: center;">
+  <img src="/tutorials/bg3sx/creatingsefolder.png" alt="Creating SE Folder" width="300" height="700">
+</div>
+
+  <div style="text-align: center;">
+Creating a ScriptExtender folder.
+</div>
+
+  
+  <br>
   
 In your `ScriptExtender` folder, create a `Lua` folder and a `Config.json` file.
   
