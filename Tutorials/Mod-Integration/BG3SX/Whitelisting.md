@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T07:33:17.797Z
+date: 2024-12-27T07:35:28.822Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -242,6 +242,8 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
 
 #### As a part of the main mod
 
+##### Create all folders and files
+  
 If your mod does not have any ScriptExtender content yet, you want to add the necessary folders and files to your mod.
   
 > Don't want to create the files yourself? 
@@ -347,6 +349,13 @@ Creating a BootstrapServer.lua file.
 You can start the game and load a save to check if your changes were successfull.
   
   ![successfullload.png](/tutorials/bg3sx/successfullload.png)
+  
+##### Gather your tag names and uuids
+  
+##### By checking your mod files
+  
+  
+##### By using the BG3SX error code
   
 #### As an optional addon
     
