@@ -1,8 +1,8 @@
 ---
 title: Whitelisting for BG3SX
 description: 
-published: false
-date: 2024-12-27T12:47:30.522Z
+published: true
+date: 2024-12-27T12:47:42.808Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
