@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T09:30:27.002Z
+date: 2024-12-27T09:33:14.743Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -382,11 +382,17 @@ Make a note of all your Tag `Name` and `UUID`
   
   For example: Select Astarion in your Party. Choose the BG3SX action on the non-whitelisted character. You will now see an error message pop up.
   
-  ![checkfailedondisallowed1console.png](/tutorials/bg3sx/checkfailedondisallowed1console.png)
+![checkfailedondisallowed1.png](/tutorials/bg3sx/checkfailedondisallowed1.png)
+  
+This message tells you that the race `BG3SX_Example_Whitelisting_Race_Player` with the character UUID `"79ce94d1-2423-8cb6-0b17-af7ce8026069"` has failed the whitelist check because it has a tag with the name `DISALLOWED1` with the uuid `"2105a2d9-e7ec-4a3f-91ba-a3c548713306"`
+  
+This data will also be printed in your ScriptExtender console for easy copying.
+  
+![checkfailedondisallowed1console.png](/tutorials/bg3sx/checkfailedondisallowed1console.png)
   
   
   
-  ![checkfailedondisallowed1.png](/tutorials/bg3sx/checkfailedondisallowed1.png)
+
   
 
   
