@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T10:37:55.196Z
+date: 2024-12-27T10:40:39.483Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -19,7 +19,7 @@ dateCreated: 2024-12-25T07:23:13.330Z
 {.is-warning}
 
 
-# 1 Whitelisting Basics
+# 1. Whitelisting Basics
 ## 1.1 What is Whitelisting
 
 In **Baldur's Gate 3 Modding** a popular mod type is [Race mods](https://www.nexusmods.com/baldursgate3/mods/categories/15/). 
@@ -74,14 +74,13 @@ If you want to create a **BG3SX Whitelist** patch for a mod that you are not the
   
   In the same vein, modders who create a custom NPCs, can also just as much blacklist them individually if they want to.
   
-# 2 Whitelisting Guides
-
->  Do you learn information better by trying things out yourself?
-> Download the [**Example race mod with BG3SX support** or the **Example race mod with optional BG3SX addon**](https://www.nexusmods.com/baldursgate3/mods/14435?tab=description) to see what a correct implementation looks like.
-{.is-info}
-
   
-## 2.1 How to Whitelist when you already have some modding experience.
+# 2. How to Whitelist when you already have some modding experience.
+  
+> Do you learn information better by trying things out yourself?
+> Download the [**Example race mod with BG3SX support** or the **Example race mod with optional BG3SX addon**](https://www.nexusmods.com/baldursgate3/mods/14435?tab=description) to see what a correct implementation looks like.
+{.is-info}  
+
   
   The following section shortly explain how to *Whitelist*/*Blacklist* your race or character when you already know the basics of creating a workspace and finding tags. If you need a detailed explanation, jump to [INSERT DETAILED EXPLANATION LINK HERE]#
   
@@ -90,9 +89,9 @@ If you want to create a **BG3SX Whitelist** patch for a mod that you are not the
   This still needs to be done manually - For that follow [INSERT SINGLE CHARACTER GUIDE HERE]
  
   
-  ### 2.1.1  With a script
+  ### 2.1  With a script
   
-  #### 2.1.1.1 For races
+  #### 2.1.1 For races
   
   Add the following code snippet to your `BootstrapServer.lua` script:
  
@@ -146,7 +145,7 @@ end
 ```
   
 
-#### 2.1.1.2 For single entities
+#### 2.1.2 For single entities
 
   Add the following code snippet to your `BootstrapServer.lua` script:
   
@@ -169,7 +168,7 @@ end
 
 ```
   
-### 2.1.2  With the Tag Framework
+### 2.2  With the Tag Framework
 
 Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) and are only possible with a script
   
@@ -237,7 +236,7 @@ Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod
   
 ```  
   
-## 3. Detailed Whitelisting guide
+# 3. Detailed Whitelisting guide
 
 >   If at any point it looks like your changes don't do anything, verify that your changes are saved and the newest version of your mod is loaded.
 {.is-warning}
