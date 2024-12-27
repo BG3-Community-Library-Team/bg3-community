@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T12:25:52.278Z
+date: 2024-12-27T12:27:16.927Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -500,22 +500,5 @@ Then you can follow the previous section from [Gather your tag names and uuids](
 >
 > ![screenshot_from_2024-12-27_12-47-17.png](/tutorials/bg3sx/screenshot_from_2024-12-27_12-47-17.png)
 {.is-warning}
-
-  
-# 3. Custom Genitals
-  
-  -- sometimes races are not set up correctly so bpdytype 2 is actually not strong -> default to regular human peen and looks wird
-  -- authors might want to use their custom penises.
-  
-Your content here
-
-
-test content
-
-
-  -- TODO: CHeck the optional addon link
-
-
-  
   
   
