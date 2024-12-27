@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T11:06:07.184Z
+date: 2024-12-27T11:08:23.317Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -166,6 +166,9 @@ if Mods.BG3SX then
 end
 
 ```
+
+  For *Blacklisting* use `Data.BlacklistedEntities` instead of `Data.WhitelistedEntities`
+  
   
 ## 2.2  With the Tag Framework
 
