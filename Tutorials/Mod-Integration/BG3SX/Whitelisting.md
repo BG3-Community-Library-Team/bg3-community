@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T12:08:54.454Z
+date: 2024-12-27T12:22:02.096Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -273,6 +273,21 @@ If your mod does not have any ScriptExtender content yet you want to add the nec
   
 Create a `ScriptExtender` folder in your `ModName` folder in `Mods` where your `meta.lsx` file is located.
 
+```
+project-folder/
+│
+├── Localization/
+│
+├── Mods/
+│   └── YourModName
+│ 			│   
+│  	 	├── ScriptExtender/
+│   		└── meta.lsx
+|
+└── Public
+
+```
+  
   <br>
   
 <div style="text-align: center;">
@@ -286,7 +301,30 @@ Creating a ScriptExtender folder.
   
   <br>
   
+  
+
+  
 In your `ScriptExtender` folder, create a `Lua` folder and a `Config.json` file.
+  
+  
+```
+project-folder/
+│
+├── Localization/
+│
+├── Mods/
+│   └── YourModName
+│      	│ 
+│  	  	├── ScriptExtender/
+│ 		 	│  	 │ 
+│  			│ 		├── Lua/
+│  			│		 └── config.json
+│ 			 │ 
+│   		 └── meta.lsx
+|
+└── Public
+
+```
   
 > On windows, the file extensions are hidden by default.
 > This causes files to sometimes be created as "Filename.json.txt"
@@ -333,6 +371,27 @@ Replace `"YourCoolModName"` with your mod name.
   
 
 In your `Lua` folder, create a `BootstrapServer.lua` file and add a print statement so you can check if you have done everything correctly.
+  
+  ```
+project-folder/
+│
+├── Localization/
+│
+├── Mods/
+│   └── YourModName
+│      	│ 
+│  	  	├── ScriptExtender/
+│ 		 	│  	 │ 
+│  			│ 		├── Lua/
+│  			│		 │	  └── BootstrapServer.lua
+│			  │     │
+│  			│		 └── config.json
+│ 			 │ 
+│   		 └── meta.lsx
+|
+└── Public
+
+```
   
 ```lua
   
