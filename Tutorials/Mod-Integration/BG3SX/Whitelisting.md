@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T11:59:01.523Z
+date: 2024-12-27T12:00:34.524Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -313,7 +313,7 @@ Edit your `Config.json` file.
   
 The Required Version is the minimum version of Script Extender your mod requires.
 This is usually irrelevant for most mods. If you are unsure which version to use here, use the version that **BG3SX** uses.
-Version `1.4.9` requires ScriptExtender version `21`.
+**BG3SX** Version `1.4.9` requires ScriptExtender version `21`.
   
 Replace `"YourCoolModName"` with your mod name.
 
