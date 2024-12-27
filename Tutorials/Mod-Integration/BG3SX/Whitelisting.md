@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T11:02:02.566Z
+date: 2024-12-27T11:03:04.447Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -75,7 +75,7 @@ If you want to create a **BG3SX Whitelist** patch for a mod that you are not the
 Modders who create a custom NPCs, can also just blacklist them individually if they want to.
   
   
-# 2. How to Whitelist - Short Explanation.
+# 2. How to Whitelist - Short Explanation
   
 > Do you learn information better by trying things out yourself?
 > Download the [**Example race mod with BG3SX support** or the **Example race mod with optional BG3SX addon**](https://www.nexusmods.com/baldursgate3/mods/14435?tab=description) to see what a correct implementation looks like.
