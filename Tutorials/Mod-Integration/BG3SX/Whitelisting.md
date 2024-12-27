@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: true
-date: 2024-12-27T12:51:54.672Z
+date: 2024-12-27T12:54:31.399Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -263,7 +263,7 @@ Create your `TagFrameworkConfig.json` as explained in the [Tag Framework guide](
 
 ### 3.1.1 Create all folders and files
   
-If your mod does not have any ScriptExtender content yet you want to add the necessary folders and files to your mod.
+If your mod does not have any ScriptExtender content yet, you want to add the necessary folders and files to your mod.
   
 > Don't want to create the files yourself? 
 > Download the Script Extender sample mod [here](https://www.nexusmods.com/baldursgate3/mods/14435), drag the `ScriptExtender` folder to the correct location and modify the files
