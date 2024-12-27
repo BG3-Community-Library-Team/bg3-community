@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: false
-date: 2024-12-27T12:36:22.995Z
+date: 2024-12-27T12:40:04.973Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -53,7 +53,7 @@ Yes. This is technically possible, but we encourage you to wait for the author t
 {.is-warning}
 
 
-If you want to create a **BG3SX Whitelist** patch for a mod that you are not the author of and you want to use it for your personal use, you can follow the guide and create the patch as an [optional addon](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-32-as-an-optional-addon). 
+If you want to create a **BG3SX Whitelist** patch for a mod that you are not the author of and you want to use it for your personal use, you can follow the guide and create the patch as an [optional addon](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-32-as-an-optional-addon) instead of editing the original mod. 
 
 > **<ins>Personal use<ins>** **means that the file does not leave your computer!**
 > **Do not share files that you did not get permission for creating.**
@@ -70,9 +70,9 @@ If you want to create a **BG3SX Whitelist** patch for a mod that you are not the
   
 ## 1.6 Can individual characters be white-/blacklisted?
   
-  If you do not want to whitelist an entire race but only one character, for example **Withers**, but not all UNDEAD entities, or **Haarlep**, but not all FIEND entities, you can Whitelist specific characters. For this follow [the section for single entities](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-212-for-single-entities)
+  If you do not want to whitelist an entire race but only one character, for example **Withers**, but not all UNDEAD entities, or **Haarlep**, but not all FIEND entities, you can Whitelist specific characters. For this follow [the section for individual entities](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-212-for-single-entities)
   
-Modders who create a custom NPCs, can also just blacklist them individually if they want to.
+Modders who create custom NPCs, can also just blacklist them individually if they want to.
   
   
 # 2. How to Whitelist - Short Explanation
@@ -85,7 +85,7 @@ Modders who create a custom NPCs, can also just blacklist them individually if t
   The following section shortly explain how to *Whitelist*/*Blacklist* your race or character when you already know the basics of creating a workspace with SE functionality. If you need a detailed explanation jump to [the detailed guide here](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-3-detailed-whitelisting-guide)
   
   You can either *Whitelist*/*Blacklist* your race with a simple script, or by using the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545).
-  Keep in mind that the Tag Framework mod only supports races, not single characters.
+  Keep in mind that the Tag Framework mod only supports races, not individual characters.
 
 
   ## 2.1  With a script
@@ -144,7 +144,7 @@ end
 ```
   
 
-### 2.1.2 For single entities
+### 2.1.2 For individual entities
 
   Add the following code snippet to your `BootstrapServer.lua` script:
   
@@ -172,9 +172,9 @@ end
   
 ## 2.2  With the Tag Framework
 
-Single character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) and are only possible with a script.
+Individual character cannot be *Whitelisted/Blacklistes* with the [Tag Framework Mod](https://www.nexusmods.com/baldursgate3/mods/6545) and are only possible with a script.
   
-  For single entities see the section [here](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-212-for-single-entities)
+  For individual entities see the section [here](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-212-for-individual-entities)
   
   
 Create your `TagFrameworkConfig.json` as explained in the [Tag Framework guide](https://github.com/BG3-Community-Library-Team/TagFramework/wiki)   
