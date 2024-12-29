@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: true
-date: 2024-12-27T13:27:24.822Z
+date: 2024-12-29T08:22:59.071Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -493,6 +493,8 @@ This data will also be printed in your ScriptExtender console for easy copying.
  Make a note of your Tag `Name` and `UUID`. In this case this would be:
 Name `DISALLOWED1` with UUID `"2105a2d9-e7ec-4a3f-91ba-a3c548713306"`
   
+The character uuid itself is not required for whitelisting, it.
+  
 After whitelisting one Tag, you might get another error message with another non-whitelisted Tag. So repeat this process until no error messages appear anymore.  
   
 
@@ -516,13 +518,19 @@ Your race is now allowed to use BG3SX actions.
     
 If you want BG3SX support to be optional, you can create a small mod that whitelists your race.
 For this, simply create a new mod. We recommend you download the [BG3SX_Addon_For_Incompatible_ExampleRace](https://www.nexusmods.com/baldursgate3/mods/14435) and modify it.
-Don't forget to change the UUID in the `meta.lsx` file!
-
+  
 Then you can follow the previous section from [Gather your tag names and uuids](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-312-gather-your-tag-names-and-uuids)
   
 > Load any optional Whitelist addon **AFTER** BG3SX. If you are using the in game mod manager, we advise you to use [BG3MM](https://github.com/LaughingLeader/BG3ModManager/releases) instead as the in game Mod Manager does not allow you to reorder your mods.
 >
 > ![screenshot_from_2024-12-27_12-47-17.png](/tutorials/bg3sx/screenshot_from_2024-12-27_12-47-17.png)
+{.is-warning}
+  
+  
+> Common pitfalls:
+> 1.Not changing the mod [`UUID`in the `meta.lsx` file!]((https://www.uuidgenerator.net/))
+> 2.Not changing the print statement in the `BootstrapServer.lua` to something unique so you can recognize changes!
+> 3. Not reexporting your load order. After changing the `UUID`, the mod manager treats it as a separate mod!  
 {.is-warning}
   
   
