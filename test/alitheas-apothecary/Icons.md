@@ -2,7 +2,7 @@
 title: icon Reference
 description: [sandbox] Information relating to Icons
 published: false
-date: 2024-11-11T21:36:24.631Z
+date: 2024-12-29T09:07:33.607Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
@@ -41,10 +41,11 @@ Item icons of books, maps, letters, and notes can be found in ControllerUIIcons/
 ![gazetteillustrations_3.webp](/information/icons/gazetteillustrations_3.webp)
 ![gazetteillustrations_4.webp](/information/icons/gazetteillustrations_4.webp)
 # BottomBar
-![bottombar1.webp](/information/icons/bottombar1.webp)
-![bottombar2.webp](/information/icons/bottombar2.webp)
-![bottombar3.webp](/information/icons/bottombar3.webp)
-![bottombar4.webp](/information/icons/bottombar4.webp)
+![bottombar_1.webp](/information/icons/bottombar_1.webp)
+![bottombar_2.webp](/information/icons/bottombar_2.webp)
+![bottombar_3.webp](/information/icons/bottombar_3.webp)
+![bottombar_4.webp](/information/icons/bottombar_4.webp)
+![bottombar_5.webp](/information/icons/bottombar_5.webp)
 ## neo
 ![bottombar_neo.webp](/information/icons/bottombar_neo.webp)
 ## VFX
@@ -55,6 +56,10 @@ Item icons of books, maps, letters, and notes can be found in ControllerUIIcons/
 ![buttons_3.webp](/information/icons/buttons_3.webp)
 ![buttons_4.webp](/information/icons/buttons_4.webp)
 # CC
+![cc_1.webp](/information/icons/cc_1.webp)
+![cc_2.webp](/information/icons/cc_2.webp)
+![cc_3.webp](/information/icons/cc_3.webp)
+![cc_4.webp](/information/icons/cc_4.webp)
 ## icons_abilities
 ## icons_backgrounds
 ## icons_deities
