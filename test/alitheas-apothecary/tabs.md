@@ -1,8 +1,8 @@
 ---
-title: How to add tabs to your wiki page
-description: [sandbox] Guide including template
+title: hair stuff
+description: [sandbox] messing with hair stuff
 published: false
-date: 2024-11-10T15:38:26.789Z
+date: 2024-12-29T06:46:44.539Z
 tags: test
 editor: markdown
 dateCreated: 2024-11-10T07:43:44.876Z
