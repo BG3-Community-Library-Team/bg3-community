@@ -2,7 +2,7 @@
 title: Alithea's Apothecary
 description: semi-personal page to experiment with editing and formatting without affecting the main content of the wiki
 published: true
-date: 2024-12-29T06:45:07.381Z
+date: 2024-12-29T07:16:56.146Z
 tags: test
 editor: markdown
 dateCreated: 2024-06-21T10:57:05.698Z
@@ -15,7 +15,7 @@ dateCreated: 2024-06-21T10:57:05.698Z
 
 - [wip](/test/alitheas-apothecary/wip) - wiki style guide
 
-- [tabs](/test/alitheas-apothecary/tabs) - wip on adding subtabs
+- [hair stuff](/test/alitheas-apothecary/test) - testing hair stuff
 
 - [Icons](/test/alitheas-apothecary/Icons) - wip for icon reference page
 
