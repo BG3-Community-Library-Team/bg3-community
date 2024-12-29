@@ -2,17 +2,18 @@
 title: icon Reference
 description: [sandbox] Information relating to Icons
 published: false
-date: 2024-12-29T10:59:57.911Z
+date: 2024-12-29T11:14:38.735Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
 ---
 
-# Where to find unpacked icons
+# Where to find Baldur's Gate 3 icons
 
-Please note that this page is meant as as reference for available icons, their names in the game files, and in which individual folder/subfolder they can be found.
+Please note that this page is intended as a reference for available icons, their names in the game files, and the specific folders or subfolders where they can be found after unpacking them.
 
-> The default folder path after unpacking the icons relative to where you keep the Multitool: ```Multitool\UnpackedData\Game\Public\Game\GUI\Assets```
+The default folder path after unpacking the icons, relative to where you keep the Multitool, is:
+```Multitool\UnpackedData\Game\Public\Game\GUI\Assets```
 
 # AbilityIcons
 ![abilityicons.webp](/information/icons/abilityicons.webp)
