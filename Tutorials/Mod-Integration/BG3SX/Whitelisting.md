@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: true
-date: 2024-12-29T08:22:59.071Z
+date: 2024-12-29T08:30:42.272Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -493,7 +493,7 @@ This data will also be printed in your ScriptExtender console for easy copying.
  Make a note of your Tag `Name` and `UUID`. In this case this would be:
 Name `DISALLOWED1` with UUID `"2105a2d9-e7ec-4a3f-91ba-a3c548713306"`
   
-The character uuid itself is not required for whitelisting, it.
+The character uuid itself is not required for whitelisting.
   
 After whitelisting one Tag, you might get another error message with another non-whitelisted Tag. So repeat this process until no error messages appear anymore.  
   
