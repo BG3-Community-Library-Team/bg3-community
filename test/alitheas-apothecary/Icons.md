@@ -2,7 +2,7 @@
 title: icon Reference
 description: [sandbox] Information relating to Icons
 published: false
-date: 2024-12-29T10:17:32.115Z
+date: 2024-12-29T10:34:12.394Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
@@ -69,7 +69,10 @@ Item icons of books, maps, letters, and notes can be found in ControllerUIIcons/
 ![cc_icons_deities_1.webp](/information/icons/cc_icons_deities_1.webp)
 ![cc_icons_deities_2.webp](/information/icons/cc_icons_deities_2.webp)
 ## icons_races
+![cc_icons_races_1.webp](/information/icons/cc_icons_races_1.webp)
+![cc_icons_races_2.webp](/information/icons/cc_icons_races_2.webp)
 ## icons_resources
+![cc_icons_resources.webp](/information/icons/cc_icons_resources.webp)
 # CC_c
 # CharacterAssign
 # CharacterAssign_c
