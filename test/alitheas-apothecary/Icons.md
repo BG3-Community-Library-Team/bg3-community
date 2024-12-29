@@ -2,7 +2,7 @@
 title: icon Reference
 description: [sandbox] Information relating to Icons
 published: false
-date: 2024-12-29T11:14:38.735Z
+date: 2024-12-29T11:19:45.883Z
 tags: test, wip, ico
 editor: markdown
 dateCreated: 2024-11-10T07:48:57.175Z
@@ -12,7 +12,7 @@ dateCreated: 2024-11-10T07:48:57.175Z
 
 Please note that this page is intended as a reference for available icons, their names in the game files, and the specific folders or subfolders where they can be found after unpacking them.
 
-The default folder path after unpacking the icons, relative to where you keep the Multitool, is:
+The default folder path, relative to where you keep the Multitool, is:
 ```Multitool\UnpackedData\Game\Public\Game\GUI\Assets```
 
 # AbilityIcons
