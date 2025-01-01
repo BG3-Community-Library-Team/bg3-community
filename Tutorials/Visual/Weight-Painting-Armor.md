@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-01T22:59:02.502Z
+date: 2025-01-01T23:04:51.310Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -37,8 +37,11 @@ This tutorial is  aimed at teaching you the basics of how to weight paint armor 
 
 Now let's get started!
 ## Finding similar vanilla armor
-The first step is to find armor in the game files that is roughly similar to your custom armor, so that we can steal the weights from it and make it easier on ourselves.
+The first step is to find armor or clothing in the game files that is roughly similar to your custom armor, so that we can steal the weights from it.
 
+The closest in shape to your custom armor the vanilla asset is, the better the weights will be.
+
+For
 All armors and clothes in the game have the affix "ARM" and "CLT" respectively in their asset name. Next, 
 
 ## Bringing the vanilla assets into Blender
