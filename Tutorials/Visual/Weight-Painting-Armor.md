@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T00:06:19.650Z
+date: 2025-01-02T00:52:57.211Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -49,10 +49,25 @@ The first step is to find armor or clothing in the game files that is roughly si
 Let's take this armor set for example (we will be using it for the duration of this tutorial):
 
 Since our armor is composed of full plate armor, with a skirt and a cloak, and is fitted to Humanoid Body Type 1, we will search for similar body type 1 assets using the Toolkit's Resource Manager or Modder's Multitool.
-> All armors and clothes in the game have the same naming structure, they all start with `RACE_BODYTYPE_ARM` for armor and `RACE_BODYTYPE_CLT` for clothing. 
+> All armors and clothes in the game have the same naming structure using tags, they all start with `RACE_BODYTYPE_ARM` for armor and `RACE_BODYTYPE_CLT` for clothing. To find armor for your chosen body type, refer to the following list of tags:
+ㅤ
+***RACE:***
+`DGB` for Dragonborn
+`DWR` for Dwarf
+`GTY` for Githyanki
+`GNO` for Gnome
+`HFL` for Halflings
+`HRC` for Half-Orcs
+`HUM` for Humans, Elves, Drows, Half-Elves and Tieflings
+ㅤ
+***BODY TYPE:***
+`F` for Body Type 1 (fem)
+`M` for Body Type 2 (masc)
+`FS` for Body Type 3 (fem strong, only for HUM races)
+`MS` for Body Type 4 (masc strong, only for HUM races)
 {.is-info}
 
-In our case, we are looking for Humanoid Feminine armors, so 
+In our case, we are looking for Humanoid Feminine armors, so we are going to type `HUM_F_ARM` in the search bar.
 
 ## Bringing the vanilla assets into Blender
 ## Transfering weights
