@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T16:33:10.971Z
+date: 2025-01-02T16:36:22.626Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -106,7 +106,7 @@ Now that we have extracted the GR2 files, it's time to import them into Blender.
 - Next, you can go ahead and **delete all the LOD meshes**, we won't need them. 
   You can also **delete meshes or mesh parts that are useless** and don't match up with your custom armor well. If we don't delete the extra meshes that we don't need, they could throw off the weight transfer.
 
-In our example's case, we will get rid of the hanging belt, the unnecessary bararian pants and the back skirt of the barbarian skirt.
+In our example's case, we will get rid of the hanging belt, the unnecessary barbarian pants and the back skirt of the barbarian skirt.
 > Keeping the Cloth Meshes is a good idea, you can reuse them to add cloth physics to your skirts and capes, although we will not be covering cloth physics in this tutorial.
 {.is-success}
 
