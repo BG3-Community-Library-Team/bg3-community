@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T12:54:28.500Z
+date: 2025-01-02T13:40:04.355Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -45,12 +45,17 @@ Now let's get started!
 ## Finding similar vanilla armor
 The first step is to find armor or clothing in the game files that is roughly similar to your custom armor, so that we can steal the weights from it. The closest in shape to your custom armor the vanilla asset is, the better the weight transfer will be.
 
-Let's take this armor set for example (we will be using it for the duration of this tutorial):
+Let's take this custom armor set for example (we will be using it for the duration of this tutorial):
 ![1_armor_in_blender.png](/weight_painting_armor_tutorial/1_armor_in_blender.png)
-Source: https://artstn.co/m/RGmbB
+*Source:* https://artstn.co/m/RGmbB
+
+
 
 Since our armor is composed of full plate armor, with a skirt and a cloak, and is fitted to Humanoid Body Type 1, we will search for similar body type 1 assets using the Toolkit's Resource Manager or Modder's Multitool.
-> All armors and clothes in the game have the same naming structure using tags, they all start with `RACE_BODYTYPE_ARM` for armor and `RACE_BODYTYPE_CLT` for clothing. To find armor for your chosen body type, refer to the following list of tags:
+> All armors and clothes in the game have the same naming structure using a combination of tags. 
+They all start with `RACE_BODYTYPE_ARM` for armor and `RACE_BODYTYPE_CLT` for clothing.
+ㅤ
+To find armor for your chosen body type, refer to the following list of tags:
 ㅤ
 ***RACE:***
 `DGB` for Dragonborn
@@ -68,9 +73,29 @@ Since our armor is composed of full plate armor, with a skirt and a cloak, and i
 `MS` for Body Type 4 (masc strong, only for HUM races)
 {.is-info}
 
-In our case, we are looking for humanoid feminine armors, so we are going to type `HUM_F_ARM` in the search bar.
+In our case, we are looking for humanoid feminine armors, so we are going to type `HUM_F_ARM` in the search bar of the Toolkit or the Multitool. 
+![2_toolkit_mesh_search.png](/weight_painting_armor_tutorial/2_toolkit_mesh_search.png)
 
-## Bringing the vanilla assets into Blender
+The Oathbreaker armor is very close to our custom armor, so we will be using the whole set for out example.
+![3_oathbreaker_armor.png](/weight_painting_armor_tutorial/3_oathbreaker_armor.png)
+It doesn't have a front skirt though, so we will also be borrowing the loincloth from the Barbarian starting armor.
+![4_barbarian_skirt.png](/weight_painting_armor_tutorial/4_barbarian_skirt.png)
+
+Now that we have identified the vanilla armor pieces that are similar to our custom armor, we can go ahead and extract them.
+
+> Baldur's Gate 3 uses the GR2 file format to store its 3D objects and meshes.
+{.is-info}
+
+> In the Toolkit, right click on an asset and click Extract Visual Data to extract the GR2.
+> In Modder's Multitool, click on the Extract File icon.
+{.is-info}
+
+## Preparing the vanilla assets in Blender
+Now that we have extracted the GR2 files, it's time to import them into Blender.
+> We need the Blender plugin [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter) installed to import and export GR2 files to and from Blender.
+{.is-warning}
+
+
 ## Transfering weights
 ## Testing the weights
 ## Fixing weights issues
