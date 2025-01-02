@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T15:53:47.874Z
+date: 2025-01-02T16:16:14.531Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -100,9 +100,11 @@ Now that we have extracted the GR2 files, it's time to import them into Blender.
 - In the same Blender file as your custom armor, import the GR2s by going to `File > Import > .gr2` and import all of the GR2s we have extracted, one by one.
 
 - Once you have imported all of the vanilla meshes, select all of them, and with your cursor in the viewport press `CTRL+A` and `Apply All Transforms`
-![6_apply_transforms.png](/weight_painting_armor_tutorial/6_apply_transforms.png)
 
-- Next, you can go ahead and **delete all the LOD meshes**, we won't need them. You can also d**elete meshes or mesh parts that are useless** and don't match up with your custom armor well. If we don't delete the extra meshes that we don't need, they could throw off the weight transfer.
+  ![6_apply_transforms.png](/weight_painting_armor_tutorial/6_apply_transforms.png)
+
+- Next, you can go ahead and **delete all the LOD meshes**, we won't need them. 
+  You can also **delete meshes or mesh parts that are useless** and don't match up with your custom armor well. If we don't delete the extra meshes that we don't need, they could throw off the weight transfer.
 
 In our example's case, we will get rid of the hanging belt, the unnecessary bararian pants and the back skirt of the barbarian skirt.
 > Keeping the Cloth Meshes is a good idea, you can reuse them to add cloth physics to your skirts and capes, although we will not be covering cloth physics in this tutorial.
@@ -117,11 +119,22 @@ Don't worry if yours doesn't match as well, the weight transfer will still work.
 {.is-warning}
 
 > To merge meshes in Blender, select them and press `CTLR+J` with your cursor in the viewport.
-{.is-success}
+{.is-info}
 
 Our vanilla armor is now all cleaned up and ready to be used for weight transfer!
+- It's a good idea to once again select all the meshes and armatures and **Apply All Transforms**.
+
 ![8_cleaned_up_vanilla_armor.png](/weight_painting_armor_tutorial/8_cleaned_up_vanilla_armor.png)
 ## Transfering weights
+We will now transfer weights from the vanilla armor to our custom armor.
+For this step you need both your custom armor meshes and the vanilla meshes visible in Blender.
+> Make sure your custom armor doesn't already have weights. 
+**Delete all the weights from your custom armor before proceeding.**
+> ![9_deleting_weights.png](/weight_painting_armor_tutorial/9_deleting_weights.png)
+{.is-warning}
+
+
+
 ## Testing the weights
 ## Fixing weights issues
 ## Weight painting stiff armor pieces
