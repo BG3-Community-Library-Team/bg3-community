@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T15:41:02.028Z
+date: 2025-01-02T15:41:40.065Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -16,7 +16,7 @@ This tutorial is  aimed at teaching you the basics of how to weight paint armor 
 ## Table of Contents
 1. [Pre-requisites](#pre-requisites)
 1. [Finding similar vanilla armor](#finding-similar-vanilla-armor)
-1. [Preparing the vanilla assets in Blender](#bringing-the-vanilla-assets-into-blender)
+1. [Preparing the vanilla assets in Blender](#preparing-the-vanilla-assets-in-blender)
 1. [Transfering weights](#transfering-weights)
 1. [Testing the weights](#testing-the-weights)
 1. [Fixing weights issues](#fixing-weights-issues)
