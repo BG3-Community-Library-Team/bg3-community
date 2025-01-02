@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T16:39:18.261Z
+date: 2025-01-02T16:39:42.463Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -146,7 +146,7 @@ If your custom armor is separated into several meshes, just choose one mesh to s
 ㅤ
 Transfer Weights settings should have appeared on the bottom left of your screen. Expand that window.
 ㅤ
-- Change the `Vertex Mapping` sertting to `Nearest Face Interpolated` and `Source Layers` setting to `By Name` like in the picture below. Then click out of that window to confirm the settings.
+- Change the `Vertex Mapping` setting to `Nearest Face Interpolated` and `Source Layers` setting to `By Name` like in the picture below. Then click out of that window to confirm the settings.
 ![12_weight_transfer_settings.png](/weight_painting_armor_tutorial/12_weight_transfer_settings.png)
 ## Testing the weights
 ## Fixing weights issues
