@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T13:42:21.421Z
+date: 2025-01-02T13:58:24.731Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -16,7 +16,7 @@ This tutorial is  aimed at teaching you the basics of how to weight paint armor 
 ## Table of Contents
 1. [Pre-requisites](#pre-requisites)
 1. [Finding similar vanilla armor](#finding-similar-vanilla-armor)
-1. [Bringing the vanilla assets into Blender](#bringing-the-vanilla-assets-into-blender)
+1. [Preparing the vanilla assets in Blender](#bringing-the-vanilla-assets-into-blender)
 1. [Transfering weights](#transfering-weights)
 1. [Testing the weights](#testing-the-weights)
 1. [Fixing weights issues](#fixing-weights-issues)
@@ -49,8 +49,6 @@ For the duration of this tutorial, we will be weight painting this 100% custom a
 ![1_armor_in_blender.png](/weight_painting_armor_tutorial/1_armor_in_blender.png)
 *Source:* https://artstn.co/m/RGmbB
 
-
-
 Since our armor is composed of full plate armor, with a skirt and a cloak, and is fitted to Humanoid Body Type 1, we will search for similar body type 1 assets using the Toolkit's Resource Manager or Modder's Multitool.
 > All armors and clothes in the game have the same naming structure using a combination of tags. 
 They all start with `RACE_BODYTYPE_ARM` for armor and `RACE_BODYTYPE_CLT` for clothing.
@@ -80,6 +78,8 @@ The Oathbreaker armor is very close to our custom armor, so we will be using the
 ![3_oathbreaker_armor.png](/weight_painting_armor_tutorial/3_oathbreaker_armor.png)
 It doesn't have a front skirt though, so we will also be borrowing the loincloth from the Barbarian starting armor.
 ![4_barbarian_skirt.png](/weight_painting_armor_tutorial/4_barbarian_skirt.png)
+And lastly for the cape we will be using HUM_F_ARM_Cape_Long_A
+![5_cape.png](/weight_painting_armor_tutorial/5_cape.png)
 
 Now that we have identified the vanilla armor pieces that are similar to our custom armor, we can go ahead and extract them.
 
@@ -95,6 +95,12 @@ Now that we have extracted the GR2 files, it's time to import them into Blender.
 > We need the Blender plugin [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter) installed to import and export GR2 files to and from Blender.
 {.is-warning}
 
+In the same Blender file as your custom armor, import the GR2s by going to `File > Import > .gr2` and import all of the GR2s we have extracted, one by one.
+
+Once you have imported all of the vanilla GR2s, select all of them, and with your cursor in the viewport press `CTRL+A` and `Apply All Transforms`
+![6_apply_transforms.png](/weight_painting_armor_tutorial/6_apply_transforms.png)
+
+Next, you can go ahead and delete all the LOD meshes, we won't need them.
 
 ## Transfering weights
 ## Testing the weights
