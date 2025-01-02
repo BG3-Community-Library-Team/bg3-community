@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T15:41:40.065Z
+date: 2025-01-02T15:44:44.157Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -49,7 +49,7 @@ For the duration of this tutorial, we will be weight painting this 100% custom a
 ![1_armor_in_blender.png](/weight_painting_armor_tutorial/1_armor_in_blender.png)
 *Source:* https://artstn.co/m/RGmbB
 
-Since our armor is composed of full plate armor, with a skirt and a cloak, and is fitted to Humanoid Body Type 1, we will search for similar body type 1 assets using the Toolkit's Resource Manager or Modder's Multitool.
+Since our armor is fitted to Humanoid Body Type 1 (fem), we will search for similar body type 1 assets using the Toolkit's Resource Manager or Modder's Multitool.
 > All armors and clothes in the game have the same naming structure using a combination of tags. 
 They all start with `RACE_BODYTYPE_ARM` for armor and `RACE_BODYTYPE_CLT` for clothing.
 ㅤ
