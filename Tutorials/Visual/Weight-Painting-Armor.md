@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T16:36:22.626Z
+date: 2025-01-02T16:39:18.261Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -140,7 +140,7 @@ If your custom armor is separated into several meshes, just choose one mesh to s
 ㅤ
   ![10_weight_paint_mode.png](/weight_painting_armor_tutorial/10_weight_paint_mode.png)
 ㅤ
-- Go to `Weight > Transfer Weights`
+- Go to `Weights > Transfer Weights`
 ㅤ
   ![11_weight_transfer.png](/weight_painting_armor_tutorial/11_weight_transfer.png)
 ㅤ
