@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T16:39:42.463Z
+date: 2025-01-02T16:48:41.164Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -144,10 +144,22 @@ If your custom armor is separated into several meshes, just choose one mesh to s
 ㅤ
   ![11_weight_transfer.png](/weight_painting_armor_tutorial/11_weight_transfer.png)
 ㅤ
-Transfer Weights settings should have appeared on the bottom left of your screen. Expand that window.
+- Transfer Weights settings should have appeared on the bottom left of your screen. Expand that window.
 ㅤ
-- Change the `Vertex Mapping` setting to `Nearest Face Interpolated` and `Source Layers` setting to `By Name` like in the picture below. Then click out of that window to confirm the settings.
+- Change the `Vertex Mapping` setting to `Nearest Face Interpolated` and `Source Layers` setting to `By Name` like in the picture below. Then **click out of that window to confirm the settings**.
 ![12_weight_transfer_settings.png](/weight_painting_armor_tutorial/12_weight_transfer_settings.png)
+
+
+Congratulations, you have transfered weights from the vanilla armor to your custom armor! You can verify that the operation was successfull by clicking on vertex groups and checking that weight paint is showing up on your mesh.
+![13_weights_showing.png](/weight_painting_armor_tutorial/13_weights_showing.png)
+
+Now do the same thing for all of the meshes in your custom armor. 
+Fortunately, the Transfer Weights settings get saved and you don't have to set those each time, so that should speed up the process.
+
+> For the cape we will transfer weights from the vanilla cape instead of from the vanilla armor. The same principle goes for the skirt. 
+Select the vanilla cape first, then the custom cape second, and Transfer Weights.
+{.is-warning}
+
 ## Testing the weights
 ## Fixing weights issues
 ## Weight painting stiff armor pieces
