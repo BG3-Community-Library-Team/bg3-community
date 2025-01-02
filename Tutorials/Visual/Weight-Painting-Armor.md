@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T14:34:42.632Z
+date: 2025-01-02T15:35:50.493Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -116,6 +116,8 @@ Next, we will **merge the vanilla armor meshes together** to have an easier time
 > To merge meshes in Blender, select them and press `CTLR+J` with your cursor in the viewport.
 {.is-success}
 
+Our vanilla armor is now all cleaned up and ready to be used for weight transfer!
+![8_cleaned_up_vanilla_armor.png](/weight_painting_armor_tutorial/8_cleaned_up_vanilla_armor.png)
 ## Transfering weights
 ## Testing the weights
 ## Fixing weights issues
