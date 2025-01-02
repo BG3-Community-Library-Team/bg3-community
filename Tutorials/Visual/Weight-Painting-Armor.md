@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T00:54:56.529Z
+date: 2025-01-02T12:54:28.500Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -25,8 +25,6 @@ This tutorial is  aimed at teaching you the basics of how to weight paint armor 
 1. [Exporting and testing](#exporting-and-testing)
 1. [Final touches](#final-touches)
 
-
-
 ## Pre-requisites
 > This tutorial assumes that:
 • You have Blender (3.6 and above) installed and you are minimally familiar with its interface
@@ -43,10 +41,13 @@ This tutorial is  aimed at teaching you the basics of how to weight paint armor 
 
 
 Now let's get started!
+
 ## Finding similar vanilla armor
 The first step is to find armor or clothing in the game files that is roughly similar to your custom armor, so that we can steal the weights from it. The closest in shape to your custom armor the vanilla asset is, the better the weight transfer will be.
 
 Let's take this armor set for example (we will be using it for the duration of this tutorial):
+![1_armor_in_blender.png](/weight_painting_armor_tutorial/1_armor_in_blender.png)
+Source: https://artstn.co/m/RGmbB
 
 Since our armor is composed of full plate armor, with a skirt and a cloak, and is fitted to Humanoid Body Type 1, we will search for similar body type 1 assets using the Toolkit's Resource Manager or Modder's Multitool.
 > All armors and clothes in the game have the same naming structure using tags, they all start with `RACE_BODYTYPE_ARM` for armor and `RACE_BODYTYPE_CLT` for clothing. To find armor for your chosen body type, refer to the following list of tags:
