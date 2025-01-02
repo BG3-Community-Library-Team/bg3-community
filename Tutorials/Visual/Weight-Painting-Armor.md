@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T13:58:24.731Z
+date: 2025-01-02T14:34:42.632Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -97,10 +97,24 @@ Now that we have extracted the GR2 files, it's time to import them into Blender.
 
 In the same Blender file as your custom armor, import the GR2s by going to `File > Import > .gr2` and import all of the GR2s we have extracted, one by one.
 
-Once you have imported all of the vanilla GR2s, select all of them, and with your cursor in the viewport press `CTRL+A` and `Apply All Transforms`
+Once you have imported all of the vanilla meshes, select all of them, and with your cursor in the viewport press `CTRL+A` and `Apply All Transforms`
 ![6_apply_transforms.png](/weight_painting_armor_tutorial/6_apply_transforms.png)
 
-Next, you can go ahead and delete all the LOD meshes, we won't need them.
+Next, you can go ahead and **delete all the LOD meshes**, we won't need them. You can also d**elete meshes or mesh parts that are useless** and don't match up with your custom armor well. If we don't delete the extra meshes that we don't need, they could throw off the weight transfer.
+In our example's case, we will get rid of the hanging belt, the unnecessary bararian pants and the back skirt of the barbarian skirt.
+> Keeping the Cloth Meshes is a good idea, you can reuse them to add cloth physics to your skirts and capes, although we will not be covering cloth physics in this tutorial.
+{.is-success}
+
+We end up with an armor set that is very similar to our custom armor:
+![7_armor_comparison.png](/weight_painting_armor_tutorial/7_armor_comparison.png)
+Don't worry if yours doesn't match as well, the weight transfer will still work.
+
+Next, we will **merge the vanilla armor meshes together** to have an easier time during weight transfer. Even if the vanilla meshes you chose overlap, just merge them together. 
+> The only vanilla mesh parts you shouldn't merge with the rest are parts like the **skirt** or the **cape**, since they will receive cloth physics and are weighted differently than the rest of the armor.
+{.is-warning}
+
+> To merge meshes in Blender, select them and press `CTLR+J` with your cursor in the viewport.
+{.is-success}
 
 ## Transfering weights
 ## Testing the weights
