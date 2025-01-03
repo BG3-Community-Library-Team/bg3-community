@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-03T22:27:52.708Z
+date: 2025-01-03T22:47:32.441Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -304,7 +304,25 @@ It might not be visible as the example above, but there are actual weights in th
 - Select the `Draw` tool, set `Weight` to `0`, then go to `Weights > Set Weight`
 ![32_set_weights.png](/weight_painting_armor_tutorial/32_set_weights.png)
 
-Hopefully, that was it.
+> Hopefully, that fixed the issue for you. If so, you can continue to the next subsection.
+{.is-success}
+
+Sometimes like in our example, not much changed even though we set weights to 0. That usually means that the problematic area is weighted to more bones it shouldn't be weighted to. 
+
+In our example, the issue appears when we move the `Shoulder_R` bone. That means all the bones down the arm could be affecting the problematic area and we need to set weights to 0 for all the bones in that arm.
+Fortunately our selection and settings are saved, so we only have to select the bones in the Vertex Groups window and Set Weights again for each of them. 
+- Set weights to 0 to all the bones that affect the problematic area.
+![33_set_weights2.gif](/weight_painting_armor_tutorial/33_set_weights2.gif)
+
+> You can also decrease weights to zero directly by painting on the mesh using the Draw tool, but that is less accurate than Set Weight.
+{.is-info}
+
+Now that the issue is fixed, you can disable Vertex Selection mode (by clicking on it again) for the next step.
+
+> **Repeat this whole subsection as needed with all the areas that need weights removed.**
+{.is-warning}
+
+
 ## Weight painting stiff armor pieces
 ## Limiting weights
 ## Exporting and testing
