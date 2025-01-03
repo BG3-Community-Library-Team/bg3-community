@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-03T23:02:48.572Z
+date: 2025-01-03T23:33:55.727Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -319,11 +319,51 @@ Fortunately our selection and settings are saved, so we only have to select the 
 
 Now that the issue is fixed, you can disable Vertex Selection mode (by clicking on it again) for the next step.
 
-> **Repeat this whole subsection as needed with all the areas that move when they shouldn't.**
+> **Repeat this whole subsection as needed with all the areas that move when they shouldn't. 
+Make sure to do it for all your custom armor meshes.**
 {.is-warning}
 
 ㅤ
 ### Part of the armor doesn't move when it should
+
+To fix parts of the armor that don't move along a bone when they should, we need to add weights to that bone.
+> If the weight transfer went well, this issue should not arise. 
+{.is-warning}
+
+However for the sake of being thorough, we will go through how to add weights.
+
+- Select the armature in Object mode, then go to Pose mode and reset the pose of all bones. Select the bone that causes the issue you want to fix and rotate it so that the issue clearly shows. Take note of the name of the bone.
+
+For our example we will pose the armature like so, where we can clearly see the issue:
+![35_weights_to_add.png](/weight_painting_armor_tutorial/35_weights_to_add.png)
+
+- Exit Pose mode and go back to Object mode. The pose should stay as is.
+
+- Select the mesh that has problematic weights, and go to Weight Paint mode. 
+
+- In the Vertex Groups list, click on the bone that you moved in pose mode.
+
+The bone we moved in our example is `Shoulder_L`
+When we check the weights for that bone however we can see that it is actually correct.
+![36_shoulder_l_weight.png](/weight_painting_armor_tutorial/36_shoulder_l_weight.png)
+We can tell that it is correct by comparing it to the opposite arm (where the weights are already all correct).
+![37_shoulder_r_weight.png](/weight_painting_armor_tutorial/37_shoulder_r_weight.png)
+
+So we have to find the actual bone that is missing weights. You can look at a vanilla mesh's weights to see how things should be weight painted. In our case, the opposing arm has correct weights so we will check that insted.
+
+
+![38_shoulder_r_twist.png](/weight_painting_armor_tutorial/38_shoulder_r_twist.png)
+Here we can tell that `Shoulder_R_Twist_01` is the bone that affects that upper arm area that interests us.
+
+And indeed, when we check `Shoulder_L_Twist_01`, we can tell that weights are missing!
+![39_shoulder_l_twist.png](/weight_painting_armor_tutorial/39_shoulder_l_twist.png)
+
+Let's fix that!
+- Select the bone that needs to have weights added to in the Vertex Groups
+- Use the Draw tool and increase the weight, then draw on the mesh to add weights to it. Once that is done you may want to use the Blur tool (the droplet) to smooth out the edges.
+![40_weight_painting.gif](/weight_painting_armor_tutorial/40_weight_painting.gif)
+
+You might need to touch up the painting on more bones to fix a single area, make sure to look at an example (like a vanilla mesh, or the opposite arm in our case), to check what the weight painting should look like.
 
 ## Weight painting stiff armor pieces
 ## Limiting weights
