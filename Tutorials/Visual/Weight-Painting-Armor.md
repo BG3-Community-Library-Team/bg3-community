@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-03T22:47:32.441Z
+date: 2025-01-03T23:02:12.522Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -319,9 +319,11 @@ Fortunately our selection and settings are saved, so we only have to select the 
 
 Now that the issue is fixed, you can disable Vertex Selection mode (by clicking on it again) for the next step.
 
-> **Repeat this whole subsection as needed with all the areas that need weights removed.**
+> **Repeat this whole subsection as needed with all the areas that move when they shouldn't.**
 {.is-warning}
 
+ㅤ
+### Part of the armor doesn't move when it should
 
 ## Weight painting stiff armor pieces
 ## Limiting weights
