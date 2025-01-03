@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-03T23:33:55.727Z
+date: 2025-01-03T23:39:58.675Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -13,6 +13,8 @@ dateCreated: 2025-01-01T21:58:19.593Z
 ***[WORK IN PROGRESS]***
 
 This tutorial is  aimed at teaching you the basics of how to weight paint armor and clothes in Blender, so that your custom-made equipment properly moves and follows character animations in the game.
+
+It is recommended to go through the entirety of this tutorial at least once, as most concepts and features are explained only once and considered as known in all subsequent mentions.
 ## Table of Contents
 1. [Pre-requisites](#pre-requisites)
 1. [Finding similar vanilla armor](#finding-similar-vanilla-armor)
@@ -359,11 +361,30 @@ And indeed, when we check `Shoulder_L_Twist_01`, we can tell that weights are mi
 ![39_shoulder_l_twist.png](/weight_painting_armor_tutorial/39_shoulder_l_twist.png)
 
 Let's fix that!
-- Select the bone that needs to have weights added to in the Vertex Groups
+- Select the bone that needs to have weights added to in the Vertex Groups.
 - Use the Draw tool and increase the weight, then draw on the mesh to add weights to it. Once that is done you may want to use the Blur tool (the droplet) to smooth out the edges.
 ![40_weight_painting.gif](/weight_painting_armor_tutorial/40_weight_painting.gif)
 
 You might need to touch up the painting on more bones to fix a single area, make sure to look at an example (like a vanilla mesh, or the opposite arm in our case), to check what the weight painting should look like.
+
+Repeat as needed.
+
+ㅤ
+### Part of the armor gets deformed too much
+
+This is the issue that arises the most after weight transfer. This problem is caused by jagged and spotty weight painting, so we will smooth the weight painting out.
+
+- Select the armature in Object mode, then go to Pose mode and reset the pose of all bones. Select the bone that causes the issue you want to fix and rotate it so that the issue clearly shows. Take note of the name of the bone.
+
+For our example we will pose the armature like so, where we can clearly see the issue:
+
+- Exit Pose mode and go back to Object mode. The pose should stay as is.
+
+- Select the mesh that has problematic weights, and go to Weight Paint mode. 
+
+- In the Vertex Groups list, click on the bone that you moved in pose mode.
+
+The bone we moved in our example is `Shoulder_L`
 
 ## Weight painting stiff armor pieces
 ## Limiting weights
