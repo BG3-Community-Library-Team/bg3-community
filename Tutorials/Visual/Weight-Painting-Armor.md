@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-03T19:05:46.166Z
+date: 2025-01-03T19:43:25.836Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -44,6 +44,10 @@ Now let's get started!
 
 ## Finding similar vanilla armor
 The first step is to find armor or clothing in the game files that is roughly similar to your custom armor, so that we can steal the weights from it. The closest in shape to your custom armor the vanilla asset is, the better the weight transfer will be.
+
+
+> If your custom armor and clothes hug the body, you can use the vanilla naked Body mesh as a source to transfer weights from instead of vanilla armor pieces.
+{.is-info}
 
 For the duration of this tutorial, we will be weight painting this 100% custom armor set:
 ![1_armor_in_blender.png](/weight_painting_armor_tutorial/1_armor_in_blender.png)
@@ -224,8 +228,34 @@ To test out weigths, we need to rotate bones and see if our custom armor properl
 > If your custom armor doesn't move at all, it could mean that it is not correctly parented to the armature or it does not have weights.
 {.is-danger}
 
-For ou example, we will start with checking the Head_M bone.
+For ou example, we will start with checking the Head_M bone by selecting it and rotating it.
+![22_rotating_bone.gif](/weight_painting_armor_tutorial/22_rotating_bone.gif)
 
+We can see that there are a few weighting issues here:
+• the body armor pokes through the neck
+• the armor neck guard moves with the head even though it shouldn't
+• the neck part of the helmet should not bend like that. 
+
+- Do the same for your custom armor and take note of everything that will need fixing.
+
+> Taking actual written notes is recommended for this part!
+{.is-success}
+
+Once you are done checking a bone, you can reset its position by selecting it (you can also select all bones by pressing `A` with the cursor in the viewport) and going to `Pose` > `Clear Transforms` > `All`
+![23_clear_pose.png](/weight_painting_armor_tutorial/23_clear_pose.png)
+
+- Now check the other bones. Select them one by one and rotate them around, take note of what needs fixing.
+
+Here are examples other issues you might encounter:
+
+• Part of the armor moves when it shouldn't
+![24_weight_issue.gif](/weight_painting_armor_tutorial/24_weight_issue.gif)
+
+• Part of the armor doesn't move when it should
+![25_weight_issue2.gif](/weight_painting_armor_tutorial/25_weight_issue2.gif)
+
+• Part of the armor gets deformed too much
+![26_weight_issue3.gif](/weight_painting_armor_tutorial/26_weight_issue3.gif)
 ## Fixing weights issues
 ## Weight painting stiff armor pieces
 ## Limiting weights
