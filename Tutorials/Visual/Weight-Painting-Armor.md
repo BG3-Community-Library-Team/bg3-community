@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-03T17:01:15.278Z
+date: 2025-01-03T18:29:38.359Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -160,11 +160,15 @@ Fortunately, the Transfer Weights settings get saved and you don't have to set t
 Select the vanilla cape first, then the custom cape second, and Transfer Weights.
 {.is-warning}
 
+Once you have transfered weights to all of the custom armor meshes, you can hide the vanilla armor meshes.
 ## Testing the weights
 Now we need to test the weights to see if any need fixing. 
 
 First, we need to assign an armature to our custom armor. 
-If you haven't deleted all of the vanilla armor armatures, you can use one of those. If not, just import vanilla armor GR2, delete the imported meshes but keep the armature.
+If you haven't deleted all of the vanilla armor armatures, you can use one of them. If not, just import vanilla armor GR2, delete the imported meshes but keep the armature. 
+
+> Armors and clothes use the same armature as the naked body does, so we might refer to it as Body Armature.
+{.is-info}
 
 - **Select all of the meshes of your custom armor**, then **select the armature last**, then press `CTRL+P` with the cursor in the viewport and Set Parent to `Object Keep Transform`. This will parent your custom armor meshes to the body armature.
 ![14_set_armature_parent.png](/weight_painting_armor_tutorial/14_set_armature_parent.png)
@@ -174,7 +178,46 @@ If you haven't deleted all of the vanilla armor armatures, you can use one of th
 
 Now our custom armor is properly parented to the body armature and should move with it during animations and movement! 
 
-- One last step is to once again select all of your custom armor meshes along with the armature and **Apply All Transforms**.
+- Once again, select all of your custom armor meshes along with the armature and **Apply All Transforms**.
+
+We will now test the weights of our custom armor. But first, we will change a few settings in blender to better help us see what we are doing.
+- Select the armature and change the viewport display to `Display as Stick`, and tick `In Front`
+![16_armature_viewport.png](/weight_painting_armor_tutorial/16_armature_viewport.png)
+
+- On the top right corner of the viewport, expand the Overlays dropdown and tick `Statistics`
+![17_stats_setting.png](/weight_painting_armor_tutorial/17_stats_setting.png)
+
+A slew of statistics should now have appeared on the top left corner of your viewport. Later on when we select a bone from the armature, its name will be displayed there.
+![18_stats.png](/weight_painting_armor_tutorial/18_stats.png)
+
+We can now finally test the weights.
+
+- Select the armature and go into **Pose Mode**
+ㅤ
+  ![19_pose_mode.png](/weight_painting_armor_tutorial/19_pose_mode.png)
+
+- Select the Rotate tool and click on a bone, a gizmo will appear that will allow us to rotate bones on their axis.
+![20_rotate_gizmo.png](/weight_painting_armor_tutorial/20_rotate_gizmo.png)
+
+To test out weigths, we need to rotate bones and see if our custom armor properly moves with it. 
+
+> The main bones to test and rotate are the following (from top to bottom):ㅤ
+• `Head_M`
+• `Neck_M`
+• `Scapula_L` and `Scapula_R`
+• `Shoulder_L` and `Shoulder_R`
+• `Elbow_L` and `Elbow_R`
+• `Wrist_L` and `Wrist_R`
+• All **Finger bones** 1, 2 and 3
+• `Chest_M`
+• `Spine2_M` and `Spine1_M`
+• `Hip_L` and `Hip_R`
+• `Knee_L` and `Knee_R`
+• `Ankle_L` and `Ankle_R`
+• `Toes_L` and `Toes_R`
+{.is-info}
+
+
 ## Fixing weights issues
 ## Weight painting stiff armor pieces
 ## Limiting weights
