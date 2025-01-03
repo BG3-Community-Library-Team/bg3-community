@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-03T21:52:59.846Z
+date: 2025-01-03T22:01:08.006Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -222,6 +222,10 @@ To test out weigths, we need to rotate bones and see if our custom armor properl
 ![21_bone_names.png](/weight_painting_armor_tutorial/21_bone_names.png)
 {.is-info}
 
+> Note that when importing GR2s into blender, left and right are inverted. That is normal.
+{.is-info}
+
+
 - Now, select a bone and rotate it by clicking and dragging your mouse over the Rotation gizmo. 
 	Move it around a bunch to see if the custom armor follows. 
 
@@ -268,9 +272,12 @@ To fix all of those issues, we have several tools available in Weight Paint mode
 Let's start with fixing the issue of when a part of the armor moves when it shouldn't. That issue occurs when a part of the mesh has weight paint on a bone it should not be weighted to. To fix it, we need to **remove weights**.
 
 > Always start fixing your weight painting by solving issues that require you to remove weights first. It makes the process cleaner and more straighforward to first remove unnecessary weights and then add weights when they are missing.
-{.is-warning}
+{.is-success}
 
+- Stay in pose mode and reset the pose of all bones. Select the bone that causes the issue and rotate it so that the issue clearly shows.
 
+For our example we will pose the armature like so, where we can clearly see the issue:
+![27_posed_armature.png](/weight_painting_armor_tutorial/27_posed_armature.png)
 ## Weight painting stiff armor pieces
 ## Limiting weights
 ## Exporting and testing
