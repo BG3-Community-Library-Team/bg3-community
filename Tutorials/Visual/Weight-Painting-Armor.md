@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-03T19:46:10.584Z
+date: 2025-01-03T19:49:17.020Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -228,7 +228,7 @@ To test out weigths, we need to rotate bones and see if our custom armor properl
 > If your custom armor doesn't move at all, it could mean that it is not correctly parented to the armature or it does not have weights.
 {.is-danger}
 
-For ou example, we will start with checking the Head_M bone by selecting it and rotating it.
+For our example, we will start with checking the Head_M bone by selecting it and rotating it.
 ![22_rotating_bone.gif](/weight_painting_armor_tutorial/22_rotating_bone.gif)
 
 We can see that there are a few weighting issues here:
