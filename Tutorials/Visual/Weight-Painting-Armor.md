@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-02T17:28:33.351Z
+date: 2025-01-03T15:32:39.238Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -27,9 +27,9 @@ This tutorial is  aimed at teaching you the basics of how to weight paint armor 
 
 ## Pre-requisites
 > This tutorial assumes that:
-• You have Blender (3.6 and above) installed and you are at least minimally familiar with its interface
+• You have Blender (3.6 and above) installed and you are at least minimally familiar with its interface and general usage.
 • You have the Blender plugin [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter) installed to import and export game meshes to and from Blender.
-• You have [Modder's Multitool](https://wiki.bg3.community/Tutorials/Visual/getting-started-with-3d-modding#tools-modders-multitool) or the [Baldur's Gate 3 Toolkit](https://mod.io/g/baldursgate3/r/installing-the-toolkit#heading-3) installed to look up and extract meshes from the game.
+• You have [Modder's Multitool](https://wiki.bg3.community/Tutorials/Visual/getting-started-with-3d-modding#tools-modders-multitool) or the [Baldur's Gate 3 Toolkit](https://mod.io/g/baldursgate3/r/installing-the-toolkit#heading-3) installed to look up and extract assets from the game.
 • **You have an armor or clothes mesh that is already fitted to your body type and race of choice**.
 {.is-success}
 
@@ -161,6 +161,19 @@ Select the vanilla cape first, then the custom cape second, and Transfer Weights
 {.is-warning}
 
 ## Testing the weights
+Now we need to test the weights to see if any need fixing. 
+
+First, we need to assign an armature to our custom armor. 
+
+If you haven't deleted all of the vanilla armor armatures, you can use one of those. If not, just import vanilla armor GR2, delete the imported meshes but keep the armature.
+
+- Select all of the meshes of your custom armor, then select the armature last, and press `CTRL+P` with the cursor in the viewport and Set Parent to `Object Keep Transform`. This will parent your custom armor meshes to the body armature.
+![14_set_armature_parent.png](/weight_painting_armor_tutorial/14_set_armature_parent.png)
+
+- For each custom armor mesh, add an **armature modifier** and set the armature as a target.
+![15_armature_modifier.png](/weight_painting_armor_tutorial/15_armature_modifier.png)
+
+Now our custom armor is properly parented to 
 ## Fixing weights issues
 ## Weight painting stiff armor pieces
 ## Limiting weights
