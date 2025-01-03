@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-03T22:01:08.006Z
+date: 2025-01-03T22:27:07.333Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -274,10 +274,34 @@ Let's start with fixing the issue of when a part of the armor moves when it shou
 > Always start fixing your weight painting by solving issues that require you to remove weights first. It makes the process cleaner and more straighforward to first remove unnecessary weights and then add weights when they are missing.
 {.is-success}
 
-- Stay in pose mode and reset the pose of all bones. Select the bone that causes the issue and rotate it so that the issue clearly shows.
+- Stay in pose mode and reset the pose of all bones. Select the bone that causes the issue you want to fix and rotate it so that the issue clearly shows. Take note of the name of the bone.
 
 For our example we will pose the armature like so, where we can clearly see the issue:
 ![27_posed_armature.png](/weight_painting_armor_tutorial/27_posed_armature.png)
+
+- Exit Pose mode and go back to Object mode. The pose should stay as is.
+
+You can hide the other custom meshes for the moment to better see the mesh you are going to weight paint.
+
+- Select the mesh that has problematic weights, and go to Weight Paint mode. 
+
+- In the Vertex Groups list, click on the bone that you moved in pose mode.
+
+The bone we moved in our example is `Shoulder_R`
+![28_vertex_groups.png](/weight_painting_armor_tutorial/28_vertex_groups.png)
+
+It might not be visible as the example above, but there are actual weights in the problematic area that we need to set to 0 to remove. 
+- Enable to `Vertex Selection` mode
+![29_vertex_selection_mode.png](/weight_painting_armor_tutorial/29_vertex_selection_mode.png)
+
+- Select the `Selection Box` tool
+![30_selection_tool.png](/weight_painting_armor_tutorial/30_selection_tool.png)
+
+- Go into `X-Ray mode` (`Alt+Z` with the cursor in the viewport) and select the problematic area
+![31_vertex_selection.gif](/weight_painting_armor_tutorial/31_vertex_selection.gif)
+
+- Select the `Draw` tool, set `Weight` to `0`, then go to `Weights > Set Weight`
+![32_set_weights.png](/weight_painting_armor_tutorial/32_set_weights.png)
 ## Weight painting stiff armor pieces
 ## Limiting weights
 ## Exporting and testing
