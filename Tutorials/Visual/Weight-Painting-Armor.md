@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-03T19:49:17.020Z
+date: 2025-01-03T19:55:58.820Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -256,6 +256,13 @@ Here are examples other issues you might encounter:
 
 • Part of the armor gets deformed too much
 ![26_weight_issue3.gif](/weight_painting_armor_tutorial/26_weight_issue3.gif)
+
+> If you encounter too many issues, it might be because the vanilla armor you transfered weights from wasn't suitable. You can try to fix all of the weight painting errors in the next step, or you could go back to the section [***Finding similar vanilla armor***](https://wiki.bg3.community/en/Tutorials/Visual/Weight-Painting-Armor) and redo things from there to save yourself a bigger headache.
+ㅤ
+You could also import the naked body you've fitted your armor to, and transfer weights from it instead of from vanilla armor, it might give better results.
+{.is-warning}
+
+
 ## Fixing weights issues
 ## Weight painting stiff armor pieces
 ## Limiting weights
