@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-03T19:55:58.820Z
+date: 2025-01-03T21:52:59.846Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -262,8 +262,15 @@ Here are examples other issues you might encounter:
 You could also import the naked body you've fitted your armor to, and transfer weights from it instead of from vanilla armor, it might give better results.
 {.is-warning}
 
-
 ## Fixing weights issues
+To fix all of those issues, we have several tools available in Weight Paint mode. We are going to manually paint weights to fix them.
+
+Let's start with fixing the issue of when a part of the armor moves when it shouldn't. That issue occurs when a part of the mesh has weight paint on a bone it should not be weighted to. To fix it, we need to **remove weights**.
+
+> Always start fixing your weight painting by solving issues that require you to remove weights first. It makes the process cleaner and more straighforward to first remove unnecessary weights and then add weights when they are missing.
+{.is-warning}
+
+
 ## Weight painting stiff armor pieces
 ## Limiting weights
 ## Exporting and testing
