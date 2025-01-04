@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T16:55:53.651Z
+date: 2025-01-04T16:56:19.745Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -97,6 +97,7 @@ And lastly for the cape we will be using HUM_F_ARM_Cape_Long_A
 > In the Toolkit, right click on an asset and click Extract Visual Data to extract the GR2.
 > In Modder's Multitool, click on the Extract File icon.
 {.is-info}
+
 ㅤ
 ## Preparing the vanilla assets in Blender
 Now that we have extracted the GR2 files, it's time to import them into Blender.
