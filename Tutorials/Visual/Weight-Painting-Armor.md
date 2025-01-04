@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T00:31:12.094Z
+date: 2025-01-04T14:07:14.383Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -388,7 +388,8 @@ Repeat as needed.
 
 This is the issue that arises the most after weight transfer. This problem is caused by jagged and spotty weight painting, so we will smooth the weight painting out.
 
-- Select the armature in Object mode, then go to Pose mode and reset the pose of all bones. Select the bones that cause the issue you want to fix and rotate them so that the issue clearly shows. Take note of the name of the bones.
+- Select the armature in Object mode, then go to Pose mode and reset the pose of all bones. 
+Select the bones that cause the issue you want to fix and rotate them so that the issue clearly shows. Take note of the name of the bones.
 
 For our example we will pose the armature like so, where we can clearly see the issue:
 ![41_bad_deformed_mesh.png](/weight_painting_armor_tutorial/41_bad_deformed_mesh.png)
@@ -402,7 +403,16 @@ For our example we will pose the armature like so, where we can clearly see the 
 ![43_blur_tool.png](/weight_painting_armor_tutorial/43_blur_tool.png)
 ![46_blur_tool_apply.gif](/weight_painting_armor_tutorial/46_blur_tool_apply.gif)
 
+That should help reduce the extreme deformations. 
+Repeat as needed.
 ## Weight painting stiff armor pieces
+Sometimes, you'll want an armor piece or a belt buckle to stay rigid and not deform as the armature moves. To achieve that result, we will be using a the Average tool in Weight Painting.
+
+- Select the armature in Object mode, then go to Pose mode and reset the pose of all bones. 
+Select the bones that cause the issue you want to fix and rotate them so that the issue clearly shows. Take note of the name of the bones.
+
+For our example we will be fixing the belt buckle and the hanging plate on the hip
+
 ## Limiting weights
 ## Exporting and testing
 ## Final touches
