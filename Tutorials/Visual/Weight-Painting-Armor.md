@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T17:31:04.564Z
+date: 2025-01-04T17:35:41.178Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -379,7 +379,7 @@ And indeed, when we check `Shoulder_L_Twist_01`, we can tell that weights are mi
 ![39_shoulder_l_twist.png](/weight_painting_armor_tutorial/39_shoulder_l_twist.png)
 
 Let's fix that!
-- Select the bone that needs to have weights added to in the Vertex Groups.
+- Select the bone that needs to have weights added to in the Vertex Groups (so in our example's case, `Shoulder_L_Twist_01`).
 - Use the Draw tool and increase the weight, then draw on the mesh to add weights to it. Once that is done you may want to use the Blur tool (the droplet) to smooth out the edges.
 ![40_weight_painting.gif](/weight_painting_armor_tutorial/40_weight_painting.gif)
 
