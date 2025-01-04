@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T17:22:17.054Z
+date: 2025-01-04T17:27:34.235Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -317,7 +317,7 @@ It might not be visible as the example above, but there are actual weights in th
 
 Sometimes like in our example, not much changed even though we set weights to 0. That usually means that the problematic area is weighted to more bones it shouldn't be weighted to. 
 
-In our example, the issue appears when we move the `Shoulder_R` bone. That means all the bones down the arm could be affecting the problematic area and we need to set weights to 0 for all the bones in that arm.
+In our example, the issue appears when we move the `Shoulder_R` bone. When moving the `Shoulder_R` bone, it also moves the other bones down that same arm like `Elbow_R` and `Shoulder_R_Twist`. That means all the bones down the that arm could be affecting the problematic area, and we need to set weights to 0 for all those bones.
 Fortunately our selection and settings are saved, so we only have to select the bones in the Vertex Groups window and Set Weights again for each of them. 
 - Set weights to 0 to all the bones that affect the problematic area.
 ![33_set_weights2.gif](/weight_painting_armor_tutorial/33_set_weights2.gif)
