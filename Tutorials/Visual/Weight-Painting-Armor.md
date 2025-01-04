@@ -1,8 +1,8 @@
 ---
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
-published: false
-date: 2025-01-04T19:09:33.213Z
+published: true
+date: 2025-01-04T19:13:20.571Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
