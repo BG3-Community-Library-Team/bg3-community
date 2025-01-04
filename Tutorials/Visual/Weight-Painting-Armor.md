@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T16:56:19.745Z
+date: 2025-01-04T17:05:08.518Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -139,6 +139,8 @@ For this step you need both your custom armor meshes and the vanilla meshes visi
 > Make sure your custom armor doesn't already have weights. 
 **Delete all the weights from your custom armor before proceeding.**
 > ![9_deleting_weights.png](/weight_painting_armor_tutorial/9_deleting_weights.png)
+ㅤ
+Make also sure that your custom armor has all its modifiers applied.
 {.is-warning}
 
 - **Select the vanilla armor and then your custom armor**. They must both be selected at the same time, and you must select your custom armor second. 
