@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T17:06:27.736Z
+date: 2025-01-04T17:09:59.307Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -170,7 +170,7 @@ Fortunately, the Transfer Weights settings get saved and you don't have to set t
 Select the vanilla cape first, then the custom cape second, and Transfer Weights.
 {.is-warning}
 
-Once you have transfered weights to all of the custom armor meshes, you can hide the vanilla armor meshes.
+Once you have transfered weights to all of the custom armor meshes, you can hide the vanilla armor meshes as we won't be needing them anymore.
 ㅤ
 ## Testing the weights
 Now we need to test the weights to see if any need fixing. 
