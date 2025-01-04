@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T16:55:33.332Z
+date: 2025-01-04T16:55:53.651Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -451,7 +451,7 @@ Do the following for all your custom armor meshes:
 ![53_limit_total.png](/weight_painting_armor_tutorial/53_limit_total.png)
 
 - A window should have appeared on the bottom left of your viewport. You should not have to change any settings there.![54_limit_weights_to4.png](/weight_painting_armor_tutorial/54_limit_weights_to4.png)
-
+ㅤ
 ## Final touches
 We are done with weight painting the custom armor! You should now be able to export it and test it ingame. 
 
