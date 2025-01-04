@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T17:13:56.517Z
+date: 2025-01-04T17:14:49.480Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -178,7 +178,7 @@ Now we need to test the weights to see if any need fixing.
 First, we need to assign an armature to our custom armor. 
 If you haven't deleted all of the vanilla armor armatures, you can use one of them. If not, just import a vanilla armor GR2, delete the imported meshes but keep the armature. 
 
-> Armors and clothes use the same armature as the naked body does, so we may refer to it as Body Armature.
+> Armors and clothes use the same armature as the naked body does, so it might be referred to as Body Armature.
 {.is-info}
 
 - **Select all of the meshes of your custom armor**, then **select the armature last**, then press `CTRL+P` with the cursor in the viewport and Set Parent to `Object Keep Transform`. This will parent your custom armor meshes to the body armature.
