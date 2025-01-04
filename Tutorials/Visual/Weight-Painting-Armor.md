@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T14:07:14.383Z
+date: 2025-01-04T14:35:51.715Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -411,8 +411,28 @@ Sometimes, you'll want an armor piece or a belt buckle to stay rigid and not def
 - Select the armature in Object mode, then go to Pose mode and reset the pose of all bones. 
 Select the bones that cause the issue you want to fix and rotate them so that the issue clearly shows. Take note of the name of the bones.
 
-For our example we will be fixing the belt buckle and the hanging plate on the hip
+For our example we will be fixing the belt buckle and the hanging plate on the hip. 
+I have colored the armor to better to better see what is going on.
+![47_belt_deformation.gif](/weight_painting_armor_tutorial/47_belt_deformation.gif)
+![48_deformations_mesh.png](/weight_painting_armor_tutorial/48_deformations_mesh.png)
 
+- Exit Pose mode and go back to Object mode.
+
+- Select the mesh that has problematic weights, and go to Weight Paint mode. 
+
+- Select the `Average` tool
+![49_average_tool.png](/weight_painting_armor_tutorial/49_average_tool.png)
+
+- Apply the average tool on the belt buckle area for all the bones that affect it.
+![50_average1.gif](/weight_painting_armor_tutorial/50_average1.gif)
+![51_average2.gif](/weight_painting_armor_tutorial/51_average2.gif)
+
+- Repeat for all mesh parts that need to stay rigid.
+
+> The downside of this is that the rigid part might now clip through the other meshes. That is a tradeoff you have to consider when using this method.
+{.is-warning}
+
+![52_weights_averaged.gif](/weight_painting_armor_tutorial/52_weights_averaged.gif)
 ## Limiting weights
 ## Exporting and testing
 ## Final touches
