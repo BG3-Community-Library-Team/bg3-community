@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: true
-date: 2025-01-04T19:13:20.571Z
+date: 2025-01-04T19:25:28.569Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -12,6 +12,10 @@ dateCreated: 2025-01-01T21:58:19.593Z
 This tutorial is  aimed at teaching you the basics of how to weight paint armor and clothes in Blender, so that your custom-made equipment properly moves and follows character animations in the game.
 
 It is recommended to go through the entirety of this tutorial at least once, as most concepts and features are explained only once and considered as known in all subsequent mentions.
+
+> If you are a begginner to BG3 modding, please read through the [Getting Started with 3D modding](https://wiki.bg3.community/Tutorials/Visual/getting-started-with-3d-modding) tutorial first.
+{.is-warning}
+
 ㅤ
 ## Table of Contents
 1. [Pre-requisites](#pre-requisites)
