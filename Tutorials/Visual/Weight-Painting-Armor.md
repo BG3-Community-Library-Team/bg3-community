@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-03T23:39:58.675Z
+date: 2025-01-04T00:27:54.323Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -325,6 +325,17 @@ Now that the issue is fixed, you can disable Vertex Selection mode (by clicking 
 Make sure to do it for all your custom armor meshes.**
 {.is-warning}
 
+Once we are done removing weights, we have to clean them up. Setting weights to zero doesn't actually remove them, so this step is crucial to make sure the zero weights are actually removed.
+
+- Still in Weight Paint mode, go to `Weights` > `Clean`
+![44_clean_weights.png](/weight_painting_armor_tutorial/44_clean_weights.png)
+
+A window appears on the bottom left of your viewport.
+
+- Set the Subset to All Groups and click out of there to confirm.
+![45_clean_weights_settings.png](/weight_painting_armor_tutorial/45_clean_weights_settings.png)
+
+Do `Weights` > `Clean` to all the other custom armor meshes.
 ㅤ
 ### Part of the armor doesn't move when it should
 
@@ -374,17 +385,19 @@ Repeat as needed.
 
 This is the issue that arises the most after weight transfer. This problem is caused by jagged and spotty weight painting, so we will smooth the weight painting out.
 
-- Select the armature in Object mode, then go to Pose mode and reset the pose of all bones. Select the bone that causes the issue you want to fix and rotate it so that the issue clearly shows. Take note of the name of the bone.
+- Select the armature in Object mode, then go to Pose mode and reset the pose of all bones. Select the bones that cause the issue you want to fix and rotate them so that the issue clearly shows. Take note of the name of the bones.
 
 For our example we will pose the armature like so, where we can clearly see the issue:
+![41_bad_deformed_mesh.png](/weight_painting_armor_tutorial/41_bad_deformed_mesh.png)
+![42_bad_mesh.png](/weight_painting_armor_tutorial/42_bad_mesh.png)
 
 - Exit Pose mode and go back to Object mode. The pose should stay as is.
 
 - Select the mesh that has problematic weights, and go to Weight Paint mode. 
 
-- In the Vertex Groups list, click on the bone that you moved in pose mode.
-
-The bone we moved in our example is `Shoulder_L`
+- For each bone that affects the problematic area, select the Blur tool and liberally apply on the problematic area.
+![43_blur_tool.png](/weight_painting_armor_tutorial/43_blur_tool.png)
+![46_blur_tool_apply.gif](/weight_painting_armor_tutorial/46_blur_tool_apply.gif)
 
 ## Weight painting stiff armor pieces
 ## Limiting weights
