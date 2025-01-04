@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T14:36:31.467Z
+date: 2025-01-04T15:23:00.118Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -27,7 +27,6 @@ It is recommended to go through the entirety of this tutorial at least once, as 
 		- [Part of the armor gets deformed too much](#part-of-the-armor-gets-deformed-too-much)
 1. [Weight painting stiff armor pieces](#weight-painting-stiff-armor-pieces)
 1. [Limiting weights](#limiting-weights)
-1. [Exporting and testing](#exporting-and-testing)
 1. [Final touches](#final-touches)
 
 ## Pre-requisites
@@ -38,7 +37,7 @@ It is recommended to go through the entirety of this tutorial at least once, as 
 • **You have an armor or clothes mesh that is already fitted to your body type and race of choice**.
 {.is-success}
 
-> This tutorial is ***not*** going to teach you how to create armor and clothes.
+> This tutorial is ***not*** going to teach you how to create armor and clothes. It also won't teach you how to export armor or how to put it into the game.
 {.is-warning}
 
 > It is recommended to weight paint your armor and clothing ***before*** refitting it to other body types and races.
@@ -434,5 +433,29 @@ I have colored the armor to better to better see what is going on.
 
 ![52_weights_averaged.gif](/weight_painting_armor_tutorial/52_weights_averaged.gif)
 ## Limiting weights
-## Exporting and testing
+Once you have finished weight painting, it's time to limit weights. This operation is mandatory, as each vertex cannot be affected by more than 4 bones at the same time due to a limitation of the GR2 format.
+
+> Make sure that you are done with all your weight painting before limiting weights.
+{.is-warning}
+
+> This operation is desctructive and will change your weight painting. Make sure to save a copy of your blend file beforehand.
+{.is-danger}
+
+Do the following for all your custom armor meshes:
+- Select your custom armor mesh and go into Weight Paint mode.
+
+- Go into `Weights` > `Limit Total`
+![53_limit_total.png](/weight_painting_armor_tutorial/53_limit_total.png)
+
+- A window should have appeared on the bottom left of your viewport. You should not have to change any settings there.![54_limit_weights_to4.png](/weight_painting_armor_tutorial/54_limit_weights_to4.png)
+
 ## Final touches
+We are done with weight painting the custom armor! You should now be able to export it and test it ingame. 
+
+Once your armor is in the game, you might encounter an issue where your custom armor is all spikey like in the picture below:
+![55_spikey_weights.png](/weight_painting_armor_tutorial/55_spikey_weights.png)
+
+To fix this, you might want to go back to the [previous section](#limiting-weights) and **Limit Weights to `2`** instead of 4.
+
+> That is all for this tutorial! Hopefully that helped you weight paint your armor. Please join the [BG3 Modding Community discord](https://discord.gg/bg3mods) if you have specific questions about weight painting.
+{.is-info}
