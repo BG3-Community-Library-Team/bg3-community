@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T15:32:19.539Z
+date: 2025-01-04T16:55:33.332Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -12,6 +12,7 @@ dateCreated: 2025-01-01T21:58:19.593Z
 This tutorial is  aimed at teaching you the basics of how to weight paint armor and clothes in Blender, so that your custom-made equipment properly moves and follows character animations in the game.
 
 It is recommended to go through the entirety of this tutorial at least once, as most concepts and features are explained only once and considered as known in all subsequent mentions.
+ㅤ
 ## Table of Contents
 1. [Pre-requisites](#pre-requisites)
 1. [Finding similar vanilla armor](#finding-similar-vanilla-armor)
@@ -25,7 +26,7 @@ It is recommended to go through the entirety of this tutorial at least once, as 
 1. [Weight painting stiff armor pieces](#weight-painting-stiff-armor-pieces)
 1. [Limiting weights](#limiting-weights)
 1. [Final touches](#final-touches)
-
+ㅤ
 ## Pre-requisites
 > This tutorial assumes that:
 • You have Blender (3.6 and above) installed and you are at least minimally familiar with its interface and general usage.
@@ -42,7 +43,7 @@ It is recommended to go through the entirety of this tutorial at least once, as 
 
 
 Now let's get started!
-
+ㅤ
 ## Finding similar vanilla armor
 The first step is to find armor or clothing in the game files that is roughly similar to your custom armor, so that we can steal the weights from it. The closest in shape to your custom armor the vanilla asset is, the better the weight transfer will be.
 
@@ -96,7 +97,7 @@ And lastly for the cape we will be using HUM_F_ARM_Cape_Long_A
 > In the Toolkit, right click on an asset and click Extract Visual Data to extract the GR2.
 > In Modder's Multitool, click on the Extract File icon.
 {.is-info}
-
+ㅤ
 ## Preparing the vanilla assets in Blender
 Now that we have extracted the GR2 files, it's time to import them into Blender.
 > We need the Blender plugin [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter) installed to import and export GR2 files to and from Blender.
@@ -130,6 +131,7 @@ Our vanilla armor is now all cleaned up and ready to be used for weight transfer
 - It's a good idea to once again select all the meshes and armatures and **Apply All Transforms**.
 
 ![8_cleaned_up_vanilla_armor.png](/weight_painting_armor_tutorial/8_cleaned_up_vanilla_armor.png)
+ㅤ
 ## Transfering weights
 We will now transfer weights from the vanilla armor to our custom armor.
 For this step you need both your custom armor meshes and the vanilla meshes visible in Blender.
@@ -166,6 +168,7 @@ Select the vanilla cape first, then the custom cape second, and Transfer Weights
 {.is-warning}
 
 Once you have transfered weights to all of the custom armor meshes, you can hide the vanilla armor meshes.
+ㅤ
 ## Testing the weights
 Now we need to test the weights to see if any need fixing. 
 
@@ -267,6 +270,7 @@ Here are examples other issues you might encounter:
 You could also import the naked body you've fitted your armor to, and transfer weights from it instead of from vanilla armor, it might give better results.
 {.is-warning}
 
+ㅤ
 ## Fixing weights issues
 To fix all of those issues, we have several tools available in Weight Paint mode. We are going to manually paint weights to fix them.
 ㅤ
@@ -401,11 +405,12 @@ For our example we will pose the armature like so, where we can clearly see the 
 
 That should help reduce the extreme deformations. 
 Repeat as needed.
+ㅤ
 ## Weight painting stiff armor pieces
 Sometimes, you'll want an armor piece or a belt buckle to stay rigid and not deform as the armature moves. To achieve that result, we will be using a the Average tool in Weight Painting.
 
 - Select the armature in Object mode, then go to Pose mode and reset the pose of all bones. 
-Select the bones that cause the issue you want to fix and rotate them so that the issue clearly shows. Take note of the name of the bones.
+- Select the bones that cause the issue you want to fix and rotate them so that the issue clearly shows. Take note of the name of the bones.
 
 For our example we will be fixing the belt buckle and the hanging plate on the hip. 
 I have colored the armor to better to better see what is going on.
@@ -423,12 +428,13 @@ I have colored the armor to better to better see what is going on.
 ![50_average1.gif](/weight_painting_armor_tutorial/50_average1.gif)
 ![51_average2.gif](/weight_painting_armor_tutorial/51_average2.gif)
 
-- Repeat for all mesh parts that need to stay rigid.
+- Do this for all mesh parts that need to stay rigid.
 
-> The downside of this is that the rigid part might now clip through the other meshes. That is a tradeoff you have to consider when using this method.
+> The downside is that the rigid part might now clip through the other meshes. That is a tradeoff you have to consider when using this method.
 {.is-warning}
 
 ![52_weights_averaged.gif](/weight_painting_armor_tutorial/52_weights_averaged.gif)
+ㅤ
 ## Limiting weights
 Once you have finished weight painting, it's time to limit weights. This operation is mandatory, as each vertex cannot be affected by more than 4 bones at the same time due to a limitation of the GR2 format.
 
