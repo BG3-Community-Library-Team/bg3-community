@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T18:16:27.317Z
+date: 2025-01-04T19:09:33.213Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -417,7 +417,7 @@ Sometimes, you'll want an armor piece or a belt buckle to stay rigid and not def
 - Select the bones that cause the issue you want to fix and rotate them so that the issue clearly shows. Take note of the name of the bones.
 
 For our example we will be fixing the belt buckle and the hanging plate on the hip. 
-I have colored the armor to better to better see what is going on.
+I have colored the armor to better see what is going on.
 ![47_belt_deformation.gif](/weight_painting_armor_tutorial/47_belt_deformation.gif)
 ![48_deformations_mesh.png](/weight_painting_armor_tutorial/48_deformations_mesh.png)
 
