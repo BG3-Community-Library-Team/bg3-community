@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2024-12-25T07:27:04.856Z
+date: 2025-01-04T19:11:41.898Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -77,6 +77,7 @@ This page is a list of existing Tutorials.-->
 - [Getting Started with 3D Modding](Visual/getting-started-with-3d-modding)
 - [Creating a Hair Mod](Visual/Creating-A-Hair-Mod)
 - [Creating Custom Head Armatures](Visual/mrboneswildguide)
+- [Weight Painting Armor and Clothes](/Tutorials/Visual/Weight-Painting-Armor)
 {.links-list}
 
 ## Animations
