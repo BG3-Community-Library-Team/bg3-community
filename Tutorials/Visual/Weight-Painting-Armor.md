@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T14:35:51.715Z
+date: 2025-01-04T14:36:31.467Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -423,7 +423,7 @@ I have colored the armor to better to better see what is going on.
 - Select the `Average` tool
 ![49_average_tool.png](/weight_painting_armor_tutorial/49_average_tool.png)
 
-- Apply the average tool on the belt buckle area for all the bones that affect it.
+- Apply the average tool on the area you want to stay stiff for all the bones that affect it.
 ![50_average1.gif](/weight_painting_armor_tutorial/50_average1.gif)
 ![51_average2.gif](/weight_painting_armor_tutorial/51_average2.gif)
 
