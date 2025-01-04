@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: false
-date: 2025-01-04T00:29:27.124Z
+date: 2025-01-04T00:31:12.094Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -22,9 +22,9 @@ It is recommended to go through the entirety of this tutorial at least once, as 
 1. [Transfering weights](#transfering-weights)
 1. [Testing the weights](#testing-the-weights)
 1. [Fixing weights issues](#fixing-weights-issues)
-    * [Part of the armor moves when it shouldn't](#part-of-the-armor-moves-when-it-shouldnt)
-    * [Part of the armor doesn't move when it should](#part-of-the-armor-doesnt-move-when-it-should)
-    * [Part of the armor gets deformed too much](#part-of-the-armor-gets-deformed-too-much)
+		- [Part of the armor moves when it shouldn't](#part-of-the-armor-moves-when-it-shouldnt)
+		- [Part of the armor doesn't move when it should](#part-of-the-armor-doesnt-move-when-it-should)
+		- [Part of the armor gets deformed too much](#part-of-the-armor-gets-deformed-too-much)
 1. [Weight painting stiff armor pieces](#weight-painting-stiff-armor-pieces)
 1. [Limiting weights](#limiting-weights)
 1. [Exporting and testing](#exporting-and-testing)
