@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2025-01-07T14:00:58.763Z
+date: 2025-01-07T14:02:58.706Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -75,8 +75,8 @@ This page is a list of existing Tutorials.-->
 
 ## Dialogue
 
-- [Editing Dialog Files](Tutorials/dialogue-files-tutorial)
-- [Adding New Voice Lines And Dialog](Tutorials/new-voice-lines)
+- [Editing Dialog Files](https://wiki.bg3.community/en/Tutorials/dialogue-files-tutorial)
+- [Adding New Voice Lines And Dialog](https://wiki.bg3.community/en/Tutorials/new-voice-lines)
 {.links-list}
 
 ## Visual Modding
