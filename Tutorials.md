@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2025-01-04T19:11:41.898Z
+date: 2025-01-07T14:00:58.763Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -71,6 +71,12 @@ This page is a list of existing Tutorials.-->
 - [Extracting Game Audio Files](Sound/Extract-Audio)
 - [Replacing In-Game Sound](Sound/Replace-Sound)
 - [Using Sound Events to Narrow Down Source Files](Sound/SoundEventSorting)
+{.links-list}
+
+## Dialogue
+
+- [Editing Dialog Files](Tutorials/dialogue-files-tutorial)
+- [Adding New Voice Lines And Dialog](Tutorials/new-voice-lines)
 {.links-list}
 
 ## Visual Modding
