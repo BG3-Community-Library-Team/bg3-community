@@ -2,7 +2,7 @@
 title: Textures
 description: Basic breakdown on BG3 textures and image filetypes
 published: true
-date: 2025-01-02T01:44:34.538Z
+date: 2025-01-07T14:18:10.146Z
 tags: textures, general, basic
 editor: markdown
 dateCreated: 2024-04-25T03:13:14.974Z
@@ -16,6 +16,7 @@ This page is the central hub for information regarding texture maps in BG3. If y
 
 ## Pages
 - [Bg3 Engine Texture Variants](texture-types)
+- [Shaders](https://wiki.bg3.community/en/Information/Textures/shaders)
 - ~~[BG3 Image File-formats](image-formats)~~ (Incomplete)
 - ~~[Compression](compression)~~ (Incomplete)
 - ~~[Editing Textures](editing-textures)~~ (Incomplete)
