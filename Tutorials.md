@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2025-01-07T14:02:58.706Z
+date: 2025-01-07T14:09:50.263Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -20,6 +20,7 @@ This page is a list of existing Tutorials.-->
 - [Items *A List of Item Tutorials*](Items)
 - [Script Extender *A List of Script Extender Tutorials*](ScriptExtender)
 - [Sound/Audio *A List of Sound and Audio Tutorials*](/Tutorials/Sound)
+- [Dialogue *A List of Dialogue Tutorials*](Dialogue)
 - [Visual Modding *A List of Visual Mod Tutorials*](Visual)
 - [Animations *A List of Animation Tutorials*](Animations)
 - [Icons *A List of Icon Mod Tutorials*](Icons)
