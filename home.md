@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2024-10-25T15:23:27.705Z
+date: 2025-01-07T17:49:06.239Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -76,7 +76,7 @@ This is the BG3 Modding Community Wiki. This space is a place where tutorials, r
 - [Script Extender *Guides relating to using Script Extender*](Tutorials/ScriptExtender)
 - [Sound *Guides relating to Sound Modding*](/Tutorials/Sound)
 - [Visual *Guides relating to Visual Modding*](Tutorials/Visual)
-- [Icons *Guides relating to Icons*](Icons)
+- [Icons *Guides relating to Icons*](Tutorials/Icons)
 - [Toolkit *Guides relating to Larian's Toolkit*](/Tutorials/Toolkit)
 - [Screen Archery *Guides relating to Screen Archery*](/Tutorials/Screen-Archery)
 {.links-list}
