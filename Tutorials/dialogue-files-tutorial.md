@@ -2,8 +2,8 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: true
-date: 2024-09-11T05:51:54.174Z
-tags: tutorial, scripting, data
+date: 2025-01-09T20:56:11.605Z
+tags: tutorial, scripting, data, dialogue, dialog
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
 ---
