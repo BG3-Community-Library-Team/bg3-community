@@ -2,8 +2,8 @@
 title: Adding New Voice Lines And Dialog
 description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
 published: true
-date: 2024-09-11T21:04:42.567Z
-tags: 
+date: 2025-01-09T20:59:24.666Z
+tags: tutorial, scripting, data, tutorials, audio, sound, voice, dialogue, dialog, lipsync
 editor: markdown
 dateCreated: 2024-07-09T21:40:21.205Z
 ---
