@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2025-01-07T14:09:50.263Z
+date: 2025-01-11T21:37:44.918Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -84,7 +84,9 @@ This page is a list of existing Tutorials.-->
 - [Getting Started with 3D Modding](Visual/getting-started-with-3d-modding)
 - [Creating a Hair Mod](Visual/Creating-A-Hair-Mod)
 - [Creating Custom Head Armatures](Visual/mrboneswildguide)
+- [Creating and Exporting Meshes in Blender](Creating-and-Exporting-Meshes-in-Blender)
 - [Weight Painting Armor and Clothes](/Tutorials/Visual/Weight-Painting-Armor)
+- [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
 {.links-list}
 
 ## Animations
