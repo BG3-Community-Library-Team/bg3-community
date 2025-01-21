@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2025-01-11T21:37:44.918Z
+date: 2025-01-21T12:39:41.548Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -87,6 +87,7 @@ This page is a list of existing Tutorials.-->
 - [Creating and Exporting Meshes in Blender](Creating-and-Exporting-Meshes-in-Blender)
 - [Weight Painting Armor and Clothes](/Tutorials/Visual/Weight-Painting-Armor)
 - [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
+- [Custom Wrinkle Map Guide And Template](/Tutorials/Visual/Adding-A-Custom-Wrinkle-Map-To-A-Custom-Head)
 {.links-list}
 
 ## Animations
