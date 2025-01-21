@@ -2,7 +2,7 @@
 title: Visual
 description: List of Visual Mod Tutorials
 published: true
-date: 2025-01-11T21:34:52.252Z
+date: 2025-01-21T12:39:19.076Z
 tags: visual, tutorial, textures, meshes, tutorials
 editor: markdown
 dateCreated: 2024-05-02T22:12:50.307Z
@@ -18,4 +18,5 @@ This page is a list of existing Tutorials relating to Visual Mods.
 - [Creating and Exporting Meshes in Blender](Creating-and-Exporting-Meshes-in-Blender)
 - [Weight Painting Armor and Clothes](/Tutorials/Visual/Weight-Painting-Armor)
 - [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
+- [Custom Wrinkle Map Guide And Template](/Tutorials/Visual/Adding-A-Custom-Wrinkle-Map-To-A-Custom-Head)
 {.links-list}
