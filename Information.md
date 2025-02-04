@@ -2,7 +2,7 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2025-01-07T14:16:41.211Z
+date: 2025-02-04T21:46:41.702Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
@@ -44,7 +44,7 @@ Textures
 -
 - [Textures](/Information/Textures)
 - [Icons](https://wiki.bg3.community/Tutorials/Icons/Icon-Creation)
-- [Shaders](https://wiki.bg3.community/en/Information/Textures/shaders)
+- [Shaders](/Information/Textures/Shaders)
 
 Sound
 -
