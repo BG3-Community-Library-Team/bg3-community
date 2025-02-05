@@ -2,14 +2,37 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2025-01-07T17:49:46.661Z
+date: 2025-02-05T08:52:28.942Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
 ---
 
-# Welcome
-This is the BG3 Modding Community Wiki. This space is a place where tutorials, resources, and guides can be easily found, created, and modified. Lore and base Game information are also welcome. All content here is posted with author's consent. If you wish to get involved in adding content, contact the Administrative Team with your account name, and we'll provide the contributor role. Click the "Add Page" button to get started in adding content, or navigate with the sidebar to find what you're looking for! 
+# Welcome  
+
+This is the BG3 Modding Community Wiki—a place to find, create, and edit tutorials, resources, and guides. Lore and base game information are also welcome.
+
+All content is posted with the author’s consent.  
+
+## How to Get Involved  
+This is a community-driven project, and we value your input! Whether you contribute or just explore, we’d love to hear your feedback on [Discord](https://discord.gg/bg3mods). If you’d like to participate, please read the [Rules and Guidelines](/meta/guidelines) first to ensure we're on the same page.  
+
+## Getting Access  
+To contribute, you need a user account and the Contributor Role.  
+
+### Signing Up  
+The wiki uses Auth0 for secure login, ensuring we have no access to your credentials. After signing up, you'll have guest permissions, allowing you to read all pages but not edit them.  
+
+### Requesting Contributor Access  
+Once ready, please contact the Administrative Team with your account name:  
+
+- On the **[BG3 Modding Community Discord](https://discord.gg/bg3mods)**, send a ModMail request or ping `@Admin`.  
+- Alternatively, email **wiki@bg3.community**.  
+
+Thank you for helping to improve the wiki!
+
+![cmtyinside.webp](/test/alithea/cmtyinside.webp =160x)
+
 
 
 # Sections {.tabset}
