@@ -2,7 +2,7 @@
 title: Fix Broken Normals on Imported Meshes
 description: Short guide to fix meshes with borked normals (random invisible triangles)
 published: true
-date: 2025-02-09T21:21:34.952Z
+date: 2025-02-09T21:24:05.659Z
 tags: meshes, normals
 editor: markdown
 dateCreated: 2025-02-09T20:14:36.245Z
@@ -12,6 +12,7 @@ dateCreated: 2025-02-09T20:14:36.245Z
 Are your meshes looking a bit cut-out like this after they've been through Blender?
 
 ![borkednormals-example.png](/tutorials/fix_normals_meshes/borkednormals-example.png)
+(image courtesy of copperleaves)
 
 That weirdness down there is somehow linked with importing meshes into Blender via the BG3 plugin and it's caused by the mesh normals getting a bit messed up. Luckily, it's usually easy to fix!
 
