@@ -2,7 +2,7 @@
 title: Fix Broken Normals on Imported Meshes
 description: Short guide to fix meshes with borked normals (random invisible triangles)
 published: true
-date: 2025-02-09T21:20:39.614Z
+date: 2025-02-09T21:21:34.952Z
 tags: meshes, normals
 editor: markdown
 dateCreated: 2025-02-09T20:14:36.245Z
@@ -62,5 +62,5 @@ Mesh -> Normals -> Set from Faces
 and that's it!
 
 > **Is it still looking wrong for your mesh?**
-> Annoyingly, there are some meshes whose normals are borked for a more complicated reason (usually they are two sided meshes and have fused vertices upon import). This can require a more involved fix and I'd recommend checking out the discord server and asking there!
+> Annoyingly, there are some meshes whose normals are borked for a more complicated reason (usually they are two sided meshes and have fused vertices upon import). This can require a more involved fix and I'd recommend checking out the discord server and asking there, the link can be found on the left sidebar of the wiki <3
 {.is-success}
