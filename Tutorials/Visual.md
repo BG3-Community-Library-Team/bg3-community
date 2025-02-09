@@ -2,7 +2,7 @@
 title: Visual
 description: List of Visual Mod Tutorials
 published: true
-date: 2025-02-09T19:57:09.109Z
+date: 2025-02-09T20:19:00.524Z
 tags: visual, tutorial, textures, meshes, tutorials
 editor: markdown
 dateCreated: 2024-05-02T22:12:50.307Z
@@ -19,5 +19,5 @@ This page is a list of existing Tutorials relating to Visual Mods.
 - [Weight Painting Armor and Clothes](/Tutorials/Visual/Weight-Painting-Armor)
 - [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
 - [Custom Wrinkle Map Guide And Template](/Tutorials/Visual/Adding-A-Custom-Wrinkle-Map-To-A-Custom-Head)
-- [Fix Broken Normals on Imported Meshes](/Tutorials/Visual/Fixing-Normals)
+- [Fix Broken Normals on Imported Meshes](/Tutorials/Visual/Fix-Normals)
 {.links-list}
