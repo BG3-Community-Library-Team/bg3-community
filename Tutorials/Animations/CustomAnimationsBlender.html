@@ -2,7 +2,7 @@
 title: Custom Animations Blender Walkthrough
 description: Tutorial on using the Nexus animation templates in Blender
 published: true
-date: 2024-12-23T18:45:18.627Z
+date: 2025-02-16T17:33:14.492Z
 tags: tutorial, animation
 editor: ckeditor
 dateCreated: 2024-12-17T21:25:11.984Z
@@ -101,6 +101,8 @@ dateCreated: 2024-12-17T21:25:11.984Z
 <figure class="image image_resized" style="width:38.49%;"><img src="/animation_tutorial/headrig_update3.png"></figure>
 <p>Select the MetaRig in Object Mode, then go into Edit Mode and position all the bones and joints to fit your head. The amount of work this will require will vary with how different your head of choice is from the head in the provided blend file. For a more thorough video on how to position the MetaRig bones for Rigify, see <a href="https://wiki.bg3.community/https://www.youtube.com/watch?v=VUWdMeCqz0c">this YouTube video.</a></p>
 <figure class="image"><img src="/animation_tutorial/headrig_update_gif.gif"></figure>
+<p>Make sure to box select the joints connecting the head and the tail of connecting bones, in order not to accidentally disconnect them (to not accidentally do that with center joints, it's best to temporarily disable X-symmetry for those). It's best to use snapping to Face Nearest (increase the Face Nearest Steps to around ~8 at least), so that the bones/joints snap to the head faces and are thus positioned somewhere around skin level:</p>
+<figure class="image image_resized" style="width:57.95%;"><img src="/animation_tutorial/skin_snapping.png"></figure>
 <p>For best alignment and rotation of eyeballs/jaw, snap the heads of the eye/jaw_master bones in the MetaRig to the corresponding bones in the head's Deform Rig. To do this, unhide both the MetaRig and the Deform Rig, enable X-ray view, X-symmetry and Vertex snapping, and snap the head of the MetaRig eye bones to the head of the Deform eye bones:</p>
 <figure class="image image_resized" style="width:32.57%;"><img src="/animation_tutorial/headrig_snapping1.png"></figure>
 <figure class="image image_resized" style="width:63.22%;"><img src="/animation_tutorial/headrig_snapping2.png"></figure>
