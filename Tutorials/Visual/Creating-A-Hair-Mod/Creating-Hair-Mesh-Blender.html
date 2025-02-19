@@ -2,7 +2,7 @@
 title: 2. Creating the Hair Mesh in Blender
 description: 
 published: true
-date: 2025-02-19T14:38:26.280Z
+date: 2025-02-19T14:42:45.714Z
 tags: hair, visual, tutorial, blender
 editor: ckeditor
 dateCreated: 2024-04-25T01:28:21.322Z
@@ -22,13 +22,18 @@ dateCreated: 2024-04-25T01:28:21.322Z
 <p>Now comes the fun part—playing with the hair in Blender. Make it longer or shorter, remove some parts, add some parts. There’s a lot you can do even without making any custom hair parts from scratch, so get creative!&nbsp;</p>
 <h3>Mesh Editing FAQ</h3>
 <p>Here are some common issues you might run into while editing the hair in Blender:</p>
-<p><strong>Will there be issues if I import a second (or more) vanilla hair mesh to add parts of it to my hair?</strong> You can definitely do this, and it’s a great way to make a hairstyle look unique. However, make sure all of your meshes are parented to one armature. If your hair meshes use the same material (same hair texture), we recommend <a href="https://www.youtube.com/watch?v=gxmgZ_X1kbI">combining them for simplicity</a> once you’re done.</p>
-<p><strong>My hair is stretching weirdly, or even appearing on the floor in game.</strong> You need to apply transforms on the hair mesh and armature using CTRL + A &gt; All Transforms.</p>
-<p><strong>Is there an easier way to select an entire part of the hair (such as a ponytail) without manually selecting each vertex? It’s hard for me to do this when the hair gets close to the scalp.</strong> Yes! Use the Box or Circle select tool to select as much of the ponytail as you can. Then, to get those pesky roots without grabbing other parts of the hair, press CTRL + +, and continue pressing those keys to Select More of the parts you already have selected.</p>
-<p><strong>Can I add custom highlights to my hair if I don’t like the vanilla ones?</strong> Yes! This is done using Vertex Paint. See <a href="https://bg3.wiki/wiki/Modding:Custom_Hair_Highlights">this tutorial</a> for more details.</p>
-<p><strong>Can I adjust the UVs/the parts of the texture that my hair cards use?</strong> Yes! See <a href="https://docs.google.com/document/d/1Kv9P01LZIXtP-U0KqOH7_P5lu9lyzJPbbUpYX2ASbMY/edit?usp=sharing">this tutorial</a> for more details.</p>
+<p><strong>Will there be issues if I import a second (or more) vanilla hair mesh to add parts of it to my hair?</strong>&nbsp;</p>
+<p>You can definitely do this, and it’s a great way to make a hairstyle look unique. However, make sure all of your meshes are parented to one armature. If your hair meshes use the same material (same hair texture), we recommend <a href="https://www.youtube.com/watch?v=gxmgZ_X1kbI">combining them for simplicity</a> once you’re done.</p>
+<p><strong>My hair is stretching weirdly, or even appearing on the floor in game.</strong>&nbsp;</p>
+<p>You need to apply transforms on the hair mesh and armature using CTRL + A &gt; All Transforms.</p>
+<p><strong>Is there an easier way to select an entire part of the hair (such as a ponytail) without manually selecting each vertex? It’s hard for me to do this when the hair gets close to the scalp.</strong>&nbsp;</p>
+<p>Yes! Use the Box or Circle select tool to select as much of the ponytail as you can. Then, to get those pesky roots without grabbing other parts of the hair, press CTRL + +, and continue pressing those keys to Select More of the parts you already have selected.</p>
+<p><strong>Can I add custom highlights to my hair if I don’t like the vanilla ones?</strong>&nbsp;</p>
+<p>Yes! This is done using Vertex Paint. See <a href="https://bg3.wiki/wiki/Modding:Custom_Hair_Highlights">this tutorial</a> for more details.</p>
+<p><strong>Can I adjust the UVs/the parts of the texture that my hair cards use?</strong>&nbsp;</p>
+<p>Yes! See <a href="https://docs.google.com/document/d/1Kv9P01LZIXtP-U0KqOH7_P5lu9lyzJPbbUpYX2ASbMY/edit?usp=sharing">this tutorial</a> for more details.</p>
 <p><strong>Can I add physics to my hair?</strong></p>
-<p>&nbsp;Yes, as long as you use one of the vanilla physics skeletons/armatures (so a skeleton from a vanilla hair with physics), as we can't make custom skeletons for hairs at this time. You'll need to weight your hair to the armature so the hair will move with the skeleton. You'll also need the SkeletonResource of the vanilla hair you're using. Then plug the SkeletonResource into this line in your _merged.lsf.lsx file.</p>
+<p>Yes, as long as you use one of the vanilla physics skeletons/armatures (so a skeleton from a vanilla hair with physics), as we can't make custom skeletons for hairs at this time. You'll need to weight your hair to the armature so the hair will move with the skeleton. You'll also need the SkeletonResource of the vanilla hair you're using. Then plug the SkeletonResource into this line in your _merged.lsf.lsx file.</p>
 <p>&lt;attribute id="SkeletonResource" type="FixedString" value="SKELETONRESOURCEHERE" /&gt;</p>
 <p>To find the SkeletonResource of vanilla hairs, check out these pages.&nbsp;</p>
 <p><a href="https://bg3.wiki/wiki/Modding:Hair_Meshes">Modding:Hair Meshes</a></p>
