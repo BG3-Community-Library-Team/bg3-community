@@ -2,7 +2,7 @@
 title: 2. Creating the Hair Mesh in Blender
 description: 
 published: true
-date: 2025-02-19T14:42:45.714Z
+date: 2025-02-19T14:43:36.199Z
 tags: hair, visual, tutorial, blender
 editor: ckeditor
 dateCreated: 2024-04-25T01:28:21.322Z
@@ -34,11 +34,10 @@ dateCreated: 2024-04-25T01:28:21.322Z
 <p>Yes! See <a href="https://docs.google.com/document/d/1Kv9P01LZIXtP-U0KqOH7_P5lu9lyzJPbbUpYX2ASbMY/edit?usp=sharing">this tutorial</a> for more details.</p>
 <p><strong>Can I add physics to my hair?</strong></p>
 <p>Yes, as long as you use one of the vanilla physics skeletons/armatures (so a skeleton from a vanilla hair with physics), as we can't make custom skeletons for hairs at this time. You'll need to weight your hair to the armature so the hair will move with the skeleton. You'll also need the SkeletonResource of the vanilla hair you're using. Then plug the SkeletonResource into this line in your _merged.lsf.lsx file.</p>
-<p>&lt;attribute id="SkeletonResource" type="FixedString" value="SKELETONRESOURCEHERE" /&gt;</p>
-<p>To find the SkeletonResource of vanilla hairs, check out these pages.&nbsp;</p>
-<p><a href="https://bg3.wiki/wiki/Modding:Hair_Meshes">Modding:Hair Meshes</a></p>
-<p>&nbsp;and&nbsp;</p>
-<p><a href="https://docs.google.com/spreadsheets/d/16cQUxQ7FrGVmIPy5929qae4cCQls4ZWuBX_w08zvv5M/edit#gid=0">BG3 Hair Reference Spreadsheet</a></p>
+<blockquote>
+  <p>&lt;attribute id="SkeletonResource" type="FixedString" value="SKELETONRESOURCEHERE" /&gt;</p>
+</blockquote>
+<p>To find the SkeletonResource of vanilla hairs, check out <a href="https://wiki.bg3.community/en/Information/Meshes/Hair-Meshes-Reference">this page</a>.</p>
 <h4><strong>None of the vanilla hairs seem to have the part I want. Can I make my own custom hair for BG3?</strong>&nbsp;</h4>
 <p>Yes! WIP tutorial here: <a href="https://bg3.wiki/wiki/Modding:Creating_Custom_Hair_with_Hair_Tool">Creating Custom Hair with Hair Tool</a></p>
 <h4>Autosnapping Weights</h4>
