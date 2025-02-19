@@ -2,7 +2,7 @@
 title: 2. Creating the Hair Mesh in Blender
 description: 
 published: true
-date: 2025-02-19T14:34:23.864Z
+date: 2025-02-19T14:38:26.280Z
 tags: hair, visual, tutorial, blender
 editor: ckeditor
 dateCreated: 2024-04-25T01:28:21.322Z
@@ -40,6 +40,7 @@ dateCreated: 2024-04-25T01:28:21.322Z
 <p>Padme has <a href="https://youtu.be/siC6fak9zDM?si=vFQBBiLNV79kUVkt&amp;t=298">a great video here</a> that explains how to use a vanilla mesh to transfer weights to your new hair. It's recommended to find the vanilla hair that looks most similar to your hair, and use that.</p>
 <h4>Non-Autosnapping Weights</h4>
 <p>If your hair is crunching really badly with autosnap, you might want to re-weight it to be non-autosnap. How do you do that? It's fairly simple: wipe out all of the existing vertex groups on your hair. Create a new vertex group and name it Head_M (mind the capitalization). Select all in edit mode and assign your hair mesh to that vertex group. If your hair is shorter than the character's shoulders, you're done! If it's longer and you want it to move somewhat with the upper body, create another vertex group called Chest_M, and use the gradient tool in Weight Paint mode to weight from the bottom up. Test in game and adjust as necessary. Those two vertex groups are probably all you need for non-autosnapping. Make sure when you're setting up the files later that you turn off autosnapping in there, too, otherwise your hair won't behave properly. Remember that turning off autosnap means you have to manually refit the hair for every body type that you want it to be available for... which is a pain.</p>
+<p><a href="https://docs.google.com/document/d/1Kui8QXCnUVQls7hBiz-GHhSk3JINdtJEOrC7JivzhRo/edit?usp=sharing">Here is a Google Doc with images</a> that visually explains how to set up non-autosnap weights.</p>
 <h3>Exporting the Mesh</h3>
 <p>If using the GR2 plugin, you want to first make sure you have your export order set up, which you can find in the Object Properties tab:</p>
 <figure class="image image_resized" style="width:530px;"><img src="https://bg3.wiki/w/images/thumb/6/63/Exportorder.webp/528px-Exportorder.webp.png" alt="Exportorder.webp"></figure>
