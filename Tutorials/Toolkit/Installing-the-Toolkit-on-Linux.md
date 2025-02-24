@@ -2,7 +2,7 @@
 title: Installing the Toolkit on Linux
 description: Toolkit Linux Guide
 published: false
-date: 2025-02-24T16:15:28.380Z
+date: 2025-02-24T16:19:01.338Z
 tags: linux, toolkit
 editor: markdown
 dateCreated: 2025-02-24T16:01:49.767Z
@@ -22,7 +22,7 @@ In addition to this, this guide is created based on a snapshot of our current un
 {.links-list}
 
 ## Arch
-#### Tested on Arch x86_64 - 6.13.2-arch1-1 - x11    -- This is what i use and will test on later
+#### Tested on 6.13.2-arch1-1 - x86_64 - x11
 
 
 {.links-list}
