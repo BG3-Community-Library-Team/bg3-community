@@ -2,7 +2,7 @@
 title: Installing the Toolkit on Linux
 description: Toolkit Linux Guide
 published: false
-date: 2025-02-24T16:08:06.037Z
+date: 2025-02-24T16:08:36.360Z
 tags: linux, toolkit
 editor: markdown
 dateCreated: 2025-02-24T16:01:49.767Z
