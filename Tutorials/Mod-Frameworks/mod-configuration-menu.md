@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-02-28T23:32:22.833Z
+date: 2025-02-28T23:33:28.377Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -47,7 +47,7 @@ Below are listed some nice features that MCM provides to mod authors:
 >
 > • ***Minimizes user error***: MCM handles the UI and validation of settings, reducing the risk of user error when configuring your mod and encouraging them to do so safely. By skipping the need for manual editing of configuration files, a very common source of errors, users are less likely to encounter issues or need to ask how to configure your mod.
 >
-> • ***NEW IN 1.19 - Keybinding management***: MCM offers a robust system for managing keybindings. This feature allows you to easily define, update, and persist keyboard bindings directly from the MCM window. Conflict resolution, real-time updates, and automatic persistence mean you can focus on your mod's functionality without having to write custom input event code, and minimize conflicts with other mods.
+> • ***NEW IN 1.19 - Keybinding management***: MCM offers a robust system for managing keybindings. This feature allows you to easily define, update, and persist keyboard bindings directly from the MCM window, while easily registering callbacks for your actions. Has built-in conflict resolution, so you can focus on your mod's functionality without having to write custom input event code, and minimizing conflicts with other mods.
 >
 > • ***Validation checks***: MCM runs dozens of validation checks to ensure that your blueprint for integration was correctly written, while providing detailed error messages if something is wrong. It also validates the settings' values at runtime to ensure that they respect the defined constraints, which is especially useful if JSON settings files were manually edited, something that is supported by MCM;
 >
