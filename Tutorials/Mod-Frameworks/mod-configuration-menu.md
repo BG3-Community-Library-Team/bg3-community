@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-03-01T02:04:48.217Z
+date: 2025-03-01T03:19:19.634Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -276,7 +276,7 @@ Before (deprecated `keybinding` format):
 }
 ```
 
-After (keybinding_v2 format):
+After (**new `keybinding_v2`** format):
 
 ```lua
 {
