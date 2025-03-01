@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-03-01T01:59:34.514Z
+date: 2025-03-01T01:59:41.142Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -316,7 +316,7 @@ end)
 
 This is a basic interaction between server and client that is often necessary when dealing with client-sided functionality. You may refer to [networking tutorials](https://wiki.bg3.community/en/Tutorials/ScriptExtender/Networking-ClientServerBasics) in this wiki.
 
-This system allows mod authors to define how their keybindings function without having to manage key input events, while also making it more much more user-friendly.
+This system allows mod authors to define how their keybindings function without having to manage key input events, while also making it more much more player-friendly.
 
 ### Inserting custom UI elements
 >
