@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-03-01T00:41:16.727Z
+date: 2025-03-01T01:56:59.013Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -256,7 +256,7 @@ Otherwise, prepend `Mods.BG3MCM` to all function calls.
 
 ### Adding a keybinding
 
-MCM 1.19 introduces built-in support for keybinding management, allowing mods to define and register hotkeys with ease. This system provides a familiar interface for users to customize keybindings while handling conflicts automatically.
+MCM 1.19 introduces built-in support for keybinding management, allowing mods to define and register hotkeys with ease. This system provides a familiar interface for users to customize keybindings while warning about conflicts automatically.
 
 #### Defining a keybinding
 
