@@ -2,13 +2,13 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-02-28T23:33:51.699Z
+date: 2025-03-01T00:41:16.727Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
 ---
 
-# Mod Configuration Menu	
+# Mod Configuration Menu
 
 Baldur's Gate 3 Mod Configuration Menu (`BG3MCM` or MCM) is a mod that provides an in-game UI to enable players to intuitively manage mod settings as defined by mod authors. It supports various setting types, including integers, floats, checkboxes, text inputs, lists, combos/dropdowns, radio buttons, sliders, drags, and color pickers.
 
@@ -18,22 +18,33 @@ This documentation is aimed at mod authors who want to integrate their mods with
 
 ## Table of Contents
 
-- [Overview](#overview)
+- [Mod Configuration Menu](#mod-configuration-menu)
   - [Table of Contents](#table-of-contents)
   - [Features for mod authors](#features-for-mod-authors)
   - [Concepts](#concepts)
   - [Integrating MCM into your mod](#integrating-mcm-into-your-mod)
     - [Defining a blueprint](#defining-a-blueprint)
-    - [The MCM Schema](#the-mcm-schema)
+      - [The MCM Schema](#the-mcm-schema)
+        - [IDE support](#ide-support)
+        - [Schema main components](#schema-main-components)
     - [Using values from MCM](#using-values-from-mcm)
+      - [Reducing verbiage](#reducing-verbiage)
+    - [Adding a keybinding](#adding-a-keybinding)
+      - [Defining a keybinding](#defining-a-keybinding)
+      - [Registering a keybinding callback](#registering-a-keybinding-callback)
+      - [Client vs. Server execution](#client-vs-server-execution)
     - [Inserting custom UI elements](#inserting-custom-ui-elements)
+      - [Inserting Search Results for ListV2 settings](#inserting-search-results-for-listv2-settings)
     - [Listening to MCM events](#listening-to-mcm-events)
     - [How validation works](#how-validation-works)
     - [Localization support](#localization-support)
+    - [TODO: ported IMGUI icons](#todo-ported-imgui-icons)
   - [Notification API](#notification-api)
+    - [Features](#features)
+    - [Example usage](#example-usage)
   - [MCM demo](#mcm-demo)
   - [Closing words](#closing-words)
-  
+
 ## Features for mod authors
 
 Below are listed some nice features that MCM provides to mod authors:
@@ -63,7 +74,7 @@ Below are listed some nice features that MCM provides to mod authors:
 > • ***Robustness***: MCM has more than 40 automated server-side tests aiming to ensure that it works as expected, edge cases are handled, and errors are gracefully reported without halting the framework or game; errors from one mod won't affect the others.
 >
 > • ***UI agnostic***: MCM was designed to be, first and foremost, a standalone configuration manager. This means that even if support for IMGUI were to be entirely removed or replaced, the underlying structure of MCM would still function correctly;
-	> • This also means that **users who can't see the IMGUI window will still have MCM working as a config manager**.
+ > • This also means that **users who can't see the IMGUI window will still have MCM working as a config manager**.
 >
 > • ***Multiple profiles***: MCM has support for creating, saving, loading, and deleting multiple configuration profiles, which is useful for mod authors to separate their testing configurations while developing mods;
 >
@@ -92,7 +103,7 @@ Mod authors need to integrate their mods with MCM for their settings to appear i
 
   1. **Define the blueprint JSON** file for your mod's settings and **place it alongside your mod's `meta.lsx`** file.
   2. Replace your mod's logic for reading/writing settings with calls to the MCM API, using settings' IDs as defined in the blueprint.
-  
+
 Anything else is a matter of updating objects (if you're storing values in tables, for example), adding custom UI (very situational) and creating hotkeys (MCM 1.18+)
 
 > It's **extremely recommended to define BG3MCM as a dependency in your `meta.lsx` file**. This allows the game and mod managers to ***ensure*** that MCM is loaded ***before** your own mod* - eliminating the need to instruct users to do so manually and avoiding incorrect reports/troubleshooting when they don't! See our [guide for adding dependencies](/Tutorials/General/Basic/adding-mod-dependencies).
@@ -105,7 +116,6 @@ Anything else is a matter of updating objects (if you're storing values in table
 
 The `MCM_blueprint.json` file is how you specify your mod's configuration definition; this JSON file will define how your settings are to be structured, what are their name, input type, default, etc., allowing for automatic generation of a user-friendly interface and validation of user-set values.
 
-
 > **Recap**: a blueprint is a JSON file that defines the structure of your mod's configuration settings. It is used by MCM to generate the UI and validate the settings for you. It should be named `MCM_blueprint.json` and placed alongside your mod's `meta.lsx` file.
 {.is-info}
 
@@ -115,7 +125,7 @@ The MCM Schema dictates how you should structure your blueprint file, and you ca
 
 This schema file can be used to **write and validate** your `MCM_blueprint.json` file, as it will help enforcing the intended structure of the MCM Schema in your blueprint file, ensuring that it is correctly formatted and adheres to it.
 
-##### IDE support 
+##### IDE support
 
 **While not mandatory, it is highly recommended to set the schema up** in a code editor. By adding this JSON schema entry to your settings in VSCode, for example, you can easily write and validate your blueprint files:
 
@@ -137,17 +147,18 @@ This schema file can be used to **write and validate** your `MCM_blueprint.json`
 
 \* Alternatively, you can replace the `url` value with the path to the schema JSON file (e.g., where you place IDEHelpers or Osi.lua files). However, only do so if you have problems with the URL above.
 
-You can also use a service like https://www.jsonschemavalidator.net/s/cV447mjH by pasting your blueprint in the right pane; however, that can be cumbersome, and you'd have to paste the latest schema in the left to make sure you're not using an older version. Prefer the aforementioned method.
+You can also use a service like <https://www.jsonschemavalidator.net/s/cV447mjH> by pasting your blueprint in the right pane; however, that can be cumbersome, and you'd have to paste the latest schema in the left to make sure you're not using an older version. Prefer the aforementioned method.
 
 > Having the schema file set up in your IDE will help you write the blueprint file correctly, without having to guess the structure or wonder if you're missing something. A few minor features, such as `ModName` (to replace the string used for your mod's name) are only documented by the JSON schema.
 {.is-info}
 
 ##### Schema main components
+
 Following are the main components of the MCM schema. Don't stress over this too much, **the schema file will guide you while writing blueprints if you have set it up, and MCM will warn you about problems during runtime.**
 
 <details>
 <summary> MCM schema breakdown </summary>
-  
+
 - **Organizational structure**: the MCM Schema defines a hierarchical organization using `Tabs` and `Sections`:
   - `Tabs`: Serve as top-level organizational units in the MCM menu. Each tab can exclusively contain either `Sections` or standalone `Settings`.
     - `Sections`: Sub-divisions within tabs to group related settings.
@@ -162,10 +173,11 @@ Following are the main components of the MCM schema. Don't stress over this too 
       - `Choices`: The options to be made available for `enum` and `radio` types.
       - `Min` and `Max`: Boundary values for types such as `slider`/`drag`.
       - `Multiline`: Whether the text input should be multiline, used for `text` type.
-    - `VisibleIf`: Allows defining a simple boolean expression that determines the visibility of a setting (also tab or section) based on the values of other settings. NOTE: this might not work in the main menu as of 1.10; 
+    - `VisibleIf`: Allows defining a simple boolean expression that determines the visibility of a setting (also tab or section) based on the values of other settings. NOTE: this might not work in the main menu as of 1.10;
+
 </details>
-  
-Thus, the main content of the blueprint is defined in the `Tabs` and `Settings` properties. 
+
+Thus, the main content of the blueprint is defined in the `Tabs` and `Settings` properties.
 Within each tab, you can define either `Sections` or a list of `Settings`. Sections provide a way to group related settings together under a header.
 Each setting has an `Id`, `Name`, `Type`, `Default` value, and at least a `Tooltip` or a `Description`. Each setting `Id` must be unique across the entire blueprint, and that is validated by one of the many validation checks MCM performs.
 
@@ -184,7 +196,7 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 
 ### Using values from MCM
 
-After setting up the blueprint, mod authors can access the values set by the player through the MCM API from anywhere in their mod's code. 
+After setting up the blueprint, mod authors can access the values set by the player through the MCM API from anywhere in their mod's code.
 MCM provides a convenient way for mod authors to access and modify values. As of version 1.14+, MCM introduces a global `MCM` table that simplifies this process:
 
 ```lua
@@ -228,6 +240,7 @@ Mods.BG3MCM.MCMAPI:SetSettingValue("MySetting", newValue, ModuleUUID)
 #### Reducing verbiage
 
 To avoid typing `Mods.BG3MCM.MCMAPI:GetSettingValue` and passing your mod's UUID every time you get/set a setting value, you can define a simple global function such as this early in your scripts:
+
 ```lua
 function MCMGet(settingID)
     return Mods.BG3MCM.MCMAPI:GetSettingValue(settingID, ModuleUUID)
@@ -238,10 +251,75 @@ end
 Global functions are only accessible within your mod table, so this function won't be causing conflicts with other MCM mods that also define it.
 </details>
 
-You can allow global usage of `MCM` functions by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`. 
+You can allow global usage of `MCM` functions by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`.
 Otherwise, prepend `Mods.BG3MCM` to all function calls.
 
+### Adding a keybinding
+
+MCM 1.19 introduces built-in support for keybinding management, allowing mods to define and register hotkeys with ease. This system provides a familiar interface for users to customize keybindings while handling conflicts automatically.
+
+#### Defining a keybinding
+
+To define a keybinding, add it as a `keybinding_v2` setting in your mod's blueprint file. Below is an example of transitioning from the old format to the new `keybinding_v2` format:
+
+Before (deprecated `keybinding` format):
+
+```lua
+{
+    "Id": "key_teleport_party_to_you",
+    "Name": "Teleport party to you shortcut",
+    "Type": "keybinding",
+    "Default": {
+        "Modifier": "LShift",
+        "ScanCode": "T"
+    }
+}
+```
+
+After (keybinding_v2 format):
+
+```lua
+{
+    "Id": "key_teleport_party_to_you",
+    "Name": "Teleport party to you shortcut",
+    "Type": "keybinding_v2",
+    "Default": {
+        "Keyboard": {
+            "Key": "T",
+            "ModifierKeys": ["LShift"]
+        }
+    }
+}
+```
+
+#### Registering a keybinding callback
+
+Keybindings must be registered in the client context, as user input is inherently client-sided. To define what happens when a keybinding is triggered, register a callback using the `MCM.SetKeybindingCallback` function available in the client context:
+
+```lua
+MCM.SetKeybindingCallback('key_teleport_party_to_you', function()
+    Ext.Net.PostMessageToServer("FS_TeleportPartyToYou", Ext.Json.Stringify({ skipChecks = false }))
+end)
+```
+
+In this example, when the keybinding is pressed, a network message is sent to the server to execute the teleport action.
+
+#### Client vs. Server execution
+
+MCM does not enforce whether keybinding actions should be executed on the client or server. While simple client-side actions can be handled directly in the callback, mods requiring server execution (e.g., Osiris-based actions) should use a network message, as shown above. The server context would then have a net listener, such as in this simplified example:
+
+```lua
+Ext.RegisterNetListener("FS_TeleportPartyToYou", function()
+    print("Do something")
+end)
+```
+
+This is a basic interaction between server and client that is often necessary when dealing with client-sided functionality. You may refer to [networking tutorials](https://wiki.bg3.community/en/Tutorials/ScriptExtender/Networking-ClientServerBasics) in this wiki.
+
+This system provides mod authors with the flexibility to decide how their keybindings should function while ensuring ease of integration.
+
 ### Inserting custom UI elements
+>
 >Note that these methods are only available in the client context. They cannot be executed from server-side code, since UI-related functionality is strictly handled on the client side. If you're trying them out with the console, run `client` before executing these methods.
 >{.is-info}
 
@@ -262,7 +340,7 @@ This will create a new tab or insert the content at the end of an existing one.
 > • For reference, [Mod Uninstaller](https://www.nexusmods.com/baldursgate3/mods/9701) uses both MCM-generated and custom IMGUI elements; there's also [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) that leverages the `InsertModMenuTab` method to add custom logic inside MCM.
 {.is-info}
 
-#### Inserting Search Results for ListV2 Settings
+#### Inserting Search Results for ListV2 settings
 
 The `InsertListV2SearchResults` method in the `IMGUIAPI` allows mod authors to insert suggestions/'search results' into a `list_v2` setting. This is particularly useful for providing users with dynamic suggestions based on their input as they type in the add input field of the setting.
 
@@ -292,7 +370,7 @@ All searches on MCM use fuzzy matching.
 Up to 1.10, MCM used a set of channels to communicate between the client and server. Some of these can be useful for mod authors to listen to, as they can use this to update their mod's behavior based on changes from MCM, such as when a setting is saved:
 
 `MCM_Saved_Setting`: fired whenever a setting value has been saved and written to the settings JSON file by MCM. The payload contains the setting ID and the new value. Example usage:
-  
+
 ```lua
 -- In your MCM-integrated mod's code
 Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
@@ -309,13 +387,14 @@ end)
 ```
 
 Here are some other events that can be listened to:
+
 - `MCM_Setting_Reset`: Fired when a setting is reset to its default value.
 - Profile-related events:
-	- `MCM_Server_Created_Profile`: Fired when a new profile is created.
-	- `MCM_Server_Set_Profile`: Fired when a profile is set as the active one.
-	- `MCM_Server_Deleted_Profile`: Fired when a profile is deleted.
+  - `MCM_Server_Created_Profile`: Fired when a new profile is created.
+  - `MCM_Server_Set_Profile`: Fired when a profile is set as the active one.
+  - `MCM_Server_Deleted_Profile`: Fired when a profile is deleted.
 - Other events:
-	- `MCM_Mod_Tab_Added`: Fired when a mod inserts a custom tab into the MCM UI.
+  - `MCM_Mod_Tab_Added`: Fired when a mod inserts a custom tab into the MCM UI.
   - `MCM_Mod_Tab_Activated`: Fired when the user clicks a mod in the mod list in MCM's left panel.
 
 > Always verify the `modGUID` in the payload to confirm that the event pertains to the mod of interest (typically your own, which you have global access to via `ModuleUUID`).
@@ -325,8 +404,8 @@ Here are some other events that can be listened to:
 
 <details>
 <summary>Event changes in 1.11</summary>
-Some names were changed with this refactor: 
-  
+Some names were changed with this refactor:
+
 - `MCM_Saved_Setting` -> `MCM_Setting_Saved`
 
 - `MCM_Reset_All_Mod_Settings` -> `MCM_All_Mod_Settings_Reset`
@@ -342,13 +421,14 @@ Some names were changed with this refactor:
 - `MCM_User_Closed_Window` -> `MCM_Window_Closed`
 
 - `modGUID` (payload param) -> `modUUID`
-    
+
 These changes were implemented in a backwards-compatible way.
 </details>
 
 As of 1.11, MCM uses Script Extender's `ModEvents` to communicate between different mods. This allows mod authors to subscribe to these events and implement specific behaviors in response to changes from MCM, such as when a setting is saved:
 
 `MCM_Setting_Saved`: fired whenever a setting value has been saved and written to the settings JSON file by MCM. The payload contains information such as the UUID of the mod that added this setting, the setting ID and the new value. Example usage:
+
 ```lua
 -- In your MCM-integrated mod's code
 Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
@@ -395,7 +475,6 @@ MCM performs validation checks when:
   - Loading settings from a JSON file (+ e.g., switching between profiles);
   - Setting values programmatically through the API;
   - Processing user input from the UI.
-
 
 >• Settings not present in the blueprint will be removed from the settings JSON file;
 >• Invalid settings values will be replaced with their respective default value as specified in the blueprint;
@@ -462,6 +541,7 @@ NotificationManager.ShowSuccess('notification_id', 'Test Title', 'This is a test
   buttons = {["Log"] = function() P("Log button clicked") end } -- Custom button with callback on click
 })
 ```
+
 The `options` table (fourth param) is optional.
 Analogous functions are available for other severity levels (e.g., `NotificationManager.ShowError`, `NotificationManager.ShowWarning`, `NotificationManager.ShowInfo`).
 
