@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-03-01T03:19:19.634Z
+date: 2025-03-02T00:05:24.959Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -256,7 +256,7 @@ Otherwise, prepend `Mods.BG3MCM` to all function calls.
 
 ### Adding a keybinding
 
-MCM 1.19 introduces built-in support for keybinding management, allowing mods to define and register hotkeys with ease. This system provides a familiar interface for users to customize keybindings while warning about conflicts automatically.
+MCM 1.19 introduces built-in support for keybinding management, allowing mods to define and register hotkeys with ease. This system provides a familiar interface for users to customize keybindings while handling conflicts automatically.
 
 #### Defining a keybinding
 
@@ -264,7 +264,7 @@ To define a keybinding, add it as a `keybinding_v2` setting in your mod's bluepr
 
 Before (deprecated `keybinding` format):
 
-```lua
+```json
 {
     "Id": "key_teleport_party_to_you",
     "Name": "Teleport party to you shortcut",
@@ -276,9 +276,9 @@ Before (deprecated `keybinding` format):
 }
 ```
 
-After (**new `keybinding_v2`** format):
+After (keybinding_v2 format):
 
-```lua
+```json
 {
     "Id": "key_teleport_party_to_you",
     "Name": "Teleport party to you shortcut",
@@ -288,9 +288,30 @@ After (**new `keybinding_v2`** format):
             "Key": "T",
             "ModifierKeys": ["LShift"]
         }
+    },
+    // Options are optional; default values are shown
+    "Options": {
+        "ShouldTriggerOnKeyDown": true,
+        "ShouldTriggerOnKeyUp": false,
+        "ShouldTriggerOnRepeat": false
     }
 }
 ```
+
+MCM also provides additional options to control how a keybinding behaves. These options can be set within the Options object when defining a keybinding in the blueprint file.
+
+Available `Options`:
+
+- `ShouldTriggerOnKeyDown` (default: `true`)
+  - Triggers the keybinding callback when the key is pressed down. This is the default behavior.
+
+- `ShouldTriggerOnKeyUp` (default: `false`)
+  - Triggers the callback when the key is released.
+
+- `ShouldTriggerOnRepeat` (default: `false`)
+  - Continuously triggers the callback while the key is held down.
+
+These options are not mutually exclusive, meaning authors can use any combination of them. For example, setting `ShouldTriggerOnRepeat` to `true` allows an action to repeat continuously while the key is held, which may be useful for certain keybindings. Note that the `Options` object is entirely optional and may be omitted if the default behavior is sufficient for the keybinding's needs.
 
 #### Registering a keybinding callback
 
@@ -316,7 +337,7 @@ end)
 
 This is a basic interaction between server and client that is often necessary when dealing with client-sided functionality. You may refer to [networking tutorials](https://wiki.bg3.community/en/Tutorials/ScriptExtender/Networking-ClientServerBasics) in this wiki.
 
-This system allows mod authors to define how their keybindings function without having to manage key input events, while also making it more much more player-friendly.
+This system provides mod authors with the flexibility to decide how their keybindings should function while ensuring ease of integration.
 
 ### Inserting custom UI elements
 >
