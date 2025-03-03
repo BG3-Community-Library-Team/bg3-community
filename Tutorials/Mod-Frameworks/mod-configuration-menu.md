@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-03-02T00:46:40.903Z
+date: 2025-03-03T19:40:10.752Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -360,6 +360,10 @@ This will create a new tab or insert the content at the end of an existing one.
 > You can define an entire tab's content — not just a widget — and call the `InsertModMenuTab` function to insert it into the MCM window, inside the space dedicated for your mod.
 > • For reference, [Mod Uninstaller](https://www.nexusmods.com/baldursgate3/mods/9701) uses both MCM-generated and custom IMGUI elements; there's also [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) that leverages the `InsertModMenuTab` method to add custom logic inside MCM.
 {.is-info}
+
+### Defining lists
+
+MCM 1.17 introduced `list_v2` to supersede the now deprecated `list` input type. MCM will automatically migrate players' old `list` data to `list_v2` if the setting ID remains the same.
 
 #### Inserting Search Results for ListV2 settings
 
