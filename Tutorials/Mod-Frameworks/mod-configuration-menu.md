@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-03-10T20:11:42.645Z
+date: 2025-03-10T20:14:34.047Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -573,13 +573,11 @@ NotificationManager.ShowSuccess('notification_id', 'Test Title', 'This is a test
 The `options` table (fourth param) is optional.
 Analogous functions are available for other severity levels (e.g., `NotificationManager.ShowError`, `NotificationManager.ShowWarning`, `NotificationManager.ShowInfo`).
 
-## MCM demo
+## MCM (1.23) integration showcase/demo 
 
-The demo below showcases the different types of config options that can be used (all of them as of v1.5.0). The demo also shows how to insert custom UI elements into the menu and how to listen and react to MCM events.
+The demo below showcases the different types of config options that can be used (almost all of them as of v1.23). The demo also shows how to insert custom UI elements into the menu, how to listen and react to MCM events, and how to register callbacks for keybinding actions.
 
-NOTE: with the introduction of `ModEvents` in SE v18, the current way of listening to MCM events will get deprecated. The demo is over 10 versions behind MCM, so **please refer to other MCM mods in the meantime instead.**
-
-[MCM 1.5 Demo.zip](/tutorials/frameworks/mcm/mcm_demo.zip)
+[MCM Demo 1.23.zip](/tutorials/frameworks/mcm/mcm_demo_1.23.zip)
 
 ## Closing words
 
