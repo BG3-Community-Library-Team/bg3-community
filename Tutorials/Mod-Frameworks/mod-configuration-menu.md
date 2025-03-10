@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-03-10T20:14:34.047Z
+date: 2025-03-10T20:25:22.337Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -577,7 +577,7 @@ Analogous functions are available for other severity levels (e.g., `Notification
 
 The demo below showcases the different types of config options that can be used (almost all of them as of v1.23). The demo also shows how to insert custom UI elements into the menu, how to listen and react to MCM events, and how to register callbacks for keybinding actions.
 
-[MCM Demo 1.23.zip](/tutorials/frameworks/mcm/mcm_demo_1.23.zip)
+[mcm_demo_1.23.zip](/tutorials/frameworks/mcm/mcm_demo_1.23.zip)
 
 ## Closing words
 
