@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-03-11T19:19:51.508Z
+date: 2025-03-11T19:19:58.743Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -324,7 +324,7 @@ end)
 ```
 
 In this example, when the keybinding is pressed, a network message is sent to the server to execute the teleport action.
-The callback is called with the input event passed as param.
+Your callback is called with the input event passed as param.
 
 #### Client vs. Server execution
 
