@@ -2,7 +2,7 @@
 title: Installing the Toolkit on Linux
 description: Toolkit Linux Guide
 published: false
-date: 2025-03-04T13:31:21.612Z
+date: 2025-03-11T12:12:22.420Z
 tags: linux, toolkit
 editor: markdown
 dateCreated: 2025-02-24T16:01:49.767Z
@@ -89,7 +89,7 @@ sudo ./VMware-Workstation-Full-*.bundle
 | HD | ~30 GB (Since the toolkit and game are not installed in the VM, a smaller disk might suffice). |
 | GPU | 3D graphics acceleration enabled (*) <br/><br/>Settings -> Display -> 3D Graphics -> Accelerate 3d Graphics. Allocate 8 GB for graphics memory. |
 
-
+**_IMPORTANT NOTE_**
 <details>
   <summary>(*) VMware Virtual GPU</summary>
   VMware uses a virtual GPU for 3D acceleration, translating DirectX commands to the host GPU hardware.
@@ -99,6 +99,18 @@ sudo ./VMware-Workstation-Full-*.bundle
   More details can be found here:
   - [VMware Workstation 17 Pro supports use of host GPU?](https://community.broadcom.com/vmware-cloud-foundation/communities/community-home/digestviewer/viewthread?MessageKey=c9a72dbf-f2c7-4882-a944-de035fdcee3c&CommunityKey=fb707ac3-9412-4fad-b7af-018f5da56d9f#bmc9a72dbf-f2c7-4882-a944-de035fdcee3c)
   - [Sandboxed Graphics Processes](https://blogs.vmware.com/workstation/2020/05/directx-11-now-with-workstation-tp20h2.html)
+  
+  VMware Workstation on Linux doesn’t support direct GPU passthrough to a virtual machine unless you’re using PCIe passthrough, which typically requires ESXi or advanced configuration techniques not available in VMware Workstation. Instead, VMware leverages the host GPU to render the graphics for the VM display. If 3D acceleration is enabled in the VM settings, it will use whichever GPU is running the VMware processes on your system.
+
+If you have a dedicated GPU (like an NVIDIA card, as I do), you may want to check which GPU is running VMware on Ubuntu. One way to do this is by running the following command in a terminal:
+  
+  ```bash
+  nvidia-smi
+  ```
+  
+  If VMware is using the NVIDIA GPU, you’ll see a vmware process (such as vmware-vmx or mksSandbox) listed in the output, showing its GPU memory and compute usage.
+  
+  ![2025-03-11_09-07-50.png](/tutorials/install-toolkit-linux/2025-03-11_09-07-50.png)
   
 </details>
 
