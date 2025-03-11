@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-03-10T20:25:30.428Z
+date: 2025-03-11T19:19:51.508Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -318,12 +318,13 @@ These options are not mutually exclusive, meaning authors can use any combinatio
 Keybindings must be registered in the client context, as user input is inherently client-sided. To define what happens when a keybinding is triggered, register a callback using the `MCM.SetKeybindingCallback` function available in the client context:
 
 ```lua
-MCM.SetKeybindingCallback('key_teleport_party_to_you', function()
+MCM.SetKeybindingCallback('key_teleport_party_to_you', function(e)
     Ext.Net.PostMessageToServer("FS_TeleportPartyToYou", Ext.Json.Stringify({ skipChecks = false }))
 end)
 ```
 
 In this example, when the keybinding is pressed, a network message is sent to the server to execute the teleport action.
+The callback is called with the input event passed as param.
 
 #### Client vs. Server execution
 
