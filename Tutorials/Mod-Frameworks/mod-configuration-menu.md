@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-03-11T21:19:12.109Z
+date: 2025-03-16T18:13:46.753Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -102,9 +102,9 @@ Additionally, MCM follows [semantic versioning](https://semver.org/spec/v2.0.0-r
 Mod authors need to integrate their mods with MCM for their settings to appear in the UI. The subsections below go in detail about this process, but it is essentially done in two steps:
 
   1. **Define the blueprint JSON** file for your mod's settings and **place it alongside your mod's `meta.lsx`** file.
-  2. Replace your mod's logic for reading/writing settings with calls to the MCM API, using settings' IDs as defined in the blueprint.
+  2. Replace your mod's logic for reading/writing settings with calls using the `MCM` API, using settings' IDs as defined in the blueprint.
 
-Anything else is a matter of updating objects (if you're storing values in tables, for example), adding custom UI (very situational) and creating hotkeys (MCM 1.18+)
+Anything else is a matter of updating objects (if you're storing values in tables, for example), adding custom UI (very situational) and creating hotkeys (MCM 1.19+).
 
 > It's **extremely recommended to define BG3MCM as a dependency in your `meta.lsx` file**. This allows the game and mod managers to ***ensure*** that MCM is loaded ***before** your own mod* - eliminating the need to instruct users to do so manually and avoiding incorrect reports/troubleshooting when they don't! See our [guide for adding dependencies](/Tutorials/General/Basic/adding-mod-dependencies).
 > • [Example for listing two dependencies in a meta.lsx file, one being BG3MCM](https://github.com/AtilioA/BG3-mod-uninstaller/blob/main/Mod%20Uninstaller/Mods/ModUninstaller/meta.lsx#L7-L24 'Mod Uninstaller with two dependencies, one being BG3MCM'); (Volition Cabinet is not required for MCM)
@@ -249,10 +249,10 @@ end
 ```
 
 Global functions are only accessible within your mod table, so this function won't be causing conflicts with other MCM mods that also define it.
-</details>
-
+  
 You can allow global usage of `MCM` functions by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`.
 Otherwise, prepend `Mods.BG3MCM` to all function calls.
+</details>
 
 ### Adding a keybinding
 
@@ -260,7 +260,7 @@ MCM 1.19 introduces built-in support for keybinding management, allowing mods to
 
 #### Defining a keybinding
 
-To define a keybinding, add it as a `keybinding_v2` setting in your mod's blueprint file. Below is an example of transitioning from the old format to the new `keybinding_v2` format:
+To define a keybinding, add it as a `keybinding_v2` setting anywhere in your mod's blueprint file. Below is an example of transitioning from the old format to the new `keybinding_v2` format:
 
 Before (deprecated `keybinding` format):
 
@@ -293,7 +293,8 @@ After (keybinding_v2 format):
     "Options": {
         "ShouldTriggerOnKeyDown": true,
         "ShouldTriggerOnKeyUp": false,
-        "ShouldTriggerOnRepeat": false
+        "ShouldTriggerOnRepeat": false,
+      	"IsDeveloperOnly": false
     }
 }
 ```
@@ -310,6 +311,9 @@ Available `Options`:
 
 - `ShouldTriggerOnRepeat` (default: `false`)
   - Continuously triggers the callback while the key is held down.
+  
+- `IsDeveloperOnly` (default: `false`)
+	- Whether to hide this keybinding if developer mode is disabled.
 
 These options are not mutually exclusive, meaning authors can use any combination of them. For example, setting `ShouldTriggerOnRepeat` to `true` allows an action to repeat continuously while the key is held, which may be useful for certain keybindings. Note that the `Options` object is entirely optional and may be omitted if the default behavior is sufficient for the keybinding's needs.
 
