@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-03-16T18:13:46.753Z
+date: 2025-03-16T18:20:48.079Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -197,7 +197,7 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 ### Using values from MCM
 
 After setting up the blueprint, mod authors can access the values set by the player through the MCM API from anywhere in their mod's code.
-MCM provides a convenient way for mod authors to access and modify values. As of version 1.14+, MCM introduces a global `MCM` table that simplifies this process:
+As of version 1.14+, MCM introduces a global `MCM` table that simplifies access and modification of values. This should be used for almost all operations, avoiding usage of `Mods.BG3MCM` internals unless explicitly stated in the documentation.
 
 ```lua
   -- Get the value of a setting with the ID "MySetting"
@@ -352,7 +352,7 @@ This system provides mod authors with the flexibility to decide how their keybin
 MCM allows mod authors to insert custom UI elements into the MCM UI. **This is only needed if you want to define custom IMGUI objects within MCM**. This can be done using the `InsertModMenuTab` function from MCM's `IMGUIAPI`:
 
 ```lua
-Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "Tab name", function(tabHeader)
+MCM.InsertModMenuTab(ModuleUUID, "Tab name", function(tabHeader)
     local myCustomWidget = tabHeader:AddButton("My custom widget")
     myCustomWidget.OnClick = function()
         _D("My custom widget was clicked!")
@@ -588,4 +588,4 @@ The demo below showcases the different types of config options that can be used 
 
 I hope this documentation has provided you with a clear understanding of how to integrate MCM into your mod. If you have any suggestions or encountered any points of confusion or errors, no matter how small or mundane, please let me know [on the Nexus page](https://www.nexusmods.com/baldursgate3/mods/9162) or on Discord ([BG3MC](https://discord.com/invite/bg3mods)). I'm keen on ensuring MCM has excellent design and documentation. I also hope MCM enhances your development experience and provides a better experience for your users!
 
-I'd like to thank the community again for their support and feedback, as well as the mod authors who have already integrated MCM into their mods. It's been awesome to see what you've been building with it so far.
+I'd like to thank the community again for their support and feedback, as well as the mod authors who have integrated MCM into their mods. It's been awesome to see what you've been building with it so far.
