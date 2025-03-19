@@ -2,7 +2,7 @@
 title: Tools
 description: A list of tools including short descriptions and links.
 published: true
-date: 2025-03-19T02:44:43.244Z
+date: 2025-03-19T02:45:59.989Z
 tags: tools, list
 editor: markdown
 dateCreated: 2024-05-01T03:55:31.302Z
@@ -45,8 +45,8 @@ The following is a list of tools that are either necessary or useful to create m
 - [Adobe Substance Painter (Creative Cloud)](https://www.adobe.com/products/substance3d/apps/painter.html)
 - [Adobe Substance Painter (Steam)](https://store.steampowered.com/app/2718190/Substance_3D_Painter_2024/)
   #### Substance Painter add-ons:
-- [BG3 Skin Shader For Substance Painter, by Volno](https://www.nexusmods.com/baldursgate3/mods/9045)
-- [BG3-Substance-Painter-DDS-Exporter, by Aloija](https://github.com/Aloija/BG3-Substance-Painter-DDS-Exporter/tree/main)
+	- [BG3 Skin Shader For Substance Painter, by Volno](https://www.nexusmods.com/baldursgate3/mods/9045)
+	- [BG3-Substance-Painter-DDS-Exporter, by Aloija](https://github.com/Aloija/BG3-Substance-Painter-DDS-Exporter/tree/main)
 - [Quixel Mixer](https://quixel.com/mixer)
 - [xNormal](https://xnormal.net/)
 - [Normalizer by Friendly Shade](https://www.friendlyshade.com/normalizer)
