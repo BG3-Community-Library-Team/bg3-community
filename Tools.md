@@ -2,7 +2,7 @@
 title: Tools
 description: A list of tools including short descriptions and links.
 published: true
-date: 2024-09-17T07:24:38.877Z
+date: 2025-03-19T02:44:43.244Z
 tags: tools, list
 editor: markdown
 dateCreated: 2024-05-01T03:55:31.302Z
@@ -61,7 +61,6 @@ The following is a list of tools that are either necessary or useful to create m
 # 3D modeling & animation
 - [3ds Max](https://www.autodesk.com/products/3ds-max/free-trial) - professional 3D modeling and animation software that offers extensive features for creating complex models
 - [Maya](https://www.autodesk.com/products/maya/free-trial) - professional 3D software for creating realistic characters and visual effects
-- [Blender](https://www.blender.org/) - free and open-source 3D modeling and animation tool that is widely used in the modding community for creating models and animations
 - [Blender](https://www.blender.org/) - free and open-source 3D modeling and animation tool that is widely used in the modding community for creating models and animations
   #### Blender add-ons
 - [Volno's Texture Toolbox](https://www.nexusmods.com/baldursgate3/mods/4310) -  collection of tools and shaders, designed to assist in the creation and modification of texture maps inside Blender
