@@ -2,7 +2,7 @@
 title: Extracting the contents of a .pak file on MacOS
 description: Using LSLib ToolKit to Extract a .pak on Macos
 published: true
-date: 2025-03-21T21:34:28.097Z
+date: 2025-03-21T21:40:58.502Z
 tags: linux, macosx, wine, lslib
 editor: ckeditor
 dateCreated: 2025-03-21T21:34:28.097Z
@@ -32,7 +32,7 @@ dateCreated: 2025-03-21T21:34:28.097Z
 <p><code>wine windowsdesktop-runtime-8.0.14-win-x64.exe</code></p>
 <h2><br>4- Download the Extraction tools: <a href="https://github.com/Norbyte/lslib/releases">Releases · Norbyte/lslib</a></h2>
 <p>Click on the <a href="https://github.com/Norbyte/lslib/releases/download/v1.19.5/ExportTool-v1.19.5.zip">ExportTool-v1.19.5.zip</a> to download it.<br>&nbsp;</p>
-<h2>5- Unzip the ExportTool .zip <a href="https://jackal242.atlassian.net/wiki/spaces/~604bb63803ceda0069cab288/pages/425985/Extracting+the+contents+of+a+.pak+file+on+MacOSX#">file:</a></h2>
+<h2>5- Unzip the ExportTool .zip file:</h2>
 <p><code>unzip ExportTool-v1.19.5.zip</code></p>
 <p>For whatever reason this creates a folder called “Packed” with all the binaries inside it:</p>
 <p><code>unzip -l ExportTool-v1.19.5.zip |grep exe&nbsp;</code><br><code>142848 03-26-2024 23:16 Packed/ConverterApp.exe&nbsp;</code><br><code>142848 03-26-2024 23:16 Packed/Tools/DebuggerFrontend.exe&nbsp;</code><br><code>142848 03-26-2024 23:14 Packed/Tools/Divine.exe&nbsp;</code><br><code>520192 03-17-2024 19:53 Packed/Tools/PhysicsTool.exe&nbsp;</code><br><code>142848 03-17-2024 19:52 Packed/Tools/RconClient.exe&nbsp;</code><br><code>142848 03-26-2024 23:14 Packed/Tools/StatParser.exe&nbsp;</code><br><code>142848 03-26-2024 23:14 Packed/Tools/StoryCompiler.exe&nbsp;</code><br><code>142848 03-26-2024 23:14 Packed/Tools/StoryDecompiler.exe</code><br><code>142848 03-26-2024 23:14 Packed/Tools/VTexTool.exe</code></p>
@@ -40,8 +40,6 @@ dateCreated: 2025-03-21T21:34:28.097Z
 <p><code>cd Packed</code><br><code>wine ConverterApp.exe</code></p>
 <p>Should look like this:<br>&nbsp;</p>
 <figure class="image"><img src="/tutorials/lslibtoolkit.png"></figure>
-<p>&nbsp;</p>
-<figure class="image"><img src="blob:https://jackal242.atlassian.net/7d7db48c-da80-4be4-b42e-6cf72b1ff543#media-blob-url=true&amp;id=5ebff66b-3054-4671-9cfc-00b605590acf&amp;collection=contentId-425985&amp;contextId=425985&amp;mimeType=image%2Fpng&amp;name=Screenshot%202025-03-21%20at%203.03.54%E2%80%AFPM.png&amp;size=485634&amp;width=1053&amp;height=811&amp;alt=" alt=""></figure>
 <h2>7- Extract the .pak file</h2>
 <p>Click on the “PAK/LSV Tools” table and select your Input .pak file and your output location and click the “Extract Package” button.</p>
 <figure class="image"><img src="/tutorials/screenshot_2025-03-21_at_3.08.55_pm.png"></figure>
