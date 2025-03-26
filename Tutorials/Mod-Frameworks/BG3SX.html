@@ -2,7 +2,7 @@
 title: BG3SX
 description: Tutorial on how to work with BG3SX
 published: false
-date: 2025-03-26T22:10:12.771Z
+date: 2025-03-26T22:15:09.538Z
 tags: bg3sx
 editor: ckeditor
 dateCreated: 2024-10-20T18:19:44.591Z
@@ -39,4 +39,5 @@ dateCreated: 2024-10-20T18:19:44.591Z
 <figure class="image image_resized" style="width:76.02%;"><img src="/animation_tutorial/faceanimslinks.png"></figure>
 <p>Next, go over to <strong>SampleBG3SXMod.lua </strong>(or whatever you renamed that file to - do not forget to rename any references to it with your chosen mod name, e.g. in <strong>Config</strong> and <strong>BootstrapServer.lua</strong>). Add entries for each animation you have, with MapKeys (that were created in AnimationSetLinks.lua) for each gr2 for each body type you want to heightmatch.</p>
 <figure class="image image_resized" style="width:75.78%;"><img src="/animation_tutorial/heightmatchinglua.png"></figure>
-<p>&nbsp;</p>
+<p>Up next, you need to create a Stats entry for your animation Spell in AnimationSpells.txt, and create a localization handle for your spell in the localisation xml file. (Follow the examples and commented instructions in the sample mod.)</p>
+<figure class="image image_resized" style="width:27.94%;"><img src="/animation_tutorial/localisation_stats.png"></figure>
