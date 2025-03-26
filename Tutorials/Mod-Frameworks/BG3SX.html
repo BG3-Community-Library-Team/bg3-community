@@ -2,7 +2,7 @@
 title: BG3SX
 description: Tutorial on how to work with BG3SX
 published: false
-date: 2025-03-26T22:00:43.406Z
+date: 2025-03-26T22:08:53.452Z
 tags: bg3sx
 editor: ckeditor
 dateCreated: 2024-10-20T18:19:44.591Z
@@ -37,4 +37,6 @@ dateCreated: 2024-10-20T18:19:44.591Z
 <figure class="image image_resized" style="width:76.82%;"><img src="/animation_tutorial/animationsetlinks.png"></figure>
 <p>Here you need to generate MapKeys that are linked to each uuid you added in the AnimationBank lsx earlier. Likewise, here you can optionally add links between MapKeys for the body animations and uuids for the face animations if you have them:</p>
 <figure class="image image_resized" style="width:76.02%;"><img src="/animation_tutorial/faceanimslinks.png"></figure>
+<p>Next, go over to <strong>SampleBG3SXMod.lua </strong>(or whatever you renamed that file to - do not forget to rename any instances of it with your chosen mod name). Add entries for each animation you have, with MapKeys (that were created in AnimationSetLinks.lua) for each gr2 for each body type you want to heightmatch.</p>
+<figure class="image image_resized" style="width:75.78%;"><img src="/animation_tutorial/heightmatchinglua.png"></figure>
 <p>&nbsp;</p>
