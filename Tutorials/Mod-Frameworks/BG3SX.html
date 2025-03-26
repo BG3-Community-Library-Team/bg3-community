@@ -2,7 +2,7 @@
 title: BG3SX
 description: Tutorial on how to work with BG3SX
 published: false
-date: 2025-03-26T21:50:48.890Z
+date: 2025-03-26T22:00:43.406Z
 tags: bg3sx
 editor: ckeditor
 dateCreated: 2024-10-20T18:19:44.591Z
@@ -25,7 +25,7 @@ dateCreated: 2024-10-20T18:19:44.591Z
 <p>First, open the mod folder in VSCode (File &gt; Open Folder). You will be greeted with this folder structure:</p>
 <figure class="image image_resized" style="width:39.52%;"><img src="/animation_tutorial/bg3sxmodstructure.png"></figure>
 <p>Firstly, assuming you have some animations, drop the gr2s into the folder under Public/(YourModFolderName)/(AnimationsFolderName). Then have a look at the lsx file under Content/Assets/etc. (again, it is recommend to unpack and have a look at the sample mod).</p>
-<figure class="image image_resized" style="width:88.21%;"><img src="/animation_tutorial/animationbanklsx.png"></figure>
+<figure class="image image_resized" style="width:77.48%;"><img src="/animation_tutorial/animationbanklsx.png"></figure>
 <p>Here you will add an entry for every animation gr2 that you have. You need to add a new uuid for the ID for every one (with the BG3 Mod Helper extension installed, simply right click to quickly generate a new uuid). The important attributes are:</p>
 <ul>
   <li><strong>ID: </strong>a new uuid for each animation gr2.</li>
@@ -33,3 +33,8 @@ dateCreated: 2024-10-20T18:19:44.591Z
   <li><strong>Duration: </strong>the length of your animation (must be 30 FPS) in seconds.</li>
   <li><strong>SkeletonResource: </strong>The correct armature/skeleton uuid for the body type, e.g. HUM_M<i>_</i>Base for Body Type 2, HUM_MS_Base for Body Type 4 etc.). For heads, the SkeletonResource should match the head armature you animated on.</li>
 </ul>
+<p>After adding entries for all of your animations, go over to <strong>AnimationSetLinks.lua</strong></p>
+<figure class="image image_resized" style="width:76.82%;"><img src="/animation_tutorial/animationsetlinks.png"></figure>
+<p>Here you need to generate MapKeys that are linked to each uuid you added in the AnimationBank lsx earlier. Likewise, here you can optionally add links between MapKeys for the body animations and uuids for the face animations if you have them:</p>
+<figure class="image image_resized" style="width:76.02%;"><img src="/animation_tutorial/faceanimslinks.png"></figure>
+<p>&nbsp;</p>
