@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2024-10-16T12:51:56.680Z
+date: 2025-04-09T15:20:33.072Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -247,6 +247,29 @@ Navigate to the correct tab `PAK/LSV Tools`
 
 
 ![gswse_lslib_censored.png](/tutorials/getting_started_with_se/gswse_lslib_censored.png =800x400)
+
+   ```
+MySEMod/  <- This is the folder you have to pak
+│
+│
+└─── Mods/
+ 		  ├── MySEMod/
+      	│ 	│ 
+  	 	 │ 	└─── ScriptExtender/
+ 		  │  	 		│ 
+  			│ 				├── Lua/
+        │		 		│		├── BootstrapServer.lua
+  			│		 		│	  └── Server/
+        │		 		│	     │
+        │ 				│		 	└── MyFirstSEScript.lua
+		  │     		│
+    		│		 		└── config.json
+ 	 	 │ 
+   		 └── meta.lsx
+
+
+```
+
 
 Pak the folder with a tool of your choice in the sections `Create Package`
 
