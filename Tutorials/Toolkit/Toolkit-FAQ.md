@@ -2,7 +2,7 @@
 title: Toolkit FAQ
 description: FAQ about the Larian Toolkit
 published: true
-date: 2024-10-25T14:01:34.718Z
+date: 2025-04-10T01:29:38.031Z
 tags: toolkit
 editor: markdown
 dateCreated: 2024-09-13T04:50:44.079Z
@@ -37,10 +37,15 @@ _"I want to leave some cells empty after overriding but it keeps filling in"_
 <br />
 
 _"How do I import old mods into the toolkit ?"_ 
-- There is no way to simply import them, but you can follow the [converting our existing mods to toolkit](https://mod.io/g/baldursgate3/r/converting-our-existing-mods-to-toolkit) guide.
+- You can use the [BG3 Toolkit Converter](https://github.com/Eclip5eLP/bg3-convert2toolkit) to convert mods into projects readable by the toolkit.
+- In the case that any file should have failed to convert, you can still recreate those using this guide: [converting our existing mods to toolkit](https://mod.io/g/baldursgate3/r/converting-our-existing-mods-to-toolkit)
 
-<br />
+> The toolkit is somewhat fragile, if any of your original files contain invalid entries or are formatted incorrectly, it might not load those files. Make sure they are valid.
+{.is-info}
 
+> **Please refrain from publishing other creators' mods without their permission.**
+> **You can still use this for personal use.**
+{.is-danger}
 
 _"How do I publish my mod ?"_ 
 - Project settings &#8594; Publish
