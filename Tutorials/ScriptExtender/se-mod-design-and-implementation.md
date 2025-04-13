@@ -2,7 +2,7 @@
 title: Designing and writing Script Extender mods
 description: Guide covering the generation of ideas, design, and implementation of SE mods, providing practical tips throughout. Includes an example mod, 'Waypoint Inside Emerald Grove', to illustrate the process, offering insights into the tools and methods used.
 published: true
-date: 2024-10-05T15:59:08.909Z
+date: 2025-04-13T20:53:06.817Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-05T15:28:54.111Z
@@ -10,7 +10,7 @@ dateCreated: 2024-10-05T15:28:54.111Z
 
 # Designing and writing Script Extender mods for Baldur's Gate III
 
-As an author that has only created (dozens of) SE mods, I thought I'd share with the community some of my experiences. I have virtually written all the mods I could've possibly wanted and more, and I don't really have any ideas left. In this guide, I will outline my process for creating mods, while providing some tips for aspiring modders.
+As an author that has created dozens of SE-only mods, I thought I'd share with the community some of my experiences. I have virtually written all the mods I could've possibly wanted and more, and I don't really have any ideas left. In this guide, I will outline my process for creating mods, while providing some tips for aspiring modders.
 
 Now, just to make it clear:
 
@@ -56,10 +56,10 @@ Once you have a clear design for your mod, you can start implementing it. This i
 
 In this section, I'll cover some tips for learning to learn SE.
 
-1. Start small: If you're new to modding, it's a good idea to start with a small project. This will help you get familiar with the tools and techniques involved in modding and the general workflow cycle, without getting overwhelmed.
-2. Read the documentation: The SE documentation is a great resource; take the time to read through it and familiarize yourself with the different functions and features available. The documentation may be lacking in some areas, but it's a good starting point.
-3. Symlink, symlink, symlink: Symlinks are your best friend when modding with SE! This allows you to test your mods without having to repak your mod and restart the game for every mundane change. This can save you a lot of time and frustration, especially when you're just starting out, and will accelerate your learning process a million times. ***If there's one thing you should take away from this guide, it's to use symlinks***.
-4. Experiment: The best way to learn is by doing. Having symlinked your mod, experiment with different functions and entities. One great thing you can do is dumping entities during runtime at two different points in time, and comparing them. Sometimes you want to know if something changed after a certain action, and this is a great way to do it (apart from checking flags and such).
+1. **Start small**: If you're new to modding, it's a good idea to start with a small project. This will help you get familiar with the tools and techniques involved in modding and the general workflow cycle, without getting overwhelmed.
+2. **Read the documentation**: The SE documentation is a great resource; take the time to read through it and familiarize yourself with the different functions and features available. The documentation may be lacking in some areas, but it's a good starting point.
+3. **Symlink, symlink, symlink**: Symlinks are your best friend when modding with SE! This allows you to test your mods without having to repak your mod and restart the game for every mundane change. This can save you a lot of time and frustration, especially when you're just starting out, and will accelerate your learning process a million times. ***==If there's one thing you should take away from this guide, it's to use symlinks!==***
+4. **Experiment**: The best way to learn is by doing. Having symlinked your mod, experiment with different functions and entities. One great thing you can do is dumping entities during runtime at two different points in time, and comparing them. Sometimes you want to know if something changed after a certain action, and this is a great way to do it (apart from checking flags and such). *UPDATE: You can use Scribe to speed up this process even further.*
 
 If you have:
 
@@ -74,7 +74,7 @@ If you don't know how to do something:
 - Think if this is something more related to SE or to the game itself (Osiris). As you get more experienced, you'll be able to tell the difference.
   - For SE, you can check the documentation, the [source code](https://i.imgur.com/bvm3Iww.png), or search & ask the Discord servers.
   - For Osiris, check if there are relevant functions or events.
-- If you need to check for some state/progression, you can check the existing Flags dump, or dump entities and see what's there, doing a diff between two dumps (before and after) with VSCode. There are novel ways to do this with frame components, but this is what most modders have been doing.
+- If you need to check for some state/progression, you can check the existing Flags dump, or dump entities and see what's there, doing a diff between two dumps (before and after) with VSCode. There are novel ways to do this with frame components (again, check Scribe), but this is what most modders have been doing.
 
 Modding is like a puzzle, and you'll have to find the right pieces to make it work. Sometimes, you'll have to make your own pieces, and to me that is the beauty and art of modding.
 
@@ -85,16 +85,16 @@ In this section, I will reproduce in prose what would be like designing a mod, u
 ### Idea
 
 Whether you've only played the EA or has never reached the goblin camp, you've probably noticed that the Emerald Grove is a bit of a pain to navigate. The nearest waypoint is like 10 seconds from the gate, which takes more ~5 seconds to open, and then you have to walk all the way to the grove for a few more seconds. For every trip to get to Dammon, you'll likely spend tens of seconds just walking.
-Notice the idea presents itself: having a waypoint inside the Emerald Grove.
+Notice that the idea presents itself: *having a waypoint inside the Emerald Grove*.
 
 ### Design
 
 The design should be pretty simple, right? Just add a waypoint inside the Emerald Grove. But there are some things to consider:
 
-- Where should the waypoint be placed? The grove is still a large area, maybe it could be dynamically changed to provide the most convenient location for players.
+- Where should the waypoint be placed? The grove is still a large area, maybe it could be dynamically changed to provide the most convenient location for players...
 - It would be really great if we could add it to the map, just like the other waypoints, to make it easily accessible.
 - Being a waypoint, it must be accessible only after the player has reached the Grove. How do we manage that unlock condition? Should it be tied to a specific quest or event?
-- Are there any lore implications to consider? Was it intended for the Grove not to have a waypoint, or could it be justified as a new addition for player convenience?
+- Are there any lore implications to consider? Was it intended for the Grove not to have a waypoint, or could it simply be justified as a new addition for player convenience?
 - What happens if the Grove enters lockdown? The waypoint should be disabled or removed to maintain consistency with the game's mechanics.
 - How will the waypoint interact with existing game systems and features? Will it create any unintended consequences or balance issues?
 
@@ -137,7 +137,7 @@ Here's a breakdown of how I approached the implementation:
     ```
 
     With these things in mind, looks like `Osi.RegisterWaypoint`, `Osi.UnlockWaypoint` and `Osi.LockWaypoint` are the functions we need to use. We can do that right away!
-    Unfortunately, calling these functions without proper setup will not work. We need to set up the waypoint in XMLs first. In the first iteration of the mod, I didn't know this, so I piggybacked on an existing waypoint, which was not great, but it worked.
+    Unfortunately, calling these functions without proper setup will not work. We need to set up the waypoint in XMLs first. In the first iteration of the mod, I didn't know this, so I piggybacked on an existing waypoint (which was not great, but worked).
 
 For the piggybacking method, I experimented with the `Osi.TeleportToWaypoint` event, which gives you the waypoint name and the character that triggered it. I teleported to the Emerald Grove Environs waypoint, took note of the waypoint name, then used it to teleport the player to the Emerald Grove if that waypoint was used.
 
@@ -160,4 +160,5 @@ Later on, I learned that waypoints could be set up in XMLs, and I eventually did
 
 ---
 
-I'm confident that my other mods can offer similar insights and exercises into how to design and implement mods. I hope this guide has been helpful and inspiring to you, and I wish you the best of luck in your modding endeavors! If you have any questions or need help, the [BG3 Modding Community Discord server](https://discord.com/invite/bg3mods) is a great place to ask for help.
+I'm confident that my other mods can offer similar insights and exercises into how to design and implement mods. I hope this guide has been helpful and inspiring to you, and I wish you the best of luck in your modding endeavors!
+If you have any questions or need help, the [BG3 Modding Community Discord server](https://discord.com/invite/bg3mods) is a great place to ask for help.
