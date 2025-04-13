@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-04-13T21:02:57.846Z
+date: 2025-04-13T21:25:49.825Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -295,7 +295,7 @@ After (keybinding_v2 format):
         "ShouldTriggerOnKeyDown": true,
         "ShouldTriggerOnKeyUp": false,
         "ShouldTriggerOnRepeat": false,
-       "IsDeveloperOnly": false,
+        "IsDeveloperOnly": false,
         "BlockIfLevelNotStarted": false
     }
 }
