@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-03-16T18:39:17.664Z
+date: 2025-04-13T20:57:57.154Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -34,6 +34,7 @@ This documentation is aimed at mod authors who want to integrate their mods with
       - [Registering a keybinding callback](#registering-a-keybinding-callback)
       - [Client vs. Server execution](#client-vs-server-execution)
     - [Inserting custom UI elements](#inserting-custom-ui-elements)
+    - [Defining lists](#defining-lists)
       - [Inserting Search Results for ListV2 settings](#inserting-search-results-for-listv2-settings)
     - [Listening to MCM events](#listening-to-mcm-events)
     - [How validation works](#how-validation-works)
@@ -42,7 +43,7 @@ This documentation is aimed at mod authors who want to integrate their mods with
   - [Notification API](#notification-api)
     - [Features](#features)
     - [Example usage](#example-usage)
-  - [MCM demo](#mcm-demo)
+  - [MCM (1.23) integration showcase/demo](#mcm-123-integration-showcasedemo)
   - [Closing words](#closing-words)
 
 ## Features for mod authors
@@ -249,7 +250,7 @@ end
 ```
 
 Global functions are only accessible within your mod table, so this function won't be causing conflicts with other MCM mods that also define it.
-  
+
 You can allow global usage of `MCM` functions by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`.
 Otherwise, prepend `Mods.BG3MCM` to all function calls.
 </details>
@@ -294,7 +295,8 @@ After (keybinding_v2 format):
         "ShouldTriggerOnKeyDown": true,
         "ShouldTriggerOnKeyUp": false,
         "ShouldTriggerOnRepeat": false,
-      	"IsDeveloperOnly": false
+       "IsDeveloperOnly": false,
+        "BlockIfLevelNotStarted": false
     }
 }
 ```
@@ -311,9 +313,12 @@ Available `Options`:
 
 - `ShouldTriggerOnRepeat` (default: `false`)
   - Continuously triggers the callback while the key is held down.
-  
+
 - `IsDeveloperOnly` (default: `false`)
-	- Whether to hide this keybinding if developer mode is disabled.
+ 	- Whether to hide this keybinding if developer mode is disabled.
+
+- `BlockIfLevelNotStarted` (default: `false`)
+  - Prevents the keybinding from triggering when the game level has not started yet. This is useful for actions that should only be available in-game, not in the main menu.
 
 These options are not mutually exclusive, meaning authors can use any combination of them. For example, setting `ShouldTriggerOnRepeat` to `true` allows an action to repeat continuously while the key is held, which may be useful for certain keybindings. Note that the `Options` object is entirely optional and may be omitted if the default behavior is sufficient for the keybinding's needs.
 
@@ -377,7 +382,7 @@ MCM 1.17 introduced `list_v2` to supersede the now deprecated `list` input type.
 
 The `InsertListV2SearchResults` method in the `IMGUIAPI` allows mod authors to insert suggestions/'search results' into a `list_v2` setting. This is particularly useful for providing users with dynamic suggestions based on their input as they type in the add input field of the setting.
 
-Here’s an example of how to use the `InsertListV2SearchResults` method to add the suggestions `a`, `b`, `c`, `aba`, `acaca`, and `abaca` to the `ignore_weapons` `list_v2` setting of the mod with the UUID `1c132ec4-4cd2-4c40-aeb9-ff6ee0467da8` (Auto Send Food To Camp). **NOTE: In the next release, this method's signature will be updated to `settingId, searchResults, modUUID` for consistency. Sorry for the inconvenience.**
+Here's an example of how to use the `InsertListV2SearchResults` method to add the suggestions `a`, `b`, `c`, `aba`, `acaca`, and `abaca` to the `ignore_weapons` `list_v2` setting of the mod with the UUID `1c132ec4-4cd2-4c40-aeb9-ff6ee0467da8` (Auto Send Food To Camp). **NOTE: In the next release, this method's signature will be updated to `settingId, searchResults, modUUID` for consistency. Sorry for the inconvenience.**
 
 ```lua
 Mods.BG3MCM.IMGUIAPI:InsertListV2SearchResults("1c132ec4-4cd2-4c40-aeb9-ff6ee0467da8", "ignore_weapons", {"a","b","c","aba","acaca","abaca"})
@@ -578,7 +583,7 @@ NotificationManager.ShowSuccess('notification_id', 'Test Title', 'This is a test
 The `options` table (fourth param) is optional.
 Analogous functions are available for other severity levels (e.g., `NotificationManager.ShowError`, `NotificationManager.ShowWarning`, `NotificationManager.ShowInfo`).
 
-## MCM (1.23) integration showcase/demo 
+## MCM (1.23) integration showcase/demo
 
 The demo below showcases the different types of config options that can be used (almost all of them as of v1.23). The demo also shows how to insert custom UI elements into the menu, how to listen and react to MCM events, and how to register callbacks for keybinding actions.
 
