@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2024-09-08T23:28:30.290Z
+date: 2025-04-18T17:38:23.186Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -24,6 +24,11 @@ dateCreated: 2024-05-02T16:40:20.175Z
 - If you would like to respost this guide to another site, please contact ResplendentArrow on Discord.
 
 ---
+
+> Want to use a script to do most of these steps automatically?
+> Skip [here]()
+{.is-warning}
+
 
 # **1. Delete all Mods in your AppData folder**
 
@@ -192,3 +197,107 @@ For GOG users, you can verify files in a similar way as Steam
 {.is-success}
 
 ![](https://lh7-us.googleusercontent.com/iI8GEYUqbLLxjJ3UG8dlDcGmU0jFl1DW5y3yUuLklQUxGhUN__Z0_sajucPxHmnMk-uzx9er_hxBmFMeSCpV_iHJGcw_mo_P4yX-2pTiTJpmxHfenCunnHGimyAsrgHIz1GksdK4ML1nQS1QrlANPg)
+
+
+# **6. Automatic Script**
+
+Thank you Orange from the Larian Server for this script!
+
+Click [here](
+https://www.wikihow.com/Run-a-Batch-File-from-the-Command-Line-on-Windows) if you don't know how to run batch files
+
+
+```batch
+@echo off
+setlocal enabledelayedexpansion
+
+:: === Default BG3 install location ===
+set "DEFAULT_ROOT=C:\Program Files (x86)\Steam\steamapps\common\Baldur's Gate 3"
+set "ROOT_PATH="
+
+:: === Ask if BG3 is installed in the default location ===
+echo Is your Baldur's Gate 3 Installation Location:
+echo [ %DEFAULT_ROOT% ]
+set /p USERINPUT=Type Y for Yes, N for No: 
+
+if /I "%USERINPUT%"=="Y" (
+    set "ROOT_PATH=%DEFAULT_ROOT%"
+) else (
+    echo.
+    echo Please copy and paste the full path to your Baldur's Gate 3 root folder, for example "D:\Steam\steamapps\common\Baldurs Gate 3" without quotes:
+    set /p ROOT_PATH=Paste path here: 
+)
+
+:: === Verify the path ===
+if not defined ROOT_PATH (
+    echo [!] No path provided. Exiting.
+    pause
+    exit /b
+)
+
+if not exist "%ROOT_PATH%" (
+    echo [!] The path "%ROOT_PATH%" does not exist. Exiting.
+    pause
+    exit /b
+)
+
+:: === Define the subfolder paths ===
+set "DATA_PATH=%ROOT_PATH%\Data"
+set "BIN_PATH=%ROOT_PATH%\bin"
+
+:: === Begin Deletion ===
+
+echo.
+echo === Deleting mod-related folders from: "%DATA_PATH%" ===
+for %%F in (Generated Mods Public Editor Projects) do (
+    if exist "%DATA_PATH%\%%F" (
+        echo Deleting folder: "%DATA_PATH%\%%F"
+        rmdir /s /q "%DATA_PATH%\%%F"
+    ) else (
+        echo Folder not found: "%DATA_PATH%\%%F"
+    )
+)
+
+echo.
+echo === Deleting Script Extender files from: "%BIN_PATH%" ===
+for %%F in (
+    bink2w64.dll
+    Dwrite.dll
+    ScriptExtenderSettings.json
+    ScriptExtenderUpdater.json
+NativeMods
+) do (
+    if exist "%BIN_PATH%\%%F" (
+        echo Deleting file: "%BIN_PATH%\%%F"
+        del /f /q "%BIN_PATH%\%%F"
+    ) else (
+        echo File not found: "%BIN_PATH%\%%F"
+    )
+)
+
+echo.
+echo === Deleting Mods Folder from: "%localAppData%\Larian Studios\" ===
+set "MODS_FOLDER=%localAppData%\Larian Studios\Mods"
+:: Delete "Mods" folder
+if exist "%MODS_FOLDER%" (
+    echo Deleting folder: "%MODS_FOLDER%"
+    rmdir /s /q "%MODS_FOLDER%"
+) else (
+    echo Folder does not exist: "%MODS_FOLDER%"
+)
+
+echo.
+echo === Deleting modsettings.lsx from: "%localAppData%\Larian Studios\Baldur's Gate 3\PlayerProfiles\Public\" ===
+:: Delete "modsettings.lsx"
+set "MODSETTINGS_FILE=%localAppData%\Larian Studios\Baldur's Gate 3\PlayerProfiles\Public\modsettings.lsx"
+if exist "%MODSETTINGS_FILE%" (
+    echo Deleting file: "%MODSETTINGS_FILE%"
+    del /f /q "%MODSETTINGS_FILE%"
+) else (
+    echo File does not exist: "%MODSETTINGS_FILE%"
+)
+
+echo.
+echo === Cleanup complete. ===
+pause
+``` 
