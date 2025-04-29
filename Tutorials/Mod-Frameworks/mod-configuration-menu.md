@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-04-29T22:36:46.603Z
+date: 2025-04-29T22:41:11.849Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -31,7 +31,7 @@ If you're looking to quickly integrate MCM into your mod, here's the process at 
 > [MCM demo](#mcm-demo) (as of MCM 1.23)
 {.is-success}
 
-That's it for a basic integration! MCM will warn you about mistakes in your blueprint file.
+That's it for a basic integration! MCM will warn you about mistakes in your code or blueprint file.
 The rest of this documentation provides detailed explanations of these steps and advanced features.
 
 > For basic integration, the important sections are [Defining a blueprint](#defining-a-blueprint) and [Using values from MCM](#using-values-from-mcm).
