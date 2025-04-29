@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-04-29T22:41:11.849Z
+date: 2025-04-29T22:43:33.915Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -35,7 +35,7 @@ That's it for a basic integration! MCM will warn you about mistakes in your code
 The rest of this documentation provides detailed explanations of these steps and advanced features.
 
 > For basic integration, the important sections are [Defining a blueprint](#defining-a-blueprint) and [Using values from MCM](#using-values-from-mcm).
-If you're interested in keybindings, see [Registering a keybinding callback](#registering-a-keybinding-callback).
+If you're interested in keybindings, see [Adding a keybinding](#adding-a-keybinding).
 {.is-success}
 
 ## Table of Contents
@@ -368,7 +368,7 @@ This is a basic interaction between server and client that is often necessary wh
 This system provides mod authors with the flexibility to decide how their keybindings should function while ensuring ease of integration.
 
 ### Inserting custom UI elements
->
+
 >Note that these methods are only available in the client context. They cannot be executed from server-side code, since UI-related functionality is strictly handled on the client side. If you're trying them out with the console, run `client` before executing these methods.
 >{.is-info}
 
