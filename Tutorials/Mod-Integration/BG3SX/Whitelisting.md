@@ -2,7 +2,7 @@
 title: Whitelisting for BG3SX
 description: 
 published: true
-date: 2024-12-29T08:30:42.272Z
+date: 2025-05-01T18:10:38.733Z
 tags: script extender, bg3sx, mod integration
 editor: markdown
 dateCreated: 2024-12-25T07:23:13.330Z
@@ -81,6 +81,8 @@ Modders who create custom NPCs, can also just blacklist them individually if the
 > Download the [**Example race mod with BG3SX support** or the **Example race mod with optional BG3SX addon**](https://www.nexusmods.com/baldursgate3/mods/14435?tab=description) to see what a correct implementation looks like.
 {.is-info}  
 
+
+
   
   The following section shortly explain how to *Whitelist*/*Blacklist* your race or character when you already know the basics of creating a workspace with SE functionality. If you need a detailed explanation jump to [the detailed guide here](https://wiki.bg3.community/en/Tutorials/Mod-Integration/BG3SX/Whitelisting#h-3-detailed-whitelisting-guide)
   
@@ -140,8 +142,14 @@ if Mods.BG3SX then
   wList["MyCoolRaceTagName"] = {TAG = "413dcf04-586d-409f-aef1-1cf457711f5e", Allowed = false, Reason = "YourMod - No fitting Genitals"}
   wList["MyCoolRaceTagName2"] = {TAG = "03d1fdaa-eb79-469c-a3b3-57a3b98fa484", Allowed = false, Reason = "YourMod - No Animations for Rig"}
 end
+  ```
   
-```
+    
+> **WHEN YOU ARE DONE PAK THE MOD WITH LSLIB OR MULTITOOL**
+> **THE GAME DOES NOT RECOGNIZE FOLDERS OR ZIP FILES**
+{.is-warning}
+  
+
   
 
 ### 2.1.2 For individual entities
@@ -169,6 +177,9 @@ end
 
   For *Blacklisting* use `Data.BlacklistedEntities` instead of `Data.WhitelistedEntities`
   
+  > **WHEN YOU ARE DONE PAK THE MOD WITH LSLIB OR MULTITOOL**
+> **THE GAME DOES NOT RECOGNIZE FOLDERS OR ZIP FILES**
+{.is-warning}
   
 ## 2.2  With the Tag Framework
 
@@ -513,6 +524,10 @@ end
 ```   
   
 Your race is now allowed to use BG3SX actions.
+  
+  > **WHEN YOU ARE DONE PAK THE MOD WITH LSLIB OR MULTITOOL**
+> **THE GAME DOES NOT RECOGNIZE FOLDERS OR ZIP FILES**
+{.is-warning}
   
 ## 3.2 As an optional addon
     
