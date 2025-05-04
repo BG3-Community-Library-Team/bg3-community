@@ -2,7 +2,7 @@
 title: Adding Animations In Toolkit
 description: A guide on how to add poses/animation to the toolkit and and setting up the necessary files
 published: false
-date: 2025-05-04T14:20:03.437Z
+date: 2025-05-04T14:21:34.744Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-05-04T14:20:03.437Z
@@ -10,8 +10,8 @@ dateCreated: 2025-05-04T14:20:03.437Z
 
 <h1>Adding Animations in Toolkit</h1>
 <h6>written by <a href="https://next.nexusmods.com/profile/lumad11">lumad11</a></h6>
-<p>This guide assumes that you've already created poses or animations in Blender following the <a href="https://wiki.bg3.community/Tutorials/Animations/CustomAnimationsBlender">Custom Animations Blender Walkthrough</a>.&nbsp;</p>
-<p>The guide will go over:&nbsp;</p>
+<p>This tutorial assumes that you've already created poses or animations in Blender following the <a href="https://wiki.bg3.community/Tutorials/Animations/CustomAnimationsBlender">Custom Animations Blender Walkthrough</a>.&nbsp;</p>
+<p>I will go over:&nbsp;</p>
 <ul>
   <li>How to add ShortNames, EmoteCollections and EmotePoses/EmoteAnimations</li>
   <li>How to add your pose/animation in the Toolkit</li>
@@ -19,8 +19,8 @@ dateCreated: 2025-05-04T14:20:03.437Z
 </ul>
 <p>Disclaimer:</p>
 <ul>
-  <li>&nbsp;At the moment, this is for body animations and not facial ones, though you might be able to go through the same process with the files relevant to the face.</li>
-  <li>Currently, photomode pose/animation mods override one another, so you can only have one in your load order at a time. Keep this in mind when publishing your mod.&nbsp;</li>
+  <li>At the moment, this is for body animations and not facial ones, though you might be able to go through the same process with the files relevant to the face.</li>
+  <li>Currently, photomode pose/animation mods override one another, so you can only have one in your load order at a time. Keep this in mind when publishing your mod.</li>
 </ul>
 <h2>1. Setup in Toolkit</h2>
 <h3>1.1 Creating a new project</h3>
@@ -34,7 +34,7 @@ dateCreated: 2025-05-04T14:20:03.437Z
 <p>Now to finding the _Base file(s) that you need. While in the ‘All’ folder, search for the _Base file that you need for your animation in the ‘Filters’ search bar.&nbsp;</p>
 <p>Here's a list of the different body type _Base files:&nbsp;</p>
 <ul>
-  <li>Dwarf: DWR_[F/M]_Base&nbsp;</li>
+  <li>Dwarf: DWR_[F/M]_Base</li>
   <li>Dragonborn: DGB_[F/M]_Base</li>
   <li>Gnomes: GNO_[F/M]_Base</li>
   <li>Halflings: HFL_[F/M]<i>_Base</i></li>
@@ -61,7 +61,7 @@ dateCreated: 2025-05-04T14:20:03.437Z
 <p>You should now have two files in your project folder:&nbsp;</p>
 <ul>
   <li>The _Base file of type AnimationSetResource</li>
-  <li>An animation file of type AnimationResource&nbsp;</li>
+  <li>An animation file of type AnimationResource</li>
 </ul>
 <p>When you want add more animations, right click the animation file in your project folder, select ‘Create new from selected’ and rename it. Next, we'll be going over how to add entries in the UUID Object Editor&nbsp;</p>
 <p>&nbsp;</p>
@@ -74,11 +74,11 @@ dateCreated: 2025-05-04T14:20:03.437Z
 <figure class="image image_resized" style="width:75.1%;"><img src="/toolkit_poses_tutorial/objectuuideditor_01.png"></figure>
 <p>A new file names ‘ShortNames’ should generate under ‘Animation’, double click it to open it.</p>
 <ol>
-  <li>For ‘Name’, you want to add an entry for each pose that you have. Not for a collection/pack, but for every single animation that you have (so for an animation with e.g. 10 static poses, add 10 entries).&nbsp;<ol>
+  <li>For ‘Name’, you want to add an entry for each pose that you have. Not for a collection/pack, but for every single animation that you have (so for an animation with e.g. 10 static poses, add 10 entries).<ol>
       <li>The name here is the internal name for the file, and not what will be displayed in the game.</li>
     </ol>
   </li>
-  <li>Hit enter after naming an entry and it'll generate a UUID automatically.&nbsp;</li>
+  <li>Hit enter after naming an entry and it'll generate a UUID automatically.</li>
   <li>Under ‘Category’, you want to select ‘Photomode’.</li>
 </ol>
 <p>It should now looks something like this:&nbsp;</p>
@@ -90,10 +90,10 @@ dateCreated: 2025-05-04T14:20:03.437Z
 <p>In the UUID Object Editor, under your project name, navigate to ‘Photomode’. Click the ‘+’ symbol, select ‘EmotePoses’ and open the file. Add an entry for each static pose that you have.&nbsp;</p>
 <ol>
   <li>For ‘Name’, use the same name that you did in ‘ShortNames’. Hit enter to generate the UUID.</li>
-  <li>‘Display Name’ is what shows up in the actual game. Name each pose accordingly.&nbsp;</li>
+  <li>‘Display Name’ is what shows up in the actual game. Name each pose accordingly.</li>
   <li>In ‘Short Name’, you want to navigate back to the ‘ShortNames’ tab and copy the UUID from the corresponding entry and paste it into the the relevant entry in ‘EmotePoses'.</li>
-  <li>‘Timing' is only relevant if you have several static poses in one animation. If you only have one static pose in one animation, set this to 0. &nbsp;</li>
-  <li>‘Exclude tags’ is not something that you need to touch. Leave it empty.&nbsp;</li>
+  <li>‘Timing' is only relevant if you have several static poses in one animation. If you only have one static pose in one animation, set this to 0.</li>
+  <li>‘Exclude tags’ is not something that you need to touch. Leave it empty.</li>
 </ol>
 <figure class="image image_resized" style="width:75.05%;"><img src="/toolkit_poses_tutorial/emoteposes.png"></figure>
 <p>If you also have an animation file with an actual animation (rather than a static pose), follow these same steps but instead of adding ‘EmotePoses’, add ‘EmoteAnimations’ instead. The only difference is that is doesn't have ‘Timing’ in the tab.&nbsp;</p>
@@ -103,12 +103,12 @@ dateCreated: 2025-05-04T14:20:03.437Z
 <p>Remaining in the UUID Object Editor, you want to go to ‘Photomode’ again and this time add ‘EmoteCollections’.&nbsp;</p>
 <ol>
   <li>‘Name’ is the internal name for the collection and should be unique to the collection you're adding. Hit enter to generate UUID</li>
-  <li>‘Display Name’ is what the collection will be called in the game. Name accordingly.&nbsp;</li>
-  <li>‘Poses List’ has a drop down where you can select the poses from ‘EmotePoses’ that you want to add to the collection.&nbsp;<ol>
-      <li>You can search for the poses you want to add. Double click to them add. Double click again on the same pose to remove.&nbsp;</li>
+  <li>‘Display Name’ is what the collection will be called in the game. Name accordingly.</li>
+  <li>‘Poses List’ has a drop down where you can select the poses from ‘EmotePoses’ that you want to add to the collection.<ol>
+      <li>You can search for the poses you want to add. Double click to them add. Double click again on the same pose to remove.</li>
     </ol>
   </li>
-  <li>‘Animations List’ is the same principle as the previous point, except for animations.&nbsp;</li>
+  <li>‘Animations List’ is the same principle as the previous point, except for animations.</li>
 </ol>
 <figure class="image image_resized" style="width:75.67%;"><img src="/toolkit_poses_tutorial/emotecollections.png"></figure>
 <p>Each entry will add a new collection to the game, but you do not need a new entry for every pose/animation.</p>
