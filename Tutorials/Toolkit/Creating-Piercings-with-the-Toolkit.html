@@ -2,13 +2,13 @@
 title: Creating Piercings with the Toolkit
 description: A guide on making new piercing sets using the toolkit using either your own custom mesh or the game's vanilla assets.
 published: true
-date: 2025-05-04T09:59:05.024Z
+date: 2025-05-04T10:03:09.278Z
 tags: visual, tutorial, piercings, toolkit
 editor: ckeditor
 dateCreated: 2025-05-04T08:34:43.957Z
 -->
 
-<h2>Getting Started</h2>
+<h1>Getting Started</h1>
 <p>This guide assumes you have installed the toolkit and know how to set up a new mod project with the toolkit.&nbsp;</p>
 <p>If you are using the toolkit for the first time, you can refer to <a href="https://mod.io/g/baldursgate3/r/installing-the-toolkit">Installing the Toolkit</a> and <a href="https://mod.io/g/baldursgate3/r/getting-started-creating-a-new-mod">Creating a New Mod</a> guides to get started.</p>
 <p>&nbsp;</p>
@@ -16,9 +16,7 @@ dateCreated: 2025-05-04T08:34:43.957Z
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(2).png"></figure>
 <p>For this guide I’m making a custom piercing consisting of custom mesh (the gold danglies), vanilla mesh with different placement from the one available in game (the Red Scintilla stud, above the right brow instead of at ear lobes), and vanilla piercing with the same placement as available in game (the spikey ring at the ear helix- but only one of them).</p>
 <p>Open the Resources Manager and upload your custom meshes. The left &amp; right meshes must be in separate GR2 files. The mesh should not be parented to any armature or have any armature modifier. Assign the materials- if your mesh is edited from vanilla assets you can reuse the vanilla materials by searching for the material name, or upload your own custom textures to use with your mesh. (You can read more on how to import your custom assets <a href="https://mod.io/g/baldursgate3/r/adding-an-armor">here</a>).</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h2><strong>CharacterCreationSharedVisuals Table</strong></h2>
+<h1><strong>CharacterCreationSharedVisuals Table</strong></h1>
 <p>Open the UUID Object Editor.</p>
 <p>Under your mod directory (in my case it’s Piercings_Guide), go to CharacterCreation directory, hit the “+” button and create <strong>CharacterCreationSharedVisuals</strong>.</p>
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(3).png"></figure>
@@ -37,7 +35,7 @@ dateCreated: 2025-05-04T08:34:43.957Z
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(9).png"></figure>
 <p>For the <strong>Name </strong>column at the end, you can put the mesh name, it’s not that important (e.g. PRC_GUIDE_DANGLIES_L).</p>
 <p>Repeat the steps for Right version of the piercing.</p>
-<p>&nbsp;</p>
+<h2>Using Vanilla Mesh</h2>
 <p>For something that the mesh is already in game and you don’t want to change anything but only its placement (e.g. the Red Scintilla stud in this guide). Search PRC in Resources manager and look for the mesh that you want, copy its GUID and repeat the steps above. For this guide I’m using the brow_a_r bone and named it “Red Gem Brow A R”.</p>
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(10).png"></figure>
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(11).png"></figure>
@@ -47,14 +45,15 @@ dateCreated: 2025-05-04T08:34:43.957Z
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(12).png"></figure>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h2>CharacterCreationAccessorySets Table</h2>
+<h1>CharacterCreationAccessorySets Table</h1>
 <p>Next under your mod’s CharacterCreation directory, create new <strong>CharacterCreationAccessorySets</strong>.</p>
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(13).png"></figure>
 <p>Under the <strong>DisplayName </strong>column, enter the name you want it to appear as in the character creation screen in game (e.g. Danglies 1). The toolkit will generate UUID for the entry. Enter “Piercings” under <strong>SlotName</strong>, and put “Yes” for <strong>CharacterCreationSet </strong>column.&nbsp;</p>
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(14).png"></figure>
 <p>Under the <strong>VisualUUIDs</strong>, there will be a dropdown of list of piercings available. Search for your custom piercings <strong>DisplayName </strong>from the <strong>CharacterCreationSharedVisuals</strong> entry you did earlier and click on them to include in your piercing set (e.g. “Danglies Lobe A L” , “Danglies Lobe A R” &amp; “Red Gem Brow A R”).&nbsp;</p>
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(15).png"></figure>
-<p>Then if you want to add in something already available in vanilla piercing sets, you need to look for its DisplayName in<strong> Projects &gt; Shared &gt; CharacterCreation &gt; CharacterCreationAccessorySets</strong> table. This table is to be used as reference only and can’t be edited.</p>
+<h2>Using Piercings from Vanilla Sets&nbsp;</h2>
+<p>Then if you want to add in something already available in vanilla piercing sets (retain the same mesh &amp; bone placement), you need to look for its DisplayName in<strong> Projects &gt; Shared &gt; CharacterCreation &gt; CharacterCreationAccessorySets</strong> table. This table is to be used as reference only and can’t be edited.</p>
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(16).png"></figure>
 <p>In this mod I want the spikey ring from Silvergold Gala set.</p>
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(17).png"></figure>
@@ -66,9 +65,7 @@ dateCreated: 2025-05-04T08:34:43.957Z
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(20).png"></figure>
 <p>The <strong>RaceUUID </strong>column should be empty, it will automatically be available for all races except Dragonborn. At this point the piercing is done for the humanoid races. (You can save and close the UUID editor if you don’t plan on adding dragonborn piercings as well).</p>
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(21).png"></figure>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h2><strong>Piercings for Dragonborns</strong></h2>
+<h1><strong>Piercings for Dragonborns</strong></h1>
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(22).png"></figure>
 <p>The steps for <strong>CharacterCreationSharedVisuals</strong> is the same as humanoid piercings, but you might need to make a different mesh if you’re using custom, as they can appear weirdly on dragonborns. I’m using the same mesh for this guide so they appear a bit funny. In the game vanilla assets the meshes for dragonborn have the DGB prefix. But sometimes they can use also the same mesh, like the Red Scintilla studs.</p>
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(23).png"></figure>
@@ -84,14 +81,12 @@ dateCreated: 2025-05-04T08:34:43.957Z
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(27).png"></figure>
 <p>In <strong>VisualUUIDs </strong>column it’s the same step as humanoid, pick all the items you need to appear in your piercing set.</p>
 <figure class="image"><img src="/tutorials/piercings_toolkit/piercing-toolkit_(29).png"></figure>
-<p>&nbsp;</p>
-<h2>Save &amp; Publish</h2>
+<h1>Save &amp; Publish</h1>
 <p>After that you’re done. Save and close the UUID Editor. You can check if it appears in the game by clicking the Switch Game/Editor button. (If it doesn’t, try to restart the toolkit first).</p>
 <p>You need to publish the mod in order for it to show up in game. Read through how to publish it <a href="https://mod.io/g/baldursgate3/r/publishing-a-mod">here</a>.</p>
-<p>&nbsp;</p>
-<h2>Additional Info</h2>
+<h1>Additional Info</h1>
 <p>If the piercings you're looking for is missing the bone name in its display name, you can also look it up in the <strong>Shared CharacterCreationSharedVisuals </strong>directory to see its bone name. They are usually named with the piercings set number.</p>
-<p>&nbsp;</p>
-<h2>Extra Resources</h2>
+<h1>&nbsp;</h1>
+<h1>Extra Resources</h1>
 <p><a href="https://wiki.bg3.community/Information/Meshes/Piercing-Meshes-Reference">Piercing Mesh List</a></p>
 <p><a href="https://photos.app.goo.gl/C16CbdVNzytwpArh6">Screenshots of Piercings in Game</a></p>
