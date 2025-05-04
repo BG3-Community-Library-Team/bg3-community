@@ -1,0 +1,137 @@
+<!--
+title: Adding Animations In Toolkit
+description: A guide on how to add poses/animation to the toolkit and and setting up the necessary files
+published: false
+date: 2025-05-04T14:20:03.437Z
+tags: 
+editor: ckeditor
+dateCreated: 2025-05-04T14:20:03.437Z
+-->
+
+<h1>Adding Animations in Toolkit</h1>
+<h6>written by <a href="https://next.nexusmods.com/profile/lumad11">lumad11</a></h6>
+<p>This guide assumes that you've already created poses or animations in Blender following the <a href="https://wiki.bg3.community/Tutorials/Animations/CustomAnimationsBlender">Custom Animations Blender Walkthrough</a>.&nbsp;</p>
+<p>The guide will go over:&nbsp;</p>
+<ul>
+  <li>How to add ShortNames, EmoteCollections and EmotePoses/EmoteAnimations</li>
+  <li>How to add your pose/animation in the Toolkit</li>
+  <li>How to override the _Base file corresponding with the pose/animation you exported from Blender</li>
+</ul>
+<p>Disclaimer:</p>
+<ul>
+  <li>&nbsp;At the moment, this is for body animations and not facial ones, though you might be able to go through the same process with the files relevant to the face.</li>
+  <li>Currently, photomode pose/animation mods override one another, so you can only have one in your load order at a time. Keep this in mind when publishing your mod.&nbsp;</li>
+</ul>
+<h2>1. Setup in Toolkit</h2>
+<h3>1.1 Creating a new project</h3>
+<p>If you are new to the Toolkit, here is <a href="https://mod.io/g/baldursgate3/r/getting-started">a guide</a> on how to get started with it.</p>
+<p>When you're more familiar with the Toolkit, create a new project and name it accordingly</p>
+<p>&nbsp;</p>
+<h3>1.2 Setting up the _Base file</h3>
+<p>Once you've set up your project and chosen a level (I usually choose Basic_Level<i>_</i>A) it's time to add the relevant files to your project.&nbsp;</p>
+<p>Go to the ‘Create and view resources’ tab as shown below</p>
+<figure class="image image_resized" style="width:75.06%;"><img src="/toolkit_poses_tutorial/image01.png"></figure>
+<p>Now to finding the _Base file(s) that you need. While in the ‘All’ folder, search for the _Base file that you need for your animation in the ‘Filters’ search bar.&nbsp;</p>
+<p>Here's a list of the different body type _Base files:&nbsp;</p>
+<ul>
+  <li>Dwarf: DWR_[F/M]_Base&nbsp;</li>
+  <li>Dragonborn: DGB_[F/M]_Base</li>
+  <li>Gnomes: GNO_[F/M]_Base</li>
+  <li>Halflings: HFL_[F/M]<i>_Base</i></li>
+  <li>Humans, Elf variants, Tieflings, Githyanki: HUM_[F/M]_Base</li>
+</ul>
+<p>After searching for the _Base relevant to you, you need to find the one of type AnimationSet, as shown below.&nbsp;</p>
+<figure class="image image_resized" style="width:75.06%;"><img src="/toolkit_poses_tutorial/image02.png"></figure>
+<p>Select the _Base, right click on it and choose ‘Override in the Active Mod’</p>
+<figure class="image"><img src="/toolkit_poses_tutorial/override_base.png"></figure>
+<p>The Toolkit will ask you if you're sure, select ‘yes’. Select ‘yes’ when it asks you if you want to keep the ssame package structure. If you want to keep the file within custom folders, select ‘no’ and choose your resource package. You also don't need to rename this _Base file, as any changes overrides the vanilla one anyways.&nbsp;</p>
+<p>The file should now appear in your mod projects folder.&nbsp;</p>
+<p>&nbsp;</p>
+<h3>1.2 Setting up the animation files&nbsp;</h3>
+<p>To import you custom animation, you first need to find an existing vanilla pose.&nbsp;</p>
+<p>In the ‘Filters’ search bar, type in ‘PM_Armsout’. This is an animation that contain all the static poses for the collection ‘Arms out’ in the game.&nbsp;</p>
+<blockquote>
+  <p>Instead of having one animation file for each static pose, each pose in a collection is put into one animation file. The timing for each pose is then set in the Object UUID Editor. (At a later point, there will also be a tutorial on how to add several static poses in animation in Blender. ETA unknown.)&nbsp;</p>
+</blockquote>
+<p>To add an animation to your own project, select the animation that suits the race you want to add the animation to. So if you're adding an animation for ‘human’ body type one, select the animation with the prefix HUM_F_.&nbsp;</p>
+<p>Right click the animation and select ‘Create New From Selected’.&nbsp;</p>
+<figure class="image"><img src="/toolkit_poses_tutorial/create_new_anim_file.png"></figure>
+<p>Select the resource package you want the file to go in (I usually pick the one that says [Project name_UUID]//[Project name]), and rename the file to something more relevant to find it more easily later.&nbsp;</p>
+<p>If you only have one animation (not static), you should only have one per file which you name accordlingly (including the abbreviation for race and body type, for easy management). If you have an animation with several static poses, I recommend naming it something like [Mod name]_HUM_[F/M]_Pack_[number]. If you currently don't have an animation with several static poses, simply add a file for each pose and have the suffix named Pose_[number] instead of Pack.&nbsp;</p>
+<p>You should now have two files in your project folder:&nbsp;</p>
+<ul>
+  <li>The _Base file of type AnimationSetResource</li>
+  <li>An animation file of type AnimationResource&nbsp;</li>
+</ul>
+<p>When you want add more animations, right click the animation file in your project folder, select ‘Create new from selected’ and rename it. Next, we'll be going over how to add entries in the UUID Object Editor&nbsp;</p>
+<p>&nbsp;</p>
+<h2>2 The UUID Object Editor&nbsp;</h2>
+<h3>2.1 ShortNames</h3>
+<p>In the Toolkit, open the UUID&nbsp;Object Editor, location shown below.&nbsp;</p>
+<figure class="image image_resized" style="width:75.06%;"><img src="/toolkit_poses_tutorial/objectuuidedtor_icon.png"></figure>
+<p>On the left hand side, you should see a list of projects. Expand the project with the name of your mod.&nbsp;</p>
+<p>Now you want to add ShortNames for the animation files you have. Navigate to the ‘Animation' line, press the ’+' symbol and select ‘ShortNames’. &nbsp;&nbsp;</p>
+<figure class="image image_resized" style="width:75.1%;"><img src="/toolkit_poses_tutorial/objectuuideditor_01.png"></figure>
+<p>A new file names ‘ShortNames’ should generate under ‘Animation’, double click it to open it.</p>
+<ol>
+  <li>For ‘Name’, you want to add an entry for each pose that you have. Not for a collection/pack, but for every single animation that you have (so for an animation with e.g. 10 static poses, add 10 entries).&nbsp;<ol>
+      <li>The name here is the internal name for the file, and not what will be displayed in the game.</li>
+    </ol>
+  </li>
+  <li>Hit enter after naming an entry and it'll generate a UUID automatically.&nbsp;</li>
+  <li>Under ‘Category’, you want to select ‘Photomode’.</li>
+</ol>
+<p>It should now looks something like this:&nbsp;</p>
+<figure class="image image_resized" style="width:75.03%;"><img src="/toolkit_poses_tutorial/shortnames.png"></figure>
+<p>Add entries for however many animations/static poses that you have. Keep the tab open, you'll need the UUID's for the ShortNames entries later.&nbsp;</p>
+<p>Press CTRL+S to save and export the file.</p>
+<p>&nbsp;</p>
+<h3>2.2 EmotePoses and EmoteAnimations&nbsp;</h3>
+<p>In the UUID Object Editor, under your project name, navigate to ‘Photomode’. Click the ‘+’ symbol, select ‘EmotePoses’ and open the file. Add an entry for each static pose that you have.&nbsp;</p>
+<ol>
+  <li>For ‘Name’, use the same name that you did in ‘ShortNames’. Hit enter to generate the UUID.</li>
+  <li>‘Display Name’ is what shows up in the actual game. Name each pose accordingly.&nbsp;</li>
+  <li>In ‘Short Name’, you want to navigate back to the ‘ShortNames’ tab and copy the UUID from the corresponding entry and paste it into the the relevant entry in ‘EmotePoses'.</li>
+  <li>‘Timing' is only relevant if you have several static poses in one animation. If you only have one static pose in one animation, set this to 0. &nbsp;</li>
+  <li>‘Exclude tags’ is not something that you need to touch. Leave it empty.&nbsp;</li>
+</ol>
+<figure class="image image_resized" style="width:75.05%;"><img src="/toolkit_poses_tutorial/emoteposes.png"></figure>
+<p>If you also have an animation file with an actual animation (rather than a static pose), follow these same steps but instead of adding ‘EmotePoses’, add ‘EmoteAnimations’ instead. The only difference is that is doesn't have ‘Timing’ in the tab.&nbsp;</p>
+<p>Press CTRL+S to save and export the file.</p>
+<p>&nbsp;</p>
+<h3>2.3 EmoteCollections</h3>
+<p>Remaining in the UUID Object Editor, you want to go to ‘Photomode’ again and this time add ‘EmoteCollections’.&nbsp;</p>
+<ol>
+  <li>‘Name’ is the internal name for the collection and should be unique to the collection you're adding. Hit enter to generate UUID</li>
+  <li>‘Display Name’ is what the collection will be called in the game. Name accordingly.&nbsp;</li>
+  <li>‘Poses List’ has a drop down where you can select the poses from ‘EmotePoses’ that you want to add to the collection.&nbsp;<ol>
+      <li>You can search for the poses you want to add. Double click to them add. Double click again on the same pose to remove.&nbsp;</li>
+    </ol>
+  </li>
+  <li>‘Animations List’ is the same principle as the previous point, except for animations.&nbsp;</li>
+</ol>
+<figure class="image image_resized" style="width:75.67%;"><img src="/toolkit_poses_tutorial/emotecollections.png"></figure>
+<p>Each entry will add a new collection to the game, but you do not need a new entry for every pose/animation.</p>
+<p>Press CTRL+S to save and export the file.</p>
+<p>&nbsp;</p>
+<h2>3. Adding The Animation Files in the _Base Files&nbsp;</h2>
+<p>Close down the UUID Object Editor. In the resource manager, navigate to your project folder and find the _Base you want to open first.&nbsp;</p>
+<p>Double click the _Base file and this window should pop up. Navigate to ‘Photomode’ and expand it. Scroll down to the bottom of the entry, and you should see all the poses that you added in ‘ShortNames’</p>
+<figure class="image"><img src="/toolkit_poses_tutorial/add_poses_to_base.png"></figure>
+<p>Select the drop down menu and search for the pose/animation corresponding to the short name entry and select it. Once you've done this for all the the short names and their poses/animations, click ‘Apply’ and then ‘OK’.&nbsp;</p>
+<p>You should now have done everything there is to do regarding the Toolkit files!</p>
+<p>&nbsp;</p>
+<h2>4. Exporting the mod</h2>
+<p>Do the following</p>
+<ol>
+  <li>Go to 'Project' → ‘Project Settings’ or CTRL+P for a shortcut.</li>
+  <li>Fill out the the mandatory fields as well as the author field.</li>
+  <li>Publish Local (automatically adds the mod to your Mods folder).</li>
+  <li>Open BG3MM and add the mod to your load order and then export order to game.</li>
+</ol>
+<p>You should now have a functioning mod in the game!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
