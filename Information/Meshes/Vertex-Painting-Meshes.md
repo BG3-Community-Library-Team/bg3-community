@@ -2,14 +2,14 @@
 title: Vertex Painting Meshes
 description: 
 published: true
-date: 2025-05-07T00:47:21.952Z
+date: 2025-05-07T00:48:07.148Z
 tags: meshes
 editor: markdown
 dateCreated: 2024-04-28T17:39:51.157Z
 ---
 
 # Vertex Paint Colors
-| MapKey | Hex | Blender Hex[^1] |
+| MapKey | Hex | Blender Hex|
 |----------|----------|----------|
 |"ModestyLeaf"|#000500|#010501|
 |"Sleeves"|#000A00|#010A01|
@@ -33,7 +33,9 @@ dateCreated: 2024-04-28T17:39:51.157Z
 |"Thighs"|#00B900|#01B901|
 |"Underwear_Panties_Tail"|#00C300|#01C301|
 
-[^1]: Blender gamma corrects the values by setting the values of the R and B components to 01. You can use either hex value in the table as only the green channel is used by the vertcut shaders. Red and Blue affect cloth physics.
+> 
+>Blender gamma corrects the values by setting the values of the R and B components to 01. You can use either hex value in the table as only the green channel is used by the vertcut shaders. Red and Blue affect cloth physics.
+{.is-info}
 
 # Vertex Paint Transfer
 
