@@ -2,7 +2,7 @@
 title: Races
 description: Race UUIDs
 published: true
-date: 2025-05-08T16:46:58.000Z
+date: 2025-05-08T16:51:33.326Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-08T15:24:52.235Z
@@ -76,4 +76,17 @@ UUIDs used when assigning equipment in the RootTemplates
 WIP
 
 ## CharacterVisuals
-UUIDs used to 
+UUIDs used to assign character creation elements such as heads, horns, hair, etc
+
+## UUIDs {.tabset}
+### Vanilla Races
+| Race | Prefix | UUID |Parent Race|
+|----------|----------|----------|
+|||||
+
+### Custom Races
+| Race | Prefix | UUID |Parent Race|Link to Mod|
+|----------|----------|----------|
+|||||
+
+## 
