@@ -2,7 +2,7 @@
 title: Races
 description: Race UUIDs
 published: false
-date: 2025-05-08T16:24:14.376Z
+date: 2025-05-08T16:31:44.566Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-08T15:24:52.235Z
@@ -63,12 +63,13 @@ Any content here will go into the second tab...
 |Tiefling Karlach|\_Karlach[^2]|6326d417-315c-4605-964e-d0fad73d719b|TIF_FS|
 
 > **Why does Karlach have her own tab?**
-> Karlach has her own unique race UUID, though it only has a few uses in the game.
+> Karlach has her own unique race UUID, though it only has a few uses in the game[^3].
 >
 > Some mesh items include replacing areas of skin. Since her skin is different than that of other characters, it requires a different material to be applied to the mesh, so a new object needs to be created for that, and thus she requires her own race UUID.
 {.is-info}
 
-[^2]: `_Karlach` is used as a **suffix** on associated meshes
+[^2]: `_Karlach` is typically used as a **suffix** on associated meshes.
+[^3]: *Reason's Grasp*, *Bonespike Gloves* and her *Epilogue Camp Outfit* are the only uses of her race UUID. 
 
 
 
