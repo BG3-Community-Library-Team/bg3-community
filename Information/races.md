@@ -2,7 +2,7 @@
 title: Races
 description: Race UUIDs
 published: true
-date: 2025-05-08T16:42:44.473Z
+date: 2025-05-08T16:43:40.510Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-08T15:24:52.235Z
@@ -10,7 +10,8 @@ dateCreated: 2025-05-08T15:24:52.235Z
 
 # Races
 
-## UUIDs
+## Equipment UUIDs
+UUIDs used when assigning equipment in the RootTemplates
 
 ## UUIDs {.tabset}
 ### Vanilla Races
