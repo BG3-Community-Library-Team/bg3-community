@@ -2,7 +2,7 @@
 title: Races
 description: Race UUIDs
 published: true
-date: 2025-05-08T16:55:25.780Z
+date: 2025-05-08T17:00:36.207Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-08T15:24:52.235Z
@@ -11,10 +11,12 @@ dateCreated: 2025-05-08T15:24:52.235Z
 # Races
 
 ## Equipment UUIDs
+
 UUIDs used when assigning equipment in the RootTemplates
 
 ## UUIDs {.tabset}
 ### Vanilla Races
+
 | Race | Prefix | UUID |Parent Race|
 |----------|----------|----------|
 |Dragonborn Female|DGB_F|6d38f246-15cb-48b5-9b85-378016a7a78e|HUM_FS|
@@ -49,6 +51,7 @@ UUIDs used when assigning equipment in the RootTemplates
 [^1]: This race does not have a UUID. The prefix is used for naming heads.
 
 ### Custom Races
+
 | Race | Prefix | UUID |Parent Race|Link to Mod|
 |----------|----------|----------|
 |Hobgoblin Female|HOB_F|eb81b1de-985e-4e3a-8573-5717dc1fa15c|HRC_F|[Warlords of the Coast - The Hobgoblin Race](https://www.nexusmods.com/baldursgate3/mods/11530)|
@@ -59,6 +62,7 @@ UUIDs used when assigning equipment in the RootTemplates
 {.is-info}
 
 ### Karlach
+
 | Race | Prefix | UUID |Parent Race|
 |----------|----------|----------|
 |Tiefling Karlach|\_Karlach[^2]|6326d417-315c-4605-964e-d0fad73d719b|TIF_FS|
@@ -78,15 +82,18 @@ UUIDs used when assigning equipment in the RootTemplates
 WIP
 
 ## CharacterVisuals
+
 UUIDs used to assign character creation elements such as heads, horns, hair, etc
 
 ## UUIDs {.tabset}
 ### Vanilla Races
+
 | Race | CharacterVisual UUID|
 |----------|----------|----------|
 |||
 
 ### Custom Races
+
 | Race | Prefix | UUID |Parent Race|Link to Mod|
 |----------|----------|----------|
 |||||
