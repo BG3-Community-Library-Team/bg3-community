@@ -2,7 +2,7 @@
 title: Races
 description: Race UUIDs
 published: false
-date: 2025-05-08T18:25:16.669Z
+date: 2025-05-08T18:25:43.102Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-08T18:24:42.245Z
@@ -48,6 +48,7 @@ UUIDs defined in `EquipmentRaces.lsx` used when assigning equipment in the RootT
 | Tiefling Female Strong | TIF\_FS | a5789cd3-ecd6-411b-a53a-368b659bc04a | HUM\_FS | a42d11fd-0b55-65d1-1c20-0bb104d56ae9 |
 | Tiefling Male | TIF\_M | 6503c830-9200-409a-bd26-895738587a4a | HUM\_M | 576a9e8f-88f2-fbdc-5103-4591553e6bef |
 | Tiefling Male Strong | TIF\_MS | f625476d-29ec-4a6d-9086-42209af0cf6f | HUM\_MS | a56199e9-75b9-032c-8bf2-306eea47090b |
+{.dense}
 
 ### Custom Races
 
@@ -55,6 +56,7 @@ UUIDs defined in `EquipmentRaces.lsx` used when assigning equipment in the RootT
 | --- | --- | --- | --- | --- | --- |
 | Hobgoblin Female | HOB\_F | eb81b1de-985e-4e3a-8573-5717dc1fa15c **\*** uses HRC\_F | HRC\_F |     | [Warlords of the Coast - The Hobgoblin Race](https://www.nexusmods.com/baldursgate3/mods/11530) |
 | Hobgoblin Male | HOB\_M | 6dd3db4f-e2db-4097-b82e-12f379f94c2e **\*** uses HRC\_F | HRC\_M |     | [Warlords of the Coast - The Hobgoblin Race](https://www.nexusmods.com/baldursgate3/mods/11530) |
+
 
 > **Want your custom race added here?**  
 > Send a message [here](https://discord.com/channels/1211056047784198186/1370077003621077154)
