@@ -2,7 +2,7 @@
 title: Races
 description: Race UUIDs
 published: true
-date: 2025-05-08T16:36:18.510Z
+date: 2025-05-08T16:40:22.166Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-08T15:24:52.235Z
@@ -52,7 +52,7 @@ dateCreated: 2025-05-08T15:24:52.235Z
 |----------|----------|----------|
 ||||
 > **Want your custom race added here?**
-> tbd
+> Send a message [here](https://discord.com/channels/1211056047784198186/1370077003621077154)
 {.is-info}
 
 ### Karlach
