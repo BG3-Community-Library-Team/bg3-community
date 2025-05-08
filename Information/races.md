@@ -2,7 +2,7 @@
 title: Races
 description: Race UUIDs
 published: false
-date: 2025-05-08T16:15:35.993Z
+date: 2025-05-08T16:15:44.979Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-08T15:24:52.235Z
@@ -46,7 +46,7 @@ dateCreated: 2025-05-08T15:24:52.235Z
 |Tiefling Male Strong|TIF_MS|f625476d-29ec-4a6d-9086-42209af0cf6f|HUM_MS|
 
 [^1]: This race does not have a UUID. The prefix is used for naming heads.
-[^2]: \_Karlach is used as a **suffix** on associated meshes
+
 
 Any content here will go into the first tab...
 
@@ -61,6 +61,7 @@ Any content here will go into the second tab...
 | Race | Prefix | UUID |Parent Race|
 |----------|----------|----------|
 |Tiefling Karlach|\_Karlach[^2]|6326d417-315c-4605-964e-d0fad73d719b|TIF_FS|
+[^2]: \_Karlach is used as a **suffix** on associated meshes
 
 
 
