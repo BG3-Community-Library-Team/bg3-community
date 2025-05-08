@@ -2,7 +2,7 @@
 title: Races
 description: Race UUIDs
 published: false
-date: 2025-05-08T16:04:06.482Z
+date: 2025-05-08T16:06:16.779Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-08T15:24:52.235Z
@@ -11,6 +11,7 @@ dateCreated: 2025-05-08T15:24:52.235Z
 # Races
 
 ## UUIDs
+```
 # UUIDs {.tabset}
 ## Vanilla Races
 | Race | Prefix | UUID |Parent Race|
@@ -55,7 +56,7 @@ Any content here will go into the second tab...
 ## Third Tab
 
 Any content here will go into the third tab...
-<!-- {raceTable:.tabset} -->
+```
 
 
 ## Parent Races
