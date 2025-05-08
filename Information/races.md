@@ -2,7 +2,7 @@
 title: Races
 description: Race UUIDs
 published: true
-date: 2025-05-08T16:43:40.510Z
+date: 2025-05-08T16:46:58.000Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-08T15:24:52.235Z
@@ -49,9 +49,9 @@ UUIDs used when assigning equipment in the RootTemplates
 [^1]: This race does not have a UUID. The prefix is used for naming heads.
 
 ### Custom Races
-| Race | Prefix | UUID |Parent Race|
+| Race | Prefix | UUID |Parent Race|Link to Mod|
 |----------|----------|----------|
-||||
+|||||
 > **Want your custom race added here?**
 > Send a message [here](https://discord.com/channels/1211056047784198186/1370077003621077154)
 {.is-info}
@@ -74,3 +74,6 @@ UUIDs used when assigning equipment in the RootTemplates
 
 ## Parent Races
 WIP
+
+## CharacterVisuals
+UUIDs used to 
