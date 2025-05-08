@@ -2,7 +2,7 @@
 title: Races
 description: Race UUIDs
 published: false
-date: 2025-05-08T16:22:36.841Z
+date: 2025-05-08T16:24:14.376Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-08T15:24:52.235Z
@@ -68,7 +68,7 @@ Any content here will go into the second tab...
 > Some mesh items include replacing areas of skin. Since her skin is different than that of other characters, it requires a different material to be applied to the mesh, so a new object needs to be created for that, and thus she requires her own race UUID.
 {.is-info}
 
-[^2]: \_Karlach is used as a **suffix** on associated meshes
+[^2]: `_Karlach` is used as a **suffix** on associated meshes
 
 
 
