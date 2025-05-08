@@ -2,7 +2,7 @@
 title: Races
 description: Race UUIDs
 published: false
-date: 2025-05-08T16:31:44.566Z
+date: 2025-05-08T16:35:38.006Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-08T15:24:52.235Z
@@ -47,15 +47,13 @@ dateCreated: 2025-05-08T15:24:52.235Z
 
 [^1]: This race does not have a UUID. The prefix is used for naming heads.
 
-
-Any content here will go into the first tab...
-
 ### Custom Races
 | Race | Prefix | UUID |Parent Race|
 |----------|----------|----------|
 ||||
-
-Any content here will go into the second tab...
+> **Want your custom race added here?**
+> Contact 
+{.is-info}
 
 ### Karlach
 | Race | Prefix | UUID |Parent Race|
