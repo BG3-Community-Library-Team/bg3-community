@@ -2,7 +2,7 @@
 title: Races
 description: Race UUIDs
 published: true
-date: 2025-05-08T16:54:52.243Z
+date: 2025-05-08T16:55:25.780Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-08T15:24:52.235Z
@@ -51,8 +51,8 @@ UUIDs used when assigning equipment in the RootTemplates
 ### Custom Races
 | Race | Prefix | UUID |Parent Race|Link to Mod|
 |----------|----------|----------|
-|Hobgoblin Female|HOB_F||HRC_F|[Warlords of the Coast - The Hobgoblin Race](https://www.nexusmods.com/baldursgate3/mods/11530)|
-|Hobgolbin Male|HOB_M||HRC_M|[Warlords of the Coast - The Hobgoblin Race](https://www.nexusmods.com/baldursgate3/mods/11530)|
+|Hobgoblin Female|HOB_F|eb81b1de-985e-4e3a-8573-5717dc1fa15c|HRC_F|[Warlords of the Coast - The Hobgoblin Race](https://www.nexusmods.com/baldursgate3/mods/11530)|
+|Hobgolbin Male|HOB_M|6dd3db4f-e2db-4097-b82e-12f379f94c2e|HRC_M|[Warlords of the Coast - The Hobgoblin Race](https://www.nexusmods.com/baldursgate3/mods/11530)|
 |||||
 > **Want your custom race added here?**
 > Send a message [here](https://discord.com/channels/1211056047784198186/1370077003621077154)
