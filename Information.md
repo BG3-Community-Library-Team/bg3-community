@@ -2,7 +2,7 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2025-02-04T21:46:41.702Z
+date: 2025-05-08T18:10:29.046Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
@@ -13,7 +13,7 @@ dateCreated: 2024-04-30T21:13:42.930Z
 This section of the wiki is a centeralised hub for information goes over BG3's game files, how they work, and how to edit them, as well as touching on what is considered 'best practice' in modding. Most, if not all, of the information here is unoffical and has been gathered from fellow members of the modding community who where willing to share their knowlage and experience.
 
 This area is not for tutorials but general information, if you would like to know how to put this infomration into pratice please head over to the Tutorials section of the wiki.
-<!-- For the sake of organisation the information here has been devided up into sections: **Core**, **Scripting**, **Meshes**, **Textures**, **Sound**, and **Gameplay**. -->
+<!-- For the sake of organisation the information here has been devided up into sections: **Core**, **Scripting**, **Meshes**, **Races**, **Textures**, **Sound**, and **Gameplay**. -->
 
 
 ## Core Information
@@ -39,6 +39,10 @@ Meshes
 -
 - [Meshes](Meshes)
 - [Noesis](/Information/Noesis)
+
+Races
+-
+- [Races](https://wiki.bg3.community/en/Information/races)
 
 Textures
 -
