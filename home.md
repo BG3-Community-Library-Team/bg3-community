@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2025-02-05T08:52:28.942Z
+date: 2025-05-08T18:12:28.464Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -66,6 +66,7 @@ Thank you for helping to improve the wiki!
 - [Noesis *Information relating to the Noesis UI Framework*](Information/Noesis)
 - [Notable NPCs *Information relating to NPCs*](Information/Notable-NPCs)
 - [Osiris *Information relating to Osiris*](Information/Osiris)
+- [Races *Information relating to Races*](https://wiki.bg3.community/en/Information/races)
 - [Sound *Information relating to Sound*](Information/Sound)
 - [Spells *Information relating to Spells*](Information/Spells)
 - [Textures *Information relating to Textures*](Information/Textures)
