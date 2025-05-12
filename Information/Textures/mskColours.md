@@ -2,7 +2,7 @@
 title: MSK Colours
 description: MSK Colour Parameters
 published: true
-date: 2025-05-12T20:24:19.125Z
+date: 2025-05-12T20:57:48.653Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-12T19:59:51.080Z
@@ -12,7 +12,7 @@ dateCreated: 2025-05-12T19:59:51.080Z
 
 For a mesh to be dyeable in game, it needs to have an MSK map. This texture map allows you to set which dye parameters different areas in your mesh use. 
 
-There are **12** parameters used by the MSK armour shader(s).
+There are **12** parameters used by the primary MSK armour shader(s).
 
 | Parameter | sRGB | Hex | Swatch
 |----------|----------|----------|----------|
@@ -29,6 +29,15 @@ There are **12** parameters used by the MSK armour shader(s).
 |Custom_1|0 0.5 1|#0080FF|{.custom1}|
 |Custom_2|0.5 1 0|#80FF00|{.custom2}|
 |||||
+
+For less complex meshes, the MSK map can use the Color_01, Color_02, and Color_03 parameters. You cannot combine these on the same MSK map as the parameters above, as you may notice they use the same values as Cloth_Secondary, Metal_Secondary, and Leather_Secondary respectively. You can define values for both sets in a colour preset or dye, though which value gets used will depend on the material shader.
+
+
+| Parameter | sRGB | Hex | Swatch
+|----------|----------|----------|----------|
+|Color_01|1 0 0|#FF0000|{.color1}|
+|Color_02|0 1 0|#00FF00|{.color2}|
+|Color_03|0 0 1|#0000FF|{.color3}|
 
 
 ## Solid Colour MSK
