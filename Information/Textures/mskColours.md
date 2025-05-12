@@ -2,7 +2,7 @@
 title: MSK Colours
 description: MSK Colour Parameters
 published: false
-date: 2025-05-12T20:23:45.977Z
+date: 2025-05-12T20:24:12.021Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-12T19:59:51.080Z
@@ -52,5 +52,5 @@ If your MSK map is a solid colour, you can use the UUID of the Engine_MSK colour
 
 ## Compression
 
-For clothing and armour, MSK maps use the same compression settings as the base colour map: **BC1 DTX1**. You can read more about compression settings [here.](https://wiki.bg3.community/Information/Textures/texture-types)
+For clothing and armour, MSK maps use the same compression settings as the base colour map: **BC1 DTX1** with mipmaps enabled. You can read more about compression settings [here.](https://wiki.bg3.community/Information/Textures/texture-types)
 
