@@ -2,7 +2,7 @@
 title: MSK Colours
 description: MSK Colour Parameters
 published: false
-date: 2025-05-12T20:16:19.659Z
+date: 2025-05-12T20:17:56.751Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-12T19:59:51.080Z
@@ -24,8 +24,8 @@ There are **12** parameters used by the MSK armour shader(s).
 |Metal_Primary|0 1 0.5|#00FF80|{.metalPri}|
 |Metal_Secondary|0 1 0|#00FF00|{.metalSec}|
 |Metal_Tertiary|0.5 1 0.5|#80FF80|{.metalTer}|
-|Accent_Color|1 0 0.5|##FF0080|{.accentCol}|
-|Custom_1|0 0.5 1|##0080FF|{.custom1}|
+|Accent_Color|1 0 0.5|#FF0080|{.accentCol}|
+|Custom_1|0 0.5 1|#0080FF|{.custom1}|
 |Custom_2|0.5 1 0|#80FF00|{.custom2}|
 |||||
 
