@@ -2,7 +2,7 @@
 title: MSK Colours
 description: MSK Colour Parameters
 published: true
-date: 2025-05-12T20:57:58.041Z
+date: 2025-05-12T20:59:49.249Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-12T19:59:51.080Z
@@ -30,7 +30,7 @@ There are **12** parameters used by the primary MSK armour shader(s).
 |Custom_2|0.5 1 0|#80FF00|{.custom2}|
 |||||
 
-For less complex meshes, the MSK map can use the Color_01, Color_02, and Color_03 parameters. You cannot combine these on the same MSK map as the parameters above, as you may notice they use the same values as Cloth_Secondary, Metal_Secondary, and Leather_Secondary respectively. You can define values for both sets in a colour preset or dye, though which value gets used will depend on the material shader.
+For less complex meshes, the MSK map can use **3** parameters: Color_01, Color_02, and Color_03. You cannot combine these on the same MSK map as the parameters above, as you may notice they use the same values as Cloth_Secondary, Metal_Secondary, and Leather_Secondary respectively. You can define values for both sets in a colour preset or dye, though which value gets used will depend on the material shader.
 
 
 | Parameter | sRGB | Hex | Swatch
