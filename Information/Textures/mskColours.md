@@ -2,7 +2,7 @@
 title: MSK Colours
 description: MSK Colour Parameters
 published: false
-date: 2025-05-12T19:59:51.080Z
+date: 2025-05-12T20:02:06.620Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-12T19:59:51.080Z
@@ -15,7 +15,7 @@ There are **12** parameters used by the MSK armour shader(s).
 
 | Parameter | sRGB | Hex | Swatch
 |----------|----------|----------|----------|
-|Cloth_Primary|1 0.5 0|#FF8000||
+|Cloth_Primary|1 0.5 0|#FF8000|{.clothPri}|
 | Abc      | Def      | 123      |
 
 ## Solid Colour MSK
