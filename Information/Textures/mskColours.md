@@ -2,7 +2,7 @@
 title: MSK Colours
 description: MSK Colour Parameters
 published: true
-date: 2025-05-12T20:57:48.653Z
+date: 2025-05-12T20:57:58.041Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-12T19:59:51.080Z
@@ -38,6 +38,7 @@ For less complex meshes, the MSK map can use the Color_01, Color_02, and Color_0
 |Color_01|1 0 0|#FF0000|{.color1}|
 |Color_02|0 1 0|#00FF00|{.color2}|
 |Color_03|0 0 1|#0000FF|{.color3}|
+||||
 
 
 ## Solid Colour MSK
