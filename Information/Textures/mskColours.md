@@ -2,7 +2,7 @@
 title: MSK Colours
 description: MSK Colour Parameters
 published: false
-date: 2025-05-12T20:07:32.433Z
+date: 2025-05-12T20:09:06.793Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-12T19:59:51.080Z
@@ -16,7 +16,9 @@ There are **12** parameters used by the MSK armour shader(s).
 | Parameter | sRGB | Hex | Swatch
 |----------|----------|----------|----------|
 |Cloth_Primary|1 0.5 0|#FF8000|{.clothPri}|
-| Abc      | Def      | 123      |
+|Cloth_Secondary|1 0 0|#FF0000|{.clothSec}|
+|Cloth_Tertiary|1 0.5 0.5|#FF8080|{.clothTer}|
+
 
 ## Solid Colour MSK
 If your MSK map is a solid colour, you can use the UUID of the Engine_MSK colour map in your material instead of creating a new solid map.
