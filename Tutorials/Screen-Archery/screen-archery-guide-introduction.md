@@ -2,7 +2,7 @@
 title: Introduction: Screen Archery
 description: What even is screen archery?
 published: false
-date: 2024-10-25T13:27:54.443Z
+date: 2025-05-15T16:39:04.177Z
 tags: guide, wip, screen archery
 editor: markdown
 dateCreated: 2024-06-24T08:17:29.706Z
@@ -10,7 +10,7 @@ dateCreated: 2024-06-24T08:17:29.706Z
 
 ![](/test/alithea/soon_tm.webp)
 
-![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp)
+![alfira_and_lakrissa_cmty.webp](/test/alithea/alfira_and_lakrissa_cmty.webp =750x)
 
 ## Introduction to Screen Archery: Capturing the Art Within Games
 
@@ -47,9 +47,9 @@ Screen archery provides a way to share unique perspectives, tell compelling stor
 
 This guide series will take you step-by-step through the process of becoming a proficient screen archer, starting with the very basics:
 
-1.  Getting started: Understanding the basic tools and settings required for screen archery.
+[1.  Getting started: Understanding the basic tools and settings required for screen archery.](/Tutorials/Screen-Archery/screen-archery-guide-part-1)
 2.  Fundamentals: Learning how to frame shots, use lighting, and create compelling compositions without third party tools.
-3.  Integrating free tools and mods.
+3.  FUNdamentals: Integrating free mods.
 4.  Technical skills I: Exploring Otis' camera tool and ReShade to enhance your captures. (Beginner)
 5.  Technical skills II: Exploring advanced techniques and tools to enhance your captures. (Advanced)
 6.  Creative expression: Tips and tricks for developing your unique style and storytelling through screen archery.
@@ -62,6 +62,3 @@ Join us on this journey as we delve into the fascinating world of screen archery
 
 ![](/test/alithea/cmty_pride_logo.webp)
 
-Shall we? (insert link to part 1)
-
-Note: I'd like to include examples to show the difference between vanilla, modded, and including paid tools
