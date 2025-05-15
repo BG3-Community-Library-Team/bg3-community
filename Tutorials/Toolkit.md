@@ -2,13 +2,13 @@
 title: Toolkit
 description: This page is a list of existing Tutorials relating to Larian's Baldur's Gate 3 Toolkit
 published: true
-date: 2025-05-04T09:57:01.017Z
+date: 2025-05-15T16:24:22.540Z
 tags: tutorial, tutorials, toolkit
 editor: markdown
 dateCreated: 2024-10-25T11:20:05.267Z
 ---
 
-# LIST:Toolkit
+# List:Toolkit
 This page is a list of existing Tutorials relating to Larian's BG3 Toolkit.
 
 ## Pages
