@@ -2,13 +2,13 @@
 title: Visual
 description: List of Visual Mod Tutorials
 published: true
-date: 2025-02-09T21:43:21.376Z
+date: 2025-05-15T16:23:26.776Z
 tags: visual, tutorial, textures, meshes, tutorials
 editor: markdown
 dateCreated: 2024-05-02T22:12:50.307Z
 ---
 
-# LIST:Visual
+# List:Visual
 This page is a list of existing Tutorials relating to Visual Mods.
 
 ## Getting Started
