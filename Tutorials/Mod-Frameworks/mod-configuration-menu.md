@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-05-18T17:26:15.254Z
+date: 2025-05-18T17:26:48.136Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -21,7 +21,7 @@ This documentation is aimed at mod authors who want to integrate their mods with
 If you're looking to quickly integrate MCM into your mod, here's the process at a glance:
 
 1. **Create an `MCM_blueprint.json`** file in the same folder as `meta.lsx`
-2. **Add MCM as a dependency** in your mod's `meta.lsx` file or add `"Optional": true` to your blueprint file.
+2. **Add MCM as a dependency** in your mod's `meta.lsx` file ([guide here](/https://wiki.bg3.community/en/Tutorials/General/Basic/adding-mod-dependencies)) or add `"Optional": true` to your blueprint file.
 3. **Replace code** related to settings in your mod with MCM API calls: **get settings' values with `MCM.Get("settingId")`.**
 *(SE mods get a global `MCM` providing all MCM functions that can be used)*
 
