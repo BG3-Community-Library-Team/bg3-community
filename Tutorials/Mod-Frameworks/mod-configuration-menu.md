@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-04-29T22:43:33.915Z
+date: 2025-05-18T17:24:22.677Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -22,7 +22,8 @@ If you're looking to quickly integrate MCM into your mod, here's the process at 
 
 1. **Create an `MCM_blueprint.json`** file in the same folder as `meta.lsx`
 2. **Add MCM as a dependency** in your mod's `meta.lsx` file or add `"Optional": true` to your blueprint file.
-3. **Replace code** related to settings in your mod with MCM API calls: get settings' values with `MCM.Get("settingId")`
+3. **Replace code** related to settings in your mod with MCM API calls: **get settings' values with `MCM.Get("settingId")`.**
+*(SE mods get a global `MCM` providing all MCM functions that can be used)*
 
 
 > It's **recommended to just pick an existing blueprint** from MCM-integrated mods **and adapt it**, such as:
