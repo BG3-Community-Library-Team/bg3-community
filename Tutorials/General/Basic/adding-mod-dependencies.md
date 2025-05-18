@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2025-05-18T03:06:48.236Z
+date: 2025-05-18T03:11:45.732Z
 tags: mods, load order, modsuse, dependencies, dependency, meta.lsx, mod dependency, deps
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -86,7 +86,7 @@ To declare a conflict, use the `Conflicts` node:
 Since this info is embedded in the .pak file of your mod, you can update them as needed for each version of your mod — adding or removing entries depending on what's compatible with that specific release.
 
 > Declaring conflicts helps avoid bugs and confusion by warning users that enabled mutually exclusive mods.
-Some mod managers may in the future use this information to show warnings or automatically disable conflicting mods. **MCM 1.32+ warns users of conflicts in their load orders**.
+Mod managers may in the future use this information to show warnings or automatically disable conflicting mods. **MCM 1.32+ warns users of conflicts in their load orders**.
 > {.is-success}
 
 ### Why adding dependencies? I don't need them!
