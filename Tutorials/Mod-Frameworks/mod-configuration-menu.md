@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-05-18T17:27:41.498Z
+date: 2025-05-18T17:28:06.485Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -16,7 +16,7 @@ Most importantly, it allows authors to have a robust JSON-like configuration exp
 
 This documentation is aimed at mod authors who want to integrate their mods with MCM. If you are a player looking to use MCM to configure mods, please refer to the [Nexus Mods page](https://www.nexusmods.com/baldursgate3/mods/9162 'MCM on Nexus Mods') for instructions. This documentation provides a thorough guide on the concepts behind MCM, the features it provides to mod authors, and how to integrate MCM into your mod. You can also use the table of contents below to navigate to a desired section.
 
-## Quick-start guide
+## ==Quick-start guide==
 
 If you're looking to quickly integrate MCM into your mod, here's the process at a glance:
 
