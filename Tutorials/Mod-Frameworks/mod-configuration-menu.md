@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-05-18T17:24:22.677Z
+date: 2025-05-18T17:26:15.254Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -30,6 +30,7 @@ If you're looking to quickly integrate MCM into your mod, here's the process at 
 > [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/main/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
 > [Smart Autosaving](https://github.com/AtilioA/BG3-smart-autosaving/blob/main/Smart%20Autosaving/Mods/SmartAutosaving/MCM_blueprint.json)
 > [MCM demo](#mcm-demo) (as of MCM 1.23)
+An LLM is likely able to adapt them into a different blueprint, especially if you also provide it MCM's [blueprint schema](https://raw.githubusercontent.com/AtilioA/BG3-MCM/refs/heads/main/.vscode/schema.json) for context.
 {.is-success}
 
 That's it for a basic integration! MCM will warn you about mistakes in your code or blueprint file.
