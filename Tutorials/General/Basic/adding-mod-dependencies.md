@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2025-05-16T23:00:09.583Z
+date: 2025-05-18T03:03:28.425Z
 tags: mods, load order, modsuse, dependencies, dependency, meta.lsx, mod dependency, deps
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -47,7 +47,7 @@ After:
 > It is also recommended to always set the required version (`Version64`) of the dependency to the version you're using during the development of your mod. In the example above, it's MCM 1.14.0.0.
 > As modding evolves, mod managers may use this to enforce correct versions for dependencies. **MCM already uses it to warn users if they have outdated dependencies**.
 >
-> Example: if your mod has dependencies *A* and *B*, and you need *B* to be version 2.1.1.0 or greater due to a recent fix, you should use 2.1.1.0 for the dependency version (generate the `Version64` number with BG3MM, in this case 72198333673766912)
+> Example: if your mod has dependencies *A* and *B*, and you need *B* to be version 2.0.0.0 or greater due to a recent fix, you should use 2.0.0.0 for the dependency version (generate the `Version64` number with BG3MM, in this case 72057594037927936)
 {.is-info}
 
 That's it! You've just added a dependency to your mod. By properly declaring dependencies, you will:
@@ -61,6 +61,31 @@ That's it! You've just added a dependency to your mod. By properly declaring dep
 
 > **Tip**: the [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper) extension provides buttons and commands to simplify adding dependencies to your mods.
 > {.is-info}
+
+## Declaring conflicts
+
+Conversely, you can also declare other mods your mod **conflicts with**. This is useful when, for example, loading both would break functionality or cause duplicate UI elements, etc.
+
+To declare a conflict, use the `Conflicts` node:
+
+```xml
+<node id="Conflicts">
+  <children>
+    <node id="ModuleShortDesc">
+      <attribute id="Folder" type="LSString" value="NoPressAnyKeyButton_2bae5aa8-bf6a-d196-069c-4269f71d22a3" />
+      <attribute id="MD5" type="LSString" value="" />
+      <attribute id="Name" type="LSString" value="No Press Any Key (non-MCM version)" />
+      <attribute id="PublishHandle" type="uint64" value="0" />
+      <attribute id="UUID" type="guid" value="2bae5aa8-bf6a-d196-069c-4269f71d22a3" />
+      <attribute id="Version64" type="int64" value="37154716253159441" />
+    </node>
+  </children>
+</node>
+```
+
+> Declaring conflicts helps avoid bugs and confusion by preventing users from enabling mutually exclusive mods.
+Some mod managers may in the future use this information to show warnings or automatically disable conflicting mods. **MCM 1.32+ warns users of conflicts in their load orders**.
+> {.is-success}
 
 ### Why adding dependencies? I don't need them!
 
