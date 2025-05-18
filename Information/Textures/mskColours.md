@@ -2,8 +2,8 @@
 title: MSK Colours
 description: MSK Colour Parameters
 published: true
-date: 2025-05-12T21:00:32.367Z
-tags: 
+date: 2025-05-18T18:58:30.576Z
+tags: msk, mskcloth, mskcolor
 editor: markdown
 dateCreated: 2025-05-12T19:59:51.080Z
 ---
