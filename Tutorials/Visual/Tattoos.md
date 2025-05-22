@@ -2,7 +2,7 @@
 title: Creating Makeup and Face / Body tattoos
 description: Guide to create tattoo/makeup textures and get them in game
 published: true
-date: 2025-05-22T16:30:30.839Z
+date: 2025-05-22T16:52:10.696Z
 tags: tattoo, makeup, texture painting, kavt
 editor: markdown
 dateCreated: 2025-05-22T15:00:51.844Z
@@ -85,4 +85,6 @@ Now hook the two up:
 
 ### Setup of Texture Paint workspace
 
+Now we finally switch to the Texture Paint tab. Resize windows as per preference then make sure both the image on the left and right are set to whatever the tattoo was named. On the right also set it to Material mode like so:
 
+![workspacesetup1.png](/tutorials/tattoos_makeup/workspacesetup1.png)
