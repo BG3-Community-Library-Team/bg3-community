@@ -2,8 +2,8 @@
 title: Creating Makeup and Face / Body tattoos
 description: Guide to create tattoo/makeup textures and get them in game
 published: true
-date: 2025-05-22T21:42:17.966Z
-tags: tattoo, makeup, texture painting, kavt
+date: 2025-05-22T21:43:16.281Z
+tags: blender, tattoo, makeup, texture painting, kavt
 editor: markdown
 dateCreated: 2025-05-22T15:00:51.844Z
 ---
