@@ -2,7 +2,7 @@
 title: Creating Makeup and Face / Body tattoos
 description: Guide to create tattoo/makeup textures and get them in game
 published: true
-date: 2025-05-22T20:51:19.389Z
+date: 2025-05-22T21:42:17.966Z
 tags: tattoo, makeup, texture painting, kavt
 editor: markdown
 dateCreated: 2025-05-22T15:00:51.844Z
@@ -149,6 +149,51 @@ Ok now we move on.
 
 ## Editing your atlas
 
-> Here is where things may differ due to different graphics programs as well as different atlas sizes such as those between vanilla/UT and KAVT. Again, for KAVT specific info please check out the [articles on Nexus](https://www.nexusmods.com/baldursgate3/mods/16325?tab=articles)!
+> Here is where things may differ due to different graphics programs as well as different atlas sizes such as those between vanilla/UT and KAVT. Again, for KAVT specific info please check out the [articles on Nexus](https://www.nexusmods.com/baldursgate3/mods/16325?tab=articles) as well as the provided working files for editing the special KAVT atlases!
 {.is-info}
 
+Assuming we are working with the vanilla or Unique Tav atlas, we can already grab [Soriyumi's Upscaled Tattoos and Makeup](https://www.nexusmods.com/baldursgate3/mods/1703) from Nexus as a template to work with. These are 8192x8192 and will work out of the box with our 2048x2048 tattoos/makeup.
+
+### Photoshop guide
+
+Open the atlas DDS and copy the contents of each channel into layers for better editing:
+
+![photoshop-channels.png](/tutorials/tattoos_makeup/photoshop-channels.png)
+
+Now create a new guide layout with these settings:
+
+![photoshop-newguidelayout1.png](/tutorials/tattoos_makeup/photoshop-newguidelayout1.png)
+![photoshop-newguidelayout2.png](/tutorials/tattoos_makeup/photoshop-newguidelayout2.png)
+
+If you are editing many tattoos that spread across more channels, it may be useful to organize your layers into groups:
+
+![photoshop-layergroups.png](/tutorials/tattoos_makeup/photoshop-layergroups.png)
+
+So, now we can open our tattoo image into Photoshop as well (it opens in a new tab), select all then copy and paste into our atlas psd (remember to save your working file as you go). Now move it to the spot you'd like to replace (it should snap into place when you are near):
+
+![photoshop-movetattoo.png](/tutorials/tattoos_makeup/photoshop-movetattoo.png)
+
+Once done with adding all tattoos, save this psd to have a future save point to edit further. Now save as and call it something like tattooedits-merged.psd. This is the one we will continue with.
+
+Merge each layer group into themselves, then copy each one into their respective channel of the full/main atlas layer as seen below (note that the green and blue channels aren't edited here thus no change is seen for those). After that flatten the image:
+
+![ps-recomposechannels.gif](/tutorials/tattoos_makeup/ps-recomposechannels.gif)
+
+Now save as DDS (keep that extension all caps):
+
+![photoshop-saveascopy.png](/tutorials/tattoos_makeup/photoshop-saveascopy.png)
+
+And use these settings (this may differ depending on DDS plugin. Shown below is using [Intel® Texture Works Plug-in](https://www.intel.com/content/www/us/en/developer/articles/tool/intel-texture-works-plugin.html))
+
+> Important: BC1 Linear and NO mipmaps
+{.is-info}
+
+![photoshop-inteldds.png](/tutorials/tattoos_makeup/photoshop-inteldds.png)
+
+Now rename your file to match exactly the one you are replacing and place it in the game files in the appropriate place (see The Basics at the beginning of this tutorial).
+
+Done!
+
+### GIMP guide
+...someone help me here xd
+feel free to edit
