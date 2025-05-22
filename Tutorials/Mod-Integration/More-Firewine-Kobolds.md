@@ -2,7 +2,7 @@
 title: More Firewine Kobolds
 description: How to customize or add 'More Firewine Kobolds' entries using JSON and SE
 published: true
-date: 2025-05-21T22:15:15.682Z
+date: 2025-05-22T15:43:38.154Z
 tags: se, script-extender, configuration
 editor: markdown
 dateCreated: 2025-05-21T22:15:15.682Z
@@ -197,7 +197,7 @@ This will spawn 2 normal kobolds and 1 drunk kobold together as a single encount
 
 - **Regions**: A dictionary of regions, with region IDs as keys.
   - **Entries**: A list of potential spawns for this region.
-    - Option 1: Reference a spawn template with `{ "SpawnTemplates": "TemplateName", "Weight": N }`
+    - Option 1: Reference a spawn template with `{ "SpawnTemplate": "TemplateName", "Weight": N }`
     - Option 2: Define an inline entry with the same fields as a spawn template plus a Weight.
   - **Weight**: The weight of this entry. This is used to determine the probability of this entry being selected in the pool of possible spawns.
 
@@ -208,7 +208,7 @@ To add a new spawn type:
 1. Open the `mfk_encounter_table.json` file in the `ScriptExtender` folder.
 2. Find the UUID of the creature template you want to use.
 3. Either:
-   - Add a new spawn template to the `SpawnTemplates` section, then reference it in a region's entries.
+   - Add a new spawn template to the `SpawnTemplatesDefs` section, then reference it in a region's entries.
    - Add an inline entry directly to a region's entries.
 4. Set the weight relative to other entries.
 5. Specify any status effects you want the creature to have.
@@ -246,7 +246,7 @@ Changes made via the API are persisted to disk automatically.
 ```lua
 -- Register or overwrite a spawn template
 -- Returns true on success, false on failure
-Mods.MoreFirewineKobolds.API.RegisterSpawnTemplates(id, spawnTemplateTable)
+Mods.MoreFirewineKobolds.API.RegisterSpawnTemplateDef(id, spawnTemplateTable)
 
 -- Add (or overwrite if same SpawnTemplates present) an entry to a region
 -- Returns true on success, false on failure
@@ -262,11 +262,11 @@ Mods.MoreFirewineKobolds.API.SetEntryWeight(regionId, key, newWeight)
 
 ```lua
 -- Register a new spawn template for a stealth kobold
-Mods.MoreFirewineKobolds.API.RegisterSpawnTemplates("StealthRangerKobold", {TemplateID = "1ad1fdb1-ea7f-492d-a72a-e282d9965b47",Quantity = { fixed = 1 },Statuses = { "INVISIBLE", "HASTE" }})
+Mods.MoreFirewineKobolds.API.RegisterSpawnTemplateDef("StealthRangerKobold", {TemplateID = "1ad1fdb1-ea7f-492d-a72a-e282d9965b47",Quantity = { fixed = 1 },Statuses = { "INVISIBLE", "HASTE" }})
 
 -- Add a new entry to a region using a spawn template
 Mods.MoreFirewineKobolds.API.AddRegionEntry("WLD", {
-  SpawnTemplates = "StealthRangerKobold",
+  SpawnTemplate = "StealthRangerKobold",
   Weight = 25
 })
 
@@ -293,7 +293,7 @@ Ext.Events.SessionLoaded:Subscribe(function()
   -- Make sure MFK is loaded
   if Mods.MoreFirewineKobolds and Mods.MoreFirewineKobolds.API then
     -- Add your custom templates and entries here
-    Mods.MoreFirewineKobolds.API.RegisterSpawnTemplates("MyCustomKobold", { ... })
+    Mods.MoreFirewineKobolds.API.RegisterSpawnTemplateDef("MyCustomKobold", { ... })
   end
 end)
 ```
@@ -307,8 +307,8 @@ Ext.Events.SessionLoaded:Subscribe(function()
     local data = Ext.Json.Parse(Ext.IO.LoadFile("my_kobold_additions.json"))
 
     -- Register spawn templates
-    for id, template in pairs(data.SpawnTemplates or {}) do
-      Mods.MoreFirewineKobolds.API.RegisterSpawnTemplates(id, template)
+    for id, template in pairs(data.SpawnTemplate or {}) do
+      Mods.MoreFirewineKobolds.API.RegisterSpawnTemplateDef(id, template)
     end
 
     -- Add region entries
