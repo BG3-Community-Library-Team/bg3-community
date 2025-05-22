@@ -2,7 +2,7 @@
 title: Creating Makeup and Face / Body tattoos
 description: Guide to create tattoo/makeup textures and get them in game
 published: true
-date: 2025-05-22T16:52:10.696Z
+date: 2025-05-22T20:09:21.272Z
 tags: tattoo, makeup, texture painting, kavt
 editor: markdown
 dateCreated: 2025-05-22T15:00:51.844Z
@@ -88,3 +88,28 @@ Now hook the two up:
 Now we finally switch to the Texture Paint tab. Resize windows as per preference then make sure both the image on the left and right are set to whatever the tattoo was named. On the right also set it to Material mode like so:
 
 ![workspacesetup1.png](/tutorials/tattoos_makeup/workspacesetup1.png)
+
+### Some important tools to note
+
+The basic tools we will be using are brushes (some of these can use tablet sensitivity), radius, the black/white spectrum, and symmetry:
+
+![keytools1.png](/tutorials/tattoos_makeup/keytools1.png)
+
+Another useful tool, especially for lines and curves, is brush stabilizer found up here (play around with Radius and Factor to preference):
+
+![stabilize.png](/tutorials/tattoos_makeup/stabilize.png)
+
+And finally, since tattoo/makeup maps are black and white masks - we will primarily be painting with white to draw the tattoos/makeup. Black will "erase", and everything in between may be played with to work with transparency. 
+
+Brush Strength can also be used for transparency, just note that it works additively which may not always be desired.
+
+![greyshades.png](/tutorials/tattoos_makeup/greyshades.png)
+
+### Saving the image (save often just in case!)
+
+As we paint, we see this projected onto the head/ear UV map shown in our tattoo image like so:
+
+(orange text added onto screenshot - not part of the tattoo)
+![uvmapcompare.png](/tutorials/tattoos_makeup/uvmapcompare.png)
+
+We can see the lines that transcend the UV seams automatically get mapped as appropriate for seamless transitions - this is one of the major advantages of doing this in Blender vs 2D editing of the tattoo maps alone!
