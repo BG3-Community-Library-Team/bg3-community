@@ -2,7 +2,7 @@
 title: Visual
 description: List of Visual Mod Tutorials
 published: true
-date: 2025-05-15T16:23:26.776Z
+date: 2025-05-22T15:02:54.853Z
 tags: visual, tutorial, textures, meshes, tutorials
 editor: markdown
 dateCreated: 2024-05-02T22:12:50.307Z
@@ -21,6 +21,7 @@ This page is a list of existing Tutorials relating to Visual Mods.
 - [Creating Custom Head Armatures](mrboneswildguide)
 - [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
 - [Custom Wrinkle Map Guide And Template](/Tutorials/Visual/Adding-A-Custom-Wrinkle-Map-To-A-Custom-Head)
+- [Creating Tattoos and Makeup](/Tutorials/Visual/Tattoos)
 {.links-list}
 
 ## Armour
