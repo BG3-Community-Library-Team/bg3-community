@@ -2,7 +2,7 @@
 title: Creating Makeup and Face / Body tattoos
 description: Guide to create tattoo/makeup textures and get them in game
 published: true
-date: 2025-05-22T20:09:21.272Z
+date: 2025-05-22T20:51:19.389Z
 tags: tattoo, makeup, texture painting, kavt
 editor: markdown
 dateCreated: 2025-05-22T15:00:51.844Z
@@ -113,3 +113,42 @@ As we paint, we see this projected onto the head/ear UV map shown in our tattoo 
 ![uvmapcompare.png](/tutorials/tattoos_makeup/uvmapcompare.png)
 
 We can see the lines that transcend the UV seams automatically get mapped as appropriate for seamless transitions - this is one of the major advantages of doing this in Blender vs 2D editing of the tattoo maps alone!
+
+So when we're happy with what we did we save (you should be saving often anyway, you never know when Blender may crash):
+
+![save1.png](/tutorials/tattoos_makeup/save1.png)
+
+Put it somewhere in your working files:
+
+![save2.png](/tutorials/tattoos_makeup/save2.png)
+
+Good job! Before we exit Blender and continue to Photoshop (or editor of choice), we may want to make more because now we got the flow right?
+
+## Creating multiple tattoos
+
+There may be a better way of doing this, but here's a way to kind of organize it.
+
+Unhook your tattoo node and create another, hook it up and now we're making a second separate image:
+
+![createnewimageagain.png](/tutorials/tattoos_makeup/createnewimageagain.png)
+
+Note that the tattoo and makeup images are essentially interchangeable, both here in Blender as well as on the atlases - the only determining factor is which atlas you put it on whether it shows in game as as makeup option or tattoo.
+
+What we can do here for funsies is hook one up to tattoo and the other to makeup. Give one a separate colour to better see what you're doing (this is only in blender, our image will still be greyscale).
+
+![makeupandtattooslots-nodes.png](/tutorials/tattoos_makeup/makeupandtattooslots-nodes.png)
+
+The image below is a demonstration of that. 
+
+> Note: The Toolbox shaders show so as the tattoo overlays the makeup - as of writing this I don't believe the game's shaders work this way. From what I can tell the makeup set at 100% intensity will completely overlap the tattoo, and values below that will be mixing the two.
+{.is-success}
+
+![makeupandtattooslots.png](/tutorials/tattoos_makeup/makeupandtattooslots.png)
+
+Ok now we move on.
+
+## Editing your atlas
+
+> Here is where things may differ due to different graphics programs as well as different atlas sizes such as those between vanilla/UT and KAVT. Again, for KAVT specific info please check out the [articles on Nexus](https://www.nexusmods.com/baldursgate3/mods/16325?tab=articles)!
+{.is-info}
+
