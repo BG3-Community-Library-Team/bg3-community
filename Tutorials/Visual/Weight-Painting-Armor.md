@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: true
-date: 2025-01-04T19:25:57.983Z
+date: 2025-05-23T19:12:28.641Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -73,6 +73,7 @@ To find armor for your chosen body type, refer to the following list of tags:
 `HFL` for Halflings
 `HRC` for Half-Orcs
 `HUM` for Humans, Elves, Drows, Half-Elves and Tieflings
+`TIF` for the few items that have specific changes made for Tieflings
 ㅤ
 ***BODY TYPE:***
 `F` for Body Type 1 (fem)
