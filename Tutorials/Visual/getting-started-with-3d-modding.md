@@ -2,7 +2,7 @@
 title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
 published: true
-date: 2024-09-23T18:59:32.450Z
+date: 2025-05-23T18:25:45.367Z
 tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -49,6 +49,7 @@ What it won't cover is what happens after the initial set up, i.e. the creation 
 ### Initial setup
 To download, head over to Releases and grab the latest ExportTool zip. For those unfamiliar with Github, the releases will look like this. Just grab the zip and (if you need it) the .NET dependency via the link.
 
+*NOTE: the release in the screenshot below may be outdated - just go ahead and grab the most recent beta*
 ![lslib-release.png](/tutorials/getting_started_visual/lslib-release.png)
 
 You can install/extract this where you want your modding utilities to be. 
