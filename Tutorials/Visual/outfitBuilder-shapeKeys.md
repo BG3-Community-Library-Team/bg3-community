@@ -2,7 +2,7 @@
 title: Making Shape Keys with Outfit Builder
 description: outfit builder tut
 published: false
-date: 2025-05-23T19:11:18.140Z
+date: 2025-05-23T19:15:10.824Z
 tags: tutorial, outfit builder, shape keys
 editor: markdown
 dateCreated: 2025-05-23T18:41:47.224Z
@@ -23,6 +23,10 @@ Outfit Builder is a tool created to help refit meshes between body types. The in
 ## Creating your own Shape Keys
 
 wip 
+
+### Tips
+
+Mesh geometry should be similar
 
 ## Things you need
 - [Outfit Builder](https://github.com/PerplexedPeach/outfit_builder)
