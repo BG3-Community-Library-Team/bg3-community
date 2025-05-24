@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-24T18:28:14.602Z
+date: 2025-05-24T18:29:06.490Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -15,3 +15,5 @@ The lovely **Lynia** has created a tutorial on how to add cloth physics without 
 [See her video here](https://www.youtube.com/watch?v=-dXZ11lBXH4&list=PLy0yNPbdX35HvxgIuDE-oI9br25SoWtOk)
 
 You’ll need to download [this fork](https://github.com/nicoco007/lslib) of lslib
+
+[![Video](https://img.youtube.com/vi/-dXZ11lBXH4&list=PLy0yNPbdX35HvxgIuDE-oI9br25SoWtOk/0.jpg)](https://www.youtube.com/watch?v=-dXZ11lBXH4&list=PLy0yNPbdX35HvxgIuDE-oI9br25SoWtOk)
