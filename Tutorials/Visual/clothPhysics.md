@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-25T18:17:39.915Z
+date: 2025-05-25T18:31:56.740Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -74,6 +74,18 @@ The best way to create the cloth mesh will depend on the shape of the mesh you'r
 - For things that dangle like ribbons, chains, tassles, etc. we'll follow the method of **creating a plane**.
 
 ### Duplicated mesh method
+
+Note that this method assumes that the mesh is **not** solidified/extruded to create faces on the inside. You do not want to create a solidified cloth mesh. It should always be a plane. 
+
+If your mesh looks like the cape shown in the image below and has normals facing outwards on both sides of the mesh, when you duplicate the mesh you'll have to make sure only **one side** of faces are selected.
+
+[![Screenshot 2025 05 25 142236](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-142236.md.png)](https://tinypic.host/image/Screenshot-2025-05-25-142236.3YEaVz)
+
+Selecting the faces from the **UV Editing** tab is helpful here. Only the outside faces of the cape are selected. Not the faces that point in towards the character.
+
+In this case, we would duplicate these faces from **Edit Mode**, then separate them into their own object by pressing `P` then the **Selection** option from the pop-up.
+
+![Screenshot 2025 05 25 142635](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-142635.png)
 
 In **Object Mode**, select the mesh object you'll be applying the physics to from the **Outliner**
 Hit `Shift + D` to duplicate the mesh, then press the `Esc` key before clicking elsewhere to return it to the same position as the original.
