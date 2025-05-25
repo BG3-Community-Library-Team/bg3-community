@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-25T18:07:07.684Z
+date: 2025-05-25T18:09:43.625Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -75,27 +75,30 @@ The best way to create the cloth mesh will depend on the shape of the mesh you'r
 
 ### Duplicated mesh method
 
-- In **Object Mode**, select the mesh object you'll be applying the physics to from the **Outliner**
-- Hit `Shift + D` to duplicate the mesh, then press the `Esc` key before clicking elsewhere to return it to the same position as the original.
-	- If the duplicated mesh is not in the same position as the original mesh, you can manually set the transform location values to 0 (or whatever the values are if you haven't applied transforms yet) in the **Object Properties** tab.
+In **Object Mode**, select the mesh object you'll be applying the physics to from the **Outliner**
+Hit `Shift + D` to duplicate the mesh, then press the `Esc` key before clicking elsewhere to return it to the same position as the original.
+- If the duplicated mesh is not in the same position as the original mesh, you can manually set the transform location values to 0 (or whatever the values are if you haven't applied transforms yet) in the **Object Properties** tab.
+
 > Duplicate is _not the same_ as copy and paste
 {.is-warning}
-- Your cloth mesh does not need to have all same fold and wrinkle details as the original mesh, it just needs to roughly follow the same shape. Remove these details by smoothing out the cloth mesh. 
-- With your cloth mesh selected, switch to **Sculpt Mode** via the mode dropdown or by holding `Ctrl +  Tab` then with the option wheel open, press `2`, or use your mouse to hover over Sculpt Mode before releasing the keys.
+
+Your cloth mesh does not need to have all same fold and wrinkle details as the original mesh, it just needs to roughly follow the same shape. Remove these details by smoothing out the cloth mesh. 
+
+With your cloth mesh selected, switch to **Sculpt Mode** via the mode dropdown or by holding `Ctrl +  Tab` then with the option wheel open, press `2`, or use your mouse to hover over Sculpt Mode before releasing the keys.
 
 ![Screenshot 2025 05 25 133040](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133040.png) [![Screenshot 2025 05 25 133606](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133606.md.png)](https://tinypic.host/image/Screenshot-2025-05-25-133606.3YolL4)
 
-- Use the **Smooth** tool to smooth out the mesh.
+Use the **Smooth** tool to smooth out the mesh.
 ![Screenshot 2025 05 25 133944](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133944.png)
 - Some tips to help:
 	- Toggle isolating your mesh by pressing the `/` key
-	- If your mesh is symmetrical, turn on x-axis symmetry before you begin sculpting
+	- If your mesh is symmetrical, turn on **axis symmetry** before you begin sculpting
 	- Use the keys `[` and `]` to change the size of your brush
 
-- Check to make sure the body isn't clipping through the cloth. It is okay if the original mesh clips through.
+Check to make sure the body isn't clipping through the cloth. It is okay if the original mesh clips through.
 - If the body *is* clipping, go back to sculpt mode and adjust your cloth mesh. The **Elastic Grab** tool is good for this. 
 
-- In the image on the left, we can see that the body does not clip through. On the right, we see that the cloth mesh does clip through the original mesh.
+In the image on the left, we can see that the body does not clip through. On the right, we see that the cloth mesh does clip through the original mesh. This is acceptable.
 [![nobodyclipping](https://tinypic.host/images/2025/05/25/nobodyclipping.md.png)](https://tinypic.host/image/nobodyclipping.3Yo0PE) [![meshclipping](https://tinypic.host/images/2025/05/25/meshclipping.md.png)](https://tinypic.host/image/meshclipping.3Yo6M5)
 
 The cloth mesh is ready to vertex paint.
