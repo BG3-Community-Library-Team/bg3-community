@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-25T17:39:20.632Z
+date: 2025-05-25T17:47:06.290Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -84,6 +84,13 @@ The best way to create the cloth mesh will depend on the shape of the mesh you'r
 - With your cloth mesh selected, switch to **Sculpt Mode** via the mode dropdown or by holding `Ctrl +  Tab` then with the option wheel open, press `2`, or use your mouse to hover over Sculpt Mode before releasing the keys.
 
 ![Screenshot 2025 05 25 133040](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133040.png) [![Screenshot 2025 05 25 133606](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133606.md.png)](https://tinypic.host/image/Screenshot-2025-05-25-133606.3YolL4)
+
+- Use the **Smooth** tool to smooth out the mesh.
+
+> **Tips**
+> - Toggle isolating your mesh by pressing the `/` key.
+> - If your mesh is symmetrical, turn on X-axis symmetry before you begin sculpting.
+{.is-info}
 
 ### Create a new plane method
 
