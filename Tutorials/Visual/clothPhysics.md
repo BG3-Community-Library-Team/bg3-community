@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-25T17:28:19.785Z
+date: 2025-05-25T17:39:20.632Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -81,6 +81,9 @@ The best way to create the cloth mesh will depend on the shape of the mesh you'r
 > Duplicate is _not the same_ as copy and paste
 {.is-warning}
 - Your cloth mesh does not need to have all same fold and wrinkle details as the original mesh, it just needs to roughly follow the same shape. Remove these details by smoothing out the cloth mesh. 
+- With your cloth mesh selected, switch to **Sculpt Mode** via the mode dropdown or by holding `Ctrl +  Tab` then with the option wheel open, press `2`, or use your mouse to hover over Sculpt Mode before releasing the keys.
+
+![Screenshot 2025 05 25 133040](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133040.png) [![Screenshot 2025 05 25 133606](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133606.md.png)](https://tinypic.host/image/Screenshot-2025-05-25-133606.3YolL4)
 
 ### Create a new plane method
 
