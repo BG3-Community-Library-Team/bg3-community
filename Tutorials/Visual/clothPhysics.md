@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-25T17:11:20.512Z
+date: 2025-05-25T17:25:42.091Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -22,6 +22,7 @@ The lovely **Lynia** has created a tutorial on how to add cloth physics without 
 
 - [This fork](https://github.com/nicoco007/lslib) of lslib
 - [Blender](https://www.blender.org/download/) (any version 3.6 or above)
+	- Lynia uses version 4.1 in the video tutorial. The steps documented in this guide use version 3.6
 - [Vertex Color Master Add-On](https://github.com/andyp123/blender_vertex_color_master/releases) (optional, but recommended)
 
 # Steps
@@ -67,6 +68,23 @@ If your mesh has over 10,000 vertices, reduce it or separate the mesh into diffe
 
 ## Creating the cloth mesh
 
+The best way to create the cloth mesh will depend on the shape of the mesh you're applying the physics to. 
+
+- For something like a skirt, a dress, a robe, etc. that wraps around the body, we'll use the method of **duplicating the mesh**. 
+- For things that dangle like ribbons, chains, tassles, etc. we'll follow the method of **creating a plane**.
+
+### Duplicated mesh method
+
+- In **Object Mode**, select the mesh object you'll be applying the physics to from the **Outliner**
+- Hit `Shift + D` to duplicate the mesh, then press the `Esc` key before clicking elsewhere to return it to the same position as the original.
+	- If the duplicated mesh is not in the same position as the original mesh, you can manually set the transform location values to 0 (or whatever the values are if you haven't applied transforms yet) in the **Object Properties** tab.
+> Duplicate is _not the same_ as copy and paste
+{.is-warning}
+- Your cloth mesh does not need to have all same fold and wrinkle details as the original mesh. 
+
+### Create a new plane method
+
+- wip
 
 ## Vertex Painting
 
