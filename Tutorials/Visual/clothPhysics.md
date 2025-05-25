@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-25T18:09:51.184Z
+date: 2025-05-25T18:14:46.419Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -104,6 +104,9 @@ In the image on the left, we can see that the body does not clip through. On the
 The cloth mesh is ready to vertex paint.
 
 ### Create a new plane method
+
+Something like this bow is a good example of when to use the plane method to create the cloth mesh as it is meant to hang down off the body, not conform to it. 
+[![Screenshot 2025 05 25 141320](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-141320.md.png)](https://tinypic.host/image/Screenshot-2025-05-25-141320.3YoFJ9)
 
 - wip
 
