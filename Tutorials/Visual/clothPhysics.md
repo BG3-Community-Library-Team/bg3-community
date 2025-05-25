@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-25T17:06:25.520Z
+date: 2025-05-25T17:11:20.512Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -21,7 +21,7 @@ The lovely **Lynia** has created a tutorial on how to add cloth physics without 
 ## Things You'll Need
 
 - [This fork](https://github.com/nicoco007/lslib) of lslib
-- [Blender](https://www.blender.org/download/)
+- [Blender](https://www.blender.org/download/) (any version 3.6 or above)
 - [Vertex Color Master Add-On](https://github.com/andyp123/blender_vertex_color_master/releases) (optional, but recommended)
 
 # Steps
@@ -66,6 +66,11 @@ This will show the information in the bottom right corner of the Blender window.
 If your mesh has over 10,000 vertices, reduce it or separate the mesh into different pieces so that the piece that needs the cloth physics is less than 10,000 vertices.
 
 ## Creating the cloth mesh
+
+
 ## Vertex Painting
 
+
 ## Exporting from Blender
+
+## LSlib
