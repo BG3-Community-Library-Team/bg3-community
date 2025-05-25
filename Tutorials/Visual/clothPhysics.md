@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-25T18:09:43.625Z
+date: 2025-05-25T18:09:51.184Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -92,7 +92,7 @@ Use the **Smooth** tool to smooth out the mesh.
 ![Screenshot 2025 05 25 133944](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133944.png)
 - Some tips to help:
 	- Toggle isolating your mesh by pressing the `/` key
-	- If your mesh is symmetrical, turn on **axis symmetry** before you begin sculpting
+	- If your mesh is symmetrical, turn on **x-axis symmetry** before you begin sculpting
 	- Use the keys `[` and `]` to change the size of your brush
 
 Check to make sure the body isn't clipping through the cloth. It is okay if the original mesh clips through.
