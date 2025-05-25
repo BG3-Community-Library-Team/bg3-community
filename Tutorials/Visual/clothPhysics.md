@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-25T18:06:47.869Z
+date: 2025-05-25T18:07:07.684Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -98,7 +98,7 @@ The best way to create the cloth mesh will depend on the shape of the mesh you'r
 - In the image on the left, we can see that the body does not clip through. On the right, we see that the cloth mesh does clip through the original mesh.
 [![nobodyclipping](https://tinypic.host/images/2025/05/25/nobodyclipping.md.png)](https://tinypic.host/image/nobodyclipping.3Yo0PE) [![meshclipping](https://tinypic.host/images/2025/05/25/meshclipping.md.png)](https://tinypic.host/image/meshclipping.3Yo6M5)
 
-The cloth mesh is ready to vertex paint!
+The cloth mesh is ready to vertex paint.
 
 ### Create a new plane method
 
