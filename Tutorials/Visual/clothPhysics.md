@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-25T17:25:42.091Z
+date: 2025-05-25T17:28:19.785Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -80,7 +80,7 @@ The best way to create the cloth mesh will depend on the shape of the mesh you'r
 	- If the duplicated mesh is not in the same position as the original mesh, you can manually set the transform location values to 0 (or whatever the values are if you haven't applied transforms yet) in the **Object Properties** tab.
 > Duplicate is _not the same_ as copy and paste
 {.is-warning}
-- Your cloth mesh does not need to have all same fold and wrinkle details as the original mesh. 
+- Your cloth mesh does not need to have all same fold and wrinkle details as the original mesh, it just needs to roughly follow the same shape. Remove these details by smoothing out the cloth mesh. 
 
 ### Create a new plane method
 
