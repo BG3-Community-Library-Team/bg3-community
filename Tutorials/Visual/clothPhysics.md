@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-25T17:47:06.290Z
+date: 2025-05-25T18:06:47.869Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -86,11 +86,19 @@ The best way to create the cloth mesh will depend on the shape of the mesh you'r
 ![Screenshot 2025 05 25 133040](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133040.png) [![Screenshot 2025 05 25 133606](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133606.md.png)](https://tinypic.host/image/Screenshot-2025-05-25-133606.3YolL4)
 
 - Use the **Smooth** tool to smooth out the mesh.
+![Screenshot 2025 05 25 133944](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133944.png)
+- Some tips to help:
+	- Toggle isolating your mesh by pressing the `/` key
+	- If your mesh is symmetrical, turn on x-axis symmetry before you begin sculpting
+	- Use the keys `[` and `]` to change the size of your brush
 
-> **Tips**
-> - Toggle isolating your mesh by pressing the `/` key.
-> - If your mesh is symmetrical, turn on X-axis symmetry before you begin sculpting.
-{.is-info}
+- Check to make sure the body isn't clipping through the cloth. It is okay if the original mesh clips through.
+- If the body *is* clipping, go back to sculpt mode and adjust your cloth mesh. The **Elastic Grab** tool is good for this. 
+
+- In the image on the left, we can see that the body does not clip through. On the right, we see that the cloth mesh does clip through the original mesh.
+[![nobodyclipping](https://tinypic.host/images/2025/05/25/nobodyclipping.md.png)](https://tinypic.host/image/nobodyclipping.3Yo0PE) [![meshclipping](https://tinypic.host/images/2025/05/25/meshclipping.md.png)](https://tinypic.host/image/meshclipping.3Yo6M5)
+
+The cloth mesh is ready to vertex paint!
 
 ### Create a new plane method
 
