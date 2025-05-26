@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-26T17:32:43.318Z
+date: 2025-05-26T17:33:20.820Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -64,7 +64,7 @@ This will show the information in the bottom right corner of the Blender window.
 ![Screenshot 2025 05 25 124729](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-124729.png)
 
 
-If your mesh has over 10,000 vertices, reduce it or separate the mesh into different pieces so that the piece that needs the cloth physics is less than 10,000 vertices.
+If your mesh has over 10,000 vertices, reduce it or separate the mesh into different pieces so that the piece that needs the cloth physics has less than 10,000 vertices.
 
 ## Creating the cloth mesh
 
