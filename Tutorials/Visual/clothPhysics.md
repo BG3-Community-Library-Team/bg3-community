@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-26T17:14:19.160Z
+date: 2025-05-26T17:21:53.843Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -126,9 +126,17 @@ The cloth mesh is ready to vertex paint.
 ### Create a new plane method
 
 Something like this bow is a good example of when to use the plane method to create the cloth mesh as it is meant to hang down off the body, not conform to it. 
+
 [![Screenshot 2025 05 25 141320](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-141320.md.png)](https://tinypic.host/image/Screenshot-2025-05-25-141320.3YoFJ9)
 
-- wip
+Before creating the cloth mesh, we must first think about *how* we want this object to move. This bow has **4** parts that make sense to move with physics. They are numbered 1, 2, 3, 4 in the image below. 
+
+There are multiple ways we could set up the cloth mesh for this:
+- All four pieces move **together** under one cloth mesh
+- All four pieces move **independently**, each with a unique cloth mesh
+- Group the pieces by sides; 1 & 2 move together and share a cloth mesh, 3 & 4 move together and share a cloth mesh
+
+[![bowPieces](https://tinypic.host/images/2025/05/26/bowPieces.md.png)](https://tinypic.host/image/bowPieces.3Y7o3e)
 
 ## Vertex Painting
 
