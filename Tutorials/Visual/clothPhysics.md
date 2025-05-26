@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-26T17:26:02.231Z
+date: 2025-05-26T17:30:56.410Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -139,10 +139,13 @@ There are multiple ways we could set up the cloth mesh for this:
 > The options with "multiple cloth meshes" do **not** mean we will have multiple cloth mesh objects. Everything will still be one mesh object in Blender, even if divided into separate parts. We will cover this in more detail in section **Exporting From Blender**
 {.is-info}
 
-
 [^1]: "Unique cloth mesh" does **not** mean 4 separate cloth mesh objects. See section Exporting from Blender for more details.
 
 [![bowPieces](https://tinypic.host/images/2025/05/26/bowPieces.md.png)](https://tinypic.host/image/bowPieces.3Y7o3e)
+
+This guide will use the third option, "Group the pieces by side; **1 & 2 move together** and share a cloth mesh, **3 & 4 move together** and share a cloth mesh". The steps can be adapted to suit the other two cases. 
+
+
 
 ## Vertex Painting
 
