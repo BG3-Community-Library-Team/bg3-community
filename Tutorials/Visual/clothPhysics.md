@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-26T17:34:30.917Z
+date: 2025-05-26T17:35:03.253Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -82,7 +82,7 @@ In **Object Mode**, select the mesh object you'll be applying the physics to fro
 Hit `Shift + D` to duplicate the mesh, then press the `Esc` key before clicking elsewhere to return it to the same position as the original.
 - If the duplicated mesh is not in the same position as the original mesh, you can manually set the transform location values to 0 (or whatever the values are if you haven't applied transforms yet) in the **Object Properties** tab.
 
-> Duplicate is _not the same_ as copy and paste
+> Duplicate is __not the same__ as copy and paste
 {.is-warning}
 
 If your mesh looks like the cape shown in the image below and has normals facing outwards on both sides of the mesh, when you duplicate the mesh you'll have to make sure only **one side** of faces are selected. 
