@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-26T17:06:47.294Z
+date: 2025-05-26T17:06:56.329Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -113,6 +113,7 @@ Check to make sure the body isn't clipping through the cloth. It is okay if the 
 - If the body *is* clipping, go back to Sculpt Mode and adjust your cloth mesh. The **Elastic Grab** tool is good for this. 
 
 In the image on the left, we can see that the body does not clip through. On the right, we see that the cloth mesh does clip through the original mesh. This is acceptable.
+
 [![nobodyclipping](https://tinypic.host/images/2025/05/25/nobodyclipping.md.png)](https://tinypic.host/image/nobodyclipping.3Yo0PE) [![meshclipping](https://tinypic.host/images/2025/05/25/meshclipping.md.png)](https://tinypic.host/image/meshclipping.3Yo6M5)
 
 For solidified/thick meshes like the cape shown in the example at the beginning of this article, positioning the cloth mesh to sit in the middle of the two sides will give you the best results. Clipping will be inevitable (provided your mesh is a reasonable thickness), so position the cloth mesh to clip *more* on the side that will be seen *less*.
