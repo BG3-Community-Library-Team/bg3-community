@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-26T17:36:31.132Z
+date: 2025-05-26T17:36:36.946Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -25,7 +25,6 @@ The lovely **Lynia** has created a tutorial on how to add cloth physics without 
 - [Vertex Color Master Add-On](https://github.com/andyp123/blender_vertex_color_master/releases) (optional, but recommended)
 
 [^1]: Lynia uses version 4.1 in the video tutorial. The steps documented in this guide use version 3.6
-
 # Steps
 
 ## Setting up your mesh
