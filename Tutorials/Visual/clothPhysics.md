@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-26T17:35:06.405Z
+date: 2025-05-26T17:36:31.132Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -21,9 +21,10 @@ The lovely **Lynia** has created a tutorial on how to add cloth physics without 
 ## Things You'll Need
 
 - [This fork](https://github.com/nicoco007/lslib) of lslib
-- [Blender](https://www.blender.org/download/) (any version 3.6 or above)
-	- Lynia uses version 4.1 in the video tutorial. The steps documented in this guide use version 3.6
+- [Blender](https://www.blender.org/download/) (any version 3.6 or above)[^1]
 - [Vertex Color Master Add-On](https://github.com/andyp123/blender_vertex_color_master/releases) (optional, but recommended)
+
+[^1]: Lynia uses version 4.1 in the video tutorial. The steps documented in this guide use version 3.6
 
 # Steps
 
@@ -133,13 +134,13 @@ Before creating the cloth mesh, we must first think about *how* we want this obj
 
 There are multiple ways we could set up the cloth mesh for this:
 - All four pieces move **together** under one cloth mesh
-- All four pieces move **independently**, each with a unique cloth mesh[^1]
+- All four pieces move **independently**, each with a unique cloth mesh[^2]
 - Group the pieces by side; **1 & 2 move together** and share a cloth mesh, **3 & 4 move together** and share a cloth mesh
 
 > The options with "multiple cloth meshes" do **not** mean we will have multiple cloth mesh objects. Everything will still be one mesh object in Blender, even if divided into separate parts. We will cover this in more detail in section **Exporting From Blender**
 {.is-info}
 
-[^1]: "Unique cloth mesh" does **not** mean 4 separate cloth mesh objects. See section Exporting from Blender for more details.
+[^2]: "Unique cloth mesh" does **not** mean 4 separate cloth mesh objects. See section Exporting from Blender for more details.
 
 [![bowPieces](https://tinypic.host/images/2025/05/26/bowPieces.md.png)](https://tinypic.host/image/bowPieces.3Y7o3e)
 
