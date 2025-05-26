@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-26T17:12:58.979Z
+date: 2025-05-26T17:13:18.417Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -75,7 +75,7 @@ The best way to create the cloth mesh will depend on the shape of the mesh you'r
 
 ### Duplicated mesh method
 
-> Note that this method assumes that the mesh is **not** solidified/extruded to create faces on the inside. You do not want to create a solidified cloth mesh. It should always be planar. 
+> Note that this method assumes that the mesh is **not** solidified/extruded to create faces on the inside. You do not want to create a solidified cloth mesh. It should always be a plane.
 {.is-warning}
 
 In **Object Mode**, select the mesh object you'll be applying the physics to from the **Outliner**
