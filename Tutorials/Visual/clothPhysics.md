@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-26T17:22:21.390Z
+date: 2025-05-26T17:26:02.231Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -133,8 +133,14 @@ Before creating the cloth mesh, we must first think about *how* we want this obj
 
 There are multiple ways we could set up the cloth mesh for this:
 - All four pieces move **together** under one cloth mesh
-- All four pieces move **independently**, each with a unique cloth mesh
+- All four pieces move **independently**, each with a unique cloth mesh[^1]
 - Group the pieces by side; **1 & 2 move together** and share a cloth mesh, **3 & 4 move together** and share a cloth mesh
+
+> The options with "multiple cloth meshes" do **not** mean we will have multiple cloth mesh objects. Everything will still be one mesh object in Blender, even if divided into separate parts. We will cover this in more detail in section **Exporting From Blender**
+{.is-info}
+
+
+[^1]: "Unique cloth mesh" does **not** mean 4 separate cloth mesh objects. See section Exporting from Blender for more details.
 
 [![bowPieces](https://tinypic.host/images/2025/05/26/bowPieces.md.png)](https://tinypic.host/image/bowPieces.3Y7o3e)
 
