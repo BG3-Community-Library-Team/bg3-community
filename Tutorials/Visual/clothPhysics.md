@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-31T18:31:15.672Z
+date: 2025-05-31T18:31:33.840Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -176,7 +176,7 @@ There are three colours that are used when vertex painting for cloth physics.
 
 | Colour | Swatch | Hex |Purpose
 |----------|----------|----------|----------|
-|Black|{.blackPhys}|#000000|Exclude vertices from simulation|
+|Black|{.blackPhys}|#000000|Excludes vertices from simulation|
 |Red|{.redPhys}|#FF0000|Activates physics|
 |Blue|{.bluePhys}|#0000FF|Slows physics|
 ||||
