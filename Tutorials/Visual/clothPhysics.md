@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-31T17:57:22.421Z
+date: 2025-05-31T18:10:58.672Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -151,13 +151,19 @@ In **Edit Mode**, we can tweak the shape of the plane to better match the object
 
 [![Screenshot 2025 05 31 133503](https://tinypic.host/images/2025/05/31/Screenshot-2025-05-31-133503.md.png)](https://tinypic.host/image/Screenshot-2025-05-31-133503.3qUHYm)
 
-Using the **Loop Cut** tool, start adding edge loops to create more faces. The more faces the cloth mesh has, the smoother the physics simulation will be, however it will also be more resource intensive. 
+Using the **Loop Cut** tool, start adding edge loops to create more faces. Tweak the edges and vertices as you go to minimize clipping. The more faces the cloth mesh has, the smoother the physics simulation will be, however it will also be more resource intensive. 
 - Your cloth mesh shoudn't have more faces than the mesh it is simulating. 
 - The density should be similar to or less than that of the mesh it will be simulating. 
 
 The plane on the left has good density for this mesh. The plane on the right is too dense for this mesh. 
 
 [![density](https://tinypic.host/images/2025/05/31/density.png)](https://tinypic.host/image/density.3qUFSe)
+
+After repeating the process for the other side of the bow, I now have two separate cloth mesh objects in the scene. I've adjusted them so that they do not clip into each other. Leave them as separate mesh objects until the vertex painting is finished. 
+
+[![Screenshot 2025 05 31 140911](https://tinypic.host/images/2025/05/31/Screenshot-2025-05-31-140911.md.png)](https://tinypic.host/image/Screenshot-2025-05-31-140911.3qorUw)
+
+The cloth mesh is ready to vertex paint.
 
 ## Vertex Painting
 
