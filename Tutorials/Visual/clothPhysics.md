@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-31T18:31:33.840Z
+date: 2025-05-31T18:32:15.789Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -178,7 +178,7 @@ There are three colours that are used when vertex painting for cloth physics.
 |----------|----------|----------|----------|
 |Black|{.blackPhys}|#000000|Excludes vertices from simulation|
 |Red|{.redPhys}|#FF0000|Activates physics|
-|Blue|{.bluePhys}|#0000FF|Slows physics|
+|Blue|{.bluePhys}|#0000FF|Slows physics. Blended with red often creates pink. Pure blue is uncommon. |
 ||||
 
 
