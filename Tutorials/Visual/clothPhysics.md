@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-31T18:10:58.672Z
+date: 2025-05-31T18:17:57.277Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -159,13 +159,21 @@ The plane on the left has good density for this mesh. The plane on the right is 
 
 [![density](https://tinypic.host/images/2025/05/31/density.png)](https://tinypic.host/image/density.3qUFSe)
 
-After repeating the process for the other side of the bow, I now have two separate cloth mesh objects in the scene. I've adjusted them so that they do not clip into each other. Leave them as separate mesh objects until the vertex painting is finished. 
+After repeating the process for the other side of the bow, I now have two separate cloth mesh objects in the scene. I've adjusted them so that they do not clip into each other. Leave them as separate mesh objects until the vertex painting is finished. You can apply transforms now. 
 
 [![Screenshot 2025 05 31 140911](https://tinypic.host/images/2025/05/31/Screenshot-2025-05-31-140911.md.png)](https://tinypic.host/image/Screenshot-2025-05-31-140911.3qorUw)
 
 The cloth mesh is ready to vertex paint.
 
 ## Vertex Painting
+> The vertex colour master add-on mentioned above is optional. It is recommended because it will easily create gradients between vertex colours. 
+{.is-info}
+
+Both the mesh and it's cloth mesh need to be vertex painted. 
+
+If you have the add-on installed, **Vertex Paint** mode there will be a tab labelled **VCM** in the N-menu. 
+- Press the `N` key to see the menu if it is not already there.
+- Select the VCM tab.
 
 
 ## Exporting from Blender
