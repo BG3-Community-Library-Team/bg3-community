@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-31T18:17:57.277Z
+date: 2025-05-31T18:23:17.894Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -170,6 +170,16 @@ The cloth mesh is ready to vertex paint.
 {.is-info}
 
 Both the mesh and it's cloth mesh need to be vertex painted. 
+
+There are three colours that are used when vertex painting for cloth physics. 
+
+
+| Colour | sRGB | Hex | Swatch
+|----------|----------|----------|----------|
+|Cloth_Primary|1 0.5 0|#FF8000|{.clothPri}|
+|Cloth_Secondary|1 0 0|#FF0000|{.clothSec}|
+|Cloth_Tertiary|1 0.5 0.5|#FF8080|{.clothTer}|
+
 
 If you have the add-on installed, **Vertex Paint** mode there will be a tab labelled **VCM** in the N-menu. 
 - Press the `N` key to see the menu if it is not already there.
