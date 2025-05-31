@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-26T17:36:36.946Z
+date: 2025-05-31T17:57:22.421Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -145,7 +145,19 @@ There are multiple ways we could set up the cloth mesh for this:
 
 This guide will use the third option, "Group the pieces by side; 1 & 2 move together and share a cloth mesh, 3 & 4 move together and share a cloth mesh". The steps can be adapted to suit the other two cases. 
 
+In **Object Mode**, create a new plane and rotate it by **-90° on the x axis**. Scale it down and roughly position it. 
 
+In **Edit Mode**, we can tweak the shape of the plane to better match the object it will be simulating. In the example below, the plane is now a trapezoid shape rather than a rectangle to better fit the pieces of the bow. It is still a single face at the moment.
+
+[![Screenshot 2025 05 31 133503](https://tinypic.host/images/2025/05/31/Screenshot-2025-05-31-133503.md.png)](https://tinypic.host/image/Screenshot-2025-05-31-133503.3qUHYm)
+
+Using the **Loop Cut** tool, start adding edge loops to create more faces. The more faces the cloth mesh has, the smoother the physics simulation will be, however it will also be more resource intensive. 
+- Your cloth mesh shoudn't have more faces than the mesh it is simulating. 
+- The density should be similar to or less than that of the mesh it will be simulating. 
+
+The plane on the left has good density for this mesh. The plane on the right is too dense for this mesh. 
+
+[![density](https://tinypic.host/images/2025/05/31/density.png)](https://tinypic.host/image/density.3qUFSe)
 
 ## Vertex Painting
 
