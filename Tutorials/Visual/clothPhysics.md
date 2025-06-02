@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T19:05:30.427Z
+date: 2025-06-02T19:05:49.328Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -280,8 +280,10 @@ In the **Properties** panel in the **Object** tab, assign LOD info and export or
 
 Before exporting, there's some boxes that will have to be checked in the **Mesh Type** box.
 
-For the object that will be assigned the cloth physics, check the box for **Cloth**
-For the **cloth mesh**, check **Cloth** and **Cloth Physics**
+- For the object that will be assigned the cloth physics, check the box for **Cloth**
+- For the **cloth mesh**, check **Cloth** and **Cloth Physics**
+
+Export as usual.
 
 > If you use BG3EquipmentGenerator, note that it tends to lose these parameters along the way. You can still use it to generate all the files for your mod, but you'll need to reexport and overwrite the GR2s it output with ones directly exported from Blender.
 {.is-warning}
