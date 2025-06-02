@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T19:05:49.328Z
+date: 2025-06-02T19:06:13.340Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -272,7 +272,7 @@ If merging any cloth mesh objects together, make sure they have the name for the
 - Press `Ctrl + J` to join them
 - Rename the object and the mesh
 	- You can call it whatever you want as long as you can differenciate it from other meshes
-  - Mine are usually named *whateverItemNameIs_**Cloth_Mesh***
+  - Mine are usually named *whateverItemNameIs_**Cloth_Mesh*** because I'm a stickler for naming conventions but you do you
 
 ### Checkboxes
 
