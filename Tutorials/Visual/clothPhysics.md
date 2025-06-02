@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T17:30:38.064Z
+date: 2025-06-02T17:44:51.629Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -247,6 +247,12 @@ Once the mesh is painted, transfer the vertex paint colours to the cloth mesh.
 - Select the option under **Face Corner Data** → **Colors** to transfer. This is not the same as the one under Vertex Data.
 ![Screenshot 2025 06 02 132827](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-132827.png)
 
+For pieces like the bow from earlier, when transfering the colours over it is easier to split the bow into the same pieces as will be used by the cloth mesh, then merge everything back together.
+
 ## Exporting from Blender
+
+Naming and number of cloth meshes
+Export order
+Checkboxes
 
 ## LSlib
