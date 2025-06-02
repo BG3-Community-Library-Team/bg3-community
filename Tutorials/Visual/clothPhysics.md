@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T17:21:36.146Z
+date: 2025-06-02T17:25:04.224Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -239,6 +239,8 @@ If you are using VCM:
 You can fine tune by manually painting. If you set the first colour to blue and the second to black, and change the blending mode to **Add** you can add blue to create pinks and slow the physics. Blend out these areas after painting.
 
 ![Screenshot 2025 06 02 132105](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-132105.png)
+
+Once the mesh is painted, we can transfer the vertex paint colours to the cloth mesh.
 
 ## Exporting from Blender
 
