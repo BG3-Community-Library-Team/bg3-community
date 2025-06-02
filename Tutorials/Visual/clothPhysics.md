@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T19:09:38.614Z
+date: 2025-06-02T19:28:27.227Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -293,3 +293,28 @@ Export as usual.
 {.is-warning}
 
 ## LSlib
+
+In the forked version of LSlib linked above, open **ConverterApp.exe** and switch to the **Cloth Tools** tab
+
+- Locate your exported GR2 to fill in the field for **GR2 File Path**
+- Click **Load**
+
+The **Resource Name**, **Physics Mesh**, and **Target Meshes** fields should autofill based on what submeshes had the boxes for **Cloth** and **Cloth Physics** checked. You can un/check submeshes if needed. 
+
+![Screenshot 2025 06 02 151503](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-151503.png)
+
+- Click **Generate**
+- Copy `Ctrl + C` all of the XML it outputs
+
+![Screenshot 2025 06 02 151757](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-151757.png)
+
+In your **meshes.lsf.lsx** file, paste in the [code block Lynia has linked](https://pastebin.com/4peJ4dkn) from her video. Paste it **underneath** `<node id="Base" />`, not inside of that node. This block contains all of the parameters of the cloth physics. Feel free to adjust them. 
+
+Under the node `<node id="ClothParams">`, replace the value of the attribute **UUID** with the name of your cloth mesh. 
+- The name will be in GR2FileName.SubmeshName format
+
+Inside of the **children** node within `<node id="ClothProxyMapping">`, paste in the output from LSlib. 
+
+> If you make any changes to the mesh and then reexport, it is a good idea to regenerate the output from LSlib in case vertices changed. 
+{.is-info}
+
