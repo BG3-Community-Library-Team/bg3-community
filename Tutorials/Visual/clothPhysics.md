@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T16:35:23.899Z
+date: 2025-06-02T16:52:46.227Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -197,7 +197,7 @@ You can use any colour for your physics paint that has an **RGB colour** with a 
 
 ![annotatedphysPaintRange](https://tinypic.host/images/2025/06/02/annotatedphysPaintRange.png)
 
-In the **Properties** panel under the **Data** tab, make sure there isn't already any colour attributes. The game engine shaders can only read the active colour attribute set, so delete any others or be prepared to overwrite them.
+In the **Properties** panel under the **Data** tab, make sure there isn't already any colour attributes. The game engine shaders can only read the active colour attribute set, so delete any others or be prepared to overwrite them. Don't worry about using the plus button to create a new set. A colour attribute set will be automatically created when following the steps. 
 
 ![Screenshot 2025 06 02 122635](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-122635.png)
 
@@ -207,6 +207,24 @@ Begin by filling your entire object mesh with black vertex paint.
 - Press `Shift + K` to flood the entire mesh with black
 	- This step is the same both with and without the VCM add-on.
   - You can also select **Paint** → **Set Vertex Colors** from the dropdown menu or the **Fill With Color** button from the add-on's N-menu.
+
+For meshes that have large areas that won't be affected by the physics, mask them out before filling with any red or blue. 
+- Go to **Edit Mode**
+- Press key `1` or `3` to select by faces or vertices respectively
+- Select the geometry to exclude
+	- Press `Alt + Z` to toggle x-ray mode then `W` to cycle through to box selection
+  - Select the areas
+  - You can also use `L` to select by seams or UVs if your object is mapped and those areas are on separate UV islands/shells from those that will be using cloth physics. 
+  
+- Switch back to **Vertex Paint** mode
+- Click the icon in the toolbar to mask the selection by vertices or faces
+![Screenshot 2025 06 02 124638](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-124638.png)
+- Since we selected the areas we do **not** want to paint, press `Ctrl + I` to invert the selection.
+See the image below for the comparison between the selected areas in Edit Mode and the inverted area in Vertex Paint mode. The area with the vertices highlighted is the area that will be painted. 
+![selection](https://tinypic.host/images/2025/06/02/selection.png)
+
+As Lynia explains in the video linked at the beginning of this guide, 
+
 
 
 ## Exporting from Blender
