@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T16:02:17.751Z
+date: 2025-06-02T16:04:04.398Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -187,10 +187,9 @@ If you have the add-on installed, **Vertex Paint** mode there will be a tab labe
 
 **At least one black vertex is required**. The cloth needs to be pinned somewhere by a black vertex, even if it's as little as a singular corner vertex. The image below shows an example of a flag asset in game that makes use of cloth physics with the four corner vertices painted black.
 
-Both the mesh and it's cloth mesh need to have vertex paint. We will start by painting the object mesh then transfering the colours to the cloth mesh. 
-
 ![clothFlag](https://tinypic.host/images/2025/06/02/clothFlag.png)
 
+Both the mesh and it's cloth mesh need to have vertex paint. We will start by painting the object mesh then transfering the colours to the cloth mesh. 
 
 ## Exporting from Blender
 
