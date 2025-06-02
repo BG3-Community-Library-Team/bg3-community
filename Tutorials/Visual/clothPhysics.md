@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T17:47:56.534Z
+date: 2025-06-02T19:01:36.731Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -252,6 +252,29 @@ For pieces like the bow from earlier, when transfering the colours over it is ea
 
 ## Exporting from Blender
 
+### Naming and Number
+
+You can only have **one cloth mesh object per exported object** (excluding LODs of the same cloth mesh), though you can assign multiple submeshes to use the same cloth mesh in LSlib. We'll get to that later.
+
+The mesh used as an example throughout this guide currently has three cloth meshes: the robe, and two for the bow. 
+
+[![Screenshot 2025 06 02 145126](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-145126.md.png)](https://tinypic.host/image/Screenshot-2025-06-02-145126.3qeV2Z)
+
+This can be resolved in two ways:
+- Merge **all** of the cloth meshes into one object
+- Break apart the items into separate pieces to export so that they each only have one cloth mesh.
+
+I'll use both methods. The robe and it's cloth mesh will be one GR2 file, and the belt, bow, and the bow's cloth meshes will be a second GR2 file.
+
+If merging any cloth mesh objects together, make sure they have the name for their colour attribute set, just like you would do with UV map names before merging meshes together. The colour attribute name can be anything. It won't be seen again outside of Blender. 
+
+- Merge the cloth mesh objects together by selecting them both either in the viewport or the outliner
+- Press `Ctrl + J` to join them
+- Rename the object and the mesh
+	- You can call it whatever you want as long as you can differenciate it from other meshes
+  - Mine are usually named *whateverItemNameIs_**Cloth_Mesh***
+
+### Checkboxes
 Naming and number of cloth meshes
 Export order
 Checkboxes
