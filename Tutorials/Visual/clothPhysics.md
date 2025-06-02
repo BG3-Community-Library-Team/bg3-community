@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T19:08:00.296Z
+date: 2025-06-02T19:09:38.614Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -285,9 +285,11 @@ Before exporting, there's some boxes that will have to be checked in the **Mesh 
 - For the **cloth mesh**, check **Cloth** and **Cloth Physics**
 [![Screenshot 2025 06 02 150710](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-150710.md.png)](https://tinypic.host/image/Screenshot-2025-06-02-150710.3qeEmv)
 
-Export as usual.
+Your cloth mesh should be parented under the armature and have the correct armature like you would for any other mesh. It does not need to be UV mapped.
 
-> If you use BG3EquipmentGenerator, note that it tends to lose these parameters along the way. You can still use it to generate all the files for your mod, but you'll need to reexport and overwrite the GR2s it output with ones directly exported from Blender.
+Export as usual. 
+
+> If you use BG3EquipmentGenerator, note that it tends to lose these parameters along the way. You can still use it to generate all the files for your mod, but you'll need to reexport and overwrite the GR2s it outputs with ones directly exported from Blender.
 {.is-warning}
 
 ## LSlib
