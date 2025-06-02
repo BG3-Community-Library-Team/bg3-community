@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T17:05:25.140Z
+date: 2025-06-02T17:08:21.030Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -227,6 +227,11 @@ As Lynia explains in the video linked at the beginning of this guide, when worki
 - Where the curve switches from increasing to decreasing
 - Where ƒ''(x) = 0; the point of inflection for those of you who remember calculus.
 
+If you're not using VCM, you'll have to manually paint and blur and smear to make a gradient.
+
+If you are using VCM:
+- Leave the first colour option as pure black. 
+- Set the second colour option to a value within the ranges defined above.
 
 
 
