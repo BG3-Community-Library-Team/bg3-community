@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T17:03:29.784Z
+date: 2025-06-02T17:04:08.402Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -223,9 +223,7 @@ For meshes that have large areas that won't be affected by the physics, mask the
 See the image below for the comparison between the selected areas in Edit Mode and the inverted area in Vertex Paint mode. The area with the vertices highlighted is the area that will be painted. 
 ![selection](https://tinypic.host/images/2025/06/02/selection.png)
 
-As Lynia explains in the video linked at the beginning of this guide, when working with skirts and dresses, the best results are achieved if you start the cloth physics paint gradient below the widest part of the hips. (Where the curve switches from increasing to decreasing. Where ƒ''(x) = 0; the point of inflection for those of you who like calculus)
-
-
+As Lynia explains in the video linked at the beginning of this guide, when working with skirts and dresses, the best results are achieved if you start the cloth physics paint gradient below the widest part of the hips. (Where the curve switches from increasing to decreasing. Where ƒ''(x) = 0; the point of inflection for those of you who remember calculus.)
 
 
 ## Exporting from Blender
