@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T16:19:24.469Z
+date: 2025-06-02T16:20:08.505Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -193,9 +193,11 @@ Both the mesh and it's cloth mesh need to have vertex paint. We will start by pa
 
 The different pieces that will make up the cloth mesh can be made to behave differently by using different blue values to give them an overall different colour. 
 
-You can use any colour for your physics paint that has an **RGB colour** with a **red** value in the range **[0, 1]** and a **blue** value in the range **[0, 1]**. Make sure the **green* channel is **0**. Having a value in the green channel may interfere with vertex colour mask paints. Read about vertex colour masks [here](https://wiki.bg3.community/Information/Meshes/Vertex-Painting-Meshes).
+You can use any colour for your physics paint that has an **RGB colour** with a **red** value in the range **[0, 1]** and a **blue** value in the range **[0, 1]**. Make sure the **green** channel is **0**. Having a value in the green channel may interfere with vertex colour mask paints. Read about vertex colour masks [here](https://wiki.bg3.community/Information/Meshes/Vertex-Painting-Meshes).
 
 ![annotatedphysPaintRange](https://tinypic.host/images/2025/06/02/annotatedphysPaintRange.png)
+
+
 
 ## Exporting from Blender
 
