@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T17:25:09.760Z
+date: 2025-06-02T17:30:38.064Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -241,6 +241,11 @@ You can fine tune by manually painting. If you set the first colour to blue and 
 ![Screenshot 2025 06 02 132105](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-132105.png)
 
 Once the mesh is painted, transfer the vertex paint colours to the cloth mesh.
+- Select the painted mesh
+- `Shift` select the cloth mesh
+- Press `F3` and search for "Transfer Mesh Data"
+- Select the option under **Face Corner Data** → **Colors** to transfer. This is not the same as the one under Vertex Data.
+![Screenshot 2025 06 02 132827](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-132827.png)
 
 ## Exporting from Blender
 
