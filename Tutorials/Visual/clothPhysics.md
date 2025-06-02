@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-05-31T18:32:15.789Z
+date: 2025-06-02T15:49:32.609Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -169,9 +169,7 @@ The cloth mesh is ready to vertex paint.
 > The vertex colour master add-on mentioned above is optional. It is recommended because it will easily create gradients between vertex colours. 
 {.is-info}
 
-Both the mesh and it's cloth mesh need to be vertex painted. 
-
-There are three colours that are used when vertex painting for cloth physics. 
+Both the mesh and it's cloth mesh need to be vertex painted. There are three colours that are used when vertex painting for cloth physics. 
 
 
 | Colour | Swatch | Hex |Purpose
