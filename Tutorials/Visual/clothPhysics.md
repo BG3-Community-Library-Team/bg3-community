@@ -1,8 +1,8 @@
 ---
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
-published: false
-date: 2025-06-02T19:28:27.227Z
+published: true
+date: 2025-06-02T19:28:38.262Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
