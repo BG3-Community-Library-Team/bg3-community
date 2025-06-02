@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T17:13:08.466Z
+date: 2025-06-02T17:21:36.146Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -232,10 +232,13 @@ If you're not using VCM, you'll have to manually paint and blur and smear to mak
 If you are using VCM:
 - Leave the first colour option as pure black. 
 - Set the second colour option to a value within the ranges defined above.
+	- I like making sure x-axis symmetry is enabled here, but that isn't always necessary depending on the shape of your mesh. 
 - Click the **Linear Gradient** button at the bottom of the N-menu
 - Hold down the `Left Mouse` button and drag a line down towards the bottom of the mesh
 
+You can fine tune by manually painting. If you set the first colour to blue and the second to black, and change the blending mode to **Add** you can add blue to create pinks and slow the physics. Blend out these areas after painting.
 
+![Screenshot 2025 06 02 132105](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-132105.png)
 
 ## Exporting from Blender
 
