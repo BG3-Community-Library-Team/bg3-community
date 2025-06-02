@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T17:08:21.030Z
+date: 2025-06-02T17:13:08.466Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -232,6 +232,8 @@ If you're not using VCM, you'll have to manually paint and blur and smear to mak
 If you are using VCM:
 - Leave the first colour option as pure black. 
 - Set the second colour option to a value within the ranges defined above.
+- Click the **Linear Gradient** button at the bottom of the N-menu
+- Hold down the `Left Mouse` button and drag a line down towards the bottom of the mesh
 
 
 
