@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T16:20:08.505Z
+date: 2025-06-02T16:23:40.558Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -197,7 +197,7 @@ You can use any colour for your physics paint that has an **RGB colour** with a 
 
 ![annotatedphysPaintRange](https://tinypic.host/images/2025/06/02/annotatedphysPaintRange.png)
 
-
+As 
 
 ## Exporting from Blender
 
