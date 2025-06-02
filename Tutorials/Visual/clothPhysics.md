@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T16:23:40.558Z
+date: 2025-06-02T16:35:23.899Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -197,7 +197,17 @@ You can use any colour for your physics paint that has an **RGB colour** with a 
 
 ![annotatedphysPaintRange](https://tinypic.host/images/2025/06/02/annotatedphysPaintRange.png)
 
-As 
+In the **Properties** panel under the **Data** tab, make sure there isn't already any colour attributes. The game engine shaders can only read the active colour attribute set, so delete any others or be prepared to overwrite them.
+
+![Screenshot 2025 06 02 122635](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-122635.png)
+
+Begin by filling your entire object mesh with black vertex paint. 
+- Go to **Vertex Paint** mode
+- Set both of the colour options to pure black (RGB 0 0 0 or Hex #000000)
+- Press `Shift + K` to flood the entire mesh with black
+	- This step is the same both with and without the VCM add-on.
+  - You can also select **Paint** → **Set Vertex Colors** from the dropdown menu or the **Fill With Color** button from the add-on's N-menu.
+
 
 ## Exporting from Blender
 
