@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T15:49:32.609Z
+date: 2025-06-02T16:02:17.751Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -166,23 +166,30 @@ After repeating the process for the other side of the bow, I now have two separa
 The cloth mesh is ready to vertex paint.
 
 ## Vertex Painting
+
 > The vertex colour master add-on mentioned above is optional. It is recommended because it will easily create gradients between vertex colours. 
 {.is-info}
 
-Both the mesh and it's cloth mesh need to be vertex painted. There are three colours that are used when vertex painting for cloth physics. 
-
+There are **three colours** that are used when vertex painting for cloth physics. 
 
 | Colour | Swatch | Hex |Purpose
 |----------|----------|----------|----------|
 |Black|{.blackPhys}|#000000|Excludes vertices from simulation|
 |Red|{.redPhys}|#FF0000|Activates physics|
-|Blue|{.bluePhys}|#0000FF|Slows physics. Blended with red often creates pink. Pure blue is uncommon. |
+|Blue|{.bluePhys}|#0000FF|Slows physics[^3]|
 ||||
-
+[^3]: Blue vertex paint rarely appears as pure blue. It'll be mixed with the red to create pink/purple hues.
 
 If you have the add-on installed, **Vertex Paint** mode there will be a tab labelled **VCM** in the N-menu. 
 - Press the `N` key to see the menu if it is not already there.
 - Select the VCM tab.
+
+
+**At least one black vertex is required**. The cloth needs to be pinned somewhere by a black vertex, even if it's as little as a singular corner vertex. The image below shows an example of a flag asset in game that makes use of cloth physics with the four corner vertices painted black.
+
+Both the mesh and it's cloth mesh need to have vertex paint. We will start by painting the object mesh then transfering the colours to the cloth mesh. 
+
+![clothFlag](https://tinypic.host/images/2025/06/02/clothFlag.png)
 
 
 ## Exporting from Blender
