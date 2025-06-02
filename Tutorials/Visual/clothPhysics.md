@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: false
-date: 2025-06-02T19:06:13.340Z
+date: 2025-06-02T19:08:00.296Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -281,7 +281,9 @@ In the **Properties** panel in the **Object** tab, assign LOD info and export or
 Before exporting, there's some boxes that will have to be checked in the **Mesh Type** box.
 
 - For the object that will be assigned the cloth physics, check the box for **Cloth**
+[![Screenshot 2025 06 02 150719](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-150719.md.png)](https://tinypic.host/image/Screenshot-2025-06-02-150719.3qeKww)
 - For the **cloth mesh**, check **Cloth** and **Cloth Physics**
+[![Screenshot 2025 06 02 150710](https://tinypic.host/images/2025/06/02/Screenshot-2025-06-02-150710.md.png)](https://tinypic.host/image/Screenshot-2025-06-02-150710.3qeEmv)
 
 Export as usual.
 
