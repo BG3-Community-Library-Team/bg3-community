@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-05T22:46:48.551Z
+date: 2025-06-05T22:48:17.632Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -366,7 +366,7 @@ Keybindings must be registered in the client context, as user input is inherentl
 To define what happens when a keybinding is triggered, register a callback using the `MCM.Keybinding.SetCallback` function available in the client context:
 
 ```lua
-MCM.SetKeybindingCallback('key_teleport_party_to_you', function(e)
+MCM.Keybinding.SetCallback('key_teleport_party_to_you', function(e)
     Ext.Net.PostMessageToServer("FS_TeleportPartyToYou", Ext.Json.Stringify({ skipChecks = false }))
 end)
 ```
@@ -413,12 +413,16 @@ This will create a new tab or insert the content at the end of an existing one.
 
 ### Defining lists
 
-MCM 1.17 introduced `list_v2` to supersede the now deprecated `list` input type. It offers better UI and ergonomics, with  more granular control over lists and their elements.
+MCM 1.17 introduced `list_v2` to supersede the now deprecated `list` input type. It offers better UI and ergonomics, with more granular control over lists and their elements.
 
 > MCM will automatically migrate players' old `list` values to `list_v2` if the setting ID remains the same.
 > {.is-success}
 
+`MCM.List` contains useful methods for dealing with `list_v2` settings.
+
 #### Inserting Search Results for ListV2 settings
+
+NOTE: this will be added to the `MCM` table in a future update.
 
 The `InsertListV2SearchResults` method in the `IMGUIAPI` allows mod authors to insert suggestions/'search results' into a `list_v2` setting. This is particularly useful for providing users with dynamic suggestions based on their input as they type in the add input field of the setting.
 
