@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-05T22:48:17.632Z
+date: 2025-06-05T22:50:10.667Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -422,7 +422,7 @@ MCM 1.17 introduced `list_v2` to supersede the now deprecated `list` input type.
 
 #### Inserting Search Results for ListV2 settings
 
-NOTE: this will be added to the `MCM` table in a future update.
+NOTE: this will be added to the `MCM.List` table in a future update.
 
 The `InsertListV2SearchResults` method in the `IMGUIAPI` allows mod authors to insert suggestions/'search results' into a `list_v2` setting. This is particularly useful for providing users with dynamic suggestions based on their input as they type in the add input field of the setting.
 
