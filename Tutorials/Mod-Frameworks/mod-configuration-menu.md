@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-05T04:17:23.567Z
+date: 2025-06-05T22:46:48.551Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -23,7 +23,7 @@ If you're looking to quickly integrate MCM into your mod, here's the process at 
 1. **Create an `MCM_blueprint.json`** file in the same folder as `meta.lsx`
 2. **Add MCM as a dependency** in your mod's `meta.lsx` file ([guide here](/en/Tutorials/General/Basic/adding-mod-dependencies)) or add `"Optional": true` to your blueprint file.
 3. **Replace code** related to settings in your mod with MCM API calls: **get settings' values with `MCM.Get("settingId")`.**
-*(SE mods get a global `MCM` providing all MCM functions that can be used)*
+*(MCM adds a global `MCM` table to SE mods providing all MCM functions that can be used)*
 
 
 > It's **recommended to just pick an existing blueprint** from MCM-integrated mods **and adapt it**, such as:
@@ -138,6 +138,8 @@ Anything else is a matter of updating objects (if you're storing values in table
 {.is-warning}
 
 ### Defining a blueprint
+
+How does MCM know what settings your mod has? How does it know which ones are numbers, which are checkboxes, what their default values should be, or how to show them nicely in the MCM window?
 
 The `MCM_blueprint.json` file is how you specify your mod's configuration definition; this JSON file will define how your settings are to be structured, what are their name, input type, default, etc., allowing for automatic generation of a user-friendly interface and validation of user-set values.
 
@@ -284,6 +286,23 @@ Otherwise, prepend `Mods.BG3MCM` to all function calls.
 
 MCM 1.19 introduces built-in support for keybinding management, allowing mods to define and register hotkeys with ease. This system provides a familiar interface for users to customize keybindings while handling conflicts automatically.
 
+If you wanted to add a hotkey to your mod without a system like MCM, you'd have to:
+
+- Store and load the player's chosen key combination (e.g., CTRL + J) somewhere (like a file).
+- Write code to listen for key presses in the game.
+- Every time a key is pressed, check if it matches the player's saved combination, then run your mod's action.
+- Optionally build a UI element where the player can view and set the key combination.
+- Deal with potential conflicts if another mod uses the same combination, and generally a **ton** of other edge cases not considered here.
+
+This is a lot of work and prone to errors! MCM solves this by:
+
+- Providing a standardized way for your mod to declare it has a keybinding action in its MCM blueprint.
+- Providing a simple way for your mod to register the Lua function (*callback*) that should run when the hotkey is pressed.
+- Handling all the low-level work: loading and saving keybinding preferences, UI creation, listening for input, checking against registered keybindings, detecting conflicts, and calling the correct callback function in your mod.
+
+Essentially, you define what your hotkey action is and what code runs, and the MCM handles how it's triggered by player input and managed in the UI.
+
+
 #### Defining a keybinding
 
 To define a keybinding, add it as a `keybinding_v2` setting anywhere in your mod's blueprint file. Below is an example of transitioning from the old format to the new `keybinding_v2` format:
@@ -326,7 +345,7 @@ After (keybinding_v2 format):
 }
 ```
 
-MCM also provides additional options to control how a keybinding behaves. These options can be set within the Options object when defining a keybinding in the blueprint file.
+MCM also provides additional options to control how a keybinding behaves. These options can be set within the `Options` object when defining a keybinding in the blueprint file.
 
 Available `Options`:
 
@@ -344,7 +363,7 @@ These options are not mutually exclusive, meaning authors can use any combinatio
 
 Keybindings must be registered in the client context, as user input is inherently client-sided. You only need a basic client-code setup; you can read more about it [in this guide](/Tutorials/ScriptExtender/Networking-ClientServerBasics).
 
-To define what happens when a keybinding is triggered, register a callback using the `MCM.SetKeybindingCallback` function available in the client context:
+To define what happens when a keybinding is triggered, register a callback using the `MCM.Keybinding.SetCallback` function available in the client context:
 
 ```lua
 MCM.SetKeybindingCallback('key_teleport_party_to_you', function(e)
