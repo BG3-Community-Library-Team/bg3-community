@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-08T22:17:36.400Z
+date: 2025-06-08T22:18:15.660Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -36,8 +36,8 @@ An LLM is likely able to adapt them into a different blueprint, especially if yo
 That's it for a basic integration! MCM will warn you about mistakes in your code or blueprint file.
 The rest of this documentation provides detailed explanations of these steps and advanced features.
 
-> For basic integration, the important sections are [Defining a blueprint](#defining-a-blueprint) and [Using values from MCM](#using-values-from-mcm).
-If you're interested in keybindings, see [Adding a keybinding](#adding-a-keybinding).
+> For basic integration, the important sections are *[Defining a blueprint](#defining-a-blueprint)* and *[Using values from MCM](#using-values-from-mcm)*.
+If you're interested in keybindings, see *[Adding a keybinding](#adding-a-keybinding)*.
 {.is-success}
 
 ## Table of Contents
@@ -263,7 +263,7 @@ Mod authors can access the values set by the player through the MCM API from any
   MCM.Set("MySetting", newValue)
 ```
 
-You can also listen to changes to settings values by listening to mod events like this (more on [Listening to MCM events](#listening-to-mcm-events)):
+You can also listen to changes to settings values by listening to mod events like this (more on *[Listening to MCM events](#listening-to-mcm-events)*):
 
 ```lua
 -- In your MCM-integrated mod's code
