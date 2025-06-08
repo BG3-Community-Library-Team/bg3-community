@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-08T22:15:35.264Z
+date: 2025-06-08T22:16:27.200Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -235,15 +235,15 @@ As of version 1.14+, MCM introduces a global `MCM` table that simplifies access 
 | `MCM.Get(settingId, modUUID?)` | Gets the value of a setting | ✅ | ✅ |
 | `MCM.Set(settingId, value, modUUID?, shouldEmitEvent?)` | Sets the value of a setting | ✅ | ✅ |
 
-### Keybinding Functions
+### `keybinding` functions
 
 | Function | Description | Client | Server |
 |----------|-------------|:------:|:------:|
-| `MCM.Keybinding.Get(settingId, modUUID?)` | Gets a human-readable keybinding string | ✅ | ❌ |
+| `MCM.Keybinding.Get(settingId, modUUID?)` | Gets a human-readable keybinding string, e.g. `"[Caps Lock]"` | ✅ | ❌ |
 | `MCM.Keybinding.GetRaw(settingId, modUUID?)` | Gets raw keybinding data | ✅ | ❌ |
-| `MCM.Keybinding.SetCallback(settingId, callback, modUUID?)` | Sets a callback for keybinding events | ✅ | ❌ |
+| `MCM.Keybinding.SetCallback(settingId, callback, modUUID?)` | Sets a callback for the associated keybinding | ✅ | ❌ |
 
-### `list_v2` Functions
+### `list_v2` functions
 
 | Function | Description | Client | Server |
 |----------|-------------|:------:|:------:|
