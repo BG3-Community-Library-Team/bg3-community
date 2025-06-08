@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-08T22:11:28.381Z
+date: 2025-06-08T22:12:55.217Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -221,11 +221,40 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 > If your [mod is symlinked](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking 'Symlinking mods tutorial'), you can try out changes to your mod's blueprint in-game by using `reset` in the console without having to restart the game every time you make a change to the blueprint file.
 {.is-info}
 
+## MCM API functions
+
+As of version 1.14+, MCM introduces a global `MCM` table that simplifies access and modification of values. This should be used for almost all operations, avoiding usage of `Mods.BG3MCM` internals unless explicitly stated in the documentation.
+
+**Notes**:
+
+- `modUUID?` indicates the parameter is optional and defaults to the current mod's UUID
+- `shouldEmitEvent?` is an optional boolean that defaults to `false`
+
+| Function | Description | Client | Server |
+|----------|-------------|:------:|:------:|
+| `MCM.Get(settingId, modUUID?)` | Gets the value of a setting | ✅ | ✅ |
+| `MCM.Set(settingId, value, modUUID?, shouldEmitEvent?)` | Sets the value of a setting | ✅ | ✅ |
+
+### Keybinding Functions
+
+| Function | Description | Client | Server |
+|----------|-------------|:------:|:------:|
+| `MCM.Keybinding.Get(settingId, modUUID?)` | Gets a human-readable keybinding string | ✅ | ❌ |
+| `MCM.Keybinding.GetRaw(settingId, modUUID?)` | Gets raw keybinding data | ✅ | ❌ |
+| `MCM.Keybinding.SetCallback(settingId, callback, modUUID?)` | Sets a callback for keybinding events | ✅ | ❌ |
+
+### `list_v2` Functions
+
+| Function | Description | Client | Server |
+|----------|-------------|:------:|:------:|
+| `MCM.List.GetEnabled(listSettingId, modUUID?)` | Gets a table of enabled items in a list | ✅ | ✅ |
+| `MCM.List.GetRaw(listSettingId, modUUID?)` | Gets raw list setting data | ✅ | ✅ |
+| `MCM.List.IsEnabled(listSettingId, itemName, modUUID?)` | Checks if a specific item is enabled in a list | ✅ | ✅ |
+| `MCM.List.SetEnabled(listSettingId, itemName, enabled, modUUID?, shouldEmitEvent?)` | Sets the enabled state of a list item | ✅ | ✅ |
 
 ### Using values from MCM
 
-After setting up the blueprint, mod authors can access the values set by the player through the MCM API from anywhere in their mod's code.
-As of version 1.14+, MCM introduces a global `MCM` table that simplifies access and modification of values. This should be used for almost all operations, avoiding usage of `Mods.BG3MCM` internals unless explicitly stated in the documentation.
+Mod authors can access the values set by the player through the MCM API from anywhere in their mod's code.
 
 ```lua
   -- Get the value of a setting with the ID "MySetting"
@@ -251,36 +280,6 @@ end)
 ```
 
 Remember, SE injects a `ModuleUUID` constant that holds the value of the mod you're writing into your runtime.
-
-## MCM API functions
-
-| Function | Description | Client | Server |
-|----------|-------------|:------:|:------:|
-| `MCM.Get(settingId, modUUID?)` | Gets the value of a setting | ✅ | ✅ |
-| `MCM.Set(settingId, value, modUUID?, shouldEmitEvent?)` | Sets the value of a setting | ✅ | ✅ |
-
-### Keybinding Functions
-
-| Function | Description | Client | Server |
-|----------|-------------|:------:|:------:|
-| `MCM.Keybinding.Get(settingId, modUUID?)` | Gets a human-readable keybinding string | ✅ | ❌ |
-| `MCM.Keybinding.GetRaw(settingId, modUUID?)` | Gets raw keybinding data | ✅ | ❌ |
-| `MCM.Keybinding.SetCallback(settingId, callback, modUUID?)` | Sets a callback for keybinding events | ✅ | ❌ |
-
-### List Functions
-
-| Function | Description | Client | Server |
-|----------|-------------|:------:|:------:|
-| `MCM.List.GetEnabled(listSettingId, modUUID?)` | Gets a table of enabled items in a list | ✅ | ✅ |
-| `MCM.List.GetRaw(listSettingId, modUUID?)` | Gets raw list setting data | ✅ | ✅ |
-| `MCM.List.IsEnabled(listSettingId, itemName, modUUID?)` | Checks if a specific item is enabled in a list | ✅ | ✅ |
-| `MCM.List.SetEnabled(listSettingId, itemName, enabled, modUUID?, shouldEmitEvent?)` | Sets the enabled state of a list item | ✅ | ✅ |
-
-
-##### Notes:
-
-- `modUUID?` indicates the parameter is optional and defaults to the current mod's UUID
-- `shouldEmitEvent?` is an optional boolean that defaults to `false`
 
 <details>
 <summary> Setting usage prior to 1.14 (DEPRECATED) </summary>
