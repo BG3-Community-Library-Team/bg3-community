@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-05T22:50:10.667Z
+date: 2025-06-08T22:11:28.381Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -251,6 +251,36 @@ end)
 ```
 
 Remember, SE injects a `ModuleUUID` constant that holds the value of the mod you're writing into your runtime.
+
+## MCM API functions
+
+| Function | Description | Client | Server |
+|----------|-------------|:------:|:------:|
+| `MCM.Get(settingId, modUUID?)` | Gets the value of a setting | ✅ | ✅ |
+| `MCM.Set(settingId, value, modUUID?, shouldEmitEvent?)` | Sets the value of a setting | ✅ | ✅ |
+
+### Keybinding Functions
+
+| Function | Description | Client | Server |
+|----------|-------------|:------:|:------:|
+| `MCM.Keybinding.Get(settingId, modUUID?)` | Gets a human-readable keybinding string | ✅ | ❌ |
+| `MCM.Keybinding.GetRaw(settingId, modUUID?)` | Gets raw keybinding data | ✅ | ❌ |
+| `MCM.Keybinding.SetCallback(settingId, callback, modUUID?)` | Sets a callback for keybinding events | ✅ | ❌ |
+
+### List Functions
+
+| Function | Description | Client | Server |
+|----------|-------------|:------:|:------:|
+| `MCM.List.GetEnabled(listSettingId, modUUID?)` | Gets a table of enabled items in a list | ✅ | ✅ |
+| `MCM.List.GetRaw(listSettingId, modUUID?)` | Gets raw list setting data | ✅ | ✅ |
+| `MCM.List.IsEnabled(listSettingId, itemName, modUUID?)` | Checks if a specific item is enabled in a list | ✅ | ✅ |
+| `MCM.List.SetEnabled(listSettingId, itemName, enabled, modUUID?, shouldEmitEvent?)` | Sets the enabled state of a list item | ✅ | ✅ |
+
+
+##### Notes:
+
+- `modUUID?` indicates the parameter is optional and defaults to the current mod's UUID
+- `shouldEmitEvent?` is an optional boolean that defaults to `false`
 
 <details>
 <summary> Setting usage prior to 1.14 (DEPRECATED) </summary>
