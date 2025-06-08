@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-08T22:16:27.200Z
+date: 2025-06-08T22:17:36.400Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -263,7 +263,7 @@ Mod authors can access the values set by the player through the MCM API from any
   MCM.Set("MySetting", newValue)
 ```
 
-You can also listen to changes to settings values by listening to mod events like this (more on this below):
+You can also listen to changes to settings values by listening to mod events like this (more on [Listening to MCM events](#listening-to-mcm-events)):
 
 ```lua
 -- In your MCM-integrated mod's code
