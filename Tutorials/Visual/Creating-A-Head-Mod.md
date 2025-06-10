@@ -2,7 +2,7 @@
 title: Creating A Head Mod
 description: Contents
 published: true
-date: 2025-06-10T11:56:15.940Z
+date: 2025-06-10T12:00:24.683Z
 tags: head
 editor: markdown
 dateCreated: 2025-06-10T11:04:16.279Z
@@ -18,7 +18,7 @@ dateCreated: 2025-06-10T11:04:16.279Z
 ### Video Tutorial
 [Sculpt a BG3 Head With Me](https://www.youtube.com/watch?v=KNQUlagbYAI) by lumad11 (*Youtube link*)
 
-Video covers (time stamps in the description)
+Video covers (time stamps in the description):
 - importing mesh into Blender
 - utilizing Volno's Texture Toolbox to visualize textures
 - using shapekeys
@@ -35,7 +35,7 @@ Video covers (time stamps in the description)
 ### Video Tutorial
 [Making Custom Armatures for BG3 Heads](https://youtu.be/Um_3z2vjMQ8) by jerinski (*Youtube link*)
 
-Video covers (time stamps in the description)
+Video covers (time stamps in the description):
 - importing and setting up assets (**aquisition and prep of these are explained in the Wiki tutorial below**)
 - preparing the skeleton for editing
 - adjusting the skeleton to fit new face geometry
@@ -49,7 +49,7 @@ Video covers (time stamps in the description)
 ### Video Tutorial
 [Creating a BG3 Head with the Toolkit](https://www.youtube.com/watch?v=40GnRNjWXng) by UndefinedScribble (*Youtube link*)
 
-Video covers (time stamps in the description)
+Video covers (time stamps in the description):
 - creating a project in the BG3 Modding Toolkit
 - importing the assets you made (head mesh, skeleton, textures)
 - setting and connecting these assets together
