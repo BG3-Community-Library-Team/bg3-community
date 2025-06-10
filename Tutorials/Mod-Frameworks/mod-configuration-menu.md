@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-10T00:06:02.524Z
+date: 2025-06-10T00:11:42.414Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -23,8 +23,7 @@ If you're looking to quickly integrate MCM into your mod, here's the process at 
 1. **Create an `MCM_blueprint.json`** file in the same folder as `meta.lsx`
 2. **Add MCM as a dependency** in your mod's `meta.lsx` file ([guide here](/en/Tutorials/General/Basic/adding-mod-dependencies)) or add `"Optional": true` to your blueprint file.
 3. **Replace code** related to settings in your mod with MCM API calls: **get settings' values with `MCM.Get("settingId")`.**
-*(MCM adds a global `MCM` table to SE mods providing all MCM functions that can be used)*
-
+*(MCM adds a global `MCM` table to SE mods providing all [MCM functions that can be used](#mcm-api-functions))*
 
 > It's **recommended to just pick an existing blueprint** from MCM-integrated mods **and adapt it**, such as:
 > [Auto Send Food To Camp](https://github.com/AtilioA/BG3-auto-send-food-to-camp/blob/main/Auto%20Send%20Food%20To%20Camp/Mods/AutoSendFoodToCamp/MCM_blueprint.json)
@@ -42,7 +41,8 @@ If you're interested in keybindings, see *[Adding a keybinding](#adding-a-keybin
 
 ## Table of Contents
 
-- [Mod Configuration Menu](#mod-configuration-menu)
+- [Mod Configuration Menu documentation](#mod-configuration-menu-documentation)
+  - [Quick-start guide](#quick-start-guide)
   - [Table of Contents](#table-of-contents)
   - [Features for mod authors](#features-for-mod-authors)
   - [Concepts](#concepts)
@@ -51,6 +51,9 @@ If you're interested in keybindings, see *[Adding a keybinding](#adding-a-keybin
       - [The MCM Schema](#the-mcm-schema)
         - [IDE support](#ide-support)
         - [Schema main components](#schema-main-components)
+  - [MCM API functions](#mcm-api-functions)
+    - [`keybinding` functions](#keybinding-functions)
+    - [`list_v2` functions](#list_v2-functions)
     - [Using values from MCM](#using-values-from-mcm)
       - [Reducing verbiage](#reducing-verbiage)
     - [Adding a keybinding](#adding-a-keybinding)
@@ -60,10 +63,10 @@ If you're interested in keybindings, see *[Adding a keybinding](#adding-a-keybin
     - [Inserting custom UI elements](#inserting-custom-ui-elements)
     - [Defining lists](#defining-lists)
       - [Inserting Search Results for ListV2 settings](#inserting-search-results-for-listv2-settings)
-    - [Listening to MCM events](#listening-to-mcm-events)
-    - [How validation works](#how-validation-works)
-    - [Localization support](#localization-support)
-    - [TODO: ported IMGUI icons](#todo-ported-imgui-icons)
+  - [Listening to MCM events](#listening-to-mcm-events)
+  - [How validation works](#how-validation-works)
+  - [Localization support](#localization-support)
+  - [TODO: ported IMGUI icons](#todo-ported-imgui-icons)
   - [Notification API](#notification-api)
     - [Features](#features)
     - [Example usage](#example-usage)
@@ -331,7 +334,6 @@ This is a lot of work and prone to errors! MCM solves this by:
 
 Essentially, you define what your hotkey action is and what code runs, and the MCM handles how it's triggered by player input and managed in the UI.
 
-
 #### Defining a keybinding
 
 To define a keybinding, add it as a `keybinding_v2` setting anywhere in your mod's blueprint file. Below is an example of transitioning from the old format to the new `keybinding_v2` format:
@@ -469,7 +471,7 @@ Mods.BG3MCM.IMGUIAPI:InsertListV2SearchResults("1c132ec4-4cd2-4c40-aeb9-ff6ee046
 
 All searches on MCM use fuzzy matching.
 
-### Listening to MCM events
+## Listening to MCM events
 
 > • With the introduction of `ModEvents` in SE v18, the previous method for listening to MCM events was deprecated. MCM will maintain backward compatibility with the net message method for the time being.
 > • Prior to version 1.11, mod events were handled using a workaround that relied on net messages, which were originally designed for communication within a single mod. That approach was necessary due to the absence of a dedicated mod event system in SE at that time.
@@ -574,7 +576,7 @@ Here are the events that can be listened to:
 
 For the most up-to-date information, please refer to this file in the Git repository: [EventChannels.lua](https://github.com/AtilioA/BG3-MCM/blob/main/Mod%20Configuration%20Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Events/EventChannels.lua)
 
-### How validation works
+## How validation works
 
 Validation is divided into two main categories: blueprint validation and settings validation. Blueprint validation ensures that the blueprint JSON file is correctly formatted and adheres to the MCM schema. Settings validation, on the other hand, ensures that the actual, stored settings values are valid and respect the constraints defined in the blueprint.
 
@@ -593,7 +595,7 @@ MCM performs validation checks when:
 > **Therefore, mod authors can safely add or remove settings from the blueprint without worrying about inconsistencies in the settings JSON file.**
 {.is-success}
 
-### Localization support
+## Localization support
 
 In your blueprint, you can optionally define localization handles for various elements of the configuration, including:
 
@@ -621,7 +623,7 @@ This is achieved through the use of "handles" - unique identifiers that can be u
 
 The [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper) extension can help you create localization files and mass replace strings with handles conveniently added to your localization files.
 
-### TODO: ported IMGUI icons
+## TODO: ported IMGUI icons
 
 --
 
