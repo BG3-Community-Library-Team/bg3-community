@@ -2,7 +2,7 @@
 title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
 published: true
-date: 2025-05-23T18:25:45.367Z
+date: 2025-06-10T10:56:17.182Z
 tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -189,10 +189,12 @@ Some notes about common settings:
 	- not a plugin per se but a shader set useful for rendering an approximation of textures in Blender.
 
 
-## Tools: Text Editing / Mod Structure Stuff
+## Tools: Getting it into the Game
 #### oh no
 > 
-> This section is covered pretty well over on the [Setting up a Dev Environment](/Tutorials/General/setting-up-a-dev-environment) page.
+> For "classic" modding, this section is covered pretty well over on the [Setting up a Dev Environment](/Tutorials/General/setting-up-a-dev-environment) page.
+>
+>Additionally, consider using the official Modding Toolkit - documentation for it may be found [on Larian's BG3 Modding site](https://docs.baldursgate3.game/index.php?title=Main_Page) and [on Mod.io](https://mod.io/g/baldursgate3/r) 
 {.is-info}
 
 
@@ -208,8 +210,7 @@ Some notes about common settings:
 
 - Using Modder's Multitool
 
-
-...WIP
+- Using the official BG3 Modding Toolkit asset browser
 
 
 ## Next Steps
@@ -217,7 +218,7 @@ Some notes about common settings:
 So now we have the basics set up to start some modding. If you're thinking "that's great, now what" then below you'll find links to pages detailing how to mod these things.
 
 ### Creating Hair Mods
-...WIP
+[Creating a Hair Mod - Wiki Tutorial](/Tutorials/Visual/Creating-A-Hair-Mod/Tutorials)
 
 ### Creating Head Mods
 ...WIP
