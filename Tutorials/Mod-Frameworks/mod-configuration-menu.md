@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-10T00:14:15.114Z
+date: 2025-06-10T01:01:08.441Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -547,7 +547,7 @@ For the most up-to-date information, please refer to this file in the Git reposi
 
 ## How validation works
 
-Validation is divided into two main categories: blueprint validation and settings validation. Blueprint validation ensures that the blueprint JSON file is correctly formatted and adheres to the MCM schema. Settings validation, on the other hand, ensures that the actual, stored settings values are valid and respect the constraints defined in the blueprint.
+Validation is divided into two main categories: blueprint validation and settings validation. Blueprint validation ensures that the blueprint JSON file is correctly formatted and adheres to the MCM schema. Settings validation, on the other hand, ensures that the actual or to-be-stored settings values are valid and respect the constraints defined in the blueprint.
 
 MCM performs validation checks when:
 
@@ -560,7 +560,7 @@ MCM performs validation checks when:
 
 >• Settings not present in the blueprint will be removed from the settings JSON file;
 >• Invalid settings values will be replaced with their respective default value as specified in the blueprint;
->• New settings are automatically introduced to the settings JSON file when new settings are added to the schema;
+>• New settings are automatically introduced to the settings JSON file when new settings are added to the blueprint;
 > **Therefore, mod authors can safely add or remove settings from the blueprint without worrying about inconsistencies in the settings JSON file.**
 {.is-success}
 
