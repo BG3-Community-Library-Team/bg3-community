@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-10T01:06:13.821Z
+date: 2025-06-10T02:10:34.170Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -635,6 +635,6 @@ The demo below showcases the different types of config options that can be used 
 
 ## Closing words
 
-I hope this documentation has provided you with a clear understanding of how to integrate MCM into your mod. If you have any suggestions or encountered any points of confusion or errors, no matter how small or mundane, please let me know [on the Nexus page](https://www.nexusmods.com/baldursgate3/mods/9162) or on Discord ([BG3MC](https://discord.com/invite/bg3mods)). I'm keen on ensuring MCM has excellent design and documentation. I also hope MCM enhances not only your development experience but also provides a better experience for your users too!
+I hope this documentation has provided you with a clear understanding of how to integrate MCM into your mod. If you have any suggestions or encountered any points of confusion or errors, no matter how small or mundane, please let me know [on the Nexus page](https://www.nexusmods.com/baldursgate3/mods/9162) or on Discord ([BG3MC](https://discord.com/invite/bg3mods)). I'm keen on ensuring MCM has excellent design and documentation. I also hope MCM enhances not only your development experience but provides a better experience for your users too!
 
 I'd like to thank the community again for their support and feedback, as well as the mod authors who have integrated MCM into their mods. It's been awesome to see what you've been building with it so far.
