@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-10T00:11:42.414Z
+date: 2025-06-10T00:14:15.114Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -55,7 +55,6 @@ If you're interested in keybindings, see *[Adding a keybinding](#adding-a-keybin
     - [`keybinding` functions](#keybinding-functions)
     - [`list_v2` functions](#list_v2-functions)
     - [Using values from MCM](#using-values-from-mcm)
-      - [Reducing verbiage](#reducing-verbiage)
     - [Adding a keybinding](#adding-a-keybinding)
       - [Defining a keybinding](#defining-a-keybinding)
       - [Registering a keybinding callback](#registering-a-keybinding-callback)
@@ -226,7 +225,7 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 
 ## MCM API functions
 
-As of version 1.14+, MCM introduces a global `MCM` table that simplifies access and modification of values. This should be used for almost all operations, avoiding usage of `Mods.BG3MCM` internals unless explicitly stated in the documentation.
+As of version 1.14+, MCM introduces a global `MCM` table (can be called anywhere in your code) that simplifies MCM usage such as access and modification of settings' values. This should be used for any operations with MCM, avoiding usage of `Mods.BG3MCM` internals unless explicitly stated in the documentation.
 
 **Notes**:
 
@@ -283,36 +282,6 @@ end)
 ```
 
 Remember, SE injects a `ModuleUUID` constant that holds the value of the mod you're writing into your runtime.
-
-<details>
-<summary> Setting usage prior to 1.14 (DEPRECATED) </summary>
-
-While the following code is still valid, it is recommended to use the new global `MCM` table introduced in 1.14+ for easier access to settings values.
-
-```lua
--- Get the value of a setting with the ID "MySetting". ModuleUUID has the UUID of your mod
-local mySettingValue = Mods.BG3MCM.MCMAPI:GetSettingValue("MySetting", ModuleUUID)
-
--- Set the value of a setting
-Mods.BG3MCM.MCMAPI:SetSettingValue("MySetting", newValue, ModuleUUID)
-```
-
-#### Reducing verbiage
-
-To avoid typing `Mods.BG3MCM.MCMAPI:GetSettingValue` and passing your mod's UUID every time you get/set a setting value, you can define a simple global function such as this early in your scripts:
-
-```lua
-function MCMGet(settingID)
-    return Mods.BG3MCM.MCMAPI:GetSettingValue(settingID, ModuleUUID)
-end
--- Now, get values by calling MCMGet("setting_id")
-```
-
-Global functions are only accessible within your mod table, so this function won't be causing conflicts with other MCM mods that also define it.
-
-You can allow global usage of `MCM` functions by incorporating MCM's table early in your scripts with `setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.BG3MCM })`.
-Otherwise, prepend `Mods.BG3MCM` to all function calls.
-</details>
 
 ### Adding a keybinding
 
