@@ -2,7 +2,7 @@
 title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
 published: true
-date: 2025-06-10T10:56:17.182Z
+date: 2025-06-10T10:59:26.464Z
 tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -218,7 +218,10 @@ Some notes about common settings:
 So now we have the basics set up to start some modding. If you're thinking "that's great, now what" then below you'll find links to pages detailing how to mod these things.
 
 ### Creating Hair Mods
-[Creating a Hair Mod - Wiki Tutorial](/Tutorials/Visual/Creating-A-Hair-Mod/Tutorials)
+[Preparing-To-Mod](/Tutorials/Visual/Creating-A-Hair-Mod/Preparing-To-Mod)
+[Creating-Hair-Mesh-Blender](/Tutorials/Visual/Creating-A-Hair-Mod/Creating-Hair-Mesh-Blender)
+[exporting-conforming](/Tutorials/Visual/Creating-A-Hair-Mod/exporting-conforming)
+[File-Setup](/Tutorials/Visual/Creating-A-Hair-Mod/File-Setup)
 
 ### Creating Head Mods
 ...WIP
