@@ -1,8 +1,8 @@
 ---
 title: Creating A Head Mod
 description: Contents
-published: false
-date: 2025-06-10T11:56:05.510Z
+published: true
+date: 2025-06-10T11:56:15.940Z
 tags: head
 editor: markdown
 dateCreated: 2025-06-10T11:04:16.279Z
