@@ -2,7 +2,7 @@
 title: Fixing Neck Seam via Transplant
 description: one way to fix both a mesh normals seam + weights
 published: false
-date: 2025-06-13T18:45:20.589Z
+date: 2025-06-13T18:47:25.495Z
 tags: blender, head, neck, seam
 editor: markdown
 dateCreated: 2025-06-13T17:15:31.973Z
@@ -59,6 +59,8 @@ Now we just go around and make a nice smooth fit of our modded head to the neck 
 
 Once we like the look of it, we can go into Edit Mode again for the modded head.
 Turn on Snap (the Magnet) and select Vertex.
-
+Now with the move tool we can snap all vertices to the corresponding ones on the neck ring.
+With X-Symmetry on, theoretically only one side is needed, but depending on the symmetry of the mesh itself if may not work entirely (we can fix this later)
 
 ![necktransplant-snap-clip.gif](/tutorials/visual/necktransplant-snap-clip.gif)
+
