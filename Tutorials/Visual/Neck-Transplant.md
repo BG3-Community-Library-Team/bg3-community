@@ -2,7 +2,7 @@
 title: Fixing Neck Seam via Transplant
 description: one way to fix both a mesh normals seam + weights
 published: true
-date: 2025-06-13T19:49:36.800Z
+date: 2025-06-13T19:57:39.870Z
 tags: blender, head, neck, seam
 editor: markdown
 dateCreated: 2025-06-13T17:15:31.973Z
@@ -75,6 +75,7 @@ And the neck ring mesh has a UV Map of: `TIF_F_NKD_Head_A_Mesh-uvs0` and `TIF_F_
 
 So in this case we simply rename the neck ring mesh (double click on the UV Map, then copy and paste). Now they have identical UV Maps names.
 
+*(this screenshot was taken earlier, don't mind that the meshes don't line up in it!)*
 ![5-rename-ring.png](/tutorials/visual/5-rename-ring.png)
 
 Now, select only the bottom ring of vertices on the modded head using Alt+select an edge.
