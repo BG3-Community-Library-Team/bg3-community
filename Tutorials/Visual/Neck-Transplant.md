@@ -1,8 +1,8 @@
 ---
 title: Fixing Neck Seam via Transplant
 description: one way to fix both a mesh normals seam + weights
-published: false
-date: 2025-06-13T19:49:24.567Z
+published: true
+date: 2025-06-13T19:49:36.800Z
 tags: blender, head, neck, seam
 editor: markdown
 dateCreated: 2025-06-13T17:15:31.973Z
