@@ -2,7 +2,7 @@
 title: Fixing Neck Seam via Transplant
 description: one way to fix both a mesh normals seam + weights
 published: false
-date: 2025-06-13T18:47:25.495Z
+date: 2025-06-13T19:49:24.567Z
 tags: blender, head, neck, seam
 editor: markdown
 dateCreated: 2025-06-13T17:15:31.973Z
@@ -64,3 +64,47 @@ With X-Symmetry on, theoretically only one side is needed, but depending on the 
 
 ![necktransplant-snap-clip.gif](/tutorials/visual/necktransplant-snap-clip.gif)
 
+## Joining them up
+
+> BEFORE JOINING, it is important that both meshes have the same UV Maps names, it does not matter which, but the must match. If they don't, it will result in funny half-invisible meshes in game.
+{.is-warning}
+
+
+In our example, the modded head has a UV Map of: `HEL_F_NKD_Head_Shadowheart_Mesh-uvs0`
+And the neck ring mesh has a UV Map of: `TIF_F_NKD_Head_A_Mesh-uvs0` and `TIF_F_NKD_Head_A_Mesh-uvs1`
+
+So in this case we simply rename the neck ring mesh (double click on the UV Map, then copy and paste). Now they have identical UV Maps names.
+
+![5-rename-ring.png](/tutorials/visual/5-rename-ring.png)
+
+Now, select only the bottom ring of vertices on the modded head using Alt+select an edge.
+Switch to the neck ring mesh and select the top ring of vertices in the same way.
+
+![11-select-bottomverts.png](/tutorials/visual/11-select-bottomverts.png)
+![10-select-topverts.png](/tutorials/visual/10-select-topverts.png)
+
+Go back to Object Mode.
+Select the neck ring mesh, then Shift+select the modded head mesh
+
+![12-select-both-meshes.png](/tutorials/visual/12-select-both-meshes.png)
+
+Ctrl+J to join them together.
+They are now one mesh, but the neck ring is still technically not attached to the rest. So we need to merge the vertices.
+
+Back in Edit Mode, you will see that our rings we selected previously are still selected. These are the vertices we will merge.
+
+Go to Mesh -> Clean up -> Merge by Distance.
+
+![14-merge.png](/tutorials/visual/14-merge.png)
+
+If all vertices were previously snapped well, you should see a notification in the bottom centre that 40 vertices have been merged. If it is less, that means some were farther apart than the set distance. You can change it here if needed (very small increments! The default value is 0.0001m):
+
+![15-mergevalue.png](/tutorials/visual/15-mergevalue.png)
+
+Done! 
+
+![16-finish.png](/tutorials/visual/16-finish.png)
+
+## Texture Seams
+
+wip :)
