@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-19T01:23:16.201Z
+date: 2025-06-19T01:48:40.143Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -496,3 +496,64 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>*Please note that this patch will not work if you are using Glow Eyes or Eyes of the Beholder. As mentioned above, these mods all edit the same entries and will overwrite each other! In practice, this means EotB/Glow Eyes are overwriting your customizations - make those changes in EotB/Glow Eyes patches instead!</p>
 <p>In practice, this may look something like this:</p>
 <figure class="image image_resized" style="width:396px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc53L-YS9Dw5_wy9cbbkJtbmoj-PEb2ox9pFE7G4ZACRwOjBZtRA-SFch_JbMMZXuiT3-IwWyHdMwtvKkfZMli0Lm_7e7dUqgEUni1kSY-J1Wmmr0Ffy4kuSxOjStppFWcH2egqXQ?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<h1>Customization</h1>
+<h2>The KAVT Glowmap</h2>
+<p>If you've previously used <a href="https://www.nexusmods.com/baldursgate3/mods/8912">Kaz Virtual Tav</a>, you may already be familiar with the concept of the glowmap. To briefly summarize, a glowmap is a type of texture that traditionally adds glow in some capacity - in the context of KVT, the glowmap allows you to add a glowing tattoo to your Tav. For KAVT and KAVT NVP, we've made some adjustments to the glowmap to make additional features possible, utilizing the additional two, previously empty channels of the texture to allow for an additional tattoo, and opacity.</p>
+<p>The name glowmap was kept the same despite these additions, as the name had to remain this way internally to ensure compatibility with content that previously utilized the glowmap functionality of KVT. While it technically no longer is solely a glowmap, it is still called a glowmap in this context to avoid confusion and mismatch between internal names and what users see. :)</p>
+<figure class="image image_resized" style="width:402px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcPhDdhMfBlzncTw5Lgp-1cjHk1IeC7fS4y1NeWks2dfaVjx8CRAvIVRypVfIE-INdlS8q9TAsmnoOkyo56N8gcLM6C9Gl6n0owYIshaQMBSAJToNWhxjtAWctBs0RODNtCb7fJHQ?key=j4J4jVdHF6eMIcKFfNctTg">
+  <figcaption>Example KAVT Head Glowmap</figcaption>
+</figure>
+<p>As you can see, the glowmap appears similarly to the tattoo and makeup atlases - one design appears in red (this is the glowing tattoo, located on the red channel), and one design appears in blue (this is the additional tattoo, located on the blue channel). Each glowmap contains a single design on each channel, compared to an atlas, which consists of multiple designs per image arranged in a grid pattern. This means that to change the design added via glowmap, you'll only need to replace the texture.</p>
+<p>&nbsp;</p>
+<h3>Customizing the Glowmap</h3>
+<p>We recommend utilizing the KAVT Glowmap Resource available among the optional files on the <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files">KAVT mod page</a>. Using this resource will make the process of creating the glowmap easier, particularly for users who have not made one before.</p>
+<p>‼️<u>Note</u>: Some creators have made KAVT compatible mods utilizing the glowmap. If the modded options you use have been made compatible already, you can download those versions instead and won’t need to create a glowmap yourself.</p>
+<p>The Glowmap Resource contains the following files:</p>
+<ul>
+  <li>Example .psd files of all 3 Glowmaps, merged<ul>
+      <li>Provided to provide an example of what a finished Glowmap may look like</li>
+    </ul>
+  </li>
+  <li>.psd files of all 3 Glowmaps, working files<ul>
+      <li>Provided to simplify the creation of content compatible with KAVT</li>
+    </ul>
+  </li>
+  <li>A PDF guide</li>
+</ul>
+<p>The glowmap resource is a little more bare-bones than e.g. the atlas resources. This is because the glowmap is very customizable, and doesn't contain any design by default. The examples provided contain two designs on two channels of the glowmap texture.</p>
+<p>&nbsp;</p>
+<h4><u>General Information</u></h4>
+<p>All three Glowmaps (for the head, the body, and the genitals) are set up to function the same way - there are no differences regarding the functions of each channel between the three types of glowmaps included in KAVT.</p>
+<p>‼️<u>Note</u>: KAVT NVP users only have access to the body glowmap due to restrictions imposed by the shaders themselves.</p>
+<p>As a Mod user, you’ll primarily be utilizing the Red and Blue channels of these textures. The Green channel contains the Opacity feature, which is currently in an experimental state and will likely primarily prove useful to Mod Authors.</p>
+<p>The Red channel contains the Glow, which appears as a glowing, pulsing Tattoo in-game. The Blue channel contains the Additional Tattoo. The Glowmap only contains their designs, and colors are customized either by file edit, or in CC (by eye color).</p>
+<p>All three Glowmaps are provided at a size of 4096px x 4096px. You may scale them down without their features being negatively affected. This may be beneficial especially in the case of the Head Glowmap, as if you decide to use, for example, existing Tattoo or Makeup designs for this Glowmap, they may be smaller than the provided size. However, designs may be less crisp if you decide to scale them down. This will be particularly noticeable on the body.</p>
+<p>&nbsp;</p>
+<h4><u>The Head Glowmap</u></h4>
+<p>‼️<u>Note</u>: The head glowmap is only available within KAVT.</p>
+<p>When opening our example glowmap working file, you’ll find the following layer setup:</p>
+<figure class="image image_resized" style="width:234px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcsK0hfDG4khEuCu4aFsygmjGrYE-C2cb5pqKwD3EJRMfRWTBt9Q7TQ8NwOd94ZNQ2OUgvdGaj7OvZfGbMCi-yrVAPI3rjaf1ZT_BTRah1Fiy3nsoPT6rXkDw3-b0wQ3vIGaLS8?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
+<p>Whereas the glowmap itself will look like this:</p>
+<figure class="image image_resized" style="width:402px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcPhDdhMfBlzncTw5Lgp-1cjHk1IeC7fS4y1NeWks2dfaVjx8CRAvIVRypVfIE-INdlS8q9TAsmnoOkyo56N8gcLM6C9Gl6n0owYIshaQMBSAJToNWhxjtAWctBs0RODNtCb7fJHQ?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
+<p>It contains glowing freckles on the Red (Glow) channel, and a forehead Tattoo on the Blue (Additional Tattoo) channel.</p>
+<p>In-game, this example Glowmap will look like this:</p>
+<figure class="image image_resized" style="width:293px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfC-xHlngcrJJJBUMYcrGPZncGr7DmsCWIZizbejzsAZ5P6Im_oKTdkxomZlNJ6RyAYs22K4f2hUgxX-XcWDXRIqodnxqRVDQN8qEzolr7KC6Rz_0Du6wUXd2nh4RyOq2e8UWyt?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
+<p>To customize the glowmap, you can choose one of two options depending on how you would like to customize the glowmap. This process will be the same for both the glow tattoo (red channel) and the additional tattoo (blue channel), with the only difference being the channel you ultimately paste your design onto.</p>
+<p><u>Drawing your own Design</u></p>
+<p>If you'd like to draw your own design, we'd recommend using the working file instead, as within this file, each channel is separated into it's own folder. This means that you can more easily create additional layers to work with.</p>
+<p>You'll want to draw your design in white on a black background. On the glowmap, anything not fully black will appear as part of your design. You can use this to your advantage and create designs with varying levels of opacity by working not only in true white, but also in shades of grey, but it is also important to consider this to avoid accidental spots appearing within your design.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4><strong><u>The Body Glowmap</u></strong></h4>
+<p>The Body Glowmap is available for both KAVT and KAVT NVP, thanks to Kaz.</p>
+<p>When opening our example working file, you’ll find the following layer setup:</p>
+<figure class="image image_resized" style="width:216px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdfb4STjY6cKjHjzXykDcpb3-zJwizwPR5RqLxAf_bwrp2NYTAzW-hF-5W3dx5rs0eAb1FtOZ8H3aOTjGqZrjGE5dCmMksRa2y9CWvugnYG0LS92GsHJua8UHg9EjQDOW6jHyLQ4w?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
+<p>Whereas our example merged file will look like this:</p>
+<figure class="image image_resized" style="width:392px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf9Ai0-0OZd-GORn3nZJa5caRa_VnZUW_wtiFmYesKzIffOEo9uTsI2N37Cua0mO1xzTdyOOJyR0PY3YSQiFw53tQ-kUnX3GM8hqujAQUNJ2rHV1p03PY0jhPbdbCeNvzdBDzM5ig?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
+<p>In-game, this example Glowmap will look like this:</p>
+<figure class="image image_resized" style="width:506px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdYAx6wyxWkHO3Kxq0D9th-t5AN7BCTYYB6FOqlYIxRqTEugFjR9PFlx_icO_U4U_WDnm-PzMUPtKxNHtr6aK2qb-0YwsyX-MNVAy2Rwm7Ga6xHvoBORa0jFioqAZqmKkuOyXvf?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
+<p>The body tattoos used for these examples were created by Jerinski, who kindly allowed us to use his work for example content.</p>
+<p><strong><u>Export &amp; Compression Types</u></strong></p>
+<p>When saving your Glowmaps as .DDS files, please use BC3 compression.</p>
+<p>I would recommend saving these textures without MipMaps, as they can sometimes make content like this appear blurry.</p>
