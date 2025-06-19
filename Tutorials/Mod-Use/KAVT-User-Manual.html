@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-19T01:09:11.847Z
+date: 2025-06-19T01:19:01.984Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -332,3 +332,75 @@ dateCreated: 2025-06-18T21:49:52.870Z
   <li>Astralities’ Glow Eyes (Patch available)</li>
 </ul>
 <p>‼️ Please note that when using either of these mods, you’ll need to make any edits you’d make in the KAVT customization patch <u>inside these mod’s patches instead! </u>They edit the same files and will thus override one another. You can find more information on this further down on this wiki page alongside the load order related information.</p>
+<h1>Baseline Usage</h1>
+<h2>QuickStart Guide - Plug &amp; Play Installation</h2>
+<p>This section of the guide only applies if you’ve either <i>never </i>used Unique Tav before, or are installing KAVT or KAVT NVP on a clean game installation that<i> does not contain</i> Unique Tav. For information on how to transfer from Unique Tav to KAVT or KAVT NVP, please see the section providing information specifically about transferring from Unique Tav to KAVT or KAVT NVP instead.</p>
+<p>This guide also does not contain information on how to customize KAVT or KAVT NVP. It only covers basic, plug and play style installation.</p>
+<p>&nbsp;</p>
+<h3>How to quickly get started with KAVT or KAVT NVP</h3>
+<p>Download the mod from <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files">the mod page</a>, and install it using your mod manager of choice (we recommend the <a href="https://github.com/LaughingLeader/BG3ModManager">BG3 Mod Manager</a> by LaughingLeader).</p>
+<p>You’ll want to position KAVT or KAVT NVP relatively close to the bottom of your load order. If you want more detailed instructions on load order in general, we’d recommend checking out <a href="https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order"><u>this</u></a> guide.</p>
+<p>The only things you should be loading below KAVT or KAVT NVP and it’s associated patches (e.g. Eyes of the Beholder or Glow Eyes Unique Tav patches) are the following types of mods:</p>
+<ul>
+  <li>Compatibility Framework mods</li>
+  <li>Major patches, e.g. Padme’s patches</li>
+  <li>Compatibility Framework itself</li>
+</ul>
+<p>For example, within my personal load order containing 204 mods, KAVT is located at load order spot number 197.</p>
+<p>For basic installation, either as the baseline for customization or in order to solely benefit from the additional tattoo, makeup and scar slots, this is it. :)</p>
+<p>&nbsp;</p>
+<h2>Swapping from Unique Tav to KAVT or KAVT NVP</h2>
+<p>Both KAVT and KAVT NVP are set up to <u>replace</u> the Unique Tav pak within your mod folder. This means that importing the KAVT or KAVT NVP .pak file via the BG3 Mod Manager (or alternatively manually placing the .pak in your mod folder) will <u>overwrite</u> the Unique Tav .pak file automatically.</p>
+<p>However, <u>KAVT will not remove the Unique Tav Data files within your game files</u>. Those files will remain unless you manually remove them, but keeping them in place will <u>not</u> cause problems.</p>
+<p>This guide will assume you are installing mods via the BG3 Mod Manager by LaughingLeader. The process would be similar when using the in-game mod manager instead, but not exactly the same.</p>
+<p>&nbsp;</p>
+<h3>Swapping the .pak File</h3>
+<p>Download the .pak file of your choosing from the <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files">KAVT mod page</a>. You will be using either KAVT or KAVT NVP - you cannot use both at the same time as they do the same thing.</p>
+<p>Next, import the .pak file into your Mod Manager as you usually would. You can do this by either dragging the .zip file you downloaded into the Mod Manager window, or by unzipping the file and placing the .pak file inside within your mod folder manually. Your mod folder is located at the following path by default:</p>
+<p><code>C:\Users\(YOURNAME)\AppData\Local\Larian Studios\Baldur’s Gate 3\Mods</code></p>
+<p>The KAVT or KAVT NVP .pak file will override the Unique Tav .pak file, as they share the same name.</p>
+<p>&nbsp;</p>
+<h3>Adjusting your Tattoo and Makeup Atlases</h3>
+<p>This section applies to both KAVT and KAVT NVP. You will <u>only</u> need to do this if you have installed loose file tattoo or makeup atlases when using Unique Tav and would like to continue using them.</p>
+<p>&nbsp;</p>
+<h4>If you want to use KAVT or KAVT NVPs included options instead</h4>
+<p>If you aren’t looking to continue using your custom tattoo and/or makeup atlas and would like to use KAVT or KAVT NVPs included options instead, you theoretically do not need to make any changes.</p>
+<p>KAVT and KAVT NVP use different file names for tattoo and makeup atlases than Unique Tav does. This means that by default, the mod will not read your Unique Tav atlases and instead use the atlases inside the KAVT or KAVT NVP .pak instead. However, if you want to keep your Generated folder tidy, we would recommend deleting the atlases currently in place (remember to back them up if they're custom and not available to download anywhere else!).</p>
+<p>&nbsp;</p>
+<h4>If you want to use a custom Tattoo or Makeup atlas</h4>
+<p>If you would like to use the custom atlases you already used with Unique Tav, you will need to make two types of changes to your atlases for them to work alongside KAVT or KAVT NVP.</p>
+<p>‼️<u>Note</u>: Some creators have made KAVT compatible versions of their tattoo and makeup mods available. If the modded options you use have been made compatible already, you can download those versions instead and won’t need to make any changes yourself.</p>
+<p><u>Re-Sizing your Atlases</u></p>
+<p>For this step, we recommend using the “Tattoo, Makeup and Scar Atlas” resource available under “Optional Files” in <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files"><u>the file tab</u></a> on KAVTs mod page.</p>
+<p>To briefly explain why we recommend this - .DDS files are compressed, similarly to a .jpeg. Opening a .DDS file, making edits, and then saving it once more will degrade the quality of the image, similarly to how .jpeg files may appear “crunchy” - Lines will be less crisp and designs may become blurry or artifacted. The resource we’ve made available is in the form of a .psd file, which is not compressed. This will ensure things aren’t compressed multiple times, keeping your tattoos and makeup as crisp as possible.</p>
+<p>The process is the same for both the tattoo and makeup atlas. You will need Photoshop or Gimp to do this. For this guide, we will be using the files “KAVT Tattoo Atlas - Merged” and/or “KAVT Makeup Atlas - Merged”. We will only cover adding your existing Unique Tav atlas to the bottom half of the larger KAVT atlas - if you want to modify where specific designs are located or assemble a fully custom atlas, we recommend checking out the more in-depth guide included in the Resources file that goes over working with the “Working File” instead. :)</p>
+<p>When opening the file, you’ll see the larger tattoo or makeup atlas on the screen. You will also want to open the atlas you have used alongside Unique Tav at the same time.</p>
+<p>Inside your Unique Tav atlas file, open the “Channels” tab. Within Photoshop, this tab is located next to the “Layers” tab - this’ll be similar with other image editing software.</p>
+<figure class="image image_resized" style="width:451px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfT1bZybgRMYyaLiNZOTeIFMCzZoTsCzO_yv0J4SXzibgIwIj_TBLOow4HLEJ6Ceol9t6wBNbGvlcJ-PtOVLslwPhCAoJbC9EOPZMhEAXXebHMWYtwYh0HD3AOkjEmulpv46ft-LQ?key=1YfCsAq9MlCYJYChLgQ6UA">
+  <figcaption>Channels Tab in Photoshop</figcaption>
+</figure>
+<p>Select the “Red” channel from the list. The appearance of your image will change, and only the red tattoos will be visible. Select the entirety of your canvas using the selection tool, and copy it (ctrl+c, or navigating to Edit &gt; Copy in the top bar).</p>
+<p>Now, swap over to your KAVT atlas.</p>
+<p>Similarly, navigate to the “Channels” tab and select the red channel. Paste (ctrl+v, or navigating to Edit &gt; Paste in the top bar) the “Red” channel you just copied from your Unique Tav atlas into the “Red” channel of your KAVT atlas. Re-position it by dragging it downwards until it covers the bottom half of the atlas.</p>
+<p>Now, you’ll repeat this same process for the “Green” and “Blue” channels of your atlases. Once you’ve done this for all three channels, you’ve successfully added your Unique Tav atlas to the bottom half of the KAVT atlas.</p>
+<p>Next, we will save our atlas. Navigate to File &gt; Save As, then choose the location for your file. You can either save it directly to the correct location, or save it to a different location and then copy it over to the correct path:</p>
+<p><code>YOURGAMEFOLDER\Generated\Public\Shared\Assets\unique_tav\FACE</code></p>
+<p>You will want to choose the following names for your atlases:</p>
+<p><u>Tattoo</u>: KVT_Head_Atlas_Tattoo.DDS</p>
+<p><u>Makeup</u>: KVT_Head_Atlas_Makeup.DDS</p>
+<p>Capitalization and spelling are important here! Your game will not read these files correctly if there are spelling mistakes, capitalization differences, or the file is placed at the wrong location.&nbsp;</p>
+<p>These are the export settings we will use to save our atlases:</p>
+<figure class="image image_resized" style="width:440px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdk8VwKmTxEXFWolcWFhktPvzm4G0Rs1_KmsIsvc8dsGoQEPKmSwOLj9DbbpzTtEpu7MlCtvFH-3ANKjwanCFrlDW86n7_V-KMr0YNPORPrMC550Qrx-oHmxQ3VS84hZcXnE_nzEQ?key=1YfCsAq9MlCYJYChLgQ6UA">
+  <figcaption>Tattoo and Makeup Atlas Export Settings</figcaption>
+</figure>
+<p>Please note your menu might look slightly differently if you use the NVIDIA dds plugin for Photoshop instead of the Intel one, or you are using another image editor to make these changes.</p>
+<p>Now, your atlas has been re-sized and re-named and will work with KAVT.</p>
+<p>&nbsp;</p>
+<p><u>Why do we need to re-size the atlas?</u></p>
+<p>The changes allowing for the larger atlas to work are made within the shader we edit within KAVT. Inside the shader, we have told the game to look for an atlas that is 4 tiles wide and 8 tiles tall - the game will <i>always</i> treat the atlas as if it is that size, even if the atlas you’ve added is only 4 tiles tall.</p>
+<p>This image illustrates what issues that might cause:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXer4S5ZqWyJeylRRLB-yGe_39220aPpPfpsTGezZCkqVxtaIGRrTVQuuYjLdKmmHHAC10uSxFBLtbXCP3dyZHKi_jdwDq2o_UvCAwWpcWVq-qhDmUmKGrJCn5FK9d7V5e-z92Je?key=1YfCsAq9MlCYJYChLgQ6UA">
+  <figcaption>Atlas Size Mismatch</figcaption>
+</figure>
+<p>As you can see, the left atlas contains one tattoo neatly within each tile. The atlas on the right, however, is cut up into more sections than there actually are tattoos, resulting in each tattoo getting cut in half. In-game, this results in misplaced and awkwardly cut tattoos.&nbsp;</p>
+<p>This is why you’ll want to re-size your atlas. :)</p>
