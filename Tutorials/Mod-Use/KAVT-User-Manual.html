@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-19T01:19:01.984Z
+date: 2025-06-19T01:23:16.201Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -404,3 +404,95 @@ dateCreated: 2025-06-18T21:49:52.870Z
 </figure>
 <p>As you can see, the left atlas contains one tattoo neatly within each tile. The atlas on the right, however, is cut up into more sections than there actually are tattoos, resulting in each tattoo getting cut in half. In-game, this results in misplaced and awkwardly cut tattoos.&nbsp;</p>
 <p>This is why you’ll want to re-size your atlas. :)</p>
+<p>&nbsp;</p>
+<h3>Swapping Unique Tav Body Mesh Edits</h3>
+<p>If you’ve installed body mesh edits as loose files within your game files, you won’t need to make any changes for these body meshes to also with with KAVT or KAVT NVP.</p>
+<p>&nbsp;</p>
+<h3>Swapping the Unique Tav Body Tattoo</h3>
+<p>If you’ve used a body tattoo with Unique Tav by placing the body tattoo file as a loose file within your game files, you will not need to make any changes for this body tattoo to also work with KAVT or KAVT NVP.</p>
+<p>&nbsp;</p>
+<h3>Swapping Unique Tav Body Texture Edits</h3>
+<p>If changes are necessary depends on whether you are using KAVT or KAVT NVP.</p>
+<p>You only need to do this if you are using custom body textures! This is not a requirement for body tattoos, or head tattoo or makeup atlases.</p>
+<p>&nbsp;</p>
+<h4>If you are using KAVT NVP</h4>
+<p>If you’ve used custom body textures with Unique Tav by placing your replacement body textures as loose files within your game files, you will not need to make any changes for these body textures to also work with KAVT NVP.</p>
+<p>&nbsp;</p>
+<h4>If you are using KAVT</h4>
+<p>Because KAVT uses virtual textures instead of traditional ones, you’ll need to convert your body textures to virtual textures to continue using them. We have tried to make this process as simple as possible for users, but if you struggle doing this, please feel free to reach out!</p>
+<p>‼️Note: Some creators have made KAVT compatible versions of their body texture mods available. If the modded options you use have been made compatible already, you can download those versions instead and won’t need to make any changes yourself.</p>
+<p>&nbsp;</p>
+<p><u>Setting Up to convert Body Textures</u></p>
+<p>For this step, we recommend using the “Virtual Texture Workspace” resource available under “Optional Files” in <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files"><u>the file tab</u></a> on KAVTs mod page.</p>
+<p><u>Requirements</u></p>
+<ul>
+  <li>Norbyte’s <a href="https://github.com/Norbyte/lslib/releases">LSLib</a></li>
+  <li>The KAVT Virtual Texture Workspace available <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files">in the Files tab on the mod page</a></li>
+  <li>Your body textures of choice, including CLEA, NM, and HMVY</li>
+</ul>
+<p>Please note that you’ll need to use LSLib to pack Virtual Textures. You cannot do so with the Modder’s Multitool.</p>
+<p>&nbsp;</p>
+<p><u>Step 1 - Acquiring LSLib</u></p>
+<p>If you haven’t used LSLib before, acquire it from the link above. All you’ll need to do to set up this tool is download it from the link available above and unzip the files in the location of your choice. Make sure you have .NET 8.0 installed, as it is required for this tool to function - You can find the download link on LSLib’s release page linked above.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7zhPjuPRFRAvF0jN9w8rNL09NisjdV4IZhsGfcAh6OMT9s7lb9AU1cI8-G7MyHnMr1yln_D2Zw5iDS2qYs_VX0YgKjTI1ytJvONnK6eTc5dIZIWo4dDwlJHDonYRdyNxndASp?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p><u>Step 2 - KAVT Virtual Texture Workspace</u></p>
+<p>Download the KAVT Virtual Texture Workspace from the optional files in the File tab on this Mod page. Using this workspace will make this process significantly easier as all configuration files required for packing Virtual Textures using LSLib have already been created for you.</p>
+<p>Similarly to LSLib, you’ll want to unzip the folder inside this .zip wherever you’d like it to be - Ideally somewhere you’ll find it easily, as we will be using the files within throughout this process. There is no setup required for any of the configuration files within the workspace, they’ll function as is.</p>
+<p>&nbsp;</p>
+<p><u>Step 3 - Inserting your Textures</u></p>
+<p>Next, we’ll be adding our new Body Textures to the workspace. For this guide, I’ll be using the feminine Githyanki textures as an example - the process will be the same for every Race and Bodytype, only the exact names of the files used in the process will change according to which Race and Bodytype you’re looking to edit.</p>
+<p>You’ll place your body textures within the following folder of the workspace: …\unique_tav\Conversion\Textures\(TEXTURES GO HERE). When you open this path, you’ll find it’s already filled with textures. These are the vanilla versions of all Body Textures, and whichever ones you’re not interested in changing can simply remain - we will not be touching them.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd4trx2KGTsDUrFv-WpIEnIUha3owwWrHoNjp9t3GLZpZ80zYEMIaKptYd3lYUd4fCkLE-7bwoL1Aeli-ml0I_kzwQ9aUX7tf02DWMKNXrAFcv_554OKwzJ7KgSdsGSJiD23o631A?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>Take note of the naming convention of the textures in this folder. You’ll need to match these names when adding your textures to this folder. These textures follow the following naming convention, with content not in brackets being consistent between all races and body types:</p>
+<p><code>UNIQUE_(RACE)_(M/F)_NKD_BODY_A_(TEXTURE TYPE).DDS</code></p>
+<p>For the sake of our example, we will be adding our textures to this folder after re-naming them as follows:</p>
+<p>UNIQUE_GTY_F_NKD_Body_A_CLEA.DDS</p>
+<p>UNIQUE_GTY_F_NKD_Body_A_NM.DDS</p>
+<p>UNIQUE_GTY_F_NKD_Body_A_HMVY.DDS</p>
+<p>If you’re asked if you’d like to overwrite these files, select yes. Do not delete any of the other textures in this folder, even if you aren’t using them. Please keep in mind that for Virtual Textures, all three of these textures will need to use BC3/DXT5 compression. This is a distinct difference between Virtual Textures and Traditional ones, as for Traditional Textures, all three textures require different compression types.</p>
+<p>&nbsp;</p>
+<p><u>Step 4 - Using LSLib</u></p>
+<p>Now that our texture edits are in place, we’ll be packing our Virtual Textures using LSLib. Launch the tool and navigate to the “Virtual Textures” tab towards the top of the UI. You’ll be working within the “Build Tile Set” section of this tab.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeeERhmgWwFJsxMaXIFxm-n0_G4f_lAsa2Ng2G8OolBWxnkGYxNTi-X9me8kYkWAohshLTQcuZDU42izgmdjYA9_mVMTgqNE9lp9BJYwwRrcrByINENPJBGycYKaAl10erCSU9W?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>Click the three dots on the right of the “Tile Set Configuration” line. In the window that opens, navigate to wherever you unzipped your KAVT Virtual Texture Workspace and further to unique_tav\Configs. Within this folder, select whichever Config file matches the Race and Body type combination your body textures are intended for. In our case, this is the Config file named “VTexConfigGTYF” - VTex Config Githyanki Female. Double click this file, which will add it’s path to the Tile Set Configuration field.</p>
+<p>This is our configuration file. It dictates which textures will be packed into which .gtp/.gts file; the files that will store our Virtual Textures moving forward.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeFn066KWtirwihfIEtKKr28rJOhsSfW8_jHrlfYTCFfadmVuZxVaFDsoERK6sdgHrLq3bvr-mp5MAHRj5KFlEOH2VPwfi_f3AwdzxMduk_gj-rbuxHm_dZn_OC-MjhYP8v-vBYPw?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>Next, click the three dots on the right of the “Mod Root Path” line. Navigate to where you’ve unzipped your KAVT Virtual Texture Workspace once again, and select the folder named “unique_tav” that contains “Configs”, “Conversions”, and “Public”. Once again, click open, or simply double-click the file.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe9s8CZvoZTe5Gt4u3xlNAVG2G-fhJ68gWceHG5FX8k7rV4ztM5epb04OvQY55i3cYsXP3CDHUIOqwYlCYv-2S6V_FskCBLqKu0wUCqOUrsaL2EEynY9BLoZkTMn9qPWk2SqYIW9Q?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>Now, simply click “Build”. LSLib will now build your Virtual Texture tilesets. You’ll receive a small popup once the process has finished.</p>
+<p>&nbsp;</p>
+<p><u>Step 5 - Loading your .gts and .gtp files</u></p>
+<p>Now that we’ve successfully packed our Virtual Textures, we can add them to our game files. Similarly to how Body Texture overrides function for Unique Tav, KAVT’s Virtual Textures are loaded as loose file overrides.</p>
+<p>First, we’ll grab our freshly generated set of Virtual Texture files from within our workspace. They’re located at …\unique_tav\Public\unique_tav\Assets\VirtualTextures\(TEXTURES ARE HERE). You’ll want to copy both the .gtp and the .gts for your corresponding Race and Body Type.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc_agdyNTl9AnTVpW9V56ERpcJqYRzq_QQQBTe8kFX4VX3swEoQupxL0TgMIIsnGyh-82tmqwjnyIiPhWUvnVpb4-HSBHpTOjUDlzbOY_E-XyE78dsp9ZNtwnOkj5sGTBC8cI77Lw?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>Next, navigate to your game’s Data folder - the easiest way to do so is via the BG3 Mod Manager’s shortcut, if you’re using it as your Mod Manager. Alternative, you can directly navigate to it; it’ll be located at …\Steam\steamapps\common\Baldurs Gate 3\Data.&nbsp;</p>
+<p>Further navigate to …\Steam\steamapps\common\Baldurs Gate 3\Data\Public\unique_tav\Assets\VirtualTextures. Paste the .gts and .gtp files you copied from within your workspace into this folder. This is where your Virtual Texture overrides will be located.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdM8IA6qXPLpdF7SH_0pUDLdCzi3HZQi8AfCKxUM4Urm0oQG6Yov-0kDSn9Q3vZwnfLVCNL_GjXA4Wqv1ZuSBTcVZ1je94q3xBTkZhiY-fcEdaBlPMTqzkeOTPGlAt1O3kV7Tll?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p><u>Step 6 - Test your body textures in-game</u></p>
+<p>Finally, you’ll now be able to load up your game and witness your body textures in all their glory!</p>
+<p>&nbsp;</p>
+<h2>KAVT-Specific Load Order Information</h2>
+<p>This section will specifically talk about load order in the context of KAVT and KAVT NVP and will mostly cover things like Unique Tav/KAVT patches, races, Glow Eyes/Eyes of the Beholder, and similar things.</p>
+<p>If you’re interested in more generalized load order information, we’d recommend checking out <a href="https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order"><u>this</u></a> guide instead. :)&nbsp;</p>
+<p>&nbsp;</p>
+<h3>General Information</h3>
+<p>KAVT and KAVT NVP, as well as modded races and Glow Eyes/Eyes of the Beholder, can be somewhat sensitive when it comes to load order because they all edit the same entries.</p>
+<p>These entries are “Character Visuals” entries. They define your character’s baseline appearance in CC, and there is one entry for each race and body type combination (meaning four entries per subrace). Unfortunately, we cannot make multiple changes to these same entries without overwriting each other - this is why patches are necessary, and load order is important, as whichever mod modifies these entries last will overwrite all other changes to these entries.</p>
+<p>&nbsp;</p>
+<h3>What Order to Load Things in</h3>
+<p>Generally, this is the order we’d recommend loading things in. Please note these do not need to be <i>directly</i> after one another. We are also only covering content that directly relates to KAVT in some capacity.</p>
+<ul>
+  <li>Race Mods</li>
+  <li>Race Mods’ Unique Tav Patches</li>
+  <li>Head Mods</li>
+  <li>Head Mods’ Unique Tav Patches</li>
+  <li>KAVT or KAVT NVP</li>
+  <li>KAVT Customization Patch*</li>
+  <li>Glow Eyes or Eyes of the Beholder</li>
+  <li>Glow Eyes or Eyes of the Beholder Unique Tav Patch</li>
+</ul>
+<p>*Please note that this patch will not work if you are using Glow Eyes or Eyes of the Beholder. As mentioned above, these mods all edit the same entries and will overwrite each other! In practice, this means EotB/Glow Eyes are overwriting your customizations - make those changes in EotB/Glow Eyes patches instead!</p>
+<p>In practice, this may look something like this:</p>
+<figure class="image image_resized" style="width:396px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc53L-YS9Dw5_wy9cbbkJtbmoj-PEb2ox9pFE7G4ZACRwOjBZtRA-SFch_JbMMZXuiT3-IwWyHdMwtvKkfZMli0Lm_7e7dUqgEUni1kSY-J1Wmmr0Ffy4kuSxOjStppFWcH2egqXQ?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
