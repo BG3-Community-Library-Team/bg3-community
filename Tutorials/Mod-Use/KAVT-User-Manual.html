@@ -2,12 +2,16 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-24T23:12:26.213Z
+date: 2025-06-24T23:23:43.855Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
 -->
 
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Here, you can now make whichever edits you’d like to make. Each parameter has been labelled, describing what it edits, how the values shown affect the feature you’re editing, and what changes are possible for the given parameter.<br><br>Once you have made your changes, save the file.</p>
 <h1>KAVT User Manual - How to Use, Customize, and Troubleshoot KAVT &amp; KAVT NVP</h1>
 <p>This user manual covers everything there is to know about <a href="https://www.nexusmods.com/baldursgate3/mods/16325">Kazstra's Virtual Tav x Tattoo, Makeup &amp; Scar Extender</a>. It covers both the primary version (KAVT) and the non-virtual port (KAVT NVP).</p>
 <p>The manual was written primarily with beginners in mind, and thus is rather in-depth and detailed. However, specific sections may require users to have some baseline knowledge on how to use image editing software (such as Photoshop or Gimp). We have attempted to keep this manual as simplistic as possible, but if there are questions you have that are not covered, you struggle following the guides, or you have any kind of feedback on the content covered here or the way these guides are written or constructed, please don't hesitate to let us know <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=posts">on our mod page</a>!</p>
@@ -760,7 +764,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 </ul>
 <p>Body Glow and Head Glow (for the glowing tattoo added via glowmap) use the same color parameter. Any Glow Color set within the patch will be overridden in CC if you choose a modded eye color that includes Glow.</p>
 <p>&nbsp;</p>
-<h3>Editing the Customization Patch</h3>
+<h3>Editing the Customization Patch (If not EotB or Glow Eyes)</h3>
 <blockquote>
   <p><span class="text-big"><i>⚠️ </i></span><i>If you are using Eyes of the Beholder or Glow Eyes alongside KAVT, you will need to make these edits in a different file. Please see the EotB/Glow Eyes section a little further below for details!</i></p>
 </blockquote>
@@ -772,4 +776,31 @@ dateCreated: 2025-06-18T21:49:52.870Z
 </ul>
 <p>&nbsp;</p>
 <p><u>Step 1 - The Customization Patch</u></p>
+<p>Download the Customization Patch from the Files tab on <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files">this Mod page</a>. Inside the .zip file you’ll find the file structure of the Customization Patch Mod, unpacked. The files inside are thoroughly commented with additional details and labelling to make the process as easy as possible for you.<br><br>Unzip the file wherever is the most convenient for you, as you’ll be working within it.</p>
+<p>&nbsp;</p>
+<p><u>Step 2 - Making your Changes</u><br><br>Navigate to the following path:<br><code>…\KAZSTRA_UniqueTav_Customization\Public\KAZSTRA_UniqueTav_Customization\Content\[PAK]_CharacterVisuals</code><br><br>Within this folder, you’ll find a number of files named after BG3 Races. Open whichever file name matches the Race which you’d like to edit; e.g. if you'd like to edit Body 1 Humans, you'd open <code>_Humans.lsf.lsx</code>.</p>
+<p>Changes are made for each Race, Subrace, and Body Type individually. We’ll be using the Human file as an example for this guide. Your file may look similar to this:</p>
+<figure class="image"><img src="https://i.ibb.co/WvLLpJbY/charactervisuals.png"></figure>
+<p>&nbsp;</p>
+<p>Read the instructions within the file carefully. Each Subrace and Body Type combination is labelled appropriately. Open the section of the Subrace and Body Type you’d like to edit by opening the appropriate collapsed section; we’ve marked the symbol you’ll need to click to do so in the screenshot shown above. Once opened, your file may look like this:</p>
+<figure class="image"><img src="https://i.ibb.co/VWdhmM9V/charactervisuals2.png"></figure>
+<p>&nbsp;</p>
+<p>Scroll down until you see a section of code separated by “&lt;!— KAVT CUSTOMIZATION —&gt;“. The section between this label and the “&lt;!— KAVT CUSTOMIZATION END —&gt;“ label contains all the code necessary to customize your KAVT/KAVT NVP as you desire.</p>
+<figure class="image"><img src="https://i.ibb.co/Wpq0fjPq/charactervisuals3.png"></figure>
+<p>Here, you can now make whichever edits you’d like to make. Each parameter has been labelled, describing what it edits, how the values shown affect the feature you’re editing, and what changes are possible for the given parameter.<br><br>Once you have made your changes, save the file.</p>
+<p>&nbsp;</p>
+<p><u>Step 3 - Packing the Patch</u><br><br>You can now pack the Mod using either LSLib, or the Modder’s Multitool<br><br><u>LSLib</u><br><br>If you’re using LSLib, navigate to the “LSX/LSB/LSF/LSJ Tools” tab, and batch convert the entire Patch by entering the path to the root folder as both the “Input Directory” and “Output Directory” paths. Click “Convert” to convert the entire patch at once.</p>
+<figure class="image image_resized" style="width:48.21%;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdGyAVaq6MweSP2ExVlzn_i5SugW6UvW9eGVgkFzR1aidi3_6vfTlEbzlYO6SFqPyyqUWEqVwXp70yS8MqPz81IjOwjbI22tpaop9Lps1F8CUwAf5vFbipmI0g3p748WU5BDO_aFg?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>Then, navigate to the “PAK/LSV Tools” tab. Enter the path to the root folder as the “Source Path” path and whichever directory you’d like to place the finished .pak in as the “Package Path”. In our example, this is the Mods folder. Make sure the “Package Path” ends with the name of the .pak and the extension “.pak”. Before packing, ensure the Version is set to V18, and the Priority to 35.&nbsp;</p>
+<figure class="image image_resized" style="width:48%;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXy-7PArULTcjV25xX2a4djPK48CIRFBJMbaXveA5UsMhNJVwtpn3wj_lih_ShR8q_Pd-hyPQXs9xCHYUKt1V1NQpd2Ecjcx2hfKYrTNb8XQCOHxU8xwg96HYpZ43Db4GxgIBV?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>Then, create the .pak by clicking “Create Package" and install it via BG3MM as you would any other Mod. Load it <u>after</u> KAVT/KAVT NVP.</p>
+<p><br><br><u>Modder’s Multitool</u><br><br>If you’re using the Modder’s Multitool, you’ll only need to drag the root folder of the Patch onto the appropriate spot inside the Modder’s Multitool window. Your Mod will be packed to the same directory you’ve placed the root folder in, or alternatively directly to your Mods folder, should you have selected this setting. Install the mod via BG3MM as you would any other mod. Load it after KAVT/KAVT NVP.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfo7J7PfumE89gUUuOcVQHp0aWdrZMsKSmbnZjc6muYcyHqZG-UVcMxlUkGtgpFCt19vMUlU65nF56txlZw5ZgTVvV_9TxWnKyOzbTpfm2EqLuulkA4ozJOpcl9VSqauL_OuDJF?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<h3>Editing the Customization Patch (If EotB or Glow Eyes)</h3>
+<blockquote>
+  <p><span class="text-big"><i>⚠️ </i></span><i>This section is only relevant if you're using Eyes of the Beholder or Glow Eyes alongside KAVT. If you are not, please refer to the above section instead!</i></p>
+</blockquote>
 <p>&nbsp;</p>
