@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-24T22:12:40.295Z
+date: 2025-06-24T22:36:52.560Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -524,27 +524,30 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>The glowmap resource is a little more bare-bones than e.g. the atlas resources. This is because the glowmap is very customizable, and doesn't contain any design by default. The examples provided contain two designs on two channels of the glowmap texture.</p>
 <p>If you have little experience editing images with Photoshop or GIMP, we'd recommend checking out the BG3 Image Editing Basic section further down on this wiki page first. It covers some of the baseline skills you might need to do this sort of editing - all of these skills are very simple to acquire, and editing these resources isn't as scary as it might seem if you haven't done so before! The Image Editing Basic section primarily covers very basic information on how to use image editing software for users who have never interacted with software like this before, meaning that if you have used Photoshop or Gimp in any capacity, you're likely good to go when it comes to editing the glowmap.</p>
 <p>&nbsp;</p>
-<h4><u>General Information</u></h4>
+<h3><u>General Information</u></h3>
 <p>All three Glowmaps (for the head, the body, and the genitals) are set up to function the same way - there are no differences regarding the functions of each channel between the three types of glowmaps included in KAVT.</p>
 <p>‼️<u>Note</u>: KAVT NVP users only have access to the body glowmap due to restrictions imposed by the shaders themselves.</p>
 <p>As a Mod user, you’ll primarily be utilizing the <u>Red</u> and <u>Blue</u> channels of these textures. The Green channel contains the Opacity feature, which is currently in an experimental state and will likely primarily prove useful to Mod Authors.</p>
 <p>The <u>Red channel contains the Glow</u>, which appears as a glowing, pulsing Tattoo in-game. The <u>Blue channel contains the Additional Tattoo</u>. The Glowmap only contains their designs, and colors are customized either by file edit, or in CC (by eye color).</p>
 <p>All three Glowmaps are provided at a size of 4096px x 4096px. You may scale them down without their features being negatively affected. This may be beneficial especially in the case of the Head Glowmap, as if you decide to use, for example, existing Tattoo or Makeup designs that are originally part of an atlas for this Glowmap, they may be smaller than the size of the glowmap resource provided. However, designs may be less crisp if you decide to scale them down. This will be particularly noticeable on the body.</p>
 <p>&nbsp;</p>
-<h4><u>Editing the Head Glowmap</u></h4>
+<h3><u>Editing the Head Glowmap</u></h3>
 <p>‼️<u>Note</u>: The head glowmap is only available within KAVT.</p>
 <p>‼️<u>Note</u>: We have used Photoshop to edit the Glowmap; the process will be very similar when working with Gimp instead, but what you see within your image editing software will likely be a little bit different from the screenshots we've provided.</p>
 <p>When opening our example glowmap working file from the glowmap resource mentioned earlier in this section, you’ll find the following layer setup with a number of image layers inside of folders:</p>
 <figure class="image image_resized" style="width:234px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcsK0hfDG4khEuCu4aFsygmjGrYE-C2cb5pqKwD3EJRMfRWTBt9Q7TQ8NwOd94ZNQ2OUgvdGaj7OvZfGbMCi-yrVAPI3rjaf1ZT_BTRah1Fiy3nsoPT6rXkDw3-b0wQ3vIGaLS8?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
+<p>&nbsp;</p>
 <p>Whereas the glowmap included within these resources itself will look like this:</p>
 <figure class="image image_resized" style="width:402px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcPhDdhMfBlzncTw5Lgp-1cjHk1IeC7fS4y1NeWks2dfaVjx8CRAvIVRypVfIE-INdlS8q9TAsmnoOkyo56N8gcLM6C9Gl6n0owYIshaQMBSAJToNWhxjtAWctBs0RODNtCb7fJHQ?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
+<p>&nbsp;</p>
 <p>As you can see by the colors, it contains glowing freckles on the Red (Glow) channel, and a forehead Tattoo on the Blue (Additional Tattoo) channel.</p>
 <p>In-game, this example Glowmap will look like this:</p>
 <figure class="image image_resized" style="width:293px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfC-xHlngcrJJJBUMYcrGPZncGr7DmsCWIZizbejzsAZ5P6Im_oKTdkxomZlNJ6RyAYs22K4f2hUgxX-XcWDXRIqodnxqRVDQN8qEzolr7KC6Rz_0Du6wUXd2nh4RyOq2e8UWyt?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
+<p>&nbsp;</p>
 <p>The merged glowmap file doesn't contain folders and individual layers as the working file does; instead, you'll only see a singular layer containing both designs on different channels. The image you see when opening the file will be the same as the second image in this section, showing both designs on the glowmap in red or blue respectively.</p>
 <p>To customize the glowmap, you can choose one of two options depending on how you would like to customize the glowmap. This process will be the same for both the glow tattoo (red channel) and the additional tattoo (blue channel), with the only difference being the channel you ultimately paste your design onto.</p>
 <p>&nbsp;</p>
-<h5>Using an existing Vanilla or modded Tattoo/Makeup Design</h5>
+<h4>Using an existing Vanilla or modded Tattoo/Makeup Design</h4>
 <p>This option is the easier of the two, as it doesn't require you to create your own design from scratch. If you'd like to do so instead, the appropriate section further down will cover that process.</p>
 <p>‼️<u>Note</u>: If you're using a modder's tattoo or makeup design not initially created for use with the KAVT glowmap, it is best practice to ask for permission before editing their work. Check out the permission tab on the mod page, and if permission to edit their files isn't provided there, we highly recommend asking the creator - especially if you're somebody who likes to share screenshots of their Tavs on social media or in discord servers!&nbsp;</p>
 <p>For this example, we'll be using a design included in the extended KAVT tattoo atlas. You will need the atlas that contains the tattoo or makeup design you'd like to use as a glowing or additional tattoo via the KAVT glowmap, and the KAVT glowmap merged file contained in the resource we mentioned earlier in this section. You won't need to use the working file unless you want to make edits to the design you've chosen (please ask for permission first!).</p>
@@ -555,81 +558,157 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <figure class="image image_resized" style="width:441px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfcdrzTajuZVljcU8InPxUrQipswu7LfOG8K-FMvJp5BxOJkRf4bi0FD8aaYFCGsNq_YCE5CSXDTVi_4E5EqteuRipqHVHzPCNqrS_cSMypWR4HmEMDGJyAHEtWbemhy4NXFmh7xQ?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Example atlas layers</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>The merged glowmap file looks like this and only contains the one layer:</p>
 <figure class="image image_resized" style="width:402px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcPhDdhMfBlzncTw5Lgp-1cjHk1IeC7fS4y1NeWks2dfaVjx8CRAvIVRypVfIE-INdlS8q9TAsmnoOkyo56N8gcLM6C9Gl6n0owYIshaQMBSAJToNWhxjtAWctBs0RODNtCb7fJHQ?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
 <figure class="image image_resized" style="width:446px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfvWWQJVl3HJJ6_pka3ztMmudtlajNB2Olm6P3VY8SMmxZUuV5aIajRK9FUVDfr4SedaQ_J8THJlU8IVKW-QctFzwEa7dUbQWvt8EuLkEeg6WXJiM0MRS0u7iYud-T5JWBndQti1A?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Merged glowmap file layers</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>Once both files are open, we can proceed with copying the design of your choice from the atlas that contains it. Before doing this, we'd recommend enabling Guides (the dividing lines shown in the atlas image above) as they make it much easier to see where each design starts and ends. In Photoshop, you can do this by navigating to View &gt; Guides &gt; New Guide Layout. The window that opens looks as follows, with the settings shown being appropriate for an atlas that is KAVT-sized (4 tiles wide, 8 tiles tall):</p>
 <figure class="image image_resized" style="width:390px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdlcWCL9nWQjT3ld1b2dd9NwteBxeewjynl4umKUqlaHNPFRNPjORE2M_rKTHUuoOT2UyR5P4Ry3tC-InUvdo3cMC7n70_lN3DhUtVIs33kavF82VTyUsVBzoNfnyEK-hOpaIUnKQ?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
 <p>If the atlas you're taking your design from is a different size, you can adjust the size accordingly by increasing or decreasing the width (in tiles, called Columns) and height (in tiles, called Rows).</p>
 <p>Next, we'll find our design. For our example, we'll be using one of the goblin facepaint tattoo options included in the KAVT tattoo atlas. As you can see from the color of the design within its tile, this tattoo is contained within the Red channel of this atlas; if the design is blue or green, it occupies the respective channel instead.</p>
 <figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeBLKZrVy09fo6jd9t9U6o_l6EXcjOJvu7K4gZNfNQY6ZOUgOk26j71Xz_5TPhfXrKmyCJE-2dS1dnLI2wnS487ttS2AwoifV-L710UJz27zrd9B1oIit3XgSf98oPhvQSUFgHRIg?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Example tattoo in atlas</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>Open the Channels tab to the right of the Layers tab towards the bottom right of your window.</p>
 <figure class="image image_resized" style="width:436px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdVKlM00lSiUlodnFnWfdchBtzs4QuFJCmmJGChssOkOOXp_nY3t0N5Hr2OtgGgdd9cvRnn2gW4D5WnJw8pudbR4QyS22OkxlICvyrBUKUb-RZbjOEtLtXE30DGDjJRTtiiR6pbbQ?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Atlas channels</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>Select the channel your design of choice is located in, then swap back to the Layers tab. Your atlas should now only show the designs located on the appropriate channel, which in our case is the red channel. They will appear in white:</p>
 <figure class="image image_resized" style="width:586px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf1IP40i3CK7WYWhs1LUZ_SEys__ecgcTyufkWyI-4T5JYLIMb-iQcQf94MJ8REE5y9BzOSRRv8wTQ75FAUByoG64CWQZusH-3mYyxT8TCdTB6-YMDHA8M9j2Gkj2JcxfVHMWu6?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Example atlas red channel</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>Now, we can select our design's tile. To do this, select the selection/marquee tool from the tool bar. We recommend zooming into the design until it occupies the majority of your screen, as that makes selecting it in its entirety easier. Using the selection/marquee tool, select only the tile of the design you've chosen; if you enabled Guides, this will be clearly marked and your selection tool will “snap” to the Guides you've set, making selecting only your design of choice easier. Once you have selected the design, copy it either via hotkey (ctrl+c), or by navigating to Edit &gt; Copy.</p>
 <figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcWU1bE-b654ZY1MFoUkixscDcsi9foP1sb70GPEXkcQ7XwNedDPLqK5MrdXaG1ZmDPs_IpZqz-7Lo5X_LOWAB1sCPSnrqfFZcRt-CgNEk6NnIzJVwa8zNNDrqo6RQmO2h4TyA8Pg?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Selected Design</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>With our design of choice copied, you can now swap back to the glowmap merged file. Open the channels tab, and click the channel you'd like to use for this design. The red channel is used for the glowing tattoo, and the blue channel is used for the additional tattoo; we'll be using the blue channel for this example. Your image will change, once again only showing the channel you've chosen. Paste your design into the channel you've chosen, then select the RGB channel to view the full glowmap.</p>
 <p>⚠️ <u>Potential Issue</u>: When pasting your design, you may find that the design you've chosen doesn't fit the glowmap and only occupies part of the image. This may look like this:</p>
 <figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcz-RF3iz4d_4r64aWiEohtywq9ApiqW5MQ02LPb1MbDrYXN_SHIHS7sg12j2UIluSuPDLBmzBt0eBl66EtaqbNxZWUxtRpWMR6aGC2nlBQHJr99fbwN8zvcCR_WBqvdvtwY2bM?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Size mismatch</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>If this happens, undo the paste either via hotkey (ctrl+z) or by navigating to Edit &gt; Undo. You will need to resize your glowmap to match the size of your design. You can do so to navigating to Image &gt; Image Size. In our example case, the design we've chosen is only half the size of the glowmap, meaning we'll need to reduce the size of the glowmap by 50%:</p>
 <figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf1R3zywb22mN-kXIiAAB1aYiq4UA_p8Eg4B-caNHvi6lq3Qcb2rKX_Z-ZRV1oIq80-kRgDSLvyNdY8-6W9JaNrlm2ym6gQQJ9OtAc0JpI-rWmbqdHqBcUFZj1icmDTR171JmeHcQ?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
 <p>Once you've appropriately re-sized your glowmap, you can repeat the pasting step. The result may look like this:</p>
 <figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfDXeeVwZY0mM9nMm1sNcmUIWCDxH7S2WiZ5XNTrArfoi4wWi_TRKRD_CspOk0Iif6cbYYKUhHLQRUfK378odsOAmcAISKHoc989-f5ubfZXXf_pZ9ss1_z-PN6fbmT8E4xBndEeQ?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Example glowmap</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>If you want to empty a channel because you don't want to use this option, you can do so by navigating to the channel you'd like to empty, selecting the canvas using the selection/marquee tool, and then hitting the delete key. You will be prompted to choose a fill color; choose black for an empty glowmap channel.</p>
 <figure class="image image_resized" style="width:353px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdaNO_LZaSgBanl6qH2hITmC3Ms9EgHu2Kbgppha2VGLjEDy4HUSfCmiMNjkFfFB3OtxaltsWJ4-DVi1qj3fp2JVmmH9lM5zIxXHGBl3yOuPFrDBGQlKMi8SD4_LnNZTP3k3QsUJg?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Empty glowmap channel fill</figcaption>
 </figure>
 <p>&nbsp;</p>
-<h5>Drawing your own Design</h5>
+<p>Now that your glowmap is customized, you can export it. The export settings and further information can be found a little further down in this section.</p>
+<p>&nbsp;</p>
+<h4>Drawing your own Design</h4>
 <p>If you'd like to draw your own design, we'd recommend using the working file instead, as within this file, each channel is separated into it's own folder. This means that you can more easily create additional layers to work with. Please note that drawing your own design is definitely more advanced than using existing tattoo or makeup designs from the vanilla game or other creators' mods due to the placement requirements of the designs. We'd recommend using the head UV template for tattoo and makeup designs included in <a href="https://www.nexusmods.com/baldursgate3/mods/6387?tab=files">this resource</a> by neonbutchery to make sure things line up correctly. It looks like this:</p>
 <figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXduIp7nI8mLdH8kYZYQwaU1dY2EgqCexzqOSFGsMahpHNyQE1il4lmjmZAZO3AvcBXXX3AHDkfHgetEGJmWLtfQnRyyEV9abSbvFqdHHoo9qCAtwc86svRyeSbyBm_Z8CRVvCBtOQ?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Face UV Map</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>You'll want to draw your design in white on a black background. On the glowmap, <u>anything not fully black</u> will appear as part of your design. You can use this to your advantage and create designs with varying levels of opacity by working not only in true white, but also in shades of grey, but it is also important to consider this to avoid accidental spots appearing within your design!&nbsp;</p>
 <p>👏 <u>Tip:</u> If you struggle with the high contrast of a white design on a solid black background, we'd recommend working in colors that are more comfortable to look at for you instead. As long as you make sure your design is white and your background is black once you're done creating your custom design, everything will work as intended.</p>
 <figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfrnvVKsBf042UvO7JrB7TnxIWfvshnlE8tSplREqI62kzNzHeBH6qM0hibv-Eha7CFf_vpeaM3IjbEXdOcihro-pRc8LgULJNVogs95ae9qymjNmdTmHsSnQiEhnh49iGaSmA4eg?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Example of what a design may look like</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>Once you've finished your design, you can open the merged glowmap file included in the resource. This file only contains the one layer.</p>
 <figure class="image image_resized" style="width:446px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfvWWQJVl3HJJ6_pka3ztMmudtlajNB2Olm6P3VY8SMmxZUuV5aIajRK9FUVDfr4SedaQ_J8THJlU8IVKW-QctFzwEa7dUbQWvt8EuLkEeg6WXJiM0MRS0u7iYud-T5JWBndQti1A?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Merged glowmap file layers</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>Click on this layer, then click the Channels tab shown on the right side of the Layers tab on the screenshot above. This tab will look like this when opened:</p>
 <figure class="image image_resized" style="width:445px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcAl1fzBrBvH-_ZaThoQn3HrzSHELmL8XW5ZFSZCqzGlksja5aBlbJUoCSfx4C2faELny0er6WTK5MikC8LcLu04pldIEDF8570oAqYpxKNAKpi1USt3yxA9x6AQa6d6ihw7I7nuA?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Merged glowmap channels</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>Click on the channel corresponding to which “slot” you'd like this design to use; choose the red channel if you'd like the tattoo to glow and pulse, or the blue channel if you'd like the design to appear as a non-glowing tattoo. Then, first swap back to the Layers tab within this file, and then swap back over to the working file, where your drawn design currently resides. Make sure the design you've created is merged down, meaning it only occupies one layer that contains both the black background and the white design.</p>
 <figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdna3fx0Nk2QjAzo1PiurtEbKd66wq1sND3J3OYimLailbhpKmrsjDsShuxltWGJiHlnjxzzZcU9hTe1zuoNODzcdKoAEjvLQ6tHgBH3mqlfZA3FaLoV8TSDxGzJcwNYySfj0-1oA?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Example of correct and incorrect layers</figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>Now, select the entire image using the selection/marquee tool, then copy it either via hotkey (ctrl+c) or by navigating to Edit &gt; Copy. Then, swap back to the merged file we previously opened.</p>
 <p>‼️<u>Note</u>: If you have more experience with image editing software, you may be tempted to simply select your layer and hit ctrl+c. We don't recommend doing it this way, because the individual channels will at times not accept the copied image if it has been copied this way. We explicitly recommend selecting the entire canvas and copying it that way.&nbsp;</p>
 <p>Within the merged file, simply paste the design you've copied into the file. As we previously selected the channel we'd like it to occupy, the design should automatically paste into this channel. If not, re-select the channel as mentioned earlier, and try pasting your design again. You can double-check whether your design made it to the correct channel by opening the Channels tab once again, and clicking the RGB channel - this will make all channels within the vile visible. Your design should now appear in red or blue, depending on which channel you chose for your design.</p>
+<p>Now that your glowmap is customized, you can export it. The export settings and further information can be found a little further down in this section.</p>
 <p>&nbsp;</p>
-<h4><strong><u>The Body Glowmap</u></strong></h4>
-<p>The Body Glowmap is available for both KAVT and KAVT NVP, thanks to Kaz.</p>
-<p>When opening our example working file, you’ll find the following layer setup:</p>
+<h3><strong><u>The Body Glowmap</u></strong></h3>
+<p>‼️<u>Note</u>: The body glowmap is available within both KAVT and KAVT NVP.</p>
+<p>‼️<u>Note</u>: We have used Photoshop to edit the Glowmap; the process will be very similar when working with Gimp instead, but what you see within your image editing software will likely be a little bit different from the screenshots we've provided.</p>
+<p>When opening our example glowmap working file from the glowmap resource mentioned earlier in this section, you’ll find the following layer setup with a number of image layers inside of folders:</p>
 <figure class="image image_resized" style="width:216px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdfb4STjY6cKjHjzXykDcpb3-zJwizwPR5RqLxAf_bwrp2NYTAzW-hF-5W3dx5rs0eAb1FtOZ8H3aOTjGqZrjGE5dCmMksRa2y9CWvugnYG0LS92GsHJua8UHg9EjQDOW6jHyLQ4w?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
-<p>Whereas our example merged file will look like this:</p>
+<p>&nbsp;</p>
+<p>Whereas the glowmap included within these resources itself will look like this:</p>
 <figure class="image image_resized" style="width:392px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf9Ai0-0OZd-GORn3nZJa5caRa_VnZUW_wtiFmYesKzIffOEo9uTsI2N37Cua0mO1xzTdyOOJyR0PY3YSQiFw53tQ-kUnX3GM8hqujAQUNJ2rHV1p03PY0jhPbdbCeNvzdBDzM5ig?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
+<p>&nbsp;</p>
+<p>As you can see by the colors, it contains glowing freckles on the Red (Glow) channel, and a forehead Tattoo on the Blue (Additional Tattoo) channel.</p>
 <p>In-game, this example Glowmap will look like this:</p>
 <figure class="image image_resized" style="width:506px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdYAx6wyxWkHO3Kxq0D9th-t5AN7BCTYYB6FOqlYIxRqTEugFjR9PFlx_icO_U4U_WDnm-PzMUPtKxNHtr6aK2qb-0YwsyX-MNVAy2Rwm7Ga6xHvoBORa0jFioqAZqmKkuOyXvf?key=j4J4jVdHF6eMIcKFfNctTg"></figure>
 <p>The body tattoos used for these examples were created by Jerinski, who kindly allowed us to use his work for example content.</p>
-<p><strong><u>Export &amp; Compression Types</u></strong></p>
-<p>When saving your Glowmaps as .DDS files, please use BC3 compression.</p>
-<p>I would recommend saving these textures without MipMaps, as they can sometimes make content like this appear blurry.</p>
+<p>The merged glowmap file doesn't contain folders and individual layers as the working file does; instead, you'll only see a singular layer containing both designs on different channels. The image you see when opening the file will be the same as the second image in this section, showing both designs on the glowmap in red or blue respectively.</p>
+<p>To customize the glowmap, you can choose one of two options depending on how you would like to customize the glowmap. This process will be the same for both the glow tattoo (red channel) and the additional tattoo (blue channel), with the only difference being the channel you ultimately paste your design onto.</p>
+<p>&nbsp;</p>
+<h4>Using an existing Vanilla or modded Tattoo/Makeup Design</h4>
+<p>This option is the easier of the two, as it doesn't require you to create your own design from scratch. If you'd like to do so instead, the appropriate section further down will cover that process.</p>
+<p>‼️<u>Note</u>: If you're using a modder's tattoo design not initially created for use with the KAVT glowmap, it is best practice to ask for permission before editing their work. Check out the permission tab on the mod page, and if permission to edit their files isn't provided there, we highly recommend asking the creator - especially if you're somebody who likes to share screenshots of their Tavs on social media or in discord servers!&nbsp;</p>
+<p>For this example, we'll be using a <a href="https://www.nexusmods.com/baldursgate3/mods/17225?tab=description">design created by Jerinski</a>. You will need the atlas that contains the tattoo design you'd like to use as a glowing or additional tattoo via the KAVT glowmap, and the KAVT glowmap merged file contained in the resource we mentioned earlier in this section. You won't need to use the working file unless you want to make edits to the design you've chosen (please ask for permission first!).</p>
+<p>Open both the atlas you'd like to select a tattoo design from and the merged glowmap file. The atlas we're using looks like this when opened and only contains one layer (and only one design - but others may contain more):</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfNDTOgqjzuUR_sUY54Qy_bJPq8vXZHT-oiN13BvmjoCL6y8CFiae3gVaoiO7VV_eDiHd8BbpreVJnCFxqpJTYtEllWc8fJcqUueAH9JTudOvGviJCF79xyxs871rd1fgZmsvzn?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<figure class="image image_resized" style="width:437px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeEPQ2r_LeACVfmw6X8I3iWaO7xnozEFCCdwaq0IbicccX5bHtLs3BJ1MhklCwDOwo8JgWRgDUf-ikynI8zaM8aI9sSUmriDfDMAjvD1Ia_bXVP87LehjeZAEI353GFrUz2zUKxjA?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>The merged glowmap file looks like this and only contains the one layer:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcZQNg8o8YXrOBKIlaRpF9TJaqWglYybFbBlV2xh4Jz1I2nUsvDXNECyhIxrYySBpGMyqTHuMPDC8k3R7SZ5kmzU_xBavCYlk4sA87W3v4fwAIjw2i54MneeRs-tktxAYAFRqB7yA?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<figure class="image image_resized" style="width:442px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf7IGv7eySa4X5AD4XEg8FDsf-CE8NW6Z8wlQ0-uiBF2nxBE5DbTvjJLM9QCYbSc0CMh9LGLlHQh6xpA4sKZzKvtrhF0_F_SQvJgw_mImINdHbUi4kYbGSn1sU8zmFbc8vmlFoZ?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>Once both files are open, we can proceed with copying the design of your choice from the atlas that contains it. Before doing this, we'd recommend enabling Guides (the dividing lines shown in the atlas image above) as they make it much easier to see where each design starts and ends. In Photoshop, you can do this by navigating to View &gt; Guides &gt; New Guide Layout. The window that opens looks as follows, with the settings shown being appropriate for the body tattoo atlas (4 tiles wide, 5 tiles tall):</p>
+<figure class="image image_resized" style="width:395px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdIKNilOG_NWm7wLa9_I4QumeKjNCPbcvr1rZQ61oxatzNXn8u4SjwUzs-mT_eiZIEaYDWG40TdIxxm35-Ja3d72cWNNjSyN9ZslfpQ6AFh_g8nOaghIhaTr7AHzv3SoJnxYxnS1A?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>If the atlas you're taking your design from is a different size, you can adjust the size accordingly by increasing or decreasing the width (in tiles, called Columns) and height (in tiles, called Rows).</p>
+<p>Next, we'll find our design. For our example, we'll be using the only design in this tattoo atlas. As you can see from the color of the design within its tile, this tattoo is contained within the Red channel of this atlas; if the design is blue or green, it occupies the respective channel instead.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd30Hoci7eoYoWrM_JvLJ1d7ob92WXhuv0v_McplwZAHDm7EPoVxE36tiNl63uMVI9JlrhsuBJYg5I3OmhZCvYa18ZijGPUX6gXcGJN12DNTAlc_AqhbzHsEFG8XIJR0KPHWyVOLw?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>Open the Channels tab to the right of the Layers tab towards the bottom right of your window.</p>
+<figure class="image image_resized" style="width:438px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXchOEOlZo5lR5YT0kyuUPyJpd55URjHhmPqAwhTqSoDtdzV9fh4QOP2bjCchGFXvNKvyq6p04Ae-qc0yHKo9fca7rjCOUm8HfuZ2ypqBfuQOQciT9_BnefdfbLJyHYWIodTYokyQA?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>Select the channel your design of choice is located in, then swap back to the Layers tab. Your atlas should now only show the designs located on the appropriate channel, which in our case is the red channel. They will appear in white:</p>
+<figure class="image image_resized" style="width:477px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdO4-1yZu3HDy6frlPJGVVLq05IqWA_FuTzJ0NootW6_z0S7mO_A7zVBA5hkxzSBa9EnktYcsvJ7-EoJMKc1xmj3BsIKQ7bcL3q3hfZDxgchbNhkH5lnjJNWAWxTCkn4KSB52-8?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>Now, we can select our design's tile. To do this, select the selection/marquee tool from the tool bar. We recommend zooming into the design until it occupies the majority of your screen, as that makes selecting it in its entirety easier. Using the selection/marquee tool, select only the tile of the design you've chosen; if you enabled Guides, this will be clearly marked and your selection tool will “snap” to the Guides you've set, making selecting only your design of choice easier. Once you have selected the design, copy it either via hotkey (ctrl+c), or by navigating to Edit &gt; Copy.</p>
+<figure class="image image_resized" style="width:516px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfSuCe0KczqjN29ZtQ34sgN_qNERVqMGJ5O7-QIhcx6huJj1jb2P1ZvyppKRrAZWSf5hSU7qmT1J54G06NT9WiYVcEUvWfROprv2AgeFYaJhf8BEggV8DHq-yZMBPLkXWEHch540Q?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>With our design of choice copied, you can now swap back to the glowmap merged file. Open the channels tab, and click the channel you'd like to use for this design. The red channel is used for the glowing tattoo, and the blue channel is used for the additional tattoo; we'll be using the blue channel for this example. Your image will change, once again only showing the channel you've chosen. Paste your design into the channel you've chosen, then select the RGB channel to view the full glowmap.</p>
+<p>⚠️ <u>Potential Issue</u>: When pasting your design, you may find that the design you've chosen doesn't fit the glowmap and only occupies part of the image. This may look like this:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdfTCLL_6pg5MkDOQKy8vBDzimvG5BZ9O5P5WoQ0QhtMUzzJOo_qnWx2CkHdNT8N0nP0YQq76tpsHy2BAfOxyflRmbdx8ZzJX-oRWNvDh5dJzS22bpb3VZKIdFX2kmq8dGMLLa0PA?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>If this happens, undo the paste either via hotkey (ctrl+z) or by navigating to Edit &gt; Undo. You will need to resize your glowmap to match the size of your design. You can do so to navigating to Image &gt; Image Size. In our example case, the design we've chosen is only half the size of the glowmap, meaning we'll need to reduce the size of the glowmap by 50%:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf1R3zywb22mN-kXIiAAB1aYiq4UA_p8Eg4B-caNHvi6lq3Qcb2rKX_Z-ZRV1oIq80-kRgDSLvyNdY8-6W9JaNrlm2ym6gQQJ9OtAc0JpI-rWmbqdHqBcUFZj1icmDTR171JmeHcQ?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>Once you've appropriately re-sized your glowmap, you can repeat the pasting step. The result may look like this:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf4EprgFQn9caMp62HKsd1eXSbngZizJvLv1hkBUxJpoO1VoST9z-WHxkw0CdL8kRol-Bm-qJgC0IjDAMYx_o-gubVobQMBtVAh_oyYNrQyz_NPNGWitPoRhVqfJIhTcBi8Lxkf2A?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>If you want to empty a channel because you don't want to use this option, you can do so by navigating to the channel you'd like to empty, selecting the canvas using the selection/marquee tool, and then hitting the delete key. You will be prompted to choose a fill color; choose black for an empty glowmap channel.</p>
+<figure class="image image_resized" style="width:353px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdaNO_LZaSgBanl6qH2hITmC3Ms9EgHu2Kbgppha2VGLjEDy4HUSfCmiMNjkFfFB3OtxaltsWJ4-DVi1qj3fp2JVmmH9lM5zIxXHGBl3yOuPFrDBGQlKMi8SD4_LnNZTP3k3QsUJg?key=O2Ip_U1nt9qFp1lokIS75Q">
+  <figcaption>Empty glowmap channel fill</figcaption>
+</figure>
+<p>&nbsp;</p>
+<p>Now that your glowmap is customized, you can export it. The export settings and further information can be found a little further down in this section.</p>
+<p>&nbsp;</p>
+<h4>Drawing your own Design</h4>
+<p>While it is possible to draw body tattoo designs much the same way you can draw facial tattoo and makeup designs, we're not going to go in-depth on how to do so in this guide. This is because this is generally considered much more complex than creating facial tattoos and makeup designs, and most commonly done in Blender or Substance Paint. We feel going in-depth on how to do this is a little past the needs of this guide. Sorry!</p>
+<p>&nbsp;</p>
+<h3><strong><u>Exporting your Glowmap</u></strong></h3>
+<p>Once you have customized your glowmap using (or not using) the information provided above, you can export it to use alongside KAVT or KAVT NVP.</p>
+<p>For this example, we'll be using Photoshop and the Intel DDS plugin. Your settings may look a little different if you're using the NVIDIA DDS plugin for photoshop instead, or are using another image editing software like Gimp.</p>
+<p>⚠️<u>Potential Issue</u>: It is incredibly important for your glowmap to use the correct name as detailed below. It is equally as important for your glowmap to be saved as .DDS, and <u>not</u> .dds. The game <u>will not</u> read your glowmap if it doesn't follow the naming convention we've provided exactly or .DDS is not capitalized.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
