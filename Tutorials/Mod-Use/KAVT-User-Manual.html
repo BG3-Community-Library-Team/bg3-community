@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-24T23:54:06.060Z
+date: 2025-06-24T23:56:28.162Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -659,7 +659,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>By utilizing the glowmap added by KAVT, you can access two additional face tattoo “slots”. These options are not available in CC.</p>
 <p>By default, the head glowmap included in KAVT is blank. That means that unless you choose to utilize and customize the glowmap, your Tav won't have a glowing tattoo or an additional tattoo on their face.</p>
 <p>&nbsp;</p>
-<h4>How does the Glowmap work?</h4>
+<h5>How does the Glowmap work?</h5>
 <p>If you've previously used <a href="https://www.nexusmods.com/baldursgate3/mods/8912">Kaz Virtual Tav</a>, you may already be familiar with the concept of the glowmap. To briefly summarize, a glowmap is a type of texture that traditionally adds glow in some capacity - in the context of KVT, the glowmap allows you to add a glowing tattoo to your Tav. For KAVT and KAVT NVP, we've made some adjustments to the glowmap to make additional features possible, utilizing the additional two, previously empty channels of the texture to allow for an additional tattoo, and opacity.</p>
 <p>The name glowmap was kept the same despite these additions, as the name had to remain this way internally to ensure compatibility with content that previously utilized the glowmap functionality of KVT. While it technically no longer is solely a glowmap, it is still called a glowmap in this context to avoid confusion and mismatch between internal names and what users see. :)</p>
 <figure class="image image_resized" style="width:402px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcPhDdhMfBlzncTw5Lgp-1cjHk1IeC7fS4y1NeWks2dfaVjx8CRAvIVRypVfIE-INdlS8q9TAsmnoOkyo56N8gcLM6C9Gl6n0owYIshaQMBSAJToNWhxjtAWctBs0RODNtCb7fJHQ?key=j4J4jVdHF6eMIcKFfNctTg">
@@ -667,7 +667,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 </figure>
 <p>As you can see, the glowmap appears similarly to the tattoo and makeup atlases - one design appears in red (this is the glowing tattoo, located on the red channel), and one design appears in blue (this is the additional tattoo, located on the blue channel). Each glowmap contains a single design on each channel, compared to an atlas, which consists of multiple designs per image arranged in a grid pattern. This means that to change the design added via glowmap, you'll only need to replace the texture.</p>
 <p>&nbsp;</p>
-<h4><u>Editing the Head Glowmap</u></h4>
+<h5><u>Editing the Head Glowmap</u></h5>
 <blockquote>
   <p><span class="text-big">‼️</span> The head glowmap is only available within KAVT.</p>
 </blockquote>
@@ -685,7 +685,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>The merged glowmap file doesn't contain folders and individual layers as the working file does; instead, you'll only see a singular layer containing both designs on different channels. The image you see when opening the file will be the same as the second image in this section, showing both designs on the glowmap in red or blue respectively.</p>
 <p>To customize the glowmap, you can choose one of two options depending on how you would like to customize the glowmap. This process will be the same for both the glow tattoo (red channel) and the additional tattoo (blue channel), with the only difference being the channel you ultimately paste your design onto.</p>
 <p>&nbsp;</p>
-<h4>Using an existing Vanilla or modded Tattoo/Makeup Design</h4>
+<h5>Using an existing Vanilla or modded Tattoo/Makeup Design</h5>
 <p>This option is the easier of the two, as it doesn't require you to create your own design from scratch. If you'd like to do so instead, the appropriate section further down will cover that process.</p>
 <blockquote>
   <p><span class="text-big">‼️</span>If you're using a modder's tattoo or makeup design not initially created for use with the KAVT glowmap, it is best practice to ask for permission before editing their work. Check out the permission tab on the mod page, and if permission to edit their files isn't provided there, we highly recommend asking the creator - especially if you're somebody who likes to share screenshots of their Tavs on social media or in discord servers!&nbsp;</p>
@@ -750,7 +750,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>&nbsp;</p>
 <p>Now that your glowmap is customized, you can export it. The export settings and further information can be found a little further down in this section.</p>
 <p>&nbsp;</p>
-<h4>Drawing your own Design</h4>
+<h5>Drawing your own Design</h5>
 <p>If you'd like to draw your own design, we'd recommend using the working file instead, as within this file, each channel is separated into it's own folder. This means that you can more easily create additional layers to work with. Please note that drawing your own design is definitely more advanced than using existing tattoo or makeup designs from the vanilla game or other creators' mods due to the placement requirements of the designs. We'd recommend using the head UV template for tattoo and makeup designs included in <a href="https://www.nexusmods.com/baldursgate3/mods/6387?tab=files">this resource</a> by neonbutchery to make sure things line up correctly. It looks like this:</p>
 <figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXduIp7nI8mLdH8kYZYQwaU1dY2EgqCexzqOSFGsMahpHNyQE1il4lmjmZAZO3AvcBXXX3AHDkfHgetEGJmWLtfQnRyyEV9abSbvFqdHHoo9qCAtwc86svRyeSbyBm_Z8CRVvCBtOQ?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Face UV Map</figcaption>
@@ -782,7 +782,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>Within the merged file, simply paste the design you've copied into the file. As we previously selected the channel we'd like it to occupy, the design should automatically paste into this channel. If not, re-select the channel as mentioned earlier, and try pasting your design again. You can double-check whether your design made it to the correct channel by opening the Channels tab once again, and clicking the RGB channel - this will make all channels within the vile visible. Your design should now appear in red or blue, depending on which channel you chose for your design.</p>
 <p>Now that your glowmap is customized, you can export it.</p>
 <p>&nbsp;</p>
-<h4><strong>Exporting your Glowmap</strong></h4>
+<h5><strong>Exporting your Glowmap</strong></h5>
 <p>Once you have customized your glowmap using (or not using) the information provided above, you can export it to use alongside KAVT or KAVT NVP.</p>
 <p>For this example, we'll be using Photoshop and the Intel DDS plugin. Your settings may look a little different if you're using the NVIDIA DDS plugin for photoshop instead, or are using another image editing software like Gimp.</p>
 <blockquote>
@@ -806,7 +806,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 </blockquote>
 <p>KAVT includes a number of new options for body customization. This section details how they work, where you can find them, what they don't do, and how you can edit them.</p>
 <p>&nbsp;</p>
-<h4>What Face Customization Options are there?</h4>
+<h4>What Body Customization Options are there?</h4>
 <p>When using KAVT, &nbsp;you will have access to the following options for body customization that are added via the <u>KAVT head glowmap</u>:</p>
 <ul>
   <li>Glowing Body Tattoo, <u>not</u> selectable in CC</li>
@@ -827,13 +827,13 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>By utilizing the glowmap added by KAVT, you can access two additional body tattoo “slots”. These options are not available in CC.</p>
 <p>By default, the body glowmap included in KAVT is blank. That means that unless you choose to utilize and customize the glowmap, your Tav won't have a glowing tattoo or an additional tattoo on their body.</p>
 <p>&nbsp;</p>
-<h4>How does the Glowmap work?</h4>
+<h5>How does the Glowmap work?</h5>
 <p>If you've previously used <a href="https://www.nexusmods.com/baldursgate3/mods/8912">Kaz Virtual Tav</a>, you may already be familiar with the concept of the glowmap. To briefly summarize, a glowmap is a type of texture that traditionally adds glow in some capacity - in the context of KVT, the glowmap allows you to add a glowing tattoo to your Tav. For KAVT and KAVT NVP, we've made some adjustments to the glowmap to make additional features possible, utilizing the additional two, previously empty channels of the texture to allow for an additional tattoo, and opacity.</p>
 <p>The name glowmap was kept the same despite these additions, as the name had to remain this way internally to ensure compatibility with content that previously utilized the glowmap functionality of KVT. While it technically no longer is solely a glowmap, it is still called a glowmap in this context to avoid confusion and mismatch between internal names and what users see. :)</p>
 <figure class="image image_resized" style="width:29.93%;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcZQNg8o8YXrOBKIlaRpF9TJaqWglYybFbBlV2xh4Jz1I2nUsvDXNECyhIxrYySBpGMyqTHuMPDC8k3R7SZ5kmzU_xBavCYlk4sA87W3v4fwAIjw2i54MneeRs-tktxAYAFRqB7yA?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
 <p>As you can see, the glowmap appears similarly to the tattoo and makeup atlases - one design appears in red (this is the glowing tattoo, located on the red channel), and one design appears in blue (this is the additional tattoo, located on the blue channel). Each glowmap contains a single design on each channel, compared to an atlas, which consists of multiple designs per image arranged in a grid pattern. This means that to change the design added via glowmap, you'll only need to replace the texture.</p>
 <p>&nbsp;</p>
-<h4><strong><u>The Body Glowmap</u></strong></h4>
+<h5><strong><u>The Body Glowmap</u></strong></h5>
 <blockquote>
   <p><span class="text-big">‼️</span> The body glowmap is available within both KAVT and KAVT NVP.</p>
 </blockquote>
@@ -851,7 +851,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>The merged glowmap file doesn't contain folders and individual layers as the working file does; instead, you'll only see a singular layer containing both designs on different channels. The image you see when opening the file will be the same as the second image in this section, showing both designs on the glowmap in red or blue respectively.</p>
 <p>To customize the glowmap, you can choose one of two options depending on how you would like to customize the glowmap. This process will be the same for both the glow tattoo (red channel) and the additional tattoo (blue channel), with the only difference being the channel you ultimately paste your design onto.</p>
 <p>&nbsp;</p>
-<h5>Using an existing Vanilla or modded Tattoo/Makeup Design</h5>
+<h6>Using an existing Vanilla or modded Tattoo/Makeup Design</h6>
 <p>This option is the easier of the two, as it doesn't require you to create your own design from scratch. If you'd like to do so instead, the appropriate section further down will cover that process.</p>
 <blockquote>
   <p><span class="text-big">‼️</span> If you're using a modder's tattoo design not initially created for use with the KAVT glowmap, it is best practice to ask for permission before editing their work. Check out the permission tab on the mod page, and if permission to edit their files isn't provided there, we highly recommend asking the creator - especially if you're somebody who likes to share screenshots of their Tavs on social media or in discord servers!&nbsp;</p>
@@ -898,5 +898,24 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>&nbsp;</p>
 <p>Now that your glowmap is customized, you can export it. The export settings and further information can be found a little further down in this section.</p>
 <p>&nbsp;</p>
-<h5>Drawing your own Design</h5>
+<h6>Drawing your own Design</h6>
 <p>While it is possible to draw body tattoo designs much the same way you can draw facial tattoo and makeup designs, we're not going to go in-depth on how to do so in this guide. This is because this is generally considered much more complex than creating facial tattoos and makeup designs, and most commonly done in Blender or Substance Paint. We feel going in-depth on how to do this is a little past the needs of this guide. Sorry!</p>
+<p>&nbsp;</p>
+<h6><strong><u>Exporting your Glowmap</u></strong></h6>
+<p>Once you have customized your glowmap using (or not using) the information provided above, you can export it to use alongside KAVT or KAVT NVP.</p>
+<p>For this example, we'll be using Photoshop and the Intel DDS plugin. Your settings may look a little different if you're using the NVIDIA DDS plugin for photoshop instead, or are using another image editing software like Gimp.</p>
+<blockquote>
+  <p><span class="text-big"><i>⚠️</i></span><i> It is incredibly important for your glowmap to use the correct name as detailed below. It is equally as important for your glowmap to be saved as .DDS, and <u>not</u> .dds.&nbsp;</i></p>
+  <p><i>The game <u>will not</u> read your glowmap if it doesn't follow the naming convention we've provided exactly or .DDS is not capitalized.</i></p>
+</blockquote>
+<p>Navigate to either File &gt; Save As or File &gt; Save a Copy. We personally use Save as Copy to be able to continue working in the .psd file if adjustments needs to be made and to avoid accidentally not saving this progress, as Save As will make the .DDS file you are exporting in this step the file that's open (instead of the .psd we initially opened to work in).</p>
+<p>You can save your file either in a location of your choosing and manually move it to the appropriate folder within your game files, or save it directly within your game files. We recommend the latter, as it removes an additional step.&nbsp;</p>
+<p>The paths for the glowmap files are as follows:</p>
+<p><u>Body</u>: <code>…\Baldurs Gate 3\Data\Generated\Public\Shared\Assets\unique_tav\BODY\GLOWY\KVT_Body_Glowmap.DDS</code></p>
+<p><u>Genitals</u>: <code>…\Baldurs Gate 3\Data\Generated\Public\Shared\Assets\unique_tav\FACE\GLOWY\KVT_Genital_Glowmap.DDS</code></p>
+<p>‼️<u>Note</u>: If these paths don't exist within your game files, please create the appropriate folders yourself.</p>
+<p>&nbsp;</p>
+<p>When saving a file as .DDS, you'll be provided a window of settings when saving your file. These are the settings you'll want to use for the glowmap:</p>
+<figure class="image image_resized" style="width:433px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdRlm20zMG943OAeO2I0HiqMDbACIwUNe7eUPQxMDcehGKes1gU1qIQyKA2bcFpmupacwV7J95f2KEJ4ln7vSaYOtg3cFijlh2dgzSuciP_MbXImfQerhoGBDLTsmg3BQ0B8VFT?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>&nbsp;</p>
+<p>‼️<u>Note:</u> Your settings window may appear a little bit differently depending on which Photoshop .DDS plugin you use, or alternatively, if you're not using Photoshop but another image editor instead. Regardless, the compression type of BC3 (which may also be referred to as DXT5) is the most important part of this window. Please also make sure to save your file without Mip Maps, as this may make your designs appear blurry.</p>
