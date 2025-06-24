@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-24T22:02:04.827Z
+date: 2025-06-24T22:12:40.295Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -575,7 +575,26 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <figure class="image image_resized" style="width:586px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf1IP40i3CK7WYWhs1LUZ_SEys__ecgcTyufkWyI-4T5JYLIMb-iQcQf94MJ8REE5y9BzOSRRv8wTQ75FAUByoG64CWQZusH-3mYyxT8TCdTB6-YMDHA8M9j2Gkj2JcxfVHMWu6?key=O2Ip_U1nt9qFp1lokIS75Q">
   <figcaption>Example atlas red channel</figcaption>
 </figure>
-<p>Now, we can select our design's tile. To do this, select the selection/marquee tool from the tool bar. We recommend zooming into the design until it occupies the majority of your screen, as that makes selecting it in its entirety easier. Using the selection/marquee tool, select only the tile of the design you've chosen; if you enabled Guides, this will be clearly marked. Once you have selected the design, copy it either via hotkey (ctrl+c), or by navigating to Edit &gt; Copy.</p>
+<p>Now, we can select our design's tile. To do this, select the selection/marquee tool from the tool bar. We recommend zooming into the design until it occupies the majority of your screen, as that makes selecting it in its entirety easier. Using the selection/marquee tool, select only the tile of the design you've chosen; if you enabled Guides, this will be clearly marked and your selection tool will “snap” to the Guides you've set, making selecting only your design of choice easier. Once you have selected the design, copy it either via hotkey (ctrl+c), or by navigating to Edit &gt; Copy.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcWU1bE-b654ZY1MFoUkixscDcsi9foP1sb70GPEXkcQ7XwNedDPLqK5MrdXaG1ZmDPs_IpZqz-7Lo5X_LOWAB1sCPSnrqfFZcRt-CgNEk6NnIzJVwa8zNNDrqo6RQmO2h4TyA8Pg?key=O2Ip_U1nt9qFp1lokIS75Q">
+  <figcaption>Selected Design</figcaption>
+</figure>
+<p>With our design of choice copied, you can now swap back to the glowmap merged file. Open the channels tab, and click the channel you'd like to use for this design. The red channel is used for the glowing tattoo, and the blue channel is used for the additional tattoo; we'll be using the blue channel for this example. Your image will change, once again only showing the channel you've chosen. Paste your design into the channel you've chosen, then select the RGB channel to view the full glowmap.</p>
+<p>⚠️ <u>Potential Issue</u>: When pasting your design, you may find that the design you've chosen doesn't fit the glowmap and only occupies part of the image. This may look like this:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcz-RF3iz4d_4r64aWiEohtywq9ApiqW5MQ02LPb1MbDrYXN_SHIHS7sg12j2UIluSuPDLBmzBt0eBl66EtaqbNxZWUxtRpWMR6aGC2nlBQHJr99fbwN8zvcCR_WBqvdvtwY2bM?key=O2Ip_U1nt9qFp1lokIS75Q">
+  <figcaption>Size mismatch</figcaption>
+</figure>
+<p>If this happens, undo the paste either via hotkey (ctrl+z) or by navigating to Edit &gt; Undo. You will need to resize your glowmap to match the size of your design. You can do so to navigating to Image &gt; Image Size. In our example case, the design we've chosen is only half the size of the glowmap, meaning we'll need to reduce the size of the glowmap by 50%:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf1R3zywb22mN-kXIiAAB1aYiq4UA_p8Eg4B-caNHvi6lq3Qcb2rKX_Z-ZRV1oIq80-kRgDSLvyNdY8-6W9JaNrlm2ym6gQQJ9OtAc0JpI-rWmbqdHqBcUFZj1icmDTR171JmeHcQ?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>Once you've appropriately re-sized your glowmap, you can repeat the pasting step. The result may look like this:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfDXeeVwZY0mM9nMm1sNcmUIWCDxH7S2WiZ5XNTrArfoi4wWi_TRKRD_CspOk0Iif6cbYYKUhHLQRUfK378odsOAmcAISKHoc989-f5ubfZXXf_pZ9ss1_z-PN6fbmT8E4xBndEeQ?key=O2Ip_U1nt9qFp1lokIS75Q">
+  <figcaption>Example glowmap</figcaption>
+</figure>
+<p>If you want to empty a channel because you don't want to use this option, you can do so by navigating to the channel you'd like to empty, selecting the canvas using the selection/marquee tool, and then hitting the delete key. You will be prompted to choose a fill color; choose black for an empty glowmap channel.</p>
+<figure class="image image_resized" style="width:353px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdaNO_LZaSgBanl6qH2hITmC3Ms9EgHu2Kbgppha2VGLjEDy4HUSfCmiMNjkFfFB3OtxaltsWJ4-DVi1qj3fp2JVmmH9lM5zIxXHGBl3yOuPFrDBGQlKMi8SD4_LnNZTP3k3QsUJg?key=O2Ip_U1nt9qFp1lokIS75Q">
+  <figcaption>Empty glowmap channel fill</figcaption>
+</figure>
+<p>&nbsp;</p>
 <h5>Drawing your own Design</h5>
 <p>If you'd like to draw your own design, we'd recommend using the working file instead, as within this file, each channel is separated into it's own folder. This means that you can more easily create additional layers to work with. Please note that drawing your own design is definitely more advanced than using existing tattoo or makeup designs from the vanilla game or other creators' mods due to the placement requirements of the designs. We'd recommend using the head UV template for tattoo and makeup designs included in <a href="https://www.nexusmods.com/baldursgate3/mods/6387?tab=files">this resource</a> by neonbutchery to make sure things line up correctly. It looks like this:</p>
 <figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXduIp7nI8mLdH8kYZYQwaU1dY2EgqCexzqOSFGsMahpHNyQE1il4lmjmZAZO3AvcBXXX3AHDkfHgetEGJmWLtfQnRyyEV9abSbvFqdHHoo9qCAtwc86svRyeSbyBm_Z8CRVvCBtOQ?key=O2Ip_U1nt9qFp1lokIS75Q">
