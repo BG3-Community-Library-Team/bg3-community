@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-24T23:07:22.831Z
+date: 2025-06-24T23:12:26.213Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -750,9 +750,26 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>This process is very similar to the process of customizing your Body Tattoo color through Unique Tav. However, instead of editing KAVT/KAVT NVP directly as you’d do with Unique Tav, we’ve provided this Patch that contains only the files you’ll need to edit in order to make the process easier for users not too familiar with creating Mods.</p>
 <p>&nbsp;</p>
 <h3>Customization Options</h3>
-<p>&nbsp;</p>
+<p>Through editing the patch, you can customize the following features of KAVT. Options marked with an asterisk (*) are only available to KAVT users and won't work with KAVT NVP.</p>
+<ul>
+  <li>Body Tattoo (Color, Intensity, Metalness)</li>
+  <li>Body Glow (Color, Intensity, Pulse Speed)</li>
+  <li>Head Glow (Color, Intensity, Pulse Speed)*</li>
+  <li>Secondary Body Tattoo (Color, Intensity)</li>
+  <li>Secondary Head Tattoo (Color, Intensity)*</li>
+</ul>
+<p>Body Glow and Head Glow (for the glowing tattoo added via glowmap) use the same color parameter. Any Glow Color set within the patch will be overridden in CC if you choose a modded eye color that includes Glow.</p>
 <p>&nbsp;</p>
 <h3>Editing the Customization Patch</h3>
 <blockquote>
   <p><span class="text-big"><i>⚠️ </i></span><i>If you are using Eyes of the Beholder or Glow Eyes alongside KAVT, you will need to make these edits in a different file. Please see the EotB/Glow Eyes section a little further below for details!</i></p>
 </blockquote>
+<p><u>Requirements</u></p>
+<ul>
+  <li>Norbyte’s <a href="https://github.com/Norbyte/lslib/releases">LSLib</a> or the <a href="https://github.com/ShinyHobo/BG3-Modders-Multitool/releases/tag/v0.13.3">Modder's Multitool</a></li>
+  <li>The Customization Patch available <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files">in the Files tab on the mod page</a></li>
+  <li>A text editor (Notepad, VS Code, Notepad++, Sublime, etc)</li>
+</ul>
+<p>&nbsp;</p>
+<p><u>Step 1 - The Customization Patch</u></p>
+<p>&nbsp;</p>
