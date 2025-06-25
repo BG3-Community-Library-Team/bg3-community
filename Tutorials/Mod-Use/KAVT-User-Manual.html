@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-25T00:30:50.321Z
+date: 2025-06-25T00:36:40.586Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -958,41 +958,57 @@ dateCreated: 2025-06-18T21:49:52.870Z
   <p><span class="text-big"><i>⚠️ </i></span><i>You will only need to convert body textures if you are using body texture edits. This is <u>not</u> required to edit tattoo, makeup or scar atlases, the glowmaps, or the body tattoo atlas.</i></p>
   <p><i>You also will <u>not</u> need to do this if you'd like to use KAVT as it is. This is <u>only</u> necessary if you want to use <u>custom</u> body textures.</i></p>
 </blockquote>
-<p>As KAVT requires you to convert standard body textures to virtual textures, if you’d like to use custom body textures not already compatible, we’ve included this guide to simplify the process as much as possible.&nbsp;<br><br><br><br><strong><u>Requirements</u></strong><br><br>- Norbyte’s <a href="https://github.com/Norbyte/lslib/releases/tag/v1.19.5">LSLib</a><br>- The KAVT Virtual Texture Workspace available in the Files tab<br>- Your body textures of choice, including CLEA, NM, and HMVY<br><br>Please note that you’ll <u>need</u> to use LSLib to pack Virtual Textures. You cannot do so with the Modder’s Multitool.<br><br><strong><u>Process</u></strong><br><br><u>Step 1 - Acquiring LSLib</u><br><br>If you haven’t used LSLib before, acquire it from the link above. All you’ll need to do to set up this tool is download it from the link available above and unzip the files in the location of your choice. Make sure you have .NET 8.0 installed, as it is required for this tool to function - You can find the download link on LSLib’s release page linked above.<br><br>&nbsp;</p>
+<p>As KAVT requires you to convert standard body textures to virtual textures, if you’d like to use custom body textures not already compatible, we’ve included this guide to simplify the process as much as possible.&nbsp;<br><br><u>Requirements</u><br>&nbsp;</p>
+<ul>
+  <li>Norbyte’s <a href="https://github.com/Norbyte/lslib/releases/tag/v1.19.5">LSLib</a></li>
+  <li>The KAVT Virtual Texture Workspace available in the <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files">files tab on the mod page</a></li>
+  <li>Your body textures of choice, including CLEA, NM, and HMVY</li>
+</ul>
+<p><br>Please note that you’ll <u>need</u> to use LSLib to pack Virtual Textures. You cannot do so with the Modder’s Multitool.</p>
+<p>&nbsp;</p>
+<p><u>List of Virtual Texture File Names</u></p>
+<p>These are the names of the texture files. You’ll need to match these names when adding your textures to this folder. These textures follow the following naming convention, with content not in brackets being consistent between all races and body types:</p>
+<p><code>UNIQUE_(RACE)_(M/F)_NKD_BODY_A_(TEXTURE TYPE).DDS</code></p>
+<p><strong><u>Githyanki / GTY</u></strong><br><strong>﻿﻿﻿﻿GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazGTYF.gts”<br>﻿﻿﻿﻿<strong>GTP:</strong> “Public/unique_tav/Assets/VirtualTextures/KazGTYF.gtp”<br><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazGTYM.gts”<br><strong>GTP:</strong> “Public/unique_tav/Assets/VirtualTextures/KazGTYM.gtp”<br><br><strong><u>Tiefling / TIF</u></strong><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazTIFF.gts”<br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazTIFF.gtp”<br><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazTIFM.gts”<br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazTIFM.gtp”<br><br><strong><u>Normies (Elf, Half-Elf, Human) / NRM</u></strong><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazNRMF.gts”<br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazNRMF.gtp”<br><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazNRMM.gts”<br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazNRMM.gtp”<br><br><strong><u>Half-Orc / HRC</u></strong><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazHRCM.gts”<br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazHRCM.gtp”<br><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazHRCF.gts”<br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazHRCF.gtp”<br><br><strong><u>Halfling / HFL</u></strong><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazHFLM.gts”<br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazHFLM.gtp”<br><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazHFLF.gts”<br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazHFLF.gtp”<br><br><strong><u>Gnome / GNO</u></strong><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazGNOM.gts”<br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazGNOM.gtp”<br><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazGNOF.gts”<br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazGNOF.gtp”<br><br><strong><u>Dwarf / DWR</u></strong><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazDWRM.gts”<br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazDWRM.gtp”<br><br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazDWRF.gts”<br><strong>GTS:</strong> “Public/unique_tav/Assets/VirtualTextures/KazDWRF.gtp”<br><br><br><u>Step 1 - Acquiring LSLib</u><br><br>If you haven’t used LSLib before, acquire it from the link above. All you’ll need to do to set up this tool is download it from the link available above and unzip the files in the location of your choice.&nbsp;</p>
+<p>Make sure you have .NET 8.0 installed, as it is required for this tool to function - You can find the download link on LSLib’s release page linked above.</p>
 <figure class="image"><img src="https://i.ibb.co/60pC73K9/downloadlslib.png"></figure>
+<p>&nbsp;</p>
 <p><u>Step 2 - KAVT Virtual Texture Workspace</u></p>
-<p>Download the KAVT Virtual Texture Workspace from the optional files in the File tab on this Mod page. Using this workspace will make this process significantly easier as all configuration files required for packing Virtual Textures using LSLib have already been created for you.</p>
+<p>Download the KAVT Virtual Texture Workspace from the optional files <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files">in the File tab on this Mod page</a>. Using this workspace will make this process significantly easier as all configuration files required for packing Virtual Textures using LSLib have already been created for you.</p>
 <p>Similarly to LSLib, you’ll want to unzip the folder inside this .zip wherever you’d like it to be - Ideally somewhere you’ll find it easily, as we will be using the files within throughout this process. There is no setup required for any of the configuration files within the workspace, they’ll function as is.</p>
+<p>&nbsp;</p>
 <p><u>Step 3 - Inserting your Textures</u></p>
 <p>Next, we’ll be adding our new Body Textures to the workspace. For this guide, I’ll be using the feminine Githyanki textures as an example - the process will be the same for every Race and Bodytype, only the exact names of the files used in the process will change according to which Race and Bodytype you’re looking to edit.</p>
 <p>You’ll place your body textures within the following folder of the workspace: …\unique_tav\Conversion\Textures\(TEXTURES GO HERE). When you open this path, you’ll find it’s already filled with textures. These are the vanilla versions of all Body Textures, and whichever ones you’re not interested in changing can simply remain - we will not be touching them.</p>
 <figure class="image"><img src="https://i.ibb.co/mFXg1HmV/texturesinfolder.png"></figure>
 <p>Take note of the naming convention of the textures in this folder. You’ll need to match these names when adding your textures to this folder. These textures follow the following naming convention, with content not in brackets being consistent between all races and body types:</p>
-<p>UNIQUE_(RACE)_(M/F)_NKD_BODY_A_(TEXTURE TYPE).DDS</p>
+<p><code>UNIQUE_(RACE)_(M/F)_NKD_BODY_A_(TEXTURE TYPE).DDS</code></p>
 <p>For the sake of our example, we will be adding our textures to this folder after re-naming them as follows:</p>
 <p>UNIQUE_GTY_F_NKD_Body_A_CLEA.DDS</p>
 <p>UNIQUE_GTY_F_NKD_Body_A_NM.DDS</p>
 <p>UNIQUE_GTY_F_NKD_Body_A_HMVY.DDS</p>
 <p>If you’re asked if you’d like to overwrite these files, select yes. Do not delete any of the other textures in this folder, even if you aren’t using them. Please keep in mind that for Virtual Textures, all three of these textures will need to use BC3/DXT5 compression. This is a distinct difference between Virtual Textures and Traditional ones, as for Traditional Textures, all three textures require different compression types.</p>
+<p>&nbsp;</p>
 <p><u>Step 4 - Using LSLib</u></p>
 <p>Now that our texture edits are in place, we’ll be packing our Virtual Textures using LSLib. Launch the tool and navigate to the “Virtual Textures” tab towards the top of the UI. You’ll be working within the “Build Tile Set” section of this tab.</p>
 <figure class="image"><img src="https://i.ibb.co/W4tXy4c1/lslibvts.png"></figure>
+<p>&nbsp;</p>
 <p>Click the three dots on the right of the “Tile Set Configuration” line. In the window that opens, navigate to wherever you unzipped your KAVT Virtual Texture Workspace and further to unique_tav\Configs. Within this folder, select whichever Config file matches the Race and Body type combination your body textures are intended for. In our case, this is the Config file named “VTexConfigGTYF” - VTex Config Githyanki Female. Double click this file, which will add it’s path to the Tile Set Configuration field.</p>
 <p>This is our configuration file. It dictates which textures will be packed into which .gtp/.gts file; the files that will store our Virtual Textures moving forward.</p>
 <figure class="image"><img src="https://i.ibb.co/21DN3X5x/config-file.png"></figure>
+<p>&nbsp;</p>
 <p>Next, click the three dots on the right of the “Mod Root Path” line. Navigate to where you’ve unzipped your KAVT Virtual Texture Workspace once again, and select the folder named “unique_tav” that contains “Configs”, “Conversions”, and “Public”. Once again, click open, or simply double-click the file.</p>
 <figure class="image"><img src="https://i.ibb.co/FkqmkgBQ/root-folder.png"></figure>
+<p>&nbsp;</p>
 <p>Now, simply click “Build”. LSLib will now build your Virtual Texture tilesets. You’ll receive a small popup once the process has finished.</p>
+<p>&nbsp;</p>
 <p><u>Step 5 - Loading your .gts and .gtp files</u></p>
 <p>Now that we’ve successfully packed our Virtual Textures, we can add them to our game files. Similarly to how Body Texture overrides function for Unique Tav, KAVT’s Virtual Textures are loaded as loose file overrides.</p>
-<p>First, we’ll grab our freshly generated set of Virtual Texture files from within our workspace. They’re located at …\unique_tav\Public\unique_tav\Assets\VirtualTextures\(TEXTURES ARE HERE). You’ll want to copy&nbsp;</p>
-<p><u>both</u></p>
-<p>&nbsp;the .gtp&nbsp;</p>
-<p><u>and</u></p>
-<p>&nbsp;the&nbsp;</p>
-<p><u>.gts</u></p>
-<p>&nbsp;for your corresponding Race and Body Type.</p>
+<p>First, we’ll grab our freshly generated set of Virtual Texture files from within our workspace. They’re located at …\unique_tav\Public\unique_tav\Assets\VirtualTextures\(TEXTURES ARE HERE). You’ll want to copy <u>both</u> the .gtp <u>and</u> the <u>.gts</u> for your corresponding Race and Body Type.</p>
 <figure class="image"><img src="https://i.ibb.co/YFLgJF11/tilesets.png"></figure>
+<p>&nbsp;</p>
 <p>Next, navigate to your game’s Data folder - the easiest way to do so is via the BG3 Mod Manager’s shortcut, if you’re using it as your Mod Manager. Alternative, you can directly navigate to it; it’ll be located at …\Steam\steamapps\common\Baldurs Gate 3\Data.&nbsp;</p>
 <p>Further navigate to …\Steam\steamapps\common\Baldurs Gate 3\Data\Public\unique_tav\Assets\VirtualTextures. Paste the .gts and .gtp files you copied from within your workspace into this folder. This is where your Virtual Texture overrides will be located.</p>
 <figure class="image"><img src="https://i.ibb.co/218h9tz2/replacers.png"></figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
