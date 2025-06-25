@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-25T00:39:58.580Z
+date: 2025-06-25T00:42:52.715Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -1018,3 +1018,15 @@ dateCreated: 2025-06-18T21:49:52.870Z
 </blockquote>
 <p>This section covers replacing body textures when using KAVT NVP. If you're using KAVT, check out the appropriate section further above instead, as there are distinct differences in how to edit body textures between these two versions.</p>
 <p>We will not be covering <u>how to edit the textures themselves</u>. Texture editing itself is a complex process that is much better covered by guides dedicated to this topic rather than this manual on how to use KAVT. Sorry!</p>
+<p>&nbsp;</p>
+<h4>Installing Unique Tav-compatible Body Texture Mods</h4>
+<p>When creating KAVT NVP, we kept the naming conventions and file pathing used by Unique Tav intact. This means that any body texture mod compatible with Unique Tav should also inherently be compatible with KAVT NVP.</p>
+<p><u>Body Texture Mod - Folder Type</u></p>
+<p>If the body texture mod you've chosen includes a folder named <code>Generated</code> within its .zip or .rar file, all you'll need to do to install this mod is to drop this folder at the following path:</p>
+<p><code>…\SteamLibrary\steamapps\common\Baldurs Gate 3\Data\</code></p>
+<p>If you're asked whether you'd like to overwrite files and/or folders, select “Yes”. This is everything required to install this type of texture tattoo mod.</p>
+<p>&nbsp;</p>
+<p><u>Body Texture Mod - File Only Type</u></p>
+<p>Occasionally, you may come across a body texturemod that does not include a folder named <code>Generated</code> within its .zip or .rar file, and instead consists of only .DDS file(s). In this case, installing the mod requires a few extra steps.</p>
+<p>You'll want to place your tattoo atlas .DDS file at the following path: <code>…\SteamLibrary\steamapps\common\Baldurs Gate 3\Data\Generated\Public\Shared\Assets\unique_tav\BODY\RACENAME\GENDER</code>.&nbsp;</p>
+<p>If this path does <u>not</u> already exist for you (e.g. if you've not used Unique Tav before KAVT, or haven't customized your body tattoo before), you'll want to create these folders yourself. Once they're in place, drop the .DDS file in this folder.</p>
