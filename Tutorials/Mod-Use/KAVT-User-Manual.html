@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-25T02:13:36.145Z
+date: 2025-06-25T22:49:35.115Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -31,7 +31,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
   <li><u>Baseline Usage</u>
     <ul>
       <li>Quickstart Guide - Plug &amp; Play Installation</li>
-      <li>Swapping from Unique Tav to KAVT/KAVT NVP</li>
+      <li>Swapping from Unique Tav to KAVT or KAVT NVP</li>
       <li>KAVT Load Order Information</li>
     </ul>
   </li>
@@ -288,7 +288,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
   </li>
   <li><u>Unique Tav-compatible face tattoo and makeup atlases</u>
     <ul>
-      <li>Atlases need their size and name updated unless already specifically made compatible with KAVT/KAVT NVP by the author</li>
+      <li>Atlases need their size and name updated unless already specifically made compatible with KAVT and KAVT NVP by the author</li>
     </ul>
   </li>
   <li><u>Unique Tav-compatible Races</u>
@@ -570,7 +570,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 </blockquote>
 <p>You can find the KAVT customization patch among the optional files <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files">in the file tab on the KAVT mod page</a>.&nbsp;</p>
 <p>We highly recommend using a text editor other than the standard Notepad app that comes built into Windows devices to edit these files. We personally use <a href="https://code.visualstudio.com/">VS Code</a>, but other editors like <a href="https://notepad-plus-plus.org/">Notepad++</a> or <a href="https://www.sublimetext.com/">Sublime</a> can also be used.</p>
-<p>This process is very similar to the process of customizing your Body Tattoo color through Unique Tav. However, instead of editing KAVT/KAVT NVP directly as you’d do with Unique Tav, we’ve provided this Patch that contains only the files you’ll need to edit in order to make the process easier for users not too familiar with creating Mods.</p>
+<p>This process is very similar to the process of customizing your Body Tattoo color through Unique Tav. However, instead of editing KAVT or KAVT NVP directly as you’d do with Unique Tav, we’ve provided this Patch that contains only the files you’ll need to edit in order to make the process easier for users not too familiar with creating Mods.</p>
 <p>&nbsp;</p>
 <h3>Customization Options</h3>
 <p>Through editing the patch, you can customize the following features of KAVT. Options marked with an asterisk (*) are only available to KAVT users and won't work with KAVT NVP.</p>
@@ -604,7 +604,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>Read the instructions within the file carefully. Each Subrace and Body Type combination is labelled appropriately. Open the section of the Subrace and Body Type you’d like to edit by opening the appropriate collapsed section; we’ve marked the symbol you’ll need to click to do so in the screenshot shown above. Once opened, your file may look like this:</p>
 <figure class="image"><img src="https://i.ibb.co/VWdhmM9V/charactervisuals2.png"></figure>
 <p>&nbsp;</p>
-<p>Scroll down until you see a section of code separated by “&lt;!— KAVT CUSTOMIZATION —&gt;“. The section between this label and the “&lt;!— KAVT CUSTOMIZATION END —&gt;“ label contains all the code necessary to customize your KAVT/KAVT NVP as you desire.</p>
+<p>Scroll down until you see a section of code separated by “&lt;!— KAVT CUSTOMIZATION —&gt;“. The section between this label and the “&lt;!— KAVT CUSTOMIZATION END —&gt;“ label contains all the code necessary to customize your KAVT or KAVT NVP as you desire.</p>
 <figure class="image"><img src="https://i.ibb.co/Wpq0fjPq/charactervisuals3.png"></figure>
 <p>Here, you can now make whichever edits you’d like to make. Each parameter has been labelled, describing what it edits, how the values shown affect the feature you’re editing, and what changes are possible for the given parameter.<br><br>Once you have made your changes, save the file.</p>
 <p>&nbsp;</p>
@@ -614,8 +614,8 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>Then, navigate to the “PAK/LSV Tools” tab. Enter the path to the root folder as the “Source Path” path and whichever directory you’d like to place the finished .pak in as the “Package Path”. In our example, this is the Mods folder. Make sure the “Package Path” ends with the name of the .pak and the extension “.pak”. Before packing, ensure the Version is set to V18, and the Priority to 35.&nbsp;</p>
 <figure class="image image_resized" style="width:48%;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXy-7PArULTcjV25xX2a4djPK48CIRFBJMbaXveA5UsMhNJVwtpn3wj_lih_ShR8q_Pd-hyPQXs9xCHYUKt1V1NQpd2Ecjcx2hfKYrTNb8XQCOHxU8xwg96HYpZ43Db4GxgIBV?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
 <p>&nbsp;</p>
-<p>Then, create the .pak by clicking “Create Package" and install it via BG3MM as you would any other Mod. Load it <u>after</u> KAVT/KAVT NVP.</p>
-<p><br><br><u>Modder’s Multitool</u><br><br>If you’re using the Modder’s Multitool, you’ll only need to drag the root folder of the Patch onto the appropriate spot inside the Modder’s Multitool window. Your Mod will be packed to the same directory you’ve placed the root folder in, or alternatively directly to your Mods folder, should you have selected this setting. Install the mod via BG3MM as you would any other mod. Load it after KAVT/KAVT NVP.</p>
+<p>Then, create the .pak by clicking “Create Package" and install it via BG3MM as you would any other Mod. Load it <u>after</u> KAVT or KAVT NVP.</p>
+<p><br><br><u>Modder’s Multitool</u><br><br>If you’re using the Modder’s Multitool, you’ll only need to drag the root folder of the Patch onto the appropriate spot inside the Modder’s Multitool window. Your Mod will be packed to the same directory you’ve placed the root folder in, or alternatively directly to your Mods folder, should you have selected this setting. Install the mod via BG3MM as you would any other mod. Load it after KAVT or KAVT NVP.</p>
 <figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfo7J7PfumE89gUUuOcVQHp0aWdrZMsKSmbnZjc6muYcyHqZG-UVcMxlUkGtgpFCt19vMUlU65nF56txlZw5ZgTVvV_9TxWnKyOzbTpfm2EqLuulkA4ozJOpcl9VSqauL_OuDJF?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
 <p>&nbsp;</p>
 <h3>Editing the Customization Patch (If using EotB or Glow Eyes)</h3>
