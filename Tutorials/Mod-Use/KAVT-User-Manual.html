@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-24T23:56:28.162Z
+date: 2025-06-25T00:21:54.730Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -45,6 +45,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
       <li>KAVT Customization Patch</li>
       <li>What's Where &amp; How Does It Work<ul>
           <li>KAVT Face Customization</li>
+          <li>KAVT &amp; KAVT NVP Body Customization</li>
           <li>KAVT Body Customization</li>
           <li>KAVT NVP Body Customization</li>
           <li>Editing and/or Replacing KAVT Assets</li>
@@ -534,6 +535,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 </ul>
 <p>The glowmap resource is a little more bare-bones than e.g. the atlas resources. This is because the glowmap is very customizable, and doesn't contain any design by default. The examples provided contain two designs on two channels of the glowmap texture.</p>
 <p>If you have little experience editing images with Photoshop or GIMP, we'd recommend checking out the BG3 Image Editing Basic section further down on this wiki page first. It covers some of the baseline skills you might need to do this sort of editing - all of these skills are very simple to acquire, and editing these resources isn't as scary as it might seem if you haven't done so before! The Image Editing Basic section primarily covers very basic information on how to use image editing software for users who have never interacted with software like this before, meaning that if you have used Photoshop or Gimp in any capacity, you're likely good to go when it comes to editing the glowmap.</p>
+<p>You can find detailed instructions on how to edit both the head and body glowmaps here.</p>
 <p>&nbsp;</p>
 <h3><u>General Information</u></h3>
 <p>All three Glowmaps (for the head, the body, and the genitals) are set up to function the same way - there are no differences regarding the functions of each channel between the three types of glowmaps included in KAVT.</p>
@@ -542,15 +544,11 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>The <u>Red channel contains the Glow</u>, which appears as a glowing, pulsing Tattoo in-game. The <u>Blue channel contains the Additional Tattoo</u>. The Glowmap only contains their designs, and colors are customized either by file edit, or in CC (by eye color).</p>
 <p>All three Glowmaps are provided at a size of 4096px x 4096px. You may scale them down without their features being negatively affected. This may be beneficial especially in the case of the Head Glowmap, as if you decide to use, for example, existing Tattoo or Makeup designs that are originally part of an atlas for this Glowmap, they may be smaller than the size of the glowmap resource provided. However, designs may be less crisp if you decide to scale them down. This will be particularly noticeable on the body.</p>
 <p>&nbsp;</p>
-<h3><strong><u>Exporting your Glowmap</u></strong></h3>
-<p>Once you have customized your glowmap using (or not using) the information provided above, you can export it to use alongside KAVT or KAVT NVP.</p>
-<p>For this example, we'll be using Photoshop and the Intel DDS plugin. Your settings may look a little different if you're using the NVIDIA DDS plugin for photoshop instead, or are using another image editing software like Gimp.</p>
+<h3>Glowmap Paths and Compression</h3>
 <blockquote>
   <p><span class="text-big"><i>⚠️</i></span><i> It is incredibly important for your glowmap to use the correct name as detailed below. It is equally as important for your glowmap to be saved as .DDS, and <u>not</u> .dds.&nbsp;</i></p>
   <p><i>The game <u>will not</u> read your glowmap if it doesn't follow the naming convention we've provided exactly or .DDS is not capitalized.</i></p>
 </blockquote>
-<p>Navigate to either File &gt; Save As or File &gt; Save a Copy. We personally use Save as Copy to be able to continue working in the .psd file if adjustments needs to be made and to avoid accidentally not saving this progress, as Save As will make the .DDS file you are exporting in this step the file that's open (instead of the .psd we initially opened to work in).</p>
-<p>You can save your file either in a location of your choosing and manually move it to the appropriate folder within your game files, or save it directly within your game files. We recommend the latter, as it removes an additional step.&nbsp;</p>
 <p>The paths for the glowmap files are as follows:</p>
 <p><u>Head</u>: <code>…\Baldurs Gate 3\Data\Generated\Public\Shared\Assets\unique_tav\FACE\GLOWY\KVT_Head_Glowmap.DDS</code></p>
 <p><u>Body</u>: <code>…\Baldurs Gate 3\Data\Generated\Public\Shared\Assets\unique_tav\BODY\GLOWY\KVT_Body_Glowmap.DDS</code></p>
@@ -802,7 +800,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>&nbsp;</p>
 <h3>KAVT Body Customization</h3>
 <blockquote>
-  <p><span class="text-big"><i>⚠️ </i></span><i>This section is only relevant if you're using KAVT. If you're interested in body customization and are using KAVT NVP, &nbsp;please refer to the section further down.</i></p>
+  <p><span class="text-big"><i>⚠️ </i></span><i>This section is relevant to you whether you're using KAVT or KAVT NVP. It only covers body tattoos - for body texture editing, check the appropriate section based on which version of the mod you're using.</i></p>
 </blockquote>
 <p>KAVT includes a number of new options for body customization. This section details how they work, where you can find them, what they don't do, and how you can edit them.</p>
 <p>&nbsp;</p>
@@ -919,3 +917,30 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <figure class="image image_resized" style="width:433px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdRlm20zMG943OAeO2I0HiqMDbACIwUNe7eUPQxMDcehGKes1gU1qIQyKA2bcFpmupacwV7J95f2KEJ4ln7vSaYOtg3cFijlh2dgzSuciP_MbXImfQerhoGBDLTsmg3BQ0B8VFT?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
 <p>&nbsp;</p>
 <p>‼️<u>Note:</u> Your settings window may appear a little bit differently depending on which Photoshop .DDS plugin you use, or alternatively, if you're not using Photoshop but another image editor instead. Regardless, the compression type of BC3 (which may also be referred to as DXT5) is the most important part of this window. Please also make sure to save your file without Mip Maps, as this may make your designs appear blurry.</p>
+<p>&nbsp;</p>
+<h4>The Body Tattoo Atlas Option</h4>
+<p>In addition to the two body tattoos possible via KAVT glowmap, you can also use a third body tattoo design via the body tattoo atlas. You may already be familiar with this way to add body tattoos if you're used Unique Tav in the past.</p>
+<blockquote>
+  <p><span class="text-big">‼️</span>If you've previously used a body tattoo with Unique Tav and simply want to continue using it, you don't need to edit your files, re-name them, or move them. They will continue to work!</p>
+</blockquote>
+<p>&nbsp;</p>
+<h5>How does the Body Tattoo Atlas work?</h5>
+<p>Much like the atlases used for heads' tattoos, makeup, and scars, the body tattoo atlas is a collection of body tattoo designs arranged in a grid pattern. In vanilla BG3, this body tattoo atlas is not accessible to Tav and is only used by NPCs. Because of that, we cannot edit body tattoos added via this atlas in CC - Not even with Unique Tav or KAVT.&nbsp;</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfw-vzMhMLluFLQ9BKM6I-RkB7JXElxq88R_dYMkQyIwvpz-V2U2i7am5LloPUM6fxPlN7PV6niMMIJLJNpRSkdE60Z0_9CJ0JO60tXs16beOhtK1hg4qaoj1rKzUUkZRdLfZgRCA?key=O2Ip_U1nt9qFp1lokIS75Q">
+  <figcaption>Vanilla Body Tattoo Atlas</figcaption>
+</figure>
+<p>UI editing to add things to CC is incredibly difficult - so we are not using this atlas as a “true” atlas; any body tattoo design we use will be located within the first tile of the atlas, at the top left of the image, and in practice, swapping tattoos will be much the same as the process of swapping tattoos is like when using the KAVT body glowmap tattoos.&nbsp;</p>
+<p>&nbsp;</p>
+<h5>Using a Body Tattoo Atlas Tattoo</h5>
+<p>The most likely scenario when using a body tattoo this way is that you'll be using a pre-existing body tattoo design made by another modder, hence we will be limiting our instructions to using these mods alongside KAVT.</p>
+<p>&nbsp;</p>
+<p><u>Body Tattoo Mod - Folder Type</u></p>
+<p>If the body tattoo mod you've chosen includes a folder named <code>Generated</code> within its .zip or .rar file, all you'll need to do to install this mod is to drop this folder at the following path:</p>
+<p><code>…\SteamLibrary\steamapps\common\Baldurs Gate 3\Data\</code></p>
+<p>If you're asked whether you'd like to overwrite files and/or folders, select “Yes”. This is everything required to install this type of body tattoo mod.</p>
+<p>&nbsp;</p>
+<p><u>Body Tattoo Mod - File Only Type</u></p>
+<p>Occasionally, you may come across a body tattoo mod that does not include a folder named <code>Generated</code> within its .zip or .rar file, and instead consists of only .DDS file(s). In this case, installing the mod requires a few extra steps.</p>
+<p>You'll want to place your tattoo atlas .DDS file at the following path: <code>…\SteamLibrary\steamapps\common\Baldurs Gate 3\Data\Generated\Public\Shared\Assets\unique_tav\BODY\TATTOO\</code>.&nbsp;</p>
+<p>If this path does <u>not</u> already exist for you (e.g. if you've not used Unique Tav before KAVT, or haven't customized your body tattoo before), you'll want to create these folders yourself. Once they're in place, drop the .DDS file in this folder.</p>
+<p>Additionally, if the file is <u>not</u> named “Skin_Atlas_Body_UNI_Tattoo_A_MSK.DDS”, you'll want to rename the file.</p>
