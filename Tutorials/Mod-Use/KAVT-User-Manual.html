@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-25T01:37:50.645Z
+date: 2025-06-25T01:42:50.506Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -1085,3 +1085,48 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>If you're struggling with editing BG3 files, please don't hesitate to reach out. :) I'd also recommend some of our community discords if you require help, such as the <a href="https://discord.gg/larianstudios">official Larian discord server</a>, or the <a href="https://discord.gg/bg3mods">BG3 Modding Community discord server</a>.&nbsp;</p>
 <p>&nbsp;</p>
 <h2>Tattoo &amp; Makeup Atlas Editing</h2>
+<p>This section will cover some basic information on how to edit tattoo and makeup atlases. This explicitly includes the face tattoo and makeup atlases for “normies” (non-dragonborn) and the dragonborn makeup atlas, but the same principle also applies to other atlases, such as, for example, the body tattoo atlas.</p>
+<p>&nbsp;</p>
+<h3>Re-Sizing a Vanilla-Sized Atlas for Use with KAVT &amp; KAVT NVP</h3>
+<p>If you would like to use custom tattoo and makeup atlases that are compatible with Unique Tav but not explicitly compatible with KAVT, you will need to make two types of changes to your atlases for them to work alongside KAVT or KAVT NVP.</p>
+<blockquote>
+  <p><span class="text-big">‼️</span> Some creators have made KAVT compatible versions of their tattoo and makeup mods available.&nbsp;</p>
+  <p>If the modded options you use have been made compatible already, you can download those versions instead and won’t need to make any changes yourself.</p>
+</blockquote>
+<p><u>Re-Sizing your Atlases</u></p>
+<p>For this step, we recommend using the “Tattoo, Makeup and Scar Atlas” resource available under “Optional Files” in <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files"><u>the file tab</u></a> on KAVTs mod page.</p>
+<p>To briefly explain why we recommend this - .DDS files are compressed, similarly to a .jpeg. Opening a .DDS file, making edits, and then saving it once more will degrade the quality of the image, similarly to how .jpeg files may appear “crunchy” - Lines will be less crisp and designs may become blurry or artifacted. The resource we’ve made available is in the form of a .psd file, which is not compressed. This will ensure things aren’t compressed multiple times, keeping your tattoos and makeup as crisp as possible.</p>
+<p>The process is the same for both the tattoo and makeup atlas. You will need Photoshop or Gimp to do this. For this guide, we will be using the files “KAVT Tattoo Atlas - Merged” and/or “KAVT Makeup Atlas - Merged”. We will only cover adding your existing Unique Tav atlas to the bottom half of the larger KAVT atlas - if you want to modify where specific designs are located or assemble a fully custom atlas, we recommend checking out the more in-depth guide included in the Resources file that goes over working with the “Working File” instead. :)</p>
+<p>When opening the file, you’ll see the larger tattoo or makeup atlas on the screen. You will also want to open the atlas you have used alongside Unique Tav at the same time.</p>
+<p>Inside your Unique Tav atlas file, open the “Channels” tab. Within Photoshop, this tab is located next to the “Layers” tab - this’ll be similar with other image editing software.</p>
+<figure class="image image_resized" style="width:451px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfT1bZybgRMYyaLiNZOTeIFMCzZoTsCzO_yv0J4SXzibgIwIj_TBLOow4HLEJ6Ceol9t6wBNbGvlcJ-PtOVLslwPhCAoJbC9EOPZMhEAXXebHMWYtwYh0HD3AOkjEmulpv46ft-LQ?key=1YfCsAq9MlCYJYChLgQ6UA">
+  <figcaption>Channels Tab in Photoshop</figcaption>
+</figure>
+<p>Select the “Red” channel from the list. The appearance of your image will change, and only the red tattoos will be visible. Select the entirety of your canvas using the selection tool, and copy it (ctrl+c, or navigating to Edit &gt; Copy in the top bar).</p>
+<p>Now, swap over to your KAVT atlas.</p>
+<p>Similarly, navigate to the “Channels” tab and select the red channel. Paste (ctrl+v, or navigating to Edit &gt; Paste in the top bar) the “Red” channel you just copied from your Unique Tav atlas into the “Red” channel of your KAVT atlas. Re-position it by dragging it downwards until it covers the bottom half of the atlas.</p>
+<p>Now, you’ll repeat this same process for the “Green” and “Blue” channels of your atlases. Once you’ve done this for all three channels, you’ve successfully added your Unique Tav atlas to the bottom half of the KAVT atlas.</p>
+<p>Next, we will save our atlas. Navigate to File &gt; Save As, then choose the location for your file. You can either save it directly to the correct location, or save it to a different location and then copy it over to the correct path:</p>
+<p><code>YOURGAMEFOLDER\Generated\Public\Shared\Assets\unique_tav\FACE</code></p>
+<p>You will want to choose the following names for your atlases:</p>
+<p><u>Tattoo</u>: KVT_Head_Atlas_Tattoo.DDS</p>
+<p><u>Makeup</u>: KVT_Head_Atlas_Makeup.DDS</p>
+<p><u>Dragonborn Makeup</u>: KVT_Head_Atlas_Makeup_Dragonborn.DDS</p>
+<p>Capitalization and spelling are important here! Your game will not read these files correctly if there are spelling mistakes, capitalization differences, or the file is placed at the wrong location.&nbsp;</p>
+<p>These are the export settings we will use to save our atlases:</p>
+<figure class="image image_resized" style="width:440px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdk8VwKmTxEXFWolcWFhktPvzm4G0Rs1_KmsIsvc8dsGoQEPKmSwOLj9DbbpzTtEpu7MlCtvFH-3ANKjwanCFrlDW86n7_V-KMr0YNPORPrMC550Qrx-oHmxQ3VS84hZcXnE_nzEQ?key=1YfCsAq9MlCYJYChLgQ6UA">
+  <figcaption>Tattoo and Makeup Atlas Export Settings</figcaption>
+</figure>
+<p>Please note your menu might look slightly differently if you use the NVIDIA dds plugin for Photoshop instead of the Intel one, or you are using another image editor to make these changes.</p>
+<p>Now, your atlas has been re-sized and re-named and will work with KAVT.</p>
+<p>&nbsp;</p>
+<p><u>Why do we need to re-size the atlas?</u></p>
+<p>The changes allowing for the larger atlas to work are made within the shader we edit within KAVT. Inside the shader, we have told the game to look for an atlas that is 4 tiles wide and 8 tiles tall - the game will <i>always</i> treat the atlas as if it is that size, even if the atlas you’ve added is only 4 tiles tall.</p>
+<p>This image illustrates what issues that might cause:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXer4S5ZqWyJeylRRLB-yGe_39220aPpPfpsTGezZCkqVxtaIGRrTVQuuYjLdKmmHHAC10uSxFBLtbXCP3dyZHKi_jdwDq2o_UvCAwWpcWVq-qhDmUmKGrJCn5FK9d7V5e-z92Je?key=1YfCsAq9MlCYJYChLgQ6UA">
+  <figcaption>Atlas Size Mismatch</figcaption>
+</figure>
+<p>As you can see, the left atlas contains one tattoo neatly within each tile. The atlas on the right, however, is cut up into more sections than there actually are tattoos, resulting in each tattoo getting cut in half. In-game, this results in misplaced and awkwardly cut tattoos. This is why you’ll want to re-size your atlas. :)</p>
+<p>&nbsp;</p>
+<h3>Re-Arranging or “Frankensteining” an Atlas</h3>
+<p>&nbsp;</p>
