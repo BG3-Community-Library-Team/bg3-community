@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-25T01:42:50.506Z
+date: 2025-06-25T01:56:50.811Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -1129,4 +1129,114 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>As you can see, the left atlas contains one tattoo neatly within each tile. The atlas on the right, however, is cut up into more sections than there actually are tattoos, resulting in each tattoo getting cut in half. In-game, this results in misplaced and awkwardly cut tattoos. This is why you’ll want to re-size your atlas. :)</p>
 <p>&nbsp;</p>
 <h3>Re-Arranging or “Frankensteining” an Atlas</h3>
+<blockquote>
+  <p><span class="text-big"><i>⚠️ </i></span><i>We always recommend asking authors before editing their assets directly. Please check the mod page of the mods you'd like to combine before doing so, and/or ask the authors for permission.</i></p>
+</blockquote>
+<p>If you're determined to have the most suitable customization options available to you in CC, you may want to edit tattoo or makeup atlases to only include options you're interested in using. In cases like this, "frankensteining" atlases - taking bits of multiple tattoo or makeup mods and assembling your own custom atlas from these options - is a popular option used by many. It is good practice to ask the authors before doing this, so please check in about using other's assets before starting.</p>
+<p>💜 <u>Credit</u>: This section was very kindly written by satanfish from the Faerûn Fashionistas Discord server! It was written with GIMP in mind and was explicitly written from a user's perspective, so it is very in-depth and detailed. The tattoo atlas used as an example in this section was created by CovenElf; you can find it <a href="https://www.nexusmods.com/baldursgate3/mods/1684">here</a>.</p>
 <p>&nbsp;</p>
+<h4>Getting Started</h4>
+<p>Open the KAVT tattoo or makeup working file. In this example, I will use the tattoos. Then, open the tattoo atlas that has tattoos you want to add to KAVT. You should now have two tabs open:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdqgToJuBJIfbufsD1R-bzWOCP3jBMfyPmixsMkE61s7WG0lZYOxq0bKiOBofdh1TXP73GyknJHF26NDeeG99EBZFC3H4WLi8MFpmOO13BcF6a6xs6HCXAcW4PzThZGdGT-OmSAeA?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>⚠️<u>Note</u>: I made a mistake while doing this guide, so I already have the extra tab open that you will be creating for this next step.</p>
+<p>On the tattoo atlas you want to add to KAVT, click “Colors” on the top bar. Most of the way down, you will see an option for “Components”. Mouse over that, then select “Decompose” so that the atlas will break up into it’s individual red, green, and blue atlas channels (this is really important!)</p>
+<figure class="image image_resized" style="width:449px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdM2-aCmlzueHkEXI2uC0txxhA9XKJ-ZIWRxgXxAUzHVYaxvRU52vDoWxs_biSZ8RtWwV7zAAcbF1qFqTT2g4IiKmZwjUYfQbq8Lje_QO-ZJ0t4N-VxtLFpmN8ZbTQxb3o8x-6xCA?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>You will get a popup box asking a bunch of stuff, and basically you want it to look like this when you hit okay:</p>
+<figure class="image image_resized" style="width:418px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfhKnq4Gr2e8IvZZMHAc2RXxxbXXMGrqNR7_JrOxA1_fs2p680lhx2QBLbVUtJFPXSDqyzH6CCz2EVKKQtWFxj6dhtr9P7ZAEL5451EUwFVQDFLoyjfITb7pgCcNhMHyObB_fKEmw?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>When you hit “OK”, it will load for a minute, and then it will look like this:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc6piXykCxNcYA_RC0Lo9Jg-yfT-GQ8G7uF7ZlyN6u0Pz4X2CL64qMrNPyxKARVwYBaWStvGZ9eMdcryUdvxdSHoZGcBHVnJpxNyD2nDH-_wJspgqJWOAvdAcpFSX2FVq-4ASyL?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>Take note of the RGBA channels that I have in the box here. We’re going to use those in a minute.</p>
+<p>You will need to keep track of which atlas is which, so I usually keep both the original coloured copies open to refer to. You can also refer to the very top of the menu to see what the name of the current tab you’re in is.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeiA98OvYbsD38oCNQlYhf3Jnp8prYEE-Kd5fodp736PuqoYrG-3I4yHHraEB2JI3ZQbzdF428bqQDKyxDLFdXSViBF6obx7INSgVJiZklyE82TQOEHyJ37Vn-m0oEPV5OblDsi?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>From here, I am positive there is a more efficient way, but this is the way that works for me, so this is the way I use.</p>
+<p>First, decide which channel you want to work on. Tattoo atlases use three channels: red, green, and blue. Makeup uses the red channel. For this guide’s purposes, we will start with the red channel and work our way through.</p>
+<p>On the KAVT atlas, select the eye icon next to the green, blue, and alpha channels. The red channel should be the only one with an eye icon:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdz9l-jPtAZpjgvGAh5CHesO78rOj5NSDQ_S8YsbSAz49x3a4wfYjDKViUQeZYrqzkbHLFrUQuyY-jf69xMtOujtaTn977WY3gde7whwGOJsF5tbf7DCdc2lC2PoFiJWxjvyZNXCw?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>I expanded the Red channel here because we’re going to have to decide if we want to work with the vanilla tattoos (replacers) or the added tattoos. If you want to replace some of the vanilla tattoos, click on the eye icon beside “NEW #2” so that the added tattoos are hidden. I like to keep the overlay so I know where the vanilla tattoos are on the atlas.</p>
+<p><strong>Do not touch the clown make-up or tattoo box.</strong> Any other vanilla tattoo can be replaced, but NOT the clown.</p>
+<p>Next, go to the decomposed atlas that you want to add to KAVT and do the exact same thing - click the eye icon for every channel that is not “red”.</p>
+<p>On the atlas that you want to add to KAVT, click on “Edit” at the top, then click on “Copy Visible”:</p>
+<figure class="image image_resized" style="width:602px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcEs4lBFy-392fUKCfM0megik4Ok67jAuBvJwuWRGY1PYsfwtg-kUtcKHOAaBsIbd6aQ-nZElEjt2nsqomMdwMSSeU-a1MmvBPoJInkTKfkCZ6x2tD-melDfdAgacFNZbokqSjNCQ?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>After this point, I realized my mistake, so the tabs at the top will be correct going forward!</p>
+<p>Back to KAVT’s atlas now! We are going to edit the vanilla tattoos, so hide “NEW #2” by clicking on the eye icon, and then select “VANILLA TATTOOS #2” by clicking on it so it has a white outline around it:</p>
+<figure class="image image_resized" style="width:339px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXepjIcUNDEQsfwDy902NHoUShw6SBEHI-cUi7i9vYV5FKbydFUMZl_tZ0t3BDMfFUpc65yJWgOWJs39oQq7LkJ6-Rw0f9-EpNKazPtO98l_Cb4rEHr-ccAuWGQdnJN_oWy5Li4uOg?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>Once you have done that, click on “Edit,” then hover over “Paste as” and select “Paste as floating data into selection:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeuiZCY_3lbdTI75EXeA9v-oKJhhnajpIzZNdLsVvx2C9boGqmMOwJC1qGnVtkRWiU44AlA10GCKCAtJptP47hj-knqhv0t-ZBoESwxSqKgv-MsKnyqxmyVZSNjguZpO0mlBkLHdw?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>When you paste it in, it will plop the red channel from the atlas you want to add as a floating layer, usually somewhere in the middle of the atlas. Wherever it drops, you now want to move it by clicking and dragging it down. I strongly encourage zooming into a corner basically as far in as you can so that you can see the blue and white outlines. You want to make sure the two are overlapping or your added tattoos won’t be positioned correctly on the face in the game.</p>
+<figure class="image image_resized" style="width:187px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc_RmJveUY9LiTbyujKc4pFzG9k0UPnpVNxYJB7cMcuOJPoIU1so0Vi32l0ANqvgv0ZQe0yGofF40j2p24hG5Q8Hb8jIvUnAJckQ4FQ_TatEl9t5Icj4OHc0xCVtK7a5DAkgInetg?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<figure class="image image_resized" style="width:424px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcHhLSO-V9RfHrO6zFrqj7FNDR4NbQDFzpPREDwKwER-u0CJcm7hKOh-mPAGgCIuPfMOutaXfih5ZlDAUVW6FadA3RlOHjw5cSI77CyxDTRnnih9ASnEjbdwS_g-BvLXFa8jwM9YQ?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>👏 <u>Tip</u>: while moving the atlas, you can use the arrow keys to position it. So, in the above screenshot that says “bad”, I can move it over using my left arrow key until the blue and white lines overlap.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe748iBPJzIqjQ1zh8jmqpI44uIXUhCJzEPj-PVclxBc84Yne23YKPWWMnVfFvmvV94JgPPOA5G4ZdQQkYN-QeqldFUAchttXY6ftstZ_JEqzDfdWZvWfpa8eeNTUrZMtI1O8n7?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<figure class="image image_resized" style="width:431px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdYZkplKKCDTYuvD_nnIjtJzFuWedFc3XcoUl-3loZ9drR30lUdqtY-YyJdggADMvndWJEg19dR3rnbCOuu9M7e8YlVI4qlDdxlbVy9VqHmrfrSCziC-2-UKYUl_pF9cV8g4PHO?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>After you have finished positioning it, it should look like this:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc0_5EFf6dIzrR6OufpWM3QApF17MWTiNLAYYIbfgTugKG7qhnVPEdeGAroQhiNNNVZsB8h8GGE3QjywYrm0htWo3NCko1eiRAibvjpXDb6HcQUq3-dGGRWVgfLSYF1EeSM7PrMhQ?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>On the bottom right, where you see the arrow in the above screenshot, click the anchor icon. This will cause the “Floating Layer” we pasted and moved to merge with “Vanilla Tattoos #2” (as Vanilla Tattoos #2” is underneath it, which is why we wanted to make sure it was selected before pasting - the floating layer pastes above whichever layer had the white outline!).</p>
+<p>Now for the actual editing part!</p>
+<p>On the left hand side of the screen that has a bunch of GIMP’s different tools, select the rectangle button (“Rectangle Select Tool”):</p>
+<figure class="image image_resized" style="width:303px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf0kDYwcQs53kSX5s1z_mVnE6Tur_2Ug7SSFkOdWXPUeFUXS5K09SC8oU6vMOor5rJzhm6IP9GZp4vHqE2I_os2eItwiP5lBXsCcWR-A-zd1ASq78nMVP-a-U4Kzx0hxJYgSYFG?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>Click in the corner of the box of one of the tattoos you want to move into the vanilla tattoos and drag your cursor to the opposite corner (i.e. I clicked on the top left corner and dragged down to the bottom right). The select box will snap to the blue lines, so you don’t need to worry as much about being precise like when you moved the atlas.</p>
+<figure class="image image_resized" style="width:339px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeeerTwfXUKG-Hyc0OOsae4dVcbRoo0HzF0JMtFE4PIFQkT8dl36Re5rOD_KsC9-LEbQlrW8u-Y-HwSihWiRK5ZLEL1xF9v5ci_zVKLDLIoNx-rDvCQN619z0xd1Et4XeZSdAB7gA?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>Click on “Edit” at the top, then click on “Cut”:</p>
+<figure class="image image_resized" style="width:377px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf0EXYH58qJIISPk0CLk-32OcWZBqMRIfn3132dymLcKPlKz33seFzJYRZ-V0EulrGuinXBmF8Z8fdxOwJ2MnkSkL2eeViEONdG8ecdi1zP6ooXWqindKCjgiKt8h0XwPtcdDmW?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>Click on Edit again and select “Paste as” and then “Paste as floating data into selection”:</p>
+<figure class="image image_resized" style="width:526px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcv8uReV__JjnplpV-o_uvulRnqprJ0jY5-K_IS34pSzz0UQwatN85vOpVkk0_rlskrVE5YqURgKWFMNnB-bgholfdI-0xM7d7-fli3OrDLvY-rHx0yW9go5jCSMDn6tdtAiec3?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<figure class="image image_resized" style="width:360px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeNzxwr2gucYujleNi0OQxD2CGxRzd8zNFYtPFFnHmUE9lQUSTCpgL5LNTMiO_WIIWZOkW0q7_yV6QMRecVvVXqohjziGq1sESsjEsX8-nY_LsEpos_jBZ6GUeATQte4H5zd7KQUA?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>Once again, we are going to move it, except now we want to drag it over whichever vanilla tattoo you want to replace. Again, do NOT touch the clown. Anything else can be replaced, but not the clown.</p>
+<figure class="image image_resized" style="width:397px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeQHIXeO18ZjA9WZdRCE5qR4aJ7IafEayknXmpIXv4gLYvkwAQwuv4g1uVAZ9yED4ZEiOwPcVAr50Lii_z-Jgf7l33SJlpXHZ_wPjaQEI8qzxqaHAoVGdQSUwxRIw6i0c0zGVvA0w?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>Once again, it will snap itself into place, so you do not need to zoom in to get it super precise. Once you are satisfied with where you have placed it, click on the little anchor symbol again, and this will paste it into the vanilla atlas.</p>
+<figure class="image image_resized" style="width:301px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeVCwRsOVw7_aaVzjj-HDbN_y0wpdLP-rtxJ5nmVN_Ba_we4QwKxva0hDs0P7bnILTFnHck4y2aHCFUanb4-HWGbFufLPBqTlaLe9geECa0Vb4j8eYyk_l-mdcBEo5luUSkWq1l?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>Keep doing this for every tattoo that you want to replace vanilla tattoos with. If you want to use more than one CC atlas to replace the vanilla tattoos, you would basically follow these exact same steps. I personally found it easier to work with one atlas at a time, and then once I was done with the first atlas, grabbed the second one I wanted some tattoos from and repeated these steps.</p>
+<p>Once you are satisfied with your red channel, we are going to hide it and move on to the next channel (Green):</p>
+<figure class="image image_resized" style="width:333px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcjw0Hdy0vM6dtdO7fi3w7nMikgFNK6z1ksYJ_9HqiE7uBcKPYYNG9wmuG-4z27FMeBI7-wu1jTg35-krNZukUHQrlnmE6V1JK8F7vgxO7g3dClYAbIqQH8UEdxdBTRIHs1P_23xQ?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>As you can see, I still have the red channel’s VANILLA TATTOOS #2 channel selected, so I will need to make sure to click on whichever green channel I want to edit (NEW #1 or VANILLA TATTOOS #1).</p>
+<p>Go back to the atlas that you are adding to KAVT and hide the red channel, and unhide the green channel (all by clicking on the little eye icon/where the eye icon should be). Follow the exact same steps as above to add tattoos to the KAVT’s green channel. Same thing with the blue channel - hide everything but blue, copy as visible, paste as floating selection, move into place, anchor, cut, paste as floating, move into place, anchor. :)</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdqupWqN4QEUfqA0brusDA0IE8eJxO7XIHOMDz8H5StnEJNKLfYXxh9cl01mAtpNxqS8SN0NW3hAidA9EUk7Pkl1T_iSrjLCBsq0VgzLmt8ywVCqjNkB7qip161Lcg1SzrqdTUS3Q?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>You can technically mix and match atlases, too! For example, if there are a lot of green channel tattoos you don’t like on KAVT, you can add tattoos from the red or blue channels from the second atlas as well (so, for example, if I wanted CovenElf’s first tattoo in the green channel to be on the red channel instead, I can still do that). I just found it easier for myself to keep like-with-like, and then, once I was done, I would mix-and-match if I had more tattoos I wanted to replace.</p>
+<p>Once you have all the tattoos you want to include on the KAVT atlas, open the KAVT - Merged atlas. Once it opens, click on “Colors” -&gt; “Components” -&gt; “Decompose” and this will break it down into its RGBA channels. When you get the popup, make sure it looks the same as the screenshot earlier in this guide, then click “ok”.</p>
+<figure class="image image_resized" style="width:459px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfSDMC0uPL4wqI9bD0uDUcQeusfGbJAM5hg_crWj0TW8ar0tmFWSMqswvMQER0QuW3r3rau0IeRb1kMRBfpwZDnfOZ2olf4j6WC2429gK-AaPyvWBblIduMorqfumMl40UK1vwI6A?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>From here, we are going to work on each layer individually. On the decomposed KAVT merged file, hide everything but the red channel by clicking the eye icon. Make sure “Red” has the white outline – if it doesn’t, make sure you click on it after hiding everything:</p>
+<figure class="image image_resized" style="width:303px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfnMofYCX0MFUF13UWti1lpTrAIDzJgXcE8lbDr3YxAmV-Y8Oe-f4SY5X1jM3E9I7pAwRV2yPz5XRznLFd8wLAhe5fzp-s43FddmAzGKq-RY1fuuDzUnRb4v-vCeumqDePkSUcu?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>Next, go to the KAVT working atlas that you were just adding various tattoos to. Hide everything except the red channel:</p>
+<figure class="image image_resized" style="width:322px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfkTlIANG1RGPCsgySD_Ktn9YXatwv4ViwAMWi25hejT2s3n6vQyQCwicLTeauoIEx1q7bt1h7ZVaJcMGI4EiI5HIrg-uc1qpOy6AhZYo3-U0954N_0KTUn8JmDkjVgHmywEPsiJg?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>Again, make sure “RED” has the white outline!</p>
+<p>Next, click on “Edit” and “Copy Visible”. Go back to the decomposed KAVT merged file (the black &amp; white one), click “Edit”, hover over “Paste as” and select “Paste as floating layer into selection”. You should not need to reposition it, but, if you do, move it just like you did before. Then click on the little anchor symbol to paste the floating layer into the red channel:</p>
+<figure class="image image_resized" style="width:333px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf0a4SV2Y0cifimnm-PhTqy2LveSwqqND2i8nAS__wOcHUTSyPSpLk1asUOxcJIluZ99Agtaf8mPX05rNXu89jeLBMqpnNALOFLvohcTNnOUiCFQfgj0SPFmRGHGMw0AOE51Jc_?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>Repeat these steps for every channel you changed (i.e. if you changed tattoos on the green channel, you need to do the exact same steps – hide everything but the green channel, then copy/paste as floating layer/position/anchor).</p>
+<p>Once you have finished combining the KAVT working atlas into the decomposed KAVT merged atlas, go into the decomposed KAVT merged atlas and click on “Colors”. Hover over “Components,” then select “Recompose”.</p>
+<figure class="image image_resized" style="width:403px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfaDl99BpSwsG2Vp4XPvw1qBI52kbsqDAE7fwdqh9tWUi7_nLA506AXaRAwQDsVXswAVVEXUE8hMLH7_1yyldpQbKEKlqy9lcXlMvs8bE3NT-eBUQDTV2U3qcENz6aYiCPjB9Ic?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>Give GIMP a moment to do its thing, then click on the coloured KAVT merged file. You should see your changes on the coloured file:</p>
+<figure class="image image_resized" style="width:407px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfs5vp63kgE0BdBFuGdjKtpbGshueK_SrgBp7yZqsWH7cQ3OFjss1rPj21ik-jsLP9omMJluJyG7V9T6LZHOL0tLRsyr8nF7r8rzuNDHG0AWnL_HeWQuHS5O2yfwOdYgiU90QkviA?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>&nbsp;</p>
+<p>After it has recomposed, we now need to export it. DX11 cannot handle two large atlases, so you need to compress the tattoos atlas (or makeup, if you want a bigger makeup atlas). Personally, I used paint.NET – it’s free and relatively straight-forward to use for what I needed.</p>
+<p>Click on “File” then “Export as”:</p>
+<figure class="image image_resized" style="width:314px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe8iuwII24jrHjrb1wHKrBh375TXTud8qAuM-f7obgOM6b-YgBhke40Z-aKwsIQaK42uqgiuVSN3TCfrP19gJub_21g7IMxSbCdn_lHGe7Cb4m5NAjLzz6qAHKani46Z5QLVpEOww?key=1YfCsAq9MlCYJYChLgQ6UA"></figure>
+<p>Make sure you export it using the KAVT naming scheme:</p>
+<p>Skin_Atlas_Head_SHR_Tattoo_A_MSK -&gt; &nbsp;KVT_Head_Atlas_Tattoo&nbsp;</p>
+<p>KVT_Head_Atlas_Tattoo Skin_Atlas_Head_SHR_Makeup_A_MSK -&gt; KVT_Head_Atlas_Makeup&nbsp;</p>
+<p>Previously unused -&gt; KVT_Head_Atlas_Scars</p>
+<p>You'll want to use BC1 compression for tattoo and makeup atlases, and BC7 for scars.</p>
