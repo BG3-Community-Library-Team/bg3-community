@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-25T01:17:25.250Z
+date: 2025-06-25T01:32:58.357Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -1072,4 +1072,10 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>You'll also be using this section a lot - the layers tab. You can think of a layer quite literally as individual layers of (transparent) paper stacked on top of each other - things on a layer will cover things in the same spot on layers below them. This allows you to, for example, draw a design without needing to do it all in one piece, which can make it easier to make changes down the line. In this same section, you'll also find the Channels tab, which is very commonly used with BG3 textures of any kind.</p>
 <p>&nbsp;</p>
 <figure class="image image_resized" style="width:444px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeDnz6D7Y3CxkU1eUzjZSGtu-_Syov-EnikhoI-7j001gig4y6OIF__Ed23GhkKqPwvePwYEU8S2d3u8SsrfV_rtfutuEgs9MlNx96WymDQK45rTHiDZxASVBeNjy1jDYJt0nVEHQ?key=O2Ip_U1nt9qFp1lokIS75Q"></figure>
+<p>Channels contain color information - what this means in practice is that if you have a tattoo on the red channel of the atlas, it will appear as red when viewing the texture as a whole, but it is <u>only</u> contained on the red channel of the texture. In the case of something like BG3, each channel is read by the game individually; that's how an atlas can store three designs per tile, rather than just one. If you copy the image contained within a specific channel, it'll always be black and white. Channels can't contain colored images.</p>
 <p>&nbsp;</p>
+<h3>Opening a File</h3>
+<p>The easiest way to open a file with your software of choice is to right click the file itself, select “Open with”, and then choose the software.</p>
+<p>&nbsp;</p>
+<h3>Saving a File</h3>
+<p>If you've opened a file, for many files using the hotkey ctrl+s is enough to save the file. In the case of .DDS files, however, you'll need to select your compression options before being able to fully save. It's important to always follow the compression settings mentioned in whichever guide you're following when editing a texture, because BG3 is quite sensitive when it comes to compression types. In most cases, it'll also be important to ensure you capitalize .DDS (Windows defaults to .dds, which BG3 won't read in most cases).</p>
