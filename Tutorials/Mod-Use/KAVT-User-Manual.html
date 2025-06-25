@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-25T02:04:54.918Z
+date: 2025-06-25T02:12:21.339Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -17,7 +17,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>KAVT is an updated and expanded variant of <a href="https://www.nexusmods.com/baldursgate3/mods/2754">Unique Tav</a> and <a href="https://www.nexusmods.com/baldursgate3/mods/8912">Kaz' Virtual Tav</a>.&nbsp;</p>
 <p>All three of these mods detach your Tav from the remainder of the games' characters, which by default share Tav's body meshes, textures, makeup, and tattoos, allowing your Tav to be customized further than what's possible in Vanilla BG3 without these changes also affecting NPCs or companions. Unique Tav is a very widely used mod that serves as the foundation for many BG3 customization mods. Unique Tav's author has since stepped back from modding this game and is no longer actively maintaining the mod; thus, they've provided permission for us to create this derivative that expands on Unique Tav's and Kaz' Virtual Tav's features.</p>
 <h1>User Manual Overview</h1>
-<p>This is a list of topics covered in this article. Each header links to its respective section.</p>
+<p>This is a list of topics covered in this article. You can find links to each section in the page content panel on the right side of the wiki page.</p>
 <ul>
   <li><u>General Information</u>
     <ul>
@@ -66,6 +66,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>In this section, we’ll briefly define words you might come across within these guides that might be unfamiliar to users who don’t have experience with Unique Tav, haven’t created mods themselves, or aren’t well-versed with technology.</p>
 <p>&nbsp;</p>
 <p><u>Atlas/Texture Atlas</u> - An atlas is a texture consisting of multiple smaller images. In the case of tattoo, makeup, and scar atlases, these smaller images are arranged in a grid pattern, and each individual image is the same size.</p>
+<p><u>Channel</u> - A specific section of an image (in this case typically a texture) storing only image data of one color - Red, Green, or Blue.</p>
 <p><u>(KAVT) Glowmap</u> - Within KAVT, Glowmap refers to the texture containing the glow tattoo, the additional body/face tattoo, and the opacity feature, each within their own channel. In other contexts, a Glowmap is generally only used for glow (hence the name) and only features one channel, but we’ve adjusted its use within KAVT to allow for additional features.</p>
 <p><u>KAVT </u>- Kazstra’s Virtual Tav x Tattoo, Makeup and Scar Extender. The primary version of the mod using virtual textures.</p>
 <p><u>KAVT NVP</u> - Kazstra’s Virtual Tav x Tattoo, Makeup and Scar Extender. The secondary version of the mod using traditional textures.</p>
@@ -86,7 +87,9 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>There are a handful of differences when it comes to features due to the differences in how textures are stored. We won't dive too deep into the details as they aren't relevant to this guide, but in short, KAVT allows for additional face customization that isn't possible when using KAVT NVP, as swapping over to virtual textures gives us enough space within the shader to add these additional features.</p>
 <p>&nbsp;</p>
 <h3>Features Available within both KAVT &amp; KAVT NVP</h3>
-<p>The following features are part of both KAVT &amp; KAVT NVP. They function identically for both mods.</p>
+<blockquote>
+  <p><span class="text-big">‼️</span> The following features are part of both KAVT &amp; KAVT NVP. They function identically for both mods.</p>
+</blockquote>
 <ul>
   <li>Unique appearance for Tav that does not affect companions or other NPCs</li>
   <li>More tattoo, scar and makeup slots with their own custom CC Icons</li>
@@ -106,7 +109,9 @@ dateCreated: 2025-06-18T21:49:52.870Z
 </ul>
 <p>&nbsp;</p>
 <h3>Features Available <u>only</u> within KAVT</h3>
-<p>The following features are only available within KAVT. You cannot use these features if you are using KAVT NVP.</p>
+<blockquote>
+  <p><span class="text-big">‼️</span>The following features are only available within KAVT. You cannot use these features if you are using KAVT NVP.</p>
+</blockquote>
 <ul>
   <li>Virtual body textures (editable via loose file replacement)</li>
   <li>Virtual head wrinkle map (editable via loose file replacement)</li>
@@ -121,7 +126,9 @@ dateCreated: 2025-06-18T21:49:52.870Z
 </ul>
 <p>&nbsp;</p>
 <h3>Features available <u>only</u> within KAVT NVP</h3>
-<p>The following features are only available within KAVT NVP. You cannot use these features if you are using KAVT.</p>
+<blockquote>
+  <p><span class="text-big">‼️</span>The following features are only available within KAVT NVP. You cannot use these features if you are using KAVT.</p>
+</blockquote>
 <ul>
   <li>Traditional body textures (editable via loose file replacement)</li>
 </ul>
@@ -383,7 +390,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>When opening the file, you’ll see the larger tattoo or makeup atlas on the screen. You will also want to open the atlas you have used alongside Unique Tav at the same time.</p>
 <p>Inside your Unique Tav atlas file, open the “Channels” tab. Within Photoshop, this tab is located next to the “Layers” tab - this’ll be similar with other image editing software.</p>
 <figure class="image image_resized" style="width:451px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfT1bZybgRMYyaLiNZOTeIFMCzZoTsCzO_yv0J4SXzibgIwIj_TBLOow4HLEJ6Ceol9t6wBNbGvlcJ-PtOVLslwPhCAoJbC9EOPZMhEAXXebHMWYtwYh0HD3AOkjEmulpv46ft-LQ?key=1YfCsAq9MlCYJYChLgQ6UA">
-  <figcaption>Channels Tab in Photoshop</figcaption>
+  <figcaption>YChannels Tab in Photoshop</figcaption>
 </figure>
 <p>Select the “Red” channel from the list. The appearance of your image will change, and only the red tattoos will be visible. Select the entirety of your canvas using the selection tool, and copy it (ctrl+c, or navigating to Edit &gt; Copy in the top bar).</p>
 <p>Now, swap over to your KAVT atlas.</p>
