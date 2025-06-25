@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-25T00:45:40.604Z
+date: 2025-06-25T01:03:35.677Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -64,6 +64,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <h1>General Information</h1>
 <h2>Glossary - Brief Definitions of KAVT Terms</h2>
 <p>In this section, we’ll briefly define words you might come across within these guides that might be unfamiliar to users who don’t have experience with Unique Tav, haven’t created mods themselves, or aren’t well-versed with technology.</p>
+<p>&nbsp;</p>
 <p><u>Atlas/Texture Atlas</u> - An atlas is a texture consisting of multiple smaller images. In the case of tattoo, makeup, and scar atlases, these smaller images are arranged in a grid pattern, and each individual image is the same size.</p>
 <p><u>(KAVT) Glowmap</u> - Within KAVT, Glowmap refers to the texture containing the glow tattoo, the additional body/face tattoo, and the opacity feature, each within their own channel. In other contexts, a Glowmap is generally only used for glow (hence the name) and only features one channel, but we’ve adjusted its use within KAVT to allow for additional features.</p>
 <p><u>KAVT </u>- Kazstra’s Virtual Tav x Tattoo, Makeup and Scar Extender. The primary version of the mod using virtual textures.</p>
@@ -1028,4 +1029,35 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>If this path does <u>not</u> already exist for you (e.g. if you've not used Unique Tav before KAVT, or haven't customized your body tattoo before), you'll want to create these folders yourself. Once they're in place, drop the .DDS file in this folder.</p>
 <h1>Texture Editing</h1>
 <h2>BG3 Image Editing Basics</h2>
+<p>This section is meant to provide some baseline knowledge that might be useful to users who have never used an image editing software before. :) It is intended to cover the very basics required for BG3 edits to textures such as tattoo and makeup atlases.</p>
+<p>&nbsp;</p>
+<h3>What Image Editing Software can I use to edit .DDS files?</h3>
+<p>There are a number of options, both free and paid, to edit .DDS files. Most of these options will require a separate (free) plugin to open .DDS files, so don't be surprised if you can't initially open them!</p>
+<ul>
+  <li>Adobe Photoshop<ul>
+      <li>Paid Subscription</li>
+      <li>DDS Plugin Options:<ul>
+          <li><a href="https://developer.nvidia.com/texture-tools-exporter">NVIDIA Texture Tools Exporter</a></li>
+          <li><a href="https://gametechdev.github.io/Intel-Texture-Works-Plugin/">Intel Texture Works</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>GIMP<ul>
+      <li>Free</li>
+      <li><a href="https://code.google.com/archive/p/gimp-dds/">GIMP DDS Plugin</a></li>
+    </ul>
+  </li>
+  <li>Paint.NET*<ul>
+      <li>Free</li>
+      <li><a href="https://www.nexusmods.com/site/mods/602">DDS FileType Plugin</a></li>
+    </ul>
+  </li>
+</ul>
+<p>*Lacks some functionalities like channels but is useful for expansive DDS compression options</p>
+<p>&nbsp;</p>
+<h3>What's the Deal with .DDS Compression Types?</h3>
+<p>.DDS is a compressed file format. That means it's a type of image that has been compressed in a way to make the file itself smaller; this is good for performance. You might be familiar with .jpeg, which is another compressed file format.</p>
+<p>BG3 specifically is relatively sensitive when it comes to .DDS compression types - and there are many of them. But don't worry too much about them! Every guide providing details about how to edit common textures - such as makeup/tattoo or scar atlases, face textures, and body textures - will tell you exactly which compression you'll be using to save that specific texture. You can just ignore the remainder.&nbsp;</p>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
