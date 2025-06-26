@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2025-05-08T18:12:28.464Z
+date: 2025-06-26T19:42:43.739Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -89,6 +89,7 @@ Thank you for helping to improve the wiki!
 - [Removing ALL Mods](/Tutorials/Mod-Use/How-to-remove-mods)
 - [Installing Script Extender](/Tutorials/Mod-Use/How-to-install-Script-Extender)
 - [Unique Tav guide](/Tutorials/Mod-Use/Unique-Tav-Everything-you-need-to-know)
+- [KAVT User Manual](/Tutorials/Mod-Use/KAVT-User-Manual)
 {.links-list}
 
 ## Tutorials
