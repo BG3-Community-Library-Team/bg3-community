@@ -2,13 +2,12 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-25T23:10:46.070Z
+date: 2025-06-26T17:59:04.620Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
 -->
 
-<h1>&nbsp;</h1>
 <h1>KAVT User Manual - How to Use, Customize, and Troubleshoot KAVT &amp; KAVT NVP</h1>
 <p>This user manual covers everything there is to know about <a href="https://www.nexusmods.com/baldursgate3/mods/16325">Kazstra's Virtual Tav x Tattoo, Makeup &amp; Scar Extender</a>. It covers both the primary version (KAVT) and the non-virtual port (KAVT NVP).</p>
 <p>The manual was written primarily with beginners in mind, and thus is rather in-depth and detailed. However, specific sections may require users to have some baseline knowledge on how to use image editing software (such as Photoshop or Gimp). We have attempted to keep this manual as simplistic as possible, but if there are questions you have that are not covered, you struggle following the guides, or you have any kind of feedback on the content covered here or the way these guides are written or constructed, please don't hesitate to let us know <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=posts">on our mod page</a>!</p>
@@ -1258,4 +1257,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>While scar and tattoo/makeup atlases are both atlases, there are a number of key differences between how each design itself is constructed. When viewing the scar atlas (on the right) and directly comparing it to a tattoo or makeup atlas (on the left), you'll immediately notice a number of differences that set this atlas apart from the others.</p>
 <figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7dLKizSswXLJCatPbVCjHEcpdAdY7s1AHEPH8MQfwqtj1HWbRCM4KvTkHhJMtGj5kDz3X7Fm4oNJc8YpT7Ffvr8RleeHsckRBkBgFHeJD0J-UgGFWlytcZGLGsHIE4Zt8IbRJKQ?key=98YRLLxU6b9w_GtBrXJX5Q"></figure>
 <p>&nbsp;</p>
+<p>Unlike the tattoo and makeup atlas, where each design only occupies its tile on a single channel, scars occupy their tile on all three channels. In practice, this means that one scar design consists of three separate textures, one on each channel of the scar atlas. This is what each channel of a single scar design looks like:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXceVKsKFJGPILJCBhM0G2fCuT1qMhcxvEgqi8VRFxyTgA9cpIQ9t824UPyejFaw7UR8he9FobuP_XbANxRJpCSJ7R6uXoygD-9N0Ef8s80WVMeMYJ-BVFhrc36GXmhOk1TSdhj2Dg?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
 <p>&nbsp;</p>
+<p>We won't go into detail on how these textures work exactly within this guide as its beyond the scope of KAVT, however it's important to remember that each scar design occupies all three channels when “frankensteining” a scar atlas. This means that when moving a scar design, you'll need to move the design on <u>all three channels</u>, rather than only needing to move it on one of the three channels as would be the case with a tattoo or makeup atlas.</p>
