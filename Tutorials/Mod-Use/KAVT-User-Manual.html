@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: false
-date: 2025-06-26T18:47:22.531Z
+date: 2025-06-26T19:35:08.508Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -58,8 +58,11 @@ dateCreated: 2025-06-18T21:49:52.870Z
   <li><u>Common Issues &amp; How to Fix Them</u>
     <ul>
       <li>Misplaced Tattoos and/or Makeup</li>
+      <li>New Tatttoo and Makeup options show in CC but not on Heads</li>
+      <li>Issues when KAVT is disabled</li>
     </ul>
   </li>
+  <li><u>Other Guides, Credits, &amp; Thanks</u></li>
 </ul>
 <h1>General Information</h1>
 <h2>Glossary - Brief Definitions of KAVT Terms</h2>
@@ -1335,3 +1338,68 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <figure class="image image_resized" style="width:432px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeFFlgIK0jWgk9WuIKK0wNPaENcjoexMVo3xLXQ9DKDBT5KKnkN85pHp5uovwsu3cgoEywPhvp_2jbTOUcw2HTXhVq0lq9alLoMb236Kk4al_V1ioE1sogSTFwNTzDVk-ty5jRh?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
 <p>&nbsp;</p>
 <p>If you didn't save your atlas directly to the correct path within your game files, you'll want to move it manually after saving it somewhere else. If the folders at the indicated path don't exist, you'll want to create them yourself.</p>
+<p>&nbsp;</p>
+<h1><u>Common Issues &amp; How to Fix Them</u></h1>
+<h2>Misplaced Tattoos and/or Makeup</h2>
+<h3>Issue</h3>
+<p>Your tattoos and/or makeup may be misaligned or misplaced. This could look something like this:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe9ri7tJNYayEgZqfWLLbfZ4y1z55iS6_1B0qj3UYQs96wIPwtrP7clgdHUdBZlNVgFJdM27SepUt2bHVgv0OwvYGQrgb9WMuu-jUVFKYhUSWpgJcLbSDUABeNc_hTV9zZ_ARfr9w?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<p>&nbsp;</p>
+<h3>Cause</h3>
+<p>This problem is caused by <u>a tattoo or makeup atlas that doesn't match KAVT's increased atlas size</u>, either added by another mod via .pak, or loaded as a loose file. Vanilla atlases are 4 x 4 tiles in size, whereas KAVT's atlases are 4 x 8 tiles in size. Even if the loaded atlas is smaller than KAVT's atlas, the game will still attempt to map 8 tattoos or makeup designs to this smaller atlas:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXer4S5ZqWyJeylRRLB-yGe_39220aPpPfpsTGezZCkqVxtaIGRrTVQuuYjLdKmmHHAC10uSxFBLtbXCP3dyZHKi_jdwDq2o_UvCAwWpcWVq-qhDmUmKGrJCn5FK9d7V5e-z92Je?key=1YfCsAq9MlCYJYChLgQ6UA">
+  <figcaption>Atlas Size Mismatch</figcaption>
+</figure>
+<p>&nbsp;</p>
+<h3>Solution</h3>
+<p>Remove the atlas or re-size it. You can find information on how to re-size an atlas to fit KAVTs size further up on this wiki page.</p>
+<p>&nbsp;</p>
+<h2>New Tatttoo and Makeup options show in CC but not on Heads</h2>
+<h3>Issue</h3>
+<p>The new makeup options added by KAVT show in CC, but when you select them, they don't show up on the head you're using.</p>
+<p>&nbsp;</p>
+<h3>Cause</h3>
+<p>This is caused by the head or race you're using either not being set up for Unique Tav, or being set up improperly. It references the wrong atlas (vanilla), which doesn't contain any designs in the bottom (expanded) half.</p>
+<p>&nbsp;</p>
+<h3>Solution</h3>
+<p>Make sure that the head and/or race mod you're using supports Unique Tav, either by using its Unique Tav variant, or by using a Unique Tav patch for this mod.</p>
+<p>&nbsp;</p>
+<h2>Issues when KAVT is disabled</h2>
+<h3>Issue</h3>
+<p>When KAVT is in my mod folder, but disabled through the mod manager, I'm experiencing issues like missing bodies, misaligned/misplaced tattoo and makeup, or other issues.</p>
+<p>&nbsp;</p>
+<h3>Cause</h3>
+<p>KAVT contains overrides for vanilla assets to function as intended. These overrides will still override vanilla assets even if the mod is disabled; you can see this in your mod manager:</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdRbNum1ylTd4mJ7TXe1R7CDE68nHkvCFk1lorqeYTIO0-pJWGVUDWempFtrcwCOJZ5K8b18hy3weBYC9CbtwAzSC8mmK97ibtziQ7E7dY4H2Tku4BlFpsgsuFsPmP3dKEiJUP-3w?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<p>&nbsp;</p>
+<h3>Solution</h3>
+<p>Delete KAVT or KAVT NVP from your mod folder when you aren't using the mod.</p>
+<p>&nbsp;</p>
+<h1>Other Guides, Credits, &amp; Thanks</h1>
+<h2>Other Relevant Guides &amp; Resources</h2>
+<h3>Mod Usage</h3>
+<p><a href="https://wiki.bg3.community/en/Tutorials/Mod-Use/BG3-Mod-Types-and-how-to-install-them">Installing Mods</a></p>
+<p><a href="https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods">Removing Mods</a></p>
+<p><a href="https://wiki.bg3.community/en/Tutorials/Mod-Use/general-load-order">The General Load Order Guide</a></p>
+<p>&nbsp;</p>
+<h3>Asset Creation</h3>
+<p>Guides and Resources that may help you if you're interested in creating your own assets to use with KAVT.</p>
+<p><a href="https://www.nexusmods.com/baldursgate3/mods/6387">Custom Tattoo &amp; Makeup Guide</a></p>
+<p><a href="https://www.nexusmods.com/baldursgate3/mods/6753">Custom Scar Tutorial</a></p>
+<p><a href="https://www.nexusmods.com/baldursgate3/mods/4310">Volno's Texture Toolbox</a></p>
+<p><a href="https://www.nexusmods.com/baldursgate3/mods/9045">BG3 Shaders for Substance Painter</a></p>
+<p>&nbsp;</p>
+<h2>Credits</h2>
+<h3>Mods used as Examples</h3>
+<p><a href="https://www.nexusmods.com/baldursgate3/mods/17225">Jerinski's Blackwork Tattoo</a></p>
+<p><a href="https://www.nexusmods.com/baldursgate3/mods/9355">Jerinski's Glowy Vanilla Body Tattoos</a></p>
+<p><a href="https://www.nexusmods.com/baldursgate3/mods/1684">CovenElf's Tattoos &amp; Makeup</a></p>
+<p><a href="https://www.nexusmods.com/baldursgate3/mods/16782">Tav with a Backstory</a></p>
+<p>&nbsp;</p>
+<h3>People</h3>
+<p>Satanfish for writing the Tattoo/Makeup Atlas “frankensteining” section</p>
+<p>&nbsp;</p>
+<h2>Thank you</h2>
+<p>Jerinski, Skiz &amp; Copperleaves for feedback</p>
+<p>BG3CMTY &amp; Faerûn Fashionistas folks for their support&nbsp;</p>
+<p>Kaz 💜</p>
