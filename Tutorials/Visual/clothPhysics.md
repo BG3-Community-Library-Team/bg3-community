@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: true
-date: 2025-07-04T16:51:32.974Z
+date: 2025-07-04T16:52:15.175Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -61,8 +61,8 @@ This will show the information in the bottom right corner of the Blender window.
 > Like the previous method, in **Edit Mode** the values will be for the selected mesh(es). In **Object Mode** the values will be the counts for all **visible** objects, but the name you see is that of the active object.
 {.is-info}
 
-![Screenshot 2025 05 25 124657](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-124657.png)
-![Screenshot 2025 05 25 124729](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-124729.png)
+![Screenshot 2025 05 25 124657](https://tinypic.host/images/2025/07/04/Screenshot-2025-05-25-124657.png)
+![Screenshot 2025 05 25 124729](https://tinypic.host/images/2025/07/04/Screenshot-2025-05-25-124729.png)
 
 
 If your mesh has over 10,000 vertices, reduce it or separate the mesh into different pieces so that the piece that needs the cloth physics has less than 10,000 vertices.
