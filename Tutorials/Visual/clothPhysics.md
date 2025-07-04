@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: true
-date: 2025-07-04T16:50:28.909Z
+date: 2025-07-04T16:51:32.974Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -88,7 +88,7 @@ Hit `Shift + D` to duplicate the mesh, then press the `Esc` key before clicking 
 
 If your mesh looks like the cape shown in the image below and has normals facing outwards on both sides of the mesh, when you duplicate the mesh you'll have to make sure only **one side** of faces are selected. 
 
-[![Screenshot 2025 05 25 142236](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-142236.md.png)](https://tinypic.host/image/Screenshot-2025-05-25-142236.3YEaVz)
+[![Screenshot 2025 05 25 142236](https://tinypic.host/images/2025/07/04/Screenshot-2025-05-25-142236.md.png)](https://tinypic.host/image/Screenshot-2025-05-25-142236.DcdeH)
 
 Selecting the faces from the **UV Editing** tab is helpful here. Only the outside faces of the cape are selected. Not the faces that point in towards the character.
 
