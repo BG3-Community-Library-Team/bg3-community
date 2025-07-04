@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: true
-date: 2025-06-02T19:28:38.262Z
+date: 2025-07-04T16:50:28.909Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -44,7 +44,8 @@ To see the vertex count:
 > In **Edit Mode** this will show you the object, vertex, face, edge, and triangle counts for the selected mesh(es). In **Object Mode** the values will be the counts for all **visible** objects.
 {.is-info}
 
-![Screenshot 2025 05 25 124521](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-124521.png) ![Screenshot 2025 05 25 124604](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-124604.png)
+![Screenshot 2025 05 25 124521](https://tinypic.host/images/2025/07/04/Screenshot-2025-05-25-124521.png)) ![Screenshot 2025 05 25 124604](https://tinypic.host/images/2025/07/04/Screenshot-2025-05-25-124604.png)
+
 
 The values on the right of the slash are the totals. The ones on the left are for the active selection.
 
