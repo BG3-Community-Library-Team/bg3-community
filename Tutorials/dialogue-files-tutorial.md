@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: true
-date: 2025-01-09T20:56:11.605Z
+date: 2025-07-04T19:29:55.544Z
 tags: tutorial, scripting, data, dialogue, dialog
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -430,7 +430,7 @@ So far, I’ve found the following effect components, each of which controls a d
 -   **TLVoice:** The voice line for the character speaking.
 -   **TLAttitudeEvent:** Controls the nodding/motion of the head and animated expressions characters are given when other animations are not being played, i.e. when a character is waiting for you to pick a dialogue choice, or is listening to the character speaking.
 -   **TLAnimation:** The animations used by the characters. Mainly used for cinematics, but can be used in dialog, and for unique facial expression overrides as well. A note: the animations used during dialogue outside of cinematics are generally tied to the voice lines itself, and not referenced in the timeline files. This is for animations not tied to voice lines directly.
--   **TLEmotionEvent:** Controls the facial expressions used for the character referenced in the “Actor” section of the component.
+-   **TLEmotionEvent:** Controls the facial expressions used for the character referenced in the “Actor” section of the component. You can find a spreadsheet mapping the XML values of emotions and their variations to what they look like in-game [here](https://docs.google.com/spreadsheets/d/1gW_J6XKMgTdYdQaWt1OftSVvAj12yUcz29YceIFY6y0/edit?usp=sharing)!
 -   **TLLookAtEvent:** Controls where the character is looking, as well as whether their eyes are open or closed, head and body turning, etc.
 -   **TLMaterial:** Used for temporary material overrides, like for Karlach's glow map colors during romance scenes.
 -   **TLShowVisual**: Used to toggle the visibility of different visual resources into scenes, such as set pieces in the environment.
@@ -590,6 +590,8 @@ I've provided a reference for all of them in the Emotion Rigs Quick Ref tab.
 ### Emotion Rigs Quick Ref
 
 In this list, you can find the ID numbers of each given emotion (listed first before the emotion name), followed by a list of the corresponding emotion rigs and their variation IDs.
+
+For screenshots mapping these values to faces, [check out this spreadsheet](https://docs.google.com/spreadsheets/d/1gW_J6XKMgTdYdQaWt1OftSVvAj12yUcz29YceIFY6y0/edit?usp=sharing).
 
 1 = Neutral
 
