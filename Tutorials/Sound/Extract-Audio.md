@@ -2,7 +2,7 @@
 title: Extracting in-game Audio Files
 description: This guide teaches you how to extract and listen to audio files from the game
 published: true
-date: 2025-07-04T19:49:28.235Z
+date: 2025-07-04T19:51:52.252Z
 tags: audio, sound, music, voice
 editor: markdown
 dateCreated: 2024-05-11T19:00:18.764Z
@@ -56,7 +56,7 @@ For this demonstration, we'll use the Multitool.
 The paks will be in Baldurs Gate 3's Data directory. 
 For me that is: `\SteamLibrary\steamapps\common\Baldurs Gate 3\Data` | adjust accordingly for your steam install.
 
-You can unpack packs by opening the utility, selecting `Utitilies > Game File Operations > Unpack Game Files`
+You can unpack `.paks` by opening the utility, selecting `Utitilies > Game File Operations > Unpack Game Files` then checking the boxes for SharedSounds and SharedSoundBanks then selecting `Confirm`.
 
 Alternatively, you can drag your `.pak(s)` to the blue square in the Multitool to unpack them. 
 They'll be extracted into the Multitool's directory under UnpackedData.
@@ -86,7 +86,7 @@ folder_unpacked_data = ""
 folder_audio_converted = ""
 ```
 
-We have to add our paths to the bottom 5 lines and specify in the first 3 if we want certain actions to happen.
+We have to add our paths to the bottom lines and specify in the first 3 if we want certain actions to happen.
 
 On the first run, we'll have all 3 of these values stay set to true. 
 If you need to re-run for any reason, you can choose to only run certain actions happen by changing the other values to `False`.
@@ -106,8 +106,7 @@ folder_vgmstream = "E:\\GitHub\\BG3\\bg3-sounds-converter\\vgmstream-win64"
 folder_unpacked_data = "E:\\GitHub\\BG3\\Multitool\\UnpackedData"
 folder_audio_converted = "E:\\GitHub\\BG3\\bg3-sounds-converter\\ConvertedAudio"
 ```
-> Please note, there is both a `Shared` and a `SharedDev` directory. After the first run, you'll have to reconfigure for SharedDev and run again in order to capture everything.
-Also be sure to adjust paths accordingly for your setup.
+> Please be sure to adjust paths accordingly for your setup.
 {.is-info}
 
 Now with that set, be sure to **save** the file and exit out.
