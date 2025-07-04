@@ -2,7 +2,7 @@
 title: Extracting in-game Audio Files
 description: This guide teaches you how to extract and listen to audio files from the game
 published: true
-date: 2024-05-11T19:00:18.764Z
+date: 2025-07-04T19:45:19.319Z
 tags: audio, sound, music, voice
 editor: markdown
 dateCreated: 2024-05-11T19:00:18.764Z
@@ -73,12 +73,14 @@ The important lines in this script are lines 6 through 14, which should default 
 ```py
 should_convert = True
 should_decode_banks = True
-should_categorise = True
+should_group = True
+# Only set this if the additional steps in the README have been completed
+should_rename = False
 
-wwizer_pyz = ""
+# Make sure to escape backslahes! (i.e. replace `\` with `\\`)
+wwiser_pyz = ""
 folder_vgmstream = ""
-folder_banks = ""
-folder_audio_raw = ""
+folder_unpacked_data = ""
 folder_audio_converted = ""
 ```
 
@@ -89,8 +91,7 @@ If you need to re-run for any reason, you can choose to only run certain actions
 
 For the `wwizer_pyz` line, you'll want to set the path to the file, including the extension.
 For the `folder_vgmstream` line, this is the path to the directory for vgmstream.
-For the `folder_banks` line, this is the path to the directory for the extracted `.bnk` files.
-For the `folder_audio_raw` line, this is the path to directory for the extracted `.wew` files.
+For the `folder_unpacked_data` line, this is the path to directory for the extracted `.pak` files. By default the multitool will unpack them to a folder called `UnpackedData`.
 For the `folder_audio_converted` line, this is the path where you want the coverted files to go.
 
 > In python, for Windows directories, you have to escape backslashes with a backslash. So your destination will end up with two backslashes instead of one. Example: `bg3-sounds-converter\\wwiser.pyz`
@@ -98,11 +99,10 @@ For the `folder_audio_converted` line, this is the path where you want the cover
 
 Using the same example directory from before,the final configured paths should look like this:
 ```py
-wwizer_pyz = "E:\\GitHub\\BG3\\bg3-sounds-converter\\wwiser.pyz"
+wwiser_pyz = "E:\\GitHub\\BG3\\bg3-sounds-converter\\wwiser.pyz"
 folder_vgmstream = "E:\\GitHub\\BG3\\bg3-sounds-converter\\vgmstream-win64"
-folder_banks = "E:\\GitHub\\BG3\\bg3-modders-multitool\\UnpackedData\\SharedSoundBanks\\Public\\Shared\\Assets\\Sound"
-folder_audio_raw = "E:\\GitHub\\BG3\\bg3-modders-multitool\\UnpackedData\\SharedSounds\\Public\\Shared\\Assets\\Sound"
-folder_audio_converted = "E:\\GitHub\\BG3\\bg3-sounds-converter\\Shared\\results"
+folder_unpacked_data = "E:\\GitHub\\BG3\\Multitool\\UnpackedData"
+folder_audio_converted = "E:\\GitHub\\BG3\\bg3-sounds-converter\\ConvertedAudio"
 ```
 > Please note, there is both a `Shared` and a `SharedDev` directory. After the first run, you'll have to reconfigure for SharedDev and run again in order to capture everything.
 Also be sure to adjust paths accordingly for your setup.
@@ -126,7 +126,7 @@ Now that the files have been extracted, you get to dig through them!
 As noted above, this script has done three things for you. 
 - Converted the extracted `.wem` files into `.wav`, so you can listen to them with your standard audio program.
 - Organized the converted wav files into directories named from the soundbank they came from.
-- Parsed the `.bnk` file into a `.xml` that you can open up and read.
+- Parsed the `.bnk` file into a `.xml` that you can open up and read. You can find the XML files next to their respective BNKs inside the folders in `\Multitool\UnpackedData\SharedSoundBanks\Public`
 
 ## Listening to the files
 Open up the results directory that you specified and you'll find directories named after soundbanks.
