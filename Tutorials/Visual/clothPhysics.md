@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: true
-date: 2025-07-04T16:53:34.027Z
+date: 2025-07-04T16:53:55.415Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -100,7 +100,7 @@ Your cloth mesh does not need to have all same fold and wrinkle details as the o
 
 With your cloth mesh selected, switch to **Sculpt Mode** via the mode dropdown or by holding `Ctrl +  Tab` then with the option wheel open, press `2`, or use your mouse to hover over Sculpt Mode before releasing the keys.
 
-![Screenshot 2025 05 25 133040](https://tinypic.host/images/2025/07/04/Screenshot-2025-05-25-133040.png) [![Screenshot 2025 05 25 133606](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133606.md.png)](https://tinypic.host/image/Screenshot-2025-05-25-133606.3YolL4)
+![Screenshot 2025 05 25 133040](https://tinypic.host/images/2025/07/04/Screenshot-2025-05-25-133040.png) [![Screenshot 2025 05 25 133606](https://tinypic.host/images/2025/07/04/Screenshot-2025-05-25-133606.md.png)](https://tinypic.host/image/Screenshot-2025-05-25-133606.DcK2X)
 
 Use the **Smooth** tool to smooth out the mesh.
 ![Screenshot 2025 05 25 133944](https://tinypic.host/images/2025/05/25/Screenshot-2025-05-25-133944.png)
