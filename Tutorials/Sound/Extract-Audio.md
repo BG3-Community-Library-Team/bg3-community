@@ -2,7 +2,7 @@
 title: Extracting in-game Audio Files
 description: This guide teaches you how to extract and listen to audio files from the game
 published: true
-date: 2025-07-04T19:45:19.319Z
+date: 2025-07-04T19:49:28.235Z
 tags: audio, sound, music, voice
 editor: markdown
 dateCreated: 2024-05-11T19:00:18.764Z
@@ -56,7 +56,9 @@ For this demonstration, we'll use the Multitool.
 The paks will be in Baldurs Gate 3's Data directory. 
 For me that is: `\SteamLibrary\steamapps\common\Baldurs Gate 3\Data` | adjust accordingly for your steam install.
 
-Drag your `.pak(s)` to the blue square in the Multitool to unpack them. 
+You can unpack packs by opening the utility, selecting `Utitilies > Game File Operations > Unpack Game Files`
+
+Alternatively, you can drag your `.pak(s)` to the blue square in the Multitool to unpack them. 
 They'll be extracted into the Multitool's directory under UnpackedData.
 
 Example: `\bg3-modders-multitool\UnpackedData\SharedSounds\Public\Shared\Assets\Sound`
@@ -68,7 +70,7 @@ This sections walks through configuring and executing the script
 ## Configuring the script
 From your bg3-sounds-converter directory, right click the `categoriser.py` file and **Open with** a text editor (Npp, VSC, Atom, etc). Don't double click it :)
 
-The important lines in this script are lines 6 through 14, which should default to this:
+The important lines in this script are lines 8 through 11, which should default to this:
 
 ```py
 should_convert = True
