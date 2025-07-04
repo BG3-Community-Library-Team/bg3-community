@@ -2,7 +2,7 @@
 title: Toolkit FAQ
 description: FAQ about the Larian Toolkit
 published: true
-date: 2025-04-10T01:29:38.031Z
+date: 2025-07-04T20:00:22.058Z
 tags: toolkit
 editor: markdown
 dateCreated: 2024-09-13T04:50:44.079Z
@@ -22,6 +22,12 @@ dateCreated: 2024-09-13T04:50:44.079Z
 <br />
 
 ### General Usage
+<br />
+
+_"Where can I find documentation?"_
+- You can find technical documentation for the toolkit on [Larian's website](https://docs.larian.game/Technical_documentation).
+- Note that this is documentation for the *full* toolkit. For BG3, the official toolkit is much more limited. (For example, editing sound files or dialogue is unavailable.) However, these docs are still a powerful resource.
+
 <br />
 
 _"Where can I find tutorials ?"_
