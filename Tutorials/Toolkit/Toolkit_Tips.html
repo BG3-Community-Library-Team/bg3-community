@@ -2,7 +2,7 @@
 title: Toolkit Tips
 description: a.k.a List of Things I Wish I Knew Before I Started the Toolkit
 published: true
-date: 2025-07-07T09:25:36.055Z
+date: 2025-07-07T09:40:35.185Z
 tags: toolkit
 editor: ckeditor
 dateCreated: 2025-07-07T09:17:29.836Z
@@ -18,12 +18,18 @@ dateCreated: 2025-07-07T09:17:29.836Z
   <li>To close the toolkit, hitting the “X” button will likely cause it to slow down your computer before finally closing. Use the File&gt;Exit dropdown menu for smoother, faster exit.</li>
   <li>Sometimes the name that appears in the resources browser is not the same as the actual name of the file. (For example it can be HUM_M_CLT_Jacket_E2 in the browser but the actual GR2 file name is HUM_M_CLT_Jacket_E) You can find the actual file name in the properties tab, at the Source File Short Name.</li>
 </ol>
+<figure class="image"><img src="/tutorials/toolkit_tips/picture1.png">
+  <figcaption>Source File Short Name</figcaption>
+</figure>
 <p>&nbsp;</p>
 <h2><strong>Making Patches for Your Mods in Toolkit</strong></h2>
 <p>You can create a patch for your mods by listing your main mod as a dependency.</p>
 <p>Restart your toolkit after you set the dependency.</p>
 <p>Your main mod files should be visible to you in the resources browser.</p>
 <p>For example if you want to change the colour of a material in your main mod, you can now select “Override in Active Mod” from the Resources browser.</p>
+<figure class="image"><img src="/tutorials/toolkit_tips/screenshot_2025-07-07_170700.png">
+  <figcaption>Overriding main mod file in your patch mod</figcaption>
+</figure>
 <p>If you are making a patch for another author’s mod, you need to import the mod into your toolkit first. (Make sure to obtain permission from the mod author.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -36,7 +42,7 @@ dateCreated: 2025-07-07T09:17:29.836Z
   <li>Selecting “Create new material only” for materials will make a new custom material without making a new custom shader in your mod. This is important when you intend to publish your mods to consoles.</li>
   <li>You can change the shader of your custom material by clicking the 3 dots at the Source File under the Properties of your material.</li>
 </ol>
-<figure class="image"><img src="/tutorials/tutorials/toolkit_tips/toolkit_tips/picture2.png"></figure>
+<figure class="image"><img src="/tutorials/toolkit_tips/picture2.png"></figure>
 <p>6. If you select Render CC Icons / Render Equipment Icons it will render icons for ALL vanilla items as well, so it will take a long time. For equipment icons there’s a way to make it faster here.&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -44,11 +50,14 @@ dateCreated: 2025-07-07T09:17:29.836Z
 <ol>
   <li>If your GR2 has cloth physics mesh, you need to parent the mesh with physics to its cloth physics mesh in the Proxy Simulation tab. To do this, drag the mesh and drop it under the bolded cloth physics mesh. Example:</li>
 </ol>
-<figure class="image"><img src="/tutorials/tutorials/toolkit_tips/toolkit_tips/recording_2025-07-07_162117.mp4.gif"></figure>
+<figure class="image"><img src="/tutorials/toolkit_tips/cloth_mesh.gif"></figure>
 <ol>
   <li>The cloth physics mesh should be the last mesh in your export order, otherwise some submeshes will disappear from the Visual Editor causing you to not be able to assign materials to it.</li>
   <li>You can copy an entire column of cloth physics parameters from one visual resource to another. (Right-click&gt;Copy Column)</li>
 </ol>
+<figure class="image"><img src="/tutorials/toolkit_tips/screenshot_2025-07-07_165006.png">
+  <figcaption>Copy Coumn of Cloth Phyics Parameters</figcaption>
+</figure>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
