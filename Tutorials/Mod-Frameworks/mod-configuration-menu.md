@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-07-10T20:22:06.822Z
+date: 2025-07-10T20:23:54.144Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -245,7 +245,7 @@ As of version 1.14+, MCM introduces a global `MCM` table (can be called anywhere
 
 #### EventButton API
 
-These methods operate on `event_button` settings.
+These methods operate on `event_button` 'settings'.
 
 | Function | Description | Client | Server |
 |----------|-------------|:------:|:------:|
