@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-06-10T02:10:34.170Z
+date: 2025-07-10T20:22:06.822Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -52,8 +52,12 @@ If you're interested in keybindings, see *[Adding a keybinding](#adding-a-keybin
         - [IDE support](#ide-support)
         - [Schema main components](#schema-main-components)
   - [MCM API functions](#mcm-api-functions)
-    - [`keybinding` functions](#keybinding-functions)
-    - [`list_v2` functions](#list_v2-functions)
+      - [Core API](#core-api)
+      - [EventButton API](#eventbutton-api)
+      - [Keybinding API](#keybinding-api)
+      - [List API](#list-api)
+      - [Window and Tab API (Client only)](#window-and-tab-api-client-only)
+      - [Deprecated Functions](#deprecated-functions)
     - [Using values from MCM](#using-values-from-mcm)
     - [Adding a keybinding](#adding-a-keybinding)
       - [Defining a keybinding](#defining-a-keybinding)
@@ -227,25 +231,43 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 
 As of version 1.14+, MCM introduces a global `MCM` table (can be called anywhere in your code) that simplifies MCM usage such as access and modification of settings' values. This should be used for any operations with MCM, avoiding usage of `Mods.BG3MCM` internals unless explicitly stated in the documentation.
 
-**Notes**:
+> • All `modUUID` parameters are optional and default to the UUID of the mod that calls the function.
+> • Client-only functions will not exist on the server context.
+> • For full details and up-to-date signatures, see the code in BG3MCM's `MCMAPIMethods.lua` file.
+{.is-info}
 
-- `modUUID?` indicates the parameter is optional and defaults to the current mod's UUID
-- `shouldEmitEvent?` is an optional boolean that defaults to `false`
+#### Core API
 
 | Function | Description | Client | Server |
 |----------|-------------|:------:|:------:|
 | `MCM.Get(settingId, modUUID?)` | Gets the value of a setting | ✅ | ✅ |
 | `MCM.Set(settingId, value, modUUID?, shouldEmitEvent?)` | Sets the value of a setting | ✅ | ✅ |
 
-### `keybinding` functions
+#### EventButton API
+
+These methods operate on `event_button` settings.
 
 | Function | Description | Client | Server |
 |----------|-------------|:------:|:------:|
-| `MCM.Keybinding.Get(settingId, modUUID?)` | Gets a human-readable keybinding string, e.g. `"[Caps Lock]"` | ✅ | ❌ |
-| `MCM.Keybinding.GetRaw(settingId, modUUID?)` | Gets raw keybinding data | ✅ | ❌ |
-| `MCM.Keybinding.SetCallback(settingId, callback, modUUID?)` | Sets a callback for the associated keybinding | ✅ | ❌ |
+| `MCM.EventButton.IsEnabled(buttonId, modUUID?)` | Returns `true` if the event button is enabled, `false` if disabled, or `nil` if not found | ✅ | ❌ |
+| `MCM.EventButton.ShowFeedback(buttonId, message, feedbackType, modUUID?, durationInMs?)` | Shows a feedback message for an event button. `feedbackType` can be `"success"`, `"error"`, `"info"`, or `"warning"` | ✅ | ❌ |
+| `MCM.EventButton.RegisterCallback(buttonId, callback, modUUID?)` | Registers a callback for an event button | ✅ | ❌ |
+| `MCM.EventButton.UnregisterCallback(buttonId, modUUID?)` | Unregisters a callback for an event button | ✅ | ❌ |
+| `MCM.EventButton.SetDisabled(buttonId, enabled, tooltipText?, modUUID?)` | Sets the enabled state and optional tooltip for an event button | ✅ | ❌ |
 
-### `list_v2` functions
+#### Keybinding API
+
+These methods operate on `keybinding_v2` settings.
+
+| Function | Description | Client | Server |
+|----------|-------------|:------:|:------:|
+| `MCM.Keybinding.Get(settingId, modUUID?)` | Gets a human-readable keybinding string | ✅ | ❌ |
+| `MCM.Keybinding.GetRaw(settingId, modUUID?)` | Gets raw keybinding data | ✅ | ❌ |
+| `MCM.Keybinding.SetCallback(settingId, callback, modUUID?)` | Registers a callback for a keybinding | ✅ | ❌ |
+
+#### List API
+
+These methods operate on `list_v2` settings.
 
 | Function | Description | Client | Server |
 |----------|-------------|:------:|:------:|
@@ -253,6 +275,25 @@ As of version 1.14+, MCM introduces a global `MCM` table (can be called anywhere
 | `MCM.List.GetRaw(listSettingId, modUUID?)` | Gets raw list setting data | ✅ | ✅ |
 | `MCM.List.IsEnabled(listSettingId, itemName, modUUID?)` | Checks if a specific item is enabled in a list | ✅ | ✅ |
 | `MCM.List.SetEnabled(listSettingId, itemName, enabled, modUUID?, shouldEmitEvent?)` | Sets the enabled state of a list item | ✅ | ✅ |
+
+#### Window and tab APIs
+
+These methods operate on the MCM window, and can be used to control the opening and closing of the MCM window, as well as opening a specific mod's tab.
+
+| Function | Description | Client | Server |
+|----------|-------------|:------:|:------:|
+| `MCM.OpenMCMWindow()` | Opens the MCM window | ✅ | ❌ |
+| `MCM.CloseMCMWindow()` | Closes the MCM window | ✅ | ❌ |
+| `MCM.OpenModPage(tabName, modUUID?, shouldEmitEvent?)` | Opens a specific mod's tab in the MCM window | ✅ | ❌ |
+| `MCM.InsertModMenuTab(tabName, tabCallback, modUUID?)` | Inserts a custom tab into the MCM window | ✅ | ❌ |
+
+#### Deprecated Functions
+
+The following functions are deprecated and should be replaced with the new API:
+
+- `MCM.GetList` → Use `MCM.List.GetEnabled`
+- `MCM.SetListElement` → Use `MCM.List.SetEnabled`
+- `MCM.SetKeybindingCallback` → Use `MCM.Keybinding.SetCallback`
 
 ### Using values from MCM
 
@@ -390,7 +431,7 @@ This system provides mod authors with the flexibility to decide how their keybin
 
 ### Inserting custom UI elements
 
->Note that these methods are only available in the client context. They cannot be executed from server-side code, since UI-related functionality is strictly handled on the client side. If you're trying them out with the console, run `client` before executing these methods.
+> Note that these methods are only available in the client context. They cannot be executed from server-side code, since UI-related functionality is strictly handled on the client side. If you're trying them out with the console, run `client` before executing these methods.
 >{.is-info}
 
 MCM allows mod authors to insert custom UI elements into the MCM UI. **This is only needed if you want to define custom IMGUI objects within MCM**, beyond what's generated via your blueprint file.
