@@ -2,14 +2,14 @@
 title: Creating Makeup and Face / Body tattoos
 description: Guide to create tattoo/makeup textures and get them in game
 published: true
-date: 2025-05-22T21:43:16.281Z
+date: 2025-07-11T10:35:47.989Z
 tags: blender, tattoo, makeup, texture painting, kavt
 editor: markdown
 dateCreated: 2025-05-22T15:00:51.844Z
 ---
 
 # Creating Tattoos and Makeup
-This guide will primarily cover creating face tattoos using Blender (to paint) and Photoshop (to compile into an atlas). 
+This guide will primarily cover creating face tattoos using Blender (to paint) and Photoshop (to compile into an atlas). Body tattoos are very similar and will only require a few extra steps when setting it up using Volno's Texture Tools. 
 
 Alternatively, Substance Painter can be used instead of Blender, as can GIMP/Paint.net/etc. for atlas work.
 
@@ -197,3 +197,85 @@ Done!
 ### GIMP guide
 ...someone help me here xd
 feel free to edit
+
+# Body Tattoo addendum
+
+Essentially this is the same process as face tattoos and makeup, however there are a couple extra steps to set it up first.
+
+## Import a Body Mesh
+Volno's Texture Toolbox already comes packaged with a head that matches up with HUM_F_NKD_Body_A.GR2 so we may just import this. For the purpose of this example I'll be using HUM_M_NKD_Body_A.GR2 and a matching head.
+
+Once you import, delete the LOD meshes, then select the Body mesh in Object mode.
+
+## The Shader Tab
+Now head over to the Shader tab, and for Viewport Shading turn on either Rendered or Material view if it isn't already:
+![2025-07-11_11_15_45.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_11_15_45.png)
+
+Make sure the body is still selected, then in this drop down menu we grab the "F Head" preset.
+
+Now with this button we duplicate it:
+![2025-07-11_12_06_18.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_12_06_18.png)
+
+And then rename:
+![2025-07-11_12_06_37.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_12_06_37.png)
+
+Now it is separate from the head shader. But!
+
+It still looks like this:
+![2025-07-11_11_15_55.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_11_15_55.png)
+
+### Assigning the Textures
+
+In the area where all the nodes are below, you may need to zoom/pan a bit to get it in view if it isn't already. Then we find where our 3 skin textures get hooked up (we will only be changing the CLEA, HMVY, and NM). 
+
+Expand each one and get rid of the face texture occupying it:
+![2025-07-11_11_17_56.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_11_17_56.png)
+
+Then choose "Open" and find the associated body texture you need, remember to set it to "Non-Color":
+![2025-07-11_11_19_05.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_11_19_05.png)
+
+Do this for the other 2 (HMVY and NM).
+
+### The Tattoo Texture
+
+Now click on some empty space down where the nodes for the Makeup and Tattoo atlases are, right-click, Add -> Texture -> Image Texture.
+
+Name it whatever and give it a 4096x4096 dimension (we can also do 2048, but it's easier to downsize in post than upsize), set it also to Non-Color. Then hook it up to the Tattoo Map, set the Tattoo A color to whatever, and the Tattoo A Strength to 1:
+
+Make sure that the body tattoo texture node is selected, then head over to the Texture Painting window. You may need to set this one to Material/Render Viewport shading as well.
+
+![2025-07-11_11_22_31.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_11_22_31.png)
+
+### Texture Painting
+
+This will essentially be the same as it is with Face Tattoos. Remember to go up to the texture drop down menu in both in the UV section and the Viewport section, and set them to your Body Tattoo texture:
+
+![2025-07-11_11_29_59.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_11_29_59.png) ![2025-07-11_11_30_18.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_11_30_18.png)
+
+For the second one we may also need to set the Mode to Material instead of Single Image:
+
+![2025-07-11_11_30_34.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_11_30_34.png)
+
+Now we can paint as we do with Face Tattoos. Remember we are working in greyscale: white is to draw, black is to "erase". Playing with gradients is allowed.
+
+### Notes
+
+The legs of the body meshes are a bit special in that both right and left share the same UV. This means they will always be mirrored, whether we paint with X-Symmetry on or not:
+
+![2025-07-11_11_41_03.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_11_41_03.png)
+
+### Visualizing a Second Tattoo
+
+To set up a second tattoo, for example if one wants to use a glow tattoo in addition to the normal one using [KAVT](/Tutorials/Mod-Use/KAVT-User-Manual), this is easy to visualize.
+
+Go back to the Shading tab, add another new image texture (4096x4096 again), name it, then hook it up like so:
+
+![2025-07-11_11_42_50.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_11_42_50.png)
+
+Remember to have this node selected when painting this texture. If you wish to paint on the "normal" tattoo again, select that texture first then continue. 
+
+![2025-07-11_11_47_54.png](/tutorials/tattoos_makeup/bodytats/2025-07-11_11_47_54.png)
+
+This results in a completely separate map which we can combine later in post. For instructions on how to do this with KAVT, follow [the guide here](/Tutorials/Mod-Use/KAVT-User-Manual). 
+
+# Remember to save the images as you go!
