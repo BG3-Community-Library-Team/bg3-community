@@ -2,7 +2,7 @@
 title: Creating Makeup and Face / Body tattoos
 description: Guide to create tattoo/makeup textures and get them in game
 published: true
-date: 2025-07-11T10:35:47.989Z
+date: 2025-07-11T10:36:35.737Z
 tags: blender, tattoo, makeup, texture painting, kavt
 editor: markdown
 dateCreated: 2025-05-22T15:00:51.844Z
@@ -278,4 +278,6 @@ Remember to have this node selected when painting this texture. If you wish to p
 
 This results in a completely separate map which we can combine later in post. For instructions on how to do this with KAVT, follow [the guide here](/Tutorials/Mod-Use/KAVT-User-Manual). 
 
-# Remember to save the images as you go!
+> Remember to save the images as you go!
+{.is-success}
+
