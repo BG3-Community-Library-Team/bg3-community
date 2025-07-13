@@ -2,7 +2,7 @@
 title: CC & Item Slots
 description: 
 published: true
-date: 2025-07-13T23:28:37.080Z
+date: 2025-07-13T23:33:53.888Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-13T23:12:04.499Z
@@ -28,5 +28,7 @@ These slots will allow your visual to appear in Character Creation.
 - Horns
 - Piercing (Called Piercing Style in-game)
 - DragonbornTop (Called Crest in-game)
+- DragonbornChin (Called Chins in-game)
+- DragonbornJaw (Called Jaws in-game)
 - Tail
 - Private Parts (Called Genitals in-game)
