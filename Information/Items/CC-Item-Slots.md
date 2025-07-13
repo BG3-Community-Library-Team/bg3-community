@@ -2,7 +2,7 @@
 title: CC & Item Slots
 description: 
 published: true
-date: 2025-07-13T23:21:24.806Z
+date: 2025-07-13T23:25:09.927Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-13T23:12:04.499Z
@@ -22,7 +22,7 @@ There is currently no way to add new slots to the game, and doing so would proba
 
 These slots will allow your visual to appear in Character Creation.
 
-- Head
+- Head (Called Face in-game)
 - Hair
 - Beard (Called Facial Hair in-game)
 - Horns
