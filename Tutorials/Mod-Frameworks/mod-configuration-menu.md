@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-07-10T20:23:54.144Z
+date: 2025-07-15T19:11:13.478Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -245,6 +245,44 @@ As of version 1.14+, MCM introduces a global `MCM` table (can be called anywhere
 
 #### EventButton API
 
+
+<details>
+<summary>Blueprint example</summary>
+
+```json
+"Id": "EventButtonExample",
+  "Name": "Event Button example",
+  "Type": "event_button",
+  "Description": "Click this button to trigger an action in the mod.",
+  "Options": {
+      "ConfirmDialog": {
+          "Title": "Confirm Action",
+          "Message": "Are you sure you want to perform this action?",
+          "ConfirmText": "Yes, do it",
+          "CancelText": "No, cancel"
+      },
+      "Cooldown": 5,
+      "Icon": {
+          "Name": "Skill_Fighter_ActionSurge"
+      },
+      "Label": "Fallback Button"
+  },
+  "Tooltip": "Click this button and see a confirmation dialog.",
+  "Handles": {
+    "NameHandle": "h...",
+    "DescriptionHandle": "h...",
+    "EventButtonHandles": {
+      "ConfirmDialogHandles": {
+          "TitleHandle": "h...",
+          "MessageHandle": "h...",
+          "ConfirmTextHandle": "h...",
+          "CancelTextHandle": "h..."
+      },
+      "LabelHandle": "h..."
+  }
+```
+  
+</details>
 These methods operate on `event_button` 'settings'.
 
 | Function | Description | Client | Server |
