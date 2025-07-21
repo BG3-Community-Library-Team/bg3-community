@@ -1,0 +1,43 @@
+<!--
+title: BG3 Spring Physics in the Toolkit
+description: 
+published: true
+date: 2025-07-21T21:22:23.287Z
+tags: tutorial, toolkit
+editor: ckeditor
+dateCreated: 2025-07-21T21:22:23.287Z
+-->
+
+<h1>BG3 TOOLKIT CUSTOM SPRING PHYSICS</h1>
+<p>This tutorial will cover how to add new spring (bone) physics in the BG3 Modding Toolkit, e.g. for hair. This guide assumes you have basic familiarity with the Toolkit and how to browse it.</p>
+<h2>1. Setup</h2>
+<p>For the purposes of this tutorial, we will be adding extra spring physics to the bones of the side bangs of Shadowheart’s hair:</p>
+<figure class="image image_resized" style="width:461px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcdKvMKovGqMTERUaA5V9c9l7qUqf0xJgubZnTEb70qgnXlFas3qxyQP6kvCJT90cvZfEOOFIRw7uxmTpQFsy_FYNtSFAVau_LtpEKzKLpLvjX4s5xjmQEsaCLszIrP_kg1zIwD?key=HSZXCt4Dzdkqjo-3Qm7L8A"></figure>
+<p>Create a project in the toolkit and load a level. In the Resource Manager, find the Skeleton Resource we will override (the one used by the hair). Right click and “Override in the Active Mod”.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdUa42ojgPACZLtBPQrjrZBw8a59Qp9LlM0IwqWMIwuUouE0S1lN3ea2iwZyfu5FPxso_SgSi-TuS5XxU3ayOyyLz4wXXYeqDBz0tsG96Ba7HdgKUuVRYUUYwT3Sd-mh9wi_nbI?key=HSZXCt4Dzdkqjo-3Qm7L8A"></figure>
+<p>Each vanilla hair that has spring physics also has a Physics Resource associated with it, which holds the actual information about the springs in a .bin file. It is assigned to the Skeleton Resource under “Spring Resource ID”.</p>
+<figure class="image image_resized" style="width:469px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfkUWoOlr50_dgPgVnc0R7EoqCJ1ok5rsawqvcogV6TECT0pTwVVabciMBoL5Fz_tmd8pKzsuyyN27IfKyIn5Ds7UmLNWM_ooKTFvOiiO1v5bq18DKEENGFC1fwdeNNroPbl9pQ?key=HSZXCt4Dzdkqjo-3Qm7L8A"></figure>
+<p>If you are editing the physics of existing hair, you need to find and override that Physics Resource as well. (If you are creating a new custom skeleton, you will create its own new Physics Resource in the skeleton editor).</p>
+<figure class="image image_resized" style="width:592px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcJHraiySlfYJ5bPJ9IrDH4IIx08R0mpw-2tiC4UqXgPyUfBlgj9WILXh2XTKiBqdzOVtpoDkz1j3awtrZIvAo9GNj0Xp2pO4LYWyJ5Obxglmd7Bi7DsKUmnKI2q0NBGPPSaAP96w?key=HSZXCt4Dzdkqjo-3Qm7L8A"></figure>
+<h2>2. Adding Springs</h2>
+<p>Go back to your overridden Skeleton Resource and double-click on it to open it in the skeleton editor. Here you can see all of the spring capsules and constraints that Shadowheart’s hair already has on the back braid.</p>
+<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc2ZGiqeLQAF1wnot-facAeIS6SQSzNZEaF11SmFslsMPkNvZsHdr-A-GiR9UNo3KXbiGwTt4cwW4KByjrzZWuKZhv8R6pgL1mmvCXvcjaSMBWkg9uj4rMYyFZ0ZS-vig5SI1-q5w?key=HSZXCt4Dzdkqjo-3Qm7L8A"></figure>
+<p><span class="text-big"><strong>The basics:</strong></span></p>
+<p><i>Hair0_M</i> is the start (at the top of the head) of the spring chain here. Clicking on the spring (green capsule) in the outliner, you can see in its properties that its Rigidbody Type is set to <strong>Kinematic</strong>. The first spring in the chain must always have this type, while the rest have <strong>Dynamic</strong> to have physics. If your starting bone has Dynamic as the type, the entire chain will be affected by gravity and fall through the floor once simulated (and we don’t want that). Constraints (the red triangles) between spring capsules are necessary for the same reason, and they also govern the limits of motion of the simulation (e.g. how far the springs can twist or swing).</p>
+<figure class="image image_resized" style="width:330px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcsOJIC3QytELXIz6JX9uSi3M4B7Hp4yMBJZFH-NwvObIQU_iDohCMHzVIyWshbEHlpndw4c-2xyc6kwiClVmXr7ak5e1btGREjAh6ZkKepyOVBqvuK3N-coax2G_-Rc1M417iu?key=HSZXCt4Dzdkqjo-3Qm7L8A"></figure>
+<figure class="image image_resized" style="width:346px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7k0-SN1e74Vj5N4-Nw7aiN-kjemCabKp_z0qBTkc_-z_Wba23KENtmJK5cz9F2UV6zMNfDw-XgiJXYeU6nGk7D2NYSimLX51Mro18kafJi_uumBy4AK6uhRZDIUxvFa4MSi_z?key=HSZXCt4Dzdkqjo-3Qm7L8A">
+  <figcaption><span class="text-big">We did not do the above and Shadowheart's hair fell through the floor.</span></figcaption>
+</figure>
+<p>Let’s add new spring capsules to the side bangs. Select the bone you want to start the chain at (in this example, <i>Hair1_R</i>), right click in the outliner, and select “Add Spring”. A new spring capsule will be added on this bone. Remember to set the Rigidbody Type on it to Kinematic.</p>
+<figure class="image image_resized" style="width:74.78%;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXegQD8gZ3LSN9wbyoMYy3K07a3T9ISKdgXAvPgS9uHLA7PiNxxlhvCsK6FexruMqTz7nQ7_q8wGgoY3On-MRYG4oVP_WgyyBWnWq5cy64uAzaJUrOCL7vk7fKS8IXBRLHj7pPUb?key=HSZXCt4Dzdkqjo-3Qm7L8A"></figure>
+<p>Repeat with the rest of the bones in the chain, keeping the Rigidbody Type as Dynamic. Capsules are not necessary for endBones.</p>
+<figure class="image image_resized" style="width:76.33%;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcVS6d-1vY9hulAh-lZNpjMMUZOHQVx9L80RW-Pl-ZDp86Yzur5WL6xyXkH3T4giIq-U_s4j4Y7RTvv9llZLeTo_hzUBNgzsAZHPTRNnUlsQsD79EE_oGhFmQPgq_jm4n1ZsLDaGA?key=HSZXCt4Dzdkqjo-3Qm7L8A"></figure>
+<p>Now right click the spring (green capsule in the outliner) of the first bone in the chain that is Dynamic, i.e. the one that follows the Kinematic bone. In this case it is <i>Hair2_R</i>. Select “Add Constraint”. It will add a constraint that is automatically set to between <i>Hair1_R</i> to <i>Hair2_R</i>. Repeat this with any other springs down the chain.</p>
+<figure class="image image_resized" style="width:27.28%;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeHcSjPt4wYMLOiISlUIggGOW6eWKUrC5gTPo4IDSGtQNLV01uQdRq6xB76g42BAJiCcG-i8OMrXjtyp_yo09KjBWZqM2Z0rhIpvrrYd9Faz7Xhvy4cjG81TvssYrAbw2jGXJkZiw?key=HSZXCt4Dzdkqjo-3Qm7L8A"></figure>
+<figure class="image image_resized" style="width:329px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdC_AR_OHanjD1wVQbf0yOG4Gr5sVc1eeUB8o2BrF9nD2VEqasklB0Zne1-dcPUx5lhZjnx6bvQkjVL8jKFGo_360MvJm9wMHs5-Ur2aP7aJGwsyFAvRz23yuerSza8R5-2I8QK?key=HSZXCt4Dzdkqjo-3Qm7L8A"></figure>
+<p>Constraints have their own properties, and some of the more important are the Motion Limits, which govern how much the bone will twist/swing when simulated. The default twist limits of -30 to 30 are usually too great (more twisting around the bone’s primary axis), so it’s best to set them to smaller values.</p>
+<figure class="image image_resized" style="width:365px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfrt2o7xd4pqaSvJHIl3dri_rjwiR3BVhhNaJeyBK1UqUaEqfSFuvsHnl4dZmD7R421vacYvSLiMOZyd2txQ1jQkpW8h4m72x44cHXgLkv8hKfDMjjYXdGakVjMo3CP0LnikIUQ?key=HSZXCt4Dzdkqjo-3Qm7L8A"></figure>
+<p>If you feel lost in all of the settings of individual spring capsules/constraints, copying the values (particularly the motion limits/stiffness/mass) from vanilla spring/constraint chains is always an option. The radius/length of the spring capsules does not seem to have much effect beyond how the springs react to the spring colliders (e.g. how it will interact with the body spring colliders and how much the hair will therefore clip through the skin).</p>
+<p>File &gt; Save to save your edits in the skeleton editor.</p>
+<figure class="image"><img src="/spring_physics_tutorial/spring_physics_tutorial/shadowheart_bangs_physics.gif"></figure>
+<p>&nbsp;</p>
