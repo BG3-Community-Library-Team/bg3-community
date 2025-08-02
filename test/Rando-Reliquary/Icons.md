@@ -1,8 +1,8 @@
 ---
-title: Skill Icon Atlas Background References
+title: Icon References
 description: 
 published: false
-date: 2025-08-02T09:54:44.892Z
+date: 2025-08-02T10:17:23.229Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-07T23:22:07.910Z
@@ -41,3 +41,20 @@ dateCreated: 2025-02-07T23:22:07.910Z
 |![weaponAction_bg](/bg3_assets/controlleruiicons/icon_bg_png/weaponAction_bg.png)|weaponAction_bg| |
 |![weaponBonusAction_bg](/bg3_assets/controlleruiicons/icon_bg_png/weaponBonusAction_bg.png)|weaponBonusAction_bg| |
 |![weaponDamagePassive_bg](/bg3_assets/controlleruiicons/icon_bg_png/weapondamagepassive_bg.png)|weaponDamagePassive_bg| |
+
+---
+
+# Icons
+
+## Atlas
+Size: `64x64`
+
+## Controller
+Size: `144x144`
+Skill Location: `Mods/[modname]/GUI/Assets/ControllerUIIcons/skills_png`
+Item Location: `Mods/[modname]/GUI/Assets/ControllerUIIcons/items_png`
+
+## Tooltips
+Size: `380x380`
+Skill Location: `Mods/[modname]/GUI/Assets/Tooltips/Icons`
+Item Location: `Mods/[modname]/GUI/Assets/Tooltips/ItemIcons`
