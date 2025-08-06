@@ -2,7 +2,7 @@
 title: 2. Creating the Hair Mesh in Blender
 description: 
 published: true
-date: 2025-08-06T15:06:02.592Z
+date: 2025-08-06T15:07:50.322Z
 tags: hair, visual, tutorial, blender
 editor: ckeditor
 dateCreated: 2024-04-25T01:28:21.322Z
@@ -40,6 +40,10 @@ dateCreated: 2024-04-25T01:28:21.322Z
 <p>To find the SkeletonResource of vanilla hairs, check out <a href="https://wiki.bg3.community/en/Information/Meshes/Hair-Meshes-Reference">this page</a>.</p>
 <h4><strong>None of the vanilla hairs seem to have the part I want. Can I make my own custom hair for BG3?</strong>&nbsp;</h4>
 <p>Yes! WIP tutorial here: <a href="https://bg3.wiki/wiki/Modding:Creating_Custom_Hair_with_Hair_Tool">Creating Custom Hair with Hair Tool</a></p>
+<h3>Adding Weights</h3>
+<p>There are two types of hair weights you can add: autosnapping weights and non-autosnapping weights.</p>
+<p>Autosnapping weights can “snap” to different body types, allowing you to use the same mesh for multiple bodies. However, sometimes the hair can look funky when it's being stretched to fit different bodies.</p>
+<p>Non-autosnapping weights are set up for only one body type, so you have to make a separate mesh for each body you want to support. It's the best way if you only need to support one body type, or if autosnapping didn't work for your hair.</p>
 <h4>Autosnapping Weights</h4>
 <p>Kit has created <a href="https://docs.google.com/document/d/1NlYjTToaLS6_HS4L0jlaTiCBtVEqJArSL7iF6LNy_-w/edit?usp=sharing">a method that allows you to autosnap weight your hair without transferring from a vanilla mesh</a>. This works great in almost all cases, but for super short hairs it can have issues.</p>
 <p>So if the above method doesn't work, Padme has <a href="https://youtu.be/siC6fak9zDM?si=vFQBBiLNV79kUVkt&amp;t=298">a great video here</a> that explains how to use a vanilla mesh to transfer weights to your new hair. It's recommended to find the vanilla hair that looks most similar to your hair, and use that.</p>
