@@ -2,7 +2,7 @@
 title: How to remove mods from BG3
 description: Using this guide, you will be able to remove ALL mod files from your game and have a vanilla version of BG3.
 published: true
-date: 2025-04-18T17:39:06.023Z
+date: 2025-08-08T16:10:09.096Z
 tags: bg3-mod-helper, bg3mm, moduse, mod use, loose-file-mods, mod, mod uninstall
 editor: markdown
 dateCreated: 2024-05-02T16:40:20.175Z
@@ -27,6 +27,9 @@ dateCreated: 2024-05-02T16:40:20.175Z
 
 > Want to use a script that executes most of these steps automatically?
 > Skip [here](https://wiki.bg3.community/en/Tutorials/Mod-Use/How-to-remove-mods#h-6-automatic-script)
+{.is-warning}
+
+> **Please read all of these instructions FULLY before executing them, especially if you are a modder.**
 {.is-warning}
 
 
@@ -65,15 +68,15 @@ If you are using the Steam version of BG3, you can access your Bin folder by rig
 
 ## **2.2 Delete all folders in your Data folder, EXCEPT LOCALIZATION**
 
+> **MODDERS, if you want to keep the tools and your mod projects, do NOT delete these folders!! Also, do NOT delete the mod folders in Mods and Public!! To be safe, backup/move both Mods and Public instead of deleting them.** It is possible you may have two folders for the toolkit in your data folder even if you never downloaded the toolkit. See below for what extra folders you may need to delete.
+{.is-warning}
+
+![removetoolkitfolders.png](/mod-use/remove-mods/removetoolkitfolders.png "Example image of the toolkit folders in the Data folder to delete")<p style="text-align:center">*Example image of the toolkit folders in the Data folder to not delete*</p>
+
 > **DO NOT DELETE .PAK FILES OR THE LOCALIZATION FOLDER, DOING SO MAY RESULT IN NEEDING A FULL REINSTALL OF BG3. ONLY DELETE THE FOLDERS HIGHLIGHTED IN THE SCREENSHOTS BELOW**
 {.is-warning}
 
 ![](https://lh7-us.googleusercontent.com/ZfBGtdVsBWmUps9aWCA7uTvFu74_rhieWHod-OHPaENCqRLLVJp4BOypIwhUxAG8vUlvPS68KTFCix3LW2DyrKZTMSyWyhBOoGl7dEHeH18FHkPQly3R4MQrzD-VOOGvRgTgsQE1kQauHqkwFzCPBA "Example image of the specific files in the Data folder to delete or move to another location")<p style="text-align:center">*Example image of the specific files in the Data folder to delete or move to another location*</p>
-
-> It is possible you may have two folders for the toolkit in your data folder even if you never downloaded the toolkit. See below for what extra folders you may need to delete. **MODDERS, if you want to keep the tools and your mod projects, do NOT delete these folders.**
-{.is-warning}
-
-![removetoolkitfolders.png](/mod-use/remove-mods/removetoolkitfolders.png "Example image of the toolkit folders in the Data folder to delete")<p style="text-align:center">*Example image of the toolkit folders in the Data folder to delete*</p>
 
 ---
 
