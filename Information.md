@@ -2,7 +2,7 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2025-07-13T23:07:52.518Z
+date: 2025-08-09T14:51:14.792Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
@@ -21,14 +21,12 @@ This area is not for tutorials but for general information. If you would like to
 
 - [Fundamentals](/Information/fundamental)
 - [Osiris](Osiris) 
-
 - [Dictionary](/Information/dictionary)
 
 Scripting
 -
 <!-- - [Lua](/Information/Lua) -->
 - [Lua](/Tutorials/ScriptExtender/the_basics_of_lua)
-
 
 Gameplay
 -
@@ -40,19 +38,23 @@ Meshes
 - [Meshes](Meshes)
 - [Noesis](/Information/Noesis)
 
+Progressions
+-
+- [Progressions](https://wiki.bg3.community/en/Information/Progression)
+
 Races
 -
 - [Races](https://wiki.bg3.community/en/Information/races)
+
+Sound
+-
+- [Sound](/Information/Sound)
 
 Textures
 -
 - [Textures](/Information/Textures)
 - [Icons](https://wiki.bg3.community/Tutorials/Icons/Icon-Creation)
 - [Shaders](/Information/Textures/Shaders)
-
-Sound
--
-- [Sound](/Information/Sound)
 
 ## Pages
 
