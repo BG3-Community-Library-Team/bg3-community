@@ -2,7 +2,7 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2025-08-09T14:51:14.792Z
+date: 2025-08-09T14:51:57.908Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
@@ -40,7 +40,7 @@ Meshes
 
 Progressions
 -
-- [Progressions](https://wiki.bg3.community/en/Information/Progression)
+- [Progressions](https://wiki.bg3.community/en/Information/progression)
 
 Races
 -
