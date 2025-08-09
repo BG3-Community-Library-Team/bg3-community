@@ -2,13 +2,13 @@
 title: Progression Tables
 description: Progression UUIDs
 published: true
-date: 2025-08-09T14:47:06.755Z
+date: 2025-08-09T14:48:33.859Z
 tags: classes, subclasses, races
 editor: markdown
 dateCreated: 2025-08-09T14:45:50.874Z
 ---
 
-# Progression Tables
+# Progressions
 
 ## Pages
 - [Progressions](https://wiki.bg3.community/en/Information/Progression/Progressions)
