@@ -2,14 +2,14 @@
 title: Progressions
 description: Progression nodes for races and classes
 published: true
-date: 2025-08-09T14:47:04.076Z
+date: 2025-08-09T14:48:19.941Z
 tags: classes, subclasses, races
 editor: markdown
 dateCreated: 2025-08-09T14:47:04.076Z
 ---
 
-# Header
-Progression tables are used to assign various resources to a race, subrace, class, or subclass. These can be things like Action Resources, spells, passives, and more.
+# Progression Tables
+The associated file for Progression tables is <code>Progressions.lsx</code>. Progression tables are used to assign various resources to a race, subrace, class, or subclass. These can be things like Action Resources, spells, passives, and more.
 
 Each Progression table has 2 UUIDs associated with it:
 
