@@ -2,14 +2,14 @@
 title: Adding Animations In Toolkit
 description: A guide on how to add poses/animation to the toolkit and and setting up the necessary files
 published: true
-date: 2025-05-05T09:22:15.312Z
+date: 2025-08-10T12:17:38.656Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-05-04T14:20:03.437Z
 -->
 
 <h1>Adding Animations in Toolkit</h1>
-<h6>written by <a href="https://next.nexusmods.com/profile/lumad11">lumad11</a></h6>
+<h6>written by <a href="https://next.nexusmods.com/profile/lumad11">lumad11</a><strong> and </strong><a href="https://next.nexusmods.com/profile/CatastrophicalCat?pk_vid=cb6978f97ef430b41754822987f76d80"><strong>CatastrophicalCat</strong></a></h6>
 <p>This tutorial assumes that you've already created poses or animations in Blender following the <a href="https://wiki.bg3.community/Tutorials/Animations/CustomAnimationsBlender">Custom Animations Blender Walkthrough</a>.&nbsp;</p>
 <p>I will go over:&nbsp;</p>
 <ul>
@@ -40,6 +40,7 @@ dateCreated: 2025-05-04T14:20:03.437Z
   <li>Halflings: HFL_[F/M]<i>_Base</i></li>
   <li>Humans, Elf variants, Tieflings, Githyanki: HUM_[F/M]_Base</li>
 </ul>
+<p>Note:&nbsp;<br>Everything will default back to the HUM_M_Base if the other bases don't have an animation set into them, (everyone gets to use the HUM_M_Base ones) if something is just in the HUM_F_Base then only the BT1 characters can use those ect for other bases.</p>
 <p>After searching for the _Base relevant to you, you need to find the one of type AnimationSet, as shown below.&nbsp;</p>
 <figure class="image image_resized" style="width:75.06%;"><img src="/toolkit_poses_tutorial/image02.png"></figure>
 <p>Select the _Base, right click on it and choose ‘Override in the Active Mod’</p>
@@ -66,7 +67,16 @@ dateCreated: 2025-05-04T14:20:03.437Z
 <p>When you want add more animations, right click the animation file in your project folder, select ‘Create new from selected’ and rename it. Next, we'll be going over how to add entries in the UUID Object Editor&nbsp;</p>
 <p>&nbsp;</p>
 <h2>2 The UUID Object Editor&nbsp;</h2>
-<h3>2.1 ShortNames</h3>
+<h3>2.1 Shortname Categories</h3>
+<p>Shortname Categories are not Striktly needed but they make your animations easy to find in the _Base<br>If you don't want to add them skip to “<strong>2.2 ShortNames</strong>”<br><br>In the Toolkit, open the UUID&nbsp;Object Editor, location shown below.&nbsp;</p>
+<figure class="image image_resized" style="width:75.06%;"><img src="/toolkit_poses_tutorial/objectuuidedtor_icon.png"></figure>
+<p>On the left hand side, you should see a list of projects. Expand the project with the name of your mod.&nbsp;</p>
+<p>Now you want to add ShortNameCategories for the animation files you have. Navigate to the ‘Animation' line, press the ’+' symbol and select ‘ShortNameCategories’. &nbsp;</p>
+<figure class="image"><img src="/screenshot_2025-08-10_132625.png"></figure>
+<p>A new file names ‘ShortNameCategories’ should generate under ‘Animation’, double click it to open it.<br>For a Name you only need one per mod but you can do multiple if you like it to sort them more specifically.&nbsp;</p>
+<figure class="image"><img src="/screenshot_2025-08-10_132703.png"></figure>
+<p>After Naming them hit enter and Press CTRL+S to save and export the file.</p>
+<h3><br>2.2 ShortNames</h3>
 <p>In the Toolkit, open the UUID&nbsp;Object Editor, location shown below.&nbsp;</p>
 <figure class="image image_resized" style="width:75.06%;"><img src="/toolkit_poses_tutorial/objectuuidedtor_icon.png"></figure>
 <p>On the left hand side, you should see a list of projects. Expand the project with the name of your mod.&nbsp;</p>
@@ -74,19 +84,22 @@ dateCreated: 2025-05-04T14:20:03.437Z
 <figure class="image image_resized" style="width:75.1%;"><img src="/toolkit_poses_tutorial/objectuuideditor_01.png"></figure>
 <p>A new file names ‘ShortNames’ should generate under ‘Animation’, double click it to open it.</p>
 <ol>
-  <li>For ‘Name’, you want to add an entry for each pose that you have. Not for a collection/pack, but for every single animation that you have (so for an animation with e.g. 10 static poses, add 10 entries).<ol>
+  <li>For ‘Name’, you want to add an entry for each pose that you have. Not for a collection/pack, but for every single animation that you have (so for an animation with e.g. 10 static poses, add 10 entries).</li>
+  <li>If you have one pose/animation adjusted for multiple body types you only need one shortname for them and then add the animations in their respective _Base<br>Example: HUM_F<i>_Hugs_</i>BT1 and the same pose adjusted for hight for HUM_M<i>_</i>Hugs_BT1 can share the same shortname.<ol>
       <li>The name here is the internal name for the file, and not what will be displayed in the game.</li>
     </ol>
   </li>
   <li>Hit enter after naming an entry and it'll generate a UUID automatically.</li>
-  <li>Under ‘Category’, you want to select ‘Photomode’.</li>
+  <li>Under ‘Category’, you want to select ‘Photomode’.<br>Or you can make your own ShortnameCategory.</li>
 </ol>
-<p>It should now looks something like this:&nbsp;</p>
+<p><br>It should now looks something like this:&nbsp;</p>
 <figure class="image image_resized" style="width:75.03%;"><img src="/toolkit_poses_tutorial/shortnames.png"></figure>
+<p>If you've made your own Shortname Category It should now looks something like this:&nbsp;</p>
+<figure class="image"><img src="/screenshot_2025-08-10_132826.png"></figure>
 <p>Add entries for however many animations/static poses that you have. Keep the tab open, you'll need the UUID's for the ShortNames entries later.&nbsp;</p>
 <p>Press CTRL+S to save and export the file.</p>
 <p>&nbsp;</p>
-<h3>2.2 EmotePoses and EmoteAnimations&nbsp;</h3>
+<h3>2.3 EmotePoses and EmoteAnimations&nbsp;</h3>
 <p>In the UUID Object Editor, under your project name, navigate to ‘Photomode’. Click the ‘+’ symbol, select ‘EmotePoses’ and open the file. Add an entry for each static pose that you have.&nbsp;</p>
 <ol>
   <li>For ‘Name’, use the same name that you did in ‘ShortNames’. Hit enter to generate the UUID.</li>
@@ -99,7 +112,7 @@ dateCreated: 2025-05-04T14:20:03.437Z
 <p>If you also have an animation file with an actual animation (rather than a static pose), follow these same steps but instead of adding ‘EmotePoses’, add ‘EmoteAnimations’ instead. The only difference is that is doesn't have ‘Timing’ in the tab.&nbsp;</p>
 <p>Press CTRL+S to save and export the file.</p>
 <p>&nbsp;</p>
-<h3>2.3 EmoteCollections</h3>
+<h3>2.4 EmoteCollections</h3>
 <p>Remaining in the UUID Object Editor, you want to go to ‘Photomode’ again and this time add ‘EmoteCollections’.&nbsp;</p>
 <ol>
   <li>‘Name’ is the internal name for the collection and should be unique to the collection you're adding. Hit enter to generate UUID</li>
@@ -118,7 +131,8 @@ dateCreated: 2025-05-04T14:20:03.437Z
 <p>Close down the UUID Object Editor. In the resource manager, navigate to your project folder and find the _Base you want to open first.&nbsp;</p>
 <p>Double click the _Base file and this window should pop up. Navigate to ‘Photomode’ and expand it. Scroll down to the bottom of the entry, and you should see all the poses that you added in ‘ShortNames’</p>
 <figure class="image"><img src="/toolkit_poses_tutorial/add_poses_to_base.png"></figure>
-<p>Select the drop down menu and search for the pose/animation corresponding to the short name entry and select it. Once you've done this for all the the short names and their poses/animations, click ‘Apply’ and then ‘OK’.&nbsp;</p>
+<p>Select the drop down menu and search for the pose/animation corresponding to the short name entry and select it. Once you've done this for all the the short names and their poses/animations, click ‘Apply’ and then ‘OK’.&nbsp;<br><br>If you have made your own Shortname Category you will find your Category at the bottom of the _Base and only your shortnames are within it.</p>
+<figure class="image"><img src="/screenshot_2025-08-10_141107.png"></figure>
 <p>You should now have done everything there is to do regarding the Toolkit files!</p>
 <p>&nbsp;</p>
 <h2>4. Replacing An Animation File With Your Own .GR2</h2>
