@@ -2,7 +2,7 @@
 title: Tools
 description: A list of tools including short descriptions and links.
 published: true
-date: 2025-03-19T02:45:59.989Z
+date: 2025-08-14T12:01:47.785Z
 tags: tools, list
 editor: markdown
 dateCreated: 2024-05-01T03:55:31.302Z
@@ -42,6 +42,7 @@ The following is a list of tools that are either necessary or useful to create m
 
 
 ## 3D specific software
+- [Noesis](/Tools/What-Is-Noesis)
 - [Adobe Substance Painter (Creative Cloud)](https://www.adobe.com/products/substance3d/apps/painter.html)
 - [Adobe Substance Painter (Steam)](https://store.steampowered.com/app/2718190/Substance_3D_Painter_2024/)
   #### Substance Painter add-ons:
