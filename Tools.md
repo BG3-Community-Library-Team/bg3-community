@@ -2,7 +2,7 @@
 title: Tools
 description: A list of tools including short descriptions and links.
 published: true
-date: 2025-08-14T12:01:47.785Z
+date: 2025-08-14T12:02:45.943Z
 tags: tools, list
 editor: markdown
 dateCreated: 2024-05-01T03:55:31.302Z
@@ -42,7 +42,7 @@ The following is a list of tools that are either necessary or useful to create m
 
 
 ## 3D specific software
-- [Noesis](/Tools/What-Is-Noesis)
+- [Noesis](/Tools/What-Is-Noesis) - a middleware solution that provides a highly customisable User Interface (UI) using XAML files written in a XML-based language
 - [Adobe Substance Painter (Creative Cloud)](https://www.adobe.com/products/substance3d/apps/painter.html)
 - [Adobe Substance Painter (Steam)](https://store.steampowered.com/app/2718190/Substance_3D_Painter_2024/)
   #### Substance Painter add-ons:
