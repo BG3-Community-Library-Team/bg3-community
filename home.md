@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2025-06-26T19:42:43.739Z
+date: 2025-08-15T21:05:29.975Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -63,7 +63,6 @@ Thank you for helping to improve the wiki!
 - [Items *Information related to Items*](/Information/Items)
 - [Lua *Information relating to LUA Scripting*](Information/Lua)
 - [Meshes *Information relating to Meshes*](Information/Meshes)
-- [Noesis *Information relating to the Noesis UI Framework*](Information/Noesis)
 - [Notable NPCs *Information relating to NPCs*](Information/Notable-NPCs)
 - [Osiris *Information relating to Osiris*](Information/Osiris)
 - [Races *Information relating to Races*](https://wiki.bg3.community/en/Information/races)
@@ -79,6 +78,7 @@ Thank you for helping to improve the wiki!
 ## Tools
 - [BG3 Mod Helper - A VSCod(e/ium) Extension](/Tools/bg3-mod-helper)
 - [Image-Editing-Tools](/Tools/Image-Editing-Tools)
+- [Noesis *Information relating to the Noesis UI Framework*](/Tools/Noesis)
 {.links-list}
 
 ## Mod Usage
