@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2025-08-15T21:05:29.975Z
+date: 2025-08-15T21:07:08.999Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -78,7 +78,7 @@ Thank you for helping to improve the wiki!
 ## Tools
 - [BG3 Mod Helper - A VSCod(e/ium) Extension](/Tools/bg3-mod-helper)
 - [Image-Editing-Tools](/Tools/Image-Editing-Tools)
-- [Noesis *Information relating to the Noesis UI Framework*](/Tools/Noesis)
+- [Noesis *Information relating to the Noesis UI Framework*](/Tools/What-Is-Noesis)
 {.links-list}
 
 ## Mod Usage
