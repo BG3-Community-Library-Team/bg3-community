@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: true
-date: 2025-07-04T19:29:55.544Z
+date: 2025-08-19T13:43:11.989Z
 tags: tutorial, scripting, data, dialogue, dialog
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -28,7 +28,7 @@ Now, let's get started!
 - [BG3 Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool/wiki/General-Usage) (For finding files. The multitool can have issues processing dialog files, so I don't recommend packing them with it)
 - My [dialog timeline updater](https://www.nexusmods.com/baldursgate3/mods/11295) or similar python script to update things like start and end times, effect component IDs, etc
 - An extracted localization file to reference your dialog
-- Not necessary but highly recommended: The [parsed dialog files](https://www.tumblr.com/roksik-dnd/727481314781102080/bg3-datamined-dialogue-google-drive) made by roksik-dnd on Tumblr
+- Not necessary but highly recommended: The [parsed dialog files](https://www.tumblr.com/roksik-dnd/727481314781102080/bg3-datamined-dialogue-google-drive) uploaded by roksik-dnd on Tumblr
 
 ### Skills
 - Basic knowledge of BG3 modding, but especially unpacking and converting .lsf files
