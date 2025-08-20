@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-20T20:27:27.513Z
+date: 2025-08-20T20:29:21.245Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -20,3 +20,7 @@ The simplest answer is that you just play the same character a lot, and are tire
 It also helps avoid pitfalls with editing things that also edit generic Tav. For example, if one of your characters has a custom body that replaces Body Type 1, and another character who is vanilla BT1... it's not possible to have both at once, because the bodies overwrite each other. Until custom origins, where you can make your custom origin with a unique body, while still keeping the vanilla body available for regular Tav.
 
 Of course, a custom origin *can* also have things like custom dialogue, cutscenes, and plot lines. But that's a bit beyond the scope of this tutorial. What this tutorial will create is basically just a Tav (or Durge) that's already preset with your character's options.
+
+## Le Template
+
+(insert template here. it's not ready yet. be patient.)
