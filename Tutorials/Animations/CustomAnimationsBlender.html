@@ -2,7 +2,7 @@
 title: Custom Animations Blender Walkthrough
 description: Tutorial on using the Nexus animation templates in Blender
 published: true
-date: 2025-08-20T19:50:00.333Z
+date: 2025-08-20T19:52:41.944Z
 tags: tutorial, animation
 editor: ckeditor
 dateCreated: 2024-12-17T21:25:11.984Z
@@ -44,6 +44,10 @@ dateCreated: 2024-12-17T21:25:11.984Z
 </blockquote>
 <h4>Additional useful tutorials on Blender’s animating functions:</h4>
 <p><a href="https://wiki.bg3.community/https://github.com/augmero/animaide/tree/blender4_fixes">AnimAide</a> (free Blender animation addon, version for 4.0+), <a href="https://wiki.bg3.community/https://www.youtube.com/watch?v=r-rFLLkycxI">YouTube tutorial</a> on AnimAide<br><a href="https://wiki.bg3.community/https://www.youtube.com/watch?v=mfdufhaiKtI">YouTube Tutorial</a> on Blender’s Non-Linear Animation (layered animation) Editor<br><a href="https://wiki.bg3.community/https://blendermarket.com/products/animation-layers">Animation Layers</a> (paid Blender animation addon)</p>
+<h4>Why the bone are oriented like That™</h4>
+<p>Bones in Granny/GR2 files actually function more like joints, akin to Maya etc., not Blender, where a bone has a head and a tail. A joint only occupies one point in space compared to two by a bone head and tail. Joints are interpreted as bone heads by Blender.</p>
+<p>Another difference is that the primary local axis (the axis that goes through/along the length of the joint/bone) of a bone in Maya/GR2 is X, whereas in Blender it is Y. When importing a joint-based GR2 file with the addon, Blender essentially guesses the position of the bone tail based on its own standard for a primary axis. Because it is different in Blender, visually the bones appear to be "sideways". This is meant to be this way and will be correctly exported back in to the game by the addon.</p>
+<p><strong>TL;DR: Do not worry, they are meant to look exactly like that and will be exported back correctly into the game. If you (correctly) used the import via GLTF it likely already assigned custom sphere shapes to the bones for an easier view.</strong></p>
 <h3><strong>1.3. How to correctly bake and export your animation</strong></h3>
 <p>When you’re done with your animation or want to test it in progress, you’ll need to export it in a format that can be converted into the modeling / animation format used by BG3 - “.GR2”.</p>
 <p>To get there you’ll need to :</p>
