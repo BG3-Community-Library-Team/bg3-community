@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-20T20:41:47.435Z
+date: 2025-08-20T20:46:06.380Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -36,3 +36,16 @@ Of course, a custom origin *can* also have things like custom dialogue, cutscene
 ## Equipment.txt
 
 ## Voices.lsx
+
+Here are the UUIDs for the vanilla Tav voices:
+
+voice 1: 24247531-c432-4f0f-8f35-6c90c4844aa8
+voice 2: 869248f0-468a-4747-82d7-e8efc3bbcacf
+voice 3: 4df6dba0-8574-4704-a9fb-a500da38e1e1
+voice 4: 3347e417-d7ad-4088-bdd6-d5565efcd815
+voice 5: f5b335b2-9cd9-4b38-a4c1-458b846ab499
+voice 6: b9b26a44-943b-4427-9890-d81c7e81a75b
+voice 7: 2d206fda-0d4f-457f-b4ea-0fc18866f5dd
+voice 8: fb6b5353-8d14-4507-9222-ceaec990fce9
+
+(thanks milo for compiling this!)
