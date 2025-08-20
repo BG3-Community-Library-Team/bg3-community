@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-20T20:46:06.380Z
+date: 2025-08-20T20:49:51.260Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -30,6 +30,8 @@ Of course, a custom origin *can* also have things like custom dialogue, cutscene
 ## RootTemplates
 
 ## CharacterVisuals
+
+(scars are cooked if you make your origin editable. larian why)
 
 ## Globals
 
