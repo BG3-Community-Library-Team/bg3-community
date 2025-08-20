@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-20T20:29:21.245Z
+date: 2025-08-20T20:41:47.435Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -24,3 +24,15 @@ Of course, a custom origin *can* also have things like custom dialogue, cutscene
 ## Le Template
 
 (insert template here. it's not ready yet. be patient.)
+
+## Origins.lsx
+
+## RootTemplates
+
+## CharacterVisuals
+
+## Globals
+
+## Equipment.txt
+
+## Voices.lsx
