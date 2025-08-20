@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-20T20:49:51.260Z
+date: 2025-08-20T22:57:31.343Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -51,3 +51,5 @@ voice 7: 2d206fda-0d4f-457f-b4ea-0fc18866f5dd
 voice 8: fb6b5353-8d14-4507-9222-ceaec990fce9
 
 (thanks milo for compiling this!)
+
+## Levels
