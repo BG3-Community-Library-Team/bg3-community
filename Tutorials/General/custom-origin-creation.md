@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:44:37.872Z
+date: 2025-08-21T14:44:56.312Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -91,7 +91,7 @@ If you want the voice to be pickable, just set the voice table in Origins.lsx ba
 
 If you want a custom portrait for your origin, you can make a custom trigger that will fire on game start and level up. The way I did this was downloading the EasyCheat mod, teleporting into the SYS_PortraitPlayerRace_A level, and using the WASD mod to walk around until my character was standing in front of a background I liked. Then I used photo mode to take a screenshot and edited it in GIMP to the right size. This only affects the icon you'd see in the origins selection, however, so I also used the SE command `_P(Osi.GetPosition(GetHostCharacter()))` to get the coordinates of where my character was standing in the level. Then I used those coordinates to set up a new trigger and camera trigger. You'll probably have to adjust values a bit to get things in the right places, but once that's set up, you should get a new generated icon every time you start the game or level up.
 
-> I don't know how to change the pose that's used for the generated icon, yet.
+> I don't know how to change the pose that's used for the generated icon, yet. It's probably going to end up using the default one for your origin's race/bodytype.
 {.is-warning}
 
 ## Tags
