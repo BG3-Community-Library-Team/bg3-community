@@ -1,8 +1,8 @@
 ---
 title: Custom Origin Creation
 description: Make your own custom origin.
-published: false
-date: 2025-08-21T15:01:35.856Z
+published: true
+date: 2025-08-21T15:02:02.585Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
