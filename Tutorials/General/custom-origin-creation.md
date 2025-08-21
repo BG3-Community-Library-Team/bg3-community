@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:45:19.481Z
+date: 2025-08-21T14:46:03.310Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -16,7 +16,7 @@ This is a tutorial for adding a custom origin into Baldur's Gate 3. This tutoria
 
 ## So why would I want to make a custom origin?
 
-The simplest answer is that you just play the same character a lot, and are tired of going through character creation over and over to make the exact same choices. By making a custom origin, you select your character, make changes if necessary, and boom, done.
+The simplest answer is that you just play the same character a lot, and are tired of going through character creation over and over to make the exact same choices. By making a custom origin, you select your character, make changes if necessary, and boom, done. If your character has special clothes or items, you can give them those by default instead of having to spawn them in.
 
 It also helps avoid pitfalls with editing things that also edit generic Tav. For example, if one of your characters has a custom body that replaces Body Type 1, and another character who is vanilla BT1... it's not possible to have both at once, because the bodies overwrite each other. Until custom origins, where you can make your custom origin with a unique body, while still keeping the vanilla body available for regular Tav.
 
