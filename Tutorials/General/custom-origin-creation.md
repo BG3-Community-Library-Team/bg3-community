@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T15:00:33.451Z
+date: 2025-08-21T15:01:35.856Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -108,3 +108,8 @@ If your custom origin relies on any other mods, you can add dependencies. This i
 ## Help! I'm having an issue with this!
 
 If you read all of this and you're having an issue with something I didn't cover, you can probably find me at the CMTY discord: https://discord.gg/bg3mods
+
+## Credits
+
+Thanks to Milo/Magnetuning for answering some of my questions about making this.
+Thanks to Death for part of John Larian's description.
