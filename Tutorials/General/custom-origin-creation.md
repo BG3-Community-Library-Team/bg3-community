@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:40:52.628Z
+date: 2025-08-21T14:41:28.329Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -42,7 +42,7 @@ I put a lot of notes in there, so I'm not going to restate everything that's in 
 
 This is the main file that tells the game, "Hey, here's a new origin. Show it in the origin list!"
 
-The default tags should be fine for a Tav-like origin. If you want a Durge origin, you'll probably have to swap in the REALLY_DARK_URGE tag.
+The default tags should be fine for a Tav-like origin. If you want a Durge origin, you'll probably have to swap in the REALLY_DARK_URGE tag. Heck, you could even put in another origin's tag if you wanted, but it probably wouldn't make a lot of narrative sense.
 
 ## Globals
 
