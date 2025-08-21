@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:17:28.664Z
+date: 2025-08-21T14:21:15.735Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -66,3 +66,8 @@ voice 8: fb6b5353-8d14-4507-9222-ceaec990fce9
 ## Levels/Portraits
 
 ## Tags
+
+## Adding Mod Dependencies
+
+If your custom origin relies on any other mods, you can add a dependency. This is especially important if you'd be releasing your custom origin, but still helpful if it's just for you. There's a tutorial for adding a dependency here: https://wiki.bg3.community/en/Tutorials/General/Basic/adding-mod-dependencies
+
