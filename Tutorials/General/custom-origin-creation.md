@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:15:21.416Z
+date: 2025-08-21T14:17:28.664Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -25,7 +25,7 @@ Of course, a custom origin *can* also have things like custom dialogue, cutscene
 
 - Visual Studio Code
 	- **BG3-GUIDinfos** VS Code Extension
-  - **UUID Generator** VS Code Extension
+	- **UUID Generator** VS Code Extension
 - BG3 Modder's Multitool and/or NorbSearch (https://bg3.norbyte.dev/)
 
 ## Le Template
