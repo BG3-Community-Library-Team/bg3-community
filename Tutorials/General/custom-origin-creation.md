@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:32:40.729Z
+date: 2025-08-21T14:36:12.053Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -82,6 +82,8 @@ Just put the proper UUID into the SpeakerUUID field and assign the table back in
 If you want the voice to be pickable, just set the voice table in Origins.lsx back to **5ee56242-d07c-482e-9260-24529d1473a3**.
 
 ## Levels/Portraits
+
+If you want a custom portrait for your origin, you can make a custom trigger that will fire on game start and level up. The way I did this was download the EasyCheat mod, teleport into the SYS_PortraitPlayerRace_A level, and use the WASD mod to walk around until my character was standing in front of a background I liked. Then I used photo mode to take a screenshot and edited it in GIMP to the right size. This only affects the icon you'd see in the origins selection, however, so I also used the SE command `_P(Osi.GetPosition(GetHostCharacter()))` to get the coordinates of where my character was standing in the level.
 
 ## Tags
 
