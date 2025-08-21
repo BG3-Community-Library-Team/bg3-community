@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:46:19.658Z
+date: 2025-08-21T14:48:12.865Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -102,3 +102,6 @@ This won't really affect anything, besides giving your custom origin a tag in th
 
 If your custom origin relies on any other mods, you can add dependencies. This is especially important if you'd be releasing your custom origin, but still helpful if it's just for you. There's a tutorial for adding dependencies here: https://wiki.bg3.community/en/Tutorials/General/Basic/adding-mod-dependencies
 
+## Help! I'm having an issue with this!
+
+If you read all of this and you're having an issue with something I didn't cover, you can probably find me at the CMTY discord: https://discord.gg/bg3mods
