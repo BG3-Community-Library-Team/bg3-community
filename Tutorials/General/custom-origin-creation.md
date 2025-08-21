@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:29:41.018Z
+date: 2025-08-21T14:30:29.054Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -59,6 +59,8 @@ I noticed that if you made your origin editable in CC, any scar you set up here 
 This file defines the starting equipment for your custom origin. You can give them custom armor, camp clothes, and other items. To hunt down the file names, you can use the BG3 wiki as a starting point, and then paste the UID into Multitool or NorbSearch to find the actual stats name.
 
 ## Voices.lsx
+
+Here's where you would define a custom voice table. For example, if you want your custom origin to always have Voice 4, you can make a custom table with only that voice.
 
 Here are the UUIDs for the vanilla Tav voices:
 
