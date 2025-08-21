@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:31:45.336Z
+date: 2025-08-21T14:31:56.288Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -77,7 +77,7 @@ voice 8: fb6b5353-8d14-4507-9222-ceaec990fce9
 
 Just put the proper UUID into the SpeakerUUID field and assign the table back in your Origins.lsx.
 
-If you want the voice to be pickable, just set the table in Origins.lsx back to **5ee56242-d07c-482e-9260-24529d1473a3**.
+If you want the voice to be pickable, just set the voice table in Origins.lsx back to **5ee56242-d07c-482e-9260-24529d1473a3**.
 
 ## Levels/Portraits
 
