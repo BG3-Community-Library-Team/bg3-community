@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:57:51.034Z
+date: 2025-08-21T14:58:00.296Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -46,7 +46,7 @@ This is the main file that tells the game, "Hey, here's a new origin. Show it in
 The default tags should be fine for a Tav-like origin. If you want a Durge origin, you'll have to swap in the REALLY_DARK_URGE tag. Heck, you could even put in another origin's tag if you wanted, but it probably wouldn't make a lot of narrative sense.
 
 > Swapping the body type or race doesn't seem to work right with this setup. You get things like floating heads. I'd have to look more into how to fix this.
-{.is-danger}
+{.is-warning}
 
 ## Globals
 
