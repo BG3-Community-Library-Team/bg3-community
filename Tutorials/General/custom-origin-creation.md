@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:27:01.707Z
+date: 2025-08-21T14:27:23.742Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -55,6 +55,8 @@ This file defines the appearance of your origin: animations, body mesh, other me
 I noticed that if you made your origin editable in CC, any scar you set up here will get reset to default (no scar) and the user will have to select it again. I don't know why it's like this, but I didn't find any way around it. Scars are fine if you keep the appearance locked.
 
 ## Equipment.txt
+
+This file defines the starting equipment for your custom origin. You can give them custom armor, camp clothes, and other items.
 
 ## Voices.lsx
 
