@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:43:58.575Z
+date: 2025-08-21T14:44:05.026Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -80,7 +80,6 @@ Here's where you would define a custom voice table. For example, if you want you
 > voice 7: 2d206fda-0d4f-457f-b4ea-0fc18866f5dd
 > voice 8: fb6b5353-8d14-4507-9222-ceaec990fce9
 {.is-info}
-
 
 (thanks milo for compiling this!)
 
