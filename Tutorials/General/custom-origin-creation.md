@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:44:56.312Z
+date: 2025-08-21T14:45:19.481Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -79,9 +79,9 @@ Here's where you would define a custom voice table. For example, if you want you
 > voice 6: b9b26a44-943b-4427-9890-d81c7e81a75b
 > voice 7: 2d206fda-0d4f-457f-b4ea-0fc18866f5dd
 > voice 8: fb6b5353-8d14-4507-9222-ceaec990fce9
+>
+> (thanks milo for compiling this!)
 {.is-info}
-
-(thanks milo for compiling this!)
 
 Just put the proper UUID into the SpeakerUUID field and assign the table back in your Origins.lsx.
 
