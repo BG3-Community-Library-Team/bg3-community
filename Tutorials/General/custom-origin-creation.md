@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:27:23.742Z
+date: 2025-08-21T14:29:06.775Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -56,7 +56,7 @@ I noticed that if you made your origin editable in CC, any scar you set up here 
 
 ## Equipment.txt
 
-This file defines the starting equipment for your custom origin. You can give them custom armor, camp clothes, and other items.
+This file defines the starting equipment for your custom origin. You can give them custom armor, camp clothes, and other items. To hunt down the file names, you can use the BG3 wiki as a starting point, and then paste the UID into Multitool or NorbSearch to find the actual stats name.
 
 ## Voices.lsx
 
