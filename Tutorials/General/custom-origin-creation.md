@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: true
-date: 2025-08-21T15:02:02.585Z
+date: 2025-08-21T15:02:33.286Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -31,7 +31,7 @@ Of course, a custom origin *can* also have things like custom dialogue, cutscene
 
 ## Le Template
 
-Download the template files from here: https://github.com/EmeraldTechnopath/Em_Custom_Origin_Template
+Download the template files from here: https://github.com/EmeraldTechnopath/Em_Custom_Origin_Template (click the Code button and Download ZIP)
 
 It's a completely working custom origin, so you can pack it and put it into the game to see how it works. My recommendation is to make changes in **small batches**, testing every so often. If something breaks, you'll have a better idea of what went wrong. You can also use a version control service like GitHub to allow you to roll back your changes if something goes terribly wrong.
 
