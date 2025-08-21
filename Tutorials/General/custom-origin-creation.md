@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:11:04.494Z
+date: 2025-08-21T14:14:10.236Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -25,6 +25,7 @@ Of course, a custom origin *can* also have things like custom dialogue, cutscene
 
 - Visual Studio Code
 	- **BG3-GUIDinfos** VS Code Extension
+  - **UUID Generator** VS Code Extension
 - BG3 Modder's Multitool and/or NorbSearch (https://bg3.norbyte.dev/)
 
 ## Le Template
@@ -33,7 +34,7 @@ Download the template files from here: https://github.com/EmeraldTechnopath/Em_C
 
 It's a completely working custom origin, so you can pack it and put it into the game to see how it works. My recommendation is to make changes in small batches, testing every so often. If something breaks, you'll have a better idea of what went wrong.
 
-Also, you'll find many times where I left a note saying "Regenerate this!" 
+Also, you'll find many times where I left a note saying "Regenerate this!" When you see this, I recommend
 
 ## Origins.lsx
 
