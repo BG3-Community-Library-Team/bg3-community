@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:48:12.865Z
+date: 2025-08-21T14:49:07.821Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -35,7 +35,7 @@ Download the template files from here: https://github.com/EmeraldTechnopath/Em_C
 
 It's a completely working custom origin, so you can pack it and put it into the game to see how it works. My recommendation is to make changes in **small batches**, testing every so often. If something breaks, you'll have a better idea of what went wrong. You can also use a version control service like GitHub to allow you to roll back your changes if something goes terribly wrong.
 
-Also, you'll find many times where I left a note saying "Regenerate this!" When you see this, I recommend using VS Code's Replace in Files function to replace every occurance of the UUID in the template. This will help avoid issues with UUIDs that don't link up, which can cause crashes.
+Also, you'll find many times where I left a note saying "Regenerate this!" When you see this, I recommend using VS Code's **Replace in Files** function to replace every occurance of the UUID in the template. This will help avoid issues with UUIDs that don't link up, which can cause crashes.
 
 I put a lot of notes in there, so I'm not going to restate everything that's in there. However, I'll add extra context in here where it may be unclear in the template.
 
