@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:05:45.034Z
+date: 2025-08-21T14:11:04.494Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -21,11 +21,19 @@ It also helps avoid pitfalls with editing things that also edit generic Tav. For
 
 Of course, a custom origin *can* also have things like custom dialogue, cutscenes, and plot lines. But that's a bit beyond the scope of this tutorial. What this tutorial will create is basically just a Tav (or Durge) that's already preset with your character's options.
 
+## Recommended Tools
+
+- Visual Studio Code
+	- **BG3-GUIDinfos** VS Code Extension
+- BG3 Modder's Multitool and/or NorbSearch (https://bg3.norbyte.dev/)
+
 ## Le Template
 
 Download the template files from here: https://github.com/EmeraldTechnopath/Em_Custom_Origin_Template
 
 It's a completely working custom origin, so you can pack it and put it into the game to see how it works. My recommendation is to make changes in small batches, testing every so often. If something breaks, you'll have a better idea of what went wrong.
+
+Also, you'll find many times where I left a note saying "Regenerate this!" 
 
 ## Origins.lsx
 
