@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: false
-date: 2025-08-21T14:42:09.912Z
+date: 2025-08-21T14:42:37.267Z
 tags: origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -56,7 +56,9 @@ This is the base template for your origin.
 
 This file defines the appearance of your origin: animations, body mesh, other meshes, colors, etc.
 
-I noticed that if you made your origin editable in CC, any scar you set up here will get reset to default (no scar) and the user will have to select it again. I don't know why it's like this, but I didn't find any way around it. Scars are fine if you keep the appearance locked. (There could be other things like this, too. I didn't test every CC option.)
+> 
+> I noticed that if you made your origin editable in CC, any scar you set up here will get reset to default (no scar) and the user will have to select it again. I don't know why it's like this, but I didn't find any way around it. Scars are fine if you keep the appearance locked. (There could be other things like this, too. I didn't test every CC option.)
+{.is-warning}
 
 ## Equipment.txt
 
