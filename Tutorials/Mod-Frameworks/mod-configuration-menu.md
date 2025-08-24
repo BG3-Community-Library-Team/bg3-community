@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-08-24T01:02:56.197Z
+date: 2025-08-24T01:08:06.424Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -337,17 +337,18 @@ As of version 1.14+, MCM introduces a global `MCM` table (can be called anywhere
   },
   "Tooltip": "Click this button and see a confirmation dialog.",
   "Handles": {
-    "NameHandle": "h...",
-    "DescriptionHandle": "h...",
-    "EventButtonHandles": {
-      "ConfirmDialogHandles": {
-          "TitleHandle": "h...",
-          "MessageHandle": "h...",
-          "ConfirmTextHandle": "h...",
-          "CancelTextHandle": "h..."
-      },
-      "LabelHandle": "h..."
-  }
+        "NameHandle": "h...",
+        "DescriptionHandle": "h...",
+        "EventButtonHandles": {
+            "ConfirmDialogHandles": {
+                "TitleHandle": "h...",
+                "MessageHandle": "h...",
+                "ConfirmTextHandle": "h...",
+                "CancelTextHandle": "h..."
+            },
+            "LabelHandle": "h..."
+        }
+    }
 ```
 
 </details>
