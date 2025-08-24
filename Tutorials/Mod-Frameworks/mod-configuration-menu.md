@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-08-24T01:00:22.869Z
+date: 2025-08-24T01:02:56.197Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -51,7 +51,7 @@ If you're interested in keybindings, see *[Adding a keybinding](#adding-a-keybin
       - [The MCM Schema](#the-mcm-schema)
         - [IDE support](#ide-support)
         - [Schema main components](#schema-main-components)
-        - [VisibleIf](#visibleif)
+        - [VisibleIf (Conditional visibility)](#visibleif-conditional-visibility)
   - [MCM API functions](#mcm-api-functions)
       - [Core API](#core-api)
       - [EventButton API](#eventbutton-api)
@@ -257,9 +257,9 @@ Notes and limitations:
 
 - `SettingId` must reference a valid Setting `Id` in the same blueprint.
 - Hiding a container (Tab/Section) hides all of its children regardless of their own `VisibleIf`.
-- `VisibleIf` controls visibility only. The values of the settings are not modified and will be left as they are; if you hide a setting and it is set to `true`, it will still be set to `true`.
+- `VisibleIf` controls visibility only. The values of the settings are not modified and are left as they are; if you hide a Setting that has value `true`, it will still be read as `true`.
 
-<details><summary>Examples</summary>
+<details><summary>VisibleIf example usage</summary>
 
 1) Show a Setting only for a specific enum option:
 
