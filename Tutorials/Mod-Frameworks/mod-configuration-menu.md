@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-07-15T19:44:41.326Z
+date: 2025-08-24T01:00:22.869Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -51,6 +51,7 @@ If you're interested in keybindings, see *[Adding a keybinding](#adding-a-keybin
       - [The MCM Schema](#the-mcm-schema)
         - [IDE support](#ide-support)
         - [Schema main components](#schema-main-components)
+        - [VisibleIf](#visibleif)
   - [MCM API functions](#mcm-api-functions)
       - [Core API](#core-api)
       - [EventButton API](#eventbutton-api)
@@ -214,7 +215,7 @@ Following are the main components of the MCM schema. Don't stress over this too 
       - `Choices`: The options to be made available for `enum` and `radio` types.
       - `Min` and `Max`: Boundary values for types such as `slider`/`drag`.
       - `Multiline`: Whether the text input should be multiline, used for `text` type.
-    - `VisibleIf`: Allows defining a simple boolean expression that determines the visibility of a setting (also tab or section) based on the values of other settings. NOTE: this might not work in the main menu as of 1.10;
+    - `VisibleIf`: Allows defining a simple boolean expression that determines the visibility of a setting (also tab or section) based on the values of other settings.
 
 </details>
 
@@ -226,6 +227,73 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 
 > If your [mod is symlinked](https://wiki.bg3.community/en/Tutorials/ScriptExtender/GettingStarted#h-4-symlinking 'Symlinking mods tutorial'), you can try out changes to your mod's blueprint in-game by using `reset` in the console without having to restart the game every time you make a change to the blueprint file.
 {.is-info}
+
+</details>
+
+#### VisibleIf: Conditional visibility
+
+A special property in the MCM schema is `VisibleIf`. You can use it to conditionally show or hide Tabs, Sections, and individual Settings based on other settings' current values (having primitive values, i.e.: boolean, number, string).
+
+- Supported on: `Tab`, `Section`, and `Setting` objects in your blueprint
+- Evaluation: runs against current in-memory values
+- Default logic: all conditions are combined using a boolean `AND` unless you set `LogicalOperator` to `"or"`
+
+Shape:
+
+```json
+"VisibleIf": {
+  "LogicalOperator": "and", // or "or" (optional; defaults to "and")
+  "Conditions": [
+    {
+      "SettingId": "<id-of-another-setting>",
+      "Operator": "==",           // one of: ==, !=, >, <, >=, <=
+      "ExpectedValue": true // some primitive value of the same type as the setting
+    }
+  ]
+}
+```
+
+Notes and limitations:
+
+- `SettingId` must reference a valid Setting `Id` in the same blueprint.
+- Hiding a container (Tab/Section) hides all of its children regardless of their own `VisibleIf`.
+- `VisibleIf` controls visibility only. The values of the settings are not modified and will be left as they are; if you hide a setting and it is set to `true`, it will still be set to `true`.
+
+<details><summary>Examples</summary>
+
+1) Show a Setting only for a specific enum option:
+
+```json
+{
+  "Id": "custom_seed",
+  "Name": "Custom Seed",
+  "Type": "int",
+  "Default": 0,
+  "VisibleIf": {
+    "Conditions": [
+      { "SettingId": "randomization_mode", "Operator": "==", "ExpectedValue": "Custom" }
+    ]
+  },
+  "Tooltip": "Only used when Mode is Custom."
+}
+```
+
+2) Show a Section only when a toggle is enabled:
+
+```json
+{
+  "SectionId": "advanced",
+  "SectionName": "Advanced Options",
+  "VisibleIf": {
+    "Conditions": [
+      { "SettingId": "enable_advanced", "Operator": "==", "ExpectedValue": true }
+    ]
+  },
+  "Settings": [ /* ... */ ]
+}
+```
+
+</details>
 
 ## MCM API functions
 
@@ -281,7 +349,7 @@ As of version 1.14+, MCM introduces a global `MCM` table (can be called anywhere
       "LabelHandle": "h..."
   }
 ```
-  
+
 </details>
 These methods operate on `event_button` 'settings'.
 
