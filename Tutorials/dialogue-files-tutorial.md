@@ -2,7 +2,7 @@
 title: Dialogue Files Tutorial 
 description: A comprehensive guideline on dialogue files and how to edit them.
 published: true
-date: 2025-08-19T13:43:11.989Z
+date: 2025-08-25T16:37:58.359Z
 tags: tutorial, scripting, data, dialogue, dialog
 editor: markdown
 dateCreated: 2024-06-12T08:03:36.381Z
@@ -49,15 +49,13 @@ These dialog-specific files are as follows:
 - GeneratedDialogTimelines
 - Dialog Resources
 
-The first three files are most likely what you'll be editing! They contain the bulk of the information needed to play a scene. The GeneratedDialogTimelines file and the Dialog Assets files are what help the game reference the first three files, and are necessary when creating new scenes and sets of dialog, but aren't often needed when editing existing scenes.
+The first three files are most likely what you'll be editing! They contain the bulk of the information needed to play a scene. The GeneratedDialogTimelines file and the Dialog Assets Resource Bank files are what help the game reference the first three files, and are necessary when creating new scenes and sets of dialog. They're also what you'll be editing if you want to make non-override dialog mods, which is recommended for compatibility reasons.
 
-> A note on deprecated files:{.is-warning}
+> A note Dialogs .lsj and Scene .lsx files:{.is-warning}
 
-You'll likely find Dialog.lsj files with that same file name when extracting the files, as well as an extra Dialog Scene file with the .lsx file extension. These files are both deprecated! (The Dialog Scene files with the .lsf file extension are what you'll need to edit, NOT the .lsx files. Yes, confusing, I know.)
+You'll likely find Dialogs .lsj files with that same file name when extracting the files, as well as an extra Dialog Scene file with the .lsx file extension. (The Dialog Scene files with the .lsf file extension are what you'll want to edit, NOT the .lsx files. Yes, confusing, I know.)
 
-These files genuinely do nothing—even entirely new scenes, with neither of these files existing for them in the vanilla game will play just fine without them! You don't need to edit them or include them in your mods at all, and I do not recommend you do so.
-
-Thank you very much to <a href="https://next.nexusmods.com/profile/Joell560/about-me">Joell560</a> on Nexusmods for letting me know the files were deprecated!
+These files are files used by Larian's engine to generate the DialogsBinary and Dialog Scene .lsf files, and the Dialogs .lsj files can be edited and included in your mod without an accompanying DialogsBinary .lsf file, and create a working scene 
 
 You'll also need extra files to add new voice lines, which I've documented in the "Adding New Voice Lines" page above.
 
@@ -129,10 +127,10 @@ The GeneratedDialogTimelines files can be found at these file paths:
 \\Public\GustavDev\Content\Generated\[PAK]_GeneratedDialogTimelines\_merged.lsf
 `
 
-Dialog Assets
+Dialog Assets Resource Banks
 ####
 
-These files contain information on the DialogsBinary files, where the game should look to to find them, and what dialogue files are linked as nested dialogue within a another file. Again, there are often a lot of entries in these files! And you should only include the entries for the dialog files you're editing if necessary.
+These files contain information on the DialogsBinary files, where the game should look to to find them, and what dialog files are linked as nested dialog within a another file. Again, there are often a lot of entries in these files! And you should only include the entries for the dialog files you're editing if necessary.
 
 These files can generally be found at this file path:
 
@@ -144,9 +142,71 @@ Followed by separate folders breaking down the dialog according to what section 
 
 **A note:**
 
-The Dialog Assets files still refer to the dialog .lsj files as the file paths it's looking for to play a given scene. However, the .lsj files are still deprecated! And despite being referred to in the Dialog Assets entries, the game can still refer to the corresponding DialogsBinary.lsf files through that .lsj file path, and will use those files instead. Even entirely new modded dialog files can be referenced without an .lsj file, even when the file path is set to look for an .lsj file.
+The Dialog Assets Resource Banks still refer to the Dialogs .lsj files as the file paths it's looking for to play a given scene. If you refer to the DialogsBinary .lsf file instead in these resources, the game won't be able to play the scene! And despite the Dialog Assets Resource Bank entries referring to the .lsj files, the game can still refer to the corresponding DialogsBinary.lsf files through that .lsj file path, and will use those files instead. Even entirely new modded dialog files can be referenced without an .lsj file, even when the file path is set to look for an .lsj file.
 
 Alright, now that we've covered the basics, let's get into editing the files!
+
+## Creating Dialog Mods With Compatibility In Mind
+
+Dialog mods that edit existing scenes can be made as override mods, and this was previously the primary method of creating them in the past. An override mod means the edited files replicate the exact same file path as the original file in the vanilla game, and they'll show up in LaughingLeader's BG3 Mod Manager with an orange background. Override mods can also be made in loose file format, with the edited files being placed in your BG3 Data folder directly, instead of in a .pak file.
+
+This is no longer considered best practice for dialog mods, though.
+
+Instead, you'll want to change the path referenced for the files you're editing, in either the Dialog Assets Resource Bank or GeneratedDialogTimelines entry for them.
+
+To do this, separate the resource you're editing into an .lsx file without any other resources in them. For Dialog Assets Resource Banks, you'll want to make sure the .lsx file has this header:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids,lsf_adjacency" />
+	<region id="DialogBank">
+		<node id="DialogBank">
+			<children>
+      
+      
+			</children>
+		</node>
+	</region>
+</save>      
+```
+You'll then place the Dialog Assets Resource you're editing inside it.
+
+For the GeneratedDialogTimelines entries, you'll want to use this header instead:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids,lsf_adjacency" />
+	<region id="TimelineBank">
+		<node id="TimelineBank">
+			<children>
+      
+      
+			</children>
+		</node>
+	</region>
+</save>      
+
+```
+
+You'll then want to update the file path for these resources, replacing the original Gustav/GustavDev/Shared/SharedDev folder in the file path with your mod folder name. Then, move the files you're editing into that new file path.
+
+**The Timeline and Dialog Scene files need to be placed together.** If they're not in the same file path, the game will reference the vanilla files, instead of your edited ones.
+
+You don't need to change the file path for the files you're not editing! So if you're only editing the DialogsBinary file for a mod, you don't need to change the file path for the Timeline/Dialog Scene files, and vise versa. Again, you should only include resources you're editing in your mods!
+
+Changing the file paths will allow the mod to be placed into the mod load order in BG3 Mod Manager, and will also allow them to show up in Larian's In-Game Mod Manager. Override mods will not show up in the IGMM. They also cannot be reliably affected by mod load order in BGMM, even if they're placed in it. Which override mod takes priority seems to be random, which means override mods also can't be reliably patched for compatibility.
+
+### Creating Dialog Mod Compatibility Patches
+
+Compatibility for dialog mods is a bit tricky; any mods that edit the same DialogsBinary, Timeline, or Dialog Scene file need to be combined into the same file. There's currently no known way to edit specific resources within a dialog file independently from the file as a whole. This means any mods that edit the same dialog files will need to be patched for compatibility.
+
+To create compatible dialog mods, combine all edits to the file(s) shared by the mods into one file. You don't need to include files that aren't shared by the mods in the patch; only the files both mods edit.
+
+Once you've combined the file(s), you'll also want to edit the Dialog Assets Resource Bank and/or GeneratedDialogTimelines entries for them. The mod folder for the patch should be unique; mods that use the same mod folder name can cause your mod load order to reset. Change the file path for the shared files like you did before, and then put the shared files in that new file path. You'll also want to make sure any nested dialog resources added to the DialogsBinary files by each mod are included as child resources of the Dialog Assets Resource Bank entry.
+
+Pack the compatibility patch and load it under the mods you're patching, and you should be good to go!
 
 
 ## How Do You Edit the DialogsBinary Files?
