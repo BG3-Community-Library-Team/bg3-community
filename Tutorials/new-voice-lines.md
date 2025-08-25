@@ -2,7 +2,7 @@
 title: Adding New Voice Lines And Dialog
 description: A guide to adding new voice lines to the game, and how the game utilizes them in dialogue.
 published: true
-date: 2025-01-09T20:59:24.666Z
+date: 2025-08-25T17:20:51.963Z
 tags: tutorial, scripting, data, tutorials, audio, sound, voice, dialogue, dialog, lipsync
 editor: markdown
 dateCreated: 2024-07-09T21:40:21.205Z
@@ -12,7 +12,7 @@ dateCreated: 2024-07-09T21:40:21.205Z
 
 Hi! Welcome to another guide on dialogue files, made by Milo Magnetuning. This guide will cover voice lines, how the game is able to reference them within dialogue files, and how to add entirely new lines and dialog files without overriding existing ones! (It's still currently a WIP, though, so keep that in mind!)
 
-One thing to note before we start, though—in making this tutorial, I do ask that you respect the wishes and work of voice actors, and *don't* use AI voices for your mods! There's a number of ways to get voice acting for your mods, even if you're on a budget. You don't need AI voices to do so.
+One thing to note before we start, though—please respect the wishes and work of voice actors, and *don't* use AI voices for your mods! Larian's fan content policy bans the use of their work to train AI models, and you do not need AI voices to create your mods. There's a number of ways to get voice acting for your mods, even if you're on a budget.
 
 Some resources that might help you a ton with voice acting are:
 
@@ -135,19 +135,52 @@ Now, let's get into lipsync.
 
 #### Adding lipsync to the game:
 
-One workaround is actually via the AnimationSlot attribute of TLAnimation in the dialog timeline files. Setting the AnimationSlot to 1 will allow you to override facial expressions with your own animation, which can be used for lipsync that matches your lines exactly. But this will come at the expense of the emotion system, which lets you configure character expressions on the fly without having to redo lipsync. It's a really handy system, and it'd be a shame to lose it!
+There's a few methods of adding lipsync to the game:
 
-Thankfully (kinda), there's another option. It's also not...*exactly* ideal, but it'll let you keep the benefits of the game's emotion system.
+The method I personally recommend is via the effect component TLAdditiveAnimation. This allows you to create custom lipsync in an animation program like Blender or Maya, and reference it in your timeline, and then reference it in your timeline as an additive animation, allowing you to keep the benefits of the emotion rig system (so you don't have to recreate the facial expressions for your character every time you change the lipsync) while also having lipsync that matches your voice line exactly.
 
-And it's that you can clone lipsync from other characters, and use it for your own!
+I'm working on a longer tutorial on creating custom lipsync, but for now, just know that TLAdditiveAnimation works very much like TLAnimation. If you're familiar with that effect component from my general dialog editing tutorial, it's pretty much the same, but you'll want to make sure that the AnimationSlot for the effect component is set to 1 when you're adding lipsync. This will allow you to add the lipsync to the character's facial animations.
 
-To do so, you'll first need to pick a character. If you're adding lines for an existing character, you can skip this step! They already have their own .ffxactor and .ffxbones files, which you shouldn't replace.
+Here's an example of what TLAdditiveAnimation can look like:
 
-Custom characters won't have .ffxactor and .ffxbones files, though, so you'll either need to make them, or, for anyone who doesn't have access to a $900 proprietary program, you'll need to grab them from another character. This should be a character that has a decent amount of lines, that might match parts of your own dialog. This is because lipsync is bound to the .ffxactor and .ffxbones files they were originally made for, and can *only* be used by characters using those files.
+```
+								<node id="EffectComponent">
+									<attribute id="Type" type="LSString" value="TLAdditiveAnimation" />
+									<attribute id="ID" type="guid" value="d40577ab-f75c-49b0-bdb0-dc6a80b218bb" />
+									<attribute id="StartTime" type="float" value="2.116" />
+									<attribute id="EndTime" type="float" value="4.537" />
+									<attribute id="PhaseIndex" type="int64" value="1" />
+									<attribute id="AnimationSourceId" type="guid" value="0a54b901-e197-4b03-9818-beceae3481c3" />
+									<attribute id="AnimationSlot" type="FixedString" value="1" />
+									<attribute id="AnimationPlayRate" type="double" value="1" />
+									<attribute id="FadeIn" type="double" value="0" />
+									<attribute id="FadeOut" type="double" value="1" />
+									<attribute id="AnimationGroup" type="guid" value="b530880d-e09e-4cc3-8bb4-df259b19243a" />
+									<children>
+										<node id="Actor">
+											<attribute id="UUID" type="guid" value="4f1a85cb-478a-4a08-b93f-3470a7f47217" />
+										</node>
+									</children>
+								</node> 
+```
+
+Another option for lipsync is via TLAnimation itself. Setting the AnimationSlot to 1 will allow you to override all of the facial animations with your own animation, which can be used for both lipsync and custom expressions outside of the emotion rig system. I'd only recommend it if you want to create custom expressions for your character, though. The emotion rig system is really handy, and will save you a ton of work when creating new dialog, so I'd recommend it in most cases.
+
+The downside of using this method is the size of custom-made .GR2 animation files. .GR2 animation files made in Blender can be quite big compared to vanilla game animations and .ffxanim files, and that can really add up if you're adding a lot of lines - think 1-3MB or more vs 16-40ish KB. We don't currently have a way to compress .GR2 animations ourselves, so you might want to try reusing the existing .ffxanim files, which is possible!
+
+While it's not exactly ideal, you can clone lipsync from other characters, and use it for your own.
+
+To do so, you'll first need to pick a character.
+
+Custom characters won't have .ffxactor and .ffxbones files, so you'll need to grab them from another character. This should be a character that has a decent amount of lines, that might match parts of your own dialog. This is because lipsync is bound to the .ffxactor and .ffxbones files they were originally made for, and can *only* be used by characters using those files.
 
 This is usually just one character; the .ffxactor and .ffxbones files are unique to each character in the game. But you can clone them and use them for your own characters, without affecting the original!
 
-I cloned Alfira's .ffxactor and .ffxbones files for Jason, because she had a decent amount of lines matching parts of the dialog I wrote for him. To do so, I duplicated her files into my mod folder, at this file path:
+Existing characters can also use cloned .ffxactor and .ffxbones from different characters if they're renamed to match their existing .ffxactor and .ffbones files, and placed in your mod folder. You will likely have to do this when adding voice lines for them as well; .ffxactor and .ffxbones files need to be placed in a FaceFXActors folder in the Animation folder with your .ffxanim files.
+
+If there's no accompanying .ffxactor and .ffxbones files in that folder, the character won't be able to reference the lipsync animation. This does open up the opportunity to use other characters' .ffxanim files for the character you're adding lines to, though! You don't need to use the same .ffxactor/bones files as the character originally had.
+
+In the original version of my tutorial, I cloned Alfira's .ffxactor and .ffxbones files for Jason, because she had a decent amount of lines matching parts of the dialog I wrote for him. To do so, I duplicated her files into my mod folder, at this file path:
 
 `
 \\Mods\MGNTN_JasonDialogDemo\Localization\English\Animation\FaceFXActors\
@@ -178,7 +211,9 @@ Keep in mind that the start of your file needs to match that of the original aud
 
 You can't change when the lipsync will start playing—it'll start alongside the audio file, and not adding padding at the start when you need to can cause misalignments with the lipsync. Your line doesn't have to match the length of the original audio file, though! You can cut it short, and the lipsync will cut with it. Longer files will be missing lipsync at the end, but you can change the camera angles in the dialog timeline file to hide any misaligned or missing lipsync.
 
-Once you've got your audio file lined up properly, mute the original line, and then make sure you check the audio levels for it. It's important to match the audio levels for the game itself! Audio levels for voices in other media are usually around -6 to -9db, but the voice lines in BG3 hover around -16/-18db. You'll want to make sure you match that, or you'll either blast your ears off, or it'll be way too quiet.
+Once you've got your audio file lined up properly, mute the original line, and then make sure you check the audio levels for it. It's important to match the audio levels for the game itself! Audio levels for voices in other media are usually around -6 to -9db, but the voice lines in BG3 hover around -12/-18db. You'll want to make sure you match that, or you'll either blast your ears off, or it'll be way too quiet.
+
+I'd recommend targeting around -12db, but you might want to record voice lines in different areas of the game without any other audio (mute all other audio channels besides the voice lines!) and compare them to your audio levels. Some conversations in different areas of the game can have different audio levels for the voice lines.
 
 Keep in mind that you can't really trust your ears for this! You'll want to check the audio meter in the program you're using. Everyone has a different speaker setup, and something that sounds fine on your speakers might not on someone else's. Checking the audio meter itself will help produce more consistent results between sound systems!
 
