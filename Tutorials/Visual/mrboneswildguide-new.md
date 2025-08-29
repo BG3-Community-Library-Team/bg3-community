@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T16:22:45.276Z
+date: 2025-08-29T16:28:02.732Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -284,6 +284,11 @@ Regarding deleting piercing bones, some testing has shown that it is possible to
 
 ## 6. Exporting:
 
+
+Before doing so, make sure all bone layers are visible.
+
+Then Select just the “base” Armature (no head meshes!), apply all transforms.
+
 > PLEASE NOTE:
 > Blender will be phasing out collada/dae so the recommended way to do this is exporting via gltf instead of dae. 
 > 
@@ -292,14 +297,13 @@ Regarding deleting piercing bones, some testing has shown that it is possible to
 > I will include the fix, as well as how to export via dae in the meantime.
 {.is-warning}
 
+**Export with DOS2/BG3 exporter - via gltf:**
 
-Before doing so, make sure all bone layers are visible.
-
-Then Select just the “base” Armature (no head meshes!), apply all transforms.
+![new-14_exportgltf.png](/tutorials/custom_head_armatures/new-14_exportgltf.png)
 
 **Export with DOS2/BG3 exporter - via dae / collada:**
 
-![new-14_exportcollada.png](/tutorials/custom_head_armatures/new-14_exportcollada.png)
+File -> Export -> DOS2/BG3 via Collada (.dae, .gr2)
 
 Export as GR2. Go with default settings, make sure you have “selected only”
 
