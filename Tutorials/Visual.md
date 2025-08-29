@@ -2,7 +2,7 @@
 title: Visual
 description: List of Visual Mod Tutorials
 published: true
-date: 2025-06-13T19:51:37.205Z
+date: 2025-08-29T22:12:31.453Z
 tags: visual, tutorial, textures, meshes, tutorials
 editor: markdown
 dateCreated: 2024-05-02T22:12:50.307Z
@@ -19,7 +19,8 @@ This page is a list of existing Tutorials relating to Visual Mods.
 ## Head and Hair
 - [Creating a Hair Mod](Creating-A-Hair-Mod)
 - [Creating a Head Mod](/Tutorials/Visual/Creating-A-Head-Mod)
-- [Creating Custom Head Armatures](mrboneswildguide)
+- [Creating Custom Head Armatures - NEW](/Tutorials/Visual/mrboneswildguide-new)
+- [Creating Custom Head Armatures - OLD](mrboneswildguide)
 - [Fix Neck Seams](/Tutorials/Visual/Neck-Transplant)
 - [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
 - [Custom Wrinkle Map Guide And Template](/Tutorials/Visual/Adding-A-Custom-Wrinkle-Map-To-A-Custom-Head)
