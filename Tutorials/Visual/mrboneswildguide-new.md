@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T21:52:36.991Z
+date: 2025-08-29T21:54:49.074Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -294,7 +294,7 @@ Then Select just the “base” Armature (no head meshes!), apply all transforms
 > 
 > However, as of writing this there are some internal settings in the export plugin that make these skeletons be seen as an animation in game and thus, not work. 
 > 
-> I will include the fix, as well as how to export via dae in the meantime.
+> For the time being, the fix can be found here.
 {.is-warning}
 
 ### Export with DOS2/BG3 exporter - via gltf:
