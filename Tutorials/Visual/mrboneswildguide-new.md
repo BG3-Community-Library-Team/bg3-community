@@ -1,8 +1,8 @@
 ---
-title: Making Custom BG3 Head Armatures - new
+title: Making Custom BG3 Head Armatures - New!
 description: aka Mr Bones Wild Guide
-published: false
-date: 2025-08-29T22:24:48.012Z
+published: true
+date: 2025-08-29T22:25:08.030Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
