@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T21:54:49.074Z
+date: 2025-08-29T22:18:03.560Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -10,7 +10,7 @@ dateCreated: 2025-08-29T12:58:01.011Z
 
 # MR BONES’ WILD GUIDE - New!
 
-This is an updated version of [my old Mr Bone's Wild Guide](/Tutorials/Visual/mrboneswildguide) to making custom head armatures. It is intended for use with Blender 4+ and the most recent releases of 
+This is an updated version of [the old Mr Bone's Wild Guide](/Tutorials/Visual/mrboneswildguide) to making custom head armatures. It is intended for use with Blender 4+ and the most recent releases of 
 
 There have been some great improvements with the GR2 Blender plugin as well as LSLIB which make this process a bit more streamlined due to the conversion via gltf. I will list them below under tools.
 
@@ -294,10 +294,12 @@ Then Select just the “base” Armature (no head meshes!), apply all transforms
 > 
 > However, as of writing this there are some internal settings in the export plugin that make these skeletons be seen as an animation in game and thus, not work. 
 > 
-> For the time being, the fix can be found here.
+> For the time being, [**the fix can be found here**](/Tutorials/Visual/temp-gltf-operators-fix).
 {.is-warning}
 
 ### Export with DOS2/BG3 exporter - via gltf:
+
+(Make sure you have saved the fix linked in the orange box above)
 
 File -> Export -> DOS2/BG3 via glTF (.gr2)
 
@@ -307,6 +309,7 @@ Export as GR2 with these settings:
 
 ![new-14_exportgltf2.png](/tutorials/custom_head_armatures/new-14_exportgltf2.png)
 
+**The resulting file should be around 43KB**. If it is around 120KB, the settings fix likely has not been applied. If it is upwards of 400KB, there are probably head meshes accidentally exported.
 
 ### Export with DOS2/BG3 exporter - via dae / collada:
 
