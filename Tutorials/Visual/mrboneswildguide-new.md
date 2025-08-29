@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T21:44:44.799Z
+date: 2025-08-29T21:52:36.991Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -289,7 +289,7 @@ Before doing so, make sure all bone layers are visible.
 
 Then Select just the “base” Armature (no head meshes!), apply all transforms.
 
-> PLEASE NOTE:
+> **PLEASE NOTE:**
 > Blender will be phasing out collada/dae so the recommended way to do this is exporting via gltf instead of dae. 
 > 
 > However, as of writing this there are some internal settings in the export plugin that make these skeletons be seen as an animation in game and thus, not work. 
