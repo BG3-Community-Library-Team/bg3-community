@@ -2,42 +2,43 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T12:58:01.011Z
+date: 2025-08-29T13:55:49.170Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
 ---
 
-# MR BONES’ WILD GUIDE
+# MR BONES’ WILD GUIDE - New!
 
-…or jerinski’s guide to custom BG3 head armatures
+This is an updated version of [my old Mr Bone's Wild Guide](/Tutorials/Visual/mrboneswildguide) to making custom head armatures. It is intended for use with Blender 4+ and the most recent releases of 
+
+There have been some great improvements with the GR2 Blender plugin as well as LSLIB which make this process a bit more streamlined due to the conversion via gltf. I will list them below under tools.
+
+The guide will be otherwise very similar to the old one, with changes where necessary.
+
+Note that some images will be reused so if interfaces might look slightly different, do not be alarmed.
 
 
 ## Tools you need:
 > 
-> • Blender 3.6+ with these plugins:
+> • [Blender 4+](https://www.blender.org/)
+>
+> • [LSLIB](https://github.com/Norbyte/lslib/releases) (must be the **latest beta** version!*)
+>
+> • Blender plugin: [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter) (remember to set the path to your latest LSLIB divine.exe*)
 > 
-> • [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter) (remember to set the path to your LSLIB divine.exe*)
+> • Blender plugin: [BG3 Armature Tools](https://www.nexusmods.com/baldursgate3/mods/464) (for **Blender 4+** use the updated plugin)
 > 
-> • [BG3 Armature Tools](https://www.nexusmods.com/baldursgate3/mods/464) (for **Blender 4+** use the updated plugin)
-> 
-> • [BG3 Modder’s Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool)
-> 
-> • [LSLIB](https://github.com/Norbyte/lslib) (must be the **latest beta** version!*)
-> 
-> • [Noesis](https://richwhitehouse.com/index.php?content=inc_projects.php&showproject=91)
+> • [BG3 Modder’s Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool) (only used to grab the GR2s, the toolkit or LSLIB may also be used for this)
 {.is-success}
 
 
 This guide assumes you have already installed these items and have a general idea on how to use them. Despite that, it is hopefully still aimed at beginners. Don’t be afraid of the length, it’s mostly pictures (maybe overexplaining some things to those who are more well-versed but I hope it is more helpful than pure text for those who aren’t).
 
-There is also a supplemental video on Youtube: https://youtu.be/Um_3z2vjMQ8
-It does not cover the initial setup section of this guide and gathering of files so please read on.
-
-If it seems like I’m going between a lot of different plugins and tools instead of just using one for everything, it’s because this whole process is rather sensitive to how things are imported/exported and I’ve had the most consistent results this way.   
+Note that currently, the supplemental video on Youtube: https://youtu.be/Um_3z2vjMQ8 has not been updated to this newer process. Nor does not cover the initial setup section of this guide and gathering of files so please read on.
 
 
-> *Make sure you have the latest beta version of LSLIB and that you set up the path to its updated divine.exe in the blender exporter plugin settings.
+> *Make sure you have the latest beta version of LSLIB and that you set up the path to its updated divine.exe in the blender exporter plugin preferences.
 {.is-warning}
 
 
@@ -68,34 +69,14 @@ We can use the Multitool to find and grab what we need (it’s handy to toggle t
 {.is-info}
 
 
-Extract these but keep them as GR2 and put them in a working folder (wherever, it’s just handy to have all in one place).
-
-
-### 1.2) LSLIB conversion
-
-Now we open LSLIB to convert the _Base.GR2 to .dae
-
-(yes Multitool can also convert but in the specific case for armatures LSLIB+Noesis has better results)
-
-Remember to turn off X-flip meshes.
-
-![3_lslib-convert.png](/tutorials/custom_head_armatures/3_lslib-convert.png)
-
-
-### 1.3) Noesis conversion
-
-And now we open Noesis to convert this .dae to .fbx (we will need both)
-
-Find the _Base.dae in the directory on the left, and right click to Export, and do so with default settings:
-
-![4a_noesis-convert.png](/tutorials/custom_head_armatures/4a_noesis-convert.png)
-![4b_noesis-convert.png](/tutorials/custom_head_armatures/4b_noesis-convert.png)
+Extract these but **keep them as GR2** and put them in a working folder (wherever, it’s just handy to have all in one place).
 
 > So now we have:
 > 
 > • A vanilla head .GR2
-> • The _base for that head in .dae
-> • The same _base also in .fbx
+> • The _Base.GR2 of that same vanilla head
+>
+> • Our custom head already in our blend
 {.is-success}
 
 
@@ -118,30 +99,9 @@ For organization, I like to set these up in their own Collections. I will add th
 ![7_vanilla-head-setup.png](/tutorials/custom_head_armatures/7_vanilla-head-setup.png)
 
 
-### 2.2) Importing the DAE base
+### 2.2) Importing the base
 
-**To import the _Base.dae**, use Blender’s default Collada importer, default settings:
-
-![8_import-base-dae.png](/tutorials/custom_head_armatures/8_import-base-dae.png)
-
-> It is important to use the basic Collada importer here instead of the BG3 plugin, as doing so will import the base with an unusably large dummy_root bone and most likely result in a broken custom armature.
-{.is-warning}
-
-
-… go ahead and apply transforms to that as well:
-
-![9_apply-transforms.png](/tutorials/custom_head_armatures/9_apply-transforms.png)
-
-
-### 2.3) Importing the FBX base
-
-**To import the _Base.fbx**, use Blender’s default FBX importer. Default settings EXCEPT scale at 100 instead of 1:
-
-![10_import-base-fbx.png](/tutorials/custom_head_armatures/10_import-base-fbx.png)
-
-It’s going to import looking like this. It’s normal. Just apply transforms here too.
-
-![10b_fbx-example.png](/tutorials/custom_head_armatures/10b_fbx-example.png)
+**To import the _Base .GR2**, 
 
 
 ---
