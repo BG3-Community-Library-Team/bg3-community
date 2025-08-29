@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T15:36:35.991Z
+date: 2025-08-29T15:45:11.288Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -191,29 +191,18 @@ Click “Adjust Skeleton” and if all has gone well so far they should shift sl
 
 ## 5. Final Touches:
 
-The tool has adjusted the main head bones to the new facial geometry for us. If we want we could just leave it at that and use it already. BUT, the tool does not adjust the piercing or beard bones*. This we do by hand but it’s fairly easy.
+The tool has adjusted the main head bones to the new facial geometry for us. But there are a few additional things we need to check and/or adjust manually.
 
 > **Context**: The tool just adjusts the bones on the face and mouth only; from my understanding it does so based on the differences between the vertex group coordinates. And since the ears (or beards) don't have any data for that they are not in the script and therefore you have to manually move them.
 >
 >In that vein, the tool will likely run into issues if the vertex groups got too funky anywhere in the head sculpting process.
 {.is-info}
 
+We can also go ahead and hide the vanilla head, the joined-modded submesh of the custom head and the custom head’s own armature. Make visible again our custom head’s actual submeshes:
 
-Now is a good time to make all this easier to see. Select your “Ready for BG3” armature and down in the Data Properties editor change “Viewport Display” from “Octahedral” to “Stick”
+![new-12_separatelayers1.png](/tutorials/custom_head_armatures/new-12_separatelayers1.png)
 
-![17_view-sticks.png](/tutorials/custom_head_armatures/17_view-sticks.png)
-
-We can also go ahead and hide the vanilla head, the joined-edited submesh of your custom head and the custom head’s own armature. Make visible again our custom head’s actual submeshes:
-
-![18_ready-to-fine-tune.png](/tutorials/custom_head_armatures/18_ready-to-fine-tune.png)
-
-It’s a lot of bones, so to make it easier to edit we can (in Object Mode) click “Separate bones to layers”. At this point we can, for example, select “Piercing” and deselect “All” so that only the piercing bones are visible.
-
-> **Blender 4+ with updated plugin note**: Separating the bones looks a bit different here (see below), but works the same. Additionally there is no “Return bones to layer 0”, I assume this is not needed anymore and have had no issues. Probably safest to have all bone layers visible before exporting later anyway.
-{.is-info}
-
-
-![19_blender4-diff.png](/tutorials/custom_head_armatures/19_blender4-diff.png)
+It’s a lot of bones, so to make it easier to edit we can (in Object Mode) click “Separate bones to layers”. In the screenshot above this has already been done, and by hiding the different groups we can more easily see and work with the ones we want to adjust.
 
 Let’s now do some cleanup to make sure the internal bones are placed right. If they are off you could get cutscene weirdness like piercings flying off or very comical expressions (even for Tav).
 
