@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T22:18:03.560Z
+date: 2025-08-29T22:20:29.749Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -19,13 +19,13 @@ The guide will be otherwise very similar to the old one, with changes where nece
 Note that some images will be reused so if interfaces might look slightly different, do not be alarmed.
 
 
-## Tools you need:
+## Tools needed:
 > 
 > • [Blender 4+](https://www.blender.org/)
 >
 > • [LSLIB](https://github.com/Norbyte/lslib/releases) (must be the **latest beta** version!*)
 >
-> • Blender plugin: [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter) (remember to set the path to your latest LSLIB divine.exe*)
+> • Blender plugin: [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter) (remember to set the path to the latest LSLIB divine.exe*)
 > 
 > • Blender plugin: [BG3 Armature Tools](https://www.nexusmods.com/baldursgate3/mods/464) (for **Blender 4+** use the updated plugin)
 > 
@@ -49,7 +49,7 @@ Note that currently, the supplemental video on Youtube: https://youtu.be/Um_3z2v
 
 ## 1. Setup:
 
-It’s good to first get the items we need before you start. So, we already have your edited head in Blender like so:
+It’s good to first get the items we need before starting. So, we already have our edited head in Blender like so:
 
 ![1_getting-started.png](/tutorials/custom_head_armatures/1_getting-started.png)
 
@@ -65,7 +65,7 @@ We can use the Multitool to find and grab what we need (it’s handy to toggle t
 
 ![2_asset-search.png](/tutorials/custom_head_armatures/2_asset-search.png)
 
-> NOTE for porting between different races/bodytypes: use a vanilla head/base from the race/type you are making your custom head for! “Original head” as seen in the Armature Tool itself is a bit of a misnomer when porting - you don’t need the actual original head).
+> NOTE for porting between different races/bodytypes: use a vanilla head/base from the race/type we are making the custom head for! “Original head” as seen in the Armature Tool itself is a bit of a misnomer when porting - we don’t need the *actual* original head).
 {.is-info}
 
 
