@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T16:28:02.732Z
+date: 2025-08-29T16:28:43.925Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -300,6 +300,8 @@ Then Select just the “base” Armature (no head meshes!), apply all transforms
 **Export with DOS2/BG3 exporter - via gltf:**
 
 ![new-14_exportgltf.png](/tutorials/custom_head_armatures/new-14_exportgltf.png)
+
+Export as GR2. 
 
 **Export with DOS2/BG3 exporter - via dae / collada:**
 
