@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T15:07:55.424Z
+date: 2025-08-29T15:36:35.991Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -150,30 +150,32 @@ For this next step we need to prepare the head meshes a bit.
 
 ### 4.1) Vanilla head prep
 
-**For the vanilla head mesh**, select the Head, Mouth, and Eyes submeshes and with the cursor in the viewport, Ctrl+J to join them. You can rename if you wish.
+**For the vanilla head mesh**, select the Head, Mouth, and Eyes submeshes and with the cursor in the viewport, Shift+D+Esc to duplicate them, then immediately Ctrl+J to join the duplicates together. In this case, this joined mesh has been renamed to z-joined-vanilla:
 
-![13_join-head-meshes-vanilla.png](/tutorials/custom_head_armatures/13_join-head-meshes-vanilla.png)
+![new-9_vanillajoin.png](/tutorials/custom_head_armatures/new-9_vanillajoin.png)
 
 ### 4.2) Custom head prep
 
-**For our edited head**, we can first hide all submeshes but Head, Mouth, and Eyes. Then, select these and with the cursor in viewport: Shift+D then Esc to duplicate, then Ctrl+J to join these duplicates. You can rename this one as well. I like to hide the rest of the submeshes at this point.
+**For our edited head**, we can first hide all submeshes but Head, Mouth, and Eyes. Then, do the same duplicating and joining as we did with the vanilla meshes. This one has been renamed z-joined-modded. At this point, we can also hide all the meshes except the "joined" ones (keep the armatures visible though!)
 
-![14_join-head-meshes-edited.png](/tutorials/custom_head_armatures/14_join-head-meshes-edited.png)
+![new-9_moddedjoin.png](/tutorials/custom_head_armatures/new-9_moddedjoin.png)
 
-At this point we can make visible your “Ready for BG3” Armature.
 
 So now all which is visible is:
 
-- Our custom head’s Armature (here is called Armature.001) + the joined submesh
+- Our custom head’s Armature (here is called "modded-head") + the joined submesh
 
-- The vanilla head’s Armature (here is called Armature) + the joined submesh
+- The vanilla head’s Armature (here is "vanilla-head") + the joined submesh
 
-- The “Ready for BG3” Armature
+- The “base” Armature
+
+![new-10_visiblethings.png](/tutorials/custom_head_armatures/new-10_visiblethings.png)
 
 
 
-> It’s important that each of these has had Transforms applied. If you aren’t sure if you have done so earlier, do it again to be safe.
-Additionally, for the next step it is best to have all of these things completely visible.
+> It’s important that each of these has had Transforms applied. If unsure, do them again to be safe: for each joined mesh + their attached armature, as well as the base armature. If any do not have transforms applied, stuff may end up on the floor later.
+>
+> Additionally, for the next step it is best to have all of these things completely visible as the screenshot above.
 {.is-warning}
 
 
@@ -181,13 +183,10 @@ Additionally, for the next step it is best to have all of these things completel
 
 Now we plug the components into the Adjust Skeleton part like so:
 
-![15_adjust-skele.png](/tutorials/custom_head_armatures/15_adjust-skele.png)
+![new-11_adjust1.png](/tutorials/custom_head_armatures/new-11_adjust1.png)
 
 Click “Adjust Skeleton” and if all has gone well so far they should shift slightly. They should not fly away, fall to the ground, or do any shenanigans. Try zooming out a bit to make sure no bones got yeeted anywhere. If any of this happens, probably transforms weren’t applied earlier on and you need to redo.
 
-This is what mine looks like after adjusting (not much different):
-
-![16_skele-adjusted.png](/tutorials/custom_head_armatures/16_skele-adjusted.png)
 
 
 ## 5. Final Touches:
