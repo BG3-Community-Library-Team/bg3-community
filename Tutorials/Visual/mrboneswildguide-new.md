@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T16:28:43.925Z
+date: 2025-08-29T21:44:44.799Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -297,13 +297,18 @@ Then Select just the “base” Armature (no head meshes!), apply all transforms
 > I will include the fix, as well as how to export via dae in the meantime.
 {.is-warning}
 
-**Export with DOS2/BG3 exporter - via gltf:**
+### Export with DOS2/BG3 exporter - via gltf:
+
+File -> Export -> DOS2/BG3 via glTF (.gr2)
 
 ![new-14_exportgltf.png](/tutorials/custom_head_armatures/new-14_exportgltf.png)
 
-Export as GR2. 
+Export as GR2 with these settings:
 
-**Export with DOS2/BG3 exporter - via dae / collada:**
+![new-14_exportgltf2.png](/tutorials/custom_head_armatures/new-14_exportgltf2.png)
+
+
+### Export with DOS2/BG3 exporter - via dae / collada:
 
 File -> Export -> DOS2/BG3 via Collada (.dae, .gr2)
 
