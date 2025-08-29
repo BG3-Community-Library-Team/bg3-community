@@ -1,8 +1,8 @@
 ---
 title: Temp fix for head armature export via glTF
 description: stop the export from baking (non-existant) animations
-published: false
-date: 2025-08-29T22:11:13.433Z
+published: true
+date: 2025-08-29T22:26:01.883Z
 tags: blender, skeleton, armature, gltf
 editor: markdown
 dateCreated: 2025-08-29T22:11:13.433Z
