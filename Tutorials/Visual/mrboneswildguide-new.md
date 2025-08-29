@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T22:20:29.749Z
+date: 2025-08-29T22:24:48.012Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -33,7 +33,7 @@ Note that some images will be reused so if interfaces might look slightly differ
 {.is-success}
 
 
-This guide assumes you have already installed these items and have a general idea on how to use them. Despite that, it is hopefully still aimed at beginners. Don’t be afraid of the length, it’s mostly pictures (maybe overexplaining some things to those who are more well-versed but I hope it is more helpful than pure text for those who aren’t).
+This guide assumes these items have been installed. Despite that, it is hopefully still aimed at beginners. Don’t be afraid of the length, it’s mostly pictures (maybe overexplaining some things to those who are more well-versed but I hope it is more helpful than pure text for those who aren’t).
 
 Note that currently, the supplemental video on Youtube: https://youtu.be/Um_3z2vjMQ8 has not been updated to this newer process. Nor does not cover the initial setup section of this guide and gathering of files so please read on.
 
