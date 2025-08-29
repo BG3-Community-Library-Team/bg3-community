@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T15:45:11.288Z
+date: 2025-08-29T15:47:27.636Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -221,7 +221,7 @@ Replace “M” with “F” for BT1, and “MS” or “FS” for BT 4 and 3 re
 {.is-info}
 
 
-Import that GR2 with the BG3 plugin default settings. Delete any LODs, keep armature visible for this is what we will need.
+Import that GR2 with the BG3 plugin default settings as we did before. Delete any LODs and other extraneous stuff. If desired, change the viewport display options of the body armature to whatever is preferred - but keep it visible for this is what we will need.
 
 
 Now back to our Skeleton. First go to Xray mode with Alt+Z and use numpad 3 to get a strict lateral view:
