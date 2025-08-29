@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T14:59:16.567Z
+date: 2025-08-29T15:07:55.424Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -131,26 +131,16 @@ Select the armature of both the head and the base, find the Data Object Properti
 ---
 ## 3. Preparing the Skeleton:
 
-We finally use the Armature Tool! It can be found on the little vertical tabs between the viewport and outliner.
+Good news! This part can now be skipped with the gltf imports we did above! 
 
-> What this part does is take the Dummy_Root from the dae armature and attach it to the .fbx armature, where it is missing. The fbx armature is the one which we will be editing later.
-{.is-info}
+For reference, that means the Prepare Noesis skeleton section of the BG3 Armature Tools is not needed (if you don't see these tabs between your viewport and outliner, use the "N" hotkey to bring it out)
 
+![new-8_armaturetool.png](/tutorials/custom_head_armatures/new-8_armaturetool.png)
 
-Use the eyedropper tool and plug the 2 armatures into place. In my case “Dummy_root” is “Noesis skeleton” and “Armature.002” is “.dae skeleton”
-
-![11_prepare-skele-a.png](/tutorials/custom_head_armatures/11_prepare-skele-a.png)
-
-Now we can hit “Prepare Skeleton”. If all goes well, it should appear that nothing much has happened to pinhead here. Also, our fbx “Dummy_Root” has become “Ready for BG3”, while the dae has been deleted.
-
-![12_prepare-skele-b.png](/tutorials/custom_head_armatures/12_prepare-skele-b.png)
-
-> This “Ready for BG3” is now a skeleton which can be edited/refit to new faces. 
+> All of that to say, the Base.GR2 we imported via gltf is already prepared to be adjusted/edited! 
 > 
-> If you wish, you can duplicate this “base fbx” Collection to have a fresh backup on hand in case things go awry or you want to quickly redo. You can also now hide the Ready armature(s) for the moment to better see the next step.
+> If desired, we can already make a backup or 2 of the "Base" Collection to have a fresh ready skeleton on hand in case things go awry or a redo is necessary. 
 {.is-success}
-
-
 
 
 ---
