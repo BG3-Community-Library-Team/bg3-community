@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T13:55:49.170Z
+date: 2025-08-29T14:59:16.567Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -85,23 +85,47 @@ Extract these but **keep them as GR2** and put them in a working folder (whereve
 
 For organization, I like to set these up in their own Collections. I will add them like so:
 
-![5_collections-setup.png](/tutorials/custom_head_armatures/5_collections-setup.png)
+![new-2_outliner.png](/tutorials/custom_head_armatures/new-2_outliner.png)
 
+Once the vanilla mesh and base are imported, they can be moved into these categories.
 
+---
 ### 2.1) Importing the vanilla head
 
-**To import the vanilla head .GR2**, use the BG3/DOS2 plugin, default settings:
+**To import the vanilla head .GR2**, use the BG3/DOS2 via gltf plugin (IMPORTANT), default settings:
 
-![6_import-vanilla-head.png](/tutorials/custom_head_armatures/6_import-vanilla-head.png)
+![new-1_import-gltf.png](/tutorials/custom_head_armatures/new-1_import-gltf.png)
 
-… we can delete the LODs, and all submeshes except Head, Mouth, and Eyes. Good idea to apply transforms as well.
+![new-1b_import-gltf-head.png](/tutorials/custom_head_armatures/new-1b_import-gltf-head.png)
 
-![7_vanilla-head-setup.png](/tutorials/custom_head_armatures/7_vanilla-head-setup.png)
+… we can delete the LODs, and all submeshes except Head, Mouth, and Eyes. I have renamed the armature in this case to vanilla-head. Select all three meshes + armature and drag them into the category we made for it (in this case: vanilla-gty-m-head-a).
+
+Good idea to apply transforms as well while these are all selected. With the cursor in the viewport do Ctrl+A to apply all transforms).
+
+![new-3_head-transforms2.png](/tutorials/custom_head_armatures/new-3_head-transforms2.png)
 
 
 ### 2.2) Importing the base
 
-**To import the _Base .GR2**, 
+**To import the _Base .GR2**, use the same BG3/DOS2 via gltf plugin (IMPORTANT), with the same default settings.
+
+Again, apply all transforms, move it into its own category, and change the armature name if desired (in this case, it has been renamed base).
+
+![new-6_baseimport.png](/tutorials/custom_head_armatures/new-6_baseimport.png)
+
+### 2.3) Cleanup
+
+After importing via gltf we can clean up some of the remnants that happen when doing so. Namely, the exploding spheres seen in front of the head, and the "glTF_not_exported" category with a few "icosphere" in them over in the outliner.
+
+This category and its icospheres can be deleted.
+
+![new-7_yeet.png](/tutorials/custom_head_armatures/new-7_yeet.png)
+
+For the spheres in front of the head, we just need to change how the bones are displayed for the armatures. 
+
+Select the armature of both the head and the base, find the Data Object Properties (the little green guy), and scroll to/open Viewport Display. Choose to display as Stick, and we can also choose to untick Shapes and In Front. This makes things a bit easier to see.
+
+![new-6_viewportdisplay.png](/tutorials/custom_head_armatures/new-6_viewportdisplay.png)
 
 
 ---
