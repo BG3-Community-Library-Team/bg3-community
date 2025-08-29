@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures - new
 description: aka Mr Bones Wild Guide
 published: false
-date: 2025-08-29T15:47:27.636Z
+date: 2025-08-29T16:22:45.276Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-29T12:58:01.011Z
@@ -221,14 +221,14 @@ Replace “M” with “F” for BT1, and “MS” or “FS” for BT 4 and 3 re
 {.is-info}
 
 
-Import that GR2 with the BG3 plugin default settings as we did before. Delete any LODs and other extraneous stuff. If desired, change the viewport display options of the body armature to whatever is preferred - but keep it visible for this is what we will need.
+Import that GR2 with the BG3 plugin default settings as we did before. Delete any LODs and other extraneous stuff. If desired, change the viewport display options of the body armature to whatever is preferred in this example they are Octahedral - but keep it visible for this is what we will need.
 
 
 Now back to our Skeleton. First go to Xray mode with Alt+Z and use numpad 3 to get a strict lateral view:
 
-![20_root-bones-view.png](/tutorials/custom_head_armatures/20_root-bones-view.png)
+![new-13_rootsides1.png](/tutorials/custom_head_armatures/new-13_rootsides1.png)
 
-Here you see the “Root” bones selected, and how they converge with the converge points on the body armature. If they aren’t like this, what follows is an easy-ish way of moving them into place.
+Here you see the “Root” bones selected, and how they converge where the Neck_M and Head_M bones do on the body armature. If any of the following 9 bones aren’t like this, what follows after is an easy-ish way of moving them into place.
 
 The bones we are interested in are:
 
@@ -276,27 +276,38 @@ Regarding deleting piercing bones, some testing has shown that it is possible to
 ![26_face-jaw-bones-example.png](/tutorials/custom_head_armatures/26_face-jaw-bones-example.png)
 
 > Do not touch the eye bones. The tool should adjust them just fine with the rest of the face bones. If the eye bone clusters are converging in the center of the eyes, that’s good.
-{.is-warning}
+> {.is-warning}
+{.is-danger}
+
 
 
 
 ## 6. Exporting:
 
-First, in object mode click “Return bones to layer 0” *(Note for Blender 4+ this is no longer an option and is fine to ignore this step)*.
+> PLEASE NOTE:
+> Blender will be phasing out collada/dae so the recommended way to do this is exporting via gltf instead of dae. 
+> 
+> However, as of writing this there are some internal settings in the export plugin that make these skeletons be seen as an animation in game and thus, not work. 
+> 
+> I will include the fix, as well as how to export via dae in the meantime.
+{.is-warning}
 
-Then Select just the “Ready for BG3” Armature (no head meshes!), apply all transforms.
 
-**Export with DOS2/BG3 exporter:**
+Before doing so, make sure all bone layers are visible.
 
-![27_exporting-base.png](/tutorials/custom_head_armatures/27_exporting-base.png)
+Then Select just the “base” Armature (no head meshes!), apply all transforms.
 
-Export as GR2. Go with default settings, but use “selected only”
+**Export with DOS2/BG3 exporter - via dae / collada:**
 
-![28_gr2-export.png](/tutorials/custom_head_armatures/28_gr2-export.png)
+![new-14_exportcollada.png](/tutorials/custom_head_armatures/new-14_exportcollada.png)
+
+Export as GR2. Go with default settings, make sure you have “selected only”
+
+![new-14_exportcollada2.png](/tutorials/custom_head_armatures/new-14_exportcollada2.png)
 
 Here are the GR2 optionsI have selected by default in case (under Show GR2 Options) :
 
-![29_gr2-settings.png](/tutorials/custom_head_armatures/29_gr2-settings.png)
+![new-14_exportcollada3.png](/tutorials/custom_head_armatures/new-14_exportcollada3.png)
 
 > Now we have for our CustomHead.GR2 a matching custom skeleton: CustomHead_Base.GR2 to load into the game.
 > 
