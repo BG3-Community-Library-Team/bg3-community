@@ -2,7 +2,7 @@
 title: Making Custom BG3 Head Armatures
 description: aka Mr Bones Wild Guide
 published: true
-date: 2024-09-02T07:44:45.502Z
+date: 2025-08-30T11:38:35.732Z
 tags: tutorial, blender, head, skeleton, piercings, bones, armature
 editor: markdown
 dateCreated: 2024-05-25T09:33:53.534Z
@@ -12,7 +12,15 @@ dateCreated: 2024-05-25T09:33:53.534Z
 
 …or jerinski’s guide to custom BG3 head armatures
 
-
+## UPDATE 08-2025
+> 
+> Thanks to recent updates to the BG3 Blender plugin as well as LSLIB, this process has been made slightly easier: the revised guide with links to updates can be found here:
+> 
+> [**Mr Bones Wild Guide - NEW**](/Tutorials/Visual/mrboneswildguide-new)
+{.is-info}
+---
+---
+---
 ## Tools you need:
 > 
 > • Blender 3.6+ with these plugins:
