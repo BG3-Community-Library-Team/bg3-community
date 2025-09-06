@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tools
 description: an non-exhausive reference list of common mods and tools used for virtual photography
 published: false
-date: 2025-09-06T14:56:47.868Z
+date: 2025-09-06T15:02:58.975Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -10,6 +10,8 @@ dateCreated: 2025-09-06T14:56:47.868Z
 
 # Screenarchery / Virtual Photography Tools
 Non-exhaustive list of mods and tools which can be useful for screenarchery / virtual photography / photomode. 
+
+Catchall reference page until Screenarchery Tutorial section is ready to be published.
 
 
 
@@ -140,7 +142,6 @@ https://framedsc.com/basics.htm
 
 ## Mods guides:
 
-
 ### Lighty Lights
 Axianaa (https://www.youtube.com/watch?v=svEfD5saQQQ) (qqq wtf)
 Tina (https://www.youtube.com/watch?v=k2gAAUizm98) 
@@ -156,5 +157,43 @@ HastursQueen (https://www.youtube.com/watch?v=u6y3i-54lgM)
 ### Move Here
 HastursQueen (https://www.youtube.com/watch?v=bsS3qcck9fk)
 
-###QSAT
+### QSAT
 HastursQueen (https://www.youtube.com/watch?v=nQDW9-Zh6IM)
+
+## Tips:
+FreezeShot to flip image in portraits (img 1)
+
+To avoid annoying-stacking-on-each-other shadows when you are too close to an object/character, you can disable ambient occlusion and instead use any ReShade AOs
+
+To avoid transparent mesh shadows, you need to increase the outer angle of your lights, either by choosing a wider angle or placing them further away. Lowering shadows quality also helps a bit, but I wouldn't recommend doing so, only in some very specific scenarios. Shadows on img 2, no shadows on img 3
+
+
+
+## Common issues
+
+### General:
+Screenshots have washed/gray colors: Disable HDR
+
+### ReShade:
+No issues if you are able read
+
+### Otis_Inf photomode tool:
+No BG3 in the process list: Run the tool as admin
+
+### IGCS Depth of Field: 
+The image is blurry even though the focal point is correct: Switch to Classic mode and set 1 frame to wait
+
+Purple artifacts: Disable HDR
+
+When hotsampling, the game is still in native resolution: Switch to Windowed or Fullscreen
+
+
+The camera is moving when changing Focus delta X, but the second focus overlay isn't appearing: Disable ReShade performance mode
+
+Black screen when launching the game: Inject DLL or disable IgcsDof.fx; if you close your game while being in the DOF session - it will get stuck
+
+### Lighty Lights:
+No issues if you are able read
+
+### QSAT:
+No issues if you are able read
