@@ -2,7 +2,7 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2025-08-15T21:01:35.483Z
+date: 2025-09-06T15:04:52.694Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
@@ -61,7 +61,7 @@ Textures
 
 - [Locations](/Information/Locations) <!--to do: move to references-->
 - [Notable NPCs](Notable-NPCs) <!--to do: move to references-->
-
+- [Screenarchery reference list](/Information/Screenarchery-ref)
 
 
 
