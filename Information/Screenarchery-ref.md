@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tools
 description: an non-exhausive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-09-06T15:17:30.193Z
+date: 2025-09-06T15:18:44.130Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -140,7 +140,7 @@ Good VP YouTube guides by Shinobi's Virtual Photography:
 More useful info:
 https://framedsc.com/basics.htm
 
-## Mods guides:
+## Mods guides
 
 ### Lighty Lights
 Axianaa (https://www.youtube.com/watch?v=svEfD5saQQQ) (qqq wtf)
@@ -160,7 +160,7 @@ HastursQueen (https://www.youtube.com/watch?v=bsS3qcck9fk)
 ### QSAT
 HastursQueen (https://www.youtube.com/watch?v=nQDW9-Zh6IM)
 
-## Tips:
+## Tips
 FreezeShot to flip image in portraits (img 1)
 
 To avoid annoying-stacking-on-each-other shadows when you are too close to an object/character, you can disable ambient occlusion and instead use any ReShade AOs
@@ -171,16 +171,16 @@ To avoid transparent mesh shadows, you need to increase the outer angle of your 
 
 ## Common issues
 
-### General:
+### General
 Screenshots have washed/gray colors: Disable HDR
 
-### ReShade:
+### ReShade
 No issues if you are able read
 
-### Otis_Inf photomode tool:
+### Otis_Inf photomode tool
 No BG3 in the process list: Run the tool as admin
 
-### IGCS Depth of Field: 
+### IGCS Depth of Field 
 The image is blurry even though the focal point is correct: Switch to Classic mode and set 1 frame to wait
 
 Purple artifacts: Disable HDR
@@ -192,8 +192,8 @@ The camera is moving when changing Focus delta X, but the second focus overlay i
 
 Black screen when launching the game: Inject DLL or disable IgcsDof.fx; if you close your game while being in the DOF session - it will get stuck
 
-### Lighty Lights:
+### Lighty Lights
 No issues if you are able read
 
-### QSAT:
+### QSAT
 No issues if you are able read
