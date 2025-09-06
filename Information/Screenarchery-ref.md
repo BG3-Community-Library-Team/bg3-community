@@ -1,0 +1,160 @@
+---
+title: Screenarchery / Virtual Photography Tools
+description: an non-exhausive reference list of common mods and tools used for virtual photography
+published: false
+date: 2025-09-06T14:56:47.868Z
+tags: screenarchery, photography, photomode
+editor: markdown
+dateCreated: 2025-09-06T14:56:47.868Z
+---
+
+# Screenarchery / Virtual Photography Tools
+Non-exhaustive list of mods and tools which can be useful for screenarchery / virtual photography / photomode. 
+
+
+
+## External tools
+
+- [Baldur's Gate 3 Photomode Tools](https://www.patreon.com/posts/86230271?collection=12940) by Otis_Inf
+  - **REQUIRES at least one month Patreon subscription = ~5€/6.50$**
+  - allows resolution hotsampling, game pause, and fine control of the camera
+
+- [IGCS Depth of Field](https://github.com/FransBouma/IgcsConnector/releases) by Otis_Inf
+  - A DOF / bokeh option for use with ReShade and Otis tools
+  - Tip for better focus: switch to Classic mode and set 1 frame to wait
+
+- [Reshade](https://discord.com/channels/1356377728126943424/1358516980839350393/1358518005948088320) 
+  - for toggleable presets affecting how the screen renders (lighting/colour/contrast/dof/etc)
+  - make your own presets or search Nexus for them
+
+- [SRWE](https://github.com/dtgDTGdtg/SRWE) by dtgDTGdt, Otis_Inf, ghostinthecamera, The-SamminAter
+   - for hotsampling if you don't have Otis_Inf Baldur's Gate 3 Photomode Tools
+
+
+## Backbone Mods / Tools
+
+
+- [Script Extender](https://github.com/Norbyte/bg3se/releases/tag/updater-20240430)
+  - needed for most tools, also enabling the console with BG3MM opens up the option to input commands
+
+- [MCM (Mod Configuration Menu)](https://www.nexusmods.com/baldursgate3/mods/9162)
+  - needed for the in-game menus of many of the mods in here
+
+- [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) by Aahz
+  - in-game UI for access to cheaty things, including a searchable item spawner, teleportering to any level, party menu, etc
+
+- [Native Camera Tweaks](https://www.nexusmods.com/baldursgate3/mods/945) by Ershin
+  - Native open source plugin providing several camera tweaks. Unlocked camera pitch, zoom, controller stick deadzone
+
+- [Snapshots](https://www.nexusmods.com/baldursgate3/mods/17934) by rdekarios
+  - fast travel to 45 of the game's harder to access places, unseen locations, and cutscene exclusive locations, and change the lighting and atmosphere
+
+- [WASD Character Movement](https://www.nexusmods.com/baldursgate3/mods/781) by Ch4nKyy
+  - makes moving around for photography easier, especially if using EasyCheat to teleport to certain locations which don't have a "ground" to click on
+
+- [Lighty Lights](https://www.nexusmods.com/baldursgate3/mods/14364) by rakor
+  - allows you to create and control light sources
+
+- [Backgrounds](https://www.nexusmods.com/baldursgate3/mods/14999) by rakor
+  - allows you to create backgrounds
+
+- [QSAT (Quick Small Animation Thingy)](https://www.nexusmods.com/baldursgate3/mods/17737) by rakor
+  - to play any in-game and modded animations and PM animations without patches
+
+- [Move Here](https://discord.com/channels/1211056047784198186/1316159736135286866/1355178698747150436) by rakor
+  - to position objects and characters
+
+- [Pretty Particles](https://www.nexusmods.com/baldursgate3/mods/14474) by scarstarion
+  - create pretty particles! :fireworks::sparkles:
+  
+## Supplemental for Scenery / Characters
+
+- [CCEE](https://www.nexusmods.com/baldursgate3/mods/17123)
+  - to change appearance of your characters and companions and also apply cool parameters like hair wind, etc 
+
+- [Appearance Edit Enhanced + Origins addon](https://discord.com/channels/1356377728126943424/1358516980839350393/1358516980839350393)
+  - allows changing the appearance of companions
+
+
+## Poses / Expressions for Photo Mode
+
+
+> Many will need a patch to work together:
+> - [Pose Mod Compatibility Patch](https://www.nexusmods.com/baldursgate3/mods/17189) by Elledwyn, AardiHenrietta, CatastrophicalCat
+> 
+> It will likely be difficult to keep a current list of these: please also try searching Nexus for "pose" or "expression"
+{.is-info}
+
+
+### Poses
+
+- [Strike a Pose](https://www.nexusmods.com/baldursgate3/mods/16092) by MangoPunch
+  - adds approximately 60 in-game animations as new poses
+
+- [Get a Room](https://www.nexusmods.com/baldursgate3/mods/16092) by Elledwyn
+  - adds matching romantic animations from the game
+
+- [Poses of Plenty vol. 1](https://www.nexusmods.com/baldursgate3/mods/16242) by lumad11
+  - adds custom poses
+
+- [The Urge to Pose](https://www.nexusmods.com/baldursgate3/mods/16987) by CatastropicalCat
+  - adds Dark Urge poses and animations
+
+- [Claravel's Emotes for Photo Mode](https://www.nexusmods.com/baldursgate3/mods/16904) by Claravel / Elledwyn
+  - adds animations and poses from [Claravel's Emotes mod](https://www.nexusmods.com/baldursgate3/mods/4744) into photo mode
+
+- [Portrait Poses for Photo Mode](https://www.nexusmods.com/baldursgate3/mods/17002) by Elledwyn 
+  - adds poses various characters and NPCs make when generating their portrait to photo mode
+
+### Expressions
+
+- [Vanilla Expressions Enhanced](https://www.nexusmods.com/baldursgate3/mods/17899) by lumadaire
+  - adds different eye directions for all vanilla facial expressions in photo mode
+
+- [APEX (Additional Photo Mode Expressions)](https://www.nexusmods.com/baldursgate3/mods/17711) by lumadaire
+  - adds additional photomode expressions with several eye directions
+
+- [Mercurial Visage](https://www.nexusmods.com/baldursgate3/mods/17781) by Forosnai
+  - adds 13 new expressions with eyes looking in 9 directions each, as well as a handful of one-off expressions
+  
+## Texture stuff
+
+(wip)
+
+## Useful resources
+- [All Act 1 and Act 2 locations](https://drive.google.com/drive/u/3/folders/14ZxDv-5qwzZI_dm_qJFCaP2cl69WT0Gp?usp=sharing)
+
+- [All item previews](https://drive.google.com/file/d/1NVdFynJMcUcT3wjVxRQHpJ-lqqE6XKNT/view?usp=sharing)
+
+
+## Useful links
+
+Good VP YouTube guides by Shinobi's Virtual Photography:
+[How to Learn Virtual Photography](https://www.youtube.com/watch?v=CbpTXG-mpgo)
+[What are Narrative Shots in Photography](https://www.youtube.com/watch?v=Rw9uHxPHuXY)
+[How to Unlock your Creativity](https://www.youtube.com/watch?v=bagCqpYobCU)
+[6 Classic Mistakes in Virtual Photography](https://www.youtube.com/watch?v=QaH_hsygqmU)
+
+More useful info:
+https://framedsc.com/basics.htm
+
+## Mods guides:
+
+
+### Lighty Lights
+Axianaa (https://www.youtube.com/watch?v=svEfD5saQQQ) (qqq wtf)
+Tina (https://www.youtube.com/watch?v=k2gAAUizm98) 
+HastursQueen (https://www.youtube.com/watch?v=xL_WBOEuq5g)
+
+### Backgrounds
+Tina (https://www.youtube.com/watch?v=BoqMTVMJIoI) (lol)
+HastursQueen (https://www.youtube.com/watch?v=4TSBts2vFW4)
+
+### Easy Cheat
+HastursQueen (https://www.youtube.com/watch?v=u6y3i-54lgM)
+
+### Move Here
+HastursQueen (https://www.youtube.com/watch?v=bsS3qcck9fk)
+
+###QSAT
+HastursQueen (https://www.youtube.com/watch?v=nQDW9-Zh6IM)
