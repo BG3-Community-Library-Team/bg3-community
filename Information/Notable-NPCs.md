@@ -2,7 +2,7 @@
 title: Notable NPCs
 description: This page goes over notable non-player characters, and includes information on them such as their UUIDs, TreasureTables, and other potentially useful information.
 published: true
-date: 2024-06-19T06:05:05.091Z
+date: 2025-09-10T17:29:08.899Z
 tags: treasuretables, npc, npc uuid, charactervisuals
 editor: markdown
 dateCreated: 2024-05-06T15:52:32.115Z
@@ -241,7 +241,10 @@ Dravo Flymm
 Entharl Danthelon
 Exxvikyap
 Ferg Drogher
-Figaro Pennygood
+
+**Figaro Pennygood**
+- TreasureTable: `LOW_Figaro_Trade`
+
 Fytz
 Gloomy Fentonson
 Glynda Oltower
