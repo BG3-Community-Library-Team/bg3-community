@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-09-04T23:48:15.975Z
+date: 2025-09-10T05:03:26.417Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -10,11 +10,12 @@ dateCreated: 2024-05-05T22:37:40.947Z
 
 # Mod Configuration Menu documentation
 
-Baldur's Gate 3 Mod Configuration Menu (`BG3MCM` or MCM) is a mod that provides an in-game UI to enable players to intuitively manage mod settings as defined by mod authors. It supports various setting types, including integers, floats, checkboxes, text inputs, lists, combos/dropdowns, radio buttons, sliders, drags, color pickers and keybindings.
+Baldur's Gate 3 Mod Configuration Menu (`BG3MCM` or MCM) is a mod/framework that provides a central in-game UI to enable players to intuitively manage mod settings and custom UI as defined by mod authors. It provides an API for registering configuration menus and storing persistent user preferences. By using MCM, developers can standardize the way players configure their mods while avoiding the need for bespoke UI implementations.
 
-Most importantly, it allows authors to have a robust JSON-like configuration experience without spending hours writing a configuration system, and it's easy enough to integrate that even novice modders can quickly add support for it in their own mods.
+Most importantly, **it allows authors to have a robust JSON-like configuration experience without spending hours writing a configuration system, and it's easy enough to integrate** that even novice modders can quickly add support for it in their own mods.
 
-This documentation is aimed at mod authors who want to integrate their mods with MCM. If you are a player looking to use MCM to configure mods, please refer to the [Nexus Mods page](https://www.nexusmods.com/baldursgate3/mods/9162 'MCM on Nexus Mods') for instructions. This documentation provides a centralized and thorough guide on the concepts behind MCM, the features it provides to mod authors, and how to integrate MCM into your mod. You can also use the table of contents below to navigate to a desired section.
+This documentation is aimed at mod authors who want to integrate their mods with MCM. If you are a player looking to use MCM to configure mods, please refer to the [Nexus Mods page](https://www.nexusmods.com/baldursgate3/mods/9162 'MCM on Nexus Mods') for instructions. This documentation provides a centralized and thorough guide on the concepts behind MCM, the features it provides to mod authors, and overall how to integrate MCM into your mod. 
+You can also use the table of contents below to navigate to a desired section.
 
 ## Quick-start guide
 
@@ -66,7 +67,7 @@ If you're interested in keybindings, see *[Adding a keybinding](#adding-a-keybin
       - [Client vs. Server execution](#client-vs-server-execution)
     - [Inserting custom UI elements](#inserting-custom-ui-elements)
     - [Defining lists](#defining-lists)
-      - [Inserting Search Results for ListV2 settings](#inserting-search-results-for-listv2-settings)
+      - [Inserting suggestions for ListV2 settings](#inserting-suggestions-for-listv2-settings)
   - [Listening to MCM events](#listening-to-mcm-events)
   - [How validation works](#how-validation-works)
   - [Localization support](#localization-support)
@@ -84,7 +85,7 @@ Below are listed some nice features that MCM provides to mod authors:
 >
 > • ***UI without writing client-side code***: MCM handles the UI for you, so you don't have to write any client-side code or learn the IMGUI API to display your mod's settings, since IMGUI is only available on the client side.
 >
-> • ***Simplifies settings management***: MCM takes care of saving and loading your mod's settings automatically, so you don't have to build an entire configuration system to manage JSON files. MCM has 24k+ lines of code so that ***you*** don't have to deal with that.
+> • ***Simplifies settings management***: MCM takes care of saving and loading your mod's settings automatically, so you don't have to build an entire configuration system to manage JSON files. MCM has 18k+ lines of code so that ***you*** don't have to deal with that.
 >
 > • ***Instant saving and loading***: Unlike the traditional way of handling settings, MCM-integrated mods update settings in real-time as they are changed, without requiring save reloads;
 >
@@ -196,18 +197,18 @@ You can also use a service like <https://www.jsonschemavalidator.net/s/cV447mjH>
 
 ##### Schema main components
 
-Following are the main components of the MCM schema. Don't stress over this too much, **the schema file will guide you while writing blueprints if you have set it up, and MCM will warn you about problems during runtime.**
+Following are the main components of the MCM Schema. Don't stress over this too much, **the schema file will guide you while writing blueprints if you have set it up, and MCM will warn you about problems during runtime.**
 
 <details>
-<summary> MCM schema breakdown </summary>
+<summary> MCM Schema breakdown </summary>
 
 - **Organizational structure**: the MCM Schema defines a hierarchical organization using `Tabs` and `Sections`:
-  - `Tabs`: Serve as top-level organizational units in the MCM menu. Each tab can exclusively contain either `Sections` or standalone `Settings`.
+  - `Tabs`: Serve as top-level organizational units in the MCM. Each tab can exclusively contain either `Sections` or standalone `Settings`.
     - `Sections`: Sub-divisions within tabs to group related settings.
 
   - **`Settings`**:
     - `Id`: A unique string identifier for each setting, similar to a variable name in your code; used to reference the setting programmatically.
-    - `Name`: The readable name of the setting as to be displayed in the MCM menu.
+    - `Name`: The readable name of the setting as to be displayed in the MCM.
     - `Type`: Defines the data type and ultimately the UI representation of the setting, with supported types including `int`, `float`, `checkbox`, `text`, `enum`, `radio`, `slider_int`, `slider_float`, `drag_int`, `drag_float`, `color_picker`, `color_edit`;
     - `Default`: Specifies the initial value of the setting used during initialization or when a reset is needed. Supports various data types (`integer`, `number`, `boolean`, `string`, `object`, `null`) depending on the setting type.
     - `Description` and `Tooltip`: Textual explanations of the setting's purpose and usage, where `Description` is visible below the setting's widget and `Tooltip` appears on hover. It is required to have at least one of these.
@@ -232,7 +233,7 @@ Future versions of MCM might make this structure less strict, allowing nesting t
 
 #### VisibleIf: Conditional visibility
 
-A special property in the MCM schema is `VisibleIf`. You can use it to conditionally show or hide Tabs, Sections, and individual Settings based on other settings' current values (having primitive values, i.e.: boolean, number, string).
+A special property in the MCM Schema is `VisibleIf`. You can use it to conditionally show or hide Tabs, Sections, and individual Settings based on other settings' current values (having primitive values, i.e.: boolean, number, string).
 
 - Supported on: `Tab`, `Section`, and `Setting` objects in your blueprint
 - Evaluation: runs against current in-memory values
@@ -382,10 +383,11 @@ These methods operate on `list_v2` settings.
 | `MCM.List.GetRaw(listSettingId, modUUID?)` | Gets raw list setting data | ✅ | ✅ |
 | `MCM.List.IsEnabled(listSettingId, itemName, modUUID?)` | Checks if a specific item is enabled in a list | ✅ | ✅ |
 | `MCM.List.SetEnabled(listSettingId, itemName, enabled, modUUID?, shouldEmitEvent?)` | Sets the enabled state of a list item | ✅ | ✅ |
+| `MCM.List.InsertSuggestions(listSettingId, suggestions, modUUID?)` | Inserts suggestions below the input of a `list_v2` widget | ✅ | ❌ |
 
 #### Window and tab APIs
 
-These methods operate on the MCM window, and can be used to control the opening and closing of the MCM window, as well as opening a specific mod's tab.
+These methods operate on the MCM window, and can be used to control the opening and closing of MCM, as well as opening a specific mod's tab.
 
 | Function | Description | Client | Server |
 |----------|-------------|:------:|:------:|
@@ -449,7 +451,7 @@ This is a lot of work and prone to errors! MCM solves this by:
 - Providing a simple way for your mod to register the Lua function (*callback*) that should run when the hotkey is pressed.
 - Handling all the low-level work: loading and saving keybinding preferences, UI creation, listening for input, checking against registered keybindings, detecting conflicts, and calling the correct callback function in your mod.
 
-Essentially, you define what your hotkey action is and what code runs, and the MCM handles how it's triggered by player input and managed in the UI.
+Essentially, you define what your hotkey action is and what code runs, and MCM handles how it's triggered by player input and managed in the UI.
 
 #### Defining a keybinding
 
@@ -568,21 +570,21 @@ MCM 1.17 introduced `list_v2` to supersede the now deprecated `list` input type.
 
 `MCM.List` contains useful methods for dealing with `list_v2` settings.
 
-#### Inserting Search Results for ListV2 settings
+#### Inserting suggestions for ListV2 settings
 
-NOTE: this will be added to the `MCM.List` table in a future update.
+The `InsertSuggestions` method in the `MCM.List` table allows mod authors to insert suggestions/'search results' into a `list_v2` setting. This is particularly useful for providing users with dynamic suggestions based on their input as they type in the add input field of the setting.
 
-The `InsertListV2SearchResults` method in the `IMGUIAPI` allows mod authors to insert suggestions/'search results' into a `list_v2` setting. This is particularly useful for providing users with dynamic suggestions based on their input as they type in the add input field of the setting.
 
-Here's an example of how to use the `InsertListV2SearchResults` method to add the suggestions `a`, `b`, `c`, `aba`, `acaca`, and `abaca` to the `ignore_weapons` `list_v2` setting of the mod with the UUID `1c132ec4-4cd2-4c40-aeb9-ff6ee0467da8` (Auto Send Food To Camp). **NOTE: In the next release, this method's signature will be updated to `settingId, searchResults, modUUID` for consistency. Sorry for the inconvenience.**
+Example: insert suggestions `a`, `b`, `c`, `aba`, `acaca`, and `abaca` into the `ignore_weapons` `list_v2` setting for the mod UUID `1c132ec4-4cd2-4c40-aeb9-ff6ee0467da8` (Auto Send Food To Camp):
 
 ```lua
-Mods.BG3MCM.IMGUIAPI:InsertListV2SearchResults("1c132ec4-4cd2-4c40-aeb9-ff6ee0467da8", "ignore_weapons", {"a","b","c","aba","acaca","abaca"})
+-- Client context only
+MCM.List.InsertSuggestions("ignore_weapons", {"a","b","c","aba","acaca","abaca"}, "1c132ec4-4cd2-4c40-aeb9-ff6ee0467da8")
 ```
 
-- **modUUID**: A string representing the UUID of the mod that has the `list_v2` setting;
-- **settingId**: A string that identifies the specific `list_v2` setting for which the search results are being inserted;
-- **searchResults**: A table containing the search results to be displayed.
+- **listSettingId**: The string with the ID of the `list_v2` setting to receive the suggestions.
+- **suggestions**: Table of strings to show as suggestions.
+- **modUUID?**: Optional. Defaults to the current mod; pass a specific UUID to target another mod's UI. Must have the setting corresponding to `listSettingId` in its blueprint.
 
 ![mcm_suggestions.png](/mcm_suggestions.png)
 
@@ -695,7 +697,7 @@ For the most up-to-date information, please refer to this file in the Git reposi
 
 ## How validation works
 
-Validation is divided into two main categories: blueprint validation and settings validation. Blueprint validation ensures that the blueprint JSON file is correctly formatted and adheres to the MCM schema. Settings validation, on the other hand, ensures that the actual or to-be-stored settings values are valid and respect the constraints defined in the blueprint.
+Validation is divided into two main categories: blueprint validation and settings validation. Blueprint validation ensures that the blueprint JSON file is correctly formatted and adheres to the MCM Schema. Settings validation, on the other hand, ensures that the actual or to-be-stored settings values are valid and respect the constraints defined in the blueprint.
 
 MCM performs validation checks when:
 
