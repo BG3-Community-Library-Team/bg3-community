@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2025-09-10T21:06:30.054Z
+date: 2025-09-10T21:09:29.403Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -81,12 +81,12 @@ This page is a list of existing Tutorials.-->
 {.links-list}
 
 ## Visual Modding
-- [Getting Started with 3D Modding](getting-started-with-3d-modding)
-- [Creating and Exporting Meshes in Blender](Creating-and-Exporting-Meshes-in-Blender)
-- [Creating a Hair Mod](Creating-A-Hair-Mod)
+- [Getting Started with 3D Modding](https://wiki.bg3.community/Tutorials/Visual/getting-started-with-3d-modding)
+- [Creating and Exporting Meshes in Blender](https://wiki.bg3.community/Tutorials/Visual/Creating-and-Exporting-Meshes-in-Blender)
+- [Creating a Hair Mod](https://wiki.bg3.community/Tutorials/Visual/Creating-A-Hair-Mod)
 - [Creating a Head Mod](/Tutorials/Visual/Creating-A-Head-Mod)
 - [Creating Custom Head Armatures - NEW](/Tutorials/Visual/mrboneswildguide-new)
-- [Creating Custom Head Armatures - OLD](mrboneswildguide)
+- [Creating Custom Head Armatures - OLD](https://wiki.bg3.community/Tutorials/Visual/mrboneswildguide)
 - [Fix Neck Seams](/Tutorials/Visual/Neck-Transplant)
 - [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
 - [Custom Wrinkle Map Guide And Template](/Tutorials/Visual/Adding-A-Custom-Wrinkle-Map-To-A-Custom-Head)
