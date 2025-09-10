@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2025-05-21T22:09:30.857Z
+date: 2025-09-10T21:06:30.054Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -81,13 +81,20 @@ This page is a list of existing Tutorials.-->
 {.links-list}
 
 ## Visual Modding
-- [Getting Started with 3D Modding](Visual/getting-started-with-3d-modding)
-- [Creating a Hair Mod](Visual/Creating-A-Hair-Mod)
-- [Creating Custom Head Armatures](Visual/mrboneswildguide)
+- [Getting Started with 3D Modding](getting-started-with-3d-modding)
 - [Creating and Exporting Meshes in Blender](Creating-and-Exporting-Meshes-in-Blender)
-- [Weight Painting Armor and Clothes](/Tutorials/Visual/Weight-Painting-Armor)
+- [Creating a Hair Mod](Creating-A-Hair-Mod)
+- [Creating a Head Mod](/Tutorials/Visual/Creating-A-Head-Mod)
+- [Creating Custom Head Armatures - NEW](/Tutorials/Visual/mrboneswildguide-new)
+- [Creating Custom Head Armatures - OLD](mrboneswildguide)
+- [Fix Neck Seams](/Tutorials/Visual/Neck-Transplant)
 - [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
 - [Custom Wrinkle Map Guide And Template](/Tutorials/Visual/Adding-A-Custom-Wrinkle-Map-To-A-Custom-Head)
+- [Creating Tattoos and Makeup](/Tutorials/Visual/Tattoos)
+- [Weight Painting Armor and Clothes](/Tutorials/Visual/Weight-Painting-Armor)
+- [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
+- [Fix Broken Normals on Imported Meshes](/Tutorials/Visual/Fix-Normals)
+- [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
 {.links-list}
 
 ## Animations
@@ -101,6 +108,10 @@ This page is a list of existing Tutorials.-->
 
 ## Toolkit
 - [Toolkit FAQ](/Tutorials/Toolkit/Toolkit-FAQ)
+- [Creating Piercings with the Toolkit](/Tutorials/Toolkit/Creating-Piercings-with-the-Toolkit)
+- [Toolkit Tips](/Tutorials/Toolkit/Toolkit_Tips)
+- [Custom Spring Physics in the Toolkit](/Tutorials/Toolkit/spring-physics)
+- [Adding Animations In Toolkit](/Tutorials/Animations/Adding-Animations-In-Toolkit)
 {.links-list}
 
 ## Screen Archery
