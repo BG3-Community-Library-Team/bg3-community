@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-09-10T05:09:48.094Z
+date: 2025-09-10T05:10:27.120Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -33,7 +33,7 @@ If you're looking to quickly integrate MCM into your mod, here's the process at 
 An LLM is likely able to adapt them into a different blueprint, especially if you also provide it MCM's [blueprint schema](https://raw.githubusercontent.com/AtilioA/BG3-MCM/refs/heads/main/.vscode/schema.json) for context.
 {.is-success}
 
-That's it for a basic integration! MCM will warn you about mistakes in your code or blueprint file.
+**That's it for a basic integration**! MCM will warn you about mistakes in your code or blueprint file.
 The rest of this documentation provides detailed explanations of these steps and advanced features.
 
 > For basic integration, the important sections are *[Defining a blueprint](#defining-a-blueprint)* and *[Using values from MCM](#using-values-from-mcm)*.
