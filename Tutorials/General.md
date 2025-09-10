@@ -2,7 +2,7 @@
 title: General
 description: A List of General-purpose Tutorials
 published: true
-date: 2025-09-07T16:35:27.855Z
+date: 2025-09-10T21:00:42.983Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-30T22:32:48.795Z
@@ -19,6 +19,6 @@ This page is a list of existing general Tutorials.
 - [Shipping Items to Users](Shipping-Items-to-Users)
 - [Editing Equipment.txt](Editing-Equipment-txt)
 - [Hotloading - How to quickly test mods in game](hotloading-how-to-quickly-test-mods-in-game)
-- [Toolkit FAQ](https://wiki.bg3.community/en/Tutorials/General/Toolkit-FAQ)
+- [Toolkit FAQ](https://wiki.bg3.community/Tutorials/Toolkit/Toolkit-FAQ)
 - [Custom Origin Creation](https://wiki.bg3.community/en/Tutorials/General/Custom-Origin-Creation)
 {.links-list}
