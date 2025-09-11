@@ -1,14 +1,18 @@
 ---
 title: Creating your first SE Mod
 description: A follow along tutorial for creating your first Script Extender Mod that stops companions from returning to their tent when in camp. Optional toggleable version
-published: false
-date: 2024-10-19T19:52:50.742Z
+published: true
+date: 2025-09-11T16:01:56.926Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-05-01T14:54:45.494Z
 ---
 
 # Creating your first SE Mod
+
+> Preface: This page is a work in progress!
+{.is-info}
+
 
 This tutorial will walk you through creating a simple mod with Norbyte's Script Extender(SE) that stops your companions from going back to their tent while in camp. Aditionally we will utilize SE together with `stats` to make this behaviour toggleable.
 
@@ -226,7 +230,10 @@ end)
 
 ![yfsem_workspace_structure_final.png](/tutorials/your_first_se_mod/yfsem_workspace_structure_final.png)
 
+# WIP
+to be continued...
 
+---
 Credits: 
 
 *Alithea Ancunín* for the idea. Without her this would not exist.
