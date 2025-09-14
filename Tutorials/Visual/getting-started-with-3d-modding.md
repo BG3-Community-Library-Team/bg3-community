@@ -2,7 +2,7 @@
 title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
 published: true
-date: 2025-06-10T10:59:26.464Z
+date: 2025-09-14T12:00:00.392Z
 tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -215,22 +215,8 @@ Some notes about common settings:
 
 ## Next Steps
 
-So now we have the basics set up to start some modding. If you're thinking "that's great, now what" then below you'll find links to pages detailing how to mod these things.
+So now we have the basics set up to start some modding. If you're thinking "that's great, now what", you may peruse our growing list of [tutorials for visual modding](https://wiki.bg3.community/en/Tutorials/Visual).
 
-### Creating Hair Mods
-[Preparing-To-Mod](/Tutorials/Visual/Creating-A-Hair-Mod/Preparing-To-Mod)
-[Creating-Hair-Mesh-Blender](/Tutorials/Visual/Creating-A-Hair-Mod/Creating-Hair-Mesh-Blender)
-[exporting-conforming](/Tutorials/Visual/Creating-A-Hair-Mod/exporting-conforming)
-[File-Setup](/Tutorials/Visual/Creating-A-Hair-Mod/File-Setup)
+If you have further questions, need help, or want to share your progress, you're welcome to join our [discord server](https://discord.gg/bg3mods).
 
-### Creating Head Mods
-...WIP
-
-### Creating Armor Mods
-...WIP
-
-### Creating Weapon Mods
-...WIP
-
-### Creating Accessories Mods
-...WIP
+![cmty_pride_logo.webp](/test/alithea/cmty_pride_logo.webp)
