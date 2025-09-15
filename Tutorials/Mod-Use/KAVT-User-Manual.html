@@ -2,7 +2,7 @@
 title: KAVT - User Manual
 description: Guides on how to use KAVT and KAVT NVP.
 published: true
-date: 2025-06-26T23:47:23.749Z
+date: 2025-09-15T18:43:05.683Z
 tags: unique-tav, kavt, kavt nvp, unique tav
 editor: ckeditor
 dateCreated: 2025-06-18T21:49:52.870Z
@@ -1258,10 +1258,10 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>&nbsp;</p>
 <h3>Differences between the Scar Atlas and the Tattoo/Makeup Atlases</h3>
 <p>While scar and tattoo/makeup atlases are both atlases, there are a number of key differences between how each design itself is constructed. When viewing the scar atlas (on the right) and directly comparing it to a tattoo or makeup atlas (on the left), you'll immediately notice a number of differences that set this atlas apart from the others.</p>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7dLKizSswXLJCatPbVCjHEcpdAdY7s1AHEPH8MQfwqtj1HWbRCM4KvTkHhJMtGj5kDz3X7Fm4oNJc8YpT7Ffvr8RleeHsckRBkBgFHeJD0J-UgGFWlytcZGLGsHIE4Zt8IbRJKQ?key=98YRLLxU6b9w_GtBrXJX5Q"></figure>
+<figure class="image image_resized" style="width:39.9%;"><img src="/kavt/screenshot_2025-06-26_020741.png"></figure>
 <p>&nbsp;</p>
 <p>Unlike the tattoo and makeup atlas, where each design only occupies its tile on a single channel, scars occupy their tile on all three channels. In practice, this means that one scar design consists of three separate textures, one on each channel of the scar atlas. This is what each channel of a single scar design looks like:</p>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXceVKsKFJGPILJCBhM0G2fCuT1qMhcxvEgqi8VRFxyTgA9cpIQ9t824UPyejFaw7UR8he9FobuP_XbANxRJpCSJ7R6uXoygD-9N0Ef8s80WVMeMYJ-BVFhrc36GXmhOk1TSdhj2Dg?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image image_resized" style="width:40.06%;"><img src="/kavt/screenshot_2025-06-26_205450.png"></figure>
 <p>&nbsp;</p>
 <p>We won't go into detail on how these textures work exactly within this guide as its beyond the scope of KAVT, however it's important to remember that each scar design occupies all three channels when “frankensteining” a scar atlas. This means that when moving a scar design, you'll need to move the design on <u>all three channels</u>, rather than only needing to move it on one of the three channels as would be the case with a tattoo or makeup atlas.</p>
 <p>&nbsp;</p>
@@ -1277,65 +1277,65 @@ dateCreated: 2025-06-18T21:49:52.870Z
 </blockquote>
 <p>We recommend using the KAVT Scar Atlas Resource available <a href="https://www.nexusmods.com/baldursgate3/mods/16325?tab=files">in the files tab on the mod page</a> for this process. The file included contains each scar design's channels on individual layers, making it much easier to move designs around.</p>
 <p>Open the KAVT scar atlas working file, as well as the scar atlas of the scar mod you'd like to transfer a design from. In the case of this guide, we'll be using the scar atlas from <a href="https://www.nexusmods.com/baldursgate3/mods/16782">Tav with a Backstory</a>. You should now have two tabs open:</p>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXenOFGmXJKZ3GL61V-DhZ8pRWWeXQ3a5XYDhPuSMOxPmIE1V7aqZAr9E9m97C_f4zv0H3eQz_TGVnMi04SCXbn6XEDkl1Gi13rxW96WwgQjqNF-dxB_8ekcF4Uj70gRPhs4yQaElQ?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image"><img src="/kavt/screenshot_2025-06-26_210648.png"></figure>
 <p>&nbsp;</p>
 <p>The working file contains three folders, one for each channel (Red, Blue and Green) with each scar design as its own named layer. One scar design consists of <u>one layer from each of these folders</u>; their names will match.</p>
-<figure class="image image_resized" style="width:440px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdKLkRccOmCJw2n7edPiTCY0llGWr2Jhrj2OdnQXan9fPMZIbWBjGofL52gbbjspvK74jQYiF7cEIoioo7_2g4mWAu78hzAwDuZTydN1llphkGIkZsm1VL4XLTIod7eY0nmR0G-Eg?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image"><img src="/kavt/screenshot_2025-06-26_210738.png"></figure>
 <p>&nbsp;</p>
 <p>Click the eye next to the “Notes” and “Vanilla Atlas Size Overlay” layers to hide them. These layers are purely for reference and don't have any use within the final atlas. Now, select which scar on this atlas you'd like to replace with a scar from another atlas. Scars are numbered in the order they're placed within the atlas, from top to bottom, and left to right. Delete the appropriately named layers from all three folders. For our example, we'll be replacing “SCAR 03”. Once you've deleted them, your file should look roughly like this, with a gap in place of the design you've deleted:</p>
 <blockquote>
   <p><span class="text-big"><i>⚠️ </i></span><i>Don't delete or edit the second scar design in the top most row. This is the Illithid Vein design, and removing this design or editing it will affect the visuals of the half-illithid transformation.</i></p>
 </blockquote>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfGY_Q1qZUBx9KvBfVJFGHGofx0VdolnOXg3LjDC9ILQV7P5YI7XP-SLXqYmA0vXK6sm0wuvR-ix0ryWMUuIJaxxKNSvvCbbT6znaWILEQYOHqgYU3GLSUE4hT8v4NEn3xNbck6Jg?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image image_resized" style="width:32.95%;"><img src="/kavt/screenshot_2025-06-26_211249.png"></figure>
 <p>&nbsp;</p>
 <p>Now, swap to the tab containing atlas you've chosen to transfer a design from. If the atlas doesn't already contain guides (the white gridlines visible in the atlas image above), we recommend adding them by navigating to View &gt; Guides &gt; New Guide Layout. Adding guides will make it easier for you to separate your chosen design, as it will clearly indicate where each tile starts and ends. For the scar atlas, these are the appropriate guide settings:</p>
-<figure class="image image_resized" style="width:392px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcVm-T3GsWSAq5I7JcPY8qs0VYSx0LJzpigSWm4rVpwH8sD9ybH-AOvXAw9UEayfK059Ok0G5Q2MEXfsocbf5a615zqe-Yn5D4u2Z8ftygdXd-QIk28FDcTxZbU1aAJY4Atotx1Qg?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image"><img src="/kavt/screenshot_2025-06-26_211611.png"></figure>
 <p>&nbsp;</p>
 <p>This atlas will only consist of one layer, most commonly named either “Background” or “Layer 0” (but don't be alarmed if it's named something else). Choose the design you'd like to transfer from the atlas, and select it using the selection/marquee tool. We recommend zooming into the atlas until your design of choice occupies most of your screen, as that'll make it easier to select it correctly. If you've enabled guides, your selection tool will “snap” to the guidelines.</p>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe1MMYxg3pHBWCTbUJAGAZVohhYRRL7kXAjFGGQOMDr4tjRreXcOghjFWCuiGDjjvGmLLBImC6uuI-LTH8ScpG8Z_sDTJOBoq6FJett2pglm_LmtXftxrIpZvYPWfsML2oRPPyJww?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image image_resized" style="width:18.7%;"><img src="/kavt/screenshot_2025-06-26_211843.png"></figure>
 <p>&nbsp;</p>
 <p>Now, open the “Channels” tab located in the same section as the layers tab.</p>
-<figure class="image image_resized" style="width:297px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeIyu7HhiB5ywWZTyRMHcjiHQSGuvkaOOtg_9cEbvSVdkN8tynhnB2FDhlySAUrbv0SFsWIVQ-lgMhPhbcZkALxUdhCOs82iNHIOFDKfGN55wLZG5bYki7St0DRqAsDS2xtFgS3TA?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image"><img src="/kavt/screenshot_2025-06-26_212017.png"></figure>
 <p>&nbsp;</p>
 <p>Click on the second channel, “Red”. You'll notice the visuals of the atlas change, as when a channel is selected, only that channel's part of the design will be visible. For the design we've chosen, the Red channel looks like this:</p>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcj3Qako0jc2vSRo_1Yd2TUh9-1CoeMnlRP22USSnJfUe6LUy4U6JBBzmNlfEmPM6i6T4MmZBHQ8vvr74ABLCqjpcqrdt4lkQoD482VW6sY6oqu_Z422UiWY4mvOpLtIFfLTpyWQA?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image image_resized" style="width:31.36%;"><img src="/kavt/screenshot_2025-06-26_212121.png"></figure>
 <p>&nbsp;</p>
 <p>Now, copy this channel's part of the texture either via hotkey (ctrl+c) or by navigating to Edit &gt; Copy. Then, switch back to the tab containing the KAVT Scar Atlas working file. Click on the “RED CHANNEL” folder in the folder tab, and paste the design you've just copied either via hotkey (ctrl+v) or by navigating to Edit &gt; Paste. The section you've copied will usually appear in the center of the image:</p>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcXcexA_twnNk8oXfWc3Ld74FwdpS1OgFHlTtqMaz7HaoZPR98GRDyVNWGa63r9FK9I-ogg_HVchfhqTUMASix6I7iDot3_ydDBnyrPCRrKzZH771-Lbp2esHqn_Ahc8va0ZSFsAw?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image image_resized" style="width:31.24%;"><img src="/kavt/screenshot_2025-06-26_212413.png"></figure>
 <p>&nbsp;</p>
 <p>Using the Move Tool, drag the tile into the gap we created by deleting a design from the working file. Make sure the edges align with the gap.</p>
 <blockquote>
   <p><span class="text-big"><i>⚠️ </i></span><i>If you've enabled guides, your pasted tile will snap into place when moving it over to the empty spot. This helps you align the design correctly.</i></p>
 </blockquote>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfgtlepDgRAfmdcCvTHyU9oFiYjOS2LV8FIydSwEBh386q6i7VEXVgkr4Hr_6qoYeE56GJbhJjVHUeoaEvbkF-CchdqUrWmRT-mDLiWz-jNkNX3tSM2KFuxOrDPhI6IISKbXnal?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image image_resized" style="width:53.65%;"><img src="/kavt/screenshot_2025-06-26_212557.png"></figure>
 <p>&nbsp;</p>
-<p>Next, you'll be repeating this same step for the Green and Blue channel. To be able to see the design you've pasted, we recommend temporarily hiding the “RED CHANNEL” folder inside the working file by clicking the eye icon next to the folder, and then doing the same with the “GREEN CHANNEL” folder once you've pasted and re-positioned the green channel of the design you've chosen.</p>
+<p>Next, you'll be repeating this same step for the Green and Blue channel. To be able to see the design you've pasted, we recommend tempoarily hiding the “RED CHANNEL” folder inside the working file by clicking the eye icon next to the folder, and then doing the same with the “GREEN CHANNEL” folder once you've pasted and re-positioned the green channel of the design you've chosen.</p>
 <p>Once you've transferred all three channels of your design of choice, it should be present in each of the three “CHANNEL” folders within the working file. Unhide both folders you've hidden, and merge each folder by right-clicking it and selecting “Merge Group”.</p>
-<figure class="image image_resized" style="width:413px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcuvsWnuPwjYI8TgCGfhhSTGD1WSwVjWmReOH6ei9fkrI-6L_YKPJXzl6-8YvFSX1yas9Ph57JzOqhQRQWEjRbe-RhUmV5o7RfpgEuQqn4-gzSCXVxlx4M1cQYEAU9aJsLJns6iPQ?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image"><img src="/kavt/screenshot_2025-06-26_213108.png"></figure>
 <p>&nbsp;</p>
 <p>Your working file should now contain the following layers:</p>
-<figure class="image image_resized" style="width:326px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeX1OkCpj5Ah3Q6gv1-YyRIEaYDHVLxKNHfBIXf304YpsEZFabq505tXGrQMkhOhyCsO48L4EMz6H-97Ld-otGua1AsPQG3khtrmLNfYTo9lrzQmMH6Ha9pencn_iDaccdAYyHQ-A?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image"><img src="/kavt/screenshot_2025-06-26_213211.png"></figure>
 <p>&nbsp;</p>
 <p>Next, open the “KAVT Scar Atlas - Merged” file contained within the scar atlas resource. This is where we'll be assembling our edited atlas. When opening the file, you should see a fully assembled scar atlas with only a single layer:</p>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfTq_EMmbq-1oLtnzQ4FIIugXcXzrUbuoox9htOcX75K-AdbtO2S5ogehsg_xVrT9n-KlU6aKVsKYO80dIuxnd--vllVR1ox_KQmcgIQKzk1MleHD6OG-d0OteEs4CohbsbWUmuFA?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image image_resized" style="width:30.9%;"><img src="/kavt/screenshot_2025-06-26_213427.png"></figure>
 <p>&nbsp;</p>
 <p>Navigate back to your working file tab, and select the entire canvas using the marquee/selection tool. Then, select the RED CHANNEL layer, and copy it either via hotkey (ctrl+c) or by navigating to Edit &gt; Copy.</p>
 <p>‼️<u>Note</u>: If you have more experience with image editing software, you may be tempted to simply select your layer and hit ctrl+c. We don't recommend doing it this way, because the individual channels will at times not accept the copied image if it has been copied this way. We explicitly recommend selecting the entire canvas and copying it that way.&nbsp;</p>
 <p>Return to the “KAVT Scar Atlas - Merged” file tab, open the Channels tab, and select the Red channel.</p>
-<figure class="image image_resized" style="width:250px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf3XTAUEHjYHZlCPolQy0WqfwN77LVLOuBAO83yI-Zif0zNwHdQWy_g6F_RrEmZb8A1gJJBgm14giyKmbl_2fBRLnr1NRkEttvVTaZk7YBWsVXyGe6XWbJ2R3knp1nWUstRUbKk?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image"><img src="/kavt/screenshot_2025-06-26_213733.png"></figure>
 <p>&nbsp;</p>
 <p>Now, paste the RED CHANNEL layer you copied from the working file into the Red channel of the merged file, either via hotkey (ctrl+v) or by navigating to Edit &gt; Paste. If you choose to view the merged atlas at this point, you may see something akin to the image below (mismatched designs). This is <u>normal,</u> as each scar design consists of all three channels and we've currently only transferred one.</p>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe-OSwsF7KuMZHhZrNtAr5F57Wd4ZYPVe4Inb_MmSu5VyEZ3vWonK8ZzYiucuzYZ6gjhZ-xq234e77RDS4W0CMB3gcghd1Aevb1HjC3v1wttI8V_k81fcwSC-QccEI_uvJMPc6z?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image image_resized" style="width:30.38%;"><img src="/kavt/screenshot_2025-06-26_213932.png"></figure>
 <p>&nbsp;</p>
 <p>Next, you'll repeat the same process for the other two channels. Copy the GREEN CHANNEL layer of the working file into the Green channel of the merged atlas, and copy the BLUE CHANNEL layer of the working file into the Blue channel of the merged atlas. Your potentially previously misaligned transferred scar design should now show up correctly, similarly to this:</p>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7aBR38tmO1wBVR9Ot8UiAFUUT0IWwr8tPgny6lRLCl7Qlrip0AhROgtjnrvY8u2EotZAGG_QWO_fqSHynDUZ_eJHPH6IEgqD5jHTFzPpNbXl1OQCFtGXYqdB4bomkCQc1Cql0LA?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image image_resized" style="width:30.13%;"><img src="/kavt/screenshot_2025-06-26_214135.png"></figure>
 <p>&nbsp;</p>
 <p>You have now successfully replaced a design with another! Now, you'll only need to export the atlas. Navigate to File &gt; Save As, or File &gt; Save a Copy (based on your personal preference), and choose where to save your file. You can save your file wherever you like and then manually transfer it to the appropriate folder within your game files, or save it directly within your game files at the following path:</p>
 <p><code>YOURGAMEFOLDER\Generated\Public\Shared\Assets\unique_tav\FACE</code></p>
 <p>You'll want to name your file <code>KVT_Head_Atlas_Scars.DDS</code>.</p>
 <p>Capitalization and spelling are important here! Your game will not read these files correctly if there are spelling mistakes, capitalization differences, or the file is placed at the wrong location.&nbsp;</p>
 <p>You'll be exporting this atlas using BC7/DX11+ compression. Don't generate Mip Maps. Your export settings may look something like this:</p>
-<figure class="image image_resized" style="width:432px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeFFlgIK0jWgk9WuIKK0wNPaENcjoexMVo3xLXQ9DKDBT5KKnkN85pHp5uovwsu3cgoEywPhvp_2jbTOUcw2HTXhVq0lq9alLoMb236Kk4al_V1ioE1sogSTFwNTzDVk-ty5jRh?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image"><img src="/kavt/screenshot_2025-06-26_214543.png"></figure>
 <p>&nbsp;</p>
 <p>If you didn't save your atlas directly to the correct path within your game files, you'll want to move it manually after saving it somewhere else. If the folders at the indicated path don't exist, you'll want to create them yourself.</p>
 <p>&nbsp;</p>
@@ -1343,7 +1343,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <h2>Misplaced Tattoos and/or Makeup</h2>
 <h3>Issue</h3>
 <p>Your tattoos and/or makeup may be misaligned or misplaced. This could look something like this:</p>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe9ri7tJNYayEgZqfWLLbfZ4y1z55iS6_1B0qj3UYQs96wIPwtrP7clgdHUdBZlNVgFJdM27SepUt2bHVgv0OwvYGQrgb9WMuu-jUVFKYhUSWpgJcLbSDUABeNc_hTV9zZ_ARfr9w?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image image_resized" style="width:37.72%;"><img src="/kavt/screenshot_2025-06-26_220949.png"></figure>
 <p>&nbsp;</p>
 <h3>Cause</h3>
 <p>This problem is caused by <u>a tattoo or makeup atlas that doesn't match KAVT's increased atlas size</u>, either added by another mod via .pak, or loaded as a loose file. Vanilla atlases are 4 x 4 tiles in size, whereas KAVT's atlases are 4 x 8 tiles in size. Even if the loaded atlas is smaller than KAVT's atlas, the game will still attempt to map 8 tattoos or makeup designs to this smaller atlas:</p>
@@ -1370,7 +1370,7 @@ dateCreated: 2025-06-18T21:49:52.870Z
 <p>&nbsp;</p>
 <h3>Cause</h3>
 <p>KAVT contains overrides for vanilla assets to function as intended. These overrides will still override vanilla assets even if the mod is disabled; you can see this in your mod manager:</p>
-<figure class="image image_resized" style="width:624px;"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdRbNum1ylTd4mJ7TXe1R7CDE68nHkvCFk1lorqeYTIO0-pJWGVUDWempFtrcwCOJZ5K8b18hy3weBYC9CbtwAzSC8mmK97ibtziQ7E7dY4H2Tku4BlFpsgsuFsPmP3dKEiJUP-3w?key=vBXlXuGpR7OA5LsLIQeOwQ"></figure>
+<figure class="image"><img src="/kavt/screenshot_2025-06-26_222110.png"></figure>
 <p>&nbsp;</p>
 <h3>Solution</h3>
 <p>Delete KAVT or KAVT NVP from your mod folder when you aren't using the mod.</p>
