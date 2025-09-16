@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tools
 description: an non-exhausive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-09-06T15:18:44.130Z
+date: 2025-09-16T15:44:21.096Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -175,7 +175,7 @@ To avoid transparent mesh shadows, you need to increase the outer angle of your 
 Screenshots have washed/gray colors: Disable HDR
 
 ### ReShade
-No issues if you are able read
+There shouldn't be any issues if you follow the instructions carefully.
 
 ### Otis_Inf photomode tool
 No BG3 in the process list: Run the tool as admin
@@ -193,7 +193,7 @@ The camera is moving when changing Focus delta X, but the second focus overlay i
 Black screen when launching the game: Inject DLL or disable IgcsDof.fx; if you close your game while being in the DOF session - it will get stuck
 
 ### Lighty Lights
-No issues if you are able read
+There shouldn't be any issues if you follow the instructions carefully.
 
 ### QSAT
-No issues if you are able read
+There shouldn't be any issues if you follow the instructions carefully.
