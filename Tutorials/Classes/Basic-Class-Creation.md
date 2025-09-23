@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2024-05-26T20:41:49.262Z
+date: 2025-09-23T07:53:38.147Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -506,7 +506,7 @@ Anyways, lets pack up our files. I suggest you pin your mod folder(in my case, Q
 Lets open up our BGModManager application. If you don't see your mod name at all (it should be on the right hand side if this is the first time you opened the manager since creating your mod pak), hit refresh and it should appear. Drag your mod to the left side and hit ctrl + s to save the mod load order. Alright, its time! Hit ctrl + shift + g to launch the game!
 
 You should see your class in character creation. You may get some message about how "We were unable to create a working story..." when you hit "New Game". [This just means mod fixer is working correctly and ensuring your story doesnt break when you use mods](https://github.com/LaughingLeader/BG3ModManager/issues/31), just hit esc to cancel the cut scene and hit accept on the message. If you are seeing the following picture below instead of character creation, you may have forgotten to install the mod fixer or there is some issue with the mod fixer.
-![backrooms](https://github.com/ghostboats/bg3_modders_guide/assets/106226990/6f341706-d5de-4d6e-a581-e3ee6a4044fb)
+![durgeharem.webp](/mod-use/install-mods/durgeharem.webp)
 
 # Add class skills/proficiencies and bonus ability points[⬆️](#goals)
 While we have a working character at this point, it is definitely lacking a lot of common options on character creation. You will see that there is no way to spec bonus ability points and that you don't have any skills or proficiencies for the class, among other things. Let's address the more generic things like that and worry about things that would be specific to your class like a passive selection menu on character creation for example, for later. Like before, we will need to create some more folders and files inside out existing mod folder. Make your way to the {mod_name}\Public\{mod_name}\ directory so in my case, Quickster\Public\Quickster\, and begin making the required folders/files.
