@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: true
-date: 2025-07-04T17:00:37.354Z
+date: 2025-09-24T20:10:54.705Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -176,10 +176,10 @@ There are **three colours** that are used when vertex painting for cloth physics
 | Colour | Swatch | Hex |Purpose
 |----------|----------|----------|----------|
 |Black|{.blackPhys}|#000000|Excludes vertices from simulation|
-|Red|{.redPhys}|#FF0000|Activates physics|
-|Blue|{.bluePhys}|#0000FF|Slows physics[^3]|
+|Red|{.redPhys}|#FF0000|Specifies which vertices are to be simulated|
+|Blue|{.bluePhys}|#0000FF|Designates groups of unlinked vertices between cloth proxy mesh and cloth mesh[^3]|
 ||||
-[^3]: Blue vertex paint rarely appears as pure blue. It'll be mixed with the red to create pink/purple hues.
+[^3]: For example, if you have a skirt with strips like the BT2 Barbarian outfit, it prevents vertices in adjacent strips from being mapped onto each other when proxy mapping. Blue vertex colour rarely appears as pure blue. It'll be mixed with the red and appear as pink/purple hues - however, the engine reads it as blue and red independendly.
 
 If you have the add-on installed, **Vertex Paint** mode there will be a tab labelled **VCM** in the N-menu. 
 - Press the `N` key to see the menu if it is not already there.
