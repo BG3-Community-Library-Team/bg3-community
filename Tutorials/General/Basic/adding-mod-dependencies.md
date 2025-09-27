@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2025-08-20T15:09:21.748Z
+date: 2025-09-27T02:48:46.697Z
 tags: mods, load order, modsuse, dependencies, dependency, meta.lsx, mod dependency, deps
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -34,7 +34,8 @@ After:
               <attribute id="Folder" type="LSWString" value="BG3MCM" />
               <attribute id="MD5" type="LSString" value="" />
               <attribute id="Name" type="FixedString" value="Mod Configuration Menu" />
-              <attribute id="UUID" type="FixedString" value="755a8a72-407f-4f0d-9a33-274ac0f0b53d" />
+            	<attribute id="PublishHandle" type="uint64" value="0"/>
+              <attribute id="UUID" type="guid" value="755a8a72-407f-4f0d-9a33-274ac0f0b53d" />
               <attribute id="Version64" type="int64" value="37999121855938560" />
           </node>
           <!-- You can add more <node id="ModuleShortDesc"> entries here for additional dependencies, if needed -->
@@ -43,6 +44,12 @@ After:
       <node id="ModuleInfo">
         ...
 ```
+
+Make sure your meta.lsx version is this or higher:
+```xml
+<version major="4" minor="8" revision="0" build="500"/>
+```
+
 
 > It is also recommended to always set the required version (`Version64`) of the dependency to the version you're using during the development of your mod. In the example above, it's MCM 1.14.0.0.
 > As modding evolves, mod managers may use this to enforce correct versions for dependencies. **MCM already uses it to warn users if they have outdated dependencies**.
