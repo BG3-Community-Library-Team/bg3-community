@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2025-04-09T15:20:33.072Z
+date: 2025-09-29T19:09:54.664Z
 tags: tutorial, guide, script extender, lua
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -280,9 +280,11 @@ Pak the folder with a tool of your choice in the sections `Create Package`
 
 Add the generated .pak file to your Mods folder and acitvate it and save the load order with your mod manager.
 
-When you see your print statement on game startup, you have successfully loaded your mod.
+When you see your print statement on game startup, you have successfully loaded your mod. (You might have to create or load a save for the print to show up)
 
-![](https://cdn.discordapp.com/attachments/1233113869497667684/1233155556643176488/image.png?ex=6631ffdb&is=6630ae5b&hm=a1853663ef6f46b46af9416710ac247d31b4161577405f4b0b9ea1cf963dc462&=)
+
+
+![image.png](/tutorials/getting_started_with_se/image.png)
 
 
 If you are not able to see this statement, you likely missed one of the steps.
