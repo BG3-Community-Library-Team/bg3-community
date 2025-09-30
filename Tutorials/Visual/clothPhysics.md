@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: true
-date: 2025-09-24T20:33:42.788Z
+date: 2025-09-30T23:52:53.513Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -20,7 +20,7 @@ The lovely **Lynia** has created a tutorial on how to add cloth physics without 
 
 ## Things You'll Need
 
-- [This fork](https://github.com/nicoco007/lslib) of lslib
+- [This fork](https://github.com/nicoco007/lslib) of lslib (note: a pre-built version of nico's tools can be found linked in Lynia's video description)
 - [Blender](https://www.blender.org/download/) (any version 3.6 or above)[^1]
 - [Vertex Color Master Add-On](https://github.com/andyp123/blender_vertex_color_master/releases) (optional, but recommended)
 
