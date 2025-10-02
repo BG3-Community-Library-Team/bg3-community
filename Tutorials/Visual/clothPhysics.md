@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: true
-date: 2025-10-02T10:40:24.849Z
+date: 2025-10-02T15:29:05.594Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -44,7 +44,7 @@ To see the vertex count:
 > In **Edit Mode** this will show you the object, vertex, face, edge, and triangle counts for the selected mesh(es). In **Object Mode** the values will be the counts for all **visible** objects.
 {.is-info}
 
-![Screenshot 2025 05 25 124521](https://tinypic.host/images/2025/07/04/Screenshot-2025-05-25-124521.png)) ![Screenshot 2025 05 25 124604](https://tinypic.host/images/2025/07/04/Screenshot-2025-05-25-124604.png)
+![screenshot_2025-05-25_124521.webp](/tutorials/visual/cloth-physics/screenshot_2025-05-25_124521.webp) ![screenshot_2025-05-25_124604.webp](/tutorials/visual/cloth-physics/screenshot_2025-05-25_124604.webp)
 
 
 
@@ -112,7 +112,7 @@ Use the **Smooth** tool to smooth out the mesh.
 - Some tips to help:
 	- Toggle isolating your mesh by pressing the `/` key
 	- If your mesh is symmetrical, turn on **x-axis symmetry** in the upper right hand corner of the 3D viewport before you begin sculpting
-	![Screenshot 2025 05 25 134017](https://tinypic.host/images/2025/07/04/Screenshot-2025-05-25-134017.png)
+	![screenshot_2025-05-25_134017.webp](/tutorials/visual/cloth-physics/screenshot_2025-05-25_134017.webp)
 	- Use the keys `[` and `]` to change the size of your brush
 	- Start low and slow. Use a big brush with a low strength and build the up smoothness with it
 
