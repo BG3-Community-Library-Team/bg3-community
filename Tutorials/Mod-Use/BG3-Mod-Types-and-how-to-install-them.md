@@ -2,20 +2,16 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: true
-date: 2025-10-05T01:00:16.961Z
+date: 2025-10-05T01:18:27.795Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
 ---
 
-> Update for Patch 7 needed
-{.is-danger}
-
 > Manual installation currently missing. If you happen to know how it works, please add instructions. Thanks!
 {.is-warning}
 
 # How to use mods in Baldur's Gate 3
-
 
 Modding games is a wonderful way to enhance and individualize your game experience. It's also never entirely safe, especially if the game is still regularly patched like Baldur's Gate 3. 
 Mods modify game files. If those game files are altered by a patch or hotfix, it can cause the mod to not being able to work properly anymore. This may lead to being unable to load a savegame or cause gameplay issues. It is important to check if updates are needed each time Larian provides a patch or hotfix.
@@ -24,7 +20,7 @@ This guide will hopefully help to prevent that.
 
 ## Minimize the risks with a few simple steps:
 ### Backup your savegames
-before
+Before:
 - starting to mod an ongoing playthrough
 - adding new or more complex mods
 - updating your game
@@ -33,7 +29,7 @@ Go to your story folder, highlight everything and copy it to a separate location
 ```C:\Users\USERNAME\AppData\Local\Larian Studios\Baldur's Gate 3\PlayerProfiles\Public\Savegames\Story```
 
 ### Read mod descriptions
-Mod authors usually provide crucial information about their creations in the description. Please read it and pay extra attention to 
+Mod authors usually provide crucial information about their creations in the description. Please read it and pay extra attention to: 
 - install instructions
 - requirements
 - load order
@@ -51,7 +47,7 @@ Default bin folder path:
 
 ## Where to find and download mods
 
-[Nexus Mods](https://www.nexusmods.com/baldursgate3) - All types of mods, including some that cannot be used on consoles.
+[NexusMods](https://www.nexusmods.com/baldursgate3) - All types of mods, including many that cannot be used on consoles.
 [Mod.io](https://mod.io/g/baldursgate3) - The official location for BG3 mods, and where console players will have to source all of their mods.
 [Patreon](https://www.patreon.com) - Some mod authors upload mods to their Patreons instead of other sites. Most are free to download as long as you join the Patreon in question.
 
@@ -65,7 +61,7 @@ Installation:
 
 1. Install the mod manager of your choice. We recommend Laughing Leader's Baldur's Gate 3 Mod Manager. [Follow this guide on how to install and set up BG3MM.](https://wiki.bg3.community/en/Tutorials/Mod-Use/Installation-Of-BG3MM)
 2. Go to the mod page, read it, and download the desired version of the mod you want. Use **Manual download** and save the archive to a location outside of program or game files.
-3. Open the archive and drag or copy the .pak into your Mods Folder. Make sure that there aren't any subfolders or files other than .pak in the mod folder.
+3. Open the archive and drag or copy the .pak into your Mods Folder*. Make sure that there aren't any subfolders or files other than .pak in the mod folder.
 Default Mod folder path:
 ```C:\Users\USERNAME\AppData\Local\Larian Studios\Baldur's Gate 3\Mods```
 4. Start BG3MM or if it is already running, click refresh to see the new mod. It most likely will appear in Inactive Mods to the right.
@@ -75,21 +71,22 @@ Optional: *Save Order As* to make sure you have a working order to go back to ju
 *DiceSet_06* and *Honor* in the Inactive Mods panel to the right are game files.
 Don't move either of them into the Active Mods panel.
 {.is-warning}
-6. Make sure that Mod Fixer is installed.
-7. Save and export the load order to your game.
-8. Start the game either directly through BG3MM or use your prefered method.
+6. Save and export the load order to your game.
+7. Start the game either directly through BG3MM or use your prefered method.
+
+*You can also just drag the .zip file into your **Inactive Mods** section without unpacking it first. Then continue with Step 4.
 
 #### MOD FIXER
 >Games updated to Patch 7 do not need Mod Fixer anymore. Mods including Mod Fixer should still work fine, as long as the used file is called ForceRecompile.txt
 {.is-warning}
 
-Mod Fixer is still neccessary up to Patch 6. If it isn't installed, character creation will not be available. Instead this lovely view will appear on screen:
+Mod Fixer is still necessary up to Patch 6. If it isn't installed, character creation will not be available. Instead, this lovely view will appear on screen:
 
 ![durgeharem.webp](/mod-use/install-mods/durgeharem.webp)
 
 Installation:
-1. [download mod fixer](https://www.nexusmods.com/baldursgate3/mods/141)
-2. move ModFixer.pak into the mod folder
+1. [Download Mod Fixer](https://www.nexusmods.com/baldursgate3/mods/141)
+2. Move ModFixer.pak into your Mods folder or drag it into BG3 Mod Manager.
 
 That's it.
 
@@ -97,22 +94,22 @@ That's it.
 
 #### LOOSE FILES
 
-Mods that come as loose files are moved to your Data folder and do not need to be installed with a mod manager. The exact subfolder is usually part of the mod description and included in the archive.
+Mods that come as loose files are moved to your Data folder, and do not need to be installed with a mod manager. They are also sometimes called "replacer mods", though technically a .pak mod can also be a replacer. The exact subfolder it needs to be placed in is usually part of the mod description and included in the archive.
 
 Default Data folder path:
 ```C:\Program files\Steam\steamapps\common\Baldur's Gate 3\Data```
 
-Depending on which mods are installed, the contents of this may vary greatly.
+Depending on which mods are installed, the contents of these folders may vary greatly.
 #### NATIVE MODS
 
-Few mods such as [Native Camera Tweaks](https://www.nexusmods.com/baldursgate3/mods/945) are application extensions and come in the format .dll, they go in your bin folder and the tool [Native Mod Loader](https://www.nexusmods.com/baldursgate3/mods/944) is required to load them.
+A few mods such as [Native Camera Tweaks](https://www.nexusmods.com/baldursgate3/mods/945) are application extensions and come in the format .dll. They go in your bin folder, and the tool [Native Mod Loader](https://www.nexusmods.com/baldursgate3/mods/944) is required to load them.
 
 [Please follow the instructions on how to install the tool carefully.](https://www.nexusmods.com/baldursgate3/mods/944)
 
 #### MANUAL INSTALLATION
-The manual istallation of mods is an alternative in case you can't use a mod manager.
+The manual installation of mods is an alternative, in case you can't use a mod manager.
 
-???? I have no idea, never done that. Help!
+TODO: Add manual installation instructions.
 <!-- https://bg3.wiki/wiki/Modding:Installing_mods &
 https://www.nexusmods.com/baldursgate3/articles/129 may be useful-->
 
@@ -120,7 +117,7 @@ https://www.nexusmods.com/baldursgate3/articles/129 may be useful-->
 
 Script Extender by Norbyte adds Lua/Osiris scripting support to the game. It is a necessary requirement for a multitude of other mods.
 SE works on Windows, Linux, and Steam Deck. [Follow this guide on how to install SE.](/Tutorials/Mod-Use/How-to-install-Script-Extender)
-> Download SE only from [Norbyte's official GitHub](https://github.com/Norbyte/bg3se/releases) or via the BG3 Mod Manager.
+> Download SE only from [Norbyte's official GitHub](https://github.com/Norbyte/bg3se/releases) or via the BG3 Mod Manager. Any other source is unofficial and unsafe.
 {.is-danger}
 
 ## Video
