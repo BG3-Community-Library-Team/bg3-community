@@ -2,7 +2,7 @@
 title: Dictionary
 description: test page for a potential bg3 modding dictionary
 published: true
-date: 2024-11-10T07:31:40.434Z
+date: 2025-10-05T12:38:03.822Z
 tags: information
 editor: markdown
 dateCreated: 2024-06-20T08:31:54.801Z
@@ -35,7 +35,7 @@ C
 -
 
 *   **CCAV** - CharacterCreationAppearanceVisuals - A file that assigns visuals to slots in Character Creation such as heads, hairs, horns, etc. Visuals are assigned to particular races, body shapes, and body types.
-*   **CCSV** - Character creation shared visuals
+*   **CCSV** - CharacterCreationSharedVisuals - A file that assigns visuals to slots in Character Creation, usually hairs. Visuals are not assigned to particular races, body shapes, and body types and can be used by any of them. Because of this, the visuals used in CCSV are required to use autosnap armatures and weights.
 *   **CF** - Compatibility Framework.
 *   **Client** - The game instance running on a player's machine, handling local rendering and input.
 *   **CL** - Community Library.
