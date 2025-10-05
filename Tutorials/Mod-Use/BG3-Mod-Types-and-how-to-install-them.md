@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: true
-date: 2024-09-12T14:41:43.438Z
+date: 2025-10-05T01:00:16.961Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -17,9 +17,9 @@ dateCreated: 2024-07-02T06:32:16.092Z
 # How to use mods in Baldur's Gate 3
 
 
-Modding games is a wonderful way to enhance and individualize your game experience, it's also never entirely safe. Especially if the game is still regularly patched like Baldur's Gate 3. 
-Mods modify game files, if those game files are altered by a patch or hotfix, it can cause the mod to not being able to work properly anymore. This may lead to being unable to load a savegame or cause gameplay issues. It is important to check if updates are needed each time Larian provides a patch or hotfix.
-Please understand that modding comes with the possibility of something not working right. Which can cause frustration and wasted time and effort and it can potentially screw something up in your game.
+Modding games is a wonderful way to enhance and individualize your game experience. It's also never entirely safe, especially if the game is still regularly patched like Baldur's Gate 3. 
+Mods modify game files. If those game files are altered by a patch or hotfix, it can cause the mod to not being able to work properly anymore. This may lead to being unable to load a savegame or cause gameplay issues. It is important to check if updates are needed each time Larian provides a patch or hotfix.
+Please understand that modding comes with the possibility of something not working right, which can cause frustration, wasted time and effort, and it can potentially screw something up in your game.
 This guide will hopefully help to prevent that.
 
 ## Minimize the risks with a few simple steps:
@@ -42,22 +42,24 @@ Mod authors usually provide crucial information about their creations in the des
 It also never hurts to read sticky posts in the comments and to have a quick glance at the most recent entries.
 
 ### Disable auto-updating your game
-- Steam: go to Library - Baldur’s Gate 3 - right click Properties - Updates - select *Only update this game when i launch it*
+- Steam: go to Library - Baldur’s Gate 3 - right click Properties - Updates - select *Only update this game when I launch it*
 - GOG: go to Settings - Game features - uncheck *Auto-update games*
 
-Alternatively the game can be started directly from the bg3.exe or bg3_dx11.exe found in the games bin folder.
+Alternatively, the game can be started directly from the bg3.exe or bg3_dx11.exe found in the games bin folder.
 Default bin folder path:
 ```C:\Program files\Steam\steamapps\common\Baldur's Gate 3\bin```
 
 ## Where to find and download mods
 
-[BG3 Nexus Mods](https://www.nexusmods.com/baldursgate3)
+[Nexus Mods](https://www.nexusmods.com/baldursgate3) - All types of mods, including some that cannot be used on consoles.
+[Mod.io](https://mod.io/g/baldursgate3) - The official location for BG3 mods, and where console players will have to source all of their mods.
+[Patreon](https://www.patreon.com) - Some mod authors upload mods to their Patreons instead of other sites. Most are free to download as long as you join the Patreon in question.
 
 ## Mod types and how to install them
 
 ### Tab {.tabset}
 #### PAK
-Pak files are conveniently packaged data bundles. They are used with a mod manager and make installing and uninstalling Mods very convenient. Paks can include a variety of modifications to game elements such as textures, sounds, objects, and many others.
+Pak files are conveniently packaged data bundles. They are used with a mod manager and make installing and uninstalling mods very convenient. Paks can include a variety of modifications to game elements such as textures, sounds, objects, and many others.
 
 Installation:
 
@@ -78,10 +80,10 @@ Don't move either of them into the Active Mods panel.
 8. Start the game either directly through BG3MM or use your prefered method.
 
 #### MOD FIXER
->Games updated to Patch 7 do not need Mod fixer anymore. Mods including mod fixer should still work fine as long as the used file is called ForceRecompile.txt
+>Games updated to Patch 7 do not need Mod Fixer anymore. Mods including Mod Fixer should still work fine, as long as the used file is called ForceRecompile.txt
 {.is-warning}
 
-Mod fixer is still neccessary up to patch 6. If it isn't installed, character creation will not be available. Instead this lovely view will appear on screen:
+Mod Fixer is still neccessary up to Patch 6. If it isn't installed, character creation will not be available. Instead this lovely view will appear on screen:
 
 ![durgeharem.webp](/mod-use/install-mods/durgeharem.webp)
 
