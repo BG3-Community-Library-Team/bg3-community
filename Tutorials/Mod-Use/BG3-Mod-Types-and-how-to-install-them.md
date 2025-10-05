@@ -2,7 +2,7 @@
 title: BG3 Mod Types and how to install them
 description: 
 published: true
-date: 2025-10-05T01:18:27.795Z
+date: 2025-10-05T01:19:13.020Z
 tags: guide, moduse, wip
 editor: markdown
 dateCreated: 2024-07-02T06:32:16.092Z
@@ -72,7 +72,7 @@ Optional: *Save Order As* to make sure you have a working order to go back to ju
 Don't move either of them into the Active Mods panel.
 {.is-warning}
 6. Save and export the load order to your game.
-7. Start the game either directly through BG3MM or use your prefered method.
+7. Start the game either directly through BG3MM or use your preferred method.
 
 *You can also just drag the .zip file into your **Inactive Mods** section without unpacking it first. Then continue with Step 4.
 
