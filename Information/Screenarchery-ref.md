@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tools
 description: an non-exhausive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-09-16T15:44:21.096Z
+date: 2025-10-05T00:09:53.637Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -172,25 +172,26 @@ To avoid transparent mesh shadows, you need to increase the outer angle of your 
 ## Common issues
 
 ### General
-Screenshots have washed/gray colors: Disable HDR
+- Screenshots have washed/gray colors: Disable HDR
 
 ### ReShade
 There shouldn't be any issues if you follow the instructions carefully.
 
 ### Otis_Inf photomode tool
-No BG3 in the process list: Run the tool as admin
+- No BG3 in the process list: Run the tool as admin
+
+- Otis tries to hotsample the Script Extender Console window: Launch Otis and hook into the game while the main game window is in focus, not the console
 
 ### IGCS Depth of Field 
-The image is blurry even though the focal point is correct: Switch to Classic mode and set 1 frame to wait
+- The image is blurry even though the focal point is correct: Switch to Classic mode and set 1 frame to wait
 
-Purple artifacts: Disable HDR
+- Purple artifacts: Disable HDR
 
-When hotsampling, the game is still in native resolution: Switch to Windowed or Fullscreen
+- When hotsampling, the game is still in native resolution: Switch to Windowed or Fullscreen
 
+- The camera is moving when changing Focus delta X, but the second focus overlay isn't appearing: Disable ReShade performance mode
 
-The camera is moving when changing Focus delta X, but the second focus overlay isn't appearing: Disable ReShade performance mode
-
-Black screen when launching the game: Inject DLL or disable IgcsDof.fx; if you close your game while being in the DOF session - it will get stuck
+- Black screen when launching the game: Inject DLL or disable IgcsDof.fx; if you close your game while being in the DOF session - it will get stuck
 
 ### Lighty Lights
 There shouldn't be any issues if you follow the instructions carefully.
