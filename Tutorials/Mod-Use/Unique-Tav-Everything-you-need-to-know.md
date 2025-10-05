@@ -2,8 +2,8 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2025-10-05T00:42:40.673Z
-tags: bg3mm, installation, loose-file-mods, manual-mods, manual, how-to, unique-tav, loose-file, loose, unique, tav
+date: 2025-10-05T00:45:34.729Z
+tags: 
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
 ---
@@ -247,6 +247,15 @@ Make sure you do not have any other tatto or makeup mods installed. These will l
 If it does not work, try moving your "Generated" folder from your data folder, reinstall the data main file from Unique Tav, and the make/tattoo mod you want. 
 
 Look here through these two to properly install face/body tattoo's and make up mods: [How to switch tattoo and makeup mods](#how-to-switch-tattoo-and-makeup-mods) and [Makeup and tattoo mods that have not been optimised for Unique Tav](#makeup-and-tattoo-mods-that-have-not-been-optimised-for-unique-tav)
+
+#### Naked characters on my screen?
+
+If you see this: 
+
+![nomodfixerpng.png](/tutorials/nomodfixerpng.png =x400)
+
+This means you have not installed mod fixer. 
+Mod fixer is a requirement for almost all mods
 
 ## How to switch tattoo and makeup mods 
 
