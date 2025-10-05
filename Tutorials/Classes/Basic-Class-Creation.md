@@ -2,7 +2,7 @@
 title: Basic Class Creation
 description: Follow along guide to create a class for beginners.
 published: true
-date: 2025-09-23T07:53:38.147Z
+date: 2025-10-05T01:23:01.018Z
 tags: tutorial, class creation
 editor: markdown
 dateCreated: 2024-04-26T20:37:14.615Z
@@ -501,12 +501,16 @@ Almost ready to start running around as your new class. Here is a few images to 
 
 Anyways, lets pack up our files. I suggest you pin your mod folder(in my case, Quickster) to your quick access. Open up the multitool app. If you haven configured the multitool yet, visit the [getting started](https://github.com/ghostboats/bg3_modders_guide/wiki/Getting-Started) but basically make sure your packed mods get placed in the mods folder in the required %appdata% subdirectory. Lets drag our folder over to the multitool to start packing. It should ask you to submit an author and description for the mod. It is doing this to create the [meta.lsx](https://github.com/ghostboats/bg3_modders_guide/wiki/File-Insights#metalsx) file. Once done packing, navigate to the mods folder to make sure your mod is there. In my case, Quickster.pak:
 ![img 5](https://github.com/ghostboats/bg3_modders_guide/assets/106226990/b9cc5fb0-c098-4fe1-81f6-43ee242f131f)
-*<sub>Your mod fixer should also be there, like in the image<sub>
+*<sub>Your Mod Fixer should also be there, like in the image, if you are on a Pre-Patch 7 version of the game. Otherwise, Mod Fixer is not needed anymore.<sub>
 
 Lets open up our BGModManager application. If you don't see your mod name at all (it should be on the right hand side if this is the first time you opened the manager since creating your mod pak), hit refresh and it should appear. Drag your mod to the left side and hit ctrl + s to save the mod load order. Alright, its time! Hit ctrl + shift + g to launch the game!
 
-You should see your class in character creation. You may get some message about how "We were unable to create a working story..." when you hit "New Game". [This just means mod fixer is working correctly and ensuring your story doesnt break when you use mods](https://github.com/LaughingLeader/BG3ModManager/issues/31), just hit esc to cancel the cut scene and hit accept on the message. If you are seeing the following picture below instead of character creation, you may have forgotten to install the mod fixer or there is some issue with the mod fixer.
+You should see your class in character creation. You may get some message about how "We were unable to create a working story..." when you hit "New Game". [This just means Mod Fixer is working correctly and ensuring your story doesn't break when you use mods](https://github.com/LaughingLeader/BG3ModManager/issues/31), just hit esc to cancel the cut scene and hit accept on the message. If you are seeing the following picture below instead of character creation, you may have forgotten to install the Mod Fixer or there is some issue with the Mod Fixer.
 ![durgeharem.webp](/mod-use/install-mods/durgeharem.webp)
+
+> The previous info about Mod Fixer is only relevant if you are on a Pre-Patch 7 version of the game. If you are on Patch 7 or 8, you do not need Mod Fixer anymore.
+{.is-warning}
+
 
 # Add class skills/proficiencies and bonus ability points[⬆️](#goals)
 While we have a working character at this point, it is definitely lacking a lot of common options on character creation. You will see that there is no way to spec bonus ability points and that you don't have any skills or proficiencies for the class, among other things. Let's address the more generic things like that and worry about things that would be specific to your class like a passive selection menu on character creation for example, for later. Like before, we will need to create some more folders and files inside out existing mod folder. Make your way to the {mod_name}\Public\{mod_name}\ directory so in my case, Quickster\Public\Quickster\, and begin making the required folders/files.
