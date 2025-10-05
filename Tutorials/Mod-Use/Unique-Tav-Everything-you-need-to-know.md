@@ -2,7 +2,7 @@
 title: Unique Tav: Everything you need to know
 description: 
 published: true
-date: 2025-10-05T00:45:34.729Z
+date: 2025-10-05T00:47:17.504Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-03T22:55:56.961Z
@@ -254,8 +254,8 @@ If you see this:
 
 ![nomodfixerpng.png](/tutorials/nomodfixerpng.png =x400)
 
-This means you have not installed mod fixer. 
-Mod fixer is a requirement for almost all mods
+This means you have not installed Mod Fixer and are on a Pre-Patch 7 version of the game.
+Mod Fixer is a requirement for almost all mods, but only if you are on a Pre-Patch 7 version of BG3. If you are on Patch 7 or Patch 8, which most people will be, you do not need Mod Fixer. 
 
 ## How to switch tattoo and makeup mods 
 
