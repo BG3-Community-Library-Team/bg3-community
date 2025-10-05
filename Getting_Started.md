@@ -2,7 +2,7 @@
 title: Getting Started
 description: If this is your first dive into modding BG3, this is a good place to start!
 published: true
-date: 2024-06-21T02:39:31.066Z
+date: 2025-10-05T01:26:57.967Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-21T01:23:16.004Z
@@ -23,7 +23,7 @@ When working on your mod you will want to set up a good space to work in and kee
 1. Create a folder on your desktop named bg3_mods (or anything you want, but I will be calling mine bg3_mods if you want to follow along). You could technically just make a folder of your mods name but if you intend to make more mods in the future it would be better to make this bg3_mods folder and place all mod folders in here for better organization.
 2. Download visual studio code from https://code.visualstudio.com/download. You can use whatever code editor you want, but I will be using visual studio code when dealing with my files and showing examples below.
 3. Download the bg3 mod manager from https://github.com/LaughingLeader/BG3ModManager/releases. As the name suggests, it will help you manage your mods 👍. The page includes install and setup instructions so I will not include them here, follow them there where they will be up to date.
-4. Download the mod fixer from https://www.nexusmods.com/baldursgate3/mods/141. Character creation bugs out without this. Will explain how to use below, simply download for now and extract the .pak.
+4. If you are on a Pre-Patch 7 version of the game, download Mod Fixer from https://www.nexusmods.com/baldursgate3/mods/141. Character creation bugs out without this. Will explain how to use below, simply download for now and extract the .pak. If you are on Patch 7 or Patch 8, you can skip this step.
 5. Download the bg3 modders multitool from https://github.com/ShinyHobo/BG3-Modders-Multitool/releases. This tool has alot of uses but we will cover them as we need them. Download and extract the files for now.
 6. Download LSLIB and the export tool from https://github.com/Norbyte/lslib/releases. Like the multitool, many uses we will cover later. Download and extract the files for now.
 7. We should have a few file explorer windows open now from extracting folders and creating them. Here they are and what to do with them:
@@ -54,5 +54,7 @@ LSLIB is critical when it comes to modding baulders gate. Created and still regu
 
 
 
-# Ignore this
-Most people who are starting their modding journey have probably already installed mods before. On the off chance you have not, here is an important one to install which will while ensure that we have things set up right while learning how to install a mod. If you have not already, extract the mod fixer folder you downloaded from nexus. There should be a readme in there to explain what to do with the .pak in there but if not, open up your mods folder for bg3. You can find this folder by holding the windows key and pressing r. In the window that opens up, enter %LocalAppdata%\Larian Studios\Baldur's Gate 3\Mods which will take you to the mods folder. Drop the ModFixer.pak in. If you open up the mod manager you should see the mod fixer is in, at the bottom left. You may need to hit refresh.
+# If you have not updated to Patch 7/Patch 8...
+Most people who are starting their modding journey have probably already installed mods before. On the off chance you have not, here is an important one to install which will while ensure that we have things set up right while learning how to install a mod. If you have not already, extract the Mod Fixer folder you downloaded from Nexus. There should be a readme in there to explain what to do with the .pak in there but if not, open up your mods folder for bg3. You can find this folder by holding the windows key and pressing r. In the window that opens up, enter %LocalAppdata%\Larian Studios\Baldur's Gate 3\Mods which will take you to the mods folder. Drop the ModFixer.pak in. If you open up the mod manager you should see the Mod Fixer is in, at the bottom left. You may need to hit refresh.
+
+You only need to do this if you are on a pre-Patch 7/Patch 8 version of the game. If you have updated to one of those, you do not need to install Mod Fixer anymore.
