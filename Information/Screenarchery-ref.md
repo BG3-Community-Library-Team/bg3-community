@@ -1,8 +1,8 @@
 ---
 title: Screenarchery / Virtual Photography Tools
-description: an non-exhausive reference list of common mods and tools used for virtual photography
+description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-05T00:09:53.637Z
+date: 2025-10-05T00:10:15.754Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
