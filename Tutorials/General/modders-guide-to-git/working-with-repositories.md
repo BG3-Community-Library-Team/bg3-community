@@ -2,7 +2,7 @@
 title: 3. Working with Repositories
 description: Learn the basics of using Git
 published: true
-date: 2024-04-24T06:51:56.628Z
+date: 2025-10-05T00:20:35.843Z
 tags: git, github, workspace, organization
 editor: markdown
 dateCreated: 2024-04-24T05:25:29.333Z
@@ -41,7 +41,7 @@ If you'd like to take a moment to get familiar with the GitHub UI, click this bu
 
 <div style="text-align:center">
   
-[![Image](https://img.shields.io/badge/Check_Out-Getting_Familiar_with_GitHub-orange?style=for-the-badge)](/Tutorials/Tools/modders-guide-to-git/getting-familiar-with-github)
+[![Image](https://img.shields.io/badge/Check_Out-Getting_Familiar_with_GitHub-orange?style=for-the-badge)](/Tutorials/General/modders-guide-to-git/getting-familiar-with-github)
 </div>
 
 ### Cloning The Repo
@@ -65,5 +65,5 @@ By this point, we understand the difference between Git and GitHub. We've learne
 
 ---
 
-[<img align="left" src="https://img.shields.io/badge/Previous-The_Difference_Between_Git_and_GitHub-blue?style=for-the-badge">](/Tutorials/Tools/modders-guide-to-git/git-and-github) [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Branch+Management&color=2ea44f&style=for-the-badge">](/Tutorials/Tools/modders-guide-to-git/branch-management)
+[<img align="left" src="https://img.shields.io/badge/Previous-The_Difference_Between_Git_and_GitHub-blue?style=for-the-badge">](/Tutorials/General/modders-guide-to-git/git-and-github) [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Branch+Management&color=2ea44f&style=for-the-badge">](/Tutorials/General/modders-guide-to-git/branch-management)
  
