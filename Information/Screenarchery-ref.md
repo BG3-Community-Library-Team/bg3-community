@@ -2,7 +2,7 @@
 title: Screen Archery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-11T06:57:26.670Z
+date: 2025-10-11T07:16:14.558Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -168,22 +168,24 @@ https://framedsc.com/basics.htm
 ## Tips
 - In portrait-angled camera, you can use **FreezeShot** shader to flip the image
 
-	<img src="/freezeshot_3.webp" alt="placeholder" width="1000">
+	<img src="/screen_archery/screenarchery_ref/screenarchery-ref-freezeshot-demo-and-settings.webp" alt="placeholder" width="1000">
+
+
 
 - To avoid annoying-stacking-on-each-other shadows when you are too close to an object/character, you can disable ambient occlusion and instead use any ReShade AOs
 
-- To avoid transparent mesh shadows, you need to increase the outer angle of your lights, either by choosing a wider angle or placing them further away. Lowering shadows quality also helps a bit, but I wouldn't recommend doing so, only in some very specific scenarios
+- To avoid transparent mesh shadows, you need to increase the outer angle of your lights, either by increasing outer angle or placing them further away. Lowering shadows quality also helps a bit, but I wouldn't recommend doing so, only in some very specific scenarios
 
-	<img src="/shadows.webp" alt="placeholder" width="651"> <img src="/shadowsno.webp" alt="placeholder" width="344">
+	<img src="/shadows.webp" alt="placeholder-wip" width="651"> <img src="/shadowsno.webp" alt="placeholder-wip" width="344">
 
 
 
 - Default bloom has artifacts when upscaling resolution; to avoid them, use Zenteon Xenon or any ReShade blooms
-[Zenteon shaders](https://www.zenteon.co/shaders/free-shaders/xenon)
+[Zenteon Xenon bloom](https://www.zenteon.co/shaders/free-shaders/xenon)
 
-	<img src="/bloom_1.webp" alt="placeholder" width="1000">
+	<img src="/screen_archery/screenarchery_ref/screenarchery-ref-bloom-1-comparison.webp" alt="placeholder" width="1000">
   
-  <img src="/bloom_2.webp" alt="placeholder" width="1000">
+  <img src="/screen_archery/screenarchery_ref/screenarchery-ref-bloom-2-reshade-settings.webp" alt="placeholder" width="1000">
   
 
 
@@ -191,13 +193,19 @@ https://framedsc.com/basics.htm
 
 
 ### You is not able to read
-- It is what it is, it happens sometimes. Each tool has its own wiki/documentation, you just need to google sometimes
+- It is what it is, it happens sometimes. Each tool has its own wiki/documentation, you just need to use google sometimes
 
 ### General
 - **Screenshots have washed/gray colors:** disable HDR
 
 ### ReShade
-- **Any shader that relies on depth buffer (like DoF (except IGCS DoF), AO, GI, Fog, etc) acting weird, can't be properly adjusted and so on:** make sure you set up depth buffer correctly; in `Edit global preprocessor definitions` set .`..LINEARIZATION_FAR_PLANE = 1000`, `...IS_UPISDE_DOWN = 0`, `...IS_REVERSED = 0`, `...IS_LOGARITHMIC = 0`, and in Add-ons tab check `Copy depth buffer before clear...`
+- **Any shader that relies on depth buffer (like DoF (except IGCS DoF), AO, GI, Fog, etc) acting weird, can't be properly adjusted and so on:**
+Make sure you set up depth buffer correctly: in `Edit global preprocessor definitions` set 
+`RESHADE_DEPTH_LINEARIZATION_LINEARIZATION_FAR_PLANE = 1000`
+`RESHADE_DEPTH_INPUT_IS_UPISDE_DOWN = 0`
+`RESHADE_DEPTH_INPUT_IS_REVERSED = 0`
+`RESHADE_DEPTH_INPUT_IS_LOGARITHMIC = 0`
+In `Add-ons` tab check `Copy depth buffer before clear operations`
 
 - **No depth buffers found:** try launching the game in `DX11 mode`
 
@@ -211,7 +219,7 @@ https://framedsc.com/basics.htm
 - **When hotsampling, the game is still in native resolution:** switch to `windowed` or `fullscreen`
 
 - **If SE is console enabled, sometimes hotsampling changes console resolution; possible solutions:**
-  1. 	Disable the console and open it with `ctrl+f12` after launching the tool
+  1. 	Disable the console and open it with `ctrl+f12` when needed
   2.  Before launching the tool, tab in to the game first and then use hotsampling
 
 ### IGCS Depth of Field
