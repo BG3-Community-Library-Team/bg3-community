@@ -2,7 +2,7 @@
 title: Screen Archery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-11T07:16:14.558Z
+date: 2025-10-11T07:17:24.728Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -180,8 +180,8 @@ https://framedsc.com/basics.htm
 
 
 
-- Default bloom has artifacts when upscaling resolution; to avoid them, use Zenteon Xenon or any ReShade blooms
-[Zenteon Xenon bloom](https://www.zenteon.co/shaders/free-shaders/xenon)
+- Default bloom has artifacts when upscaling resolution; to avoid them, use [Zenteon Xenon](https://www.zenteon.co/shaders/free-shaders/xenon) or any ReShade blooms
+
 
 	<img src="/screen_archery/screenarchery_ref/screenarchery-ref-bloom-1-comparison.webp" alt="placeholder" width="1000">
   
