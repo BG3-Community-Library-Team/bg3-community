@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tools
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-05T00:10:15.754Z
+date: 2025-10-11T06:02:51.876Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -143,58 +143,84 @@ https://framedsc.com/basics.htm
 ## Mods guides
 
 ### Lighty Lights
-Axianaa (https://www.youtube.com/watch?v=svEfD5saQQQ) (qqq wtf)
-Tina (https://www.youtube.com/watch?v=k2gAAUizm98) 
-HastursQueen (https://www.youtube.com/watch?v=xL_WBOEuq5g)
+[BG3 Photomode Tutorial: LIGHTY LIGHTS!!! by Axianaa](https://www.youtube.com/watch?v=svEfD5saQQQ)
+[New BG3 VP tutorial by Tina](https://www.youtube.com/watch?v=k2gAAUizm98) 
+[Lighty Lights Tutorial by HastursQueen](https://www.youtube.com/watch?v=xL_WBOEuq5g)
+
+
+
+
+
 
 ### Backgrounds
-Tina (https://www.youtube.com/watch?v=BoqMTVMJIoI) (lol)
-HastursQueen (https://www.youtube.com/watch?v=4TSBts2vFW4)
+[Backgrounds Tutorial by HastursQueen](https://www.youtube.com/watch?v=4TSBts2vFW4)
+[How to create a neon sign using backgrounds and lighty lights by Tina](https://www.youtube.com/watch?v=BoqMTVMJIoI)
 
 ### Easy Cheat
-HastursQueen (https://www.youtube.com/watch?v=u6y3i-54lgM)
+[Easy Cheats Tutorial (only for making photos) by HastursQueen](https://www.youtube.com/watch?v=u6y3i-54lgM)
 
 ### Move Here
-HastursQueen (https://www.youtube.com/watch?v=bsS3qcck9fk)
+[Move Here Tutorial by HastursQueen](https://www.youtube.com/watch?v=bsS3qcck9fk)
 
 ### QSAT
-HastursQueen (https://www.youtube.com/watch?v=nQDW9-Zh6IM)
+[QSAT Tutorial by HastursQueen](https://www.youtube.com/watch?v=nQDW9-Zh6IM)
 
 ## Tips
-FreezeShot to flip image in portraits (img 1)
+- In portrait-angled camera, you can use **FreezeShot** shader to flip the image
 
-To avoid annoying-stacking-on-each-other shadows when you are too close to an object/character, you can disable ambient occlusion and instead use any ReShade AOs
+	<img src="/freezeshot_3.webp" alt="placeholder" width="1000">
 
-To avoid transparent mesh shadows, you need to increase the outer angle of your lights, either by choosing a wider angle or placing them further away. Lowering shadows quality also helps a bit, but I wouldn't recommend doing so, only in some very specific scenarios. Shadows on img 2, no shadows on img 3
+- To avoid annoying-stacking-on-each-other shadows when you are too close to an object/character, you can disable ambient occlusion and instead use any ReShade AOs
 
+- To avoid transparent mesh shadows, you need to increase the outer angle of your lights, either by choosing a wider angle or placing them further away. Lowering shadows quality also helps a bit, but I wouldn't recommend doing so, only in some very specific scenarios
+
+	<img src="/shadows.webp" alt="placeholder" width="651"> <img src="/shadowsno.webp" alt="placeholder" width="344">
+
+
+
+- Default bloom has artifacts when upscaling resolution; to avoid them, use Zenteon Xenon or any ReShade blooms
+[Zenteon shaders](https://www.zenteon.co/shaders/free-shaders/xenon)
+
+	<img src="/bloom_1.webp" alt="placeholder" width="1000">
+  
+  <img src="/bloom_2.webp" alt="placeholder" width="1000">
+  
 
 
 ## Common issues
 
+
+### You is not able to read
+- It is what it is, it happens sometimes. Each tool has its own wiki/documentation, you just need to google sometimes
+
 ### General
-- Screenshots have washed/gray colors: Disable HDR
+- **Screenshots have washed/gray colors:** disable HDR
 
 ### ReShade
-There shouldn't be any issues if you follow the instructions carefully.
+- **Any shader that relies on depth buffer (like dof (except igcs dof), ao, gi, fog, etc) acting weird, can't be properly adjusted and so on:** make sure you set up depth buffer correctly; in **Edit global preprocessor definitions** set .**..LINEARIZATION_FAR_PLANE = 1000**, **...IS_UPISDE_DOWN = 0**, **...IS_REVERSED = 0**, **...IS_LOGARITHMIC = 0**, and in Add-ons tab check **Copy depth buffer before clear...**
+
+- **No depth buffers found:** try launching the game in dx11 mode
 
 ### Otis_Inf photomode tool
-- No BG3 in the process list: Run the tool as admin
+- **No BG3 in the process list:** run the tool as admin
 
-- Otis tries to hotsample the Script Extender Console window: Launch Otis and hook into the game while the main game window is in focus, not the console
+- **Game can't be unpaused:** change game speed in the tool using the slider
 
-### IGCS Depth of Field 
-- The image is blurry even though the focal point is correct: Switch to Classic mode and set 1 frame to wait
+- **Camera acting weird, getting stuck and so on:** probably the game is paused
 
-- Purple artifacts: Disable HDR
+- **When hotsampling, the game is still in native resolution:** switch to windowed or fullscreen
 
-- When hotsampling, the game is still in native resolution: Switch to Windowed or Fullscreen
+- **If SE console enabled, sometimes hotsampling changes console resolution. Possible solutions:** Disable console and open it with ctrl f12 after launching the tool; before launching the tool, tab in to the game first
 
-- The camera is moving when changing Focus delta X, but the second focus overlay isn't appearing: Disable ReShade performance mode
+### IGCS Depth of Field
+- **Image is blurry even though the focal point is correct:** switch to classic mode and set 1 frame to wait, make sure you are in windowed/fullscreen mode, window borders in the tool is unchecked
 
-- Black screen when launching the game: Inject DLL or disable IgcsDof.fx; if you close your game while being in the DOF session - it will get stuck
+- **Focal point shifts when changing resolution using hotsampling:** uncheck window borders in the tool
 
-### Lighty Lights
-There shouldn't be any issues if you follow the instructions carefully.
+- **Purple artifacts:** disable HDR
 
-### QSAT
-There shouldn't be any issues if you follow the instructions carefully.
+- T**he camera is moving when changing Focus delta X, but the second focus overlay isn’t appearing:** disable ReShade performance mode
+
+- **Black screen when launching the game:** inject dll or disable IgcsDof.fx; if you close the game while being in the DOF session, it will get stuck
+
+- Make sure IgcsDof.fx is the last in the order. (It depends, but you probably don't know what the fuck you are doing, so keep it last)
