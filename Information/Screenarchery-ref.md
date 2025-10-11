@@ -2,7 +2,7 @@
 title: Screen Archery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-11T06:17:46.584Z
+date: 2025-10-11T06:22:32.982Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -148,10 +148,6 @@ https://framedsc.com/basics.htm
 - [Lighty Lights Tutorial by HastursQueen](https://www.youtube.com/watch?v=xL_WBOEuq5g)
 
 
-
-
-
-
 ### Backgrounds
 - [Backgrounds Tutorial by HastursQueen](https://www.youtube.com/watch?v=4TSBts2vFW4)
 - [How to create a neon sign using backgrounds and lighty lights by Tina](https://www.youtube.com/watch?v=BoqMTVMJIoI)
@@ -164,6 +160,10 @@ https://framedsc.com/basics.htm
 
 ### QSAT
 - [QSAT Tutorial by HastursQueen](https://www.youtube.com/watch?v=nQDW9-Zh6IM)
+
+
+### Everything at once
+- [Written guide by SatanFish](https://www.notion.so/SatanFish-s-Step-by-Step-How-She-Does-Her-VP-Guide-26615d7212eb80b99b47f1d53d1a9a52)
 
 ## Tips
 - In portrait-angled camera, you can use **FreezeShot** shader to flip the image
