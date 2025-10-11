@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tools
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-11T06:09:27.218Z
+date: 2025-10-11T06:11:22.655Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -197,7 +197,7 @@ https://framedsc.com/basics.htm
 - **Screenshots have washed/gray colors:** disable HDR
 
 ### ReShade
-- **Any shader that relies on depth buffer (like dof (except igcs dof), ao, gi, fog, etc) acting weird, can't be properly adjusted and so on:** make sure you set up depth buffer correctly; in **Edit global preprocessor definitions** set .**..LINEARIZATION_FAR_PLANE = 1000**, **...IS_UPISDE_DOWN = 0**, **...IS_REVERSED = 0**, **...IS_LOGARITHMIC = 0**, and in Add-ons tab check **Copy depth buffer before clear...**
+- **Any shader that relies on depth buffer (like DoF (except IGCS DoF), AI, GI, Fog, etc) acting weird, can't be properly adjusted and so on:** make sure you set up depth buffer correctly; in **Edit global preprocessor definitions** set .**..LINEARIZATION_FAR_PLANE = 1000**, **...IS_UPISDE_DOWN = 0**, **...IS_REVERSED = 0**, **...IS_LOGARITHMIC = 0**, and in Add-ons tab check **Copy depth buffer before clear...**
 
 - **No depth buffers found:** try launching the game in dx11 mode
 
