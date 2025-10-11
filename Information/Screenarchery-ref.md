@@ -2,7 +2,7 @@
 title: Screen Archery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-11T06:23:38.067Z
+date: 2025-10-11T06:42:42.354Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -197,25 +197,27 @@ https://framedsc.com/basics.htm
 - **Screenshots have washed/gray colors:** disable HDR
 
 ### ReShade
-- **Any shader that relies on depth buffer (like DoF (except IGCS DoF), AO, GI, Fog, etc) acting weird, can't be properly adjusted and so on:** make sure you set up depth buffer correctly; in **Edit global preprocessor definitions** set .**..LINEARIZATION_FAR_PLANE = 1000**, **...IS_UPISDE_DOWN = 0**, **...IS_REVERSED = 0**, **...IS_LOGARITHMIC = 0**, and in Add-ons tab check **Copy depth buffer before clear...**
+- **Any shader that relies on depth buffer (like DoF (except IGCS DoF), AO, GI, Fog, etc) acting weird, can't be properly adjusted and so on:** make sure you set up depth buffer correctly; in `Edit global preprocessor definitions` set .`..LINEARIZATION_FAR_PLANE = 1000`, `...IS_UPISDE_DOWN = 0`, `...IS_REVERSED = 0`, `...IS_LOGARITHMIC = 0`, and in Add-ons tab check `Copy depth buffer before clear...`
 
-- **No depth buffers found:** try launching the game in dx11 mode
+- **No depth buffers found:** try launching the game in `DX11 mode`
 
 ### Otis_Inf photomode tool
-- **No BG3 in the process list:** run the tool as admin
+- **No BG3 in the process list:** run the tool as `admin`
 
 - **Game can't be unpaused:** change game speed in the tool using the slider
 
 - **Camera acting weird, getting stuck and so on:** probably the game is paused
 
-- **When hotsampling, the game is still in native resolution:** switch to **windowed** or **fullscreen**
+- **When hotsampling, the game is still in native resolution:** switch to `windowed` or `fullscreen`
 
-- **If SE is console enabled, sometimes hotsampling changes console resolution. Possible solutions:** Disable the console and open it with **ctrl+f12** after launching the tool; before launching the tool, tab in to the game first and then use hotsampling
+- **If SE is console enabled, sometimes hotsampling changes console resolution; possible solutions:**
+  1. 	Disable the console and open it with `ctrl+f12` after launching the tool
+  2.  Before launching the tool, tab in to the game first and then use hotsampling
 
 ### IGCS Depth of Field
-- **Image is blurry even though the focal point is correct:** switch to **classic mode** and set **1 frame to wait**, make sure you are in **windowed/fullscreen mode** and **window borders** in the tool is unchecked
+- **Image is blurry even though the focal point is correct:** switch to `classic mode` and set `1 frame to wait`, make sure you are in `windowed/fullscreen mode` and `window borders` in the tool is unchecked
 
-- **Focal point shifts when changing resolution using hotsampling:** uncheck **window borders** in the tool
+- **Focal point shifts when changing resolution using hotsampling:** uncheck `window borders` in the tool
 
 - **Purple artifacts:** disable HDR
 
@@ -223,4 +225,5 @@ https://framedsc.com/basics.htm
 
 - **Black screen when launching the game:** inject dll or disable IgcsDof.fx; if you close the game while being in the DOF session, it will get stuck
 
-- Make sure **IgcsDof.fx** is the last in the order. (It depends, but you probably don't know what the fudge you are doing, so keep it last)
+- Make sure `IgcsDof.fx` is the last in the order. (It depends, but you probably don't know what the fudge you are doing, so keep it last)
+
