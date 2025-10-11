@@ -2,7 +2,7 @@
 title: Screen Archery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-11T07:17:24.728Z
+date: 2025-10-11T07:21:42.907Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -193,7 +193,7 @@ https://framedsc.com/basics.htm
 
 
 ### You is not able to read
-- It is what it is, it happens sometimes. Each tool has its own wiki/documentation, you just need to use google sometimes
+- It is what it is, it happens sometimes. Each tool has its own wiki/documentation, you just need to use google occasionally
 
 ### General
 - **Screenshots have washed/gray colors:** disable HDR
