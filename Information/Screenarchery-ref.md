@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-11T07:22:34.778Z
+date: 2025-10-11T07:24:59.289Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -61,7 +61,7 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
   - allows you to create backgrounds
 
 - [QSAT (Quick Small Animation Thingy)](https://www.nexusmods.com/baldursgate3/mods/17737) by rakor
-  - to play any in-game and modded animations and PM animations without patches
+  - to play any in-gamea and modded animations without patches; also allows to play tail and wings animations separatly 
 
 - [Move Here](https://discord.com/channels/1211056047784198186/1316159736135286866/1355178698747150436) by rakor
   - to position objects and characters
