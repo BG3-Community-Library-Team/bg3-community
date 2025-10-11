@@ -2,7 +2,7 @@
 title: Screen Archery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-11T06:13:15.254Z
+date: 2025-10-11T06:17:46.584Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -124,28 +124,28 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 (wip)
 
 ## Useful resources
-- [All Act 1 and Act 2 locations](https://drive.google.com/drive/u/3/folders/14ZxDv-5qwzZI_dm_qJFCaP2cl69WT0Gp?usp=sharing)
+- [All Act 1 and Act 2 locations](https://drive.google.com/drive/u/3/folders/14ZxDv-5qwzZI_dm_qJFCaP2cl69WT0Gp?usp=sharing) (slowly adding all Act 3 ones)
 
 - [All item previews](https://drive.google.com/file/d/1NVdFynJMcUcT3wjVxRQHpJ-lqqE6XKNT/view?usp=sharing)
 
 
 ## Useful links
 
-Good VP YouTube guides by Shinobi's Virtual Photography:
+- Good VP YouTube guides by Shinobi's Virtual Photography:
 [How to Learn Virtual Photography](https://www.youtube.com/watch?v=CbpTXG-mpgo)
 [What are Narrative Shots in Photography](https://www.youtube.com/watch?v=Rw9uHxPHuXY)
 [How to Unlock your Creativity](https://www.youtube.com/watch?v=bagCqpYobCU)
 [6 Classic Mistakes in Virtual Photography](https://www.youtube.com/watch?v=QaH_hsygqmU)
 
-More useful info:
+- More useful info:
 https://framedsc.com/basics.htm
 
 ## Mods guides
 
 ### Lighty Lights
-[BG3 Photomode Tutorial: LIGHTY LIGHTS!!! by Axianaa](https://www.youtube.com/watch?v=svEfD5saQQQ)
-[New BG3 VP tutorial by Tina](https://www.youtube.com/watch?v=k2gAAUizm98) 
-[Lighty Lights Tutorial by HastursQueen](https://www.youtube.com/watch?v=xL_WBOEuq5g)
+- [BG3 Photomode Tutorial: LIGHTY LIGHTS!!! by Axianaa](https://www.youtube.com/watch?v=svEfD5saQQQ)
+- [New BG3 VP tutorial by Tina](https://www.youtube.com/watch?v=k2gAAUizm98) 
+- [Lighty Lights Tutorial by HastursQueen](https://www.youtube.com/watch?v=xL_WBOEuq5g)
 
 
 
@@ -153,17 +153,17 @@ https://framedsc.com/basics.htm
 
 
 ### Backgrounds
-[Backgrounds Tutorial by HastursQueen](https://www.youtube.com/watch?v=4TSBts2vFW4)
-[How to create a neon sign using backgrounds and lighty lights by Tina](https://www.youtube.com/watch?v=BoqMTVMJIoI)
+- [Backgrounds Tutorial by HastursQueen](https://www.youtube.com/watch?v=4TSBts2vFW4)
+- [How to create a neon sign using backgrounds and lighty lights by Tina](https://www.youtube.com/watch?v=BoqMTVMJIoI)
 
 ### Easy Cheat
-[Easy Cheats Tutorial (only for making photos) by HastursQueen](https://www.youtube.com/watch?v=u6y3i-54lgM)
+- [Easy Cheats Tutorial (only for making photos) by HastursQueen](https://www.youtube.com/watch?v=u6y3i-54lgM)
 
 ### Move Here
-[Move Here Tutorial by HastursQueen](https://www.youtube.com/watch?v=bsS3qcck9fk)
+- [Move Here Tutorial by HastursQueen](https://www.youtube.com/watch?v=bsS3qcck9fk)
 
 ### QSAT
-[QSAT Tutorial by HastursQueen](https://www.youtube.com/watch?v=nQDW9-Zh6IM)
+- [QSAT Tutorial by HastursQueen](https://www.youtube.com/watch?v=nQDW9-Zh6IM)
 
 ## Tips
 - In portrait-angled camera, you can use **FreezeShot** shader to flip the image
