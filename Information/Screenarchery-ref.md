@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-11T07:24:59.289Z
+date: 2025-10-13T05:34:51.492Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -19,7 +19,7 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 - [Baldur's Gate 3 Photomode Tools](https://www.patreon.com/posts/86230271?collection=12940) by Otis_Inf
   - **REQUIRES at least one month Patreon subscription = ~5€/6.50$**
-  - allows resolution hotsampling, game pause, and fine control of the camera
+  - Allows resolution hotsampling, game pause, and fine control of the camera
 
 - [IGCS Depth of Field](https://github.com/FransBouma/IgcsConnector/releases) by Otis_Inf
   - A DOF / bokeh option for use with ReShade and Otis tools
@@ -27,55 +27,58 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 - [Reshade](https://discord.com/channels/1356377728126943424/1358516980839350393/1358518005948088320) 
   - for toggleable presets affecting how the screen renders (lighting/colour/contrast/dof/etc)
-  - make your own presets or search Nexus for them
+  - Make your own presets or search Nexus for them
 
 - [SRWE](https://github.com/dtgDTGdtg/SRWE) by dtgDTGdt, Otis_Inf, ghostinthecamera, The-SamminAter
-   - for hotsampling if you don't have Otis_Inf Baldur's Gate 3 Photomode Tools
+   - For hotsampling if you don't have Otis_Inf Baldur's Gate 3 Photomode Tools
 
 
 ## Backbone Mods / Tools
 
 
 - [Script Extender](https://github.com/Norbyte/bg3se/releases/tag/updater-20240430)
-  - needed for most tools, also enabling the console with BG3MM opens up the option to input commands
+  - Needed for most tools, also enabling the console with BG3MM opens up the option to input commands
 
 - [MCM (Mod Configuration Menu)](https://www.nexusmods.com/baldursgate3/mods/9162)
-  - needed for the in-game menus of many of the mods in here
+  - Needed for the in-game menus of many of the mods in here
 
 - [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) by Aahz
-  - in-game UI for access to cheaty things, including a searchable item spawner, teleportering to any level, party menu, etc
+  - In-game UI for access to cheaty things, including a searchable item spawner, teleportering to any level, party menu, etc
 
 - [Native Camera Tweaks](https://www.nexusmods.com/baldursgate3/mods/945) by Ershin
   - Native open source plugin providing several camera tweaks. Unlocked camera pitch, zoom, controller stick deadzone
 
 - [Snapshots](https://www.nexusmods.com/baldursgate3/mods/17934) by rdekarios
-  - fast travel to 45 of the game's harder to access places, unseen locations, and cutscene exclusive locations, and change the lighting and atmosphere
+  - Fast travel to 45 of the game's harder to access places, unseen locations, and cutscene exclusive locations, and change the lighting and atmosphere
 
 - [WASD Character Movement](https://www.nexusmods.com/baldursgate3/mods/781) by Ch4nKyy
-  - makes moving around for photography easier, especially if using EasyCheat to teleport to certain locations which don't have a "ground" to click on
+  - Makes moving around for photography easier, especially if using EasyCheat to teleport to certain locations which don't have a "ground" to click on
 
 - [Lighty Lights](https://www.nexusmods.com/baldursgate3/mods/14364) by rakor
-  - allows you to create and control light sources
+  - Allows you to create and control light sources
 
 - [Backgrounds](https://www.nexusmods.com/baldursgate3/mods/14999) by rakor
-  - allows you to create backgrounds
+  - Allows you to create backgrounds
 
 - [QSAT (Quick Small Animation Thingy)](https://www.nexusmods.com/baldursgate3/mods/17737) by rakor
-  - to play any in-gamea and modded animations without patches; also allows to play tail and wings animations separatly 
+  - To play any in-gamea and modded animations without patches; also allows to play tail and wings animations separatly 
 
 - [Move Here](https://discord.com/channels/1211056047784198186/1316159736135286866/1355178698747150436) by rakor
-  - to position objects and characters
+  - To position objects and characters
 
 - [Pretty Particles](https://www.nexusmods.com/baldursgate3/mods/14474) by scarstarion
-  - create pretty particles! :fireworks::sparkles:
+  - Create pretty particles! :fireworks::sparkles:
+  
+- [Creature Photo Mode Fix](https://www.nexusmods.com/baldursgate3/mods/18997)
+  - Fixes the bug that a few Creatures don't enter photomode properly.
   
 ## Supplemental for Scenery / Characters
 
 - [CCEE](https://www.nexusmods.com/baldursgate3/mods/17123)
-  - to change appearance of your characters and companions and also apply cool parameters like hair wind, etc 
+  - To change appearance of your characters and companions and also apply cool parameters like hair wind, etc 
 
 - [Appearance Edit Enhanced + Origins addon](https://discord.com/channels/1356377728126943424/1358516980839350393/1358516980839350393)
-  - allows changing the appearance of companions
+  - Allows changing the appearance of companions
 
 
 ## Poses / Expressions for Photo Mode
@@ -91,33 +94,33 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 ### Poses
 
 - [Strike a Pose](https://www.nexusmods.com/baldursgate3/mods/16092) by MangoPunch
-  - adds approximately 60 in-game animations as new poses
+  - Adds approximately 60 in-game animations as new poses
 
 - [Get a Room](https://www.nexusmods.com/baldursgate3/mods/16092) by Elledwyn
-  - adds matching romantic animations from the game
+  - Adds matching romantic animations from the game
 
 - [Poses of Plenty vol. 1](https://www.nexusmods.com/baldursgate3/mods/16242) by lumad11
-  - adds custom poses
+  - Adds custom poses
 
 - [The Urge to Pose](https://www.nexusmods.com/baldursgate3/mods/16987) by CatastropicalCat
-  - adds Dark Urge poses and animations
+  - Adds Dark Urge poses and animations
 
 - [Claravel's Emotes for Photo Mode](https://www.nexusmods.com/baldursgate3/mods/16904) by Claravel / Elledwyn
-  - adds animations and poses from [Claravel's Emotes mod](https://www.nexusmods.com/baldursgate3/mods/4744) into photo mode
+  - Adds animations and poses from [Claravel's Emotes mod](https://www.nexusmods.com/baldursgate3/mods/4744) into photo mode
 
 - [Portrait Poses for Photo Mode](https://www.nexusmods.com/baldursgate3/mods/17002) by Elledwyn 
-  - adds poses various characters and NPCs make when generating their portrait to photo mode
+  - Adds poses various characters and NPCs make when generating their portrait to photo mode
 
 ### Expressions
 
 - [Vanilla Expressions Enhanced](https://www.nexusmods.com/baldursgate3/mods/17899) by lumadaire
-  - adds different eye directions for all vanilla facial expressions in photo mode
+  - Adds different eye directions for all vanilla facial expressions in photo mode
 
 - [APEX (Additional Photo Mode Expressions)](https://www.nexusmods.com/baldursgate3/mods/17711) by lumadaire
-  - adds additional photomode expressions with several eye directions
+  - Adds additional photomode expressions with several eye directions
 
 - [Mercurial Visage](https://www.nexusmods.com/baldursgate3/mods/17781) by Forosnai
-  - adds 13 new expressions with eyes looking in 9 directions each, as well as a handful of one-off expressions
+  - Adds 13 new expressions with eyes looking in 9 directions each, as well as a handful of one-off expressions
   
 ## Texture stuff
 
