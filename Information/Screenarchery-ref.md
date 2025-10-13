@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-13T05:34:51.492Z
+date: 2025-10-13T07:25:57.081Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -20,13 +20,14 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [Baldur's Gate 3 Photomode Tools](https://www.patreon.com/posts/86230271?collection=12940) by Otis_Inf
   - **REQUIRES at least one month Patreon subscription = ~5€/6.50$**
   - Allows resolution hotsampling, game pause, and fine control of the camera
+  - Please read its [documentaion](https://opm.fransbouma.com/Cameras/bg3.htm) first and then common issues which are listed below
 
 - [IGCS Depth of Field](https://github.com/FransBouma/IgcsConnector/releases) by Otis_Inf
   - A DOF / bokeh option for use with ReShade and Otis tools
-  - Tip for better focus: switch to Classic mode and set 1 frame to wait
+  - Please read its [documentaion](https://opm.fransbouma.com/igcsdof.htm) first and then common issues which are listed below
 
-- [Reshade](https://discord.com/channels/1356377728126943424/1358516980839350393/1358518005948088320) 
-  - for toggleable presets affecting how the screen renders (lighting/colour/contrast/dof/etc)
+- [Reshade](https://reshade.me/) by crosire
+  - For toggleable presets affecting how the screen renders (lighting/colour/contrast/dof/etc)
   - Make your own presets or search Nexus for them
 
 - [SRWE](https://github.com/dtgDTGdtg/SRWE) by dtgDTGdt, Otis_Inf, ghostinthecamera, The-SamminAter
@@ -36,10 +37,10 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 ## Backbone Mods / Tools
 
 
-- [Script Extender](https://github.com/Norbyte/bg3se/releases/tag/updater-20240430)
+- [Script Extender](https://github.com/Norbyte/bg3se/releases/tag/updater-20240430) by Norbyte
   - Needed for most tools, also enabling the console with BG3MM opens up the option to input commands
 
-- [MCM (Mod Configuration Menu)](https://www.nexusmods.com/baldursgate3/mods/9162)
+- [MCM (Mod Configuration Menu)](https://www.nexusmods.com/baldursgate3/mods/9162) by Volitio
   - Needed for the in-game menus of many of the mods in here
 
 - [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) by Aahz
