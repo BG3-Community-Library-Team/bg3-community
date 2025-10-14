@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-14T04:28:55.212Z
+date: 2025-10-14T04:41:57.188Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -225,7 +225,10 @@ https://framedsc.com/basics.htm
 
 
 
-- To avoid annoying-stacking-on-each-other shadows when you are too close to an object/character, you can disable ambient occlusion and instead use any ReShade AOs
+- To avoid annoying-stacking-on-each-other shadows whicj can appear if you are too close to an object/character, or some where in the background, you can disable ambient occlusion and instead use any ReShade AOs
+
+	<img src="/placeholder.webp" alt="placeholder" width="1000">
+
 
 - To avoid transparent mesh shadows, you need to increase the outer angle of your lights, either by increasing outer angle or placing them further away. Lowering shadows quality also helps a bit, but I wouldn't recommend doing so, only in some very specific scenarios
 
