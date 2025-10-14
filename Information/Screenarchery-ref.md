@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-14T04:14:29.746Z
+date: 2025-10-14T04:22:12.792Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -229,7 +229,7 @@ https://framedsc.com/basics.htm
 
 - To avoid transparent mesh shadows, you need to increase the outer angle of your lights, either by increasing outer angle or placing them further away. Lowering shadows quality also helps a bit, but I wouldn't recommend doing so, only in some very specific scenarios
 
-	<img src="/shadows.webp" alt="placeholder-wip" width="651"> <img src="/shadowsno.webp" alt="placeholder-wip" width="344">
+	<img src="/screen_archery/screenarchery_ref/screenarchery-ref-shadows-1-comparison.webp" alt="placeholder" width="1000">
 
 
 
