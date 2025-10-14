@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-14T04:12:27.197Z
+date: 2025-10-14T04:13:52.418Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -97,8 +97,6 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [Angel Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17146)  
 
 - [The Best Boy - Scratch Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18623)  
-
-- [BG3 Animation Framework](https://www.nexusmods.com/baldursgate3/mods/16207)  
 
 - [Big Spoon x Little Spoon Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18957)  
 
