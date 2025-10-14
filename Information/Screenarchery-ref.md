@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-13T07:25:57.081Z
+date: 2025-10-14T04:04:35.950Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -94,34 +94,70 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 ### Poses
 
-- [Strike a Pose](https://www.nexusmods.com/baldursgate3/mods/16092) by MangoPunch
-  - Adds approximately 60 in-game animations as new poses
+- [Angel Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17146)  
 
-- [Get a Room](https://www.nexusmods.com/baldursgate3/mods/16092) by Elledwyn
-  - Adds matching romantic animations from the game
+- [The Best Boy - Scratch Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18623)  
 
-- [Poses of Plenty vol. 1](https://www.nexusmods.com/baldursgate3/mods/16242) by lumad11
-  - Adds custom poses
+- [BG3 Animation Framework](https://www.nexusmods.com/baldursgate3/mods/16207)  
 
-- [The Urge to Pose](https://www.nexusmods.com/baldursgate3/mods/16987) by CatastropicalCat
-  - Adds Dark Urge poses and animations
+- [Big Spoon x Little Spoon Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18957)  
 
-- [Claravel's Emotes for Photo Mode](https://www.nexusmods.com/baldursgate3/mods/16904) by Claravel / Elledwyn
-  - Adds animations and poses from [Claravel's Emotes mod](https://www.nexusmods.com/baldursgate3/mods/4744) into photo mode
+- [Bonds Unspoken Pose Pack](https://www.nexusmods.com/baldursgate3/mods/17962)  
 
-- [Portrait Poses for Photo Mode](https://www.nexusmods.com/baldursgate3/mods/17002) by Elledwyn 
-  - Adds poses various characters and NPCs make when generating their portrait to photo mode
+- [Claravel's Emotes as Poses](https://www.nexusmods.com/baldursgate3/mods/16904)  
+
+- [Em's Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18617)  
+
+- [Embrace Your Desires](https://www.nexusmods.com/baldursgate3/mods/18488)  
+
+- [Emotes](https://www.nexusmods.com/baldursgate3/mods/4744)  
+
+- [Extra Camera Mode Poses](https://www.nexusmods.com/baldursgate3/mods/17597)  
+
+- [Fairy Charm](https://ko-fi.com/Post/Public-Release-Fairy-Charm-Q5Q71K2AS6)  
+
+- [Get a Room](https://www.nexusmods.com/baldursgate3/mods/16942)  
+
+- [Kith'rak Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17397)  
+
+- [Mermaid's Kiss](https://ko-fi.com/post/Public-Release-Mermaids-Kiss-X8X11JU52B)  
+
+- [Portrait Pose Pack](https://www.nexusmods.com/baldursgate3/mods/15248)  
+
+- [Portrait Poses](https://www.nexusmods.com/baldursgate3/mods/17002)  
+
+- [Poses of Plenty](https://www.nexusmods.com/baldursgate3/mods/16242)  
+
+- [Scarlet Desire](https://ko-fi.com/s/3f44ac028b)  
+
+- [Sera's Silly Cauldron](https://www.patreon.com/posts/130463759)  
+
+- [Sera's Silly Cauldron - Dances](https://www.patreon.com/posts/seras-silly-of-135265391)  
+
+- [A Song of Ice and Fire Poses](https://www.nexusmods.com/baldursgate3/mods/17755)  
+
+- [Sorrow and Silk](https://www.nexusmods.com/baldursgate3/mods/18053)  
+
+- [Spicy Time](https://www.patreon.com/posts/spicy-time-pose-140782983)  
+
+- [Strike a Pose](https://www.nexusmods.com/baldursgate3/mods/16092)  
+
+- [The Urge to Pose](https://www.nexusmods.com/baldursgate3/mods/16987)  
+
+- [Whirling Roses](https://ko-fi.com/Post/Mod-Release-whirlinginroses-Pose-Pack-O5O41MLOL8)  
+
 
 ### Expressions
+  
+- [A.P.E.X. - Additional Photo Mode Expressions](https://www.nexusmods.com/baldursgate3/mods/17711)  
 
-- [Vanilla Expressions Enhanced](https://www.nexusmods.com/baldursgate3/mods/17899) by lumadaire
-  - Adds different eye directions for all vanilla facial expressions in photo mode
+- [Idle Expressions](https://www.nexusmods.com/baldursgate3/mods/7947)  
 
-- [APEX (Additional Photo Mode Expressions)](https://www.nexusmods.com/baldursgate3/mods/17711) by lumadaire
-  - Adds additional photomode expressions with several eye directions
+- [Mercurial Visage](https://www.nexusmods.com/baldursgate3/mods/17781)  
 
-- [Mercurial Visage](https://www.nexusmods.com/baldursgate3/mods/17781) by Forosnai
-  - Adds 13 new expressions with eyes looking in 9 directions each, as well as a handful of one-off expressions
+- [Vanilla Expressions Enhanced](https://www.nexusmods.com/baldursgate3/mods/17899)  
+
+
   
 ## Texture stuff
 
