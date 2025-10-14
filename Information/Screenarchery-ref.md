@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-14T06:04:30.165Z
+date: 2025-10-14T08:46:26.064Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -119,10 +119,6 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [Kith'rak Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17397)  
 
 - [Mermaid's Kiss](https://ko-fi.com/post/Public-Release-Mermaids-Kiss-X8X11JU52B)  
-
-- [Portrait Pose Pack](https://www.nexusmods.com/baldursgate3/mods/15248)  
-
-- [Portrait Poses](https://www.nexusmods.com/baldursgate3/mods/17002)  
 
 - [Poses of Plenty](https://www.nexusmods.com/baldursgate3/mods/16242)  
 
