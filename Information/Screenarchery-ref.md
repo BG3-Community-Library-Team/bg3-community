@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-14T04:22:12.792Z
+date: 2025-10-14T04:28:55.212Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -136,7 +136,7 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 - [Sorrow and Silk](https://www.nexusmods.com/baldursgate3/mods/18053)  
 
-- [Spicy Time](https://www.patreon.com/posts/spicy-time-pose-140782983)  
+- [Spicy Time](https://www.patreon.com/posts/spicy-time-pose-140782983) [Paid]
 
 - [Strike a Pose](https://www.nexusmods.com/baldursgate3/mods/16092)  
 
