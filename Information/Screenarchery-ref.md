@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-14T04:04:35.950Z
+date: 2025-10-14T04:12:27.197Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -159,9 +159,23 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 
   
-## Texture stuff
+## Visuals/Textures/Models
 
-(wip)
+ - [Alpha Dither Shader Fix](https://www.nexusmods.com/baldursgate3/mods/18585)
+ 
+ 
+ - [No Annoying VFX](https://www.nexusmods.com/baldursgate3/mods/7248)
+ 
+ 
+ - [Smaller Torches](https://www.nexusmods.com/baldursgate3/mods/2248)
+ - [Shadows of the Gate](https://www.nexusmods.com/baldursgate3/mods/17611)
+ 
+ - [Vivid Landscapes - HD Ground and Terrain](https://www.nexusmods.com/baldursgate3/mods/6473)
+ - [Vivid Landscapes - Roads](https://www.nexusmods.com/baldursgate3/mods/6844)
+ - [Vivid Landscapes - Water](https://www.nexusmods.com/baldursgate3/mods/7421)
+ - [Vivid Landscapes - Fire and Ashes](https://www.nexusmods.com/baldursgate3/mods/11520)
+ - [Vivid Landscapes - HD Ground and Terrain](https://www.nexusmods.com/baldursgate3/mods/6473)
+ 
 
 ## Useful resources
 - [All Act 1 and Act 2 locations](https://drive.google.com/drive/u/3/folders/14ZxDv-5qwzZI_dm_qJFCaP2cl69WT0Gp?usp=sharing) (slowly adding all Act 3 ones)
