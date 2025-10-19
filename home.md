@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2025-10-19T09:22:04.966Z
+date: 2025-10-19T09:22:16.833Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -14,7 +14,7 @@ This is a network test
 
 This is the BG3 Modding Community Wiki, a place to find, create, and edit tutorials, resources, and guides. Lore and base game information are also welcome.
 
-All content is posted with the author’s consent.  Test
+All content is posted with the author’s consent. 
 
 ## How to Get Involved  
 This is a community-driven project, and we value your input! Whether you contribute or just explore, we’d love to hear your feedback on [Discord](https://discord.gg/bg3mods). If you’d like to participate, please read the [Rules and Guidelines](/meta/guidelines) first to ensure we're on the same page.  
