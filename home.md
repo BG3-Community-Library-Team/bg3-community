@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2025-10-19T15:42:18.512Z
+date: 2025-10-19T15:42:47.646Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -47,7 +47,7 @@ Thank you for helping to improve the wiki!
 - [:green_book: Tools *Links and guides relating to tools for modding Baldur's Gate 3.*](/Tools)
 - [:closed_book: Tutorials *A list of guides for creating mods.*](/Tutorials)
 - [:video_game: Mod Usage *A list of guides relating to the installation and usage of mods*](/Tutorials/Mod-Use)
-- [:camera: Screeanarchery *A list of pages about screenarchery and virtual photography*](/Screenarchery)
+- [:camera: Screenarchery *A list of pages about screenarchery and virtual photography*](/Screenarchery)
 - [:notebook: Dictionary *A glossary of common terms used in Baldur's Gate 3 mod creation.*](/Information/dictionary)
 
 {.links-list}
