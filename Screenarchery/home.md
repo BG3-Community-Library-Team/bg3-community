@@ -2,14 +2,14 @@
 title: Screenarchery
 description: This page is a list of all parts of the Screen Archery Guide
 published: true
-date: 2025-10-19T09:43:17.869Z
+date: 2025-10-19T15:14:48.460Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T14:46:03.197Z
 ---
 
 # List:Screenarchery
-This page is a list of all parts of the Screenarchery guide and related pages.
+This page is a list of all parts of the Screenarchery guide.
 
 > PLEASE NOTE: this area is a WIP!
 > [If you have ideas or suggestions, feel free to leave a comment on the BG3 Modding Community Discord server](https://discord.com/channels/1211056047784198186/1254329164400431215)
