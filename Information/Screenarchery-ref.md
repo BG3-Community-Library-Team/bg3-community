@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-14T08:46:26.064Z
+date: 2025-10-19T14:44:26.249Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -139,6 +139,12 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [The Urge to Pose](https://www.nexusmods.com/baldursgate3/mods/16987)  
 
 - [Whirling Roses](https://ko-fi.com/Post/Mod-Release-whirlinginroses-Pose-Pack-O5O41MLOL8)  
+
+- [Axi and Cay's Cute Couple Poses](https://www.nexusmods.com/baldursgate3/mods/19288)  
+
+- [Sera's Silly Cauldron of Delulu Dances](https://www.nexusmods.com/baldursgate3/mods/19293)  
+
+- [Little Dove](https://www.nexusmods.com/baldursgate3/mods/19178)  
 
 
 ### Expressions
