@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2025-10-19T09:22:16.833Z
+date: 2025-10-19T15:36:10.734Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -106,4 +106,13 @@ Thank you for helping to improve the wiki!
 - [Icons *Guides relating to Icons*](Tutorials/Icons)
 - [Toolkit *Guides relating to Larian's Toolkit*](/Tutorials/Toolkit)
 - [Screen Archery *Guides relating to Screen Archery*](/Tutorials/Screen-Archery)
+{.links-list}
+
+## Screenarchery
+- [Screenarchery / Virtual Photography Tutorials, Tools and Resources *A non-exhaustive reference list of common mods and tools used for virtual photography*](https://wiki.bg3.community/en/Screenarchery/Screenarchery-ref)
+- [Screenarchery Guide *wip*](https://wiki.bg3.community/en/Screenarchery/home)
+{.links-list}
+
+## Dictionary
+- [Dictionary *Definitions of commonly in modding BG3 used terms*](/Dictionary)
 {.links-list}
