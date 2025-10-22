@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-22T20:41:07.401Z
+date: 2025-10-22T20:50:06.662Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -11,9 +11,11 @@ dateCreated: 2025-10-17T12:50:22.826Z
 # WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP 
 ## Overview 
 
-This level creation guide aims to cover all the basic knowledge that you need to know to be able to create some basic levels. It was written for Virtual photography/Screenarchery in mind. It doesn't cover things that you need to know to create actual gameplay levels
+This level creation guide aims to cover all the basic knowledge that you need to know to be able to create some basic levels. It was written for Virtual Photography/Screenarchery in mind. It doesn't cover things that you need to know to create actual gameplay levels
 
-Please let me know if there are useful tips, keybinds,and other simplifications
+The guide doesn't explain basics of the toolkit
+
+Please let me know if there are useful tips, keybinds, and other simplifications
 
 ## Project setup
 
@@ -82,7 +84,8 @@ There are some important keybinds:
 1. `1` for the Pointer, `2` to Translate, `3` to Rotate, `4` to Scale objects
 1. `C` to deselect object
 1. `Ctrl + Alt + S` to Save everything
-1. And of course basic keybinds like `Ctrl + C/V`, `Delete`, etc
+1.	`Ctrl + C/V`, `Delete`
+1. `[` `]` to decrease or increase brush size
 
 To change initial camera speed, go to `Editor Camera Settong`
 
@@ -144,7 +147,7 @@ There are some `RootTemplate` types. The only ones you need:
 `lightProbe` (shiny sphere)
 `TileConstruction` (two red bricked walls)
 `Prefab` (P)
-`Trigger` (blue oulined box)
+`Trigger` (blue outlined box)
 `fogVolume` (misty spehere)
 `light` (bulb)
 `character` (purple Astarion)
