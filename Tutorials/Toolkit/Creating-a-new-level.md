@@ -2,20 +2,21 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-22T20:50:06.662Z
+date: 2025-10-22T22:15:34.571Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
 ---
 
-# WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP WIP 
-## Overview 
+# WIP
+## Overview
 
-This level creation guide aims to cover all the basic knowledge that you need to know to be able to create some basic levels. It was written for Virtual Photography/Screenarchery in mind. It doesn't cover things that you need to know to create actual gameplay levels
+This level creation guide aims to cover all the basic knowledge that you need to know to be able to create some basic levels. It was written for Virtual photography/Screenarchery in mind. It doesn't cover things that you need to know to create actual gameplay levels
 
-The guide doesn't explain basics of the toolkit
+Please let me know if there are useful tips, keybinds,and other simplifications
 
-Please let me know if there are useful tips, keybinds, and other simplifications
+
+Some sections were copied from Larian's wiki https://docs.larian.game/ because they have a better explanation
 
 ## Project setup
 
@@ -84,8 +85,7 @@ There are some important keybinds:
 1. `1` for the Pointer, `2` to Translate, `3` to Rotate, `4` to Scale objects
 1. `C` to deselect object
 1. `Ctrl + Alt + S` to Save everything
-1.	`Ctrl + C/V`, `Delete`
-1. `[` `]` to decrease or increase brush size
+1. And of course basic keybinds like `Ctrl + C/V`, `Delete`, etc
 
 To change initial camera speed, go to `Editor Camera Settong`
 
@@ -147,17 +147,91 @@ There are some `RootTemplate` types. The only ones you need:
 `lightProbe` (shiny sphere)
 `TileConstruction` (two red bricked walls)
 `Prefab` (P)
-`Trigger` (blue outlined box)
+`Trigger` (blue oulined box)
 `fogVolume` (misty spehere)
 `light` (bulb)
 `character` (purple Astarion)
 
-Resource Manager
-    Types
+### item
+Basically it's an object you can interact with: shells, plates, food, gems, etc. It's not completely true, but it's just easier to explain (some sceneries and items can intersect)
 
-Creating objects
-    Item/scenery/prefab - chair - position - sidebar
-    Fog volume
+### scenery
+It's an object you can't interact with: rocks, plants, trees, shelves, etc. (some sceneries and items can intersect)
+
+### lightProbe
+The game doesn't have any form of dynamic global Illumination, so Larian use LightProbe to capture hdri map around it self and then calculate inderect lighting
+
+There are 2 types of light probes:
+
+1. Distant probes are used to account for far away lighting information: the sun and sky.
+It uses the information of the surrounding atmosphere to apply an approximation of sun and sky light bouncing and color to everything in that atmosphere.
+Since the probe contains lighting information, it applies to everything in that LightingResources. You only need one distant probe per Lighting trigger.
+2. Local probes are used to simulate color and reflections related to nearby lights and objects.
+Local probes only gather information within a defined area around them and thus, only apply to objects in that same area.
+Contrary to distant probes, you can place as many local probes as you want. Even probes inside other probe areas are allowed.
+The lighting of the smallest probes always gets priority over the lighting of a larger probe that covers the same area. With local probes, you fine-tune illumination and reflections where the distant probe, or a larger local probe proves to be insufficient.
+
+Since I make levels mostly for one picture, I always use Distant one and then move it around to tune the lighting for my needs
+
+Whenever you make changes with a probe, you need to save your level in order for the light probe to save the rendered hdri maps. !!! If you have a lot of LightProbes, EACH LightProbe will render the map for EACH LightingResources in the trigger, so rendering will take some time !!!
+
+### TileConstruction
+You build walls, roofs, floors, and other repetitve things with this thing
+
+### Prefab
+A saved group of objects. You can create and decorated a furnace using different objects and then save it as Prefab to reuse the whole thing again
+
+### Trigger
+In our case we only need two:
+1. `LightingTrigger` sets `LightingResources` for current trigger area
+1. `AtmosphereTrigger` sets `AtmosphereResources` for current trigger area
+
+### fogVolume
+You can create fog areas with this thing
+
+### light
+Just a light
+Most of you probably using Lighty Lights, but you can use it to preview the lighting
+
+### character
+I only use Astarion for size reference
+
+#### Sources                           
+https://docs.larian.game/Entity_types
+https://docs.larian.game/My_first:_Item
+https://docs.larian.game/Light_probes (In BG3 Larian split Atmosphere to Atsmosphere and Lighting)
+
+## Resource Manager
+There are a lot of types. The only ones you need:
+`Visual` (utah teapot)
+`Texture` (missing texture sphere)
+`Material` (blue spehere)
+`Effect` (sparkles)
+`Lighting` (bulb)
+`Atmospehere` (sun with face)
+`Terrain Brush` (a brush and a mountain)
+
+### Visual
+Meshes and stuff
+
+### Texture
+Textures
+
+### Material
+Materials
+
+### Lighting
+A resource that contains Lighting parameters: sun/moon position, sun/moon color, fog, etc
+
+### Atmospehere
+A resource that contains Atmospehere parameters: overall color correction, light shafts, different effectrs environmental effects (like rain, ashes, etc), etc
+
+### Terrain Brush
+A resource, "similar" to a material, that you use to paint terrain
+
+## Finally placing objects to unleash your abstract vision
+Item/scenery/prefab - chair - position - sidebar
+Fog volume
 
 Terrain
     Size
