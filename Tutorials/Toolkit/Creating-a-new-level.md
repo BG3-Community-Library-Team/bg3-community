@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-22T22:15:34.571Z
+date: 2025-10-22T22:34:16.389Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
