@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-23T22:47:28.858Z
+date: 2025-10-23T22:56:32.996Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -230,11 +230,23 @@ A resource that contains Atmospehere parameters: overall color correction, light
 A resource, "similar" to a material, that you use to paint terrain
 
 ## Finally placing objects to unleash your abstract vision
+
+Enable this tool, which allows you to create objects on click, without dragging them from the Root Temlates window
+
+![placeholder](2025-10-24-01-33-50.png)
+
+
+Then find an object and place it by clicking on terrain
+You can also hold left mouse button to rotate the object before placing it
+
+
+![creating-a-new-level-place-object.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-place-object.webp)
+
 Item/scenery/prefab - chair - position - sidebar
 Fog volume
 
 
-[creating-a-new-level-webm-test.webm](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-webm-test.webm)
+
 
 
 Terrain
