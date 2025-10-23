@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-23T22:57:18.495Z
+date: 2025-10-23T23:10:43.598Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -22,25 +22,28 @@ Some sections were copied from Larian's wiki https://docs.larian.game/ because t
 
 First you `Create` a new project,
 
-![placeholder](image-2.png)
+
+![creating-a-new-level-create-project.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-create-project.webp)
 
 name it however you want, and then press `Create`. I'm going for LevelGuide
 
-![placeholder](image-5.png)
+
+![creating-a-new-level-5-project-name.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-5-project-name.webp)
 
 After some time, the toolkit will finally open `Level browser`, where you also press `Create` to create a new level
 
-![placeholder](image-4.png)
+![creating-a-new-level-6-create-level.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-6-create-level.webp)
 
 Name the new level. As a good habit you should follow some sort of a naming convention. Me personally uses Larian one, but instead of Region name (like WLD_Main_A, SCL_..., BGO_...) in the begining, I use `ProjectName_LevelName`, so it would `LG_MyNewPrettyLevel`
-
-![placeholder](image-6.png)
-
 And press `Create` one more time
+
+![creating-a-new-level-7-name-level.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-7-name-level.webp)
+
+
 
 ## Placeholder
 
-In this guide, I'm going to use this UI layout
+In this guide, I'm going to use this UI layout (animated webp)
 
 ![placeholder](image-13.png)
 
@@ -89,7 +92,8 @@ There are some important keybinds:
 
 To change initial camera speed, go to `Editor Camera Settong`
 
-![placeholder](image-15.png)
+![creating-a-new-level-15-camera-speed.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-15-camera-speed.webp)
+
                             
 Small tip: you can use `Scroll` keybind with `Shift` + `WS` to "speed up" the camera even more without changing intial camera speed
 
@@ -98,7 +102,7 @@ Small tip: you can use `Scroll` keybind with `Shift` + `WS` to "speed up" the ca
 
 ### Top bar
 
-![placeholder](image-18.png)
+![creating-a-new-level-18-top-bat.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-18-top-bat.webp)
 
 I'm not going to cover all the basic buttons (you can hover over them to see the tooltips) and Editor buttons; the options you need are
 
@@ -135,7 +139,10 @@ I'm not going to cover all the basic buttons (you can hover over them to see the
 ### Additional objcet controls
 
 At the bottom you can also see: `Pos: x y z`, `Rot: x y z`, `Scale XYZ`, and their differen modes. These also allow you to manipulate over selected object. Hover over the modes to see the tooltips
-![placeholder](image-19.png)
+
+
+![creating-a-new-level-19-add-controls.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-19-add-controls.webp)
+
 
 
 
@@ -239,11 +246,10 @@ Enable this tool, which allows you to create objects on click, without dragging 
 Then find an object and place it by clicking on terrain
 You can also hold left mouse button to rotate the object before placing it
 
-![placeholder]()
-
-
-Now you can move it however you want
 ![creating-a-new-level-place-object.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-place-object.webp)
+
+Now you can move it however you want by selecting it and using the keybinds I mentioned earlier
+![creating-a-new-level-place-object.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-move-object.webp)
 
 Item/scenery/prefab - chair - position - sidebar
 Fog volume
