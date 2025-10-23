@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-23T22:38:57.064Z
+date: 2025-10-23T22:47:28.858Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -232,6 +232,10 @@ A resource, "similar" to a material, that you use to paint terrain
 ## Finally placing objects to unleash your abstract vision
 Item/scenery/prefab - chair - position - sidebar
 Fog volume
+
+
+[creating-a-new-level-webm-test.webm](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-webm-test.webm)
+
 
 Terrain
     Size
