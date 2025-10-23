@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-22T22:34:16.389Z
+date: 2025-10-23T22:38:57.064Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -82,7 +82,7 @@ There are some important keybinds:
 1. `QE` for moving the camera up or down
 1. `Scroll up/down` to move the camera forward/backward
 1. `Shift`/`Ctrl` speeds up/slows down the camera
-1. `1` for the Pointer, `2` to Translate, `3` to Rotate, `4` to Scale objects
+1. `1` for the Pointer, `2` to Translate, `3` to Rotate, `4` to Scale objects, '5' to enable Place object on click
 1. `C` to deselect object
 1. `Ctrl + Alt + S` to Save everything
 1. And of course basic keybinds like `Ctrl + C/V`, `Delete`, etc
