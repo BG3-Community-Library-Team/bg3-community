@@ -2,7 +2,7 @@
 title: Vertex Painting Meshes
 description: 
 published: true
-date: 2025-05-07T00:48:07.148Z
+date: 2025-10-23T00:36:44.401Z
 tags: meshes
 editor: markdown
 dateCreated: 2024-04-28T17:39:51.157Z
@@ -52,5 +52,16 @@ Then there should be two entries in Color Attributes, the old one with nothing (
 > If the two meshes you are transferring between are significantly different, you will probably need to clean up the vertex paint manually, as any blurred edges will end up sticking to the ground in game.
 {.is-info}
 
+# Manually Applying Vertex Paint (Or Cleaning It Up)
 
-[TODO: Pictures]
+First, enter edit mode, enable X-Ray mode, and select all of the faces you wish to apply vertex paint to.
+
+![vertexpaintingmeshes_editmode.png](/information/meshes/vertex-painting-meshes/vertexpaintingmeshes_editmode.png)
+
+Then switch to vertex paint mode. After selecting your color, enable Paint Mask on the top left, and then open the Paint menu and hit Set Vertex Colors.
+
+![vertexpaintingmeshes_vertexpaint.png](/information/meshes/vertex-painting-meshes/vertexpaintingmeshes_vertexpaint.png)
+
+The faces you selected will now be colored cleanly. You can turn on Flat shading to see it more clearly.
+
+![vertexpaintingmeshes_endresult.png](/information/meshes/vertex-painting-meshes/vertexpaintingmeshes_endresult.png)
