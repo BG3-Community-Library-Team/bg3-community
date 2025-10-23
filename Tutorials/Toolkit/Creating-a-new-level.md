@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-23T22:56:32.996Z
+date: 2025-10-23T22:57:18.495Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -239,7 +239,10 @@ Enable this tool, which allows you to create objects on click, without dragging 
 Then find an object and place it by clicking on terrain
 You can also hold left mouse button to rotate the object before placing it
 
+![placeholder]()
 
+
+Now you can move it however you want
 ![creating-a-new-level-place-object.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-place-object.webp)
 
 Item/scenery/prefab - chair - position - sidebar
