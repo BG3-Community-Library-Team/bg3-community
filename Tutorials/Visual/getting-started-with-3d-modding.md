@@ -2,7 +2,7 @@
 title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
 published: true
-date: 2025-10-24T21:29:44.312Z
+date: 2025-10-24T21:39:48.558Z
 tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -11,9 +11,9 @@ dateCreated: 2024-05-25T14:10:25.728Z
 # WIP Getting Started with 3D Modding
 Looking to get into modding game assets like heads, hair, armor, weapons, etc.? 
 
-This guide will try to focus on setting up the basics needed to get started. The focus is currently primarily on working with 3D assets.
+This guide will try to focus on setting up the basics needed to get started. The focus of this page is primarily on working with 3D assets.
 
-What it won't cover is what happens after the initial set up, i.e. the creation of head/hair/armour/etc. mods. These will be on their own pages, a list of which listed at the end of this guide.
+What it won't cover is what happens after the initial set up, i.e. the creation of head/hair/armour/etc. mods. These will be on their own pages, a list of which is listed at the end of this guide.
 
 ### Overview of Guide
 > - **Tools**
@@ -41,7 +41,7 @@ What it won't cover is what happens after the initial set up, i.e. the creation 
 > use latest beta release
 {.is-success}
 
-> LSLiB is used for many things. Its front end application, ConverterApp.exe is used for unpacking game/mod paks, converting between various game file formats and editable ones, creating paks, creating virtual textures, and more. 
+> LSLiB is used for many things. Its front end application, ConverterApp.exe, is used for unpacking game/mod paks, converting between various game file formats and editable ones, creating paks, creating virtual textures, and more. 
 > 
 > (TODO: create/link page here on how to use various LSLiB functions)
 {.is-info}
@@ -63,7 +63,7 @@ At the moment there isn't too much to set up, a few notes:
 
 ![lslib.png](/tutorials/getting_started_visual/lslib.png)
 
-- Game: is set to Baldur's Gate 3
+- Game: make sure it's set to Baldur's Gate 3
 - For most mesh purposes you will want to have X-flip meshes turned OFF (default is on)
 
 
@@ -73,7 +73,7 @@ At the moment there isn't too much to set up, a few notes:
 > use latest release
 {.is-success}
 
-> MMT is another way to unpak/pak game files and mods. Additionally it is used for indexing these game files for searching and extracting.
+> MMT is another way to unpak/pak game files and mods. Additionally, it is used for indexing these game files for searching and extracting.
 {.is-info}
 
 ### Initial Setup
@@ -84,12 +84,12 @@ Instructions for installation and configuration can also be found on the Github 
 Remember to set up your directories in Configuration:
 ![mmt-config.png](/tutorials/getting_started_visual/mmt-config.png)
 
-For most cases you DO NOT need to mass unpack any game files. What you will want to do is index them so that you can use the "Search Index" option later.
+For most cases you DO NOT need to mass unpack any game files. This will take up a ton of space on your hard drive. What you will want to do instead is index them, so that you can use the "Search Index" option later. Once the files are indexed, you can search them and selectively download the ones you want.
 
 ![mmt.png](/tutorials/getting_started_visual/mmt.png)
 
 ### Further Setup
-If you want to use the index search for finding/extracting meshes (GR2 files), there is one more step required as MMT itself does not contain a necessary file to deal with GR2. The granny.
+If you want to use the index search for finding/extracting meshes (GR2 files), there is one more step required, as MMT itself does not contain a necessary file to deal with GR2: The granny.
 
 ![logo_granny.png](/tutorials/getting_started_visual/logo_granny.png)
 
@@ -107,16 +107,16 @@ A small guide on using the index search here. (link coming soon)
 > [Blender](https://www.blender.org/)
 > as of this writing most plugins will function with v4+ and can be used safely. Using at least v3.6+ is recommended.
 >
->Note: you may have multiple versions installed on your PC
+>Note: you may have multiple versions of Blender installed on your PC at a time.
 {.is-success}
 
-> Blender is a free 3D modeling/animation software. Using plugins made for BG3 we can import/export the game's GR2 files and edit them.
+> Blender is a free 3D modeling/animation software. Using plugins made for BG3, we can import/export the game's GR2 files and edit them.
 {.is-info}
 
 Once we have Blender installed, it's time to get some core plugins.
 
 > Some people have had some issues directly installing these plugins with Blender versions 4+.
-> It is possible to have multiple versions of Blender installed! So, grab 3.6, install the plugins there, and when you update to a newer version it should take your plugins and settings with it.
+> It is possible to have multiple versions of Blender installed! So, grab 3.6, install the plugins there, and when you update to a newer version, it should take your plugins and settings with it.
 {.is-warning}
 
 > Also, while Blender does have an in-app function to directly import add-ons from zip files, this does not always work with older plugins and can cause it to nest one folder too deep in the install location. 
@@ -128,40 +128,42 @@ Once we have Blender installed, it's time to get some core plugins.
 
 #### [BG3/DOS2 Collada Exporter](https://github.com/Norbyte/dos2de_collada_exporter)
 
-> - This is a necessary plugin to import/export the games extracted GR2 files
+> - This is a necessary plugin to import/export the game's extracted GR2 files
 > - Requires LSLIB and setting a path to it in its settings
 {.is-info}
 
 
 
-First, download zip from Github, located here:
+First, download the zip from Github, located here:
 
 ![bg3plugin-gh.png](/tutorials/getting_started_visual/bg3plugin-gh.png)
 
-Unfortunately this cannot be directly installed from Blender due to having an extra folder. So what we need to do is extract the zip, look inside for a folder called "**io_scene_dos2de**", grab it and drop it into 
+Unfortunately, this cannot be directly installed by dragging into Blender, due to having an extra folder. So what we need to do is extract the zip, look inside for a folder called "**io_scene_dos2de**", grab it and drop it into 
 
 `..\AppData\Roaming\Blender Foundation\Blender\4.1\scripts\addons`
 (4.1 or whatever version of Blender you are using)
 
-If you do not yet have a scripts\addons directory you may create it.
+> To quickly open the AppData\Roaming folder on Windows, press **Windows key + R** at the same time, then type %APPDATA% into the box, and hit OK.
+{.is-info}
 
-If you look inside this folder it should look like this (minus the `_pycache_` as this gets autogenerated later):
+If you do not yet have a `scripts\addons` directory, you may create it.
+
+If you look inside this folder, it should look like this (minus the `_pycache_` as this gets autogenerated later):
 
 ![plugin-gr2-location.png](/tutorials/getting_started_visual/plugin-gr2-location.png)
 
 
-Now we need to edit its configuration in Blender. To to Edit -> Preferences -> Add-ons. Use the search box for bg3 and it should be here. Expand it with the little arrow and enter here the path to the divine.exe inside your LSLIB directory.
+Now we need to edit its configuration in Blender. Go to Edit -> Preferences -> Add-ons. Use the search box to search for **dos** or **bg3** and it should appear. Expand it with the little arrow, and enter the path to the `divine.exe` inside your LSLIB directory.
 
 ![blender-bg3plugin-prefs.png](/tutorials/getting_started_visual/blender-bg3plugin-prefs.png)
 
-If you wish you can tick "Convert to GR2 by Default" (otherwise it will always default to .dae export).
+If you wish, you can tick "Convert to GR2 by Default" (otherwise it will always default to .dae export).
 
 #### [LaughingLeader's Blender Helpers](https://github.com/LaughingLeader/laughingleader_blender_helpers)
 
 > - Necessary plugin for settings involved with export (i.e. Export Order of meshes, LOD Level/Distance, and some options for mesh type)
 > - Github page says for Blender 2.79 but it can be used with current versions
 {.is-info}
-
 
 Download and install the same way we did the BG3/DOS2 Collada Exporter.
 However, in this case there aren't any specific add-on preferences to set here, and once installed you should see this at the bottom right under Object properties (yellow square):
