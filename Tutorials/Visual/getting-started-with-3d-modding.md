@@ -2,7 +2,7 @@
 title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
 published: true
-date: 2025-10-24T21:39:48.558Z
+date: 2025-10-24T21:52:25.062Z
 tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -161,7 +161,11 @@ If you wish, you can tick "Convert to GR2 by Default" (otherwise it will always 
 
 #### [LaughingLeader's Blender Helpers](https://github.com/LaughingLeader/laughingleader_blender_helpers)
 
-> - Necessary plugin for settings involved with export (i.e. Export Order of meshes, LOD Level/Distance, and some options for mesh type)
+> As of 10/24/2025, this plugin no longer seems to be necessary, as its features are included in the DOS2/BG3 Collada Exporter plugin.
+If you are using an old version of the Collada Exporter plugin for some reason, this plugin may still be necessary to display the export settings.
+{.is-warning}
+
+> - Adds settings involved with export (i.e. Export Order of meshes, LOD Level/Distance, and some options for mesh type)
 > - Github page says for Blender 2.79 but it can be used with current versions
 {.is-info}
 
@@ -188,7 +192,7 @@ Some notes about common settings:
 - [Mesh Data Transfer](https://mmemoli.gumroad.com/l/tOKEh)
 	- Tool for transferring mesh data from a source mesh to a target mesh.
 - [Robust Weight Transfer](https://github.com/sentfromspacevr/robust-weight-transfer)
-	- For transferring weights between meshes, often gives a better result than Blender's default weight transfer function.
+	- For transferring weights between meshes, often giving a better result than Blender's default weight transfer function.
 - [Vertex Color Master](https://github.com/andyp123/blender_vertex_color_master)
 	- An extension for manipulating vertex paint, including the ability to create linear or circular gradients and adjust HSV of vertex paint colors.
 - [Volno's Texture Toolbox](https://www.nexusmods.com/baldursgate3/mods/4310)
