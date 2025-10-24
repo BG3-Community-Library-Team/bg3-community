@@ -2,7 +2,7 @@
 title: Getting Started with 3D Modding
 description: Covers the basics of setting up the needed tools
 published: true
-date: 2025-09-14T12:00:00.392Z
+date: 2025-10-24T21:29:44.312Z
 tags: hair, visual, guide, head, beginner, armor, 3d
 editor: markdown
 dateCreated: 2024-05-25T14:10:25.728Z
@@ -185,8 +185,14 @@ Some notes about common settings:
 	- Refit armours via shapekeys (requires shapekeyed body meshes - tutorial for making these found LINK HERE)
 - [Mesh Data Transfer](https://mmemoli.gumroad.com/l/tOKEh)
 	- Tool for transferring mesh data from a source mesh to a target mesh.
+- [Robust Weight Transfer](https://github.com/sentfromspacevr/robust-weight-transfer)
+	- For transferring weights between meshes, often gives a better result than Blender's default weight transfer function.
+- [Vertex Color Master](https://github.com/andyp123/blender_vertex_color_master)
+	- An extension for manipulating vertex paint, including the ability to create linear or circular gradients and adjust HSV of vertex paint colors.
 - [Volno's Texture Toolbox](https://www.nexusmods.com/baldursgate3/mods/4310)
-	- not a plugin per se but a shader set useful for rendering an approximation of textures in Blender.
+	- Not a plugin per se, but a shader set useful for rendering an approximation of BG3 textures in Blender.
+- [BG3 Lazy Tailor](https://www.nexusmods.com/baldursgate3/mods/15414)
+	- Another tool by Volno to refit meshes between body types. Also supports creating your own custom body type presets.
 
 
 ## Tools: Getting it into the Game
