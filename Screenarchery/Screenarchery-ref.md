@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-19T15:01:29.181Z
+date: 2025-10-26T01:10:35.110Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -145,6 +145,8 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [Sera's Silly Cauldron of Delulu Dances](https://www.nexusmods.com/baldursgate3/mods/19293)  
 
 - [Little Dove](https://www.nexusmods.com/baldursgate3/mods/19178)  
+
+- [Eternal](https://www.nexusmods.com/baldursgate3/mods/19389)
 
 
 ### Expressions
