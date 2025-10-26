@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-10-26T01:10:35.110Z
+date: 2025-10-26T01:11:01.238Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -147,6 +147,8 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [Little Dove](https://www.nexusmods.com/baldursgate3/mods/19178)  
 
 - [Eternal](https://www.nexusmods.com/baldursgate3/mods/19389)
+
+- [Child of Bhaal Vol. I](https://www.nexusmods.com/baldursgate3/mods/19350)
 
 
 ### Expressions
