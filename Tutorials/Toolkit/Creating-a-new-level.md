@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-27T01:56:58.332Z
+date: 2025-10-27T02:11:06.335Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -223,11 +223,11 @@ A resource, "similar" to a material, that you use to paint terrain
 
 ## Finally placing objects to unleash your abstract vision
 
-Enable this tool, which allows you to create objects on click, without dragging them from the Root Temlates window
+Enable `Place` tool, which allows you to create objects on click (`5` keybind), without dragging them from the `Root Temlates` window
 
 ![creating-a-new-level-12-place-tool.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-12-place-tool.webp)
 
-Then find an object and place it by clicking on terrain
+Then find an object in `Root Templates` and place it by clicking on terrain
 You can also hold left mouse button to rotate the object before placing it
 
 ![creating-a-new-level-place-object.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-place-object.webp)
