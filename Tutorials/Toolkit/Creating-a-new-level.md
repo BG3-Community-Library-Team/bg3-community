@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-27T01:17:36.268Z
+date: 2025-10-27T01:56:58.332Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -53,9 +53,7 @@ Open `Resource Manager` and drag it near the `Root Templates` window
 
 Save it
 
-
-
-
+![creating-a-new-level-14-save-ui-2.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-14-save-ui-2.webp)
 
 If you closed a window by accident, you can eiter `Load Layout`, `Reset Layout` or go to `View` and re-open it there
 
@@ -227,8 +225,7 @@ A resource, "similar" to a material, that you use to paint terrain
 
 Enable this tool, which allows you to create objects on click, without dragging them from the Root Temlates window
 
-![placeholder](2025-10-24-01-33-50.png)
-
+![creating-a-new-level-12-place-tool.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-12-place-tool.webp)
 
 Then find an object and place it by clicking on terrain
 You can also hold left mouse button to rotate the object before placing it
