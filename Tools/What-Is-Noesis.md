@@ -2,7 +2,7 @@
 title: What is Noesis
 description: An explanation to what Noesis is for the uninitiated
 published: true
-date: 2025-10-27T13:13:23.555Z
+date: 2025-10-27T13:13:34.022Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-08T19:15:44.788Z
@@ -21,4 +21,4 @@ Example from [UI Dialogue Framework](https://www.nexusmods.com/baldursgate3/mods
 
 ## What is not possible in Noesis?
 - Some of the Engine data is made available to the UI via Data context - either via a one-way or two-way street. This means that some parts of the game can be amended in the UI (appearance options), some parts of the game can be shown in the UI but not directly amendable (current health) and some parts are not available to interact with at all (character animations).
-- As of SE v28, the UI can now communicate with scripts - for example, you can add a button to the game that triggers a Lua function.
+- As of SE v28, scripts can now communicate with the UI - for example, you can add a button to the game that triggers a Lua function.
