@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-27T01:15:29.957Z
+date: 2025-10-27T01:17:36.268Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -48,7 +48,13 @@ It makes sense for me, but of course, you can use your own
 
 Drag `Root Templates` to the bottom on `Message log` 
 Open `Resource Manager` and drag it near the `Root Templates` window
+
+![creating-a-new-level-13-ui.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-13-ui.webp)
+
 Save it
+
+
+
 
 
 If you closed a window by accident, you can eiter `Load Layout`, `Reset Layout` or go to `View` and re-open it there
