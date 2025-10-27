@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-23T23:10:43.598Z
+date: 2025-10-27T01:15:29.957Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -41,36 +41,17 @@ And press `Create` one more time
 
 
 
-## Placeholder
+## UI
 
-In this guide, I'm going to use this UI layout (animated webp)
+In this guide, I'm going to use this UI layout
+It makes sense for me, but of course, you can use your own
 
-![placeholder](image-13.png)
-
-
-Hide or close `Message log` [1] and open `Resource Manager` [2]
-
-![placeholder](image-7.png)
-
-Drag `Root Templates` to the bottom
-
-![placeholder](image-11.png)
-
-Drag `Resource Manager` next to `Root Templates` 
-
-![placeholder](image-12.png)
-
-And save it 
-
-![placeholder](image-14.png)
-
-This one does make sense for me, but of course, you can use your layout
-![placeholder](image-13.png)
+Drag `Root Templates` to the bottom on `Message log` 
+Open `Resource Manager` and drag it near the `Root Templates` window
+Save it
 
 
-If you closed a window by accident, you can eiter `Reset Layout` or go to `View`
-
-![placeholder](image-16.png)
+If you closed a window by accident, you can eiter `Load Layout`, `Reset Layout` or go to `View` and re-open it there
 
 ## Settings
 
