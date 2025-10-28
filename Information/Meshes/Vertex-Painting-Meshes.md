@@ -2,7 +2,7 @@
 title: Vertex Painting Meshes
 description: 
 published: true
-date: 2025-10-23T00:36:44.401Z
+date: 2025-10-28T12:36:43.704Z
 tags: meshes
 editor: markdown
 dateCreated: 2024-04-28T17:39:51.157Z
@@ -65,3 +65,11 @@ Then switch to vertex paint mode. After selecting your color, enable Paint Mask 
 The faces you selected will now be colored cleanly. You can turn on Flat shading to see it more clearly.
 
 ![vertexpaintingmeshes_endresult.png](/information/meshes/vertex-painting-meshes/vertexpaintingmeshes_endresult.png)
+
+# Troubleshooting
+
+If your vertex paint still doesn't work in game...
+
+- Make sure you are using a VertCut compatible shader. Usually, compatible shaders will have `VertCut` in the name.
+- Make sure the `SupportsVertexColorMask` line in your VisualBank mesh definition is set to `True`.
+- Make sure you copied the correct hex code from this article and then flood-filled it in Blender. Color picking from other painted meshes doesn't seem to work.
