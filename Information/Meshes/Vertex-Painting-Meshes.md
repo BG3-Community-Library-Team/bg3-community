@@ -2,7 +2,7 @@
 title: Vertex Painting Meshes
 description: 
 published: true
-date: 2025-10-28T12:36:43.704Z
+date: 2025-10-28T12:38:30.377Z
 tags: meshes
 editor: markdown
 dateCreated: 2024-04-28T17:39:51.157Z
@@ -73,3 +73,7 @@ If your vertex paint still doesn't work in game...
 - Make sure you are using a VertCut compatible shader. Usually, compatible shaders will have `VertCut` in the name.
 - Make sure the `SupportsVertexColorMask` line in your VisualBank mesh definition is set to `True`.
 - Make sure you copied the correct hex code from this article and then flood-filled it in Blender. Color picking from other painted meshes doesn't seem to work.
+
+If you have vertices that are "stuck to the ground"...
+
+- You probably have vertices that are painted a color that is in-between two of the game values, such as if you painted with a soft brush. BG3 doesn't know how to handle these colors, so it basically puts them on the ground. To avoid this, use the aforementioned method of selecting faces in Edit Mode and then using Set Vertex Colors to fill the faces cleanly.
