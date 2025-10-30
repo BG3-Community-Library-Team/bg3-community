@@ -1,0 +1,47 @@
+<!--
+title: How to Swap Shaders in Toolkit
+description: What it says on the tin! A short guide to swapping out material shaders in Toolkit. It's much easier than it sounds!
+published: true
+date: 2025-10-30T22:06:04.251Z
+tags: tutorial, shaders, toolkit
+editor: ckeditor
+dateCreated: 2025-10-30T22:06:04.251Z
+-->
+
+<p>Swapping material shaders in toolkit might sound intimidating, but it's actually really easy with the right resources.</p>
+<p>Let's start with the basics: why might you want to swap out a shader?</p>
+<ul>
+  <li>You need a material that isn't vertcut to be vertcut</li>
+  <li>You need a material that isn't dyeable to be dyeable</li>
+  <li>You want your material to be sheer</li>
+  <li>You need a two-sided material</li>
+</ul>
+<p>I think you get the idea. So let's get started…</p>
+<hr>
+<p>First, we're all familiar with the basic Toolkit layout:</p>
+<figure class="image"><img src="/screenshot_2025-10-30_175003.png">
+  <figcaption>Behold, Tookit!</figcaption>
+</figure>
+<p>You can see I've selected a material I've previously uploaded, HUM M Caspian CrackedShirt. To the right you have your info panel about that material, including its GUID and other important information. Including your shader file…</p>
+<figure class="image image-style-align-right"><img src="/screenshot_2025-10-30_175032.png">
+  <figcaption>Everything you need to know in one easy panel!</figcaption>
+</figure>
+<p>&nbsp;</p>
+<p>As you can see, if you scroll down just a bit in that panel, you'll see the Source File address. That's your shader! Short File Short Name lists the actual shader name so you can see what shader your material currently uses.</p>
+<p>You can consult the <a href="https://wiki.bg3.community/en/Information/Textures/Shaders">Wiki Shader Page</a> for a list of (nearly) every shader in the game. Scroll until you find one that fits your needs, then cut and paste your Source File address into a txt document. You don't want to try to type your new file name into the box there it just goes wild.</p>
+<p>Next, cut and paste the shader name into the address, replacing the current shader. So:</p>
+<p><strong>Current:</strong></p>
+<p>C:/Program Files (x86)/Steam/steamapps/common/Baldurs Gate 3/Data/Public/Shared/Assets/Materials/Characters/CHAR_BASE_AlphaTest_2S_Dither.lsf</p>
+<p><strong>New:</strong></p>
+<p>C:/Program Files (x86)/Steam/steamapps/common/Baldurs Gate 3/Data/Public/Shared/Assets/Materials/Characters/CHAR_BASE_VertCut.lsf</p>
+<p>Now cut and paste your <strong>New</strong> address into the Source File box and hit Enter.</p>
+<p>That's it! The shader will change, and your material will now take on any characteristics the shader provides.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr>
+<h1>Important Caveat!</h1>
+<p>This might seem obvious, but it's a mistake I've made so I'll mention it: <strong>ONLY USE A VT SHADER IF YOU'RE USING A VT MATERIAL! </strong>If your material isn't designed to be used with a VT shader, you'll just cause yourself a headache and have to redo it.</p>
