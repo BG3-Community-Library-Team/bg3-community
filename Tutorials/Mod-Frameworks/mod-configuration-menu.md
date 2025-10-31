@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-09-10T05:10:27.120Z
+date: 2025-10-31T04:47:07.107Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -10,11 +10,11 @@ dateCreated: 2024-05-05T22:37:40.947Z
 
 # Mod Configuration Menu documentation
 
-Baldur's Gate 3 Mod Configuration Menu (`BG3MCM` or MCM) is a mod/framework that provides a central in-game UI to enable players to intuitively manage mod settings and (optionally) custom UI as defined by mod authors. It provides an API for registering configuration menus and manipulating persistent user preferences.
+Baldur's Gate 3 Mod Configuration Menu (`BG3MCM` or MCM) is a mod framework that provides a centralized in-game UI, enabling players to intuitively manage mod settings and/or custom UIs defined by mod authors. It provides an API for registering configuration menus and manipulating persistent user preferences via checkboxes, numbers, text inputs, lists, combos/dropdowns, radio buttons, sliders, color pickers, keybindings, etc.
 
 Most importantly, **it allows authors to have a robust JSON-like configuration experience without spending hours writing a configuration system, and it's easy enough to integrate** that even novice modders can quickly add support for it in their own mods.
 
-This documentation is aimed at mod authors who want to integrate their mods with MCM. If you are a player looking to use MCM to configure mods, please refer to the [Nexus Mods page](https://www.nexusmods.com/baldursgate3/mods/9162 'MCM on Nexus Mods') for instructions. This documentation provides a centralized and thorough guide on the concepts behind MCM, the features it provides to mod authors, and overall how to integrate MCM into your mod. 
+This documentation is aimed at mod authors who want to integrate their mods with MCM. If you are a player looking to use MCM to configure mods, please refer to the [Nexus Mods page](https://www.nexusmods.com/baldursgate3/mods/9162 'MCM on Nexus Mods') for instructions. This documentation provides a centralized and thorough guide on the concepts behind MCM, the features it provides to mod authors, and how to integrate MCM into your mod.
 You can also use the table of contents below to navigate to a desired section.
 
 ## Quick-start guide
@@ -158,6 +158,9 @@ The `MCM_blueprint.json` file is how you specify your mod's configuration defini
 
 The MCM Schema dictates how you should structure your blueprint file, and you can [get it from GitHub](https://github.com/AtilioA/BG3-MCM/blob/main/.vscode/schema.json).
 
+> You can also get the [MCM IDE Helpers from GitHub](https://github.com/AtilioA/BG3-MCM/blob/main/MCMIdeHelpers.lua).
+{.is-info}
+
 This schema file can be used to **write and validate** your `MCM_blueprint.json` file, as it will help enforcing the intended structure of the MCM Schema in your blueprint file, ensuring that it is correctly formatted and adheres to it.
 
 ##### IDE support
@@ -215,6 +218,7 @@ Following are the main components of the MCM Schema. Don't stress over this too 
     - `Options`: Additional parameters that tailor the setting's behavior, applicable to certain types like `enum`, `radio`, sliders and drags. This includes:
       - `Choices`: The options to be made available for `enum` and `radio` types.
       - `Min` and `Max`: Boundary values for types such as `slider`/`drag`.
+      - `Step`: The increment/decrement step for `slider` buttons. Defaults to `1` for `slider_int` and `0.1` for `slider_float`.
       - `Multiline`: Whether the text input should be multiline, used for `text` type.
     - `VisibleIf`: Allows defining a simple boolean expression that determines the visibility of a setting (also tab or section) based on the values of other settings.
 
