@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-02T22:13:37.761Z
+date: 2025-11-02T22:20:32.234Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -171,7 +171,8 @@ The lighting of the smallest probes always gets priority over the lighting of a 
 Since I make levels mostly for one picture, I always use `Distant` one and then move it around to tune the lighting for my needs
 
 Whenever you make changes with a probe, you need to save your level in order for the `LightProbe` to save the rendered `"HDRi"` maps
-!!! If you have a lot of `LightProbes`, EACH `LightProbe` will render the map for EACH `LightingResources` in the trigger, so rendering will take some time !!!
+!!! If you have a lot of `LightProbes`, *EACH* `LightProbe` will render the map for *EACH* `LightingResources` in the trigger, so rendering will take some time !!!
+You should mainly focus on 1-4 `LightingResources`, and when you are finished with the level, only then add additional `LightingResources`, and make the final render
 
 ### TileConstruction
 You build walls, roofs, floors, and other repetitve things with this thing
@@ -183,13 +184,16 @@ A saved group of objects. You can create and decorated a furnace using different
 In our case we only need two:
 1. `LightingTrigger` sets `LightingResources` for current trigger area
 1. `AtmosphereTrigger` sets `AtmosphereResources` for current trigger area
+1. `StartPoint` sets starting point when you appear on the level
+1. Maybe `` #crowd
+1. Maybe 
 
 ### fogVolume
 You can create fog areas with this thing
 
 ### light
 Just a light
-Most of you probably using Lighty Lights, but you can use it to preview the lighting
+Most of you probably using Lighty Lights, but you can place then to preview the lighting
 
 ### character
 I only use Astarion for size reference
@@ -253,11 +257,6 @@ You can also hold left mouse button to rotate the object before placing it
 
 Now you can move it however you want by selecting it and using the keybinds I mentioned earlier
 ![creating-a-new-level-place-object.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-move-object.webp)
-
-Item/scenery/prefab - chair - position - sidebar
-Fog volume
-
-
 
 
 
