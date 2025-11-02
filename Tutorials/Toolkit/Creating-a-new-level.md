@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-02T22:29:56.532Z
+date: 2025-11-02T22:31:07.482Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -252,7 +252,7 @@ Enable `Create` tool, which allows you to create objects on click (`5` keybind),
 Then find an object in `Root Templates` and place it by clicking on terrain
 
 
-You can also hold left mouse button to rotate the object before placing it
+*You can also hold left click to rotate the object before placing it*
 
 ![creating-a-new-level-place-object.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-place-object.webp)
 
