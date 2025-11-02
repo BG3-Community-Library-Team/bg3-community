@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-10-27T02:11:06.335Z
+date: 2025-11-02T22:13:37.761Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -70,10 +70,15 @@ There are some important keybinds:
 1. `QE` for moving the camera up or down
 1. `Scroll up/down` to move the camera forward/backward
 1. `Shift`/`Ctrl` speeds up/slows down the camera
-1. `1` for the Pointer, `2` to Translate, `3` to Rotate, `4` to Scale objects, '5' to enable Place object on click
+1. `1` for the Pointer, `2` to Translate, `3` to Rotate, `4` to Scale objects, '5' to enable Create object on click
 1. `C` to deselect object
 1. `Ctrl + Alt + S` to Save everything
 1. And of course basic keybinds like `Ctrl + C/V`, `Delete`, etc
+
+There are a loooooot more kebinds that you can use, they are located in `Preferences`. I highly suggest utilizing them
+
+
+
 
 To change initial camera speed, go to `Editor Camera Settong`
 
@@ -163,9 +168,10 @@ Local probes only gather information within a defined area around them and thus,
 Contrary to distant probes, you can place as many local probes as you want. Even probes inside other probe areas are allowed.
 The lighting of the smallest probes always gets priority over the lighting of a larger probe that covers the same area. With local probes, you fine-tune illumination and reflections where the distant probe, or a larger local probe proves to be insufficient.
 
-Since I make levels mostly for one picture, I always use Distant one and then move it around to tune the lighting for my needs
+Since I make levels mostly for one picture, I always use `Distant` one and then move it around to tune the lighting for my needs
 
-Whenever you make changes with a probe, you need to save your level in order for the light probe to save the rendered hdri maps. !!! If you have a lot of LightProbes, EACH LightProbe will render the map for EACH LightingResources in the trigger, so rendering will take some time !!!
+Whenever you make changes with a probe, you need to save your level in order for the `LightProbe` to save the rendered `"HDRi"` maps
+!!! If you have a lot of `LightProbes`, EACH `LightProbe` will render the map for EACH `LightingResources` in the trigger, so rendering will take some time !!!
 
 ### TileConstruction
 You build walls, roofs, floors, and other repetitve things with this thing
@@ -221,9 +227,22 @@ A resource that contains Atmospehere parameters: overall color correction, light
 ### Terrain Brush
 A resource, "similar" to a material, that you use to paint terrain
 
+
+## The tools
+
+There are 5 main tools:
+1. `Pointer/Cursor` - you select things with it
+1. `Translate` - you move things with it
+1. `Rotation` - you rotate things with it
+1. `Scale` - you scale things with it
+1. `Create` - you create/place things with it
+
+Each tool has a lot of different parameters, you can access them by right clicking on a tool
+For example, you can eanble `Snap to grid` for `Translate`, enable random rotation or scale for `Create`, and so on
+
 ## Finally placing objects to unleash your abstract vision
 
-Enable `Place` tool, which allows you to create objects on click (`5` keybind), without dragging them from the `Root Temlates` window
+Enable `Create` tool, which allows you to create objects on click (`5` keybind), without dragging them from the `Root Temlates` window
 
 ![creating-a-new-level-12-place-tool.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-12-place-tool.webp)
 
