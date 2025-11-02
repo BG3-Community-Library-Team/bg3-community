@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-02T22:24:06.950Z
+date: 2025-11-02T22:29:56.532Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -84,8 +84,8 @@ To change initial camera speed, go to `Editor Camera Setting`
 
 ![creating-a-new-level-15-camera-speed.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-15-camera-speed.webp)
 Different camera modes
-Small tip: you can use `Scroll` keybind with `Shift` + `WS` to "speed up" the camera even more without changing intial camera speed
 
+*You can use `Scroll` keybind with `Shift` + `WS` to "speed up" the camera even more without changing intial camera speed*
 
 ## UI
 
@@ -250,6 +250,8 @@ Enable `Create` tool, which allows you to create objects on click (`5` keybind),
 ![creating-a-new-level-12-place-tool.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-12-place-tool.webp)
 
 Then find an object in `Root Templates` and place it by clicking on terrain
+
+
 You can also hold left mouse button to rotate the object before placing it
 
 ![creating-a-new-level-place-object.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-place-object.webp)
@@ -257,6 +259,8 @@ You can also hold left mouse button to rotate the object before placing it
 Now you can move it however you want by selecting it and using the keybinds I mentioned earlier
 ![creating-a-new-level-place-object.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-move-object.webp)
 
+*You can make `Sidebar` inactive by opening a different window (I always open `Atmosphere panel`), so you can scroll through the list of objects with arrow keys faster
+(Basically whenever you select an object, you also load all its parameters in `Sidebar`, by making `Sidebar` inactive, you stop 	loading the parameters)*
 
 
 ## Terrain
