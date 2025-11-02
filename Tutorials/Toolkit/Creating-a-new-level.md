@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-02T22:20:32.234Z
+date: 2025-11-02T22:21:30.731Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -260,45 +260,45 @@ Now you can move it however you want by selecting it and using the keybinds I me
 
 
 
-Terrain
-    Size
-    Brush - Parameters
-    TerrainTextures
-    TerrainTextures mixing
+## Terrain
+Size
+Brush - Parameters
+TerrainTextures
+TerrainTextures mixing
 
-Instances
-    Brush - Parameters
-    IPs
+## Instances
+Brush - Parameters
+IPs
 
-Atmosphere panel
-    Triggers
-    Modes
-    Lighting
-    Atmosphere
-    LightProbe
-    LightyLights support
+## Atmosphere panel
+Triggers
+Modes
+Lighting
+Atmosphere
+LightProbe
+LightyLights support
 
-Other triggers
-    Start point
-    AiSeeder
+## Other triggers
+Start point
+AiSeeder
 
-Interaction mode options 
-
-
-AI grid
+## Interaction mode options 
 
 
-"Recolor" of RootTemplates/VisualResources
-    VisualResource
-    Material
-    RootTemplate
+## AI grid
 
-VisualResources as RootTemplates
-    Batch convert with the tool
 
-New IPs, TTs
+## "Recolor" of RootTemplates/VisualResources
+VisualResource
+Material
+RootTemplate
 
-How to delete the level
+## VisualResources as RootTemplates
+Batch convert with the tool
+
+## New IPs, TTs
+
+## How to delete the level
 
 
 
