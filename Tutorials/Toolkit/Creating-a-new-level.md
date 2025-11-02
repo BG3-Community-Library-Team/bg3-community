@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-02T22:21:30.731Z
+date: 2025-11-02T22:22:25.736Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -80,11 +80,10 @@ There are a loooooot more kebinds that you can use, they are located in `Prefere
 
 
 
-To change initial camera speed, go to `Editor Camera Settong`
+To change initial camera speed, go to `Editor Camera Setting`
 
 ![creating-a-new-level-15-camera-speed.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-15-camera-speed.webp)
-
-                            
+Different camera modes
 Small tip: you can use `Scroll` keybind with `Shift` + `WS` to "speed up" the camera even more without changing intial camera speed
 
 
