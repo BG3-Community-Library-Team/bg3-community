@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-11-04T04:36:26.025Z
+date: 2025-11-04T17:29:34.013Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -10,7 +10,7 @@ dateCreated: 2024-05-05T22:37:40.947Z
 
 # Mod Configuration Menu documentation
 
-Baldur's Gate 3 Mod Configuration Menu (`BG3MCM` or MCM) is a mod framework that provides a centralized in-game UI, enabling players to intuitively manage mod settings and/or custom UIs defined by mod authors. It provides an API for registering configuration menus and manipulating persistent user preferences via checkboxes, numbers, text inputs, lists, combos/dropdowns, radio buttons, sliders, color pickers, keybindings, etc.
+Baldur's Gate 3 Mod Configuration Menu (`BG3MCM` or MCM) is a mod framework created by [Volitio](https://next.nexusmods.com/profile/Volitio) that provides a centralized in-game UI, enabling players to intuitively manage mod settings and/or custom UIs defined by mod authors. It provides an API for registering configuration menus and manipulating persistent user preferences via checkboxes, numbers, text inputs, lists, combos/dropdowns, radio buttons, sliders, color pickers, keybindings, etc.
 
 Most importantly, **it allows authors to have a robust JSON-like configuration experience without spending hours writing a configuration system, and it's easy enough to integrate** that even novice modders can quickly add support for it in their own mods.
 
