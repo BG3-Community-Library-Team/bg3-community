@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2025-09-27T20:15:03.471Z
+date: 2025-11-05T18:48:56.580Z
 tags: mods, load order, modsuse, dependencies, dependency, meta.lsx, mod dependency, deps
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -31,9 +31,9 @@ After:
       <node id="Dependencies">
         <children>
           <node id="ModuleShortDesc">
-              <attribute id="Folder" type="LSWString" value="BG3MCM" />
+              <attribute id="Folder" type="LSString" value="BG3MCM" />
               <attribute id="MD5" type="LSString" value="" />
-              <attribute id="Name" type="FixedString" value="Mod Configuration Menu" />
+              <attribute id="Name" type="LSString" value="Mod Configuration Menu" />
             	<attribute id="PublishHandle" type="uint64" value="0"/>
               <attribute id="UUID" type="guid" value="755a8a72-407f-4f0d-9a33-274ac0f0b53d" />
               <attribute id="Version64" type="int64" value="37999121855938560" />
@@ -45,7 +45,7 @@ After:
         ...
 ```
 
-Make sure your meta.lsx version is this or higher:
+**Make sure your meta.lsx version is this or higher:**
 ```xml
 <version major="4" minor="8" revision="0" build="200"/>
 ```
