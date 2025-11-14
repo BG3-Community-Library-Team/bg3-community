@@ -2,7 +2,7 @@
 title: Visual
 description: List of Visual Mod Tutorials
 published: true
-date: 2025-08-29T22:12:31.453Z
+date: 2025-11-14T14:36:44.084Z
 tags: visual, tutorial, textures, meshes, tutorials
 editor: markdown
 dateCreated: 2024-05-02T22:12:50.307Z
@@ -28,6 +28,7 @@ This page is a list of existing Tutorials relating to Visual Mods.
 {.links-list}
 
 ## Armour
+- [Full Workflow to Making Armor](/Tutorials/Visual/Making-an-Armor-From-Scratch)
 - [Weight Painting Armor and Clothes](/Tutorials/Visual/Weight-Painting-Armor)
 - [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
 - [Fix Broken Normals on Imported Meshes](/Tutorials/Visual/Fix-Normals)
