@@ -2,7 +2,7 @@
 title: Visual
 description: List of Visual Mod Tutorials
 published: true
-date: 2025-11-14T14:36:44.084Z
+date: 2025-11-14T17:23:42.350Z
 tags: visual, tutorial, textures, meshes, tutorials
 editor: markdown
 dateCreated: 2024-05-02T22:12:50.307Z
@@ -14,6 +14,7 @@ This page is a list of existing Tutorials relating to Visual Mods.
 ## Getting Started
 - [Getting Started with 3D Modding](getting-started-with-3d-modding)
 - [Creating and Exporting Meshes in Blender](Creating-and-Exporting-Meshes-in-Blender)
+- [Extracting Virtual Textures with LSLIB](/Tutorials/Visual/extracting-virtual-textures)
 {.links-list}
 
 ## Head and Hair
