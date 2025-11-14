@@ -1,8 +1,8 @@
 ---
 title: Extracting Virtual Textures with LSLIB
 description: how to find and extract virtual textures
-published: false
-date: 2025-11-14T17:22:15.369Z
+published: true
+date: 2025-11-14T17:22:31.985Z
 tags: textures, lslib, virtual textures
 editor: markdown
 dateCreated: 2025-11-14T16:49:35.291Z
