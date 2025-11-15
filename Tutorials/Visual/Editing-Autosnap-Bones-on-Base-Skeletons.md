@@ -1,8 +1,8 @@
 ---
 title: Editing Hair Autosnap Bones on Base Skeletons
 description: How to edit the autosnaps on a bodytype's base skeleton to improve how hair fits.
-published: false
-date: 2025-11-15T20:03:46.584Z
+published: true
+date: 2025-11-15T20:09:57.903Z
 tags: hair, skeleton
 editor: markdown
 dateCreated: 2025-09-27T18:23:28.968Z
