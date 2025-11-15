@@ -2,7 +2,7 @@
 title: Editing Hair Autosnap Bones on Base Skeletons
 description: How to edit the autosnaps on a bodytype's base skeleton to improve how hair fits.
 published: true
-date: 2025-11-15T20:28:37.827Z
+date: 2025-11-15T20:29:09.788Z
 tags: hair, skeleton
 editor: markdown
 dateCreated: 2025-09-27T18:23:28.968Z
@@ -24,7 +24,7 @@ dateCreated: 2025-09-27T18:23:28.968Z
 - Larian's Official Toolkit (henceforth TK)
 - A lot of patience for trial and error
 
-This is something I learned how to do for my mod [Gnome More Clipping](https://wiki.bg3.community/en/Tutorials/Visual/Editing-Autosnap-Bones-on-Base-Skeletons) and thought it would be helpful to share for personal edits or custom race edits.
+This is something I learned how to do for my mod [Gnome More Clipping](https://www.nexusmods.com/baldursgate3/mods/18768?tab=description) and thought it would be helpful to share for personal edits or custom race edits.
 
 You're going to need a new project, whether you're starting from scratch or plan on using Gnome More Clipping (GMC) as the base. If importing Gnome More Clipping, select the pak after clicking the Import button. All Kelo asks is that you do not claim the base work as your own if you choose to make the edits public and please link back to the original mod.
 
