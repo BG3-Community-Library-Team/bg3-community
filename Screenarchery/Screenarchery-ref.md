@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-11-17T17:06:39.814Z
+date: 2025-11-17T17:08:55.172Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -87,9 +87,7 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 
 > Many will need a patch to work together:
-> - [Pose Mod Compatibility Patch](https://www.nexusmods.com/baldursgate3/mods/17189) by Elledwyn, AardiHenrietta, CatastrophicalCat
-> 
-> It will likely be difficult to keep a current list of these: please also try searching Nexus for "pose" or "expression"
+> [Pose Mod Compatibility Patch](https://www.nexusmods.com/baldursgate3/mods/19414) or jsut use [QSAT](https://www.nexusmods.com/baldursgate3/mods/17737)
 {.is-info}
 
 
