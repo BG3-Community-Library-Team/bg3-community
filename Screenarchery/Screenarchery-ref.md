@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-11-17T16:54:04.638Z
+date: 2025-11-17T16:54:48.383Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -175,10 +175,8 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
   
 - [Quiet Moment](https://www.nexusmods.com/baldursgate3/mods/19491)
 
-- []()
+- [Axi and Cay's Hand-Holding Poses](https://www.nexusmods.com/baldursgate3/mods/19473)
 
-- []()
-  
 - []()
   
 - []()
