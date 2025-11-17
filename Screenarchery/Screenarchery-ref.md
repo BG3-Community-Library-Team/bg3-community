@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-11-17T16:54:48.383Z
+date: 2025-11-17T16:57:26.679Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -98,6 +98,9 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 <details>
 <summary>Long list</summary>
+### Nexus 
+  
+### Patreon
 
 - [Angel Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17146)  
 
@@ -177,9 +180,15 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 - [Axi and Cay's Hand-Holding Poses](https://www.nexusmods.com/baldursgate3/mods/19473)
 
-- []()
+### Discord links
   
-- []()
+- [SinCity](https://discord.com/channels/1356377728126943424/1431046136977690624/1431046715028279336)
+  
+- [Wanda](https://discord.com/channels/1356377728126943424/1431046136977690624/1432516727677255831)
+
+- [Handsome](https://discord.com/channels/1356377728126943424/1431046136977690624/1437963936766099537)
+  
+
 
 </details>
 
