@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-11-17T17:05:57.809Z
+date: 2025-11-17T17:06:39.814Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -202,6 +202,8 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 <details>
 <summary>Short list (lick me)</summary>
 
+  ### Nexus
+  
 - [A.P.E.X. - Additional Photo Mode Expressions](https://www.nexusmods.com/baldursgate3/mods/17711)  
 
 - [Idle Expressions](https://www.nexusmods.com/baldursgate3/mods/7947)  
