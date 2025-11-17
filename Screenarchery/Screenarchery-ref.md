@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-11-01T17:41:23.440Z
+date: 2025-11-17T16:54:04.638Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -95,6 +95,10 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 ### Poses
 
+
+<details>
+<summary>Long list</summary>
+
 - [Angel Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17146)  
 
 - [The Best Boy - Scratch Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18623)  
@@ -148,10 +152,46 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [Little Dove](https://www.nexusmods.com/baldursgate3/mods/19178)  
 
 - [Endearment Poses](https://www.nexusmods.com/baldursgate3/mods/19402)
+  
+- [Artemis' Sweet Collection](https://www.nexusmods.com/baldursgate3/mods/19692)
 
+- [JoJo's Bizarre Poses](https://www.nexusmods.com/baldursgate3/mods/19690)
+  
+- [Len and Vak's Hollywood Star Poses](https://www.nexusmods.com/baldursgate3/mods/19626)
+  
+- [Axi and Cay's Meme Poses](https://www.nexusmods.com/baldursgate3/mods/19474)
+  
+- [Cunty Poses](https://www.nexusmods.com/baldursgate3/mods/19606)
+  
+- [Music of the Night](https://www.nexusmods.com/baldursgate3/mods/19593)
+  
+- [Spicy Time](https://www.nexusmods.com/baldursgate3/mods/19567)
+  
+- [Solo Poses](https://www.nexusmods.com/baldursgate3/mods/19557)
+  
+- [My King Your Lionheart](https://www.nexusmods.com/baldursgate3/mods/19464)
+  
+- [Life of a Faerunian Girl](https://www.nexusmods.com/baldursgate3/mods/19490)
+  
+- [Quiet Moment](https://www.nexusmods.com/baldursgate3/mods/19491)
+
+- []()
+
+- []()
+  
+- []()
+  
+- []()
+
+</details>
 
 ### Expressions
   
+  
+  
+<details>
+<summary>Short list</summary>
+
 - [A.P.E.X. - Additional Photo Mode Expressions](https://www.nexusmods.com/baldursgate3/mods/17711)  
 
 - [Idle Expressions](https://www.nexusmods.com/baldursgate3/mods/7947)  
@@ -160,8 +200,9 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 - [Vanilla Expressions Enhanced](https://www.nexusmods.com/baldursgate3/mods/17899)  
 
+</details>
 
-  
+
 ## Visuals/Textures/Models
 
 
