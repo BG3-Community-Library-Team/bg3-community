@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-11-17T17:00:38.335Z
+date: 2025-11-17T17:01:13.693Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -98,6 +98,7 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 <details>
 <summary>Long list</summary>
+  
 ### Nexus
 
 - [Angel Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17146)
