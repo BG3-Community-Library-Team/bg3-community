@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-11-17T16:57:31.456Z
+date: 2025-11-17T17:00:38.335Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -98,92 +98,92 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 <details>
 <summary>Long list</summary>
-### Nexus 
-  
-### Patreon
+### Nexus
 
-- [Angel Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17146)  
+- [Angel Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17146)
 
-- [The Best Boy - Scratch Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18623)  
+- [The Best Boy - Scratch Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18623)
 
-- [Big Spoon x Little Spoon Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18957)  
+- [Big Spoon x Little Spoon Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18957)
 
-- [Bonds Unspoken Pose Pack](https://www.nexusmods.com/baldursgate3/mods/17962)  
+- [Bonds Unspoken Pose Pack](https://www.nexusmods.com/baldursgate3/mods/17962)
 
-- [Claravel's Emotes as Poses](https://www.nexusmods.com/baldursgate3/mods/16904)  
+- [Claravel's Emotes as Poses](https://www.nexusmods.com/baldursgate3/mods/16904)
 
-- [Em's Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18617)  
+- [Em's Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18617)
 
-- [Embrace Your Desires](https://www.nexusmods.com/baldursgate3/mods/18488)  
+- [Embrace Your Desires](https://www.nexusmods.com/baldursgate3/mods/18488)
 
-- [Emotes](https://www.nexusmods.com/baldursgate3/mods/4744)  
+- [Emotes](https://www.nexusmods.com/baldursgate3/mods/4744)
 
-- [Extra Camera Mode Poses](https://www.nexusmods.com/baldursgate3/mods/17597)  
+- [Extra Camera Mode Poses](https://www.nexusmods.com/baldursgate3/mods/17597)
 
-- [Fairy Charm](https://ko-fi.com/Post/Public-Release-Fairy-Charm-Q5Q71K2AS6)  
+- [Get a Room](https://www.nexusmods.com/baldursgate3/mods/16942)
 
-- [Get a Room](https://www.nexusmods.com/baldursgate3/mods/16942)  
+- [Kith'rak Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17397)
 
-- [Kith'rak Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17397)  
+- [Poses of Plenty](https://www.nexusmods.com/baldursgate3/mods/16242)
 
-- [Mermaid's Kiss](https://ko-fi.com/post/Public-Release-Mermaids-Kiss-X8X11JU52B)  
+- [A Song of Ice and Fire Poses](https://www.nexusmods.com/baldursgate3/mods/17755)
 
-- [Poses of Plenty](https://www.nexusmods.com/baldursgate3/mods/16242)  
+- [Sorrow and Silk](https://www.nexusmods.com/baldursgate3/mods/18053)
 
-- [Scarlet Desire](https://ko-fi.com/s/3f44ac028b)  
+- [Strike a Pose](https://www.nexusmods.com/baldursgate3/mods/16092)
 
-- [Sera's Silly Cauldron](https://www.patreon.com/posts/130463759)  
+- [The Urge to Pose](https://www.nexusmods.com/baldursgate3/mods/16987)
 
-- [Sera's Silly Cauldron - Dances](https://www.patreon.com/posts/seras-silly-of-135265391)  
+- [Axi and Cay's Cute Couple Poses](https://www.nexusmods.com/baldursgate3/mods/19288)
 
-- [A Song of Ice and Fire Poses](https://www.nexusmods.com/baldursgate3/mods/17755)  
+- [Sera's Silly Cauldron of Delulu Dances](https://www.nexusmods.com/baldursgate3/mods/19293)
 
-- [Sorrow and Silk](https://www.nexusmods.com/baldursgate3/mods/18053)  
-
-- [Spicy Time](https://www.patreon.com/posts/spicy-time-pose-140782983) ["Exclusive to paid Patreon members for one month"]
-
-- [Strike a Pose](https://www.nexusmods.com/baldursgate3/mods/16092)  
-
-- [The Urge to Pose](https://www.nexusmods.com/baldursgate3/mods/16987)  
-
-- [Whirling Roses](https://ko-fi.com/Post/Mod-Release-whirlinginroses-Pose-Pack-O5O41MLOL8)  
-
-- [Axi and Cay's Cute Couple Poses](https://www.nexusmods.com/baldursgate3/mods/19288)  
-
-- [Sera's Silly Cauldron of Delulu Dances](https://www.nexusmods.com/baldursgate3/mods/19293)  
-
-- [Little Dove](https://www.nexusmods.com/baldursgate3/mods/19178)  
+- [Little Dove](https://www.nexusmods.com/baldursgate3/mods/19178)
 
 - [Endearment Poses](https://www.nexusmods.com/baldursgate3/mods/19402)
-  
+
 - [Artemis' Sweet Collection](https://www.nexusmods.com/baldursgate3/mods/19692)
 
 - [JoJo's Bizarre Poses](https://www.nexusmods.com/baldursgate3/mods/19690)
-  
+
 - [Len and Vak's Hollywood Star Poses](https://www.nexusmods.com/baldursgate3/mods/19626)
-  
+
 - [Axi and Cay's Meme Poses](https://www.nexusmods.com/baldursgate3/mods/19474)
-  
+
 - [Cunty Poses](https://www.nexusmods.com/baldursgate3/mods/19606)
-  
+
 - [Music of the Night](https://www.nexusmods.com/baldursgate3/mods/19593)
-  
+
 - [Spicy Time](https://www.nexusmods.com/baldursgate3/mods/19567)
-  
+
 - [Solo Poses](https://www.nexusmods.com/baldursgate3/mods/19557)
-  
+
 - [My King Your Lionheart](https://www.nexusmods.com/baldursgate3/mods/19464)
-  
+
 - [Life of a Faerunian Girl](https://www.nexusmods.com/baldursgate3/mods/19490)
-  
+
 - [Quiet Moment](https://www.nexusmods.com/baldursgate3/mods/19491)
 
 - [Axi and Cay's Hand-Holding Poses](https://www.nexusmods.com/baldursgate3/mods/19473)
 
+### Patreon | Ko-fi
+
+- [Fairy Charm](https://ko-fi.com/Post/Public-Release-Fairy-Charm-Q5Q71K2AS6)
+
+- [Mermaid's Kiss](https://ko-fi.com/post/Public-Release-Mermaids-Kiss-X8X11JU52B)
+
+- [Scarlet Desire](https://ko-fi.com/s/3f44ac028b)
+
+- [Sera's Silly Cauldron](https://www.patreon.com/posts/130463759)
+
+- [Sera's Silly Cauldron - Dances](https://www.patreon.com/posts/seras-silly-of-135265391)
+
+- [Spicy Time](https://www.patreon.com/posts/spicy-time-pose-140782983) ["Exclusive to paid Patreon members for one month"]
+
+- [Whirling Roses](https://ko-fi.com/Post/Mod-Release-whirlinginroses-Pose-Pack-O5O41MLOL8)
+
 ### Discord
-  
+
 - [SinCity](https://discord.com/channels/1356377728126943424/1431046136977690624/1431046715028279336)
-  
+
 - [Wanda](https://discord.com/channels/1356377728126943424/1431046136977690624/1432516727677255831)
 
 - [Handsome](https://discord.com/channels/1356377728126943424/1431046136977690624/1437963936766099537)
