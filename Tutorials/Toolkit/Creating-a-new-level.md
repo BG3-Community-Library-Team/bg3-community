@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-22T17:17:40.329Z
+date: 2025-11-22T17:19:31.013Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -199,6 +199,7 @@ You can see that on incrorrect one, there's no indirect lighting (harsh shadows)
 You should mainly focus on 1-4 `LightingResources`, and when you are finished with the level, only then add additional `LightingResources`, and make the final render.
 {.is-warning}
 
+https://docs.larian.game/Light_probes (In BG3 Larian split Atmosphere to Atsmosphere and Lighting)
 
 ### TileConstruction
 You build walls, roofs, floors, and other repetitve things with this thing.
@@ -238,7 +239,7 @@ For example: if you click on a trigger that has its `Physics Shape` set to Spher
 #### Sources                           
 https://docs.larian.game/Entity_types
 https://docs.larian.game/My_first:_Item
-https://docs.larian.game/Light_probes (In BG3 Larian split Atmosphere to Atsmosphere and Lighting)
+
 
 ## Resource Manager
 There are a lot of types. The only ones you need:
