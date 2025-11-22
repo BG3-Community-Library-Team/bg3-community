@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-22T17:16:36.547Z
+date: 2025-11-22T17:17:40.329Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -156,7 +156,7 @@ Basically it's an object you can interact with: shells, plates, food, gems, etc.
 It's an object you can't interact with: rocks, plants, trees, shelves, etc. (some sceneries and items can intersect).
 
 ### lightProbe
-The game doesn't have any form of dynamic global Illumination, so Larian use `LightProbe` to capture `HDRI` map around it self and then calculate inderect lighting.
+The game doesn't have any form of dynamic global Illumination, so Larian use `LightProbe` to capture `HDRI` map around itself and then calculate and "bake" inderect lighting.
 
 There are 2 types of light probes:
 
