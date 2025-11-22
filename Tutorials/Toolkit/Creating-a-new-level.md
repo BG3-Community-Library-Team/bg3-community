@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-02T22:31:07.482Z
+date: 2025-11-22T16:02:57.486Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -167,11 +167,30 @@ Local probes only gather information within a defined area around them and thus,
 Contrary to distant probes, you can place as many local probes as you want. Even probes inside other probe areas are allowed.
 The lighting of the smallest probes always gets priority over the lighting of a larger probe that covers the same area. With local probes, you fine-tune illumination and reflections where the distant probe, or a larger local probe proves to be insufficient.
 
+
 Since I make levels mostly for one picture, I always use `Distant` one and then move it around to tune the lighting for my needs
 
-Whenever you make changes with a probe, you need to save your level in order for the `LightProbe` to save the rendered `"HDRi"` maps
+To render them you need to select `LightProbe` and enable/disable `Inifinte Capture` to update the lighting, and then you just save your level
+
+
+
+The difference between level with correctly rendered `LightProbes` and one with incorrectly rendered
+You can see that on incrorrect one, there's no indirect lighting (harsh shadows)
+
+Incorrect
+
+![placeholder]()
+
+Correct
+
+![placeholder]()
+
+
+> Whenever you make changes with a probe, you need to save your level in order for the `LightProbe` to save the rendered `"HDRi"` maps
 !!! If you have a lot of `LightProbes`, *EACH* `LightProbe` will render the map for *EACH* `LightingResources` in the trigger, so rendering will take some time !!!
 You should mainly focus on 1-4 `LightingResources`, and when you are finished with the level, only then add additional `LightingResources`, and make the final render
+{.is-warning}
+
 
 ### TileConstruction
 You build walls, roofs, floors, and other repetitve things with this thing
