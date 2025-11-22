@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-22T16:55:07.691Z
+date: 2025-11-22T17:11:01.821Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -170,7 +170,16 @@ The lighting of the smallest probes always gets priority over the lighting of a 
 
 
 Since I make levels mostly for one picture, I always use `Distant` one and then move it around to tune the lighting for my needs.
-To render them you need to select `LightProbe` and enable/disable `Inifinte Capture` to update the lighting, you should see the changes immediately, and then you just save your level.
+If you make actual "gameplay" level, you will also need to use `Local` for interioirs and stuff, or to adjust some parts.
+
+> A level has to have at least one `Distant` one
+{.is-warning}
+
+Each parameter in the `Sidebar` has a tooltip, so just read them.
+Don't forget, that you can also change its size using `Edit shape bounds tool` (square with dots with a rhombus shaped square inside) in the tool bar
+
+To render them, you need to select `LightProbe` and toggle back and forth `Inifinte Capture` or `Enabled` (I haven't figure out a better way) to update the lighting; you should see the changes immediately, and then you just save your level.
+
 
 
 The difference between level with correctly rendered `LightProbes` and one with incorrectly rendered:
