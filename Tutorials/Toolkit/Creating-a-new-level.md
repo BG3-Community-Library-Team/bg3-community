@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-22T17:19:31.013Z
+date: 2025-11-22T17:37:24.076Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -176,6 +176,10 @@ You should use `Local` for interioirs and stuff, or to adjust some specific part
 {.is-warning}
 
 Not going to explain each parameter, they all have a tooltip in the `Sidebar`, just read them.
+
+> Do not edit `Intensity`. I think it does nothing in the actual game
+{.is-warning}
+
 Don't forget, that you can also change its size using `Edit shape bounds tool` (square with dots with a rhombus shaped square inside) in the tool bar
 
 To render them, you need to select `LightProbe` and toggle forth and back `Inifinte Capture` or `Enabled` (I haven't figure out a better consistent way) to update the lighting; you should see the changes immediately, and then you just save your level.
