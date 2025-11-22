@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-22T16:23:40.922Z
+date: 2025-11-22T16:55:07.691Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -117,6 +117,8 @@ I'm not going to cover all the basic buttons (you can hover over them to see the
 
 1. `Sidebar` is where all selected object's parameters are.
 
+	You can either see paramater for selected `RootTemplate` in `Root Templates` windows, or selected `RootTemplate` on the level/`Outliner`. Changing paramters for selected `RootTemplate` in the window will change them globaly for all `RootTemplates` on the level, changing parameters for seleceted `RootTemplate` on the level or `Outliner` will change them for selected `RootTemplate` only
+
 	![creating-a-new-level-23-ui-sidebar.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-23-ui-sidebar.webp)
 
 1. `Outliner` is a list with all placed objects on the level.
@@ -154,7 +156,7 @@ Basically it's an object you can interact with: shells, plates, food, gems, etc.
 It's an object you can't interact with: rocks, plants, trees, shelves, etc. (some sceneries and items can intersect).
 
 ### lightProbe
-The game doesn't have any form of dynamic global Illumination, so Larian use LightProbe to capture hdri map around it self and then calculate inderect lighting.
+The game doesn't have any form of dynamic global Illumination, so Larian use `LightProbe` to capture `HDRI` map around it self and then calculate inderect lighting.
 
 There are 2 types of light probes:
 
@@ -168,24 +170,21 @@ The lighting of the smallest probes always gets priority over the lighting of a 
 
 
 Since I make levels mostly for one picture, I always use `Distant` one and then move it around to tune the lighting for my needs.
-To render them you need to select `LightProbe` and enable/disable `Inifinte Capture` to update the lighting, and then you just save your level.
+To render them you need to select `LightProbe` and enable/disable `Inifinte Capture` to update the lighting, you should see the changes immediately, and then you just save your level.
 
 
-
-The difference between level with correctly rendered `LightProbes` and one with incorrectly rendered.
-
-You can see that on incrorrect one, there's no indirect lighting (harsh shadows).
+The difference between level with correctly rendered `LightProbes` and one with incorrectly rendered:
 
 Incorrect
 ![creating-a-new-level-21-light-probe-diff.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-21-light-probe-diff.webp)
 Correct
 ![creating-a-new-level-21-light-probe-diff.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-20-light-probe-diff.webp)
+You can see that on incrorrect one, there's no indirect lighting (harsh shadows).
 
 
 
-
-> Whenever you make changes with a probe, you need to save your level in order for the `LightProbe` to save the rendered `"HDRi"` maps
-!!! If you have a lot of `LightProbes`, *EACH* `LightProbe` will render the map for *EACH* `LightingResources` in the trigger, so rendering will take some time !!!
+> Whenever you make changes with a probe, you need to save your level in order for the `LightProbe` to save the rendered `HDRI` maps
+!!! If you have a lot of `LightProbes`, *EACH* `LightProbe` will render the map for *EACH* `LightingResources` in the `LightingTrigger`, so rendering will take some time !!!
 You should mainly focus on 1-4 `LightingResources`, and when you are finished with the level, only then add additional `LightingResources`, and make the final render.
 {.is-warning}
 
@@ -213,6 +212,17 @@ Most of you probably using Lighty Lights, but you can place then to preview the 
 
 ### character
 I only use Astarion for size reference.
+
+### LevelTemplate
+
+Saves the whole level as a `RootTemplate` that you can paste on any other levels
+
+### Important
+> Each of these `RootTemplate` types has different additional tools.
+For example: if you click on a trigger that has its `Physics Shape` set to Sphere or Box, you can change size of it using `Edit shape bounds tool`. Or if you click on a `LevelTemplate` it will show you need `Edit LevelTemplate` button
+{.is-info}
+
+
 
 #### Sources                           
 https://docs.larian.game/Entity_types
