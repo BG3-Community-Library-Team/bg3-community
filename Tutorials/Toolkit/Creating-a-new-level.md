@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-22T17:37:24.076Z
+date: 2025-11-22T17:37:56.415Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -177,7 +177,7 @@ You should use `Local` for interioirs and stuff, or to adjust some specific part
 
 Not going to explain each parameter, they all have a tooltip in the `Sidebar`, just read them.
 
-> Do not edit `Intensity`. I think it does nothing in the actual game
+> Do not edit `Intensity`. I think it does nothing in the actual game, haven't really tested though
 {.is-warning}
 
 Don't forget, that you can also change its size using `Edit shape bounds tool` (square with dots with a rhombus shaped square inside) in the tool bar
