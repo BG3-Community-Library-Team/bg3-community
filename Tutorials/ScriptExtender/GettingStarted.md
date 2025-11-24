@@ -2,8 +2,8 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2025-09-29T19:09:54.664Z
-tags: tutorial, guide, script extender, lua
+date: 2025-11-24T11:54:47.160Z
+tags: tutorial, guide, script extender, lua, symlink
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
 ---
