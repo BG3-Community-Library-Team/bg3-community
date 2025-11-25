@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2025-11-25T14:04:04.452Z
+date: 2025-11-25T14:04:56.829Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -133,7 +133,7 @@ The formats are as follows:
   RGB - every channel is draconic bloodline decorative mask - they will replace DMSK if gamer choose the DB subclass, keep it in mind
   ![1200px-dgb_draconic_bloodline_dmsk1.png](/engine_texture_variants/1200px-dgb_draconic_bloodline_dmsk1.png)
 
-	6. **Illithid MSk**
+	6. **Illithid MSK**
   
   *~Format:~* *~BC3/DXT5~ ~Linear~*
 	RED channel - X Axis Normals
