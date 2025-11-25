@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2025-11-25T12:43:27.941Z
+date: 2025-11-25T12:46:07.947Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -113,10 +113,13 @@ The formats are as follows:
    
 	5. DMSK (Accent Mask)
   sRGB - every channel is decorative mask (trough them you make guilded mask, add details, aka accent masks)
+  ![1200px-dgb_dmsk_rgb1.png](/engine_texture_variants/1200px-dgb_dmsk_rgb1.png)
+  In the picture you could see DMSK blue channel as yellow guilding:
+  ![1200px-dgb_dmsk_b_examle.png](/engine_texture_variants/1200px-dgb_dmsk_b_examle.png)
    
 	5. Draconic Bloodline DMSK (Accent Mask)
   sRGB - every channel is draconic bloodline decorative mask - they will replace DMSK if gamer choose the DB subclass, keep it in mind
-![1200px-dgb_draconic_bloodline_dmsk1.png](/engine_texture_variants/1200px-dgb_draconic_bloodline_dmsk1.png)
+  ![1200px-dgb_draconic_bloodline_dmsk1.png](/engine_texture_variants/1200px-dgb_draconic_bloodline_dmsk1.png)
     
       
 ---
