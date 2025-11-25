@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2025-11-25T14:08:42.519Z
+date: 2025-11-25T14:49:09.375Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -144,7 +144,9 @@ The formats are as follows:
   For head it is 1x1 ratio image, for body it is 1x2. If you have any UV parts out of 1x1 bot by 1, this parts will take info from 2nd part of texture
   ![illithid_msk.png](/engine_texture_variants/illithid_msk.png)
     
-      
+   [11111](/https://www.nexusmods.com/baldursgate3/mods/11111)Here example how you could use DGB textures in Substance Painter with [9045](/https://www.nexusmods.com/baldursgate3/mods/9045)Volno's Substance Skin Shader
+    
+    
 ---
 ## Objects
 - For Hard Surface Objects
