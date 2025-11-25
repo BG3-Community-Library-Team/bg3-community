@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2024-08-10T15:07:59.067Z
+date: 2025-11-25T12:36:30.237Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -79,13 +79,13 @@ The formats are as follows:
 - For Dragonborn Skin
 
 
-	1. CLEA
+	1. CTLO (Called CLEA in Shader, CLEA texture itself for Dragonborn is rudiment and not used for anything!)
 
 	*~Format:~* *~BC3/DXT5~ ~Linear~*
-	C - Curvature/Cavity map - RED channel
-  L - Lips  - GRN channel
-	E - Eyebrows - BLU channel
-  A - Ambient occlusion - ALPHA channel
+	C - Cavity map - RED channel
+  T - Thickness  - GRN channel
+	L - Lips - BLU channel
+  O - Ambient occlusion - ALPHA channel
   
 	2. NM
 
@@ -99,13 +99,23 @@ The formats are as follows:
 
 	*~Format:~* *~BC3/DXT5~ ~Linear~*
 	H - Hemoglobin - RED channel
-  M - Melanin - GRN channel
+  M - Melanin (pigment amount) - GRN channel
   V - Veins - BLU channel
   Y - Yellowing - ALPHA channel
 
-	4. MSK (DMSK)
+	4. MSK (Called Cancel MSK in Shader)
+
+	*~Format:~* *~BC3/DXT5~ ~Linear~*
+  RED channel - Non-skin (horns, scales, any keratin parts is white, soft skin - black)
+  GRN channel - Convexity map 
+  BLU channel - Emty black for heads ( white used for nails in body textures)
+  ALPHA channel - Not Used
    
-	5. MSK (AccentMSK)
+	5. DMSK (Accent Mask)
+  sRGB - every channel is decorative mask (trough them you make guilded mask, add details, aka accent masks)
+   
+	5. Draconic Bloodline DMSK (Accent Mask)
+  sRGB - every channel is draconic bloodline decorative mask - they will replace DMSK if gamer choose the DB subclass, keep it in mind
     
       
 ---
