@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2025-11-25T12:53:58.935Z
+date: 2025-11-25T12:57:40.883Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -87,6 +87,10 @@ The formats are as follows:
 	L - Lips - BLU channel
   O - Ambient occlusion - ALPHA channel
   
+  Note:
+  Thickness - it's inverted compared to one from Marmoset and much lighter
+  AO - it's much whiter then one you will bake in Marmoset or Substance, so adjust them if you want to mix with yours
+  
 	2. **NM**
 
 	*~Format:~* *~BC3/DXT5~ ~Linear~*
@@ -94,6 +98,9 @@ The formats are as follows:
   GRN channel - Y Axis Normals
   BLU channel - Z Axis Normals
   ALPHA channel - X Axis Normals
+  
+  Note:
+  To convert a "regular" tangent DX normal map to BG3, put the Red channel into Alpha channel and set Red channel to black
   
 	3. **HMVY**
 
