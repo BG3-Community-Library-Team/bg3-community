@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2025-11-25T12:46:07.947Z
+date: 2025-11-25T12:48:27.267Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -110,6 +110,8 @@ The formats are as follows:
   GRN channel - Convexity map 
   BLU channel - Emty black for heads ( white used for nails in body textures)
   ALPHA channel - Not Used
+  ![1200px-dgb_msk_1.png](/engine_texture_variants/1200px-dgb_msk_1.png)
+  ![1200px-dgb_msk_2.png](/engine_texture_variants/1200px-dgb_msk_2.png)
    
 	5. DMSK (Accent Mask)
   sRGB - every channel is decorative mask (trough them you make guilded mask, add details, aka accent masks)
