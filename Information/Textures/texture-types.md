@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2025-11-25T13:03:59.380Z
+date: 2025-11-25T14:03:18.858Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -115,7 +115,7 @@ The formats are as follows:
   RED channel - Non-skin (horns, scales, any keratin parts is white, soft skin - black)
   GRN channel - Convexity map 
   BLU channel - Emty black for heads ( white used for nails in body textures)
-  ALPHA channel - Not Used
+  ALPHA channel - Not Exist
   ![1200px-dgb_msk_1.png](/engine_texture_variants/1200px-dgb_msk_1.png)
   ![1200px-dgb_msk_2.png](/engine_texture_variants/1200px-dgb_msk_2.png)
    
@@ -132,6 +132,17 @@ The formats are as follows:
   *~Format:~* *~BC3/DXT5~ ~Linear~*
   RGB - every channel is draconic bloodline decorative mask - they will replace DMSK if gamer choose the DB subclass, keep it in mind
   ![1200px-dgb_draconic_bloodline_dmsk1.png](/engine_texture_variants/1200px-dgb_draconic_bloodline_dmsk1.png)
+
+	6. **Illithid MSk**
+  
+  *~Format:~* *~BC3/DXT5~ ~Linear~*
+	RED channel - X Axis Normals
+  GRN channel - Y Axis Normals
+  BLU channel - Mask
+  ALPHA channel - Not Exist
+  **Note:**
+  For head it is 1x1 ratio image, for body it is 1x2. If you have any UV parts out of 1x1 bot by 1, this parts will take info from 2nd part of texture
+  
     
       
 ---
