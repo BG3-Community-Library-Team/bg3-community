@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2025-11-25T14:04:56.829Z
+date: 2025-11-25T14:08:42.519Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -142,7 +142,7 @@ The formats are as follows:
   ALPHA channel - Not Exist
   **Note:**
   For head it is 1x1 ratio image, for body it is 1x2. If you have any UV parts out of 1x1 bot by 1, this parts will take info from 2nd part of texture
-  
+  ![illithid_msk.png](/engine_texture_variants/illithid_msk.png)
     
       
 ---
