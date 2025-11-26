@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-11-25T22:12:27.677Z
+date: 2025-11-26T22:15:52.221Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -176,6 +176,8 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [Sera's Silly Cauldron](https://www.patreon.com/posts/130463759)
 
 - [Sera's Silly Cauldron - Dances](https://www.patreon.com/posts/seras-silly-of-135265391)
+  
+- [Elegant Poses](https://www.patreon.com/posts/144480182)
 
 
 - [Whirling Roses](https://ko-fi.com/Post/Mod-Release-whirlinginroses-Pose-Pack-O5O41MLOL8)
