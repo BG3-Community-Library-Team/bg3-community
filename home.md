@@ -2,15 +2,13 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2025-10-19T15:42:47.646Z
+date: 2025-11-29T00:24:00.958Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
 ---
 
 # Welcome  
-
-This is a network test
 
 This is the BG3 Modding Community Wiki, a place to find, create, and edit tutorials, resources, and guides. Lore and base game information are also welcome.
 
