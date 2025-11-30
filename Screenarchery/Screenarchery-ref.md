@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-11-26T22:15:52.221Z
+date: 2025-11-30T10:50:27.278Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -30,6 +30,7 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
   - For toggleable presets affecting how the screen renders (lighting/colour/contrast/dof/etc)
   - Make your own presets or search Nexus for them
   - [How to install](https://www.youtube.com/watch?v=FHcyIVYj55I)
+	- [How to install shaders](https://www.youtube.com/watch?v=vIc020i-6aM)
 
 - [SRWE](https://github.com/dtgDTGdtg/SRWE) by dtgDTGdt, Otis_Inf, ghostinthecamera, The-SamminAter
    - For hotsampling if you don't have Otis_Inf Baldur's Gate 3 Photomode Tools
