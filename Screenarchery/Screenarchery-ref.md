@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-11-30T10:54:12.787Z
+date: 2025-11-30T10:54:25.658Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -28,7 +28,7 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 - [Reshade](https://reshade.me/) by crosire
 	- A post-processing tool for games. Allows you to apply different effects and colors on top of the game
-  [How to install](https://www.youtube.com/watch?v=FHcyIVYj55I)
+  [How to install ReShade](https://www.youtube.com/watch?v=FHcyIVYj55I)
 	[How to install shaders](https://www.youtube.com/watch?v=vIc020i-6aM)
 
 - [SRWE](https://github.com/dtgDTGdtg/SRWE) by dtgDTGdt, Otis_Inf, ghostinthecamera, The-SamminAter
