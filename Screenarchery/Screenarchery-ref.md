@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-11-30T10:50:27.278Z
+date: 2025-11-30T10:54:12.787Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -18,8 +18,8 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 ## External tools
 
 - [Baldur's Gate 3 Photomode Tools](https://www.patreon.com/posts/86230271?collection=12940) by Otis_Inf
-  - **REQUIRES at least one month Patreon subscription = ~5€/6.50$**
-  - Allows resolution hotsampling, game pause, and fine control of the camera
+  - **REQUIRES at least one month Patreon subscription = ~5€/$6.50**
+  - Allows fine control of the camera, resolution hotsampling, game pause and a lot more
   - Please read its [documentaion](https://opm.fransbouma.com/Cameras/bg3.htm) first and then common issues which are listed below
 
 - [IGCS Depth of Field](https://github.com/FransBouma/IgcsConnector/releases) by Otis_Inf
@@ -27,10 +27,9 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
   - Please read its [documentaion](https://opm.fransbouma.com/igcsdof.htm) first and then common issues which are listed below
 
 - [Reshade](https://reshade.me/) by crosire
-  - For toggleable presets affecting how the screen renders (lighting/colour/contrast/dof/etc)
-  - Make your own presets or search Nexus for them
-  - [How to install](https://www.youtube.com/watch?v=FHcyIVYj55I)
-	- [How to install shaders](https://www.youtube.com/watch?v=vIc020i-6aM)
+	- A post-processing tool for games. Allows you to apply different effects and colors on top of the game
+  [How to install](https://www.youtube.com/watch?v=FHcyIVYj55I)
+	[How to install shaders](https://www.youtube.com/watch?v=vIc020i-6aM)
 
 - [SRWE](https://github.com/dtgDTGdtg/SRWE) by dtgDTGdt, Otis_Inf, ghostinthecamera, The-SamminAter
    - For hotsampling if you don't have Otis_Inf Baldur's Gate 3 Photomode Tools
