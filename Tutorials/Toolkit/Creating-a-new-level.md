@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-22T17:37:56.415Z
+date: 2025-11-30T19:09:57.043Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -69,7 +69,7 @@ There are some important keybinds:
 1. `QE` for moving the camera up or down.
 1. `Scroll up/down` to move the camera forward/backward.
 1. `Shift`/`Ctrl` speeds up/slows down the camera.
-1. `1` for the Pointer, `2` to Translate, `3` to Rotate, `4` to Scale objects, '5' to enable Create object on click.
+1. `1` for the Pointer, `2` to Translate (move), `3` to Rotate, `4` to Scale objects, '5' to enable Create object on click.
 1. `C` to deselect object.
 1. `Ctrl + Alt + S` to Save everything.
 1. And of course basic keybinds like `Ctrl + C/V`, `Delete`, etc.
@@ -126,9 +126,9 @@ I'm not going to cover all the basic buttons (you can hover over them to see the
 	![creating-a-new-level-24-ui-outliner.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-24-ui-outliner.webp)
 
 
-### Additional objcet controls
+### Additional object controls
 
-At the bottom you can also see: `Pos: x y z`, `Rot: x y z`, `Scale XYZ`, and their differen modes. These also allow you to manipulate over selected object. Hover over the modes to see the tooltips.
+At the bottom you can also see: `Pos: x y z`, `Rot: x y z`, `Scale XYZ`, and their different modes. These also allow you to manipulate over selected object. Hover over the modes to see the tooltips.
 
 
 ![creating-a-new-level-19-add-controls.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-19-add-controls.webp)
@@ -170,7 +170,7 @@ The lighting of the smallest probes always gets priority over the lighting of a 
 
 
 Since I make levels mostly for one picture, I always use `Distant` one and then move it around to tune the lighting for my needs.
-You should use `Local` for interioirs and stuff, or to adjust some specific parts.
+You should use `Local` for interiors and stuff, or to adjust some specific parts.
 
 > A level has to have at least one `Distant` one
 {.is-warning}
@@ -180,9 +180,9 @@ Not going to explain each parameter, they all have a tooltip in the `Sidebar`, j
 > Do not edit `Intensity`. I think it does nothing in the actual game, haven't really tested though
 {.is-warning}
 
-Don't forget, that you can also change its size using `Edit shape bounds tool` (square with dots with a rhombus shaped square inside) in the tool bar
+Don't forget that you can also change its size using `Edit shape bounds tool` (square with dots with a rhombus shaped square inside) in the tool bar
 
-To render them, you need to select `LightProbe` and toggle forth and back `Inifinte Capture` or `Enabled` (I haven't figure out a better consistent way) to update the lighting; you should see the changes immediately, and then you just save your level.
+To render them, you need to select `LightProbe` and toggle forth and back `Inifinite Capture` or `Enabled` (I haven't figure out a better consistent way) to update the lighting; you should see the changes immediately, and then you just save your level.
 
 
 
@@ -196,20 +196,20 @@ The difference between level with correctly rendered `LightProbes` and one with 
 ![creating-a-new-level-21-light-probe-diff.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-20-light-probe-diff.webp)
 {.is-success}
 
-You can see that on incrorrect one, there's no indirect lighting (harsh shadows).
+You can see that on incorrect one, there's no indirect lighting (harsh shadows).
 
 > Whenever you make changes with a probe, you need to save your level in order for the `LightProbe` to save the rendered `HDRI` maps
 !!! If you have a lot of `LightProbes`, *EACH* `LightProbe` will render the map for *EACH* `LightingResources` in the `LightingTrigger`, so rendering will take some time !!!
 You should mainly focus on 1-4 `LightingResources`, and when you are finished with the level, only then add additional `LightingResources`, and make the final render.
 {.is-warning}
 
-https://docs.larian.game/Light_probes (In BG3 Larian split Atmosphere to Atsmosphere and Lighting)
+https://docs.larian.game/Light_probes (In BG3 Larian split Atmosphere to Atmosphere and Lighting)
 
 ### TileConstruction
-You build walls, roofs, floors, and other repetitve things with this thing.
+You build walls, roofs, floors, and other repetitive things with this thing.
 
 ### Prefab
-A saved group of objects. You can create and decorated a furnace using different objects and then save it as Prefab to reuse the whole thing again.
+A saved group of objects. You can create and decorate a scene using different objects and then save it as Prefab to reuse the whole thing again.
 
 ### Trigger
 In our case we only need two:
@@ -224,7 +224,7 @@ You can create fog areas with this thing.
 
 ### light
 Just a light.
-Most of you probably using Lighty Lights, but you can place then to preview the lighting.
+Most of you probably use Lighty Lights, but you can place then to preview the lighting.
 
 ### character
 I only use Astarion for size reference.
@@ -267,7 +267,7 @@ Materials.
 ### Lighting
 A resource that contains Lighting parameters: sun/moon position, sun/moon color, fog, etc.
 
-### Atmospehere
+### Atmosphere
 A resource that contains Atmospehere parameters: overall color correction, light shafts, different effectrs environmental effects (like rain, ashes, etc), etc.
 
 ### Terrain Brush
