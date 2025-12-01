@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-12-01T11:54:06.667Z
+date: 2025-12-01T11:55:13.544Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -235,7 +235,7 @@ Saves the whole level as a `RootTemplate` that you can paste on any other levels
 
 ### Important
 > Each of these `RootTemplate` types has different additional tools.
-For example: if you click on a trigger that has its `Physics Shape` set to Sphere or Box, you can change size of it using `Edit shape bounds tool`. Or if you click on a `LevelTemplate` it will show you need `Edit LevelTemplate` button
+For example: if you click on a trigger that has its `Physics Shape` set to Sphere or Box, you can change size of it using `Edit shape bounds tool`. Or if you click on a `LevelTemplate` it will show you `Edit LevelTemplate` button
 {.is-info}
 
 
