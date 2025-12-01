@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-11-30T19:09:57.043Z
+date: 2025-12-01T11:54:06.667Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -209,7 +209,7 @@ https://docs.larian.game/Light_probes (In BG3 Larian split Atmosphere to Atmosph
 You build walls, roofs, floors, and other repetitive things with this thing.
 
 ### Prefab
-A saved group of objects. You can create and decorate a scene using different objects and then save it as Prefab to reuse the whole thing again.
+A saved group of objects. You can create and decorate a furnace using different objects and then save it as Prefab to reuse the whole thing again.
 
 ### Trigger
 In our case we only need two:
