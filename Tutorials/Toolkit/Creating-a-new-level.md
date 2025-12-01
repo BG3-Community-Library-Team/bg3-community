@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-12-01T11:55:13.544Z
+date: 2025-12-01T16:17:40.520Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -25,7 +25,7 @@ First you `Create` a new project,
 
 ![creating-a-new-level-create-project.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-create-project.webp)
 
-name it however you want, and then press `Create`. I'm going for LevelGuide.
+Name it whatever you want, and then press `Create`. I'm going for LevelGuide.
 
 
 ![creating-a-new-level-5-project-name.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-5-project-name.webp)
@@ -34,8 +34,9 @@ After some time, the toolkit will finally open `Level browser`, where you also p
 
 ![creating-a-new-level-6-create-level.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-6-create-level.webp)
 
-Name the new level. As a good habit you should follow some sort of a naming convention. Me personally uses Larian one, but instead of Region name (like WLD_Main_A, SCL_..., BGO_...) in the begining, I use `ProjectName_LevelName`, so it would `LG_MyNewPrettyLevel`;
-and press `Create` one more time.
+Name the new level. As a good habit you should follow some sort of a naming convention. I personally use Larian's, but instead of Region name (e.g. WLD_Main_A, SCL_, BGO_) in the begining, I use `ProjectName_LevelName`, or something like `LG_MyNewPrettyLevel`. 
+
+Once you name your level, press `Create` one more time.
 
 ![creating-a-new-level-7-name-level.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-7-name-level.webp)
 
@@ -56,6 +57,8 @@ Save it
 
 If you closed a window by accident, you can eiter `Load Layout`, `Reset Layout` or go to `View` and re-open it there.
 
+You can also drag windows outside of the toolkit (this might make it easier to see things if you have multiple screens). However, they will end up re-docked when you reopen the toolkit. 
+
 ## Settings
 
 Maybe 
@@ -74,7 +77,7 @@ There are some important keybinds:
 1. `Ctrl + Alt + S` to Save everything.
 1. And of course basic keybinds like `Ctrl + C/V`, `Delete`, etc.
 
-There are a loooooot more kebinds that you can use, they are located in `Preferences`. I highly suggest utilizing them.
+There are a loooooot more keybinds that you can use, they are located in `Preferences`. I highly suggest utilizing them.
 
 
 
@@ -84,7 +87,7 @@ To change initial camera speed, go to `Editor Camera Setting`.
 ![creating-a-new-level-15-camera-speed.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-15-camera-speed.webp)
 Different camera modes
 
-*You can use `Scroll` keybind with `Shift` + `WS` to "speed up" the camera even more without changing intial camera speed*.
+*You can use `Scroll` keybind with `Shift` + `W/S` to "speed up" the camera even more without changing intial camera speed*.
 
 ## UI
 
@@ -92,14 +95,14 @@ Different camera modes
 
 ![creating-a-new-level-18-top-bat.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-18-top-bat.webp)
 
-I'm not going to cover all the basic buttons (you can hover over them to see the tooltips) and Editor buttons; the options you need are.
+I'm not going to cover all the basic buttons (you can hover over them to see the tooltips) and Editor buttons; the options you need are:
 
 1. `Terrain panel` - to create or paint terrain.
 1. `AI Grid` - to create walkeable areas.
 1. `Instances` - to paint with vegitation and other objects.
 1. `Atmospehere panel` - to edit Lighting and Atmosphere.
 
-### The windows
+### Windows
 1. `Resource Manager` is where all game meshes/textures/sounds/materials are located.
 
 	![creating-a-new-level-22-ui-resource-manager.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-22-ui-resource-manager.webp)
@@ -117,18 +120,18 @@ I'm not going to cover all the basic buttons (you can hover over them to see the
 
 1. `Sidebar` is where all selected object's parameters are.
 
-	You can either see paramater for selected `RootTemplate` in `Root Templates` windows, or selected `RootTemplate` on the level/`Outliner`. Changing paramters for selected `RootTemplate` in the window will change them globaly for all `RootTemplates` on the level, changing parameters for seleceted `RootTemplate` on the level or `Outliner` will change them for selected `RootTemplate` only
+	You can see parameters for selected `RootTemplate` in either the `Root Template` window or in the level/`World Outliner` window. Changing parameters for selected `RootTemplate` in the window will change them globaly for all `RootTemplates` on the level; changing parameters for selected `RootTemplate` on the level or `World Outliner` will change them for selected `RootTemplate` only.
 
 	![creating-a-new-level-23-ui-sidebar.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-23-ui-sidebar.webp)
 
-1. `Outliner` is a list with all placed objects on the level.
+1. `World Outliner` is a list with all placed objects on the level.
 
 	![creating-a-new-level-24-ui-outliner.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-24-ui-outliner.webp)
 
 
 ### Additional object controls
 
-At the bottom you can also see: `Pos: x y z`, `Rot: x y z`, `Scale XYZ`, and their different modes. These also allow you to manipulate over selected object. Hover over the modes to see the tooltips.
+In the bottom right corner, you'll also see more ways to manipulate selected objects with `Pos: XYZ`, `Rot: XYZ`, and `Scale XYZ`, plus toggles for different modes (hover over them to see tooltips). You can use these tools to manipulate selected objects more precisely: for example, you can easily rotate an object by typing the new angle (e.g. 90 for 90 degree) in the `y` box.
 
 
 ![creating-a-new-level-19-add-controls.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-19-add-controls.webp)
@@ -137,7 +140,7 @@ At the bottom you can also see: `Pos: x y z`, `Rot: x y z`, `Scale XYZ`, and the
 
 
 ## Root Templates
-There are some `RootTemplate` types. The only ones you need:
+There are several `RootTemplate` types. The ones you need to know:
 
 `item` (orange barrel)
 `scenery` (green tree)
@@ -150,13 +153,13 @@ There are some `RootTemplate` types. The only ones you need:
 `character` (purple Astarion)
 
 ### item
-Basically it's an object you can interact with: shells, plates, food, gems, etc. It's not completely true, but it's just easier to explain (some sceneries and items can intersect).
+Basically an object you can interact with: shells, plates, food, gems, etc. It's not completely true, but it's just easier to explain (some sceneries and items can intersect).
 
 ### scenery
-It's an object you can't interact with: rocks, plants, trees, shelves, etc. (some sceneries and items can intersect).
+An object you can't interact with: rocks, plants, trees, shelves, etc. (some sceneries and items can intersect).
 
 ### lightProbe
-The game doesn't have any form of dynamic global Illumination, so Larian use `LightProbe` to capture `HDRI` map around itself and then calculate and "bake" inderect lighting.
+The game doesn't have any form of dynamic global Illumination, so Larian uses `LightProbe` to capture `HDRI` map around itself and then calculate and "bake" indirect lighting.
 
 There are 2 types of light probes:
 
