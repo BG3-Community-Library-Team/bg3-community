@@ -2,7 +2,7 @@
 title: Creating a new level
 description: Small guide that covers basics of level creation
 published: true
-date: 2025-12-01T16:17:40.520Z
+date: 2025-12-01T16:19:48.899Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -131,7 +131,7 @@ I'm not going to cover all the basic buttons (you can hover over them to see the
 
 ### Additional object controls
 
-In the bottom right corner, you'll also see more ways to manipulate selected objects with `Pos: XYZ`, `Rot: XYZ`, and `Scale XYZ`, plus toggles for different modes (hover over them to see tooltips). You can use these tools to manipulate selected objects more precisely: for example, you can easily rotate an object by typing the new angle (e.g. 90 for 90 degree) in the `y` box.
+In the bottom right corner, you'll also see more ways to manipulate selected objects with `Pos: X Y Z`, `Rot: X Y Z`, and `Scale XYZ`, plus toggles for different modes (hover over them to see tooltips). You can use these tools to manipulate selected objects more precisely: for example, you can easily rotate an object by typing the new angle (e.g. 90 for 90 degree) in the `Rot: Y` box.
 
 
 ![creating-a-new-level-19-add-controls.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-19-add-controls.webp)
