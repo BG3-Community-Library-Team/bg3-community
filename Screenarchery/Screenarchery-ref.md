@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-12-03T23:51:17.857Z
+date: 2025-12-03T23:52:41.058Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -124,8 +124,6 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [Bonds Unspoken Pose Pack](https://www.nexusmods.com/baldursgate3/mods/17962)
 
 - [Cady's Tiefling Poses](https://www.nexusmods.com/baldursgate3/mods/19907)
-
-- [Claravel's Emotes as Poses](https://www.nexusmods.com/baldursgate3/mods/16904)
   
 - [Cunty Poses](https://www.nexusmods.com/baldursgate3/mods/19606)
 
@@ -140,9 +138,7 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [Extra Camera Mode Poses](https://www.nexusmods.com/baldursgate3/mods/17597)
   
 - [Faerun Fashionistas Mega Pose Pack](https://www.nexusmods.com/baldursgate3/mods/19829)
-  
-- [Get a Room](https://www.nexusmods.com/baldursgate3/mods/16942)
-  
+    
 - [Igs Misc Poses](https://www.nexusmods.com/baldursgate3/mods/19881)
 
 - [JoJo's Bizarre Poses](https://www.nexusmods.com/baldursgate3/mods/19690)
