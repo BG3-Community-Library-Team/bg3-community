@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-12-03T23:50:51.817Z
+date: 2025-12-03T23:51:17.857Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -202,15 +202,12 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 - [Whirling Roses](https://ko-fi.com/Post/Mod-Release-whirlinginroses-Pose-Pack-O5O41MLOL8)
 
-### Discord
+### Discord / Other
 - [Alida's Solo Poses](https://discord.com/channels/1356377728126943424/1431046136977690624/1444703736848060547)
 - [Handsome](https://discord.com/channels/1356377728126943424/1431046136977690624/1437963936766099537)
 - [Sad Boy Hours](https://discord.com/channels/1356377728126943424/1431046136977690624/1445165668646391869)
 - [SinCity](https://discord.com/channels/1356377728126943424/1431046136977690624/1431046715028279336)
-- [Wanda](https://discord.com/channels/1356377728126943424/1431046136977690624/1432516727677255831)
-
-### Other
-  
+- [Wanda](https://discord.com/channels/1356377728126943424/1431046136977690624/1432516727677255831)  
 - [EVENMOREPOSES](https://bsky.app/profile/dancunin.bsky.social/post/3m5s6mgws7k25)
 
 </details>
