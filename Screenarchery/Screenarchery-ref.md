@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-11-30T10:54:25.658Z
+date: 2025-12-03T23:26:57.829Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -99,71 +99,94 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
   
 ### Nexus
 
+- [Aeterna Amantes Poses by Echo](https://www.nexusmods.com/baldursgate3/mods/19740)
+
 - [Angel Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17146)
+  
+- [Artemis' Sweet Collection](https://www.nexusmods.com/baldursgate3/mods/19692)
+  
+- [Aufelle's Boudoir Pose Pack](https://www.nexusmods.com/baldursgate3/mods/19791)
+
+- [Axi and Cay's Cute Couple Poses](https://www.nexusmods.com/baldursgate3/mods/19288)
+
+- [Axi and Cay's Hand-Holding Poses](https://www.nexusmods.com/baldursgate3/mods/19473)
+
+- [Axi and Cay's LADS Poses](https://www.nexusmods.com/baldursgate3/mods/19618)
+  
+- [Axi and Cay's Meme Poses](https://www.nexusmods.com/baldursgate3/mods/19474)
 
 - [The Best Boy - Scratch Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18623)
 
 - [Big Spoon x Little Spoon Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18957)
 
+- [Blood and Roses Pose Pack](https://www.nexusmods.com/baldursgate3/mods/19859)
+
 - [Bonds Unspoken Pose Pack](https://www.nexusmods.com/baldursgate3/mods/17962)
 
+- [Cady's Tiefling Poses](https://www.nexusmods.com/baldursgate3/mods/19907)
+
 - [Claravel's Emotes as Poses](https://www.nexusmods.com/baldursgate3/mods/16904)
+  
+- [Cunty Poses](https://www.nexusmods.com/baldursgate3/mods/19606)
+
+- [Elegant Poses for BT2](https://www.nexusmods.com/baldursgate3/mods/19864)
 
 - [Em's Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18617)
 
 - [Embrace Your Desires](https://www.nexusmods.com/baldursgate3/mods/18488)
 
-- [Emotes](https://www.nexusmods.com/baldursgate3/mods/4744)
+- [Endearment Poses](https://www.nexusmods.com/baldursgate3/mods/19402)
 
 - [Extra Camera Mode Poses](https://www.nexusmods.com/baldursgate3/mods/17597)
-
+  
+- [Faerun Fashionistas Mega Pose Pack](https://www.nexusmods.com/baldursgate3/mods/19829)
+  
 - [Get a Room](https://www.nexusmods.com/baldursgate3/mods/16942)
+  
+- [Igs Misc Poses](https://www.nexusmods.com/baldursgate3/mods/19881)
+
+- [JoJo's Bizarre Poses](https://www.nexusmods.com/baldursgate3/mods/19690)
+
+- [JoJo Couple Poses](https://www.nexusmods.com/baldursgate3/mods/19865)
+
+- [Just a Moment More Poses](https://www.nexusmods.com/baldursgate3/mods/19868)
 
 - [Kith'rak Photoshoot](https://www.nexusmods.com/baldursgate3/mods/17397)
+  
+- [Len and Vak's Hollywood Star Poses](https://www.nexusmods.com/baldursgate3/mods/19626)
+
+- [Life of a Faerunian Girl](https://www.nexusmods.com/baldursgate3/mods/19490)
+
+- [Little Dove](https://www.nexusmods.com/baldursgate3/mods/19178)
+
+- [My King Your Lionheart](https://www.nexusmods.com/baldursgate3/mods/19464)
+  
+- [Music of the Night](https://www.nexusmods.com/baldursgate3/mods/19593)
+
+- [Our Little Hatchling](https://www.nexusmods.com/baldursgate3/mods/19724)
+  
+- [Path of the Dreamer I. Couple poses](https://www.nexusmods.com/baldursgate3/mods/19893)
 
 - [Poses of Plenty](https://www.nexusmods.com/baldursgate3/mods/16242)
+  
+- [Quiet Moment](https://www.nexusmods.com/baldursgate3/mods/19491)
+
+- [See No Evil - Hear No Evil - Speak No Evil](https://www.nexusmods.com/baldursgate3/mods/19727)
+  
+- [Sera's Silly Cauldron of Delulu Dances](https://www.nexusmods.com/baldursgate3/mods/19293)
+
+- [Solo Poses](https://www.nexusmods.com/baldursgate3/mods/19557)
 
 - [A Song of Ice and Fire Poses](https://www.nexusmods.com/baldursgate3/mods/17755)
 
 - [Sorrow and Silk](https://www.nexusmods.com/baldursgate3/mods/18053)
 
+- [Spicy Time](https://www.nexusmods.com/baldursgate3/mods/19567) 
+  
 - [Strike a Pose](https://www.nexusmods.com/baldursgate3/mods/16092)
-
+    
 - [The Urge to Pose](https://www.nexusmods.com/baldursgate3/mods/16987)
 
-- [Axi and Cay's Cute Couple Poses](https://www.nexusmods.com/baldursgate3/mods/19288)
-
-- [Sera's Silly Cauldron of Delulu Dances](https://www.nexusmods.com/baldursgate3/mods/19293)
-
-- [Little Dove](https://www.nexusmods.com/baldursgate3/mods/19178)
-
-- [Endearment Poses](https://www.nexusmods.com/baldursgate3/mods/19402)
-
-- [Artemis' Sweet Collection](https://www.nexusmods.com/baldursgate3/mods/19692)
-
-- [JoJo's Bizarre Poses](https://www.nexusmods.com/baldursgate3/mods/19690)
-
-- [Len and Vak's Hollywood Star Poses](https://www.nexusmods.com/baldursgate3/mods/19626)
-
-- [Axi and Cay's Meme Poses](https://www.nexusmods.com/baldursgate3/mods/19474)
-
-- [Cunty Poses](https://www.nexusmods.com/baldursgate3/mods/19606)
-
-- [Music of the Night](https://www.nexusmods.com/baldursgate3/mods/19593)
-
-- [Spicy Time](https://www.nexusmods.com/baldursgate3/mods/19567)
-
-- [Solo Poses](https://www.nexusmods.com/baldursgate3/mods/19557)
-
-- [My King Your Lionheart](https://www.nexusmods.com/baldursgate3/mods/19464)
-
-- [Life of a Faerunian Girl](https://www.nexusmods.com/baldursgate3/mods/19490)
-
-- [Quiet Moment](https://www.nexusmods.com/baldursgate3/mods/19491)
-
-- [Axi and Cay's Hand-Holding Poses](https://www.nexusmods.com/baldursgate3/mods/19473)
-  
-- [See No Evil - Hear No Evil - Speak No Evil](https://www.nexusmods.com/baldursgate3/mods/19727)
 
 ### Patreon | Ko-fi
 
