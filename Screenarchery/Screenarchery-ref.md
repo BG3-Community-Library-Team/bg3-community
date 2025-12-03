@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-12-03T23:26:57.829Z
+date: 2025-12-03T23:50:51.817Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -188,7 +188,7 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [The Urge to Pose](https://www.nexusmods.com/baldursgate3/mods/16987)
 
 
-### Patreon | Ko-fi
+### Patreon / Ko-fi
 
 - [Fairy Charm](https://ko-fi.com/Post/Public-Release-Fairy-Charm-Q5Q71K2AS6)
 
@@ -199,20 +199,16 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [Sera's Silly Cauldron](https://www.patreon.com/posts/130463759)
 
 - [Sera's Silly Cauldron - Dances](https://www.patreon.com/posts/seras-silly-of-135265391)
-  
-- [Elegant Poses](https://www.patreon.com/posts/144480182)
-
 
 - [Whirling Roses](https://ko-fi.com/Post/Mod-Release-whirlinginroses-Pose-Pack-O5O41MLOL8)
 
 ### Discord
-
+- [Alida's Solo Poses](https://discord.com/channels/1356377728126943424/1431046136977690624/1444703736848060547)
+- [Handsome](https://discord.com/channels/1356377728126943424/1431046136977690624/1437963936766099537)
+- [Sad Boy Hours](https://discord.com/channels/1356377728126943424/1431046136977690624/1445165668646391869)
 - [SinCity](https://discord.com/channels/1356377728126943424/1431046136977690624/1431046715028279336)
-
 - [Wanda](https://discord.com/channels/1356377728126943424/1431046136977690624/1432516727677255831)
 
-- [Handsome](https://discord.com/channels/1356377728126943424/1431046136977690624/1437963936766099537)
-  
 ### Other
   
 - [EVENMOREPOSES](https://bsky.app/profile/dancunin.bsky.social/post/3m5s6mgws7k25)
@@ -224,7 +220,7 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
   
   
 <details>
-<summary>Short list (lick me)</summary>
+<summary>Short list (click me)</summary>
 
   ### Nexus
   
