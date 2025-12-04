@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-12-04T01:51:29.055Z
+date: 2025-12-04T01:54:45.987Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -310,12 +310,17 @@ As of version 1.14+, MCM introduces a global `MCM` table (can be called anywhere
 > • For full details and up-to-date signatures, see the code in BG3MCM's `MCMAPIMethods.lua` file.
 {.is-info}
 
-Starting with MCM version 1.38+, this API supports table-based arguments as a better alternative to positional arguments. This pattern provides several advantages:
+Starting with **MCM version 1.38+**, this **API supports table-based arguments** as a better alternative to positional arguments. This pattern provides allows make function calls more readable and self-documenting, easier to skip optional parameters without placeholder nil values, allows new optional parameters to be added without breaking existing code, and has better autocomplete when using [MCMIdeHelpers](https://github.com/AtilioA/BG3-MCM/blob/main/MCMIdeHelpers.lua). Example:
 
-> • Optional parameters: Easier to skip optional parameters without placeholder nil values
-> • Future-proof: New optional parameters can be added without breaking existing code
-> • IDE support: Better autocomplete and type checking when using [MCMIdeHelpers](https://github.com/AtilioA/BG3-MCM/blob/main/MCMIdeHelpers.lua)
-{.is-success}
+```lua
+MCM.EventButton.ShowFeedback({
+    buttonId = "my_button",
+    message = "Action completed successfully!",
+    feedbackType = "success",       -- or use MCM.EventButton.FeedbackTypes.SUCCESS
+    modUUID = "optional-mod-uuid",  -- Optional, will default to your mod UUID
+    durationInMs = 5000             -- Optional, already defaults to 5000
+})
+```
 
 #### Core API
 
