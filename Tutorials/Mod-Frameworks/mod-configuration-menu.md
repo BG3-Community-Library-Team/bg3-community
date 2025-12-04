@@ -2,7 +2,7 @@
 title: Mod Configuration Menu
 description: Brief MCM overview + detailed guide for integrating mods with it
 published: true
-date: 2025-11-17T20:28:04.780Z
+date: 2025-12-04T01:51:29.055Z
 tags: frameworks, scripting, imgui, interface, mcm, mod configuration menu, settings, config, configuration, se mod settings, se mod configuration, mod settings, mod menu, mod config
 editor: markdown
 dateCreated: 2024-05-05T22:37:40.947Z
@@ -309,6 +309,13 @@ As of version 1.14+, MCM introduces a global `MCM` table (can be called anywhere
 > • Client-only functions will not exist on the server context.
 > • For full details and up-to-date signatures, see the code in BG3MCM's `MCMAPIMethods.lua` file.
 {.is-info}
+
+Starting with MCM version 1.38+, this API supports table-based arguments as a better alternative to positional arguments. This pattern provides several advantages:
+
+> • Optional parameters: Easier to skip optional parameters without placeholder nil values
+> • Future-proof: New optional parameters can be added without breaking existing code
+> • IDE support: Better autocomplete and type checking when using [MCMIdeHelpers](https://github.com/AtilioA/BG3-MCM/blob/main/MCMIdeHelpers.lua)
+{.is-success}
 
 #### Core API
 
