@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-04T22:07:24.777Z
+date: 2025-12-04T22:38:33.803Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -137,9 +137,9 @@ ENDEXITSECTION
 
 I've now set up new DBs that will give the City of Brass and Pointed-Toe Shoes outfits to Grand Duke Wyll when the epilogue starts.
 
-When making your own script, you'll want to substitute the names and UUIDs, of the character, flag, and items you want instead.
+When making your own script, you'll want to substitute the names and UUIDs of the character, flag, and items you want instead.
 
-**All items added will need to be in the camp clothes slot!**
+**All items added will need to be in the camp clothes slots!**
 
 Characters are placed into camp clothes automatically in the epilogue, so if you give them armour, you won't be able to see it.
 
@@ -157,7 +157,7 @@ To make sure the outfits you want are added to the character retroactively, you 
 PROC
 PROC_Your Username Abbreviation_EpilogueOutfits_RetroactiveApply()
 AND
-DB_CurrentLevel("EPI_Main_A")
+DB_LevelLoadedOnce("EPI_Main_A")
 AND
 DB_Your Username Abbreviation_EpilogueOutfits((CHARACTER)_Character, (FLAG)_Flag, _Bool, (ITEMROOT)_NewItem,_Slot)
 AND
@@ -175,8 +175,9 @@ I'll explain how to call this procedure in a little bit, but first, let's go ove
 
 This procedure is meant to do the following, in this order:
 
-- Check whether the level the player is currently in the Epilogue level, `EPI_Main_A`
-- It'll check whether
+- Check whether the epilogue level has already been loaded once. If it has, it means the player has reached the epilogue, and will need the new outfits to be applied retroactively.
+- It then checks a custom DB, which you'll be setting up in a moment. This DB checks for the following information: The character to give the equipment to, the flag to check, the bool value (0 or 1) that will check whether the flag is True or False, the new item to add, and the slot it should go in (like camp clothes, camp shoes, and underwear, etc).
+- Using the flag(s) and character(s) you set up in each entry of your custom DB, GetFlag will check whether each flag on their linked character
 
 ## Other Epilogue Clothing DBs
 
