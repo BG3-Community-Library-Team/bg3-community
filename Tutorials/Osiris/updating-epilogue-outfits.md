@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-05T02:49:42.846Z
+date: 2025-12-05T02:50:55.710Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -18,7 +18,7 @@ This tutorial assumes you already know a little bit about modding, like packagin
 
 #### Tools needed:
 
-- A program that can edit .txt files
+- A program that can edit **.txt** files
 	Some suggestions:
 	- [Notepad++](https://notepad-plus-plus.org/)
   - [VS Code](https://code.visualstudio.com/)
