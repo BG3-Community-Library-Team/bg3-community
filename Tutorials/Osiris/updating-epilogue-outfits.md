@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-05T03:02:16.338Z
+date: 2025-12-05T03:03:13.421Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -93,7 +93,7 @@ Each epilogue clothing DB will only add one item at a time, so you'll need separ
 
 To update the epilogue clothing for a given character, you'll first need to clear the existing DB for their clothing.
 
-You can do that by taking the DB you want to clear, putting it in the `INITSECTION` your file, and writing NOT in front of it. This will clear the DB when your script is loaded for the first time.
+You can do that by taking the DB you want to clear, putting it in the `INITSECTION` your file, and writing **NOT** in front of it. This will clear the DB when your script is loaded for the first time.
 
 Do this for each piece of equipment you want to replace.
 
