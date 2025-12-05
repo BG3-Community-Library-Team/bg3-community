@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-05T03:01:05.581Z
+date: 2025-12-05T03:02:16.338Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -74,11 +74,11 @@ DB_EPI_Epilogue_PartyEquipment((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-
 
 This is the DB for Wyll's clothing if he becomes the Grand Duke of Baldur's Gate in the ending of his quest.
 
-To add that outfit to him in the epilogue, DB_EPI_Epilogue_PartyEquipment stores the following information:
+To add that outfit to him in the epilogue, `DB_EPI_Epilogue_PartyEquipment` stores the following information:
 
 The character the clothing should be added to, the flag it should check for to add the clothing, whether the flag is true or not (if it's checking for that flag being False, it'll have a 0 there instead!), and the item to equip to the character.
 
-In that example, the item EPI_Camp_Wyll_Duke is added to Wyll if the flag GLO_Wyll_State_GrandDuke is True.
+In that example, the item `EPI_Camp_Wyll_Duke` is added to Wyll if the flag `GLO_Wyll_State_GrandDuke` is True.
 
 He also has a separate DB for his shoes:
 
@@ -93,7 +93,7 @@ Each epilogue clothing DB will only add one item at a time, so you'll need separ
 
 To update the epilogue clothing for a given character, you'll first need to clear the existing DB for their clothing.
 
-You can do that by taking the DB you want to clear, putting it in the INITSECTION your file, and writing NOT in front of it. This will clear the DB when your script is loaded for the first time.
+You can do that by taking the DB you want to clear, putting it in the `INITSECTION` your file, and writing NOT in front of it. This will clear the DB when your script is loaded for the first time.
 
 Do this for each piece of equipment you want to replace.
 
@@ -157,7 +157,7 @@ When making your own script, you'll want to substitute the names and UUIDs of th
 Characters are placed into camp clothes automatically in the epilogue, so if you give them armour, you won't be able to see it.
 
 
-**A note about flags:** You don't have to stick to just the existing flag being set here! When the existing DBs are cleared, you can set up outfits based on other flags. https://bg3.norbyte.dev/ is a good way to look for flags you want to check.
+**A note about flags:** You don't have to stick to just the existing flag being set here! When the existing DBs are cleared, you can set up outfits based on other flags. [https://bg3.norbyte.dev/](https://bg3.norbyte.dev/) is a good way to look for flags you want to check.
 
 
 ## Retroactively Updating Outfits
@@ -194,7 +194,7 @@ This procedure is meant to do the following, in this order:
 
 ## Other Epilogue Clothing DBs
 
-There are also two DBs for Underwear, DB_EPI_Epilogue_PartyUnderwear and DB_EPI_Epilogue_FallbackPartyUnderwear.
+There are also two DBs for Underwear, `DB_EPI_Epilogue_PartyUnderwear` and `DB_EPI_Epilogue_FallbackPartyUnderwear`.
 
 ```
 DB_EPI_Epilogue_PartyUnderwear((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,(ITEMROOT)Underwear_Laezel_185ab1be-e93d-4518-b053-d6d4d7168d68);
@@ -207,11 +207,11 @@ DB_EPI_Epilogue_PartyUnderwear stores the following information:
 The character to add the underwear to, and the roottemplate of the underwear item to add.
 
 
-And the information stored in DB_EPI_Epilogue_FallbackPartyUnderwear is this:
+And the information stored in `DB_EPI_Epilogue_FallbackPartyUnderwear` is this:
 
 The tag for the race to give underwear to, and the underwear item to give characters with that tag.
 
-The clothing for player characters is stored in the DB_EPI_Epilogue_FallbackPartyEquipment DB, which looks like this:
+The clothing for player characters is stored in the `DB_EPI_Epilogue_FallbackPartyEquipment` DB, which looks like this:
 
 ```
 DB_EPI_Epilogue_FallbackPartyEquipment((ITEMROOT)EPI_Camp_PartyTav_1_edb02b0e-3d91-4a81-a37d-f151bad68c6d, 1);
