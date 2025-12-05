@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-05T02:59:55.855Z
+date: 2025-12-05T03:01:05.581Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -66,7 +66,7 @@ EXITSECTION
 ENDEXITSECTION
 ```
 
-Osiris uses DBs, or Databases, to store information needed in different functions. The DB used to store information about Epilogue outfits is DB_EPI_Epilogue_PartyEquipment, which looks like this!
+Osiris uses Databases (DBs), to store information needed in different functions. The DB used to store information about Epilogue outfits is `DB_EPI_Epilogue_PartyEquipment`, which looks like this!
 
 ```
 DB_EPI_Epilogue_PartyEquipment((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Wyll_Duke_7f89e3b8-61ef-498b-bd1b-77f996c5ec42);
