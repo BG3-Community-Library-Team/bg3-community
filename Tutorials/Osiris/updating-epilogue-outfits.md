@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-05T02:53:52.277Z
+date: 2025-12-05T02:54:38.316Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -29,6 +29,9 @@ This tutorial assumes you already know a little bit about modding, like packagin
   - The [Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool) is also a viable option, though its search function runs more slowly than Norb Search
   - You can also use the official BG3 Toolkit
 - Your preferred method of making and packing mods
+	Suggestions:
+  - [Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool)
+  - BG3 Toolkit
 
 That's all!
 
