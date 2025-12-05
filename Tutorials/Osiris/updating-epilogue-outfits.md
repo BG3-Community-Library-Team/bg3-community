@@ -2,13 +2,194 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-05T03:05:56.527Z
+date: 2025-12-05T07:52:12.640Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
 ---
 
 # Updating Epilogue Outfits with Osiris
+
+(hi to anyone who stumbles on this tutorial, **this is not done yet!!!!** it turns out there's a lot more that's required to tie into the epilogue clothing system, and i actually believe it'd be best to tie into the epilogue setup using a script framework, rather than people having multiple scripts of their own. this page is going to be a bit of a mess for a minute until i can put together a proper guide and explanation of how it works. please bear with me!)
+
+```
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+//put the vanilla outfits you'd like to replace here! Copy the entire DB_EPI_Epilogue_PartyEquipment you want to replace, 
+DB_MGNTN_EpilogueOutfitToReplace((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Wyll_Duke_7f89e3b8-61ef-498b-bd1b-77f996c5ec42);
+DB_MGNTN_EpilogueOutfitToReplace((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Shoes_Wyll_Duke_4aa0dbb1-f51a-45bc-8a58-814ac5063035);
+
+DB_MGNTN_EpilogueOutfitToReplace((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679,(FLAG)ORI_Shadowheart_State_RejectShar_KilledParents_e9060caf-66b0-4701-8dfd-5ae1125f5afd, 1,(ITEMROOT)EPI_Camp_Selune_79bb5a64-2019-4818-a898-de179b6bc44c);
+DB_MGNTN_EpilogueOutfitToReplace((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679,(FLAG)ORI_Shadowheart_State_RejectShar_SavedParents_486d69d4-a7c2-4cb5-8fcb-8f2cb738ada9, 1,(ITEMROOT)EPI_Camp_Selune_79bb5a64-2019-4818-a898-de179b6bc44c);
+
+//NPC/Companion underwear to replace
+DB_MGNTN_EpiloguePartyUnderwearToReplace((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679,(ITEMROOT)Underwear_Shadowheart_b460bd0c-58fe-4a56-831c-af92fd4ba7e2);
+
+
+//Tav clothing to replace
+DB_MGNTN_FallbackPartyEquipmentToReplace((ITEMROOT)EPI_Camp_PartyTav_1_edb02b0e-3d91-4a81-a37d-f151bad68c6d, 1);
+DB_MGNTN_FallbackPartyEquipmentToReplace((ITEMROOT)EPI_Camp_Shoes_PartyTav_1_7dec9f3e-3a90-4588-a995-2986340866c6, 1);
+
+//Tav/fallback underwear to replace
+DB_MGNTN_FallbackPartyUnderwearToReplace((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4,(ITEMROOT)Underwear_Elves_A_0ec7d956-e65f-4bfa-b677-22f399f81a32);
+DB_MGNTN_FallbackPartyUnderwearToReplace((TAG)REALLY_HUMAN_8e288154-e7ca-4277-b2df-e61639b1cce8,(ITEMROOT)Underwear_Humans_A_d40b567d-6b66-447e-8923-2bbd0d7aea00);
+
+
+
+
+//set up the outfits you want to add to the character(s) here!
+DB_MGNTN_EpilogueOutfitReplacers((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)ARM_Camp_Patriars_A_Red_c65c5dd5-705c-4103-904c-0835d81bd846,"VanityBody");
+DB_MGNTN_EpilogueOutfitReplacers((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)ARM_Camp_Shoes_F_16a8aee6-568c-458e-b006-cb3344cac4fb,"VanityBoots");
+
+
+DB_MGNTN_EpilogueOutfitReplacers((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679,(FLAG)ORI_Shadowheart_State_RejectShar_KilledParents_e9060caf-66b0-4701-8dfd-5ae1125f5afd, 1,(ITEMROOT)ARM_Camp_Body_Laezel_54de4a07-c57c-421e-912c-7e8bd93ca0c4,"VanityBody");
+DB_MGNTN_EpilogueOutfitReplacers((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679,(FLAG)ORI_Shadowheart_State_RejectShar_SavedParents_486d69d4-a7c2-4cb5-8fcb-8f2cb738ada9, 1,(ITEMROOT)ARM_Camp_Body_Laezel_54de4a07-c57c-421e-912c-7e8bd93ca0c4,"VanityBody");
+
+//Tav equipment replacers
+DB_MGNTN_FallbackPartyEquipmentReplacers((ITEMROOT)ARM_Vanity_ElegantRobe_2f7aadd5-65ea-4ab6-8c55-88ee584c72df, 1,"VanityBody");
+DB_MGNTN_FallbackPartyEquipmentReplacers((ITEMROOT)ARM_Camp_Shoes_Sandals_A_Blue_2290f957-2e17-4ceb-870f-bd53f81f866c, 1,"VanityBoots");
+
+//NPC/Companion underwear replacers
+DB_MGNTN_EpiloguePartyUnderwearReplacers((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679,(ITEMROOT)Underwear_Laezel_185ab1be-e93d-4518-b053-d6d4d7168d68,"Underwear");
+
+//Tav/fallback underwear replacers
+DB_MGNTN_FallbackPartyUnderwearReplacers((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4,(ITEMROOT)Underwear_Incubus_5fa043bf-0445-49ad-9e82-0df77c639fe2,"Underwear");
+DB_MGNTN_FallbackPartyUnderwearReplacers((TAG)REALLY_HUMAN_8e288154-e7ca-4277-b2df-e61639b1cce8,(ITEMROOT)Underwear_Incubus_5fa043bf-0445-49ad-9e82-0df77c639fe2,"Underwear");
+
+//The previous DBs will help with adding the outfits when the player is already in the epilogue!
+PROC_MGNTN_EpilogueOutfitReplacers_RetroactiveApply();
+
+KBSECTION
+
+//This is the script for the framework. You will not need to include this in your own mod, but I wanted to put it here to explain how it works!
+
+
+PROC
+PROC_EPI_Epilogue_SetupNPCs()
+AND
+DB_EPI_Epilogue_PartyEquipment((CHARACTER)_Char,(FLAG)_Flag,_Bool,(ITEMROOT)_Item)
+AND
+DB_MGNTN_EpilogueOutfitToReplace((CHARACTER)_Char,(FLAG)_Flag,_Bool,(ITEMROOT)_Item)
+THEN
+NOT DB_EPI_Epilogue_PartyEquipment((CHARACTER)_Char,(FLAG)_Flag,_Bool,(ITEMROOT)_Item);
+
+PROC
+PROC_EPI_Epilogue_SetupNPCs()
+AND
+DB_MGNTN_EpilogueOutfitReplacers((CHARACTER)_Char,(FLAG)_Flag, _Bool, (ITEMROOT)_Item,_)
+THEN
+DB_EPI_Epilogue_PartyEquipment((CHARACTER)_Char,(FLAG)_Flag, _Bool, (ITEMROOT)_Item);
+
+
+PROC
+PROC_EPI_Epilogue_SetupNPCs()
+AND
+DB_EPI_Epilogue_PartyUnderwear((CHARACTER)_Char,(ITEMROOT)_Item)
+AND
+DB_MGNTN_EpiloguePartyUnderwearToReplace((CHARACTER)_Char,(ITEMROOT)_Item)
+THEN
+NOT DB_EPI_Epilogue_PartyUnderwear((CHARACTER)_Char,(ITEMROOT)_Item);
+
+PROC
+PROC_EPI_Epilogue_SetupNPCs()
+AND
+DB_MGNTN_EpiloguePartyUnderwearReplacers((CHARACTER)_Char,(ITEMROOT)_Item,_)
+THEN
+DB_EPI_Epilogue_PartyUnderwear((CHARACTER)_Char,(ITEMROOT)_Item);
+
+
+PROC
+PROC_EPI_Epilogue_SetupNPCs()
+AND
+DB_EPI_Epilogue_FallbackPartyEquipment((ITEMROOT)_Item,_Int)
+AND
+DB_MGNTN_FallbackPartyEquipmentToReplace((ITEMROOT)_Item,_Int)
+THEN
+NOT DB_EPI_Epilogue_FallbackPartyEquipment((ITEMROOT)_Item,_Int);
+
+
+PROC
+PROC_EPI_Epilogue_SetupNPCs()
+AND
+DB_MGNTN_FallbackPartyEquipmentReplacers((ITEMROOT)_Item,_Int,_)
+THEN
+DB_EPI_Epilogue_FallbackPartyEquipment((ITEMROOT)_Item,_Int);
+
+
+PROC
+PROC_EPI_Epilogue_SetupNPCs()
+AND
+DB_EPI_Epilogue_FallbackPartyUnderwear((TAG)_Tag,(ITEMROOT)_Item)
+AND
+DB_MGNTN_FallbackPartyUnderwearToReplace((TAG)_Tag,(ITEMROOT)_Item)
+THEN
+NOT DB_EPI_Epilogue_FallbackPartyUnderwear((TAG)_Tag,(ITEMROOT)_Item);
+
+PROC
+PROC_EPI_Epilogue_SetupNPCs()
+AND
+DB_MGNTN_FallbackPartyUnderwearReplacers((TAG)_Tag,(ITEMROOT)_Item,_)
+THEN
+DB_EPI_Epilogue_FallbackPartyUnderwear((TAG)_Tag,(ITEMROOT)_Item);
+
+
+PROC
+PROC_MGNTN_EpilogueOutfitReplacers_RetroactiveApply()
+AND
+DB_CurrentLevel("EPI_Main_A")
+THEN
+PROC_MGNTN_ReplaceEpilogueOutfits();
+PROC_MGNTN_ReplaceEpilogueUnderwear();
+
+
+PROC
+PROC_MGNTN_ReplaceEpilogueOutfits()
+AND
+DB_MGNTN_EpilogueOutfitReplacers((CHARACTER)_Char, (FLAG)_Flag, _Bool, (ITEMROOT)_NewItemRoot,_Slot)
+AND
+GetFlag(_Flag,_Char,_Bool)
+AND
+GetEquippedItem(_Char,_Slot,_OldItem)
+THEN
+Unequip(_Char,_OldItem);
+TemplateAddTo((ITEMROOT)_NewItemRoot, (CHARACTER)_Char, 1, 0);
+DB_MGNTN_RetroactiveEpilogueOutfitItemAddedTracker((ITEMROOT)_NewItemRoot, (CHARACTER)_Char);
+
+
+PROC
+PROC_MGNTN_ReplaceEpilogueUnderwear()
+AND
+DB_MGNTN_EpiloguePartyUnderwearReplacers((CHARACTER)_Char,(ITEMROOT)_NewItemRoot,_Slot)
+AND
+GetEquippedItem(_Char,_Slot,_OldItem)
+THEN
+Unequip(_Char,_OldItem);
+TemplateAddTo((ITEMROOT)_NewItemRoot, (CHARACTER)_Char, 1, 0);
+DB_MGNTN_RetroactiveEpilogueOutfitItemAddedTracker((ITEMROOT)_NewItemRoot, (CHARACTER)_Char);
+
+
+IF
+TemplateAddedTo((ITEMROOT)_NewItemRoot,(ITEM)_NewItem,(CHARACTER)_Char,_)
+AND
+DB_CurrentLevel("EPI_Main_A")
+AND
+DB_MGNTN_RetroactiveEpilogueOutfitItemAddedTracker((ITEMROOT)_NewItemRoot, (CHARACTER)_Char)
+THEN
+Equip(_Char,_NewItem);
+NOT DB_MGNTN_RetroactiveEpilogueOutfitItemAddedTracker(_NewItemRoot, _Char);
+
+
+
+EXITSECTION
+
+ENDEXITSECTION
+
+```
+
+
+
 
 Hi! This page is a short guide on how to update character epilogue outfits with Osiris, Larian's Story Scripting language.
 
