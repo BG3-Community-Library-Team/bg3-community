@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-05T02:54:38.316Z
+date: 2025-12-05T02:59:55.855Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -47,7 +47,9 @@ This tutorial will cover how to make an Osiris script using a .txt file. Whether
 
 # Writing Your Script
 
-First, make a new .txt file. You can name it what you'd like, but I'd recommend including an abbreviation of your username in it, so that file will be unique to you. (Osiris scripts with the same name will conflict with each other, so to be safe, always put something unique to you in the name of your scripts!) 
+First, make a new .txt file. You can name it what you'd like, but I'd recommend including an abbreviation of your username in it, so that file will be unique to you. 
+> Osiris scripts with the same name will conflict with each other, so to be safe, always put something unique to you in the name of your scripts!
+{.is-info}
 
 Copy the following into your file:
 
