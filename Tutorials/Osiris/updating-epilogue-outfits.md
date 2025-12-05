@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-05T03:03:13.421Z
+date: 2025-12-05T03:05:56.527Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -41,7 +41,7 @@ There are two methods of working with Osiris scripts! You can use Larian's offic
 
 `//Your external mod folder/Mods/Your mod folder/Story/RawFiles/Goals/Your script.txt`
 
-If you're using the toolkit, you can drop that same .txt file into the same file path in your toolkit project! You may need to manually create the file path to do so, but when you do, you should be able to see your script in the toolkit's Story Editor. You can find a guide on using the Story Editor [here!](https://mod.io/g/baldursgate3/r/scripting-using-the-story-editor)
+If you're using the toolkit, you can drop that same .txt file into the same file path in your toolkit project! You may need to manually create the file path to do so, but when you do, you should be able to see your script in the toolkit's **Story Editor**. You can find a guide on using the Story Editor [here!](https://mod.io/g/baldursgate3/r/scripting-using-the-story-editor)
 
 This tutorial will cover how to make an Osiris script using a .txt file. Whether you'd prefer to manually package your mod or use the toolkit afterwards is up to you!
 
@@ -202,7 +202,7 @@ DB_EPI_Epilogue_PartyUnderwear((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d1
 DB_EPI_Epilogue_FallbackPartyUnderwear((TAG)REALLY_TIEFLING_7bf7207f-7406-49c0-b501-eaaa2bb4efd7,(ITEMROOT)Underwear_Tieflings_A_498c155f-8675-4a55-9cb0-89dd7270469f);
 ```
 
-DB_EPI_Epilogue_PartyUnderwear stores the following information:
+`DB_EPI_Epilogue_PartyUnderwear` stores the following information:
 
 The character to add the underwear to, and the roottemplate of the underwear item to add.
 
