@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-04T22:38:33.803Z
+date: 2025-12-05T02:49:42.846Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -19,6 +19,11 @@ This tutorial assumes you already know a little bit about modding, like packagin
 #### Tools needed:
 
 - A program that can edit .txt files
+	Some suggestions:
+	- [Notepad++](https://notepad-plus-plus.org/)
+  - [VS Code](https://code.visualstudio.com/)
+  - [VSCodium](https://vscodium.com/)
+  
 - A way to find the name and UUIDs of characters, flags, and items in the game. I'd recommend https://bg3.norbyte.dev/!
 - Your preferred method of making and packing mods
 
