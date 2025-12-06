@@ -2,7 +2,7 @@
 title: Creating a New Level
 description: Small guide covering the basics of creating levels for screen archery.
 published: true
-date: 2025-12-06T11:50:20.827Z
+date: 2025-12-06T12:22:55.299Z
 tags: levels, screen archery, toolkit, screenarchery
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -279,7 +279,7 @@ Materials.
 A resource that contains Lighting parameters: sun/moon position, sun/moon color, fog, etc.
 
 ### Atmosphere
-A resource that contains Atmospehere parameters: overall color correction, light shafts, different effectrs environmental effects (like rain, ashes, etc), etc.
+A resource that contains Atmosphere parameters: overall color correction, light shafts, different effectrs environmental effects (like rain, ashes, etc), etc.
 
 ### Terrain Brush
 A resource, similar to a material, used to paint terrain.
@@ -326,9 +326,17 @@ TerrainTextures mixing
 Brush - Parameters
 IPs
 
-## Atmosphere panel
+## Work Atmosphere panel
 Triggers
-Modes
+
+**Modes**
+
+The Work Atmosphere Panel has three modes: Follow Camera Mode (camera icon), Editor Mode (light bulb), and Override Mode (wrench). 
+
+- Follow Camera Mode - Game lighting mode. This will show your level with the lighting / atmosphere you'll see in game. 
+- Work Mode - Fully-lit. So you can see what you're doing while you work on your level. 
+- Override Mode - If you want to use a new lighting / atmosphere resource or you want to edit an existing lighting / atmosphere resource and have it show up in game, you will need to do that here. 
+
 Lighting
 Atmosphere
 LightProbe
