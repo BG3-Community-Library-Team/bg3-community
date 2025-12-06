@@ -2,7 +2,7 @@
 title: How to add mod dependencies and eradicate load order problems with your mods
 description: Explains how adding dependencies to meta.lsx ensure correct loading order, reduce user confusion, and simplify troubleshooting. The guide also addresses common concerns about dependencies, such as user reluctance and abandoned mods.
 published: true
-date: 2025-11-05T18:48:56.580Z
+date: 2025-12-06T20:53:02.088Z
 tags: mods, load order, modsuse, dependencies, dependency, meta.lsx, mod dependency, deps
 editor: markdown
 dateCreated: 2024-09-02T18:33:21.499Z
@@ -60,10 +60,10 @@ After:
 That's it! You've just added a dependency to your mod. By properly declaring dependencies, you will:
 
 - **Ensure that required mods are loaded in the correct order** - dependencies will automatically be loaded earlier (BG3MM handles this automatically)
-- **Eliminate the need for users to follow manual instructions** (e.g., "*don't forget to add **this** mod*", "*load **this** mod before **that** mod*", *"don't forget to update **x** dependency"*)
+- **Eliminate the need for players to follow manual instructions** (e.g., "*don't forget to add **this** mod*", "*load **this** mod before **that** mod*", *"don't forget to update **x** dependency"*)
 - **Overall simplify troubleshooting** by reducing incorrect/false positive bug reports
 
-> **Note:** Make sure the `Name` is something that the user will recognize. At the time of writing, it is used by BG3MM and MCM to display the dependency name to the user.
+> **Note:** Make sure the `Name` is something that the player will recognize. At the time of writing, it is used by BG3MM and MCM to display the dependency name to the player.
 > {.is-warning}
 
 > **Tip**: the [BG3 Mod Helper](https://marketplace.visualstudio.com/items?itemName=ghostboats.bg3-mod-helper) extension provides buttons and commands to simplify adding dependencies to your mods.
