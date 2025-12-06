@@ -1,9 +1,9 @@
 ---
-title: Creating a new level
-description: Small guide that covers basics of level creation
+title: Creating a New Level
+description: Small guide covering the basics of creating levels for screen archery.
 published: true
-date: 2025-12-01T16:19:48.899Z
-tags: 
+date: 2025-12-06T11:50:20.827Z
+tags: levels, screen archery, toolkit, screenarchery
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
 ---
@@ -11,32 +11,33 @@ dateCreated: 2025-10-17T12:50:22.826Z
 # WIP
 ## Overview
 
-This level creation guide aims to cover all the basic knowledge that you need to know to be able to create some basic levels. It was written for Virtual photography/Screenarchery in mind. It doesn't cover things that you need to know to create actual gameplay levels.
+This level creation guide aims to cover the basic knowledge needed to create a new level using MoonGlasses (the unlocked toolkit). It is written for virtual photography / screen archery in mind; it will not cover things you need to know to create actual gameplay levels.
 
-Please let me know if there are useful tips, keybinds,and other simplifications.
+Please let us know if you have any useful tips or keybinds to add!
 
-
-Some sections were copied from Larian's wiki https://docs.larian.game/ because they have a better explanation.
+Some sections are copied from [Larian's wiki](https://docs.larian.game/).
 
 ## Project setup
 
-First you `Create` a new project,
+First, `Create` a new project and name it. We'll name this LevelGuide (LG). 
 
 
 ![creating-a-new-level-create-project.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-create-project.webp)
 
-Name it whatever you want, and then press `Create`. I'm going for LevelGuide.
+Name it whatever you want, and then press `Create`. 
 
 
 ![creating-a-new-level-5-project-name.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-5-project-name.webp)
 
-After some time, the toolkit will finally open `Level browser`, where you also press `Create` to create a new level.
+After some time, the toolkit will finally open the `Level browser`, where you will see the option to create a new level if you've properly installed MoonGlasses. Press `Create` to create a new level.
 
 ![creating-a-new-level-6-create-level.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-6-create-level.webp)
 
-Name the new level. As a good habit you should follow some sort of a naming convention. I personally use Larian's, but instead of Region name (e.g. WLD_Main_A, SCL_, BGO_) in the begining, I use `ProjectName_LevelName`, or something like `LG_MyNewPrettyLevel`. 
+Choose a template: we suggest Basic_Level_A, which has a basic terrain map, lighting and atmosphere triggers, start points, an AI seeder, and a light probe. 
 
-Once you name your level, press `Create` one more time.
+Name the new level. As a good habit, you should follow some sort of a naming convention. We'll use something similar to Larian's — but, instead of starting with the region (e.g. WLD_Main_A, SCL_, BGO_, etc.), we'll start with our project name. So we'll call this `LG_MyNewPrettyLevel`. 
+
+Press `Create` one more time.
 
 ![creating-a-new-level-7-name-level.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-7-name-level.webp)
 
@@ -44,8 +45,7 @@ Once you name your level, press `Create` one more time.
 
 ## UI
 
-In this guide, I'm going to use this UI layout.
-It makes sense for me, but of course, you can use your own.
+In this guide, we'll use Rakor's UI layout:
 
 Drag `Root Templates` to the bottom on `Message log`, open `Resource Manager`, and drag it near the `Root Templates` window
 
@@ -55,39 +55,45 @@ Save it
 
 ![creating-a-new-level-14-save-ui-2.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-14-save-ui-2.webp)
 
-If you closed a window by accident, you can eiter `Load Layout`, `Reset Layout` or go to `View` and re-open it there.
+If you accidentally close a window, you can `Load Layout`, `Reset Layout` or go to `View` and re-open it there.
 
-You can also drag windows outside of the toolkit (this might make it easier to see things if you have multiple screens). However, they will end up re-docked when you reopen the toolkit. 
+You can also drag windows outside of the toolkit (this might make it easier to see things if you have multiple screens). However, they will end up re-docked the next time you re-open the toolkit. 
 
 ## Settings
 
-Maybe 
-
-
+WIP
 
 ## Controls
 
-There are some important keybinds:
-1. `WASD` for the camera movement.
-1. `QE` for moving the camera up or down.
-1. `Scroll up/down` to move the camera forward/backward.
-1. `Shift`/`Ctrl` speeds up/slows down the camera.
-1. `1` for the Pointer, `2` to Translate (move), `3` to Rotate, `4` to Scale objects, '5' to enable Create object on click.
-1. `C` to deselect object.
-1. `Ctrl + Alt + S` to Save everything.
-1. And of course basic keybinds like `Ctrl + C/V`, `Delete`, etc.
+There are some important keybinds and hotkeys you should know:
 
-There are a loooooot more keybinds that you can use, they are located in `Preferences`. I highly suggest utilizing them.
+**Camera Movement**
+1. `W`/`A`/`S`/`D` to move the camera around.
+1. `Q`/`E` to move the camera up or down.
+1. Scroll `up`/`down` to move the camera forward/backward.
+1. To speed up camera movement, hold `Shift` while using these controls. To slow down camera movement, hold `Ctrl`.
 
+**Hotkeys**
 
+- `1` for the pointer (select object)
+- `2` to translate objects (move objects on an X / Y / Z axis)
+- `3` to rotate objects
+- `4` to scale objects 
+- `5` to enable "Create object on click"
+- `C` to deselect objects
+- `Ctrl + Alt + S` to Save everything.
+- And, of course, basic keys and shortcuts, such as `Ctrl`+`C`/`V`, `Ctrl`+`Z`, `Delete`, etc.
 
+There are many more hotkeys and shortcuts for specific tools; you'll find them in `Preferences`.
 
+**Changing Initial Camera Speed
+**
 To change initial camera speed, go to `Editor Camera Setting`.
 
 ![creating-a-new-level-15-camera-speed.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-15-camera-speed.webp)
 Different camera modes
 
-*You can use `Scroll` keybind with `Shift` + `W/S` to "speed up" the camera even more without changing intial camera speed*.
+*You can use the `Scroll` keybind with `Shift` + `W`/`S` to "speed up" the camera even more without changing intial camera speed*.
 
 ## UI
 
@@ -95,19 +101,19 @@ Different camera modes
 
 ![creating-a-new-level-18-top-bat.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-18-top-bat.webp)
 
-I'm not going to cover all the basic buttons (you can hover over them to see the tooltips) and Editor buttons; the options you need are:
+We won't cover all of the basic buttons and editor buttons (you can hover over each one to see the tooltips). But the buttons you need to know are: 
 
-1. `Terrain panel` - to create or paint terrain.
-1. `AI Grid` - to create walkeable areas.
-1. `Instances` - to paint with vegitation and other objects.
-1. `Atmospehere panel` - to edit Lighting and Atmosphere.
+1. `Terrain Panel` - to create, manipulate, and paint terrain.
+1. `AI Grid` - to create walkable areas on your map.
+1. `Instances/Mesh Painter` - to "paint" using objects (e.g. vegetation).
+1. `Work Atmospehere panel` - to change and edit the lighting and atmosphere.
 
 ### Windows
 1. `Resource Manager` is where all game meshes/textures/sounds/materials are located.
 
 	![creating-a-new-level-22-ui-resource-manager.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-22-ui-resource-manager.webp)
 
-1. `Root Templates` and its `Preview` is where all "interactable" objcets are located.
+1. `Root Templates` and its `Preview` is where all "interactable" objects are located.
 
     ![creating-a-new-level-22-ui-root-templates.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-22-ui-root-templates.webp)
 
@@ -140,25 +146,27 @@ In the bottom right corner, you'll also see more ways to manipulate selected obj
 
 
 ## Root Templates
-There are several `RootTemplate` types. The ones you need to know:
+There are several `RootTemplate` types, which are denoted by different icons. When you search for objects in the Root Templates window, you'll see the icons next to the search box. You can de-select icons by clicking on them to filter your results. Right-click on one icon to select only that icon; right-click on it again to re-select all icons.  
+
+The ones you need to know:
 
 `item` (orange barrel)
 `scenery` (green tree)
-`lightProbe` (shiny sphere)
+`lightProbe` (shiny blue-white sphere)
 `TileConstruction` (two red bricked walls)
 `Prefab` (P)
-`Trigger` (blue oulined box)
-`fogVolume` (misty spehere)
-`light` (bulb)
-`character` (purple Astarion)
+`Trigger` (blue outlined box)
+`fogVolume` (misty purple sphere)
+`light` (yellow light bulb)
+`character` (pink person)
 
-### item
-Basically an object you can interact with: shells, plates, food, gems, etc. It's not completely true, but it's just easier to explain (some sceneries and items can intersect).
+### Item
+An item is an object you can pick up or interact with, such as books, loot, doors, signs, chairs, etc. This is not *always* the case, as some items and scenery objects intersect, but it's generally true, so don't worry about it. 
 
-### scenery
-An object you can't interact with: rocks, plants, trees, shelves, etc. (some sceneries and items can intersect).
+### Scenery
+Scenery objects are things you can't interact with or hover over in-game, such as rocks, plants, trees, walls, most furniture, etc. Again, some scenery objects intersect with items, but this is generally true. 
 
-### lightProbe
+### Light Probe
 The game doesn't have any form of dynamic global Illumination, so Larian uses `LightProbe` to capture `HDRI` map around itself and then calculate and "bake" indirect lighting.
 
 There are 2 types of light probes:
@@ -175,7 +183,7 @@ The lighting of the smallest probes always gets priority over the lighting of a 
 Since I make levels mostly for one picture, I always use `Distant` one and then move it around to tune the lighting for my needs.
 You should use `Local` for interiors and stuff, or to adjust some specific parts.
 
-> A level has to have at least one `Distant` one
+> A level must have at least one `Distant` light probe
 {.is-warning}
 
 Not going to explain each parameter, they all have a tooltip in the `Sidebar`, just read them.
@@ -185,11 +193,11 @@ Not going to explain each parameter, they all have a tooltip in the `Sidebar`, j
 
 Don't forget that you can also change its size using `Edit shape bounds tool` (square with dots with a rhombus shaped square inside) in the tool bar
 
-To render them, you need to select `LightProbe` and toggle forth and back `Inifinite Capture` or `Enabled` (I haven't figure out a better consistent way) to update the lighting; you should see the changes immediately, and then you just save your level.
+To render them, you need to select `LightProbe` and toggle forth and back `Inifinite Capture` or `Enabled` (I haven't figure out a better consistent way) to update the lighting; you should see the changes immediately, and then you can save your level.
 
 
 
-The difference between level with correctly rendered `LightProbes` and one with incorrectly rendered:
+The difference between a level with correctly rendered `LightProbes` and one with incorrectly rendered:
 
 > Incorrect
 ![creating-a-new-level-21-light-probe-diff.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-21-light-probe-diff.webp)
@@ -199,7 +207,7 @@ The difference between level with correctly rendered `LightProbes` and one with 
 ![creating-a-new-level-21-light-probe-diff.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-20-light-probe-diff.webp)
 {.is-success}
 
-You can see that on incorrect one, there's no indirect lighting (harsh shadows).
+In the incorrectly-rendered level, there's no indirect lighting, which results in harsh shadows. 
 
 > Whenever you make changes with a probe, you need to save your level in order for the `LightProbe` to save the rendered `HDRI` maps
 !!! If you have a lot of `LightProbes`, *EACH* `LightProbe` will render the map for *EACH* `LightingResources` in the `LightingTrigger`, so rendering will take some time !!!
@@ -212,27 +220,27 @@ https://docs.larian.game/Light_probes (In BG3 Larian split Atmosphere to Atmosph
 You build walls, roofs, floors, and other repetitive things with this thing.
 
 ### Prefab
-A saved group of objects. You can create and decorate a furnace using different objects and then save it as Prefab to reuse the whole thing again.
+A saved group of objects. To save your own prefabs, select the objects you want to save (hold `Ctrl` and click to select multiple objects), right-click, and click `Create Prefab`.
 
 ### Trigger
-In our case we only need two:
-1. `LightingTrigger` sets `LightingResources` for current trigger area.
-1. `AtmosphereTrigger` sets `AtmosphereResources` for current trigger area.
-1. `StartPoint` sets starting point when you appear on the level.
+In our case, we only need a few triggers:
+1. `LightingTrigger` sets the `LightingResources` for the current trigger area.
+1. `AtmosphereTrigger` sets `AtmosphereResources` for the current trigger area.
+1. `StartPoint` sets the starting point where characters will appear when they enter the level.
 1. Maybe `` #crowd.
 1. Maybe .
 
-### fogVolume
+### Fog Volume
 You can create fog areas with this thing.
 
-### light
+### Light
 Just a light.
-Most of you probably use Lighty Lights, but you can place then to preview the lighting.
+Most of you probably use Lighty Lights, but you can place them to preview the lighting.
 
-### character
+### Character
 I only use Astarion for size reference.
 
-### LevelTemplate
+### Level Template
 
 Saves the whole level as a `RootTemplate` that you can paste on any other levels
 
@@ -249,8 +257,8 @@ https://docs.larian.game/My_first:_Item
 
 
 ## Resource Manager
-There are a lot of types. The only ones you need:
-`Visual` (utah teapot)
+There are even more resource types. Here are the ones you need to know:
+`Visual` (teapot)
 `Texture` (missing texture sphere)
 `Material` (blue spehere)
 `Effect` (sparkles)
@@ -274,20 +282,19 @@ A resource that contains Lighting parameters: sun/moon position, sun/moon color,
 A resource that contains Atmospehere parameters: overall color correction, light shafts, different effectrs environmental effects (like rain, ashes, etc), etc.
 
 ### Terrain Brush
-A resource, "similar" to a material, that you use to paint terrain.
+A resource, similar to a material, used to paint terrain.
 
 
-## The tools
+## The Tools
 
 There are 5 main tools:
-1. `Pointer/Cursor` - you select things with it.
-1. `Translate` - you move things with it.
-1. `Rotation` - you rotate things with it.
-1. `Scale` - you scale things with it.
-1. `Create` - you create/place things with it.
+1. `Pointer/Cursor` - to select objects.
+1. `Translate` - to move objects.
+1. `Rotation` - to rotate objects.
+1. `Scale` - to scale objects (make them larger/smaller).
+1. `Create` - to create and place objects.
 
-Each tool has a lot of different parameters, you can access them by right clicking on a tool.
-For example, you can eanble `Snap to grid` for `Translate`, enable random rotation or scale for `Create`, and so on.
+Each tool has its own parameters, which you can access by right-clicking on the tool. A new window will open with that tool's parameters. For example, you can enable `Snap to grid` in the `Translate` tool's window. 
 
 ## Finally placing objects to unleash your abstract vision
 
@@ -305,8 +312,8 @@ Then find an object in `Root Templates` and place it by clicking on terrain.
 Now you can move it however you want by selecting it and using the keybinds I mentioned earlier.
 ![creating-a-new-level-place-object.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-move-object.webp)
 
-*You can make `Sidebar` inactive by opening a different window (I always open `Atmosphere panel`), so you can scroll through the list of objects with arrow keys faster.
-(Basically whenever you select an object, you also load all its parameters in `Sidebar`, by making `Sidebar` inactive, you stop 	loading the parameters)*.
+*You can make the `Sidebar` inactive by opening a different window (I always open `Atmosphere panel`), so you can scroll through the list of objects with arrow keys faster.
+(Basically whenever you select an object, you also load all its parameters in `Sidebar`, by making `Sidebar` inactive, you stop loading the parameters)*.
 
 
 ## Terrain
