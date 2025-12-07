@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-07T08:17:10.163Z
+date: 2025-12-07T08:17:26.954Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -16,6 +16,15 @@ dateCreated: 2025-12-04T22:07:24.777Z
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
+
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_TavDurge((ITEMROOT)ARM_Vanity_ElegantRobe_2f7aadd5-65ea-4ab6-8c55-88ee584c72df, "VanityBody");
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_TavDurge((ITEMROOT)ARM_Camp_Shoes_Sandals_A_Blue_2290f957-2e17-4ceb-870f-bd53f81f866c, "VanityBoots");
+
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(ITEMROOT)ARM_Vanity_ElegantRobe_2f7aadd5-65ea-4ab6-8c55-88ee584c72df, "VanityBody");
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(ITEMROOT)ARM_Camp_Shoes_Sandals_A_Blue_2290f957-2e17-4ceb-870f-bd53f81f866c, "VanityBoots");
+
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,,(ITEMROOT)ARM_Vanity_ElegantRobe_2f7aadd5-65ea-4ab6-8c55-88ee584c72df, "VanityBody");
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,,(ITEMROOT)ARM_Camp_Shoes_Sandals_A_Blue_2290f957-2e17-4ceb-870f-bd53f81f866c, "VanityBoots");
 
 //put the vanilla outfits you'd like to replace here! Copy the entire DB_EPI_Epilogue_PartyEquipment you want to replace, 
 DB_MGNTN_EPIOutfitReplacers_PartyEquipmentToReplace((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Wyll_Duke_7f89e3b8-61ef-498b-bd1b-77f996c5ec42);
