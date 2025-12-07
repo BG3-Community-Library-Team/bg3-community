@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-07T09:16:13.745Z
+date: 2025-12-07T09:27:57.118Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -23,8 +23,8 @@ DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_TavDurge((ITEMROOT)ARM_Camp_Shoes_S
 DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(ITEMROOT)ARM_Vanity_ElegantRobe_2f7aadd5-65ea-4ab6-8c55-88ee584c72df, "VanityBody");
 DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(ITEMROOT)ARM_Camp_Shoes_Sandals_A_Blue_2290f957-2e17-4ceb-870f-bd53f81f866c, "VanityBoots");
 
-DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,,(ITEMROOT)ARM_Vanity_ElegantRobe_2f7aadd5-65ea-4ab6-8c55-88ee584c72df, "VanityBody");
-DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,,(ITEMROOT)ARM_Camp_Shoes_Sandals_A_Blue_2290f957-2e17-4ceb-870f-bd53f81f866c, "VanityBoots");
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,(ITEMROOT)ARM_Vanity_ElegantRobe_2f7aadd5-65ea-4ab6-8c55-88ee584c72df, "VanityBody");
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,(ITEMROOT)ARM_Camp_Shoes_Sandals_A_Blue_2290f957-2e17-4ceb-870f-bd53f81f866c, "VanityBoots");
 
 //put the vanilla outfits you'd like to replace here! Copy the entire DB_EPI_Epilogue_PartyEquipment you want to replace, 
 DB_MGNTN_EPIOutfitReplacers_PartyEquipmentToReplace((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Wyll_Duke_7f89e3b8-61ef-498b-bd1b-77f996c5ec42);
@@ -66,7 +66,7 @@ DB_MGNTN_EPIOutfitReplacers_ReplacementFallbackEquipment((ITEMROOT)ARM_Camp_Shoe
 DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_CharacterDefault((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679,(ITEMROOT)Underwear_Laezel_185ab1be-e93d-4518-b053-d6d4d7168d68,"Underwear");
 
 //flagged underwear DB. allows you to check for flag conditions for underwear. Helpful for setting up accessories in the underwear slot for different story conditions for each companion!
-DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_Flagged((CHARACTER)S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255,(FLAG)(FLAG)ORI_Astarion_State_StayedVampireSpawn_2724b881-6be1-49a7-8375-a49e9acb4546, 1,(ITEMROOT)Underwear_Laezel_185ab1be-e93d-4518-b053-d6d4d7168d68,"Underwear");
+DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_Flagged((CHARACTER)S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255,(FLAG)ORI_Astarion_State_StayedVampireSpawn_2724b881-6be1-49a7-8375-a49e9acb4546, 1,(ITEMROOT)Underwear_Laezel_185ab1be-e93d-4518-b053-d6d4d7168d68,"Underwear");
 
 //Tav/fallback underwear replacers
 DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_Fallback((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4,(ITEMROOT)Underwear_Incubus_5fa043bf-0445-49ad-9e82-0df77c639fe2,"Underwear");
