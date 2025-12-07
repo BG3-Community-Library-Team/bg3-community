@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-07T08:17:26.954Z
+date: 2025-12-07T09:16:13.745Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -356,6 +356,33 @@ GetFlag(_Flag,_Char,_Bool)
 THEN
 TemplateAddTo((ITEMROOT)_NewItemRoot, (CHARACTER)_Char, 1, 0);
 DB_MGNTN_RetroactiveEpilogueOutfitItemAddedTracker((ITEMROOT)_NewItemRoot, (CHARACTER)_Char);
+
+//add avernus equipment to non-companion characters that went to avernus
+PROC
+PROC_MGNTN_ReplaceEpilogueOutfits()
+AND
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_TavDurge((ITEMROOT)_NewItemRoot,_)
+AND
+DB_Avatars(_Char)
+AND
+NOT DB_Origins(_Char)
+AND
+QRY_EPI_Epilogue_IsInAvernusWithKarlachorWyll(_Char)
+THEN
+TemplateAddTo((ITEMROOT)_NewItemRoot, (CHARACTER)_Char, 1, 0);
+DB_MGNTN_RetroactiveEpilogueOutfitItemAddedTracker((ITEMROOT)_NewItemRoot, (CHARACTER)_Char);
+
+//add avernus equipment to characters that went to avernus and have a DB for their avernus equipment
+PROC
+PROC_MGNTN_ReplaceEpilogueOutfits()
+AND
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)_Char,(ITEMROOT)_NewItemRoot,_)
+AND
+QRY_EPI_Epilogue_IsInAvernusWithKarlachorWyll(_Char)
+THEN
+TemplateAddTo((ITEMROOT)_NewItemRoot, (CHARACTER)_Char, 1, 0);
+DB_MGNTN_RetroactiveEpilogueOutfitItemAddedTracker((ITEMROOT)_NewItemRoot, (CHARACTER)_Char);
+
 
 //check if character has default replacer underwear, and if they have flagged underwear replacers. if they have a default replacer, but not a flagged one, add a copy of the default replacer item to the character, and the roottemplate of the item to the replacer item tracker.
 PROC
