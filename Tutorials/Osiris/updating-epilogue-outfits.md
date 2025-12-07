@@ -2,15 +2,292 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-07T09:27:57.118Z
+date: 2025-12-07T21:16:32.165Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
 ---
 
-# Updating Epilogue Outfits with Osiris
+# Using the Epilogue Outfit Replacer Framework
 
 (hi to anyone who stumbles on this tutorial, **this is not done yet!!!!** it turns out there's a lot more that's required to tie into the epilogue clothing system, and i actually believe it'd be best to tie into the epilogue setup using a script framework, rather than people having multiple scripts of their own. this page is going to be a bit of a mess for a minute until i can put together a proper guide and explanation of how it works. please bear with me!)
+
+This is a guide on how to use my Epilogue Outfit Replacer Framework!
+
+To use the framework, you'll be setting up Osiris DBs in your own mod .pak, which will be pulled the framework mod to update outfits as you'd like. This initial setup is all you need; you won't need to do any of the scripting yourself!
+
+Just set up your DBs, then call the retroactive application PROC at the end of the INITSECTION of your script, and you should be good to go!
+
+
+## Tools and Requirements
+
+This tutorial assumes you already know a little bit about modding, like packaging mods for the game, but you won't need to know much about Osiris.
+
+#### Tools needed:
+
+- A program that can edit **.txt** files
+	Some suggestions:
+	- [Notepad++](https://notepad-plus-plus.org/)
+  - [VS Code](https://code.visualstudio.com/)
+  - [VSCodium](https://vscodium.com/)
+  
+- A way to find the name and UUIDs of characters, flags, and items in the game
+	I'd recommend: [https://bg3.norbyte.dev/](https://bg3.norbyte.dev/)! (aka Norb Search)
+  - The [Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool) is also a viable option, though its search function runs more slowly than Norb Search
+  - You can also use the official BG3 Toolkit
+- Your preferred method of making and packing mods
+	Suggestions:
+  - [Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool)
+  - BG3 Toolkit
+
+That's all!
+
+## Working With Osiris
+
+There are two methods of working with Osiris scripts! You can use Larian's official toolkit (which does have a very helpful debugger if you get stuck!), or you can write a script manually in a .txt file, and drop it into this file path in your mod:
+
+`//Your external mod folder/Mods/Your mod folder/Story/RawFiles/Goals/Your script.txt`
+
+If you're using the toolkit, you can drop that same .txt file into the same file path in your toolkit project! You may need to manually create the file path to do so, but when you do, you should be able to see your script in the toolkit's **Story Editor**. You can find a guide on using the Story Editor [here!](https://mod.io/g/baldursgate3/r/scripting-using-the-story-editor)
+
+This tutorial will cover how to make an Osiris script using a .txt file. Whether you'd prefer to manually package your mod or use the toolkit afterwards is up to you!
+
+# Writing Your Script
+
+First, make a new .txt file. You can name it what you'd like, but I'd recommend including an abbreviation of your username in it, so that file will be unique to you. 
+> Osiris scripts with the same name will conflict with each other, so to be safe, always put something unique to you in the name of your scripts!
+{.is-info}
+
+Copy the following into your file:
+
+```
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+
+KBSECTION
+
+EXITSECTION
+
+ENDEXITSECTION
+```
+
+To make sure your outfits are added to characters, even if the player is already in the epilogue, you'll need to call the retroactive application PROC (short for Procedure) in the INIT section of your script, like so:
+
+```
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+
+PROC_MGNTN_EpilogueOutfitReplacers_RetroactiveApply();
+
+KBSECTION
+
+EXITSECTION
+
+ENDEXITSECTION
+```
+
+Calling an Osiris procedure from the INIT section will make sure the PROC will run once when your mod is first loaded in a save, and is useful for cases where you'd really only want the PROC to run one time. In this case, it's to prevent the epilogue clothing from being repeatedly re-added when you don't need it to.
+
+
+You'll then want to set up your epilogue clothing replacer DBs, putting them above where you called the PROC.
+
+
+## Using Osiris DBs
+
+
+Osiris uses Databases (DBs), to store information needed in different functions. The DB used to store information about Epilogue outfits is `DB_EPI_Epilogue_PartyEquipment`, which looks like this!
+
+```
+DB_EPI_Epilogue_PartyEquipment((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Wyll_Duke_7f89e3b8-61ef-498b-bd1b-77f996c5ec42);
+```
+
+This is the DB for Wyll's clothing if he becomes the Grand Duke of Baldur's Gate in the ending of his quest.
+
+To add that outfit to him in the epilogue, `DB_EPI_Epilogue_PartyEquipment` stores the following information:
+
+The character the clothing should be added to, the flag it should check for to add the clothing, whether the flag is true or not (if it's checking for that flag being False, it'll have a 0 there instead!), and the item to equip to the character.
+
+In that example, the item `EPI_Camp_Wyll_Duke` is added to Wyll if the flag `GLO_Wyll_State_GrandDuke` is True.
+
+He also has a separate DB for his shoes:
+
+```
+DB_EPI_Epilogue_PartyEquipment((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Shoes_Wyll_Duke_4aa0dbb1-f51a-45bc-8a58-814ac5063035);
+```
+
+Each epilogue clothing DB will only add one item at a time, so you'll need separate DBs if you'd like to add other items.
+
+
+## Osiris DBs in the Epilogue Outfit Replacer Framework
+
+There are 3 categories of DBs used by the Epilogue Outfit Replacer Framework:
+
+- "ToReplace" DBs: tells the game which equipment/underwear DBs you'd like to replace
+- "Replacement" DBs: tells the game what equipment/underwear youd like to add to the character as a replacer
+- "AvernusEquipment" DBs: tells the game what youd like either tav/durge or specific characters to wear if they go to avernus, that'll take precedence over their other equipment (like if you set up a unique outfits for origin laezel for her different endings, but want her to have unique equipment if she goes to avernus regardless of her personal quest ending, you'd set that up for her in the "DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions" DB
+
+
+### "ToReplace" DBs
+
+"ToReplace" DBs should be the entire vanilla DB you want to replace, just with the matching ToReplace DB subbed in instead of the original DB name.
+
+The contents of all the epilogue party/clothing DBs can be found in the file Act3c_EPI_MainEpilogue.txt. These DBs handle which characters get what outfits in the epilogue, and why! And to clear them, you'll need to pair the vanilla DB with its accompanying ToReplace DB from the framework.
+
+
+Those paired DBs are as follows:
+
+Companion/NPC Clothing:
+`DB_EPI_Epilogue_PartyEquipment` can be replaced with
+`DB_MGNTN_EPIOutfitReplacers_PartyEquipmentToReplace`
+
+
+Fallback/Player/TavDurge Clothing:
+`DB_EPI_Epilogue_FallbackPartyEquipment` can be replaced with
+`DB_MGNTN_EPIOutfitReplacers_FallbackPartyEquipmentToReplace`
+
+
+Companion/NPC Underwear:
+`DB_EPI_Epilogue_PartyUnderwear` can be replaced with
+`DB_MGNTN_EPIOutfitReplacers_PartyUnderwearToReplace`
+
+
+Fallback/Player/TavDurge Underwear:
+`DB_EPI_Epilogue_FallbackPartyUnderwear` can be replaced with
+`DB_MGNTN_EPIOutfitReplacers_FallbackPartyUnderwearToReplace`
+
+
+As an example of how this works, if youd like to replace Lae'zels camp clothing in the epilogue if she stayed in Faerûn, you'd take this DB from Act3c_EPI_MainEpilogue:
+
+```
+DB_EPI_Epilogue_PartyEquipment((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,(FLAG)END_GameFinale_State_LaezelInFaerun_3cb6879c-f4e7-bb31-584a-63bea28ecb75, 1,(ITEMROOT)EPI_Camp_Laezel_Faerun_9747dbb0-0f92-483e-80fc-391390d416f9);
+```
+
+And replace it with this:
+
+```
+DB_MGNTN_EPIOutfitReplacers_PartyEquipmentToReplace((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,(FLAG)END_GameFinale_State_LaezelInFaerun_3cb6879c-f4e7-bb31-584a-63bea28ecb75, 1,(ITEMROOT)EPI_Camp_Laezel_Faerun_9747dbb0-0f92-483e-80fc-391390d416f9);
+```
+
+And you'll be free to set up a new DB with the equipment you'd like to give her instead.
+
+
+### "Replacer" DBs
+
+Once you've cleared the existing epilogue clothing DB, you can start setting up new items you want to give the character(s) instead. **All items need to be in the camp clothes, camp shoes, or underwear slots!**
+
+(Only camp clothes will display in the epilogue, so if you'd like to add extra accessories/capes/etc, and have them show up, you'll need to make sure everything is attached to an item in a camp clothes slot.)
+
+You can use the following DBs to set up your new outfits/equipment:
+
+Companion/NPC Clothing:
+
+`DB_MGNTN_EPIOutfitReplacers_ReplacementEquipment`
+takes the same parameters as the original `DB_EPI_Epilogue_PartyEquipment` DB, just with the name of the slot the item should go in at the end. (For the main outfit, "VanityBody", and for shoes, "VanityBoots." Clothes and shoes can be replaced separarately, you don't have to replace both!)
+
+Parameters for the DB: Character to add the item to, Flag to check to add the item to the character (can be any flag, not just the existing companion quest ending flags!), 0 or 1 depending on if you want to check if that flag is True or False (0 for False, 1 for True), the RootTemplate of the item to add, and the equipment slot for the item.
+
+In the end, it'll look something like this:
+
+```
+DB_MGNTN_EPIOutfitReplacers_ReplacementEquipment((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,(FLAG)END_GameFinale_State_LaezelInFaerun_3cb6879c-f4e7-bb31-584a-63bea28ecb75, 1,(ITEMROOT)ARM_Camp_Patriars_A_Red_c65c5dd5-705c-4103-904c-0835d81bd846,"VanityBody");
+```
+
+Fallback/Player/TavDurge Clothing:
+
+`DB_MGNTN_EPIOutfitReplacers_ReplacementFallbackEquipment`
+
+Fallback/TavDurge epilogue equipment is handled by an iterative procedure that'll give different outfits to different players in multiplayer sessions, and the iteration number for each item is listed in the DB for fallback equipment. Again, the replacement DB follows the same pattern as the og DB, just with the equipment slot for the item listed at the end.
+
+Parameters for the DB: Item template for the item you want to give players in the epilogue, which multiplayer player you want to get the outfit (bit more complicated and not guaranteed who will get what I dont think, but the default in singleplayer games is 1), equipment slot for the item.
+
+It should end up looking something like this:
+
+```
+DB_MGNTN_EPIOutfitReplacers_ReplacementFallbackEquipment((ITEMROOT)ARM_Camp_Shoes_Sandals_A_Blue_2290f957-2e17-4ceb-870f-bd53f81f866c, 1,"VanityBoots");
+```
+
+Companion/NPC Underwear:
+
+Companion/NPC underwear is handled through the framework with two DBS:
+
+`DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_CharacterDefault`
+`DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_Flagged`
+
+"CharacterDefault" is pretty much the same as `DB_EPI_Epilogue_PartyUnderwear`, just, again with the equipment slot, "Underwear," at the end. You can use this to replace a character's default underwear, which will be given to them if they don't have a "Flagged" underwear DB, or if the flag conditions in any of their "Flagged" DBs haven't been met. You can set this with or without any "Flagged" DBs.
+
+Parameters for `DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_CharacterDefault`:
+Character to give the item to, the RootTemplate of the item to add, "Underwear" (the equipment slot for the item).
+
+In the end, it should look something like this:
+
+```
+DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_CharacterDefault((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679,(ITEMROOT)Underwear_Laezel_185ab1be-e93d-4518-b053-d6d4d7168d68,"Underwear");
+```
+
+
+"Flagged" DBs have two extra parameters, to allow you to test for specific flags when giving items in the underwear slot to characters. This can of course be used for just, regular underwear, but can also be used to put accessories in the underwear slot and give them to characters based on different conditions, like giving Duke Wyll a crown or special gloves, or give Shadowheart a night orchid in her hair if someone gave her one during the game, etc. etc.
+
+You can set "Flagged" DBs with or without a "CharacterDefault" DB.
+
+Parameters for `DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_Flagged`:
+
+Character to add the item to, flag to check to add the item to the character (again can be any flag!), 0 or 1 depending on if you want to check if that flag is True or False (0 for False, 1 for True), the RootTemplate of the item to add, "Underwear" (the equipment slot for the item).
+
+It should look something like this:
+
+```
+DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_Flagged((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679,(FLAG)ORI_Shadowheart_State_RejectShar_SavedParents_486d69d4-a7c2-4cb5-8fcb-8f2cb738ada9, 1,(ITEMROOT)Underwear_Wyll_1930ceec-4a50-43d9-8589-94593c449be4,"Underwear");
+```
+
+Fallback/Player/TavDurge Underwear:
+
+`DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_Fallback`
+
+Again, takes same parameters as the original DB, but with the "Underwear" equipment slot listed at the end.
+
+Parameters: Tag the game will look for to give the item to the character, the item to give, "Underwear" (the equipment slot for the item)
+
+
+
+
+
+#
+
+## old wip please bear with me
+
+## Clearing DBs
+
+To update the epilogue clothing for a given character, you'll first need to clear the existing DB for their clothing.
+
+The Epilogue Outfit Replacer Framework 
+
+Do this for each piece of equipment you want to replace.
+
+Your file should now look like this:
+
+```
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+//Clear Wyll's Grand Duke Equipment DBs
+
+NOT DB_EPI_Epilogue_PartyEquipment((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Wyll_Duke_7f89e3b8-61ef-498b-bd1b-77f996c5ec42);
+NOT DB_EPI_Epilogue_PartyEquipment((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Shoes_Wyll_Duke_4aa0dbb1-f51a-45bc-8a58-814ac5063035);
+
+KBSECTION
+
+EXITSECTION
+
+ENDEXITSECTION
+```
+
+In this example, I'm clearing both the DB for his outfit, and the DB for his shoes. I've also placed a comment above this section, so I'll be able to tell at a glance what that section of my script does. Putting // before a line in an Osiris script will comment it out, making it nonfunctional.
+
 
 ```
 Version 1
@@ -448,111 +725,6 @@ ParentTargetEdge "Act3c_EPI"
 
 Hi! This page is a short guide on how to update character epilogue outfits with Osiris, Larian's Story Scripting language.
 
-## Tools and Requirements
-
-This tutorial assumes you already know a little bit about modding, like packaging mods for the game, but you won't need to know much about Osiris.
-
-#### Tools needed:
-
-- A program that can edit **.txt** files
-	Some suggestions:
-	- [Notepad++](https://notepad-plus-plus.org/)
-  - [VS Code](https://code.visualstudio.com/)
-  - [VSCodium](https://vscodium.com/)
-  
-- A way to find the name and UUIDs of characters, flags, and items in the game
-	I'd recommend: [https://bg3.norbyte.dev/](https://bg3.norbyte.dev/)! (aka Norb Search)
-  - The [Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool) is also a viable option, though its search function runs more slowly than Norb Search
-  - You can also use the official BG3 Toolkit
-- Your preferred method of making and packing mods
-	Suggestions:
-  - [Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool)
-  - BG3 Toolkit
-
-That's all!
-
-## Working With Osiris
-
-There are two methods of working with Osiris scripts! You can use Larian's official toolkit (which does have a very helpful debugger if you get stuck!), or you can write a script manually in a .txt file, and drop it into this file path in your mod:
-
-`//Your external mod folder/Mods/Your mod folder/Story/RawFiles/Goals/Your script.txt`
-
-If you're using the toolkit, you can drop that same .txt file into the same file path in your toolkit project! You may need to manually create the file path to do so, but when you do, you should be able to see your script in the toolkit's **Story Editor**. You can find a guide on using the Story Editor [here!](https://mod.io/g/baldursgate3/r/scripting-using-the-story-editor)
-
-This tutorial will cover how to make an Osiris script using a .txt file. Whether you'd prefer to manually package your mod or use the toolkit afterwards is up to you!
-
-# Writing Your Script
-
-First, make a new .txt file. You can name it what you'd like, but I'd recommend including an abbreviation of your username in it, so that file will be unique to you. 
-> Osiris scripts with the same name will conflict with each other, so to be safe, always put something unique to you in the name of your scripts!
-{.is-info}
-
-Copy the following into your file:
-
-```
-Version 1
-SubGoalCombiner SGC_AND
-INITSECTION
-
-
-KBSECTION
-
-EXITSECTION
-
-ENDEXITSECTION
-```
-
-Osiris uses Databases (DBs), to store information needed in different functions. The DB used to store information about Epilogue outfits is `DB_EPI_Epilogue_PartyEquipment`, which looks like this!
-
-```
-DB_EPI_Epilogue_PartyEquipment((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Wyll_Duke_7f89e3b8-61ef-498b-bd1b-77f996c5ec42);
-```
-
-This is the DB for Wyll's clothing if he becomes the Grand Duke of Baldur's Gate in the ending of his quest.
-
-To add that outfit to him in the epilogue, `DB_EPI_Epilogue_PartyEquipment` stores the following information:
-
-The character the clothing should be added to, the flag it should check for to add the clothing, whether the flag is true or not (if it's checking for that flag being False, it'll have a 0 there instead!), and the item to equip to the character.
-
-In that example, the item `EPI_Camp_Wyll_Duke` is added to Wyll if the flag `GLO_Wyll_State_GrandDuke` is True.
-
-He also has a separate DB for his shoes:
-
-```
-DB_EPI_Epilogue_PartyEquipment((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Shoes_Wyll_Duke_4aa0dbb1-f51a-45bc-8a58-814ac5063035);
-```
-
-Each epilogue clothing DB will only add one item at a time, so you'll need separate DBs if you'd like to add other items.
-
-
-## Clearing DBs
-
-To update the epilogue clothing for a given character, you'll first need to clear the existing DB for their clothing.
-
-You can do that by taking the DB you want to clear, putting it in the `INITSECTION` your file, and writing **NOT** in front of it. This will clear the DB when your script is loaded for the first time.
-
-Do this for each piece of equipment you want to replace.
-
-Your file should now look like this:
-
-```
-Version 1
-SubGoalCombiner SGC_AND
-INITSECTION
-
-//Clear Wyll's Grand Duke Equipment DBs
-
-NOT DB_EPI_Epilogue_PartyEquipment((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Wyll_Duke_7f89e3b8-61ef-498b-bd1b-77f996c5ec42);
-NOT DB_EPI_Epilogue_PartyEquipment((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(FLAG)GLO_Wyll_State_GrandDuke_0e223e4d-be63-89f4-380f-5cc755817abd, 1,(ITEMROOT)EPI_Camp_Shoes_Wyll_Duke_4aa0dbb1-f51a-45bc-8a58-814ac5063035);
-
-KBSECTION
-
-EXITSECTION
-
-ENDEXITSECTION
-```
-
-In this example, I'm clearing both the DB for his outfit, and the DB for his shoes. I've also placed a comment above this section, so I'll be able to tell at a glance what that section of my script does. Putting // before a line in an Osiris script will comment it out, making it nonfunctional.
 
 ## Adding New Equipment
 
