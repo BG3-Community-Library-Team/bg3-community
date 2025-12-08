@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-07T21:16:32.165Z
+date: 2025-12-08T00:09:05.123Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -240,7 +240,7 @@ Character to add the item to, flag to check to add the item to the character (ag
 It should look something like this:
 
 ```
-DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_Flagged((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679,(FLAG)ORI_Shadowheart_State_RejectShar_SavedParents_486d69d4-a7c2-4cb5-8fcb-8f2cb738ada9, 1,(ITEMROOT)Underwear_Wyll_1930ceec-4a50-43d9-8589-94593c449be4,"Underwear");
+DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_Flagged((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679,(FLAG)ORI_State_ShadowheartIsDating_3b35c15c-465a-433b-876d-0717287629b3, 1,(ITEMROOT)Underwear_Wyll_1930ceec-4a50-43d9-8589-94593c449be4,"Underwear");
 ```
 
 Fallback/Player/TavDurge Underwear:
@@ -252,8 +252,63 @@ Again, takes same parameters as the original DB, but with the "Underwear" equipm
 Parameters: Tag the game will look for to give the item to the character, the item to give, "Underwear" (the equipment slot for the item)
 
 
+It should look like this:
 
+```
+DB_MGNTN_EPIOutfitReplacers_ReplacementUnderwear_Fallback((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4,(ITEMROOT)Underwear_Minsc_48a3ffbe-f14e-4cfe-b45e-ebadb3af0fd4,"Underwear");
+```
 
+### Avernus Equipment
+
+You can specify what equipment characters get if they go to Avernus with the "AvernusEquipment" DBs.
+
+There are two DBs that handle this:
+
+For Tav and Durge:
+`DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_TavDurge`
+
+This DB sets the clothes Tav/Durge wear if they go to Avernus with Karlach or Wyll. Only one player character can go to Avernus, so you'll only be defining one set of equipment here.
+
+Also, while you can define replacers for both the Avernus camp clothes and camp shoes, you don't have to replace the whole set if you don't want. If you only want to replace the camp clothes, but not the shoes, you can define a replacer for the "VanityBody" slot, but not "VanityBoots", and vice versa.
+
+Parameters:
+RootTemplate of the item to add, the equipment slot of the item ("VanityBody" or "VanityBoots").
+
+It should look like this:
+
+```
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_TavDurge((ITEMROOT)ARM_Vanity_ElegantRobe_2f7aadd5-65ea-4ab6-8c55-88ee584c72df, "VanityBody");
+```
+
+For Specific Characters:
+`DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions`
+
+This DB can be used to define Avernus equipment for specific characters independent of story conditions. You can use this to bypass other outfits set up for each character; if you've got an AvernusEquipment DB set up for a character, and that character went to Avernus, their Avernus equipment will take precedence.
+
+You can also use this to bring back the vanilla Avernus equipment if you have other epilogue equipment defined for a character. If Avernus equipment isn't specified for a given character, but they do have other epilogue outfit replacers defined by the framework, and they have the right flag conditions to get that outfit, they'll recieve that outfit in Avernus as well.
+
+To add Avernus equipment for a specific character, define your DB like this:
+
+Parameters:
+Character to add the item to, RootTemplate of the item to add, the equipment slot of the item ("VanityBody" or "VanityBoots").
+
+It should look something like this in the end:
+
+```
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,(ITEMROOT)ARM_Vanity_ElegantRobe_2f7aadd5-65ea-4ab6-8c55-88ee584c72df, "VanityBody");
+```
+
+To add the vanilla Avernus clothing back as the Avernus equipment for a character, so they'll get it even if they have other epilogue outfit replacers, the RootTemplates for the Avernus camp clothes and shoes are as follows:
+
+Clothes: `EPI_Camp_Avernus_24149d5d-c509-48dc-b026-491c11e60a5c`
+Shoes: `EPI_Camp_Shoes_Avernus_c36967e4-26c5-4f2f-b25b-f351a6bac804`
+
+And will look like this when defined for a specific character:
+
+```
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,(ITEMROOT)EPI_Camp_Avernus_24149d5d-c509-48dc-b026-491c11e60a5c, "VanityBody");
+DB_MGNTN_EPIOutfitReplacers_AvernusEquipment_Companions((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12,(ITEMROOT)EPI_Camp_Shoes_Avernus_c36967e4-26c5-4f2f-b25b-f351a6bac804, "VanityBoots");
+```
 
 #
 
