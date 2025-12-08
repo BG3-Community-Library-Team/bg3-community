@@ -2,7 +2,7 @@
 title: Updating Epilogue Outfits with Osiris
 description: A guide to updating character epilogue outfits using Osiris.
 published: false
-date: 2025-12-08T00:09:05.123Z
+date: 2025-12-08T00:13:10.274Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-04T22:07:24.777Z
@@ -25,22 +25,20 @@ This tutorial assumes you already know a little bit about modding, like packagin
 
 #### Tools needed:
 
-- A program that can edit **.txt** files
-	Some suggestions:
-	- [Notepad++](https://notepad-plus-plus.org/)
+- A program that can edit **.txt** files, such as:
   - [VS Code](https://code.visualstudio.com/)
   - [VSCodium](https://vscodium.com/)
+  - [Notepad++](https://notepad-plus-plus.org/)
   
 - A way to find the name and UUIDs of characters, flags, and items in the game
 	I'd recommend: [https://bg3.norbyte.dev/](https://bg3.norbyte.dev/)! (aka Norb Search)
-  - The [Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool) is also a viable option, though its search function runs more slowly than Norb Search
+  - The [Modder's Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool) is also a viable option, though its search function runs more slowly than Norb Search
   - You can also use the official BG3 Toolkit
-- Your preferred method of making and packing mods
-	Suggestions:
-  - [Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool)
-  - BG3 Toolkit
+- Your preferred method of making and packing mods, such as:
+  - [LSLib](https://github.com/Norbyte/lslib/releases)
+  - [BG3 Modder's Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool)
+  - BG3 Toolkit (available through Steam if you have a copy of the game)
 
-That's all!
 
 ## Working With Osiris
 
