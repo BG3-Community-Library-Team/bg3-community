@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2025-12-11T19:56:01.329Z
+date: 2025-12-11T20:05:15.734Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -18,18 +18,71 @@ Secondly, it is important to note that the types of compression are different (u
 <sup>*I say 'usually' as many textures share the same compression type, but this is not guaranteed</sup>
 <sup>([WIP: compression writeup here :)](/Information/Textures/compression))</sup>
 
-## Texture Formats
+## Texture formats
 
-BG3 has ultimately two 'styles' of rendering - 'Skin' and 'Hardsurface' for lack of better wording.
+BG3 has ultimately two 'styles' of rendering - 'Skin' and 'Hardsurface', for lack of better wording.
 
 ### Maps
 The most common texture maps used by BG3 are:
-  - BM (Basecolor Map)
-  - NM (Normal Map) 
-  - MSK (Mask Map) - used for segments of different material colors (used for dyeing)
-  - PM (Physical Map) (uses AO, Roughness and Metallic maps)
 
-## Objects (Hardsurface)
+<table>
+  <tr>
+    <th>Map Type</th>
+    <th>Name</th>
+    <th>Purpose</th>
+    <th>Used In</th>
+  </tr>
+  <tr>
+    <td>BM</td>
+    <td>Basecolor Map</td>
+    <td>Stores the base color/albedo of the surface</td>
+    <td>Hardsurface</td>
+  </tr>
+  <tr>
+    <td>NM</td>
+    <td>Normal Map</td>
+    <td>Stores surface normal information for lighting detail</td>
+    <td>Hardsurface/Skin</td>
+  </tr>
+  <tr>
+    <td>PM</td>
+    <td>Physical Map</td>
+    <td>Combines Metallic, Roughness, and Ambient Occlusion data</td>
+    <td>Hardsurface</td>
+  </tr>
+  <tr>
+    <td>MSK</td>
+    <td>Mask Map</td>
+    <td>Defines different material regions (relevant for dyeing/materials)</td>
+    <td>Hardsurface/Skin</td>
+  </tr>
+  <tr>
+    <td>CLEA</td>
+    <td>Cavity/Hair/Makeup/AO Map</td>
+    <td>Stores cavity, hair, makeup, and ambient occlusion data</td>
+    <td>Skin</td>
+  </tr>
+  <tr>
+    <td>HMVY</td>
+    <td>Hemoglobin/Melanin/Vein/Yellowing Map</td>
+    <td>Stores skin pigmentation and subsurface scattering data</td>
+    <td>Skin</td>
+  </tr>
+  <tr>
+    <td>CTLO</td>
+    <td>Cavity/Thickness/Lips/AO Map</td>
+    <td>Dragonborn-specific skin map (replaces CLEA)</td>
+    <td>Dragonborn Skin</td>
+  </tr>
+  <tr>
+    <td>DMSK</td>
+    <td>Decorative Mask / Accent Mask</td>
+    <td>Defines areas for decorative details and accent colors</td>
+    <td>Dragonborn Skin</td>
+  </tr>
+</table>
+
+## Objects (Hardsurface) texture map breakdown
 
 <table>
   <tr>
@@ -76,7 +129,7 @@ The most common texture maps used by BG3 are:
 
 ---
 
-## Skin
+## Skin texture map breakdown
 
 <table>
   <tr>
@@ -121,13 +174,9 @@ The most common texture maps used by BG3 are:
   </tr>
 </table>
 
-
-
 ---
 
-
-
-## DGB 
+## DGB  texture map breakdown
 - For Dragonborn Skin
 
 
