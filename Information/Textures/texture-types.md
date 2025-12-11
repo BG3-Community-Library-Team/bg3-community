@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2025-12-11T20:05:44.572Z
+date: 2025-12-11T22:08:28.314Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -53,7 +53,7 @@ The most common texture maps used by BG3 are:
   <tr>
     <td>MSK</td>
     <td>Mask Map</td>
-    <td>Defines different material regions (relevant for dyeing/materials)</td>
+    <td>Defines different material regions (relevant for dyeing)</td>
     <td>Hardsurface/Skin</td>
   </tr>
   <tr>
