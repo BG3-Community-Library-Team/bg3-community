@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2025-12-11T20:05:15.734Z
+date: 2025-12-11T20:05:44.572Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -20,7 +20,7 @@ Secondly, it is important to note that the types of compression are different (u
 
 ## Texture formats
 
-BG3 has ultimately two 'styles' of rendering - 'Skin' and 'Hardsurface', for lack of better wording.
+BG3 has ultimately two 'styles' of rendering - 'Hardsurface' and 'Skin', for lack of better wording.
 
 ### Maps
 The most common texture maps used by BG3 are:
