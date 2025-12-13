@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: true
-date: 2025-12-13T04:47:18.142Z
+date: 2025-12-13T04:47:24.705Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -164,7 +164,7 @@ Instead, follow this specific workflow for headwear:
    1. Switch to Weight Paint Mode.
    2. Your entire mesh should be bright red (indicating 100% influence).
     (You can also ensure this by pressing Ctrl+X while in Weight Paint mode to "Set Weight" to 1.0 for everything)
-6. Proceed to parenting.
+6. Proceed to parenting armature.
 
 ---
 We will now transfer weights from the vanilla armor to our custom armor.
