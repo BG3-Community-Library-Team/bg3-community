@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: true
-date: 2025-10-11T16:43:06.864Z
+date: 2025-12-13T04:06:22.978Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -16,6 +16,13 @@ It is recommended to go through the entirety of this tutorial at least once, as 
 > If you are a beginner to BG3 modding, please read through the [Getting Started with 3D modding](https://wiki.bg3.community/Tutorials/Visual/getting-started-with-3d-modding) tutorial first.
 {.is-warning}
 
+Process overview:
+1. **Sourcing**: Find a vanilla item in the game files that resembles your custom armor.
+2. **Preparation**: Clean up the vanilla mesh in Blender to create a perfect "Donor".
+3. **Transfer weights**: Automate the copying of weight data from the Donor to your Custom Mesh.
+4. **Testing**: Parent the armor to the skeleton and pose it to identify errors.
+5. **Refinement**: Manually fix specific issues (clipping, stiffness, or lack of movement).
+6. **Limit weights**: Ensure compatibility with game engine (max 4 bones per vertex)
 ㅤ
 ## Table of Contents
 1. [Pre-requisites](#pre-requisites)
