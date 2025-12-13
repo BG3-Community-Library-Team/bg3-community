@@ -2,7 +2,7 @@
 title: Weight Painting Armor and Clothes
 description: Tutorial on how to weight paint armor and clothes in Blender.
 published: true
-date: 2025-12-13T04:08:18.209Z
+date: 2025-12-13T04:47:18.142Z
 tags: visual, tutorial, blender, meshes, armor, clothes, weight painting
 editor: markdown
 dateCreated: 2025-01-01T21:58:19.593Z
@@ -146,6 +146,27 @@ Our vanilla armor is now all cleaned up and ready to be used for weight transfer
 ![8_cleaned_up_vanilla_armor.png](/weight_painting_armor_tutorial/8_cleaned_up_vanilla_armor.png)
 ㅤ
 ## Transfering weights
+
+### Special Case: Headwear (Rigid weighting)
+Are you making a helmet, hat, or glasses?
+If so, proceed with the following instructions. Do not use the "Transfer Weights" method. Headwear does not need to bend; it needs to be 100% rigid and follow the head bone exactly.
+
+
+Instead, follow this specific workflow for headwear:
+1. Select your headwear mesh and go to Object Data Properties (Green triangle icon).
+2. Under Vertex Groups, click + to create a new group.
+3. Name the group exactly: `Head_M` (the internal game name for the Head bone)
+4. Assign the weight:
+	1. Enter Edit Mode (Tab) and press A to select all vertices.
+	2. Ensure the "Weight" slider below the Vertex Groups panel is set to 1.000.
+  3. Click the Assign button.
+5. Verify (Optional but Recommended):
+   1. Switch to Weight Paint Mode.
+   2. Your entire mesh should be bright red (indicating 100% influence).
+    (You can also ensure this by pressing Ctrl+X while in Weight Paint mode to "Set Weight" to 1.0 for everything)
+6. Proceed to parenting.
+
+---
 We will now transfer weights from the vanilla armor to our custom armor.
 For this step you need both your custom armor meshes and the vanilla meshes visible in Blender.
 > Make sure your custom armor doesn't already have weights. 
