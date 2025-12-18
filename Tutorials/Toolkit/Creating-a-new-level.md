@@ -2,7 +2,7 @@
 title: Creating a New Level
 description: Small guide covering the basics of creating levels for screen archery.
 published: true
-date: 2025-12-06T12:22:55.299Z
+date: 2025-12-18T11:50:48.478Z
 tags: levels, screen archery, toolkit, screenarchery
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -15,7 +15,7 @@ This level creation guide aims to cover the basic knowledge needed to create a n
 
 Please let us know if you have any useful tips or keybinds to add!
 
-Some sections are copied from [Larian's wiki](https://docs.larian.game/).
+Some sections have been copied from [Larian's wiki](https://docs.larian.game/).
 
 ## Project setup
 
@@ -41,8 +41,6 @@ Press `Create` one more time.
 
 ![creating-a-new-level-7-name-level.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-7-name-level.webp)
 
-
-
 ## UI
 
 In this guide, we'll use Rakor's UI layout:
@@ -51,11 +49,11 @@ Drag `Root Templates` to the bottom on `Message log`, open `Resource Manager`, a
 
 ![creating-a-new-level-13-ui.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-13-ui.webp)
 
-Save it
+You can now save this layout by going to `Options` > `Save Layout`: 
 
 ![creating-a-new-level-14-save-ui-2.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-14-save-ui-2.webp)
 
-If you accidentally close a window, you can `Load Layout`, `Reset Layout` or go to `View` and re-open it there.
+If you accidentally close a window, go to `Options` > `Load Layout` or `Reset Layout` or go to `View` and re-open it there.
 
 You can also drag windows outside of the toolkit (this might make it easier to see things if you have multiple screens). However, they will end up re-docked the next time you re-open the toolkit. 
 
@@ -120,7 +118,7 @@ We won't cover all of the basic buttons and editor buttons (you can hover over e
 
 	Basically, the difference between `Resource Manager` resources and `Root Templates` ones is that before you can place an object on the level, you need to create a `RootTemplate` for it; you create your level using `RootTemplates`. You can't just drag and drop an object from `Resource Manager`.
 
-    Further in the guide I will refer to `RootTemplate` as `Object` or vice versa.
+    Further in the guide we will refer to `RootTemplate` as `Object` and vice versa.
 
 
 
@@ -146,7 +144,7 @@ In the bottom right corner, you'll also see more ways to manipulate selected obj
 
 
 ## Root Templates
-There are several `RootTemplate` types, which are denoted by different icons. When you search for objects in the Root Templates window, you'll see the icons next to the search box. You can de-select icons by clicking on them to filter your results. Right-click on one icon to select only that icon; right-click on it again to re-select all icons.  
+There are several `RootTemplate` types, which are denoted by different icons. When you search for objects in the Root Templates window, you'll see the icons next to the search box. 
 
 The ones you need to know:
 
@@ -160,6 +158,7 @@ The ones you need to know:
 `light` (yellow light bulb)
 `character` (pink person)
 
+> **To filter your results:** Left-click on an icon to de-select it from the results list (will show all types *except* that type). Right-click on an icon to select **only** that type (will show *only* that type); right-click on it again to re-select all types. {.is-info}
 ### Item
 An item is an object you can pick up or interact with, such as books, loot, doors, signs, chairs, etc. This is not *always* the case, as some items and scenery objects intersect, but it's generally true, so don't worry about it. 
 
@@ -218,6 +217,8 @@ https://docs.larian.game/Light_probes (In BG3 Larian split Atmosphere to Atmosph
 
 ### TileConstruction
 You build walls, roofs, floors, and other repetitive things with this thing.
+
+Here is a [video guide to constructions](https://youtu.be/UoJVV20sAxc).
 
 ### Prefab
 A saved group of objects. To save your own prefabs, select the objects you want to save (hold `Ctrl` and click to select multiple objects), right-click, and click `Create Prefab`.
