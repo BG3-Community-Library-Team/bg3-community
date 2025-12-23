@@ -2,7 +2,7 @@
 title: Patching in More Spells to Selectable Tome Spells
 description: How to patch more spells into the Selectable Tome Spells mod using the toolkit.
 published: false
-date: 2025-12-23T20:11:23.607Z
+date: 2025-12-23T20:18:03.324Z
 tags: spells, toolkit, mod integration, selectable tome spells
 editor: markdown
 dateCreated: 2025-12-09T23:14:42.527Z
@@ -50,6 +50,7 @@ This is a guide on patching more spells into the Selectable Tome Spells mod ([Ne
 and for step 18, the DB is ```DB_DeepenedPactBooks(<your book name>_<your book uuid>, "<technical spell name>");```
 22. When you are done adding books, go to Project settings -> publish mod (maybe. test it works first, if you want)
 
-
-
 I also added a tag so you can only use the books as a warlock and turned off the is pickpocketable so they can't be transferred in inventories, both of those are settings in the sidebar of the roottemplate. once you set them on the first one if you just copy it you don't need to set it for each
+
+![evilsnail_selectabletomespellpatches_image01.png](/tutorials/patching_selectable_tome_spells/evilsnail_selectabletomespellpatches_image01.png)
+![evilsnail_selectabletomespellpatches_image02.png](/tutorials/patching_selectable_tome_spells/evilsnail_selectabletomespellpatches_image02.png)
