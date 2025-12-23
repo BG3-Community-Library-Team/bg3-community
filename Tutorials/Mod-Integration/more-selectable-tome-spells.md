@@ -1,8 +1,8 @@
 ---
 title: Patching in More Spells to Selectable Tome Spells
 description: How to patch more spells into the Selectable Tome Spells mod using the toolkit.
-published: false
-date: 2025-12-23T20:18:03.324Z
+published: true
+date: 2025-12-23T20:18:34.494Z
 tags: spells, toolkit, mod integration, selectable tome spells
 editor: markdown
 dateCreated: 2025-12-09T23:14:42.527Z
