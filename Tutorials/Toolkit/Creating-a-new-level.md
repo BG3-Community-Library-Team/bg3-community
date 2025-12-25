@@ -2,7 +2,7 @@
 title: Creating a New Level
 description: Small guide covering the basics of creating levels for screen archery.
 published: true
-date: 2025-12-18T11:50:48.478Z
+date: 2025-12-25T02:32:56.770Z
 tags: levels, screen archery, toolkit, screenarchery
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -156,7 +156,7 @@ The ones you need to know:
 `Trigger` (blue outlined box)
 `fogVolume` (misty purple sphere)
 `light` (yellow light bulb)
-`character` (pink person)
+`character` (purple Astarion)
 
 > **To filter your results:** Left-click on an icon to de-select it from the results list (will show all types *except* that type). Right-click on an icon to select **only** that type (will show *only* that type); right-click on it again to re-select all types. {.is-info}
 ### Item
