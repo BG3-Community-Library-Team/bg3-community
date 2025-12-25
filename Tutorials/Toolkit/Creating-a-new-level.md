@@ -2,7 +2,7 @@
 title: Creating a New Level
 description: Small guide covering the basics of creating levels for screen archery.
 published: true
-date: 2025-12-25T02:32:56.770Z
+date: 2025-12-25T02:38:07.405Z
 tags: levels, screen archery, toolkit, screenarchery
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -259,7 +259,7 @@ https://docs.larian.game/My_first:_Item
 
 ## Resource Manager
 There are even more resource types. Here are the ones you need to know:
-`Visual` (teapot)
+`Visual` (utah teapot)
 `Texture` (missing texture sphere)
 `Material` (blue spehere)
 `Effect` (sparkles)
