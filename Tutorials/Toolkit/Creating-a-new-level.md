@@ -2,7 +2,7 @@
 title: Creating a New Level
 description: Small guide covering the basics of creating levels for screen archery.
 published: true
-date: 2025-12-25T02:38:07.405Z
+date: 2025-12-29T15:52:40.434Z
 tags: levels, screen archery, toolkit, screenarchery
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -84,8 +84,7 @@ There are some important keybinds and hotkeys you should know:
 
 There are many more hotkeys and shortcuts for specific tools; you'll find them in `Preferences`.
 
-**Changing Initial Camera Speed
-**
+**Changing Initial Camera Speed**
 To change initial camera speed, go to `Editor Camera Setting`.
 
 ![creating-a-new-level-15-camera-speed.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-15-camera-speed.webp)
