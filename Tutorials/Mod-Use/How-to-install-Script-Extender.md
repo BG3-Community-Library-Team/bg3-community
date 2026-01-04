@@ -2,7 +2,7 @@
 title: Installing Script Extender
 description: How to install Norbyte's Script Extender
 published: true
-date: 2025-05-26T14:13:52.317Z
+date: 2026-01-04T08:23:03.063Z
 tags: installation, moduse, script extender
 editor: markdown
 dateCreated: 2024-06-21T04:52:35.045Z
@@ -70,6 +70,15 @@ Afterwards, launch your game once, and SE should install itself.
 > The following instructions are for Linux/Steam Deck.
 > Please ignore them if you use windows
 {.is-warning}
+
+
+> THIS ONLY WORKS IF YOU USE PROTON. NOT IF YOU USE THE NATIVE LINUX VERSION
+{.is-danger}
+
+![screenshot_from_2026-01-04_09-22-08.png](/screenshot_from_2026-01-04_09-22-08.png)
+
+> THIS ONLY WORKS IF YOU USE PROTON. NOT IF YOU USE THE NATIVE LINUX VERSION
+{.is-danger}
 
 Download SE directly from Norbyte's GitHub and follow the the steps below.
 
