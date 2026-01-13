@@ -2,7 +2,7 @@
 title: Vertex Painting Meshes
 description: 
 published: true
-date: 2026-01-13T17:27:57.897Z
+date: 2026-01-13T17:28:44.974Z
 tags: meshes
 editor: markdown
 dateCreated: 2024-04-28T17:39:51.157Z
@@ -43,7 +43,7 @@ dateCreated: 2024-04-28T17:39:51.157Z
 > 
 >Blender gamma corrects the values by setting the values of the R and B components to 01. You can use either hex value in the table as only the green channel is used by the vertcut shaders. Red and Blue affect cloth physics.
 >
->Same applies for values in the Hex via glTF column. As long as the G component (middle 2 cahracters) are correct, it is fine if the R and/or B components are 01. 
+>Same applies for values in the Hex via glTF column. As long as the G component (middle 2 characters) are correct, it is fine if the R and/or B components are 01. 
 {.is-info}
 
 [^1]: If exporting via Collada (dae/gr2). 
