@@ -2,40 +2,52 @@
 title: Vertex Painting Meshes
 description: 
 published: true
-date: 2025-10-28T12:38:30.377Z
+date: 2026-01-13T17:27:57.897Z
 tags: meshes
 editor: markdown
 dateCreated: 2024-04-28T17:39:51.157Z
 ---
 
 # Vertex Paint Colors
-| MapKey | Hex | Blender Hex|
+>Due to a colour space conversion when exporting via glTF from Blender, the colours used to vertex paint the mesh must be adjusted so that their value after the conversion is correct. The adjusted values are given in the table below.
+>
+>If you export using the option `DOS/BG3 via Collada (dae, .gr2)`, use the values given in the column "Blender Hex (via **Collada**)". If you export using the option `DOS/BG3 via glTF (.gr2)`, use the adjusted values in the column "Hex (via **glTF**)".
+>
+>If you find that any of the adjusted values for glTF do not work, feel free to ping **baeator** in the CMTY Discord server. Due to rounding in the colour space conversions being made, there may be additional hex codes that work for various slots. 
+{.is-warning}
+
+| MapKey | Hex | Blender Hex (via Collada) [^1] | Hex (via glTF) [^2] |
 |----------|----------|----------|
-|"ModestyLeaf"|#000500|#010501|
-|"Sleeves"|#000A00|#010A01|
-|"knees"|#000F00|#010F01|
-|"Pants"|#001400|#011401|
-|"Dragonborn Attachments"|#001900|#011901|
-|"Shoulders"|#001E00|#011E01|
-|"shins"|#002400|#012401|
-|"Private_Parts"|#002800|#012801|
-|"Nipple Covers"|#002D00|#012D01|
-|"Torso"|#003200|#013201|
-|"wrists"|#003A00|#013A01|
-|"upperarm"|#004100|#014101|
-|"lowerarm"|#005000|#015001|
-|"hands"|#005F00|#015F01|
-|"decolletage_01"|#006E00|#016E01|
-|"decolletage_02"|#008200|#018201|
-|"feet"|#009600|#019601|
-|"Underwear_Bra"|#00A000|#01A001|
-|"Underwear_Panties"|#00AA00|#01AA01|
-|"Thighs"|#00B900|#01B901|
-|"Underwear_Panties_Tail"|#00C300|#01C301|
+|"ModestyLeaf"|#000500|#010501|#002600|
+|"Sleeves"|#000A00|#010A01|#003800|
+|"knees"|#000F00|#010F01|#004500|
+|"Pants"|#001400|#011401|#004F00|
+|"Dragonborn Attachments"|#001900|#011901|#005800|
+|"Shoulders"|#001E00|#011E01|#006000|
+|"shins"|#002400|#012401|#006900|
+|"Private_Parts"|#002800|#012801|#006F00|
+|"Nipple Covers"|#002D00|#012D01|#007500|
+|"Torso"|#003200|#013201|#007B00|
+|"wrists"|#003A00|#013A01|#008300|
+|"upperarm"|#004100|#014101|#008A00|
+|"lowerarm"|#005000|#015001|#009800|
+|"hands"|#005F00|#015F01|#00A500|
+|"decolletage_01"|#006E00|#016E01|#00B000|
+|"decolletage_02"|#008200|#018201|#00BE00|
+|"feet"|#009600|#019601|#00CA00|
+|"Underwear_Bra"|#00A000|#01A001|#00D000|
+|"Underwear_Panties"|#00AA00|#01AA01|#00D600|
+|"Thighs"|#00B900|#01B901|#00DE00|
+|"Underwear_Panties_Tail"|#00C300|#01C301|#00E300|
 
 > 
 >Blender gamma corrects the values by setting the values of the R and B components to 01. You can use either hex value in the table as only the green channel is used by the vertcut shaders. Red and Blue affect cloth physics.
+>
+>Same applies for values in the Hex via glTF column. As long as the G component (middle 2 cahracters) are correct, it is fine if the R and/or B components are 01. 
 {.is-info}
+
+[^1]: If exporting via Collada (dae/gr2). 
+[^2]: If exporting via glTF (gr2). These values have been calculated so that they convert to the expected values for the engine.
 
 # Vertex Paint Transfer
 
