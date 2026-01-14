@@ -2,7 +2,7 @@
 title: (Wikithon suggestion) Improving SE docs
 description: 
 published: true
-date: 2026-01-14T23:49:51.548Z
+date: 2026-01-14T23:53:06.857Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-14T22:58:17.562Z
@@ -10,7 +10,7 @@ dateCreated: 2026-01-14T22:58:17.562Z
 
 # Suggestions for improving SE API documentation
 
-This temporary page has been created for collaboration on WIP docs before opening PRs on GitHub. 
+This temporary page may be used for collaboration on WIP docs before opening PRs on GitHub. 
 
 ## Missing modules
 
