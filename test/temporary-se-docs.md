@@ -2,13 +2,16 @@
 title: (Wikithon suggestion) Improving SE docs
 description: 
 published: true
-date: 2026-01-14T22:58:17.562Z
+date: 2026-01-14T22:59:03.306Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-14T22:58:17.562Z
 ---
 
 # Suggestions for improving SE API documentation
+
+This has been temporarily added to the wiki for collaboration on wip docs before opening PRs on GitHub. 
+
 ## Missing modules
 
 Several major namespaces defined in `ExtIdeHelpers` are completely absent from `API.md`.
