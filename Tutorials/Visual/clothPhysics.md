@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: true
-date: 2025-10-02T15:29:05.594Z
+date: 2026-01-15T13:24:49.346Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -25,15 +25,16 @@ The lovely **Lynia** has created a tutorial on how to add cloth physics without 
 - [Vertex Color Master Add-On](https://github.com/andyp123/blender_vertex_color_master/releases) (optional, but recommended)
 
 [^1]: Lynia uses version 4.1 in the video tutorial. The steps documented in this guide use version 3.6
-# Steps
 
-## Setting up your mesh
+## Steps
 
-### Weight Painting
+### Setting up your mesh
+
+#### Weight Painting
 
 Your mesh should already be weight painted before you begin. To learn about weight painting your mesh, see the guide for [Weight Painting Armor and Clothes](https://wiki.bg3.community/en/Tutorials/Visual/Weight-Painting-Armor)
 
-### Vertex Count
+#### Vertex Count
 
 The mesh that will have the cloth physics applied to it needs to be under **10,000 vertices** otherwise it will likely crash the game and/or not work. 
 
@@ -71,14 +72,14 @@ This will show the information in the bottom right corner of the Blender window.
 
 If your mesh has over 10,000 vertices, reduce it or separate the mesh into different pieces so that the piece that needs the cloth physics has less than 10,000 vertices.
 
-## Creating the cloth mesh
+### Creating the cloth mesh
 
 The best way to create the cloth mesh will depend on the shape of the mesh you're applying the physics to. 
 
 - For something like a skirt, a dress, a robe, etc. that wraps around the body, we'll use the method of **duplicating the mesh**. 
 - For things that dangle like ribbons, chains, tassles, etc. we'll follow the method of **creating a plane**.
 
-### Duplicated mesh method
+#### Duplicated mesh method
 
 > Note that this method assumes that the mesh is **not** solidified/extruded to create faces on the inside. You do not want to create a solidified cloth mesh. It should always be a plane/two-dimensional.
 {.is-warning}
@@ -130,7 +131,7 @@ For solidified/thick meshes like the cape shown in the example at the beginning 
 
 The cloth mesh is ready to vertex paint.
 
-### Create a new plane method
+#### Create a new plane method
 
 Something like this bow is a good example of when to use the plane method to create the cloth mesh as it is meant to hang down off the body, not conform to it. 
 
@@ -172,7 +173,7 @@ After repeating the process for the other side of the bow, I now have two separa
 
 The cloth mesh is ready to vertex paint.
 
-## Vertex Painting
+### Vertex Painting
 
 > The vertex colour master add-on mentioned above is optional. It is recommended because it will easily create gradients between vertex colours. 
 {.is-info}
@@ -259,9 +260,9 @@ Once the mesh is painted, transfer the vertex paint colours to the cloth mesh.
 
 For pieces like the bow from earlier, when transfering the colours over it is easier to split the bow into the same pieces as will be used by the cloth mesh, then merge everything back together.
 
-## Exporting from Blender
+### Exporting from Blender
 
-### Naming and Number
+#### Naming and Number
 
 You can only have **one cloth mesh object per exported object** (excluding LODs of the same cloth mesh), though you can assign multiple submeshes to use the same cloth mesh in LSlib. We'll get to that later.
 
@@ -283,7 +284,7 @@ If merging any cloth mesh objects together, make sure they have the name for the
 	- You can call it whatever you want as long as you can differenciate it from other meshes
   - Mine are usually named *whateverItemNameIs_**Cloth_Mesh*** because I'm a stickler for naming conventions but you do you
 
-### Checkboxes
+#### Checkboxes
 
 In the **Properties** panel in the **Object** tab, assign LOD info and export order as usual.
 
@@ -301,7 +302,7 @@ Export as usual.
 > If you use BG3EquipmentGenerator, note that it tends to lose these parameters along the way. You can still use it to generate all the files for your mod, but you'll need to reexport and overwrite the GR2s it outputs with ones directly exported from Blender.
 {.is-warning}
 
-## LSlib
+### LSlib
 
 In the forked version of LSlib linked above, open **ConverterApp.exe** and switch to the **Cloth Tools** tab
 
