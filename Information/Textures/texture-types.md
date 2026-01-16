@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2025-12-11T22:08:28.314Z
+date: 2026-01-16T16:46:04.033Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -98,8 +98,8 @@ The most common texture maps used by BG3 are:
     <td>Color Intensity Red</td>
     <td>Color Intensity Green</td>
     <td>Color Intensity Blue</td>
-    <td>Empty</td>
-    <td>BC3/DXT5 Linear</td>
+    <td>Alpha Intensity</td>
+    <td>BC1/DXT1 Linear</td>
   </tr>
   <tr>
     <td>NM</td>
@@ -115,13 +115,13 @@ The most common texture maps used by BG3 are:
     <td>Roughness Amount</td>
     <td>Ambient Occlusion</td>
     <td>Not Used</td>
-    <td>BC3/DXT5 Linear</td>
+    <td>BC1/DXT1 Linear</td>
   </tr>
   <tr>
     <td>MSK</td>
     <td colspan="3">Channel makeup is largely irrelevant. Colored mask for segments of different material colors.</td>
     <td>Not Used</td>
-    <td>BC3/DXT5 Linear</td>
+    <td>BC1/DXT1 Linear</td>
   </tr>
 </table>
 
