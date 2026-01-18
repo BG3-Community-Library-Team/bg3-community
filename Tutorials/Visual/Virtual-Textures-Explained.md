@@ -2,7 +2,7 @@
 title: Virtual Textures Explained
 description: 
 published: false
-date: 2026-01-18T10:55:00.292Z
+date: 2026-01-18T10:56:51.056Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-18T10:55:00.292Z
