@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2025-09-10T21:09:29.403Z
+date: 2026-01-18T19:38:14.118Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -95,6 +95,9 @@ This page is a list of existing Tutorials.-->
 - [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
 - [Fix Broken Normals on Imported Meshes](/Tutorials/Visual/Fix-Normals)
 - [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
+- [Virtual Textures - The Basics](/Tutorials/Visual/Virtual-Textures-Explained)
+- [Misconceptions About Virtual Textures](/Tutorials/Visual/VT-Misconceptions)
+- [Limits on Virtual Textures](/Tutorials/Visual/VT-Limit)
 {.links-list}
 
 ## Animations
