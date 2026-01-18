@@ -2,7 +2,7 @@
 title: Visual
 description: List of Visual Mod Tutorials
 published: true
-date: 2025-11-14T17:23:42.350Z
+date: 2026-01-18T19:33:38.132Z
 tags: visual, tutorial, textures, meshes, tutorials
 editor: markdown
 dateCreated: 2024-05-02T22:12:50.307Z
@@ -37,4 +37,10 @@ This page is a list of existing Tutorials relating to Visual Mods.
 
 ## General
 - [Changing Character Visuals](/Tutorials/Visual/Changing-CharacterVisuals)
+{.links-list}
+
+## Virtual Textures
+- [Virtual Textures - The Basics](/Tutorials/Visual/Virtual-Textures-Explained)
+- [Misconceptions About Virtual Textures](/Tutorials/Visual/VT-Misconceptions)
+- [Limits on Virtual Textures](/Tutorials/Visual/VT-Limit)
 {.links-list}
