@@ -2,7 +2,7 @@
 title: Creating a New Level
 description: Small guide covering the basics of creating levels for screen archery.
 published: true
-date: 2026-01-20T05:55:11.302Z
+date: 2026-01-20T07:50:42.265Z
 tags: levels, screen archery, toolkit, screenarchery
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -317,19 +317,16 @@ Now you can move it however you want by selecting it and using the keybinds I me
 
 
 ## Terrain XDDDDDDDDDDDDDDD
-You can use this panel to create new terrains or edit existing ones.
+The Terrain panel is for adding new terrains or editing existing terrains.
 
-When you open the panel for the first time, it will only show you available terrains.
-![placeholder_for_img](placeholder_for_img)
-
-To start editing terrain you need to click on the terrain in the panel or in the veiwport. 
+When you open the panel for the first time, it will show you the available terrains in your level. To start editing a terrain, you need to select the terrain by clicking on it in the panel or by clicking on it in the viewport.
 ![placeholder_for_img](placeholder_for_img)
 
 ### Terrain size
 To change size of the terrain, you can use the `Edit shape bounds` tool.
 ![placeholder_for_img](placeholder_for_img)
 
-### Terrain material painting
+### Terrain Painting
 
 To paint with different materials, first, you need to select a material in the panel.
 ![placeholder_for_img](placeholder_for_img)
