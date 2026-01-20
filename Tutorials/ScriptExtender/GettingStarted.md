@@ -2,7 +2,7 @@
 title: Getting Started with Script Extender
 description: 
 published: true
-date: 2025-11-24T11:54:47.160Z
+date: 2026-01-20T01:05:27.657Z
 tags: tutorial, guide, script extender, lua, symlink
 editor: markdown
 dateCreated: 2024-04-30T08:23:34.674Z
@@ -335,10 +335,10 @@ The following instructions are for Windows. On Linux, simply use `ln -s <workspa
 This command is executed in the windows terminal. Type `cmd` in the search bar and execute the program as **administarator**
 
 Type `cmd` in the windows search bar and execute the program as **administrator**
-![gswse_admin.png](/tutorials/getting_started_with_se/gswse_admin.png)
+![gswse_admin.png](/tutorials/getting_started_with_se/gswse_admin_en.png)
 
 Your console should open. This is where you will type your commands
-![gswse_cmd2.png](/tutorials/getting_started_with_se/gswse_cmd2.png)
+![gswse_cmd2.png](/tutorials/getting_started_with_se/gswse_cmd2_en.png)
 
 
 
