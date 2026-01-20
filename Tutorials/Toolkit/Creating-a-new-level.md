@@ -2,7 +2,7 @@
 title: Creating a New Level
 description: Small guide covering the basics of creating levels for screen archery.
 published: true
-date: 2026-01-20T07:50:42.265Z
+date: 2026-01-20T09:58:47.572Z
 tags: levels, screen archery, toolkit, screenarchery
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -11,7 +11,7 @@ dateCreated: 2025-10-17T12:50:22.826Z
 # WIP
 ## Overview
 
-This level creation guide aims to cover the basic knowledge needed to create a new level using MoonGlasses (the unlocked toolkit). It is written for virtual photography / screen archery in mind; it will not cover things you need to know to create actual gameplay levels.
+This level creation guide aims to cover the basic knowledge needed to create a new level using MoonGlasses (the unlocked toolkit). It is written for virtual photography / screen archery in mind, and it will not cover things you need to know to create actual gameplay levels.
 
 Please let us know if you have any useful tips or keybinds to add!
 
@@ -317,40 +317,25 @@ Now you can move it however you want by selecting it and using the keybinds I me
 
 
 ## Terrain XDDDDDDDDDDDDDDD
-The Terrain panel is for adding new terrains or editing existing terrains.
-
-When you open the panel for the first time, it will show you the available terrains in your level. To start editing a terrain, you need to select the terrain by clicking on it in the panel or by clicking on it in the viewport.
+The Terrain panel is for adding new terrain or editing the existing terrain. When you first open the panel, you'll see a list of available terrains in your level. To start editing a terrain, select it by clicking on it in the panel or by clicking on it in the viewport. 
 ![placeholder_for_img](placeholder_for_img)
 
-### Terrain size
-To change size of the terrain, you can use the `Edit shape bounds` tool.
+### Changing Shape and Size 
+To change size of the terrain, you can use the `Edit shape bounds` tool. 
 ![placeholder_for_img](placeholder_for_img)
 
 ### Terrain Painting
 
-To paint with different materials, first, you need to select a material in the panel.
+First, you'll need to select a material in the terrain panel. If you created a new level, the terrain panel will already have four materials loaded in. You can find more materials in the ```Resource Manager```: Filter by terrain brush (a brush with a mountain icon). Select the new material and add it to the terrain panel by clicking the sphere with a plus sign. 
 ![placeholder_for_img](placeholder_for_img)
 
-Now you can paint. `LMB` - paint, `RMB` - erase, `[` `]` - brush size.
+To start using the material, select it in the terrain panel and click the paint brush to start painting. Use the left mouse button to paint and the right mouse button to erase; you can use `[` and `]` to change the size of your brush. Right-click the terrain paint icon to open up additional brush parameters (e.g. size, strength, etc). Each material also has additional parameters, which you can adjust in the terrain panel. 
 ![placeholder_for_img](placeholder_for_img)
 
-To add a new existing materail, in `Resource Manager`, filter by `Terrain Brush` (a brush with a mountain icon), then select it, and press the sphere with a plus button in the panel, then select it, and start painting.
-![placeholder_for_img](placeholder_for_img)
-
-If you want to delete a certain material on the whole terrain, you can click on the X.
-![placeholder_for_img](placeholder_for_img)
-
-Each material has some paramters. These parameters controls different paramaeters. Just try them yourself, lul.
-![placeholder_for_img](placeholder_for_img)
-
-You can layer, mix different materials while painting.
-![placeholder_for_img](placeholder_for_img)
-
-Unfortunately, there's no convenient way to preview the materials faster. But you can filter by `Textures` and `Terrain brush` and search with the `TT_` keyword.
-![placeholder_for_img](placeholder_for_img)
-
-Don't forget, that each tool has additional settings. By right clicking on the brush tool, you can open the additional parameters.
-![placeholder_for_img](placeholder_for_img)
+### Terrain Painting Tips
+- You can (and should) layer different materials while painting.
+- Removing a material from the terrain panel will remove all instances of that painted material from the terrain.
+- Unfortunately, there's no convenient way to preview terrain brushes from the resource manager. But you can search for TT_ and filter textures and terrain brushes.
 
 ### Add new terrains
 
