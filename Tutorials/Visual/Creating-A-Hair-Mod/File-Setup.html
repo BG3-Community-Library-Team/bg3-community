@@ -2,7 +2,7 @@
 title: File Setup
 description: 
 published: true
-date: 2025-02-19T15:08:33.797Z
+date: 2026-01-24T14:59:15.629Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-02-19T14:53:49.963Z
@@ -14,18 +14,21 @@ dateCreated: 2025-02-19T14:53:49.963Z
 <ul>
   <li><a href="https://github.com/ShinyHobo/BG3-Modders-Multitool">BG3 Modders Multitool</a> (required)</li>
   <li><a href="https://bg3.wiki/wiki/Modding:BG3_Mini_Tool">BG3 Mini Tool</a> (optional but helpful)</li>
-  <li><a href="https://www.nexusmods.com/baldursgate3/mods/437">Padme's Hair Template</a> (required unless you have a template from somewhere else)</li>
+  <li>A hair template (example: <a href="https://www.nexusmods.com/baldursgate3/mods/4413">Bububull's</a> or <a href="https://www.nexusmods.com/baldursgate3/mods/5499?tab=files">Em's</a>)<ul>
+      <li>Note: This tutorial was originally written to follow along with Padme's template, which has since been taken down. Some of the instructions may not be as applicable to other templates, but the included files should be the same.</li>
+    </ul>
+  </li>
   <li><a href="https://code.visualstudio.com/">VSCode</a> or <a href="https://notepad-plus-plus.org/">Notepad++</a> (required)</li>
   <li>UUID Generator Extension in VSCode OR ToolBucket &amp; XML Tools in Notepad++ (found via Plugins &gt; Plugins Admin, then search for it and install.) (optional but helpful)</li>
 </ul>
-<p>To generate a UUID in VSCode, just highlight a section of code, right click, and select Generate UUID here. It will replace the selected code with a new UUID.</p>
+<p>To generate a UUID in VSCode, just highlight a section of code, right click, and select <strong>Generate UUID here</strong>. It will replace the selected code with a new UUID.</p>
 <p>For the UUID generation in Notepad++, once ToolBucket is installed, you want to press Alt + Shift + G. It will bring up a window as shown below. Keep Include hyphens ticked, and you can also click Don't ask again if you won't use any of the other options. Then click Generate.</p>
 <figure class="image"><img src="https://bg3.wiki/w/images/thumb/b/bc/Toolbucketuuid.webp/307px-Toolbucketuuid.webp.png" alt="Toolbucketuuid.webp"></figure>
 <p><br>If wanting to add more than one hair to your mod, you can use Padme's mini tool linked above for adding new slots to CharacterCreationAppearanceVisuals. You can also use it to edit your .loca file if you desire.</p>
 <p>You can choose for your hairs to be autosnapping or non autosnapping.</p>
 <h3>What are autosnapping and non autosnapping hairs?</h3>
 <h2>Following the Template</h2>
-<p>Following Padme's <a href="https://www.nexusmods.com/baldursgate3/mods/437">template</a> (or using it as a guide to copy parts from the game files), follow along with this tutorial.</p>
+<p>Following the template (or using it as a guide to copy parts from the game files), follow along with this tutorial.</p>
 <p>If you are only adding an existing hair from the game to CC without wanting to do any edits, you can remove the Generated folder from your copy of the template and instead just link to the game's existing hair in the _merged.</p>
 <p>You may have downloaded the template, and now feel overwhelmed by all the files and folders, but it's really not too complicated. There are only four* files that we need to edit: loca.xml, meta.lsx, _merged.lsf.lsx and CharacterCreationAppearanceVisuals.lsx. You'll also need to place your .GR2 in the Generated folder, but more on that later.</p>
 <ul>
