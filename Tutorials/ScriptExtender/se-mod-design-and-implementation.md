@@ -2,7 +2,7 @@
 title: Designing and writing Script Extender mods
 description: Guide covering the generation of ideas, design, and implementation of SE mods, providing practical tips throughout. Includes an example mod, 'Waypoint Inside Emerald Grove', to illustrate the process, offering insights into the tools and methods used.
 published: true
-date: 2026-01-25T23:04:20.524Z
+date: 2026-01-25T23:06:26.338Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-05T15:28:54.111Z
@@ -16,12 +16,12 @@ As an author that has created dozens of SE-only mods, I thought I'd share with t
 Now, just to make it clear:
 
 - This guide assumes little programming and SE knowledge, which could mostly be obtained by following the [basic tutorials present in this wiki](/Tutorials/ScriptExtender/). Even then, most of this applies to modding in general.
-- I mod the game because designing and problem solving are terribly addicting, and the game is great.
+- I got into modding because designing and problem solving are terribly addicting, and the game is great.
 - Modding is a creative process and should be fun, and there are many ways to go about it. This guide is just *my* way of doing things, and it's not to say other ways are wrong.
 
 ## 1. Idea
 
-To me, the most important part of creating a mod is having a good idea. Apart from ISF and MCM, I don't really have complex mods; I like to think I just have good ideas. I usually get my ideas from playing the game and thinking "I wish I could do *this*", "I wish *this* was different", "*This* could be automated". I know many modders don't even have reached Act 2, but I think it's important to play the game to get a feel for it and its game design. I also get ideas from other mods, or grievances within the modding community (sometimes, you'll notice these by just writing mods yourself). I usually write down my ideas somewhere and come back to them later.
+To me, the most important part of creating a mod is having a good idea. Apart from my frameworks such as ISF and MCM, I don't really have complex mods; I like to think I just have good ideas. I usually get my ideas from playing the game and thinking "I wish I could do *this*", "I wish *this* was different", "*This* could be automated". I know many modders don't even have reached Act 2, but I think it's important to play the game to get a feel for it and its game design. I also get ideas from other mods, or grievances within the modding community (sometimes, you'll notice these by just writing mods yourself). I usually write down my ideas somewhere and come back to them later.
 
 Therefore, my first tip is to play the game and think about what you'd like to change. If you're a new modder, I'd recommend starting with something simple, like a small tweak or a quality of life mod. You can always expand on your ideas later.
 
@@ -73,7 +73,7 @@ You should be able to start iterating on your mod. Sometimes, things just can't 
 
 If you don't know how to do something:
 
-- Think if this is something more related to SE or to the game itself (Osiris). As you get more experienced, you'll be able to tell the difference.
+- Think if this is something that can be tackled with SE or Osiris. As you get more experienced, you'll be able to tell the difference and the trade-offs
   - For SE, you can check the documentation, the [source code](https://i.imgur.com/bvm3Iww.png), or search & ask the Discord servers.
   - For Osiris, check if there are relevant functions or events.
 - If you need to check for some state/progression, you can check the existing Flags dump, or dump entities and see what's there, doing a diff between two dumps (before and after) with VSCode. There are ways to do this with frame components too; again, check Scribe.
