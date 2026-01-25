@@ -2,15 +2,16 @@
 title: Designing and writing Script Extender mods
 description: Guide covering the generation of ideas, design, and implementation of SE mods, providing practical tips throughout. Includes an example mod, 'Waypoint Inside Emerald Grove', to illustrate the process, offering insights into the tools and methods used.
 published: true
-date: 2025-04-13T20:53:06.817Z
+date: 2026-01-25T22:53:48.307Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-05T15:28:54.111Z
 ---
 
 # Designing and writing Script Extender mods for Baldur's Gate III
+written by [Volitio](https://www.nexusmods.com/profile/Volitio)
 
-As an author that has created dozens of SE-only mods, I thought I'd share with the community some of my experiences. I have virtually written all the mods I could've possibly wanted and more, and I don't really have any ideas left. In this guide, I will outline my process for creating mods, while providing some tips for aspiring modders.
+As an author that has created dozens of SE-only mods, I thought I'd share with the community some of my experiences. In this guide, I will outline my process for creating mods, while providing some tips for aspiring modders.
 
 Now, just to make it clear:
 
