@@ -2,7 +2,7 @@
 title: SE API
 description: 
 published: true
-date: 2026-01-25T20:08:51.971Z
+date: 2026-01-25T22:51:25.214Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-25T19:49:02.547Z
@@ -90,6 +90,8 @@ The following features are accepted in `FeatureFlags`:
 | Value| Meaning |
 |--|--|
 | `Lua` | Enables Lua scripting |
+
+
 <!-- | `Osiris` | Enables Osiris scripting? | -->
 
 <a id="bootstrap-scripts"></a>
