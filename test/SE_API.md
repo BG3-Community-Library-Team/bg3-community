@@ -2,7 +2,7 @@
 title: SE API
 description: 
 published: true
-date: 2026-01-25T19:49:19.647Z
+date: 2026-01-25T20:08:51.971Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-25T19:49:02.547Z
@@ -53,6 +53,13 @@ dateCreated: 2026-01-25T19:49:02.547Z
 - [Timers](#timers)
 - [JSON Support](#json-support)
 - [Mod Info](#mod-info)
+- [Utils](#utils)
+- [Audio](#audio)
+- [Localization](#loca)
+- [Templates](#templates)
+- [Static Data](#static-data)
+- [Resources](#resources)
+- [Level](#level)
 - [Math Library](#math)
 - [Engine Events](#engine-events)
 
@@ -773,6 +780,14 @@ Ext.Events.SessionLoaded:Subscribe(OnSessionLoaded)
 <a id="persistent-vars"></a>
 </details>
 
+---
+
+<!-- https://github.com/orgs/community/discussions/16925 -->
+> [!IMPORTANT]
+> The following sections will go over the different modules provided by the Script Extender. Note that this documentation is not exhaustive and may not cover all features.
+>
+> Please refer to the [ExtIdeHelpers](https://github.com/Norbyte/bg3se/blob/main/BG3Extender/IdeHelpers/ExtIdeHelpers.lua) for a more comprehensive and systematic definition/reference of the API.
+
 ## ECS
 ### TODO - WIP
 
@@ -864,6 +879,13 @@ Attaches a new empty copy of the specified component type to the entity, if one 
 ### Entity:Replicate(component)
 ### Entity:SetReplicationFlags(component, flags, word)
 ### Entity:GetReplicationFlags(component, word) : flags
+The following methods allow subscribing to component lifecycle events (creation, destruction, or modification):
+### Ext.Entity.Subscribe(componentName, callback, [entity], [order])
+### Ext.Entity.Unsubscribe(subscriptionId)
+### Ext.Entity.OnChange(...)
+### Ext.Entity.OnCreate(...) / OnCreateDeferred(...) / OnCreateOnce(...)
+### Ext.Entity.OnDestroy(...) / OnDestroyDeferred(...) / OnDestroyOnce(...)
+### Ext.Entity.OnSystemUpdate(...) / OnSystemPostUpdate(...)
 
 TODO - DOCUMENT
 
@@ -1222,6 +1244,13 @@ end)
 mainMenu.DataContext = ctx
 ```
 
+### Input & world interaction
+TODO:
+```lua
+    Ext.UI.GetPickingHelper(playerId): Returns data about what is under the cursor (world pos, entities).
+    Ext.UI.GetCursorControl(): Access cursor state.
+    Ext.UI.GetDragDrop(): Access drag-and-drop state.
+```
 
 <a id="stats"></a>
 ## Stats - `Ext.Stats`
@@ -1388,9 +1417,13 @@ Ext.Utils.Print(Ext.Stats.ExtraData.WisdomTierHigh)
 ```
 
 <a id="io"></a>
-## Ext.IO
+## I/O - `Ext.IO`
 
 TODO.
+
+`Ext.IO.LoadFile(path, [context])`: Read file contents.
+
+`Ext.IO.SaveFile(path, content)`: Write data to a file.
 
 `Ext.IO.AddPathOverride(originalPath, newPath)`
 
@@ -1406,15 +1439,26 @@ Ext.IO.AddPathOverride("Public/Game/GUI/enemyHealthBar.swf", "Public/YourMod/GUI
 ## Timers - `Ext.Timer`
 
 TODO:
+Delayed Execution
 
+`Ext.Timer.WaitFor(ms, callback)`: Uses game clock (pauses when game pauses).
+
+`Ext.Timer.WaitForRealtime(ms, callback)`: Uses OS clock.
+
+Most of the time they are the same, but there are cases when the game timer is paused and time doesn't "progress".
+Game timer can also be affected by the tick throttling logic if the framerate drops too low.
+
+`Ext.Timer.WaitForPersistent(ms, name, callback)`: Creates a persistent handle that is written to the savegame so your timer survives a save/reload.
+
+`Ext.Timer.MonotonicTime()`:
 Returns a monotonic value representing the current system time in milliseconds. Useful for performance measurements / measuring real world time.
 (Note: This value is not synchronized between peers and different clients may report different time values!)
 
 Example:
 ```lua
-local startTime = Ext.Utils.MonotonicTime()
+local startTime = Ext.Timer.MonotonicTime()
 DoLongTask()
-local endTime = Ext.Utils.MonotonicTime()
+local endTime = Ext.Timer.MonotonicTime()
 _P("Took: " .. tostring(endTime - startTime) .. " ms")
 ```
 
@@ -1516,7 +1560,51 @@ end
 ```
 
 ### GetModManager(): ModManager
-TODO
+TODO:
+Provides access to the engine's internal ModManager.
+
+<a id="utils"></a>
+## Utils - `Ext.Utils`
+TODO:
+
+`Ext.Utils.GetGlobalSwitches() : GlobalSwitches`
+Allows access to engine toggles (e.g., AiEnableSwarm, NrOfAutoSaves).
+
+<a id="audio"></a>
+## Audio - `Ext.Audio`
+TODO: Document `Ext.Audio` module
+
+Functionality for audio manipulation including Sound Banks, Events, and RTPC (Real-Time Parameter Controls).
+
+<a id="loca"></a>
+## Localization - `Ext.Loca`
+TODO: Document `Ext.Loca` module
+
+Methods for reading and writing localization entries (loca) at runtime.
+
+<a id="templates"></a>
+## Templates - `Ext.Template`
+TODO: Document `Ext.Template` module
+
+API for accessing and modifying Character and Item templates.
+
+<a id="static-data"></a>
+## Static Data - `Ext.StaticData`
+TODO: Document `Ext.StaticData` module
+
+Access to static game resources such as Races, Classes, and other UUID-based engine definitions.
+
+<a id="resources"></a>
+## Resources - `Ext.Resource`
+TODO: Document `Ext.Resource` module
+
+Access to visual resources including Meshes, Materials, and Textures.
+
+<a id="level"></a>
+## Levels, Pathfinding & Physics - `Ext.Level`
+TODO: Document `Ext.Level` module
+
+Contains logic for Raycasting, Pathfinding, and checking entity/tile physics data.
 
 <a id="math"></a>
 ## Math library - `Ext.Math`
