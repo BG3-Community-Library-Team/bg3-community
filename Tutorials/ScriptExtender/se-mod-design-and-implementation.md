@@ -2,7 +2,7 @@
 title: Designing and writing Script Extender mods
 description: Guide covering the generation of ideas, design, and implementation of SE mods, providing practical tips throughout. Includes an example mod, 'Waypoint Inside Emerald Grove', to illustrate the process, offering insights into the tools and methods used.
 published: true
-date: 2026-01-25T22:53:48.307Z
+date: 2026-01-25T23:04:20.524Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-05T15:28:54.111Z
@@ -60,7 +60,8 @@ In this section, I'll cover some tips for learning to learn SE.
 1. **Start small**: If you're new to modding, it's a good idea to start with a small project. This will help you get familiar with the tools and techniques involved in modding and the general workflow cycle, without getting overwhelmed.
 2. **Read the documentation**: The SE documentation is a great resource; take the time to read through it and familiarize yourself with the different functions and features available. The documentation may be lacking in some areas, but it's a good starting point.
 3. **Symlink, symlink, symlink**: Symlinks are your best friend when modding with SE! This allows you to test your mods without having to repak your mod and restart the game for every mundane change. This can save you a lot of time and frustration, especially when you're just starting out, and will accelerate your learning process a million times. ***==If there's one thing you should take away from this guide, it's to use symlinks!==***
-4. **Experiment**: The best way to learn is by doing. Having symlinked your mod, experiment with different functions and entities. One great thing you can do is dumping entities during runtime at two different points in time, and comparing them. Sometimes you want to know if something changed after a certain action, and this is a great way to do it (apart from checking flags and such). *UPDATE: You can use Scribe to speed up this process even further.*
+4. **Experiment**: The best way to learn is by doing. Having symlinked your mod, experiment with different functions and entities. One great thing you can do is dumping entities during runtime at two different points in time, and comparing them. Sometimes you want to know if something changed after a certain action, and this is a great way to do it (apart from checking flags and such). 
+You can use [Scribe](https://www.nexusmods.com/baldursgate3/mods/9200?tab=description) to speed up this process even further.
 
 If you have:
 
@@ -75,7 +76,7 @@ If you don't know how to do something:
 - Think if this is something more related to SE or to the game itself (Osiris). As you get more experienced, you'll be able to tell the difference.
   - For SE, you can check the documentation, the [source code](https://i.imgur.com/bvm3Iww.png), or search & ask the Discord servers.
   - For Osiris, check if there are relevant functions or events.
-- If you need to check for some state/progression, you can check the existing Flags dump, or dump entities and see what's there, doing a diff between two dumps (before and after) with VSCode. There are novel ways to do this with frame components (again, check Scribe), but this is what most modders have been doing.
+- If you need to check for some state/progression, you can check the existing Flags dump, or dump entities and see what's there, doing a diff between two dumps (before and after) with VSCode. There are ways to do this with frame components too; again, check Scribe.
 
 Modding is like a puzzle, and you'll have to find the right pieces to make it work. Sometimes, you'll have to make your own pieces, and to me that is the beauty and art of modding.
 
