@@ -2,7 +2,7 @@
 title: Hotloading - How to quickly test mods in game
 description: Hotloading is a way to greatly speed up your modding workflow by reducing the number of times you have to open and close the game.
 published: true
-date: 2026-01-26T18:40:26.266Z
+date: 2026-01-26T18:40:54.492Z
 tags: guide, guides, hotloading, mod testing, mod workflow
 editor: markdown
 dateCreated: 2024-07-24T17:47:11.642Z
@@ -13,10 +13,12 @@ dateCreated: 2024-07-24T17:47:11.642Z
 Hotloading is a way to greatly speed up your modding workflow by reducing the number of times you have to open and close the game. It can be very tedious to restart the entire game to test every time you make a change to your mod. With hotloading, you can leave the game open and still see your changes reflected live in game.
 
 ## What can I use it for?
-You can use hotloading for meshes/animations/skeletons (so basically any .GR2 files), textures, lsf files*. For example, if you are creating a custom head by editing one of the vanilla ones, you can hotload your custom head .GR2 into the game, open Character Creator, and then swap to your custom head each time you export a new version from Blender to see what your changes look like in game. Very handy! All you have to do is make sure you swap away from your hotloaded asset and back to load any new changes. For armor, you may have to un-equip and re-equip it to see the changes. 
+You can use hotloading for meshes/animations/skeletons (so basically any .GR2 files), textures, lsf files*. 
 
 > *For lsf files, you **do** need to restart the game for changes to take effect, so it's not exactly hotloading - it's overriding, but still, it's a good thing to know.
 {.is-info}
+
+For example, if you are creating a custom head by editing one of the vanilla ones, you can hotload your custom head .GR2 into the game, open Character Creator, and then swap to your custom head each time you export a new version from Blender to see what your changes look like in game. Very handy! All you have to do is make sure you swap away from your hotloaded asset and back to load any new changes. For armor, you may have to un-equip and re-equip it to see the changes. 
 
 In addition you can also hotload scripts created with Script Extender and load stats like Spells or Boosts by using a simple Script Extender script.
 
