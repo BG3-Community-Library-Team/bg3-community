@@ -2,7 +2,7 @@
 title: Animations Import-Export
 description: Rundown of importing and exporting different kinds of GR2 animations into/out of Blender
 published: true
-date: 2026-01-29T05:49:40.545Z
+date: 2026-01-29T06:02:51.353Z
 tags: tutorial, animation
 editor: ckeditor
 dateCreated: 2026-01-29T05:49:40.545Z
@@ -32,3 +32,8 @@ dateCreated: 2026-01-29T05:49:40.545Z
 <figure class="image image_resized" style="width:30.93%;"><img src="/animation_tutorial/freefall_animation.png">
   <figcaption>Our character is falling, yippee!</figcaption>
 </figure>
+<p>As of writing this tutorial, upon import into Blender the armatures face in the positive Y direction, and are mirrored, so the limbs you perceive to be on the left are named right, and so on. <u>This is expected</u> (and is due to Blender’s axis mismatch with the game’s engine), and any animation you export will be mirrored back correctly in-game, so keep that in mind.</p>
+<h2>3. Animations Export</h2>
+<p>So, you have created your own animations/made the changes you wanted to an existing one. All you have to do now is to select your armature and (in Object Mode or Pose Mode) and <u>export as .GR2 (File &gt; Export &gt; DOS2/BG3 via GLTF)</u>. (Set the output file extension to .GR2 in the export window along with the file name.)</p>
+<figure class="image image_resized" style="width:23.98%;"><img src="/animation_tutorial/gr2_export_viagltf.png"></figure>
+<p>Keep in mind as as of writing this article, Norbyte's Blender addon exports GR2 animations poses <u>without skeleton data</u> (like the vanilla animations), so to re-import your exported GR2 back into Blender (should the need arise), you will need to copy a skeleton with LSLIB as outlined in the import section.</p>
