@@ -1,0 +1,49 @@
+<!--
+title: Working with the Rigs Resource from Nexus
+description: Rundown of working with the IK rigs template from Nexus
+published: true
+date: 2026-02-01T20:55:23.027Z
+tags: tutorial, animation
+editor: ckeditor
+dateCreated: 2026-02-01T20:55:23.027Z
+-->
+
+<h1>Working with the IK Rigs</h1>
+<h6>written by <a href="https://next.nexusmods.com/profile/Kit">kit</a></h6>
+<p>In this section of the animation tutorials we will go over using <a href="https://www.nexusmods.com/baldursgate3/mods/14077">these</a> body rigs in Blender for the purpose of making poses/animations.</p>
+<h2>1. Setup</h2>
+<p>Please take the time to refer to the <a href="https://wiki.bg3.community/en/Tutorials/Animations/animations-import-export">setup section of the import-export article.</a></p>
+<h2>2. About the rigs</h2>
+<p>These rigs were set up using <a href="https://superhivemarket.com/products/auto-rig-pro">Auto-Rig Pro,</a> a paid Blender addon. It is however <u>not necessary</u> to have it to use the rigs at a base level. While having it provides some useful additional functionality for making animations and retargeting animations, it is not at all required for making static poses.</p>
+<p>Within the master .blend file, the rigs are organised into collections for all the playable body types/races. Each body type has a control rig (CR) and a skeleton rig (SK). The control rig is meant for animating on, and serves a puppeteering function for the skeleton rig. The skeleton is where you would bake the animation in the end and what you export out of Blender back into the game.</p>
+<p>As of writing this tutorial, all of the rigs are facing in the positive Y direction, and are mirrored, so the limbs you perceive to be on the left are named right, and so on. <u>This is intentional</u> (and is due to Blender’s axis mismatch with the game’s engine), and any animation you make on them will be mirrored in-game, so keep that in mind.</p>
+<h3>Why the bones on the skeletons are oriented like That™</h3>
+<p>Bones in Granny/GR2 files used in BG3 actually function more like joints, akin to Maya etc., not Blender, where a bone has a head and a tail. A joint only occupies one point in space compared to two by a bone head and tail. Joints are interpreted as bone heads by Blender.</p>
+<p>Another difference is that the primary local axis (the axis that goes through/along the length of the joint/bone) of a bone in Maya/GR2 is X, whereas in Blender it is Y. When importing a joint-based GR2 file with the addon, Blender essentially guesses the position of the bone tail based <u>on its own standard for a primary axis</u>. Because it is different in Blender, visually the bones appear to be "sideways". This is meant to be this way and will be correctly exported back into the game by the addon, since the position of the tails does not technically matter (but the position/orientation of the heads does matter).</p>
+<p><strong>TL;DR: Do not worry, they are meant to look exactly like that and will be exported back correctly into the game.</strong></p>
+<h3>IK-FK limb functions</h3>
+<p>For this explanation, you can think of a character’s limb, e.g. arm, as a chain of bones: <strong>shoulder → elbow → wrist</strong>.</p>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>FK (Forward Kinematics)</strong></td>
+        <td><strong>IK (Inverse Kinematics)</strong></td>
+      </tr>
+      <tr>
+        <td>
+          <p>You <u>rotate</u> bones one by one, starting from the top:</p>
+          <p>First the shoulder, then the elbow, then the wrist.</p>
+          <p>Each bone affects the ones after it.</p>
+        </td>
+        <td>
+          <p>You <u>move</u> the end of the chain, and Blender computes the rest.</p>
+          <p>You grab the hand and move it somewhere, and</p>
+          <p>Blender automatically bends the elbow and shoulder to reach that spot.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<h3>&nbsp;</h3>
+<p>For ease of posing/animating, the limbs on all the rigs in the .blend file are set to IK by default. Switching between IK and FK (and vice-versa) on the go is known as IK-FK snapping. Unless you are doing some in-depth animating, or are retargeting an animation to the control rigs (more on that <u>here)</u>, you would not need to switch between them; however, here is how to do it with these rigs for posterity:</p>
