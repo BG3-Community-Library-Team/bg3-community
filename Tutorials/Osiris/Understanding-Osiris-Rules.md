@@ -2,7 +2,7 @@
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
 published: false
-date: 2026-02-02T04:37:29.107Z
+date: 2026-02-02T05:11:04.076Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
@@ -68,7 +68,8 @@ There are two categories of conditions in Osiris:
 
 2. An **extra condition** will never trigger an evaluation.
 
-No matter what triggers the rule, every single condition (triggers _and_ extras) must all be true when a rule is evaluated for it to execute its actions.
+> No matter what triggers the rule, every single condition (triggers _and_ extras) must all be true when a rule is evaluated for it to execute its actions.
+{.is-info}
 
 ### Databases
 
@@ -148,7 +149,8 @@ TO-DO: Image #2
 
 Once `_Letter` has been assigned a value, we can reuse the variable in the rest of the rule to keep accessing the value assigned to it. However, variables are not shared in between rules. Even if you already assigned a value to `_Letter` in one rule, it will not carry over into any other rule.
 
-Also, note that the naming convention for variables in Osiris is to start with an underscore (`_`).
+> The naming convention for variables in Osiris is to start with an underscore: `_`
+{.is-warning}
 
 To summarize, using an undeclared variable in a database condition means that the rule will be triggered by _every_ fact added to the database, because the rule must be evaluated separately for every possible value that can be assigned to the variable.
 
@@ -228,11 +230,13 @@ Action1;
 
 Keep in mind that unbound variables do not change how many times the rule is evaluated. It's tempting to think that the previous rule will only trigger the first time a sixteenth letter in _any_ alphabet is added because it's only 'listening' to that one value, but database conditions are triggered by entire facts and not individual values, and so a new value in an unbound variable will still cause the rule to be evaluated even if the bound variables have already been evaluated.
 
-Also be aware that using the same database name with a different number of columns will behave like they're two completely separate databases. Even if you only want the first column in a database, defining a fact with `DB_Letters("A", 1);` will not trigger the condition `DB_Letters(_Letter)` because they store different kinds of facts and are therefore treated like separate databases.
+> Be aware that using the same database name with a different number of columns will behave like they're two completely separate databases. Even if you only want the first column in a database, defining a fact with `DB_Letters("A", 1);` will not trigger the condition `DB_Letters(_Letter)` because they store different kinds of facts and are therefore treated like separate databases.
+{.is-warning}
 
-However, it will not work to reuse a database name for one that has the same number of parameters but with different types or in a different order.
+> It will not work to reuse a database name for one that has the same number of parameters but with different types or in a different order.
+{.is-danger}
 
-Finally, we can have more than two values / columns in facts stored by a database, and it will continue to scale as has been described in this section.
+We can have more than two values / columns in facts stored by a database, and it will continue to scale as has been described in this section.
 
 #### Two Variables from Different Databases (Intermediate)
 
@@ -331,11 +335,17 @@ The second combination `("B", "B")` does not satisfy all three conditions becaus
 
 The third combination `("A", "B")` is no longer valid because we've removed `"A"` from the database, so the rule does not execute.
 
-The end result of this rule is that, every time a fact is added to `DB_Letters`, it removes every other fact from the database. Basically, it limits a database to contain only the most recently added fact. We can use the database like normal in every other rule, but this rule will always be running in the background to give the database a unique behavior. It's pretty neat! This might seem like a pointless rule to have, but actually it's almost identical to one that's in the game and keeps track of whether the best boy Scratch is currently a camp follower or a summoned familiar.
+The end result of this rule is that, every time a fact is added to `DB_Letters`, it removes every other fact from the database. Basically, it limits a database to contain only the most recently added fact. We can use the database like normal in every other rule, but this rule will always be running in the background to give the database a unique behavior. It's pretty neat!
+
+> This might seem like a pointless rule to have, but actually it's almost identical to one that's in the game and keeps track of whether the best boy Scratch is currently a camp follower or a summoned familiar.
+{.is-info}
 
 ### Events
 
-**Events** are another kind of trigger condition. They have to be the first condition of a rule, which also means you can only use at most one event per rule. Whenever something happens in the game that corresponds to this event, it will trigger all of the rules that use it. There are events for when dialogue starts and ends, a change in approval rating, quest progress, being caught committing a crime, casting a spell, and so much more.
+**Events** are another kind of trigger condition. They have to be the first condition of a rule, which also means you can only use at most one event per rule. Whenever something happens in the game that corresponds to this event, it will trigger all of the rules that use it.
+
+> There are events for when dialogue starts and ends, a change in approval rating, quest progress, being caught committing a crime, casting a spell, and so much more.
+{.is-info}
 
 Most events have one or more **parameters** that give us information about the event. As an example, there is an event named `AddedTo` for when an item is added to a character's inventory. All that the event being triggered tells us is that _some_ item has been added to _someone's_ inventory, and so we need the event's parameters to tell us _which_ item has been added to _whose_ inventory.
 
@@ -360,7 +370,8 @@ Action1;
 
 In this case, the undeclared variable `_Object` receives the `_Object` parameter, the undeclared variable `_Character` receives the `_InventoryHolder` parameter, and the unbound variable `_` indicates that this rule doesn't want the `_AddType` parameter to be assigned to anything.
 
-Even when we don't want to use a parameter, we have to at least put an unbound variable in its spot - Osiris won't compile if the event in the rule has a different number of parameters than in its definition.
+> Even when we don't want to use a parameter, we have to at least put an unbound variable in its spot - Osiris won't compile if the event in the rule has a different number of parameters than in its definition.
+{.is-warning}
 
 Event parameters can be used in many different ways. For example, we might only want to do something when this event is triggered by an item added to a _player's_ inventory, and not for NPCs. Because the event assigned the GUID of the character who received the item to `_Character`, we can now also require this GUID to exist in the game's database of player characters to limit for whom the rule will execute:
 
@@ -375,13 +386,18 @@ Action1;
 
 Notice that `_Character` is an undeclared variable when it is used with `AddedTo`, but after it is assigned a value it behaves like a literal when the condition `DB_Players((CHARACTER)_Character)` is evaluated. If the character who received an item is Lae'zel, her GUID `S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12` will be assigned to `_Character`, and so `DB_Players((CHARACTER)_Character)` will be evaluated the same as `DB_Players((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12)`.
 
-IMPORTANT NOTE: If you were to actually hard-code Lae'zel's GUID into the database condition, the rule will behave very differently. Why? Because we're no longer requiring the character involved in the `AddedTo` event to be in `DB_Players`, we're _only_ requiring that Lae'zel is in `DB_Players`. This means the rule will execute for an NPC receiving an item if Lae'zel is in the party at the time, while also _not_ executing for a player receiving an item if Lae'zel is _not_ in the party at the time. Even though assigned variables are evaluated like constant values within the scope of _one_ condition or action, it is very important to remember that swapping variables and literals can cause significant changes to the behavior of a rule _as a whole._
+> IMPORTANT NOTE:
+>
+> If you were to actually hard-code Lae'zel's GUID into the database condition, the rule will behave very differently. Why? Because we're no longer requiring the character involved in the `AddedTo` event to be in `DB_Players`, we're _only_ requiring that Lae'zel is in `DB_Players`. This means the rule will execute for an NPC receiving an item if Lae'zel is in the party at the time, while also _not_ executing for a player receiving an item if Lae'zel is _not_ in the party at the time.
+>
+> Even though assigned variables are evaluated like constant values within the scope of _one_ condition or action, it is very important to remember that swapping variables and literals can cause significant changes to the behavior of a rule _as a whole._
+{.is-danger}
 
 Another quirk of using an assigned variable is that we might need to **typecast** it. Every parameter and value in a fact has a type assigned to it (like an integer, GUID, or string), and we might need to convert the type of variable it is to use it with something else. The `_Object` parameter in the `AddedTo` event has the type `GUIDSTRING`, but facts in `DB_Players` have the type `CHARACTER`, so we have to typecast our `_Object` variable to `CHARACTER` in order to use it with `DB_Players`.
 
 Every event can be used in any number of rules, and it will trigger every rule that uses it when the event occurs in the game. If we wanted to execute a different action depending on what kind of object was added to the player's inventory, we could have two different rules like this:
 
-```bash
+```
 IF
 AddedTo(_Object, _Character, _)
 AND
@@ -410,11 +426,17 @@ Action1;
 
 This means we don't have the variable `_Character` anymore, but we don't need it because we know the rule will only trigger when `_Character` would have been assigned Lae'zel's GUID, so we can just continue hard-coding this value throughout the entire rule when we need it.
 
-Finally, keep in mind that rules with an event won't execute after being triggered by something other than the event, like a database condition. They will only ever be able to execute from being triggered by the event. Even though database conditions should trigger the rule for evaluation like normal, _every_ condition must be true for a rule to execute, and event conditions _only ever_ seem to be true when they are the trigger.
+> Keep in mind that rules with an event won't execute after being triggered by something other than the event, like a database condition. They will only ever be able to execute from being triggered by the event. Even though database conditions should trigger the rule for evaluation like normal, _every_ condition must be true for a rule to execute, and event conditions _only ever_ seem to be true when they are the trigger.
+{.is-warning}
 
 ### Queries
 
-**Queries** are a type of extra condition that are used to get more information about the game's current state. There are queries to get a game object's location, one character's approval rating of another character, the template a game object was created from, whether an item can be sat on, and much more. There are also queries that perform certain actions like combining strings, doing basic arithmetic, generating a random number, and even more!
+**Queries** are a type of extra condition that are used to get more information about the game's current state.
+
+> There are queries to get a game object's location, one character's approval rating of another character, the template a game object was created from, whether an item can be sat on, and much more.
+>
+> There are also queries that perform certain actions like combining strings, doing basic arithmetic, generating a random number, and even more!
+{.is-info}
 
 Every query has one or more **in-parameters** that specify how you want the query to be executed (you put information _in_ to it). Every in-parameter must be provided an assigned variable or a constant value. For example, to query a character's current hitpoints with `GetHitpoints`, you have to tell it which character you want to get the hitpoints of.
 
@@ -434,7 +456,8 @@ There are only two ways that the actual query condition will evaluate to false:
 
 2. One or more of the query's out-parameters are filled in with a constant value or an assigned variable that the query results do not match.
 
-It's technically possible for a query to be the first condition in a rule, but it's probably not advisable to do this because it is an extra condition. This means that queries will never trigger the rule, which means they can't be the rule's only condition because a rule must be able to be triggered, and it usually just makes more sense for trigger conditions to come first.
+> It's technically possible for a query to be the first condition in a rule, but it's probably not advisable to do this because it is an extra condition. This means that queries will never trigger the rule, which means they can't be the rule's only condition because a rule must be able to be triggered, and it usually just makes more sense for trigger conditions to come first.
+{.is-info}
 
 Let's look at an example for all this. To start, we need to find the full details for the query `GetHitpoints` in the list of Osiris queries (TO-DO: link): `GetHitpoints([in](GUIDSTRING)_Entity, [out](INTEGER)_HP)`
 
@@ -550,7 +573,8 @@ If all of the rule's conditions are true, then the query evaluates to true. If i
 
 Notice that custom queries have an action section where we can execute all of the same actions that a normal rule can. However, I think it's usually better design to not execute actions directly inside of a custom query because it can easily lead to unpredictable behavior unless you're very comfortable with declarative logic. With one very useful exception that will be discussed at the end of this section, I recommend only using the database action `DB_NOOP(1);` in the action section for custom queries. "NOOP" is short for "NO OPeration" because the fact `1` is already defined in this database, and so re-defining it won't do anything at all - it's just a placeholder we can put in the action section to make the rule syntactically complete.
 
-Also note that custom queries are shared across the entire Osiris story. This means you can use custom queries defined in other scripts/goals, but also that you will need to choose unique names for any that you write so they don't get unintentionally combined with one another.
+> Custom queries are shared across the entire Osiris story. This means you can use custom queries defined in other scripts/goals, but also that you will need to choose unique names for any that you write so they don't get unintentionally combined with one another.
+{.is-info}
 
 Let's look at a quick example of when a custom query is useful and how to write it. If we want a rule that will execute when no one in the party has any gold after a Long Rest, it might be tempting at first to write a normal rule like this:
 
@@ -644,9 +668,11 @@ The custom query might not seem worth it in this simple example, but if you have
 
 Finally, let's look at the one exception where I do recommend executing actual actions in a custom query: implementing our own query return values. Even though custom queries do not have any out-parameters that return a result, we can mimic this behavior by defining a fact in a **query-return database** that we check immediately after calling the query.
 
-When creating custom queries that return a result in a database, it's important to _always_ make the first rule for the query do nothing but empty the query-return database of any fact(s) left over from the last time the query was used.
+> A good naming convention for query-return databases is: `DB_QRYRTN_QueryName`
+{.is-info}
 
-Also, a good naming convention for query-return databases is `DB_QRYRTN_QueryName`.
+> When creating custom queries that return a result in a database, it's important to _always_ make the first rule for the query do nothing but empty the query-return database of any fact(s) left over from the last time the query was used.
+{.is-warning}
 
 For a very simple example, let's recreate the `GetHitpoints` query as a custom query that returns a numerical value (the character's hitpoints) instead of just true or false:
 
@@ -792,7 +818,8 @@ NOT DB_Letters("H");
 
 If this rule is triggered before `"H"` is defined, it won't do anything. If it is triggered after `"H"` is defined, then it will remove that fact from `DB_Letters` and trigger inverted database conditions. This will also allow `"H"` to be re-defined and trigger database conditions again.
 
-We can also use database actions with variables that have already been assigned a value.
+> We can also use database actions with variables that have already been assigned a value.
+{.is-info}
 
 Let's look at a more complicated example that creates a database named `DB_TagTracker`. This database should contain a fact for every player character who has been tagged with something we care about. For simplicity, we'll just call it `EXAMPLE_TAG`. We can maintain this database with these two rules:
 
@@ -903,7 +930,8 @@ Action2;
 
 Procedures can have any number of in-parameters. If you don't want any, leave the parentheses after the procedure name empty.
 
-Procedures are shared across the entire Osiris story, so you can use procedures defined in other scripts / goals, but you also need to choose a unique name for your own procedures.
+> Procedures are shared across the entire Osiris story, so you can use procedures defined in other scripts / goals, but you also need to choose a unique name for your own procedures.
+{.is-info}
 
 One powerful feature of procedures is that we can have multiple versions of them just like we can have multiple rules triggered by an event. For example, we can define two different versions of `PROC_MyProc` here:
 
