@@ -2,7 +2,7 @@
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
 published: false
-date: 2026-02-02T17:12:10.347Z
+date: 2026-02-02T17:50:05.960Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
@@ -26,7 +26,7 @@ The official introduction to fundamental Osiris terms are in [the guide "Introdu
 
 It might be helpful to think of a database like a table of rows and columns. Each fact is a row in the table, and each value in the fact is a column.
 
-TO-DO: IMAGE #1
+![osirisrules_databaseillustration.webp](/tutorials/osiris/understanding-osiris-rules/osirisrules_databaseillustration.webp)
 
 Defining a fact in a database just means adding a new row to the table, which you will be able to use again later. Removing a fact from a database also just means removing that row from the table.
 
@@ -147,7 +147,7 @@ When we use an undeclared variable in a database condition, Osiris will attempt 
 
 If there are multiple facts that the variable can be assigned a value from, Osiris will evaluate the rule separately for every option. This means that if `DB_Letters` contains the facts `"H"` and `"I"`, then the rule will be evaluated twice where `_Letter` equals `"H"` in one version and `"I"` in the other. If another fact is added to `DB_Letters` later on, the rule will be evaluated one more time where `_Letter` equals the new value.
 
-TO-DO: Image #2
+![osirisrules_variablesplit.webp](/tutorials/osiris/understanding-osiris-rules/osirisrules_variablesplit.webp)
 
 Once `_Letter` has been assigned a value, we can reuse the variable in the rest of the rule to keep accessing the value assigned to it. However, variables are not shared in between rules. Even if you already assigned a value to `_Letter` in one rule, it will not carry over into any other rule.
 
@@ -278,7 +278,7 @@ Finally, let's add the fact `"B"` to `DB_Letters`. This triggers the rule for ev
 
 We can also see this visually:
 
-TO-DO: Image #3
+![osirisrules_combinations.webp](/tutorials/osiris/understanding-osiris-rules/osirisrules_combinations.webp)
 
 Osiris wants to evaluate all of them. `("A",1)` and `("A",2)` have already been evaluated and executed, but `("B",1)` and `("B",2)` are new, and so adding the fact `"B"` causes `Action1` to execute where the variables equal the combinations `("B",1)` and `("B",2)`.
 
@@ -536,7 +536,7 @@ Action1;
 
 ### Other Types of Queries
 
-There are several more specific types of and uses for queries that are worth discussing in the following sub-sections. (TO-DO: Revise?)
+There are several more specific types of and uses for queries that are worth discussing in the following sub-sections.
 
 ### Queries Tab {.tabset}
 
@@ -1035,7 +1035,7 @@ Any time a new player character joins the party, the rule will be triggered for 
 
 We can clearly see the exponential growth in the number of times this rule is evaluated with a diagram, where both database conditions create a new version of the rule for every character in `DB_Players`. Assuming a full party of four characters, we end up with this:
 
-TO-DO: Add image
+![osirisrules_efficiency_worst.webp](/tutorials/osiris/understanding-osiris-rules/osirisrules_efficiency_worst.webp)
 
 However, we can easily improve this by changing the order of the conditions:
 
@@ -1054,7 +1054,7 @@ Action1;
 
 Again, the rule will be triggered for evaluation every time a new player joins the party. However, this time the rule only has to be evaluated once for each fact in `DB_Players` before it reaches a condition that requires Wyll's GUID to be assigned to `_First`. If it's not, then the rule stops evaluating. This means that at most only one version of the rule (where `_First` equals Wyll's GUID) will reach the second undeclared variable that creates multiple versions of the rule again for every fact in `DB_Players`. This still isn't ideal, but at least the number of evaluations no longer grows exponentially, as we can see in the following diagram:
 
-TO-DO: Add image
+![osirisrules_efficiency_better.webp](/tutorials/osiris/understanding-osiris-rules/osirisrules_efficiency_better.webp)
 
 We can do even better with this improvement:
 
@@ -1069,4 +1069,4 @@ Action1;
 
 Because we only care about Wyll and Karlach specifically, we can just hard-code their GUIDs. This means the database conditions will _only ever_ trigger the rule for evaluation if one of them joins the party, and the rule will immediately stop evaluating if the other one isn't also present. Plus, there is only one version of the rule to evaluate. This is incredibly efficient in both regards.
 
-TO-DO: Add image
+![osirisrules_efficiency_most.webp](/tutorials/osiris/understanding-osiris-rules/osirisrules_efficiency_most.webp)
