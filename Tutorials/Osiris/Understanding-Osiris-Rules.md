@@ -2,7 +2,7 @@
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
 published: false
-date: 2026-02-02T16:29:44.209Z
+date: 2026-02-02T17:09:07.216Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
@@ -382,7 +382,7 @@ Action1;
 
 In this case, the undeclared variable `_Object` receives the `_Object` parameter, the undeclared variable `_Character` receives the `_InventoryHolder` parameter, and the unbound variable `_` indicates that this rule doesn't want the `_AddType` parameter to be assigned to anything.
 
-> Even when we don't want to use a parameter, we have to at least put an unbound variable in its spot - Osiris won't compile if the event in the rule has a different number of parameters than in its definition.
+> Even when we don't want to use a parameter, we have to at least put an unbound variable in its spot - Osiris won't recognize the event if it has a different number of parameters than its definition.
 {.is-warning}
 
 Event parameters can be used in many different ways. For example, we might only want to do something when this event is triggered by an item added to a _player's_ inventory, and not for NPCs. Because the event assigned the GUID of the character who received the item to `_Character`, we can now also require this GUID to exist in the game's database of player characters to limit for whom the rule will execute:
@@ -443,12 +443,7 @@ This means we don't have the variable `_Character` anymore, but we don't need it
 
 ### Queries
 
-**Queries** are a type of extra condition that are used to get more information about the game's current state.
-
-> There are queries to get a game object's location, one character's approval rating of another character, the template a game object was created from, whether an item can be sat on, and much more.
->
-> There are also queries that perform certain actions like combining strings, doing basic arithmetic, generating a random number, and even more!
-{.is-info}
+**Queries** are a type of extra condition that are used to get more information about the game's current state. There are queries to get a game object's location, one character's approval rating of another character, the template a game object was created from, whether an item can be sat on, and much more. There are also queries that perform certain actions like combining strings, doing basic arithmetic, generating a random number, and so on!
 
 Every query has one or more **in-parameters** that specify how you want the query to be executed (you put information _in_ to it). Every in-parameter must be provided an assigned variable or a constant value. For example, to query a character's current hitpoints with `GetHitpoints`, you have to tell it which character you want to get the hitpoints of.
 
@@ -458,7 +453,7 @@ Every query also has one or more **out-parameters** that return the results of t
 
 2. Give it a constant value or an assigned variable that the result must match (more on this in a moment)
 
-3. Give it an unbound variable
+3. Leave it as an unbound variable
 
 It's important to distinguish between the query's **success** and its **results**. Remember that a query is a condition in a rule that must evaluate to true in order for the rule to execute, it just also returns information to answer some kind of question. So if we use a query that checks whether an object can be sat on, the query itself will evaluate to true if any answer is found, even if the answer is false (the object cannot be sat on).
 
@@ -471,9 +466,13 @@ There are only two ways that the actual query condition will evaluate to false:
 > It's technically possible for a query to be the first condition in a rule, but it's probably not advisable to do this because it is an extra condition. This means that queries will never trigger the rule, which means they can't be the rule's only condition because a rule must be able to be triggered, and it usually just makes more sense for trigger conditions to come first.
 {.is-info}
 
-Let's look at an example for all this. To start, we need to find the full details for the query `GetHitpoints` in the list of Osiris queries (TO-DO: link): `GetHitpoints([in](GUIDSTRING)_Entity, [out](INTEGER)_HP)`
+Let's look at an example for all this. To start, we need to find the full details for the query `GetHitpoints` in the [list of Osiris calls and queries](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) (reformatted here for clarity):
 
-Notice how both parameters start with `[in]` or `[out]` to specify whether it's an in-parameter or an out-parameter. The in-parameters will always come first, and the out-parameters (usually just one) are at the end. In this case, we have one of each. We have to provide the GUID of the game object we want to get the hitpoints of, and we get an integer with the number of hitpoints back.
+`GetHitpoints([in](GUIDSTRING)_Entity, [out](INTEGER)_HP)`
+
+Notice how both parameters start with `[in]` or `[out]` to specify whether it's an in-parameter or an out-parameter. (Or, in the linked resource, in-parameters are listed before the query with `@param` and out-parameters are listed with `@return`.)
+
+The in-parameters will always come first, and the out-parameters are at the end. In this case, we have one of each. We have to provide the GUID of the game object we want to get the hitpoints of, and we get an integer with the number of hitpoints back.
 
 For our example, let's make a rule that executes for every player with 0 HP at the end of combat.
 
@@ -492,7 +491,7 @@ Action1;
 
 The first condition is the event `CombatEnded` with one parameter that is left unbound. The second condition is the database of players that will split the rule into separate evaluations for each fact that can be assigned to `_Player`. The third condition is the query `GetHitpoints` that receives the assigned variable `_Player` and then assigns the result (their number of hitpoints) to the undeclared variable `_HP`. The fourth and final condition is a comparison that requires `_HP` to equal `0`.
 
-In this rule, the query condition `GetHitpoints(_Player, _HP)` should always evaluate to true. However, we can make the rule more efficient by replacing `_HP` with the result we require so that the query condition will only evaluate to true if `_Player` has zero hitpoints. This will also lets us get rid of the comparison condition, like this:
+In this rule, the query condition `GetHitpoints(_Player, _HP)` should always evaluate to true. However, we can make the rule more efficient by replacing `_HP` with the result we require so that the query condition will only evaluate to true if `_Player` has zero hitpoints. This lets us get rid of the comparison condition, like this:
 
 ```
 IF
@@ -520,7 +519,7 @@ THEN
 Action1;
 ```
 
-In this example, we do need the out-parameter from `GetTemplate` to be assigned to the undeclared variable `_Template` so that we can require it to already exist in the pre-populated database of template GUIDs. If it does, then the game object added to the character's inventory must be a type of healing potion, and so the rule will execute.
+In this example, we do need the out-parameter from `GetTemplate` to be assigned to the undeclared variable `_Template` so that we can require it to exist in the pre-populated database of template GUIDs. If it does, then the game object added to the character's inventory must be a type of healing potion, and so the rule will execute.
 
 We can also write rules that will execute only if a query evaluates to false by inverting the query condition with `NOT`. To require that an answer to the query does not exist, we also need to leave all of the out-parameters unbound.
 
@@ -535,9 +534,13 @@ THEN
 Action1;
 ```
 
+There are several more specific types of and uses for queries that are worth discussing in the following sub-sections. (TO-DO: Revise?)
+
+### Queries Tab {.tabset}
+
 #### Action Queries
 
-Some queries are used to perform an operation instead of getting information about the game's state. As mentioned at the start of the section on queries, there are some that combine strings, perform basic arithmetic, generate a random number, and more. The reason they are still technically queries is because they do return information to the rule that uses it, unlike **Calls** and **Procedures**, which do not return any information.
+Some queries are used to perform an operation instead of getting information about the game's state. As mentioned at the start of the section on queries, there are some that combine strings, perform basic arithmetic, generate a random number, and more. The reason they are still technically queries is because they are used in the condition section of a rule and return some kind of information, unlike **Calls** and **Procedures**, which are used in the action section of a rule and do not return any information.
 
 Let's use the query to find the sum of two integers as an example:
 
@@ -561,9 +564,14 @@ DB_EventCounter(_NewCount);
 
 Note: This rule will only execute if there's already a fact in `DB_EventCounter` that can be assigned to `_Count`. So, to be able to start counting, we would need to define the fact `0` in the script's INIT section. From then on, every time we add a new fact to the database, we also remove the previous fact, so `DB_EventCounter` is guaranteed to only store one fact that is the current count of how many times `Condition1` has occurred.
 
+[Back to Top of Tab](#queries-tab)
+
 #### Custom Queries
 
-We can also define and use our own queries. The main difference with custom queries is that they do not return a result (e.g. they do not have out-parameters), and so they are often only used to answer true or false questions by checking whether the query condition evaluates to true. (Remember that normal query _conditions_ can evaluate to true even if they return a _result_ of false. Custom queries don't have results, so the condition's success or failure _is_ the information we get from it directly.)
+We can also define and use our own queries. The main difference with custom queries is that they do not return a result (e.g. they do not have out-parameters), and so they are often only used to answer true or false questions by checking whether the query condition evaluates to true.
+
+> Remember that normal query _conditions_ can evaluate to true even if they return a _result_ of false. Custom queries don't have results, so the condition's success or failure _is_ the information we get from it directly.
+{.is-info}
 
 The structure of a custom query rule is very similar to normal rules:
 
@@ -601,7 +609,9 @@ THEN
 Action1;
 ```
 
-However, this rule will not do what we want. It will individually evaluate each character in the party because of the undeclared variable `_Player`, and then execute once for each character that doesn't have any gold instead of only executing a single time if _no one_ has any gold. To fix this, we can move the undeclared variable out of this rule and into a custom query. When we call the custom query, its rule will also evaluate the characters individually, but the query _condition_ in our original rule will evaluate to true or false based on whether _anyone_ or _no one_ satisfies its conditions, which is the more general answer we need. We can write the query's rule like this:
+However, this rule will not do what we want. It will individually evaluate each character in the party because of the undeclared variable `_Player`, and then execute once for each character that doesn't have any gold instead of only executing a single time if _no one_ has any gold.
+
+To fix this, we can move the undeclared variable out of this rule and into a custom query. When we call the custom query, its rule will also evaluate the characters individually, but the query _condition_ in our original rule will evaluate to true or false based on whether _anyone_ or _no one_ satisfies its conditions, which is the more general answer we need. We can write the query's rule like this:
 
 ```
 QRY
@@ -616,7 +626,7 @@ THEN
 DB_NOOP(1);
 ```
 
-Notice that this query will evaluate to true if anyone _has_ gold even though we want to know the opposite. This is because checking if the characters _don't_ have gold would make the query evaluate to true even if just one character doesn't have any and the rest do. Instead, because it's challenging to directly check for what we want, we can just write a query that checks for the failure state and then invert its query condition:
+Notice that this query will evaluate to true if anyone _has_ gold even though we want to know the opposite. This is because checking if the characters _don't_ have gold would make the query evaluate to true even if just one character doesn't have any and the rest do. Instead, because it's challenging to directly check for what we want, we've just written a query that checks for the failure state and then can invert its query condition:
 
 ```
 IF
@@ -629,7 +639,9 @@ Action1;
 
 This new version of the rule will only be evaluated once, and if `QRY_CharacterInPartyHasGold()` finds that anyone has gold then its inverted query condition will prevent the rule from executing. However, if it fails to find anyone with gold, then the rule will execute once. There's probably lots of ways to do something like this, but custom queries are an incredibly powerful and (once you get used to them) easy way to do so.
 
-Another excellent use case for custom queries is implementing logical ORs. You can write more than one rule for a custom query, and if they share the same name and parameters then they will all be evaluated when the query is used in a condition. (And, same as before, only one version of any of the query's rules needs to be true for the overall query to evaluate to true.) For example, if you want to do something to characters who join combat if they have less than 10 hit points _or_ if they have the burning condition, you could do this without custom queries by writing a normal rule for each situation:
+Another excellent use case for custom queries is implementing logical ORs. You can write more than one rule for a custom query, and if they share the same name and parameters then they will all be evaluated when the query is used in a condition. (And, same as before, only one version of any of the query's rules needs to be true for the overall query to evaluate to true.)
+
+For example, if you want to do something to characters who join combat if they have less than 10 hit points _or_ if they have the burning condition, you could do this without custom queries by writing a normal rule for each situation:
 
 ```
 IF
@@ -718,6 +730,8 @@ Action1; // Now we can do something with the result
 
 Custom query returns are ordinarily used for much more than just adding a wrapper to a default query, but this should illustrate the overall structure for how to implement and use them in a script.
 
+[Back to Top of Tab](#queries-tab)
+
 #### Limiting a Rule to One Execution
 
 Another powerful use of queries is to stop a rule from executing more than once for the entirety of the game. For example, we might want to do something only for the very first player character, but using a database condition with `DB_Players` will cause the rule to evaluate for _every_ character. This would be fine in a new singleplayer game that starts with only one character (and we could prevent the rule from executing again later by defining a fact in a database that this rule requires to be undefined), but if the mod is added to a multiplayer game or one that already exists and has multiple characters in the party, then the rule will incorrectly execute multiple times.
@@ -765,13 +779,15 @@ THEN
 DB_NOOP(1);
 ```
 
+[Back to Top of Tab](#queries-tab)
+
 ### Comparisons
 
-Comparisons are an extra condition that require two values to have a certain relationship to each other. That is, the two values might need to equal each other, one might need to be smaller than the other, etc. Each of these values can be either a literal or an assigned variable. We cannot use undeclared variables in a comparison.
+**Comparisons** are an extra condition that require two values to have a certain relationship to each other. That is, the two values might need to equal each other, one might need to be smaller than the other, etc. Each of these values can be either a literal or an assigned variable. We cannot use undeclared variables in a comparison.
 
 The value on the left side of the comparison is usually an assigned variable, and the value on the right side of the comparison is usually either a literal or another assigned variable. For example, the comparison condition `_Number == 3` means that the value assigned to the variable `_Number` must equal `3`.
 
-We could also compare two constants, like `3 < 4` to require that 3 is less than 4, but this is always guaranteed to be true so there isn't much reason to do it.
+We could also compare two constants, like `3 < 4` to require that 3 is less than 4, but this is always guaranteed to be true so there isn't much reason to do it unless you want to temporarily disable a rule by comparing constants that will always evaluate to false.
 
 These are the comparison **operators** that can be used:
 1. `==` for equality (note that there are two equal signs back-to-back here)
@@ -861,7 +877,11 @@ In the second rule, we only care about removing the fact from our database if th
 
 **Calls** are a special kind of action that change the game state. Every call has one or more in-parameters that must be given a constant value or an assigned variable so that it knows exactly what we want it to do.
 
-For example, there's a call to give a character some gold in the list of calls (TO-DO: add link) as `AddGold((GUIDSTRING)_InventoryHolder, (INTEGER)_Amount)`, which we can see has two parameters:
+For example, there's a call to give a character some gold in [the list of calls and queries](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.lua) (reformatted for clarity):
+
+`AddGold((GUIDSTRING)_InventoryHolder, (INTEGER)_Amount)`
+
+We can see it has the following two parameters:
 
 1. `_InventoryHolder`: A GUID that identifies the character who we want to give gold
 
@@ -890,9 +910,9 @@ For example, the call to make a character equip an item is pretty big, with five
 
 Luckily, `Equip` has three overloaded versions. This means we can use the original with all five parameters, but we can also use alternate versions with only the first four, three, or two parameters. Using the version with four parameters means the fifth parameter will default to some value automatically. Using the version with only two parameters means the last three parameters will default to some values.
 
-~~The guides on this site don't list the overloaded calls, but you can find them at the GitHub pages linked at the end of this guide.~~ TO-DO: Revise?
+In the linked list of calls and queries, these overloaded calls are listed before the parameters with `@overload` and describe the different versions of it that you can use.
 
-Unfortunately, as of the time of writing, I don't know of any documentation that lists the default values for every overloaded call. I had to experiment with `Equip` to determine that `_AddToMainInventoryOnFail` and `_ShowNotification` both default to `0` (e.g. **false**). However, I'm not certain what `_ClearOriginalOwner` does or how to test it, and so I don't know what it defaults to.
+Unfortunately, as of the time of writing, I don't know of any documentation that lists the default values for every overloaded call. I had to experiment with `Equip` to determine that `_AddToMainInventoryOnFail` and `_ShowNotification` both default to `0` (false). However, I'm not certain what `_ClearOriginalOwner` does or how to test it, and so I don't know what it defaults to.
 
 An important thing to note is that overloaded calls cannot change the order of the parameters. If you want to set the value of the last parameter to be something other than the default, then you have to provide every parameter.
 
@@ -945,7 +965,7 @@ Procedures can have any number of in-parameters. If you don't want any, leave th
 > Procedures are shared across the entire Osiris story, so you can use procedures defined in other scripts / goals, but you also need to choose a unique name for your own procedures.
 {.is-info}
 
-One powerful feature of procedures is that we can have multiple versions of them just like we can have multiple rules triggered by an event. For example, we can define two different versions of `PROC_MyProc` here:
+One powerful feature of procedures is that we can have multiple versions of them just like we can have multiple rules triggered by an event or to evaluate a custom query. For example, we can define two different versions of `PROC_MyProc` here:
 
 ```
 PROC
