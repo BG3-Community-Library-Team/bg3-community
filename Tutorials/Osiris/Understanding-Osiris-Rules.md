@@ -2,7 +2,7 @@
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
 published: false
-date: 2026-02-02T05:11:04.076Z
+date: 2026-02-02T16:22:00.691Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
@@ -16,7 +16,7 @@ There's a lot to cover in this guide, so please take breaks if you start to feel
 
 ## Basic Definitions
 
-For the official introduction to fundamental Osiris terms, I recommend reading the [guide Introduction to Osiris](https://mod.io/g/baldursgate3/r/introduction-to-osiris). However, I will also provide a few of my own, non-technical definitions here.
+The official introduction to fundamental Osiris terms are in [the guide "Introduction to Osiris"](https://mod.io/g/baldursgate3/r/introduction-to-osiris). However, I will also provide a few of my own, non-technical definitions here.
 
 **Rule:** The smallest standalone piece of Osiris code. Each rule describes what to do in a specific situation and can be combined with other rules to achieve more complicated behaviors.
 
@@ -42,7 +42,7 @@ Every rule in Osiris has two parts:
 
 2. One or more actions.
    * This part begins with `THEN`
-   * This part is **executed** when all of the conditions are met (each condition **evaluates** to true)
+   * This part is **executed** when all of the conditions are met (each condition **evaluates to true**)
    * Each action is on its own line
    * Each action ends with `;`
 
@@ -109,6 +109,8 @@ Now we have two database conditions with different literals. This means that `Ac
 
 For example, if `"I"` is added to the database first, Osiris will start evaluating the rule and see that `"H"` is not in the database yet, so it will stop evaluating the rule. If `"H"` is also added sometime later, Osiris will start evaluating the rule again and see that both facts are in the database, so `Action1` is executed.
 
+[Test](#inverting-the-result-(easy))
+
 #### Inverting the Result (Easy)
 
 We can also require a database to _not_ contain a fact by putting `NOT` at the beginning of the condition. The only limitation to doing this is that it cannot be the very first condition of a rule, which also means that it can't be the only condition for a rule. Removing a fact that is currently defined in a database will trigger inverted database conditions.
@@ -149,8 +151,8 @@ TO-DO: Image #2
 
 Once `_Letter` has been assigned a value, we can reuse the variable in the rest of the rule to keep accessing the value assigned to it. However, variables are not shared in between rules. Even if you already assigned a value to `_Letter` in one rule, it will not carry over into any other rule.
 
-> The naming convention for variables in Osiris is to start with an underscore: `_`
-{.is-warning}
+> The naming convention for variables in Osiris is to always start with an underscore: `_`
+{.is-info}
 
 To summarize, using an undeclared variable in a database condition means that the rule will be triggered by _every_ fact added to the database, because the rule must be evaluated separately for every possible value that can be assigned to the variable.
 
@@ -175,6 +177,9 @@ Action1;
 ```
 
 ...are logically equivalent rules. The difference is that the second rule will be triggered for evaluation every time a fact is added to the database, which is less efficient than only triggering for the fact we care about.
+
+> `_Letter == "H"` is a **comparison condition**, which will be discussed later in this guide.
+{.is-info}
 
 We can also use `NOT` with variables to require that a fact with the variable's value doesn't exist in a database. However, the variable does have to already be assigned a value. We can't use an undeclared variable in an inverted database condition because that would mean the rule has to be evaluated once for every fact that the database _doesn't_ contain, which isn't possible.
 
@@ -233,10 +238,10 @@ Keep in mind that unbound variables do not change how many times the rule is eva
 > Be aware that using the same database name with a different number of columns will behave like they're two completely separate databases. Even if you only want the first column in a database, defining a fact with `DB_Letters("A", 1);` will not trigger the condition `DB_Letters(_Letter)` because they store different kinds of facts and are therefore treated like separate databases.
 {.is-warning}
 
-> It will not work to reuse a database name for one that has the same number of parameters but with different types or in a different order.
+> Unless you're reusing a database name with a different number of columns, you cannot reorder or change variable types of the columns in a database after it is defined.
 {.is-danger}
 
-We can have more than two values / columns in facts stored by a database, and it will continue to scale as has been described in this section.
+We can use more than just two values / columns in facts stored by a database, and it will continue to scale as has been described in this section.
 
 #### Two Variables from Different Databases (Intermediate)
 
@@ -323,9 +328,9 @@ NOT DB_Letters(_Old);
 
 We've made two changes:
 
-1. We added a third condition, `_New != _Old`. This is an extra condition called a comparison that will evaluate to false and stop the rule from executing if the two variables have the same value.
+1. We added a third condition, `_New != _Old`. This is an extra condition called a **comparison** that will evaluate to false and stop the rule from executing if the two variables have the same value.
 
-2. We defined the action we want the rule to execute. When a database is used as an action, we're either adding or removing a fact from the database. In this case, the `NOT` means that we're removing the fact `_Old` from `DB_Letters`.
+2. We specified the action we want the rule to execute. When a database is used as an action, we're either adding or removing a fact from the database. In this case, the `NOT` means that we're removing the fact `_Old` from `DB_Letters`.
 
 Let's take a look at what this new version of the rule does when we defined the second fact `"B"`. As discussed for the previous version of the rule, it will trigger evaluations with these three combinations of values for `_New` and `_Old`: `("B","A")`, `("B","B")`, and finally `("A", "B")`.
 
@@ -342,14 +347,13 @@ The end result of this rule is that, every time a fact is added to `DB_Letters`,
 
 ### Events
 
-**Events** are another kind of trigger condition. They have to be the first condition of a rule, which also means you can only use at most one event per rule. Whenever something happens in the game that corresponds to this event, it will trigger all of the rules that use it.
-
-> There are events for when dialogue starts and ends, a change in approval rating, quest progress, being caught committing a crime, casting a spell, and so much more.
-{.is-info}
+**Events** are another kind of trigger condition. They have to be the first condition of a rule, which also means you can only use at most one event per rule. Whenever something happens in the game that corresponds to this event, it will trigger all of the rules that use it. There are events for when dialogue starts and ends, a change in approval rating, quest progress, being caught committing a crime, casting a spell, and so much more.
 
 Most events have one or more **parameters** that give us information about the event. As an example, there is an event named `AddedTo` for when an item is added to a character's inventory. All that the event being triggered tells us is that _some_ item has been added to _someone's_ inventory, and so we need the event's parameters to tell us _which_ item has been added to _whose_ inventory.
 
-We can find the full details for the `AddedTo` event in the list of Osiris events (TO-DO: link): `AddedTo((GUIDSTRING)_Object, (GUIDSTRING)_InventoryHolder, (STRING)_AddType)`
+We can find the full details for the `AddedTo` event in the [list of Osiris events](https://github.com/LaughingLeader/BG3ModdingTools/blob/master/generated/Osi.Events.lua) (reformatted here for clarity):
+
+`AddedTo((GUIDSTRING)_Object, (GUIDSTRING)_InventoryHolder, (STRING)_AddType)`
 
 Its parameters and their variable types are listed inside the parentheses. `AddedTo` has these three parameters:
 
