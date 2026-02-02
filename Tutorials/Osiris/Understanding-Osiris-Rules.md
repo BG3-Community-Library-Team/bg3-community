@@ -2,7 +2,7 @@
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
 published: false
-date: 2026-02-02T17:09:07.216Z
+date: 2026-02-02T17:12:10.347Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
@@ -534,6 +534,8 @@ THEN
 Action1;
 ```
 
+### Other Types of Queries
+
 There are several more specific types of and uses for queries that are worth discussing in the following sub-sections. (TO-DO: Revise?)
 
 ### Queries Tab {.tabset}
@@ -564,7 +566,7 @@ DB_EventCounter(_NewCount);
 
 Note: This rule will only execute if there's already a fact in `DB_EventCounter` that can be assigned to `_Count`. So, to be able to start counting, we would need to define the fact `0` in the script's INIT section. From then on, every time we add a new fact to the database, we also remove the previous fact, so `DB_EventCounter` is guaranteed to only store one fact that is the current count of how many times `Condition1` has occurred.
 
-[Back to Top of Tab](#queries-tab)
+[Back to Top of Tab](#other-types-of-queries)
 
 #### Custom Queries
 
@@ -730,7 +732,7 @@ Action1; // Now we can do something with the result
 
 Custom query returns are ordinarily used for much more than just adding a wrapper to a default query, but this should illustrate the overall structure for how to implement and use them in a script.
 
-[Back to Top of Tab](#queries-tab)
+[Back to Top of Tab](#other-types-of-queries)
 
 #### Limiting a Rule to One Execution
 
@@ -779,7 +781,7 @@ THEN
 DB_NOOP(1);
 ```
 
-[Back to Top of Tab](#queries-tab)
+[Back to Top of Tab](#other-types-of-queries)
 
 ### Comparisons
 
