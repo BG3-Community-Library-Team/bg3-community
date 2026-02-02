@@ -2,13 +2,13 @@
 title: Understanding Osiris Rules: Actions
 description: 
 published: true
-date: 2026-02-02T19:33:53.806Z
+date: 2026-02-02T22:20:42.045Z
 tags: osiris
 editor: markdown
 dateCreated: 2026-02-02T19:32:53.261Z
 ---
 
-The [previous guide in this series](/Tutorials/Osiris/Understanding-Osiris-Conditions) discussed the conditions that control when an Osiris rule will execute, so now let's take a look at the **actions** we can perform during its execution.
+The [previous part of this guide](/Tutorials/Osiris/Understanding-Osiris-Conditions) discussed the conditions that control when an Osiris rule will execute, so now let's take a look at the **actions** we can perform during its execution.
 
 ## Databases
 
@@ -203,3 +203,5 @@ Action1;
 ```
 
 In this example, the version of the procedure without any parameters will call the version of the procedure with a parameter. This means that calling it without a parameter has the effect of calling it with a default value. That is, `PROC_MyProc();` has the same effect as `PROC_MyProc("This is the default message");`, but we can also provide a custom parameter at any time with something like `PROC_MyProc("This is a custom message");`.
+
+[<img align="left" src="https://img.shields.io/static/v1?label=Previous&message=Rule+Conditions&color=blue&style=for-the-badge">](/Tutorials/Osiris/Understanding-Osiris-Conditions)
