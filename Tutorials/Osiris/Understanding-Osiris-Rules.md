@@ -2,7 +2,7 @@
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
 published: false
-date: 2026-02-02T04:15:10.074Z
+date: 2026-02-02T04:27:21.033Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
@@ -70,7 +70,7 @@ There are two categories of conditions in Osiris:
 
 No matter what triggers the rule, every single condition (triggers _and_ extras) must all be true when a rule is evaluated for it to execute its actions.
 
-### Databases
+### Databases {.tabset}
 
 A **database condition** is a trigger condition that requires some kind of **fact** to exist in a particular **database**.
 
