@@ -2,7 +2,7 @@
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
 published: false
-date: 2026-02-01T23:51:40.026Z
+date: 2026-02-02T04:15:10.074Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
@@ -727,17 +727,282 @@ DB_NOOP(1);
 
 ### Comparisons
 
-TO-DO: \*gestures broadly\*
+Comparisons are an extra condition that require two values to have a certain relationship to each other. That is, the two values might need to equal each other, one might need to be smaller than the other, etc. Each of these values can be either a literal or an assigned variable. We cannot use undeclared variables in a comparison.
 
+The value on the left side of the comparison is usually an assigned variable, and the value on the right side of the comparison is usually either a literal or another assigned variable. For example, the comparison condition `_Number == 3` means that the value assigned to the variable `_Number` must equal `3`.
 
+We could also compare two constants, like `3 < 4` to require that 3 is less than 4, but this is always guaranteed to be true so there isn't much reason to do it.
 
+These are the comparison **operators** that can be used:
+1. `==` for equality (note that there are two equal signs back-to-back here)
+2. `!=` for inequality
+3. `<` for less than
+4. `<=` for less than or equal to
+5. `>` for greater than
+6. `>=` for greater than or equal to
 
+Comparisons are useful in many different circumstances. For one simple example, assume we have stored a count of how many times an event has occurred in the database `DB_EventCounter`, as shown in the Action Queries section of this guide. If we only want to do something the first four times an event occurs, we could do so with the following rule:
 
+```
+IF
+DB_EventCounter(_Count)
+AND
+_Count > 0
+AND
+_Count <= 4
+THEN
+Action1;
+```
 
+This rule uses two different comparisons so that the rule only executes if the count in `DB_EventCounter` is larger than 0 and less than or equal to 4. This means that the rule won't execute when the initial fact `0` is added to the database in the INIT section, and then it will execute when the counter increments to 1, 2, 3, and 4. After this point, it will stop executing.
 
+## Actions
 
+Now that we have a good understanding of the conditions that control when a rule will execute, let's take a look at the **actions** we can perform during execution.
 
+### Databases
 
+**Databases actions** are, again, one of the most fundamental tools at our disposal. Using a database as an action will add a fact to the database unless the fact is already defined, in which case the action won't do anything. This is because facts in each database must be unique, and so it can't be added a second time.
 
+We can also invert database actions by adding `NOT` to the beginning of the line, which will remove a fact from the database if it is already defined. If the fact is not already defined, the action won't do anything because there is nothing to remove.
 
+Database actions must be used with either a literal or an assigned variable.
 
+The following rule attempts to define the literal `"H"` in the database `DB_Letters`:
+
+```
+IF
+Condition1
+THEN
+DB_Letters("H");
+```
+
+Even if `Condition1` triggers this rule multiple times, `"H"` will only be added to the database the first time `DB_Letters("H");` is executed. Database conditions that require `"H"` will also not be triggered again after it is defined.
+
+We can have another rule that attempts to remove the literal `"H"` from `DB_Letters`:
+
+```
+IF
+Condition2
+THEN
+NOT DB_Letters("H");
+```
+
+If this rule is triggered before `"H"` is defined, it won't do anything. If it is triggered after `"H"` is defined, then it will remove that fact from `DB_Letters` and trigger inverted database conditions. This will also allow `"H"` to be re-defined and trigger database conditions again.
+
+We can also use database actions with variables that have already been assigned a value.
+
+Let's look at a more complicated example that creates a database named `DB_TagTracker`. This database should contain a fact for every player character who has been tagged with something we care about. For simplicity, we'll just call it `EXAMPLE_TAG`. We can maintain this database with these two rules:
+
+```
+IF
+TagSet(_Player, (TAG)EXAMPLE_TAG)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+DB_TagTracker(_Player);
+
+IF
+TagCleared(_Player, (TAG)EXAMPLE_TAG)
+AND
+DB_TagTracker((CHARACTER)_Player)
+THEN
+NOT DB_TagTracker(_Player);
+```
+
+Notice that `TagSet` and `TagCleared` are **Events** with parameters for the object that has been tagged and the tag that has been applied to it.
+
+In the first rule, we require that the game object that has been assigned the tag is a player, and if it is then we define a fact with their GUID to `DB_TagTracker`. I have preemptively named the variable `_Player` even though it could be any game object because I know the second condition will filter out any versions of the rule where the variable _isn't_ assigned a player, and naming it this way helps to convey the rule's purpose.
+
+In the second rule, we only care about removing the fact from our database if the database already contains it, so we can just check for that instead of having to check that the object is a player first.
+
+### Calls
+
+**Calls** are a special kind of action that change the game state. Every call has one or more in-parameters that must be given a constant value or an assigned variable so that it knows exactly what we want it to do.
+
+For example, there's a call to give a character some gold in the list of calls (TO-DO: add link) as `AddGold((GUIDSTRING)_InventoryHolder, (INTEGER)_Amount)`, which we can see has two parameters:
+
+1. `_InventoryHolder`: A GUID that identifies the character who we want to give gold
+
+2. `_Amount`: An integer that specifies how much gold we want to give
+
+Let's use this call in a rule that gives every player 50 gold after a long rest:
+
+```
+IF
+LongRestFinished()
+AND
+DB_Players(_Player)
+THEN
+AddGold(_Player, 50);
+```
+
+In this rule, we have the **Event** `LongRestFinished` that does not have any parameters and only triggers the rule after a long rest. Next, we have a database condition that will create separate evaluations of the rule for every value that can be assigned to the undeclared variable `_Player`. For every version of the rule, it will execute and use the Call to give 50 gold to the character assigned to `_Player` in this version.
+
+#### Overloaded Calls
+
+Some Osiris calls have alternate versions with fewer parameters that are called **overloaded calls**. Overloaded calls are the only time in Osiris that an in-parameter can be left off the end and it will automatically default to some value.
+
+For example, the call to make a character equip an item is pretty big, with five parameters:
+
+`Equip((CHARACTER)_Character, (ITEM)_Item, (INTEGER)_AddToMainInventoryOnFail, (INTEGER)_ShowNotification, (INTEGER)_ClearOriginalOwner)`
+
+Luckily, `Equip` has three overloaded versions. This means we can use the original with all five parameters, but we can also use alternate versions with only the first four, three, or two parameters. Using the version with four parameters means the fifth parameter will default to some value automatically. Using the version with only two parameters means the last three parameters will default to some values.
+
+~~The guides on this site don't list the overloaded calls, but you can find them at the GitHub pages linked at the end of this guide.~~ TO-DO: Revise?
+
+Unfortunately, as of the time of writing, I don't know of any documentation that lists the default values for every overloaded call. I had to experiment with `Equip` to determine that `_AddToMainInventoryOnFail` and `_ShowNotification` both default to `0` (e.g. **false**). However, I'm not certain what `_ClearOriginalOwner` does or how to test it, and so I don't know what it defaults to.
+
+An important thing to note is that overloaded calls cannot change the order of the parameters. If you want to set the value of the last parameter to be something other than the default, then you have to provide every parameter.
+
+For example, if I wanted to use all of the default values for `Equip`, I could write a rule like this:
+
+```
+IF
+Condition1
+THEN
+Equip(_Character, _Item);
+```
+
+...where `_Character` and `_Item` are variables that must have been assigned values by `Condition1`.
+
+If I only wanted to change the rule to explicitly assign the last parameter `_ClearOriginalOwner` the value `1`, then I would have to use the full version of `Equip` and also provide the default values for the other two optional parameters, like this:
+
+```
+IF
+Condition1
+THEN
+Equip(_Character, _Item, 0, 0, 1);
+```
+
+### Procedures
+
+**Procedures** combine many of the concepts we've discussed so far. They're sort of like a Call that triggers our own custom Event.
+
+In order to use a procedure, we need to do two things:
+
+1. Define the procedure as its own kind of standalone rule
+
+2. Call the procedure as an action
+
+Let's look at the structure of a procedure using placeholder values:
+
+```
+PROC
+PROC_ProcedureName((Type1)Parameter1, (Type2)Parameter2)
+AND
+Condition1
+AND
+Condition2
+THEN
+Action1;
+Action2;
+```
+
+Procedures can have any number of in-parameters. If you don't want any, leave the parentheses after the procedure name empty.
+
+Procedures are shared across the entire Osiris story, so you can use procedures defined in other scripts / goals, but you also need to choose a unique name for your own procedures.
+
+One powerful feature of procedures is that we can have multiple versions of them just like we can have multiple rules triggered by an event. For example, we can define two different versions of `PROC_MyProc` here:
+
+```
+PROC
+PROC_MyProc()
+AND
+Condition1
+THEN
+Action1;
+
+PROC
+PROC_MyProc()
+AND
+Condition2
+THEN
+Action2;
+```
+
+When this procedure is called, every version of it that we have defined will be evaluated, and any that satisfy all of its conditions will be executed.
+
+We can call the procedure `PROC_MyProc` just like we do with Osiris Calls, like this:
+
+```
+IF
+Condition1
+THEN
+PROC_MyProc();
+```
+
+If you define the procedure more than once with different numbers of parameters, they will behave like completely different procedures. We can use this to make our own default values, like this:
+
+```
+PROC
+PROC_MyProc()
+THEN
+PROC_MyProc("This is the default message");
+
+PROC
+PROC_MyProc((STRING)_Message)
+THEN
+Action1;
+```
+
+In this example, the version of the procedure without any parameters will call the version of the procedure with a parameter. This means that calling it without a parameter has the effect of calling it with a default value. That is, `PROC_MyProc();` has the same effect as `PROC_MyProc("This is the default message");`, but we can also provide a custom parameter at any time with something like `PROC_MyProc("This is a custom message");`.
+
+## Considering Performance
+
+A detailed discussion of optimizing Osiris rules is beyond the scope of this guide, but I do want to acknowledge it quickly. There are so many scripts running for the game at once, we want to minimize the impact our additions have on the game's performance.
+
+Perhaps the most important consideration is limiting the number of times a rule has to be evaluated. For example, consider the following rule that does something if Wyll and Karlach are both members of the party:
+
+```
+IF
+DB_Players(_First)
+AND
+DB_Players(_Second)
+AND
+_First == S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d
+AND
+_Second == S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c
+THEN
+Action1;
+```
+
+Any time a new player character joins the party, the rule will be triggered for evaluation by the database conditions. Also, because we're combining a database with itself before filtering the results, the number of times this rule has to be evaluated is the size of `DB_Players` multiplied by itself. This is very inefficient.
+
+We can clearly see the exponential growth in the number of times this rule is evaluated with a diagram, where both database conditions create a new version of the rule for every character in `DB_Players`. Assuming a full party of four characters, we end up with this:
+
+TO-DO: Add image
+
+However, we can easily improve this by changing the order of the conditions:
+
+```
+IF
+DB_Players(_First)
+AND
+_First == S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d
+AND
+DB_Players(_Second)
+AND
+_Second == S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c
+THEN
+Action1;
+```
+
+Again, the rule will be triggered for evaluation every time a new player joins the party. However, this time the rule only has to be evaluated once for each fact in `DB_Players` before it reaches a condition that requires Wyll's GUID to be assigned to `_First`. If it's not, then the rule stops evaluating. This means that at most only one version of the rule (where `_First` equals Wyll's GUID) will reach the second undeclared variable that creates multiple versions of the rule again for every fact in `DB_Players`. This still isn't ideal, but at least the number of evaluations no longer grows exponentially, as we can see in the following diagram:
+
+TO-DO: Add image
+
+We can do even better with this improvement:
+
+```
+IF
+DB_Players(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d)
+AND
+DB_Players(S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c)
+THEN
+Action1;
+```
+
+Because we only care about Wyll and Karlach specifically, we can just hard-code their GUIDs. This means the database conditions will _only ever_ trigger the rule for evaluation if one of them joins the party, and the rule will immediately stop evaluating if the other one isn't also present. Plus, there is only one version of the rule to evaluate. This is incredibly efficient in both regards.
+
+TO-DO: Add image
