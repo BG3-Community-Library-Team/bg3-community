@@ -2,7 +2,7 @@
 title: Giving Everyone a Passive
 description: 
 published: false
-date: 2026-02-02T23:56:46.452Z
+date: 2026-02-02T23:59:06.971Z
 tags: osiris
 editor: code
 dateCreated: 2026-02-01T04:18:25.634Z
@@ -40,7 +40,27 @@ dateCreated: 2026-02-01T04:18:25.634Z
 <p>Remember to replace <code>IDENTIFIER</code> with the unique identifier for your mod.</p>
 <p>Now in the middle text field (the <strong>KB section</strong>), we add the following <strong>rules</strong> that will give players a Passive when the mod starts running or when they join the party:</p>
 <pre>
-<code>IF<br>LevelLoaded(_)<br>AND<br>DB_IDENTIFIER_Initialized(0)<br>THEN<br>TimerLaunch("IDENTIFIER_InitDelay", 0);<br><br>IF<br>TimerFinished("IDENTIFIER_InitDelay")<br>THEN<br>NOT DB_IDENTIFIER_Initialized(0);<br>DB_IDENTIFIER_Initialized(1);<br><br>IF<br>DB_Players(_Player)<br>AND<br>DB_IDENTIFIER_Initialized(1)<br>AND<br>HasPassive(_Player, "DraconicAncestry_Red", 0)<br>THEN<br>AddPassive(_Player, "DraconicAncestry_Red");</code>
+<code>IF</code>
+<code>LevelLoaded(_)</code>
+<code>AND</code>
+<code>DB_IDENTIFIER_Initialized(0)</code>
+<code>THEN</code>
+<code>TimerLaunch("IDENTIFIER_InitDelay", 0);</code>
+<code/>
+<code>IF</code>
+<code>TimerFinished("IDENTIFIER_InitDelay")</code>
+<code>THEN</code>
+<code>NOT DB_IDENTIFIER_Initialized(0);</code>
+<code>DB_IDENTIFIER_Initialized(1);</code>
+<code/>
+<code>IF</code>
+<code>DB_Players(_Player)</code>
+<code>AND</code>
+<code>DB_IDENTIFIER_Initialized(1)</code>
+<code>AND</code>
+<code>HasPassive(_Player, "DraconicAncestry_Red", 0)</code>
+<code>THEN</code>
+<code>AddPassive(_Player, "DraconicAncestry_Red");</code>
 </pre>
 <p>And that's the whole script! You just need to replace every <code>IDENTIFIER</code> and also replace <code>DraconicAncestry_Red</code> with the Passive you want to give. Make sure to leave the quotation marks around the name of the Passive.</p>
 <p>The final step is to open the "File" dropdown menu and choose "Generate Definitions, Build and Reload". Once it's done getting the script ready to run in the game, you can go test your mod, and every player character should now have the Passive.</p>
