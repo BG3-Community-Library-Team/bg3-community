@@ -2,7 +2,7 @@
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
 published: true
-date: 2026-02-02T19:42:24.692Z
+date: 2026-02-02T22:15:15.927Z
 tags: osiris
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
@@ -58,6 +58,4 @@ Action1;
 Action2;
 ```
 
-## Next
-
-To keep this guide more manageable, it has been broken down into three parts. The [next guide in this series](/Tutorials/Osiris/Understanding-Osiris-Conditions) will discuss conditions in more detail, and the [last guide](/Tutorials/Osiris/Understanding-Osiris-Actions) will cover actions.
+[<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Rule+Conditions&color=2ea44f&style=for-the-badge">](/Tutorials/Osiris/Understanding-Osiris-Conditions)
