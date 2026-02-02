@@ -2,7 +2,7 @@
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
 published: false
-date: 2026-02-02T04:27:21.033Z
+date: 2026-02-02T04:34:38.482Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
@@ -70,11 +70,13 @@ There are two categories of conditions in Osiris:
 
 No matter what triggers the rule, every single condition (triggers _and_ extras) must all be true when a rule is evaluated for it to execute its actions.
 
-### Databases {.tabset}
+### Databases
 
 A **database condition** is a trigger condition that requires some kind of **fact** to exist in a particular **database**.
 
 The following sub-sections cover different ways database conditions can be used, increasing in complexity.
+
+### Database Tabs {.tabset}
 
 #### Constants (Easy)
 
@@ -379,7 +381,7 @@ Another quirk of using an assigned variable is that we might need to **typecast*
 
 Every event can be used in any number of rules, and it will trigger every rule that uses it when the event occurs in the game. If we wanted to execute a different action depending on what kind of object was added to the player's inventory, we could have two different rules like this:
 
-```
+```sql
 IF
 AddedTo(_Object, _Character, _)
 AND
