@@ -2,13 +2,13 @@
 title: Understanding Osiris Rules: Actions
 description: 
 published: true
-date: 2026-02-02T19:32:53.261Z
+date: 2026-02-02T19:33:53.806Z
 tags: osiris
 editor: markdown
 dateCreated: 2026-02-02T19:32:53.261Z
 ---
 
-The [previous guide in this series](https://wiki.bg3.community/en/Tutorials/Osiris/Understanding-Osiris-Conditions) discussed the conditions that control when an Osiris rule will execute, so now let's take a look at the **actions** we can perform during its execution.
+The [previous guide in this series](/Tutorials/Osiris/Understanding-Osiris-Conditions) discussed the conditions that control when an Osiris rule will execute, so now let's take a look at the **actions** we can perform during its execution.
 
 ## Databases
 
