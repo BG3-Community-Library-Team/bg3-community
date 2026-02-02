@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2026-01-18T19:42:07.848Z
+date: 2026-02-02T19:49:33.914Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -25,6 +25,7 @@ This page is a list of existing Tutorials.-->
 - [Animations *A List of Animation Tutorials*](Animations)
 - [Icons *A List of Icon Mod Tutorials*](Icons)
 - [Toolkit *A List of Toolkit Tutorials*](/Tutorials/Toolkit)
+- [Osiris](/Tutorials/Osiris)
 - [Screen Archery *A List of all parts of the Screen Archery Guide*](/Tutorials/Screen-Archery)
 - [Mod Integration *A List of Tutorials for integrating your content with other mods*](/Tutorials/Mod-Integration)
 
@@ -115,6 +116,13 @@ This page is a list of existing Tutorials.-->
 - [Toolkit Tips](/Tutorials/Toolkit/Toolkit_Tips)
 - [Custom Spring Physics in the Toolkit](/Tutorials/Toolkit/spring-physics)
 - [Adding Animations In Toolkit](/Tutorials/Animations/Adding-Animations-In-Toolkit)
+{.links-list}
+
+## Osiris
+- [Understanding Osiris Rules](/Tutorials/Osiris/Understanding-Osiris-Rules)
+- [Understanding Osiris Rules: Conditions](/Tutorials/Osiris/Understanding-Osiris-Conditions)
+- [Understanding Osiris Rules: Actions](/Tutorials/Osiris/Understanding-Osiris-Actions)
+- [Considering Performance](/Tutorials/Osiris/Considering-Performance)
 {.links-list}
 
 ## Mod Integration
