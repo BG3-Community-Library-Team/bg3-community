@@ -2,15 +2,13 @@
 title: Understanding Osiris Rules: Conditions
 description: 
 published: true
-date: 2026-02-02T19:25:49.163Z
+date: 2026-02-02T19:38:28.827Z
 tags: osiris
 editor: markdown
 dateCreated: 2026-02-02T19:25:49.163Z
 ---
 
-TO-DO: Add link to first part of guide series
-
-Now that we know the structure of a rule, let's talk about the **conditions** we can use to control when the rule will execute its **actions**.
+The [first guide in this series](/Tutorials/Osiris/Understanding-Osiris-Rules) introduced the basic structure of a rule, so now let's talk about the **conditions** we can use to control when the rule will execute its **actions**.
 
 There are two categories of conditions in Osiris:
 
@@ -59,7 +57,7 @@ Now we have two database conditions with different literals. This means that `Ac
 
 For example, if `"I"` is added to the database first, Osiris will start evaluating the rule and see that `"H"` is not in the database yet, so it will stop evaluating the rule. If `"H"` is also added sometime later, Osiris will start evaluating the rule again and see that both facts are in the database, so `Action1` is executed.
 
-[Top of Tab](#databases)
+[Back to Tabs](#databases)
 
 ### Inverting the Result (Easy)
 
@@ -133,7 +131,7 @@ Action1;
 
 We can also use `NOT` with variables to require that a fact with the variable's value doesn't exist in a database. However, the variable does have to already be assigned a value. We can't use an undeclared variable in an inverted database condition because that would mean the rule has to be evaluated once for every fact that the database _doesn't_ contain, which isn't possible.
 
-[Top of Tab](#databases)
+[Back to Tabs](#databases)
 
 ### Facts with More Than One Value (Intermediate)
 
@@ -195,7 +193,7 @@ Keep in mind that unbound variables do not change how many times the rule is eva
 
 We can use more than just two values / columns in facts stored by a database, and it will continue to scale as has been described in this section.
 
-[Top of Tab](#databases)
+[Back to Tabs](#databases)
 
 ### Two Variables from Different Databases (Intermediate)
 
@@ -232,7 +230,7 @@ We can also see this visually:
 
 Osiris wants to evaluate all of them. `("A",1)` and `("A",2)` have already been evaluated and executed, but `("B",1)` and `("B",2)` are new, and so adding the fact `"B"` causes `Action1` to execute where the variables equal the combinations `("B",1)` and `("B",2)`.
 
-[Top of Tab](#databases)
+[Back to Tabs](#databases)
 
 ### Combinations of a Database with Itself (Advanced)
 
@@ -301,7 +299,7 @@ The end result of this rule is that, every time a fact is added to `DB_Letters`,
 > This might seem like a pointless rule to have, but actually it's almost identical to one that's in the game and keeps track of whether the best boy Scratch is currently a camp follower or a summoned familiar.
 {.is-info}
 
-[Top of Tab](#databases)
+[Back to Tabs](#databases)
 
 ## Events
 
@@ -516,7 +514,7 @@ DB_EventCounter(_NewCount);
 
 Note: This rule will only execute if there's already a fact in `DB_EventCounter` that can be assigned to `_Count`. So, to be able to start counting, we would need to define the fact `0` in the script's INIT section. From then on, every time we add a new fact to the database, we also remove the previous fact, so `DB_EventCounter` is guaranteed to only store one fact that is the current count of how many times `Condition1` has occurred.
 
-[Back to Top of Tab](#other-types-of-queries)
+[Back to Tabs](#other-types-of-queries)
 
 #### Custom Queries
 
@@ -682,7 +680,7 @@ Action1; // Now we can do something with the result
 
 Custom query returns are ordinarily used for much more than just adding a wrapper to a default query, but this should illustrate the overall structure for how to implement and use them in a script.
 
-[Back to Top of Tab](#other-types-of-queries)
+[Back to Tabs](#other-types-of-queries)
 
 #### Limiting a Rule to One Execution
 
@@ -731,7 +729,7 @@ THEN
 DB_NOOP(1);
 ```
 
-[Back to Top of Tab](#other-types-of-queries)
+[Back to Tabs](#other-types-of-queries)
 
 ## Comparisons
 
@@ -766,4 +764,4 @@ This rule uses two different comparisons so that the rule only executes if the c
 
 ## Next
 
-TO-DO: Add link to last part of guide series
+The [next guide in this series](/Tutorials/Osiris/Understanding-Osiris-Actions) will discuss the actions that a rule can execute.
