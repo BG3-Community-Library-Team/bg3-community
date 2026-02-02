@@ -2,7 +2,7 @@
 title: Home
 description: Home page for users to start their wiki journey!
 published: true
-date: 2025-11-29T00:24:00.958Z
+date: 2026-02-02T22:26:53.528Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-23T21:32:24.179Z
@@ -104,6 +104,7 @@ Thank you for helping to improve the wiki!
 - [Visual *Guides relating to Visual Modding*](Tutorials/Visual)
 - [Icons *Guides relating to Icons*](Tutorials/Icons)
 - [Toolkit *Guides relating to Larian's Toolkit*](/Tutorials/Toolkit)
+- [Osiris *Guides relating to Osiris scripting*](/Tutorials/Osiris)
 - [Screen Archery *Guides relating to Screen Archery*](/Tutorials/Screen-Archery)
 {.links-list}
 
