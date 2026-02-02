@@ -1,8 +1,8 @@
 ---
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
-published: false
-date: 2026-02-02T17:50:05.960Z
+published: true
+date: 2026-02-02T18:25:03.772Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
