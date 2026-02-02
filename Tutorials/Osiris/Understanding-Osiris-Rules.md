@@ -2,7 +2,7 @@
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
 published: false
-date: 2026-02-02T04:36:17.437Z
+date: 2026-02-02T04:37:29.107Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
@@ -381,7 +381,7 @@ Another quirk of using an assigned variable is that we might need to **typecast*
 
 Every event can be used in any number of rules, and it will trigger every rule that uses it when the event occurs in the game. If we wanted to execute a different action depending on what kind of object was added to the player's inventory, we could have two different rules like this:
 
-```py
+```bash
 IF
 AddedTo(_Object, _Character, _)
 AND
