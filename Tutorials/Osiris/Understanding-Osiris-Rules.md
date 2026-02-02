@@ -2,7 +2,7 @@
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
 published: false
-date: 2026-02-02T16:22:00.691Z
+date: 2026-02-02T16:29:44.209Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
@@ -109,7 +109,7 @@ Now we have two database conditions with different literals. This means that `Ac
 
 For example, if `"I"` is added to the database first, Osiris will start evaluating the rule and see that `"H"` is not in the database yet, so it will stop evaluating the rule. If `"H"` is also added sometime later, Osiris will start evaluating the rule again and see that both facts are in the database, so `Action1` is executed.
 
-[Test](#inverting-the-result-(easy))
+[Top of Tab](#databases)
 
 #### Inverting the Result (Easy)
 
@@ -183,6 +183,8 @@ Action1;
 
 We can also use `NOT` with variables to require that a fact with the variable's value doesn't exist in a database. However, the variable does have to already be assigned a value. We can't use an undeclared variable in an inverted database condition because that would mean the rule has to be evaluated once for every fact that the database _doesn't_ contain, which isn't possible.
 
+[Top of Tab](#databases)
+
 #### Facts with More Than One Value (Intermediate)
 
 In the previous sections, each fact has only contained one value / column, such as the letter `"H"`. However, we can also use database conditions with facts that have more than one value.
@@ -243,6 +245,8 @@ Keep in mind that unbound variables do not change how many times the rule is eva
 
 We can use more than just two values / columns in facts stored by a database, and it will continue to scale as has been described in this section.
 
+[Top of Tab](#databases)
+
 #### Two Variables from Different Databases (Intermediate)
 
 We already know that Osiris will evaluate a rule separately for every fact that can assign a value to an undeclared variable. When we have more than one condition with undeclared variables, this means that Osiris has to evaluate the rule for every possible _combination_ of facts. That is, if the first variable has two possible facts that can be assigned to it, and the second variable has two possible facts that can be assigned to it, then Osiris must evaluate the rule 2x2 = 4 times.
@@ -277,6 +281,8 @@ We can also see this visually:
 TO-DO: Image #3
 
 Osiris wants to evaluate all of them. `("A",1)` and `("A",2)` have already been evaluated and executed, but `("B",1)` and `("B",2)` are new, and so adding the fact `"B"` causes `Action1` to execute where the variables equal the combinations `("B",1)` and `("B",2)`.
+
+[Top of Tab](#databases)
 
 #### Combinations of a Database with Itself (Advanced)
 
@@ -344,6 +350,8 @@ The end result of this rule is that, every time a fact is added to `DB_Letters`,
 
 > This might seem like a pointless rule to have, but actually it's almost identical to one that's in the game and keeps track of whether the best boy Scratch is currently a camp follower or a summoned familiar.
 {.is-info}
+
+[Top of Tab](#databases)
 
 ### Events
 
