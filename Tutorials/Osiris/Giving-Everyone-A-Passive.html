@@ -2,7 +2,7 @@
 title: Giving Everyone a Passive
 description: 
 published: false
-date: 2026-02-02T23:54:49.739Z
+date: 2026-02-02T23:56:46.452Z
 tags: osiris
 editor: code
 dateCreated: 2026-02-01T04:18:25.634Z
@@ -35,12 +35,12 @@ dateCreated: 2026-02-01T04:18:25.634Z
 <p>Now that we have a file for our script, let's actually write it! Double-click your script name in the list on the left side of the window and the file will open on the right side of the window. For now, there are just three empty text fields.</p>
 <p>First, we need something to indicate when the script is just starting to run. We can do this in the top text field (the <strong>INIT section</strong>) by adding the following line:</p>
 <pre>
-<p>DB_IDENTIFIER_Initialized(0);</p>
+<code>DB_IDENTIFIER_Initialized(0);</code>
 </pre>
 <p>Remember to replace <code>IDENTIFIER</code> with the unique identifier for your mod.</p>
 <p>Now in the middle text field (the <strong>KB section</strong>), we add the following <strong>rules</strong> that will give players a Passive when the mod starts running or when they join the party:</p>
 <pre>
-<p>IF<br>LevelLoaded(_)<br>AND<br>DB_IDENTIFIER_Initialized(0)<br>THEN<br>TimerLaunch("IDENTIFIER_InitDelay", 0);<br><br>IF<br>TimerFinished("IDENTIFIER_InitDelay")<br>THEN<br>NOT DB_IDENTIFIER_Initialized(0);<br>DB_IDENTIFIER_Initialized(1);<br><br>IF<br>DB_Players(_Player)<br>AND<br>DB_IDENTIFIER_Initialized(1)<br>AND<br>HasPassive(_Player, "DraconicAncestry_Red", 0)<br>THEN<br>AddPassive(_Player, "DraconicAncestry_Red");</p>
+<code>IF<br>LevelLoaded(_)<br>AND<br>DB_IDENTIFIER_Initialized(0)<br>THEN<br>TimerLaunch("IDENTIFIER_InitDelay", 0);<br><br>IF<br>TimerFinished("IDENTIFIER_InitDelay")<br>THEN<br>NOT DB_IDENTIFIER_Initialized(0);<br>DB_IDENTIFIER_Initialized(1);<br><br>IF<br>DB_Players(_Player)<br>AND<br>DB_IDENTIFIER_Initialized(1)<br>AND<br>HasPassive(_Player, "DraconicAncestry_Red", 0)<br>THEN<br>AddPassive(_Player, "DraconicAncestry_Red");</code>
 </pre>
 <p>And that's the whole script! You just need to replace every <code>IDENTIFIER</code> and also replace <code>DraconicAncestry_Red</code> with the Passive you want to give. Make sure to leave the quotation marks around the name of the Passive.</p>
 <p>The final step is to open the "File" dropdown menu and choose "Generate Definitions, Build and Reload". Once it's done getting the script ready to run in the game, you can go test your mod, and every player character should now have the Passive.</p>
