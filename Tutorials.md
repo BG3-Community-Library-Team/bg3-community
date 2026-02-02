@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2026-02-02T19:49:33.914Z
+date: 2026-02-02T19:50:29.904Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -25,7 +25,7 @@ This page is a list of existing Tutorials.-->
 - [Animations *A List of Animation Tutorials*](Animations)
 - [Icons *A List of Icon Mod Tutorials*](Icons)
 - [Toolkit *A List of Toolkit Tutorials*](/Tutorials/Toolkit)
-- [Osiris](/Tutorials/Osiris)
+- [Osiris *A List of Osiris Tutorials*](/Tutorials/Osiris)
 - [Screen Archery *A List of all parts of the Screen Archery Guide*](/Tutorials/Screen-Archery)
 - [Mod Integration *A List of Tutorials for integrating your content with other mods*](/Tutorials/Mod-Integration)
 
