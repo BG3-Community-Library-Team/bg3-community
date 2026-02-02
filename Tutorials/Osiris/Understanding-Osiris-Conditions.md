@@ -2,13 +2,13 @@
 title: Understanding Osiris Rules: Conditions
 description: 
 published: true
-date: 2026-02-02T19:38:28.827Z
+date: 2026-02-02T22:17:59.077Z
 tags: osiris
 editor: markdown
 dateCreated: 2026-02-02T19:25:49.163Z
 ---
 
-The [first guide in this series](/Tutorials/Osiris/Understanding-Osiris-Rules) introduced the basic structure of a rule, so now let's talk about the **conditions** we can use to control when the rule will execute its **actions**.
+The [first part of this guide](/Tutorials/Osiris/Understanding-Osiris-Rules) introduced the basic structure of a rule, so now let's talk about the **conditions** we can use to control when the rule will execute its **actions**.
 
 There are two categories of conditions in Osiris:
 
@@ -762,6 +762,4 @@ Action1;
 
 This rule uses two different comparisons so that the rule only executes if the count in `DB_EventCounter` is larger than 0 and less than or equal to 4. This means that the rule won't execute when the initial fact `0` is added to the database in the INIT section, and then it will execute when the counter increments to 1, 2, 3, and 4. After this point, it will stop executing.
 
-## Next
-
-The [next guide in this series](/Tutorials/Osiris/Understanding-Osiris-Actions) will discuss the actions that a rule can execute.
+[<img align="left" src="https://img.shields.io/static/v1?label=Previous&message=Introduction&color=blue&style=for-the-badge">](/Tutorials/Osiris/Understanding-Osiris-Rules)  [<img align="right" src="https://img.shields.io/static/v1?label=Next&message=Rule+Actions&color=2ea44f&style=for-the-badge">](/Tutorials/Osiris/Understanding-Osiris-Actions)
