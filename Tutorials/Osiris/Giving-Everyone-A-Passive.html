@@ -1,8 +1,8 @@
 <!--
 title: Giving Everyone a Passive
-description: 
-published: false
-date: 2026-02-03T00:04:55.428Z
+description: An overview of how to use Osiris to give lots of characters a Passive without having to modify class progression tables.
+published: true
+date: 2026-02-03T00:37:35.343Z
 tags: osiris
 editor: code
 dateCreated: 2026-02-01T04:18:25.634Z
@@ -73,7 +73,7 @@ dateCreated: 2026-02-01T04:18:25.634Z
 <li>The fact <code>0</code> is in the database <code>DB_IDENTIFIER_Initialized</code></li>
 </ol>
 <p>Both of these conditions should always be true as soon as a newly modded save file is loaded, which will execute the rule's action. The action starts a timer named <code>IDENTIFIER_InitDelay</code> for 0 milliseconds, which will finish and trigger the <code>TimerFinished</code> event on the very next frame.</p>
-<p>Why delay our script initialization by one frame? Because we're planning to access the database of players to give everyone a Passive, but Osiris executes scripts/goals in alphabetical order, and so whether you have access to <code>DB_Players</code> on the first frame seems to depend on the location of your script/goal in the overall program/story. You can intentionally name your script something that will execute after the players become available and then remove the timer for a small efficiency boost, but for the sake of keeping this guide simple, I've opted to include the timer. By making the script wait until the second frame of our loaded game, we're guaranteed access to the players, no matter what the name of our script is.</p>
+<p>Why delay our script initialization by one frame? Because Osiris executes scripts/goals in alphabetical order, and trying to add a passive to a player on the first frame seems to only work (or not work) depending on the location of your script/goal in the overall program/story. You can intentionally name your script something that will execute at the end and then remove the timer for a small efficiency boost, but for the sake of keeping this guide simple, I've opted to include the timer. By making the script wait until the second frame of our loaded game, we're guaranteed that it will work, no matter what the name of our script is.</p>
 <p>Let's keep going. The second rule executes when the timer finishes, and all it does is replace the fact <code>0</code> with the fact <code>1</code> in the database <code>DB_IDENTIFIER_Initialized</code>. Just like <code>0</code> is often used to mean <strong>false</strong>, <code>1</code> is used to mean <strong>true</strong>. This indicates that our script has just gone from being uninitialized to being initialized, and any rule that has <code>DB_IDENTIFIER_Initialized(1)</code> as a condition will be triggered for evaluation. We can use this to trigger rules that will perform the setup we want.</p>
 <p>The third rule does exactly this. It has three conditions:</p>
 <ol>
@@ -104,7 +104,7 @@ dateCreated: 2026-02-01T04:18:25.634Z
 <code>DB_IDENTIFIER_Initialized(1);</code>
 </pre>
 <p>...then you don't need to add them again. However, if you skipped Step 2 of this guide, you will need to include them now for the rest of the script to work.</p>
-<p>Now we can get to the new rules. They're a little more complicated, but the only thing you need to do is still just replace <code>IDENTIFIER</code> with the one you picked for your mod in Step 1 and <code>GiantKiller</code> with the Passive you want.</p>
+<p>Now we can get to the new rules. They're a little more complicated, but the only things you need to do is just replace <code>IDENTIFIER</code> with the one you picked for your mod in Step 1, <code>GiantKiller</code> with the Passive you want, and potentially the comparison on line 20 to control at which level you want to give the passive (currently set to level 3).</p>
 <pre>
 <code>IF</code>
 <code>DB_Players(_Player)</code>
@@ -145,7 +145,7 @@ dateCreated: 2026-02-01T04:18:25.634Z
 <p>The procedure itself is very simple. It just makes sure the player doesn't already have the Passive and that they're at least level 3, and then gives them the Passive!</p>
 <h2>Targeting Other Kinds of Characters</h2>
 <p>We can do other fun things with similar Osiris rules. Let's say we want to give a certain category of NPCs a Passive, like buffing every guard in the game, or giving enemy Paladins a cool new ability.</p>
-<p>We have to do this a little differently because the massive number of NPCs means that we don't have as convenient access to them as we do with player characters. Instead of looking for eligible characters as soon as the game loads, we have to wait for them to be involved in some sort of event. An easy event to wait for is the start of combat, because they probably won't use the passive before then anyway. Whenever combat starts, we can just look for characters involved with the fight who have the tag we care about, like <code>GUARD</code> or <code>PALADIN</code>.</p>
+<p>We have to do this a little differently because the massive number of NPCs means that we don't have as convenient access to them as we do with player characters. Instead of looking for eligible characters as soon as the game loads, I prefer to wait for them to be involved in some sort of event. An easy event to wait for is the start of combat, because they often won't need the passive before then anyway. Whenever a character joins combat, we can just check if they have the tag we care about, like <code>GUARD</code> or <code>PALADIN</code>.</p>
 <p>We don't need any script setup to do this. All we need is a single rule in the KB section of a script:</p>
 <pre>
 <code>IF</code>
