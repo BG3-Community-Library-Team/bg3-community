@@ -2,7 +2,7 @@
 title: Understanding Osiris Rules
 description: An in-depth discussion of how Osiris evaluates and executes rules.
 published: true
-date: 2026-02-02T22:23:11.160Z
+date: 2026-02-03T00:44:45.518Z
 tags: osiris
 editor: markdown
 dateCreated: 2026-02-01T04:11:05.382Z
@@ -10,7 +10,7 @@ dateCreated: 2026-02-01T04:11:05.382Z
 
 This guide explains the mechanics of how Osiris evaluates and executes a **rule**. I have tried to make it more like technical documentation than a tutorial, so even though most of the topics in this guide are relatively simple, nothing is _simplified_. That is, I have tried to explain exactly _how_ and _why_ everything works so that you will be able to confidently apply it in new ways. This also means that you won't have to read or understand the entire guide to start benefiting from it - if you're learning all of this for the first time and get stuck on a difficult section, please feel free to skip it and come back later.
 
-If you're completely new to Osiris and just want a simple tutorial for your first project, I'd recommend [my guide on giving everyone a passive](https://mod.io/g/baldursgate3/r/giving-everyone-a-passive).
+If you're completely new to Osiris and just want a simple tutorial for your first project, I'd recommend [my guide on giving everyone a passive](/Tutorials/Osiris/Giving-Everyone-A-Passive).
 
 There's a lot to cover in this guide, so please take breaks if you start to feel overwhelmed, and don't worry about understanding everything at once. Learning a new programming or scripting language usually takes a lot of trial and error, and that's okay.
 
