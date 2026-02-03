@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2026-02-02T19:50:29.904Z
+date: 2026-02-03T00:46:13.506Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -119,9 +119,8 @@ This page is a list of existing Tutorials.-->
 {.links-list}
 
 ## Osiris
+- [Giving-Everyone-A-Passive](/Tutorials/Osiris/Giving-Everyone-A-Passive)
 - [Understanding Osiris Rules](/Tutorials/Osiris/Understanding-Osiris-Rules)
-- [Understanding Osiris Rules: Conditions](/Tutorials/Osiris/Understanding-Osiris-Conditions)
-- [Understanding Osiris Rules: Actions](/Tutorials/Osiris/Understanding-Osiris-Actions)
 - [Considering Performance](/Tutorials/Osiris/Considering-Performance)
 {.links-list}
 
