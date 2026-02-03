@@ -2,7 +2,7 @@
 title: Giving Everyone a Passive
 description: 
 published: false
-date: 2026-02-02T23:59:06.971Z
+date: 2026-02-03T00:04:55.428Z
 tags: osiris
 editor: code
 dateCreated: 2026-02-01T04:18:25.634Z
@@ -46,13 +46,13 @@ dateCreated: 2026-02-01T04:18:25.634Z
 <code>DB_IDENTIFIER_Initialized(0)</code>
 <code>THEN</code>
 <code>TimerLaunch("IDENTIFIER_InitDelay", 0);</code>
-<code/>
+<code> </code>
 <code>IF</code>
 <code>TimerFinished("IDENTIFIER_InitDelay")</code>
 <code>THEN</code>
 <code>NOT DB_IDENTIFIER_Initialized(0);</code>
 <code>DB_IDENTIFIER_Initialized(1);</code>
-<code/>
+<code> </code>
 <code>IF</code>
 <code>DB_Players(_Player)</code>
 <code>AND</code>
@@ -86,16 +86,50 @@ dateCreated: 2026-02-01T04:18:25.634Z
 <p>You might want to give characters a passive only when they reach a certain level. We can do this with Osiris too, although it won't create a notification or appear in the level-up screen.</p>
 <p>The setup for the script does not change. If your script already has the INIT section...</p>
 <pre>
-<p>DB_IDENTIFIER_Initialized(0);</p>
+<code>DB_IDENTIFIER_Initialized(0);</code>
 </pre>
 <p>...and the first two rules of the KB section...</p>
 <pre>
-<p>IF<br>LevelLoaded(_)<br>AND<br>DB_IDENTIFIER_Initialized(0)<br>THEN<br>TimerLaunch("IDENTIFIER_InitDelay", 0);<br><br>IF<br>TimerFinished("IDENTIFIER_InitDelay")<br>THEN<br>NOT DB_IDENTIFIER_Initialized(0);<br>DB_IDENTIFIER_Initialized(1);</p>
+<code>IF</code>
+<code>LevelLoaded(_)</code>
+<code>AND</code>
+<code>DB_IDENTIFIER_Initialized(0)</code>
+<code>THEN</code>
+<code>TimerLaunch("IDENTIFIER_InitDelay", 0);</code>
+<code> </code>
+<code>IF</code>
+<code>TimerFinished("IDENTIFIER_InitDelay")</code>
+<code>THEN</code>
+<code>NOT DB_IDENTIFIER_Initialized(0);</code>
+<code>DB_IDENTIFIER_Initialized(1);</code>
 </pre>
 <p>...then you don't need to add them again. However, if you skipped Step 2 of this guide, you will need to include them now for the rest of the script to work.</p>
 <p>Now we can get to the new rules. They're a little more complicated, but the only thing you need to do is still just replace <code>IDENTIFIER</code> with the one you picked for your mod in Step 1 and <code>GiantKiller</code> with the Passive you want.</p>
 <pre>
-<p>IF<br>DB_Players(_Player)<br>AND<br>DB_IDENTIFIER_Initialized(1)<br>THEN<br>PROC_IDENTIFIER_GiveLeveledPassive(_Player);<br><br>IF<br>LeveledUp(_Player)<br>AND<br>DB_IDENTIFIER_Initialized(1)<br>THEN<br>PROC_IDENTIFIER_GiveLeveledPassive(_Player);<br><br>PROC<br>PROC_IDENTIFIER_GiveLeveledPassive((GUIDSTRING)_Player)<br>AND<br>HasPassive(_Player, "GiantKiller", 0)<br>AND<br>GetLevel(_Player, _Level)<br>AND<br>_Level &gt;= 3<br>THEN<br>AddPassive(_Player, "GiantKiller");</p>
+<code>IF</code>
+<code>DB_Players(_Player)</code>
+<code>AND</code>
+<code>DB_IDENTIFIER_Initialized(1)</code>
+<code>THEN</code>
+<code>PROC_IDENTIFIER_GiveLeveledPassive(_Player);</code>
+<code> </code>
+<code>IF</code>
+<code>LeveledUp(_Player)</code>
+<code>AND</code>
+<code>DB_IDENTIFIER_Initialized(1)</code>
+<code>THEN</code>
+<code>PROC_IDENTIFIER_GiveLeveledPassive(_Player);</code>
+<code> </code>
+<code>PROC</code>
+<code>PROC_IDENTIFIER_GiveLeveledPassive((GUIDSTRING)_Player)</code>
+<code>AND</code>
+<code>HasPassive(_Player, "GiantKiller", 0)</code>
+<code>AND</code>
+<code>GetLevel(_Player, _Level)</code>
+<code>AND</code>
+<code>_Level &gt;= 3</code>
+<code>THEN</code>
+<code>AddPassive(_Player, "GiantKiller");</code>
 </pre>
 <p>That's it! Just remember to choose "Generate Definitions, Build and Reload" from the "File" dropdown before testing your mod.</p>
 <h3>Optional: Osiris Explanation</h3>
@@ -114,7 +148,16 @@ dateCreated: 2026-02-01T04:18:25.634Z
 <p>We have to do this a little differently because the massive number of NPCs means that we don't have as convenient access to them as we do with player characters. Instead of looking for eligible characters as soon as the game loads, we have to wait for them to be involved in some sort of event. An easy event to wait for is the start of combat, because they probably won't use the passive before then anyway. Whenever combat starts, we can just look for characters involved with the fight who have the tag we care about, like <code>GUARD</code> or <code>PALADIN</code>.</p>
 <p>We don't need any script setup to do this. All we need is a single rule in the KB section of a script:</p>
 <pre>
-<p>IF<br>DB_Is_InCombat(_Character, _)<br>AND<br>NOT DB_Players((CHARACTER)_Character)<br>AND<br>IsTagged((GUIDSTRING)_Character, (TAG)GUARD_0b52f35e-fb1f-4865-bcd2-5d21ef7343cd, 1)<br>AND<br>HasPassive(_Character, "DarkOnesBlessing", 0)<br>THEN<br>AddPassive(_Character, "DarkOnesBlessing");</p>
+<code>IF</code>
+<code>DB_Is_InCombat(_Character, _)</code>
+<code>AND</code>
+<code>NOT DB_Players((CHARACTER)_Character)</code>
+<code>AND</code>
+<code>IsTagged((GUIDSTRING)_Character, (TAG)GUARD_0b52f35e-fb1f-4865-bcd2-5d21ef7343cd, 1)</code>
+<code>AND</code>
+<code>HasPassive(_Character, "DarkOnesBlessing", 0)</code>
+<code>THEN</code>
+<code>AddPassive(_Character, "DarkOnesBlessing");</code>
 </pre>
 <p>All you need to change here is the Passive <code>DarkOnesBlessing</code> to the one you want to give (and remember to leave the quotation marks around the name), and also change the tag to the one you want.</p>
 <p>Unfortunately, we can't just use the name of a tag (like <code>GUARD</code>), we need to use the tag's name <em>and</em> GUID (like <code>GUARD_0b52f35e-fb1f-4865-bcd2-5d21ef7343cd</code>). To find this, you can go to the <strong>Tag Editor</strong> by clicking the button directly to the right of the Story Editor button. Filter the results down to the name you want and then right-click on it to select "Copy as (TAG)TagUUID". Paste this into the script and you're good to go! There are tags for many different kinds of NPCs, all of the default classes, and much more.</p>
