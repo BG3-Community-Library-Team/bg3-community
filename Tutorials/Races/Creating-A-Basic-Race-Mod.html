@@ -2,7 +2,7 @@
 title: Creating A Basic Race Mod
 description: 
 published: true
-date: 2024-09-24T11:50:12.333Z
+date: 2026-02-03T22:50:29.378Z
 tags: tutorial, races
 editor: ckeditor
 dateCreated: 2024-07-22T13:11:31.834Z
@@ -263,7 +263,7 @@ dateCreated: 2024-07-22T13:11:31.834Z
         &lt;node id="Race"&gt;
             &lt;attribute id="DisplayName" type="TranslatedString" handle="hdf502bafg2939g4569g820bg200792707f93" version="1" /&gt; &lt;!-- Display name for the race, links to Community_Race_Template.loca.xml --&gt;
             &lt;attribute id="Description" type="TranslatedString" handle="h8c7f32e9ga38ag4a4dg95f5g84300a7a48a8" version="1" /&gt; &lt;!-- Description for the race, links to Community_Race_Template.loca.xml --&gt;
-            &lt;attribute id="DisplayTypeUUID" type="guid" value="899d275e-9893-490a-9cd5-be856794929f" /&gt; &lt;!-- Humanoid display type (what precisely does this do?) --&gt;
+            &lt;attribute id="DisplayTypeUUID" type="guid" value="899d275e-9893-490a-9cd5-be856794929f" /&gt; &lt;!-- Humanoid display type (displayed when viewing character sheet) --&gt;
             &lt;attribute id="Name" type="FixedString" value="Community_MainRace" /&gt; &lt;!-- Internal name for race, doesn't affect anything in-game --&gt;
             &lt;attribute id="ParentGuid" type="guid" value="899d275e-9893-490a-9cd5-be856794929f" /&gt; &lt;!-- Humanoid Parent ID, this connects the entry to the humanoid race entry in the vanilla Races file.--&gt;
             &lt;attribute id="ProgressionTableUUID" type="guid" value="78cb9632-c52c-47d6-8588-4779228fc892" /&gt; &lt;!-- Progression table, regenerate before releasing mod! --&gt;
@@ -335,12 +335,13 @@ dateCreated: 2024-07-22T13:11:31.834Z
 <p>After you've gone through and edited all the files to match your new race, stop and test in game! Make sure everything works before continuing to the add-ons. If your game crashes upon load or upon selecting the race, some of the UUIDs that need to match probably don't match.</p>
 <h1>The Subrace Addon</h1>
 <p>Let's say you want to add a subrace, or more than one subrace, to your custom race. Here's how to do that.</p>
+<p>An example template containing one basic functioning subrace can be found at the same github link: https://github.com/EmeraldTechnopath/CMTY-Race-Template under the “Subrace_Addon” folder. (Although it is called an Addon, at the time of this writing it is standalone, so you can either use it as-is, or copy the extra code into your mod as detailed below.)</p>
 <h2>Races.lsx</h2>
 <p>The most important thing you'll need to add a subrace is to add another Race entry in the Races.lsx.</p>
 <pre><code class="language-xml">		&lt;node id="Race"&gt; &lt;!-- Sub Race --&gt;
             &lt;attribute id="DisplayName" type="TranslatedString" handle="h687c2b71g292eg4e12gbce8g29fb2edeceeb" version="1" /&gt; &lt;!-- Display name for the sub race, links to Community_Race_Template.loca.xml --&gt;
             &lt;attribute id="Description" type="TranslatedString" handle="h3ed7c5e5gb17ag4b3dg8787g9663e1129dd9" version="1" /&gt; &lt;!-- Description for the sub race, links to Community_Race_Template.loca.xml --&gt;
-            &lt;attribute id="DisplayTypeUUID" type="guid" value="899d275e-9893-490a-9cd5-be856794929f" /&gt; &lt;!-- Humanoid display type --&gt;
+            &lt;attribute id="DisplayTypeUUID" type="guid" value="899d275e-9893-490a-9cd5-be856794929f" /&gt; &lt;!-- Humanoid display type (displayed when viewing character sheet) --&gt;
             &lt;attribute id="Name" type="FixedString" value="Community_SubRace" /&gt; &lt;!-- Internal name for sub race, doesn't affect anything in-game --&gt;
             &lt;attribute id="ParentGuid" type="guid" value="3328d981-bf97-4e50-8961-fef8cd80c67e" /&gt; &lt;!-- Custom race Parent ID, this connects the entry to the original custom race entry above --&gt;
             &lt;attribute id="ProgressionTableUUID" type="guid" value="ace6567b-ae51-474b-8643-136d0c1246a1" /&gt; &lt;!-- Sub Race Progression table, regenerate before releasing mod! --&gt;
@@ -394,7 +395,7 @@ dateCreated: 2024-07-22T13:11:31.834Z
 				&lt;/node&gt;</code></pre>
 <p>Add these entries underneath your existing root templates, and make sure you change the ParentTemplateId and the Race values. (If you have multiple subraces, make a copy of these for each subrace.)</p>
 <h2>CharacterCreationPresets.lsx</h2>
-<p>Here we'll tell the game to use your new subrace instead of the base race.</p>
+<p>Here, we'll tell the game to use your new subrace instead of the base race.</p>
 <pre><code class="language-xml">				&lt;node id="CharacterCreationPreset"&gt; &lt;!-- Sub Race Female Standard --&gt;
                     &lt;attribute id="BodyShape" type="uint8" value="0"/&gt; &lt;!-- 0 = Standard --&gt;
                     &lt;attribute id="BodyType" type="uint8" value="1"/&gt; &lt;!-- 1 = Female --&gt;
@@ -419,5 +420,5 @@ dateCreated: 2024-07-22T13:11:31.834Z
                     &lt;attribute id="UUID" type="guid" value="54a734e9-462a-480f-ab82-700a62a59142"/&gt; &lt;!-- UUID that tells the game this is its own unique object. Regenerate this before publishing the mod! --&gt;
                     &lt;attribute id="VOLinesTableUUID" type="guid" value="14df8f45-90af-4bd0-8024-42624da9976e"/&gt; &lt;!-- Sets the lines used when the player previews the voice in CC. Leaving it at the default is recommended. --&gt;
                 &lt;/node&gt;</code></pre>
-<p>The main change here is plugging the subrace UUID into the SubRaceUUID line and your new root templates into the RootTemplate line. You do not need to add new entries, you can simply use the ones that already exist! (However, if you were to have multiple subraces, you would need to add another copy of these nodes for each subrace.)</p>
+<p>The main change here is plugging the subrace UUID into the SubRaceUUID line and your new root templates into the RootTemplate line. You do not need to add new entries, you can simply use the ones that already exist! (However, if you were to have multiple subraces, you would need to add another copy of these nodes for each subrace. For example, if you have 2 subraces with 2 body types each, you need 4 CharacterCreationPreset nodes total.)</p>
 <p>Now, stop and test the mod. You should see your subrace(s) appear in CC!</p>
