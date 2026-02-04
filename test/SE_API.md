@@ -2,7 +2,7 @@
 title: SE API
 description: 
 published: true
-date: 2026-02-04T14:33:05.366Z
+date: 2026-02-04T14:33:48.381Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-25T19:49:02.547Z
@@ -1010,7 +1010,7 @@ Channels.TemplateAddTo:SendToServer({
 })
 ```
 
-In the following examples, channel creation be partially omitted for brevity.
+In the following examples, channel creation may be partially omitted for brevity.
 
 ##### 2) Request / reply (client requests some data from the server)
 
