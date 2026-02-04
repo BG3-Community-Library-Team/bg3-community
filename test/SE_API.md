@@ -2,7 +2,7 @@
 title: SE API
 description: 
 published: true
-date: 2026-02-04T14:32:06.892Z
+date: 2026-02-04T14:32:56.300Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-25T19:49:02.547Z
@@ -980,6 +980,7 @@ function NetChannel:RequestToClient(data, user, replyCallback) end
 
 This section provides some pseudo-code examples of how to use the NetChannel API under different scenarios.
 It is recommended to create the same channels in both contexts, e.g. within Shared files that both server and client contexts import before their main logic.
+In the following examples, channel creation be partially omitted for brevity.
 
 ##### 1) Server-side handler that calls Osiris using data from the payload
 
