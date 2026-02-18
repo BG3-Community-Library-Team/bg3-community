@@ -2,14 +2,14 @@
 title: Patching in More Spells to Selectable Tome Spells
 description: How to patch more spells into the Selectable Tome Spells mod using the toolkit.
 published: true
-date: 2026-02-18T22:06:55.218Z
+date: 2026-02-18T23:41:47.140Z
 tags: spells, toolkit, mod integration, selectable tome spells
 editor: markdown
 dateCreated: 2025-12-09T23:14:42.527Z
 ---
 
-[Mod-Integration](/Tutorials/Mod-Integration)# Patching in More Spells to Selectable Tome Spells
-Guide written by EvilSnail0fDestruktion! 
+# Patching in More Spells to Selectable Tome Spells
+*Guide written by EvilSnail0fDestruktion*
 
 This is a guide on patching more spells into the Selectable Tome Spells mod ([Nexus](https://www.nexusmods.com/baldursgate3/mods/16889), [mod.io](https://mod.io/g/baldursgate3/m/pactofthetome#description)), using the BG3 Modding Toolkit. 
 
