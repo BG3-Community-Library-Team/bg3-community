@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2026-02-03T00:47:03.946Z
+date: 2026-02-18T22:29:03.982Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -127,4 +127,5 @@ This page is a list of existing Tutorials.-->
 ## Mod Integration
 - [BG3SX Whitelisting](/Tutorials/Mod-Integration/BG3SX/Whitelisting)
 - [More Firewine Kobolds](/Tutorials/Mod-Integration/More-Firewine-Kobolds)
+- [More-Selectable-Tome-Spells](/Tutorials/Mod-Integration/More-Selectable-Tome-Spells)
 {.links-list}
