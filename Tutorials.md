@@ -2,7 +2,7 @@
 title: Tutorials
 description: This page is a list of existing Tutorials.
 published: true
-date: 2026-02-18T22:29:03.982Z
+date: 2026-02-18T22:49:51.279Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-24T07:11:52.508Z
@@ -112,10 +112,14 @@ This page is a list of existing Tutorials.-->
 
 ## Toolkit
 - [Toolkit FAQ](/Tutorials/Toolkit/Toolkit-FAQ)
-- [Creating Piercings with the Toolkit](/Tutorials/Toolkit/Creating-Piercings-with-the-Toolkit)
 - [Toolkit Tips](/Tutorials/Toolkit/Toolkit_Tips)
+- [Installing the Toolkit on Linux](/Tutorials/Toolkit/Installing-the-Toolkit-on-Linux)
+- [Creating Piercings with the Toolkit](/Tutorials/Toolkit/Creating-Piercings-with-the-Toolkit)
 - [Custom Spring Physics in the Toolkit](/Tutorials/Toolkit/spring-physics)
 - [Adding Animations In Toolkit](/Tutorials/Animations/Adding-Animations-In-Toolkit)
+- [Character Visuals Not Showing Fix](/Tutorials/Toolkit/charvis-fix)
+- [Creating a new Level](/Tutorials/Toolkit/Creating-a-new-level)
+- [How to Swap Shaders](/Tutorials/Toolkit/swapping-toolkit-shaders)
 {.links-list}
 
 ## Osiris
@@ -127,5 +131,5 @@ This page is a list of existing Tutorials.-->
 ## Mod Integration
 - [BG3SX Whitelisting](/Tutorials/Mod-Integration/BG3SX/Whitelisting)
 - [More Firewine Kobolds](/Tutorials/Mod-Integration/More-Firewine-Kobolds)
-- [More-Selectable-Tome-Spells](/Tutorials/Mod-Integration/More-Selectable-Tome-Spells)
+- [More Selectable Tome Spells](/Tutorials/Mod-Integration/More-Selectable-Tome-Spells)
 {.links-list}
