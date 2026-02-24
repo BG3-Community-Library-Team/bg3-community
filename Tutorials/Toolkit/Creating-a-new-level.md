@@ -2,7 +2,7 @@
 title: Creating a New Level
 description: Small guide covering the basics of creating levels for screen archery.
 published: true
-date: 2026-01-20T09:58:47.572Z
+date: 2026-02-24T17:15:29.606Z
 tags: levels, screen archery, toolkit, screenarchery
 editor: markdown
 dateCreated: 2025-10-17T12:50:22.826Z
@@ -298,11 +298,11 @@ Each tool has its own parameters, which you can access by right-clicking on the 
 
 ## Finally placing objects to unleash your abstract vision
 
-Enable `Create` tool, which allows you to create objects on click (`5` keybind), without dragging them from the `Root Temlates` window.
+Enable `Create` tool, which allows you to create objects on click (`5` keybind) — without dragging them from the `Root Templates` window.
 
 ![creating-a-new-level-12-place-tool.webp](/tutorials/toolkit/creating-a-new-level/creating-a-new-level-12-place-tool.webp)
 
-Then find an object in `Root Templates` and place it by clicking on terrain.
+Find an object in `Root Templates` and place it by clicking on terrain.
 
 
 *You can also hold left click to rotate the object before placing it*.
@@ -317,7 +317,7 @@ Now you can move it however you want by selecting it and using the keybinds I me
 
 
 ## Terrain XDDDDDDDDDDDDDDD
-The Terrain panel is for adding new terrain or editing the existing terrain. When you first open the panel, you'll see a list of available terrains in your level. To start editing a terrain, select it by clicking on it in the panel or by clicking on it in the viewport. 
+The Terrain panel is for adding new terrain or editing the existing terrain. When you first open the panel, you'll see a list of available terrains in your level. To start editing a terrain, select it by clicking on it in the panel or by clicking directly on the terrain in the viewport. 
 ![placeholder_for_img](placeholder_for_img)
 
 ### Changing Shape and Size 
@@ -335,17 +335,11 @@ To start using the material, select it in the terrain panel and click the paint 
 ### Terrain Painting Tips
 - You can (and should) layer different materials while painting.
 - Removing a material from the terrain panel will remove all instances of that painted material from the terrain.
-- Unfortunately, there's no convenient way to preview terrain brushes from the resource manager. But you can search for TT_ and filter textures and terrain brushes.
+- Unfortunately, there's no convenient way to preview what terrain brushes actually look like without trying them, but you can filter by terrain brushes in the resource manager.
 
 ### Add new terrains
 
 XD WHY?
-
-### Height map
-You can import height map
-
-### Source
-https://docs.larian.game/Terrain_panel
 
 ## Instances
 Brush - Parameters
@@ -387,9 +381,11 @@ Batch convert with the tool
 
 ## New IPs, TTs
 
-## How to delete the level
+## Getting to Your Level in Game
 
-
-
+**Console Command**
+The easiest way to get to your level without setting anything else up is to use the following console command: 
+`TeleportPartiesToLevelWithMovie("YourLevelName","","")`
+- YourLevelName is the name of your level, not your project. 
 
 
