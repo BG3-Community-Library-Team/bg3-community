@@ -2,7 +2,7 @@
 title: Cloth Physics
 description: A guide to add cloth physics to your mesh
 published: true
-date: 2026-01-15T13:24:49.346Z
+date: 2026-02-25T17:31:58.399Z
 tags: tutorial, cloth, cloth physics, physics
 editor: markdown
 dateCreated: 2025-05-23T18:21:12.555Z
@@ -319,6 +319,59 @@ The **Resource Name**, **Physics Mesh**, and **Target Meshes** fields should aut
 ![screenshot_2025-06-02_151757.webp](/tutorials/visual/cloth-physics/screenshot_2025-06-02_151757.webp)
 
 In your **meshes.lsf.lsx** file, paste in the [code block Lynia has linked](https://pastebin.com/4peJ4dkn) from her video. Paste it **underneath** `<node id="Base" />`, not inside of that node. This block contains all of the parameters of the cloth physics. Feel free to adjust them. 
+
+In case you cannot access PasteBin, the same code block is included below:
+```
+
+
+    <node id="ClothParams">
+    							<attribute id="AngularDrag" type="fvec3" value="0.0001 0.0001 0.0001" />
+    							<attribute id="AngularInertia" type="fvec3" value="0.5 0.5 0.5" />
+    							<attribute id="AnimDriveDampingForce" type="float" value="0" />
+    							<attribute id="AnimDriveSpringForce" type="float" value="25" />
+    							<attribute id="AnimInfluenceMultiplier" type="float" value="1" />
+    							<attribute id="AtmosphericWindEnabled" type="bool" value="True" />
+    							<attribute id="BendingStiffness" type="float" value="1" />
+    							<attribute id="CentrifugalInertia" type="fvec3" value="0.5 0.5 0.5" />
+    							<attribute id="ClothMainWindFrequency" type="float" value="0" />
+    							<attribute id="ClothMainWindSpeed" type="float" value="0" />
+    							<attribute id="ClothMainWindVariance" type="float" value="0" />
+    							<attribute id="ClothMaxWindDirectionOffset" type="float" value="0" />
+    							<attribute id="ClothWindDirectionOffsetFrequency" type="float" value="0" />
+    							<attribute id="ClothWindSpeed" type="float" value="0" />
+    							<attribute id="CollisionMassScale" type="float" value="1" />
+    							<attribute id="CompressionLimit" type="float" value="0.8" />
+    							<attribute id="Damping" type="fvec3" value="0.02 0.02 0.02" />
+    							<attribute id="DragCoefficient" type="float" value="0.4" />
+    							<attribute id="EnableCCD" type="bool" value="False" />
+    							<attribute id="EnableVirtualParticles" type="bool" value="False" />
+    							<attribute id="FluidDensity" type="float" value="0.1" />
+    							<attribute id="Friction" type="float" value="0.1" />
+    							<attribute id="FrontalWindSpeed" type="float" value="0" />
+    							<attribute id="FrontalWindVariance" type="float" value="0" />
+    							<attribute id="LiftCoefficient" type="float" value="0.01" />
+    							<attribute id="LinearDrag" type="fvec3" value="0.0001 0.0001 0.0001" />
+    							<attribute id="LinearInertia" type="fvec3" value="0.5 0.5 0.5" />
+    							<attribute id="LinearStiffness" type="float" value="1" />
+    							<attribute id="OverrideAtmosphericWind" type="bool" value="False" />
+    							<attribute id="SelfCollisionDistance" type="float" value="0" />
+    							<attribute id="SelfCollisionStiffness" type="float" value="0" />
+    							<attribute id="SolverFrequency" type="float" value="30" />
+    							<attribute id="StiffnessFrequency" type="float" value="100" />
+    							<attribute id="StiffnessMultiplier" type="float" value="1" />
+    							<attribute id="StretchLimit" type="float" value="1.2" />
+    							<attribute id="TetherConstraintScale" type="float" value="1" />
+    							<attribute id="TetherConstraintStiffness" type="float" value="1" />
+    							<attribute id="UUID" type="FixedString" value="CLOTH_MESH_NAME" /> Put the name of your Cloth_Mesh here
+    						</node>
+     
+    						<node id="ClothProxyMapping">
+    							<children>
+    								<!-- Paste the code from Cloth Tools here -->
+    							</children>
+    						</node>
+
+```
 
 Under the node `<node id="ClothParams">`, replace the value of the attribute **UUID** with the name of your cloth mesh. 
 - The name will be in GR2FileName.SubmeshName format
