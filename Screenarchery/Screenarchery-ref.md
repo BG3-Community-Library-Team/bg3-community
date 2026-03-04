@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2026-03-04T22:30:51.852Z
+date: 2026-03-04T22:52:00.289Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -48,9 +48,6 @@ Non-exhaustive list of mods and tools for taking pictures in game.
 - [Native Camera Tweaks](https://www.nexusmods.com/baldursgate3/mods/945) by Ershin
   - Native open source plugin providing several camera tweaks. Unlocked camera pitch, zoom, controller stick deadzone
 
-- [Snapshots](https://www.nexusmods.com/baldursgate3/mods/17934) by rdekarios
-  - Fast travel to 45 of the game's harder to access places, unseen locations, and cutscene exclusive locations, and change the lighting and atmosphere
-
 - [WASD Character Movement](https://www.nexusmods.com/baldursgate3/mods/781) by Ch4nKyy
   - Makes moving around for photography easier, especially if using EasyCheat to teleport to certain locations which don't have a "ground" to click on
 
@@ -70,7 +67,7 @@ Non-exhaustive list of mods and tools for taking pictures in game.
   - Create pretty particles! :fireworks::sparkles:
   
 - [Creature Photo Mode Fix](https://www.nexusmods.com/baldursgate3/mods/18997)
-  - Fixes the bug that a few Creatures don't enter photomode properly.
+  - Fixes a bug that causes a few creatures to not enter photo mode properly. 
   
 ## Supplemental for Scenery / Characters
 
@@ -80,6 +77,25 @@ Non-exhaustive list of mods and tools for taking pictures in game.
 - [Appearance Edit Enhanced + Origins addon](https://discord.com/channels/1356377728126943424/1358516980839350393/1358516980839350393)
   - Allows changing the appearance of companions
 
+## Unique Locations / Custom VP Maps
+- [AxiAU: Barovia](https://www.nexusmods.com/baldursgate3/mods/20160)
+  - Four locations from the Curse of Strahd D&D module: The Gates of Barovia, the crossroads, Baba Lysaga's creeping hut, and Madam Eva's Vistani camp. Lighty Lights' AnL supported.
+- [AxiAU: Waterdeep](https://www.nexusmods.com/baldursgate3/mods/21293)
+  - Full build of Gale's tower in Waterdeep. Entry/hall, kitchen/dining area, guest room with bathroom, parlor, master suite with bathroom, two patios, Serafina's walk-in closet with teleport to her pocket realm goddess cave, courtyard. Also includes street with park, bookstore cafe, apartments. Lighty Lights' AnL supported.
+- [AxiAU: Zen](https://www.nexusmods.com/baldursgate3/mods/20472)
+  - Three locations: Tree-lined path (spring and fall), private island / beach house, Japanese garden. Lighty Lights' AnL supported.
+- [Gale's Extended Tower](https://www.nexusmods.com/baldursgate3/mods/20165)
+  - Partial build of Gale's tower in Waterdeep. Antechamber, bedroom, stairs.
+- [Lenore's Grotto](https://www.nexusmods.com/baldursgate3/mods/19395)
+  - Edit of the Sharran grotto in Act 3. 
+- [Photobooth](https://www.nexusmods.com/baldursgate3/mods/20117)
+  - Adds several areas with three lighting/atmosphere options for each (day, sunset, night). Beach waypoint: Beach, pool, bard stage/courtyard, garden house, hot springs waterfall, private campsite, forest path. Monastery waypoint: library, carriage courtyard, chapel, dining hall, courtyard with stream, formal bedchambers. Also has special launch party venue and private camp with individually-decorated rooms. 
+- [Serafina and Gale's Elysian Summer Home](https://www.nexusmods.com/baldursgate3/mods/20309)
+  - An open-air palace built in God Gale's Elysium. Bedroom, library, ballroom, pool, courtyard. Lighty Lights' AnL supported.
+- [Snapshots](https://www.nexusmods.com/baldursgate3/mods/17934) by rdekarios
+  - Fast travel to 45 of the game's harder to access places, unseen locations, and cutscene-exclusive locations. Lighty Lights' AnL not supported, but includes several lighting and atmosphere options (can be mixed and matched) for all locations. 
+- [Vampire Palace](https://www.nexusmods.com/baldursgate3/mods/19310)
+  - Edit of Cazador's palace. 
 
 ## Poses / Expressions for Photo Mode
 
