@@ -2,18 +2,16 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2025-12-03T23:52:41.058Z
+date: 2026-03-04T22:30:51.852Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
 ---
 
 # Screenarchery / Virtual Photography Tools
-Non-exhaustive list of mods and tools which can be useful for screenarchery / virtual photography / photomode. 
+Non-exhaustive list of mods and tools for taking pictures in game.
 
-Catchall reference page until Screenarchery Tutorial section is ready to be published.
-
-
+(This is a catch-all reference page until the screen archery tutorial section is ready to be published. Or maybe forever.)
 
 ## External tools
 
@@ -87,7 +85,7 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 
 
 > Many will need a patch to work together:
-> [Pose Mod Compatibility Patch](https://www.nexusmods.com/baldursgate3/mods/19414) or jsut use [QSAT](https://www.nexusmods.com/baldursgate3/mods/17737)
+> [Faerun Fashionistas Mega Pose Patch](https://www.nexusmods.com/baldursgate3/mods/20159) or [Pose Mod Compatibility Patch](https://www.nexusmods.com/baldursgate3/mods/19414) or just use [QSAT](https://www.nexusmods.com/baldursgate3/mods/17737)
 {.is-info}
 
 
@@ -114,6 +112,8 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [Axi and Cay's LADS Poses](https://www.nexusmods.com/baldursgate3/mods/19618)
   
 - [Axi and Cay's Meme Poses](https://www.nexusmods.com/baldursgate3/mods/19474)
+  
+- [Axi and Cay's Storytelling Pose Sets](https://www.nexusmods.com/baldursgate3/mods/20188) 
 
 - [The Best Boy - Scratch Pose Pack](https://www.nexusmods.com/baldursgate3/mods/18623)
 
@@ -138,6 +138,8 @@ Catchall reference page until Screenarchery Tutorial section is ready to be publ
 - [Extra Camera Mode Poses](https://www.nexusmods.com/baldursgate3/mods/17597)
   
 - [Faerun Fashionistas Mega Pose Pack](https://www.nexusmods.com/baldursgate3/mods/19829)
+  
+- [Faerun Fashionistas Mega Pose Pack - NSFW Edition](https://www.nexusmods.com/baldursgate3/mods/20030)
     
 - [Igs Misc Poses](https://www.nexusmods.com/baldursgate3/mods/19881)
 
@@ -323,7 +325,7 @@ https://framedsc.com/basics.htm
 - It is what it is, it happens sometimes. Each tool has its own wiki/documentation, you just need to use google occasionally
 
 ### General
-- **Screenshots have washed/gray colors:** disable HDR
+- **Screenshots have washed/gray colors:** disable HDR in windows and make sure you don't have any HDR addons enabled in ReShade
 
 ### ReShade
 - **Any shader that relies on depth buffer (like DoF (except IGCS DoF), AO, GI, Fog, etc) acting weird, can't be properly adjusted and so on:**
