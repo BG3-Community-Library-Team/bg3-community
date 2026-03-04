@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2026-03-04T22:52:00.289Z
+date: 2026-03-04T23:03:41.249Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -37,13 +37,13 @@ Non-exhaustive list of mods and tools for taking pictures in game.
 
 
 - [Script Extender](https://github.com/Norbyte/bg3se/releases/tag/updater-20240430) by Norbyte
-  - Needed for most tools, also enabling the console with BG3MM opens up the option to input commands
+  - Required framework for most tools. Also allows you to open the console so you can input commands. 
 
 - [MCM (Mod Configuration Menu)](https://www.nexusmods.com/baldursgate3/mods/9162) by Volitio
-  - Needed for the in-game menus of many of the mods in here
+  - Required UI framework for most of the following mods.
 
 - [EasyCheat](https://www.nexusmods.com/baldursgate3/mods/9827) by Aahz
-  - In-game UI for access to cheaty things, including a searchable item spawner, teleportering to any level, party menu, etc
+  - In-game UI that lets you access cheaty things. Includes searchable item spawner and a teleport feature that takes you to any in-game trigger point. 
 
 - [Native Camera Tweaks](https://www.nexusmods.com/baldursgate3/mods/945) by Ershin
   - Native open source plugin providing several camera tweaks. Unlocked camera pitch, zoom, controller stick deadzone
@@ -52,16 +52,16 @@ Non-exhaustive list of mods and tools for taking pictures in game.
   - Makes moving around for photography easier, especially if using EasyCheat to teleport to certain locations which don't have a "ground" to click on
 
 - [Lighty Lights](https://www.nexusmods.com/baldursgate3/mods/14364) by rakor
-  - Allows you to create and control light sources
+  - Tool that lets you create and position light sources. Also lets you change the lighting and atmosphere in the game (works in most base-game levels and in some custom levels). Also lets you adjust poses (to some extent) in game. 
 
 - [Backgrounds](https://www.nexusmods.com/baldursgate3/mods/14999) by rakor
-  - Allows you to create backgrounds
+  - Tool that lets you create backgrounds and simple objects.
 
 - [QSAT (Quick Small Animation Thingy)](https://www.nexusmods.com/baldursgate3/mods/17737) by rakor
-  - To play any in-gamea and modded animations without patches; also allows to play tail and wings animations separatly 
+  - Tool that lets you play any in-game or modded animation/pose without a patch. Also allows you to play tail, wing, and face animations separately.
 
 - [Move Here](https://discord.com/channels/1211056047784198186/1316159736135286866/1355178698747150436) by rakor
-  - To position objects and characters
+  - Tool for positioning objects and characters.
 
 - [Pretty Particles](https://www.nexusmods.com/baldursgate3/mods/14474) by scarstarion
   - Create pretty particles! :fireworks::sparkles:
@@ -93,7 +93,9 @@ Non-exhaustive list of mods and tools for taking pictures in game.
 - [Serafina and Gale's Elysian Summer Home](https://www.nexusmods.com/baldursgate3/mods/20309)
   - An open-air palace built in God Gale's Elysium. Bedroom, library, ballroom, pool, courtyard. Lighty Lights' AnL supported.
 - [Snapshots](https://www.nexusmods.com/baldursgate3/mods/17934) by rdekarios
-  - Fast travel to 45 of the game's harder to access places, unseen locations, and cutscene-exclusive locations. Lighty Lights' AnL not supported, but includes several lighting and atmosphere options (can be mixed and matched) for all locations. 
+  - Lets you access 45 of the game's hard-to-access, unseen- and cutscene-exclusive locations, and makes them walkable. Lighty Lights' AnL not supported, but includes several lighting and atmosphere options (can be mixed and matched) for all locations. 
+- [The Unspoken Horizons](https://discord.com/channels/1356377728126943424/1376856832483786772/1424944126322933800)
+  - Add a bunch of random places rakor made for one-off shots. Snow level, train, flower field, night sea, etc. 
 - [Vampire Palace](https://www.nexusmods.com/baldursgate3/mods/19310)
   - Edit of Cazador's palace. 
 
