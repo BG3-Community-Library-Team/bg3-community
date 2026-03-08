@@ -2,7 +2,7 @@
 title: DribbleSpec - SE testing framework
 description: Guide/documentation for the Jest-inspired Script Extender test framework for Lua mods with test DSL, doubles, fixtures, and entity, context-aware assertions.
 published: true
-date: 2026-03-08T23:22:35.702Z
+date: 2026-03-08T23:22:54.236Z
 tags: se, script-extender, frameworks, script extender, test, mod testing
 editor: markdown
 dateCreated: 2026-03-08T23:14:38.962Z
@@ -258,7 +258,7 @@ local run = D.RunMine({
 
 Other extension points coming in the future.
 
-***DribbleSpec is in beta and still evolving. While it is used in practice and even actively dogfoods itself, some advanced features may be unreliable, and breaking API changes are still possible.***
+***DribbleSpec is in beta and still evolving. While it is used in practice and even to actively test itself, some advanced features may be unreliable, and breaking API changes are still possible.***
 
 
 <!-- - `fixtureAliases` for alias-to-spec lookup -->
