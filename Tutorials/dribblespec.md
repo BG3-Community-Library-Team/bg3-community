@@ -2,7 +2,7 @@
 title: DribbleSpec - SE testing framework
 description: Guide/documentation for the Jest-inspired Script Extender test framework for Lua mods with test DSL, doubles, fixtures, and entity, context-aware assertions.
 published: true
-date: 2026-03-08T23:19:25.836Z
+date: 2026-03-08T23:22:35.702Z
 tags: se, script-extender, frameworks, script extender, test, mod testing
 editor: markdown
 dateCreated: 2026-03-08T23:14:38.962Z
@@ -46,11 +46,11 @@ This will:
 1. Register a console command `!mytests` that runs only your mod's tests;
 2. Tag all your tests with `mymod` so they can be filtered by `dribbles --tag mymod`;
 
-This returns a fresh symbol table with all relevant exports.
+This returns a fresh symbol table with all relevant exports:
 
 ## Exported symbols
 
-`RegisterTestGlobals()`, will return a table with:
+`RegisterTestGlobals()` will return a table with:
 
 - `describe`
 - `test`
@@ -257,6 +257,9 @@ local run = D.RunMine({
 ```
 
 Other extension points coming in the future.
+
+***DribbleSpec is in beta and still evolving. While it is used in practice and even actively dogfoods itself, some advanced features may be unreliable, and breaking API changes are still possible.***
+
 
 <!-- - `fixtureAliases` for alias-to-spec lookup -->
 <!-- - `fixtureSpawner` for custom spawn behavior -->
