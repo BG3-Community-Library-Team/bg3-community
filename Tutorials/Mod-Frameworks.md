@@ -2,7 +2,7 @@
 title: Mod Frameworks
 description: List of tutorials relating to Mod Frameworks
 published: true
-date: 2026-03-08T22:58:34.533Z
+date: 2026-03-08T22:58:46.059Z
 tags: tutorial, frameworks, tutorials
 editor: markdown
 dateCreated: 2024-05-02T16:42:02.091Z
@@ -18,6 +18,6 @@ This page is a list of existing Tutorials relating to Mod Frameworks.
 - [Inspiration Framework Usage](using-inspiration-framework)
 - [Mod Configuration Menu](mod-configuration-menu)
 - [Backstabbing Framework](Backstabbing_Framework)
-- [DribbleSpec](dribblespec)
+- [DribbleSpec (SE test framework)](dribblespec)
 
 {.links-list}
