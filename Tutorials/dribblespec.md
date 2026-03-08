@@ -2,7 +2,7 @@
 title: DribbleSpec - SE testing framework
 description: Guide/documentation for the Jest-inspired Script Extender test framework for Lua mods with test DSL, doubles, fixtures, and entity, context-aware assertions.
 published: true
-date: 2026-03-08T23:22:54.236Z
+date: 2026-03-08T23:32:04.389Z
 tags: se, script-extender, frameworks, script extender, test, mod testing
 editor: markdown
 dateCreated: 2026-03-08T23:14:38.962Z
@@ -10,17 +10,20 @@ dateCreated: 2026-03-08T23:14:38.962Z
 
 # DribbleSpec Guide
 
+
+
 ## What DribbleSpec provides
 
 [DribbleSpec](https://www.nexusmods.com/baldursgate3/mods/21808) is a reusable BG3SE Lua test framework that provides:
 
 - Jest-like test DSL (`describe`, `test`, hooks)
-- Assertions (`expect`, core + entity domain matchers)
-- Doubles (`mockFn`, `spyOn`, `stub` via test `ctx`)
+- Assertions (`expect`, core + entity matchers)
+- Doubles (`mockFn`, `spyOn`, `stub`, via test `ctx`)
 - Runtime helpers (`requireClient`, `requireServer`, `nextTick`, `waitUntil`)
 - Fixture pipeline (preplaced first, spawn fallback)
-- Entity helpers (`entityRef`) and volatile-aware equality
-- IDE helpers (`DribblesIdeHelpers.lua` in `Docs/`)
+- Entity helpers (`entityRef`)
+- (Some advanced features in development)
+- IDE helpers ([`DribblesIdeHelpers.lua`](https://raw.githubusercontent.com/AtilioA/DribbleSpec/refs/heads/main/DribbleSpec/Mods/DribbleSpec/ScriptExtender/Lua/Shared/DribbleSpec/Docs/DribblesIdeHelpers.lua))
 
 ## Quick start
 
@@ -264,4 +267,3 @@ Other extension points coming in the future.
 <!-- - `fixtureAliases` for alias-to-spec lookup -->
 <!-- - `fixtureSpawner` for custom spawn behavior -->
 <!-- - `--tag destructive` for explicitly opt-in world mutation suites -->
-
