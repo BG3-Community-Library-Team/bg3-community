@@ -2,7 +2,7 @@
 title: DribbleSpec - SE testing framework
 description: Guide/documentation for the Jest-inspired Script Extender test framework for Lua mods with test DSL, doubles, fixtures, and entity, context-aware assertions.
 published: true
-date: 2026-03-08T23:14:38.963Z
+date: 2026-03-08T23:18:53.316Z
 tags: se, script-extender, frameworks, script extender, test, mod testing
 editor: markdown
 dateCreated: 2026-03-08T23:14:38.962Z
@@ -35,7 +35,6 @@ You can configure one-time defaults for your mod:
 
 ```lua
 local D = RegisterTestGlobals({
-    ownerModuleUUID = ModuleUUID,
     globalTags = { "mymod" },
     commandAlias = "mytests",
     ownerModuleUUID = ModuleUUID
@@ -66,13 +65,6 @@ This returns a fresh symbol table with all relevant exports.
 - `RunMine`
 
 `RegisterTestGlobals(options?)` accepts an optional table and returns a fresh export table each time. Your mod decides where to assign it (`D`, `Dribbles`, local variable, etc.).
-
-Framework entrypoints:
-
-- global `RegisterTestGlobals(options?)`
-- `DribbleSpec.RegisterTestGlobals(options?)`
-
-DribbleSpec does not create `Mods.Dribbles` for you.
 
 ## Minimal test file example
 
@@ -129,6 +121,7 @@ Use `D.skip(reason)` (standalone) or `ctx.skip(reason)` (inside test body) to sk
 ```lua
 D.describe("Optional integration", { tags = { "entity" } }, function()
     D.test("resolves preplaced entity", function(ctx)
+    		ctx.expect(MY_GUID).toBeUuid()
         local entity = Ext.Entity.Get(MY_GUID)
         if entity == nil then
             D.skip("Entity not in current save")
