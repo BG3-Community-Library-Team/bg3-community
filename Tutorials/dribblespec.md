@@ -2,7 +2,7 @@
 title: DribbleSpec - SE testing framework
 description: Guide/documentation for the Jest-inspired Script Extender test framework for Lua mods with test DSL, doubles, fixtures, and entity, context-aware assertions.
 published: true
-date: 2026-03-08T23:18:53.316Z
+date: 2026-03-08T23:19:25.836Z
 tags: se, script-extender, frameworks, script extender, test, mod testing
 editor: markdown
 dateCreated: 2026-03-08T23:14:38.962Z
@@ -12,7 +12,7 @@ dateCreated: 2026-03-08T23:14:38.962Z
 
 ## What DribbleSpec provides
 
-DribbleSpec is a reusable BG3SE Lua test framework that provides:
+[DribbleSpec](https://www.nexusmods.com/baldursgate3/mods/21808) is a reusable BG3SE Lua test framework that provides:
 
 - Jest-like test DSL (`describe`, `test`, hooks)
 - Assertions (`expect`, core + entity domain matchers)
