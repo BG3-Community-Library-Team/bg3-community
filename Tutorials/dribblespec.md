@@ -2,7 +2,7 @@
 title: DribbleSpec - SE testing framework
 description: Guide/documentation for the Jest-inspired Script Extender test framework for Lua mods with test DSL, doubles, fixtures, and entity, context-aware assertions.
 published: true
-date: 2026-03-08T23:32:04.389Z
+date: 2026-03-09T04:06:50.882Z
 tags: se, script-extender, frameworks, script extender, test, mod testing
 editor: markdown
 dateCreated: 2026-03-08T23:14:38.962Z
@@ -20,10 +20,10 @@ dateCreated: 2026-03-08T23:14:38.962Z
 - Assertions (`expect`, core + entity matchers)
 - Doubles (`mockFn`, `spyOn`, `stub`, via test `ctx`)
 - Runtime helpers (`requireClient`, `requireServer`, `nextTick`, `waitUntil`)
+- (Some advanced features in development)
 - Fixture pipeline (preplaced first, spawn fallback)
 - Entity helpers (`entityRef`)
-- (Some advanced features in development)
-- IDE helpers ([`DribblesIdeHelpers.lua`](https://raw.githubusercontent.com/AtilioA/DribbleSpec/refs/heads/main/DribbleSpec/Mods/DribbleSpec/ScriptExtender/Lua/Shared/DribbleSpec/Docs/DribblesIdeHelpers.lua))
+- **IDE helpers** ([`DribblesIdeHelpers.lua`](https://raw.githubusercontent.com/AtilioA/DribbleSpec/refs/heads/main/DribbleSpec/Mods/DribbleSpec/ScriptExtender/Lua/Shared/DribbleSpec/Docs/DribblesIdeHelpers.lua))
 
 ## Quick start
 
