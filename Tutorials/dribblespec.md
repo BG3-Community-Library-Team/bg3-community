@@ -2,7 +2,7 @@
 title: DribbleSpec - SE testing framework
 description: Guide/documentation for the Jest-inspired Script Extender test framework for Lua mods with test DSL, doubles, fixtures, and entity, context-aware assertions.
 published: true
-date: 2026-03-09T04:06:50.882Z
+date: 2026-03-09T04:08:57.863Z
 tags: se, script-extender, frameworks, script extender, test, mod testing
 editor: markdown
 dateCreated: 2026-03-08T23:14:38.962Z
@@ -27,17 +27,17 @@ dateCreated: 2026-03-08T23:14:38.962Z
 
 ## Quick start
 
-1. Ensure DribbleSpec is loaded in your mod load order.
+1. Ensure DribbleSpec is above your mod in your load order.
 2. Call `RegisterTestGlobals(options?)` and assign the returned table wherever you want to use it:
 
 ```lua
-local D = RegisterTestGlobals()
+D = RegisterTestGlobals()
 ```
 
-You can configure one-time defaults for your mod:
+You can configure defaults for your mod:
 
 ```lua
-local D = RegisterTestGlobals({
+D = RegisterTestGlobals({
     globalTags = { "mymod" },
     commandAlias = "mytests",
     ownerModuleUUID = ModuleUUID
@@ -66,8 +66,6 @@ This returns a fresh symbol table with all relevant exports:
 - `entityRef`
 - `skip`
 - `RunMine`
-
-`RegisterTestGlobals(options?)` accepts an optional table and returns a fresh export table each time. Your mod decides where to assign it (`D`, `Dribbles`, local variable, etc.).
 
 ## Minimal test file example
 
