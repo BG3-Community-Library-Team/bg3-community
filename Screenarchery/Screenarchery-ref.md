@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2026-03-04T23:03:41.249Z
+date: 2026-03-15T17:06:11.637Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -350,7 +350,7 @@ https://framedsc.com/basics.htm
 Make sure you set up depth buffer correctly: in `Edit global preprocessor definitions` set 
 `RESHADE_DEPTH_LINEARIZATION_LINEARIZATION_FAR_PLANE = 1000`
 `RESHADE_DEPTH_INPUT_IS_UPISDE_DOWN = 0`
-`RESHADE_DEPTH_INPUT_IS_REVERSED = 0`
+`RESHADE_DEPTH_INPUT_IS_REVERSED = 1`
 `RESHADE_DEPTH_INPUT_IS_LOGARITHMIC = 0`
 In `Add-ons` tab check `Copy depth buffer before clear operations`
 
