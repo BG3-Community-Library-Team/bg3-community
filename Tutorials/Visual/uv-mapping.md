@@ -2,7 +2,7 @@
 title: A Guide to UV Mapping
 description: Everything you need to know about UV mapping
 published: false
-date: 2026-03-22T15:37:35.741Z
+date: 2026-03-22T16:13:49.484Z
 tags: uv, uv mapping, uvs, udim
 editor: markdown
 dateCreated: 2026-03-22T15:21:46.094Z
@@ -12,11 +12,17 @@ dateCreated: 2026-03-22T15:21:46.094Z
 ## Overview
 To texture a 3D model, it requires a UV map. A UV map is the 2D texture coordinates for a 3D mesh. In other words, the UV map determines how the 2D textures will be placed on the mesh. UV mapping is the process of creating the 2D map of the mesh. 
 
-The individual pieces that make up the UV map are called *shells* or *islands*. 
+The individual pieces that make up the UV map are called *shells* or *islands*. Shells are packed into a *tile*, most often in the 0-1 space. 
 
-### What is a UV Map?
+### What is the 0-1 space?
+As mentioned above, UVs are texture *coordinates* and behave like coordinates on a Cartesian planeThis is better shown in Maya than Blender. 
+
+![tilespacemaya.png](/tutorials/visual/uv-mapping/tilespacemaya.png)
+![01space.png](/tutorials/visual/uv-mapping/01space.png)
+
 ### What is a UDIM
-You may come across 
+When importing game meshes, you may come across UVs outside of the 0-1 tile space. Note that in the example below that the shells are identical, both in shape and in position within their respective tiles. This is **not** a UDIM. This is done to optimize baking results. See the section on Baking below.
+
 
 ### Why it matters
 ### Checkerboard Visualizer
