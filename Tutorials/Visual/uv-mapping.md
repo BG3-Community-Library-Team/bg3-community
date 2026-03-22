@@ -2,7 +2,7 @@
 title: A Guide to UV Mapping
 description: Everything you need to know about UV mapping
 published: false
-date: 2026-03-22T16:41:48.035Z
+date: 2026-03-22T17:18:06.745Z
 tags: uv, uv mapping, uvs, udim
 editor: markdown
 dateCreated: 2026-03-22T15:21:46.094Z
@@ -34,10 +34,15 @@ The image below shows an unwrapped mesh with its shells filling the 0-1 tile spa
 ### What is a UDIM?
 >UDIMs are **not supported** in BG3.[^1]
 {.is-warning}
-[^1]: There are
 
-A UDIM, short for U-Dimension, is 
-When importing game meshes, you may come across UVs outside of the 0-1 tile space. Note that in the example below that the shells are identical, both in shape and in position within their respective tiles. This is **not** a UDIM. This is done to optimize baking results. See the section on Baking below.
+[^1]: There is **one** shader in the game that by name appears to use UDIMs:  CHAR_AlphaBlend_GM_Udim_Flowmap. This shader does not behave the way a shader that truly supports UDIMs would. True UDIM workflow is unsupported in BG3.
+
+A UDIM, short for U-Dimension, is a way of UV mapping that allows you to place shells across multiple tiles and create separate textures for each tile. This setup is more commonly used for meshes created for use in 3D animations than in games. 
+
+Since UDIMs are not supported in BG3, I will not go into detail explaining them.
+
+When importing game meshes, you may come across UVs outside of the 0-1 tile space. Shown below is the UV arrangement of the TIF_F_NKD_Tail_A mesh when imported into Blender. Note that in the example below that the shells are identical, both in shape and in position within their respective tiles. If the shell outside of the 0-1 tile is selected and moved to the left by one unit (done by selecting the shell and pressing **G → X → -1** on the keyboard), you can see that it stacks perfectly on top of the shell already in the tile. This is **not** a UDIM. This is done to optimize baking results. See the section on Baking below.
+![movedshells.png](/tutorials/visual/uv-mapping/movedshells.png) ![identicalshells.png](/tutorials/visual/uv-mapping/identicalshells.png)
 
 
 ### Why it matters
