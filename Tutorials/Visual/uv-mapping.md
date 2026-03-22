@@ -2,7 +2,7 @@
 title: A Guide to UV Mapping
 description: Everything you need to know about UV mapping
 published: false
-date: 2026-03-22T18:10:32.964Z
+date: 2026-03-22T18:25:16.857Z
 tags: uv, uv mapping, uvs, udim
 editor: markdown
 dateCreated: 2026-03-22T15:21:46.094Z
@@ -70,6 +70,8 @@ To better illustrate my point above of why good UVs matter, allow me to introduc
 Why the checkerboard is great:
 - Shows texel density
 - Shows flow/stretching
+
+You can create a checkerboard material in Blender and assign it to your mesh.
 
 ## Unwrapping Methods
 ### Seams
