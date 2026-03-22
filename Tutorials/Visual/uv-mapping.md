@@ -2,7 +2,7 @@
 title: A Guide to UV Mapping
 description: Everything you need to know about UV mapping
 published: false
-date: 2026-03-22T16:33:20.860Z
+date: 2026-03-22T16:33:47.282Z
 tags: uv, uv mapping, uvs, udim
 editor: markdown
 dateCreated: 2026-03-22T15:21:46.094Z
