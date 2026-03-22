@@ -2,7 +2,7 @@
 title: A Guide to UV Mapping
 description: Everything you need to know about UV mapping
 published: false
-date: 2026-03-22T17:49:31.044Z
+date: 2026-03-22T18:00:09.650Z
 tags: uv, uv mapping, uvs, udim
 editor: markdown
 dateCreated: 2026-03-22T15:21:46.094Z
@@ -60,11 +60,16 @@ Good UVs, both in regards to shape and arrangement, will make things easier when
 - Better results when using UV projection projection type
 - Easier to line up patterns across multiple shells
 - Avoid patterns looking stretched or warped in areas
-- etc.. 
+- etc... just trust me, bro.
 
 ![plsbrouvs.jpg](/tutorials/visual/uv-mapping/plsbrouvs.jpg)
 
 ### Checkerboard Visualizer
+To better illustrate my point above of why good UVs matter, allow me to introduce you to using a checkerboard material. 
+
+Why the checkerboard is great:
+- Shows texel density
+- Shows flow/stretching
 
 ## Unwrapping Methods
 ### Seams
