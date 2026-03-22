@@ -2,7 +2,7 @@
 title: A Guide to UV Mapping
 description: Everything you need to know about UV mapping
 published: false
-date: 2026-03-22T17:24:58.825Z
+date: 2026-03-22T17:49:31.044Z
 tags: uv, uv mapping, uvs, udim
 editor: markdown
 dateCreated: 2026-03-22T15:21:46.094Z
@@ -42,17 +42,27 @@ A UDIM, short for U-Dimension, is a way of UV mapping that allows you to place s
 Since UDIMs are not supported in BG3, I will not go into detail explaining them.
 
 When importing game meshes, you may come across UVs outside of the 0-1 tile space. Shown below is the UV arrangement of the TIF_F_NKD_Tail_A mesh when imported into Blender. Note that in the example below that the shells are identical, both in shape and in position within their respective tiles. If the shell outside of the 0-1 tile is selected and moved to the left by one unit (done by selecting the shell and pressing `G → X → -1` on the keyboard), you can see that it stacks perfectly on top of the shell already in the tile. This is **not** a UDIM. This is done to optimize baking results. See the section on Baking below.
+
 ![movedshells.png](/tutorials/visual/uv-mapping/movedshells.png) ![identicalshells.png](/tutorials/visual/uv-mapping/identicalshells.png)
 
 
 ### Why it matters
-Is CMTY member baeator sending messages to you that look like this?[^2] Do you wonder why she bothers to point it out?
+Is CMTY member baeator sending messages to you that look like this?[^2] Do you wonder why she bothers to point it out? Why isn't a moderator stepping in to handle this bullying? 
 
 [^2]: I, the author of this page, am baeator. I can call myself out.
 
 ![baeatorcomment.png](/tutorials/visual/uv-mapping/baeatorcomment.png)
 
-Good UVs, both in regards to shape and arrangement, will make things easier when texturing. 
+Good UVs, both in regards to shape and arrangement, will make things easier when texturing. There's many reasons for this so I'll list a handful:
+- Less artifacts on your bakes
+- Better results when using materials/masks that are procedural based on UVs
+- Consistent texel density
+- Better results when using UV projection projection type
+- Easier to line up patterns across multiple shells
+- Avoid patterns looking stretched or warped in areas
+- etc.. 
+
+![plsbrouvs.jpg](/tutorials/visual/uv-mapping/plsbrouvs.jpg)
 
 ### Checkerboard Visualizer
 
