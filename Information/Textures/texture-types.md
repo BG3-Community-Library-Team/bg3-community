@@ -2,13 +2,15 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2026-04-02T00:31:06.003Z
+date: 2026-04-02T02:12:57.561Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
 ---
 
 # Important to note
+
+<!-- This article goes over differnt file formats for images that you may encounter inside Baldur's Gate 3 and what they are used for. These formats can identified by specifc suffixs located at the end of the file's name and will inform the reader on how the image is meant to be used. -->
 
 Baldur's Gate 3 engine uses various texture 'formats' while utilizing a wide range of 'compression types'. This can be confusing because there are lots of moving parts and nowhere is it explained *how* exactly the game handles these texture 'formats' and 'compression types'.
 
@@ -20,7 +22,9 @@ Secondly, it is important to note that the types of compression are different (u
 
 ## Texture formats
 
-BG3 has ultimately two 'styles' of rendering - 'Hardsurface' and 'Skin', for lack of better wording.
+For the sake of orgnaisation we will be catagoriing BG3 texture formats into two styles, "Skin" and "Hardsurface".
+
+Some formats in these groups will share identical suffixs to formats in other groups but have differnt use cases, in this event finding out what format an image actualy is can be difficult. To identify what format an image belongs to its best to look at it "in situ", look to where the image is being used and try to interpolate its use based on context. If its being used in a skin material, well its probably part of the Skin group.
 
 ### Maps
 The most common texture maps used by BG3 are:
