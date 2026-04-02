@@ -2,7 +2,7 @@
 title: Information
 description: List of Resources relating to Information
 published: true
-date: 2025-09-06T15:04:52.694Z
+date: 2026-04-02T00:24:27.002Z
 tags: list
 editor: markdown
 dateCreated: 2024-04-30T21:13:42.930Z
@@ -33,6 +33,12 @@ Gameplay
 - [Items](/Information/Items)
 - [Spells](Spells)
 
+Textures, Materials/Shaders, & Icons
+-
+- [Textures & Materials/Shaders](/Information/Textures)
+- [Icons](https://wiki.bg3.community/Tutorials/Icons/Icon-Creation)
+
+
 Meshes
 -
 - [Meshes](Meshes)
@@ -49,15 +55,9 @@ Sound
 -
 - [Sound](/Information/Sound)
 
-Textures
--
-- [Textures](/Information/Textures)
-- [Icons](https://wiki.bg3.community/Tutorials/Icons/Icon-Creation)
-- [Shaders](/Information/Textures/Shaders)
+
 
 ## Pages
-
-
 
 - [Locations](/Information/Locations) <!--to do: move to references-->
 - [Notable NPCs](Notable-NPCs) <!--to do: move to references-->
