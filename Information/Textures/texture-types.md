@@ -2,7 +2,7 @@
 title: Bg3 Engine Texture Variants
 description: An explanation of the various styles of texture Bg3 uses and where it uses them
 published: true
-date: 2026-01-16T16:46:04.033Z
+date: 2026-04-02T00:31:06.003Z
 tags: textures
 editor: markdown
 dateCreated: 2024-05-03T01:28:21.117Z
@@ -16,7 +16,7 @@ First and foremost, it is important to disclose the difference between 'format' 
 
 Secondly, it is important to note that the types of compression are different (usually*) depending on what the texture is being used for.
 <sup>*I say 'usually' as many textures share the same compression type, but this is not guaranteed</sup>
-<sup>([WIP: compression writeup here :)](/Information/Textures/compression))</sup>
+
 
 ## Texture formats
 
