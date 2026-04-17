@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2026-04-17T02:33:36.135Z
+date: 2026-04-17T03:29:03.492Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -25,7 +25,7 @@ Non-exhaustive list of mods and tools for taking pictures in game.
   - Please read its [documentaion](https://opm.fransbouma.com/igcsdof.htm) first and then common issues which are listed below
 
 - [Parallax Depth of Feild](https://www.youtube.com/watch?v=dv4eWkDuIpg)
-  - An anlternative for IGCS Depth of Field. In some cases works a faster
+  - An anlternative for IGCS Depth of Field. Works faster, but in some cases you need to slow it down
 
 - [Reshade](https://reshade.me/) by crosire
 	- A post-processing tool for games. Allows you to apply different effects and colors on top of the game
