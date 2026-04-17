@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2026-04-17T02:19:57.007Z
+date: 2026-04-17T02:33:36.135Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -23,6 +23,9 @@ Non-exhaustive list of mods and tools for taking pictures in game.
 - [IGCS Depth of Field](https://github.com/FransBouma/IgcsConnector/releases) by Otis_Inf
   - A DOF / bokeh option for use with ReShade and Otis tools
   - Please read its [documentaion](https://opm.fransbouma.com/igcsdof.htm) first and then common issues which are listed below
+
+- [Parallax Depth of Feild](https://www.youtube.com/watch?v=dv4eWkDuIpg)
+  - An anlternative for IGCS Depth of Field. In some cases works a faster
 
 - [Reshade](https://reshade.me/) by crosire
 	- A post-processing tool for games. Allows you to apply different effects and colors on top of the game
@@ -384,4 +387,7 @@ In `Add-ons` tab check `Copy depth buffer before clear operations`
 - **Black screen when launching the game:** inject dll or disable IgcsDof.fx; if you close the game while being in the DOF session, it will get stuck
 
 - Make sure `IgcsDof.fx` is the last in the order. (It depends, but you probably don't know what the fudge you are doing, so keep it last)
+
+### Parallax Depth of Feild
+- **Some objects/parts of the image are blurred weirdly:** increase Interval and Delay to 4 frames
 
