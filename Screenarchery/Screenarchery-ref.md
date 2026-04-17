@@ -2,7 +2,7 @@
 title: Screenarchery / Virtual Photography Tutorials, Tools and Resources
 description: A non-exhaustive reference list of common mods and tools used for virtual photography
 published: true
-date: 2026-03-15T17:06:11.637Z
+date: 2026-04-17T02:19:57.007Z
 tags: screenarchery, photography, photomode
 editor: markdown
 dateCreated: 2025-09-06T14:56:47.868Z
@@ -274,6 +274,9 @@ Non-exhaustive list of mods and tools for taking pictures in game.
 
 
 ## Useful links
+
+- ReShade guides
+[ReShade Basics by Marty](https://www.youtube.com/playlist?list=PLxi9SRiyWQ9FJNwDm1t6NbUV_UNlO9ZRD)
 
 - Good VP YouTube guides by Shinobi's Virtual Photography:
 [How to Learn Virtual Photography](https://www.youtube.com/watch?v=CbpTXG-mpgo)
