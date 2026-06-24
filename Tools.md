@@ -2,7 +2,7 @@
 title: Tools
 description: A list of tools including short descriptions and links.
 published: true
-date: 2025-08-14T12:02:45.943Z
+date: 2026-06-24T23:25:23.503Z
 tags: tools, list
 editor: markdown
 dateCreated: 2024-05-01T03:55:31.302Z
@@ -14,7 +14,8 @@ The following is a list of tools that are either necessary or useful to create m
 
 - [LSLib](https://github.com/Norbyte/lslib) - essential for handling various file formats used in the game, allowing you to extract, convert, and pack files for modding purposes
 
-- [BG3 Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool) - quickly generate .paks from an unpacked workspace, unpack mods, index, browse and extract game files, among other functions
+- [BG3 Multitool](https://gitlab.com/ShinyHobo/bg3-modders-multitool) - quickly generate .paks from an unpacked workspace, unpack mods, index, browse and extract game files, among other functions
+([Old GitHub link](https://github.com/ShinyHobo/BG3-Modders-Multitool), currently unavailable)
 
 # Code editing
 
