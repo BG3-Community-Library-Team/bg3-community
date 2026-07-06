@@ -2,7 +2,7 @@
 title: Custom Origin Creation in Toolkit
 description: Use the BG3 Modder's Toolkit to make your own custom origin.
 published: true
-date: 2026-07-06T21:53:46.557Z
+date: 2026-07-06T22:12:29.137Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-07-04T03:13:57.309Z
@@ -61,5 +61,13 @@ dateCreated: 2026-07-04T03:13:57.309Z
   <li>LockRace - Yes</li>
   <li>BackgroundUUID - 8807a6c6-d8cf-494b-aec2-cc01d7517a56 (this is the UUID for Sage. You can find other choices in Backgrounds[Shared] and/or EA backgrounds in Backgrounds[GustavDev])</li>
   <li>[GodUUID is used for classes who utilize them, but not used in this example]</li>
-  <li>ClassUUID -&nbsp;</li>
+  <li>ClassUUID - a865965f-501b-46e9-9eaa-7748e8c04d09 (this is the UUID value for Wizard as found in ClassDescriptions[Shared] and/or ClassDescriptions[SharedDev], ClassDescriptions[GustavX])</li>
+  <li>SubClassUUID - 46d31950-6917-444e-ac87-706702825215 (I chose to make her an Enchantment wizard, but other options are found in the same previously mentioned ClassDescriptions tables)</li>
+  <li>LockClass - No</li>
+  <li>Global Template - To get this value, tab back over to the Sidebar with the S_Player_Mystra Character template selected and copy the value present in the sidebar in “GUID” it will be different for everyone, so I'm not going to paste mine here.</li>
+  <li>Passives - DeathSavingThrows</li>
+  <li>ReallyTags - REALLY_HUMAN (Unless you're going <i>deep</i> with your mod, this will likely always be set to REALLY_[Race])</li>
+  <li>AppearanceLocked - Yes</li>
+  <li>ClassEquipmentOverride - Unused in this example, but also worth mentioning. Only use if you don't want the player to start with the class' default equipment. It would be set to a matching Name entry in an Equipment table (found in Stats Editor)</li>
+  <li>VoiceTableUUID - 5ee56242-d07c-482e-9260-24529d1473a3 (This is set to Tav Voice 4's TableUUID, but set it to the TAV / custom voice you want. The TableUUID's can be found in the Voices[Shared] and Voices[SharedDev] tables.&nbsp;</li>
 </ul>
