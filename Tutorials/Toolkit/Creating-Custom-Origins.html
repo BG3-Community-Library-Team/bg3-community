@@ -2,7 +2,7 @@
 title: Custom Origin Creation in Toolkit
 description: Use the BG3 Modder's Toolkit to make your own custom origin.
 published: true
-date: 2026-07-04T21:59:41.720Z
+date: 2026-07-06T21:31:33.276Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-07-04T03:13:57.309Z
@@ -29,7 +29,7 @@ dateCreated: 2026-07-04T03:13:57.309Z
 <figure class="image"><img src="/tutorials/toolkit_origin/createobjectwizard.png">
   <figcaption>CreateObjectWizard&nbsp;</figcaption>
 </figure>
-<p>&nbsp;Open “Character Visual Resource” in the sidebar and style Mystra however you'd like. I opted to load the preset. Make sure to set “Display Name” to Mystra as well. Save your work.</p>
+<p>&nbsp;Open “Character Visual Resource” in the sidebar and style Mystra however you'd like. I opted to load the preset. Make sure to set “Display Name” to Mystra as well. Save your work. This would also be the prime time to set any sort of references to custom stats, if needed.</p>
 <h2>Creating the Global Character Template</h2>
 <p>Alright, this is where the magic happens and something you can't do without Moonglasses. &nbsp;Click on and off Switch Game / Editor to get the starting point of the level loaded correctly in toolkit. Here's a reminder of the button I'm talking about.&nbsp;</p>
 <figure class="image"><img src="/tutorials/toolkit_origin/binoculars.png"></figure>
@@ -38,4 +38,12 @@ dateCreated: 2026-07-04T03:13:57.309Z
 <figure class="image"><img src="/tutorials/toolkit_origin/blue_arrow.png"></figure>
 <p>Take a minute to open the “Characters” panel by clicking on the blue man icon at the top of your screen.&nbsp;</p>
 <figure class="image"><img src="/tutorials/toolkit_origin/blue_man.png"></figure>
-<p>&nbsp;It will open a new window that lists all the characters in the level. When I was creating this guide, my new Mystra showed up at the top of the list as “Origin_Mystra_000.” If she doesn't, you can use the search box to find her. Click on &nbsp;her to open her Character template. The Character template, <i>not the Root</i> will be the thing we reference for the rest of this guide to set values in other tables required for the game to recognize Mystra as an Origin character.</p>
+<p>&nbsp;It will open a new window that lists all the characters in the level. When I was creating this guide, my new Mystra showed up at the top of the list as “Origin_Mystra_000.” If she doesn't, you can use the search box to find her. Click on &nbsp;her to open her Character template. The Character template, <i><strong>not the Root</strong></i> will be the thing we reference for the rest of this guide to set values in other tables required for the game to recognize Mystra as an Origin character. With the Character Template selected, complete the following steps:</p>
+<ol>
+  <li>Set her Character Visual Resource to look just like the Root Template's. Simply load a preset and set it to the Origin_Mystra visual already present in your mod. Now, you'll need to remove all her clothing, set her private parts, and give her a modesty leaf / nipple covers for folks who want to use them. If you don't, the game won't know what your Origin is supposed to look like without clothes! Save the appearance and close the Character Editor.</li>
+  <li>In the Sidebar, check “Global” <strong>this is extremely important</strong> and what makes it a Global Character Template.</li>
+  <li>Set the Name (not Display Name) to S_Player_Mystra, following BG3's naming conventions for playable Global Character Templates. The S at the beginning denotes there's scripting involved with the character which we'll get to.</li>
+  <li>Save the Global Character Template then Reload the Level and Story to see the updated Character template show up in the Characters window.</li>
+</ol>
+<h2>UUID Editor</h2>
+<p>&nbsp;</p>
