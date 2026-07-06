@@ -2,7 +2,7 @@
 title: Custom Origin Creation in Toolkit
 description: Use the BG3 Modder's Toolkit to make your own custom origin.
 published: true
-date: 2026-07-06T22:18:07.445Z
+date: 2026-07-06T22:25:41.151Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-07-04T03:13:57.309Z
@@ -69,7 +69,9 @@ dateCreated: 2026-07-04T03:13:57.309Z
   <li>ReallyTags - REALLY_HUMAN (Unless you're going <i>deep</i> with your mod, this will likely always be set to REALLY_[Race])</li>
   <li>AppearanceLocked - Yes</li>
   <li>ClassEquipmentOverride - Unused in this example, but also worth mentioning. Only use if you don't want the player to start with the class' default equipment. It would be set to a matching Name entry in an Equipment table (found in Stats Editor)</li>
-  <li>VoiceTableUUID - 5ee56242-d07c-482e-9260-24529d1473a3 (This is set to Tav Voice 4's TableUUID, but set it to the TAV / custom voice you want. The TableUUID's can be found in the Voices[Shared] and Voices[SharedDev] tables.&nbsp;</li>
+  <li>VoiceTableUUID - 5ee56242-d07c-482e-9260-24529d1473a3 (This is set to Tav Voice 4's TableUUID, but set it to the TAV / custom voice you want. The TableUUID's can be found in the Voices[Shared] and Voices[SharedDev] tables.</li>
 </ul>
 <h2>Inserting the Origin into the Story</h2>
 <p>⚠️ <i><strong>Warning: This is the riskiest part of the tutorial to a Vanilla game. </strong>Take your time and you'll be fine!</i></p>
+<p>Open the StoryEditor. If you're following along it should look something like this. All the Scripts in white are base game scripts. Once we copy a script to our mod, it will turn orange in the list. Do <strong>not</strong> edit a script unless it's orange. You could corrupt your game.</p>
+<figure class="image"><img src="/tutorials/toolkit_origin/story_editor_no_orange.png"></figure>
