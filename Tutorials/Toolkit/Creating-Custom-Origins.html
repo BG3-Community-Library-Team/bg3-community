@@ -2,7 +2,7 @@
 title: Custom Origin Creation in Toolkit
 description: Use the BG3 Modder's Toolkit to make your own custom origin.
 published: true
-date: 2026-07-06T21:31:33.276Z
+date: 2026-07-06T21:53:46.557Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-07-04T03:13:57.309Z
@@ -45,5 +45,21 @@ dateCreated: 2026-07-04T03:13:57.309Z
   <li>Set the Name (not Display Name) to S_Player_Mystra, following BG3's naming conventions for playable Global Character Templates. The S at the beginning denotes there's scripting involved with the character which we'll get to.</li>
   <li>Save the Global Character Template then Reload the Level and Story to see the updated Character template show up in the Characters window.</li>
 </ol>
-<h2>UUID Editor</h2>
-<p>&nbsp;</p>
+<h2>Creating the Origins Table</h2>
+<p>Open the UUID Object Editor window and under Origins within your mod, create an Origins table and open it up. (If you want to see the Companion Origins Table for reference in the next bit, it lives in Gustav) Set up your Origin table in the following way:</p>
+<ul>
+  <li>Name - Mystra</li>
+  <li>Unique - Yes</li>
+  <li>AvailableInCharacterCreation - Available</li>
+  <li>DisplayName - Mystra</li>
+  <li>Description - Mystra is a greater goddess of the Faerûnian pantheon and the second incarnation of the Goddess of Magic after her predecessor Mystryl sacrificed herself to protect the Weave from Karsus' Folly. Originally known as the wizard Midnight, she accepted the position of Goddess of Magic from Ao themselves after the conclusion of the Godswar and reluctantly took the name Mystra to smooth the transition between goddesses after so much chaos.</li>
+  <li>BodyType - Female</li>
+  <li>BodyShape - Standard</li>
+  <li>LockBody - Yes</li>
+  <li>RaceUUID - 0eb594cb-8820-4be6-a58d-8be7a1a98fba (this is the UUID value for Human in the Races[Shared] table)</li>
+  <li>[SubRaceUUID is sometimes used, but does not apply in this example.]</li>
+  <li>LockRace - Yes</li>
+  <li>BackgroundUUID - 8807a6c6-d8cf-494b-aec2-cc01d7517a56 (this is the UUID for Sage. You can find other choices in Backgrounds[Shared] and/or EA backgrounds in Backgrounds[GustavDev])</li>
+  <li>[GodUUID is used for classes who utilize them, but not used in this example]</li>
+  <li>ClassUUID -&nbsp;</li>
+</ul>
