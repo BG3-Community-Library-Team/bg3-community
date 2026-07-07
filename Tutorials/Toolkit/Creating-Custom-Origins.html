@@ -2,7 +2,7 @@
 title: Custom Origin Creation in Toolkit
 description: Use the BG3 Modder's Toolkit to make your own custom origin.
 published: true
-date: 2026-07-07T02:39:06.923Z
+date: 2026-07-07T02:47:57.524Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-07-04T03:13:57.309Z
@@ -87,7 +87,8 @@ dateCreated: 2026-07-04T03:13:57.309Z
 <p>To finish everything off, go to File→Generate Definitions, Build, and Reload. We're looking for BUILD SUCCESS. If you get anything other than that, it means something went wrong. You can close out the StoryEditor now. You can feel free to close any other windows other than the main Toolkit window as well.</p>
 <p>&nbsp;</p>
 <h2>Creating Origin Portraits</h2>
-<p>The next step is taking Mystra's picture. Assuming you set your Project up like mentioned in the beginning of this guide and are ok with the default backdrop for the photo, we can just go into Project→Render Character Portraits. That will open another menu that lists ALL of your installed mods.&nbsp;</p>
+<p>Go back to the original Root Template you created and set the Portrait Visual Resource to S_Player_Mystra_[UUID]</p>
+<p>Assuming you set your Project up like mentioned in the beginning of this guide and are ok with the default backdrop for the photo, go into Project→Render Character Portraits. That will open another menu that lists ALL of your installed mods.&nbsp;</p>
 <p>Select the mod you're working on so that there's a checkmark beside it.&nbsp;</p>
 <p>Scroll all the way down the list until you can't anymore and select “Render Portraits.” Select Yes when it asks if you want to load the booth and start a render. Let the toolkit do its thing.</p>
 <p>Save everything, exit the Toolkit and come back in, this time into Character Creation. You may see a message flash in the preview window about the mod missing metadata. Don't worry about it, everything's fine.</p>
@@ -96,4 +97,4 @@ dateCreated: 2026-07-04T03:13:57.309Z
 <p>Now to fix the project metadata. Thankfully, the Toolkit has a tool for that. Simply go to Project→ Generate UI Textures Metadata → select your mod → Generate UI Textures Metadata. It'll seem like nothing happened, but it did. Click off of it, save all, and reload the level and story.</p>
 <p>&nbsp;</p>
 <h2>Testing the Mod</h2>
-<p>Exit the Toolkit and come back into Character Creation. You should no longer see the metadata error message.</p>
+<p>Exit the Toolkit and come back into Character Creation. You should no longer see the metadata error message. Load into the level and look around. See if everything appears as you think it should. If the portrait in the Origins selection window doesn't match the appearance of your character being created, the fix is easy. I'm not sure why this bugs out.</p>
