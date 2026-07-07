@@ -2,7 +2,7 @@
 title: Custom Origin Creation in Toolkit
 description: Use the BG3 Modder's Toolkit to make your own custom origin.
 published: true
-date: 2026-07-07T02:59:57.173Z
+date: 2026-07-07T03:03:10.531Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-07-04T03:13:57.309Z
@@ -39,7 +39,7 @@ dateCreated: 2026-07-04T03:13:57.309Z
 <figure class="image"><img src="/tutorials/toolkit_origin/blue_man.png"></figure>
 <p>&nbsp;It will open a new window that lists all the characters in the level. When I was creating this guide, my new Mystra showed up at the top of the list as “Origin_Mystra_000.” If she doesn't, you can use the search box to find her. Click on &nbsp;her to open her Character template. The Character template, <i><strong>not the Root</strong></i> will be the thing we reference for the rest of this guide to set values in other tables required for the game to recognize Mystra as an Origin character. With the Character Template selected, complete the following steps:</p>
 <ol>
-  <li>Set her Character Visual Resource to look just like the Root Template's. Simply load a preset and set it to the Origin_Mystra visual already present in your mod.&nbsp;</li>
+  <li>Set her Character Visual Resource to look just like the Root Template's. Simply load a preset and set it to the Origin_Mystra visual already present in your mod.</li>
   <li>In the Sidebar, check “Global” <strong>this is extremely important</strong> and what makes it a Global Character Template.</li>
   <li>Set the Name (not Display Name) to S_Player_Mystra, following BG3's naming conventions for playable Global Character Templates. The S at the beginning denotes there's scripting involved with the character which we'll get to.</li>
   <li>Save the Global Character Template then Reload the Level and Story to see the updated Character template show up in the Characters window.</li>
@@ -100,4 +100,4 @@ dateCreated: 2026-07-04T03:13:57.309Z
 <p>Exit the Toolkit and come back into Character Creation. You should no longer see the metadata error message. Load into the level and look around. See if everything appears as you think it should. Load into Wilderness WLD_Main_A and see if everything looks ok. There will be an extra Mystra hanging out. That's normal.</p>
 <p>&nbsp;</p>
 <h2>Strip the Body and Hide it</h2>
-<p>Now, for a final, odd step of this process. Remember that extra instance of Mystra in your way when you select S_Player_Mystra? Well, we actually need to strip her clothing and hide her in the level. Having a copy of her in game with only her private parts, modesty leaf, and nipple covers tells the game all it needs to know to render her without clothing for folks who want modesty as well as those who don't. With S_Player_Mystra selected, set her Character visual refererence. Save the appearance and close the Character Editor. If you can't find the Character template when clicking on the blue man, that means you're not in WLD_MAIN_A.</p>
+<p>Now, for a final, odd step of this process. Remember that extra instance of Mystra in your way when you select S_Player_Mystra? Well, we actually need to strip her clothing and hide her in the level. Having a copy of her in game with only her private parts, modesty leaf, and nipple covers tells the game all it needs to know to render her without clothing for folks who want modesty as well as those who don't. With S_Player_Mystra selected, set her Character Visual Resource. Save the appearance and close the Character Editor. If you can't find the Character template when clicking on the blue man, that means you're not in WLD_MAIN_A.</p>
