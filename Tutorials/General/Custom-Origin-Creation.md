@@ -2,7 +2,7 @@
 title: Custom Origin Creation
 description: Make your own custom origin.
 published: true
-date: 2025-08-21T15:18:41.772Z
+date: 2026-07-08T13:03:01.589Z
 tags: tutorial, origin
 editor: markdown
 dateCreated: 2025-08-20T20:20:04.633Z
@@ -65,6 +65,11 @@ This file defines the appearance of your origin: animations, body mesh, other me
 > 
 > I noticed that if you made your origin editable in CC, any scar you set up here will get reset to default (no scar) and the user will have to select it again. I don't know why it's like this, but I didn't find any way around it. Scars are fine if you keep the appearance locked. (There could be other things like this, too. I didn't test every CC option.)
 {.is-warning}
+
+> 
+> If you have custom eye/hair/skin colors for your Origin that are getting reset to the default color in CC, it's probably because you need to add them to their race using MergedInto. If the game can't find their custom colors as part of the race defaults, it'll reset to the first color in the race's list. Used MergedInto to add them to your Origin's race and this will stop happening!
+{.is-info}
+
 
 ## Equipment.txt
 
