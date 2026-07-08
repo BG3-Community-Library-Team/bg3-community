@@ -2,7 +2,7 @@
 title: Custom Origin Creation in Toolkit
 description: Use the BG3 Modder's Toolkit to make your own custom origin.
 published: true
-date: 2026-07-08T23:43:14.693Z
+date: 2026-07-08T23:45:07.600Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-07-04T03:13:57.309Z
@@ -22,7 +22,7 @@ dateCreated: 2026-07-04T03:13:57.309Z
 </figure>
 <h2>Requirements</h2>
 <p><a href="https://www.nexusmods.com/baldursgate3/mods/12308">Moonglasses - BG3 Extended Toolkit</a> - download and install following the steps on the Nexus download page</p>
-<p>If you want your Origin to have custom equipment, get it into the game before beginning this tutorial. Make sure if you do, your table includes typical Player items like&nbsp;</p>
+<p><strong>If you want your Origin to have custom equipment, get it into the game and set up on your equipment table before beginning this tutorial.</strong> Make sure your table includes typical Player items like revivify scroll, keychain, etc.</p>
 <h2>Project Setup</h2>
 <p>Create a new package named origin_Mystra. Click on “Show Inherited Levels” and load into Wilderness_WLD_Main_A.</p>
 <p>In Project Settings, click over to the “General" Tab, click the “…” on Photo Booth Level, then select SYS_PortraitGeneration_A.</p>
@@ -71,7 +71,7 @@ dateCreated: 2026-07-04T03:13:57.309Z
   <li>Passives - DeathSavingThrows</li>
   <li>ReallyTags - REALLY_HUMAN (Unless you're going <i>deep</i> with your mod, this will likely always be set to REALLY_[Race])</li>
   <li>AppearanceLocked - Yes</li>
-  <li>ClassEquipmentOverride - EQ_Mystra (This is the equipment table we needed to set up before following this tutorial)</li>
+  <li>ClassEquipmentOverride - EQ_Mystra (This is the equipment table we needed to set up before following this tutorial) If you don't want custom equipment, just leave this blank.</li>
   <li>VoiceTableUUID - 5ee56242-d07c-482e-9260-24529d1473a3 (This is set to Tav Voice 4's TableUUID, but set it to the TAV / custom voice you want. The TableUUID's can be found in the Voices[Shared] and Voices[SharedDev] tables.</li>
 </ul>
 <h2>Inserting the Origin into the Story</h2>
