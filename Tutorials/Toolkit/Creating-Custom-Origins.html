@@ -2,7 +2,7 @@
 title: Custom Origin Creation in Toolkit
 description: Use the BG3 Modder's Toolkit to make your own custom origin.
 published: true
-date: 2026-07-09T01:02:01.365Z
+date: 2026-07-11T00:55:37.296Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-07-04T03:13:57.309Z
@@ -34,7 +34,8 @@ dateCreated: 2026-07-04T03:13:57.309Z
 <figure class="image"><img src="/tutorials/toolkit_origin/createobjectwizard.png">
   <figcaption>CreateObjectWizard&nbsp;</figcaption>
 </figure>
-<p>&nbsp;Open “Character Visual Resource” in the sidebar and style Mystra however you'd like. I opted to load the preset. Make sure to set “Display Name” to Mystra as well. Save your work. This would also be the prime time to set any sort of references to custom stats, if needed.</p>
+<p>&nbsp;Open “Character Visual Resource” in the sidebar and style Mystra however you'd like. I opted to load the preset. Make sure to set “Display Name” to Mystra as well. Save your work.&nbsp;</p>
+<p>** If your Origin needs custom stats, this is NOT the place to do it. You'd need to add any bonuses as passives. I'll mention it again in the Origins table section of this guide.</p>
 <h2>Creating the Global Character Template</h2>
 <p>Alright, this is where the magic happens and something you can't do without Moonglasses. &nbsp;Click on and off Switch Game / Editor to get the starting point of the level loaded correctly in toolkit. Here's a reminder of the button I'm talking about.&nbsp;</p>
 <figure class="image"><img src="/tutorials/toolkit_origin/binoculars.png"></figure>
@@ -69,7 +70,7 @@ dateCreated: 2026-07-04T03:13:57.309Z
   <li>SubClassUUID - 46d31950-6917-444e-ac87-706702825215 (I chose to make her an Enchantment wizard, but other options are found in the same previously mentioned ClassDescriptions tables)</li>
   <li>LockClass - No</li>
   <li>Global Template - To get this value, tab back over to the Sidebar with the S_Player_Mystra Character template selected and copy the value present in the sidebar in “GUID” it will be different for everyone, so I'm not going to paste mine here.</li>
-  <li>Passives - DeathSavingThrows</li>
+  <li>Passives - DeathSavingThrows (And any additional passives for custom stats, separated by a semicolon)</li>
   <li>ReallyTags - REALLY_HUMAN (Unless you're going <i>deep</i> with your mod, this will likely always be set to REALLY_[Race])</li>
   <li>AppearanceLocked - Yes</li>
   <li>ClassEquipmentOverride - EQ_Mystra (This is the equipment table we needed to set up before following this tutorial) If you don't want custom equipment, just leave this blank.</li>
