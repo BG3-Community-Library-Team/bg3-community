@@ -2,7 +2,7 @@
 title: Custom Origin Creation in Toolkit
 description: Use the BG3 Modder's Toolkit to make your own custom origin.
 published: true
-date: 2026-07-12T15:47:53.985Z
+date: 2026-07-12T16:05:58.711Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-07-04T03:13:57.309Z
@@ -53,6 +53,63 @@ dateCreated: 2026-07-04T03:13:57.309Z
   <li>Set the Name (not Display Name) to S_Player_Mystra, following BG3's naming conventions for playable Global Character Templates. The S at the beginning denotes there's scripting involved with the character which we'll get to.</li>
   <li>Save the Global Character Template then Reload the Level and Story to see the updated Character template show up in the Characters window.</li>
 </ol>
+<h2>Creating the Voice Table</h2>
+<p>We now need to set which one of the generic Tav voices we want to use for our Origin.&nbsp;</p>
+<p>Open the UUID Object Editor and create a voices table in your mod.&nbsp;</p>
+<p>Enter “Mystra's Voice” in the DisplayName. This will generate a UUID.&nbsp;</p>
+<p>Copy the UUID to the TableUUID, then regenerate a new UUID.</p>
+<p>Assign a valid Speaker UUID. Here's a guide. I've also included the voice tag to include later when we're doing the Origins table.</p>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td>Speaker</td>
+        <td>UUID</td>
+        <td>Tags</td>
+      </tr>
+      <tr>
+        <td>Voice 1 (Masculine)</td>
+        <td>15ead9db-7a73-4681-8848-5f1487ad4c68</td>
+        <td>GENERIC_VOICE_1_MALE</td>
+      </tr>
+      <tr>
+        <td>Voice 2 (Feminine)</td>
+        <td>e527b684-2499-4eda-84ab-239cf0f5d442</td>
+        <td>GENERIC_VOICE_2_FEMALE</td>
+      </tr>
+      <tr>
+        <td>Voice 3 (Masculine)</td>
+        <td>2fade686-a5cb-4ed7-a5a0-7bf0067212fa</td>
+        <td>GENERIC_VOICE_3_MALE</td>
+      </tr>
+      <tr>
+        <td>Voice 4 (Feminine)</td>
+        <td>c2fe5e77-b870-463d-ae6b-25b033b72b54</td>
+        <td>GENERIC_VOICE_4_FEMALE</td>
+      </tr>
+      <tr>
+        <td>Voice 5 (Masculine)</td>
+        <td>f5b335b2-9cd9-4b38-a4c1-458b846ab499</td>
+        <td>GENERIC_VOICE_5_MALE</td>
+      </tr>
+      <tr>
+        <td>Voice 6 (Feminine)</td>
+        <td>b9b26a44-943b-4427-9890-d81c7e81a75b</td>
+        <td>GENERIC_VOICE_6_FEMALE</td>
+      </tr>
+      <tr>
+        <td>Voice 7 (Masculine)</td>
+        <td>2d206fda-0d4f-457f-b4ea-0fc18866f5dd</td>
+        <td>GENERIC_VOICE_7_MALE</td>
+      </tr>
+      <tr>
+        <td>Voice 8 (Feminine)</td>
+        <td>fb6b5353-8d14-4507-9222-ceaec990fce9</td>
+        <td>GENERIC_VOICE_8_FEMALE</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
 <h2>Creating the Origins Table</h2>
 <p>Open the UUID Object Editor window and under Origins within your mod, create an Origins table and open it up. (If you want to see the Companion Origins Table for reference in the next bit, it lives in Gustav) Set up your Origin table in the following way:</p>
 <ul>
