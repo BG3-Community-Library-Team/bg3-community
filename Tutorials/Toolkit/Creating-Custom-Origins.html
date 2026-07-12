@@ -2,7 +2,7 @@
 title: Custom Origin Creation in Toolkit
 description: Use the BG3 Modder's Toolkit to make your own custom origin.
 published: true
-date: 2026-07-12T16:22:41.331Z
+date: 2026-07-12T16:26:51.270Z
 tags: 
 editor: ckeditor
 dateCreated: 2026-07-04T03:13:57.309Z
@@ -15,6 +15,7 @@ dateCreated: 2026-07-04T03:13:57.309Z
 <h1>Overview</h1>
 <p>This is a tutorial for adding a custom origin into Baldur's Gate 3 and is considered to be of <strong>advanced difficulty</strong> since it will require the <strong>Moonglasses </strong>(unlocked) version of the toolkit to complete. <strong>Making mistakes using this guide could corrupt your install of BG3. Follow it very carefully! You have been warned!</strong> As such, this guide assumes you already know your way around the vanilla toolkit's many features. To make it a little easier on your first time doing something like this, I will be taking you through a sample project - Mystra as an Origin character.&nbsp;</p>
 <p>If at any time you get a Microsoft.Net Framework error, just press Continue. It's a Moonglasses feature.</p>
+<p>You'll also see messages in the preview window about the mod missing metadata. Don't worry about it, everything's fine. It'll be fixed by the end of the guide.</p>
 <h2>Why make a custom origin instead of a simple preset?</h2>
 <p>Presets are great, but you can't have multiples active at the same time. There's also the little issue of how easy they tend to be to override in the character creator. One misclick could require exiting out to the main menu to reset the preset's appearance. You can also use it as an “easy” button if you like to replay the game with the same Tav repeatedly without needing to painstakingly recreate them every new campaign.</p>
 <p>It should also be known that what's covered are relatively the same steps you'd go through to make a custom companion show up in game for recruitment, but is outside the scope of this guide.&nbsp;</p>
@@ -154,11 +155,12 @@ dateCreated: 2026-07-04T03:13:57.309Z
 <p>To finish everything off, go to File→Generate Definitions, Build, and Reload. We're looking for BUILD SUCCESS. If you get anything other than that, it means something went wrong. You can close out the StoryEditor now. You can feel free to close any other windows other than the main Toolkit window as well.</p>
 <p>&nbsp;</p>
 <h2>Creating Origin Portraits</h2>
-<p>Go back to the original Root Template you created and set the Portrait Visual Resource to S_Player_Mystra_[UUID]</p>
+<p>Go back to the original Root Template you created and set the Portrait Visual Resource to S_Player_Mystra_[UUID].</p>
+<p>Save your work.</p>
 <p>Assuming you set your Project up like mentioned in the beginning of this guide and are ok with the default backdrop for the photo, go into Project→Render Character Portraits. That will open another menu that lists ALL of your installed mods.&nbsp;</p>
 <p>Select the mod you're working on so that there's a checkmark beside it.&nbsp;</p>
 <p>Scroll all the way down the list until you can't anymore and select “Render Portraits.” Select Yes when it asks if you want to load the booth and start a render. Let the toolkit do its thing.</p>
-<p>Save everything, exit the Toolkit and come back in, this time into Character Creation. You may see a message flash in the preview window about the mod missing metadata. Don't worry about it, everything's fine.</p>
+<p>Save everything, exit the Toolkit and come back in, this time into Character_Creation_SYS_CC_I.&nbsp;</p>
 <p>&nbsp;</p>
 <h2>Generate UI Textures Metadata</h2>
 <p>Now to fix the project metadata. Thankfully, the Toolkit has a tool for that. Simply go to Project→ Generate UI Textures Metadata → select your mod → Generate UI Textures Metadata. It'll seem like nothing happened, but it did. Click off of it, save all, and reload the level and story.</p>
