@@ -124,6 +124,6 @@ This is what it looks like in editor once I have finished editing.
 
 image::/customiseicon_preview02.png[customiseicon_preview02.png, 200] 
 
-Now you have to remember at this step to remove the hair and/or beard. Otherwise you will end up with the beard on your icons. Not the worst thing, as the icon generator will auto change the hair/beard when it comes to generating icons for that slot. But just a heads up that it can happen.
+Now you have to remember at this step to remove the hair and/or beard before you save. Otherwise you will end up with the beard on your icons. Not the worst thing, as the icon generator will auto change the hair/beard when it comes to generating icons for that slot. But just a heads up that it can happen.
 
 image::/customiseicon_exampleforgotbeard.png[customiseicon_exampleforgotbeard.png]
