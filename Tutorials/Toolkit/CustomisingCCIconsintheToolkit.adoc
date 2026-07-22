@@ -74,7 +74,7 @@ So let's first grab the RootTemplate id of the mannequin we want to edit.
 
 In this example I will be using Human_Male_Grey so the roottemplate uuid is 8570d6ed-42d9-47a4-886d-c61e125022ca.
 
-image::/customiseicon_roottemplate.png[customiseicon_roottemplate.png]
+image::/customiseicon_roottemplate.png[customiseicon_roottemplate.png, 800]
 
 image::/customiseicon_charactervisual.png[customiseicon_charactervisual.png, 400]
 
